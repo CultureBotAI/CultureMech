@@ -13,13 +13,35 @@ media_term:
     label: M9-SNG medium
 notes: MediaDive public Medium P8 provides M9-SNG medium at pH 7.2 with MgSO4, CaCl2,
   sinigrin, and M9 stock additions. The public JSON assigned the M9 stock the malformed
-  id 'NaN'; this record preserves the named M9 composition and drops that id.
+  id 'NaN'; this record preserves the named M9 composition and drops that id. Curation
+  now uses the DOI-linked HAL v1 manuscript for stock amounts and batch additions.
+  The public page's 6.1 ml dose denominator is not retained; no final-medium component
+  dilution or fixed makeup-water amount is inferred.
 ingredients: []
 applications:
 - Microbial cultivation
 references:
-- reference: 10.1007/s11104-022-05822-6
+- reference: doi:10.1007/s11104-022-05822-6
+  title: Soil microbiota promotes early developmental stages of Phelipanche ramosa
+    L. Pomel during plant parasitism on Brassica napus L.
+  authors: Lisa Martinez; Jean-Bernard Pouvreau; Gregory Montiel; Christophe Jestin;
+    Philippe Delavault; Philippe Simier; Lucie Poulin
+  year: 2023
+  notes: source_type=journal_article; discovery_mode=manual_web_search; accessed_on=2026-10-07;
+    version=HAL v1 author manuscript; full_text=https://hal.inrae.fr/hal-04370677v1/file/Submitted_version_LM.pdf;
+    deposit=2024-01-16; online publication=2022-12-08, volume year=2023. Methods page
+    11 (printed 10) visually inspected. Publisher methods and supplements were not
+    inspected. Legacy bare DOI normalized, not a new publication.
 - reference: https://www.bacmedia.dsmz.de/medium/P8
+- reference: https://mediadive.dsmz.de/medium/P8
+  title: M9-SNG medium - MediaDive public Medium P8
+  authors: Lisa Martinez, Jean-Bernard Pouvreau, Grégory Montiel, Christophe Jestin,
+    Philippe Delavault, Simier Philippe, Lucie Poulin
+  year: 2024
+  notes: source_type=user_contributed_dataset_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-07; year is the dataset-page publication year, not the journal
+    year; legacy bacmedia reference retained. Retained as explicit counterevidence
+    for the KH2PO4 stock conflict, not supporting the corrected amount.
 curation_history:
 - timestamp: '2026-01-26T17:53:19.847041Z'
   curator: mediadive-import
@@ -51,6 +73,65 @@ curation_history:
   notes: MediaDive public Medium P8 provides M9-SNG medium at pH 7.2 with MgSO4, CaCl2,
     sinigrin, and M9 stock additions. The public JSON assigned the M9 stock the malformed
     id 'NaN'; this record preserves the named M9 composition and drops that id.
+- timestamp: '2026-10-07T17:51:49.842228+00:00'
+  curator: codex
+  action: CURATED_PUBLIC_STOCK_CONCENTRATIONS_FROM_SCOPED_SOURCES
+  notes: Preserved stable ID, original history, ontology annotations, physical state,
+    pH, preparation and variants. Corrected article-backed stock amounts/doses, notes
+    and source attribution; normalized/enriched the existing DOI citation and preserved
+    dataset counterevidence. No new growth associations or IDs.
+  source: https://mediadive.dsmz.de/medium/P8; doi:10.1007/s11104-022-05822-6
+  changes: 'solutions[0].composition[0].concentration: {"unit": "G_PER_L", "value":
+    "24.65"} -> {"unit": "G_PER_L", "value": "24.65"} [evidence_only]; solutions[1].composition[0].concentration:
+    {"unit": "G_PER_L", "value": "14.7"} -> {"unit": "G_PER_L", "value": "14.7"} [evidence_only];
+    solutions[2].composition[0].concentration: {"unit": "G_PER_L", "value": "10"}
+    -> {"unit": "G_PER_L", "value": "10"} [evidence_only]; solutions[3].composition[0].concentration:
+    {"unit": "G_PER_L", "value": "64"} -> {"unit": "G_PER_L", "value": "64"} [evidence_only];
+    solutions[3].composition[1].concentration: {"unit": "G_PER_L", "value": "51"}
+    -> {"unit": "G_PER_L", "value": "15"} [correct]; solutions[3].composition[2].concentration:
+    {"unit": "G_PER_L", "value": "2.5"} -> {"unit": "G_PER_L", "value": "2.5"} [evidence_only];
+    solutions[3].composition[3].concentration: {"unit": "G_PER_L", "value": "5"} ->
+    {"unit": "G_PER_L", "value": "5"} [evidence_only]; solutions[0].concentration:
+    {"unit": "ML_PER_L", "value": "327.8689"} -> {"unit": "L", "value": "0.002"} [correct];
+    solutions[0].notes: "P8 adds 2 ml MgSO4 stock to a 6.1 ml main solution." -> "Add
+    0.002 L of MgSO4 stock per recipe batch. The L unit is a batch amount, not L/L.
+    The manuscript describes 10 ml cultures; no fixed water makeup amount is inferred."
+    [correct_context]; solutions[1].concentration: {"unit": "ML_PER_L", "value": "1.63934"}
+    -> {"unit": "L", "value": "0.000010"} [correct]; solutions[1].notes: "P8 adds
+    10 uL CaCl2 stock to a 6.1 ml main solution." -> "Add 0.000010 L of CaCl2 stock
+    per recipe batch. The L unit is a batch amount, not L/L. The manuscript describes
+    10 ml cultures; no fixed water makeup amount is inferred." [correct_context];
+    solutions[2].concentration: {"unit": "ML_PER_L", "value": "327.8689"} -> {"unit":
+    "L", "value": "0.002"} [correct]; solutions[2].notes: "P8 adds 2 ml of a 10 g/L
+    sinigrin stock filtered at 0.22 um in sterile water at pH 7.2 to a 6.1 ml main
+    solution." -> "Add 0.002 L of Sinigrin stock per recipe batch. The L unit is a
+    batch amount, not L/L. The manuscript describes 10 ml cultures; no fixed water
+    makeup amount is inferred." [correct_context]; solutions[3].concentration: {"unit":
+    "ML_PER_L", "value": "327.8689"} -> {"unit": "L", "value": "0.002"} [correct];
+    solutions[3].notes: "P8 adds 2 ml M9 stock to a 6.1 ml main solution. The official
+    public JSON represented this stock with a malformed solution id ''NaN''; CultureMech
+    preserves the named stock and drops that id." -> "Add 0.002 L of M9 stock per
+    recipe batch. The L unit is a batch amount, not L/L. The manuscript describes
+    10 ml cultures; no fixed water makeup amount is inferred. The page-scoped M9 anchor
+    is malformed NaN; no global solution accession is assigned." [correct_context];
+    solutions[2].composition[0].notes: null -> "The manuscript identifies SNG as sinigrin
+    hydrate, without a hydration number. The 10 g/L value is the reagent stock strength;
+    no molar conversion is asserted." [add_context]; solutions[3].composition[1].notes:
+    null -> "The DOI-linked author manuscript specifies 15 g/L KH2PO4 in M9 5X. The
+    public P8 table instead reports 51.0 g/L; that conflicting dataset amount is retained
+    as counterevidence, not adopted as a separate supported variant." [add_context];
+    solutions[3].composition[1].source: "MediaDive public Medium P8" -> "doi:10.1007/s11104-022-05822-6"
+    [correct_source]; solutions[3].composition[1].concentration: {"unit": "G_PER_L",
+    "value": "51"} -> {"unit": "G_PER_L", "value": "15"} [conflicting_source]; notes:
+    "MediaDive public Medium P8 provides M9-SNG medium at pH 7.2 with MgSO4, CaCl2,
+    sinigrin, and M9 stock additions. The public JSON assigned the M9 stock the malformed
+    id ''NaN''; this record preserves the named M9 composition and drops that id."
+    -> "MediaDive public Medium P8 provides M9-SNG medium at pH 7.2 with MgSO4, CaCl2,
+    sinigrin, and M9 stock additions. The public JSON assigned the M9 stock the malformed
+    id ''NaN''; this record preserves the named M9 composition and drops that id.
+    Curation now uses the DOI-linked HAL v1 manuscript for stock amounts and batch
+    additions. The public page''s 6.1 ml dose denominator is not retained; no final-medium
+    component dilution or fixed makeup-water amount is inferred." [correct_context]'
 data_quality_flags:
 - ingredients_curated
 - has_ontology_mappings
@@ -58,9 +139,11 @@ data_quality_flags:
 solutions:
 - preferred_term: MgSO4 stock
   concentration:
-    value: '327.8689'
-    unit: ML_PER_L
-  notes: P8 adds 2 ml MgSO4 stock to a 6.1 ml main solution.
+    value: '0.002'
+    unit: L
+  notes: Add 0.002 L of MgSO4 stock per recipe batch. The L unit is a batch amount,
+    not L/L. The manuscript describes 10 ml cultures; no fixed water makeup amount
+    is inferred.
   composition:
   - preferred_term: MgSO4
     concentration:
@@ -73,11 +156,25 @@ solutions:
     mediaingredientmech_chebi_term:
       id: CHEBI:32599
       label: magnesium sulfate
+    evidence:
+    - reference: doi:10.1007/s11104-022-05822-6
+      supports: SUPPORT
+      snippet: 24.65 g.L-1 MgSO4
+      explanation: 'solutions[0].composition[0].concentration: Directly reported stock
+        strength for MgSO4, not final-medium concentration.  Accessed 2026-10-07;
+        captures={"P8-P9-HAL-submitted.pdf": "2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c",
+        "P8-medium-page.html": "6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39"}.
+        Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No
+        chemical grounding, growth, density or unspecified percentage basis is inferred.
+        Exact excerpt: "24.65 g.L-1 MgSO4"; locator=HAL v1 author manuscript, PDF
+        page 11 (printed 10), lines 303-308.'
 - preferred_term: CaCl2 stock
   concentration:
-    value: '1.63934'
-    unit: ML_PER_L
-  notes: P8 adds 10 uL CaCl2 stock to a 6.1 ml main solution.
+    value: '0.000010'
+    unit: L
+  notes: Add 0.000010 L of CaCl2 stock per recipe batch. The L unit is a batch amount,
+    not L/L. The manuscript describes 10 ml cultures; no fixed water makeup amount
+    is inferred.
   composition:
   - preferred_term: CaCl2
     concentration:
@@ -90,25 +187,63 @@ solutions:
     mediaingredientmech_chebi_term:
       id: CHEBI:3312
       label: calcium dichloride
+    evidence:
+    - reference: doi:10.1007/s11104-022-05822-6
+      supports: SUPPORT
+      snippet: 14.7 g.L-1 CaCl2
+      explanation: 'solutions[1].composition[0].concentration: Directly reported stock
+        strength for CaCl2, not final-medium concentration.  Accessed 2026-10-07;
+        captures={"P8-P9-HAL-submitted.pdf": "2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c",
+        "P8-medium-page.html": "6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39"}.
+        Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No
+        chemical grounding, growth, density or unspecified percentage basis is inferred.
+        Exact excerpt: "14.7 g.L-1 CaCl2"; locator=HAL v1 author manuscript, PDF page
+        11 (printed 10), lines 303-308.'
 - preferred_term: Sinigrin stock
   concentration:
-    value: '327.8689'
-    unit: ML_PER_L
-  notes: P8 adds 2 ml of a 10 g/L sinigrin stock filtered at 0.22 um in sterile water
-    at pH 7.2 to a 6.1 ml main solution.
+    value: '0.002'
+    unit: L
+  notes: Add 0.002 L of Sinigrin stock per recipe batch. The L unit is a batch amount,
+    not L/L. The manuscript describes 10 ml cultures; no fixed water makeup amount
+    is inferred.
   composition:
   - preferred_term: Sinigrin
     concentration:
       value: '10'
       unit: G_PER_L
     source: MediaDive public Medium P8
+    notes: The manuscript identifies SNG as sinigrin hydrate, without a hydration
+      number. The 10 g/L value is the reagent stock strength; no molar conversion
+      is asserted.
+    evidence:
+    - reference: doi:10.1007/s11104-022-05822-6
+      supports: SUPPORT
+      snippet: 10 g.L-1 SNG
+      explanation: 'solutions[2].composition[0].concentration: Directly reported stock
+        strength for Sinigrin, not final-medium concentration. SNG is explicitly identified
+        by the additional exact excerpt "SNG; Sinigrin hydrate" at the same locator.  Accessed
+        2026-10-07; captures={"P8-P9-HAL-submitted.pdf": "2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c",
+        "P8-medium-page.html": "6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39"}.
+        Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No
+        chemical grounding, growth, density or unspecified percentage basis is inferred.
+        Exact excerpt: "10 g.L-1 SNG"; locator=HAL v1 author manuscript, PDF page
+        11 (printed 10), lines 303-308. solutions[2].composition[0].notes: The manuscript
+        identifies SNG as sinigrin hydrate, without a hydration number. The 10 g/L
+        value is the reagent stock strength; no molar conversion is asserted. Accessed
+        2026-10-07; captures={"P8-P9-HAL-submitted.pdf": "2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c",
+        "P8-medium-page.html": "6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39"}.
+        Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No
+        chemical grounding, growth, density or unspecified percentage basis is inferred.
+        Exact excerpt: "SNG; Sinigrin hydrate"; locator=HAL v1 author manuscript,
+        PDF page 11 (printed 10), lines 303-308.'
 - preferred_term: M9 stock
   concentration:
-    value: '327.8689'
-    unit: ML_PER_L
-  notes: P8 adds 2 ml M9 stock to a 6.1 ml main solution. The official public JSON
-    represented this stock with a malformed solution id 'NaN'; CultureMech preserves
-    the named stock and drops that id.
+    value: '0.002'
+    unit: L
+  notes: Add 0.002 L of M9 stock per recipe batch. The L unit is a batch amount, not
+    L/L. The manuscript describes 10 ml cultures; no fixed water makeup amount is
+    inferred. The page-scoped M9 anchor is malformed NaN; no global solution accession
+    is assigned.
   composition:
   - preferred_term: Na2HPO4
     concentration:
@@ -121,17 +256,72 @@ solutions:
     mediaingredientmech_chebi_term:
       id: CHEBI:34683
       label: disodium hydrogenphosphate
+    evidence:
+    - reference: doi:10.1007/s11104-022-05822-6
+      supports: SUPPORT
+      snippet: 64 g.L-1 Na2HPO4
+      explanation: 'solutions[3].composition[0].concentration: Directly reported stock
+        strength for Na2HPO4, not final-medium concentration.  Accessed 2026-10-07;
+        captures={"P8-P9-HAL-submitted.pdf": "2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c",
+        "P8-medium-page.html": "6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39"}.
+        Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No
+        chemical grounding, growth, density or unspecified percentage basis is inferred.
+        Exact excerpt: "64 g.L-1 Na2HPO4"; locator=HAL v1 author manuscript, PDF page
+        11 (printed 10), lines 303-308.'
   - preferred_term: KH2PO4
     concentration:
-      value: '51'
+      value: '15'
       unit: G_PER_L
-    source: MediaDive public Medium P8
+    source: doi:10.1007/s11104-022-05822-6
     term:
       id: CHEBI:63036
       label: potassium dihydrogen phosphate
     mediaingredientmech_chebi_term:
       id: CHEBI:63036
       label: potassium dihydrogen phosphate
+    notes: The DOI-linked author manuscript specifies 15 g/L KH2PO4 in M9 5X. The
+      public P8 table instead reports 51.0 g/L; that conflicting dataset amount is
+      retained as counterevidence, not adopted as a separate supported variant.
+    evidence:
+    - reference: doi:10.1007/s11104-022-05822-6
+      supports: SUPPORT
+      snippet: 15 g.L-1 KH2PO4
+      explanation: 'solutions[3].composition[1].concentration: Directly reported stock
+        strength for KH2PO4, not final-medium concentration.  Accessed 2026-10-07;
+        captures={"P8-P9-HAL-submitted.pdf": "2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c",
+        "P8-medium-page.html": "6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39"}.
+        Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No
+        chemical grounding, growth, density or unspecified percentage basis is inferred.
+        Exact excerpt: "15 g.L-1 KH2PO4"; locator=HAL v1 author manuscript, PDF page
+        11 (printed 10), lines 303-308. solutions[3].composition[1].notes: The DOI-linked
+        author manuscript specifies 15 g/L KH2PO4 in M9 5X. The public P8 table instead
+        reports 51.0 g/L; that conflicting dataset amount is retained as counterevidence,
+        not adopted as a separate supported variant. Accessed 2026-10-07; captures={"P8-P9-HAL-submitted.pdf":
+        "2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c", "P8-medium-page.html":
+        "6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39"}. Quotes
+        decode HTML entities or PDF text glyphs and collapse whitespace. No chemical
+        grounding, growth, density or unspecified percentage basis is inferred. Exact
+        excerpt: "15 g.L-1 KH2PO4"; locator=HAL v1 author manuscript, PDF page 11
+        (printed 10), lines 303-308. solutions[3].composition[1].source: The corrected
+        value is attributed to the inspected article, not the disagreeing dataset
+        row. Accessed 2026-10-07; captures={"P8-P9-HAL-submitted.pdf": "2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c",
+        "P8-medium-page.html": "6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39"}.
+        Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No
+        chemical grounding, growth, density or unspecified percentage basis is inferred.
+        Exact excerpt: "15 g.L-1 KH2PO4"; locator=HAL v1 author manuscript, PDF page
+        11 (printed 10), lines 303-308.'
+    - reference: https://mediadive.dsmz.de/medium/P8
+      supports: REFUTE
+      snippet: KH2PO4 51.0 g/l 51 374.766
+      explanation: 'solutions[3].composition[1].concentration: Dataset row disagrees
+        with the curated 15 g/L article amount. Original methods take precedence for
+        the DOI-linked formulation. The discrepancy is explicit, not averaged or promoted
+        to a new variant. Accessed 2026-10-07; captures={"P8-P9-HAL-submitted.pdf":
+        "2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c", "P8-medium-page.html":
+        "6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39"}. Quotes
+        decode HTML entities or PDF text glyphs and collapse whitespace. No chemical
+        grounding, growth, density or unspecified percentage basis is inferred. Exact
+        excerpt: "KH2PO4 51.0 g/l 51 374.766"; locator=sol-NaN / recipe-1.'
   - preferred_term: NaCl
     concentration:
       value: '2.5'
@@ -143,6 +333,18 @@ solutions:
     mediaingredientmech_chebi_term:
       id: CHEBI:26710
       label: sodium chloride
+    evidence:
+    - reference: doi:10.1007/s11104-022-05822-6
+      supports: SUPPORT
+      snippet: 2.5 g.L-1 NaCl
+      explanation: 'solutions[3].composition[2].concentration: Directly reported stock
+        strength for NaCl, not final-medium concentration.  Accessed 2026-10-07; captures={"P8-P9-HAL-submitted.pdf":
+        "2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c", "P8-medium-page.html":
+        "6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39"}. Quotes
+        decode HTML entities or PDF text glyphs and collapse whitespace. No chemical
+        grounding, growth, density or unspecified percentage basis is inferred. Exact
+        excerpt: "2.5 g.L-1 NaCl"; locator=HAL v1 author manuscript, PDF page 11 (printed
+        10), lines 303-308.'
   - preferred_term: NH4Cl
     concentration:
       value: '5'
@@ -154,8 +356,103 @@ solutions:
     mediaingredientmech_chebi_term:
       id: CHEBI:31206
       label: ammonium chloride
+    evidence:
+    - reference: doi:10.1007/s11104-022-05822-6
+      supports: SUPPORT
+      snippet: 5 g.L-1 NH4Cl
+      explanation: 'solutions[3].composition[3].concentration: Directly reported stock
+        strength for NH4Cl, not final-medium concentration.  Accessed 2026-10-07;
+        captures={"P8-P9-HAL-submitted.pdf": "2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c",
+        "P8-medium-page.html": "6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39"}.
+        Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No
+        chemical grounding, growth, density or unspecified percentage basis is inferred.
+        Exact excerpt: "5 g.L-1 NH4Cl"; locator=HAL v1 author manuscript, PDF page
+        11 (printed 10), lines 303-308.'
 preparation_steps:
 - step_number: 1
   action: MIX
   description: Prepare M9-SNG with MgSO4, CaCl2, sinigrin, and M9 stock additions;
     use 0.22 um filtered sinigrin stock prepared in sterile water at pH 7.2.
+evidence:
+- reference: doi:10.1007/s11104-022-05822-6
+  supports: SUPPORT
+  snippet: 2 mL of 24.65 g.L-1 MgSO4
+  explanation: 'solutions[0].concentration: 2 ml / 1000 = 0.002 L per recipe batch.
+    Replaces a rate derived from the unverified 6.1 ml page control with the article''s
+    explicit addition amount. Not a per-liter working concentration or final-medium
+    dilution. Accessed 2026-10-07; captures={"P8-P9-HAL-submitted.pdf": "2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c",
+    "P8-medium-page.html": "6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39"}.
+    Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical
+    grounding, growth, density or unspecified percentage basis is inferred. Exact
+    excerpt: "2 mL of 24.65 g.L-1 MgSO4"; locator=HAL v1 author manuscript, PDF page
+    11 (printed 10), lines 303-308. solutions[0].notes: 2 ml / 1000 = 0.002 L per
+    recipe batch. Replaces a rate derived from the unverified 6.1 ml page control
+    with the article''s explicit addition amount. Not a per-liter working concentration
+    or final-medium dilution. Additional exact culture-scale excerpt: "10 mL of M9-sinigrin
+    medium". Accessed 2026-10-07; captures={"P8-P9-HAL-submitted.pdf": "2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c",
+    "P8-medium-page.html": "6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39"}.
+    Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical
+    grounding, growth, density or unspecified percentage basis is inferred. Exact
+    excerpt: "2 mL of 24.65 g.L-1 MgSO4"; locator=HAL v1 author manuscript, PDF page
+    11 (printed 10), lines 303-308. solutions[1].concentration: 10 microliters / 1000000
+    = 0.000010 L per recipe batch. Replaces a rate derived from the unverified 6.1
+    ml page control with the article''s explicit addition amount. Not a per-liter
+    working concentration or final-medium dilution. Accessed 2026-10-07; captures={"P8-P9-HAL-submitted.pdf":
+    "2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c", "P8-medium-page.html":
+    "6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39"}. Quotes decode
+    HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding,
+    growth, density or unspecified percentage basis is inferred. Exact excerpt: "10
+    µL of 14.7 g.L-1 CaCl2"; locator=HAL v1 author manuscript, PDF page 11 (printed
+    10), lines 303-308. solutions[1].notes: 10 microliters / 1000000 = 0.000010 L
+    per recipe batch. Replaces a rate derived from the unverified 6.1 ml page control
+    with the article''s explicit addition amount. Not a per-liter working concentration
+    or final-medium dilution. Additional exact culture-scale excerpt: "10 mL of M9-sinigrin
+    medium". Accessed 2026-10-07; captures={"P8-P9-HAL-submitted.pdf": "2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c",
+    "P8-medium-page.html": "6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39"}.
+    Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical
+    grounding, growth, density or unspecified percentage basis is inferred. Exact
+    excerpt: "10 µL of 14.7 g.L-1 CaCl2"; locator=HAL v1 author manuscript, PDF page
+    11 (printed 10), lines 303-308. solutions[2].concentration: 2 ml / 1000 = 0.002
+    L per recipe batch. Replaces a rate derived from the unverified 6.1 ml page control
+    with the article''s explicit addition amount. Not a per-liter working concentration
+    or final-medium dilution. Accessed 2026-10-07; captures={"P8-P9-HAL-submitted.pdf":
+    "2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c", "P8-medium-page.html":
+    "6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39"}. Quotes decode
+    HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding,
+    growth, density or unspecified percentage basis is inferred. Exact excerpt: "2
+    mL of 10 g.L-1 SNG"; locator=HAL v1 author manuscript, PDF page 11 (printed 10),
+    lines 303-308. solutions[2].notes: 2 ml / 1000 = 0.002 L per recipe batch. Replaces
+    a rate derived from the unverified 6.1 ml page control with the article''s explicit
+    addition amount. Not a per-liter working concentration or final-medium dilution.
+    Additional exact culture-scale excerpt: "10 mL of M9-sinigrin medium". Accessed
+    2026-10-07; captures={"P8-P9-HAL-submitted.pdf": "2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c",
+    "P8-medium-page.html": "6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39"}.
+    Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical
+    grounding, growth, density or unspecified percentage basis is inferred. Exact
+    excerpt: "2 mL of 10 g.L-1 SNG"; locator=HAL v1 author manuscript, PDF page 11
+    (printed 10), lines 303-308. solutions[3].concentration: 2 ml / 1000 = 0.002 L
+    per recipe batch. Replaces a rate derived from the unverified 6.1 ml page control
+    with the article''s explicit addition amount. Not a per-liter working concentration
+    or final-medium dilution. Accessed 2026-10-07; captures={"P8-P9-HAL-submitted.pdf":
+    "2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c", "P8-medium-page.html":
+    "6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39"}. Quotes decode
+    HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding,
+    growth, density or unspecified percentage basis is inferred. Exact excerpt: "2
+    mL of M9 solution"; locator=HAL v1 author manuscript, PDF page 11 (printed 10),
+    lines 303-308. solutions[3].notes: 2 ml / 1000 = 0.002 L per recipe batch. Replaces
+    a rate derived from the unverified 6.1 ml page control with the article''s explicit
+    addition amount. Not a per-liter working concentration or final-medium dilution.
+    Additional exact culture-scale excerpt: "10 mL of M9-sinigrin medium". Accessed
+    2026-10-07; captures={"P8-P9-HAL-submitted.pdf": "2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c",
+    "P8-medium-page.html": "6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39"}.
+    Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical
+    grounding, growth, density or unspecified percentage basis is inferred. Exact
+    excerpt: "2 mL of M9 solution"; locator=HAL v1 author manuscript, PDF page 11
+    (printed 10), lines 303-308. notes: Distinguishes the article''s declared culture
+    scale from the page control; keeps literal input doses without inventing a water
+    amount. Accessed 2026-10-07; captures={"P8-P9-HAL-submitted.pdf": "2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c",
+    "P8-medium-page.html": "6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39"}.
+    Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical
+    grounding, growth, density or unspecified percentage basis is inferred. Exact
+    excerpt: "10 mL of M9-sinigrin medium"; locator=HAL v1 author manuscript, PDF
+    page 11 (printed 10), lines 303-308.'

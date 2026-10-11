@@ -1,0 +1,27 @@
+# Medium Concentration Review: YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2) WITH 5% NaCl (pH 9.0)
+
+- Record: data/normalized_yaml/fungal/yeast_extract_malt_extract_agar_isp_2_with_5_nacl_ph_9_0.yaml
+- ID: CultureMech:010532
+- Reviewed commit: `f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f`
+- Before SHA256: `3fda8a31e7d3d8f31cf99fd2712a49c640d737482dd06861992d2e2868bf1a01`
+- Proposed/result SHA256: `3fda8a31e7d3d8f31cf99fd2712a49c640d737482dd06861992d2e2868bf1a01`
+- Source: https://mediadive.dsmz.de/rest/medium/J527
+- Source SHA256: af4168dce7e552bc1ffc091a526cca1c5aca59251fe2e7a6e0b37817869124bc
+- Retrieved: 2026-10-07T14:36:03.708875+00:00
+- Source type: official DSMZ dataset; discovery: existing record source ID; authors/year not supplied.
+- State: reviewed; unchanged; unresolved claims remain unchanged.
+- Baseline schema errors: 0; proposed schema errors: 0.
+- Operational failure: none
+
+Source response, exact IDs/labels, arithmetic, and literal snippets were checked by the maintained guarded reviewer. This is not a claim of manual inspection of every source sentence or automated reference-validator success. Preparation-dependent quantities and unrepresented stocks remain open. Schema validity is not scientific proof.
+
+| Field | Ingredient | Old | Proposed | Status | DOI/PURL | Exact snippet | Locator | Calculation / decision | Action |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `ingredients[0].concentration` | NaCl | {"unit": "G_PER_L", "value": "50"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J527 | unknown / not asserted | unknown / not asserted | Stock topology requires source-specific review; flattened stock concentrations are not endorsed as main-medium values. | unchanged |
+| `solutions[0].concentration` | Yeast extract-malt extract agar (ISP-2) | {"unit": "ML_PER_L", "value": "1000"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J527 | unknown / not asserted | unknown / not asserted | Stock topology requires source-specific review; flattened stock concentrations are not endorsed as main-medium values. | unchanged |
+| `solutions[1].concentration` | 10% Na2CO3 solution | {"unit": "VARIABLE", "value": "variable"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J527 | unknown / not asserted | unknown / not asserted | Stock topology requires source-specific review; flattened stock concentrations are not endorsed as main-medium values. | unchanged |
+| `solutions[1].composition[0].concentration` | Na2CO3 | {"unit": "PERCENT_W_V", "value": "10.0"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J527 | unknown / not asserted | unknown / not asserted | Stock topology requires source-specific review; flattened stock concentrations are not endorsed as main-medium values. | unchanged |
+| `parent_media` | yeast_extract_malt_extract_agar_isp_2 | {"id": "CultureMech:010528", "name": "yeast_extract_malt_extract_agar_isp_2", "notes": "Adds 50 g/L NaCl to JCM Medium 43 ISP-2 and adjusts the medium to pH 9.0 with sterilized 10% Na2CO3 solution.", "path": "data/normalized_yaml/fungal/yeast_extract_malt_extract_agar_isp_2.yaml", "relationship": "SALINITY_VARIANT"} | unknown / not asserted | unsupported | unknown / not asserted | unknown / not asserted | unknown / not asserted | Variant formulation/relationship requires its own exact source; parent evidence is not propagated. | unchanged |
+| `source.data.solutions[0].recipe[0]` | Yeast extract-malt extract agar | unknown / not asserted | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/medium/J527 | {<br>                        "recipe_order": 1,<br>                        "compound": "Yeast extract-malt extract agar",<br>                        "compound_id": 1682,<br>                        "attribute": "ISP-2) (see Medium No. 43",<br>                        "amount": 1000,<br>                        "unit": "ml",<br>                        "optional": 0<br>                    } | $.data.solutions[0].recipe[0] | Source row has no established direct-medium match. Stock, omitted solvent, optional, and missing ingredients require explicit follow-up; not silently endorsed or discarded. | unchanged |
+| `source.data.solutions[0].recipe[1]` | NaCl | unknown / not asserted | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/medium/J527 | {<br>                        "recipe_order": 2,<br>                        "compound": "NaCl",<br>                        "compound_id": 43,<br>                        "amount": 50,<br>                        "unit": "g",<br>                        "g_l": 50,<br>                        "mmol_l": 855.578,<br>                        "optional": 0<br>                    } | $.data.solutions[0].recipe[1] | Source row has no established direct-medium match. Stock, omitted solvent, optional, and missing ingredients require explicit follow-up; not silently endorsed or discarded. | unchanged |
+| `source.data.solutions[0].steps[0]` | preparation context | unknown / not asserted | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/medium/J527 | {<br>                        "step": "After autoclaving, adjust pH to 9.0 with sterilized 10% Na2CO3 solution."<br>                    } | $.data.solutions[0].steps[0] | Preparation context retained for source-specific follow-up, including supplements and downstream dilutions; no additional amount inferred from prose. | unchanged |

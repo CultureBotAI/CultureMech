@@ -5,174 +5,43 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_value: 8.0
 media_term:
   preferred_term: DSMZ Medium 1021
   term:
     id: mediadive.medium:1021
     label: SODALIS GLOSSINIDIUS MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf
+notes: |-
+  Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf
 
-
+  Superseded historical provenance (not a current formulation claim):
   Commercial Product: LB Medium (Luria-Bertani, Miller formulation)
-
   Supplier: Multiple suppliers (Difco, Sigma, etc.)
-
   Catalog: Multiple (L3522 Sigma, 244520 BD)
-
   Source: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-
   Accessed: 2026-03-28
 
+  Constituent composition researched from product specification.
 
-  Constituent composition researched from product specification.'
-ingredients:
-- preferred_term: Yeast extract
-  concentration:
-    value: '6.88889'
-    unit: G_PER_L
-- preferred_term: Tryptone
-  term:
-    id: MICRO:0000182
-    label: tryptone
-  concentration:
-    value: '10.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
-    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
-  synonyms:
-  - synonym_text: pancreatic digest of casein
-    synonym_type: EXACT
-  - synonym_text: casein peptone
-    synonym_type: EXACT
-- preferred_term: Yeast extract
-  term:
-    id: FOODON:03315426
-    label: yeast extract
-  concentration:
-    value: '5.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
-    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
-    product
-- preferred_term: Sodium chloride
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  concentration:
-    value: '10.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
-    (Luria-Bertani, Miller formulation) commercial product
-  synonyms:
-  - synonym_text: NaCl
-    synonym_type: EXACT
-  - synonym_text: table salt
-    synonym_type: EXACT
-- preferred_term: D-Glucose
-  term:
-    id: CHEBI:17634
-    label: D-glucose
-  concentration:
-    value: '5.55556'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17634
-    label: D-glucose
-- preferred_term: KCl
-  term:
-    id: CHEBI:32588
-    label: potassium chloride
-  concentration:
-    value: '0.277778'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32588
-    label: potassium chloride
-- preferred_term: MgCl2 x 6 H2O
-  term:
-    id: CHEBI:86345
-    label: magnesium dichloride hexahydrate
-  concentration:
-    value: '0.133333'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86345
-    label: magnesium dichloride hexahydrate
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-  concentration:
-    value: '0.277778'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  concentration:
-    value: '9.66667'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: NaHCO3
-  term:
-    id: CHEBI:32139
-    label: sodium hydrogencarbonate
-  concentration:
-    value: '0.166667'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32139
-    label: sodium hydrogencarbonate
-- preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: agar
-  concentration:
-    value: '18.8889'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: NaH2PO4 x 2 H2O
-  term:
-    id: CHEBI:37585
-    label: sodium dihydrogenphosphate
-  concentration:
-    value: '2.8'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:37585
-    label: sodium dihydrogenphosphate
+  The false LB constituent expansion is withdrawn. Each source's actual hydrolysate and preparation scope is retained. Existing unrelated chemical annotations and history are preserved, not recertified; no taxa-media growth association is added.
+ingredients: []
 preparation_steps:
 - step_number: 1
-  action: AUTOCLAVE
-  description: Sterilize solution A and B separately at 121°C for 20 min. Cool to
-    50°C, then combine. To 4 parts of the above, add 1 part sterile foetal or new
-    borne calf serum. Liquid medium should be filter sterilized instead of autoclaved.
-- step_number: 2
   action: ADJUST_PH
-  description: Adjust pH to 8.0.
+  description: Prepare Solution A according to the linked DSMZ 1021 protocol and adjust
+    Solution A to pH 8.0. This is not a measured final-medium pH.
+- step_number: 2
+  action: AUTOCLAVE
+  description: For the solid preparation, sterilize Solution A and Solution B separately
+    at 121 C for 20 min. Do not autoclave the serum-supplemented mixture.
+- step_number: 3
+  action: COOL
+  description: Cool the separately sterilized solutions to 50 C, then combine A and
+    B.
+- step_number: 4
+  action: MIX
+  description: To 4 parts of the combined basal preparation, add 1 part sterile foetal
+    or newborn calf serum. Preserve the reported ratio; no fixed serum batch dose
+    or mass concentration is asserted.
 applications:
 - Microbial cultivation
 curation_history:
@@ -199,9 +68,1143 @@ curation_history:
   notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-08T23:50:40.246918+00:00'
+  curator: codex
+  action: RESTORED_SOURCE_SPECIFIC_HYDROLYSATE_FORMULATIONS_WITH_EVIDENCE
+  notes: Restore source-specific hydrolysates, stock/basal/medium quantity boundaries,
+    missing inputs and preparation; correct unsupported duplicate links. Preserve
+    IDs and prior history. Unknown serum bases/doses and gas amounts remain unknown.
+  source: https://mediadive.dsmz.de/rest/medium/1021
+  changes: '[{"old_field": null, "field": "solutions[0].notes", "old": null, "new":
+    "Combine the separately prepared A and B before serum supplementation. The source
+    then specifies 4 parts base to 1 part serum; no fixed receiving-medium dose or
+    final total volume is asserted.", "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/1021",
+    "snippet": "{\n                        \"step\": \"Sterilize solution A and B
+    separately at 121\\u00b0C for 20 min. Cool to 50\\u00b0C, then combine. To 4 parts
+    of the above, add 1 part sterile foetal or new borne calf serum. Liquid medium
+    should be filter sterilized instead of autoclaved.\"\n                    }"},
+    {"old_field": null, "field": "solutions[0].solutions[0].concentration", "old":
+    null, "new": {"value": "0.9", "unit": "L"}, "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/1021",
+    "snippet": "{\n                        \"recipe_order\": 1,\n                        \"solution\":
+    \"Solution A\",\n                        \"solution_id\": 2074,\n                        \"amount\":
+    900,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[0].solutions[0].notes",
+    "old": null, "new": "Provider-reported addition to the combined basal preparation
+    before serum; not a final-medium concentration.", "status": "add", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1021", "snippet": "{\n                        \"recipe_order\":
+    1,\n                        \"solution\": \"Solution A\",\n                        \"solution_id\":
+    2074,\n                        \"amount\": 900,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[0].concentration", "field": "solutions[0].solutions[0].composition[0].concentration",
+    "old": {"value": "6.88889", "unit": "G_PER_L"}, "new": {"value": "6.88889", "unit":
+    "G_PER_L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1021",
+    "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\":
+    6.2,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    6.88889,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[0].notes", "field": "solutions[0].solutions[0].composition[0].notes",
+    "old": null, "new": "Source batch input: 6.2 g in Solution A. The attached g/L
+    value is the API-reported stock rate, not a final-medium concentration; original
+    water input alone does not establish a measured final stock volume.", "status":
+    "evidence_only", "reference": "https://mediadive.dsmz.de/rest/medium/1021", "snippet":
+    "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\":
+    6.2,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    6.88889,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[0].solutions[0].composition[0].notes", "old": null,
+    "new": "Source batch input: 6.2 g in Solution A. The attached g/L value is the
+    API-reported stock rate, not a final-medium concentration; original water input
+    alone does not establish a measured final stock volume.", "status": "evidence_only",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+    "snippet": "Yeast extract                                                                 6.20         g"},
+    {"old_field": null, "field": "solutions[0].solutions[0].composition[1].concentration",
+    "old": null, "new": {"value": "9", "unit": "G_PER_L"}, "status": "add", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1021", "snippet": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Lactalbumin hydrolysate\",\n                        \"compound_id\":
+    2143,\n                        \"amount\": 8.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 9,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[0].solutions[0].composition[1].notes",
+    "old": null, "new": "Source batch input: 8.1 g in Solution A. The attached g/L
+    value is the API-reported stock rate, not a final-medium concentration; original
+    water input alone does not establish a measured final stock volume.", "status":
+    "evidence_only", "reference": "https://mediadive.dsmz.de/rest/medium/1021", "snippet":
+    "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Lactalbumin hydrolysate\",\n                        \"compound_id\": 2143,\n                        \"amount\":
+    8.1,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    9,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[0].solutions[0].composition[1].notes", "old": null,
+    "new": "Source batch input: 8.1 g in Solution A. The attached g/L value is the
+    API-reported stock rate, not a final-medium concentration; original water input
+    alone does not establish a measured final stock volume.", "status": "evidence_only",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+    "snippet": "Lactalbumin hydrolysate or\n Casein hydrolysate                                                            8.10         g"},
+    {"old_field": "ingredients[4].concentration", "field": "solutions[0].solutions[0].composition[2].concentration",
+    "old": {"value": "5.55556", "unit": "G_PER_L"}, "new": {"value": "5.55556", "unit":
+    "G_PER_L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1021",
+    "snippet": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"D-Glucose\",\n                        \"compound_id\": 211,\n                        \"amount\":
+    5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    5.55556,\n                        \"mmol_l\": 30.8368,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[4].notes", "field": "solutions[0].solutions[0].composition[2].notes",
+    "old": null, "new": "Source batch input: 5 g in Solution A. The attached g/L value
+    is the API-reported stock rate, not a final-medium concentration; original water
+    input alone does not establish a measured final stock volume.", "status": "evidence_only",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1021", "snippet": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"D-Glucose\",\n                        \"compound_id\":
+    211,\n                        \"amount\": 5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 5.55556,\n                        \"mmol_l\":
+    30.8368,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[0].solutions[0].composition[2].notes", "old": null,
+    "new": "Source batch input: 5 g in Solution A. The attached g/L value is the API-reported
+    stock rate, not a final-medium concentration; original water input alone does
+    not establish a measured final stock volume.", "status": "evidence_only", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf", "snippet":
+    "D-Glucose                                                                     5.00         g"},
+    {"old_field": "ingredients[5].concentration", "field": "solutions[0].solutions[0].composition[3].concentration",
+    "old": {"value": "0.277778", "unit": "G_PER_L"}, "new": {"value": "0.277778",
+    "unit": "G_PER_L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1021",
+    "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\":
+    0.25,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.277778,\n                        \"mmol_l\": 3.72606,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[5].notes", "field": "solutions[0].solutions[0].composition[3].notes",
+    "old": null, "new": "Source batch input: 0.25 g in Solution A. The attached g/L
+    value is the API-reported stock rate, not a final-medium concentration; original
+    water input alone does not establish a measured final stock volume.", "status":
+    "evidence_only", "reference": "https://mediadive.dsmz.de/rest/medium/1021", "snippet":
+    "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\":
+    0.25,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.277778,\n                        \"mmol_l\": 3.72606,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[0].solutions[0].composition[3].notes",
+    "old": null, "new": "Source batch input: 0.25 g in Solution A. The attached g/L
+    value is the API-reported stock rate, not a final-medium concentration; original
+    water input alone does not establish a measured final stock volume.", "status":
+    "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+    "snippet": "KCl                                                                           0.25         g"},
+    {"old_field": "ingredients[6].concentration", "field": "solutions[0].solutions[0].composition[4].concentration",
+    "old": {"value": "0.133333", "unit": "G_PER_L"}, "new": {"value": "0.133333",
+    "unit": "G_PER_L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1021",
+    "snippet": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\":
+    0.12,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.133333,\n                        \"mmol_l\": 0.655836,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[6].notes", "field": "solutions[0].solutions[0].composition[4].notes",
+    "old": null, "new": "Source batch input: 0.12 g in Solution A. The attached g/L
+    value is the API-reported stock rate, not a final-medium concentration; original
+    water input alone does not establish a measured final stock volume.", "status":
+    "evidence_only", "reference": "https://mediadive.dsmz.de/rest/medium/1021", "snippet":
+    "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\":
+    0.12,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.133333,\n                        \"mmol_l\": 0.655836,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[0].solutions[0].composition[4].notes",
+    "old": null, "new": "Source batch input: 0.12 g in Solution A. The attached g/L
+    value is the API-reported stock rate, not a final-medium concentration; original
+    water input alone does not establish a measured final stock volume.", "status":
+    "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+    "snippet": "MgCl2 x 6 H2O                                                                 0.12         g"},
+    {"old_field": "ingredients[7].concentration", "field": "solutions[0].solutions[0].composition[5].concentration",
+    "old": {"value": "0.277778", "unit": "G_PER_L"}, "new": {"value": "0.277778",
+    "unit": "G_PER_L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1021",
+    "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\":
+    \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\":
+    0.25,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.277778,\n                        \"mmol_l\": 1.88945,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[7].notes", "field": "solutions[0].solutions[0].composition[5].notes",
+    "old": null, "new": "Source batch input: 0.25 g in Solution A. The attached g/L
+    value is the API-reported stock rate, not a final-medium concentration; original
+    water input alone does not establish a measured final stock volume.", "status":
+    "evidence_only", "reference": "https://mediadive.dsmz.de/rest/medium/1021", "snippet":
+    "{\n                        \"recipe_order\": 7,\n                        \"compound\":
+    \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\":
+    0.25,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.277778,\n                        \"mmol_l\": 1.88945,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[0].solutions[0].composition[5].notes",
+    "old": null, "new": "Source batch input: 0.25 g in Solution A. The attached g/L
+    value is the API-reported stock rate, not a final-medium concentration; original
+    water input alone does not establish a measured final stock volume.", "status":
+    "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+    "snippet": "CaCl2 x 2 H2O                                                                 0.25         g"},
+    {"old_field": "ingredients[8].concentration", "field": "solutions[0].solutions[0].composition[6].concentration",
+    "old": {"value": "9.66667", "unit": "G_PER_L"}, "new": {"value": "9.66667", "unit":
+    "G_PER_L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1021",
+    "snippet": "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\":
+    8.7,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    9.66667,\n                        \"mmol_l\": 165.412,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[8].notes", "field": "solutions[0].solutions[0].composition[6].notes",
+    "old": null, "new": "Source batch input: 8.7 g in Solution A. The attached g/L
+    value is the API-reported stock rate, not a final-medium concentration; original
+    water input alone does not establish a measured final stock volume.", "status":
+    "evidence_only", "reference": "https://mediadive.dsmz.de/rest/medium/1021", "snippet":
+    "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\":
+    8.7,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    9.66667,\n                        \"mmol_l\": 165.412,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[0].solutions[0].composition[6].notes",
+    "old": null, "new": "Source batch input: 8.7 g in Solution A. The attached g/L
+    value is the API-reported stock rate, not a final-medium concentration; original
+    water input alone does not establish a measured final stock volume.", "status":
+    "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+    "snippet": "NaCl                                                                          8.70         g"},
+    {"old_field": "ingredients[9].concentration", "field": "solutions[0].solutions[0].composition[7].concentration",
+    "old": {"value": "0.166667", "unit": "G_PER_L"}, "new": {"value": "0.166667",
+    "unit": "G_PER_L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1021",
+    "snippet": "{\n                        \"recipe_order\": 9,\n                        \"compound\":
+    \"NaHCO3\",\n                        \"compound_id\": 55,\n                        \"amount\":
+    0.15,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.166667,\n                        \"mmol_l\": 1.98396,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[9].notes", "field": "solutions[0].solutions[0].composition[7].notes",
+    "old": null, "new": "Source batch input: 0.15 g in Solution A. The attached g/L
+    value is the API-reported stock rate, not a final-medium concentration; original
+    water input alone does not establish a measured final stock volume.", "status":
+    "evidence_only", "reference": "https://mediadive.dsmz.de/rest/medium/1021", "snippet":
+    "{\n                        \"recipe_order\": 9,\n                        \"compound\":
+    \"NaHCO3\",\n                        \"compound_id\": 55,\n                        \"amount\":
+    0.15,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.166667,\n                        \"mmol_l\": 1.98396,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[0].solutions[0].composition[7].notes",
+    "old": null, "new": "Source batch input: 0.15 g in Solution A. The attached g/L
+    value is the API-reported stock rate, not a final-medium concentration; original
+    water input alone does not establish a measured final stock volume.", "status":
+    "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+    "snippet": "NaHCO3                                                                        0.15         g"},
+    {"old_field": "ingredients[10].concentration", "field": "solutions[0].solutions[0].composition[8].concentration",
+    "old": {"value": "18.8889", "unit": "G_PER_L"}, "new": {"value": "18.8889", "unit":
+    "G_PER_L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1021",
+    "snippet": "{\n                        \"recipe_order\": 10,\n                        \"compound\":
+    \"Agar\",\n                        \"compound_id\": 3,\n                        \"amount\":
+    17,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    18.8889,\n                        \"mmol_l\": 56.1618,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[10].notes", "field": "solutions[0].solutions[0].composition[8].notes",
+    "old": null, "new": "Source batch input: 17 g in Solution A. The attached g/L
+    value is the API-reported stock rate, not a final-medium concentration; original
+    water input alone does not establish a measured final stock volume.", "status":
+    "evidence_only", "reference": "https://mediadive.dsmz.de/rest/medium/1021", "snippet":
+    "{\n                        \"recipe_order\": 10,\n                        \"compound\":
+    \"Agar\",\n                        \"compound_id\": 3,\n                        \"amount\":
+    17,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    18.8889,\n                        \"mmol_l\": 56.1618,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[0].solutions[0].composition[8].notes",
+    "old": null, "new": "Source batch input: 17 g in Solution A. The attached g/L
+    value is the API-reported stock rate, not a final-medium concentration; original
+    water input alone does not establish a measured final stock volume.", "status":
+    "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+    "snippet": "Agar                                                                        17.00          g"},
+    {"old_field": null, "field": "solutions[0].solutions[0].composition[9].concentration",
+    "old": null, "new": {"value": "0.9", "unit": "L"}, "status": "add", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1021", "snippet": "{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 900,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[0].solutions[0].composition[9].notes", "old": null,
+    "new": "Source batch input: 900 ml in Solution A. Water is a stock batch input,
+    not a final-volume marker.", "status": "evidence_only", "reference": "https://mediadive.dsmz.de/rest/medium/1021",
+    "snippet": "{\n                        \"recipe_order\": 11,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    900,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": "preparation_steps[1].description",
+    "field": "solutions[0].solutions[0].preparation_notes", "old": "Adjust pH to 8.0.",
+    "new": "Adjust Solution A to pH 8.0 before the separately described sterilization
+    and later additions; titrant and amount are not specified.", "status": "evidence_only",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+    "snippet": "Adjust pH to 8.0."}, {"old_field": null, "field": "solutions[0].solutions[1].concentration",
+    "old": null, "new": {"value": "0.1", "unit": "L"}, "status": "add", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1021", "snippet": "{\n                        \"recipe_order\":
+    2,\n                        \"solution\": \"Solution B\",\n                        \"solution_id\":
+    2075,\n                        \"amount\": 100,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[0].solutions[1].notes", "old": null, "new": "Provider-reported
+    addition to the combined basal preparation before serum; not a final-medium concentration.",
+    "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/1021", "snippet":
+    "{\n                        \"recipe_order\": 2,\n                        \"solution\":
+    \"Solution B\",\n                        \"solution_id\": 2075,\n                        \"amount\":
+    100,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[11].concentration", "field":
+    "solutions[0].solutions[1].composition[0].concentration", "old": {"value": "2.8",
+    "unit": "G_PER_L"}, "new": {"value": "2.8", "unit": "G_PER_L"}, "status": "correct",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1021", "snippet": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"NaH2PO4 x 2 H2O\",\n                        \"compound_id\":
+    678,\n                        \"amount\": 0.28,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2.8,\n                        \"mmol_l\":
+    23.3378,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[11].notes", "field": "solutions[0].solutions[1].composition[0].notes",
+    "old": null, "new": "Source batch input: 0.28 g in Solution B. The attached g/L
+    value is the API-reported stock rate, not a final-medium concentration; original
+    water input alone does not establish a measured final stock volume.", "status":
+    "evidence_only", "reference": "https://mediadive.dsmz.de/rest/medium/1021", "snippet":
+    "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"NaH2PO4 x 2 H2O\",\n                        \"compound_id\": 678,\n                        \"amount\":
+    0.28,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    2.8,\n                        \"mmol_l\": 23.3378,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[0].solutions[1].composition[0].notes",
+    "old": null, "new": "Source batch input: 0.28 g in Solution B. The attached g/L
+    value is the API-reported stock rate, not a final-medium concentration; original
+    water input alone does not establish a measured final stock volume.", "status":
+    "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+    "snippet": "NaH2PO4 x 2 H2O                                                               0.28         g"},
+    {"old_field": null, "field": "solutions[0].solutions[1].composition[1].concentration",
+    "old": null, "new": {"value": "0.1", "unit": "L"}, "status": "add", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1021", "snippet": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 100,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[0].solutions[1].composition[1].notes", "old": null,
+    "new": "Source batch input: 100 ml in Solution B. Water is a stock batch input,
+    not a final-volume marker.", "status": "evidence_only", "reference": "https://mediadive.dsmz.de/rest/medium/1021",
+    "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    100,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ph_value", "field": "ph_value", "old":
+    8.0, "new": null, "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+    "snippet": "Adjust pH to 8.0."}, {"old_field": null, "field": "preparation_steps[0].description",
+    "old": null, "new": "Prepare Solution A according to the linked DSMZ 1021 protocol
+    and adjust Solution A to pH 8.0. This is not a measured final-medium pH.", "status":
+    "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+    "snippet": "Adjust pH to 8.0."}, {"old_field": null, "field": "preparation_steps[1].description",
+    "old": null, "new": "For the solid preparation, sterilize Solution A and Solution
+    B separately at 121 C for 20 min. Do not autoclave the serum-supplemented mixture.",
+    "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+    "snippet": "Sterilize solution A and B separately at 121\uf0b0C for 20 min. Cool
+    to 50\uf0b0C, then combine. To\n4 parts of the above, add 1 part sterile foetal
+    or new borne calf serum. Liquid medium\nshould be filter sterilized instead of
+    autoclaved."}, {"old_field": null, "field": "preparation_steps[2].description",
+    "old": null, "new": "Cool the separately sterilized solutions to 50 C, then combine
+    A and B.", "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+    "snippet": "Sterilize solution A and B separately at 121\uf0b0C for 20 min. Cool
+    to 50\uf0b0C, then combine. To\n4 parts of the above, add 1 part sterile foetal
+    or new borne calf serum. Liquid medium\nshould be filter sterilized instead of
+    autoclaved."}, {"old_field": null, "field": "preparation_steps[3].description",
+    "old": null, "new": "To 4 parts of the combined basal preparation, add 1 part
+    sterile foetal or newborn calf serum. Preserve the reported ratio; no fixed serum
+    batch dose or mass concentration is asserted.", "status": "evidence_only", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf", "snippet":
+    "Sterilize solution A and B separately at 121\uf0b0C for 20 min. Cool to 50\uf0b0C,
+    then combine. To\n4 parts of the above, add 1 part sterile foetal or new borne
+    calf serum. Liquid medium\nshould be filter sterilized instead of autoclaved."},
+    {"old_field": null, "field": "variants[0].modifications", "old": null, "new":
+    ["Filter sterilize the liquid preparation instead of autoclaving. No membrane
+    pore size is specified.", "The source does not explicitly quantify the agar change
+    for this alternative; no numeric agar amount is invented."], "status": "evidence_only",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+    "snippet": "Sterilize solution A and B separately at 121\uf0b0C for 20 min. Cool
+    to 50\uf0b0C, then combine. To\n4 parts of the above, add 1 part sterile foetal
+    or new borne calf serum. Liquid medium\nshould be filter sterilized instead of
+    autoclaved."}, {"old_field": null, "field": "solutions[1].notes", "old": null,
+    "new": "Add 1 part to 4 parts combined basal preparation after cooling. The source
+    permits either serum; no mass concentration, fixed dose or numeric percent basis
+    is inferred.", "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+    "snippet": "Sterilize solution A and B separately at 121\uf0b0C for 20 min. Cool
+    to 50\uf0b0C, then combine. To\n4 parts of the above, add 1 part sterile foetal
+    or new borne calf serum. Liquid medium\nshould be filter sterilized instead of
+    autoclaved."}, {"old_field": null, "field": "variants[1].modifications", "old":
+    null, "new": ["Replace the 8.10 g lactalbumin hydrolysate batch input in Solution
+    A with 8.10 g casein hydrolysate, not both together. Other preparation instructions
+    are unchanged."], "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+    "snippet": "Lactalbumin hydrolysate or\n Casein hydrolysate                                                            8.10         g"},
+    {"old_field": "ingredients[1].concentration", "field": "notes", "old": {"value":
+    "10.0", "unit": "G_PER_L"}, "new": "Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf\n\nSuperseded
+    historical provenance (not a current formulation claim):\nCommercial Product:
+    LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThe
+    false LB constituent expansion is withdrawn. Each source''s actual hydrolysate
+    and preparation scope is retained. Existing unrelated chemical annotations and
+    history are preserved, not recertified; no taxa-media growth association is added.",
+    "status": "remove_unsupported", "reference": "https://mediadive.dsmz.de/rest/medium/1021",
+    "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Lactalbumin hydrolysate\",\n                        \"compound_id\": 2143,\n                        \"amount\":
+    8.1,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    9,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[2].concentration", "field": "notes", "old": {"value": "5.0", "unit":
+    "G_PER_L"}, "new": "Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf\n\nSuperseded
+    historical provenance (not a current formulation claim):\nCommercial Product:
+    LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThe
+    false LB constituent expansion is withdrawn. Each source''s actual hydrolysate
+    and preparation scope is retained. Existing unrelated chemical annotations and
+    history are preserved, not recertified; no taxa-media growth association is added.",
+    "status": "remove_unsupported", "reference": "https://mediadive.dsmz.de/rest/medium/1021",
+    "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Lactalbumin hydrolysate\",\n                        \"compound_id\": 2143,\n                        \"amount\":
+    8.1,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    9,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[3].concentration", "field": "notes", "old": {"value": "10.0", "unit":
+    "G_PER_L"}, "new": "Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf\n\nSuperseded
+    historical provenance (not a current formulation claim):\nCommercial Product:
+    LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThe
+    false LB constituent expansion is withdrawn. Each source''s actual hydrolysate
+    and preparation scope is retained. Existing unrelated chemical annotations and
+    history are preserved, not recertified; no taxa-media growth association is added.",
+    "status": "remove_unsupported", "reference": "https://mediadive.dsmz.de/rest/medium/1021",
+    "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Lactalbumin hydrolysate\",\n                        \"compound_id\": 2143,\n                        \"amount\":
+    8.1,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    9,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "variant_children[0].relationship", "field": "variant_children[0].relationship",
+    "old": "SOURCE_DUPLICATE", "new": "DERIVED_FROM", "status": "correct", "reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+    "snippet": "casein hydrolysate casein hydrolysate"}, {"old_field": "variant_children[0].notes",
+    "field": "variant_children[0].notes", "old": "Same source medium number and matching
+    ingredient/concentration signature.", "new": "KOMODO 1021 selects the permitted
+    casein alternative and reports post-supplement medium rates; these encodings are
+    not treated as an exact duplicate of the lactalbumin stock-based record.", "status":
+    "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+    "snippet": "casein hydrolysate casein hydrolysate"}]'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_1021_SODALIS_GLOSSINIDIUS_medium.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: DERIVED_FROM
   id: CultureMech:003534
   name: sodalis_glossinidius_medium
-  notes: Same source medium number and matching ingredient/concentration signature.
+  notes: KOMODO 1021 selects the permitted casein alternative and reports post-supplement
+    medium rates; these encodings are not treated as an exact duplicate of the lactalbumin
+    stock-based record.
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021
+    supports: SUPPORT
+    snippet: casein hydrolysate casein hydrolysate
+    explanation: |-
+      variant_children[0].relationship: KOMODO 1021 selects the permitted casein alternative and reports post-supplement medium rates; these encodings are not treated as an exact duplicate of the lactalbumin stock-based record. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-08T23:33:48.903979+00:00; capture SHA256=e4a9e272f0b17354335496c754134b228d36dcba6f41b2288e83e584be6cbd16.
+
+      Additional exact excerpt: casein hydrolysate casein hydrolysate
+      variant_children[0].notes: KOMODO 1021 selects the permitted casein alternative and reports post-supplement medium rates; these encodings are not treated as an exact duplicate of the lactalbumin stock-based record. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-08T23:33:48.903979+00:00; capture SHA256=e4a9e272f0b17354335496c754134b228d36dcba6f41b2288e83e584be6cbd16.
+solutions:
+- preferred_term: Combined basal preparation (Solutions A and B)
+  solutions:
+  - preferred_term: Solution A
+    concentration:
+      value: '0.9'
+      unit: L
+    composition:
+    - preferred_term: Yeast extract
+      concentration:
+        value: '6.88889'
+        unit: G_PER_L
+      notes: 'Source batch input: 6.2 g in Solution A. The attached g/L value is the
+        API-reported stock rate, not a final-medium concentration; original water
+        input alone does not establish a measured final stock volume.'
+      evidence:
+      - reference: https://mediadive.dsmz.de/rest/medium/1021
+        supports: SUPPORT
+        snippet: |-
+          {
+                                  "recipe_order": 1,
+                                  "compound": "Yeast extract",
+                                  "compound_id": 16,
+                                  "amount": 6.2,
+                                  "unit": "g",
+                                  "g_l": 6.88889,
+                                  "optional": 0
+                              }
+        explanation: |-
+          solutions[0].solutions[0].composition[0].concentration: Source batch input: 6.2 g in Solution A. The attached g/L value is the API-reported stock rate, not a final-medium concentration; original water input alone does not establish a measured final stock volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[0]; accessed=2026-10-08T23:33:45.857794+00:00; capture SHA256=d325e15252a6497eccc092a46fac0d12cb13ea0d91b3765990ca6c6e3dccf4b4.
+
+          Additional exact excerpt: {
+                                  "recipe_order": 1,
+                                  "compound": "Yeast extract",
+                                  "compound_id": 16,
+                                  "amount": 6.2,
+                                  "unit": "g",
+                                  "g_l": 6.88889,
+                                  "optional": 0
+                              }
+          solutions[0].solutions[0].composition[0].notes: Source batch input: 6.2 g in Solution A. The attached g/L value is the API-reported stock rate, not a final-medium concentration; original water input alone does not establish a measured final stock volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[0]; accessed=2026-10-08T23:33:45.857794+00:00; capture SHA256=d325e15252a6497eccc092a46fac0d12cb13ea0d91b3765990ca6c6e3dccf4b4.
+      - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf
+        supports: SUPPORT
+        snippet: Yeast extract                                                                 6.20         g
+        explanation: 'solutions[0].solutions[0].composition[0].notes: The original
+          recipe corroborates this stock batch mass and chemical form; stock rates
+          remain separately attributed to the API. No unstated density, final volume,
+          percent basis or chemical identifier is inferred. Locator=original recipe
+          table/text; accessed=2026-10-08T23:33:46.995198+00:00; capture SHA256=1326bfc6d79f8ed3ad765909aa48d3e4efbb378516ada4a4087710860d8b7cc8.'
+    - preferred_term: Lactalbumin hydrolysate
+      concentration:
+        value: '9'
+        unit: G_PER_L
+      notes: 'Source batch input: 8.1 g in Solution A. The attached g/L value is the
+        API-reported stock rate, not a final-medium concentration; original water
+        input alone does not establish a measured final stock volume.'
+      evidence:
+      - reference: https://mediadive.dsmz.de/rest/medium/1021
+        supports: SUPPORT
+        snippet: |-
+          {
+                                  "recipe_order": 2,
+                                  "compound": "Lactalbumin hydrolysate",
+                                  "compound_id": 2143,
+                                  "amount": 8.1,
+                                  "unit": "g",
+                                  "g_l": 9,
+                                  "optional": 0
+                              }
+        explanation: |-
+          solutions[0].solutions[0].composition[1].concentration: Source batch input: 8.1 g in Solution A. The attached g/L value is the API-reported stock rate, not a final-medium concentration; original water input alone does not establish a measured final stock volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[1]; accessed=2026-10-08T23:33:45.857794+00:00; capture SHA256=d325e15252a6497eccc092a46fac0d12cb13ea0d91b3765990ca6c6e3dccf4b4.
+
+          Additional exact excerpt: {
+                                  "recipe_order": 2,
+                                  "compound": "Lactalbumin hydrolysate",
+                                  "compound_id": 2143,
+                                  "amount": 8.1,
+                                  "unit": "g",
+                                  "g_l": 9,
+                                  "optional": 0
+                              }
+          solutions[0].solutions[0].composition[1].notes: Source batch input: 8.1 g in Solution A. The attached g/L value is the API-reported stock rate, not a final-medium concentration; original water input alone does not establish a measured final stock volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[1]; accessed=2026-10-08T23:33:45.857794+00:00; capture SHA256=d325e15252a6497eccc092a46fac0d12cb13ea0d91b3765990ca6c6e3dccf4b4.
+      - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf
+        supports: SUPPORT
+        snippet: |-
+          Lactalbumin hydrolysate or
+           Casein hydrolysate                                                            8.10         g
+        explanation: 'solutions[0].solutions[0].composition[1].notes: The original
+          recipe corroborates this stock batch mass and chemical form; stock rates
+          remain separately attributed to the API. No unstated density, final volume,
+          percent basis or chemical identifier is inferred. Locator=original recipe
+          table/text; accessed=2026-10-08T23:33:46.995198+00:00; capture SHA256=1326bfc6d79f8ed3ad765909aa48d3e4efbb378516ada4a4087710860d8b7cc8.'
+    - preferred_term: D-Glucose
+      term:
+        id: CHEBI:17634
+        label: D-glucose
+      concentration:
+        value: '5.55556'
+        unit: G_PER_L
+      mediaingredientmech_chebi_term:
+        id: CHEBI:17634
+        label: D-glucose
+      notes: 'Source batch input: 5 g in Solution A. The attached g/L value is the
+        API-reported stock rate, not a final-medium concentration; original water
+        input alone does not establish a measured final stock volume.'
+      evidence:
+      - reference: https://mediadive.dsmz.de/rest/medium/1021
+        supports: SUPPORT
+        snippet: |-
+          {
+                                  "recipe_order": 4,
+                                  "compound": "D-Glucose",
+                                  "compound_id": 211,
+                                  "amount": 5,
+                                  "unit": "g",
+                                  "g_l": 5.55556,
+                                  "mmol_l": 30.8368,
+                                  "optional": 0
+                              }
+        explanation: |-
+          solutions[0].solutions[0].composition[2].concentration: Source batch input: 5 g in Solution A. The attached g/L value is the API-reported stock rate, not a final-medium concentration; original water input alone does not establish a measured final stock volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[2]; accessed=2026-10-08T23:33:45.857794+00:00; capture SHA256=d325e15252a6497eccc092a46fac0d12cb13ea0d91b3765990ca6c6e3dccf4b4.
+
+          Additional exact excerpt: {
+                                  "recipe_order": 4,
+                                  "compound": "D-Glucose",
+                                  "compound_id": 211,
+                                  "amount": 5,
+                                  "unit": "g",
+                                  "g_l": 5.55556,
+                                  "mmol_l": 30.8368,
+                                  "optional": 0
+                              }
+          solutions[0].solutions[0].composition[2].notes: Source batch input: 5 g in Solution A. The attached g/L value is the API-reported stock rate, not a final-medium concentration; original water input alone does not establish a measured final stock volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[2]; accessed=2026-10-08T23:33:45.857794+00:00; capture SHA256=d325e15252a6497eccc092a46fac0d12cb13ea0d91b3765990ca6c6e3dccf4b4.
+      - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf
+        supports: SUPPORT
+        snippet: D-Glucose                                                                     5.00         g
+        explanation: 'solutions[0].solutions[0].composition[2].notes: The original
+          recipe corroborates this stock batch mass and chemical form; stock rates
+          remain separately attributed to the API. No unstated density, final volume,
+          percent basis or chemical identifier is inferred. Locator=original recipe
+          table/text; accessed=2026-10-08T23:33:46.995198+00:00; capture SHA256=1326bfc6d79f8ed3ad765909aa48d3e4efbb378516ada4a4087710860d8b7cc8.'
+    - preferred_term: KCl
+      term:
+        id: CHEBI:32588
+        label: potassium chloride
+      concentration:
+        value: '0.277778'
+        unit: G_PER_L
+      mediaingredientmech_chebi_term:
+        id: CHEBI:32588
+        label: potassium chloride
+      notes: 'Source batch input: 0.25 g in Solution A. The attached g/L value is
+        the API-reported stock rate, not a final-medium concentration; original water
+        input alone does not establish a measured final stock volume.'
+      evidence:
+      - reference: https://mediadive.dsmz.de/rest/medium/1021
+        supports: SUPPORT
+        snippet: |-
+          {
+                                  "recipe_order": 5,
+                                  "compound": "KCl",
+                                  "compound_id": 61,
+                                  "amount": 0.25,
+                                  "unit": "g",
+                                  "g_l": 0.277778,
+                                  "mmol_l": 3.72606,
+                                  "optional": 0
+                              }
+        explanation: |-
+          solutions[0].solutions[0].composition[3].concentration: Source batch input: 0.25 g in Solution A. The attached g/L value is the API-reported stock rate, not a final-medium concentration; original water input alone does not establish a measured final stock volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[3]; accessed=2026-10-08T23:33:45.857794+00:00; capture SHA256=d325e15252a6497eccc092a46fac0d12cb13ea0d91b3765990ca6c6e3dccf4b4.
+
+          Additional exact excerpt: {
+                                  "recipe_order": 5,
+                                  "compound": "KCl",
+                                  "compound_id": 61,
+                                  "amount": 0.25,
+                                  "unit": "g",
+                                  "g_l": 0.277778,
+                                  "mmol_l": 3.72606,
+                                  "optional": 0
+                              }
+          solutions[0].solutions[0].composition[3].notes: Source batch input: 0.25 g in Solution A. The attached g/L value is the API-reported stock rate, not a final-medium concentration; original water input alone does not establish a measured final stock volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[3]; accessed=2026-10-08T23:33:45.857794+00:00; capture SHA256=d325e15252a6497eccc092a46fac0d12cb13ea0d91b3765990ca6c6e3dccf4b4.
+      - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf
+        supports: SUPPORT
+        snippet: KCl                                                                           0.25         g
+        explanation: 'solutions[0].solutions[0].composition[3].notes: The original
+          recipe corroborates this stock batch mass and chemical form; stock rates
+          remain separately attributed to the API. No unstated density, final volume,
+          percent basis or chemical identifier is inferred. Locator=original recipe
+          table/text; accessed=2026-10-08T23:33:46.995198+00:00; capture SHA256=1326bfc6d79f8ed3ad765909aa48d3e4efbb378516ada4a4087710860d8b7cc8.'
+    - preferred_term: MgCl2 x 6 H2O
+      term:
+        id: CHEBI:86345
+        label: magnesium dichloride hexahydrate
+      concentration:
+        value: '0.133333'
+        unit: G_PER_L
+      mediaingredientmech_chebi_term:
+        id: CHEBI:86345
+        label: magnesium dichloride hexahydrate
+      notes: 'Source batch input: 0.12 g in Solution A. The attached g/L value is
+        the API-reported stock rate, not a final-medium concentration; original water
+        input alone does not establish a measured final stock volume.'
+      evidence:
+      - reference: https://mediadive.dsmz.de/rest/medium/1021
+        supports: SUPPORT
+        snippet: |-
+          {
+                                  "recipe_order": 6,
+                                  "compound": "MgCl2 x 6 H2O",
+                                  "compound_id": 79,
+                                  "amount": 0.12,
+                                  "unit": "g",
+                                  "g_l": 0.133333,
+                                  "mmol_l": 0.655836,
+                                  "optional": 0
+                              }
+        explanation: |-
+          solutions[0].solutions[0].composition[4].concentration: Source batch input: 0.12 g in Solution A. The attached g/L value is the API-reported stock rate, not a final-medium concentration; original water input alone does not establish a measured final stock volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[4]; accessed=2026-10-08T23:33:45.857794+00:00; capture SHA256=d325e15252a6497eccc092a46fac0d12cb13ea0d91b3765990ca6c6e3dccf4b4.
+
+          Additional exact excerpt: {
+                                  "recipe_order": 6,
+                                  "compound": "MgCl2 x 6 H2O",
+                                  "compound_id": 79,
+                                  "amount": 0.12,
+                                  "unit": "g",
+                                  "g_l": 0.133333,
+                                  "mmol_l": 0.655836,
+                                  "optional": 0
+                              }
+          solutions[0].solutions[0].composition[4].notes: Source batch input: 0.12 g in Solution A. The attached g/L value is the API-reported stock rate, not a final-medium concentration; original water input alone does not establish a measured final stock volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[4]; accessed=2026-10-08T23:33:45.857794+00:00; capture SHA256=d325e15252a6497eccc092a46fac0d12cb13ea0d91b3765990ca6c6e3dccf4b4.
+      - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf
+        supports: SUPPORT
+        snippet: MgCl2 x 6 H2O                                                                 0.12         g
+        explanation: 'solutions[0].solutions[0].composition[4].notes: The original
+          recipe corroborates this stock batch mass and chemical form; stock rates
+          remain separately attributed to the API. No unstated density, final volume,
+          percent basis or chemical identifier is inferred. Locator=original recipe
+          table/text; accessed=2026-10-08T23:33:46.995198+00:00; capture SHA256=1326bfc6d79f8ed3ad765909aa48d3e4efbb378516ada4a4087710860d8b7cc8.'
+    - preferred_term: CaCl2 x 2 H2O
+      term:
+        id: CHEBI:86158
+        label: calcium chloride dihydrate
+      concentration:
+        value: '0.277778'
+        unit: G_PER_L
+      mediaingredientmech_chebi_term:
+        id: CHEBI:86158
+        label: calcium chloride dihydrate
+      notes: 'Source batch input: 0.25 g in Solution A. The attached g/L value is
+        the API-reported stock rate, not a final-medium concentration; original water
+        input alone does not establish a measured final stock volume.'
+      evidence:
+      - reference: https://mediadive.dsmz.de/rest/medium/1021
+        supports: SUPPORT
+        snippet: |-
+          {
+                                  "recipe_order": 7,
+                                  "compound": "CaCl2 x 2 H2O",
+                                  "compound_id": 7,
+                                  "amount": 0.25,
+                                  "unit": "g",
+                                  "g_l": 0.277778,
+                                  "mmol_l": 1.88945,
+                                  "optional": 0
+                              }
+        explanation: |-
+          solutions[0].solutions[0].composition[5].concentration: Source batch input: 0.25 g in Solution A. The attached g/L value is the API-reported stock rate, not a final-medium concentration; original water input alone does not establish a measured final stock volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[5]; accessed=2026-10-08T23:33:45.857794+00:00; capture SHA256=d325e15252a6497eccc092a46fac0d12cb13ea0d91b3765990ca6c6e3dccf4b4.
+
+          Additional exact excerpt: {
+                                  "recipe_order": 7,
+                                  "compound": "CaCl2 x 2 H2O",
+                                  "compound_id": 7,
+                                  "amount": 0.25,
+                                  "unit": "g",
+                                  "g_l": 0.277778,
+                                  "mmol_l": 1.88945,
+                                  "optional": 0
+                              }
+          solutions[0].solutions[0].composition[5].notes: Source batch input: 0.25 g in Solution A. The attached g/L value is the API-reported stock rate, not a final-medium concentration; original water input alone does not establish a measured final stock volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[5]; accessed=2026-10-08T23:33:45.857794+00:00; capture SHA256=d325e15252a6497eccc092a46fac0d12cb13ea0d91b3765990ca6c6e3dccf4b4.
+      - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf
+        supports: SUPPORT
+        snippet: CaCl2 x 2 H2O                                                                 0.25         g
+        explanation: 'solutions[0].solutions[0].composition[5].notes: The original
+          recipe corroborates this stock batch mass and chemical form; stock rates
+          remain separately attributed to the API. No unstated density, final volume,
+          percent basis or chemical identifier is inferred. Locator=original recipe
+          table/text; accessed=2026-10-08T23:33:46.995198+00:00; capture SHA256=1326bfc6d79f8ed3ad765909aa48d3e4efbb378516ada4a4087710860d8b7cc8.'
+    - preferred_term: NaCl
+      term:
+        id: CHEBI:26710
+        label: sodium chloride
+      concentration:
+        value: '9.66667'
+        unit: G_PER_L
+      mediaingredientmech_chebi_term:
+        id: CHEBI:26710
+        label: sodium chloride
+      notes: 'Source batch input: 8.7 g in Solution A. The attached g/L value is the
+        API-reported stock rate, not a final-medium concentration; original water
+        input alone does not establish a measured final stock volume.'
+      evidence:
+      - reference: https://mediadive.dsmz.de/rest/medium/1021
+        supports: SUPPORT
+        snippet: |-
+          {
+                                  "recipe_order": 8,
+                                  "compound": "NaCl",
+                                  "compound_id": 43,
+                                  "amount": 8.7,
+                                  "unit": "g",
+                                  "g_l": 9.66667,
+                                  "mmol_l": 165.412,
+                                  "optional": 0
+                              }
+        explanation: |-
+          solutions[0].solutions[0].composition[6].concentration: Source batch input: 8.7 g in Solution A. The attached g/L value is the API-reported stock rate, not a final-medium concentration; original water input alone does not establish a measured final stock volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[6]; accessed=2026-10-08T23:33:45.857794+00:00; capture SHA256=d325e15252a6497eccc092a46fac0d12cb13ea0d91b3765990ca6c6e3dccf4b4.
+
+          Additional exact excerpt: {
+                                  "recipe_order": 8,
+                                  "compound": "NaCl",
+                                  "compound_id": 43,
+                                  "amount": 8.7,
+                                  "unit": "g",
+                                  "g_l": 9.66667,
+                                  "mmol_l": 165.412,
+                                  "optional": 0
+                              }
+          solutions[0].solutions[0].composition[6].notes: Source batch input: 8.7 g in Solution A. The attached g/L value is the API-reported stock rate, not a final-medium concentration; original water input alone does not establish a measured final stock volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[6]; accessed=2026-10-08T23:33:45.857794+00:00; capture SHA256=d325e15252a6497eccc092a46fac0d12cb13ea0d91b3765990ca6c6e3dccf4b4.
+      - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf
+        supports: SUPPORT
+        snippet: NaCl                                                                          8.70         g
+        explanation: 'solutions[0].solutions[0].composition[6].notes: The original
+          recipe corroborates this stock batch mass and chemical form; stock rates
+          remain separately attributed to the API. No unstated density, final volume,
+          percent basis or chemical identifier is inferred. Locator=original recipe
+          table/text; accessed=2026-10-08T23:33:46.995198+00:00; capture SHA256=1326bfc6d79f8ed3ad765909aa48d3e4efbb378516ada4a4087710860d8b7cc8.'
+    - preferred_term: NaHCO3
+      term:
+        id: CHEBI:32139
+        label: sodium hydrogencarbonate
+      concentration:
+        value: '0.166667'
+        unit: G_PER_L
+      mediaingredientmech_chebi_term:
+        id: CHEBI:32139
+        label: sodium hydrogencarbonate
+      notes: 'Source batch input: 0.15 g in Solution A. The attached g/L value is
+        the API-reported stock rate, not a final-medium concentration; original water
+        input alone does not establish a measured final stock volume.'
+      evidence:
+      - reference: https://mediadive.dsmz.de/rest/medium/1021
+        supports: SUPPORT
+        snippet: |-
+          {
+                                  "recipe_order": 9,
+                                  "compound": "NaHCO3",
+                                  "compound_id": 55,
+                                  "amount": 0.15,
+                                  "unit": "g",
+                                  "g_l": 0.166667,
+                                  "mmol_l": 1.98396,
+                                  "optional": 0
+                              }
+        explanation: |-
+          solutions[0].solutions[0].composition[7].concentration: Source batch input: 0.15 g in Solution A. The attached g/L value is the API-reported stock rate, not a final-medium concentration; original water input alone does not establish a measured final stock volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[7]; accessed=2026-10-08T23:33:45.857794+00:00; capture SHA256=d325e15252a6497eccc092a46fac0d12cb13ea0d91b3765990ca6c6e3dccf4b4.
+
+          Additional exact excerpt: {
+                                  "recipe_order": 9,
+                                  "compound": "NaHCO3",
+                                  "compound_id": 55,
+                                  "amount": 0.15,
+                                  "unit": "g",
+                                  "g_l": 0.166667,
+                                  "mmol_l": 1.98396,
+                                  "optional": 0
+                              }
+          solutions[0].solutions[0].composition[7].notes: Source batch input: 0.15 g in Solution A. The attached g/L value is the API-reported stock rate, not a final-medium concentration; original water input alone does not establish a measured final stock volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[7]; accessed=2026-10-08T23:33:45.857794+00:00; capture SHA256=d325e15252a6497eccc092a46fac0d12cb13ea0d91b3765990ca6c6e3dccf4b4.
+      - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf
+        supports: SUPPORT
+        snippet: NaHCO3                                                                        0.15         g
+        explanation: 'solutions[0].solutions[0].composition[7].notes: The original
+          recipe corroborates this stock batch mass and chemical form; stock rates
+          remain separately attributed to the API. No unstated density, final volume,
+          percent basis or chemical identifier is inferred. Locator=original recipe
+          table/text; accessed=2026-10-08T23:33:46.995198+00:00; capture SHA256=1326bfc6d79f8ed3ad765909aa48d3e4efbb378516ada4a4087710860d8b7cc8.'
+    - preferred_term: Agar
+      term:
+        id: CHEBI:2509
+        label: agar
+      concentration:
+        value: '18.8889'
+        unit: G_PER_L
+      mediaingredientmech_chebi_term:
+        id: CHEBI:2509
+        label: agar
+      notes: 'Source batch input: 17 g in Solution A. The attached g/L value is the
+        API-reported stock rate, not a final-medium concentration; original water
+        input alone does not establish a measured final stock volume.'
+      evidence:
+      - reference: https://mediadive.dsmz.de/rest/medium/1021
+        supports: SUPPORT
+        snippet: |-
+          {
+                                  "recipe_order": 10,
+                                  "compound": "Agar",
+                                  "compound_id": 3,
+                                  "amount": 17,
+                                  "unit": "g",
+                                  "g_l": 18.8889,
+                                  "mmol_l": 56.1618,
+                                  "optional": 0
+                              }
+        explanation: |-
+          solutions[0].solutions[0].composition[8].concentration: Source batch input: 17 g in Solution A. The attached g/L value is the API-reported stock rate, not a final-medium concentration; original water input alone does not establish a measured final stock volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[8]; accessed=2026-10-08T23:33:45.857794+00:00; capture SHA256=d325e15252a6497eccc092a46fac0d12cb13ea0d91b3765990ca6c6e3dccf4b4.
+
+          Additional exact excerpt: {
+                                  "recipe_order": 10,
+                                  "compound": "Agar",
+                                  "compound_id": 3,
+                                  "amount": 17,
+                                  "unit": "g",
+                                  "g_l": 18.8889,
+                                  "mmol_l": 56.1618,
+                                  "optional": 0
+                              }
+          solutions[0].solutions[0].composition[8].notes: Source batch input: 17 g in Solution A. The attached g/L value is the API-reported stock rate, not a final-medium concentration; original water input alone does not establish a measured final stock volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[8]; accessed=2026-10-08T23:33:45.857794+00:00; capture SHA256=d325e15252a6497eccc092a46fac0d12cb13ea0d91b3765990ca6c6e3dccf4b4.
+      - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf
+        supports: SUPPORT
+        snippet: Agar                                                                        17.00          g
+        explanation: 'solutions[0].solutions[0].composition[8].notes: The original
+          recipe corroborates this stock batch mass and chemical form; stock rates
+          remain separately attributed to the API. No unstated density, final volume,
+          percent basis or chemical identifier is inferred. Locator=original recipe
+          table/text; accessed=2026-10-08T23:33:46.995198+00:00; capture SHA256=1326bfc6d79f8ed3ad765909aa48d3e4efbb378516ada4a4087710860d8b7cc8.'
+    - preferred_term: Distilled water
+      concentration:
+        value: '0.9'
+        unit: L
+      notes: 'Source batch input: 900 ml in Solution A. Water is a stock batch input,
+        not a final-volume marker.'
+      evidence:
+      - reference: https://mediadive.dsmz.de/rest/medium/1021
+        supports: SUPPORT
+        snippet: |-
+          {
+                                  "recipe_order": 11,
+                                  "compound": "Distilled water",
+                                  "compound_id": 4,
+                                  "amount": 900,
+                                  "unit": "ml",
+                                  "optional": 0
+                              }
+        explanation: |-
+          solutions[0].solutions[0].composition[9].concentration: Source batch input: 900 ml in Solution A. Water is a stock batch input, not a final-volume marker. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[9]; accessed=2026-10-08T23:33:45.857794+00:00; capture SHA256=d325e15252a6497eccc092a46fac0d12cb13ea0d91b3765990ca6c6e3dccf4b4.
+
+          Additional exact excerpt: {
+                                  "recipe_order": 11,
+                                  "compound": "Distilled water",
+                                  "compound_id": 4,
+                                  "amount": 900,
+                                  "unit": "ml",
+                                  "optional": 0
+                              }
+          solutions[0].solutions[0].composition[9].notes: Source batch input: 900 ml in Solution A. Water is a stock batch input, not a final-volume marker. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[9]; accessed=2026-10-08T23:33:45.857794+00:00; capture SHA256=d325e15252a6497eccc092a46fac0d12cb13ea0d91b3765990ca6c6e3dccf4b4.
+    notes: Provider-reported addition to the combined basal preparation before serum;
+      not a final-medium concentration.
+    preparation_notes: Adjust Solution A to pH 8.0 before the separately described
+      sterilization and later additions; titrant and amount are not specified.
+  - preferred_term: Solution B
+    concentration:
+      value: '0.1'
+      unit: L
+    composition:
+    - preferred_term: NaH2PO4 x 2 H2O
+      term:
+        id: CHEBI:37585
+        label: sodium dihydrogenphosphate
+      concentration:
+        value: '2.8'
+        unit: G_PER_L
+      mediaingredientmech_chebi_term:
+        id: CHEBI:37585
+        label: sodium dihydrogenphosphate
+      notes: 'Source batch input: 0.28 g in Solution B. The attached g/L value is
+        the API-reported stock rate, not a final-medium concentration; original water
+        input alone does not establish a measured final stock volume.'
+      evidence:
+      - reference: https://mediadive.dsmz.de/rest/medium/1021
+        supports: SUPPORT
+        snippet: |-
+          {
+                                  "recipe_order": 1,
+                                  "compound": "NaH2PO4 x 2 H2O",
+                                  "compound_id": 678,
+                                  "amount": 0.28,
+                                  "unit": "g",
+                                  "g_l": 2.8,
+                                  "mmol_l": 23.3378,
+                                  "optional": 0
+                              }
+        explanation: |-
+          solutions[0].solutions[1].composition[0].concentration: Source batch input: 0.28 g in Solution B. The attached g/L value is the API-reported stock rate, not a final-medium concentration; original water input alone does not establish a measured final stock volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[2].recipe[0]; accessed=2026-10-08T23:33:45.857794+00:00; capture SHA256=d325e15252a6497eccc092a46fac0d12cb13ea0d91b3765990ca6c6e3dccf4b4.
+
+          Additional exact excerpt: {
+                                  "recipe_order": 1,
+                                  "compound": "NaH2PO4 x 2 H2O",
+                                  "compound_id": 678,
+                                  "amount": 0.28,
+                                  "unit": "g",
+                                  "g_l": 2.8,
+                                  "mmol_l": 23.3378,
+                                  "optional": 0
+                              }
+          solutions[0].solutions[1].composition[0].notes: Source batch input: 0.28 g in Solution B. The attached g/L value is the API-reported stock rate, not a final-medium concentration; original water input alone does not establish a measured final stock volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[2].recipe[0]; accessed=2026-10-08T23:33:45.857794+00:00; capture SHA256=d325e15252a6497eccc092a46fac0d12cb13ea0d91b3765990ca6c6e3dccf4b4.
+      - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf
+        supports: SUPPORT
+        snippet: NaH2PO4 x 2 H2O                                                               0.28         g
+        explanation: 'solutions[0].solutions[1].composition[0].notes: The original
+          recipe corroborates this stock batch mass and chemical form; stock rates
+          remain separately attributed to the API. No unstated density, final volume,
+          percent basis or chemical identifier is inferred. Locator=original recipe
+          table/text; accessed=2026-10-08T23:33:46.995198+00:00; capture SHA256=1326bfc6d79f8ed3ad765909aa48d3e4efbb378516ada4a4087710860d8b7cc8.'
+    - preferred_term: Distilled water
+      concentration:
+        value: '0.1'
+        unit: L
+      notes: 'Source batch input: 100 ml in Solution B. Water is a stock batch input,
+        not a final-volume marker.'
+      evidence:
+      - reference: https://mediadive.dsmz.de/rest/medium/1021
+        supports: SUPPORT
+        snippet: |-
+          {
+                                  "recipe_order": 2,
+                                  "compound": "Distilled water",
+                                  "compound_id": 4,
+                                  "amount": 100,
+                                  "unit": "ml",
+                                  "optional": 0
+                              }
+        explanation: |-
+          solutions[0].solutions[1].composition[1].concentration: Source batch input: 100 ml in Solution B. Water is a stock batch input, not a final-volume marker. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[2].recipe[1]; accessed=2026-10-08T23:33:45.857794+00:00; capture SHA256=d325e15252a6497eccc092a46fac0d12cb13ea0d91b3765990ca6c6e3dccf4b4.
+
+          Additional exact excerpt: {
+                                  "recipe_order": 2,
+                                  "compound": "Distilled water",
+                                  "compound_id": 4,
+                                  "amount": 100,
+                                  "unit": "ml",
+                                  "optional": 0
+                              }
+          solutions[0].solutions[1].composition[1].notes: Source batch input: 100 ml in Solution B. Water is a stock batch input, not a final-volume marker. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[2].recipe[1]; accessed=2026-10-08T23:33:45.857794+00:00; capture SHA256=d325e15252a6497eccc092a46fac0d12cb13ea0d91b3765990ca6c6e3dccf4b4.
+    notes: Provider-reported addition to the combined basal preparation before serum;
+      not a final-medium concentration.
+  notes: Combine the separately prepared A and B before serum supplementation. The
+    source then specifies 4 parts base to 1 part serum; no fixed receiving-medium
+    dose or final total volume is asserted.
+- preferred_term: Sterile foetal or newborn calf serum
+  notes: Add 1 part to 4 parts combined basal preparation after cooling. The source
+    permits either serum; no mass concentration, fixed dose or numeric percent basis
+    is inferred.
+variants:
+- name: Liquid preparation described by DSMZ 1021
+  relationship: PHYSICAL_STATE_VARIANT
+  description: The source describes an alternative liquid preparation but does not
+    provide a separate complete ingredient table.
+  modifications:
+  - Filter sterilize the liquid preparation instead of autoclaving. No membrane pore
+    size is specified.
+  - The source does not explicitly quantify the agar change for this alternative;
+    no numeric agar amount is invented.
+  evidence:
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf
+    supports: SUPPORT
+    snippet: |-
+      Sterilize solution A and B separately at 121C for 20 min. Cool to 50C, then combine. To
+      4 parts of the above, add 1 part sterile foetal or new borne calf serum. Liquid medium
+      should be filter sterilized instead of autoclaved.
+    explanation: 'variants[0].modifications: Preserve the source''s conditional liquid
+      preparation, not an invented fully quantified broth recipe. No unstated density,
+      final volume, percent basis or chemical identifier is inferred. Locator=original
+      recipe table/text; accessed=2026-10-08T23:33:46.995198+00:00; capture SHA256=1326bfc6d79f8ed3ad765909aa48d3e4efbb378516ada4a4087710860d8b7cc8.'
+- name: Casein hydrolysate alternative
+  relationship: SUBSTITUTED_COMPONENT_VARIANT
+  description: The original DSMZ recipe allows casein hydrolysate in place of lactalbumin
+    hydrolysate.
+  modifications:
+  - Replace the 8.10 g lactalbumin hydrolysate batch input in Solution A with 8.10
+    g casein hydrolysate, not both together. Other preparation instructions are unchanged.
+  evidence:
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf
+    supports: SUPPORT
+    snippet: |-
+      Lactalbumin hydrolysate or
+       Casein hydrolysate                                                            8.10         g
+    explanation: 'variants[1].modifications: Preserve the source-explicit alternative
+      omitted from the API, as a separate substitution rather than an additional ingredient.
+      No unstated density, final volume, percent basis or chemical identifier is inferred.
+      Locator=original recipe table/text; accessed=2026-10-08T23:33:46.995198+00:00;
+      capture SHA256=1326bfc6d79f8ed3ad765909aa48d3e4efbb378516ada4a4087710860d8b7cc8.'
+evidence:
+- reference: https://mediadive.dsmz.de/rest/medium/1021
+  supports: SUPPORT
+  snippet: |-
+    {
+                            "step": "Sterilize solution A and B separately at 121\u00b0C for 20 min. Cool to 50\u00b0C, then combine. To 4 parts of the above, add 1 part sterile foetal or new borne calf serum. Liquid medium should be filter sterilized instead of autoclaved."
+                        }
+  explanation: |-
+    solutions[0].notes: Keep the pre-serum preparation separate from the receiving medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].steps[0]; accessed=2026-10-08T23:33:45.857794+00:00; capture SHA256=d325e15252a6497eccc092a46fac0d12cb13ea0d91b3765990ca6c6e3dccf4b4.
+
+    Additional exact excerpt: {
+                            "recipe_order": 1,
+                            "solution": "Solution A",
+                            "solution_id": 2074,
+                            "amount": 900,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+    solutions[0].solutions[0].concentration: Use the source-explicit A/B batch doses at pre-serum basal scope only; ml / 1000 gives L. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[0]; accessed=2026-10-08T23:33:45.857794+00:00; capture SHA256=d325e15252a6497eccc092a46fac0d12cb13ea0d91b3765990ca6c6e3dccf4b4.
+
+    Additional exact excerpt: {
+                            "recipe_order": 1,
+                            "solution": "Solution A",
+                            "solution_id": 2074,
+                            "amount": 900,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+    solutions[0].solutions[0].notes: Use the source-explicit A/B batch doses at pre-serum basal scope only; ml / 1000 gives L. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[0]; accessed=2026-10-08T23:33:45.857794+00:00; capture SHA256=d325e15252a6497eccc092a46fac0d12cb13ea0d91b3765990ca6c6e3dccf4b4.
+
+    Additional exact excerpt: {
+                            "recipe_order": 2,
+                            "solution": "Solution B",
+                            "solution_id": 2075,
+                            "amount": 100,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+    solutions[0].solutions[1].concentration: Use the source-explicit A/B batch doses at pre-serum basal scope only; ml / 1000 gives L. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[1]; accessed=2026-10-08T23:33:45.857794+00:00; capture SHA256=d325e15252a6497eccc092a46fac0d12cb13ea0d91b3765990ca6c6e3dccf4b4.
+
+    Additional exact excerpt: {
+                            "recipe_order": 2,
+                            "solution": "Solution B",
+                            "solution_id": 2075,
+                            "amount": 100,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+    solutions[0].solutions[1].notes: Use the source-explicit A/B batch doses at pre-serum basal scope only; ml / 1000 gives L. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[1]; accessed=2026-10-08T23:33:45.857794+00:00; capture SHA256=d325e15252a6497eccc092a46fac0d12cb13ea0d91b3765990ca6c6e3dccf4b4.
+
+    Additional exact excerpt: {
+                            "recipe_order": 2,
+                            "compound": "Lactalbumin hydrolysate",
+                            "compound_id": 2143,
+                            "amount": 8.1,
+                            "unit": "g",
+                            "g_l": 9,
+                            "optional": 0
+                        }
+    notes: Remove the falsely substituted LB constituent and dose; the exact source specifies hydrolysate, not LB medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[1]; accessed=2026-10-08T23:33:45.857794+00:00; capture SHA256=d325e15252a6497eccc092a46fac0d12cb13ea0d91b3765990ca6c6e3dccf4b4.
+
+    Additional exact excerpt: {
+                            "recipe_order": 2,
+                            "compound": "Lactalbumin hydrolysate",
+                            "compound_id": 2143,
+                            "amount": 8.1,
+                            "unit": "g",
+                            "g_l": 9,
+                            "optional": 0
+                        }
+    notes: Remove the falsely substituted LB constituent and dose; the exact source specifies hydrolysate, not LB medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[1]; accessed=2026-10-08T23:33:45.857794+00:00; capture SHA256=d325e15252a6497eccc092a46fac0d12cb13ea0d91b3765990ca6c6e3dccf4b4.
+
+    Additional exact excerpt: {
+                            "recipe_order": 2,
+                            "compound": "Lactalbumin hydrolysate",
+                            "compound_id": 2143,
+                            "amount": 8.1,
+                            "unit": "g",
+                            "g_l": 9,
+                            "optional": 0
+                        }
+    notes: Remove the falsely substituted LB constituent and dose; the exact source specifies hydrolysate, not LB medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[1]; accessed=2026-10-08T23:33:45.857794+00:00; capture SHA256=d325e15252a6497eccc092a46fac0d12cb13ea0d91b3765990ca6c6e3dccf4b4.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf
+  supports: SUPPORT
+  snippet: Adjust pH to 8.0.
+  explanation: |-
+    solutions[0].solutions[0].preparation_notes: Move the pH instruction to its original stock context. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-08T23:33:46.995198+00:00; capture SHA256=1326bfc6d79f8ed3ad765909aa48d3e4efbb378516ada4a4087710860d8b7cc8.
+
+    Additional exact excerpt: Adjust pH to 8.0.
+    ph_value: Withdraw flattened final-medium pH; the PDF places the adjustment under Solution A. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-08T23:33:46.995198+00:00; capture SHA256=1326bfc6d79f8ed3ad765909aa48d3e4efbb378516ada4a4087710860d8b7cc8.
+
+    Additional exact excerpt: Adjust pH to 8.0.
+    preparation_steps[0].description: Linked original protocol retains separate sterilization, cooling and later serum supplementation. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-08T23:33:46.995198+00:00; capture SHA256=1326bfc6d79f8ed3ad765909aa48d3e4efbb378516ada4a4087710860d8b7cc8.
+
+    Additional exact excerpt: Sterilize solution A and B separately at 121C for 20 min. Cool to 50C, then combine. To
+    4 parts of the above, add 1 part sterile foetal or new borne calf serum. Liquid medium
+    should be filter sterilized instead of autoclaved.
+    preparation_steps[1].description: Linked original protocol retains separate sterilization, cooling and later serum supplementation. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-08T23:33:46.995198+00:00; capture SHA256=1326bfc6d79f8ed3ad765909aa48d3e4efbb378516ada4a4087710860d8b7cc8.
+
+    Additional exact excerpt: Sterilize solution A and B separately at 121C for 20 min. Cool to 50C, then combine. To
+    4 parts of the above, add 1 part sterile foetal or new borne calf serum. Liquid medium
+    should be filter sterilized instead of autoclaved.
+    preparation_steps[2].description: Linked original protocol retains separate sterilization, cooling and later serum supplementation. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-08T23:33:46.995198+00:00; capture SHA256=1326bfc6d79f8ed3ad765909aa48d3e4efbb378516ada4a4087710860d8b7cc8.
+
+    Additional exact excerpt: Sterilize solution A and B separately at 121C for 20 min. Cool to 50C, then combine. To
+    4 parts of the above, add 1 part sterile foetal or new borne calf serum. Liquid medium
+    should be filter sterilized instead of autoclaved.
+    preparation_steps[3].description: Linked original protocol retains separate sterilization, cooling and later serum supplementation. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-08T23:33:46.995198+00:00; capture SHA256=1326bfc6d79f8ed3ad765909aa48d3e4efbb378516ada4a4087710860d8b7cc8.
+
+    Additional exact excerpt: Sterilize solution A and B separately at 121C for 20 min. Cool to 50C, then combine. To
+    4 parts of the above, add 1 part sterile foetal or new borne calf serum. Liquid medium
+    should be filter sterilized instead of autoclaved.
+    solutions[1].notes: Restore the explicit serum input and ratio without converting generic parts into an assumed concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-08T23:33:46.995198+00:00; capture SHA256=1326bfc6d79f8ed3ad765909aa48d3e4efbb378516ada4a4087710860d8b7cc8.
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/1021
+  title: SODALIS GLOSSINIDIUS MEDIUM
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-08;
+    accession=D1021; capture_sha256=d325e15252a6497eccc092a46fac0d12cb13ea0d91b3765990ca6c6e3dccf4b4.
+    Authors and publication year are not supplied. Copyright/access years are not
+    publication years. This source supports formulation, not newly curated organism
+    growth.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf
+  title: 1021. SODALIS GLOSSINIDIUS MEDIUM
+  notes: source_type=culture_collection_page; discovery_mode=cross_reference; accessed_on=2026-10-08;
+    accession=DSMZ1021; capture_sha256=1326bfc6d79f8ed3ad765909aa48d3e4efbb378516ada4a4087710860d8b7cc8.
+    Authors and publication year are not supplied. Copyright/access years are not
+    publication years. This source supports formulation, not newly curated organism
+    growth.
+- reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021
+  title: KOMODO - the Known Media Database
+  notes: source_type=dataset; discovery_mode=catalog_page; accessed_on=2026-10-08;
+    accession=K1021; capture_sha256=e4a9e272f0b17354335496c754134b228d36dcba6f41b2288e83e584be6cbd16.
+    Authors and publication year are not supplied. Copyright/access years are not
+    publication years. This source supports formulation, not newly curated organism
+    growth.

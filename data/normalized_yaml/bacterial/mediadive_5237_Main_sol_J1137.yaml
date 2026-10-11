@@ -16,6 +16,32 @@ composition:
     label: sodium hydrogencarbonate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5237
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "NaHCO3",
+                      "compound_id": 55,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.84,
+                      "unit": "g",
+                      "g_l": 0.84,
+                      "mmol_l": 9.99917,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (NaHCO3)
+      in MediaDive solution 5237; locator=$.data.recipe[1] (compound_id=55). Provider
+      explicitly reports g_l=0.84. Arithmetic check: 0.84 g * 1 g/g / (1000 ml / 1000
+      ml per L) = 0.84 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T09:52:34.008797+00:00; response SHA256=b605989596ad60f4942e448eed3d8cf57824dcad1797ae5fcb8fc0de5295dc3c.'
 - preferred_term: Glycerol
   concentration:
     value: '0.46'
@@ -27,6 +53,32 @@ composition:
     id: CHEBI:17754
     label: glycerol
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5237
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "Glycerol",
+                      "compound_id": 72,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.46,
+                      "unit": "g",
+                      "g_l": 0.46,
+                      "mmol_l": 4.99511,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Glycerol)
+      in MediaDive solution 5237; locator=$.data.recipe[2] (compound_id=72). Provider
+      explicitly reports g_l=0.46. Arithmetic check: 0.46 g * 1 g/g / (1000 ml / 1000
+      ml per L) = 0.46 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T09:52:34.008797+00:00; response SHA256=b605989596ad60f4942e448eed3d8cf57824dcad1797ae5fcb8fc0de5295dc3c.'
 - preferred_term: KH2PO4
   concentration:
     value: '0.03'
@@ -39,6 +91,32 @@ composition:
     label: potassium dihydrogen phosphate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5237
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "KH2PO4",
+                      "compound_id": 11,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.03,
+                      "unit": "g",
+                      "g_l": 0.03,
+                      "mmol_l": 0.220449,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[2].concentration (KH2PO4)
+      in MediaDive solution 5237; locator=$.data.recipe[3] (compound_id=11). Provider
+      explicitly reports g_l=0.03. Arithmetic check: 0.03 g * 1 g/g / (1000 ml / 1000
+      ml per L) = 0.03 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T09:52:34.008797+00:00; response SHA256=b605989596ad60f4942e448eed3d8cf57824dcad1797ae5fcb8fc0de5295dc3c.'
 - preferred_term: Na2CO3
   concentration:
     value: '0.02'
@@ -51,6 +129,32 @@ composition:
     label: sodium carbonate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5237
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 5,
+                      "compound": "Na2CO3",
+                      "compound_id": 32,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.02,
+                      "unit": "g",
+                      "g_l": 0.02,
+                      "mmol_l": 0.188701,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[3].concentration (Na2CO3)
+      in MediaDive solution 5237; locator=$.data.recipe[4] (compound_id=32). Provider
+      explicitly reports g_l=0.02. Arithmetic check: 0.02 g * 1 g/g / (1000 ml / 1000
+      ml per L) = 0.02 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T09:52:34.008797+00:00; response SHA256=b605989596ad60f4942e448eed3d8cf57824dcad1797ae5fcb8fc0de5295dc3c.'
 - preferred_term: Ammonium ferric citrate
   concentration:
     value: '0.00142'
@@ -63,6 +167,33 @@ composition:
     label: ferric ammonium citrate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5237
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 6,
+                      "compound": "Ammonium ferric citrate",
+                      "compound_id": 2007,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1.42,
+                      "unit": "mg",
+                      "g_l": 0.00142,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[4].concentration (Ammonium
+      ferric citrate) in MediaDive solution 5237; locator=$.data.recipe[5] (compound_id=2007).
+      Provider explicitly reports g_l=0.00142. Arithmetic check: 1.42 mg * 0.001 g/mg
+      / (1000 ml / 1000 ml per L) = 0.00142 g/L, consistent with the reported value
+      at its precision. Evidence supports the provider-declared concentration within
+      this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T09:52:34.008797+00:00;
+      response SHA256=b605989596ad60f4942e448eed3d8cf57824dcad1797ae5fcb8fc0de5295dc3c.'
 - preferred_term: TES
   concentration:
     value: '10'
@@ -122,6 +253,21 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 4 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-10-07T09:53:16.572361+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/5237
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "0.84"} ->
+    {"unit": "G_PER_L", "value": "0.84"} (evidence_only); composition[1].concentration:
+    {"unit": "G_PER_L", "value": "0.46"} -> {"unit": "G_PER_L", "value": "0.46"} (evidence_only);
+    composition[2].concentration: {"unit": "G_PER_L", "value": "0.03"} -> {"unit":
+    "G_PER_L", "value": "0.03"} (evidence_only); composition[3].concentration: {"unit":
+    "G_PER_L", "value": "0.02"} -> {"unit": "G_PER_L", "value": "0.02"} (evidence_only);
+    composition[4].concentration: {"unit": "G_PER_L", "value": "0.00142"} -> {"unit":
+    "G_PER_L", "value": "0.00142"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -130,3 +276,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/5237
+  title: 'MediaDive solution 5237: Main sol. J1137'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=b605989596ad60f4942e448eed3d8cf57824dcad1797ae5fcb8fc0de5295dc3c;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

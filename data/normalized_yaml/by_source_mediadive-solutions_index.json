@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02T05:38:04.155890+00:00",
+  "generated": "2026-10-09T17:47:52.739583+00:00",
   "source": "MediaDive-Solutions",
   "count": 4775,
   "recipes": {
@@ -1722,10 +1722,11 @@
     "CultureMech:010700": {
       "name": "Main sol. 546",
       "filename": "mediadive_1205_Main_sol_546.yaml",
-      "ingredient_count": 7,
+      "ingredient_count": 5,
       "id": "CultureMech:010700",
       "source_id": "mediadive.solution:1205",
       "source": "MediaDive-Solutions",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -3822,10 +3823,11 @@
     "CultureMech:010875": {
       "name": "Main sol. 659",
       "filename": "mediadive_1390_Main_sol_659.yaml",
-      "ingredient_count": 10,
+      "ingredient_count": 9,
       "id": "CultureMech:010875",
       "source_id": "mediadive.solution:1390",
       "source": "MediaDive-Solutions",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -4066,6 +4068,7 @@
       "id": "CultureMech:010895",
       "source_id": "mediadive.solution:1413",
       "source": "MediaDive-Solutions",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -5370,10 +5373,11 @@
     "CultureMech:011004": {
       "name": "Main sol. 752",
       "filename": "mediadive_1538_Main_sol_752.yaml",
-      "ingredient_count": 9,
+      "ingredient_count": 7,
       "id": "CultureMech:011004",
       "source_id": "mediadive.solution:1538",
       "source": "MediaDive-Solutions",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -5490,10 +5494,11 @@
     "CultureMech:011014": {
       "name": "Main sol. 762",
       "filename": "mediadive_1552_Main_sol_762.yaml",
-      "ingredient_count": 7,
+      "ingredient_count": 5,
       "id": "CultureMech:011014",
       "source_id": "mediadive.solution:1552",
       "source": "MediaDive-Solutions",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -6966,7 +6971,7 @@
     "CultureMech:011137": {
       "name": "Growth-stimulating factors",
       "filename": "mediadive_1680_Growth-stimulating_factors.yaml",
-      "ingredient_count": 7,
+      "ingredient_count": 8,
       "id": "CultureMech:011137",
       "source_id": "mediadive.solution:1680",
       "source": "MediaDive-Solutions",
@@ -9222,10 +9227,11 @@
     "CultureMech:011325": {
       "name": "Main sol. 111",
       "filename": "mediadive_190_Main_sol_111.yaml",
-      "ingredient_count": 11,
+      "ingredient_count": 10,
       "id": "CultureMech:011325",
       "source_id": "mediadive.solution:190",
       "source": "MediaDive-Solutions",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -11298,7 +11304,7 @@
     "CultureMech:011498": {
       "name": "Fatty acid mixture",
       "filename": "mediadive_209_Fatty_acid_mixture.yaml",
-      "ingredient_count": 5,
+      "ingredient_count": 6,
       "id": "CultureMech:011498",
       "source_id": "mediadive.solution:209",
       "source": "MediaDive-Solutions",
@@ -13758,10 +13764,11 @@
     "CultureMech:011703": {
       "name": "Main sol. 1157",
       "filename": "mediadive_2323_Main_sol_1157.yaml",
-      "ingredient_count": 8,
+      "ingredient_count": 4,
       "id": "CultureMech:011703",
       "source_id": "mediadive.solution:2323",
       "source": "MediaDive-Solutions",
+      "solution_count": 4,
       "categories": [
         "bacterial"
       ],
@@ -13878,10 +13885,11 @@
     "CultureMech:011713": {
       "name": "Main sol. 1164",
       "filename": "mediadive_2333_Main_sol_1164.yaml",
-      "ingredient_count": 11,
+      "ingredient_count": 10,
       "id": "CultureMech:011713",
       "source_id": "mediadive.solution:2333",
       "source": "MediaDive-Solutions",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -14898,7 +14906,7 @@
     "CultureMech:011798": {
       "name": "Modified Wolin's mineral solution",
       "filename": "mediadive_241_Modified_Wolin_s_mineral_solution.yaml",
-      "ingredient_count": 16,
+      "ingredient_count": 17,
       "id": "CultureMech:011798",
       "source_id": "mediadive.solution:241",
       "source": "MediaDive-Solutions",
@@ -15402,7 +15410,7 @@
     "CultureMech:011840": {
       "name": "Main sol. 1245",
       "filename": "mediadive_2474_Main_sol_1245.yaml",
-      "ingredient_count": 17,
+      "ingredient_count": 18,
       "id": "CultureMech:011840",
       "source_id": "mediadive.solution:2474",
       "source": "MediaDive-Solutions",
@@ -18234,7 +18242,7 @@
     "CultureMech:012076": {
       "name": "Main sol. 161",
       "filename": "mediadive_277_Main_sol_161.yaml",
-      "ingredient_count": 14,
+      "ingredient_count": 18,
       "id": "CultureMech:012076",
       "source_id": "mediadive.solution:277",
       "source": "MediaDive-Solutions",
@@ -28135,7 +28143,7 @@
     "CultureMech:012901": {
       "name": "Main sol. J168",
       "filename": "mediadive_3823_Main_sol_J168.yaml",
-      "ingredient_count": 9,
+      "ingredient_count": 10,
       "id": "CultureMech:012901",
       "source_id": "mediadive.solution:3823",
       "source": "MediaDive-Solutions",
@@ -28351,10 +28359,11 @@
     "CultureMech:012919": {
       "name": "FeCl2 solution",
       "filename": "mediadive_3846_FeCl2_solution.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 2,
       "id": "CultureMech:012919",
       "source_id": "mediadive.solution:3846",
       "source": "MediaDive-Solutions",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -34712,7 +34721,7 @@
     "CultureMech:013449": {
       "name": "Solution A",
       "filename": "mediadive_446_Solution_A.yaml",
-      "ingredient_count": 9,
+      "ingredient_count": 12,
       "id": "CultureMech:013449",
       "source_id": "mediadive.solution:446",
       "source": "MediaDive-Solutions",
@@ -35396,7 +35405,7 @@
     "CultureMech:013506": {
       "name": "Solution A",
       "filename": "mediadive_453_Solution_A.yaml",
-      "ingredient_count": 9,
+      "ingredient_count": 14,
       "id": "CultureMech:013506",
       "source_id": "mediadive.solution:453",
       "source": "MediaDive-Solutions",
@@ -40354,10 +40363,11 @@
     "CultureMech:013919": {
       "name": "Main sol. J973",
       "filename": "mediadive_4996_Main_sol_J973.yaml",
-      "ingredient_count": 7,
+      "ingredient_count": 1,
       "id": "CultureMech:013919",
       "source_id": "mediadive.solution:4996",
       "source": "MediaDive-Solutions",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -41290,7 +41300,7 @@
     "CultureMech:013996": {
       "name": "Main sol. J1029",
       "filename": "mediadive_5080_Main_sol_J1029.yaml",
-      "ingredient_count": 14,
+      "ingredient_count": 16,
       "id": "CultureMech:013996",
       "source_id": "mediadive.solution:5080",
       "source": "MediaDive-Solutions",
@@ -44110,10 +44120,11 @@
     "CultureMech:014231": {
       "name": "Main sol. 265",
       "filename": "mediadive_531_Main_sol_265.yaml",
-      "ingredient_count": 18,
+      "ingredient_count": 1,
       "id": "CultureMech:014231",
       "source_id": "mediadive.solution:531",
       "source": "MediaDive-Solutions",
+      "solution_count": 5,
       "categories": [
         "bacterial"
       ],
@@ -50162,6 +50173,7 @@
       "id": "CultureMech:014736",
       "source_id": "mediadive.solution:599",
       "source": "MediaDive-Solutions",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -50758,7 +50770,7 @@
     "CultureMech:014786": {
       "name": "Main sol. 330",
       "filename": "mediadive_606_Main_sol_330.yaml",
-      "ingredient_count": 13,
+      "ingredient_count": 16,
       "id": "CultureMech:014786",
       "source_id": "mediadive.solution:606",
       "source": "MediaDive-Solutions",
@@ -56218,7 +56230,7 @@
     "CultureMech:015242": {
       "name": "Main sol. 436",
       "filename": "mediadive_882_Main_sol_436.yaml",
-      "ingredient_count": 8,
+      "ingredient_count": 11,
       "id": "CultureMech:015242",
       "source_id": "mediadive.solution:882",
       "source": "MediaDive-Solutions",
@@ -56902,10 +56914,11 @@
     "CultureMech:015299": {
       "name": "Main sol. 469",
       "filename": "mediadive_961_Main_sol_469.yaml",
-      "ingredient_count": 7,
+      "ingredient_count": 5,
       "id": "CultureMech:015299",
       "source_id": "mediadive.solution:961",
       "source": "MediaDive-Solutions",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -57238,10 +57251,11 @@
     "CultureMech:015327": {
       "name": "Main sol. 489",
       "filename": "mediadive_995_Main_sol_489.yaml",
-      "ingredient_count": 12,
+      "ingredient_count": 9,
       "id": "CultureMech:015327",
       "source_id": "mediadive.solution:995",
       "source": "MediaDive-Solutions",
+      "solution_count": 3,
       "categories": [
         "bacterial"
       ],

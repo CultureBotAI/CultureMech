@@ -15,16 +15,23 @@ notes: UTEX prepares Ochromonas Medium from dH2O, glucose, tryptone, yeast extra
   and Liver extract infusion.
 ingredients:
 - preferred_term: dH2O
-  concentration:
-    value: '1000'
-    unit: ML_PER_L
   term:
     id: CHEBI:15377
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
-  notes: UTEX starts the 1 L Ochromonas Medium recipe with approximately 900 mL dH2O.
+  notes: Start with approximately 900 mL dH2O, then bring the supplemented medium
+    to 1 L total with additional dH2O. The exact combined water dose is not specified.
+  evidence:
+  - reference: https://utex.org/products/ochromonas-medium
+    supports: SUPPORT
+    snippet: Bring total volume to 1 L with dH2O.
+    explanation: 'Supports ingredients[0].notes for dH2O. Remove the unsupported final-fraction
+      slot while retaining the source preparation input in notes. No final water/carrier
+      fraction can be calculated from an initial portion and unspecified makeup dose.
+      Separate basis excerpt: ''For 1 L Total''. Locator: #recipe, composition table
+      and Directions.'
 - preferred_term: Glucose
   concentration:
     value: '5.6'
@@ -39,6 +46,18 @@ ingredients:
     for 5.6 mM final.
   nutritional_roles:
   - CARBON_SOURCE
+  evidence:
+  - reference: https://utex.org/products/ochromonas-medium
+    supports: SUPPORT
+    snippet: 5.6 mM
+    explanation: 'Supports ingredients[1].concentration for Glucose. Retain the numeric
+      value with exact source evidence and any explicitly stated preparation basis.
+      Directly retain the source table value and unit; no mass/molar conversion is
+      performed. The printed rounded molarity is a source assertion, not an independent
+      certification of molecular weight or supplied chemical identity. Separate basis
+      excerpt: ''For 1 L Total''. Locator: #recipe, composition table and Directions.
+      Component cell: ''Glucose(BACTO-dextrose or Sigma D 9634)''; amount cell: ''1
+      g/L''.'
 - preferred_term: Tryptone
   concentration:
     value: '1'
@@ -52,6 +71,16 @@ ingredients:
   notes: UTEX lists 1 g/L Tryptone, Sigma T 9410.
   nutritional_roles:
   - NITROGEN_SOURCE
+  evidence:
+  - reference: https://utex.org/products/ochromonas-medium
+    supports: SUPPORT
+    snippet: 1 g/L
+    explanation: 'Supports ingredients[2].concentration for Tryptone. Retain the numeric
+      value with exact source evidence and any explicitly stated preparation basis.
+      Directly retain the source table value and unit; no mass/molar conversion is
+      performed. Separate basis excerpt: ''For 1 L Total''. Locator: #recipe, composition
+      table and Directions. Component cell: ''Tryptone (Sigma T 9410)''; amount cell:
+      ''1 g/L''.'
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -62,6 +91,16 @@ ingredients:
   notes: UTEX lists 1 g/L Yeast extract, Bacto/Difco.
   nutritional_roles:
   - NITROGEN_SOURCE
+  evidence:
+  - reference: https://utex.org/products/ochromonas-medium
+    supports: SUPPORT
+    snippet: 1 g/L
+    explanation: 'Supports ingredients[3].concentration for Yeast extract. Retain
+      the numeric value with exact source evidence and any explicitly stated preparation
+      basis. Directly retain the source table value and unit; no mass/molar conversion
+      is performed. Separate basis excerpt: ''For 1 L Total''. Locator: #recipe, composition
+      table and Directions. Component cell: ''Yeast extract(Bacto, Difco)''; amount
+      cell: ''1 g/L''.'
 solutions:
 - preferred_term: Liver extract infusion
   concentration:
@@ -69,31 +108,55 @@ solutions:
     unit: ML_PER_L
   composition:
   - preferred_term: dH2O
-    concentration:
-      value: '1000'
-      unit: ML_PER_L
     term:
       id: CHEBI:15377
       label: water
     mediaingredientmech_chebi_term:
       id: CHEBI:15377
       label: water
-    notes: UTEX brings the Liver Extract Infusion stock to 50 mL with dH2O.
+    notes: Start with approximately 40 mL dH2O and bring the liver-extract preparation
+      to 50 mL total with additional dH2O before heating and filtration. The exact
+      combined water dose is not specified.
+    evidence:
+    - reference: https://utex.org/products/liver-extract-infusion
+      supports: SUPPORT
+      snippet: Bring the total volume to 50 mL with dH2O.
+      explanation: 'Supports solutions[0].composition[0].notes for dH2O. Remove the
+        unsupported final-fraction slot while retaining the source preparation input
+        in notes. No final water/carrier fraction can be calculated from an initial
+        portion and unspecified makeup dose. Separate basis excerpt: ''For 50 mL Total''.
+        Locator: #recipe, composition table and Directions.'
   - preferred_term: Liver extract
     concentration:
       value: '50'
       unit: G_PER_L
+      per_volume: per liter of prepared stock before heating and filtration
     term:
       id: MICRO:0001363
       label: Liver extract
     supplier_catalog:
       supplier_name: Difco Bacto
       catalog_number: '0133'
-    notes: Converted from 2.5 g Liver extract per 50 mL in the UTEX Liver Extract
-      Infusion Component Recipe.
+    notes: Use 2.5 g liver extract in 50 mL total stock before heating and filtration,
+      equivalent to a 50 g/L preparation input. The recovered filtrate concentration
+      is not measured by this recipe.
     nutritional_roles:
     - NITROGEN_SOURCE
-  notes: UTEX adds 40 mL Liver extract infusion per liter of Ochromonas Medium.
+    evidence:
+    - reference: https://utex.org/products/liver-extract-infusion
+      supports: SUPPORT
+      snippet: 2.5 g/50 mL
+      explanation: 'Supports solutions[0].composition[1].concentration for Liver extract.
+        Retain the numeric value with exact source evidence and any explicitly stated
+        preparation basis. 2.5 g / 0.050 L prepared stock = 50 g/L before heating
+        and filtration. No recovery or filtrate concentration is inferred. Separate
+        basis excerpt: ''For 50 mL Total''. Locator: #recipe, composition table and
+        Directions. Component cell: ''Liver extract(Difco Bacto 0133)''; amount cell:
+        ''2.5 g/50 mL''.'
+  notes: UTEX adds 40 mL Liver extract infusion per liter of Ochromonas Medium. Prepare
+    the stock to 50 mL, heat in a 50 C water bath for approximately 1 hour, then in
+    an 80 C water bath for 3-5 minutes, and filter. Its 50 g/L component amount is
+    a pre-filtration preparation input.
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -153,11 +216,110 @@ curation_history:
   source: https://utex.org/products/ochromonas-medium
   notes: UTEX prepares Ochromonas Medium from dH2O, glucose, tryptone, yeast extract,
     and Liver extract infusion.
+- timestamp: '2026-10-10T21:08:21.569593+00:00'
+  curator: codex
+  action: CURATED_UTEX_ORGANIC_MEDIUM_INPUT_BASES_AND_CONCENTRATION_EVIDENCE
+  notes: Exact source-URL and snippet evidence for input doses, optional agar and
+    retained concentrations. Chemical identity mappings and unrelated growth/role
+    claims are unchanged, not independently certified. No taxa-media association added.
+  source: https://utex.org/products/ochromonas-medium
+  changes: '{"claims": [{"basis_snippet": "For 1 L Total", "calculation": "No final
+    water/carrier fraction can be calculated from an initial portion and unspecified
+    makeup dose.", "decision": "Remove the unsupported final-fraction slot while retaining
+    the source preparation input in notes.", "field": "ingredients[0].concentration",
+    "ingredient": "dH2O", "locator": "#recipe, composition table and Directions",
+    "old": {"unit": "ML_PER_L", "value": "1000"}, "proposed": null, "proposed_field":
+    "ingredients[0].notes", "reference": "https://utex.org/products/ochromonas-medium",
+    "snippet": "Bring total volume to 1 L with dH2O.", "status": "unsupported"}, {"basis_snippet":
+    "For 1 L Total", "calculation": "Directly retain the source table value and unit;
+    no mass/molar conversion is performed. The printed rounded molarity is a source
+    assertion, not an independent certification of molecular weight or supplied chemical
+    identity.", "component_snippet": "Glucose(BACTO-dextrose or Sigma D 9634)", "decision":
+    "Retain the numeric value with exact source evidence and any explicitly stated
+    preparation basis.", "field": "ingredients[1].concentration", "ingredient": "Glucose",
+    "locator": "#recipe, composition table and Directions", "old": {"unit": "MILLIMOLAR",
+    "value": "5.6"}, "proposed": {"unit": "MILLIMOLAR", "value": "5.6"}, "reference":
+    "https://utex.org/products/ochromonas-medium", "snippet": "5.6 mM", "source_amount":
+    "1 g/L", "source_table_column": 4, "source_table_row": 1, "status": "evidence_only"},
+    {"basis_snippet": "For 1 L Total", "calculation": "Directly retain the source
+    table value and unit; no mass/molar conversion is performed.", "component_snippet":
+    "Tryptone (Sigma T 9410)", "decision": "Retain the numeric value with exact source
+    evidence and any explicitly stated preparation basis.", "field": "ingredients[2].concentration",
+    "ingredient": "Tryptone", "locator": "#recipe, composition table and Directions",
+    "old": {"unit": "G_PER_L", "value": "1"}, "proposed": {"unit": "G_PER_L", "value":
+    "1"}, "reference": "https://utex.org/products/ochromonas-medium", "snippet": "1
+    g/L", "source_amount": "1 g/L", "source_table_column": 2, "source_table_row":
+    2, "status": "evidence_only"}, {"basis_snippet": "For 1 L Total", "calculation":
+    "Directly retain the source table value and unit; no mass/molar conversion is
+    performed.", "component_snippet": "Yeast extract(Bacto, Difco)", "decision": "Retain
+    the numeric value with exact source evidence and any explicitly stated preparation
+    basis.", "field": "ingredients[3].concentration", "ingredient": "Yeast extract",
+    "locator": "#recipe, composition table and Directions", "old": {"unit": "G_PER_L",
+    "value": "1"}, "proposed": {"unit": "G_PER_L", "value": "1"}, "reference": "https://utex.org/products/ochromonas-medium",
+    "snippet": "1 g/L", "source_amount": "1 g/L", "source_table_column": 2, "source_table_row":
+    3, "status": "evidence_only"}, {"basis_snippet": "For 1 L Total", "calculation":
+    "Directly retain the source table value and unit; no mass/molar conversion is
+    performed.", "component_snippet": "Liver extract infusion", "decision": "Retain
+    the numeric value with exact source evidence and any explicitly stated preparation
+    basis.", "field": "solutions[0].concentration", "ingredient": "Liver extract infusion",
+    "locator": "#recipe, composition table and Directions", "old": {"unit": "ML_PER_L",
+    "value": "40"}, "proposed": {"unit": "ML_PER_L", "value": "40"}, "reference":
+    "https://utex.org/products/ochromonas-medium", "snippet": "40 mL/L", "source_amount":
+    "40 mL/L", "source_table_column": 2, "source_table_row": 4, "status": "evidence_only"},
+    {"basis_snippet": "For 50 mL Total", "calculation": "No final water/carrier fraction
+    can be calculated from an initial portion and unspecified makeup dose.", "decision":
+    "Remove the unsupported final-fraction slot while retaining the source preparation
+    input in notes.", "field": "solutions[0].composition[0].concentration", "ingredient":
+    "dH2O", "locator": "#recipe, composition table and Directions", "old": {"unit":
+    "ML_PER_L", "value": "1000"}, "proposed": null, "proposed_field": "solutions[0].composition[0].notes",
+    "reference": "https://utex.org/products/liver-extract-infusion", "snippet": "Bring
+    the total volume to 50 mL with dH2O.", "status": "unsupported"}, {"basis_snippet":
+    "For 50 mL Total", "calculation": "2.5 g / 0.050 L prepared stock = 50 g/L before
+    heating and filtration. No recovery or filtrate concentration is inferred.", "component_snippet":
+    "Liver extract(Difco Bacto 0133)", "decision": "Retain the numeric value with
+    exact source evidence and any explicitly stated preparation basis.", "field":
+    "solutions[0].composition[1].concentration", "ingredient": "Liver extract", "locator":
+    "#recipe, composition table and Directions", "old": {"unit": "G_PER_L", "value":
+    "50"}, "proposed": {"per_volume": "per liter of prepared stock before heating
+    and filtration", "unit": "G_PER_L", "value": "50"}, "reference": "https://utex.org/products/liver-extract-infusion",
+    "snippet": "2.5 g/50 mL", "source_amount": "2.5 g/50 mL", "source_table_column":
+    2, "source_table_row": 1, "status": "correct"}], "counts": {"bibliographic_entries_enriched":
+    2, "ingredient_context_notes_corrected": 3, "ingredient_dose_basis_corrections":
+    1, "new_curation_history": 1, "new_evidence": 8, "stock_context_notes_corrected":
+    1, "unsupported_quantity_slots_removed": 2}}'
 references:
 - reference: UTEX:ochromonas-medium
 - reference: https://utex.org/products/ochromonas-medium
+  title: Ochromonas Medium | UTEX Culture Collection of Algae
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10; Named authors, publication year and DOI not established.
 - reference: https://utex.org/products/liver-extract-infusion
+  title: Liver Extract Infusion Component Recipe | UTEX Culture Collection of Algae
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10; Named authors, publication year and DOI not established.
 original_name: Ochromonas Medium
 data_quality_flags:
 - has_ontology_mappings
 - ingredients_curated
+evidence:
+- reference: https://utex.org/products/ochromonas-medium
+  supports: SUPPORT
+  snippet: 40 mL/L
+  explanation: 'Supports solutions[0].concentration for Liver extract infusion. Retain
+    the numeric value with exact source evidence and any explicitly stated preparation
+    basis. Directly retain the source table value and unit; no mass/molar conversion
+    is performed. Separate basis excerpt: ''For 1 L Total''. Locator: #recipe, composition
+    table and Directions. Component cell: ''Liver extract infusion''; amount cell:
+    ''40 mL/L''.'
+- reference: https://utex.org/products/liver-extract-infusion
+  supports: SUPPORT
+  snippet: Cover the flask, and place it into a 50 °C water bath for approximately
+    1 hour.
+  explanation: 'Supports solutions[0].notes and the preparation-stage qualification
+    of solutions[0].composition[1].concentration; no measured filtrate strength is
+    asserted. Separate exact excerpt: ''Transfer the flask into an 80 °C water bath
+    for 3-5 minutes.''. Supports solutions[0].notes and the preparation-stage qualification
+    of solutions[0].composition[1].concentration; no measured filtrate strength is
+    asserted. Separate exact excerpt: ''Filter extract.''. Supports solutions[0].notes
+    and the preparation-stage qualification of solutions[0].composition[1].concentration;
+    no measured filtrate strength is asserted.'

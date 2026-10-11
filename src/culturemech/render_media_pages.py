@@ -350,7 +350,7 @@ def write_index(
         by_cat.setdefault(cat, []).append(
             {
                 "id": r["medium"].get("id") or "",
-                "name": r["medium"].get("name") or slug,
+                "name": r["medium"].get("name") or r["medium"].get("preferred_term") or slug,
                 "href": relative_href(index_dir, page_dir / f"{slug}.html"),
             }
         )

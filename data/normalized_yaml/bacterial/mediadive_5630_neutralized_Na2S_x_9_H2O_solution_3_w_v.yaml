@@ -18,8 +18,8 @@ composition:
     match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
-    value: '1000'
-    unit: PERCENT_V_V
+    value: '1'
+    unit: L
   term:
     id: mediadive.compound:4
     label: Distilled water
@@ -28,6 +28,29 @@ composition:
     label: water
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5630
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1000,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: |-
+      Concentration evidence for composition[1].concentration (Distilled water) in MediaDive solution 5630; locator=$.data.recipe[1] (compound_id=4). Source-explicit water input: 1000 ml / 1000 ml per L = 1 L per preparation batch. This replaces the importer unit error (1000 PERCENT_V_V), not the recipe formulation. Separately located exact preparation excerpt at $.data.steps[0]: {
+                      "recipe_order": null,
+                      "step": "Adjust pH to 7.0."
+                  }. The inspected preparation only adjusts pH; it does not instruct make-up to a final volume. This is the listed water input, not a volume percentage, measured final volume, stock strength, or receiving-medium concentration. No density or final-volume assumption is made. Unchanged non-water amounts and chemical mappings are not newly verified by this follow-up. Retrieved 2026-10-07T09:56:44.512799+00:00; response SHA256=9f13eeccbf5187e50ffbdcd50ad15c593ccf3fc0befa934717b469d17f760fa6.
 preparation_notes: Adjust pH to 7.0.
 curation_history:
 - timestamp: '2026-03-13T06:20:38.129319Z'
@@ -57,6 +80,15 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-10-08T01:51:08.771849+00:00'
+  curator: codex
+  action: CORRECTED_SOURCE_EXPLICIT_WATER_INPUT_AFTER_PH7_REVIEW
+  notes: Individually inspected source water row and pH-adjustment instruction; literal
+    snippet and locator attached. Existing non-water claims, provenance, preparation,
+    and identifiers preserved. No final-volume inference.
+  source: https://mediadive.dsmz.de/rest/solution/5630
+  changes: 'composition[1].concentration: 1000 PERCENT_V_V -> 1 L water input per
+    preparation batch (1000 ml / 1000).'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -65,3 +97,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/5630
+  title: 'MediaDive solution 5630: neutralized Na2S x 9 H2O solution, 3% (w/v)'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; response_sha256=9f13eeccbf5187e50ffbdcd50ad15c593ccf3fc0befa934717b469d17f760fa6;
+    individual authors and publication year not supplied. Water input only; no stock
+    strength or final-volume assertion.

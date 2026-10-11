@@ -28,6 +28,33 @@ composition:
     label: L-cysteine hydrochloride
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1784
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "L-Cysteine HCl",
+                      "compound_id": 1157,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "g",
+                      "g_l": 100,
+                      "mmol_l": 634.437,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (L-Cysteine
+      HCl) in MediaDive solution 1784; locator=$.data.recipe[1] (compound_id=1157).
+      Provider explicitly reports g_l=100. Arithmetic check: 5 g * 1 g/g / (50 ml
+      / 1000 ml per L) = 1E+2 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 50. Retrieved 2026-10-07T08:56:25.428875+00:00;
+      response SHA256=c94c19c1eed47dd7cfcb8d86cc6094fb35f71a0039ad01e54461e3a84a87c141.'
 preparation_notes: "To 50 ml of boiled and cooled distilled or deionized H2O add 5\
   \ g of L-cysteine hydrochloride\r\n. Adjust pH to 10 with 3N NaOH and store under\
   \ N2 in a serum bottle sealed with a butyl rubber stopper.\n\nOriginal volume: 50\
@@ -55,6 +82,15 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-10-07T09:01:17.963098+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/1784
+  changes: 'composition[1].concentration: {"unit": "G_PER_L", "value": "100"} -> {"unit":
+    "G_PER_L", "value": "100"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -63,3 +99,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/1784
+  title: 'MediaDive solution 1784: Cysteine solutions'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=c94c19c1eed47dd7cfcb8d86cc6094fb35f71a0039ad01e54461e3a84a87c141;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

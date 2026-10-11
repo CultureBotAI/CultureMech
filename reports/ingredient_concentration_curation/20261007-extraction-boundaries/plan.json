@@ -1,0 +1,738 @@
+{
+  "version": 1,
+  "action": "CORRECTED_EXTRACTION_INPUT_BOUNDARIES",
+  "commit": "f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f",
+  "created_at": "2026-10-07T12:43:51.923147+00:00",
+  "records": [
+    {
+      "path": "data/normalized_yaml/bacterial/soil_extract_medium.yaml",
+      "id": "CultureMech:000762",
+      "medium_id": "12",
+      "before_text": "id: CultureMech:000762\nname: soil_extract_medium\noriginal_name: SOIL EXTRACT MEDIUM\ncategory: bacterial\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: SOLID_AGAR\nph_range:\n  min: 6.8\n  max: 7.0\nmedia_term:\n  preferred_term: DSMZ Medium 12\n  term:\n    id: mediadive.medium:12\n    label: SOIL EXTRACT MEDIUM\nnotes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium12.pdf'\ningredients:\n- preferred_term: air-dried garden soil\n  concentration:\n    value: '400'\n    unit: G_PER_L\n  evidence:\n  - reference: https://mediadive.dsmz.de/rest/medium/12\n    supports: SUPPORT\n    snippet: |-\n      {\n                              \"recipe_order\": 1,\n                              \"compound\": \"air-dried garden soil\",\n                              \"compound_id\": 2083,\n                              \"amount\": 400,\n                              \"unit\": \"g\",\n                              \"g_l\": 400,\n                              \"optional\": 0\n                          }\n    explanation: 'Concentration evidence for ingredients[0].concentration (air-dried\n      garden soil) in MediaDive medium 12; locator=$.data.solutions[0].recipe[0].\n      Provider explicitly reports g_l=400; check: 400 g * 1 g/g / (1000 ml / 1000\n      ml per L) = 400 g/L. This supports the provider-declared main-recipe concentration,\n      not an independently measured final volume, a stock composition, or a downstream\n      assay dilution. Water alone does not establish final volume. Exact source ingredient\n      labels/forms are matched; secondary ontology mappings are not validated by this\n      evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved\n      2026-10-07T10:40:59.089082+00:00; response SHA256=aae1357e31d914ca483bea213eafb7d4a462aa252fc9008b483e42791202bd8b.'\n- preferred_term: Tap water\n  term:\n    id: CHEBI:15377\n    label: water\n  concentration:\n    value: '1000'\n    unit: G_PER_L\n  mediaingredientmech_chebi_term:\n    id: CHEBI:15377\n    label: water\n- preferred_term: Agar\n  term:\n    id: CHEBI:2509\n    label: agar\n  concentration:\n    value: '15'\n    unit: G_PER_L\n  mediaingredientmech_chebi_term:\n    id: CHEBI:2509\n    label: agar\n  evidence:\n  - reference: https://mediadive.dsmz.de/rest/medium/12\n    supports: SUPPORT\n    snippet: |-\n      {\n                              \"recipe_order\": 3,\n                              \"compound\": \"Agar\",\n                              \"compound_id\": 3,\n                              \"amount\": 15,\n                              \"unit\": \"g\",\n                              \"g_l\": 15,\n                              \"mmol_l\": 44.5991,\n                              \"optional\": 0\n                          }\n    explanation: 'Concentration evidence for ingredients[2].concentration (Agar) in\n      MediaDive medium 12; locator=$.data.solutions[0].recipe[2]. Provider explicitly\n      reports g_l=15; check: 15 g * 1 g/g / (1000 ml / 1000 ml per L) = 15 g/L. This\n      supports the provider-declared main-recipe concentration, not an independently\n      measured final volume, a stock composition, or a downstream assay dilution.\n      Water alone does not establish final volume. Exact source ingredient labels/forms\n      are matched; secondary ontology mappings are not validated by this evidence.\n      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:40:59.089082+00:00;\n      response SHA256=aae1357e31d914ca483bea213eafb7d4a462aa252fc9008b483e42791202bd8b.'\npreparation_steps:\n- step_number: 1\n  action: ADJUST_PH\n  description: Sterilize 400.0 g of air-dried garden soil (with high content of organic\n    matter) in 1000 ml tap water for one hour at 121\u00b0C. Allow it to sediment for a\n    few hours at room temperature. Centrifuge the supernatant. Add 15.0 g agar per\n    1000 ml to the clear supernatant solution thus obtained. Adjust pH to 6.8 - 7.0\n    and sterilize.\napplications:\n- Microbial cultivation\ncuration_history:\n- timestamp: '2026-01-26T17:53:09.978932Z'\n  curator: mediadive-import\n  action: Imported from MediaDive\n  notes: 'Source: DSMZ, ID: 12'\n- timestamp: '2026-03-13T06:18:58.174819Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:000762'\n- timestamp: '2026-03-17T06:30:17.000000Z'\n  curator: mediaingredientmech-enrichment-v1.0\n  action: Added MediaIngredientMech links\n  notes: Linked ingredients to MediaIngredientMech identifiers\n- timestamp: '2026-03-17T19:45:09.542665+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"SOIL EXTRACT MEDIUM\" to \"soil_extract_medium\" for consistent\n    matching\n- timestamp: '2026-05-20T06:02:05.359643+00:00'\n  curator: migrate_ph_range.py\n  action: MIGRATED_PH_RANGE\n  notes: 'ph_range ''6.8-7'' -> {''min'': 6.8, ''max'': 7.0}'\n- timestamp: '2026-06-05T07:41:45.992651+00:00'\n  curator: mim-legacy-to-chebi-migration-v1.0\n  action: Refreshed legacy MediaIngredientMech links to CHEBI keying\n  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term\n    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN\n    id scheme.'\n- timestamp: '2026-10-07T10:55:41.454416+00:00'\n  curator: codex\n  action: CURATED_MEDIUM_CONCENTRATION_SOURCE_EVIDENCE\n  notes: Exact medium/source membership, ingredient inventory/forms, physical-state\n    conditions, literal snippets, and arithmetic checked. Stock boundaries, source-only\n    rows, preparation context, and variants remain explicit follow-up tasks; secondary\n    chemical mappings unchanged.\n  source: https://mediadive.dsmz.de/rest/medium/12\n  changes: 'ingredients[0].concentration: {\"unit\": \"G_PER_L\", \"value\": \"400\"} -> {\"unit\":\n    \"G_PER_L\", \"value\": \"400\"} (evidence_only); ingredients[2].concentration: {\"unit\":\n    \"G_PER_L\", \"value\": \"15\"} -> {\"unit\": \"G_PER_L\", \"value\": \"15\"} (evidence_only)'\nvariant_children:\n- path: data/normalized_yaml/bacterial/KOMODO_12_SOIL_EXTRACT_medium.yaml\n  relationship: SOURCE_DUPLICATE\n  id: CultureMech:004048\n  name: soil_extract_medium\n  notes: KOMODO record is an exact source duplicate of DSMZ Medium 12; local ingredient\n    and concentration signatures match.\nreferences:\n- reference: https://mediadive.dsmz.de/rest/medium/12\n  title: 'MediaDive medium 12: SOIL EXTRACT MEDIUM'\n  notes: source_type=dataset; discovery_mode=existing_record_reference; source_organization=DSMZ;\n    accessed_on=2026-10-07; locator=$.data.solutions[0]; response_sha256=aae1357e31d914ca483bea213eafb7d4a462aa252fc9008b483e42791202bd8b;\n    original_recipe=https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium12.pdf;\n    individual authors and publication year not supplied. Provider-declared main-recipe\n    amounts only.\n",
+      "before_sha256": "2eb2abc4d5b320861afa1894261eedaefcfe56543a29699d2f33086b18949fd5",
+      "after_text": "id: CultureMech:000762\nname: soil_extract_medium\noriginal_name: SOIL EXTRACT MEDIUM\ncategory: bacterial\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: SOLID_AGAR\nph_range:\n  min: 6.8\n  max: 7.0\nmedia_term:\n  preferred_term: DSMZ Medium 12\n  term:\n    id: mediadive.medium:12\n    label: SOIL EXTRACT MEDIUM\nnotes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium12.pdf'\ningredients:\n- preferred_term: Agar\n  term:\n    id: CHEBI:2509\n    label: agar\n  concentration:\n    value: '15'\n    unit: G_PER_L\n  mediaingredientmech_chebi_term:\n    id: CHEBI:2509\n    label: agar\n  evidence:\n  - reference: https://mediadive.dsmz.de/rest/medium/12\n    supports: SUPPORT\n    snippet: |-\n      {\n                              \"recipe_order\": 3,\n                              \"compound\": \"Agar\",\n                              \"compound_id\": 3,\n                              \"amount\": 15,\n                              \"unit\": \"g\",\n                              \"g_l\": 15,\n                              \"mmol_l\": 44.5991,\n                              \"optional\": 0\n                          }\n    explanation: |-\n      Extraction follow-up evidence for ingredients[0].concentration, ingredients[0].notes. The agar concentration is retained and relocated, with its denominator scoped to recovered extract rather than the extraction starting water. The source identifies the preparation-stage denominator for agar. Exact preparation excerpt at $.data.solutions[0].steps[0]: {\n                              \"step\": \"Sterilize 400.0 g of air-dried garden soil (with high content of organic matter) in 1000 ml tap water for one hour at 121\\u00b0C. Allow it to sediment for a few hours at room temperature. Centrifuge the supernatant. Add 15.0 g agar per 1000 ml to the clear supernatant solution thus obtained. Adjust pH to 6.8 - 7.0 and sterilize.\"\n                          }. Retrieved 2026-10-07T10:40:59.089082+00:00; response SHA256=aae1357e31d914ca483bea213eafb7d4a462aa252fc9008b483e42791202bd8b.\n  notes: 15 g per liter of clarified supernatant, not per liter of the starting soil\n    suspension.\npreparation_steps:\n- step_number: 1\n  action: ADD_AGAR\n  description: Add 15.0 g agar per 1000 ml to the clear supernatant solution thus\n    obtained.\n- step_number: 2\n  action: ADJUST_PH\n  description: Adjust pH to 6.8 - 7.0 and sterilize.\napplications:\n- Microbial cultivation\ncuration_history:\n- timestamp: '2026-01-26T17:53:09.978932Z'\n  curator: mediadive-import\n  action: Imported from MediaDive\n  notes: 'Source: DSMZ, ID: 12'\n- timestamp: '2026-03-13T06:18:58.174819Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:000762'\n- timestamp: '2026-03-17T06:30:17.000000Z'\n  curator: mediaingredientmech-enrichment-v1.0\n  action: Added MediaIngredientMech links\n  notes: Linked ingredients to MediaIngredientMech identifiers\n- timestamp: '2026-03-17T19:45:09.542665+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"SOIL EXTRACT MEDIUM\" to \"soil_extract_medium\" for consistent\n    matching\n- timestamp: '2026-05-20T06:02:05.359643+00:00'\n  curator: migrate_ph_range.py\n  action: MIGRATED_PH_RANGE\n  notes: 'ph_range ''6.8-7'' -> {''min'': 6.8, ''max'': 7.0}'\n- timestamp: '2026-06-05T07:41:45.992651+00:00'\n  curator: mim-legacy-to-chebi-migration-v1.0\n  action: Refreshed legacy MediaIngredientMech links to CHEBI keying\n  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term\n    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN\n    id scheme.'\n- timestamp: '2026-10-07T10:55:41.454416+00:00'\n  curator: codex\n  action: CURATED_MEDIUM_CONCENTRATION_SOURCE_EVIDENCE\n  notes: Exact medium/source membership, ingredient inventory/forms, physical-state\n    conditions, literal snippets, and arithmetic checked. Stock boundaries, source-only\n    rows, preparation context, and variants remain explicit follow-up tasks; secondary\n    chemical mappings unchanged.\n  source: https://mediadive.dsmz.de/rest/medium/12\n  changes: 'ingredients[0].concentration: {\"unit\": \"G_PER_L\", \"value\": \"400\"} -> {\"unit\":\n    \"G_PER_L\", \"value\": \"400\"} (evidence_only); ingredients[2].concentration: {\"unit\":\n    \"G_PER_L\", \"value\": \"15\"} -> {\"unit\": \"G_PER_L\", \"value\": \"15\"} (evidence_only)'\n- timestamp: '2026-10-07T12:43:51.923147+00:00'\n  curator: codex\n  action: CORRECTED_EXTRACTION_INPUT_BOUNDARIES\n  notes: Original recipe visually verified. Removed unsupported extract-solids concentration;\n    retained starting mass in notes; corrected initial water volume; reconciled earlier\n    evidence scopes. No dissolved yield, density, or unspecified recovered volume\n    inferred.\n  source: https://mediadive.dsmz.de/rest/medium/12\n  changes: 'solutions[0].composition[0].concentration: {\"unit\": \"G_PER_L\", \"value\":\n    \"400\"} -> null (correct); solutions[0].composition[0].notes: null -> \"Extraction\n    starting material: 400 g in 1000 ml tap water. Solids are separated before the\n    recovered extract is used. The source does not quantify retained solids or dissolved\n    yield; no numeric extract concentration is asserted.\" (add); solutions[0].composition[1].concentration:\n    {\"unit\": \"G_PER_L\", \"value\": \"1000\"} -> {\"unit\": \"L\", \"value\": \"1\"} (correct);\n    solutions[0].composition[1].notes: null -> \"Initial extraction-water addition:\n    1000 ml / 1000 ml per L = 1 L, not a mass concentration or a measured recovered\n    volume.\" (add); ingredients[0].concentration: {\"unit\": \"G_PER_L\", \"value\": \"15\"}\n    -> {\"unit\": \"G_PER_L\", \"value\": \"15\"} (verified); ingredients[0].notes: null ->\n    \"15 g per liter of clarified supernatant, not per liter of the starting soil suspension.\"\n    (add); solutions[0].preparation_notes: \"Sterilize 400.0 g of air-dried garden\n    soil (with high content of organic matter) in 1000 ml tap water for one hour at\n    121\\u00b0C. Allow it to sediment for a few hours at room temperature. Centrifuge\n    the supernatant. Add 15.0 g agar per 1000 ml to the clear supernatant solution\n    thus obtained. Adjust pH to 6.8 - 7.0 and sterilize.\" -> \"Sterilize 400.0 g of\n    air-dried garden soil (with high content of organic matter) in 1000 ml tap water\n    for one hour at 121\\u00b0C. Allow it to sediment for a few hours at room temperature.\n    Centrifuge the supernatant.\" (correct); solutions[0].notes: null -> \"Curator-described\n    extraction stage, not a separately accessioned stock. Composition lists preparation\n    inputs, not retained solutes. Recovered volume and an absolute extract dose are\n    not specified; agar is dosed per liter of clarified supernatant.\" (add); preparation_steps:\n    [{\"action\": \"ADJUST_PH\", \"description\": \"Sterilize 400.0 g of air-dried garden\n    soil (with high content of organic matter) in 1000 ml tap water for one hour at\n    121\\u00b0C. Allow it to sediment for a few hours at room temperature. Centrifuge\n    the supernatant. Add 15.0 g agar per 1000 ml to the clear supernatant solution\n    thus obtained. Adjust pH to 6.8 - 7.0 and sterilize.\", \"step_number\": 1}] -> [{\"action\":\n    \"ADD_AGAR\", \"description\": \"Add 15.0 g agar per 1000 ml to the clear supernatant\n    solution thus obtained.\", \"step_number\": 1}, {\"action\": \"ADJUST_PH\", \"description\":\n    \"Adjust pH to 6.8 - 7.0 and sterilize.\", \"step_number\": 2}] (correct)'\nvariant_children:\n- path: data/normalized_yaml/bacterial/KOMODO_12_SOIL_EXTRACT_medium.yaml\n  relationship: SOURCE_DUPLICATE\n  id: CultureMech:004048\n  name: soil_extract_medium\n  notes: KOMODO record is an exact source duplicate of DSMZ Medium 12; local ingredient\n    and concentration signatures match.\nreferences:\n- reference: https://mediadive.dsmz.de/rest/medium/12\n  title: 'MediaDive medium 12: SOIL EXTRACT MEDIUM'\n  notes: source_type=dataset; discovery_mode=existing_record_reference; source_organization=DSMZ;\n    accessed_on=2026-10-07; locator=$.data.solutions[0]; response_sha256=aae1357e31d914ca483bea213eafb7d4a462aa252fc9008b483e42791202bd8b;\n    original_recipe=https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium12.pdf;\n    individual authors and publication year not supplied. Provider-declared main-recipe\n    amounts only.\n- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium12.pdf\n  title: 'DSMZ medium 12: SOIL EXTRACT MEDIUM'\n  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;\n    source_organization=DSMZ; accessed_on=2026-10-07; locator=page 1, complete recipe;\n    PDF SHA256=1b4394336f7ace4e09c66fc67ed2e745e3c633b725e436d94335b99289243580. Visually\n    verified extraction stage against the exact API preparation text. Individual authors/publication\n    year not established; copyright year is not used as publication year.\nsolutions:\n- preferred_term: Clarified soil extract\n  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium12.pdf\n  notes: Curator-described extraction stage, not a separately accessioned stock. Composition\n    lists preparation inputs, not retained solutes. Recovered volume and an absolute\n    extract dose are not specified; agar is dosed per liter of clarified supernatant.\n  composition:\n  - preferred_term: air-dried garden soil\n    evidence:\n    - reference: https://mediadive.dsmz.de/rest/medium/12\n      supports: SUPPORT\n      snippet: |-\n        {\n                                \"recipe_order\": 1,\n                                \"compound\": \"air-dried garden soil\",\n                                \"compound_id\": 2083,\n                                \"amount\": 400,\n                                \"unit\": \"g\",\n                                \"g_l\": 400,\n                                \"optional\": 0\n                            }\n      explanation: |-\n        Extraction follow-up evidence for solutions[0].composition[0].concentration, solutions[0].composition[0].notes. The former main-medium concentration is withdrawn; the source supports an extraction input amount, not a finished-medium concentration or dissolved yield. The explicit starting mass is retained in notes because the schema has no absolute-mass unit; no extract concentration is invented. Exact preparation excerpt at $.data.solutions[0].steps[0]: {\n                                \"step\": \"Sterilize 400.0 g of air-dried garden soil (with high content of organic matter) in 1000 ml tap water for one hour at 121\\u00b0C. Allow it to sediment for a few hours at room temperature. Centrifuge the supernatant. Add 15.0 g agar per 1000 ml to the clear supernatant solution thus obtained. Adjust pH to 6.8 - 7.0 and sterilize.\"\n                            }. Retrieved 2026-10-07T10:40:59.089082+00:00; response SHA256=aae1357e31d914ca483bea213eafb7d4a462aa252fc9008b483e42791202bd8b.\n    notes: 'Extraction starting material: 400 g in 1000 ml tap water. Solids are separated\n      before the recovered extract is used. The source does not quantify retained\n      solids or dissolved yield; no numeric extract concentration is asserted.'\n  - preferred_term: Tap water\n    term:\n      id: CHEBI:15377\n      label: water\n    concentration:\n      value: '1'\n      unit: L\n    mediaingredientmech_chebi_term:\n      id: CHEBI:15377\n      label: water\n    notes: 'Initial extraction-water addition: 1000 ml / 1000 ml per L = 1 L, not\n      a mass concentration or a measured recovered volume.'\n    evidence:\n    - reference: https://mediadive.dsmz.de/rest/medium/12\n      supports: SUPPORT\n      snippet: |-\n        {\n                                \"recipe_order\": 2,\n                                \"compound\": \"Tap water\",\n                                \"compound_id\": 322,\n                                \"amount\": 1000,\n                                \"unit\": \"ml\",\n                                \"optional\": 0\n                            }\n      explanation: |-\n        Extraction follow-up evidence for solutions[0].composition[1].concentration, solutions[0].composition[1].notes. Initial extraction-water volume only. 1000 ml / 1000 ml per L = 1 L of initial preparation water; no density or final volume assumed. Distinguish initial water from recovered liquid and any later make-up water. Exact preparation excerpt at $.data.solutions[0].steps[0]: {\n                                \"step\": \"Sterilize 400.0 g of air-dried garden soil (with high content of organic matter) in 1000 ml tap water for one hour at 121\\u00b0C. Allow it to sediment for a few hours at room temperature. Centrifuge the supernatant. Add 15.0 g agar per 1000 ml to the clear supernatant solution thus obtained. Adjust pH to 6.8 - 7.0 and sterilize.\"\n                            }. Retrieved 2026-10-07T10:40:59.089082+00:00; response SHA256=aae1357e31d914ca483bea213eafb7d4a462aa252fc9008b483e42791202bd8b.\n  preparation_notes: Sterilize 400.0 g of air-dried garden soil (with high content\n    of organic matter) in 1000 ml tap water for one hour at 121\u00b0C. Allow it to sediment\n    for a few hours at room temperature. Centrifuge the supernatant.\nevidence:\n- reference: https://mediadive.dsmz.de/rest/medium/12\n  supports: SUPPORT\n  snippet: |-\n    {\n                            \"step\": \"Sterilize 400.0 g of air-dried garden soil (with high content of organic matter) in 1000 ml tap water for one hour at 121\\u00b0C. Allow it to sediment for a few hours at room temperature. Centrifuge the supernatant. Add 15.0 g agar per 1000 ml to the clear supernatant solution thus obtained. Adjust pH to 6.8 - 7.0 and sterilize.\"\n                        }\n  explanation: Extraction-stage evidence for solutions[0].preparation_notes, solutions[0].notes,\n    preparation_steps. Move the exact extraction-stage text ahead of agar addition;\n    preserve all source instructions. Explicit preparation boundary; no invented stock\n    accession or recovered-solute concentration. Separate extraction from agar addition;\n    filtration through cloth/paper is not asserted to be sterile filtration. Source\n    locator=$.data.solutions[0].steps[0]; retrieved 2026-10-07T10:40:59.089082+00:00;\n    SHA256=aae1357e31d914ca483bea213eafb7d4a462aa252fc9008b483e42791202bd8b.\n",
+      "after_sha256": "fd4c42ebb7018bab05628d40958898adf8933e621c3534627463418adb8d4161",
+      "source_sha256": "aae1357e31d914ca483bea213eafb7d4a462aa252fc9008b483e42791202bd8b",
+      "source_accessed_at": "2026-10-07T10:40:59.089082+00:00",
+      "claims": [
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            0,
+            "concentration"
+          ],
+          "old_pointer": [
+            "ingredients",
+            0,
+            "concentration"
+          ],
+          "field": "solutions[0].composition[0].concentration",
+          "old": {
+            "value": "400",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "correct",
+          "reference": "https://mediadive.dsmz.de/rest/medium/12",
+          "snippet": "{\n                        \"step\": \"Sterilize 400.0 g of air-dried garden soil (with high content of organic matter) in 1000 ml tap water for one hour at 121\\u00b0C. Allow it to sediment for a few hours at room temperature. Centrifuge the supernatant. Add 15.0 g agar per 1000 ml to the clear supernatant solution thus obtained. Adjust pH to 6.8 - 7.0 and sterilize.\"\n                    }",
+          "source_pointer": [
+            "data",
+            "solutions",
+            0,
+            "steps",
+            0
+          ],
+          "locator": "$.data.solutions[0].steps[0]",
+          "evidence_pointer": [
+            "solutions",
+            0,
+            "composition",
+            0
+          ],
+          "explanation": "The former main-medium concentration is withdrawn; the source supports an extraction input amount, not a finished-medium concentration or dissolved yield."
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            0,
+            "notes"
+          ],
+          "old_pointer": null,
+          "field": "solutions[0].composition[0].notes",
+          "old": null,
+          "new": "Extraction starting material: 400 g in 1000 ml tap water. Solids are separated before the recovered extract is used. The source does not quantify retained solids or dissolved yield; no numeric extract concentration is asserted.",
+          "status": "add",
+          "reference": "https://mediadive.dsmz.de/rest/medium/12",
+          "snippet": "{\n                        \"step\": \"Sterilize 400.0 g of air-dried garden soil (with high content of organic matter) in 1000 ml tap water for one hour at 121\\u00b0C. Allow it to sediment for a few hours at room temperature. Centrifuge the supernatant. Add 15.0 g agar per 1000 ml to the clear supernatant solution thus obtained. Adjust pH to 6.8 - 7.0 and sterilize.\"\n                    }",
+          "source_pointer": [
+            "data",
+            "solutions",
+            0,
+            "steps",
+            0
+          ],
+          "locator": "$.data.solutions[0].steps[0]",
+          "evidence_pointer": [
+            "solutions",
+            0,
+            "composition",
+            0
+          ],
+          "explanation": "The explicit starting mass is retained in notes because the schema has no absolute-mass unit; no extract concentration is invented."
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            1,
+            "concentration"
+          ],
+          "old_pointer": [
+            "ingredients",
+            1,
+            "concentration"
+          ],
+          "field": "solutions[0].composition[1].concentration",
+          "old": {
+            "value": "1000",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "1",
+            "unit": "L"
+          },
+          "status": "correct",
+          "reference": "https://mediadive.dsmz.de/rest/medium/12",
+          "snippet": "{\n                        \"step\": \"Sterilize 400.0 g of air-dried garden soil (with high content of organic matter) in 1000 ml tap water for one hour at 121\\u00b0C. Allow it to sediment for a few hours at room temperature. Centrifuge the supernatant. Add 15.0 g agar per 1000 ml to the clear supernatant solution thus obtained. Adjust pH to 6.8 - 7.0 and sterilize.\"\n                    }",
+          "source_pointer": [
+            "data",
+            "solutions",
+            0,
+            "steps",
+            0
+          ],
+          "locator": "$.data.solutions[0].steps[0]",
+          "evidence_pointer": [
+            "solutions",
+            0,
+            "composition",
+            1
+          ],
+          "explanation": "1000 ml / 1000 ml per L = 1 L of initial preparation water; no density or final volume assumed."
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            1,
+            "notes"
+          ],
+          "old_pointer": null,
+          "field": "solutions[0].composition[1].notes",
+          "old": null,
+          "new": "Initial extraction-water addition: 1000 ml / 1000 ml per L = 1 L, not a mass concentration or a measured recovered volume.",
+          "status": "add",
+          "reference": "https://mediadive.dsmz.de/rest/medium/12",
+          "snippet": "{\n                        \"step\": \"Sterilize 400.0 g of air-dried garden soil (with high content of organic matter) in 1000 ml tap water for one hour at 121\\u00b0C. Allow it to sediment for a few hours at room temperature. Centrifuge the supernatant. Add 15.0 g agar per 1000 ml to the clear supernatant solution thus obtained. Adjust pH to 6.8 - 7.0 and sterilize.\"\n                    }",
+          "source_pointer": [
+            "data",
+            "solutions",
+            0,
+            "steps",
+            0
+          ],
+          "locator": "$.data.solutions[0].steps[0]",
+          "evidence_pointer": [
+            "solutions",
+            0,
+            "composition",
+            1
+          ],
+          "explanation": "Distinguish initial water from recovered liquid and any later make-up water."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            0,
+            "concentration"
+          ],
+          "old_pointer": [
+            "ingredients",
+            2,
+            "concentration"
+          ],
+          "field": "ingredients[0].concentration",
+          "old": {
+            "value": "15",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "15",
+            "unit": "G_PER_L"
+          },
+          "status": "verified",
+          "reference": "https://mediadive.dsmz.de/rest/medium/12",
+          "snippet": "{\n                        \"step\": \"Sterilize 400.0 g of air-dried garden soil (with high content of organic matter) in 1000 ml tap water for one hour at 121\\u00b0C. Allow it to sediment for a few hours at room temperature. Centrifuge the supernatant. Add 15.0 g agar per 1000 ml to the clear supernatant solution thus obtained. Adjust pH to 6.8 - 7.0 and sterilize.\"\n                    }",
+          "source_pointer": [
+            "data",
+            "solutions",
+            0,
+            "steps",
+            0
+          ],
+          "locator": "$.data.solutions[0].steps[0]",
+          "evidence_pointer": [
+            "ingredients",
+            0
+          ],
+          "explanation": "The agar concentration is retained and relocated, with its denominator scoped to recovered extract rather than the extraction starting water."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            0,
+            "notes"
+          ],
+          "old_pointer": null,
+          "field": "ingredients[0].notes",
+          "old": null,
+          "new": "15 g per liter of clarified supernatant, not per liter of the starting soil suspension.",
+          "status": "add",
+          "reference": "https://mediadive.dsmz.de/rest/medium/12",
+          "snippet": "{\n                        \"step\": \"Sterilize 400.0 g of air-dried garden soil (with high content of organic matter) in 1000 ml tap water for one hour at 121\\u00b0C. Allow it to sediment for a few hours at room temperature. Centrifuge the supernatant. Add 15.0 g agar per 1000 ml to the clear supernatant solution thus obtained. Adjust pH to 6.8 - 7.0 and sterilize.\"\n                    }",
+          "source_pointer": [
+            "data",
+            "solutions",
+            0,
+            "steps",
+            0
+          ],
+          "locator": "$.data.solutions[0].steps[0]",
+          "evidence_pointer": [
+            "ingredients",
+            0
+          ],
+          "explanation": "The source identifies the preparation-stage denominator for agar."
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "preparation_notes"
+          ],
+          "old_pointer": [
+            "preparation_steps",
+            0,
+            "description"
+          ],
+          "field": "solutions[0].preparation_notes",
+          "old": "Sterilize 400.0 g of air-dried garden soil (with high content of organic matter) in 1000 ml tap water for one hour at 121\u00b0C. Allow it to sediment for a few hours at room temperature. Centrifuge the supernatant. Add 15.0 g agar per 1000 ml to the clear supernatant solution thus obtained. Adjust pH to 6.8 - 7.0 and sterilize.",
+          "new": "Sterilize 400.0 g of air-dried garden soil (with high content of organic matter) in 1000 ml tap water for one hour at 121\u00b0C. Allow it to sediment for a few hours at room temperature. Centrifuge the supernatant.",
+          "status": "correct",
+          "reference": "https://mediadive.dsmz.de/rest/medium/12",
+          "snippet": "{\n                        \"step\": \"Sterilize 400.0 g of air-dried garden soil (with high content of organic matter) in 1000 ml tap water for one hour at 121\\u00b0C. Allow it to sediment for a few hours at room temperature. Centrifuge the supernatant. Add 15.0 g agar per 1000 ml to the clear supernatant solution thus obtained. Adjust pH to 6.8 - 7.0 and sterilize.\"\n                    }",
+          "source_pointer": [
+            "data",
+            "solutions",
+            0,
+            "steps",
+            0
+          ],
+          "locator": "$.data.solutions[0].steps[0]",
+          "evidence_pointer": [],
+          "explanation": "Move the exact extraction-stage text ahead of agar addition; preserve all source instructions."
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "notes"
+          ],
+          "old_pointer": null,
+          "field": "solutions[0].notes",
+          "old": null,
+          "new": "Curator-described extraction stage, not a separately accessioned stock. Composition lists preparation inputs, not retained solutes. Recovered volume and an absolute extract dose are not specified; agar is dosed per liter of clarified supernatant.",
+          "status": "add",
+          "reference": "https://mediadive.dsmz.de/rest/medium/12",
+          "snippet": "{\n                        \"step\": \"Sterilize 400.0 g of air-dried garden soil (with high content of organic matter) in 1000 ml tap water for one hour at 121\\u00b0C. Allow it to sediment for a few hours at room temperature. Centrifuge the supernatant. Add 15.0 g agar per 1000 ml to the clear supernatant solution thus obtained. Adjust pH to 6.8 - 7.0 and sterilize.\"\n                    }",
+          "source_pointer": [
+            "data",
+            "solutions",
+            0,
+            "steps",
+            0
+          ],
+          "locator": "$.data.solutions[0].steps[0]",
+          "evidence_pointer": [],
+          "explanation": "Explicit preparation boundary; no invented stock accession or recovered-solute concentration."
+        },
+        {
+          "pointer": [
+            "preparation_steps"
+          ],
+          "old_pointer": [
+            "preparation_steps"
+          ],
+          "field": "preparation_steps",
+          "old": [
+            {
+              "step_number": 1,
+              "action": "ADJUST_PH",
+              "description": "Sterilize 400.0 g of air-dried garden soil (with high content of organic matter) in 1000 ml tap water for one hour at 121\u00b0C. Allow it to sediment for a few hours at room temperature. Centrifuge the supernatant. Add 15.0 g agar per 1000 ml to the clear supernatant solution thus obtained. Adjust pH to 6.8 - 7.0 and sterilize."
+            }
+          ],
+          "new": [
+            {
+              "step_number": 1,
+              "action": "ADD_AGAR",
+              "description": "Add 15.0 g agar per 1000 ml to the clear supernatant solution thus obtained."
+            },
+            {
+              "step_number": 2,
+              "action": "ADJUST_PH",
+              "description": "Adjust pH to 6.8 - 7.0 and sterilize."
+            }
+          ],
+          "status": "correct",
+          "reference": "https://mediadive.dsmz.de/rest/medium/12",
+          "snippet": "{\n                        \"step\": \"Sterilize 400.0 g of air-dried garden soil (with high content of organic matter) in 1000 ml tap water for one hour at 121\\u00b0C. Allow it to sediment for a few hours at room temperature. Centrifuge the supernatant. Add 15.0 g agar per 1000 ml to the clear supernatant solution thus obtained. Adjust pH to 6.8 - 7.0 and sterilize.\"\n                    }",
+          "source_pointer": [
+            "data",
+            "solutions",
+            0,
+            "steps",
+            0
+          ],
+          "locator": "$.data.solutions[0].steps[0]",
+          "evidence_pointer": [],
+          "explanation": "Separate extraction from agar addition; filtration through cloth/paper is not asserted to be sterile filtration."
+        }
+      ],
+      "claim_resolutions": [
+        {
+          "from_pointer": [
+            "ingredients",
+            0
+          ],
+          "to_pointer": [
+            "solutions",
+            0,
+            "composition",
+            0
+          ],
+          "reference": "https://mediadive.dsmz.de/rest/medium/12",
+          "old_concentration": {
+            "value": "400",
+            "unit": "G_PER_L"
+          },
+          "disposition": "withdrawn",
+          "new_field": "solutions[0].composition[0].notes",
+          "source_pointer": [
+            "data",
+            "solutions",
+            0,
+            "steps",
+            0
+          ],
+          "source_snippet": "{\n                        \"step\": \"Sterilize 400.0 g of air-dried garden soil (with high content of organic matter) in 1000 ml tap water for one hour at 121\\u00b0C. Allow it to sediment for a few hours at room temperature. Centrifuge the supernatant. Add 15.0 g agar per 1000 ml to the clear supernatant solution thus obtained. Adjust pH to 6.8 - 7.0 and sterilize.\"\n                    }",
+          "reason": "The former main-medium concentration is withdrawn; the source supports an extraction input amount, not a finished-medium concentration or dissolved yield."
+        },
+        {
+          "from_pointer": [
+            "ingredients",
+            2
+          ],
+          "to_pointer": [
+            "ingredients",
+            0
+          ],
+          "reference": "https://mediadive.dsmz.de/rest/medium/12",
+          "old_concentration": {
+            "value": "15",
+            "unit": "G_PER_L"
+          },
+          "disposition": "relocated",
+          "new_field": "ingredients[0].concentration",
+          "source_pointer": [
+            "data",
+            "solutions",
+            0,
+            "steps",
+            0
+          ],
+          "source_snippet": "{\n                        \"step\": \"Sterilize 400.0 g of air-dried garden soil (with high content of organic matter) in 1000 ml tap water for one hour at 121\\u00b0C. Allow it to sediment for a few hours at room temperature. Centrifuge the supernatant. Add 15.0 g agar per 1000 ml to the clear supernatant solution thus obtained. Adjust pH to 6.8 - 7.0 and sterilize.\"\n                    }",
+          "reason": "The agar concentration is retained and relocated, with its denominator scoped to recovered extract rather than the extraction starting water."
+        }
+      ],
+      "action": "CORRECTED_EXTRACTION_INPUT_BOUNDARIES"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/cow_manure_agar.yaml",
+      "id": "CultureMech:001794",
+      "medium_id": "657",
+      "before_text": "id: CultureMech:001794\nname: cow_manure_agar\noriginal_name: COW MANURE AGAR\ncategory: bacterial\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: SOLID_AGAR\nmedia_term:\n  preferred_term: DSMZ Medium 657\n  term:\n    id: mediadive.medium:657\n    label: COW MANURE AGAR\nnotes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium657.pdf'\ningredients:\n- preferred_term: Dry cow-manure\n  concentration:\n    value: '50'\n    unit: G_PER_L\n- preferred_term: Tap water\n  term:\n    id: CHEBI:15377\n    label: water\n  concentration:\n    value: '1000'\n    unit: G_PER_L\n  mediaingredientmech_chebi_term:\n    id: CHEBI:15377\n    label: water\n- preferred_term: Agar\n  term:\n    id: CHEBI:2509\n    label: agar\n  concentration:\n    value: '20'\n    unit: G_PER_L\n  mediaingredientmech_chebi_term:\n    id: CHEBI:2509\n    label: agar\n  evidence:\n  - reference: https://mediadive.dsmz.de/rest/medium/657\n    supports: SUPPORT\n    snippet: |-\n      {\n                              \"recipe_order\": 3,\n                              \"compound\": \"Agar\",\n                              \"compound_id\": 3,\n                              \"amount\": 20,\n                              \"unit\": \"g\",\n                              \"g_l\": 20,\n                              \"mmol_l\": 59.4654,\n                              \"optional\": 0\n                          }\n    explanation: 'Concentration evidence for ingredients[2].concentration (Agar) in\n      MediaDive medium 657; locator=$.data.solutions[0].recipe[2]. Provider explicitly\n      reports g_l=20; check: 20 g * 1 g/g / (1000 ml / 1000 ml per L) = 20 g/L. This\n      supports the provider-declared main-recipe concentration, not an independently\n      measured final volume, a stock composition, or a downstream assay dilution.\n      Water alone does not establish final volume. Exact source ingredient labels/forms\n      are matched; secondary ontology mappings are not validated by this evidence.\n      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T12:17:06.429209+00:00;\n      response SHA256=298ab9f3b5f727ef04f3a45fcaae53e690570b92c7e42e5db332d98144c0ea51.'\npreparation_steps:\n- step_number: 1\n  action: FILTER_STERILIZE\n  description: Suspend 50 g of dry cow-manure in one liter of tap water. Boil for\n    one hour. Filter, first through cheesecloth and then paper. Make up volume to\n    one liter. Add 20 g agar.\napplications:\n- Microbial cultivation\ncuration_history:\n- timestamp: '2026-01-26T17:53:11.853808Z'\n  curator: mediadive-import\n  action: Imported from MediaDive\n  notes: 'Source: DSMZ, ID: 657'\n- timestamp: '2026-03-13T06:19:07.263721Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:001794'\n- timestamp: '2026-03-17T06:30:03.000000Z'\n  curator: mediaingredientmech-enrichment-v1.0\n  action: Added MediaIngredientMech links\n  notes: Linked ingredients to MediaIngredientMech identifiers\n- timestamp: '2026-03-17T19:45:19.547939+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"COW MANURE AGAR\" to \"cow_manure_agar\" for consistent\n    matching\n- timestamp: '2026-06-05T07:40:54.904815+00:00'\n  curator: mim-legacy-to-chebi-migration-v1.0\n  action: Refreshed legacy MediaIngredientMech links to CHEBI keying\n  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term\n    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN\n    id scheme.'\n- timestamp: '2026-10-07T12:21:30.028294+00:00'\n  curator: codex\n  action: CURATED_MEDIUM_CONCENTRATION_SOURCE_EVIDENCE\n  notes: Exact medium/source membership, ingredient inventory/forms, physical-state\n    conditions, literal snippets, and arithmetic checked. Stock boundaries, source-only\n    rows, preparation context, and variants remain explicit follow-up tasks; secondary\n    chemical mappings unchanged.\n  source: https://mediadive.dsmz.de/rest/medium/657\n  changes: 'ingredients[2].concentration: {\"unit\": \"G_PER_L\", \"value\": \"20\"} -> {\"unit\":\n    \"G_PER_L\", \"value\": \"20\"} (evidence_only)'\nreferences:\n- reference: https://mediadive.dsmz.de/rest/medium/657\n  title: 'MediaDive medium 657: COW MANURE AGAR'\n  notes: source_type=dataset; discovery_mode=existing_record_reference; source_organization=DSMZ;\n    accessed_on=2026-10-07; locator=$.data.solutions[0]; response_sha256=298ab9f3b5f727ef04f3a45fcaae53e690570b92c7e42e5db332d98144c0ea51;\n    original_recipe=https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium657.pdf;\n    individual authors and publication year not supplied. Provider-declared main-recipe\n    amounts only.\n",
+      "before_sha256": "f2cc6b272b650efa43d6298a9cd644f0f7498beb5c4ed54d52fe8ab6c29d2dd4",
+      "after_text": "id: CultureMech:001794\nname: cow_manure_agar\noriginal_name: COW MANURE AGAR\ncategory: bacterial\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: SOLID_AGAR\nmedia_term:\n  preferred_term: DSMZ Medium 657\n  term:\n    id: mediadive.medium:657\n    label: COW MANURE AGAR\nnotes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium657.pdf'\ningredients:\n- preferred_term: Agar\n  term:\n    id: CHEBI:2509\n    label: agar\n  concentration:\n    value: '20'\n    unit: G_PER_L\n  mediaingredientmech_chebi_term:\n    id: CHEBI:2509\n    label: agar\n  evidence:\n  - reference: https://mediadive.dsmz.de/rest/medium/657\n    supports: SUPPORT\n    snippet: |-\n      {\n                              \"recipe_order\": 3,\n                              \"compound\": \"Agar\",\n                              \"compound_id\": 3,\n                              \"amount\": 20,\n                              \"unit\": \"g\",\n                              \"g_l\": 20,\n                              \"mmol_l\": 59.4654,\n                              \"optional\": 0\n                          }\n    explanation: |-\n      Extraction follow-up evidence for ingredients[0].concentration, ingredients[0].notes. The agar concentration is retained and relocated, with its denominator scoped to recovered extract rather than the extraction starting water. The source identifies the preparation-stage denominator for agar. Exact preparation excerpt at $.data.solutions[0].steps[0]: {\n                              \"step\": \"Suspend 50 g of dry cow-manure in one liter of tap water. Boil for one hour. Filter, first through cheesecloth and then paper. Make up volume to one liter. Add 20 g agar.\"\n                          }. Retrieved 2026-10-07T12:17:06.429209+00:00; response SHA256=298ab9f3b5f727ef04f3a45fcaae53e690570b92c7e42e5db332d98144c0ea51.\n  notes: 20 g added after the filtered extract is made up to one liter; no soil/manure\n    concentration or extraction yield is inferred.\npreparation_steps:\n- step_number: 1\n  action: ADD_AGAR\n  description: Add 20 g agar.\napplications:\n- Microbial cultivation\ncuration_history:\n- timestamp: '2026-01-26T17:53:11.853808Z'\n  curator: mediadive-import\n  action: Imported from MediaDive\n  notes: 'Source: DSMZ, ID: 657'\n- timestamp: '2026-03-13T06:19:07.263721Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:001794'\n- timestamp: '2026-03-17T06:30:03.000000Z'\n  curator: mediaingredientmech-enrichment-v1.0\n  action: Added MediaIngredientMech links\n  notes: Linked ingredients to MediaIngredientMech identifiers\n- timestamp: '2026-03-17T19:45:19.547939+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"COW MANURE AGAR\" to \"cow_manure_agar\" for consistent\n    matching\n- timestamp: '2026-06-05T07:40:54.904815+00:00'\n  curator: mim-legacy-to-chebi-migration-v1.0\n  action: Refreshed legacy MediaIngredientMech links to CHEBI keying\n  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term\n    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN\n    id scheme.'\n- timestamp: '2026-10-07T12:21:30.028294+00:00'\n  curator: codex\n  action: CURATED_MEDIUM_CONCENTRATION_SOURCE_EVIDENCE\n  notes: Exact medium/source membership, ingredient inventory/forms, physical-state\n    conditions, literal snippets, and arithmetic checked. Stock boundaries, source-only\n    rows, preparation context, and variants remain explicit follow-up tasks; secondary\n    chemical mappings unchanged.\n  source: https://mediadive.dsmz.de/rest/medium/657\n  changes: 'ingredients[2].concentration: {\"unit\": \"G_PER_L\", \"value\": \"20\"} -> {\"unit\":\n    \"G_PER_L\", \"value\": \"20\"} (evidence_only)'\n- timestamp: '2026-10-07T12:43:51.923147+00:00'\n  curator: codex\n  action: CORRECTED_EXTRACTION_INPUT_BOUNDARIES\n  notes: Original recipe visually verified. Removed unsupported extract-solids concentration;\n    retained starting mass in notes; corrected initial water volume; reconciled earlier\n    evidence scopes. No dissolved yield, density, or unspecified recovered volume\n    inferred.\n  source: https://mediadive.dsmz.de/rest/medium/657\n  changes: 'solutions[0].composition[0].concentration: {\"unit\": \"G_PER_L\", \"value\":\n    \"50\"} -> null (correct); solutions[0].composition[0].notes: null -> \"Extraction\n    starting material: 50 g in 1000 ml tap water. Solids are separated before the\n    recovered extract is used. The source does not quantify retained solids or dissolved\n    yield; no numeric extract concentration is asserted.\" (add); solutions[0].composition[1].concentration:\n    {\"unit\": \"G_PER_L\", \"value\": \"1000\"} -> {\"unit\": \"L\", \"value\": \"1\"} (correct);\n    solutions[0].composition[1].notes: null -> \"Initial extraction-water addition:\n    1000 ml / 1000 ml per L = 1 L, not a mass concentration or a measured recovered\n    volume. The later make-up to one liter is a separate final-volume instruction;\n    its additional water amount is unspecified.\" (add); ingredients[0].concentration:\n    {\"unit\": \"G_PER_L\", \"value\": \"20\"} -> {\"unit\": \"G_PER_L\", \"value\": \"20\"} (verified);\n    ingredients[0].notes: null -> \"20 g added after the filtered extract is made up\n    to one liter; no soil/manure concentration or extraction yield is inferred.\" (add);\n    solutions[0].preparation_notes: \"Suspend 50 g of dry cow-manure in one liter of\n    tap water. Boil for one hour. Filter, first through cheesecloth and then paper.\n    Make up volume to one liter. Add 20 g agar.\" -> \"Suspend 50 g of dry cow-manure\n    in one liter of tap water. Boil for one hour. Filter, first through cheesecloth\n    and then paper. Make up volume to one liter.\" (correct); solutions[0].notes: null\n    -> \"Curator-described extraction stage, not a separately accessioned stock. Composition\n    lists preparation inputs, not retained solutes. The filtered extract is made up\n    to one liter before agar is added. This is the prepared extract volume, not an\n    extraction yield or a final agar-medium volume measurement.\" (add); preparation_steps:\n    [{\"action\": \"FILTER_STERILIZE\", \"description\": \"Suspend 50 g of dry cow-manure\n    in one liter of tap water. Boil for one hour. Filter, first through cheesecloth\n    and then paper. Make up volume to one liter. Add 20 g agar.\", \"step_number\": 1}]\n    -> [{\"action\": \"ADD_AGAR\", \"description\": \"Add 20 g agar.\", \"step_number\": 1}]\n    (correct); solutions[0].concentration: null -> {\"unit\": \"L\", \"value\": \"1\"} (add)'\nreferences:\n- reference: https://mediadive.dsmz.de/rest/medium/657\n  title: 'MediaDive medium 657: COW MANURE AGAR'\n  notes: source_type=dataset; discovery_mode=existing_record_reference; source_organization=DSMZ;\n    accessed_on=2026-10-07; locator=$.data.solutions[0]; response_sha256=298ab9f3b5f727ef04f3a45fcaae53e690570b92c7e42e5db332d98144c0ea51;\n    original_recipe=https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium657.pdf;\n    individual authors and publication year not supplied. Provider-declared main-recipe\n    amounts only.\n- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium657.pdf\n  title: 'DSMZ medium 657: COW MANURE AGAR'\n  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;\n    source_organization=DSMZ; accessed_on=2026-10-07; locator=page 1, complete recipe;\n    PDF SHA256=eb788e7b0ce8da48e2699a178dac7fdc2f6b0a49742fb69e3e7595b8c1624930. Visually\n    verified extraction stage against the exact API preparation text. Individual authors/publication\n    year not established; copyright year is not used as publication year.\nsolutions:\n- preferred_term: Filtered manure extract\n  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium657.pdf\n  notes: Curator-described extraction stage, not a separately accessioned stock. Composition\n    lists preparation inputs, not retained solutes. The filtered extract is made up\n    to one liter before agar is added. This is the prepared extract volume, not an\n    extraction yield or a final agar-medium volume measurement.\n  composition:\n  - preferred_term: Dry cow-manure\n    notes: 'Extraction starting material: 50 g in 1000 ml tap water. Solids are separated\n      before the recovered extract is used. The source does not quantify retained\n      solids or dissolved yield; no numeric extract concentration is asserted.'\n    evidence:\n    - reference: https://mediadive.dsmz.de/rest/medium/657\n      supports: SUPPORT\n      snippet: |-\n        {\n                                \"recipe_order\": 1,\n                                \"compound\": \"Dry cow-manure\",\n                                \"compound_id\": 2131,\n                                \"amount\": 50,\n                                \"unit\": \"g\",\n                                \"g_l\": 50,\n                                \"optional\": 0\n                            }\n      explanation: |-\n        Extraction follow-up evidence for solutions[0].composition[0].concentration, solutions[0].composition[0].notes. The former main-medium concentration is withdrawn; the source supports an extraction input amount, not a finished-medium concentration or dissolved yield. The explicit starting mass is retained in notes because the schema has no absolute-mass unit; no extract concentration is invented. Exact preparation excerpt at $.data.solutions[0].steps[0]: {\n                                \"step\": \"Suspend 50 g of dry cow-manure in one liter of tap water. Boil for one hour. Filter, first through cheesecloth and then paper. Make up volume to one liter. Add 20 g agar.\"\n                            }. Retrieved 2026-10-07T12:17:06.429209+00:00; response SHA256=298ab9f3b5f727ef04f3a45fcaae53e690570b92c7e42e5db332d98144c0ea51.\n  - preferred_term: Tap water\n    term:\n      id: CHEBI:15377\n      label: water\n    concentration:\n      value: '1'\n      unit: L\n    mediaingredientmech_chebi_term:\n      id: CHEBI:15377\n      label: water\n    notes: 'Initial extraction-water addition: 1000 ml / 1000 ml per L = 1 L, not\n      a mass concentration or a measured recovered volume. The later make-up to one\n      liter is a separate final-volume instruction; its additional water amount is\n      unspecified.'\n    evidence:\n    - reference: https://mediadive.dsmz.de/rest/medium/657\n      supports: SUPPORT\n      snippet: |-\n        {\n                                \"recipe_order\": 2,\n                                \"compound\": \"Tap water\",\n                                \"compound_id\": 322,\n                                \"amount\": 1000,\n                                \"unit\": \"ml\",\n                                \"optional\": 0\n                            }\n      explanation: |-\n        Extraction follow-up evidence for solutions[0].composition[1].concentration, solutions[0].composition[1].notes. Initial extraction-water volume only. 1000 ml / 1000 ml per L = 1 L of initial preparation water; no density or final volume assumed. Distinguish initial water from recovered liquid and any later make-up water. Exact preparation excerpt at $.data.solutions[0].steps[0]: {\n                                \"step\": \"Suspend 50 g of dry cow-manure in one liter of tap water. Boil for one hour. Filter, first through cheesecloth and then paper. Make up volume to one liter. Add 20 g agar.\"\n                            }. Retrieved 2026-10-07T12:17:06.429209+00:00; response SHA256=298ab9f3b5f727ef04f3a45fcaae53e690570b92c7e42e5db332d98144c0ea51.\n  preparation_notes: Suspend 50 g of dry cow-manure in one liter of tap water. Boil\n    for one hour. Filter, first through cheesecloth and then paper. Make up volume\n    to one liter.\n  concentration:\n    value: '1'\n    unit: L\nevidence:\n- reference: https://mediadive.dsmz.de/rest/medium/657\n  supports: SUPPORT\n  snippet: |-\n    {\n                            \"step\": \"Suspend 50 g of dry cow-manure in one liter of tap water. Boil for one hour. Filter, first through cheesecloth and then paper. Make up volume to one liter. Add 20 g agar.\"\n                        }\n  explanation: Extraction-stage evidence for solutions[0].preparation_notes, solutions[0].notes,\n    preparation_steps, solutions[0].concentration. Move the exact extraction-stage\n    text ahead of agar addition; preserve all source instructions. Explicit preparation\n    boundary; no invented stock accession or recovered-solute concentration. Separate\n    extraction from agar addition; filtration through cloth/paper is not asserted\n    to be sterile filtration. The source explicitly makes the filtered extract up\n    to one liter before adding agar. This is not inferred from starting water volume.\n    Source locator=$.data.solutions[0].steps[0]; retrieved 2026-10-07T12:17:06.429209+00:00;\n    SHA256=298ab9f3b5f727ef04f3a45fcaae53e690570b92c7e42e5db332d98144c0ea51.\n",
+      "after_sha256": "0f25051dad672e09b6b25f3de36a6f225763127edbdd59e89c1a11ece118a2ee",
+      "source_sha256": "298ab9f3b5f727ef04f3a45fcaae53e690570b92c7e42e5db332d98144c0ea51",
+      "source_accessed_at": "2026-10-07T12:17:06.429209+00:00",
+      "claims": [
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            0,
+            "concentration"
+          ],
+          "old_pointer": [
+            "ingredients",
+            0,
+            "concentration"
+          ],
+          "field": "solutions[0].composition[0].concentration",
+          "old": {
+            "value": "50",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "correct",
+          "reference": "https://mediadive.dsmz.de/rest/medium/657",
+          "snippet": "{\n                        \"step\": \"Suspend 50 g of dry cow-manure in one liter of tap water. Boil for one hour. Filter, first through cheesecloth and then paper. Make up volume to one liter. Add 20 g agar.\"\n                    }",
+          "source_pointer": [
+            "data",
+            "solutions",
+            0,
+            "steps",
+            0
+          ],
+          "locator": "$.data.solutions[0].steps[0]",
+          "evidence_pointer": [
+            "solutions",
+            0,
+            "composition",
+            0
+          ],
+          "explanation": "The former main-medium concentration is withdrawn; the source supports an extraction input amount, not a finished-medium concentration or dissolved yield."
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            0,
+            "notes"
+          ],
+          "old_pointer": null,
+          "field": "solutions[0].composition[0].notes",
+          "old": null,
+          "new": "Extraction starting material: 50 g in 1000 ml tap water. Solids are separated before the recovered extract is used. The source does not quantify retained solids or dissolved yield; no numeric extract concentration is asserted.",
+          "status": "add",
+          "reference": "https://mediadive.dsmz.de/rest/medium/657",
+          "snippet": "{\n                        \"step\": \"Suspend 50 g of dry cow-manure in one liter of tap water. Boil for one hour. Filter, first through cheesecloth and then paper. Make up volume to one liter. Add 20 g agar.\"\n                    }",
+          "source_pointer": [
+            "data",
+            "solutions",
+            0,
+            "steps",
+            0
+          ],
+          "locator": "$.data.solutions[0].steps[0]",
+          "evidence_pointer": [
+            "solutions",
+            0,
+            "composition",
+            0
+          ],
+          "explanation": "The explicit starting mass is retained in notes because the schema has no absolute-mass unit; no extract concentration is invented."
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            1,
+            "concentration"
+          ],
+          "old_pointer": [
+            "ingredients",
+            1,
+            "concentration"
+          ],
+          "field": "solutions[0].composition[1].concentration",
+          "old": {
+            "value": "1000",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "1",
+            "unit": "L"
+          },
+          "status": "correct",
+          "reference": "https://mediadive.dsmz.de/rest/medium/657",
+          "snippet": "{\n                        \"step\": \"Suspend 50 g of dry cow-manure in one liter of tap water. Boil for one hour. Filter, first through cheesecloth and then paper. Make up volume to one liter. Add 20 g agar.\"\n                    }",
+          "source_pointer": [
+            "data",
+            "solutions",
+            0,
+            "steps",
+            0
+          ],
+          "locator": "$.data.solutions[0].steps[0]",
+          "evidence_pointer": [
+            "solutions",
+            0,
+            "composition",
+            1
+          ],
+          "explanation": "1000 ml / 1000 ml per L = 1 L of initial preparation water; no density or final volume assumed."
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            1,
+            "notes"
+          ],
+          "old_pointer": null,
+          "field": "solutions[0].composition[1].notes",
+          "old": null,
+          "new": "Initial extraction-water addition: 1000 ml / 1000 ml per L = 1 L, not a mass concentration or a measured recovered volume. The later make-up to one liter is a separate final-volume instruction; its additional water amount is unspecified.",
+          "status": "add",
+          "reference": "https://mediadive.dsmz.de/rest/medium/657",
+          "snippet": "{\n                        \"step\": \"Suspend 50 g of dry cow-manure in one liter of tap water. Boil for one hour. Filter, first through cheesecloth and then paper. Make up volume to one liter. Add 20 g agar.\"\n                    }",
+          "source_pointer": [
+            "data",
+            "solutions",
+            0,
+            "steps",
+            0
+          ],
+          "locator": "$.data.solutions[0].steps[0]",
+          "evidence_pointer": [
+            "solutions",
+            0,
+            "composition",
+            1
+          ],
+          "explanation": "Distinguish initial water from recovered liquid and any later make-up water."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            0,
+            "concentration"
+          ],
+          "old_pointer": [
+            "ingredients",
+            2,
+            "concentration"
+          ],
+          "field": "ingredients[0].concentration",
+          "old": {
+            "value": "20",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "20",
+            "unit": "G_PER_L"
+          },
+          "status": "verified",
+          "reference": "https://mediadive.dsmz.de/rest/medium/657",
+          "snippet": "{\n                        \"step\": \"Suspend 50 g of dry cow-manure in one liter of tap water. Boil for one hour. Filter, first through cheesecloth and then paper. Make up volume to one liter. Add 20 g agar.\"\n                    }",
+          "source_pointer": [
+            "data",
+            "solutions",
+            0,
+            "steps",
+            0
+          ],
+          "locator": "$.data.solutions[0].steps[0]",
+          "evidence_pointer": [
+            "ingredients",
+            0
+          ],
+          "explanation": "The agar concentration is retained and relocated, with its denominator scoped to recovered extract rather than the extraction starting water."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            0,
+            "notes"
+          ],
+          "old_pointer": null,
+          "field": "ingredients[0].notes",
+          "old": null,
+          "new": "20 g added after the filtered extract is made up to one liter; no soil/manure concentration or extraction yield is inferred.",
+          "status": "add",
+          "reference": "https://mediadive.dsmz.de/rest/medium/657",
+          "snippet": "{\n                        \"step\": \"Suspend 50 g of dry cow-manure in one liter of tap water. Boil for one hour. Filter, first through cheesecloth and then paper. Make up volume to one liter. Add 20 g agar.\"\n                    }",
+          "source_pointer": [
+            "data",
+            "solutions",
+            0,
+            "steps",
+            0
+          ],
+          "locator": "$.data.solutions[0].steps[0]",
+          "evidence_pointer": [
+            "ingredients",
+            0
+          ],
+          "explanation": "The source identifies the preparation-stage denominator for agar."
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "preparation_notes"
+          ],
+          "old_pointer": [
+            "preparation_steps",
+            0,
+            "description"
+          ],
+          "field": "solutions[0].preparation_notes",
+          "old": "Suspend 50 g of dry cow-manure in one liter of tap water. Boil for one hour. Filter, first through cheesecloth and then paper. Make up volume to one liter. Add 20 g agar.",
+          "new": "Suspend 50 g of dry cow-manure in one liter of tap water. Boil for one hour. Filter, first through cheesecloth and then paper. Make up volume to one liter.",
+          "status": "correct",
+          "reference": "https://mediadive.dsmz.de/rest/medium/657",
+          "snippet": "{\n                        \"step\": \"Suspend 50 g of dry cow-manure in one liter of tap water. Boil for one hour. Filter, first through cheesecloth and then paper. Make up volume to one liter. Add 20 g agar.\"\n                    }",
+          "source_pointer": [
+            "data",
+            "solutions",
+            0,
+            "steps",
+            0
+          ],
+          "locator": "$.data.solutions[0].steps[0]",
+          "evidence_pointer": [],
+          "explanation": "Move the exact extraction-stage text ahead of agar addition; preserve all source instructions."
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "notes"
+          ],
+          "old_pointer": null,
+          "field": "solutions[0].notes",
+          "old": null,
+          "new": "Curator-described extraction stage, not a separately accessioned stock. Composition lists preparation inputs, not retained solutes. The filtered extract is made up to one liter before agar is added. This is the prepared extract volume, not an extraction yield or a final agar-medium volume measurement.",
+          "status": "add",
+          "reference": "https://mediadive.dsmz.de/rest/medium/657",
+          "snippet": "{\n                        \"step\": \"Suspend 50 g of dry cow-manure in one liter of tap water. Boil for one hour. Filter, first through cheesecloth and then paper. Make up volume to one liter. Add 20 g agar.\"\n                    }",
+          "source_pointer": [
+            "data",
+            "solutions",
+            0,
+            "steps",
+            0
+          ],
+          "locator": "$.data.solutions[0].steps[0]",
+          "evidence_pointer": [],
+          "explanation": "Explicit preparation boundary; no invented stock accession or recovered-solute concentration."
+        },
+        {
+          "pointer": [
+            "preparation_steps"
+          ],
+          "old_pointer": [
+            "preparation_steps"
+          ],
+          "field": "preparation_steps",
+          "old": [
+            {
+              "step_number": 1,
+              "action": "FILTER_STERILIZE",
+              "description": "Suspend 50 g of dry cow-manure in one liter of tap water. Boil for one hour. Filter, first through cheesecloth and then paper. Make up volume to one liter. Add 20 g agar."
+            }
+          ],
+          "new": [
+            {
+              "step_number": 1,
+              "action": "ADD_AGAR",
+              "description": "Add 20 g agar."
+            }
+          ],
+          "status": "correct",
+          "reference": "https://mediadive.dsmz.de/rest/medium/657",
+          "snippet": "{\n                        \"step\": \"Suspend 50 g of dry cow-manure in one liter of tap water. Boil for one hour. Filter, first through cheesecloth and then paper. Make up volume to one liter. Add 20 g agar.\"\n                    }",
+          "source_pointer": [
+            "data",
+            "solutions",
+            0,
+            "steps",
+            0
+          ],
+          "locator": "$.data.solutions[0].steps[0]",
+          "evidence_pointer": [],
+          "explanation": "Separate extraction from agar addition; filtration through cloth/paper is not asserted to be sterile filtration."
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "concentration"
+          ],
+          "old_pointer": null,
+          "field": "solutions[0].concentration",
+          "old": null,
+          "new": {
+            "value": "1",
+            "unit": "L"
+          },
+          "status": "add",
+          "reference": "https://mediadive.dsmz.de/rest/medium/657",
+          "snippet": "{\n                        \"step\": \"Suspend 50 g of dry cow-manure in one liter of tap water. Boil for one hour. Filter, first through cheesecloth and then paper. Make up volume to one liter. Add 20 g agar.\"\n                    }",
+          "source_pointer": [
+            "data",
+            "solutions",
+            0,
+            "steps",
+            0
+          ],
+          "locator": "$.data.solutions[0].steps[0]",
+          "evidence_pointer": [],
+          "explanation": "The source explicitly makes the filtered extract up to one liter before adding agar. This is not inferred from starting water volume."
+        }
+      ],
+      "claim_resolutions": [
+        {
+          "from_pointer": [
+            "ingredients",
+            2
+          ],
+          "to_pointer": [
+            "ingredients",
+            0
+          ],
+          "reference": "https://mediadive.dsmz.de/rest/medium/657",
+          "old_concentration": {
+            "value": "20",
+            "unit": "G_PER_L"
+          },
+          "disposition": "relocated",
+          "new_field": "ingredients[0].concentration",
+          "source_pointer": [
+            "data",
+            "solutions",
+            0,
+            "steps",
+            0
+          ],
+          "source_snippet": "{\n                        \"step\": \"Suspend 50 g of dry cow-manure in one liter of tap water. Boil for one hour. Filter, first through cheesecloth and then paper. Make up volume to one liter. Add 20 g agar.\"\n                    }",
+          "reason": "The agar concentration is retained and relocated, with its denominator scoped to recovered extract rather than the extraction starting water."
+        }
+      ],
+      "action": "CORRECTED_EXTRACTION_INPUT_BOUNDARIES"
+    }
+  ]
+}

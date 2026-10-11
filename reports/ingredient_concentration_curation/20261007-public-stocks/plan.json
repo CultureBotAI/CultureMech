@@ -1,0 +1,1369 @@
+{
+  "version": 1,
+  "action": "CURATED_PUBLIC_STOCK_CONCENTRATIONS_FROM_SCOPED_SOURCES",
+  "target_class": "MediaRecipe",
+  "commit": "f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f",
+  "created_at": "2026-10-07T17:51:49.842228+00:00",
+  "records": [
+    {
+      "path": "data/normalized_yaml/bacterial/taiyang_medium_no_9_prototype.yaml",
+      "id": "CultureMech:010432",
+      "name": "taiyang_medium_no_9_prototype",
+      "medium_id": "P2",
+      "action": "CURATED_PUBLIC_STOCK_CONCENTRATIONS_FROM_SCOPED_SOURCES",
+      "before_text": "id: CultureMech:010432\nname: taiyang_medium_no_9_prototype\noriginal_name: Taiyang Medium No.9 (prototype)\ncategory: bacterial\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: SOLID_AGAR\nmedia_term:\n  preferred_term: public Medium P2\n  term:\n    id: mediadive.medium:P2\n    label: Taiyang Medium No.9 (prototype)\nnotes: MediaDive public Medium P2 provides a user-provided Taiyang Medium No.9 prototype\n  formulation with clarified rumen fluid, sheep blood, carbohydrate polymers, filtered\n  pyruvate, trehalose, L-Cysteine HCl, Haemin solution, and Artifical Sea Water. MediaDive\n  lists this public medium as not curated/tested and with no valid reference, so only\n  formulation and preparation fields visible on the MediaDive page were curated.\ningredients:\n- preferred_term: Clarified rumen fluid\n  concentration:\n    value: '25'\n    unit: ML_PER_L\n  source: MediaDive public Medium P2\n- preferred_term: Sheep blood\n  concentration:\n    value: '25'\n    unit: ML_PER_L\n  source: MediaDive public Medium P2\n- preferred_term: Peptone\n  concentration:\n    value: '1'\n    unit: G_PER_L\n  source: MediaDive public Medium P2\n- preferred_term: Yeast extract\n  concentration:\n    value: '1'\n    unit: G_PER_L\n  source: MediaDive public Medium P2\n  term:\n    id: FOODON:03315426\n    label: yeast extract\n- preferred_term: NaCl\n  concentration:\n    value: '1'\n    unit: G_PER_L\n  source: MediaDive public Medium P2\n  term:\n    id: CHEBI:26710\n    label: sodium chloride\n  mediaingredientmech_chebi_term:\n    id: CHEBI:26710\n    label: sodium chloride\n- preferred_term: Cellulose\n  concentration:\n    value: '0.5'\n    unit: G_PER_L\n  source: MediaDive public Medium P2\n  term:\n    id: CHEBI:18246\n    label: Cellulose\n  mediaingredientmech_chebi_term:\n    id: CHEBI:18246\n    label: Cellulose\n- preferred_term: Pectin\n  concentration:\n    value: '0.5'\n    unit: G_PER_L\n  source: MediaDive public Medium P2\n  term:\n    id: CHEBI:17309\n    label: Pectin\n  mediaingredientmech_chebi_term:\n    id: CHEBI:17309\n    label: Pectin\n- preferred_term: Starch\n  concentration:\n    value: '0.5'\n    unit: G_PER_L\n  source: MediaDive public Medium P2\n  term:\n    id: CHEBI:28017\n    label: Starch\n  mediaingredientmech_chebi_term:\n    id: CHEBI:28017\n    label: Starch\n- preferred_term: Inulin\n  concentration:\n    value: '0.5'\n    unit: G_PER_L\n  source: MediaDive public Medium P2\n  term:\n    id: CHEBI:15443\n    label: Inulin\n  mediaingredientmech_chebi_term:\n    id: CHEBI:15443\n    label: Inulin\n- preferred_term: Trehalose\n  concentration:\n    value: '0.5'\n    unit: G_PER_L\n  source: MediaDive public Medium P2\n  term:\n    id: CHEBI:27082\n    label: Trehalose\n  mediaingredientmech_chebi_term:\n    id: CHEBI:27082\n    label: Trehalose\n- preferred_term: Sodium pyruvate\n  concentration:\n    value: '1'\n    unit: G_PER_L\n  source: MediaDive public Medium P2\n  term:\n    id: CHEBI:50144\n    label: sodium pyruvate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:50144\n    label: sodium pyruvate\n- preferred_term: dextrin\n  concentration:\n    value: '0.5'\n    unit: G_PER_L\n  source: MediaDive public Medium P2\n  term:\n    id: CHEBI:28675\n    label: Dextrin\n  mediaingredientmech_chebi_term:\n    id: CHEBI:28675\n    label: Dextrin\n- preferred_term: L-Cysteine HCl\n  concentration:\n    value: '0.1'\n    unit: G_PER_L\n  source: MediaDive public Medium P2\n  term:\n    id: CHEBI:91247\n    label: L-Cysteine HCl\n  mediaingredientmech_chebi_term:\n    id: CHEBI:91247\n    label: L-Cysteine HCl\n- preferred_term: Agar\n  concentration:\n    value: '15'\n    unit: G_PER_L\n  source: MediaDive public Medium P2\n  term:\n    id: CHEBI:2509\n    label: agar\n  mediaingredientmech_chebi_term:\n    id: CHEBI:2509\n    label: agar\napplications:\n- Microbial cultivation\ncuration_history:\n- timestamp: '2026-01-26T17:53:19.839003Z'\n  curator: mediadive-import\n  action: Imported from MediaDive\n  notes: 'Source: public, ID: P2'\n- timestamp: '2026-02-03T11:27:23.229167'\n  curator: quality-tagger-v1.0\n  action: Added data quality flag\n  notes: Marked as incomplete_composition due to placeholder ingredients\n- timestamp: '2026-03-13T06:20:13.817423Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:010432'\n- timestamp: '2026-03-17T19:46:32.795178+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"Taiyang Medium No.9 (prototype)\" to \"taiyang_medium_no_9_prototype\"\n    for consistent matching\n- timestamp: '2026-08-06T07:56:36.138296+00:00'\n  curator: curate_placeholder_composition.py\n  action: REMOVED_PLACEHOLDER_INGREDIENT\n  notes: Removed the 'See source for composition' placeholder ingredient; the record\n    carries no imported composition and is flagged incomplete (#175).\n  changes: Dropped placeholder ingredient 'See source for composition'\n- timestamp: '2026-09-10T00:00:00-07:00'\n  curator: repair_mediadive_p2_score35.py\n  action: RESOLVED_MEDIADIVE_P2_SCORE35\n  changes: Resolved score-35 MediaDive P2 placeholder graph\n  source: https://www.bacmedia.dsmz.de/medium/P2\n  notes: MediaDive public Medium P2 provides a user-provided Taiyang Medium No.9 prototype\n    formulation with clarified rumen fluid, sheep blood, carbohydrate polymers, filtered\n    pyruvate, trehalose, L-Cysteine HCl, Haemin solution, and Artifical Sea Water.\n    MediaDive lists this public medium as not curated/tested and with no valid reference,\n    so only formulation and preparation fields visible on the MediaDive page were\n    curated.\ndata_quality_flags:\n- ingredients_curated\n- has_ontology_mappings\n- has_unmapped_ingredients\nsolutions:\n- preferred_term: Artifical Sea Water\n  concentration:\n    value: '50'\n    unit: ML_PER_L\n  notes: P2 adds 50 ml Artifical Sea Water to 1 L Taiyang Medium No.9.\n  composition:\n  - preferred_term: NaCl\n    concentration:\n      value: '23.47'\n      unit: G_PER_L\n    source: MediaDive public Medium P2\n    term:\n      id: CHEBI:26710\n      label: sodium chloride\n    mediaingredientmech_chebi_term:\n      id: CHEBI:26710\n      label: sodium chloride\n  - preferred_term: Na2SO4\n    concentration:\n      value: '3.92'\n      unit: G_PER_L\n    source: MediaDive public Medium P2\n    term:\n      id: CHEBI:32149\n      label: sodium sulfate\n    mediaingredientmech_chebi_term:\n      id: CHEBI:32149\n      label: sodium sulfate\n  - preferred_term: MgCl2 x 6 H2O\n    concentration:\n      value: '10.64'\n      unit: G_PER_L\n    source: MediaDive public Medium P2\n    term:\n      id: CHEBI:86345\n      label: magnesium dichloride hexahydrate\n    mediaingredientmech_chebi_term:\n      id: CHEBI:86345\n      label: magnesium dichloride hexahydrate\n  - preferred_term: CaCl2\n    concentration:\n      value: '1.10'\n      unit: G_PER_L\n    source: MediaDive public Medium P2\n    term:\n      id: CHEBI:3312\n      label: calcium dichloride\n    mediaingredientmech_chebi_term:\n      id: CHEBI:3312\n      label: calcium dichloride\n  - preferred_term: NaHCO3\n    concentration:\n      value: '0.192'\n      unit: G_PER_L\n    source: MediaDive public Medium P2\n    term:\n      id: CHEBI:32139\n      label: sodium hydrogencarbonate\n    mediaingredientmech_chebi_term:\n      id: CHEBI:32139\n      label: sodium hydrogencarbonate\n  - preferred_term: KCl\n    concentration:\n      value: '0.664'\n      unit: G_PER_L\n    source: MediaDive public Medium P2\n    term:\n      id: CHEBI:32588\n      label: potassium chloride\n    mediaingredientmech_chebi_term:\n      id: CHEBI:32588\n      label: potassium chloride\n  - preferred_term: KBr\n    concentration:\n      value: '0.096'\n      unit: G_PER_L\n    source: MediaDive public Medium P2\n    term:\n      id: CHEBI:32030\n      label: potassium bromide\n    mediaingredientmech_chebi_term:\n      id: CHEBI:32030\n      label: potassium bromide\n  - preferred_term: H3BO3\n    concentration:\n      value: '0.026'\n      unit: G_PER_L\n    source: MediaDive public Medium P2\n    term:\n      id: CHEBI:33118\n      label: boric acid\n    mediaingredientmech_chebi_term:\n      id: CHEBI:33118\n      label: boric acid\n  - preferred_term: SrCl2\n    concentration:\n      value: '0.024'\n      unit: G_PER_L\n    source: MediaDive public Medium P2\n    term:\n      id: CHEBI:36383\n      label: strontium dichloride\n    mediaingredientmech_chebi_term:\n      id: CHEBI:36383\n      label: strontium dichloride\n  - preferred_term: NaF\n    concentration:\n      value: '0.003'\n      unit: G_PER_L\n    source: MediaDive public Medium P2\n    term:\n      id: CHEBI:28741\n      label: sodium fluoride\n    mediaingredientmech_chebi_term:\n      id: CHEBI:28741\n      label: sodium fluoride\n- preferred_term: Haemin solution\n  concentration:\n    value: '10'\n    unit: ML_PER_L\n  notes: P2 adds 10 ml Haemin solution to 1 L Taiyang Medium No.9.\n  composition:\n  - preferred_term: Haemin\n    concentration:\n      value: '0.5'\n      unit: G_PER_L\n    source: MediaDive public Medium P2\n    term:\n      id: CHEBI:50385\n      label: hemin\n    mediaingredientmech_chebi_term:\n      id: CHEBI:50385\n      label: hemin\n  - preferred_term: NaOH (1 N)\n    concentration:\n      value: '10'\n      unit: ML_PER_L\n    source: MediaDive public Medium P2\n    notes: P2 dissolves 50 mg Haemin in 1 ml 1 N NaOH and fills the stock to 100 ml.\n    term:\n      id: CHEBI:32145\n      label: sodium hydroxide\n    mediaingredientmech_chebi_term:\n      id: CHEBI:32145\n      label: sodium hydroxide\npreparation_steps:\n- step_number: 1\n  action: MIX\n  description: Dissolve all Artifical Sea Water components in water.\n- step_number: 2\n  action: AUTOCLAVE\n  description: Autoclave the Artifical Sea Water at 121 C for 20 min and store at\n    room temperature.\n- step_number: 3\n  action: FILTER_STERILIZE\n  description: Dissolve 50 mg Haemin in 1 ml 1 N NaOH, make up to 100 ml with distilled\n    water, filter sterilize, and store refrigerated.\n- step_number: 4\n  action: MIX\n  description: Mix clarified rumen fluid, 50 ml Artifical Sea Water, peptone, yeast\n    extract, NaCl, cellulose, pectin, starch, inulin, dextrin, agar, and water; leave\n    out trehalose, sodium pyruvate, L-Cysteine HCl, sheep blood, and Haemin solution\n    until after autoclaving.\n- step_number: 5\n  action: AUTOCLAVE\n  description: Autoclave the main medium at 121 C for 15 min.\n- step_number: 6\n  action: MIX\n  description: Add filter-sterilized trehalose, sodium pyruvate, L-Cysteine HCl, and\n    Haemin solution, then add sheep blood after autoclaving.\n- step_number: 7\n  action: STORE\n  description: Place the completed medium or agar in an anaerobic workstation before\n    use.\nsterilization:\n  method: AUTOCLAVE\n  notes: The main medium is autoclaved; trehalose, sodium pyruvate, L-Cysteine HCl,\n    sheep blood, and Haemin solution are added after autoclaving.\nreferences:\n- reference: https://www.bacmedia.dsmz.de/medium/P2\n",
+      "after_text": "id: CultureMech:010432\nname: taiyang_medium_no_9_prototype\noriginal_name: Taiyang Medium No.9 (prototype)\ncategory: bacterial\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: SOLID_AGAR\nmedia_term:\n  preferred_term: public Medium P2\n  term:\n    id: mediadive.medium:P2\n    label: Taiyang Medium No.9 (prototype)\nnotes: MediaDive public Medium P2 provides a user-provided Taiyang Medium No.9 prototype\n  formulation with clarified rumen fluid, sheep blood, carbohydrate polymers, filtered\n  pyruvate, trehalose, L-Cysteine HCl, Haemin solution, and Artifical Sea Water. MediaDive\n  lists this public medium as not curated/tested and with no valid reference, so only\n  formulation and preparation fields visible on the MediaDive page were curated.\ningredients:\n- preferred_term: Clarified rumen fluid\n  concentration:\n    value: '25'\n    unit: ML_PER_L\n  source: MediaDive public Medium P2\n  evidence:\n  - reference: https://mediadive.dsmz.de/medium/P2\n    supports: SUPPORT\n    snippet: Clarified rumen fluid 25.0 ml/l - -\n    explanation: 'ingredients[0].concentration: Direct source per-liter input rate;\n      not total amount after expanding stocks.  User-contributed, untested formulation;\n      not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\":\n      \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes\n      decode HTML entities or PDF text glyphs and collapse whitespace. No chemical\n      grounding, growth, density or unspecified percentage basis is inferred. Exact\n      excerpt: \"Clarified rumen fluid 25.0 ml/l - -\"; locator=sol-0 / recipe-0.'\n- preferred_term: Sheep blood\n  concentration:\n    value: '25'\n    unit: ML_PER_L\n  source: MediaDive public Medium P2\n  evidence:\n  - reference: https://mediadive.dsmz.de/medium/P2\n    supports: SUPPORT\n    snippet: Sheep blood 25.0 ml/l - -\n    explanation: 'ingredients[1].concentration: Direct source per-liter input rate;\n      not total amount after expanding stocks.  User-contributed, untested formulation;\n      not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\":\n      \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes\n      decode HTML entities or PDF text glyphs and collapse whitespace. No chemical\n      grounding, growth, density or unspecified percentage basis is inferred. Exact\n      excerpt: \"Sheep blood 25.0 ml/l - -\"; locator=sol-0 / recipe-1.'\n- preferred_term: Peptone\n  concentration:\n    value: '1'\n    unit: G_PER_L\n  source: MediaDive public Medium P2\n  evidence:\n  - reference: https://mediadive.dsmz.de/medium/P2\n    supports: SUPPORT\n    snippet: Peptone 1.0 g/l 1 -\n    explanation: 'ingredients[2].concentration: Direct source per-liter input rate;\n      not total amount after expanding stocks.  User-contributed, untested formulation;\n      not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\":\n      \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes\n      decode HTML entities or PDF text glyphs and collapse whitespace. No chemical\n      grounding, growth, density or unspecified percentage basis is inferred. Exact\n      excerpt: \"Peptone 1.0 g/l 1 -\"; locator=sol-0 / recipe-3.'\n- preferred_term: Yeast extract\n  concentration:\n    value: '1'\n    unit: G_PER_L\n  source: MediaDive public Medium P2\n  term:\n    id: FOODON:03315426\n    label: yeast extract\n  evidence:\n  - reference: https://mediadive.dsmz.de/medium/P2\n    supports: SUPPORT\n    snippet: Yeast extract 1.0 g/l 1 -\n    explanation: 'ingredients[3].concentration: Direct source per-liter input rate;\n      not total amount after expanding stocks.  User-contributed, untested formulation;\n      not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\":\n      \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes\n      decode HTML entities or PDF text glyphs and collapse whitespace. No chemical\n      grounding, growth, density or unspecified percentage basis is inferred. Exact\n      excerpt: \"Yeast extract 1.0 g/l 1 -\"; locator=sol-0 / recipe-4.'\n- preferred_term: NaCl\n  concentration:\n    value: '1'\n    unit: G_PER_L\n  source: MediaDive public Medium P2\n  term:\n    id: CHEBI:26710\n    label: sodium chloride\n  mediaingredientmech_chebi_term:\n    id: CHEBI:26710\n    label: sodium chloride\n  evidence:\n  - reference: https://mediadive.dsmz.de/medium/P2\n    supports: SUPPORT\n    snippet: NaCl 1.0 g/l 1 17.112\n    explanation: 'ingredients[4].concentration: Direct source per-liter input rate;\n      not total amount after expanding stocks.  User-contributed, untested formulation;\n      not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\":\n      \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes\n      decode HTML entities or PDF text glyphs and collapse whitespace. No chemical\n      grounding, growth, density or unspecified percentage basis is inferred. Exact\n      excerpt: \"NaCl 1.0 g/l 1 17.112\"; locator=sol-0 / recipe-5.'\n- preferred_term: Cellulose\n  concentration:\n    value: '0.5'\n    unit: G_PER_L\n  source: MediaDive public Medium P2\n  term:\n    id: CHEBI:18246\n    label: Cellulose\n  mediaingredientmech_chebi_term:\n    id: CHEBI:18246\n    label: Cellulose\n  evidence:\n  - reference: https://mediadive.dsmz.de/medium/P2\n    supports: SUPPORT\n    snippet: Cellulose 0.5 g/l 0.5 -\n    explanation: 'ingredients[5].concentration: Direct source per-liter input rate;\n      not total amount after expanding stocks.  User-contributed, untested formulation;\n      not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\":\n      \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes\n      decode HTML entities or PDF text glyphs and collapse whitespace. No chemical\n      grounding, growth, density or unspecified percentage basis is inferred. Exact\n      excerpt: \"Cellulose 0.5 g/l 0.5 -\"; locator=sol-0 / recipe-6.'\n- preferred_term: Pectin\n  concentration:\n    value: '0.5'\n    unit: G_PER_L\n  source: MediaDive public Medium P2\n  term:\n    id: CHEBI:17309\n    label: Pectin\n  mediaingredientmech_chebi_term:\n    id: CHEBI:17309\n    label: Pectin\n  evidence:\n  - reference: https://mediadive.dsmz.de/medium/P2\n    supports: SUPPORT\n    snippet: Pectin 0.5 g/l 0.5 2.575\n    explanation: 'ingredients[6].concentration: Direct source per-liter input rate;\n      not total amount after expanding stocks.  User-contributed, untested formulation;\n      not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\":\n      \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes\n      decode HTML entities or PDF text glyphs and collapse whitespace. No chemical\n      grounding, growth, density or unspecified percentage basis is inferred. Exact\n      excerpt: \"Pectin 0.5 g/l 0.5 2.575\"; locator=sol-0 / recipe-7.'\n- preferred_term: Starch\n  concentration:\n    value: '0.5'\n    unit: G_PER_L\n  source: MediaDive public Medium P2\n  term:\n    id: CHEBI:28017\n    label: Starch\n  mediaingredientmech_chebi_term:\n    id: CHEBI:28017\n    label: Starch\n  evidence:\n  - reference: https://mediadive.dsmz.de/medium/P2\n    supports: SUPPORT\n    snippet: Starch 0.5 g/l 0.5 -\n    explanation: 'ingredients[7].concentration: Direct source per-liter input rate;\n      not total amount after expanding stocks.  User-contributed, untested formulation;\n      not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\":\n      \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes\n      decode HTML entities or PDF text glyphs and collapse whitespace. No chemical\n      grounding, growth, density or unspecified percentage basis is inferred. Exact\n      excerpt: \"Starch 0.5 g/l 0.5 -\"; locator=sol-0 / recipe-8.'\n- preferred_term: Inulin\n  concentration:\n    value: '0.5'\n    unit: G_PER_L\n  source: MediaDive public Medium P2\n  term:\n    id: CHEBI:15443\n    label: Inulin\n  mediaingredientmech_chebi_term:\n    id: CHEBI:15443\n    label: Inulin\n  evidence:\n  - reference: https://mediadive.dsmz.de/medium/P2\n    supports: SUPPORT\n    snippet: Inulin 0.5 g/l 0.5 -\n    explanation: 'ingredients[8].concentration: Direct source per-liter input rate;\n      not total amount after expanding stocks.  User-contributed, untested formulation;\n      not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\":\n      \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes\n      decode HTML entities or PDF text glyphs and collapse whitespace. No chemical\n      grounding, growth, density or unspecified percentage basis is inferred. Exact\n      excerpt: \"Inulin 0.5 g/l 0.5 -\"; locator=sol-0 / recipe-9.'\n- preferred_term: Trehalose\n  concentration:\n    value: '0.5'\n    unit: G_PER_L\n  source: MediaDive public Medium P2\n  term:\n    id: CHEBI:27082\n    label: Trehalose\n  mediaingredientmech_chebi_term:\n    id: CHEBI:27082\n    label: Trehalose\n  evidence:\n  - reference: https://mediadive.dsmz.de/medium/P2\n    supports: SUPPORT\n    snippet: Trehalose (filtrate sterilization) 0.5 g/l 0.5 1.461\n    explanation: 'ingredients[9].concentration: Direct source per-liter input rate;\n      not total amount after expanding stocks.  User-contributed, untested formulation;\n      not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\":\n      \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes\n      decode HTML entities or PDF text glyphs and collapse whitespace. No chemical\n      grounding, growth, density or unspecified percentage basis is inferred. Exact\n      excerpt: \"Trehalose (filtrate sterilization) 0.5 g/l 0.5 1.461\"; locator=sol-0\n      / recipe-10.'\n- preferred_term: Sodium pyruvate\n  concentration:\n    value: '1'\n    unit: G_PER_L\n  source: MediaDive public Medium P2\n  term:\n    id: CHEBI:50144\n    label: sodium pyruvate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:50144\n    label: sodium pyruvate\n  evidence:\n  - reference: https://mediadive.dsmz.de/medium/P2\n    supports: SUPPORT\n    snippet: Sodium pyruvate (filtrate sterilization) 1.0 g/l 1 9.088\n    explanation: 'ingredients[10].concentration: Direct source per-liter input rate;\n      not total amount after expanding stocks.  User-contributed, untested formulation;\n      not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\":\n      \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes\n      decode HTML entities or PDF text glyphs and collapse whitespace. No chemical\n      grounding, growth, density or unspecified percentage basis is inferred. Exact\n      excerpt: \"Sodium pyruvate (filtrate sterilization) 1.0 g/l 1 9.088\"; locator=sol-0\n      / recipe-11.'\n- preferred_term: dextrin\n  concentration:\n    value: '0.5'\n    unit: G_PER_L\n  source: MediaDive public Medium P2\n  term:\n    id: CHEBI:28675\n    label: Dextrin\n  mediaingredientmech_chebi_term:\n    id: CHEBI:28675\n    label: Dextrin\n  evidence:\n  - reference: https://mediadive.dsmz.de/medium/P2\n    supports: SUPPORT\n    snippet: dextrin 0.5 g/l 0.5 -\n    explanation: 'ingredients[11].concentration: Direct source per-liter input rate;\n      not total amount after expanding stocks.  User-contributed, untested formulation;\n      not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\":\n      \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes\n      decode HTML entities or PDF text glyphs and collapse whitespace. No chemical\n      grounding, growth, density or unspecified percentage basis is inferred. Exact\n      excerpt: \"dextrin 0.5 g/l 0.5 -\"; locator=sol-0 / recipe-12.'\n- preferred_term: L-Cysteine HCl\n  concentration:\n    value: '0.1'\n    unit: G_PER_L\n  source: MediaDive public Medium P2\n  term:\n    id: CHEBI:91247\n    label: L-Cysteine HCl\n  mediaingredientmech_chebi_term:\n    id: CHEBI:91247\n    label: L-Cysteine HCl\n  evidence:\n  - reference: https://mediadive.dsmz.de/medium/P2\n    supports: SUPPORT\n    snippet: L-Cysteine HCl (filtrate sterilization) 0.1 g/l 0.1 0.634\n    explanation: 'ingredients[12].concentration: Direct source per-liter input rate;\n      not total amount after expanding stocks.  User-contributed, untested formulation;\n      not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\":\n      \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes\n      decode HTML entities or PDF text glyphs and collapse whitespace. No chemical\n      grounding, growth, density or unspecified percentage basis is inferred. Exact\n      excerpt: \"L-Cysteine HCl (filtrate sterilization) 0.1 g/l 0.1 0.634\"; locator=sol-0\n      / recipe-13.'\n- preferred_term: Agar\n  concentration:\n    value: '15'\n    unit: G_PER_L\n  source: MediaDive public Medium P2\n  term:\n    id: CHEBI:2509\n    label: agar\n  mediaingredientmech_chebi_term:\n    id: CHEBI:2509\n    label: agar\n  evidence:\n  - reference: https://mediadive.dsmz.de/medium/P2\n    supports: SUPPORT\n    snippet: agar (for solid plate medium) 15.0 g/l 15 -\n    explanation: 'ingredients[13].concentration: Direct source per-liter input rate;\n      not total amount after expanding stocks. Agar is supported only for the record''s\n      explicit SOLID_AGAR state. User-contributed, untested formulation; not journal\n      evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}.\n      Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical\n      grounding, growth, density or unspecified percentage basis is inferred. Exact\n      excerpt: \"agar (for solid plate medium) 15.0 g/l 15 -\"; locator=sol-0 / recipe-16.'\napplications:\n- Microbial cultivation\ncuration_history:\n- timestamp: '2026-01-26T17:53:19.839003Z'\n  curator: mediadive-import\n  action: Imported from MediaDive\n  notes: 'Source: public, ID: P2'\n- timestamp: '2026-02-03T11:27:23.229167'\n  curator: quality-tagger-v1.0\n  action: Added data quality flag\n  notes: Marked as incomplete_composition due to placeholder ingredients\n- timestamp: '2026-03-13T06:20:13.817423Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:010432'\n- timestamp: '2026-03-17T19:46:32.795178+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"Taiyang Medium No.9 (prototype)\" to \"taiyang_medium_no_9_prototype\"\n    for consistent matching\n- timestamp: '2026-08-06T07:56:36.138296+00:00'\n  curator: curate_placeholder_composition.py\n  action: REMOVED_PLACEHOLDER_INGREDIENT\n  notes: Removed the 'See source for composition' placeholder ingredient; the record\n    carries no imported composition and is flagged incomplete (#175).\n  changes: Dropped placeholder ingredient 'See source for composition'\n- timestamp: '2026-09-10T00:00:00-07:00'\n  curator: repair_mediadive_p2_score35.py\n  action: RESOLVED_MEDIADIVE_P2_SCORE35\n  changes: Resolved score-35 MediaDive P2 placeholder graph\n  source: https://www.bacmedia.dsmz.de/medium/P2\n  notes: MediaDive public Medium P2 provides a user-provided Taiyang Medium No.9 prototype\n    formulation with clarified rumen fluid, sheep blood, carbohydrate polymers, filtered\n    pyruvate, trehalose, L-Cysteine HCl, Haemin solution, and Artifical Sea Water.\n    MediaDive lists this public medium as not curated/tested and with no valid reference,\n    so only formulation and preparation fields visible on the MediaDive page were\n    curated.\n- timestamp: '2026-10-07T17:51:49.842228+00:00'\n  curator: codex\n  action: CURATED_PUBLIC_STOCK_CONCENTRATIONS_FROM_SCOPED_SOURCES\n  notes: Preserved stable ID, original history, ontology annotations, physical state,\n    pH, preparation and variants. Added scoped evidence and unquantified haemin-stock\n    makeup water; all existing amounts unchanged. No new growth associations or IDs.\n  source: https://mediadive.dsmz.de/medium/P2\n  changes: 'ingredients[0].concentration: {\"unit\": \"ML_PER_L\", \"value\": \"25\"} -> {\"unit\":\n    \"ML_PER_L\", \"value\": \"25\"} [evidence_only]; ingredients[1].concentration: {\"unit\":\n    \"ML_PER_L\", \"value\": \"25\"} -> {\"unit\": \"ML_PER_L\", \"value\": \"25\"} [evidence_only];\n    ingredients[2].concentration: {\"unit\": \"G_PER_L\", \"value\": \"1\"} -> {\"unit\": \"G_PER_L\",\n    \"value\": \"1\"} [evidence_only]; ingredients[3].concentration: {\"unit\": \"G_PER_L\",\n    \"value\": \"1\"} -> {\"unit\": \"G_PER_L\", \"value\": \"1\"} [evidence_only]; ingredients[4].concentration:\n    {\"unit\": \"G_PER_L\", \"value\": \"1\"} -> {\"unit\": \"G_PER_L\", \"value\": \"1\"} [evidence_only];\n    ingredients[5].concentration: {\"unit\": \"G_PER_L\", \"value\": \"0.5\"} -> {\"unit\":\n    \"G_PER_L\", \"value\": \"0.5\"} [evidence_only]; ingredients[6].concentration: {\"unit\":\n    \"G_PER_L\", \"value\": \"0.5\"} -> {\"unit\": \"G_PER_L\", \"value\": \"0.5\"} [evidence_only];\n    ingredients[7].concentration: {\"unit\": \"G_PER_L\", \"value\": \"0.5\"} -> {\"unit\":\n    \"G_PER_L\", \"value\": \"0.5\"} [evidence_only]; ingredients[8].concentration: {\"unit\":\n    \"G_PER_L\", \"value\": \"0.5\"} -> {\"unit\": \"G_PER_L\", \"value\": \"0.5\"} [evidence_only];\n    ingredients[9].concentration: {\"unit\": \"G_PER_L\", \"value\": \"0.5\"} -> {\"unit\":\n    \"G_PER_L\", \"value\": \"0.5\"} [evidence_only]; ingredients[10].concentration: {\"unit\":\n    \"G_PER_L\", \"value\": \"1\"} -> {\"unit\": \"G_PER_L\", \"value\": \"1\"} [evidence_only];\n    ingredients[11].concentration: {\"unit\": \"G_PER_L\", \"value\": \"0.5\"} -> {\"unit\":\n    \"G_PER_L\", \"value\": \"0.5\"} [evidence_only]; ingredients[12].concentration: {\"unit\":\n    \"G_PER_L\", \"value\": \"0.1\"} -> {\"unit\": \"G_PER_L\", \"value\": \"0.1\"} [evidence_only];\n    ingredients[13].concentration: {\"unit\": \"G_PER_L\", \"value\": \"15\"} -> {\"unit\":\n    \"G_PER_L\", \"value\": \"15\"} [evidence_only]; solutions[0].concentration: {\"unit\":\n    \"ML_PER_L\", \"value\": \"50\"} -> {\"unit\": \"ML_PER_L\", \"value\": \"50\"} [evidence_only];\n    solutions[1].concentration: {\"unit\": \"ML_PER_L\", \"value\": \"10\"} -> {\"unit\": \"ML_PER_L\",\n    \"value\": \"10\"} [evidence_only]; solutions[0].composition[0].concentration: {\"unit\":\n    \"G_PER_L\", \"value\": \"23.47\"} -> {\"unit\": \"G_PER_L\", \"value\": \"23.47\"} [evidence_only];\n    solutions[0].composition[1].concentration: {\"unit\": \"G_PER_L\", \"value\": \"3.92\"}\n    -> {\"unit\": \"G_PER_L\", \"value\": \"3.92\"} [evidence_only]; solutions[0].composition[2].concentration:\n    {\"unit\": \"G_PER_L\", \"value\": \"10.64\"} -> {\"unit\": \"G_PER_L\", \"value\": \"10.64\"}\n    [evidence_only]; solutions[0].composition[3].concentration: {\"unit\": \"G_PER_L\",\n    \"value\": \"1.10\"} -> {\"unit\": \"G_PER_L\", \"value\": \"1.10\"} [evidence_only]; solutions[0].composition[4].concentration:\n    {\"unit\": \"G_PER_L\", \"value\": \"0.192\"} -> {\"unit\": \"G_PER_L\", \"value\": \"0.192\"}\n    [evidence_only]; solutions[0].composition[5].concentration: {\"unit\": \"G_PER_L\",\n    \"value\": \"0.664\"} -> {\"unit\": \"G_PER_L\", \"value\": \"0.664\"} [evidence_only]; solutions[0].composition[6].concentration:\n    {\"unit\": \"G_PER_L\", \"value\": \"0.096\"} -> {\"unit\": \"G_PER_L\", \"value\": \"0.096\"}\n    [evidence_only]; solutions[0].composition[7].concentration: {\"unit\": \"G_PER_L\",\n    \"value\": \"0.026\"} -> {\"unit\": \"G_PER_L\", \"value\": \"0.026\"} [evidence_only]; solutions[0].composition[8].concentration:\n    {\"unit\": \"G_PER_L\", \"value\": \"0.024\"} -> {\"unit\": \"G_PER_L\", \"value\": \"0.024\"}\n    [evidence_only]; solutions[0].composition[9].concentration: {\"unit\": \"G_PER_L\",\n    \"value\": \"0.003\"} -> {\"unit\": \"G_PER_L\", \"value\": \"0.003\"} [evidence_only]; solutions[1].composition[0].concentration:\n    {\"unit\": \"G_PER_L\", \"value\": \"0.5\"} -> {\"unit\": \"G_PER_L\", \"value\": \"0.5\"} [evidence_only];\n    solutions[1].composition[1].concentration: {\"unit\": \"ML_PER_L\", \"value\": \"10\"}\n    -> {\"unit\": \"ML_PER_L\", \"value\": \"10\"} [evidence_only]; solutions[1].composition[2].concentration:\n    null -> null [not_quantified]'\ndata_quality_flags:\n- ingredients_curated\n- has_ontology_mappings\n- has_unmapped_ingredients\nsolutions:\n- preferred_term: Artifical Sea Water\n  concentration:\n    value: '50'\n    unit: ML_PER_L\n  notes: P2 adds 50 ml Artifical Sea Water to 1 L Taiyang Medium No.9.\n  composition:\n  - preferred_term: NaCl\n    concentration:\n      value: '23.47'\n      unit: G_PER_L\n    source: MediaDive public Medium P2\n    term:\n      id: CHEBI:26710\n      label: sodium chloride\n    mediaingredientmech_chebi_term:\n      id: CHEBI:26710\n      label: sodium chloride\n    evidence:\n    - reference: https://mediadive.dsmz.de/medium/P2\n      supports: SUPPORT\n      snippet: NaCl 23.47 g/l 23.47 401.608\n      explanation: 'solutions[0].composition[0].concentration: 23.47 g/l * 1 = 23.47\n        g/L inside the seawater stock; no expansion into the final medium. User-contributed,\n        untested formulation; not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\":\n        \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes\n        decode HTML entities or PDF text glyphs and collapse whitespace. No chemical\n        grounding, growth, density or unspecified percentage basis is inferred. Exact\n        excerpt: \"NaCl 23.47 g/l 23.47 401.608\"; locator=sol-660 / recipe-0.'\n  - preferred_term: Na2SO4\n    concentration:\n      value: '3.92'\n      unit: G_PER_L\n    source: MediaDive public Medium P2\n    term:\n      id: CHEBI:32149\n      label: sodium sulfate\n    mediaingredientmech_chebi_term:\n      id: CHEBI:32149\n      label: sodium sulfate\n    evidence:\n    - reference: https://mediadive.dsmz.de/medium/P2\n      supports: SUPPORT\n      snippet: Na2SO4 3.92 g/l 3.92 27.598\n      explanation: 'solutions[0].composition[1].concentration: 3.92 g/l * 1 = 3.92\n        g/L inside the seawater stock; no expansion into the final medium. User-contributed,\n        untested formulation; not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\":\n        \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes\n        decode HTML entities or PDF text glyphs and collapse whitespace. No chemical\n        grounding, growth, density or unspecified percentage basis is inferred. Exact\n        excerpt: \"Na2SO4 3.92 g/l 3.92 27.598\"; locator=sol-660 / recipe-1.'\n  - preferred_term: MgCl2 x 6 H2O\n    concentration:\n      value: '10.64'\n      unit: G_PER_L\n    source: MediaDive public Medium P2\n    term:\n      id: CHEBI:86345\n      label: magnesium dichloride hexahydrate\n    mediaingredientmech_chebi_term:\n      id: CHEBI:86345\n      label: magnesium dichloride hexahydrate\n    evidence:\n    - reference: https://mediadive.dsmz.de/medium/P2\n      supports: SUPPORT\n      snippet: MgCl2 x 6 H2O 10.64 g/l 10.64 52.336\n      explanation: 'solutions[0].composition[2].concentration: 10.64 g/l * 1 = 10.64\n        g/L inside the seawater stock; no expansion into the final medium. User-contributed,\n        untested formulation; not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\":\n        \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes\n        decode HTML entities or PDF text glyphs and collapse whitespace. No chemical\n        grounding, growth, density or unspecified percentage basis is inferred. Exact\n        excerpt: \"MgCl2 x 6 H2O 10.64 g/l 10.64 52.336\"; locator=sol-660 / recipe-3.'\n  - preferred_term: CaCl2\n    concentration:\n      value: '1.10'\n      unit: G_PER_L\n    source: MediaDive public Medium P2\n    term:\n      id: CHEBI:3312\n      label: calcium dichloride\n    mediaingredientmech_chebi_term:\n      id: CHEBI:3312\n      label: calcium dichloride\n    evidence:\n    - reference: https://mediadive.dsmz.de/medium/P2\n      supports: SUPPORT\n      snippet: CaCl2 1.10 g/l 1.1 9.912\n      explanation: 'solutions[0].composition[3].concentration: 1.10 g/l * 1 = 1.10\n        g/L inside the seawater stock; no expansion into the final medium. User-contributed,\n        untested formulation; not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\":\n        \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes\n        decode HTML entities or PDF text glyphs and collapse whitespace. No chemical\n        grounding, growth, density or unspecified percentage basis is inferred. Exact\n        excerpt: \"CaCl2 1.10 g/l 1.1 9.912\"; locator=sol-660 / recipe-4.'\n  - preferred_term: NaHCO3\n    concentration:\n      value: '0.192'\n      unit: G_PER_L\n    source: MediaDive public Medium P2\n    term:\n      id: CHEBI:32139\n      label: sodium hydrogencarbonate\n    mediaingredientmech_chebi_term:\n      id: CHEBI:32139\n      label: sodium hydrogencarbonate\n    evidence:\n    - reference: https://mediadive.dsmz.de/medium/P2\n      supports: SUPPORT\n      snippet: NaHCO3 192.00 mg/l 0.192 2.286\n      explanation: 'solutions[0].composition[4].concentration: 192.00 mg/l * 0.001\n        = 0.19200 g/L inside the seawater stock; no expansion into the final medium.\n        User-contributed, untested formulation; not journal evidence. Accessed 2026-10-07;\n        captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}.\n        Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No\n        chemical grounding, growth, density or unspecified percentage basis is inferred.\n        Exact excerpt: \"NaHCO3 192.00 mg/l 0.192 2.286\"; locator=sol-660 / recipe-5.'\n  - preferred_term: KCl\n    concentration:\n      value: '0.664'\n      unit: G_PER_L\n    source: MediaDive public Medium P2\n    term:\n      id: CHEBI:32588\n      label: potassium chloride\n    mediaingredientmech_chebi_term:\n      id: CHEBI:32588\n      label: potassium chloride\n    evidence:\n    - reference: https://mediadive.dsmz.de/medium/P2\n      supports: SUPPORT\n      snippet: KCl 664.00 mg/l 0.664 8.907\n      explanation: 'solutions[0].composition[5].concentration: 664.00 mg/l * 0.001\n        = 0.66400 g/L inside the seawater stock; no expansion into the final medium.\n        User-contributed, untested formulation; not journal evidence. Accessed 2026-10-07;\n        captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}.\n        Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No\n        chemical grounding, growth, density or unspecified percentage basis is inferred.\n        Exact excerpt: \"KCl 664.00 mg/l 0.664 8.907\"; locator=sol-660 / recipe-6.'\n  - preferred_term: KBr\n    concentration:\n      value: '0.096'\n      unit: G_PER_L\n    source: MediaDive public Medium P2\n    term:\n      id: CHEBI:32030\n      label: potassium bromide\n    mediaingredientmech_chebi_term:\n      id: CHEBI:32030\n      label: potassium bromide\n    evidence:\n    - reference: https://mediadive.dsmz.de/medium/P2\n      supports: SUPPORT\n      snippet: KBr 96.00 mg/l 0.096 0.807\n      explanation: 'solutions[0].composition[6].concentration: 96.00 mg/l * 0.001\n        = 0.09600 g/L inside the seawater stock; no expansion into the final medium.\n        User-contributed, untested formulation; not journal evidence. Accessed 2026-10-07;\n        captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}.\n        Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No\n        chemical grounding, growth, density or unspecified percentage basis is inferred.\n        Exact excerpt: \"KBr 96.00 mg/l 0.096 0.807\"; locator=sol-660 / recipe-7.'\n  - preferred_term: H3BO3\n    concentration:\n      value: '0.026'\n      unit: G_PER_L\n    source: MediaDive public Medium P2\n    term:\n      id: CHEBI:33118\n      label: boric acid\n    mediaingredientmech_chebi_term:\n      id: CHEBI:33118\n      label: boric acid\n    evidence:\n    - reference: https://mediadive.dsmz.de/medium/P2\n      supports: SUPPORT\n      snippet: H3BO3 26.00 mg/l 0.026 0.42\n      explanation: 'solutions[0].composition[7].concentration: 26.00 mg/l * 0.001\n        = 0.02600 g/L inside the seawater stock; no expansion into the final medium.\n        User-contributed, untested formulation; not journal evidence. Accessed 2026-10-07;\n        captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}.\n        Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No\n        chemical grounding, growth, density or unspecified percentage basis is inferred.\n        Exact excerpt: \"H3BO3 26.00 mg/l 0.026 0.42\"; locator=sol-660 / recipe-8.'\n  - preferred_term: SrCl2\n    concentration:\n      value: '0.024'\n      unit: G_PER_L\n    source: MediaDive public Medium P2\n    term:\n      id: CHEBI:36383\n      label: strontium dichloride\n    mediaingredientmech_chebi_term:\n      id: CHEBI:36383\n      label: strontium dichloride\n    evidence:\n    - reference: https://mediadive.dsmz.de/medium/P2\n      supports: SUPPORT\n      snippet: SrCl2 24.00 mg/l 0.024 0.151\n      explanation: 'solutions[0].composition[8].concentration: 24.00 mg/l * 0.001\n        = 0.02400 g/L inside the seawater stock; no expansion into the final medium.\n        User-contributed, untested formulation; not journal evidence. Accessed 2026-10-07;\n        captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}.\n        Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No\n        chemical grounding, growth, density or unspecified percentage basis is inferred.\n        Exact excerpt: \"SrCl2 24.00 mg/l 0.024 0.151\"; locator=sol-660 / recipe-9.'\n  - preferred_term: NaF\n    concentration:\n      value: '0.003'\n      unit: G_PER_L\n    source: MediaDive public Medium P2\n    term:\n      id: CHEBI:28741\n      label: sodium fluoride\n    mediaingredientmech_chebi_term:\n      id: CHEBI:28741\n      label: sodium fluoride\n    evidence:\n    - reference: https://mediadive.dsmz.de/medium/P2\n      supports: SUPPORT\n      snippet: NaF 3.00 mg/l 0.003 0.071\n      explanation: 'solutions[0].composition[9].concentration: 3.00 mg/l * 0.001 =\n        0.00300 g/L inside the seawater stock; no expansion into the final medium.\n        User-contributed, untested formulation; not journal evidence. Accessed 2026-10-07;\n        captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}.\n        Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No\n        chemical grounding, growth, density or unspecified percentage basis is inferred.\n        Exact excerpt: \"NaF 3.00 mg/l 0.003 0.071\"; locator=sol-660 / recipe-10.'\n- preferred_term: Haemin solution\n  concentration:\n    value: '10'\n    unit: ML_PER_L\n  notes: P2 adds 10 ml Haemin solution to 1 L Taiyang Medium No.9.\n  composition:\n  - preferred_term: Haemin\n    concentration:\n      value: '0.5'\n      unit: G_PER_L\n    source: MediaDive public Medium P2\n    term:\n      id: CHEBI:50385\n      label: hemin\n    mediaingredientmech_chebi_term:\n      id: CHEBI:50385\n      label: hemin\n    evidence:\n    - reference: https://mediadive.dsmz.de/medium/P2\n      supports: SUPPORT\n      snippet: Haemin 50 mg 0.5 0.767\n      explanation: 'solutions[1].composition[0].concentration: 50 mg / 0.100 L = 0.5\n        g/L stock; final stock makeup is explicit in the preparation step. User-contributed,\n        untested formulation; not journal evidence. Additional exact preparation excerpt:\n        \"1 Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled\n        water and filter sterilize. Store refrigerated.\"; locator=sol-124 preparation.\n        Accessed 2026-10-07; captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}.\n        Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No\n        chemical grounding, growth, density or unspecified percentage basis is inferred.\n        Exact excerpt: \"Haemin 50 mg 0.5 0.767\"; locator=sol-124 / recipe-0.'\n  - preferred_term: NaOH (1 N)\n    concentration:\n      value: '10'\n      unit: ML_PER_L\n    source: MediaDive public Medium P2\n    notes: P2 dissolves 50 mg Haemin in 1 ml 1 N NaOH and fills the stock to 100 ml.\n    term:\n      id: CHEBI:32145\n      label: sodium hydroxide\n    mediaingredientmech_chebi_term:\n      id: CHEBI:32145\n      label: sodium hydroxide\n    evidence:\n    - reference: https://mediadive.dsmz.de/medium/P2\n      supports: SUPPORT\n      snippet: NaOH (1 N) 1 ml - -\n      explanation: 'solutions[1].composition[1].concentration: 1 ml of the source-specified\n        1 N reagent / 0.100 L stock = 10 ML_PER_L input rate; not a concentration\n        assertion for solid NaOH and not an inferred normality-to-molarity conversion.\n        User-contributed, untested formulation; not journal evidence. Additional exact\n        preparation excerpt: \"1 Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to\n        100 ml with distilled water and filter sterilize. Store refrigerated.\"; locator=sol-124\n        preparation. Accessed 2026-10-07; captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}.\n        Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No\n        chemical grounding, growth, density or unspecified percentage basis is inferred.\n        Exact excerpt: \"NaOH (1 N) 1 ml - -\"; locator=sol-124 / recipe-1.'\n  - preferred_term: Distilled water\n    source: MediaDive public Medium P2\n    notes: Make up the haemin stock to 100 ml with distilled water after dissolving\n      50 mg haemin in 1 ml 1 N NaOH. The added water amount is not fixed at 100 ml;\n      no numeric water concentration or volume is asserted.\n    evidence:\n    - reference: https://mediadive.dsmz.de/medium/P2\n      supports: SUPPORT\n      snippet: make up to 100 ml with distilled water\n      explanation: 'solutions[1].composition[2].concentration: Adds the omitted makeup-water\n        ingredient and scoped notes; water concentration remains absent. Make up the\n        haemin stock to 100 ml with distilled water after dissolving 50 mg haemin\n        in 1 ml 1 N NaOH. The added water amount is not fixed at 100 ml; no numeric\n        water concentration or volume is asserted. Accessed 2026-10-07; captures={\"P2-medium-page.html\":\n        \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes\n        decode HTML entities or PDF text glyphs and collapse whitespace. No chemical\n        grounding, growth, density or unspecified percentage basis is inferred. Exact\n        excerpt: \"make up to 100 ml with distilled water\"; locator=sol-124 preparation.'\npreparation_steps:\n- step_number: 1\n  action: MIX\n  description: Dissolve all Artifical Sea Water components in water.\n- step_number: 2\n  action: AUTOCLAVE\n  description: Autoclave the Artifical Sea Water at 121 C for 20 min and store at\n    room temperature.\n- step_number: 3\n  action: FILTER_STERILIZE\n  description: Dissolve 50 mg Haemin in 1 ml 1 N NaOH, make up to 100 ml with distilled\n    water, filter sterilize, and store refrigerated.\n- step_number: 4\n  action: MIX\n  description: Mix clarified rumen fluid, 50 ml Artifical Sea Water, peptone, yeast\n    extract, NaCl, cellulose, pectin, starch, inulin, dextrin, agar, and water; leave\n    out trehalose, sodium pyruvate, L-Cysteine HCl, sheep blood, and Haemin solution\n    until after autoclaving.\n- step_number: 5\n  action: AUTOCLAVE\n  description: Autoclave the main medium at 121 C for 15 min.\n- step_number: 6\n  action: MIX\n  description: Add filter-sterilized trehalose, sodium pyruvate, L-Cysteine HCl, and\n    Haemin solution, then add sheep blood after autoclaving.\n- step_number: 7\n  action: STORE\n  description: Place the completed medium or agar in an anaerobic workstation before\n    use.\nsterilization:\n  method: AUTOCLAVE\n  notes: The main medium is autoclaved; trehalose, sodium pyruvate, L-Cysteine HCl,\n    sheep blood, and Haemin solution are added after autoclaving.\nreferences:\n- reference: https://www.bacmedia.dsmz.de/medium/P2\n- reference: https://mediadive.dsmz.de/medium/P2\n  title: Taiyang Medium No.9 (prototype) - MediaDive public Medium P2\n  authors: Taiyang Jin\n  year: 2023\n  notes: source_type=user_contributed_dataset_page; discovery_mode=existing_record_reference;\n    accessed_on=2026-10-07; year is the dataset-page publication year, not the journal\n    year; legacy bacmedia reference retained. Untested prototype; no valid journal\n    reference supplied.\nevidence:\n- reference: https://mediadive.dsmz.de/medium/P2\n  supports: SUPPORT\n  snippet: Artifical Sea Water 50.0 ml - -\n  explanation: 'solutions[0].concentration: 50.0 ml / source-declared 1 L main-recipe\n    scale; dataset working dose, not a claim that the source supplies a detailed final-water\n    makeup instruction. User-contributed, untested formulation; not journal evidence.\n    Accessed 2026-10-07; captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}.\n    Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical\n    grounding, growth, density or unspecified percentage basis is inferred. Exact\n    excerpt: \"Artifical Sea Water 50.0 ml - -\"; locator=sol-0 / recipe-2. solutions[1].concentration:\n    10.0 ml / source-declared 1 L main-recipe scale; dataset working dose, not a claim\n    that the source supplies a detailed final-water makeup instruction. User-contributed,\n    untested formulation; not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\":\n    \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes decode\n    HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding,\n    growth, density or unspecified percentage basis is inferred. Exact excerpt: \"Haemin\n    solution (filtrate sterilization) 10.0 ml - -\"; locator=sol-0 / recipe-14.'\n",
+      "before_sha256": "6f0af5cbde2378df09c65c04e464faad031284e475f67fd857a98d42ab9534c1",
+      "after_sha256": "36c194c7843dec9b6ffd3c2caba7c5cc6a8e47ac9649da5870aa578bfdfa3522",
+      "source_sha256": "46f4665f2516be0c7398e077c7beb5db40d1c74d1623cbec2fa3f0ff15292032",
+      "source_accessed_at": "2026-10-07",
+      "claims": [
+        {
+          "pointer": [
+            "ingredients",
+            0,
+            "concentration"
+          ],
+          "field": "ingredients[0].concentration",
+          "ingredient": "Clarified rumen fluid",
+          "old": {
+            "value": "25",
+            "unit": "ML_PER_L"
+          },
+          "new": {
+            "value": "25",
+            "unit": "ML_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P2",
+          "snippet": "Clarified rumen fluid 25.0 ml/l - -",
+          "locator": "sol-0 / recipe-0",
+          "evidence_pointer": [
+            "ingredients",
+            0
+          ],
+          "supports": "SUPPORT",
+          "explanation": "ingredients[0].concentration: Direct source per-liter input rate; not total amount after expanding stocks.  User-contributed, untested formulation; not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            1,
+            "concentration"
+          ],
+          "field": "ingredients[1].concentration",
+          "ingredient": "Sheep blood",
+          "old": {
+            "value": "25",
+            "unit": "ML_PER_L"
+          },
+          "new": {
+            "value": "25",
+            "unit": "ML_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P2",
+          "snippet": "Sheep blood 25.0 ml/l - -",
+          "locator": "sol-0 / recipe-1",
+          "evidence_pointer": [
+            "ingredients",
+            1
+          ],
+          "supports": "SUPPORT",
+          "explanation": "ingredients[1].concentration: Direct source per-liter input rate; not total amount after expanding stocks.  User-contributed, untested formulation; not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            2,
+            "concentration"
+          ],
+          "field": "ingredients[2].concentration",
+          "ingredient": "Peptone",
+          "old": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P2",
+          "snippet": "Peptone 1.0 g/l 1 -",
+          "locator": "sol-0 / recipe-3",
+          "evidence_pointer": [
+            "ingredients",
+            2
+          ],
+          "supports": "SUPPORT",
+          "explanation": "ingredients[2].concentration: Direct source per-liter input rate; not total amount after expanding stocks.  User-contributed, untested formulation; not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            3,
+            "concentration"
+          ],
+          "field": "ingredients[3].concentration",
+          "ingredient": "Yeast extract",
+          "old": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P2",
+          "snippet": "Yeast extract 1.0 g/l 1 -",
+          "locator": "sol-0 / recipe-4",
+          "evidence_pointer": [
+            "ingredients",
+            3
+          ],
+          "supports": "SUPPORT",
+          "explanation": "ingredients[3].concentration: Direct source per-liter input rate; not total amount after expanding stocks.  User-contributed, untested formulation; not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            4,
+            "concentration"
+          ],
+          "field": "ingredients[4].concentration",
+          "ingredient": "NaCl",
+          "old": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P2",
+          "snippet": "NaCl 1.0 g/l 1 17.112",
+          "locator": "sol-0 / recipe-5",
+          "evidence_pointer": [
+            "ingredients",
+            4
+          ],
+          "supports": "SUPPORT",
+          "explanation": "ingredients[4].concentration: Direct source per-liter input rate; not total amount after expanding stocks.  User-contributed, untested formulation; not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            5,
+            "concentration"
+          ],
+          "field": "ingredients[5].concentration",
+          "ingredient": "Cellulose",
+          "old": {
+            "value": "0.5",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.5",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P2",
+          "snippet": "Cellulose 0.5 g/l 0.5 -",
+          "locator": "sol-0 / recipe-6",
+          "evidence_pointer": [
+            "ingredients",
+            5
+          ],
+          "supports": "SUPPORT",
+          "explanation": "ingredients[5].concentration: Direct source per-liter input rate; not total amount after expanding stocks.  User-contributed, untested formulation; not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            6,
+            "concentration"
+          ],
+          "field": "ingredients[6].concentration",
+          "ingredient": "Pectin",
+          "old": {
+            "value": "0.5",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.5",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P2",
+          "snippet": "Pectin 0.5 g/l 0.5 2.575",
+          "locator": "sol-0 / recipe-7",
+          "evidence_pointer": [
+            "ingredients",
+            6
+          ],
+          "supports": "SUPPORT",
+          "explanation": "ingredients[6].concentration: Direct source per-liter input rate; not total amount after expanding stocks.  User-contributed, untested formulation; not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            7,
+            "concentration"
+          ],
+          "field": "ingredients[7].concentration",
+          "ingredient": "Starch",
+          "old": {
+            "value": "0.5",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.5",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P2",
+          "snippet": "Starch 0.5 g/l 0.5 -",
+          "locator": "sol-0 / recipe-8",
+          "evidence_pointer": [
+            "ingredients",
+            7
+          ],
+          "supports": "SUPPORT",
+          "explanation": "ingredients[7].concentration: Direct source per-liter input rate; not total amount after expanding stocks.  User-contributed, untested formulation; not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            8,
+            "concentration"
+          ],
+          "field": "ingredients[8].concentration",
+          "ingredient": "Inulin",
+          "old": {
+            "value": "0.5",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.5",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P2",
+          "snippet": "Inulin 0.5 g/l 0.5 -",
+          "locator": "sol-0 / recipe-9",
+          "evidence_pointer": [
+            "ingredients",
+            8
+          ],
+          "supports": "SUPPORT",
+          "explanation": "ingredients[8].concentration: Direct source per-liter input rate; not total amount after expanding stocks.  User-contributed, untested formulation; not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            9,
+            "concentration"
+          ],
+          "field": "ingredients[9].concentration",
+          "ingredient": "Trehalose",
+          "old": {
+            "value": "0.5",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.5",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P2",
+          "snippet": "Trehalose (filtrate sterilization) 0.5 g/l 0.5 1.461",
+          "locator": "sol-0 / recipe-10",
+          "evidence_pointer": [
+            "ingredients",
+            9
+          ],
+          "supports": "SUPPORT",
+          "explanation": "ingredients[9].concentration: Direct source per-liter input rate; not total amount after expanding stocks.  User-contributed, untested formulation; not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            10,
+            "concentration"
+          ],
+          "field": "ingredients[10].concentration",
+          "ingredient": "Sodium pyruvate",
+          "old": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P2",
+          "snippet": "Sodium pyruvate (filtrate sterilization) 1.0 g/l 1 9.088",
+          "locator": "sol-0 / recipe-11",
+          "evidence_pointer": [
+            "ingredients",
+            10
+          ],
+          "supports": "SUPPORT",
+          "explanation": "ingredients[10].concentration: Direct source per-liter input rate; not total amount after expanding stocks.  User-contributed, untested formulation; not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            11,
+            "concentration"
+          ],
+          "field": "ingredients[11].concentration",
+          "ingredient": "dextrin",
+          "old": {
+            "value": "0.5",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.5",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P2",
+          "snippet": "dextrin 0.5 g/l 0.5 -",
+          "locator": "sol-0 / recipe-12",
+          "evidence_pointer": [
+            "ingredients",
+            11
+          ],
+          "supports": "SUPPORT",
+          "explanation": "ingredients[11].concentration: Direct source per-liter input rate; not total amount after expanding stocks.  User-contributed, untested formulation; not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            12,
+            "concentration"
+          ],
+          "field": "ingredients[12].concentration",
+          "ingredient": "L-Cysteine HCl",
+          "old": {
+            "value": "0.1",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.1",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P2",
+          "snippet": "L-Cysteine HCl (filtrate sterilization) 0.1 g/l 0.1 0.634",
+          "locator": "sol-0 / recipe-13",
+          "evidence_pointer": [
+            "ingredients",
+            12
+          ],
+          "supports": "SUPPORT",
+          "explanation": "ingredients[12].concentration: Direct source per-liter input rate; not total amount after expanding stocks.  User-contributed, untested formulation; not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            13,
+            "concentration"
+          ],
+          "field": "ingredients[13].concentration",
+          "ingredient": "Agar",
+          "old": {
+            "value": "15",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "15",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P2",
+          "snippet": "agar (for solid plate medium) 15.0 g/l 15 -",
+          "locator": "sol-0 / recipe-16",
+          "evidence_pointer": [
+            "ingredients",
+            13
+          ],
+          "supports": "SUPPORT",
+          "explanation": "ingredients[13].concentration: Direct source per-liter input rate; not total amount after expanding stocks. Agar is supported only for the record's explicit SOLID_AGAR state. User-contributed, untested formulation; not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "concentration"
+          ],
+          "field": "solutions[0].concentration",
+          "ingredient": "Artifical Sea Water",
+          "old": {
+            "value": "50",
+            "unit": "ML_PER_L"
+          },
+          "new": {
+            "value": "50",
+            "unit": "ML_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P2",
+          "snippet": "Artifical Sea Water 50.0 ml - -",
+          "locator": "sol-0 / recipe-2",
+          "evidence_pointer": [],
+          "supports": "SUPPORT",
+          "explanation": "solutions[0].concentration: 50.0 ml / source-declared 1 L main-recipe scale; dataset working dose, not a claim that the source supplies a detailed final-water makeup instruction. User-contributed, untested formulation; not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "solutions",
+            1,
+            "concentration"
+          ],
+          "field": "solutions[1].concentration",
+          "ingredient": "Haemin solution",
+          "old": {
+            "value": "10",
+            "unit": "ML_PER_L"
+          },
+          "new": {
+            "value": "10",
+            "unit": "ML_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P2",
+          "snippet": "Haemin solution (filtrate sterilization) 10.0 ml - -",
+          "locator": "sol-0 / recipe-14",
+          "evidence_pointer": [],
+          "supports": "SUPPORT",
+          "explanation": "solutions[1].concentration: 10.0 ml / source-declared 1 L main-recipe scale; dataset working dose, not a claim that the source supplies a detailed final-water makeup instruction. User-contributed, untested formulation; not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            0,
+            "concentration"
+          ],
+          "field": "solutions[0].composition[0].concentration",
+          "ingredient": "NaCl",
+          "old": {
+            "value": "23.47",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "23.47",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P2",
+          "snippet": "NaCl 23.47 g/l 23.47 401.608",
+          "locator": "sol-660 / recipe-0",
+          "evidence_pointer": [
+            "solutions",
+            0,
+            "composition",
+            0
+          ],
+          "supports": "SUPPORT",
+          "explanation": "solutions[0].composition[0].concentration: 23.47 g/l * 1 = 23.47 g/L inside the seawater stock; no expansion into the final medium. User-contributed, untested formulation; not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            1,
+            "concentration"
+          ],
+          "field": "solutions[0].composition[1].concentration",
+          "ingredient": "Na2SO4",
+          "old": {
+            "value": "3.92",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "3.92",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P2",
+          "snippet": "Na2SO4 3.92 g/l 3.92 27.598",
+          "locator": "sol-660 / recipe-1",
+          "evidence_pointer": [
+            "solutions",
+            0,
+            "composition",
+            1
+          ],
+          "supports": "SUPPORT",
+          "explanation": "solutions[0].composition[1].concentration: 3.92 g/l * 1 = 3.92 g/L inside the seawater stock; no expansion into the final medium. User-contributed, untested formulation; not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            2,
+            "concentration"
+          ],
+          "field": "solutions[0].composition[2].concentration",
+          "ingredient": "MgCl2 x 6 H2O",
+          "old": {
+            "value": "10.64",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "10.64",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P2",
+          "snippet": "MgCl2 x 6 H2O 10.64 g/l 10.64 52.336",
+          "locator": "sol-660 / recipe-3",
+          "evidence_pointer": [
+            "solutions",
+            0,
+            "composition",
+            2
+          ],
+          "supports": "SUPPORT",
+          "explanation": "solutions[0].composition[2].concentration: 10.64 g/l * 1 = 10.64 g/L inside the seawater stock; no expansion into the final medium. User-contributed, untested formulation; not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            3,
+            "concentration"
+          ],
+          "field": "solutions[0].composition[3].concentration",
+          "ingredient": "CaCl2",
+          "old": {
+            "value": "1.10",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "1.10",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P2",
+          "snippet": "CaCl2 1.10 g/l 1.1 9.912",
+          "locator": "sol-660 / recipe-4",
+          "evidence_pointer": [
+            "solutions",
+            0,
+            "composition",
+            3
+          ],
+          "supports": "SUPPORT",
+          "explanation": "solutions[0].composition[3].concentration: 1.10 g/l * 1 = 1.10 g/L inside the seawater stock; no expansion into the final medium. User-contributed, untested formulation; not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            4,
+            "concentration"
+          ],
+          "field": "solutions[0].composition[4].concentration",
+          "ingredient": "NaHCO3",
+          "old": {
+            "value": "0.192",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.192",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P2",
+          "snippet": "NaHCO3 192.00 mg/l 0.192 2.286",
+          "locator": "sol-660 / recipe-5",
+          "evidence_pointer": [
+            "solutions",
+            0,
+            "composition",
+            4
+          ],
+          "supports": "SUPPORT",
+          "explanation": "solutions[0].composition[4].concentration: 192.00 mg/l * 0.001 = 0.19200 g/L inside the seawater stock; no expansion into the final medium. User-contributed, untested formulation; not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            5,
+            "concentration"
+          ],
+          "field": "solutions[0].composition[5].concentration",
+          "ingredient": "KCl",
+          "old": {
+            "value": "0.664",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.664",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P2",
+          "snippet": "KCl 664.00 mg/l 0.664 8.907",
+          "locator": "sol-660 / recipe-6",
+          "evidence_pointer": [
+            "solutions",
+            0,
+            "composition",
+            5
+          ],
+          "supports": "SUPPORT",
+          "explanation": "solutions[0].composition[5].concentration: 664.00 mg/l * 0.001 = 0.66400 g/L inside the seawater stock; no expansion into the final medium. User-contributed, untested formulation; not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            6,
+            "concentration"
+          ],
+          "field": "solutions[0].composition[6].concentration",
+          "ingredient": "KBr",
+          "old": {
+            "value": "0.096",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.096",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P2",
+          "snippet": "KBr 96.00 mg/l 0.096 0.807",
+          "locator": "sol-660 / recipe-7",
+          "evidence_pointer": [
+            "solutions",
+            0,
+            "composition",
+            6
+          ],
+          "supports": "SUPPORT",
+          "explanation": "solutions[0].composition[6].concentration: 96.00 mg/l * 0.001 = 0.09600 g/L inside the seawater stock; no expansion into the final medium. User-contributed, untested formulation; not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            7,
+            "concentration"
+          ],
+          "field": "solutions[0].composition[7].concentration",
+          "ingredient": "H3BO3",
+          "old": {
+            "value": "0.026",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.026",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P2",
+          "snippet": "H3BO3 26.00 mg/l 0.026 0.42",
+          "locator": "sol-660 / recipe-8",
+          "evidence_pointer": [
+            "solutions",
+            0,
+            "composition",
+            7
+          ],
+          "supports": "SUPPORT",
+          "explanation": "solutions[0].composition[7].concentration: 26.00 mg/l * 0.001 = 0.02600 g/L inside the seawater stock; no expansion into the final medium. User-contributed, untested formulation; not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            8,
+            "concentration"
+          ],
+          "field": "solutions[0].composition[8].concentration",
+          "ingredient": "SrCl2",
+          "old": {
+            "value": "0.024",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.024",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P2",
+          "snippet": "SrCl2 24.00 mg/l 0.024 0.151",
+          "locator": "sol-660 / recipe-9",
+          "evidence_pointer": [
+            "solutions",
+            0,
+            "composition",
+            8
+          ],
+          "supports": "SUPPORT",
+          "explanation": "solutions[0].composition[8].concentration: 24.00 mg/l * 0.001 = 0.02400 g/L inside the seawater stock; no expansion into the final medium. User-contributed, untested formulation; not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            9,
+            "concentration"
+          ],
+          "field": "solutions[0].composition[9].concentration",
+          "ingredient": "NaF",
+          "old": {
+            "value": "0.003",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.003",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P2",
+          "snippet": "NaF 3.00 mg/l 0.003 0.071",
+          "locator": "sol-660 / recipe-10",
+          "evidence_pointer": [
+            "solutions",
+            0,
+            "composition",
+            9
+          ],
+          "supports": "SUPPORT",
+          "explanation": "solutions[0].composition[9].concentration: 3.00 mg/l * 0.001 = 0.00300 g/L inside the seawater stock; no expansion into the final medium. User-contributed, untested formulation; not journal evidence. Accessed 2026-10-07; captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "solutions",
+            1,
+            "composition",
+            0,
+            "concentration"
+          ],
+          "field": "solutions[1].composition[0].concentration",
+          "ingredient": "Haemin",
+          "old": {
+            "value": "0.5",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.5",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P2",
+          "snippet": "Haemin 50 mg 0.5 0.767",
+          "locator": "sol-124 / recipe-0",
+          "evidence_pointer": [
+            "solutions",
+            1,
+            "composition",
+            0
+          ],
+          "supports": "SUPPORT",
+          "explanation": "solutions[1].composition[0].concentration: 50 mg / 0.100 L = 0.5 g/L stock; final stock makeup is explicit in the preparation step. User-contributed, untested formulation; not journal evidence. Additional exact preparation excerpt: \"1 Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled water and filter sterilize. Store refrigerated.\"; locator=sol-124 preparation. Accessed 2026-10-07; captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "solutions",
+            1,
+            "composition",
+            1,
+            "concentration"
+          ],
+          "field": "solutions[1].composition[1].concentration",
+          "ingredient": "NaOH (1 N)",
+          "old": {
+            "value": "10",
+            "unit": "ML_PER_L"
+          },
+          "new": {
+            "value": "10",
+            "unit": "ML_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P2",
+          "snippet": "NaOH (1 N) 1 ml - -",
+          "locator": "sol-124 / recipe-1",
+          "evidence_pointer": [
+            "solutions",
+            1,
+            "composition",
+            1
+          ],
+          "supports": "SUPPORT",
+          "explanation": "solutions[1].composition[1].concentration: 1 ml of the source-specified 1 N reagent / 0.100 L stock = 10 ML_PER_L input rate; not a concentration assertion for solid NaOH and not an inferred normality-to-molarity conversion. User-contributed, untested formulation; not journal evidence. Additional exact preparation excerpt: \"1 Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled water and filter sterilize. Store refrigerated.\"; locator=sol-124 preparation. Accessed 2026-10-07; captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "solutions",
+            1,
+            "composition",
+            2,
+            "concentration"
+          ],
+          "field": "solutions[1].composition[2].concentration",
+          "ingredient": "Distilled water",
+          "old": null,
+          "new": null,
+          "status": "not_quantified",
+          "reference": "https://mediadive.dsmz.de/medium/P2",
+          "snippet": "make up to 100 ml with distilled water",
+          "locator": "sol-124 preparation",
+          "evidence_pointer": [
+            "solutions",
+            1,
+            "composition",
+            2
+          ],
+          "supports": "SUPPORT",
+          "explanation": "solutions[1].composition[2].concentration: Adds the omitted makeup-water ingredient and scoped notes; water concentration remains absent. Make up the haemin stock to 100 ml with distilled water after dissolving 50 mg haemin in 1 ml 1 N NaOH. The added water amount is not fixed at 100 ml; no numeric water concentration or volume is asserted. Accessed 2026-10-07; captures={\"P2-medium-page.html\": \"b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/m9_sng_medium.yaml",
+      "id": "CultureMech:010438",
+      "name": "m9_sng_medium",
+      "medium_id": "P8",
+      "action": "CURATED_PUBLIC_STOCK_CONCENTRATIONS_FROM_SCOPED_SOURCES",
+      "before_text": "id: CultureMech:010438\nname: m9_sng_medium\noriginal_name: M9-SNG medium\ncategory: bacterial\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: LIQUID\nph_value: 7.2\nmedia_term:\n  preferred_term: public Medium P8\n  term:\n    id: mediadive.medium:P8\n    label: M9-SNG medium\nnotes: MediaDive public Medium P8 provides M9-SNG medium at pH 7.2 with MgSO4, CaCl2,\n  sinigrin, and M9 stock additions. The public JSON assigned the M9 stock the malformed\n  id 'NaN'; this record preserves the named M9 composition and drops that id.\ningredients: []\napplications:\n- Microbial cultivation\nreferences:\n- reference: 10.1007/s11104-022-05822-6\n- reference: https://www.bacmedia.dsmz.de/medium/P8\ncuration_history:\n- timestamp: '2026-01-26T17:53:19.847041Z'\n  curator: mediadive-import\n  action: Imported from MediaDive\n  notes: 'Source: public, ID: P8'\n- timestamp: '2026-02-03T11:27:23.238301'\n  curator: quality-tagger-v1.0\n  action: Added data quality flag\n  notes: Marked as incomplete_composition due to placeholder ingredients\n- timestamp: '2026-03-13T06:20:13.830788Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:010438'\n- timestamp: '2026-03-17T19:46:32.808895+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"M9-SNG medium\" to \"m9_sng_medium\" for consistent matching\n- timestamp: '2026-08-06T07:56:36.111580+00:00'\n  curator: curate_placeholder_composition.py\n  action: REMOVED_PLACEHOLDER_INGREDIENT\n  notes: Removed the 'See source for composition' placeholder ingredient; the record\n    carries no imported composition and is flagged incomplete (#175).\n  changes: Dropped placeholder ingredient 'See source for composition'\n- timestamp: '2026-09-08T00:00:00-07:00'\n  curator: repair_mediadive_public_score30.py\n  action: RESOLVED_MEDIADIVE_PUBLIC_SCORE30\n  changes: Resolved score-30 public MediaDive placeholder graph\n  source: 10.1007/s11104-022-05822-6; https://www.bacmedia.dsmz.de/medium/P8\n  notes: MediaDive public Medium P8 provides M9-SNG medium at pH 7.2 with MgSO4, CaCl2,\n    sinigrin, and M9 stock additions. The public JSON assigned the M9 stock the malformed\n    id 'NaN'; this record preserves the named M9 composition and drops that id.\ndata_quality_flags:\n- ingredients_curated\n- has_ontology_mappings\n- has_unmapped_ingredients\nsolutions:\n- preferred_term: MgSO4 stock\n  concentration:\n    value: '327.8689'\n    unit: ML_PER_L\n  notes: P8 adds 2 ml MgSO4 stock to a 6.1 ml main solution.\n  composition:\n  - preferred_term: MgSO4\n    concentration:\n      value: '24.65'\n      unit: G_PER_L\n    source: MediaDive public Medium P8\n    term:\n      id: CHEBI:32599\n      label: magnesium sulfate\n    mediaingredientmech_chebi_term:\n      id: CHEBI:32599\n      label: magnesium sulfate\n- preferred_term: CaCl2 stock\n  concentration:\n    value: '1.63934'\n    unit: ML_PER_L\n  notes: P8 adds 10 uL CaCl2 stock to a 6.1 ml main solution.\n  composition:\n  - preferred_term: CaCl2\n    concentration:\n      value: '14.7'\n      unit: G_PER_L\n    source: MediaDive public Medium P8\n    term:\n      id: CHEBI:3312\n      label: calcium dichloride\n    mediaingredientmech_chebi_term:\n      id: CHEBI:3312\n      label: calcium dichloride\n- preferred_term: Sinigrin stock\n  concentration:\n    value: '327.8689'\n    unit: ML_PER_L\n  notes: P8 adds 2 ml of a 10 g/L sinigrin stock filtered at 0.22 um in sterile water\n    at pH 7.2 to a 6.1 ml main solution.\n  composition:\n  - preferred_term: Sinigrin\n    concentration:\n      value: '10'\n      unit: G_PER_L\n    source: MediaDive public Medium P8\n- preferred_term: M9 stock\n  concentration:\n    value: '327.8689'\n    unit: ML_PER_L\n  notes: P8 adds 2 ml M9 stock to a 6.1 ml main solution. The official public JSON\n    represented this stock with a malformed solution id 'NaN'; CultureMech preserves\n    the named stock and drops that id.\n  composition:\n  - preferred_term: Na2HPO4\n    concentration:\n      value: '64'\n      unit: G_PER_L\n    source: MediaDive public Medium P8\n    term:\n      id: CHEBI:34683\n      label: disodium hydrogenphosphate\n    mediaingredientmech_chebi_term:\n      id: CHEBI:34683\n      label: disodium hydrogenphosphate\n  - preferred_term: KH2PO4\n    concentration:\n      value: '51'\n      unit: G_PER_L\n    source: MediaDive public Medium P8\n    term:\n      id: CHEBI:63036\n      label: potassium dihydrogen phosphate\n    mediaingredientmech_chebi_term:\n      id: CHEBI:63036\n      label: potassium dihydrogen phosphate\n  - preferred_term: NaCl\n    concentration:\n      value: '2.5'\n      unit: G_PER_L\n    source: MediaDive public Medium P8\n    term:\n      id: CHEBI:26710\n      label: sodium chloride\n    mediaingredientmech_chebi_term:\n      id: CHEBI:26710\n      label: sodium chloride\n  - preferred_term: NH4Cl\n    concentration:\n      value: '5'\n      unit: G_PER_L\n    source: MediaDive public Medium P8\n    term:\n      id: CHEBI:31206\n      label: ammonium chloride\n    mediaingredientmech_chebi_term:\n      id: CHEBI:31206\n      label: ammonium chloride\npreparation_steps:\n- step_number: 1\n  action: MIX\n  description: Prepare M9-SNG with MgSO4, CaCl2, sinigrin, and M9 stock additions;\n    use 0.22 um filtered sinigrin stock prepared in sterile water at pH 7.2.\n",
+      "after_text": "id: CultureMech:010438\nname: m9_sng_medium\noriginal_name: M9-SNG medium\ncategory: bacterial\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: LIQUID\nph_value: 7.2\nmedia_term:\n  preferred_term: public Medium P8\n  term:\n    id: mediadive.medium:P8\n    label: M9-SNG medium\nnotes: MediaDive public Medium P8 provides M9-SNG medium at pH 7.2 with MgSO4, CaCl2,\n  sinigrin, and M9 stock additions. The public JSON assigned the M9 stock the malformed\n  id 'NaN'; this record preserves the named M9 composition and drops that id. Curation\n  now uses the DOI-linked HAL v1 manuscript for stock amounts and batch additions.\n  The public page's 6.1 ml dose denominator is not retained; no final-medium component\n  dilution or fixed makeup-water amount is inferred.\ningredients: []\napplications:\n- Microbial cultivation\nreferences:\n- reference: doi:10.1007/s11104-022-05822-6\n  title: Soil microbiota promotes early developmental stages of Phelipanche ramosa\n    L. Pomel during plant parasitism on Brassica napus L.\n  authors: Lisa Martinez; Jean-Bernard Pouvreau; Gregory Montiel; Christophe Jestin;\n    Philippe Delavault; Philippe Simier; Lucie Poulin\n  year: 2023\n  notes: source_type=journal_article; discovery_mode=manual_web_search; accessed_on=2026-10-07;\n    version=HAL v1 author manuscript; full_text=https://hal.inrae.fr/hal-04370677v1/file/Submitted_version_LM.pdf;\n    deposit=2024-01-16; online publication=2022-12-08, volume year=2023. Methods page\n    11 (printed 10) visually inspected. Publisher methods and supplements were not\n    inspected. Legacy bare DOI normalized, not a new publication.\n- reference: https://www.bacmedia.dsmz.de/medium/P8\n- reference: https://mediadive.dsmz.de/medium/P8\n  title: M9-SNG medium - MediaDive public Medium P8\n  authors: Lisa Martinez, Jean-Bernard Pouvreau, Gr\u00e9gory Montiel, Christophe Jestin,\n    Philippe Delavault, Simier Philippe, Lucie Poulin\n  year: 2024\n  notes: source_type=user_contributed_dataset_page; discovery_mode=existing_record_reference;\n    accessed_on=2026-10-07; year is the dataset-page publication year, not the journal\n    year; legacy bacmedia reference retained. Retained as explicit counterevidence\n    for the KH2PO4 stock conflict, not supporting the corrected amount.\ncuration_history:\n- timestamp: '2026-01-26T17:53:19.847041Z'\n  curator: mediadive-import\n  action: Imported from MediaDive\n  notes: 'Source: public, ID: P8'\n- timestamp: '2026-02-03T11:27:23.238301'\n  curator: quality-tagger-v1.0\n  action: Added data quality flag\n  notes: Marked as incomplete_composition due to placeholder ingredients\n- timestamp: '2026-03-13T06:20:13.830788Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:010438'\n- timestamp: '2026-03-17T19:46:32.808895+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"M9-SNG medium\" to \"m9_sng_medium\" for consistent matching\n- timestamp: '2026-08-06T07:56:36.111580+00:00'\n  curator: curate_placeholder_composition.py\n  action: REMOVED_PLACEHOLDER_INGREDIENT\n  notes: Removed the 'See source for composition' placeholder ingredient; the record\n    carries no imported composition and is flagged incomplete (#175).\n  changes: Dropped placeholder ingredient 'See source for composition'\n- timestamp: '2026-09-08T00:00:00-07:00'\n  curator: repair_mediadive_public_score30.py\n  action: RESOLVED_MEDIADIVE_PUBLIC_SCORE30\n  changes: Resolved score-30 public MediaDive placeholder graph\n  source: 10.1007/s11104-022-05822-6; https://www.bacmedia.dsmz.de/medium/P8\n  notes: MediaDive public Medium P8 provides M9-SNG medium at pH 7.2 with MgSO4, CaCl2,\n    sinigrin, and M9 stock additions. The public JSON assigned the M9 stock the malformed\n    id 'NaN'; this record preserves the named M9 composition and drops that id.\n- timestamp: '2026-10-07T17:51:49.842228+00:00'\n  curator: codex\n  action: CURATED_PUBLIC_STOCK_CONCENTRATIONS_FROM_SCOPED_SOURCES\n  notes: Preserved stable ID, original history, ontology annotations, physical state,\n    pH, preparation and variants. Corrected article-backed stock amounts/doses, notes\n    and source attribution; normalized/enriched the existing DOI citation and preserved\n    dataset counterevidence. No new growth associations or IDs.\n  source: https://mediadive.dsmz.de/medium/P8; doi:10.1007/s11104-022-05822-6\n  changes: 'solutions[0].composition[0].concentration: {\"unit\": \"G_PER_L\", \"value\":\n    \"24.65\"} -> {\"unit\": \"G_PER_L\", \"value\": \"24.65\"} [evidence_only]; solutions[1].composition[0].concentration:\n    {\"unit\": \"G_PER_L\", \"value\": \"14.7\"} -> {\"unit\": \"G_PER_L\", \"value\": \"14.7\"} [evidence_only];\n    solutions[2].composition[0].concentration: {\"unit\": \"G_PER_L\", \"value\": \"10\"}\n    -> {\"unit\": \"G_PER_L\", \"value\": \"10\"} [evidence_only]; solutions[3].composition[0].concentration:\n    {\"unit\": \"G_PER_L\", \"value\": \"64\"} -> {\"unit\": \"G_PER_L\", \"value\": \"64\"} [evidence_only];\n    solutions[3].composition[1].concentration: {\"unit\": \"G_PER_L\", \"value\": \"51\"}\n    -> {\"unit\": \"G_PER_L\", \"value\": \"15\"} [correct]; solutions[3].composition[2].concentration:\n    {\"unit\": \"G_PER_L\", \"value\": \"2.5\"} -> {\"unit\": \"G_PER_L\", \"value\": \"2.5\"} [evidence_only];\n    solutions[3].composition[3].concentration: {\"unit\": \"G_PER_L\", \"value\": \"5\"} ->\n    {\"unit\": \"G_PER_L\", \"value\": \"5\"} [evidence_only]; solutions[0].concentration:\n    {\"unit\": \"ML_PER_L\", \"value\": \"327.8689\"} -> {\"unit\": \"L\", \"value\": \"0.002\"} [correct];\n    solutions[0].notes: \"P8 adds 2 ml MgSO4 stock to a 6.1 ml main solution.\" -> \"Add\n    0.002 L of MgSO4 stock per recipe batch. The L unit is a batch amount, not L/L.\n    The manuscript describes 10 ml cultures; no fixed water makeup amount is inferred.\"\n    [correct_context]; solutions[1].concentration: {\"unit\": \"ML_PER_L\", \"value\": \"1.63934\"}\n    -> {\"unit\": \"L\", \"value\": \"0.000010\"} [correct]; solutions[1].notes: \"P8 adds\n    10 uL CaCl2 stock to a 6.1 ml main solution.\" -> \"Add 0.000010 L of CaCl2 stock\n    per recipe batch. The L unit is a batch amount, not L/L. The manuscript describes\n    10 ml cultures; no fixed water makeup amount is inferred.\" [correct_context];\n    solutions[2].concentration: {\"unit\": \"ML_PER_L\", \"value\": \"327.8689\"} -> {\"unit\":\n    \"L\", \"value\": \"0.002\"} [correct]; solutions[2].notes: \"P8 adds 2 ml of a 10 g/L\n    sinigrin stock filtered at 0.22 um in sterile water at pH 7.2 to a 6.1 ml main\n    solution.\" -> \"Add 0.002 L of Sinigrin stock per recipe batch. The L unit is a\n    batch amount, not L/L. The manuscript describes 10 ml cultures; no fixed water\n    makeup amount is inferred.\" [correct_context]; solutions[3].concentration: {\"unit\":\n    \"ML_PER_L\", \"value\": \"327.8689\"} -> {\"unit\": \"L\", \"value\": \"0.002\"} [correct];\n    solutions[3].notes: \"P8 adds 2 ml M9 stock to a 6.1 ml main solution. The official\n    public JSON represented this stock with a malformed solution id ''NaN''; CultureMech\n    preserves the named stock and drops that id.\" -> \"Add 0.002 L of M9 stock per\n    recipe batch. The L unit is a batch amount, not L/L. The manuscript describes\n    10 ml cultures; no fixed water makeup amount is inferred. The page-scoped M9 anchor\n    is malformed NaN; no global solution accession is assigned.\" [correct_context];\n    solutions[2].composition[0].notes: null -> \"The manuscript identifies SNG as sinigrin\n    hydrate, without a hydration number. The 10 g/L value is the reagent stock strength;\n    no molar conversion is asserted.\" [add_context]; solutions[3].composition[1].notes:\n    null -> \"The DOI-linked author manuscript specifies 15 g/L KH2PO4 in M9 5X. The\n    public P8 table instead reports 51.0 g/L; that conflicting dataset amount is retained\n    as counterevidence, not adopted as a separate supported variant.\" [add_context];\n    solutions[3].composition[1].source: \"MediaDive public Medium P8\" -> \"doi:10.1007/s11104-022-05822-6\"\n    [correct_source]; solutions[3].composition[1].concentration: {\"unit\": \"G_PER_L\",\n    \"value\": \"51\"} -> {\"unit\": \"G_PER_L\", \"value\": \"15\"} [conflicting_source]; notes:\n    \"MediaDive public Medium P8 provides M9-SNG medium at pH 7.2 with MgSO4, CaCl2,\n    sinigrin, and M9 stock additions. The public JSON assigned the M9 stock the malformed\n    id ''NaN''; this record preserves the named M9 composition and drops that id.\"\n    -> \"MediaDive public Medium P8 provides M9-SNG medium at pH 7.2 with MgSO4, CaCl2,\n    sinigrin, and M9 stock additions. The public JSON assigned the M9 stock the malformed\n    id ''NaN''; this record preserves the named M9 composition and drops that id.\n    Curation now uses the DOI-linked HAL v1 manuscript for stock amounts and batch\n    additions. The public page''s 6.1 ml dose denominator is not retained; no final-medium\n    component dilution or fixed makeup-water amount is inferred.\" [correct_context]'\ndata_quality_flags:\n- ingredients_curated\n- has_ontology_mappings\n- has_unmapped_ingredients\nsolutions:\n- preferred_term: MgSO4 stock\n  concentration:\n    value: '0.002'\n    unit: L\n  notes: Add 0.002 L of MgSO4 stock per recipe batch. The L unit is a batch amount,\n    not L/L. The manuscript describes 10 ml cultures; no fixed water makeup amount\n    is inferred.\n  composition:\n  - preferred_term: MgSO4\n    concentration:\n      value: '24.65'\n      unit: G_PER_L\n    source: MediaDive public Medium P8\n    term:\n      id: CHEBI:32599\n      label: magnesium sulfate\n    mediaingredientmech_chebi_term:\n      id: CHEBI:32599\n      label: magnesium sulfate\n    evidence:\n    - reference: doi:10.1007/s11104-022-05822-6\n      supports: SUPPORT\n      snippet: 24.65 g.L-1 MgSO4\n      explanation: 'solutions[0].composition[0].concentration: Directly reported stock\n        strength for MgSO4, not final-medium concentration.  Accessed 2026-10-07;\n        captures={\"P8-P9-HAL-submitted.pdf\": \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\",\n        \"P8-medium-page.html\": \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}.\n        Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No\n        chemical grounding, growth, density or unspecified percentage basis is inferred.\n        Exact excerpt: \"24.65 g.L-1 MgSO4\"; locator=HAL v1 author manuscript, PDF\n        page 11 (printed 10), lines 303-308.'\n- preferred_term: CaCl2 stock\n  concentration:\n    value: '0.000010'\n    unit: L\n  notes: Add 0.000010 L of CaCl2 stock per recipe batch. The L unit is a batch amount,\n    not L/L. The manuscript describes 10 ml cultures; no fixed water makeup amount\n    is inferred.\n  composition:\n  - preferred_term: CaCl2\n    concentration:\n      value: '14.7'\n      unit: G_PER_L\n    source: MediaDive public Medium P8\n    term:\n      id: CHEBI:3312\n      label: calcium dichloride\n    mediaingredientmech_chebi_term:\n      id: CHEBI:3312\n      label: calcium dichloride\n    evidence:\n    - reference: doi:10.1007/s11104-022-05822-6\n      supports: SUPPORT\n      snippet: 14.7 g.L-1 CaCl2\n      explanation: 'solutions[1].composition[0].concentration: Directly reported stock\n        strength for CaCl2, not final-medium concentration.  Accessed 2026-10-07;\n        captures={\"P8-P9-HAL-submitted.pdf\": \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\",\n        \"P8-medium-page.html\": \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}.\n        Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No\n        chemical grounding, growth, density or unspecified percentage basis is inferred.\n        Exact excerpt: \"14.7 g.L-1 CaCl2\"; locator=HAL v1 author manuscript, PDF page\n        11 (printed 10), lines 303-308.'\n- preferred_term: Sinigrin stock\n  concentration:\n    value: '0.002'\n    unit: L\n  notes: Add 0.002 L of Sinigrin stock per recipe batch. The L unit is a batch amount,\n    not L/L. The manuscript describes 10 ml cultures; no fixed water makeup amount\n    is inferred.\n  composition:\n  - preferred_term: Sinigrin\n    concentration:\n      value: '10'\n      unit: G_PER_L\n    source: MediaDive public Medium P8\n    notes: The manuscript identifies SNG as sinigrin hydrate, without a hydration\n      number. The 10 g/L value is the reagent stock strength; no molar conversion\n      is asserted.\n    evidence:\n    - reference: doi:10.1007/s11104-022-05822-6\n      supports: SUPPORT\n      snippet: 10 g.L-1 SNG\n      explanation: 'solutions[2].composition[0].concentration: Directly reported stock\n        strength for Sinigrin, not final-medium concentration. SNG is explicitly identified\n        by the additional exact excerpt \"SNG; Sinigrin hydrate\" at the same locator.  Accessed\n        2026-10-07; captures={\"P8-P9-HAL-submitted.pdf\": \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\",\n        \"P8-medium-page.html\": \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}.\n        Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No\n        chemical grounding, growth, density or unspecified percentage basis is inferred.\n        Exact excerpt: \"10 g.L-1 SNG\"; locator=HAL v1 author manuscript, PDF page\n        11 (printed 10), lines 303-308. solutions[2].composition[0].notes: The manuscript\n        identifies SNG as sinigrin hydrate, without a hydration number. The 10 g/L\n        value is the reagent stock strength; no molar conversion is asserted. Accessed\n        2026-10-07; captures={\"P8-P9-HAL-submitted.pdf\": \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\",\n        \"P8-medium-page.html\": \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}.\n        Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No\n        chemical grounding, growth, density or unspecified percentage basis is inferred.\n        Exact excerpt: \"SNG; Sinigrin hydrate\"; locator=HAL v1 author manuscript,\n        PDF page 11 (printed 10), lines 303-308.'\n- preferred_term: M9 stock\n  concentration:\n    value: '0.002'\n    unit: L\n  notes: Add 0.002 L of M9 stock per recipe batch. The L unit is a batch amount, not\n    L/L. The manuscript describes 10 ml cultures; no fixed water makeup amount is\n    inferred. The page-scoped M9 anchor is malformed NaN; no global solution accession\n    is assigned.\n  composition:\n  - preferred_term: Na2HPO4\n    concentration:\n      value: '64'\n      unit: G_PER_L\n    source: MediaDive public Medium P8\n    term:\n      id: CHEBI:34683\n      label: disodium hydrogenphosphate\n    mediaingredientmech_chebi_term:\n      id: CHEBI:34683\n      label: disodium hydrogenphosphate\n    evidence:\n    - reference: doi:10.1007/s11104-022-05822-6\n      supports: SUPPORT\n      snippet: 64 g.L-1 Na2HPO4\n      explanation: 'solutions[3].composition[0].concentration: Directly reported stock\n        strength for Na2HPO4, not final-medium concentration.  Accessed 2026-10-07;\n        captures={\"P8-P9-HAL-submitted.pdf\": \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\",\n        \"P8-medium-page.html\": \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}.\n        Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No\n        chemical grounding, growth, density or unspecified percentage basis is inferred.\n        Exact excerpt: \"64 g.L-1 Na2HPO4\"; locator=HAL v1 author manuscript, PDF page\n        11 (printed 10), lines 303-308.'\n  - preferred_term: KH2PO4\n    concentration:\n      value: '15'\n      unit: G_PER_L\n    source: doi:10.1007/s11104-022-05822-6\n    term:\n      id: CHEBI:63036\n      label: potassium dihydrogen phosphate\n    mediaingredientmech_chebi_term:\n      id: CHEBI:63036\n      label: potassium dihydrogen phosphate\n    notes: The DOI-linked author manuscript specifies 15 g/L KH2PO4 in M9 5X. The\n      public P8 table instead reports 51.0 g/L; that conflicting dataset amount is\n      retained as counterevidence, not adopted as a separate supported variant.\n    evidence:\n    - reference: doi:10.1007/s11104-022-05822-6\n      supports: SUPPORT\n      snippet: 15 g.L-1 KH2PO4\n      explanation: 'solutions[3].composition[1].concentration: Directly reported stock\n        strength for KH2PO4, not final-medium concentration.  Accessed 2026-10-07;\n        captures={\"P8-P9-HAL-submitted.pdf\": \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\",\n        \"P8-medium-page.html\": \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}.\n        Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No\n        chemical grounding, growth, density or unspecified percentage basis is inferred.\n        Exact excerpt: \"15 g.L-1 KH2PO4\"; locator=HAL v1 author manuscript, PDF page\n        11 (printed 10), lines 303-308. solutions[3].composition[1].notes: The DOI-linked\n        author manuscript specifies 15 g/L KH2PO4 in M9 5X. The public P8 table instead\n        reports 51.0 g/L; that conflicting dataset amount is retained as counterevidence,\n        not adopted as a separate supported variant. Accessed 2026-10-07; captures={\"P8-P9-HAL-submitted.pdf\":\n        \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\", \"P8-medium-page.html\":\n        \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}. Quotes\n        decode HTML entities or PDF text glyphs and collapse whitespace. No chemical\n        grounding, growth, density or unspecified percentage basis is inferred. Exact\n        excerpt: \"15 g.L-1 KH2PO4\"; locator=HAL v1 author manuscript, PDF page 11\n        (printed 10), lines 303-308. solutions[3].composition[1].source: The corrected\n        value is attributed to the inspected article, not the disagreeing dataset\n        row. Accessed 2026-10-07; captures={\"P8-P9-HAL-submitted.pdf\": \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\",\n        \"P8-medium-page.html\": \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}.\n        Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No\n        chemical grounding, growth, density or unspecified percentage basis is inferred.\n        Exact excerpt: \"15 g.L-1 KH2PO4\"; locator=HAL v1 author manuscript, PDF page\n        11 (printed 10), lines 303-308.'\n    - reference: https://mediadive.dsmz.de/medium/P8\n      supports: REFUTE\n      snippet: KH2PO4 51.0 g/l 51 374.766\n      explanation: 'solutions[3].composition[1].concentration: Dataset row disagrees\n        with the curated 15 g/L article amount. Original methods take precedence for\n        the DOI-linked formulation. The discrepancy is explicit, not averaged or promoted\n        to a new variant. Accessed 2026-10-07; captures={\"P8-P9-HAL-submitted.pdf\":\n        \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\", \"P8-medium-page.html\":\n        \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}. Quotes\n        decode HTML entities or PDF text glyphs and collapse whitespace. No chemical\n        grounding, growth, density or unspecified percentage basis is inferred. Exact\n        excerpt: \"KH2PO4 51.0 g/l 51 374.766\"; locator=sol-NaN / recipe-1.'\n  - preferred_term: NaCl\n    concentration:\n      value: '2.5'\n      unit: G_PER_L\n    source: MediaDive public Medium P8\n    term:\n      id: CHEBI:26710\n      label: sodium chloride\n    mediaingredientmech_chebi_term:\n      id: CHEBI:26710\n      label: sodium chloride\n    evidence:\n    - reference: doi:10.1007/s11104-022-05822-6\n      supports: SUPPORT\n      snippet: 2.5 g.L-1 NaCl\n      explanation: 'solutions[3].composition[2].concentration: Directly reported stock\n        strength for NaCl, not final-medium concentration.  Accessed 2026-10-07; captures={\"P8-P9-HAL-submitted.pdf\":\n        \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\", \"P8-medium-page.html\":\n        \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}. Quotes\n        decode HTML entities or PDF text glyphs and collapse whitespace. No chemical\n        grounding, growth, density or unspecified percentage basis is inferred. Exact\n        excerpt: \"2.5 g.L-1 NaCl\"; locator=HAL v1 author manuscript, PDF page 11 (printed\n        10), lines 303-308.'\n  - preferred_term: NH4Cl\n    concentration:\n      value: '5'\n      unit: G_PER_L\n    source: MediaDive public Medium P8\n    term:\n      id: CHEBI:31206\n      label: ammonium chloride\n    mediaingredientmech_chebi_term:\n      id: CHEBI:31206\n      label: ammonium chloride\n    evidence:\n    - reference: doi:10.1007/s11104-022-05822-6\n      supports: SUPPORT\n      snippet: 5 g.L-1 NH4Cl\n      explanation: 'solutions[3].composition[3].concentration: Directly reported stock\n        strength for NH4Cl, not final-medium concentration.  Accessed 2026-10-07;\n        captures={\"P8-P9-HAL-submitted.pdf\": \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\",\n        \"P8-medium-page.html\": \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}.\n        Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No\n        chemical grounding, growth, density or unspecified percentage basis is inferred.\n        Exact excerpt: \"5 g.L-1 NH4Cl\"; locator=HAL v1 author manuscript, PDF page\n        11 (printed 10), lines 303-308.'\npreparation_steps:\n- step_number: 1\n  action: MIX\n  description: Prepare M9-SNG with MgSO4, CaCl2, sinigrin, and M9 stock additions;\n    use 0.22 um filtered sinigrin stock prepared in sterile water at pH 7.2.\nevidence:\n- reference: doi:10.1007/s11104-022-05822-6\n  supports: SUPPORT\n  snippet: 2 mL of 24.65 g.L-1 MgSO4\n  explanation: 'solutions[0].concentration: 2 ml / 1000 = 0.002 L per recipe batch.\n    Replaces a rate derived from the unverified 6.1 ml page control with the article''s\n    explicit addition amount. Not a per-liter working concentration or final-medium\n    dilution. Accessed 2026-10-07; captures={\"P8-P9-HAL-submitted.pdf\": \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\",\n    \"P8-medium-page.html\": \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}.\n    Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical\n    grounding, growth, density or unspecified percentage basis is inferred. Exact\n    excerpt: \"2 mL of 24.65 g.L-1 MgSO4\"; locator=HAL v1 author manuscript, PDF page\n    11 (printed 10), lines 303-308. solutions[0].notes: 2 ml / 1000 = 0.002 L per\n    recipe batch. Replaces a rate derived from the unverified 6.1 ml page control\n    with the article''s explicit addition amount. Not a per-liter working concentration\n    or final-medium dilution. Additional exact culture-scale excerpt: \"10 mL of M9-sinigrin\n    medium\". Accessed 2026-10-07; captures={\"P8-P9-HAL-submitted.pdf\": \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\",\n    \"P8-medium-page.html\": \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}.\n    Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical\n    grounding, growth, density or unspecified percentage basis is inferred. Exact\n    excerpt: \"2 mL of 24.65 g.L-1 MgSO4\"; locator=HAL v1 author manuscript, PDF page\n    11 (printed 10), lines 303-308. solutions[1].concentration: 10 microliters / 1000000\n    = 0.000010 L per recipe batch. Replaces a rate derived from the unverified 6.1\n    ml page control with the article''s explicit addition amount. Not a per-liter\n    working concentration or final-medium dilution. Accessed 2026-10-07; captures={\"P8-P9-HAL-submitted.pdf\":\n    \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\", \"P8-medium-page.html\":\n    \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}. Quotes decode\n    HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding,\n    growth, density or unspecified percentage basis is inferred. Exact excerpt: \"10\n    \u00b5L of 14.7 g.L-1 CaCl2\"; locator=HAL v1 author manuscript, PDF page 11 (printed\n    10), lines 303-308. solutions[1].notes: 10 microliters / 1000000 = 0.000010 L\n    per recipe batch. Replaces a rate derived from the unverified 6.1 ml page control\n    with the article''s explicit addition amount. Not a per-liter working concentration\n    or final-medium dilution. Additional exact culture-scale excerpt: \"10 mL of M9-sinigrin\n    medium\". Accessed 2026-10-07; captures={\"P8-P9-HAL-submitted.pdf\": \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\",\n    \"P8-medium-page.html\": \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}.\n    Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical\n    grounding, growth, density or unspecified percentage basis is inferred. Exact\n    excerpt: \"10 \u00b5L of 14.7 g.L-1 CaCl2\"; locator=HAL v1 author manuscript, PDF page\n    11 (printed 10), lines 303-308. solutions[2].concentration: 2 ml / 1000 = 0.002\n    L per recipe batch. Replaces a rate derived from the unverified 6.1 ml page control\n    with the article''s explicit addition amount. Not a per-liter working concentration\n    or final-medium dilution. Accessed 2026-10-07; captures={\"P8-P9-HAL-submitted.pdf\":\n    \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\", \"P8-medium-page.html\":\n    \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}. Quotes decode\n    HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding,\n    growth, density or unspecified percentage basis is inferred. Exact excerpt: \"2\n    mL of 10 g.L-1 SNG\"; locator=HAL v1 author manuscript, PDF page 11 (printed 10),\n    lines 303-308. solutions[2].notes: 2 ml / 1000 = 0.002 L per recipe batch. Replaces\n    a rate derived from the unverified 6.1 ml page control with the article''s explicit\n    addition amount. Not a per-liter working concentration or final-medium dilution.\n    Additional exact culture-scale excerpt: \"10 mL of M9-sinigrin medium\". Accessed\n    2026-10-07; captures={\"P8-P9-HAL-submitted.pdf\": \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\",\n    \"P8-medium-page.html\": \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}.\n    Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical\n    grounding, growth, density or unspecified percentage basis is inferred. Exact\n    excerpt: \"2 mL of 10 g.L-1 SNG\"; locator=HAL v1 author manuscript, PDF page 11\n    (printed 10), lines 303-308. solutions[3].concentration: 2 ml / 1000 = 0.002 L\n    per recipe batch. Replaces a rate derived from the unverified 6.1 ml page control\n    with the article''s explicit addition amount. Not a per-liter working concentration\n    or final-medium dilution. Accessed 2026-10-07; captures={\"P8-P9-HAL-submitted.pdf\":\n    \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\", \"P8-medium-page.html\":\n    \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}. Quotes decode\n    HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding,\n    growth, density or unspecified percentage basis is inferred. Exact excerpt: \"2\n    mL of M9 solution\"; locator=HAL v1 author manuscript, PDF page 11 (printed 10),\n    lines 303-308. solutions[3].notes: 2 ml / 1000 = 0.002 L per recipe batch. Replaces\n    a rate derived from the unverified 6.1 ml page control with the article''s explicit\n    addition amount. Not a per-liter working concentration or final-medium dilution.\n    Additional exact culture-scale excerpt: \"10 mL of M9-sinigrin medium\". Accessed\n    2026-10-07; captures={\"P8-P9-HAL-submitted.pdf\": \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\",\n    \"P8-medium-page.html\": \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}.\n    Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical\n    grounding, growth, density or unspecified percentage basis is inferred. Exact\n    excerpt: \"2 mL of M9 solution\"; locator=HAL v1 author manuscript, PDF page 11\n    (printed 10), lines 303-308. notes: Distinguishes the article''s declared culture\n    scale from the page control; keeps literal input doses without inventing a water\n    amount. Accessed 2026-10-07; captures={\"P8-P9-HAL-submitted.pdf\": \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\",\n    \"P8-medium-page.html\": \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}.\n    Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical\n    grounding, growth, density or unspecified percentage basis is inferred. Exact\n    excerpt: \"10 mL of M9-sinigrin medium\"; locator=HAL v1 author manuscript, PDF\n    page 11 (printed 10), lines 303-308.'\n",
+      "before_sha256": "250cc259402cfc6454d35f34240ff492d027b548fee1773ac6f5b238f08d1af4",
+      "after_sha256": "99cabe0e669d2c41483be98338bf611712194f05e8506537c2d32e7118d12ac4",
+      "source_sha256": "dde821669eaf606a99a5b5f238896bd7a8e4ea6263f1ece89884cd694f686a0f",
+      "source_accessed_at": "2026-10-07",
+      "claims": [
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            0,
+            "concentration"
+          ],
+          "field": "solutions[0].composition[0].concentration",
+          "ingredient": "MgSO4",
+          "old": {
+            "value": "24.65",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "24.65",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "doi:10.1007/s11104-022-05822-6",
+          "snippet": "24.65 g.L-1 MgSO4",
+          "locator": "HAL v1 author manuscript, PDF page 11 (printed 10), lines 303-308",
+          "evidence_pointer": [
+            "solutions",
+            0,
+            "composition",
+            0
+          ],
+          "supports": "SUPPORT",
+          "explanation": "solutions[0].composition[0].concentration: Directly reported stock strength for MgSO4, not final-medium concentration.  Accessed 2026-10-07; captures={\"P8-P9-HAL-submitted.pdf\": \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\", \"P8-medium-page.html\": \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "solutions",
+            1,
+            "composition",
+            0,
+            "concentration"
+          ],
+          "field": "solutions[1].composition[0].concentration",
+          "ingredient": "CaCl2",
+          "old": {
+            "value": "14.7",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "14.7",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "doi:10.1007/s11104-022-05822-6",
+          "snippet": "14.7 g.L-1 CaCl2",
+          "locator": "HAL v1 author manuscript, PDF page 11 (printed 10), lines 303-308",
+          "evidence_pointer": [
+            "solutions",
+            1,
+            "composition",
+            0
+          ],
+          "supports": "SUPPORT",
+          "explanation": "solutions[1].composition[0].concentration: Directly reported stock strength for CaCl2, not final-medium concentration.  Accessed 2026-10-07; captures={\"P8-P9-HAL-submitted.pdf\": \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\", \"P8-medium-page.html\": \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "solutions",
+            2,
+            "composition",
+            0,
+            "concentration"
+          ],
+          "field": "solutions[2].composition[0].concentration",
+          "ingredient": "Sinigrin",
+          "old": {
+            "value": "10",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "10",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "doi:10.1007/s11104-022-05822-6",
+          "snippet": "10 g.L-1 SNG",
+          "locator": "HAL v1 author manuscript, PDF page 11 (printed 10), lines 303-308",
+          "evidence_pointer": [
+            "solutions",
+            2,
+            "composition",
+            0
+          ],
+          "supports": "SUPPORT",
+          "explanation": "solutions[2].composition[0].concentration: Directly reported stock strength for Sinigrin, not final-medium concentration. SNG is explicitly identified by the additional exact excerpt \"SNG; Sinigrin hydrate\" at the same locator.  Accessed 2026-10-07; captures={\"P8-P9-HAL-submitted.pdf\": \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\", \"P8-medium-page.html\": \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "solutions",
+            3,
+            "composition",
+            0,
+            "concentration"
+          ],
+          "field": "solutions[3].composition[0].concentration",
+          "ingredient": "Na2HPO4",
+          "old": {
+            "value": "64",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "64",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "doi:10.1007/s11104-022-05822-6",
+          "snippet": "64 g.L-1 Na2HPO4",
+          "locator": "HAL v1 author manuscript, PDF page 11 (printed 10), lines 303-308",
+          "evidence_pointer": [
+            "solutions",
+            3,
+            "composition",
+            0
+          ],
+          "supports": "SUPPORT",
+          "explanation": "solutions[3].composition[0].concentration: Directly reported stock strength for Na2HPO4, not final-medium concentration.  Accessed 2026-10-07; captures={\"P8-P9-HAL-submitted.pdf\": \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\", \"P8-medium-page.html\": \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "solutions",
+            3,
+            "composition",
+            1,
+            "concentration"
+          ],
+          "field": "solutions[3].composition[1].concentration",
+          "ingredient": "KH2PO4",
+          "old": {
+            "value": "51",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "15",
+            "unit": "G_PER_L"
+          },
+          "status": "correct",
+          "reference": "doi:10.1007/s11104-022-05822-6",
+          "snippet": "15 g.L-1 KH2PO4",
+          "locator": "HAL v1 author manuscript, PDF page 11 (printed 10), lines 303-308",
+          "evidence_pointer": [
+            "solutions",
+            3,
+            "composition",
+            1
+          ],
+          "supports": "SUPPORT",
+          "explanation": "solutions[3].composition[1].concentration: Directly reported stock strength for KH2PO4, not final-medium concentration.  Accessed 2026-10-07; captures={\"P8-P9-HAL-submitted.pdf\": \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\", \"P8-medium-page.html\": \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "solutions",
+            3,
+            "composition",
+            2,
+            "concentration"
+          ],
+          "field": "solutions[3].composition[2].concentration",
+          "ingredient": "NaCl",
+          "old": {
+            "value": "2.5",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "2.5",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "doi:10.1007/s11104-022-05822-6",
+          "snippet": "2.5 g.L-1 NaCl",
+          "locator": "HAL v1 author manuscript, PDF page 11 (printed 10), lines 303-308",
+          "evidence_pointer": [
+            "solutions",
+            3,
+            "composition",
+            2
+          ],
+          "supports": "SUPPORT",
+          "explanation": "solutions[3].composition[2].concentration: Directly reported stock strength for NaCl, not final-medium concentration.  Accessed 2026-10-07; captures={\"P8-P9-HAL-submitted.pdf\": \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\", \"P8-medium-page.html\": \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "solutions",
+            3,
+            "composition",
+            3,
+            "concentration"
+          ],
+          "field": "solutions[3].composition[3].concentration",
+          "ingredient": "NH4Cl",
+          "old": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "doi:10.1007/s11104-022-05822-6",
+          "snippet": "5 g.L-1 NH4Cl",
+          "locator": "HAL v1 author manuscript, PDF page 11 (printed 10), lines 303-308",
+          "evidence_pointer": [
+            "solutions",
+            3,
+            "composition",
+            3
+          ],
+          "supports": "SUPPORT",
+          "explanation": "solutions[3].composition[3].concentration: Directly reported stock strength for NH4Cl, not final-medium concentration.  Accessed 2026-10-07; captures={\"P8-P9-HAL-submitted.pdf\": \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\", \"P8-medium-page.html\": \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "concentration"
+          ],
+          "field": "solutions[0].concentration",
+          "ingredient": "MgSO4 stock",
+          "old": {
+            "value": "327.8689",
+            "unit": "ML_PER_L"
+          },
+          "new": {
+            "value": "0.002",
+            "unit": "L"
+          },
+          "status": "correct",
+          "reference": "doi:10.1007/s11104-022-05822-6",
+          "snippet": "2 mL of 24.65 g.L-1 MgSO4",
+          "locator": "HAL v1 author manuscript, PDF page 11 (printed 10), lines 303-308",
+          "evidence_pointer": [],
+          "supports": "SUPPORT",
+          "explanation": "solutions[0].concentration: 2 ml / 1000 = 0.002 L per recipe batch. Replaces a rate derived from the unverified 6.1 ml page control with the article's explicit addition amount. Not a per-liter working concentration or final-medium dilution. Accessed 2026-10-07; captures={\"P8-P9-HAL-submitted.pdf\": \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\", \"P8-medium-page.html\": \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "notes"
+          ],
+          "field": "solutions[0].notes",
+          "ingredient": "MgSO4 stock",
+          "old": "P8 adds 2 ml MgSO4 stock to a 6.1 ml main solution.",
+          "new": "Add 0.002 L of MgSO4 stock per recipe batch. The L unit is a batch amount, not L/L. The manuscript describes 10 ml cultures; no fixed water makeup amount is inferred.",
+          "status": "correct_context",
+          "reference": "doi:10.1007/s11104-022-05822-6",
+          "snippet": "2 mL of 24.65 g.L-1 MgSO4",
+          "locator": "HAL v1 author manuscript, PDF page 11 (printed 10), lines 303-308",
+          "evidence_pointer": [],
+          "supports": "SUPPORT",
+          "explanation": "solutions[0].notes: 2 ml / 1000 = 0.002 L per recipe batch. Replaces a rate derived from the unverified 6.1 ml page control with the article's explicit addition amount. Not a per-liter working concentration or final-medium dilution. Additional exact culture-scale excerpt: \"10 mL of M9-sinigrin medium\". Accessed 2026-10-07; captures={\"P8-P9-HAL-submitted.pdf\": \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\", \"P8-medium-page.html\": \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "solutions",
+            1,
+            "concentration"
+          ],
+          "field": "solutions[1].concentration",
+          "ingredient": "CaCl2 stock",
+          "old": {
+            "value": "1.63934",
+            "unit": "ML_PER_L"
+          },
+          "new": {
+            "value": "0.000010",
+            "unit": "L"
+          },
+          "status": "correct",
+          "reference": "doi:10.1007/s11104-022-05822-6",
+          "snippet": "10 \u00b5L of 14.7 g.L-1 CaCl2",
+          "locator": "HAL v1 author manuscript, PDF page 11 (printed 10), lines 303-308",
+          "evidence_pointer": [],
+          "supports": "SUPPORT",
+          "explanation": "solutions[1].concentration: 10 microliters / 1000000 = 0.000010 L per recipe batch. Replaces a rate derived from the unverified 6.1 ml page control with the article's explicit addition amount. Not a per-liter working concentration or final-medium dilution. Accessed 2026-10-07; captures={\"P8-P9-HAL-submitted.pdf\": \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\", \"P8-medium-page.html\": \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "solutions",
+            1,
+            "notes"
+          ],
+          "field": "solutions[1].notes",
+          "ingredient": "CaCl2 stock",
+          "old": "P8 adds 10 uL CaCl2 stock to a 6.1 ml main solution.",
+          "new": "Add 0.000010 L of CaCl2 stock per recipe batch. The L unit is a batch amount, not L/L. The manuscript describes 10 ml cultures; no fixed water makeup amount is inferred.",
+          "status": "correct_context",
+          "reference": "doi:10.1007/s11104-022-05822-6",
+          "snippet": "10 \u00b5L of 14.7 g.L-1 CaCl2",
+          "locator": "HAL v1 author manuscript, PDF page 11 (printed 10), lines 303-308",
+          "evidence_pointer": [],
+          "supports": "SUPPORT",
+          "explanation": "solutions[1].notes: 10 microliters / 1000000 = 0.000010 L per recipe batch. Replaces a rate derived from the unverified 6.1 ml page control with the article's explicit addition amount. Not a per-liter working concentration or final-medium dilution. Additional exact culture-scale excerpt: \"10 mL of M9-sinigrin medium\". Accessed 2026-10-07; captures={\"P8-P9-HAL-submitted.pdf\": \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\", \"P8-medium-page.html\": \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "solutions",
+            2,
+            "concentration"
+          ],
+          "field": "solutions[2].concentration",
+          "ingredient": "Sinigrin stock",
+          "old": {
+            "value": "327.8689",
+            "unit": "ML_PER_L"
+          },
+          "new": {
+            "value": "0.002",
+            "unit": "L"
+          },
+          "status": "correct",
+          "reference": "doi:10.1007/s11104-022-05822-6",
+          "snippet": "2 mL of 10 g.L-1 SNG",
+          "locator": "HAL v1 author manuscript, PDF page 11 (printed 10), lines 303-308",
+          "evidence_pointer": [],
+          "supports": "SUPPORT",
+          "explanation": "solutions[2].concentration: 2 ml / 1000 = 0.002 L per recipe batch. Replaces a rate derived from the unverified 6.1 ml page control with the article's explicit addition amount. Not a per-liter working concentration or final-medium dilution. Accessed 2026-10-07; captures={\"P8-P9-HAL-submitted.pdf\": \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\", \"P8-medium-page.html\": \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "solutions",
+            2,
+            "notes"
+          ],
+          "field": "solutions[2].notes",
+          "ingredient": "Sinigrin stock",
+          "old": "P8 adds 2 ml of a 10 g/L sinigrin stock filtered at 0.22 um in sterile water at pH 7.2 to a 6.1 ml main solution.",
+          "new": "Add 0.002 L of Sinigrin stock per recipe batch. The L unit is a batch amount, not L/L. The manuscript describes 10 ml cultures; no fixed water makeup amount is inferred.",
+          "status": "correct_context",
+          "reference": "doi:10.1007/s11104-022-05822-6",
+          "snippet": "2 mL of 10 g.L-1 SNG",
+          "locator": "HAL v1 author manuscript, PDF page 11 (printed 10), lines 303-308",
+          "evidence_pointer": [],
+          "supports": "SUPPORT",
+          "explanation": "solutions[2].notes: 2 ml / 1000 = 0.002 L per recipe batch. Replaces a rate derived from the unverified 6.1 ml page control with the article's explicit addition amount. Not a per-liter working concentration or final-medium dilution. Additional exact culture-scale excerpt: \"10 mL of M9-sinigrin medium\". Accessed 2026-10-07; captures={\"P8-P9-HAL-submitted.pdf\": \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\", \"P8-medium-page.html\": \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "solutions",
+            3,
+            "concentration"
+          ],
+          "field": "solutions[3].concentration",
+          "ingredient": "M9 stock",
+          "old": {
+            "value": "327.8689",
+            "unit": "ML_PER_L"
+          },
+          "new": {
+            "value": "0.002",
+            "unit": "L"
+          },
+          "status": "correct",
+          "reference": "doi:10.1007/s11104-022-05822-6",
+          "snippet": "2 mL of M9 solution",
+          "locator": "HAL v1 author manuscript, PDF page 11 (printed 10), lines 303-308",
+          "evidence_pointer": [],
+          "supports": "SUPPORT",
+          "explanation": "solutions[3].concentration: 2 ml / 1000 = 0.002 L per recipe batch. Replaces a rate derived from the unverified 6.1 ml page control with the article's explicit addition amount. Not a per-liter working concentration or final-medium dilution. Accessed 2026-10-07; captures={\"P8-P9-HAL-submitted.pdf\": \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\", \"P8-medium-page.html\": \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "solutions",
+            3,
+            "notes"
+          ],
+          "field": "solutions[3].notes",
+          "ingredient": "M9 stock",
+          "old": "P8 adds 2 ml M9 stock to a 6.1 ml main solution. The official public JSON represented this stock with a malformed solution id 'NaN'; CultureMech preserves the named stock and drops that id.",
+          "new": "Add 0.002 L of M9 stock per recipe batch. The L unit is a batch amount, not L/L. The manuscript describes 10 ml cultures; no fixed water makeup amount is inferred. The page-scoped M9 anchor is malformed NaN; no global solution accession is assigned.",
+          "status": "correct_context",
+          "reference": "doi:10.1007/s11104-022-05822-6",
+          "snippet": "2 mL of M9 solution",
+          "locator": "HAL v1 author manuscript, PDF page 11 (printed 10), lines 303-308",
+          "evidence_pointer": [],
+          "supports": "SUPPORT",
+          "explanation": "solutions[3].notes: 2 ml / 1000 = 0.002 L per recipe batch. Replaces a rate derived from the unverified 6.1 ml page control with the article's explicit addition amount. Not a per-liter working concentration or final-medium dilution. Additional exact culture-scale excerpt: \"10 mL of M9-sinigrin medium\". Accessed 2026-10-07; captures={\"P8-P9-HAL-submitted.pdf\": \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\", \"P8-medium-page.html\": \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "solutions",
+            2,
+            "composition",
+            0,
+            "notes"
+          ],
+          "field": "solutions[2].composition[0].notes",
+          "ingredient": "Sinigrin",
+          "old": null,
+          "new": "The manuscript identifies SNG as sinigrin hydrate, without a hydration number. The 10 g/L value is the reagent stock strength; no molar conversion is asserted.",
+          "status": "add_context",
+          "reference": "doi:10.1007/s11104-022-05822-6",
+          "snippet": "SNG; Sinigrin hydrate",
+          "locator": "HAL v1 author manuscript, PDF page 11 (printed 10), lines 303-308",
+          "evidence_pointer": [
+            "solutions",
+            2,
+            "composition",
+            0
+          ],
+          "supports": "SUPPORT",
+          "explanation": "solutions[2].composition[0].notes: The manuscript identifies SNG as sinigrin hydrate, without a hydration number. The 10 g/L value is the reagent stock strength; no molar conversion is asserted. Accessed 2026-10-07; captures={\"P8-P9-HAL-submitted.pdf\": \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\", \"P8-medium-page.html\": \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "solutions",
+            3,
+            "composition",
+            1,
+            "notes"
+          ],
+          "field": "solutions[3].composition[1].notes",
+          "ingredient": "KH2PO4",
+          "old": null,
+          "new": "The DOI-linked author manuscript specifies 15 g/L KH2PO4 in M9 5X. The public P8 table instead reports 51.0 g/L; that conflicting dataset amount is retained as counterevidence, not adopted as a separate supported variant.",
+          "status": "add_context",
+          "reference": "doi:10.1007/s11104-022-05822-6",
+          "snippet": "15 g.L-1 KH2PO4",
+          "locator": "HAL v1 author manuscript, PDF page 11 (printed 10), lines 303-308",
+          "evidence_pointer": [
+            "solutions",
+            3,
+            "composition",
+            1
+          ],
+          "supports": "SUPPORT",
+          "explanation": "solutions[3].composition[1].notes: The DOI-linked author manuscript specifies 15 g/L KH2PO4 in M9 5X. The public P8 table instead reports 51.0 g/L; that conflicting dataset amount is retained as counterevidence, not adopted as a separate supported variant. Accessed 2026-10-07; captures={\"P8-P9-HAL-submitted.pdf\": \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\", \"P8-medium-page.html\": \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "solutions",
+            3,
+            "composition",
+            1,
+            "source"
+          ],
+          "field": "solutions[3].composition[1].source",
+          "ingredient": "KH2PO4",
+          "old": "MediaDive public Medium P8",
+          "new": "doi:10.1007/s11104-022-05822-6",
+          "status": "correct_source",
+          "reference": "doi:10.1007/s11104-022-05822-6",
+          "snippet": "15 g.L-1 KH2PO4",
+          "locator": "HAL v1 author manuscript, PDF page 11 (printed 10), lines 303-308",
+          "evidence_pointer": [
+            "solutions",
+            3,
+            "composition",
+            1
+          ],
+          "supports": "SUPPORT",
+          "explanation": "solutions[3].composition[1].source: The corrected value is attributed to the inspected article, not the disagreeing dataset row. Accessed 2026-10-07; captures={\"P8-P9-HAL-submitted.pdf\": \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\", \"P8-medium-page.html\": \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "solutions",
+            3,
+            "composition",
+            1,
+            "concentration"
+          ],
+          "field": "solutions[3].composition[1].concentration",
+          "ingredient": "KH2PO4",
+          "old": {
+            "value": "51",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "15",
+            "unit": "G_PER_L"
+          },
+          "status": "conflicting_source",
+          "reference": "https://mediadive.dsmz.de/medium/P8",
+          "snippet": "KH2PO4 51.0 g/l 51 374.766",
+          "locator": "sol-NaN / recipe-1",
+          "evidence_pointer": [
+            "solutions",
+            3,
+            "composition",
+            1
+          ],
+          "supports": "REFUTE",
+          "explanation": "solutions[3].composition[1].concentration: Dataset row disagrees with the curated 15 g/L article amount. Original methods take precedence for the DOI-linked formulation. The discrepancy is explicit, not averaged or promoted to a new variant. Accessed 2026-10-07; captures={\"P8-P9-HAL-submitted.pdf\": \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\", \"P8-medium-page.html\": \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        },
+        {
+          "pointer": [
+            "notes"
+          ],
+          "field": "notes",
+          "ingredient": "M9-SNG medium",
+          "old": "MediaDive public Medium P8 provides M9-SNG medium at pH 7.2 with MgSO4, CaCl2, sinigrin, and M9 stock additions. The public JSON assigned the M9 stock the malformed id 'NaN'; this record preserves the named M9 composition and drops that id.",
+          "new": "MediaDive public Medium P8 provides M9-SNG medium at pH 7.2 with MgSO4, CaCl2, sinigrin, and M9 stock additions. The public JSON assigned the M9 stock the malformed id 'NaN'; this record preserves the named M9 composition and drops that id. Curation now uses the DOI-linked HAL v1 manuscript for stock amounts and batch additions. The public page's 6.1 ml dose denominator is not retained; no final-medium component dilution or fixed makeup-water amount is inferred.",
+          "status": "correct_context",
+          "reference": "doi:10.1007/s11104-022-05822-6",
+          "snippet": "10 mL of M9-sinigrin medium",
+          "locator": "HAL v1 author manuscript, PDF page 11 (printed 10), lines 303-308",
+          "evidence_pointer": [],
+          "supports": "SUPPORT",
+          "explanation": "notes: Distinguishes the article's declared culture scale from the page control; keeps literal input doses without inventing a water amount. Accessed 2026-10-07; captures={\"P8-P9-HAL-submitted.pdf\": \"2788ca1a054d5ff67f02af146db31e0735153886d9c5de54c0c607629a9c9f1c\", \"P8-medium-page.html\": \"6730f629992bfb0c3e536c4a535361b85415212a4717b3c81f930606c4461c39\"}. Quotes decode HTML entities or PDF text glyphs and collapse whitespace. No chemical grounding, growth, density or unspecified percentage basis is inferred."
+        }
+      ]
+    }
+  ]
+}

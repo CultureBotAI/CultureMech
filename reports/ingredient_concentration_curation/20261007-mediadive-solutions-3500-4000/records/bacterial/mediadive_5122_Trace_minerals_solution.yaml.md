@@ -1,0 +1,23 @@
+# Solution Concentration Review: Trace minerals solution
+
+- Record: data/normalized_yaml/bacterial/mediadive_5122_Trace_minerals_solution.yaml
+- ID: CultureMech:014034
+- Reviewed commit: `f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f`
+- Before SHA256: `30b84a6e4fff348bff33e60c9ca4768fba9b6f3544da64ddd50d625b7f22066d`
+- Proposed/result SHA256: `785f35cfdc003852f01fe18dbebd021c6c3da5ebbabb126e3849a61a03214094`
+- Source: https://mediadive.dsmz.de/rest/solution/5122
+- Source SHA256: f5e38d44b6f04458d53c3223ba82cbc16ff6ed710bf1d6251244042038bce59b
+- Retrieved: 2026-10-07T09:51:12.744150+00:00
+- Source type: official DSMZ dataset; discovery: existing record source ID; authors/year not supplied.
+- State: changed locally; unresolved claims remain unchanged.
+- Baseline schema errors: 0; proposed schema errors: 0.
+- Operational failure: none
+
+Source response, exact IDs/labels, arithmetic, and literal snippets were checked by the maintained guarded reviewer. This is not a claim of manual inspection of every source sentence or automated reference-validator success. Preparation-dependent quantities and unrepresented stocks remain open. Schema validity is not scientific proof.
+
+| Field | Ingredient | Old | Proposed | Status | DOI/PURL | Exact snippet | Locator | Calculation / decision | Action |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `composition[0].concentration` | NiCl2 x 6 H2O | {"unit": "G_PER_L", "value": "0.03"} | {"unit": "G_PER_L", "value": "0.03"} | evidence_only | https://mediadive.dsmz.de/rest/solution/5122 | {<br>                "recipe_order": 2,<br>                "compound": "NiCl2 x 6 H2O",<br>                "compound_id": 40,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 0.03,<br>                "unit": "g",<br>                "g_l": 0.03,<br>                "mmol_l": 0.231483,<br>                "optional": 0<br>            } | $.data.recipe[1] (compound_id=40) | Provider explicitly reports g_l=0.03. Arithmetic check: 0.03 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.03 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: "volume": 1000. | applied |
+| `composition[1].concentration` | Na2SeO3 x 5 H2O | {"unit": "G_PER_L", "value": "0.0003"} | {"unit": "G_PER_L", "value": "0.0003"} | evidence_only | https://mediadive.dsmz.de/rest/solution/5122 | {<br>                "recipe_order": 3,<br>                "compound": "Na2SeO3 x 5 H2O",<br>                "compound_id": 107,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 0.3,<br>                "unit": "mg",<br>                "g_l": 0.0003,<br>                "mmol_l": 0.00114062,<br>                "optional": 0<br>            } | $.data.recipe[2] (compound_id=107) | Provider explicitly reports g_l=0.0003. Arithmetic check: 0.3 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.0003 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: "volume": 1000. | applied |
+| `ingredients[0].concentration` | See source for composition | {"unit": "VARIABLE", "value": "variable"} | unknown / not asserted | unsupported | unknown / not asserted | unknown / not asserted | unknown / not asserted | Outside direct composition matching; unchanged. | unchanged |
+| `source.recipe[0]` | Trace minerals | unknown / not asserted | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/solution/5122 | {<br>                "recipe_order": 1,<br>                "compound": null,<br>                "compound_id": null,<br>                "solution": "Trace minerals",<br>                "solution_id": 3804,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 1000,<br>                "unit": "ml",<br>                "g_l": null,<br>                "mmol_l": null,<br>                "optional": 0<br>            } | $.data.recipe[0] | Source-only ingredient or nested stock addition; needs structural curation, not a direct-ingredient substitution. | unchanged |

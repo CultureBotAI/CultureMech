@@ -1,0 +1,81 @@
+{
+  "J151": {
+    "new_quantity_slots": 4,
+    "stock_nodes_relocated": 24,
+    "quantity_contexts_reviewed": 23,
+    "stock_stage_concentrations_rebased": 7,
+    "unsupported_quantity_slots_removed": 6,
+    "new_evidence": 34,
+    "new_references": 1,
+    "new_curation_history": 1,
+    "old_quantity_slots": 26,
+    "claims": 39,
+    "stock_descriptors_added": 3
+  },
+  "J187": {
+    "new_quantity_slots": 8,
+    "stock_nodes_relocated": 23,
+    "quantity_contexts_reviewed": 19,
+    "stock_stage_concentrations_rebased": 1,
+    "unsupported_quantity_slots_removed": 12,
+    "new_evidence": 38,
+    "new_references": 2,
+    "new_curation_history": 1,
+    "old_quantity_slots": 31,
+    "claims": 47,
+    "stock_descriptors_added": 8
+  },
+  "J197": {
+    "new_quantity_slots": 5,
+    "stock_nodes_relocated": 22,
+    "quantity_contexts_reviewed": 19,
+    "unsupported_quantity_slots_removed": 12,
+    "new_evidence": 37,
+    "new_references": 2,
+    "new_curation_history": 1,
+    "old_quantity_slots": 31,
+    "claims": 45,
+    "stock_descriptors_added": 5
+  },
+  "M142": {
+    "quantity_contexts_reviewed": 4,
+    "stock_dose_basis_corrections": 2,
+    "stock_nodes_relocated": 27,
+    "quantity_corrections": 2,
+    "unsupported_quantity_slots_removed": 28,
+    "new_evidence": 33,
+    "new_references": 1,
+    "new_curation_history": 1,
+    "old_quantity_slots": 32,
+    "claims": 40,
+    "stock_descriptors_added": 1
+  },
+  "M180": {
+    "quantity_contexts_reviewed": 7,
+    "stock_dose_basis_corrections": 3,
+    "stock_nodes_relocated": 15,
+    "new_quantity_slots": 2,
+    "stock_stage_concentrations_rebased": 1,
+    "quantity_corrections": 3,
+    "unsupported_quantity_slots_removed": 21,
+    "new_evidence": 38,
+    "new_references": 3,
+    "new_curation_history": 1,
+    "old_quantity_slots": 28,
+    "claims": 49,
+    "stock_descriptors_added": 5
+  },
+  "M190": {
+    "quantity_contexts_reviewed": 5,
+    "stock_dose_basis_corrections": 2,
+    "stock_nodes_relocated": 26,
+    "quantity_corrections": 3,
+    "unsupported_quantity_slots_removed": 32,
+    "new_evidence": 37,
+    "new_references": 2,
+    "new_curation_history": 1,
+    "old_quantity_slots": 37,
+    "claims": 47,
+    "stock_descriptors_added": 3
+  }
+}

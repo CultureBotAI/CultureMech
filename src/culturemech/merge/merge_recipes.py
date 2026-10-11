@@ -1,20 +1,15 @@
 #!/usr/bin/env python3
-"""Main CLI script for merging recipes with identical ingredient sets.
-
-This script identifies and merges recipes that have the same base formulation
-(same chemicals) regardless of concentration, pH, temperature, or other parameters.
+"""Main CLI script for lossless consolidation of compatible formulations.
 
 Process:
 1. Scans normalized_yaml/ for all recipes
-2. Groups recipes by ingredient fingerprint (CHEBI IDs + names)
+2. Groups recipes by exact formulation assertions, including amounts and stocks
 3. Merges groups into canonical records with synonym tracking
 4. Writes merged recipes to merge_yaml/merged/
 5. Generates merge statistics
 
-IMPORTANT: Matching is based on INGREDIENT IDENTITY only. Recipes with the same
-chemicals but different concentrations are considered duplicates and will be merged.
-This is useful for identifying that "LB Medium" exists across multiple databases
-even with formulation variations.
+Ingredient-set matching remains available through RecipeMatcher.group_recipes
+for candidate discovery. It does not authorize automatic merging of variants.
 """
 
 import argparse
@@ -86,7 +81,7 @@ def progress_bar(current: int, total: int, prefix: str = "") -> None:
         prefix: Optional prefix message
     """
     bar_length = 50
-    percent = current / total
+    percent = current / total if total else 1.0
     filled = int(bar_length * percent)
     bar = "█" * filled + "░" * (bar_length - filled)
     print(f"\r{prefix} [{bar}] {current}/{total} ({percent*100:.1f}%)", end="", flush=True)
@@ -250,12 +245,12 @@ Examples:
         return 1
 
     print("=" * 70)
-    print("Recipe Merge Tool - Ingredient Set Matching")
+    print("Recipe Merge Tool - Formulation Matching")
     print("=" * 70)
     print()
-    print("NOTE: Recipes are matched by INGREDIENT SET only.")
-    print("Concentration, pH, temperature, and preparation differences are IGNORED.")
-    print("This identifies recipes with the same base formulation (same chemicals).")
+    print("Only compatible encoded formulations are consolidated.")
+    print("Amounts, stock references, preparation, conditions and notes must agree.")
+    print("Evidence is retained at its original ingredient or stock location.")
     print()
 
     # Find all recipes
@@ -270,13 +265,13 @@ Examples:
 
     matcher = RecipeMatcher()
 
-    # Group recipes by fingerprint
-    print("Grouping recipes by ingredient fingerprint...")
+    # Ingredient-set candidates alone cannot authorize a scientific merge.
+    print("Grouping recipes by formulation fingerprint...")
 
     def progress_callback(current, total):
         progress_bar(current, total, prefix="Progress:")
 
-    groups = matcher.group_recipes(
+    groups = matcher.group_formulations(
         all_recipes, min_group_size=args.min_group_size, progress_callback=progress_callback
     )
 
@@ -287,6 +282,11 @@ Examples:
     if hasattr(matcher, "_last_skip_stats"):
         stats = matcher._last_skip_stats
         skipped_total = stats["skipped_no_fingerprint"] + stats["skipped_error"]
+        if stats["excluded_solutions"]:
+            print(
+                f"Excluded {stats['excluded_solutions']} standalone SolutionRecipe "
+                "inputs from medium merging."
+            )
 
         if skipped_total > 0:
             print()
@@ -321,6 +321,7 @@ Examples:
         groups=groups,
         recipes_by_group=recipes_by_group,
     )
+    stats["input_routing"] = matcher._last_skip_stats
 
     # Display statistics
     print("=" * 70)
@@ -396,7 +397,7 @@ Examples:
     for i, (fp, paths) in enumerate(groups.items(), 1):
         try:
             # Merge group
-            merged_recipe = merger.merge_group(paths, fingerprint=fp)
+            merged_recipe = merger.merge_group(paths)
 
             # Generate a collision-free output filename (#218).
             filename, collided = unique_filename(merged_recipe["name"], fp, used_keys)
@@ -409,7 +410,10 @@ Examples:
                 merged_recipe,
                 curator=CURATOR,
                 action=ACTION,
-                notes=f"merged {len(paths)} source recipe(s) on fingerprint {fp}",
+                notes=(
+                    f"merged {len(paths)} source recipe(s) on ingredient fingerprint "
+                    f"{merged_recipe['merge_fingerprint']}; formulation group {fp}"
+                ),
                 source=", ".join(p.name for p in paths)[:500],
             )
 
@@ -444,6 +448,8 @@ Examples:
             print(f"  {err}", file=sys.stderr)
 
     # Write statistics
+    stats["written_recipes"] = len(used_keys)
+    stats["merge_errors"] = errors
     print(f"Writing statistics to {args.stats_file}...")
     args.stats_file.parent.mkdir(parents=True, exist_ok=True)
     with open(args.stats_file, "w", encoding="utf-8") as f:
@@ -460,7 +466,7 @@ Examples:
     print(f"Reduction: {stats['reduction']:,} recipes ({stats['reduction_percentage']}%)")
     print()
 
-    return 0
+    return 1 if errors else 0
 
 
 if __name__ == "__main__":

@@ -1266,7 +1266,7 @@ validate file:
 
     echo ""
     echo "=== Reference validation ==="
-    uv run linkml-reference-validator validate data "{{file}}" --schema {{schema_path}} --target-class "$cls"
+    uv run python scripts/validate_recipe_references.py "{{file}}" --schema {{schema_path}} --target-class "$cls"
     echo "✓ Reference validation passed"
 
 [group('QC')]
@@ -1295,7 +1295,7 @@ validate-references file:
     set -euo pipefail
     cls=$(uv run python scripts/record_target_class.py "{{file}}")
     echo "Validating evidence references ($cls)..."
-    uv run linkml-reference-validator validate data "{{file}}" --schema {{schema_path}} --target-class "$cls"
+    uv run python scripts/validate_recipe_references.py "{{file}}" --schema {{schema_path}} --target-class "$cls"
     echo "✓ Reference validation passed"
 
 # id↔label gate (Engine A): the schema binds the organism/environment/precursor/
@@ -1910,9 +1910,16 @@ test-cov:
 [group('Schema')]
 gen-docs:
     #!/usr/bin/env bash
+    set -euo pipefail
     echo "Generating schema documentation..."
-    mkdir -p docs/schema
-    uv run gen-markdown --dir docs/schema {{schema_path}}
+    mkdir -p docs
+    staging=$(mktemp -d docs/.schema.XXXXXX)
+    trap 'rm -rf "$staging"' EXIT
+    uv run gen-doc --subfolder-type-separation --directory "$staging" {{schema_path}}
+    test -s "$staging/index.md"
+    test -s "$staging/classes/SolutionRecipe.md"
+    rm -rf docs/schema
+    mv "$staging" docs/schema
     echo "✓ Schema docs generated at docs/schema/"
 
 # Regenerate the Python dataclasses from the schema. Run this after any edit to

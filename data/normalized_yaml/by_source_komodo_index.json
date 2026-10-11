@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02T05:38:04.010141+00:00",
+  "generated": "2026-10-09T12:36:42.853979+00:00",
   "source": "KOMODO",
   "count": 3637,
   "recipes": {
@@ -97,6 +97,7 @@
       "id": "CultureMech:003877",
       "source_id": "komodo.medium:1164",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "archaea"
       ],
@@ -141,7 +142,7 @@
     "CultureMech:003939": {
       "name": "methanobacterium_medium",
       "filename": "KOMODO_119_METHANOBACTERIUM_medium.yaml",
-      "ingredient_count": 34,
+      "ingredient_count": 32,
       "id": "CultureMech:003939",
       "source_id": "komodo.medium:119",
       "source": "KOMODO",
@@ -324,7 +325,7 @@
     "CultureMech:004186": {
       "name": "methanomicrobium_mobile_medium",
       "filename": "KOMODO_161_METHANOMICROBIUM_MOBILE_medium.yaml",
-      "ingredient_count": 40,
+      "ingredient_count": 43,
       "id": "CultureMech:004186",
       "source_id": "komodo.medium:161",
       "source": "KOMODO",
@@ -397,10 +398,11 @@
     "CultureMech:004668": {
       "name": "thermofilum_pendens_medium",
       "filename": "KOMODO_265_THERMOFILUM_PENDENS_medium.yaml",
-      "ingredient_count": 17,
+      "ingredient_count": 1,
       "id": "CultureMech:004668",
       "source_id": "komodo.medium:265",
       "source": "KOMODO",
+      "solution_count": 5,
       "categories": [
         "archaea"
       ],
@@ -2728,6 +2730,7 @@
       "id": "CultureMech:003822",
       "source_id": "komodo.medium:111",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -3104,10 +3107,11 @@
     "CultureMech:003867": {
       "name": "pyem_medium",
       "filename": "KOMODO_1157_PYEM_medium.yaml",
-      "ingredient_count": 7,
+      "ingredient_count": 4,
       "id": "CultureMech:003867",
       "source_id": "komodo.medium:1157",
       "source": "KOMODO",
+      "solution_count": 4,
       "categories": [
         "bacterial"
       ],
@@ -3972,7 +3976,7 @@
     "CultureMech:004003": {
       "name": "oteb_medium",
       "filename": "KOMODO_1245_OTEB-MEDIUM.yaml",
-      "ingredient_count": 28,
+      "ingredient_count": 27,
       "id": "CultureMech:004003",
       "source_id": "komodo.medium:1245",
       "source": "KOMODO",
@@ -4070,7 +4074,7 @@
     "CultureMech:004018": {
       "name": "methylobacterium_medium",
       "filename": "KOMODO_125_METHYLOBACTERIUM_MEDIUM.yaml",
-      "ingredient_count": 12,
+      "ingredient_count": 13,
       "id": "CultureMech:004018",
       "source_id": "komodo.medium:125",
       "source": "KOMODO",
@@ -4317,10 +4321,11 @@
     "CultureMech:004048": {
       "name": "soil_extract_medium",
       "filename": "KOMODO_12_SOIL_EXTRACT_medium.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 1,
       "id": "CultureMech:004048",
       "source_id": "komodo.medium:12",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -5224,15 +5229,13 @@
     "CultureMech:004403": {
       "name": "synthrophomonas_medium",
       "filename": "KOMODO_212_SYNTHROPHOMONAS_medium.yaml",
-      "ingredient_count": 44,
+      "ingredient_count": 32,
       "id": "CultureMech:004403",
       "source_id": "komodo.medium:212",
       "source": "KOMODO",
-      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
-      "has_hierarchy_enrichment": true,
       "category_dir": "bacterial"
     },
     "CultureMech:004405": {
@@ -6235,7 +6238,7 @@
     "CultureMech:005024": {
       "name": "rumen_bacteria_medium",
       "filename": "KOMODO_330_RUMEN_BACTERIA_medium.yaml",
-      "ingredient_count": 28,
+      "ingredient_count": 27,
       "id": "CultureMech:005024",
       "source_id": "komodo.medium:330",
       "source": "KOMODO",
@@ -6777,14 +6780,14 @@
     "CultureMech:005218": {
       "name": "bsk_medium",
       "filename": "KOMODO_403_BSK-MEDIUM.yaml",
-      "ingredient_count": 18,
+      "ingredient_count": 0,
       "id": "CultureMech:005218",
       "source_id": "komodo.medium:403",
       "source": "KOMODO",
+      "solution_count": 4,
       "categories": [
         "bacterial"
       ],
-      "has_hierarchy_enrichment": true,
       "category_dir": "bacterial"
     },
     "CultureMech:005225": {
@@ -7097,7 +7100,7 @@
     "CultureMech:005284": {
       "name": "ruminococcus_albus_medium",
       "filename": "KOMODO_436_RUMINOCOCCUS_ALBUS_medium.yaml",
-      "ingredient_count": 18,
+      "ingredient_count": 19,
       "id": "CultureMech:005284",
       "source_id": "komodo.medium:436",
       "source": "KOMODO",
@@ -7592,10 +7595,11 @@
     "CultureMech:005582": {
       "name": "ym_catalase_medium",
       "filename": "KOMODO_469_YM-CATALASE_medium.yaml",
-      "ingredient_count": 6,
+      "ingredient_count": 5,
       "id": "CultureMech:005582",
       "source_id": "komodo.medium:469",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -7701,10 +7705,11 @@
     "CultureMech:005614": {
       "name": "clostridium_aerotolerans_medium",
       "filename": "KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml",
-      "ingredient_count": 11,
+      "ingredient_count": 9,
       "id": "CultureMech:005614",
       "source_id": "komodo.medium:489",
       "source": "KOMODO",
+      "solution_count": 3,
       "categories": [
         "bacterial"
       ],
@@ -8112,10 +8117,11 @@
     "CultureMech:005987": {
       "name": "lc_broth_medium",
       "filename": "KOMODO_546_LC_BROTH_medium.yaml",
-      "ingredient_count": 6,
+      "ingredient_count": 5,
       "id": "CultureMech:005987",
       "source_id": "komodo.medium:546",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -8671,10 +8677,11 @@
     "CultureMech:006112": {
       "name": "tween_80a_medium",
       "filename": "KOMODO_618_TWEEN_80A_medium.yaml",
-      "ingredient_count": 5,
+      "ingredient_count": 1,
       "id": "CultureMech:006112",
       "source_id": "komodo.medium:618",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -8903,7 +8910,7 @@
     "CultureMech:006191": {
       "name": "hemin_medium_for_mycobacterium",
       "filename": "KOMODO_645a_HEMIN_medium_FOR_MYCOBACTERIUM.yaml",
-      "ingredient_count": 23,
+      "ingredient_count": 22,
       "id": "CultureMech:006191",
       "source_id": "komodo.medium:645a",
       "source": "KOMODO",
@@ -9028,6 +9035,7 @@
       "id": "CultureMech:006236",
       "source_id": "komodo.medium:659",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -9145,10 +9153,11 @@
     "CultureMech:006265": {
       "name": "ms_medium",
       "filename": "KOMODO_670_MS-MEDIUM.yaml",
-      "ingredient_count": 5,
+      "ingredient_count": 6,
       "id": "CultureMech:006265",
       "source_id": "komodo.medium:670",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -9751,10 +9760,11 @@
     "CultureMech:006403": {
       "name": "sc_medium",
       "filename": "KOMODO_751_SC_medium.yaml",
-      "ingredient_count": 11,
+      "ingredient_count": 6,
       "id": "CultureMech:006403",
       "source_id": "komodo.medium:751",
       "source": "KOMODO",
+      "solution_count": 4,
       "categories": [
         "bacterial"
       ],
@@ -9763,10 +9773,11 @@
     "CultureMech:006404": {
       "name": "halomonas_pantelleriense",
       "filename": "KOMODO_752_HALOMONAS_PANTELLERIENSE.yaml",
-      "ingredient_count": 8,
+      "ingredient_count": 7,
       "id": "CultureMech:006404",
       "source_id": "komodo.medium:752",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -9873,10 +9884,11 @@
     "CultureMech:006417": {
       "name": "halomonas_desiderata_medium",
       "filename": "KOMODO_762_HALOMONAS_DESIDERATA_MEDIUM.yaml",
-      "ingredient_count": 6,
+      "ingredient_count": 5,
       "id": "CultureMech:006417",
       "source_id": "komodo.medium:762",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -10478,11 +10490,10 @@
     "CultureMech:006564": {
       "name": "desulfurobacterium_medium",
       "filename": "KOMODO_829_DESULFUROBACTERIUM_MEDIUM.yaml",
-      "ingredient_count": 29,
+      "ingredient_count": 36,
       "id": "CultureMech:006564",
       "source_id": "komodo.medium:829",
       "source": "KOMODO",
-      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -10491,7 +10502,7 @@
     "CultureMech:006565": {
       "name": "desulfurobacterium_atlanticum_medium",
       "filename": "KOMODO_829a_DESULFUROBACTERIUM_ATLANTICUM_MEDIUM.yaml",
-      "ingredient_count": 34,
+      "ingredient_count": 13,
       "id": "CultureMech:006565",
       "source_id": "komodo.medium:829a",
       "source": "KOMODO",
@@ -11271,7 +11282,7 @@
     "CultureMech:006786": {
       "name": "middlebrock_7h11_agar",
       "filename": "KOMODO_911_MIDDLEBROCK_7H11_AGAR.yaml",
-      "ingredient_count": 20,
+      "ingredient_count": 19,
       "id": "CultureMech:006786",
       "source_id": "komodo.medium:911",
       "source": "KOMODO",
@@ -11740,10 +11751,11 @@
     "CultureMech:006900": {
       "name": "medium_for_dsm_14457_and_14458",
       "filename": "KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458.yaml",
-      "ingredient_count": 7,
+      "ingredient_count": 0,
       "id": "CultureMech:006900",
       "source_id": "komodo.medium:956",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -14541,7 +14553,7 @@
     "CultureMech:004796": {
       "name": "fatty_acid_mixture_medium_436",
       "filename": "fatty_acid_mixture_medium_436.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 4,
       "id": "CultureMech:004796",
       "source_id": "komodo.medium:3017",
       "source": "KOMODO",
@@ -15411,11 +15423,10 @@
     "CultureMech:006561": {
       "name": "for_dsm_14290",
       "filename": "for_dsm_14290.yaml",
-      "ingredient_count": 29,
+      "ingredient_count": 36,
       "id": "CultureMech:006561",
       "source_id": "komodo.medium:829.1",
       "source": "KOMODO",
-      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -15851,11 +15862,10 @@
     "CultureMech:006562": {
       "name": "for_dsm_15218_dsm_15521_dsm_15522_dsm_16304",
       "filename": "for_dsm_15218_dsm_15521_dsm_15522_dsm_16304.yaml",
-      "ingredient_count": 29,
+      "ingredient_count": 37,
       "id": "CultureMech:006562",
       "source_id": "komodo.medium:829.2",
       "source": "KOMODO",
-      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -16272,7 +16282,7 @@
     "CultureMech:003918": {
       "name": "for_dsm_16632_and_dsm_16643",
       "filename": "for_dsm_16632_and_dsm_16643.yaml",
-      "ingredient_count": 34,
+      "ingredient_count": 43,
       "id": "CultureMech:003918",
       "source_id": "komodo.medium:119.1",
       "source": "KOMODO",
@@ -17062,11 +17072,10 @@
     "CultureMech:006563": {
       "name": "for_dsm_21157",
       "filename": "for_dsm_21157.yaml",
-      "ingredient_count": 29,
+      "ingredient_count": 30,
       "id": "CultureMech:006563",
       "source_id": "komodo.medium:829.3",
       "source": "KOMODO",
-      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -17623,7 +17632,7 @@
     "CultureMech:004855": {
       "name": "for_dsm_2805",
       "filename": "for_dsm_2805.yaml",
-      "ingredient_count": 32,
+      "ingredient_count": 33,
       "id": "CultureMech:004855",
       "source_id": "komodo.medium:307.1",
       "source": "KOMODO",
@@ -18355,7 +18364,7 @@
     "CultureMech:006260": {
       "name": "for_dsm_9463",
       "filename": "for_dsm_9463.yaml",
-      "ingredient_count": 6,
+      "ingredient_count": 7,
       "id": "CultureMech:006260",
       "source_id": "komodo.medium:670.1",
       "source": "KOMODO",
@@ -18367,7 +18376,7 @@
     "CultureMech:006262": {
       "name": "for_dsm_9466",
       "filename": "for_dsm_9466.yaml",
-      "ingredient_count": 6,
+      "ingredient_count": 8,
       "id": "CultureMech:006262",
       "source_id": "komodo.medium:670.3",
       "source": "KOMODO",
@@ -18383,6 +18392,7 @@
       "id": "CultureMech:006263",
       "source_id": "komodo.medium:670.4",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -18391,10 +18401,11 @@
     "CultureMech:006264": {
       "name": "for_dsm_9468",
       "filename": "for_dsm_9468.yaml",
-      "ingredient_count": 5,
+      "ingredient_count": 6,
       "id": "CultureMech:006264",
       "source_id": "komodo.medium:670.5",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -19460,7 +19471,7 @@
     "CultureMech:003533": {
       "name": "medium_1021_modified_for_dsm_16929",
       "filename": "medium_1021_modified_for_dsm_16929.yaml",
-      "ingredient_count": 12,
+      "ingredient_count": 15,
       "id": "CultureMech:003533",
       "source_id": "komodo.medium:1021_16929",
       "source": "KOMODO",
@@ -21113,7 +21124,7 @@
     "CultureMech:003911": {
       "name": "medium_119_modified_for_dsm_11975",
       "filename": "medium_119_modified_for_dsm_11975.yaml",
-      "ingredient_count": 34,
+      "ingredient_count": 32,
       "id": "CultureMech:003911",
       "source_id": "komodo.medium:119_11975",
       "source": "KOMODO",
@@ -21125,7 +21136,7 @@
     "CultureMech:003912": {
       "name": "medium_119_modified_for_dsm_11977",
       "filename": "medium_119_modified_for_dsm_11977.yaml",
-      "ingredient_count": 34,
+      "ingredient_count": 32,
       "id": "CultureMech:003912",
       "source_id": "komodo.medium:119_11977",
       "source": "KOMODO",
@@ -21137,7 +21148,7 @@
     "CultureMech:003913": {
       "name": "medium_119_modified_for_dsm_11978",
       "filename": "medium_119_modified_for_dsm_11978.yaml",
-      "ingredient_count": 34,
+      "ingredient_count": 32,
       "id": "CultureMech:003913",
       "source_id": "komodo.medium:119_11978",
       "source": "KOMODO",
@@ -21149,7 +21160,7 @@
     "CultureMech:003914": {
       "name": "medium_119_modified_for_dsm_11979",
       "filename": "medium_119_modified_for_dsm_11979.yaml",
-      "ingredient_count": 34,
+      "ingredient_count": 32,
       "id": "CultureMech:003914",
       "source_id": "komodo.medium:119_11979",
       "source": "KOMODO",
@@ -21161,7 +21172,7 @@
     "CultureMech:003915": {
       "name": "medium_119_modified_for_dsm_11995",
       "filename": "medium_119_modified_for_dsm_11995.yaml",
-      "ingredient_count": 34,
+      "ingredient_count": 32,
       "id": "CultureMech:003915",
       "source_id": "komodo.medium:119_11995",
       "source": "KOMODO",
@@ -21173,7 +21184,7 @@
     "CultureMech:003916": {
       "name": "medium_119_modified_for_dsm_1224",
       "filename": "medium_119_modified_for_dsm_1224.yaml",
-      "ingredient_count": 34,
+      "ingredient_count": 32,
       "id": "CultureMech:003916",
       "source_id": "komodo.medium:119_1224",
       "source": "KOMODO",
@@ -21185,7 +21196,7 @@
     "CultureMech:003917": {
       "name": "medium_119_modified_for_dsm_15163",
       "filename": "medium_119_modified_for_dsm_15163.yaml",
-      "ingredient_count": 34,
+      "ingredient_count": 32,
       "id": "CultureMech:003917",
       "source_id": "komodo.medium:119_15163",
       "source": "KOMODO",
@@ -21221,7 +21232,7 @@
     "CultureMech:003921": {
       "name": "medium_119_modified_for_dsm_6216",
       "filename": "medium_119_modified_for_dsm_6216.yaml",
-      "ingredient_count": 34,
+      "ingredient_count": 32,
       "id": "CultureMech:003921",
       "source_id": "komodo.medium:119_6216",
       "source": "KOMODO",
@@ -21233,7 +21244,7 @@
     "CultureMech:003922": {
       "name": "medium_119_modified_for_dsm_7057",
       "filename": "medium_119_modified_for_dsm_7057.yaml",
-      "ingredient_count": 34,
+      "ingredient_count": 33,
       "id": "CultureMech:003922",
       "source_id": "komodo.medium:119_7057",
       "source": "KOMODO",
@@ -21245,7 +21256,7 @@
     "CultureMech:003923": {
       "name": "medium_119_modified_for_dsm_7256",
       "filename": "medium_119_modified_for_dsm_7256.yaml",
-      "ingredient_count": 34,
+      "ingredient_count": 33,
       "id": "CultureMech:003923",
       "source_id": "komodo.medium:119_7256",
       "source": "KOMODO",
@@ -21257,7 +21268,7 @@
     "CultureMech:003924": {
       "name": "medium_119_modified_for_dsm_9575",
       "filename": "medium_119_modified_for_dsm_9575.yaml",
-      "ingredient_count": 34,
+      "ingredient_count": 32,
       "id": "CultureMech:003924",
       "source_id": "komodo.medium:119_9575",
       "source": "KOMODO",
@@ -29051,7 +29062,7 @@
     "CultureMech:005283": {
       "name": "medium_436_modified_for_dsm_18848",
       "filename": "medium_436_modified_for_dsm_18848.yaml",
-      "ingredient_count": 18,
+      "ingredient_count": 21,
       "id": "CultureMech:005283",
       "source_id": "komodo.medium:436_18848",
       "source": "KOMODO",
@@ -35880,7 +35891,7 @@
     "CultureMech:006185": {
       "name": "medium_645_modified_for_dsm_44338",
       "filename": "medium_645_modified_for_dsm_44338.yaml",
-      "ingredient_count": 23,
+      "ingredient_count": 21,
       "id": "CultureMech:006185",
       "source_id": "komodo.medium:645_44338",
       "source": "KOMODO",
@@ -35892,7 +35903,7 @@
     "CultureMech:006186": {
       "name": "medium_645_modified_for_dsm_44339",
       "filename": "medium_645_modified_for_dsm_44339.yaml",
-      "ingredient_count": 23,
+      "ingredient_count": 21,
       "id": "CultureMech:006186",
       "source_id": "komodo.medium:645_44339",
       "source": "KOMODO",
@@ -35904,7 +35915,7 @@
     "CultureMech:006187": {
       "name": "medium_645_modified_for_dsm_44482",
       "filename": "medium_645_modified_for_dsm_44482.yaml",
-      "ingredient_count": 23,
+      "ingredient_count": 21,
       "id": "CultureMech:006187",
       "source_id": "komodo.medium:645_44482",
       "source": "KOMODO",
@@ -35916,7 +35927,7 @@
     "CultureMech:006188": {
       "name": "medium_645_modified_for_dsm_44483",
       "filename": "medium_645_modified_for_dsm_44483.yaml",
-      "ingredient_count": 23,
+      "ingredient_count": 21,
       "id": "CultureMech:006188",
       "source_id": "komodo.medium:645_44483",
       "source": "KOMODO",
@@ -35928,7 +35939,7 @@
     "CultureMech:006189": {
       "name": "medium_645_modified_for_dsm_44680",
       "filename": "medium_645_modified_for_dsm_44680.yaml",
-      "ingredient_count": 23,
+      "ingredient_count": 21,
       "id": "CultureMech:006189",
       "source_id": "komodo.medium:645_44680",
       "source": "KOMODO",
@@ -37310,11 +37321,10 @@
     "CultureMech:006560": {
       "name": "medium_829_modified_for_dsm_16661",
       "filename": "medium_829_modified_for_dsm_16661.yaml",
-      "ingredient_count": 29,
+      "ingredient_count": 36,
       "id": "CultureMech:006560",
       "source_id": "komodo.medium:829_16661",
       "source": "KOMODO",
-      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -38408,7 +38418,7 @@
     "CultureMech:006785": {
       "name": "medium_911_modified_for_dsm_44536",
       "filename": "medium_911_modified_for_dsm_44536.yaml",
-      "ingredient_count": 20,
+      "ingredient_count": 19,
       "id": "CultureMech:006785",
       "source_id": "komodo.medium:911_44536",
       "source": "KOMODO",
@@ -39236,10 +39246,11 @@
     "CultureMech:006899": {
       "name": "medium_for_dsm_14457_and_14458_replace_methanol_with_methylamine",
       "filename": "medium_for_dsm_14457_and_14458_replace_methanol_with_methylamine.yaml",
-      "ingredient_count": 7,
+      "ingredient_count": 1,
       "id": "CultureMech:006899",
       "source_id": "komodo.medium:956_replace_Methanol_with_Methylamine",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -39433,7 +39444,7 @@
     "CultureMech:006190": {
       "name": "middelbrook_medium",
       "filename": "middelbrook_medium.yaml",
-      "ingredient_count": 23,
+      "ingredient_count": 21,
       "id": "CultureMech:006190",
       "source_id": "komodo.medium:645",
       "source": "KOMODO",
@@ -39721,7 +39732,7 @@
     "CultureMech:004812": {
       "name": "mineral_solution_medium_330",
       "filename": "mineral_solution_medium_330.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 6,
       "id": "CultureMech:004812",
       "source_id": "komodo.medium:3032",
       "source": "KOMODO",
@@ -41176,7 +41187,7 @@
     "CultureMech:006082": {
       "name": "sugar_stock_solution_medium_1245",
       "filename": "sugar_stock_solution_medium_1245.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 11,
       "id": "CultureMech:006082",
       "source_id": "komodo.medium:6000",
       "source": "KOMODO",
@@ -44099,7 +44110,7 @@
     "CultureMech:004979": {
       "name": "volatile_fatty_acid_mixture_medium_330",
       "filename": "volatile_fatty_acid_mixture_medium_330.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 7,
       "id": "CultureMech:004979",
       "source_id": "komodo.medium:3131",
       "source": "KOMODO",

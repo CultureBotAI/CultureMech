@@ -41,6 +41,32 @@ composition:
     label: agar
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3348
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "Agar",
+                      "compound_id": 3,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 15,
+                      "unit": "g",
+                      "g_l": 15,
+                      "mmol_l": 44.5991,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[3].concentration (Agar) in
+      MediaDive solution 3348; locator=$.data.recipe[3] (compound_id=3). Provider
+      explicitly reports g_l=15. Arithmetic check: 15 g * 1 g/g / (1000 ml / 1000
+      ml per L) = 15 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T09:20:37.489284+00:00; response SHA256=1b20b7a9e07238a69b3b7c86a391a08186d251ae2687a37cb163d47e688f98c6.'
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -98,6 +124,15 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T09:21:52.094915+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/3348
+  changes: 'composition[3].concentration: {"unit": "G_PER_L", "value": "15"} -> {"unit":
+    "G_PER_L", "value": "15"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -106,3 +141,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/3348
+  title: 'MediaDive solution 3348: Main sol. 1607'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=1b20b7a9e07238a69b3b7c86a391a08186d251ae2687a37cb163d47e688f98c6;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

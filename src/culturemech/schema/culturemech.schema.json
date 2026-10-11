@@ -3103,6 +3103,16 @@
                         "null"
                     ]
                 },
+                "evidence": {
+                    "description": "Evidence for solution-level formulation, nested stock additions and preparation claims. Ingredient concentration evidence belongs on the relevant composition entry. Scope each claim to its exact field path and preparation stage in the evidence explanation.",
+                    "items": {
+                        "$ref": "#/$defs/EvidenceItem"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "id": {
                     "description": "Stable canonical external CultureMech identifier for this solution record. Immutable after issuance and never reused; lifecycle is published in data/culturemech_recipe_catalog.tsv.",
                     "pattern": "^CultureMech:(?!000000)\\d{6}$",

@@ -1,0 +1,45 @@
+{
+  "records": [
+    {
+      "path": "data/normalized_yaml/bacterial/king_b.yaml",
+      "fingerprint": "a04f2afd21894b58debd269cb52702579b31ac3d55dacde9b34ae795db999091",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/king_b.yaml"
+      ],
+      "merged_id": "CultureMech:010433",
+      "field_retention": {
+        "ingredients": true,
+        "solutions": true,
+        "preparation_steps": true,
+        "physical_state": true,
+        "ph_range": true,
+        "ph_value": true,
+        "evidence": true,
+        "references": true
+      },
+      "all_checked_fields_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mta10.yaml",
+      "fingerprint": "2cf10b7808fe785b6941ccb329b7671ad799c8d9f30d714cad0b2e73dee57709",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/mta10.yaml"
+      ],
+      "merged_id": "CultureMech:010436",
+      "field_retention": {
+        "ingredients": true,
+        "solutions": true,
+        "preparation_steps": true,
+        "physical_state": true,
+        "ph_range": true,
+        "ph_value": true,
+        "evidence": true,
+        "references": true
+      },
+      "all_checked_fields_retained": true
+    }
+  ],
+  "retained": 2,
+  "all_retained": true,
+  "scope": "Actual complete corpus groups; exact ingredient/stock/preparation/state/pH retention and full source evidence/reference retention. No generated merge is published."
+}

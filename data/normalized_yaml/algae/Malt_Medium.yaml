@@ -18,16 +18,30 @@ ingredients:
   concentration:
     value: '67.2'
     unit: G_PER_L
+    per_volume: per liter of starting dH2O before malt extract addition
   term:
     id: FOODON:03301056
     label: Malt extract
   supplier_catalog:
     supplier_name: Sigma
     catalog_number: M-0383
-  notes: Converted from 33.6 g/500 mL dH2O in the UTEX recipe.
+  notes: The source adds 33.6 g malt extract to 500 mL dH2O. The retained 67.2 g/L
+    denotes mass per liter of starting water, not an independently established final-medium
+    concentration.
   nutritional_roles:
   - CARBON_SOURCE
   - NITROGEN_SOURCE
+  evidence:
+  - reference: https://utex.org/products/malt-medium
+    supports: SUPPORT
+    snippet: 33.6 g/500 mL dH2O
+    explanation: 'Supports ingredients[0].concentration for Malt extract. Retain the
+      numeric value with exact source evidence and any explicitly stated preparation
+      basis. 33.6 g / 0.500 L starting water = 67.2 g per liter of starting water.
+      The heading says 500 mL total but no final makeup instruction is given; final
+      concentration remains unresolved. Separate basis excerpt: ''For 500 mL Total''.
+      Locator: #recipe, composition table and Directions. Component cell: ''Malt extract(Sigma
+      M-0383)''; amount cell: ''33.6 g/500 mL dH2O''.'
 solutions: []
 preparation_steps:
 - step_number: 1
@@ -84,10 +98,56 @@ curation_history:
   source: https://utex.org/products/malt-medium
   notes: UTEX prepares Malt Medium with 33.6 g malt extract per 500 mL dH2O and autoclaves
     for no longer than 15 minutes.
+- timestamp: '2026-10-10T21:08:21.569593+00:00'
+  curator: codex
+  action: CURATED_UTEX_ORGANIC_MEDIUM_INPUT_BASES_AND_CONCENTRATION_EVIDENCE
+  notes: Exact source-URL and snippet evidence for input doses, optional agar and
+    retained concentrations. Chemical identity mappings and unrelated growth/role
+    claims are unchanged, not independently certified. No taxa-media association added.
+  source: https://utex.org/products/malt-medium
+  changes: '{"claims": [{"basis_snippet": "For 500 mL Total", "calculation": "33.6
+    g / 0.500 L starting water = 67.2 g per liter of starting water. The heading says
+    500 mL total but no final makeup instruction is given; final concentration remains
+    unresolved.", "component_snippet": "Malt extract(Sigma M-0383)", "decision": "Retain
+    the numeric value with exact source evidence and any explicitly stated preparation
+    basis.", "field": "ingredients[0].concentration", "ingredient": "Malt extract",
+    "locator": "#recipe, composition table and Directions", "old": {"unit": "G_PER_L",
+    "value": "67.2"}, "proposed": {"per_volume": "per liter of starting dH2O before
+    malt extract addition", "unit": "G_PER_L", "value": "67.2"}, "reference": "https://utex.org/products/malt-medium",
+    "snippet": "33.6 g/500 mL dH2O", "source_amount": "33.6 g/500 mL dH2O", "source_table_column":
+    2, "source_table_row": 1, "status": "correct"}, {"basis_snippet": "For 500 mL
+    Total", "calculation": "Literal source batch dose; no universal final concentration
+    is derived.", "decision": "Preserve as an inline optional formulation, not a liquid-parent
+    ingredient.", "field": "variants[0].modifications", "ingredient": "agar", "locator":
+    "#recipe, Directions, optional agar instruction", "old": null, "proposed": ["Add
+    7.5 g agar to the source batch starting with 500 mL dH2O; do not mix. This is
+    an input dose, not a measured final-volume concentration."], "reference": "https://utex.org/products/malt-medium",
+    "snippet": "For 1.5% agar medium add 7.5 g of agar into the flask; do not mix.",
+    "status": "add"}], "counts": {"bibliographic_entries_enriched": 1, "ingredient_context_notes_corrected":
+    1, "ingredient_dose_basis_corrections": 1, "inline_variant_options_added": 1,
+    "new_curation_history": 1, "new_evidence": 2}}'
 references:
 - reference: UTEX:malt-medium
 - reference: https://utex.org/products/malt-medium
+  title: Malt Medium | UTEX Culture Collection of Algae
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10; Named authors, publication year and DOI not established.
 original_name: Malt Medium
 data_quality_flags:
 - has_ontology_mappings
 - ingredients_curated
+variants:
+- name: Malt Medium with agar
+  relationship: SUPPLEMENTED_VARIANT
+  description: Optional source-listed agar formulation; the parent remains liquid.
+  modifications:
+  - Add 7.5 g agar to the source batch starting with 500 mL dH2O; do not mix. This
+    is an input dose, not a measured final-volume concentration.
+  purpose: Preserve the separately specified solid formulation
+  evidence:
+  - reference: https://utex.org/products/malt-medium
+    supports: SUPPORT
+    snippet: For 1.5% agar medium add 7.5 g of agar into the flask; do not mix.
+    explanation: Supports variants[0].modifications only. The source labels this the
+      1.5% agar formulation; no new measured final volume after agar addition is claimed.
+      No agar is added to the liquid parent.

@@ -16,6 +16,33 @@ composition:
     label: glucose
     confidence: 0.9
     match_type: manual_curated
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5089
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "Glucose",
+                      "compound_id": 5,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.6,
+                      "unit": "g",
+                      "g_l": 0.5923,
+                      "mmol_l": 3.28763,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Glucose)
+      in MediaDive solution 5089; locator=$.data.recipe[0] (compound_id=5). Provider
+      explicitly reports g_l=0.5923. Arithmetic check: 0.6 g * 1 g/g / (1013 ml /
+      1000 ml per L) = 0.5923000987166831194471865745 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1013. Retrieved 2026-10-07T09:50:50.146087+00:00;
+      response SHA256=75abaf0ebba42419c5fd8a00282d49fc890e7a8a3167931fe181b7e947ca98b6.'
 - preferred_term: Sodium acetate
   concentration:
     value: '0.29615'
@@ -28,6 +55,33 @@ composition:
     label: sodium acetate
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5089
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Sodium acetate",
+                      "compound_id": 731,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.3,
+                      "unit": "g",
+                      "g_l": 0.29615,
+                      "mmol_l": 3.61027,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Sodium
+      acetate) in MediaDive solution 5089; locator=$.data.recipe[1] (compound_id=731).
+      Provider explicitly reports g_l=0.29615. Arithmetic check: 0.3 g * 1 g/g / (1013
+      ml / 1000 ml per L) = 0.2961500493583415597235932873 g/L, consistent with the
+      reported value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1013. Retrieved 2026-10-07T09:50:50.146087+00:00;
+      response SHA256=75abaf0ebba42419c5fd8a00282d49fc890e7a8a3167931fe181b7e947ca98b6.'
 - preferred_term: Casamino acids
   concentration:
     value: '0.29615'
@@ -47,6 +101,33 @@ composition:
     label: calcium carbonate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5089
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "CaCO3",
+                      "compound_id": 13,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.02,
+                      "unit": "g",
+                      "g_l": 0.0197433,
+                      "mmol_l": 0.197256,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[3].concentration (CaCO3)
+      in MediaDive solution 5089; locator=$.data.recipe[3] (compound_id=13). Provider
+      explicitly reports g_l=0.0197433. Arithmetic check: 0.02 g * 1 g/g / (1013 ml
+      / 1000 ml per L) = 0.01974333662388943731490621915 g/L, consistent with the
+      reported value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1013. Retrieved 2026-10-07T09:50:50.146087+00:00;
+      response SHA256=75abaf0ebba42419c5fd8a00282d49fc890e7a8a3167931fe181b7e947ca98b6.'
 - preferred_term: Distilled water
   concentration:
     value: '987.1668311944719'
@@ -102,6 +183,18 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T09:53:16.572361+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/5089
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "0.5923"} ->
+    {"unit": "G_PER_L", "value": "0.5923"} (evidence_only); composition[1].concentration:
+    {"unit": "G_PER_L", "value": "0.29615"} -> {"unit": "G_PER_L", "value": "0.29615"}
+    (evidence_only); composition[3].concentration: {"unit": "G_PER_L", "value": "0.0197433"}
+    -> {"unit": "G_PER_L", "value": "0.0197433"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -110,3 +203,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/5089
+  title: 'MediaDive solution 5089: Main sol. J1036'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=75abaf0ebba42419c5fd8a00282d49fc890e7a8a3167931fe181b7e947ca98b6;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

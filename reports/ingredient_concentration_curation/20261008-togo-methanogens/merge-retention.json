@@ -1,0 +1,160 @@
+{
+  "terminal": true,
+  "media_records_checked": 3,
+  "failed_records": 1,
+  "details": [
+    {
+      "path": "data/normalized_yaml/archaea/JCM_J986_METHANOCOCCOIDES_MEDIUM.yaml",
+      "fingerprint": "dd85e59b8ed629da6734a2a06379ef8a902e0465b972696d411bf107622f14d9",
+      "group_paths": [
+        "data/normalized_yaml/archaea/JCM_J986_METHANOCOCCOIDES_MEDIUM.yaml"
+      ],
+      "nodes": [
+        {
+          "field": "ingredients",
+          "name": "Trimethylamine hydrochloride",
+          "exact_entry_retained": true
+        },
+        {
+          "field": "solutions",
+          "name": "METHANOGENIUM MEDIUM (JCM 265)",
+          "exact_entry_retained": true
+        }
+      ],
+      "root_evidence_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/archaea/TOGO_M1038_Methanomethylovorans_Uponensis_Medium.yaml",
+      "fingerprint": "330432bf555bfb3d42ef54b34eda236a3b0c2cc369fe73f9ebf19049d63b210b",
+      "group_paths": [
+        "data/normalized_yaml/archaea/TOGO_M1038_Methanomethylovorans_Uponensis_Medium.yaml",
+        "data/normalized_yaml/bacterial/TOGO_M781_Geobacter_Daltonii_Medium.yaml",
+        "data/normalized_yaml/bacterial/modified_bn_medium_for_m08dhb.yaml"
+      ],
+      "nodes": [
+        {
+          "field": "ingredients",
+          "name": "Distilled water",
+          "exact_entry_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "NaCl",
+          "exact_entry_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "CaCl2\u00b72H2O",
+          "exact_entry_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "KH2PO4",
+          "exact_entry_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "NH4Cl",
+          "exact_entry_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "Resazurin",
+          "exact_entry_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "MgCl2\u00b76H2O",
+          "exact_entry_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "KCl",
+          "exact_entry_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "Carbon dioxide gas",
+          "exact_entry_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "Nitrogen gas",
+          "exact_entry_retained": true
+        },
+        {
+          "field": "solutions",
+          "name": "8% NaHCO3 solution*",
+          "exact_entry_retained": false
+        },
+        {
+          "field": "solutions",
+          "name": "3% Trimethylamine\u00b7HCl solution*",
+          "exact_entry_retained": false
+        },
+        {
+          "field": "solutions",
+          "name": "Trace vitamins (see Medium [M190])",
+          "exact_entry_retained": false
+        },
+        {
+          "field": "solutions",
+          "name": "FeCl2 solution (see Medium [M180])",
+          "exact_entry_retained": false
+        },
+        {
+          "field": "solutions",
+          "name": "Trace element solution (see Medium [M180])",
+          "exact_entry_retained": false
+        },
+        {
+          "field": "solutions",
+          "name": "Selenite--tungstate solution (see Medium [M431])",
+          "exact_entry_retained": false
+        },
+        {
+          "field": "solutions",
+          "name": "5% Na2S\u00b79H2O solution",
+          "exact_entry_retained": false
+        }
+      ],
+      "root_evidence_retained": false,
+      "references_retained": false,
+      "event_retained": false
+    },
+    {
+      "path": "data/normalized_yaml/archaea/TOGO_M1039_Methanococcoides_Medium.yaml",
+      "fingerprint": "d52816a7adab75740cb8e2039241a30925a017c0b2487c2064fe1fd625aa07db",
+      "group_paths": [
+        "data/normalized_yaml/archaea/TOGO_M1039_Methanococcoides_Medium.yaml"
+      ],
+      "nodes": [
+        {
+          "field": "ingredients",
+          "name": "trimethylamine\u30fbHCl",
+          "exact_entry_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "Carbon dioxide gas",
+          "exact_entry_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "Nitrogen gas",
+          "exact_entry_retained": true
+        },
+        {
+          "field": "solutions",
+          "name": "METHANOGENIUM MEDIUM (see Medium [M257])",
+          "exact_entry_retained": true
+        }
+      ],
+      "root_evidence_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    }
+  ]
+}

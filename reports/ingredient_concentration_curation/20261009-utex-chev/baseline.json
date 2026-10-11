@@ -1,0 +1,28 @@
+{
+  "normalized_inventory_sha256": "bcec0dd6e2c94b3a58bf69511cb219c2f192c6402ccbcc74dac14f6301834750",
+  "previously_edited_records": 5357,
+  "previously_reviewed_records": 11885,
+  "newly_edited_targets": [
+    "data/normalized_yaml/algae/1_2_CHEV_Diatom_Medium.yaml",
+    "data/normalized_yaml/algae/1_3_CHEV_Diatom_Medium.yaml",
+    "data/normalized_yaml/algae/1_5_CHEV_Diatom_Medium.yaml",
+    "data/normalized_yaml/algae/2X_CHEV_Diatom_Medium.yaml",
+    "data/normalized_yaml/algae/2_3_CHEV_Diatom_Medium.yaml",
+    "data/normalized_yaml/algae/CHEV_Diatom_Medium.yaml",
+    "data/normalized_yaml/algae/Modified_2X_CHEV_Medium.yaml",
+    "data/normalized_yaml/algae/Modified_CHEV_Medium.yaml",
+    "data/normalized_yaml/algae/modified_2x_chev_soil_medium.yaml"
+  ],
+  "newly_reviewed_targets": [
+    "data/normalized_yaml/algae/1_2_CHEV_Diatom_Medium.yaml",
+    "data/normalized_yaml/algae/1_3_CHEV_Diatom_Medium.yaml",
+    "data/normalized_yaml/algae/1_5_CHEV_Diatom_Medium.yaml",
+    "data/normalized_yaml/algae/2X_CHEV_Diatom_Medium.yaml",
+    "data/normalized_yaml/algae/2_3_CHEV_Diatom_Medium.yaml",
+    "data/normalized_yaml/algae/CHEV_Diatom_Medium.yaml",
+    "data/normalized_yaml/algae/Modified_2X_CHEV_Medium.yaml",
+    "data/normalized_yaml/algae/Modified_CHEV_Medium.yaml",
+    "data/normalized_yaml/algae/modified_2x_chev_soil_medium.yaml"
+  ],
+  "report_search_includes_ignored_files": true
+}

@@ -15,6 +15,17 @@ composition:
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
     label: boric acid
+  evidence:
+  - reference: https://utex.org/products/g9-trace-metals-for-j-medium
+    supports: SUPPORT
+    snippet: 3.25 g/L
+    explanation: 'Supports composition[0].concentration for the supplied ingredient
+      in this stock preparation only. Component: ''H3BO3(Baker 0084)''. Locator: formulation
+      table row 1; Amount column and volume heading. Separate volume-basis excerpt:
+      ''For 1 L Total''. Direct g/L source amount, or grams per explicit one-liter
+      total; no molecular-weight or working-dilution calculation. Supplier and ontology
+      evidence, when attached, establish the supplied form separately; no replacement
+      molarity or receiving-medium dose is inferred.'
 - preferred_term: Manganese sulfate monohydrate
   concentration:
     value: '1.5'
@@ -24,6 +35,17 @@ composition:
     label: manganese(II) sulfate monohydrate
   mediaingredientmech_term:
     id: MediaIngredientMech:001118
+  evidence:
+  - reference: https://utex.org/products/g9-trace-metals-for-j-medium
+    supports: SUPPORT
+    snippet: 1.5 g/L
+    explanation: 'Supports composition[1].concentration for the supplied ingredient
+      in this stock preparation only. Component: ''MnSO4•H2O(Sigma M8179)''. Locator:
+      formulation table row 2; Amount column and volume heading. Separate volume-basis
+      excerpt: ''For 1 L Total''. Direct g/L source amount, or grams per explicit
+      one-liter total; no molecular-weight or working-dilution calculation. Supplier
+      and ontology evidence, when attached, establish the supplied form separately;
+      no replacement molarity or receiving-medium dose is inferred.'
 - preferred_term: Zinc sulfate heptahydrate
   concentration:
     value: '0.3'
@@ -31,6 +53,17 @@ composition:
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
+  evidence:
+  - reference: https://utex.org/products/g9-trace-metals-for-j-medium
+    supports: SUPPORT
+    snippet: 0.3 g/L
+    explanation: 'Supports composition[2].concentration for the supplied ingredient
+      in this stock preparation only. Component: ''ZnSO4•7H2O(Sigma Z 0251)''. Locator:
+      formulation table row 3; Amount column and volume heading. Separate volume-basis
+      excerpt: ''For 1 L Total''. Direct g/L source amount, or grams per explicit
+      one-liter total; no molecular-weight or working-dilution calculation. Supplier
+      and ontology evidence, when attached, establish the supplied form separately;
+      no replacement molarity or receiving-medium dose is inferred.'
 - preferred_term: Ammonium molybdate tetrahydrate
   concentration:
     value: '0.08'
@@ -40,6 +73,17 @@ composition:
     label: hexaammonium heptamolybdate tetrahydrate
   mediaingredientmech_term:
     id: MediaIngredientMech:001110
+  evidence:
+  - reference: https://utex.org/products/g9-trace-metals-for-j-medium
+    supports: SUPPORT
+    snippet: 0.08 g/L
+    explanation: 'Supports composition[3].concentration for the supplied ingredient
+      in this stock preparation only. Component: ''(NH4)6Mo7O24•4H2O(Mallinckrodt
+      3420)''. Locator: formulation table row 4; Amount column and volume heading.
+      Separate volume-basis excerpt: ''For 1 L Total''. Direct g/L source amount,
+      or grams per explicit one-liter total; no molecular-weight or working-dilution
+      calculation. Supplier and ontology evidence, when attached, establish the supplied
+      form separately; no replacement molarity or receiving-medium dose is inferred.'
 - preferred_term: Copper sulfate pentahydrate
   concentration:
     value: '0.05'
@@ -50,6 +94,17 @@ composition:
   mediaingredientmech_chebi_term:
     id: CHEBI:31440
     label: copper(II) sulfate pentahydrate
+  evidence:
+  - reference: https://utex.org/products/g9-trace-metals-for-j-medium
+    supports: SUPPORT
+    snippet: 0.05 g/L
+    explanation: 'Supports composition[4].concentration for the supplied ingredient
+      in this stock preparation only. Component: ''CuSO4•5H2O(MCIB 3M11)''. Locator:
+      formulation table row 5; Amount column and volume heading. Separate volume-basis
+      excerpt: ''For 1 L Total''. Direct g/L source amount, or grams per explicit
+      one-liter total; no molecular-weight or working-dilution calculation. Supplier
+      and ontology evidence, when attached, establish the supplied form separately;
+      no replacement molarity or receiving-medium dose is inferred.'
 - preferred_term: Cobalt nitrate hexahydrate
   concentration:
     value: '0.15'
@@ -59,6 +114,17 @@ composition:
     label: cobalt dinitrate hexahydrate
   mediaingredientmech_term:
     id: MediaIngredientMech:001111
+  evidence:
+  - reference: https://utex.org/products/g9-trace-metals-for-j-medium
+    supports: SUPPORT
+    snippet: 0.15 g/L
+    explanation: 'Supports composition[5].concentration for the supplied ingredient
+      in this stock preparation only. Component: ''Co(NO3)2•6H2O(Mallinckroft 4544)''.
+      Locator: formulation table row 6; Amount column and volume heading. Separate
+      volume-basis excerpt: ''For 1 L Total''. Direct g/L source amount, or grams
+      per explicit one-liter total; no molecular-weight or working-dilution calculation.
+      Supplier and ontology evidence, when attached, establish the supplied form separately;
+      no replacement molarity or receiving-medium dose is inferred.'
 - preferred_term: Potassium iodide
   concentration:
     value: '0.01'
@@ -69,26 +135,26 @@ composition:
   mediaingredientmech_chebi_term:
     id: CHEBI:8346
     label: potassium iodide
-notes: 'G9 Trace Metals solution for J Medium (UTEX).
-
-  Provides essential micronutrients for freshwater algae culture.
-
-
-  Preparation: Add components to approximately 900 mL deionized water in the order
-
-  listed while stirring continuously. Bring to 1 L total volume.
-
-
-  Storage: Refrigerator temperature (4°C).
-
-
-  Final stock concentrations: H3BO3 (0.053 mM), MnSO4·H2O (8.6 µM),
-
-  ZnSO4·7H2O (1 µM), (NH4)6Mo7O24·4H2O (0.065 µM), CuSO4·5H2O (0.2 µM),
-
-  Co(NO3)2·6H2O (0.52 µM), KI (0.06 µM)
-
-  '
+  evidence:
+  - reference: https://utex.org/products/g9-trace-metals-for-j-medium
+    supports: SUPPORT
+    snippet: 0.01 g/L
+    explanation: 'Supports composition[6].concentration for the supplied ingredient
+      in this stock preparation only. Component: ''KI(Sigma P 4286)''. Locator: formulation
+      table row 7; Amount column and volume heading. Separate volume-basis excerpt:
+      ''For 1 L Total''. Direct g/L source amount, or grams per explicit one-liter
+      total; no molecular-weight or working-dilution calculation. Supplier and ontology
+      evidence, when attached, establish the supplied form separately; no replacement
+      molarity or receiving-medium dose is inferred.'
+notes: "G9 Trace Metals solution for J Medium (UTEX).\nProvides essential micronutrients\
+  \ for freshwater algae culture.\n\nPreparation: Add components in the listed order\
+  \ to approximately 900 mL deionized water while stirring. Make up to a final volume\
+  \ of 1 L. \n\nStorage: Refrigerator temperature; no exact temperature is established\
+  \ by this source.\n\nThe source also prints a Final Concentration column and a stock-solution\
+  \ footnote. Those annotations are retained as a source interpretation issue, not\
+  \ asserted here as independently verified stock molarities. The structured values\
+  \ use the explicit g/L Amount column. No receiving-medium dose or replacement molarity\
+  \ is inferred.\n"
 source_data:
   origin: MediaIngredientMech
   mediaingredientmech_id: UNMAPPED_0097
@@ -115,8 +181,97 @@ curation_history:
   notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-10T07:40:20.478855+00:00'
+  curator: codex
+  action: CURATED_UTEX_SEVEN_STOCK_AMOUNTS_FORMS_AND_BOUNDARIES
+  notes: Source-backed amount, supplied-form and preparation-stage review. Numerical
+    mass concentrations retained; unresolved source conflicts explicitly recorded.
+    No taxa-media association added.
+  source: https://utex.org/products/g9-trace-metals-for-j-medium
+  changes: '{"claims": [{"action_taken": "Added scoped SUPPORT amount evidence; numeric
+    value unchanged", "basis_snippet": "For 1 L Total", "calculation": "Direct g/L
+    source amount, or grams per explicit one-liter total; no molecular-weight or working-dilution
+    calculation.", "field": "composition[0].concentration", "ingredient": "Boric acid",
+    "locator": "formulation table row 1; Amount column and volume heading", "old":
+    {"unit": "G_PER_L", "value": "3.25"}, "proposed": {"unit": "G_PER_L", "value":
+    "3.25"}, "reason": "Exact UTEX amount and volume basis retained; any identity
+    correction is separately evidenced.", "reference": "https://utex.org/products/g9-trace-metals-for-j-medium",
+    "snippet": "3.25 g/L", "source_component": "H3BO3(Baker 0084)", "status": "evidence_only"},
+    {"action_taken": "Added scoped SUPPORT amount evidence; numeric value unchanged",
+    "basis_snippet": "For 1 L Total", "calculation": "Direct g/L source amount, or
+    grams per explicit one-liter total; no molecular-weight or working-dilution calculation.",
+    "field": "composition[1].concentration", "ingredient": "Manganese sulfate monohydrate",
+    "locator": "formulation table row 2; Amount column and volume heading", "old":
+    {"unit": "G_PER_L", "value": "1.5"}, "proposed": {"unit": "G_PER_L", "value":
+    "1.5"}, "reason": "Exact UTEX amount and volume basis retained; any identity correction
+    is separately evidenced.", "reference": "https://utex.org/products/g9-trace-metals-for-j-medium",
+    "snippet": "1.5 g/L", "source_component": "MnSO4\u2022H2O(Sigma M8179)", "status":
+    "evidence_only"}, {"action_taken": "Added scoped SUPPORT amount evidence; numeric
+    value unchanged", "basis_snippet": "For 1 L Total", "calculation": "Direct g/L
+    source amount, or grams per explicit one-liter total; no molecular-weight or working-dilution
+    calculation.", "field": "composition[2].concentration", "ingredient": "Zinc sulfate
+    heptahydrate", "locator": "formulation table row 3; Amount column and volume heading",
+    "old": {"unit": "G_PER_L", "value": "0.3"}, "proposed": {"unit": "G_PER_L", "value":
+    "0.3"}, "reason": "Exact UTEX amount and volume basis retained; any identity correction
+    is separately evidenced.", "reference": "https://utex.org/products/g9-trace-metals-for-j-medium",
+    "snippet": "0.3 g/L", "source_component": "ZnSO4\u20227H2O(Sigma Z 0251)", "status":
+    "evidence_only"}, {"action_taken": "Added scoped SUPPORT amount evidence; numeric
+    value unchanged", "basis_snippet": "For 1 L Total", "calculation": "Direct g/L
+    source amount, or grams per explicit one-liter total; no molecular-weight or working-dilution
+    calculation.", "field": "composition[3].concentration", "ingredient": "Ammonium
+    molybdate tetrahydrate", "locator": "formulation table row 4; Amount column and
+    volume heading", "old": {"unit": "G_PER_L", "value": "0.08"}, "proposed": {"unit":
+    "G_PER_L", "value": "0.08"}, "reason": "Exact UTEX amount and volume basis retained;
+    any identity correction is separately evidenced.", "reference": "https://utex.org/products/g9-trace-metals-for-j-medium",
+    "snippet": "0.08 g/L", "source_component": "(NH4)6Mo7O24\u20224H2O(Mallinckrodt
+    3420)", "status": "evidence_only"}, {"action_taken": "Added scoped SUPPORT amount
+    evidence; numeric value unchanged", "basis_snippet": "For 1 L Total", "calculation":
+    "Direct g/L source amount, or grams per explicit one-liter total; no molecular-weight
+    or working-dilution calculation.", "field": "composition[4].concentration", "ingredient":
+    "Copper sulfate pentahydrate", "locator": "formulation table row 5; Amount column
+    and volume heading", "old": {"unit": "G_PER_L", "value": "0.05"}, "proposed":
+    {"unit": "G_PER_L", "value": "0.05"}, "reason": "Exact UTEX amount and volume
+    basis retained; any identity correction is separately evidenced.", "reference":
+    "https://utex.org/products/g9-trace-metals-for-j-medium", "snippet": "0.05 g/L",
+    "source_component": "CuSO4\u20225H2O(MCIB 3M11)", "status": "evidence_only"},
+    {"action_taken": "Added scoped SUPPORT amount evidence; numeric value unchanged",
+    "basis_snippet": "For 1 L Total", "calculation": "Direct g/L source amount, or
+    grams per explicit one-liter total; no molecular-weight or working-dilution calculation.",
+    "field": "composition[5].concentration", "ingredient": "Cobalt nitrate hexahydrate",
+    "locator": "formulation table row 6; Amount column and volume heading", "old":
+    {"unit": "G_PER_L", "value": "0.15"}, "proposed": {"unit": "G_PER_L", "value":
+    "0.15"}, "reason": "Exact UTEX amount and volume basis retained; any identity
+    correction is separately evidenced.", "reference": "https://utex.org/products/g9-trace-metals-for-j-medium",
+    "snippet": "0.15 g/L", "source_component": "Co(NO3)2\u20226H2O(Mallinckroft 4544)",
+    "status": "evidence_only"}, {"action_taken": "Added scoped SUPPORT amount evidence;
+    numeric value unchanged", "basis_snippet": "For 1 L Total", "calculation": "Direct
+    g/L source amount, or grams per explicit one-liter total; no molecular-weight
+    or working-dilution calculation.", "field": "composition[6].concentration", "ingredient":
+    "Potassium iodide", "locator": "formulation table row 7; Amount column and volume
+    heading", "old": {"unit": "G_PER_L", "value": "0.01"}, "proposed": {"unit": "G_PER_L",
+    "value": "0.01"}, "reason": "Exact UTEX amount and volume basis retained; any
+    identity correction is separately evidenced.", "reference": "https://utex.org/products/g9-trace-metals-for-j-medium",
+    "snippet": "0.01 g/L", "source_component": "KI(Sigma P 4286)", "status": "evidence_only"}],
+    "context_notes": "Corrected preparation, storage and stock/receiving concentration
+    wording using root evidence; retained unresolved source discrepancies.", "counts":
+    {"bibliographic_entries_enriched": 1, "new_curation_history": 1, "new_evidence":
+    8, "recipe_context_notes_corrected": 1}, "identity_changes": [], "stock_boundary":
+    "unchanged"}'
 references:
 - reference: https://utex.org/products/g9-trace-metals-for-j-medium
+  title: G9 Trace Metals for J Medium Recipe | UTEX Culture Collection of Algae
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10; institution=UTEX Culture Collection of Algae; named authors,
+    publication year and DOI not stated.
 - reference: UTEX:g9-trace-metals-for-j-medium
 - reference: MediaIngredientMech:UNMAPPED_0097
 category: bacterial
+evidence:
+- reference: https://utex.org/products/g9-trace-metals-for-j-medium
+  supports: SUPPORT
+  snippet: approximately 900 mL
+  explanation: 'Supports notes: exact preparation volume/stage and storage wording;
+    source concentration annotations are not independently promoted. Separate source
+    excerpts (Directions/table headings/footnote): ''approximately 900 mL''; ''Store
+    at refrigerator temperature.''; ''For 1 L Total''; ''Final concentration listed
+    is for the stock solution.''; ''total volume to 1 Liter'''

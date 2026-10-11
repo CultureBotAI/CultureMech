@@ -15,6 +15,15 @@ composition:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  evidence:
+  - reference: https://utex.org/products/beijerincks-solution
+    supports: SUPPORT
+    snippet: 8 g/L
+    explanation: 'Supports composition[0].concentration only as this standalone stock''s
+      mass or supplied-liquid volume per liter. Directions; table row 1; component
+      printed as ''NH4Cl(CAS: 12125-02-9)''; Amount excerpt: ''8 g/L''. Final-volume
+      excerpt: ''bring total volume to 1.0 Liters''. Existing value and precision
+      retained; no molecular-weight, density, receiving-medium or working-dose conversion. '
 - preferred_term: Calcium chloride dihydrate
   concentration:
     value: '1.0'
@@ -25,6 +34,15 @@ composition:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  evidence:
+  - reference: https://utex.org/products/beijerincks-solution
+    supports: SUPPORT
+    snippet: 1 g/L
+    explanation: 'Supports composition[1].concentration only as this standalone stock''s
+      mass or supplied-liquid volume per liter. Directions; table row 2; component
+      printed as ''CaCl2•2H2O(CAS: 10035-04-8)''; Amount excerpt: ''1 g/L''. Final-volume
+      excerpt: ''bring total volume to 1.0 Liters''. Existing value and precision
+      retained; no molecular-weight, density, receiving-medium or working-dose conversion. '
 - preferred_term: Magnesium sulfate heptahydrate
   concentration:
     value: '2.0'
@@ -35,23 +53,24 @@ composition:
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
-notes: 'Stock solution for TAP Medium (Tris-Acetate-Phosphate) and related algae culture
-  media.
-
+  evidence:
+  - reference: https://utex.org/products/beijerincks-solution
+    supports: SUPPORT
+    snippet: 2 g/L
+    explanation: 'Supports composition[2].concentration only as this standalone stock''s
+      mass or supplied-liquid volume per liter. Directions; table row 3; component
+      printed as ''MgSO4•7H2O(CAS: 10034-99-8)''; Amount excerpt: ''2 g/L''. Final-volume
+      excerpt: ''bring total volume to 1.0 Liters''. Existing value and precision
+      retained; no molecular-weight, density, receiving-medium or working-dose conversion. '
+notes: |
+  Stock solution for TAP Medium (Tris-Acetate-Phosphate) and related algae culture media.
   Provides macrominerals (N, Ca, Mg, S) for freshwater algae.
-
   Standard formulation used in Chlamydomonas reinhardtii culture.
 
-
-  Preparation: Add components to approximately 900 mL distilled water, dissolve completely,
-
+  Preparation: Add components to approximately 800 mL distilled water, dissolve completely,
   then bring to 1 L total volume. Store at room temperature.
 
-
-  Final stock concentrations: NH4Cl (7.5 mM), CaCl2·2H2O (0.35 mM), MgSO4·7H2O (0.4
-  mM)
-
-  '
+  Stock amounts are NH4Cl 8 g/L, CaCl2.2H2O 1 g/L and MgSO4.7H2O 2 g/L. The source table's millimolar column is explicitly for TAP medium, not the stock. No universal stock addition dose or replacement molarity is inferred.
 source_data:
   origin: MediaIngredientMech
   mediaingredientmech_id: UNMAPPED_0074
@@ -78,8 +97,66 @@ curation_history:
   notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-10T06:43:40+00:00'
+  curator: codex
+  action: CURATED_UTEX_MIGRATED_STOCK_CONCENTRATION_EVIDENCE
+  notes: Source-backed evidence and stock-context review. No structured concentrations
+    or identities changed; conflicts stay explicit.
+  source: https://utex.org/products/beijerincks-solution
+  changes: '{"claims": [{"action_taken": "Added scoped SUPPORT evidence; numeric value
+    retained", "basis_snippet": "bring total volume to 1.0 Liters", "calculation":
+    "No numeric change proposed; preparation amount per explicitly stated one-liter
+    total stock volume.", "field": "composition[0].concentration", "ingredient": "Ammonium
+    chloride", "locator": "Directions; table row 1", "old": {"unit": "G_PER_L", "value":
+    "8.0"}, "proposed": {"unit": "G_PER_L", "value": "8.0"}, "reference": "https://utex.org/products/beijerincks-solution",
+    "snippet": "8 g/L", "source_component": "NH4Cl(CAS: 12125-02-9)", "status": "evidence_only"},
+    {"action_taken": "Added scoped SUPPORT evidence; numeric value retained", "basis_snippet":
+    "bring total volume to 1.0 Liters", "calculation": "No numeric change proposed;
+    preparation amount per explicitly stated one-liter total stock volume.", "field":
+    "composition[1].concentration", "ingredient": "Calcium chloride dihydrate", "locator":
+    "Directions; table row 2", "old": {"unit": "G_PER_L", "value": "1.0"}, "proposed":
+    {"unit": "G_PER_L", "value": "1.0"}, "reference": "https://utex.org/products/beijerincks-solution",
+    "snippet": "1 g/L", "source_component": "CaCl2\u20222H2O(CAS: 10035-04-8)", "status":
+    "evidence_only"}, {"action_taken": "Added scoped SUPPORT evidence; numeric value
+    retained", "basis_snippet": "bring total volume to 1.0 Liters", "calculation":
+    "No numeric change proposed; preparation amount per explicitly stated one-liter
+    total stock volume.", "field": "composition[2].concentration", "ingredient": "Magnesium
+    sulfate heptahydrate", "locator": "Directions; table row 3", "old": {"unit": "G_PER_L",
+    "value": "2.0"}, "proposed": {"unit": "G_PER_L", "value": "2.0"}, "reference":
+    "https://utex.org/products/beijerincks-solution", "snippet": "2 g/L", "source_component":
+    "MgSO4\u20227H2O(CAS: 10034-99-8)", "status": "evidence_only"}], "notes": {"new":
+    "Stock solution for TAP Medium (Tris-Acetate-Phosphate) and related algae culture
+    media.\nProvides macrominerals (N, Ca, Mg, S) for freshwater algae.\nStandard
+    formulation used in Chlamydomonas reinhardtii culture.\n\nPreparation: Add components
+    to approximately 800 mL distilled water, dissolve completely,\nthen bring to 1
+    L total volume. Store at room temperature.\n\nStock amounts are NH4Cl 8 g/L, CaCl2.2H2O
+    1 g/L and MgSO4.7H2O 2 g/L. The source table''s millimolar column is explicitly
+    for TAP medium, not the stock. No universal stock addition dose or replacement
+    molarity is inferred.\n", "old": "Stock solution for TAP Medium (Tris-Acetate-Phosphate)
+    and related algae culture media.\nProvides macrominerals (N, Ca, Mg, S) for freshwater
+    algae.\nStandard formulation used in Chlamydomonas reinhardtii culture.\n\nPreparation:
+    Add components to approximately 900 mL distilled water, dissolve completely,\nthen
+    bring to 1 L total volume. Store at room temperature.\n\nFinal stock concentrations:
+    NH4Cl (7.5 mM), CaCl2\u00b72H2O (0.35 mM), MgSO4\u00b77H2O (0.4 mM)\n", "snippet":
+    "Final Concentration in TAP Medium"}, "references": {"added_fields": ["title",
+    "notes"], "reference": "https://utex.org/products/beijerincks-solution"}}'
 references:
 - reference: https://utex.org/products/beijerincks-solution
+  title: Beijerinck's Solution Recipe
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10; publisher=UTEX Culture Collection of Algae; locator=Directions
+    and formulation table where present. No named author, publication year or DOI
+    established. Amount and final-volume statements are reviewed separately from conflicting
+    concentration annotations; see scoped evidence.
 - reference: UTEX:beijerincks-solution
 - reference: MediaIngredientMech:UNMAPPED_0074
 category: bacterial
+evidence:
+- reference: https://utex.org/products/beijerincks-solution
+  supports: SUPPORT
+  snippet: Final Concentration in TAP Medium
+  explanation: Supports correcting the final-stock/receiving-medium distinction in
+    notes. The separate table heading is 'Stock Solution Concentration'; the quoted
+    heading labels a different column. Directions specify 'approximately 800 mL' starting
+    water and 'bring total volume to 1.0 Liters'; the preparation narrative is corrected
+    from 900 to 800 mL starting water. No working dose is inferred.

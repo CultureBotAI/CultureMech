@@ -1,0 +1,361 @@
+{
+  "terminal": true,
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "state": "Six-record preview with terminal focused, source, schema and presentation gates; application disabled and broader gates pending",
+  "records_proposed": 6,
+  "records_applied": 0,
+  "cohort_records": 6,
+  "proposed_additions_not_applied": {
+    "source_nodes": 147,
+    "old_quantity_slots": 130,
+    "claims": 433,
+    "new_evidence": 118,
+    "new_references": 6,
+    "new_curation_history": 6
+  },
+  "focused_tests": "525 passed, 2 warnings in 76.98s (0:01:16)",
+  "reference_checks": {
+    "total": 159,
+    "passed": 159
+  },
+  "reference_mode": "Offline, seven hash-checked official captures; not a fresh live refresh",
+  "preview_schema_commands": 12,
+  "normalized_count": 15910,
+  "normalized_sha256": "746bda4b9dd276ab1077245cf751a5c652fd697e6f355cb7183b49f7f93edd71",
+  "normalized_unchanged": true,
+  "context_sha256": "7c14648ed630e165a4ebc834b0ff55f560e11cfc50f1507a6776b90c99b413b0",
+  "plan_sha256": "dc2a0e96231feac52125245dc55f41d3deb937970a06d151fba10d2fd63d7a4a",
+  "receipt_sha256": {
+    "audit": "8082d8540a7c3174d1967aa0d27a4b9e5d43fac943d8ac88d50741484d4a1c71",
+    "references": "6e82a2223c5ee9895a66ce2b9d2928321cd945a79a9d4976cd94034b90714c9d",
+    "presentation": "47aa3cb4c5371b88734f4e2eba6f40f9c49abbb9a68a2fd839db1fe782145d6d",
+    "focused": "f2d8583d9ec6529916cd8dca4cde58b27e2e88b346b71280409ea81541af0495",
+    "schema": "63552496c7f5b27c6886a8a6b90651ad878c18cf9bdc8a475ec5446cbcb285a5",
+    "ledgers": "ca014412bda3b49fd96df965b60e84c3c983f01a1b45954bb212977e1af86d43",
+    "preview-rechecked": "bbbf268f88f7a31cd0dee3cb6f0b9c9a39a2738ac36e44499b14f793b137dcca"
+  },
+  "code_sha256": {
+    "scripts/repair_methanofollis_family.py": "5c9a586eb9bb6bae87c35729026cab89623d1059e034e1c48fd2bf4038919b6e",
+    "tests/test_methanofollis_family.py": "bcc83c55d3511bfb36dc849c5caef8926034d2947c9370455566a44cb59cfbf7",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanofollis-family/audit.py": "8d75f631a9d4d12b7cf8f932e70834817c6bb7efc7e077f092b78d3a460fa82e",
+    "scripts/repair_rumen_bacteria_family.py": "d3c23bf4b7141ffcc038f596fc7cad69c19372a5ecedaee21dbf6d99950fdf36",
+    "scripts/repair_oteb_family.py": "90aa83324ff1b28708921a00c409f50b4c4bd12eb15f09ae8feb0e1010916795",
+    "scripts/repair_methanogen_stock_boundaries.py": "8d4d32c7dc3cb2586242a188f958087482df3aff553d1dbc468c422eddb037ba",
+    "scripts/repair_lactalbumin_formulations.py": "3c16a3f4a2e543d280d3ccbb20a63138f2b409602d8b168b7fc742abe63b1769",
+    "scripts/repair_jcm_stock_preparations.py": "7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a",
+    "scripts/repair_mediadive_stock_concentration_evidence.py": "1badfa99205690cf6082d95db7dafbd6d4927b617027bc61fbaaf9dbd597c974",
+    "scripts/review_medium_concentration_evidence.py": "ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a",
+    "src/culturemech/validation/recipe_references.py": "1ef57389727347c242f45a85a9ed8908803423bc10307f53a888dac67ce06b67",
+    "src/culturemech/validation/write_validated.py": "8e1e2185231caecbe3dc99908c783cd83340b1e93fa9115ff1445d4b3820897e",
+    "src/culturemech/schema/culturemech.yaml": "461478d900fdee29a52c3d14656bcf369443bfdd0f4a534aa9d385f25df1cf8a"
+  },
+  "documents": {
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanofollis-family/README.md": "ba70249de107d87fdd1f1f6e2e882e492eaa5656bd8947d5627f448fa2288957",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanofollis-family/adversarial-review.md": "0d3310e0c256004c8e0fb1ec16f5d953b70437919754c7c635a73d6450b5f9f2",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanofollis-family/issue-source-conflicts.md": "3a98e584369dd42dc1958f3298739acd0e6ead650558a5090c835c0a3c5e00d2",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanofollis-family/next-work.md": "050895e66a06c3e7e03a102a275dc86aebe0d3cf1bf8ddce5eb2dfbfa898fffe",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanofollis-family/records/D161.md": "d550ceb962588be92f3eef1d5b3e32788bd520db6ec18afa39f72ff28f503ddd",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanofollis-family/records/K161.md": "29d99f7a77e865d59fa99f3893cb0f79ed8d0bcb66f611421c163d3556211b30",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanofollis-family/records/S209.md": "f4b3f91af7d4aa00f64cfe675ef5f2062d12f8515d80b6b2ee6975d1865f72f8",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanofollis-family/records/S241.md": "1f27dbeb2d64d6632c9444e3891cef7ac009937d1b635c7830fa59e626b00b30",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanofollis-family/records/S277.md": "21b2c24d488445451e7e835f11302303e789a0ab67b5c722421f1bf4c10b9006",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanofollis-family/records/S5980.md": "aa3090fb45f4fdc77f7dcba19ecee2f4268b73c414fbae71a749ee83df10701b"
+  },
+  "prior_supported_evidence_unchanged": [
+    {
+      "key": "S241",
+      "pointer": [
+        "composition",
+        0,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S241",
+      "pointer": [
+        "composition",
+        1,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S241",
+      "pointer": [
+        "composition",
+        2,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S241",
+      "pointer": [
+        "composition",
+        3,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S241",
+      "pointer": [
+        "composition",
+        4,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S241",
+      "pointer": [
+        "composition",
+        5,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S241",
+      "pointer": [
+        "composition",
+        6,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S241",
+      "pointer": [
+        "composition",
+        7,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S241",
+      "pointer": [
+        "composition",
+        8,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S241",
+      "pointer": [
+        "composition",
+        9,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S241",
+      "pointer": [
+        "composition",
+        10,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S241",
+      "pointer": [
+        "composition",
+        11,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S241",
+      "pointer": [
+        "composition",
+        12,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S241",
+      "pointer": [
+        "composition",
+        13,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S241",
+      "pointer": [
+        "composition",
+        14,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S277",
+      "pointer": [
+        "composition",
+        0,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S277",
+      "pointer": [
+        "composition",
+        1,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S277",
+      "pointer": [
+        "composition",
+        2,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S277",
+      "pointer": [
+        "composition",
+        3,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S277",
+      "pointer": [
+        "composition",
+        4,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S277",
+      "pointer": [
+        "composition",
+        10,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S5980",
+      "pointer": [
+        "composition",
+        0,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S5980",
+      "pointer": [
+        "composition",
+        1,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S5980",
+      "pointer": [
+        "composition",
+        2,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S5980",
+      "pointer": [
+        "composition",
+        3,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S5980",
+      "pointer": [
+        "composition",
+        4,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S5980",
+      "pointer": [
+        "composition",
+        5,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S5980",
+      "pointer": [
+        "composition",
+        6,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S5980",
+      "pointer": [
+        "composition",
+        7,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S5980",
+      "pointer": [
+        "composition",
+        8,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S5980",
+      "pointer": [
+        "composition",
+        9,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S5980",
+      "pointer": [
+        "composition",
+        10,
+        "evidence",
+        0
+      ]
+    }
+  ],
+  "unchanged_root_text_spans": 40,
+  "prior_history_text_spans": 54,
+  "full_fast_tier_rerun": false,
+  "taxa_media_associations_added": 0,
+  "remaining": "Full objective unchanged. Guarded application and broader current-code tests, post-edit gates, report reconciliation, accounting and merge retention remain required. Original/provider discrepancies, global merge/freshness and publication remain open.",
+  "previous_turn": "Verified wait: polled focused test session 37096 to terminal success; this continuation completes the remaining six-record preview gates before guarded application."
+}

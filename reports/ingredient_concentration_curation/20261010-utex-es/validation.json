@@ -1,0 +1,222 @@
+{
+  "terminal": true,
+  "local_applied_record_checks_passed": true,
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "normalized_count": 15910,
+  "normalized_inventory_sha256": "da9766fa2581380e36cf1bef84b6e7fede418c8c70d76e9e5d7bb922e34d7d3b",
+  "counts": {
+    "new_evidence": 37337,
+    "new_curation_history": 5616,
+    "bibliographic_entries_enriched": 62,
+    "quantity_corrections": 1751,
+    "ingredient_context_notes_corrected": 155,
+    "new_references": 6040,
+    "unsupported_quantity_slots_removed": 960,
+    "ingredient_labels_corrected": 65,
+    "ingredient_identities_corrected": 20,
+    "preparation_descriptions_corrected": 61,
+    "stock_nodes_relocated": 862,
+    "stock_dose_basis_corrections": 148,
+    "unsupported_primary_identities_removed": 8,
+    "unsupported_secondary_identities_removed": 5,
+    "relationship_dose_descriptions_corrected": 9,
+    "child_link_notes_corrected": 1,
+    "preparation_actions_corrected": 66,
+    "new_quantity_slots": 379,
+    "stock_stage_concentrations_rebased": 203,
+    "stock_descriptors_added": 247,
+    "copied_ingredient_nodes_replaced_by_reference": 37,
+    "ingredient_context_notes_added": 268,
+    "water_input_nodes_added": 28,
+    "recipe_context_notes_corrected": 30,
+    "parent_links_corrected": 7,
+    "source_amount_conflicts_repaired": 3,
+    "unquantified_carrier_nodes_added": 91,
+    "evidence_scopes_corrected": 172,
+    "preparation_steps_added": 69,
+    "batch_mass_notes_unverified_concentrations": 48,
+    "duplicate_stock_nodes_removed": 1,
+    "variant_links_added": 10,
+    "explicit_medium_rates_verified": 3,
+    "unsupported_flags_removed": 3,
+    "child_links_corrected": 7,
+    "ingredient_evidence_explanations_extended": 3,
+    "preparation_steps_relocated": 18,
+    "inline_variant_options_added": 16,
+    "water_input_notes_added": 9,
+    "extraction_preparations_added": 1,
+    "unquantified_ingredient_nodes_added": 2,
+    "base_preparations_added": 9,
+    "preparation_records_restored": 4,
+    "supplement_nodes_moved_to_variants": 4,
+    "supplied_hydrate_identities_corrected": 87,
+    "copied_ingredient_nodes_removed": 15,
+    "corrected_evidence_snippets": 2,
+    "stock_context_notes_corrected": 8,
+    "extraction_preparations_restructured": 2,
+    "source_version_alternatives_added": 4,
+    "composition_classifications_corrected": 2,
+    "final_quantity_slots_added": 1,
+    "explicitly_omitted_ingredient_nodes": 1,
+    "ingredient_source_attributions_corrected": 1,
+    "excluded_alternative_nodes_removed": 1,
+    "preparation_text_encodings_corrected": 1,
+    "unquantified_solvent_nodes_added": 1,
+    "ingredient_doses_relocated_to_stock": 1,
+    "identity_conflicts_retained_unquantified": 2,
+    "unquantified_makeup_nodes_added": 1,
+    "stock_preparation_notes_added": 1,
+    "edited_records": 5377
+  },
+  "followup_unique_records": 11905,
+  "outside_this_followup": 4005,
+  "new_batch": {
+    "new_evidence": 134,
+    "new_curation_history": 6,
+    "stock_nodes_relocated": 20,
+    "stock_dose_basis_corrections": 20,
+    "new_references": 26,
+    "bibliographic_entries_enriched": 30,
+    "quantity_corrections": 8,
+    "ingredient_context_notes_corrected": 48,
+    "unsupported_quantity_slots_removed": 24,
+    "unsupported_primary_identities_removed": 4,
+    "unsupported_secondary_identities_removed": 4,
+    "ingredient_labels_corrected": 12,
+    "ingredient_identities_corrected": 8,
+    "relationship_dose_descriptions_corrected": 9,
+    "records": 6,
+    "ingredient_and_stock_claim_rows": 124,
+    "taxa_media_associations": 0
+  },
+  "batch_quantity_claim_dispositions": {
+    "correct": 52,
+    "evidence_only": 72
+  },
+  "production_reference_checks": {
+    "aborted_commands_without_claim_results": 4,
+    "passed_snippet": 4,
+    "passed_title": 2
+  },
+  "production_reference_results": [
+    {
+      "record": "data/normalized_yaml/algae/Enriched_Seawater_Medium.yaml",
+      "returncode": 2,
+      "per_claim_results_available": false,
+      "error": "[ERROR] reference_validation: HTTPSConnectionPool(host='www.sigmaaldrich.com', port=443): Read timed out. (read timeout=30)"
+    },
+    {
+      "record": "data/normalized_yaml/algae/ES_10_Enriched_Seawater_Medium.yaml",
+      "returncode": 2,
+      "per_claim_results_available": false,
+      "error": "[ERROR] reference_validation: HTTPSConnectionPool(host='www.sigmaaldrich.com', port=443): Read timed out. (read timeout=30)"
+    },
+    {
+      "record": "data/normalized_yaml/algae/ES_2_Enriched_Seawater_Medium.yaml",
+      "returncode": 2,
+      "per_claim_results_available": false,
+      "error": "[ERROR] reference_validation: HTTPSConnectionPool(host='www.sigmaaldrich.com', port=443): Read timed out. (read timeout=30)"
+    },
+    {
+      "record": "data/normalized_yaml/algae/ES_4_Enriched_Seawater_Medium.yaml",
+      "returncode": 2,
+      "per_claim_results_available": false,
+      "error": "[ERROR] reference_validation: HTTPSConnectionPool(host='www.sigmaaldrich.com', port=443): Read timed out. (read timeout=30)"
+    },
+    {
+      "record": "data/normalized_yaml/algae/1_2_Enriched_Seawater.yaml",
+      "returncode": 0,
+      "per_claim_results_available": true,
+      "valid": true,
+      "issues": []
+    },
+    {
+      "record": "data/normalized_yaml/algae/2_3_Enriched_Seawater.yaml",
+      "returncode": 0,
+      "per_claim_results_available": true,
+      "valid": true,
+      "issues": []
+    }
+  ],
+  "production_reference_gate_passed": false,
+  "reference_limitations": [
+    "Commands aborted without JSON have no per-claim results; no snippet passes are inferred for them.",
+    "Manual source/table/PDF/identity inspection is separate from the production reference gate."
+  ],
+  "remaining_source_issues": [
+    "The parent HTML total-volume heading conflicts with the per-liter-of-seawater procedure/PDF. Expanded recipes retain absolute liquid inputs; no measured final volume or final constituent concentrations are inferred.",
+    "The enrichment source lists vitamin doses but omits a later vitamin-addition instruction; no missing step is invented.",
+    "ES Fe formula and Sigma F1513 catalog identity remain unreconciled. Only the source-named ferrous-ammonium-sulfate stock mass is supported; no catalog-based replacement or molar conversion is made.",
+    "The P-II source permits a cobalt sulfate alternative without an exact replacement mass/hydrate. Only the listed cobalt chloride hexahydrate amount is supported.",
+    "No exact glycerophosphate-pentahydrate ontology identifier was established. Unsupported sn-glycerol-3-phosphate assertions are removed; the immutable MIM index remains unchanged.",
+    "Generic lighting, temperature, application and growth claims remain outside this ingredient review; no taxa-media associations are added.",
+    "The 2/3 PDF copyright notice does not establish a publication year for the live HTML. Supplier pages inspected by the web tool are not full downloaded captures."
+  ],
+  "corpus_commands": [
+    {
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "just",
+        "assign-ids-check"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "just",
+        "validate-products"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "just",
+        "check-mim-label-index"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "returncode": 1
+    },
+    {
+      "command": [
+        "just",
+        "audit-merge-freshness"
+      ],
+      "returncode": 1
+    }
+  ],
+  "fast_test_summary": "15056 passed, 16 skipped, 3498 deselected, 2 warnings in 1892.24s (0:31:32)",
+  "fast_tier_passed": true,
+  "full_test_suite_pass_asserted": false,
+  "unapplied_preview_history": {
+    "initial_test_failures": "Three malformed-relationship cases raised KeyError; made the missing-field rejection explicit.",
+    "second_preview_passed": "141 tests passed, then manual review found cross-formulation dilution wording before any recipe was edited.",
+    "applied_plan": "reports/ingredient_concentration_curation/20261010-utex-es/plan-v3.json"
+  },
+  "receipts_sha256": {
+    "preview-v3": "eebb242eff2f9959666409f046a3fe1313332032dec0c2158c220be88c9cc75d",
+    "apply": "3d776cb58923f92bf81ba2808264ec88b5d2b13aad0befecb252c1c92643447b",
+    "reconcile-baseline": "b4d2b242a99df4c6b6aa77f97bc9d983359592009878efadfbac170a5eda330e",
+    "reconcile-reports": "6273cf3e0c9e49ce13da124e7a1dfd033b9ad813cf9df89f600ec9b05740cbe1",
+    "reconcile-cumulative": "18819a6ce6166a6d8bb9339b4c4c341f5b987382ce492e3e046cb601b3fe82fe",
+    "reconcile-indexes": "321d06d1fc5f243ef87ebd0378e3dd9e58b04ff5de69c8c1f8775f7b2b13808f",
+    "reconcile-retention": "cfa58c8c9f104da6c4e3dd2a963c97bd73667c9431fc73c0229bf88791dab59a",
+    "post": "be0c7eeb2afb2e9f0de729d0cb7b676b294c578d48b20783edf005cb0a9cc9da",
+    "references": "d503dd350c82e9af8fcf6479318539069538d5887ed63f52e0824c13e76be4dd",
+    "corpus": "c31eeca67d84f983f32a9340742f6e85531607ed81a93f476ed1b706d8de4ee5",
+    "fast": "6a2b0fc2f4b52ce5286db1f499736562128586bc5b8d0794995a02dded11ef42",
+    "postflight": "c757c7755d048418aab1dadce3e959c369ece9e5b956f3c1d8fb932c5352d84a"
+  }
+}

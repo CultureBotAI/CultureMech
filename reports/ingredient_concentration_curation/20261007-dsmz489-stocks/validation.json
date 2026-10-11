@@ -1,0 +1,527 @@
+{
+  "terminal": true,
+  "runtime": "Isolated Python 3.11; cached Python 3.13 explicitly identified. Not maintained-project CI.",
+  "checks": [
+    {
+      "name": "apply",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "scripts/repair_dsmz489_stocks.py",
+        "--medium-cache",
+        "/tmp/ingredient-media-20261007/sources",
+        "--solution-cache",
+        "/tmp/ingredient-solutions-20261007/sources",
+        "--mapping",
+        "/tmp/ingredient-media-20261007/komodo-media-list-20261007-recheck.html",
+        "--pdf-path",
+        "/tmp/ingredient-media-20261007/komodo-2000-pdf-489.pdf",
+        "--plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz489-stocks/plan.json",
+        "--apply"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz489-post-apply.log"
+    },
+    {
+      "name": "readback",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "scripts/repair_dsmz489_stocks.py",
+        "--medium-cache",
+        "/tmp/ingredient-media-20261007/sources",
+        "--solution-cache",
+        "/tmp/ingredient-solutions-20261007/sources",
+        "--mapping",
+        "/tmp/ingredient-media-20261007/komodo-media-list-20261007-recheck.html",
+        "--pdf-path",
+        "/tmp/ingredient-media-20261007/komodo-2000-pdf-489.pdf",
+        "--plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz489-stocks/plan.json",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz489-post-readback.log"
+    },
+    {
+      "name": "noop",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "scripts/repair_dsmz489_stocks.py",
+        "--medium-cache",
+        "/tmp/ingredient-media-20261007/sources",
+        "--solution-cache",
+        "/tmp/ingredient-solutions-20261007/sources",
+        "--mapping",
+        "/tmp/ingredient-media-20261007/komodo-media-list-20261007-recheck.html",
+        "--pdf-path",
+        "/tmp/ingredient-media-20261007/komodo-2000-pdf-489.pdf",
+        "--plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz489-stocks/plan.json",
+        "--apply"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz489-post-noop.log"
+    },
+    {
+      "name": "independent-diff",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "reports/ingredient_concentration_curation/20261007-dsmz489-stocks/audit.py",
+        "--applied",
+        "--out",
+        "reports/ingredient_concentration_curation/20261007-dsmz489-stocks/diff-audit.json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz489-post-independent-diff.log"
+    },
+    {
+      "name": "tests",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_dsmz489_stocks.py",
+        "tests/test_medium_concentration_review.py",
+        "tests/test_komodo_concentration_review.py",
+        "tests/test_medium_concentration_batch.py",
+        "tests/test_solution_concentration_review.py",
+        "tests/test_record_io.py",
+        "tests/test_concentration_review_reports.py",
+        "tests/test_concentration_plausibility.py",
+        "--junitxml",
+        "/tmp/ingredient-media-20261007/dsmz489-post-tests.xml"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/dsmz489-post-tests.log"
+    },
+    {
+      "name": "tests-py313",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/j4kbwY9i4zbHYEv_yaqbF/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_dsmz489_stocks.py",
+        "tests/test_medium_concentration_review.py",
+        "tests/test_komodo_concentration_review.py",
+        "tests/test_solution_concentration_review.py",
+        "--junitxml",
+        "/tmp/ingredient-media-20261007/dsmz489-post-tests-py313.xml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz489-post-tests-py313.log"
+    },
+    {
+      "name": "strict",
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz489-post-strict.log"
+    },
+    {
+      "name": "dsmz-schema",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/lacrimispora_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz489-post-dsmz-schema.log"
+    },
+    {
+      "name": "komodo-schema",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz489-post-komodo-schema.log"
+    },
+    {
+      "name": "solution-schema",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/mediadive_995_Main_sol_489.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz489-post-solution-schema.log"
+    },
+    {
+      "name": "ids",
+      "command": [
+        "just",
+        "assign-ids-check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz489-post-ids.log"
+    },
+    {
+      "name": "variant-links",
+      "command": [
+        "just",
+        "validate-media-variant-links"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz489-post-variant-links.log"
+    },
+    {
+      "name": "products",
+      "command": [
+        "just",
+        "validate-products"
+      ],
+      "exit_code": 2,
+      "log": "/tmp/ingredient-media-20261007/dsmz489-post-products.log"
+    },
+    {
+      "name": "references",
+      "command": [
+        "just",
+        "validate-references",
+        "data/normalized_yaml/bacterial/lacrimispora_medium.yaml"
+      ],
+      "exit_code": 2,
+      "log": "/tmp/ingredient-media-20261007/dsmz489-post-references.log"
+    },
+    {
+      "name": "medium-affected-second-batch-readback",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "scripts/review_medium_concentration_evidence.py",
+        "--cache",
+        "/tmp/ingredient-media-20261007/sources",
+        "--plan",
+        "reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/plan.json",
+        "--verify",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz2-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-medium-stock-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz13-stock-only/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-extraction-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-komodo12-extraction/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-jcm896-final-volume/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-jcm1105-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-percent-supplements/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-public-direct/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-public-stocks/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-public-input-basis/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-rs-stock-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz111-preparation/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz125-alternatives/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz265-preparations/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz467-469-inputs/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz489-stocks/plan.json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz489-post-medium-affected-second-batch-readback.log"
+    },
+    {
+      "name": "solution-affected-second-batch-readback",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "scripts/review_solution_concentration_evidence.py",
+        "--cache",
+        "/tmp/ingredient-solutions-20261007/sources",
+        "--plan",
+        "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0500-1000/plan.json",
+        "--verify",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz2-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-medium-stock-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz13-stock-only/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-extraction-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-komodo12-extraction/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-jcm896-final-volume/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-jcm1105-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-percent-supplements/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-public-direct/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-public-stocks/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-public-input-basis/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-rs-stock-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz111-preparation/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz125-alternatives/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz265-preparations/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz467-469-inputs/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz489-stocks/plan.json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz489-post-solution-affected-second-batch-readback.log"
+    },
+    {
+      "name": "komodo-prior-readback",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "scripts/review_komodo_concentration_evidence.py",
+        "--inventory",
+        "reports/ingredient_concentration_curation/20261007-komodo-source-inventory.json",
+        "--mapping",
+        "/tmp/ingredient-media-20261007/komodo-media-list-20261007-recheck.html",
+        "--cache",
+        "/tmp/ingredient-media-20261007/sources",
+        "--plan",
+        "reports/ingredient_concentration_curation/20261007-komodo-media-1500-2000/plan.json",
+        "--verify",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz111-preparation/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz125-alternatives/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz265-preparations/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz467-469-inputs/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz489-stocks/plan.json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz489-post-komodo-prior-readback.log"
+    },
+    {
+      "name": "semantic-diff",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz489-post-semantic-diff.log",
+      "artifact": "reports/ingredient_concentration_curation/20261007-diff-audit-after-dsmz489.json"
+    },
+    {
+      "name": "coverage",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "reports/ingredient_concentration_curation/summarize_followup_coverage.py",
+        "--out",
+        "reports/ingredient_concentration_curation/20261007-followup-coverage-after-dsmz489.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz2-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-medium-stock-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz13-stock-only/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-extraction-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-komodo12-extraction/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-jcm896-final-volume/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-jcm1105-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-percent-supplements/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-public-direct/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-public-stocks/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-public-input-basis/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-rs-stock-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz111-preparation/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz125-alternatives/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz265-preparations/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz467-469-inputs/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz489-stocks/plan.json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz489-post-coverage.log"
+    },
+    {
+      "name": "retention",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "reports/ingredient_concentration_curation/20261007-dsmz125-alternatives/retention.py",
+        "--folder",
+        "reports/ingredient_concentration_curation/20261007-dsmz489-stocks",
+        "--out",
+        "reports/ingredient_concentration_curation/20261007-dsmz489-stocks/merge-retention.json"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/dsmz489-post-retention.log"
+    },
+    {
+      "name": "verify-merges",
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/dsmz489-post-verify-merges.log"
+    },
+    {
+      "name": "freshness",
+      "command": [
+        "just",
+        "audit-merge-freshness",
+        "--json"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/dsmz489-post-freshness.log",
+      "artifact": "reports/ingredient_concentration_curation/20261007-dsmz489-stocks/merge-freshness.json"
+    },
+    {
+      "name": "ruff",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "scripts/repair_dsmz489_stocks.py",
+        "tests/test_dsmz489_stocks.py",
+        "tests/test_komodo_concentration_review.py",
+        "tests/test_medium_concentration_batch.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz489-stocks/audit.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz489-post-ruff.log"
+    },
+    {
+      "name": "black",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "scripts/repair_dsmz489_stocks.py",
+        "tests/test_dsmz489_stocks.py",
+        "tests/test_komodo_concentration_review.py",
+        "tests/test_medium_concentration_batch.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz489-stocks/audit.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz489-post-black.log"
+    },
+    {
+      "name": "diff-check",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz489-post-diff-check.log"
+    },
+    {
+      "name": "tests-final",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_dsmz489_stocks.py",
+        "tests/test_medium_concentration_review.py",
+        "tests/test_komodo_concentration_review.py",
+        "tests/test_medium_concentration_batch.py",
+        "tests/test_solution_concentration_review.py",
+        "tests/test_record_io.py",
+        "tests/test_concentration_review_reports.py",
+        "tests/test_concentration_plausibility.py",
+        "--junitxml",
+        "/tmp/ingredient-media-20261007/dsmz489-tests-final.xml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz489-tests-final.log",
+      "supersedes": "tests",
+      "reason": "Initial process had loaded the old fourth-batch withholding test before the medium-489 successor chain was added. Preserve historical withholding via before_text while checking the applied successor hash."
+    },
+    {
+      "name": "test-fast-py313",
+      "command": [
+        "just",
+        "test-fast"
+      ],
+      "exit_code": 2,
+      "log": "/tmp/ingredient-media-20261007/dsmz489-test-fast-py313.log",
+      "runtime": "Cached isolated Python 3.13, UV_NO_SYNC=1; no dependency installation or maintained-project environment claimed."
+    }
+  ],
+  "test_suites": {
+    "tests": [
+      {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "1",
+        "skipped": "0",
+        "tests": "315",
+        "time": "128.806",
+        "timestamp": "2026-10-07T18:14:56.076731-07:00",
+        "hostname": "Marcins-MacBook-Pro-2.local"
+      }
+    ],
+    "tests-py313": [
+      {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "0",
+        "tests": "238",
+        "time": "54.712",
+        "timestamp": "2026-10-07T18:17:08.415485-07:00",
+        "hostname": "Marcins-MacBook-Pro-2.local"
+      }
+    ],
+    "tests-final": [
+      {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "0",
+        "tests": "315",
+        "time": "109.614",
+        "timestamp": "2026-10-07T18:35:32.599405-07:00",
+        "hostname": "Marcins-MacBook-Pro-2.local"
+      }
+    ]
+  }
+}

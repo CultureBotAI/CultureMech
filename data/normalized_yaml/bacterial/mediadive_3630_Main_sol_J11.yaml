@@ -52,6 +52,33 @@ composition:
     label: polysorbate 80
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3630
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 6,
+                      "compound": "Tween 80",
+                      "compound_id": 22,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 50,
+                      "unit": "mg",
+                      "g_l": 0.0416667,
+                      "mmol_l": 0.0318348,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[5].concentration (Tween 80)
+      in MediaDive solution 3630; locator=$.data.recipe[5] (compound_id=22). Provider
+      explicitly reports g_l=0.0416667. Arithmetic check: 50 mg * 0.001 g/mg / (1200
+      ml / 1000 ml per L) = 0.04166666666666666666666666667 g/L, consistent with the
+      reported value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1200. Retrieved 2026-10-07T09:23:09.221690+00:00;
+      response SHA256=3a61c170a54f19288908aaa9b34ad31e7193194ae0a4139ec03648909c089118.'
 - preferred_term: Glucose
   concentration:
     value: '2.5'
@@ -64,6 +91,32 @@ composition:
     label: glucose
     confidence: 0.9
     match_type: manual_curated
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3630
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 7,
+                      "compound": "Glucose",
+                      "compound_id": 5,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 3,
+                      "unit": "g",
+                      "g_l": 2.5,
+                      "mmol_l": 13.8766,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[6].concentration (Glucose)
+      in MediaDive solution 3630; locator=$.data.recipe[6] (compound_id=5). Provider
+      explicitly reports g_l=2.5. Arithmetic check: 3 g * 1 g/g / (1200 ml / 1000
+      ml per L) = 2.5 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1200. Retrieved 2026-10-07T09:23:09.221690+00:00; response SHA256=3a61c170a54f19288908aaa9b34ad31e7193194ae0a4139ec03648909c089118.'
 - preferred_term: Lactose
   concentration:
     value: '1.66667'
@@ -76,6 +129,33 @@ composition:
     label: lactose
     confidence: 0.9
     match_type: manual_curated
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3630
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 8,
+                      "compound": "Lactose",
+                      "compound_id": 394,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "g",
+                      "g_l": 1.66667,
+                      "mmol_l": 4.86902,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[7].concentration (Lactose)
+      in MediaDive solution 3630; locator=$.data.recipe[7] (compound_id=394). Provider
+      explicitly reports g_l=1.66667. Arithmetic check: 2 g * 1 g/g / (1200 ml / 1000
+      ml per L) = 1.666666666666666666666666667 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1200. Retrieved 2026-10-07T09:23:09.221690+00:00;
+      response SHA256=3a61c170a54f19288908aaa9b34ad31e7193194ae0a4139ec03648909c089118.'
 - preferred_term: Agar
   concentration:
     value: '12.5'
@@ -88,6 +168,32 @@ composition:
     label: agar
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3630
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 9,
+                      "compound": "Agar",
+                      "compound_id": 3,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 15,
+                      "unit": "g",
+                      "g_l": 12.5,
+                      "mmol_l": 37.1659,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[8].concentration (Agar) in
+      MediaDive solution 3630; locator=$.data.recipe[8] (compound_id=3). Provider
+      explicitly reports g_l=12.5. Arithmetic check: 15 g * 1 g/g / (1200 ml / 1000
+      ml per L) = 12.5 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1200. Retrieved 2026-10-07T09:23:09.221690+00:00; response SHA256=3a61c170a54f19288908aaa9b34ad31e7193194ae0a4139ec03648909c089118.'
 - preferred_term: Distilled water
   concentration:
     value: '833.3333333333334'
@@ -142,6 +248,19 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '5 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T09:30:59.704035+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/3630
+  changes: 'composition[5].concentration: {"unit": "G_PER_L", "value": "0.0416667"}
+    -> {"unit": "G_PER_L", "value": "0.0416667"} (evidence_only); composition[6].concentration:
+    {"unit": "G_PER_L", "value": "2.5"} -> {"unit": "G_PER_L", "value": "2.5"} (evidence_only);
+    composition[7].concentration: {"unit": "G_PER_L", "value": "1.66667"} -> {"unit":
+    "G_PER_L", "value": "1.66667"} (evidence_only); composition[8].concentration:
+    {"unit": "G_PER_L", "value": "12.5"} -> {"unit": "G_PER_L", "value": "12.5"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -150,3 +269,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/3630
+  title: 'MediaDive solution 3630: Main sol. J11'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=3a61c170a54f19288908aaa9b34ad31e7193194ae0a4139ec03648909c089118;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

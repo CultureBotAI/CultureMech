@@ -25,6 +25,18 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  evidence:
+  - reference: https://mediadive.dsmz.de/medium/P3
+    supports: SUPPORT
+    snippet: K2HPO4 1.5 g 1.5 8.612
+    explanation: 'Supports ingredients[0].concentration (K2HPO4) only; locator: sol-0
+      / recipe-0. User-contributed dataset formulation, not a verified sterilization/makeup
+      protocol. Table columns are Compound, Amount, Unit, Conc. [g/L], Conc. [mM];
+      the main-sol-vol value/data-volume both declare 1000 and the adjacent unit is
+      ml. No molarity is asserted from the calculated mM column. The existing mass
+      rate matches the source''s g/L column exactly. Accessed 2026-10-07; source capture
+      hashes: {"P3-medium-page.html": "5ef4a1c49d241bfd226d2b343c94f3693832d3f93b29ab9ed5b976febc449e1b"}.
+      HTML entities decoded, inline subscripts concatenated and whitespace collapsed.'
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '1.5'
@@ -36,6 +48,18 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
+  evidence:
+  - reference: https://mediadive.dsmz.de/medium/P3
+    supports: SUPPORT
+    snippet: MgSO4 x 7 H2O 1.5 g 1.5 6.086
+    explanation: 'Supports ingredients[1].concentration (MgSO4 x 7 H2O) only; locator:
+      sol-0 / recipe-1. User-contributed dataset formulation, not a verified sterilization/makeup
+      protocol. Table columns are Compound, Amount, Unit, Conc. [g/L], Conc. [mM];
+      the main-sol-vol value/data-volume both declare 1000 and the adjacent unit is
+      ml. No molarity is asserted from the calculated mM column. The existing mass
+      rate matches the source''s g/L column exactly. Accessed 2026-10-07; source capture
+      hashes: {"P3-medium-page.html": "5ef4a1c49d241bfd226d2b343c94f3693832d3f93b29ab9ed5b976febc449e1b"}.
+      HTML entities decoded, inline subscripts concatenated and whitespace collapsed.'
 - preferred_term: Proteose peptone no. 3
   concentration:
     value: '20'
@@ -44,6 +68,18 @@ ingredients:
   term:
     id: MICRO:0000180
     label: proteose peptone
+  evidence:
+  - reference: https://mediadive.dsmz.de/medium/P3
+    supports: SUPPORT
+    snippet: Proteose peptone no. 3 20.0 g 20 -
+    explanation: 'Supports ingredients[2].concentration (Proteose peptone no. 3) only;
+      locator: sol-0 / recipe-2. User-contributed dataset formulation, not a verified
+      sterilization/makeup protocol. Table columns are Compound, Amount, Unit, Conc.
+      [g/L], Conc. [mM]; the main-sol-vol value/data-volume both declare 1000 and
+      the adjacent unit is ml. No molarity is asserted from the calculated mM column.
+      The existing mass rate matches the source''s g/L column exactly. Accessed 2026-10-07;
+      source capture hashes: {"P3-medium-page.html": "5ef4a1c49d241bfd226d2b343c94f3693832d3f93b29ab9ed5b976febc449e1b"}.
+      HTML entities decoded, inline subscripts concatenated and whitespace collapsed.'
 - preferred_term: Glycerol
   concentration:
     value: '10'
@@ -55,6 +91,19 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
     label: glycerol
+  evidence:
+  - reference: https://mediadive.dsmz.de/medium/P3
+    supports: SUPPORT
+    snippet: Glycerol 10.0 ml - -
+    explanation: 'Supports ingredients[3].concentration (Glycerol) only; locator:
+      sol-0 / recipe-3. User-contributed dataset formulation, not a verified sterilization/makeup
+      protocol. Table columns are Compound, Amount, Unit, Conc. [g/L], Conc. [mM];
+      the main-sol-vol value/data-volume both declare 1000 and the adjacent unit is
+      ml. No molarity is asserted from the calculated mM column. The 10 ml glycerol
+      amount / declared 1 L recipe scale = 10 ML_PER_L; no density or mass conversion
+      is made. Accessed 2026-10-07; source capture hashes: {"P3-medium-page.html":
+      "5ef4a1c49d241bfd226d2b343c94f3693832d3f93b29ab9ed5b976febc449e1b"}. HTML entities
+      decoded, inline subscripts concatenated and whitespace collapsed.'
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -66,6 +115,18 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+  evidence:
+  - reference: https://mediadive.dsmz.de/medium/P3
+    supports: SUPPORT
+    snippet: Agar 15.0 g 15 -
+    explanation: 'Supports ingredients[4].concentration (Agar) only; locator: sol-0
+      / recipe-4. User-contributed dataset formulation, not a verified sterilization/makeup
+      protocol. Table columns are Compound, Amount, Unit, Conc. [g/L], Conc. [mM];
+      the main-sol-vol value/data-volume both declare 1000 and the adjacent unit is
+      ml. No molarity is asserted from the calculated mM column. The existing mass
+      rate matches the source''s g/L column exactly. Accessed 2026-10-07; source capture
+      hashes: {"P3-medium-page.html": "5ef4a1c49d241bfd226d2b343c94f3693832d3f93b29ab9ed5b976febc449e1b"}.
+      HTML entities decoded, inline subscripts concatenated and whitespace collapsed.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -98,8 +159,29 @@ curation_history:
   source: https://www.bacmedia.dsmz.de/medium/P3
   notes: MediaDive public Medium P3 provides King B as a 1 L solid agar recipe at
     pH 7.2.
+- timestamp: '2026-10-07T17:04:47.759246+00:00'
+  curator: codex
+  action: ADDED_PUBLIC_DIRECT_CONCENTRATION_EVIDENCE
+  notes: Exact source formulation checked; all quantities, ingredient forms, ontology
+    annotations, pH, state, existing references and prior history preserved. No new
+    growth association or variant.
+  source: https://mediadive.dsmz.de/medium/P3
+  changes: 'Added concentration evidence only: ingredients[0].concentration K2HPO4
+    retains {"unit": "G_PER_L", "value": "1.5"}; ingredients[1].concentration MgSO4
+    x 7 H2O retains {"unit": "G_PER_L", "value": "1.5"}; ingredients[2].concentration
+    Proteose peptone no. 3 retains {"unit": "G_PER_L", "value": "20"}; ingredients[3].concentration
+    Glycerol retains {"unit": "ML_PER_L", "value": "10"}; ingredients[4].concentration
+    Agar retains {"unit": "G_PER_L", "value": "15"}'
 data_quality_flags:
 - ingredients_curated
 - has_ontology_mappings
 references:
 - reference: https://www.bacmedia.dsmz.de/medium/P3
+- reference: https://mediadive.dsmz.de/medium/P3
+  title: King B - MediaDive public Medium P3
+  authors: Perrine Portier (INRAE)
+  year: 2023
+  notes: source_type=user_contributed_dataset_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-07; page creator credited as author; displayed publication/last-modified
+    date=21.06.23; year refers to this dataset page, not a journal publication. The
+    legacy bacmedia reference is retained.

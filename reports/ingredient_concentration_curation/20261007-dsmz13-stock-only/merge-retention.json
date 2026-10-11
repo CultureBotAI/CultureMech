@@ -1,0 +1,24 @@
+{
+  "records": [
+    {
+      "path": "data/normalized_yaml/bacterial/bacillus_acidocaldarius_medium.yaml",
+      "id": "CultureMech:000861",
+      "fingerprint": "6c2d5bcfee91754e7ff08ec3e0289925dfd133b76d915543bbdaf2445549532f",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/bacillus_acidocaldarius_medium.yaml"
+      ],
+      "merged_id": "CultureMech:000861",
+      "field_retention": {
+        "ingredients": true,
+        "solutions": true,
+        "preparation_steps": true,
+        "evidence": true,
+        "references": true,
+        "ph_value": true
+      },
+      "all_checked_fields_retained": true
+    }
+  ],
+  "retained": 1,
+  "all_retained": true
+}

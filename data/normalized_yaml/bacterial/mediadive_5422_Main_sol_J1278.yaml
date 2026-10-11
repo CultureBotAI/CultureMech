@@ -16,6 +16,33 @@ composition:
     label: 2-(N-morpholino)ethanesulfonic acid
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5422
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "MES",
+                      "compound_id": 824,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1.95,
+                      "unit": "g",
+                      "g_l": 1.8932,
+                      "mmol_l": 9.6968,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (MES) in
+      MediaDive solution 5422; locator=$.data.recipe[2] (compound_id=824). Provider
+      explicitly reports g_l=1.8932. Arithmetic check: 1.95 g * 1 g/g / (1030 ml /
+      1000 ml per L) = 1.893203883495145631067961165 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1030. Retrieved 2026-10-07T09:54:48.343231+00:00;
+      response SHA256=ef0d3b7807ca6150ef4c2d92ba47d7b3792bbac203a2b609b531c1b953ce7f55.'
 - preferred_term: NaHCO3
   concentration:
     value: '0.805825'
@@ -28,6 +55,33 @@ composition:
     label: sodium hydrogencarbonate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5422
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "NaHCO3",
+                      "compound_id": 55,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.83,
+                      "unit": "g",
+                      "g_l": 0.805825,
+                      "mmol_l": 9.59236,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (NaHCO3)
+      in MediaDive solution 5422; locator=$.data.recipe[3] (compound_id=55). Provider
+      explicitly reports g_l=0.805825. Arithmetic check: 0.83 g * 1 g/g / (1030 ml
+      / 1000 ml per L) = 0.8058252427184466019417475728 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1030. Retrieved 2026-10-07T09:54:48.343231+00:00;
+      response SHA256=ef0d3b7807ca6150ef4c2d92ba47d7b3792bbac203a2b609b531c1b953ce7f55.'
 - preferred_term: Sodium acetate
   concentration:
     value: '1.32039'
@@ -40,6 +94,33 @@ composition:
     label: sodium acetate
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5422
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 5,
+                      "compound": "Sodium acetate",
+                      "compound_id": 731,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1.36,
+                      "unit": "g",
+                      "g_l": 1.32039,
+                      "mmol_l": 16.0964,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[2].concentration (Sodium
+      acetate) in MediaDive solution 5422; locator=$.data.recipe[4] (compound_id=731).
+      Provider explicitly reports g_l=1.32039. Arithmetic check: 1.36 g * 1 g/g /
+      (1030 ml / 1000 ml per L) = 1.320388349514563106796116505 g/L, consistent with
+      the reported value at its precision. Evidence supports the provider-declared
+      concentration within this solution, not a concentration in a receiving medium
+      or an independently measured final volume. Water addition alone is not used
+      to infer a final volume. Additional exact excerpt at $.data.volume: "volume":
+      1030. Retrieved 2026-10-07T09:54:48.343231+00:00; response SHA256=ef0d3b7807ca6150ef4c2d92ba47d7b3792bbac203a2b609b531c1b953ce7f55.'
 - preferred_term: Sodium pyruvate
   concentration:
     value: '1.06796'
@@ -52,6 +133,33 @@ composition:
     label: sodium pyruvate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5422
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 6,
+                      "compound": "Sodium pyruvate",
+                      "compound_id": 438,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1.1,
+                      "unit": "g",
+                      "g_l": 1.06796,
+                      "mmol_l": 9.70521,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[3].concentration (Sodium
+      pyruvate) in MediaDive solution 5422; locator=$.data.recipe[5] (compound_id=438).
+      Provider explicitly reports g_l=1.06796. Arithmetic check: 1.1 g * 1 g/g / (1030
+      ml / 1000 ml per L) = 1.067961165048543689320388350 g/L, consistent with the
+      reported value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1030. Retrieved 2026-10-07T09:54:48.343231+00:00;
+      response SHA256=ef0d3b7807ca6150ef4c2d92ba47d7b3792bbac203a2b609b531c1b953ce7f55.'
 - preferred_term: Sodium fumarate
   concentration:
     value: '3.1068'
@@ -64,6 +172,33 @@ composition:
     label: disodium fumarate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5422
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 7,
+                      "compound": "Sodium fumarate",
+                      "compound_id": 1752,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 3.2,
+                      "unit": "g",
+                      "g_l": 3.1068,
+                      "mmol_l": 19.4126,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[4].concentration (Sodium
+      fumarate) in MediaDive solution 5422; locator=$.data.recipe[6] (compound_id=1752).
+      Provider explicitly reports g_l=3.1068. Arithmetic check: 3.2 g * 1 g/g / (1030
+      ml / 1000 ml per L) = 3.106796116504854368932038835 g/L, consistent with the
+      reported value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1030. Retrieved 2026-10-07T09:54:48.343231+00:00;
+      response SHA256=ef0d3b7807ca6150ef4c2d92ba47d7b3792bbac203a2b609b531c1b953ce7f55.'
 - preferred_term: L-Cysteine HCl x H2O
   concentration:
     value: '9.70873786407767'
@@ -108,6 +243,21 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-10-07T09:59:54.456952+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/5422
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "1.8932"} ->
+    {"unit": "G_PER_L", "value": "1.8932"} (evidence_only); composition[1].concentration:
+    {"unit": "G_PER_L", "value": "0.805825"} -> {"unit": "G_PER_L", "value": "0.805825"}
+    (evidence_only); composition[2].concentration: {"unit": "G_PER_L", "value": "1.32039"}
+    -> {"unit": "G_PER_L", "value": "1.32039"} (evidence_only); composition[3].concentration:
+    {"unit": "G_PER_L", "value": "1.06796"} -> {"unit": "G_PER_L", "value": "1.06796"}
+    (evidence_only); composition[4].concentration: {"unit": "G_PER_L", "value": "3.1068"}
+    -> {"unit": "G_PER_L", "value": "3.1068"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -116,3 +266,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/5422
+  title: 'MediaDive solution 5422: Main sol. J1278'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=ef0d3b7807ca6150ef4c2d92ba47d7b3792bbac203a2b609b531c1b953ce7f55;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

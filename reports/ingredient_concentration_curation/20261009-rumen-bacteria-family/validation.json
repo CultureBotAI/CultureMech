@@ -1,0 +1,233 @@
+{
+  "terminal": true,
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "normalized_count": 15910,
+  "normalized_sha256": "746bda4b9dd276ab1077245cf751a5c652fd697e6f355cb7183b49f7f93edd71",
+  "only_reviewed_records_changed": true,
+  "applied_records": 13,
+  "independent_audit_totals": {
+    "source_nodes": 214,
+    "old_quantity_slots": 187,
+    "claims": 717,
+    "new_evidence": 214,
+    "new_references": 15,
+    "new_curation_history": 13
+  },
+  "tests_passed": {
+    "focused-v2": "700 passed, 2 warnings in 122.88s (0:02:02)",
+    "fast": "12698 passed, 16 skipped, 1980 deselected, 2 warnings in 1745.93s (0:29:05)",
+    "qa": "101 passed in 110.57s (0:01:50)"
+  },
+  "reference_checks": {
+    "passed": 245,
+    "failed": 0,
+    "mode": "offline hash-checked official captures",
+    "fresh_refresh_passed": false
+  },
+  "remaining_failed_gates": [
+    {
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "exit_code": 1,
+      "log": "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/post-39.log",
+      "log_sha256": "09a2922082db841587410042dc33d7d3f72b2601f1d6b6f2b33322471ee47f2c"
+    },
+    {
+      "command": [
+        "just",
+        "audit-merge-freshness",
+        "--json"
+      ],
+      "exit_code": 1,
+      "log": "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/post-40.log",
+      "log_sha256": "c6412dc3cdd6e17c13d98988d3c192a8e21404996f407046805f5df3eb1b41a5"
+    }
+  ],
+  "merge_verification": {
+    "name_conflicts": 1247,
+    "fingerprint_issues": 3287
+  },
+  "freshness": {
+    "tracked_total": 6320,
+    "fresh_total": 10781,
+    "only_in_tracked": 4275,
+    "only_in_fresh": 8736,
+    "changed": 2045,
+    "unchanged": 0
+  },
+  "corpus_checks": {
+    "strict_scanned": 15910,
+    "ids_passed": true,
+    "product_warnings": 91,
+    "product_skipped_no_adapter": 96003,
+    "cohort_variant_findings": 0,
+    "global_variant_findings": 0,
+    "chemical_groundings_recertified": false
+  },
+  "runtime_merge_retention": {
+    "cohort_medium_shaped_records": 7,
+    "standalone_solutions_excluded": 6,
+    "routing": {
+      "total_processed": 15910,
+      "excluded_solutions": 4785,
+      "skipped_no_fingerprint": 2,
+      "skipped_error": 336,
+      "successfully_fingerprinted": 10787,
+      "reasons": {
+        "other_error": 336,
+        "no_valid_ingredients": 2
+      }
+    },
+    "groups": 10781,
+    "restored_K3032_K3131_now_grouped": true
+  },
+  "cumulative_audit": {
+    "stock_nodes_relocated": 825,
+    "new_quantity_slots": 364,
+    "unsupported_quantity_slots_removed": 869,
+    "new_evidence": 35651,
+    "new_curation_history": 5466,
+    "new_references": 5810,
+    "stock_stage_concentrations_rebased": 199,
+    "stock_descriptors_added": 241,
+    "quantity_corrections": 1455,
+    "stock_dose_basis_corrections": 128,
+    "copied_ingredient_nodes_replaced_by_reference": 37,
+    "ingredient_context_notes_added": 268,
+    "water_input_nodes_added": 27,
+    "recipe_context_notes_corrected": 26,
+    "parent_links_corrected": 7,
+    "source_amount_conflicts_repaired": 3,
+    "unquantified_carrier_nodes_added": 88,
+    "evidence_scopes_corrected": 172,
+    "ingredient_context_notes_corrected": 9,
+    "preparation_actions_corrected": 8,
+    "preparation_descriptions_corrected": 4,
+    "preparation_steps_added": 69,
+    "batch_mass_notes_unverified_concentrations": 48,
+    "duplicate_stock_nodes_removed": 1,
+    "variant_links_added": 8,
+    "explicit_medium_rates_verified": 3,
+    "unsupported_flags_removed": 1,
+    "child_links_corrected": 7,
+    "preparation_steps_relocated": 18,
+    "inline_variant_options_added": 14,
+    "water_input_notes_added": 9,
+    "extraction_preparations_added": 1,
+    "base_preparations_added": 9,
+    "preparation_records_restored": 3,
+    "supplement_nodes_moved_to_variants": 4,
+    "corrected_evidence_snippets": 2,
+    "stock_context_notes_corrected": 8,
+    "extraction_preparations_restructured": 2,
+    "source_version_alternatives_added": 4,
+    "copied_ingredient_nodes_removed": 3,
+    "composition_classifications_corrected": 2,
+    "final_quantity_slots_added": 1,
+    "explicitly_omitted_ingredient_nodes": 1,
+    "ingredient_source_attributions_corrected": 1,
+    "bibliographic_entries_enriched": 1,
+    "excluded_alternative_nodes_removed": 1,
+    "ingredient_labels_corrected": 1,
+    "preparation_text_encodings_corrected": 1,
+    "unquantified_solvent_nodes_added": 1,
+    "ingredient_doses_relocated_to_stock": 1,
+    "identity_conflicts_retained_unquantified": 2,
+    "unquantified_makeup_nodes_added": 1,
+    "stock_preparation_notes_added": 1,
+    "edited_records": 5255
+  },
+  "followup_unique_records": 11802,
+  "outside_this_followup": 4108,
+  "remaining_queues": {
+    "identity": 35,
+    "M142_separate": 71
+  },
+  "remaining_inventory": {
+    "family_count": 29,
+    "external_neighbor_count": 1,
+    "identity_error_count": 4,
+    "title_candidate_entries": 4862,
+    "title_candidate_paths": 4860
+  },
+  "taxa_media_associations_added": 0,
+  "environment_limit": "Existing partial locked Python 3.13 environment, not clean CI or full-suite certification",
+  "receipt_sha256": {
+    "apply": "0eac0c8a6efb8ecddb797fb02280104b0a3e2a78ae1200eca1a142b9c687f7b4",
+    "audit": "7e23a57a29981e8cc93dbccfda223c13a8c6e48248f9f72fe0f905ca8a7be3b0",
+    "corpus": "c719404d4cacebb5c6a63258a5426af0785e72ed444856ac0bc8a115ae874b8f",
+    "cumulative-audit": "a547f81154c07d109666d3906b113c27f66378ceb50a382894e0bfb76fb0a90e",
+    "fast": "79aedffdd2b4bf09f7ebaf890685aeddb3aa302c275ebf7be7b0c7b539125b02",
+    "focused": "0d0d877243af66fcd486ed42d8396a14c1d360f24e55bbcfc2203dbaf45a9ad3",
+    "focused-v2": "7054778d36d9cbd854bc24512d8a671f91af8b086b2954d4caaae28b18b252b0",
+    "followup-coverage": "e0ee65914cc27c91b33dab90948952028a0550fdcc814dc3e1cf7ba20b30cbd9",
+    "index-refresh-plan": "50dc1fde521079c7ce964183c33ebf153d70f3802dbc1937978b3a5e7c8df547",
+    "ledgers": "d12917db384bddef7629b7ae52561074a8b15e86757592e6cad30d2d5dad3a29",
+    "next-lb-identity-context": "462d2215624ef2798b5ea230e1bf6e8fd4470458960d61af86d5c5dd2f05b270",
+    "plan": "5940d6a1b64c0f21408a6bde46512049cb4cbfff12cb80ae9061c5c6edfd3a1f",
+    "post": "301aad5102f2837dd184c0cb85d4ecc3803cb457d7e40bad6d70ecd34ba2c8c4",
+    "presentation": "ab6dc950f2e10faa9a28e337dd778f661483867ff6cd53ca5de1c906eaf90c6d",
+    "presentation-applied": "816e66e73a8d375f574cb806fd68b2ab118e747065a7b31bb7acd45ea0b7eeea",
+    "preview-reviewed": "e2711312040c546d3e7cccde3616cc4d7a1126a9e01b0a1a0f4b1bbf83bc5542",
+    "qa": "50ee5a3968f35c22da72ced21648cb4ee85f9966b61117a69142f52258354d33",
+    "reconcile-indexes": "b50f14cd672462af0ca05ccb70eef95258d8e5a036833a5e1d7e67371af26389",
+    "reconcile-reports": "df0af840affd690230d8c41823cf58daded8daad63e9012482ce0282f0b9eb3d",
+    "reconcile-retention": "d281c11a4a3bbb4bfebe46e61cd89f3659bcdb768a4cacccf09578e72d5efbe7",
+    "references": "4e5bf66bf251052698d9700d2e2c5f9e6c33d137294562f12d9dcd4f5917d888",
+    "remaining-inventory": "10c04baacac1608b1b03543b20dd5f9154d1aae7167d5c15a00d49702f184f2c",
+    "remaining-queue": "6a1832e0120b13eae7c35e102f87d9372026e53c73e92a17f9af93ddb14f7250",
+    "schema": "60ba8bae206701dc80293223ca50ef5c2f282084c9e3c02e3d6768a6b9e8b85e",
+    "validation-preview": "8f9525e7127628bb6c3741f21ddaef5cf0ec3221e275f24293d63ef2d71dba99"
+  },
+  "code_sha256": {
+    "scripts/repair_rumen_bacteria_family.py": "d3c23bf4b7141ffcc038f596fc7cad69c19372a5ecedaee21dbf6d99950fdf36",
+    "tests/test_rumen_bacteria_family.py": "4fabfda109e7a4105722e156ff591eb8e8b8b0144ddf3898f9539de75677cb6a",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/audit.py": "8d886bcd4799b6c216b8aaab16f130f126ab253bbc963fdedc4e37f0b22d1890",
+    "scripts/repair_oteb_family.py": "90aa83324ff1b28708921a00c409f50b4c4bd12eb15f09ae8feb0e1010916795",
+    "scripts/repair_methanogen_stock_boundaries.py": "8d4d32c7dc3cb2586242a188f958087482df3aff553d1dbc468c422eddb037ba",
+    "scripts/repair_lactalbumin_formulations.py": "3c16a3f4a2e543d280d3ccbb20a63138f2b409602d8b168b7fc742abe63b1769",
+    "scripts/repair_jcm_stock_preparations.py": "7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a",
+    "scripts/repair_mediadive_stock_concentration_evidence.py": "1badfa99205690cf6082d95db7dafbd6d4927b617027bc61fbaaf9dbd597c974",
+    "scripts/review_medium_concentration_evidence.py": "ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a",
+    "src/culturemech/validation/recipe_references.py": "1ef57389727347c242f45a85a9ed8908803423bc10307f53a888dac67ce06b67",
+    "src/culturemech/validation/write_validated.py": "8e1e2185231caecbe3dc99908c783cd83340b1e93fa9115ff1445d4b3820897e",
+    "src/culturemech/schema/culturemech.yaml": "461478d900fdee29a52c3d14656bcf369443bfdd0f4a534aa9d385f25df1cf8a",
+    "tests/test_medium_concentration_batch.py": "033c0df92fd5efe88ea30efad271b69b16464441f241a70178b417af994c51b5",
+    "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "312a8f916ff532d9ebd191e3879850e1476615a8d2999770f0547545b6d6e439",
+    "tests/conftest.py": "f43cf452431b950a079fcee0a3c7e978067039fba749c956da1c94510c33b68b",
+    "scripts/validate_media_variant_links.py": "d18ef71320a0c50abe085e151d0d0d4d963007d1e1c9afbefab97581a983e31e"
+  },
+  "canonical_report_sha256": {
+    "reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/records/bacterial/JCM_J1029_RUMEN_BACTERIA_MEDIUM.yaml.md": "743a51bc3967f6ff27e9e7caccad37a3b098b2cc71a6bebb162f71b8c6e1c0d4",
+    "reports/ingredient_concentration_curation/20261007-komodo-media-1000-1500/records/bacterial/KOMODO_330_RUMEN_BACTERIA_medium.yaml.md": "bf8216325d7b6a3b9936bcee0c49ead3cf0c87e4752294b7336bf2cc7ffdd204",
+    "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/applied-records/M1093.md": "df20daf4ad83475bb4e6600d2e3c501e676e5711f7b6d5b7fc2c58c196532aa5",
+    "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0000-0500/records/bacterial/mediadive_124_Haemin_solution.yaml.md": "43c248c97142b7eff07019ac2d49a69a010d4ad7c6bdc19dd85bc99c6f64ed82",
+    "reports/ingredient_concentration_curation/20261007-mediadive-solutions-2500-3000/records/bacterial/mediadive_3774_VFA_solution.yaml.md": "8b9debd87eb9fefc8eac6bcab22ec543fd566bc39e2cd1761f7dbb6bf6d7fd86",
+    "reports/ingredient_concentration_curation/20261007-mediadive-solutions-3500-4000/records/bacterial/mediadive_5080_Main_sol_J1029.yaml.md": "a2926044df933bea47dd5593a52da26bd9e6a942aaa069889dcc20f247e7ec9f",
+    "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0000-0500/records/bacterial/mediadive_606_Main_sol_330.yaml.md": "c15436a7eb6ab2ac61d62d86a1066540b9c661dea7cbc2697700bdc8d0d01879",
+    "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0000-0500/records/bacterial/mediadive_607_Mineral_solution.yaml.md": "d245dd9efcea3ae15ce7896aaa6d510bb9e25f7d5fdf7a6ab3e788ee00e5a499",
+    "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0000-0500/records/bacterial/mediadive_608_Volatile_fatty_acid_mixture.yaml.md": "739c5078fa70f523ee37915666e826b596a93bd72668116cb30165eb8fb3689e",
+    "reports/ingredient_concentration_curation/20261007-komodo-media-1000-1500/records/bacterial/medium_330_modified_for_dsm_17630.yaml.md": "366239bb4ff1d06af541e1e1637daf3bf86773d7c757614233d2fc151a3b6027",
+    "reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/mineral_solution_medium_330.yaml.md": "d33bfcc10f5887c9dfa946d5f4529b320cf28ef8c5d67bae395c98247eaf5aac",
+    "reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/bacterial/rumen_bacteria_medium.yaml.md": "3bbbd53de5d1806b34d4e28854040b1bea7441afee100fe0c0e43a96a75a8e0f",
+    "reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/volatile_fatty_acid_mixture_medium_330.yaml.md": "d232745b6129c4fc44463a696153c6990ec1238c94bb21e4a8b1609ac1c6ece4"
+  },
+  "applied_ledger_sha256": {
+    "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/applied-records/D330.md": "8795d56fc5a5a517aa16b7eccb214b1610428f6911d86b29a7bdeaad7329cebd",
+    "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/applied-records/DJ1029.md": "337f75eecd1d728b9a526d6010297edd8198595291d507b7b94968d30c96ad0b",
+    "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/applied-records/K3032.md": "6ee03e0cccb9e67ac90c10f6d75257b81f90aa5a174efe3f5624f34d091e3669",
+    "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/applied-records/K3131.md": "57a6a2f9b00475a7f4f87937311876fcbbcbf7102eade2bec9b231fc0bf8c592",
+    "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/applied-records/K330.md": "f3d9c671a1ba5c2bf85f2e0a225089608619949f280519bde0403fbf03f90e33",
+    "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/applied-records/K330_17630.md": "4aa43f08b62d3f823ac6fd7d6393774eef757ba69cbf783225704f2124521bc8",
+    "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/applied-records/M1093.md": "df20daf4ad83475bb4e6600d2e3c501e676e5711f7b6d5b7fc2c58c196532aa5",
+    "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/applied-records/S124.md": "8454addc5ac737bb1e1297bd3246eed0e7ff28d05734eee4de9873a909ed2bd9",
+    "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/applied-records/S3774.md": "ad9de699c59c213ce4fd5a082b1af496ba4c839ccc685600e63d422ee3e5ba6f",
+    "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/applied-records/S5080.md": "1f279b46cbc5d92ade0e1778df100ee4e7f98cf89e6422bc58e1e8aa760c05f9",
+    "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/applied-records/S606.md": "09a696d0fff32404a4eba3602577d792e4450d5467dd5c26ed5dc121670b3288",
+    "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/applied-records/S607.md": "3b1588b7e89d8e5377f69036dacddc81ca176596615c777a5640cea6bcdba607",
+    "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/applied-records/S608.md": "ee15a93bbedbe0e4ca5cf2b123ef2a03efe3aa81b2719b2c0d9db557b95a87a8"
+  }
+}

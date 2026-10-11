@@ -15,6 +15,32 @@ composition:
     id: CHEBI:131361
     label: disodium selenite pentahydrate
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3981
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "Na2SeO3 x 5 H2O",
+                      "compound_id": 107,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 4,
+                      "unit": "mg",
+                      "g_l": 0.004,
+                      "mmol_l": 0.0152083,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Na2SeO3
+      x 5 H2O) in MediaDive solution 3981. Locator: $.data.recipe[0] (compound_id=107).
+      Source explicitly reports g_l=0.004 for this stock; additional exact excerpt
+      at $.data.volume: "volume": 1000. Cross-check: 4 mg = 0.004 g; 0.004 g / 1 L
+      = 0.004 g/L. This supports the provider-declared stock concentration, not a
+      concentration in any receiving medium. The API normalization is distinguished
+      from the water addition; the latter alone does not prove a measured final volume.
+      Inspected 2026-10-07; response SHA256=f31ddb3c46606d262bb9d8fa48f9ea5d4bab81c8917dc35dce7a7f0da6369a23.'
 - preferred_term: Na2WO4 x 2 H2O
   concentration:
     value: '0.004'
@@ -27,10 +53,36 @@ composition:
     label: sodium tungstate dihydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3981
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Na2WO4 x 2 H2O",
+                      "compound_id": 249,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 4,
+                      "unit": "mg",
+                      "g_l": 0.004,
+                      "mmol_l": 0.0121267,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Na2WO4
+      x 2 H2O) in MediaDive solution 3981. Locator: $.data.recipe[1] (compound_id=249).
+      Source explicitly reports g_l=0.004 for this stock; additional exact excerpt
+      at $.data.volume: "volume": 1000. Cross-check: 4 mg = 0.004 g; 0.004 g / 1 L
+      = 0.004 g/L. This supports the provider-declared stock concentration, not a
+      concentration in any receiving medium. The API normalization is distinguished
+      from the water addition; the latter alone does not prove a measured final volume.
+      Inspected 2026-10-07; response SHA256=f31ddb3c46606d262bb9d8fa48f9ea5d4bab81c8917dc35dce7a7f0da6369a23.'
 - preferred_term: Distilled water
   concentration:
-    value: '1000'
-    unit: PERCENT_V_V
+    value: '1'
+    unit: L
   term:
     id: mediadive.compound:4
     label: Distilled water
@@ -39,6 +91,29 @@ composition:
     label: water
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3981
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1000,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[2].concentration (Distilled
+      water) in MediaDive solution 3981. Locator: $.data.recipe[2] (compound_id=4).
+      Batch water amount: 1000 ml / 1000 ml per L = 1 L. This is the source''s water
+      addition, not a volume percentage or an independently measured final stock volume.
+      Inspected 2026-10-07; response SHA256=f31ddb3c46606d262bb9d8fa48f9ea5d4bab81c8917dc35dce7a7f0da6369a23.'
 curation_history:
 - timestamp: '2026-03-13T06:20:29.044911Z'
   curator: culturemech-id-assigner-v1.0
@@ -72,6 +147,18 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T08:01:08.205828+00:00'
+  curator: codex
+  action: CURATED_MEDIADIVE_STOCK_CONCENTRATION_EVIDENCE
+  notes: Exact source snippets added for supported claims. Water dose separated from
+    final-volume make-up; unsupported claims and earlier provenance retained. Arithmetic
+    is in each evidence explanation.
+  source: https://mediadive.dsmz.de/rest/solution/3981
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "0.004"} ->
+    {"unit": "G_PER_L", "value": "0.004"} (evidence_only); composition[1].concentration:
+    {"unit": "G_PER_L", "value": "0.004"} -> {"unit": "G_PER_L", "value": "0.004"}
+    (evidence_only); composition[2].concentration: {"unit": "PERCENT_V_V", "value":
+    "1000"} -> {"unit": "L", "value": "1"} (correct)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -80,3 +167,11 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/3981
+  title: 'MediaDive solution 3981: Se/W solution'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=f31ddb3c46606d262bb9d8fa48f9ea5d4bab81c8917dc35dce7a7f0da6369a23;
+    individual authors and publication year not provided by this response. Ingredient
+    identity matched by upstream solution and compound IDs, labels, and chemical forms.
+    Provider-reported stock concentrations are not final-medium concentrations.

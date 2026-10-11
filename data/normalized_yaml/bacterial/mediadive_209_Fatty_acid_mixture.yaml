@@ -6,8 +6,8 @@ term:
 composition:
 - preferred_term: Isobutyric acid
   concentration:
-    value: '23'
-    unit: PERCENT_V_V
+    value: '0.023'
+    unit: L
   term:
     id: mediadive.compound:222
     label: Isobutyric acid
@@ -16,10 +16,434 @@ composition:
     label: isobutyric acid
     confidence: 1.0
     match_type: exact_match
+  notes: 'Exact liquid input per preparation, not a percentage, mass, measured final
+    volume or universal working dose Source input: 23 ml; stage=Fatty acid mixture.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/209
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "Isobutyric acid",
+                      "compound_id": 222,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 23,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[0].preferred_term: Exact liquid input per preparation, not a percentage, mass, measured final volume or universal working dose Source input: 23 ml; stage=Fatty acid mixture. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[0]; accessed=2026-10-09T09:25:31.827836+00:00; capture SHA256=48f0e4db9cadd5a87adfa072e911f30e2e531abf274945f5a15d221760acd6af.
+
+      Additional exact excerpt: {
+                      "recipe_order": 1,
+                      "compound": "Isobutyric acid",
+                      "compound_id": 222,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 23,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[0].concentration: Exact liquid input per preparation, not a percentage, mass, measured final volume or universal working dose Source input: 23 ml; stage=Fatty acid mixture. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[0]; accessed=2026-10-09T09:25:31.827836+00:00; capture SHA256=48f0e4db9cadd5a87adfa072e911f30e2e531abf274945f5a15d221760acd6af.
+
+      Additional exact excerpt: {
+                      "recipe_order": 1,
+                      "compound": "Isobutyric acid",
+                      "compound_id": 222,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 23,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[0].notes: Exact liquid input per preparation, not a percentage, mass, measured final volume or universal working dose Source input: 23 ml; stage=Fatty acid mixture. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[0]; accessed=2026-10-09T09:25:31.827836+00:00; capture SHA256=48f0e4db9cadd5a87adfa072e911f30e2e531abf274945f5a15d221760acd6af.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "Isobutyric acid",
+                      "compound_id": 222,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 23,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "DL-2-Methylbutyric acid",
+                      "compound_id": 223,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 27,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 3,
+                      "compound": "Valeric acid",
+                      "compound_id": 224,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 27,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 4,
+                      "compound": "Isovaleric acid",
+                      "compound_id": 225,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 27,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 5,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 896,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+              ]
+      ingredients: Represent every exact source row in composition; remove the false placeholder and only its incomplete-composition flag. This does not recertify chemical mappings or measured final volumes. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe; accessed=2026-10-09T09:25:31.827836+00:00; capture SHA256=48f0e4db9cadd5a87adfa072e911f30e2e531abf274945f5a15d221760acd6af.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "Isobutyric acid",
+                      "compound_id": 222,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 23,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "DL-2-Methylbutyric acid",
+                      "compound_id": 223,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 27,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 3,
+                      "compound": "Valeric acid",
+                      "compound_id": 224,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 27,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 4,
+                      "compound": "Isovaleric acid",
+                      "compound_id": 225,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 27,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 5,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 896,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+              ]
+      data_quality_flags: Represent every exact source row in composition; remove the false placeholder and only its incomplete-composition flag. This does not recertify chemical mappings or measured final volumes. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe; accessed=2026-10-09T09:25:31.827836+00:00; capture SHA256=48f0e4db9cadd5a87adfa072e911f30e2e531abf274945f5a15d221760acd6af.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "Isobutyric acid",
+                      "compound_id": 222,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 23,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "DL-2-Methylbutyric acid",
+                      "compound_id": 223,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 27,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 3,
+                      "compound": "Valeric acid",
+                      "compound_id": 224,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 27,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 4,
+                      "compound": "Isovaleric acid",
+                      "compound_id": 225,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 27,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 5,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 896,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+              ]
+      notes: Complete inspected source rows define this reconstruction. Archive false LB expansions, flattened quantities and placeholders in append-only history. Preserve earlier supported evidence exactly; unrelated chemical annotations are not recertified. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T09:25:31.827836+00:00; capture SHA256=48f0e4db9cadd5a87adfa072e911f30e2e531abf274945f5a15d221760acd6af.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "Isobutyric acid",
+                      "compound_id": 222,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 23,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "DL-2-Methylbutyric acid",
+                      "compound_id": 223,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 27,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 3,
+                      "compound": "Valeric acid",
+                      "compound_id": 224,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 27,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 4,
+                      "compound": "Isovaleric acid",
+                      "compound_id": 225,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 27,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 5,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 896,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+              ]
+      notes: Complete inspected source rows define this reconstruction. Archive false LB expansions, flattened quantities and placeholders in append-only history. Preserve earlier supported evidence exactly; unrelated chemical annotations are not recertified. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T09:25:31.827836+00:00; capture SHA256=48f0e4db9cadd5a87adfa072e911f30e2e531abf274945f5a15d221760acd6af.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "Isobutyric acid",
+                      "compound_id": 222,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 23,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "DL-2-Methylbutyric acid",
+                      "compound_id": 223,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 27,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 3,
+                      "compound": "Valeric acid",
+                      "compound_id": 224,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 27,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 4,
+                      "compound": "Isovaleric acid",
+                      "compound_id": 225,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 27,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 5,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 896,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+              ]
+      notes: Withdraw an old false LB, placeholder, unsupported copied ingredient or flattened stock quantity from the current formulation; preserve its exact value in history. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe; accessed=2026-10-09T09:25:31.827836+00:00; capture SHA256=48f0e4db9cadd5a87adfa072e911f30e2e531abf274945f5a15d221760acd6af.
 - preferred_term: DL-2-Methylbutyric acid
   concentration:
-    value: '27'
-    unit: PERCENT_V_V
+    value: '0.027'
+    unit: L
   term:
     id: mediadive.compound:223
     label: DL-2-Methylbutyric acid
@@ -28,10 +452,64 @@ composition:
     label: 2-methylbutyric acid
     confidence: 0.9
     match_type: manual_curated
+  notes: 'Exact liquid input per preparation, not a percentage, mass, measured final
+    volume or universal working dose Source input: 27 ml; stage=Fatty acid mixture.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/209
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "DL-2-Methylbutyric acid",
+                      "compound_id": 223,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 27,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[1].preferred_term: Exact liquid input per preparation, not a percentage, mass, measured final volume or universal working dose Source input: 27 ml; stage=Fatty acid mixture. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[1]; accessed=2026-10-09T09:25:31.827836+00:00; capture SHA256=48f0e4db9cadd5a87adfa072e911f30e2e531abf274945f5a15d221760acd6af.
+
+      Additional exact excerpt: {
+                      "recipe_order": 2,
+                      "compound": "DL-2-Methylbutyric acid",
+                      "compound_id": 223,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 27,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[1].concentration: Exact liquid input per preparation, not a percentage, mass, measured final volume or universal working dose Source input: 27 ml; stage=Fatty acid mixture. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[1]; accessed=2026-10-09T09:25:31.827836+00:00; capture SHA256=48f0e4db9cadd5a87adfa072e911f30e2e531abf274945f5a15d221760acd6af.
+
+      Additional exact excerpt: {
+                      "recipe_order": 2,
+                      "compound": "DL-2-Methylbutyric acid",
+                      "compound_id": 223,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 27,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[1].notes: Exact liquid input per preparation, not a percentage, mass, measured final volume or universal working dose Source input: 27 ml; stage=Fatty acid mixture. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[1]; accessed=2026-10-09T09:25:31.827836+00:00; capture SHA256=48f0e4db9cadd5a87adfa072e911f30e2e531abf274945f5a15d221760acd6af.
 - preferred_term: Valeric acid
   concentration:
-    value: '27'
-    unit: PERCENT_V_V
+    value: '0.027'
+    unit: L
   term:
     id: mediadive.compound:224
     label: Valeric acid
@@ -40,10 +518,64 @@ composition:
     label: valeric acid
     confidence: 1.0
     match_type: exact_match
+  notes: 'Exact liquid input per preparation, not a percentage, mass, measured final
+    volume or universal working dose Source input: 27 ml; stage=Fatty acid mixture.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/209
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "Valeric acid",
+                      "compound_id": 224,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 27,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[2].preferred_term: Exact liquid input per preparation, not a percentage, mass, measured final volume or universal working dose Source input: 27 ml; stage=Fatty acid mixture. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[2]; accessed=2026-10-09T09:25:31.827836+00:00; capture SHA256=48f0e4db9cadd5a87adfa072e911f30e2e531abf274945f5a15d221760acd6af.
+
+      Additional exact excerpt: {
+                      "recipe_order": 3,
+                      "compound": "Valeric acid",
+                      "compound_id": 224,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 27,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[2].concentration: Exact liquid input per preparation, not a percentage, mass, measured final volume or universal working dose Source input: 27 ml; stage=Fatty acid mixture. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[2]; accessed=2026-10-09T09:25:31.827836+00:00; capture SHA256=48f0e4db9cadd5a87adfa072e911f30e2e531abf274945f5a15d221760acd6af.
+
+      Additional exact excerpt: {
+                      "recipe_order": 3,
+                      "compound": "Valeric acid",
+                      "compound_id": 224,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 27,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[2].notes: Exact liquid input per preparation, not a percentage, mass, measured final volume or universal working dose Source input: 27 ml; stage=Fatty acid mixture. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[2]; accessed=2026-10-09T09:25:31.827836+00:00; capture SHA256=48f0e4db9cadd5a87adfa072e911f30e2e531abf274945f5a15d221760acd6af.
 - preferred_term: Isovaleric acid
   concentration:
-    value: '27'
-    unit: PERCENT_V_V
+    value: '0.027'
+    unit: L
   term:
     id: mediadive.compound:225
     label: Isovaleric acid
@@ -52,10 +584,64 @@ composition:
     label: isovaleric acid
     confidence: 1.0
     match_type: exact_match
+  notes: 'Exact liquid input per preparation, not a percentage, mass, measured final
+    volume or universal working dose Source input: 27 ml; stage=Fatty acid mixture.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/209
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "Isovaleric acid",
+                      "compound_id": 225,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 27,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[3].preferred_term: Exact liquid input per preparation, not a percentage, mass, measured final volume or universal working dose Source input: 27 ml; stage=Fatty acid mixture. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[3]; accessed=2026-10-09T09:25:31.827836+00:00; capture SHA256=48f0e4db9cadd5a87adfa072e911f30e2e531abf274945f5a15d221760acd6af.
+
+      Additional exact excerpt: {
+                      "recipe_order": 4,
+                      "compound": "Isovaleric acid",
+                      "compound_id": 225,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 27,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[3].concentration: Exact liquid input per preparation, not a percentage, mass, measured final volume or universal working dose Source input: 27 ml; stage=Fatty acid mixture. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[3]; accessed=2026-10-09T09:25:31.827836+00:00; capture SHA256=48f0e4db9cadd5a87adfa072e911f30e2e531abf274945f5a15d221760acd6af.
+
+      Additional exact excerpt: {
+                      "recipe_order": 4,
+                      "compound": "Isovaleric acid",
+                      "compound_id": 225,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 27,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[3].notes: Exact liquid input per preparation, not a percentage, mass, measured final volume or universal working dose Source input: 27 ml; stage=Fatty acid mixture. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[3]; accessed=2026-10-09T09:25:31.827836+00:00; capture SHA256=48f0e4db9cadd5a87adfa072e911f30e2e531abf274945f5a15d221760acd6af.
 - preferred_term: Distilled water
   concentration:
-    value: '896'
-    unit: PERCENT_V_V
+    value: '0.896'
+    unit: L
   term:
     id: mediadive.compound:4
     label: Distilled water
@@ -64,6 +650,75 @@ composition:
     label: water
     confidence: 0.7
     match_type: corpus_consensus
+  notes: 'Exact liquid input per preparation, not a percentage, mass, measured final
+    volume or universal working dose Source input: 896 ml; stage=Fatty acid mixture.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/209
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 5,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 896,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[4].preferred_term: Exact liquid input per preparation, not a percentage, mass, measured final volume or universal working dose Source input: 896 ml; stage=Fatty acid mixture. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[4]; accessed=2026-10-09T09:25:31.827836+00:00; capture SHA256=48f0e4db9cadd5a87adfa072e911f30e2e531abf274945f5a15d221760acd6af.
+
+      Additional exact excerpt: {
+                      "recipe_order": 5,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 896,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[4].concentration: Exact liquid input per preparation, not a percentage, mass, measured final volume or universal working dose Source input: 896 ml; stage=Fatty acid mixture. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[4]; accessed=2026-10-09T09:25:31.827836+00:00; capture SHA256=48f0e4db9cadd5a87adfa072e911f30e2e531abf274945f5a15d221760acd6af.
+
+      Additional exact excerpt: {
+                      "recipe_order": 5,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 896,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[4].notes: Exact liquid input per preparation, not a percentage, mass, measured final volume or universal working dose Source input: 896 ml; stage=Fatty acid mixture. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[4]; accessed=2026-10-09T09:25:31.827836+00:00; capture SHA256=48f0e4db9cadd5a87adfa072e911f30e2e531abf274945f5a15d221760acd6af.
+- preferred_term: NaOH
+  notes: Source identifies this titrant and pH target but gives no fixed amount; do
+    not infer zero or a typical concentration
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/209
+    supports: SUPPORT
+    snippet: Adjust pH to 7.5 with concentrated NaOH.
+    explanation: |-
+      composition[5].preferred_term: Source identifies this titrant and pH target but gives no fixed amount; do not infer zero or a typical concentration No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.steps[0].step; accessed=2026-10-09T09:25:31.827836+00:00; capture SHA256=48f0e4db9cadd5a87adfa072e911f30e2e531abf274945f5a15d221760acd6af.
+
+      Additional exact excerpt: Adjust pH to 7.5 with concentrated NaOH.
+      composition[5].concentration: Source identifies this titrant and pH target but gives no fixed amount; do not infer zero or a typical concentration No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.steps[0].step; accessed=2026-10-09T09:25:31.827836+00:00; capture SHA256=48f0e4db9cadd5a87adfa072e911f30e2e531abf274945f5a15d221760acd6af.
+
+      Additional exact excerpt: Adjust pH to 7.5 with concentrated NaOH.
+      composition[5].notes: Source identifies this titrant and pH target but gives no fixed amount; do not infer zero or a typical concentration No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.steps[0].step; accessed=2026-10-09T09:25:31.827836+00:00; capture SHA256=48f0e4db9cadd5a87adfa072e911f30e2e531abf274945f5a15d221760acd6af.
 preparation_notes: Adjust pH to 7.5 with concentrated NaOH.
 curation_history:
 - timestamp: '2026-03-13T06:20:20.069200Z'
@@ -98,11 +753,328 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
-ingredients:
-- preferred_term: See source for composition
-  concentration:
-    value: variable
-    unit: VARIABLE
-data_quality_flags:
-- incomplete_composition
+- timestamp: '2026-10-09T09:34:31.181526+00:00'
+  curator: codex
+  action: RESTORED_METHANOFOLLIS_SOURCE_FORMULATIONS_WITH_EVIDENCE
+  notes: Restore distinct medium161 source formulations, stock scopes, input units
+    and unquantified titrants with exact evidence. Preserve prior supported entries
+    and unknown quantities; correct false duplicate direction and stale paths. No
+    growth association added.
+  source: https://mediadive.dsmz.de/rest/solution/209
+  changes: '[{"old_field": "composition[0].preferred_term", "field": "composition[0].preferred_term",
+    "old": "Isobutyric acid", "new": "Isobutyric acid", "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/solution/209", "snippet": "{\n                \"recipe_order\":
+    1,\n                \"compound\": \"Isobutyric acid\",\n                \"compound_id\":
+    222,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 23,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[0].concentration", "field": "composition[0].concentration",
+    "old": {"value": "23", "unit": "PERCENT_V_V"}, "new": {"value": "0.023", "unit":
+    "L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/209",
+    "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\":
+    \"Isobutyric acid\",\n                \"compound_id\": 222,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 23,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[0].notes", "field": "composition[0].notes",
+    "old": null, "new": "Exact liquid input per preparation, not a percentage, mass,
+    measured final volume or universal working dose Source input: 23 ml; stage=Fatty
+    acid mixture.", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/209",
+    "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\":
+    \"Isobutyric acid\",\n                \"compound_id\": 222,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 23,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[1].preferred_term", "field": "composition[1].preferred_term",
+    "old": "DL-2-Methylbutyric acid", "new": "DL-2-Methylbutyric acid", "status":
+    "correct", "reference": "https://mediadive.dsmz.de/rest/solution/209", "snippet":
+    "{\n                \"recipe_order\": 2,\n                \"compound\": \"DL-2-Methylbutyric
+    acid\",\n                \"compound_id\": 223,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 27,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[1].concentration", "field": "composition[1].concentration",
+    "old": {"value": "27", "unit": "PERCENT_V_V"}, "new": {"value": "0.027", "unit":
+    "L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/209",
+    "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\":
+    \"DL-2-Methylbutyric acid\",\n                \"compound_id\": 223,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 27,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[1].notes", "field": "composition[1].notes",
+    "old": null, "new": "Exact liquid input per preparation, not a percentage, mass,
+    measured final volume or universal working dose Source input: 27 ml; stage=Fatty
+    acid mixture.", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/209",
+    "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\":
+    \"DL-2-Methylbutyric acid\",\n                \"compound_id\": 223,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 27,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[2].preferred_term", "field": "composition[2].preferred_term",
+    "old": "Valeric acid", "new": "Valeric acid", "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/solution/209", "snippet": "{\n                \"recipe_order\":
+    3,\n                \"compound\": \"Valeric acid\",\n                \"compound_id\":
+    224,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 27,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[2].concentration", "field": "composition[2].concentration",
+    "old": {"value": "27", "unit": "PERCENT_V_V"}, "new": {"value": "0.027", "unit":
+    "L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/209",
+    "snippet": "{\n                \"recipe_order\": 3,\n                \"compound\":
+    \"Valeric acid\",\n                \"compound_id\": 224,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 27,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[2].notes", "field": "composition[2].notes",
+    "old": null, "new": "Exact liquid input per preparation, not a percentage, mass,
+    measured final volume or universal working dose Source input: 27 ml; stage=Fatty
+    acid mixture.", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/209",
+    "snippet": "{\n                \"recipe_order\": 3,\n                \"compound\":
+    \"Valeric acid\",\n                \"compound_id\": 224,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 27,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[3].preferred_term", "field": "composition[3].preferred_term",
+    "old": "Isovaleric acid", "new": "Isovaleric acid", "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/solution/209", "snippet": "{\n                \"recipe_order\":
+    4,\n                \"compound\": \"Isovaleric acid\",\n                \"compound_id\":
+    225,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 27,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[3].concentration", "field": "composition[3].concentration",
+    "old": {"value": "27", "unit": "PERCENT_V_V"}, "new": {"value": "0.027", "unit":
+    "L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/209",
+    "snippet": "{\n                \"recipe_order\": 4,\n                \"compound\":
+    \"Isovaleric acid\",\n                \"compound_id\": 225,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 27,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[3].notes", "field": "composition[3].notes",
+    "old": null, "new": "Exact liquid input per preparation, not a percentage, mass,
+    measured final volume or universal working dose Source input: 27 ml; stage=Fatty
+    acid mixture.", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/209",
+    "snippet": "{\n                \"recipe_order\": 4,\n                \"compound\":
+    \"Isovaleric acid\",\n                \"compound_id\": 225,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 27,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[4].preferred_term", "field": "composition[4].preferred_term",
+    "old": "Distilled water", "new": "Distilled water", "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/solution/209", "snippet": "{\n                \"recipe_order\":
+    5,\n                \"compound\": \"Distilled water\",\n                \"compound_id\":
+    4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 896,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[4].concentration", "field": "composition[4].concentration",
+    "old": {"value": "896", "unit": "PERCENT_V_V"}, "new": {"value": "0.896", "unit":
+    "L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/209",
+    "snippet": "{\n                \"recipe_order\": 5,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 896,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[4].notes", "field": "composition[4].notes",
+    "old": null, "new": "Exact liquid input per preparation, not a percentage, mass,
+    measured final volume or universal working dose Source input: 896 ml; stage=Fatty
+    acid mixture.", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/209",
+    "snippet": "{\n                \"recipe_order\": 5,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 896,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": null, "field": "composition[5].preferred_term",
+    "old": null, "new": "NaOH", "status": "add", "reference": "https://mediadive.dsmz.de/rest/solution/209",
+    "snippet": "Adjust pH to 7.5 with concentrated NaOH."}, {"old_field": null, "field":
+    "composition[5].concentration", "old": null, "new": null, "status": "add", "reference":
+    "https://mediadive.dsmz.de/rest/solution/209", "snippet": "Adjust pH to 7.5 with
+    concentrated NaOH."}, {"old_field": null, "field": "composition[5].notes", "old":
+    null, "new": "Source identifies this titrant and pH target but gives no fixed
+    amount; do not infer zero or a typical concentration", "status": "add", "reference":
+    "https://mediadive.dsmz.de/rest/solution/209", "snippet": "Adjust pH to 7.5 with
+    concentrated NaOH."}, {"old_field": "ingredients", "field": "ingredients", "old":
+    [{"preferred_term": "See source for composition", "concentration": {"value": "variable",
+    "unit": "VARIABLE"}}], "new": null, "status": "remove_unsupported", "reference":
+    "https://mediadive.dsmz.de/rest/solution/209", "snippet": "[\n            {\n                \"recipe_order\":
+    1,\n                \"compound\": \"Isobutyric acid\",\n                \"compound_id\":
+    222,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 23,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"DL-2-Methylbutyric acid\",\n                \"compound_id\": 223,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 27,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 3,\n                \"compound\":
+    \"Valeric acid\",\n                \"compound_id\": 224,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 27,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 4,\n                \"compound\":
+    \"Isovaleric acid\",\n                \"compound_id\": 225,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 27,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 5,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 896,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }\n        ]"}, {"old_field": "data_quality_flags", "field": "data_quality_flags",
+    "old": ["incomplete_composition"], "new": null, "status": "remove_unsupported",
+    "reference": "https://mediadive.dsmz.de/rest/solution/209", "snippet": "[\n            {\n                \"recipe_order\":
+    1,\n                \"compound\": \"Isobutyric acid\",\n                \"compound_id\":
+    222,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 23,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"DL-2-Methylbutyric acid\",\n                \"compound_id\": 223,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 27,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 3,\n                \"compound\":
+    \"Valeric acid\",\n                \"compound_id\": 224,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 27,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 4,\n                \"compound\":
+    \"Isovaleric acid\",\n                \"compound_id\": 225,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 27,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 5,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 896,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }\n        ]"}, {"old_field": "ingredients", "field": "notes",
+    "old": [{"preferred_term": "See source for composition", "concentration": {"value":
+    "variable", "unit": "VARIABLE"}}], "new": "Complete inspected source rows define
+    this reconstruction. Archive false LB expansions, flattened quantities and placeholders
+    in append-only history. Preserve earlier supported evidence exactly; unrelated
+    chemical annotations are not recertified.\n\nComplete inspected source rows define
+    this reconstruction. Archive false LB expansions, flattened quantities and placeholders
+    in append-only history. Preserve earlier supported evidence exactly; unrelated
+    chemical annotations are not recertified.", "status": "evidence_only", "reference":
+    "https://mediadive.dsmz.de/rest/solution/209", "snippet": "[\n            {\n                \"recipe_order\":
+    1,\n                \"compound\": \"Isobutyric acid\",\n                \"compound_id\":
+    222,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 23,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"DL-2-Methylbutyric acid\",\n                \"compound_id\": 223,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 27,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 3,\n                \"compound\":
+    \"Valeric acid\",\n                \"compound_id\": 224,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 27,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 4,\n                \"compound\":
+    \"Isovaleric acid\",\n                \"compound_id\": 225,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 27,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 5,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 896,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }\n        ]"}, {"old_field": "composition", "field": "notes",
+    "old": [{"preferred_term": "Isobutyric acid", "concentration": {"value": "23",
+    "unit": "PERCENT_V_V"}, "term": {"id": "mediadive.compound:222", "label": "Isobutyric
+    acid"}, "chebi_term": {"id": "CHEBI:16135", "label": "isobutyric acid", "confidence":
+    1.0, "match_type": "exact_match"}}, {"preferred_term": "DL-2-Methylbutyric acid",
+    "concentration": {"value": "27", "unit": "PERCENT_V_V"}, "term": {"id": "mediadive.compound:223",
+    "label": "DL-2-Methylbutyric acid"}, "chebi_term": {"id": "CHEBI:37070", "label":
+    "2-methylbutyric acid", "confidence": 0.9, "match_type": "manual_curated"}}, {"preferred_term":
+    "Valeric acid", "concentration": {"value": "27", "unit": "PERCENT_V_V"}, "term":
+    {"id": "mediadive.compound:224", "label": "Valeric acid"}, "chebi_term": {"id":
+    "CHEBI:17418", "label": "valeric acid", "confidence": 1.0, "match_type": "exact_match"}},
+    {"preferred_term": "Isovaleric acid", "concentration": {"value": "27", "unit":
+    "PERCENT_V_V"}, "term": {"id": "mediadive.compound:225", "label": "Isovaleric
+    acid"}, "chebi_term": {"id": "CHEBI:28484", "label": "isovaleric acid", "confidence":
+    1.0, "match_type": "exact_match"}}, {"preferred_term": "Distilled water", "concentration":
+    {"value": "896", "unit": "PERCENT_V_V"}, "term": {"id": "mediadive.compound:4",
+    "label": "Distilled water"}, "chebi_term": {"id": "CHEBI:15377", "label": "water",
+    "confidence": 0.7, "match_type": "corpus_consensus"}}], "new": "Complete inspected
+    source rows define this reconstruction. Archive false LB expansions, flattened
+    quantities and placeholders in append-only history. Preserve earlier supported
+    evidence exactly; unrelated chemical annotations are not recertified.\n\nComplete
+    inspected source rows define this reconstruction. Archive false LB expansions,
+    flattened quantities and placeholders in append-only history. Preserve earlier
+    supported evidence exactly; unrelated chemical annotations are not recertified.",
+    "status": "evidence_only", "reference": "https://mediadive.dsmz.de/rest/solution/209",
+    "snippet": "[\n            {\n                \"recipe_order\": 1,\n                \"compound\":
+    \"Isobutyric acid\",\n                \"compound_id\": 222,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 23,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"DL-2-Methylbutyric acid\",\n                \"compound_id\": 223,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 27,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 3,\n                \"compound\":
+    \"Valeric acid\",\n                \"compound_id\": 224,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 27,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 4,\n                \"compound\":
+    \"Isovaleric acid\",\n                \"compound_id\": 225,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 27,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 5,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 896,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }\n        ]"}, {"old_field": "ingredients[0].concentration", "field":
+    "notes", "old": {"value": "variable", "unit": "VARIABLE"}, "new": "Complete inspected
+    source rows define this reconstruction. Archive false LB expansions, flattened
+    quantities and placeholders in append-only history. Preserve earlier supported
+    evidence exactly; unrelated chemical annotations are not recertified.\n\nComplete
+    inspected source rows define this reconstruction. Archive false LB expansions,
+    flattened quantities and placeholders in append-only history. Preserve earlier
+    supported evidence exactly; unrelated chemical annotations are not recertified.",
+    "status": "remove_unsupported", "reference": "https://mediadive.dsmz.de/rest/solution/209",
+    "snippet": "[\n            {\n                \"recipe_order\": 1,\n                \"compound\":
+    \"Isobutyric acid\",\n                \"compound_id\": 222,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 23,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"DL-2-Methylbutyric acid\",\n                \"compound_id\": 223,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 27,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 3,\n                \"compound\":
+    \"Valeric acid\",\n                \"compound_id\": 224,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 27,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 4,\n                \"compound\":
+    \"Isovaleric acid\",\n                \"compound_id\": 225,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 27,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 5,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 896,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }\n        ]"}]'
 category: bacterial
+notes: |-
+  Complete inspected source rows define this reconstruction. Archive false LB expansions, flattened quantities and placeholders in append-only history. Preserve earlier supported evidence exactly; unrelated chemical annotations are not recertified.
+
+  Complete inspected source rows define this reconstruction. Archive false LB expansions, flattened quantities and placeholders in append-only history. Preserve earlier supported evidence exactly; unrelated chemical annotations are not recertified.
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/209
+  title: Fatty acid mixture
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-09;
+    capture_sha256=48f0e4db9cadd5a87adfa072e911f30e2e531abf274945f5a15d221760acd6af.
+    Individual authors and publication year not supplied; copyright/access years are
+    not publication years. Source-scoped formulation evidence, not organism-growth
+    evidence.

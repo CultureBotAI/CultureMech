@@ -11,10 +11,11 @@ media_term:
   term:
     id: mediadive.medium:P4
     label: RS Medium - Non-Nutrient Medium (NNM) Component
-notes: MediaDive public Medium P4 provides the RS Medium Non-Nutrient Medium component
-  as a 1 L defined marine recipe at pH 7 with 3.3% salinity. Microliter stock additions
-  were converted to final mg/L or microg/L concentrations from the stock concentrations
-  printed in the official recipe.
+notes: RS NNM retains nine direct solute rates and now represents the 23 source-listed
+  stocks separately. Final makeup is 1 L with purified water; stock water amounts
+  are unspecified. Prior calculated final contributions are preserved in the claim
+  audit, not duplicated as direct ingredients. TiCl3 commercial percentage basis and
+  solute concentration remain unresolved.
 ingredients:
 - preferred_term: NaCl
   concentration:
@@ -27,6 +28,20 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
+  evidence:
+  - reference: https://mediadive.dsmz.de/medium/P4
+    supports: SUPPORT
+    snippet: NaCl 26.9000 g/l 26.9 460.301
+    explanation: 'ingredients[0].concentration -> ingredients[0].concentration: Source-explicit
+      direct g/L rate with a separate 1 L final-makeup instruction; unchanged. Exact
+      excerpt: "NaCl 26.9000 g/l 26.9 460.301"; locator=sol-0 / recipe-0; table headings=[''Compound'',
+      ''Amount'', ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "Fill
+      to a total volume of 1 liter with purified H2O."; locator=sol-0 preparation
+      step 4. User-contributed MediaDive P4 page, accessed 2026-10-07; source_type=user_contributed_dataset_page;
+      page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+      figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+      Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+      validation or growth claim is implied.'
 - preferred_term: KCl
   concentration:
     value: '0.6'
@@ -38,6 +53,20 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
     label: potassium chloride
+  evidence:
+  - reference: https://mediadive.dsmz.de/medium/P4
+    supports: SUPPORT
+    snippet: KCl 0.6000 g/l 0.6 8.048
+    explanation: 'ingredients[1].concentration -> ingredients[1].concentration: Source-explicit
+      direct g/L rate with a separate 1 L final-makeup instruction; unchanged. Exact
+      excerpt: "KCl 0.6000 g/l 0.6 8.048"; locator=sol-0 / recipe-1; table headings=[''Compound'',
+      ''Amount'', ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "Fill
+      to a total volume of 1 liter with purified H2O."; locator=sol-0 preparation
+      step 4. User-contributed MediaDive P4 page, accessed 2026-10-07; source_type=user_contributed_dataset_page;
+      page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+      figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+      Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+      validation or growth claim is implied.'
 - preferred_term: MgCl2 x 6 H2O
   concentration:
     value: '3.0'
@@ -49,6 +78,20 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  evidence:
+  - reference: https://mediadive.dsmz.de/medium/P4
+    supports: SUPPORT
+    snippet: MgCl2 x 6 H2O 3.0000 g/l 3 14.756
+    explanation: 'ingredients[2].concentration -> ingredients[2].concentration: Source-explicit
+      direct g/L rate with a separate 1 L final-makeup instruction; unchanged. Exact
+      excerpt: "MgCl2 x 6 H2O 3.0000 g/l 3 14.756"; locator=sol-0 / recipe-2; table
+      headings=[''Compound'', ''Amount'', ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]''].
+      Exact excerpt: "Fill to a total volume of 1 liter with purified H2O."; locator=sol-0
+      preparation step 4. User-contributed MediaDive P4 page, accessed 2026-10-07;
+      source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+      figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+      Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+      validation or growth claim is implied.'
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '6.4'
@@ -60,6 +103,20 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
+  evidence:
+  - reference: https://mediadive.dsmz.de/medium/P4
+    supports: SUPPORT
+    snippet: MgSO4 x 7 H2O 6.4000 g/l 6.4 25.966
+    explanation: 'ingredients[3].concentration -> ingredients[3].concentration: Source-explicit
+      direct g/L rate with a separate 1 L final-makeup instruction; unchanged. Exact
+      excerpt: "MgSO4 x 7 H2O 6.4000 g/l 6.4 25.966"; locator=sol-0 / recipe-3; table
+      headings=[''Compound'', ''Amount'', ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]''].
+      Exact excerpt: "Fill to a total volume of 1 liter with purified H2O."; locator=sol-0
+      preparation step 4. User-contributed MediaDive P4 page, accessed 2026-10-07;
+      source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+      figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+      Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+      validation or growth claim is implied.'
 - preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '1.2'
@@ -71,6 +128,20 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  evidence:
+  - reference: https://mediadive.dsmz.de/medium/P4
+    supports: SUPPORT
+    snippet: CaCl2 x 2 H2O 1.2000 g/l 1.2 8.162
+    explanation: 'ingredients[4].concentration -> ingredients[4].concentration: Source-explicit
+      direct g/L rate with a separate 1 L final-makeup instruction; unchanged. Exact
+      excerpt: "CaCl2 x 2 H2O 1.2000 g/l 1.2 8.162"; locator=sol-0 / recipe-4; table
+      headings=[''Compound'', ''Amount'', ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]''].
+      Exact excerpt: "Fill to a total volume of 1 liter with purified H2O."; locator=sol-0
+      preparation step 4. User-contributed MediaDive P4 page, accessed 2026-10-07;
+      source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+      figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+      Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+      validation or growth claim is implied.'
 - preferred_term: NaHCO3
   concentration:
     value: '0.2'
@@ -82,17 +153,20 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-- preferred_term: NaBr
-  concentration:
-    value: '1.05'
-    unit: MG_PER_L
-  source: MediaDive public Medium P4
-  term:
-    id: CHEBI:63004
-    label: NaBr
-  mediaingredientmech_chebi_term:
-    id: CHEBI:63004
-    label: NaBr
+  evidence:
+  - reference: https://mediadive.dsmz.de/medium/P4
+    supports: SUPPORT
+    snippet: NaHCO3 0.2000 g/l 0.2 2.381
+    explanation: 'ingredients[5].concentration -> ingredients[5].concentration: Source-explicit
+      direct g/L rate with a separate 1 L final-makeup instruction; unchanged. Exact
+      excerpt: "NaHCO3 0.2000 g/l 0.2 2.381"; locator=sol-0 / recipe-5; table headings=[''Compound'',
+      ''Amount'', ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "Fill
+      to a total volume of 1 liter with purified H2O."; locator=sol-0 preparation
+      step 4. User-contributed MediaDive P4 page, accessed 2026-10-07; source_type=user_contributed_dataset_page;
+      page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+      figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+      Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+      validation or growth claim is implied.'
 - preferred_term: H3BO3
   concentration:
     value: '0.01'
@@ -104,6 +178,20 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
     label: boric acid
+  evidence:
+  - reference: https://mediadive.dsmz.de/medium/P4
+    supports: SUPPORT
+    snippet: H3BO3 0.0100 g/l 0.01 0.162
+    explanation: 'ingredients[7].concentration -> ingredients[6].concentration: Source-explicit
+      direct g/L rate with a separate 1 L final-makeup instruction; unchanged. Exact
+      excerpt: "H3BO3 0.0100 g/l 0.01 0.162"; locator=sol-0 / recipe-7; table headings=[''Compound'',
+      ''Amount'', ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "Fill
+      to a total volume of 1 liter with purified H2O."; locator=sol-0 preparation
+      step 4. User-contributed MediaDive P4 page, accessed 2026-10-07; source_type=user_contributed_dataset_page;
+      page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+      figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+      Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+      validation or growth claim is implied.'
 - preferred_term: SrCl2 x 6 H2O
   concentration:
     value: '0.03'
@@ -115,6 +203,20 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:36383
     label: SrCl2
+  evidence:
+  - reference: https://mediadive.dsmz.de/medium/P4
+    supports: SUPPORT
+    snippet: SrCl2 x 6 H2O 0.0300 g/l 0.03 0.113
+    explanation: 'ingredients[8].concentration -> ingredients[7].concentration: Source-explicit
+      direct g/L rate with a separate 1 L final-makeup instruction; unchanged. Exact
+      excerpt: "SrCl2 x 6 H2O 0.0300 g/l 0.03 0.113"; locator=sol-0 / recipe-8; table
+      headings=[''Compound'', ''Amount'', ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]''].
+      Exact excerpt: "Fill to a total volume of 1 liter with purified H2O."; locator=sol-0
+      preparation step 4. User-contributed MediaDive P4 page, accessed 2026-10-07;
+      source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+      figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+      Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+      validation or growth claim is implied.'
 - preferred_term: NaF
   concentration:
     value: '0.0004'
@@ -126,206 +228,37 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:28741
     label: sodium fluoride
-- preferred_term: RbCl
-  concentration:
-    value: '0.1'
-    unit: MG_PER_L
+  evidence:
+  - reference: https://mediadive.dsmz.de/medium/P4
+    supports: SUPPORT
+    snippet: NaF 0.0004 g/l 4.0e-4 0.01
+    explanation: 'ingredients[9].concentration -> ingredients[8].concentration: Source-explicit
+      direct g/L rate with a separate 1 L final-makeup instruction; unchanged. Exact
+      excerpt: "NaF 0.0004 g/l 4.0e-4 0.01"; locator=sol-0 / recipe-9; table headings=[''Compound'',
+      ''Amount'', ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "Fill
+      to a total volume of 1 liter with purified H2O."; locator=sol-0 preparation
+      step 4. User-contributed MediaDive P4 page, accessed 2026-10-07; source_type=user_contributed_dataset_page;
+      page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+      figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+      Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+      validation or growth claim is implied.'
+- preferred_term: Purified water
   source: MediaDive public Medium P4
-  term:
-    id: CHEBI:78672
-    label: rubidium chloride
-  mediaingredientmech_chebi_term:
-    id: CHEBI:78672
-    label: rubidium chloride
-- preferred_term: LiCl
-  concentration:
-    value: '1.2'
-    unit: MG_PER_L
-  source: MediaDive public Medium P4
-  term:
-    id: CHEBI:48607
-    label: LiCl
-  mediaingredientmech_chebi_term:
-    id: CHEBI:48607
-    label: LiCl
-- preferred_term: ZnCl2
-  concentration:
-    value: '5'
-    unit: MG_PER_L
-  source: MediaDive public Medium P4
-  term:
-    id: CHEBI:49976
-    label: zinc dichloride
-  mediaingredientmech_chebi_term:
-    id: CHEBI:49976
-    label: zinc dichloride
-- preferred_term: KI
-  concentration:
-    value: '30'
-    unit: MG_PER_L
-  source: MediaDive public Medium P4
-  term:
-    id: CHEBI:8346
-    label: KI
-  mediaingredientmech_chebi_term:
-    id: CHEBI:8346
-    label: KI
-- preferred_term: AlCl3 x 6 H2O
-  concentration:
-    value: '0.3'
-    unit: MICROG_PER_L
-  source: MediaDive public Medium P4
-  term:
-    id: CHEBI:30115
-    label: AlCl3 x 6 H2O
-  mediaingredientmech_chebi_term:
-    id: CHEBI:30115
-    label: AlCl3 x 6 H2O
-- preferred_term: Na2SiO3 x 5 H2O
-  concentration:
-    value: '1.06'
-    unit: MG_PER_L
-  source: MediaDive public Medium P4
-- preferred_term: FeCl3 x 6 H2O
-  concentration:
-    value: '0.02'
-    unit: MICROG_PER_L
-  source: MediaDive public Medium P4
-  term:
-    id: CHEBI:86254
-    label: FeCl3 x 6 H2O
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86254
-    label: FeCl3 x 6 H2O
-- preferred_term: Na2EDTA x 2 H2O
-  concentration:
-    value: '0.04'
-    unit: MICROG_PER_L
-  source: MediaDive public Medium P4
-- preferred_term: MnCl2 x 4 H2O
-  concentration:
-    value: '0.2'
-    unit: MICROG_PER_L
-  source: MediaDive public Medium P4
-  term:
-    id: CHEBI:86368
-    label: MnCl2 x 4 H2O
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86368
-    label: MnCl2 x 4 H2O
-- preferred_term: ZnSO4 x 7 H2O
-  concentration:
-    value: '20'
-    unit: MICROG_PER_L
-  source: MediaDive public Medium P4
-- preferred_term: CoCl2 x 6 H2O
-  concentration:
-    value: '0.01'
-    unit: MICROG_PER_L
-  source: MediaDive public Medium P4
-  term:
-    id: CHEBI:53503
-    label: Cobalt chloride hexahydrate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:53503
-    label: Cobalt chloride hexahydrate
-- preferred_term: CuSO4 x 5 H2O
-  concentration:
-    value: '2.6'
-    unit: MICROG_PER_L
-  source: MediaDive public Medium P4
-  term:
-    id: CHEBI:31440
-    label: copper(II) sulfate pentahydrate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31440
-    label: copper(II) sulfate pentahydrate
-- preferred_term: NiSO4 x 6 H2O
-  concentration:
-    value: '1'
-    unit: MICROG_PER_L
-  source: MediaDive public Medium P4
-  term:
-    id: CHEBI:53437
-    label: Nickel (II) sulfate hexahydrate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:53437
-    label: Nickel (II) sulfate hexahydrate
-- preferred_term: Na2MoO4 x 2 H2O
-  concentration:
-    value: '20'
-    unit: MICROG_PER_L
-  source: MediaDive public Medium P4
-  term:
-    id: CHEBI:75213
-    label: sodium molybdate dihydrate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:75213
-    label: sodium molybdate dihydrate
-- preferred_term: H2SeO3
-  concentration:
-    value: '1.4'
-    unit: MICROG_PER_L
-  source: MediaDive public Medium P4
-  term:
-    id: CHEBI:26642
-    label: H2SeO3
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26642
-    label: H2SeO3
-- preferred_term: Na3VO4
-  concentration:
-    value: '20'
-    unit: MICROG_PER_L
-  source: MediaDive public Medium P4
-  term:
-    id: CHEBI:35607
-    label: Na3VO4
-  mediaingredientmech_chebi_term:
-    id: CHEBI:35607
-    label: Na3VO4
-- preferred_term: K2CrO4
-  concentration:
-    value: '1.2'
-    unit: MICROG_PER_L
-  source: MediaDive public Medium P4
-  term:
-    id: CHEBI:75249
-    label: K2CrO4
-  mediaingredientmech_chebi_term:
-    id: CHEBI:75249
-    label: K2CrO4
-- preferred_term: BaCO3
-  concentration:
-    value: '8'
-    unit: MICROG_PER_L
-  source: MediaDive public Medium P4
-  notes: P4 adds 8 ul/L of a 1 mg/ml BaCO3 heavy-metal stock.
-- preferred_term: Cd(NO3)2 x 4 H2O
-  concentration:
-    value: '0.1'
-    unit: MICROG_PER_L
-  source: MediaDive public Medium P4
-  notes: P4 adds 0.1 ul/L of a 1 mg/ml Cd(NO3)2 x 4 H2O heavy-metal stock.
-- preferred_term: PbCl2
-  concentration:
-    value: '0.02'
-    unit: MICROG_PER_L
-  source: MediaDive public Medium P4
-  notes: P4 adds 0.02 ul/L of a 1 mg/ml PbCl2 heavy-metal stock.
-- preferred_term: AgNO3
-  concentration:
-    value: '0.002'
-    unit: MICROG_PER_L
-  source: MediaDive public Medium P4
-  notes: P4 adds 0.002 ul/L of a 1 mg/ml AgNO3 heavy-metal stock.
-- preferred_term: TiCl3
-  concentration:
-    value: '0.0013'
-    unit: ML_PER_L
-  source: MediaDive public Medium P4
-  notes: P4 adds 1.3 ul/L of TiCl3 stock prepared from Sigma-Aldrich 14010 diluted
-    1:1000000; the commercial TiCl3 concentration basis is not a g/L stock.
+  notes: Make up the combined NNM ingredients and stocks to a final 1 L with purified
+    H2O. The amount of added water is not specified; no 1 L water dose is asserted.
+  evidence:
+  - reference: https://mediadive.dsmz.de/medium/P4
+    supports: SUPPORT
+    snippet: Fill to a total volume of 1 liter with purified H2O.
+    explanation: 'new input -> ingredients[9].concentration: Make up the combined
+      NNM ingredients and stocks to a final 1 L with purified H2O. The amount of added
+      water is not specified; no 1 L water dose is asserted. Exact excerpt: "Fill
+      to a total volume of 1 liter with purified H2O."; locator=sol-0 preparation
+      step 4. User-contributed MediaDive P4 page, accessed 2026-10-07; source_type=user_contributed_dataset_page;
+      page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+      figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+      Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+      validation or growth claim is implied.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -361,6 +294,131 @@ curation_history:
     as a 1 L defined marine recipe at pH 7 with 3.3% salinity. Microliter stock additions
     were converted to final mg/L or microg/L concentrations from the stock concentrations
     printed in the official recipe.
+- timestamp: '2026-10-07T19:12:46.303398+00:00'
+  curator: codex
+  action: RESTORED_RS_STOCK_BOUNDARIES_CARRIERS_AND_SOURCE_CONFLICTS
+  notes: Restored source preparation stages without double-counting final and stock
+    solutes. Preserved permanent ID, names, prior history, mappings, physical state,
+    pH, salinity, preparation and variants. Unknown makeup amounts and source identity
+    conflicts remain explicit.
+  source: https://mediadive.dsmz.de/medium/P4
+  changes: 'ingredients[0].concentration -> ingredients[0].concentration: {"unit":
+    "G_PER_L", "value": "26.9"} -> {"unit": "G_PER_L", "value": "26.9"} [evidence_only];
+    ingredients[1].concentration -> ingredients[1].concentration: {"unit": "G_PER_L",
+    "value": "0.6"} -> {"unit": "G_PER_L", "value": "0.6"} [evidence_only]; ingredients[2].concentration
+    -> ingredients[2].concentration: {"unit": "G_PER_L", "value": "3.0"} -> {"unit":
+    "G_PER_L", "value": "3.0"} [evidence_only]; ingredients[3].concentration -> ingredients[3].concentration:
+    {"unit": "G_PER_L", "value": "6.4"} -> {"unit": "G_PER_L", "value": "6.4"} [evidence_only];
+    ingredients[4].concentration -> ingredients[4].concentration: {"unit": "G_PER_L",
+    "value": "1.2"} -> {"unit": "G_PER_L", "value": "1.2"} [evidence_only]; ingredients[5].concentration
+    -> ingredients[5].concentration: {"unit": "G_PER_L", "value": "0.2"} -> {"unit":
+    "G_PER_L", "value": "0.2"} [evidence_only]; ingredients[6].concentration -> solutions[0].composition[0].concentration:
+    {"unit": "MG_PER_L", "value": "1.05"} -> {"unit": "G_PER_L", "value": "500"} [relocate_stock];
+    new input -> solutions[0].concentration: null -> {"unit": "ML_PER_L", "value":
+    "0.0021"} [add]; new input -> solutions[0].composition[1].concentration: null
+    -> null [not_quantified]; ingredients[7].concentration -> ingredients[6].concentration:
+    {"unit": "G_PER_L", "value": "0.01"} -> {"unit": "G_PER_L", "value": "0.01"} [evidence_only];
+    ingredients[8].concentration -> ingredients[7].concentration: {"unit": "G_PER_L",
+    "value": "0.03"} -> {"unit": "G_PER_L", "value": "0.03"} [evidence_only]; ingredients[9].concentration
+    -> ingredients[8].concentration: {"unit": "G_PER_L", "value": "0.0004"} -> {"unit":
+    "G_PER_L", "value": "0.0004"} [evidence_only]; ingredients[10].concentration ->
+    solutions[1].composition[0].concentration: {"unit": "MG_PER_L", "value": "0.1"}
+    -> {"unit": "G_PER_L", "value": "10"} [relocate_stock]; new input -> solutions[1].concentration:
+    null -> {"unit": "ML_PER_L", "value": "0.01"} [add]; new input -> solutions[1].composition[1].concentration:
+    null -> null [not_quantified]; ingredients[11].concentration -> solutions[2].composition[0].concentration:
+    {"unit": "MG_PER_L", "value": "1.2"} -> {"unit": "G_PER_L", "value": "600"} [relocate_stock];
+    new input -> solutions[2].concentration: null -> {"unit": "ML_PER_L", "value":
+    "0.002"} [add]; new input -> solutions[2].composition[1].concentration: null ->
+    null [not_quantified]; ingredients[12].concentration -> solutions[3].composition[0].concentration:
+    {"unit": "MG_PER_L", "value": "5"} -> {"unit": "G_PER_L", "value": "1000"} [relocate_stock];
+    new input -> solutions[3].concentration: null -> {"unit": "ML_PER_L", "value":
+    "0.005"} [add]; new input -> solutions[3].composition[1].concentration: null ->
+    null [not_quantified]; ingredients[13].concentration -> solutions[4].composition[0].concentration:
+    {"unit": "MG_PER_L", "value": "30"} -> {"unit": "G_PER_L", "value": "1000"} [relocate_stock];
+    new input -> solutions[4].concentration: null -> {"unit": "ML_PER_L", "value":
+    "0.03"} [add]; new input -> solutions[4].composition[1].concentration: null ->
+    null [not_quantified]; ingredients[14].concentration -> solutions[5].composition[0].concentration:
+    {"unit": "MICROG_PER_L", "value": "0.3"} -> {"unit": "G_PER_L", "value": "1"}
+    [relocate_stock]; new input -> solutions[5].concentration: null -> {"unit": "ML_PER_L",
+    "value": "0.0003"} [add]; new input -> solutions[5].composition[1].concentration:
+    null -> null [not_quantified]; ingredients[15].concentration -> solutions[6].composition[0].concentration:
+    {"unit": "MG_PER_L", "value": "1.06"} -> {"unit": "G_PER_L", "value": "1.06"}
+    [relocate_stock]; new input -> solutions[6].concentration: null -> {"unit": "ML_PER_L",
+    "value": "1"} [add]; new input -> solutions[6].composition[1].concentration: null
+    -> null [not_quantified]; ingredients[16].concentration -> solutions[7].composition[0].concentration:
+    {"unit": "MICROG_PER_L", "value": "0.02"} -> {"unit": "G_PER_L", "value": "0.02"}
+    [relocate_stock]; new input -> solutions[7].concentration: null -> {"unit": "ML_PER_L",
+    "value": "0.001"} [add]; new input -> solutions[7].composition[1].concentration:
+    null -> null [not_quantified]; ingredients[17].concentration -> solutions[8].composition[0].concentration:
+    {"unit": "MICROG_PER_L", "value": "0.04"} -> {"unit": "G_PER_L", "value": "0.04"}
+    [relocate_stock]; new input -> solutions[8].concentration: null -> {"unit": "ML_PER_L",
+    "value": "0.001"} [add]; new input -> solutions[8].composition[1].concentration:
+    null -> null [not_quantified]; ingredients[18].concentration -> solutions[9].composition[0].concentration:
+    {"unit": "MICROG_PER_L", "value": "0.2"} -> {"unit": "G_PER_L", "value": "0.2"}
+    [relocate_stock]; new input -> solutions[9].concentration: null -> {"unit": "ML_PER_L",
+    "value": "0.001"} [add]; new input -> solutions[9].composition[1].concentration:
+    null -> null [not_quantified]; ingredients[19].concentration -> solutions[10].composition[0].concentration:
+    {"unit": "MICROG_PER_L", "value": "20"} -> {"unit": "G_PER_L", "value": "0.02"}
+    [relocate_stock]; new input -> solutions[10].concentration: null -> {"unit": "ML_PER_L",
+    "value": "1"} [add]; new input -> solutions[10].composition[1].concentration:
+    null -> null [not_quantified]; ingredients[20].concentration -> solutions[11].composition[0].concentration:
+    {"unit": "MICROG_PER_L", "value": "0.01"} -> {"unit": "G_PER_L", "value": "0.01"}
+    [relocate_stock]; new input -> solutions[11].concentration: null -> {"unit": "ML_PER_L",
+    "value": "0.001"} [add]; new input -> solutions[11].composition[1].concentration:
+    null -> null [not_quantified]; ingredients[21].concentration -> solutions[12].composition[0].concentration:
+    {"unit": "MICROG_PER_L", "value": "2.6"} -> {"unit": "G_PER_L", "value": "0.026"}
+    [relocate_stock]; new input -> solutions[12].concentration: null -> {"unit": "ML_PER_L",
+    "value": "0.1"} [add]; new input -> solutions[12].composition[1].concentration:
+    null -> null [not_quantified]; ingredients[22].concentration -> solutions[13].composition[0].concentration:
+    {"unit": "MICROG_PER_L", "value": "1"} -> {"unit": "G_PER_L", "value": "0.01"}
+    [relocate_stock]; new input -> solutions[13].concentration: null -> {"unit": "ML_PER_L",
+    "value": "0.1"} [add]; new input -> solutions[13].composition[1].concentration:
+    null -> null [not_quantified]; ingredients[23].concentration -> solutions[14].composition[0].concentration:
+    {"unit": "MICROG_PER_L", "value": "20"} -> {"unit": "G_PER_L", "value": "0.02"}
+    [relocate_stock]; new input -> solutions[14].concentration: null -> {"unit": "ML_PER_L",
+    "value": "1"} [add]; new input -> solutions[14].composition[1].concentration:
+    null -> null [not_quantified]; ingredients[24].concentration -> solutions[15].composition[0].concentration:
+    {"unit": "MICROG_PER_L", "value": "1.4"} -> {"unit": "G_PER_L", "value": "0.014"}
+    [relocate_stock]; new input -> solutions[15].concentration: null -> {"unit": "ML_PER_L",
+    "value": "0.1"} [add]; new input -> solutions[15].composition[1].concentration:
+    null -> null [not_quantified]; ingredients[25].concentration -> solutions[16].composition[0].concentration:
+    {"unit": "MICROG_PER_L", "value": "20"} -> {"unit": "G_PER_L", "value": "0.02"}
+    [relocate_stock]; new input -> solutions[16].concentration: null -> {"unit": "ML_PER_L",
+    "value": "1"} [add]; new input -> solutions[16].composition[1].concentration:
+    null -> null [not_quantified]; ingredients[26].concentration -> solutions[17].composition[0].concentration:
+    {"unit": "MICROG_PER_L", "value": "1.2"} -> {"unit": "G_PER_L", "value": "0.012"}
+    [relocate_stock]; new input -> solutions[17].concentration: null -> {"unit": "ML_PER_L",
+    "value": "0.1"} [add]; new input -> solutions[17].composition[1].concentration:
+    null -> null [not_quantified]; ingredients[27].concentration -> solutions[18].composition[0].concentration:
+    {"unit": "MICROG_PER_L", "value": "8"} -> {"unit": "G_PER_L", "value": "1"} [relocate_stock];
+    new input -> solutions[18].concentration: null -> {"unit": "ML_PER_L", "value":
+    "0.008"} [add]; new input -> solutions[18].composition[1].concentration: null
+    -> null [not_quantified]; ingredients[28].concentration -> solutions[19].composition[0].concentration:
+    {"unit": "MICROG_PER_L", "value": "0.1"} -> {"unit": "G_PER_L", "value": "1"}
+    [relocate_stock]; new input -> solutions[19].concentration: null -> {"unit": "ML_PER_L",
+    "value": "0.0001"} [add]; new input -> solutions[19].composition[1].concentration:
+    null -> null [not_quantified]; ingredients[29].concentration -> solutions[20].composition[0].concentration:
+    {"unit": "MICROG_PER_L", "value": "0.02"} -> {"unit": "G_PER_L", "value": "1"}
+    [relocate_stock]; new input -> solutions[20].concentration: null -> {"unit": "ML_PER_L",
+    "value": "0.00002"} [add]; new input -> solutions[20].composition[1].concentration:
+    null -> null [not_quantified]; ingredients[30].concentration -> solutions[21].composition[0].concentration:
+    {"unit": "MICROG_PER_L", "value": "0.002"} -> {"unit": "G_PER_L", "value": "1"}
+    [relocate_stock]; new input -> solutions[21].concentration: null -> {"unit": "ML_PER_L",
+    "value": "0.000002"} [add]; new input -> solutions[21].composition[1].concentration:
+    null -> null [not_quantified]; ingredients[31].concentration -> solutions[22].composition[0].concentration:
+    {"unit": "ML_PER_L", "value": "0.0013"} -> null [relocate_stock]; ingredients[31].concentration
+    -> solutions[22].concentration: {"unit": "ML_PER_L", "value": "0.0013"} -> {"unit":
+    "ML_PER_L", "value": "0.0013"} [relocate_dose]; new input -> solutions[22].composition[1].concentration:
+    null -> null [not_quantified]; new input -> ingredients[9].concentration: null
+    -> null [not_quantified]; notes -> notes: "MediaDive public Medium P4 provides
+    the RS Medium Non-Nutrient Medium component as a 1 L defined marine recipe at
+    pH 7 with 3.3% salinity. Microliter stock additions were converted to final mg/L
+    or microg/L concentrations from the stock concentrations printed in the official
+    recipe." -> "RS NNM retains nine direct solute rates and now represents the 23
+    source-listed stocks separately. Final makeup is 1 L with purified water; stock
+    water amounts are unspecified. Prior calculated final contributions are preserved
+    in the claim audit, not duplicated as direct ingredients. TiCl3 commercial percentage
+    basis and solute concentration remain unresolved." [correct_context]'
 data_quality_flags:
 - ingredients_curated
 - has_ontology_mappings
@@ -390,3 +448,1499 @@ preparation_steps:
     temperature.
 references:
 - reference: https://www.bacmedia.dsmz.de/medium/P4
+- reference: https://mediadive.dsmz.de/medium/P4
+  title: RS Medium - Non-Nutrient Medium (NNM) Component - MediaDive public Medium
+    P4
+  authors: Cristiana Sigona, Daniel J. Richter
+  year: 2023
+  notes: source_type=user_contributed_dataset_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-07; page published=2023-06-30, modified=2025-07-10. The page
+    states user media are not curated/tested and no valid reference is given. Legacy
+    bacmedia URL retained; no DOI invented. User-contributed MediaDive P4 page, accessed
+    2026-10-07; source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+    figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+    Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+    validation or growth claim is implied.
+solutions:
+- preferred_term: NaBr stock
+  concentration:
+    value: '0.0021'
+    unit: ML_PER_L
+  notes: NaBr (Stock solution 0.5g/mL). Prepared in H2O under source preparation step
+    2; dose applies to the 1 L NNM batch, not to preparation of this stock.
+  composition:
+  - preferred_term: NaBr
+    concentration:
+      value: '500'
+      unit: G_PER_L
+    source: MediaDive public Medium P4
+    term:
+      id: CHEBI:63004
+      label: NaBr
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63004
+      label: NaBr
+    notes: 'Restore the stock stage: 0.5 g / 1 ml = 500 g/L stock. Source addition
+      2.1000 μl/l = 0.0021 ml/L. The previous final contribution 0.00105 g/L matches
+      500 * 0.0021 / 1000; it was not a wrong numeric value but must not remain a
+      duplicate direct ingredient.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: NaBr (Stock solution 0.5g/mL) 2.1000 μl/l - -
+      explanation: 'ingredients[6].concentration -> solutions[0].composition[0].concentration:
+        Restore the stock stage: 0.5 g / 1 ml = 500 g/L stock. Source addition 2.1000
+        μl/l = 0.0021 ml/L. The previous final contribution 0.00105 g/L matches 500
+        * 0.0021 / 1000; it was not a wrong numeric value but must not remain a duplicate
+        direct ingredient. Exact excerpt: "NaBr (Stock solution 0.5g/mL) 2.1000 μl/l
+        - -"; locator=sol-0 / recipe-6; table headings=[''Compound'', ''Amount'',
+        ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "prepare stock
+        solutions in H2O at the specified concentration"; locator=sol-0 preparation
+        step 2. Exact excerpt: "Fill to a total volume of 1 liter with purified H2O.";
+        locator=sol-0 preparation step 4. User-contributed MediaDive P4 page, accessed
+        2026-10-07; source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+  - preferred_term: Water
+    source: MediaDive public Medium P4
+    notes: H2O is the source-named stock solvent. No solvent volume is given; do not
+      equate stock volume with water input.
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: prepare stock solutions in H2O at the specified concentration
+      explanation: 'new input -> solutions[0].composition[1].concentration: H2O is
+        the source-named stock solvent. No solvent volume is given; do not equate
+        stock volume with water input. Exact excerpt: "prepare stock solutions in
+        H2O at the specified concentration"; locator=sol-0 preparation step 2. Exact
+        excerpt: "NaBr (Stock solution 0.5g/mL) 2.1000 μl/l - -"; locator=sol-0 /
+        recipe-6; table headings=[''Compound'', ''Amount'', ''Unit'', ''Conc. [g/L]'',
+        ''Conc. [mM]'']. User-contributed MediaDive P4 page, accessed 2026-10-07;
+        source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+- preferred_term: RbCl stock
+  concentration:
+    value: '0.01'
+    unit: ML_PER_L
+  notes: RbCl (Stock solution 0.01g/mL). Prepared in H2O under source preparation
+    step 2; dose applies to the 1 L NNM batch, not to preparation of this stock.
+  composition:
+  - preferred_term: RbCl
+    concentration:
+      value: '10'
+      unit: G_PER_L
+    source: MediaDive public Medium P4
+    term:
+      id: CHEBI:78672
+      label: rubidium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:78672
+      label: rubidium chloride
+    notes: 'Restore the stock stage: 0.01 g / 1 ml = 10 g/L stock. Source addition
+      10.0000 μl/l = 0.01 ml/L. The previous final contribution 0.0001 g/L matches
+      10 * 0.01 / 1000; it was not a wrong numeric value but must not remain a duplicate
+      direct ingredient.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: RbCl (Stock solution 0.01g/mL) 10.0000 μl/l - -
+      explanation: 'ingredients[10].concentration -> solutions[1].composition[0].concentration:
+        Restore the stock stage: 0.01 g / 1 ml = 10 g/L stock. Source addition 10.0000
+        μl/l = 0.01 ml/L. The previous final contribution 0.0001 g/L matches 10 *
+        0.01 / 1000; it was not a wrong numeric value but must not remain a duplicate
+        direct ingredient. Exact excerpt: "RbCl (Stock solution 0.01g/mL) 10.0000
+        μl/l - -"; locator=sol-0 / recipe-10; table headings=[''Compound'', ''Amount'',
+        ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "prepare stock
+        solutions in H2O at the specified concentration"; locator=sol-0 preparation
+        step 2. Exact excerpt: "Fill to a total volume of 1 liter with purified H2O.";
+        locator=sol-0 preparation step 4. User-contributed MediaDive P4 page, accessed
+        2026-10-07; source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+  - preferred_term: Water
+    source: MediaDive public Medium P4
+    notes: H2O is the source-named stock solvent. No solvent volume is given; do not
+      equate stock volume with water input.
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: prepare stock solutions in H2O at the specified concentration
+      explanation: 'new input -> solutions[1].composition[1].concentration: H2O is
+        the source-named stock solvent. No solvent volume is given; do not equate
+        stock volume with water input. Exact excerpt: "prepare stock solutions in
+        H2O at the specified concentration"; locator=sol-0 preparation step 2. Exact
+        excerpt: "RbCl (Stock solution 0.01g/mL) 10.0000 μl/l - -"; locator=sol-0
+        / recipe-10; table headings=[''Compound'', ''Amount'', ''Unit'', ''Conc. [g/L]'',
+        ''Conc. [mM]'']. User-contributed MediaDive P4 page, accessed 2026-10-07;
+        source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+- preferred_term: LiCl stock
+  concentration:
+    value: '0.002'
+    unit: ML_PER_L
+  notes: LiCl (Stock solution 0.6g/mL). Prepared in H2O under source preparation step
+    2; dose applies to the 1 L NNM batch, not to preparation of this stock.
+  composition:
+  - preferred_term: LiCl
+    concentration:
+      value: '600'
+      unit: G_PER_L
+    source: MediaDive public Medium P4
+    term:
+      id: CHEBI:48607
+      label: LiCl
+    mediaingredientmech_chebi_term:
+      id: CHEBI:48607
+      label: LiCl
+    notes: 'Restore the stock stage: 0.6 g / 1 ml = 600 g/L stock. Source addition
+      2.0000 μl/l = 0.002 ml/L. The previous final contribution 0.0012 g/L matches
+      600 * 0.002 / 1000; it was not a wrong numeric value but must not remain a duplicate
+      direct ingredient.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: LiCl (Stock solution 0.6g/mL) 2.0000 μl/l - -
+      explanation: 'ingredients[11].concentration -> solutions[2].composition[0].concentration:
+        Restore the stock stage: 0.6 g / 1 ml = 600 g/L stock. Source addition 2.0000
+        μl/l = 0.002 ml/L. The previous final contribution 0.0012 g/L matches 600
+        * 0.002 / 1000; it was not a wrong numeric value but must not remain a duplicate
+        direct ingredient. Exact excerpt: "LiCl (Stock solution 0.6g/mL) 2.0000 μl/l
+        - -"; locator=sol-0 / recipe-11; table headings=[''Compound'', ''Amount'',
+        ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "prepare stock
+        solutions in H2O at the specified concentration"; locator=sol-0 preparation
+        step 2. Exact excerpt: "Fill to a total volume of 1 liter with purified H2O.";
+        locator=sol-0 preparation step 4. User-contributed MediaDive P4 page, accessed
+        2026-10-07; source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+  - preferred_term: Water
+    source: MediaDive public Medium P4
+    notes: H2O is the source-named stock solvent. No solvent volume is given; do not
+      equate stock volume with water input.
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: prepare stock solutions in H2O at the specified concentration
+      explanation: 'new input -> solutions[2].composition[1].concentration: H2O is
+        the source-named stock solvent. No solvent volume is given; do not equate
+        stock volume with water input. Exact excerpt: "prepare stock solutions in
+        H2O at the specified concentration"; locator=sol-0 preparation step 2. Exact
+        excerpt: "LiCl (Stock solution 0.6g/mL) 2.0000 μl/l - -"; locator=sol-0 /
+        recipe-11; table headings=[''Compound'', ''Amount'', ''Unit'', ''Conc. [g/L]'',
+        ''Conc. [mM]'']. User-contributed MediaDive P4 page, accessed 2026-10-07;
+        source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+- preferred_term: ZnCl2 stock
+  concentration:
+    value: '0.005'
+    unit: ML_PER_L
+  notes: ZnCl2 (Stock solution 1g/mL). Prepared in H2O under source preparation step
+    2; dose applies to the 1 L NNM batch, not to preparation of this stock.
+  composition:
+  - preferred_term: ZnCl2
+    concentration:
+      value: '1000'
+      unit: G_PER_L
+    source: MediaDive public Medium P4
+    term:
+      id: CHEBI:49976
+      label: zinc dichloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49976
+      label: zinc dichloride
+    notes: 'Restore the stock stage: 1 g / 1 ml = 1000 g/L stock. Source addition
+      5.0000 μl/l = 0.005 ml/L. The previous final contribution 0.005 g/L matches
+      1000 * 0.005 / 1000; it was not a wrong numeric value but must not remain a
+      duplicate direct ingredient.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: ZnCl2 (Stock solution 1g/mL) 5.0000 μl/l - -
+      explanation: 'ingredients[12].concentration -> solutions[3].composition[0].concentration:
+        Restore the stock stage: 1 g / 1 ml = 1000 g/L stock. Source addition 5.0000
+        μl/l = 0.005 ml/L. The previous final contribution 0.005 g/L matches 1000
+        * 0.005 / 1000; it was not a wrong numeric value but must not remain a duplicate
+        direct ingredient. Exact excerpt: "ZnCl2 (Stock solution 1g/mL) 5.0000 μl/l
+        - -"; locator=sol-0 / recipe-12; table headings=[''Compound'', ''Amount'',
+        ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "prepare stock
+        solutions in H2O at the specified concentration"; locator=sol-0 preparation
+        step 2. Exact excerpt: "Fill to a total volume of 1 liter with purified H2O.";
+        locator=sol-0 preparation step 4. User-contributed MediaDive P4 page, accessed
+        2026-10-07; source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+  - preferred_term: Water
+    source: MediaDive public Medium P4
+    notes: H2O is the source-named stock solvent. No solvent volume is given; do not
+      equate stock volume with water input.
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: prepare stock solutions in H2O at the specified concentration
+      explanation: 'new input -> solutions[3].composition[1].concentration: H2O is
+        the source-named stock solvent. No solvent volume is given; do not equate
+        stock volume with water input. Exact excerpt: "prepare stock solutions in
+        H2O at the specified concentration"; locator=sol-0 preparation step 2. Exact
+        excerpt: "ZnCl2 (Stock solution 1g/mL) 5.0000 μl/l - -"; locator=sol-0 / recipe-12;
+        table headings=[''Compound'', ''Amount'', ''Unit'', ''Conc. [g/L]'', ''Conc.
+        [mM]'']. User-contributed MediaDive P4 page, accessed 2026-10-07; source_type=user_contributed_dataset_page;
+        page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+- preferred_term: KI stock
+  concentration:
+    value: '0.03'
+    unit: ML_PER_L
+  notes: KI (Stock solution 1g/mL). Prepared in H2O under source preparation step
+    2; dose applies to the 1 L NNM batch, not to preparation of this stock.
+  composition:
+  - preferred_term: KI
+    concentration:
+      value: '1000'
+      unit: G_PER_L
+    source: MediaDive public Medium P4
+    term:
+      id: CHEBI:8346
+      label: KI
+    mediaingredientmech_chebi_term:
+      id: CHEBI:8346
+      label: KI
+    notes: 'Restore the stock stage: 1 g / 1 ml = 1000 g/L stock. Source addition
+      30.0000 μl/l = 0.03 ml/L. The previous final contribution 0.03 g/L matches 1000
+      * 0.03 / 1000; it was not a wrong numeric value but must not remain a duplicate
+      direct ingredient.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: KI (Stock solution 1g/mL) 30.0000 μl/l - -
+      explanation: 'ingredients[13].concentration -> solutions[4].composition[0].concentration:
+        Restore the stock stage: 1 g / 1 ml = 1000 g/L stock. Source addition 30.0000
+        μl/l = 0.03 ml/L. The previous final contribution 0.03 g/L matches 1000 *
+        0.03 / 1000; it was not a wrong numeric value but must not remain a duplicate
+        direct ingredient. Exact excerpt: "KI (Stock solution 1g/mL) 30.0000 μl/l
+        - -"; locator=sol-0 / recipe-13; table headings=[''Compound'', ''Amount'',
+        ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "prepare stock
+        solutions in H2O at the specified concentration"; locator=sol-0 preparation
+        step 2. Exact excerpt: "Fill to a total volume of 1 liter with purified H2O.";
+        locator=sol-0 preparation step 4. User-contributed MediaDive P4 page, accessed
+        2026-10-07; source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+  - preferred_term: Water
+    source: MediaDive public Medium P4
+    notes: H2O is the source-named stock solvent. No solvent volume is given; do not
+      equate stock volume with water input.
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: prepare stock solutions in H2O at the specified concentration
+      explanation: 'new input -> solutions[4].composition[1].concentration: H2O is
+        the source-named stock solvent. No solvent volume is given; do not equate
+        stock volume with water input. Exact excerpt: "prepare stock solutions in
+        H2O at the specified concentration"; locator=sol-0 preparation step 2. Exact
+        excerpt: "KI (Stock solution 1g/mL) 30.0000 μl/l - -"; locator=sol-0 / recipe-13;
+        table headings=[''Compound'', ''Amount'', ''Unit'', ''Conc. [g/L]'', ''Conc.
+        [mM]'']. User-contributed MediaDive P4 page, accessed 2026-10-07; source_type=user_contributed_dataset_page;
+        page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+- preferred_term: AlCl3 x 6 H2O stock
+  concentration:
+    value: '0.0003'
+    unit: ML_PER_L
+  notes: AlCl3 x 6 H2O (Stock solution 0.001g/mL). Prepared in H2O under source preparation
+    step 2; dose applies to the 1 L NNM batch, not to preparation of this stock.
+  composition:
+  - preferred_term: AlCl3 x 6 H2O
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    source: MediaDive public Medium P4
+    term:
+      id: CHEBI:30115
+      label: AlCl3 x 6 H2O
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30115
+      label: AlCl3 x 6 H2O
+    notes: 'Restore the stock stage: 0.001 g / 1 ml = 1 g/L stock. Source addition
+      0.3000 μl/l = 0.0003 ml/L. The previous final contribution 0.0000003 g/L matches
+      1 * 0.0003 / 1000; it was not a wrong numeric value but must not remain a duplicate
+      direct ingredient.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: AlCl3 x 6 H2O (Stock solution 0.001g/mL) 0.3000 μl/l - -
+      explanation: 'ingredients[14].concentration -> solutions[5].composition[0].concentration:
+        Restore the stock stage: 0.001 g / 1 ml = 1 g/L stock. Source addition 0.3000
+        μl/l = 0.0003 ml/L. The previous final contribution 0.0000003 g/L matches
+        1 * 0.0003 / 1000; it was not a wrong numeric value but must not remain a
+        duplicate direct ingredient. Exact excerpt: "AlCl3 x 6 H2O (Stock solution
+        0.001g/mL) 0.3000 μl/l - -"; locator=sol-0 / recipe-14; table headings=[''Compound'',
+        ''Amount'', ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "prepare
+        stock solutions in H2O at the specified concentration"; locator=sol-0 preparation
+        step 2. Exact excerpt: "Fill to a total volume of 1 liter with purified H2O.";
+        locator=sol-0 preparation step 4. User-contributed MediaDive P4 page, accessed
+        2026-10-07; source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+  - preferred_term: Water
+    source: MediaDive public Medium P4
+    notes: H2O is the source-named stock solvent. No solvent volume is given; do not
+      equate stock volume with water input.
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: prepare stock solutions in H2O at the specified concentration
+      explanation: 'new input -> solutions[5].composition[1].concentration: H2O is
+        the source-named stock solvent. No solvent volume is given; do not equate
+        stock volume with water input. Exact excerpt: "prepare stock solutions in
+        H2O at the specified concentration"; locator=sol-0 preparation step 2. Exact
+        excerpt: "AlCl3 x 6 H2O (Stock solution 0.001g/mL) 0.3000 μl/l - -"; locator=sol-0
+        / recipe-14; table headings=[''Compound'', ''Amount'', ''Unit'', ''Conc. [g/L]'',
+        ''Conc. [mM]'']. User-contributed MediaDive P4 page, accessed 2026-10-07;
+        source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+- preferred_term: Na2SiO3 x 5 H2O stock
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  notes: Na2SiO3 x 5 H2O (Stock solution 0.053g/50mL; prepare by stirring continuously
+    to promote the dissolution of silicon). Prepared in H2O under source preparation
+    step 2; dose applies to the 1 L NNM batch, not to preparation of this stock.
+  composition:
+  - preferred_term: Na2SiO3 x 5 H2O
+    concentration:
+      value: '1.06'
+      unit: G_PER_L
+    source: MediaDive public Medium P4
+    notes: 'Restore the stock stage: 0.053 g / 50 ml = 1.06 g/L stock. Source addition
+      1.0000 ml/l = 1 ml/L. The previous final contribution 0.00106 g/L matches 1.06
+      * 1 / 1000; it was not a wrong numeric value but must not remain a duplicate
+      direct ingredient.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: Na2SiO3 x 5 H2O (Stock solution 0.053g/50mL; prepare by stirring continuously
+        to promote the dissolution of silicon) 1.0000 ml/l - -
+      explanation: 'ingredients[15].concentration -> solutions[6].composition[0].concentration:
+        Restore the stock stage: 0.053 g / 50 ml = 1.06 g/L stock. Source addition
+        1.0000 ml/l = 1 ml/L. The previous final contribution 0.00106 g/L matches
+        1.06 * 1 / 1000; it was not a wrong numeric value but must not remain a duplicate
+        direct ingredient. Exact excerpt: "Na2SiO3 x 5 H2O (Stock solution 0.053g/50mL;
+        prepare by stirring continuously to promote the dissolution of silicon) 1.0000
+        ml/l - -"; locator=sol-0 / recipe-15; table headings=[''Compound'', ''Amount'',
+        ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "prepare stock
+        solutions in H2O at the specified concentration"; locator=sol-0 preparation
+        step 2. Exact excerpt: "Fill to a total volume of 1 liter with purified H2O.";
+        locator=sol-0 preparation step 4. User-contributed MediaDive P4 page, accessed
+        2026-10-07; source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+  - preferred_term: Water
+    source: MediaDive public Medium P4
+    notes: H2O is the source-named stock solvent. No solvent volume is given; do not
+      equate stock volume with water input.
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: prepare stock solutions in H2O at the specified concentration
+      explanation: 'new input -> solutions[6].composition[1].concentration: H2O is
+        the source-named stock solvent. No solvent volume is given; do not equate
+        stock volume with water input. Exact excerpt: "prepare stock solutions in
+        H2O at the specified concentration"; locator=sol-0 preparation step 2. Exact
+        excerpt: "Na2SiO3 x 5 H2O (Stock solution 0.053g/50mL; prepare by stirring
+        continuously to promote the dissolution of silicon) 1.0000 ml/l - -"; locator=sol-0
+        / recipe-15; table headings=[''Compound'', ''Amount'', ''Unit'', ''Conc. [g/L]'',
+        ''Conc. [mM]'']. User-contributed MediaDive P4 page, accessed 2026-10-07;
+        source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+- preferred_term: FeCl3 x 6 H2O stock
+  concentration:
+    value: '0.001'
+    unit: ML_PER_L
+  notes: FeCl3 x 6 H2O (Stock solution 0.001g/50mL). Prepared in H2O under source
+    preparation step 2; dose applies to the 1 L NNM batch, not to preparation of this
+    stock.
+  composition:
+  - preferred_term: FeCl3 x 6 H2O
+    concentration:
+      value: '0.02'
+      unit: G_PER_L
+    source: MediaDive public Medium P4
+    term:
+      id: CHEBI:86254
+      label: FeCl3 x 6 H2O
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86254
+      label: FeCl3 x 6 H2O
+    notes: 'Restore the stock stage: 0.001 g / 50 ml = 0.02 g/L stock. Source addition
+      1.0000 ul/l = 0.001 ml/L. The previous final contribution 0.00000002 g/L matches
+      0.02 * 0.001 / 1000; it was not a wrong numeric value but must not remain a
+      duplicate direct ingredient.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: FeCl3 x 6 H2O (Stock solution 0.001g/50mL) 1.0000 ul/l - -
+      explanation: 'ingredients[16].concentration -> solutions[7].composition[0].concentration:
+        Restore the stock stage: 0.001 g / 50 ml = 0.02 g/L stock. Source addition
+        1.0000 ul/l = 0.001 ml/L. The previous final contribution 0.00000002 g/L matches
+        0.02 * 0.001 / 1000; it was not a wrong numeric value but must not remain
+        a duplicate direct ingredient. Exact excerpt: "FeCl3 x 6 H2O (Stock solution
+        0.001g/50mL) 1.0000 ul/l - -"; locator=sol-0 / recipe-16; table headings=[''Compound'',
+        ''Amount'', ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "prepare
+        stock solutions in H2O at the specified concentration"; locator=sol-0 preparation
+        step 2. Exact excerpt: "Fill to a total volume of 1 liter with purified H2O.";
+        locator=sol-0 preparation step 4. User-contributed MediaDive P4 page, accessed
+        2026-10-07; source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+  - preferred_term: Water
+    source: MediaDive public Medium P4
+    notes: H2O is the source-named stock solvent. No solvent volume is given; do not
+      equate stock volume with water input.
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: prepare stock solutions in H2O at the specified concentration
+      explanation: 'new input -> solutions[7].composition[1].concentration: H2O is
+        the source-named stock solvent. No solvent volume is given; do not equate
+        stock volume with water input. Exact excerpt: "prepare stock solutions in
+        H2O at the specified concentration"; locator=sol-0 preparation step 2. Exact
+        excerpt: "FeCl3 x 6 H2O (Stock solution 0.001g/50mL) 1.0000 ul/l - -"; locator=sol-0
+        / recipe-16; table headings=[''Compound'', ''Amount'', ''Unit'', ''Conc. [g/L]'',
+        ''Conc. [mM]'']. User-contributed MediaDive P4 page, accessed 2026-10-07;
+        source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+- preferred_term: Na2EDTA x 2 H2O stock
+  concentration:
+    value: '0.001'
+    unit: ML_PER_L
+  notes: Na2EDTA x 2 H2O (Stock solution 0.002g/50mL). Prepared in H2O under source
+    preparation step 2; dose applies to the 1 L NNM batch, not to preparation of this
+    stock.
+  composition:
+  - preferred_term: Na2EDTA x 2 H2O
+    concentration:
+      value: '0.04'
+      unit: G_PER_L
+    source: MediaDive public Medium P4
+    notes: 'Restore the stock stage: 0.002 g / 50 ml = 0.04 g/L stock. Source addition
+      1.0000 ul/l = 0.001 ml/L. The previous final contribution 0.00000004 g/L matches
+      0.04 * 0.001 / 1000; it was not a wrong numeric value but must not remain a
+      duplicate direct ingredient.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: Na2EDTA x 2 H2O (Stock solution 0.002g/50mL) 1.0000 ul/l - -
+      explanation: 'ingredients[17].concentration -> solutions[8].composition[0].concentration:
+        Restore the stock stage: 0.002 g / 50 ml = 0.04 g/L stock. Source addition
+        1.0000 ul/l = 0.001 ml/L. The previous final contribution 0.00000004 g/L matches
+        0.04 * 0.001 / 1000; it was not a wrong numeric value but must not remain
+        a duplicate direct ingredient. Exact excerpt: "Na2EDTA x 2 H2O (Stock solution
+        0.002g/50mL) 1.0000 ul/l - -"; locator=sol-0 / recipe-18; table headings=[''Compound'',
+        ''Amount'', ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "prepare
+        stock solutions in H2O at the specified concentration"; locator=sol-0 preparation
+        step 2. Exact excerpt: "Fill to a total volume of 1 liter with purified H2O.";
+        locator=sol-0 preparation step 4. User-contributed MediaDive P4 page, accessed
+        2026-10-07; source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+  - preferred_term: Water
+    source: MediaDive public Medium P4
+    notes: H2O is the source-named stock solvent. No solvent volume is given; do not
+      equate stock volume with water input.
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: prepare stock solutions in H2O at the specified concentration
+      explanation: 'new input -> solutions[8].composition[1].concentration: H2O is
+        the source-named stock solvent. No solvent volume is given; do not equate
+        stock volume with water input. Exact excerpt: "prepare stock solutions in
+        H2O at the specified concentration"; locator=sol-0 preparation step 2. Exact
+        excerpt: "Na2EDTA x 2 H2O (Stock solution 0.002g/50mL) 1.0000 ul/l - -"; locator=sol-0
+        / recipe-18; table headings=[''Compound'', ''Amount'', ''Unit'', ''Conc. [g/L]'',
+        ''Conc. [mM]'']. User-contributed MediaDive P4 page, accessed 2026-10-07;
+        source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+- preferred_term: MnCl2 x 4 H2O stock
+  concentration:
+    value: '0.001'
+    unit: ML_PER_L
+  notes: MnCl2 x 4 H2O (Stock solution 0.01g/50mL). Prepared in H2O under source preparation
+    step 2; dose applies to the 1 L NNM batch, not to preparation of this stock.
+  composition:
+  - preferred_term: MnCl2 x 4 H2O
+    concentration:
+      value: '0.2'
+      unit: G_PER_L
+    source: MediaDive public Medium P4
+    term:
+      id: CHEBI:86368
+      label: MnCl2 x 4 H2O
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: MnCl2 x 4 H2O
+    notes: 'Restore the stock stage: 0.01 g / 50 ml = 0.2 g/L stock. Source addition
+      1.0000 μl/l = 0.001 ml/L. The previous final contribution 0.0000002 g/L matches
+      0.2 * 0.001 / 1000; it was not a wrong numeric value but must not remain a duplicate
+      direct ingredient.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: MnCl2 x 4 H2O (Stock solution 0.01g/50mL) 1.0000 μl/l - -
+      explanation: 'ingredients[18].concentration -> solutions[9].composition[0].concentration:
+        Restore the stock stage: 0.01 g / 50 ml = 0.2 g/L stock. Source addition 1.0000
+        μl/l = 0.001 ml/L. The previous final contribution 0.0000002 g/L matches 0.2
+        * 0.001 / 1000; it was not a wrong numeric value but must not remain a duplicate
+        direct ingredient. Exact excerpt: "MnCl2 x 4 H2O (Stock solution 0.01g/50mL)
+        1.0000 μl/l - -"; locator=sol-0 / recipe-19; table headings=[''Compound'',
+        ''Amount'', ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "prepare
+        stock solutions in H2O at the specified concentration"; locator=sol-0 preparation
+        step 2. Exact excerpt: "Fill to a total volume of 1 liter with purified H2O.";
+        locator=sol-0 preparation step 4. User-contributed MediaDive P4 page, accessed
+        2026-10-07; source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+  - preferred_term: Water
+    source: MediaDive public Medium P4
+    notes: H2O is the source-named stock solvent. No solvent volume is given; do not
+      equate stock volume with water input.
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: prepare stock solutions in H2O at the specified concentration
+      explanation: 'new input -> solutions[9].composition[1].concentration: H2O is
+        the source-named stock solvent. No solvent volume is given; do not equate
+        stock volume with water input. Exact excerpt: "prepare stock solutions in
+        H2O at the specified concentration"; locator=sol-0 preparation step 2. Exact
+        excerpt: "MnCl2 x 4 H2O (Stock solution 0.01g/50mL) 1.0000 μl/l - -"; locator=sol-0
+        / recipe-19; table headings=[''Compound'', ''Amount'', ''Unit'', ''Conc. [g/L]'',
+        ''Conc. [mM]'']. User-contributed MediaDive P4 page, accessed 2026-10-07;
+        source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+- preferred_term: ZnSO4 x 7 H2O stock
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  notes: ZnSO4 x 7 H2O (Stock solution 0.001g/50mL). Prepared in H2O under source
+    preparation step 2; dose applies to the 1 L NNM batch, not to preparation of this
+    stock.
+  composition:
+  - preferred_term: ZnSO4 x 7 H2O
+    concentration:
+      value: '0.02'
+      unit: G_PER_L
+    source: MediaDive public Medium P4
+    notes: 'Restore the stock stage: 0.001 g / 50 ml = 0.02 g/L stock. Source addition
+      1.0000 ml/l = 1 ml/L. The previous final contribution 0.00002 g/L matches 0.02
+      * 1 / 1000; it was not a wrong numeric value but must not remain a duplicate
+      direct ingredient.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: ZnSO4 x 7 H2O (Stock solution 0.001g/50mL) 1.0000 ml/l - -
+      explanation: 'ingredients[19].concentration -> solutions[10].composition[0].concentration:
+        Restore the stock stage: 0.001 g / 50 ml = 0.02 g/L stock. Source addition
+        1.0000 ml/l = 1 ml/L. The previous final contribution 0.00002 g/L matches
+        0.02 * 1 / 1000; it was not a wrong numeric value but must not remain a duplicate
+        direct ingredient. Exact excerpt: "ZnSO4 x 7 H2O (Stock solution 0.001g/50mL)
+        1.0000 ml/l - -"; locator=sol-0 / recipe-20; table headings=[''Compound'',
+        ''Amount'', ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "prepare
+        stock solutions in H2O at the specified concentration"; locator=sol-0 preparation
+        step 2. Exact excerpt: "Fill to a total volume of 1 liter with purified H2O.";
+        locator=sol-0 preparation step 4. User-contributed MediaDive P4 page, accessed
+        2026-10-07; source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+  - preferred_term: Water
+    source: MediaDive public Medium P4
+    notes: H2O is the source-named stock solvent. No solvent volume is given; do not
+      equate stock volume with water input.
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: prepare stock solutions in H2O at the specified concentration
+      explanation: 'new input -> solutions[10].composition[1].concentration: H2O is
+        the source-named stock solvent. No solvent volume is given; do not equate
+        stock volume with water input. Exact excerpt: "prepare stock solutions in
+        H2O at the specified concentration"; locator=sol-0 preparation step 2. Exact
+        excerpt: "ZnSO4 x 7 H2O (Stock solution 0.001g/50mL) 1.0000 ml/l - -"; locator=sol-0
+        / recipe-20; table headings=[''Compound'', ''Amount'', ''Unit'', ''Conc. [g/L]'',
+        ''Conc. [mM]'']. User-contributed MediaDive P4 page, accessed 2026-10-07;
+        source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+- preferred_term: CoCl2 x 6 H2O stock
+  concentration:
+    value: '0.001'
+    unit: ML_PER_L
+  notes: CoCl2 x 6 H2O (Stock solution 0.0005g/50ml). Prepared in H2O under source
+    preparation step 2; dose applies to the 1 L NNM batch, not to preparation of this
+    stock.
+  composition:
+  - preferred_term: CoCl2 x 6 H2O
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    source: MediaDive public Medium P4
+    term:
+      id: CHEBI:53503
+      label: Cobalt chloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53503
+      label: Cobalt chloride hexahydrate
+    notes: 'Restore the stock stage: 0.0005 g / 50 ml = 0.01 g/L stock. Source addition
+      1.0000 μl/l = 0.001 ml/L. The previous final contribution 0.00000001 g/L matches
+      0.01 * 0.001 / 1000; it was not a wrong numeric value but must not remain a
+      duplicate direct ingredient.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: CoCl2 x 6 H2O (Stock solution 0.0005g/50ml) 1.0000 μl/l - -
+      explanation: 'ingredients[20].concentration -> solutions[11].composition[0].concentration:
+        Restore the stock stage: 0.0005 g / 50 ml = 0.01 g/L stock. Source addition
+        1.0000 μl/l = 0.001 ml/L. The previous final contribution 0.00000001 g/L matches
+        0.01 * 0.001 / 1000; it was not a wrong numeric value but must not remain
+        a duplicate direct ingredient. Exact excerpt: "CoCl2 x 6 H2O (Stock solution
+        0.0005g/50ml) 1.0000 μl/l - -"; locator=sol-0 / recipe-21; table headings=[''Compound'',
+        ''Amount'', ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "prepare
+        stock solutions in H2O at the specified concentration"; locator=sol-0 preparation
+        step 2. Exact excerpt: "Fill to a total volume of 1 liter with purified H2O.";
+        locator=sol-0 preparation step 4. User-contributed MediaDive P4 page, accessed
+        2026-10-07; source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+  - preferred_term: Water
+    source: MediaDive public Medium P4
+    notes: H2O is the source-named stock solvent. No solvent volume is given; do not
+      equate stock volume with water input.
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: prepare stock solutions in H2O at the specified concentration
+      explanation: 'new input -> solutions[11].composition[1].concentration: H2O is
+        the source-named stock solvent. No solvent volume is given; do not equate
+        stock volume with water input. Exact excerpt: "prepare stock solutions in
+        H2O at the specified concentration"; locator=sol-0 preparation step 2. Exact
+        excerpt: "CoCl2 x 6 H2O (Stock solution 0.0005g/50ml) 1.0000 μl/l - -"; locator=sol-0
+        / recipe-21; table headings=[''Compound'', ''Amount'', ''Unit'', ''Conc. [g/L]'',
+        ''Conc. [mM]'']. User-contributed MediaDive P4 page, accessed 2026-10-07;
+        source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+- preferred_term: CuSO4 x 5 H2O stock
+  concentration:
+    value: '0.1'
+    unit: ML_PER_L
+  notes: CuSO4 x 5 H2O (Stock solution 0.0013g/50mL). Prepared in H2O under source
+    preparation step 2; dose applies to the 1 L NNM batch, not to preparation of this
+    stock.
+  composition:
+  - preferred_term: CuSO4 x 5 H2O
+    concentration:
+      value: '0.026'
+      unit: G_PER_L
+    source: MediaDive public Medium P4
+    term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    notes: 'Restore the stock stage: 0.0013 g / 50 ml = 0.026 g/L stock. Source addition
+      100.0000 μl/l = 0.1 ml/L. The previous final contribution 0.0000026 g/L matches
+      0.026 * 0.1 / 1000; it was not a wrong numeric value but must not remain a duplicate
+      direct ingredient.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: CuSO4 x 5 H2O (Stock solution 0.0013g/50mL) 100.0000 μl/l - -
+      explanation: 'ingredients[21].concentration -> solutions[12].composition[0].concentration:
+        Restore the stock stage: 0.0013 g / 50 ml = 0.026 g/L stock. Source addition
+        100.0000 μl/l = 0.1 ml/L. The previous final contribution 0.0000026 g/L matches
+        0.026 * 0.1 / 1000; it was not a wrong numeric value but must not remain a
+        duplicate direct ingredient. Exact excerpt: "CuSO4 x 5 H2O (Stock solution
+        0.0013g/50mL) 100.0000 μl/l - -"; locator=sol-0 / recipe-22; table headings=[''Compound'',
+        ''Amount'', ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "prepare
+        stock solutions in H2O at the specified concentration"; locator=sol-0 preparation
+        step 2. Exact excerpt: "Fill to a total volume of 1 liter with purified H2O.";
+        locator=sol-0 preparation step 4. User-contributed MediaDive P4 page, accessed
+        2026-10-07; source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+  - preferred_term: Water
+    source: MediaDive public Medium P4
+    notes: H2O is the source-named stock solvent. No solvent volume is given; do not
+      equate stock volume with water input.
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: prepare stock solutions in H2O at the specified concentration
+      explanation: 'new input -> solutions[12].composition[1].concentration: H2O is
+        the source-named stock solvent. No solvent volume is given; do not equate
+        stock volume with water input. Exact excerpt: "prepare stock solutions in
+        H2O at the specified concentration"; locator=sol-0 preparation step 2. Exact
+        excerpt: "CuSO4 x 5 H2O (Stock solution 0.0013g/50mL) 100.0000 μl/l - -";
+        locator=sol-0 / recipe-22; table headings=[''Compound'', ''Amount'', ''Unit'',
+        ''Conc. [g/L]'', ''Conc. [mM]'']. User-contributed MediaDive P4 page, accessed
+        2026-10-07; source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+- preferred_term: NiSO4 x 6 H2O stock
+  concentration:
+    value: '0.1'
+    unit: ML_PER_L
+  notes: NiSO4 x 6 H2O (Stock solution 0.0005g/50mL). Prepared in H2O under source
+    preparation step 2; dose applies to the 1 L NNM batch, not to preparation of this
+    stock.
+  composition:
+  - preferred_term: NiSO4 x 6 H2O
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    source: MediaDive public Medium P4
+    term:
+      id: CHEBI:53437
+      label: Nickel (II) sulfate hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53437
+      label: Nickel (II) sulfate hexahydrate
+    notes: 'Restore the stock stage: 0.0005 g / 50 ml = 0.01 g/L stock. Source addition
+      100.0000 ul/l = 0.1 ml/L. The previous final contribution 0.000001 g/L matches
+      0.01 * 0.1 / 1000; it was not a wrong numeric value but must not remain a duplicate
+      direct ingredient.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: NiSO4 x 6 H2O (Stock solution 0.0005g/50mL) 100.0000 ul/l - -
+      explanation: 'ingredients[22].concentration -> solutions[13].composition[0].concentration:
+        Restore the stock stage: 0.0005 g / 50 ml = 0.01 g/L stock. Source addition
+        100.0000 ul/l = 0.1 ml/L. The previous final contribution 0.000001 g/L matches
+        0.01 * 0.1 / 1000; it was not a wrong numeric value but must not remain a
+        duplicate direct ingredient. Exact excerpt: "NiSO4 x 6 H2O (Stock solution
+        0.0005g/50mL) 100.0000 ul/l - -"; locator=sol-0 / recipe-23; table headings=[''Compound'',
+        ''Amount'', ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "prepare
+        stock solutions in H2O at the specified concentration"; locator=sol-0 preparation
+        step 2. Exact excerpt: "Fill to a total volume of 1 liter with purified H2O.";
+        locator=sol-0 preparation step 4. User-contributed MediaDive P4 page, accessed
+        2026-10-07; source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+  - preferred_term: Water
+    source: MediaDive public Medium P4
+    notes: H2O is the source-named stock solvent. No solvent volume is given; do not
+      equate stock volume with water input.
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: prepare stock solutions in H2O at the specified concentration
+      explanation: 'new input -> solutions[13].composition[1].concentration: H2O is
+        the source-named stock solvent. No solvent volume is given; do not equate
+        stock volume with water input. Exact excerpt: "prepare stock solutions in
+        H2O at the specified concentration"; locator=sol-0 preparation step 2. Exact
+        excerpt: "NiSO4 x 6 H2O (Stock solution 0.0005g/50mL) 100.0000 ul/l - -";
+        locator=sol-0 / recipe-23; table headings=[''Compound'', ''Amount'', ''Unit'',
+        ''Conc. [g/L]'', ''Conc. [mM]'']. User-contributed MediaDive P4 page, accessed
+        2026-10-07; source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+- preferred_term: Na2MoO4 x 2 H2O stock
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  notes: Na2MoO4 x 2 H2O (Stock solution 0.001g/50mL). Prepared in H2O under source
+    preparation step 2; dose applies to the 1 L NNM batch, not to preparation of this
+    stock.
+  composition:
+  - preferred_term: Na2MoO4 x 2 H2O
+    concentration:
+      value: '0.02'
+      unit: G_PER_L
+    source: MediaDive public Medium P4
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    notes: 'Restore the stock stage: 0.001 g / 50 ml = 0.02 g/L stock. Source addition
+      1.0000 ml/l = 1 ml/L. The previous final contribution 0.00002 g/L matches 0.02
+      * 1 / 1000; it was not a wrong numeric value but must not remain a duplicate
+      direct ingredient.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: Na2MoO4 x 2 H2O (Stock solution 0.001g/50mL) 1.0000 ml/l - -
+      explanation: 'ingredients[23].concentration -> solutions[14].composition[0].concentration:
+        Restore the stock stage: 0.001 g / 50 ml = 0.02 g/L stock. Source addition
+        1.0000 ml/l = 1 ml/L. The previous final contribution 0.00002 g/L matches
+        0.02 * 1 / 1000; it was not a wrong numeric value but must not remain a duplicate
+        direct ingredient. Exact excerpt: "Na2MoO4 x 2 H2O (Stock solution 0.001g/50mL)
+        1.0000 ml/l - -"; locator=sol-0 / recipe-24; table headings=[''Compound'',
+        ''Amount'', ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "prepare
+        stock solutions in H2O at the specified concentration"; locator=sol-0 preparation
+        step 2. Exact excerpt: "Fill to a total volume of 1 liter with purified H2O.";
+        locator=sol-0 preparation step 4. User-contributed MediaDive P4 page, accessed
+        2026-10-07; source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+  - preferred_term: Water
+    source: MediaDive public Medium P4
+    notes: H2O is the source-named stock solvent. No solvent volume is given; do not
+      equate stock volume with water input.
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: prepare stock solutions in H2O at the specified concentration
+      explanation: 'new input -> solutions[14].composition[1].concentration: H2O is
+        the source-named stock solvent. No solvent volume is given; do not equate
+        stock volume with water input. Exact excerpt: "prepare stock solutions in
+        H2O at the specified concentration"; locator=sol-0 preparation step 2. Exact
+        excerpt: "Na2MoO4 x 2 H2O (Stock solution 0.001g/50mL) 1.0000 ml/l - -"; locator=sol-0
+        / recipe-24; table headings=[''Compound'', ''Amount'', ''Unit'', ''Conc. [g/L]'',
+        ''Conc. [mM]'']. User-contributed MediaDive P4 page, accessed 2026-10-07;
+        source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+- preferred_term: H2SeO3 stock
+  concentration:
+    value: '0.1'
+    unit: ML_PER_L
+  notes: H2SeO3 (Stock solution 0.0007g/50mL). Prepared in H2O under source preparation
+    step 2; dose applies to the 1 L NNM batch, not to preparation of this stock.
+  composition:
+  - preferred_term: H2SeO3
+    concentration:
+      value: '0.014'
+      unit: G_PER_L
+    source: MediaDive public Medium P4
+    term:
+      id: CHEBI:26642
+      label: H2SeO3
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26642
+      label: H2SeO3
+    notes: 'Restore the stock stage: 0.0007 g / 50 ml = 0.014 g/L stock. Source addition
+      100.0000 μl/l = 0.1 ml/L. The previous final contribution 0.0000014 g/L matches
+      0.014 * 0.1 / 1000; it was not a wrong numeric value but must not remain a duplicate
+      direct ingredient.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: H2SeO3 (Stock solution 0.0007g/50mL) 100.0000 μl/l - -
+      explanation: 'ingredients[24].concentration -> solutions[15].composition[0].concentration:
+        Restore the stock stage: 0.0007 g / 50 ml = 0.014 g/L stock. Source addition
+        100.0000 μl/l = 0.1 ml/L. The previous final contribution 0.0000014 g/L matches
+        0.014 * 0.1 / 1000; it was not a wrong numeric value but must not remain a
+        duplicate direct ingredient. Exact excerpt: "H2SeO3 (Stock solution 0.0007g/50mL)
+        100.0000 μl/l - -"; locator=sol-0 / recipe-25; table headings=[''Compound'',
+        ''Amount'', ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "prepare
+        stock solutions in H2O at the specified concentration"; locator=sol-0 preparation
+        step 2. Exact excerpt: "Fill to a total volume of 1 liter with purified H2O.";
+        locator=sol-0 preparation step 4. User-contributed MediaDive P4 page, accessed
+        2026-10-07; source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+  - preferred_term: Water
+    source: MediaDive public Medium P4
+    notes: H2O is the source-named stock solvent. No solvent volume is given; do not
+      equate stock volume with water input.
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: prepare stock solutions in H2O at the specified concentration
+      explanation: 'new input -> solutions[15].composition[1].concentration: H2O is
+        the source-named stock solvent. No solvent volume is given; do not equate
+        stock volume with water input. Exact excerpt: "prepare stock solutions in
+        H2O at the specified concentration"; locator=sol-0 preparation step 2. Exact
+        excerpt: "H2SeO3 (Stock solution 0.0007g/50mL) 100.0000 μl/l - -"; locator=sol-0
+        / recipe-25; table headings=[''Compound'', ''Amount'', ''Unit'', ''Conc. [g/L]'',
+        ''Conc. [mM]'']. User-contributed MediaDive P4 page, accessed 2026-10-07;
+        source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+- preferred_term: Na3VO4 stock
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  notes: Na3VO4 (Stock solution 0.001g/50mL). Prepared in H2O under source preparation
+    step 2; dose applies to the 1 L NNM batch, not to preparation of this stock.
+  composition:
+  - preferred_term: Na3VO4
+    concentration:
+      value: '0.02'
+      unit: G_PER_L
+    source: MediaDive public Medium P4
+    term:
+      id: CHEBI:35607
+      label: Na3VO4
+    mediaingredientmech_chebi_term:
+      id: CHEBI:35607
+      label: Na3VO4
+    notes: 'Restore the stock stage: 0.001 g / 50 ml = 0.02 g/L stock. Source addition
+      1.0000 ml/l = 1 ml/L. The previous final contribution 0.00002 g/L matches 0.02
+      * 1 / 1000; it was not a wrong numeric value but must not remain a duplicate
+      direct ingredient.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: Na3VO4 (Stock solution 0.001g/50mL) 1.0000 ml/l - -
+      explanation: 'ingredients[25].concentration -> solutions[16].composition[0].concentration:
+        Restore the stock stage: 0.001 g / 50 ml = 0.02 g/L stock. Source addition
+        1.0000 ml/l = 1 ml/L. The previous final contribution 0.00002 g/L matches
+        0.02 * 1 / 1000; it was not a wrong numeric value but must not remain a duplicate
+        direct ingredient. Exact excerpt: "Na3VO4 (Stock solution 0.001g/50mL) 1.0000
+        ml/l - -"; locator=sol-0 / recipe-26; table headings=[''Compound'', ''Amount'',
+        ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "prepare stock
+        solutions in H2O at the specified concentration"; locator=sol-0 preparation
+        step 2. Exact excerpt: "Fill to a total volume of 1 liter with purified H2O.";
+        locator=sol-0 preparation step 4. User-contributed MediaDive P4 page, accessed
+        2026-10-07; source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+  - preferred_term: Water
+    source: MediaDive public Medium P4
+    notes: H2O is the source-named stock solvent. No solvent volume is given; do not
+      equate stock volume with water input.
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: prepare stock solutions in H2O at the specified concentration
+      explanation: 'new input -> solutions[16].composition[1].concentration: H2O is
+        the source-named stock solvent. No solvent volume is given; do not equate
+        stock volume with water input. Exact excerpt: "prepare stock solutions in
+        H2O at the specified concentration"; locator=sol-0 preparation step 2. Exact
+        excerpt: "Na3VO4 (Stock solution 0.001g/50mL) 1.0000 ml/l - -"; locator=sol-0
+        / recipe-26; table headings=[''Compound'', ''Amount'', ''Unit'', ''Conc. [g/L]'',
+        ''Conc. [mM]'']. User-contributed MediaDive P4 page, accessed 2026-10-07;
+        source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+- preferred_term: K2CrO4 stock
+  concentration:
+    value: '0.1'
+    unit: ML_PER_L
+  notes: K2CrO4 (Stock solution 0.0006g/50mL). Prepared in H2O under source preparation
+    step 2; dose applies to the 1 L NNM batch, not to preparation of this stock.
+  composition:
+  - preferred_term: K2CrO4
+    concentration:
+      value: '0.012'
+      unit: G_PER_L
+    source: MediaDive public Medium P4
+    term:
+      id: CHEBI:75249
+      label: K2CrO4
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75249
+      label: K2CrO4
+    notes: 'Restore the stock stage: 0.0006 g / 50 ml = 0.012 g/L stock. Source addition
+      100.0000 μl/l = 0.1 ml/L. The previous final contribution 0.0000012 g/L matches
+      0.012 * 0.1 / 1000; it was not a wrong numeric value but must not remain a duplicate
+      direct ingredient.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: K2CrO4 (Stock solution 0.0006g/50mL) 100.0000 μl/l - -
+      explanation: 'ingredients[26].concentration -> solutions[17].composition[0].concentration:
+        Restore the stock stage: 0.0006 g / 50 ml = 0.012 g/L stock. Source addition
+        100.0000 μl/l = 0.1 ml/L. The previous final contribution 0.0000012 g/L matches
+        0.012 * 0.1 / 1000; it was not a wrong numeric value but must not remain a
+        duplicate direct ingredient. Exact excerpt: "K2CrO4 (Stock solution 0.0006g/50mL)
+        100.0000 μl/l - -"; locator=sol-0 / recipe-27; table headings=[''Compound'',
+        ''Amount'', ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "prepare
+        stock solutions in H2O at the specified concentration"; locator=sol-0 preparation
+        step 2. Exact excerpt: "Fill to a total volume of 1 liter with purified H2O.";
+        locator=sol-0 preparation step 4. User-contributed MediaDive P4 page, accessed
+        2026-10-07; source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+  - preferred_term: Water
+    source: MediaDive public Medium P4
+    notes: H2O is the source-named stock solvent. No solvent volume is given; do not
+      equate stock volume with water input.
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: prepare stock solutions in H2O at the specified concentration
+      explanation: 'new input -> solutions[17].composition[1].concentration: H2O is
+        the source-named stock solvent. No solvent volume is given; do not equate
+        stock volume with water input. Exact excerpt: "prepare stock solutions in
+        H2O at the specified concentration"; locator=sol-0 preparation step 2. Exact
+        excerpt: "K2CrO4 (Stock solution 0.0006g/50mL) 100.0000 μl/l - -"; locator=sol-0
+        / recipe-27; table headings=[''Compound'', ''Amount'', ''Unit'', ''Conc. [g/L]'',
+        ''Conc. [mM]'']. User-contributed MediaDive P4 page, accessed 2026-10-07;
+        source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+- preferred_term: BaCO3 stock
+  concentration:
+    value: '0.008'
+    unit: ML_PER_L
+  notes: BaCO3 (Stock solution 1mg/ml. Heavy metal. Filter by using 0.22 µm pore size
+    (do not autoclave). Store in the dark). Prepared in H2O under source preparation
+    step 2; dose applies to the 1 L NNM batch, not to preparation of this stock.
+  composition:
+  - preferred_term: BaCO3
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    source: MediaDive public Medium P4
+    notes: 'Restore the stock stage: 1 mg / 1 ml = 1 g/L stock. Source addition 8.0000
+      μl/l = 0.008 ml/L. The previous final contribution 0.000008 g/L matches 1 *
+      0.008 / 1000; it was not a wrong numeric value but must not remain a duplicate
+      direct ingredient.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: BaCO3 (Stock solution 1mg/ml. Heavy metal. Filter by using 0.22 µm
+        pore size (do not autoclave). Store in the dark) 8.0000 μl/l - -
+      explanation: 'ingredients[27].concentration -> solutions[18].composition[0].concentration:
+        Restore the stock stage: 1 mg / 1 ml = 1 g/L stock. Source addition 8.0000
+        μl/l = 0.008 ml/L. The previous final contribution 0.000008 g/L matches 1
+        * 0.008 / 1000; it was not a wrong numeric value but must not remain a duplicate
+        direct ingredient. Exact excerpt: "BaCO3 (Stock solution 1mg/ml. Heavy metal.
+        Filter by using 0.22 µm pore size (do not autoclave). Store in the dark) 8.0000
+        μl/l - -"; locator=sol-0 / recipe-28; table headings=[''Compound'', ''Amount'',
+        ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "prepare stock
+        solutions in H2O at the specified concentration"; locator=sol-0 preparation
+        step 2. Exact excerpt: "Fill to a total volume of 1 liter with purified H2O.";
+        locator=sol-0 preparation step 4. User-contributed MediaDive P4 page, accessed
+        2026-10-07; source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+  - preferred_term: Water
+    source: MediaDive public Medium P4
+    notes: H2O is the source-named stock solvent. No solvent volume is given; do not
+      equate stock volume with water input.
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: prepare stock solutions in H2O at the specified concentration
+      explanation: 'new input -> solutions[18].composition[1].concentration: H2O is
+        the source-named stock solvent. No solvent volume is given; do not equate
+        stock volume with water input. Exact excerpt: "prepare stock solutions in
+        H2O at the specified concentration"; locator=sol-0 preparation step 2. Exact
+        excerpt: "BaCO3 (Stock solution 1mg/ml. Heavy metal. Filter by using 0.22
+        µm pore size (do not autoclave). Store in the dark) 8.0000 μl/l - -"; locator=sol-0
+        / recipe-28; table headings=[''Compound'', ''Amount'', ''Unit'', ''Conc. [g/L]'',
+        ''Conc. [mM]'']. User-contributed MediaDive P4 page, accessed 2026-10-07;
+        source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+- preferred_term: Cd(NO3)2 x 4 H2O stock
+  concentration:
+    value: '0.0001'
+    unit: ML_PER_L
+  notes: Cd(NO3)2 x 4 H2O (Stock solution 1mg/mL. Heavy metal. Store in the dark).
+    Prepared in H2O under source preparation step 2; dose applies to the 1 L NNM batch,
+    not to preparation of this stock.
+  composition:
+  - preferred_term: Cd(NO3)2 x 4 H2O
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    source: MediaDive public Medium P4
+    notes: 'Restore the stock stage: 1 mg / 1 ml = 1 g/L stock. Source addition 0.1000
+      μl/l = 0.0001 ml/L. The previous final contribution 0.0000001 g/L matches 1
+      * 0.0001 / 1000; it was not a wrong numeric value but must not remain a duplicate
+      direct ingredient.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: Cd(NO3)2 x 4 H2O (Stock solution 1mg/mL. Heavy metal. Store in the
+        dark) 0.1000 μl/l - -
+      explanation: 'ingredients[28].concentration -> solutions[19].composition[0].concentration:
+        Restore the stock stage: 1 mg / 1 ml = 1 g/L stock. Source addition 0.1000
+        μl/l = 0.0001 ml/L. The previous final contribution 0.0000001 g/L matches
+        1 * 0.0001 / 1000; it was not a wrong numeric value but must not remain a
+        duplicate direct ingredient. Exact excerpt: "Cd(NO3)2 x 4 H2O (Stock solution
+        1mg/mL. Heavy metal. Store in the dark) 0.1000 μl/l - -"; locator=sol-0 /
+        recipe-29; table headings=[''Compound'', ''Amount'', ''Unit'', ''Conc. [g/L]'',
+        ''Conc. [mM]'']. Exact excerpt: "prepare stock solutions in H2O at the specified
+        concentration"; locator=sol-0 preparation step 2. Exact excerpt: "Fill to
+        a total volume of 1 liter with purified H2O."; locator=sol-0 preparation step
+        4. User-contributed MediaDive P4 page, accessed 2026-10-07; source_type=user_contributed_dataset_page;
+        page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+  - preferred_term: Water
+    source: MediaDive public Medium P4
+    notes: H2O is the source-named stock solvent. No solvent volume is given; do not
+      equate stock volume with water input.
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: prepare stock solutions in H2O at the specified concentration
+      explanation: 'new input -> solutions[19].composition[1].concentration: H2O is
+        the source-named stock solvent. No solvent volume is given; do not equate
+        stock volume with water input. Exact excerpt: "prepare stock solutions in
+        H2O at the specified concentration"; locator=sol-0 preparation step 2. Exact
+        excerpt: "Cd(NO3)2 x 4 H2O (Stock solution 1mg/mL. Heavy metal. Store in the
+        dark) 0.1000 μl/l - -"; locator=sol-0 / recipe-29; table headings=[''Compound'',
+        ''Amount'', ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. User-contributed MediaDive
+        P4 page, accessed 2026-10-07; source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+- preferred_term: PbCl2 stock
+  concentration:
+    value: '0.00002'
+    unit: ML_PER_L
+  notes: PbCl2 (Stock solution 1mg/mL. Heavy metal. Store in the dark). Prepared in
+    H2O under source preparation step 2; dose applies to the 1 L NNM batch, not to
+    preparation of this stock.
+  composition:
+  - preferred_term: PbCl2
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    source: MediaDive public Medium P4
+    notes: 'Restore the stock stage: 1 mg / 1 ml = 1 g/L stock. Source addition 0.0200
+      μl/l = 0.00002 ml/L. The previous final contribution 0.00000002 g/L matches
+      1 * 0.00002 / 1000; it was not a wrong numeric value but must not remain a duplicate
+      direct ingredient.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: PbCl2 (Stock solution 1mg/mL. Heavy metal. Store in the dark) 0.0200
+        μl/l - -
+      explanation: 'ingredients[29].concentration -> solutions[20].composition[0].concentration:
+        Restore the stock stage: 1 mg / 1 ml = 1 g/L stock. Source addition 0.0200
+        μl/l = 0.00002 ml/L. The previous final contribution 0.00000002 g/L matches
+        1 * 0.00002 / 1000; it was not a wrong numeric value but must not remain a
+        duplicate direct ingredient. Exact excerpt: "PbCl2 (Stock solution 1mg/mL.
+        Heavy metal. Store in the dark) 0.0200 μl/l - -"; locator=sol-0 / recipe-30;
+        table headings=[''Compound'', ''Amount'', ''Unit'', ''Conc. [g/L]'', ''Conc.
+        [mM]'']. Exact excerpt: "prepare stock solutions in H2O at the specified concentration";
+        locator=sol-0 preparation step 2. Exact excerpt: "Fill to a total volume of
+        1 liter with purified H2O."; locator=sol-0 preparation step 4. User-contributed
+        MediaDive P4 page, accessed 2026-10-07; source_type=user_contributed_dataset_page;
+        page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+  - preferred_term: Water
+    source: MediaDive public Medium P4
+    notes: H2O is the source-named stock solvent. No solvent volume is given; do not
+      equate stock volume with water input.
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: prepare stock solutions in H2O at the specified concentration
+      explanation: 'new input -> solutions[20].composition[1].concentration: H2O is
+        the source-named stock solvent. No solvent volume is given; do not equate
+        stock volume with water input. Exact excerpt: "prepare stock solutions in
+        H2O at the specified concentration"; locator=sol-0 preparation step 2. Exact
+        excerpt: "PbCl2 (Stock solution 1mg/mL. Heavy metal. Store in the dark) 0.0200
+        μl/l - -"; locator=sol-0 / recipe-30; table headings=[''Compound'', ''Amount'',
+        ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. User-contributed MediaDive P4
+        page, accessed 2026-10-07; source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+- preferred_term: AgNO3 stock
+  concentration:
+    value: '0.000002'
+    unit: ML_PER_L
+  notes: AgNO3 (Stock solution 1mg/mL. Heavy metal. Store in the dark). Prepared in
+    H2O under source preparation step 2; dose applies to the 1 L NNM batch, not to
+    preparation of this stock.
+  composition:
+  - preferred_term: AgNO3
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    source: MediaDive public Medium P4
+    notes: 'Restore the stock stage: 1 mg / 1 ml = 1 g/L stock. Source addition 0.0020
+      μl/l = 0.000002 ml/L. The previous final contribution 0.000000002 g/L matches
+      1 * 0.000002 / 1000; it was not a wrong numeric value but must not remain a
+      duplicate direct ingredient.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: AgNO3 (Stock solution 1mg/mL. Heavy metal. Store in the dark) 0.0020
+        μl/l - -
+      explanation: 'ingredients[30].concentration -> solutions[21].composition[0].concentration:
+        Restore the stock stage: 1 mg / 1 ml = 1 g/L stock. Source addition 0.0020
+        μl/l = 0.000002 ml/L. The previous final contribution 0.000000002 g/L matches
+        1 * 0.000002 / 1000; it was not a wrong numeric value but must not remain
+        a duplicate direct ingredient. Exact excerpt: "AgNO3 (Stock solution 1mg/mL.
+        Heavy metal. Store in the dark) 0.0020 μl/l - -"; locator=sol-0 / recipe-31;
+        table headings=[''Compound'', ''Amount'', ''Unit'', ''Conc. [g/L]'', ''Conc.
+        [mM]'']. Exact excerpt: "prepare stock solutions in H2O at the specified concentration";
+        locator=sol-0 preparation step 2. Exact excerpt: "Fill to a total volume of
+        1 liter with purified H2O."; locator=sol-0 preparation step 4. User-contributed
+        MediaDive P4 page, accessed 2026-10-07; source_type=user_contributed_dataset_page;
+        page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+  - preferred_term: Water
+    source: MediaDive public Medium P4
+    notes: H2O is the source-named stock solvent. No solvent volume is given; do not
+      equate stock volume with water input.
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: prepare stock solutions in H2O at the specified concentration
+      explanation: 'new input -> solutions[21].composition[1].concentration: H2O is
+        the source-named stock solvent. No solvent volume is given; do not equate
+        stock volume with water input. Exact excerpt: "prepare stock solutions in
+        H2O at the specified concentration"; locator=sol-0 preparation step 2. Exact
+        excerpt: "AgNO3 (Stock solution 1mg/mL. Heavy metal. Store in the dark) 0.0020
+        μl/l - -"; locator=sol-0 / recipe-31; table headings=[''Compound'', ''Amount'',
+        ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. User-contributed MediaDive P4
+        page, accessed 2026-10-07; source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+- preferred_term: TiCl3 stock
+  concentration:
+    value: '0.0013'
+    unit: ML_PER_L
+  notes: TiCl3 (Stock solution. Heavy metal. Use Sigma-Aldrich ref. 14010 (10-15%
+    TiCl3 basis) and dilute 1:1000000. Store in the dark). Prepared in H2O under source
+    preparation step 2; dose applies to the 1 L NNM batch, not to preparation of this
+    stock.
+  composition:
+  - preferred_term: TiCl3
+    source: MediaDive public Medium P4
+    notes: The legacy ingredient quantity was the diluted reagent's working dose,
+      not TiCl3 solute concentration. Move it to the stock. Preserve 10-15% commercial
+      strength and 1:1000000 dilution only as literal source context; no percent basis,
+      density or TiCl3 mass amount is inferred.
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: TiCl3 (Stock solution. Heavy metal. Use Sigma-Aldrich ref. 14010 (10-15%
+        TiCl3 basis) and dilute 1:1000000. Store in the dark) 1.3000 μl/l - -
+      explanation: 'ingredients[31].concentration -> solutions[22].composition[0].concentration:
+        The legacy ingredient quantity was the diluted reagent''s working dose, not
+        TiCl3 solute concentration. Move it to the stock. Preserve 10-15% commercial
+        strength and 1:1000000 dilution only as literal source context; no percent
+        basis, density or TiCl3 mass amount is inferred. Exact excerpt: "TiCl3 (Stock
+        solution. Heavy metal. Use Sigma-Aldrich ref. 14010 (10-15% TiCl3 basis) and
+        dilute 1:1000000. Store in the dark) 1.3000 μl/l - -"; locator=sol-0 / recipe-32;
+        table headings=[''Compound'', ''Amount'', ''Unit'', ''Conc. [g/L]'', ''Conc.
+        [mM]'']. Exact excerpt: "prepare stock solutions in H2O at the specified concentration";
+        locator=sol-0 preparation step 2. Exact excerpt: "Fill to a total volume of
+        1 liter with purified H2O."; locator=sol-0 preparation step 4. User-contributed
+        MediaDive P4 page, accessed 2026-10-07; source_type=user_contributed_dataset_page;
+        page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+  - preferred_term: Water
+    source: MediaDive public Medium P4
+    notes: H2O is the source-named stock solvent. No solvent volume is given; do not
+      equate stock volume with water input.
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P4
+      supports: SUPPORT
+      snippet: prepare stock solutions in H2O at the specified concentration
+      explanation: 'new input -> solutions[22].composition[1].concentration: H2O is
+        the source-named stock solvent. No solvent volume is given; do not equate
+        stock volume with water input. Exact excerpt: "prepare stock solutions in
+        H2O at the specified concentration"; locator=sol-0 preparation step 2. Exact
+        excerpt: "TiCl3 (Stock solution. Heavy metal. Use Sigma-Aldrich ref. 14010
+        (10-15% TiCl3 basis) and dilute 1:1000000. Store in the dark) 1.3000 μl/l
+        - -"; locator=sol-0 / recipe-32; table headings=[''Compound'', ''Amount'',
+        ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. User-contributed MediaDive P4
+        page, accessed 2026-10-07; source_type=user_contributed_dataset_page; page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+        figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+        Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+        validation or growth claim is implied.'
+evidence:
+- reference: https://mediadive.dsmz.de/medium/P4
+  supports: SUPPORT
+  snippet: NaBr (Stock solution 0.5g/mL) 2.1000 μl/l - -
+  explanation: 'new input -> solutions[0].concentration: Working stock addition: 2.1000
+    μl/l / 1000 = 0.0021 ML_PER_L. No reagent density or solute percentage is inferred.
+    Exact excerpt: "NaBr (Stock solution 0.5g/mL) 2.1000 μl/l - -"; locator=sol-0
+    / recipe-6; table headings=[''Compound'', ''Amount'', ''Unit'', ''Conc. [g/L]'',
+    ''Conc. [mM]'']. Exact excerpt: "Fill to a total volume of 1 liter with purified
+    H2O."; locator=sol-0 preparation step 4. new input -> solutions[1].concentration:
+    Working stock addition: 10.0000 μl/l / 1000 = 0.01 ML_PER_L. No reagent density
+    or solute percentage is inferred. Exact excerpt: "RbCl (Stock solution 0.01g/mL)
+    10.0000 μl/l - -"; locator=sol-0 / recipe-10; table headings=[''Compound'', ''Amount'',
+    ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "Fill to a total volume
+    of 1 liter with purified H2O."; locator=sol-0 preparation step 4. new input ->
+    solutions[2].concentration: Working stock addition: 2.0000 μl/l / 1000 = 0.002
+    ML_PER_L. No reagent density or solute percentage is inferred. Exact excerpt:
+    "LiCl (Stock solution 0.6g/mL) 2.0000 μl/l - -"; locator=sol-0 / recipe-11; table
+    headings=[''Compound'', ''Amount'', ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]''].
+    Exact excerpt: "Fill to a total volume of 1 liter with purified H2O."; locator=sol-0
+    preparation step 4. new input -> solutions[3].concentration: Working stock addition:
+    5.0000 μl/l / 1000 = 0.005 ML_PER_L. No reagent density or solute percentage is
+    inferred. Exact excerpt: "ZnCl2 (Stock solution 1g/mL) 5.0000 μl/l - -"; locator=sol-0
+    / recipe-12; table headings=[''Compound'', ''Amount'', ''Unit'', ''Conc. [g/L]'',
+    ''Conc. [mM]'']. Exact excerpt: "Fill to a total volume of 1 liter with purified
+    H2O."; locator=sol-0 preparation step 4. new input -> solutions[4].concentration:
+    Working stock addition: 30.0000 μl/l / 1000 = 0.03 ML_PER_L. No reagent density
+    or solute percentage is inferred. Exact excerpt: "KI (Stock solution 1g/mL) 30.0000
+    μl/l - -"; locator=sol-0 / recipe-13; table headings=[''Compound'', ''Amount'',
+    ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "Fill to a total volume
+    of 1 liter with purified H2O."; locator=sol-0 preparation step 4. new input ->
+    solutions[5].concentration: Working stock addition: 0.3000 μl/l / 1000 = 0.0003
+    ML_PER_L. No reagent density or solute percentage is inferred. Exact excerpt:
+    "AlCl3 x 6 H2O (Stock solution 0.001g/mL) 0.3000 μl/l - -"; locator=sol-0 / recipe-14;
+    table headings=[''Compound'', ''Amount'', ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]''].
+    Exact excerpt: "Fill to a total volume of 1 liter with purified H2O."; locator=sol-0
+    preparation step 4. new input -> solutions[6].concentration: Working stock addition:
+    1.0000 ml/l / 1 = 1 ML_PER_L. No reagent density or solute percentage is inferred.
+    Exact excerpt: "Na2SiO3 x 5 H2O (Stock solution 0.053g/50mL; prepare by stirring
+    continuously to promote the dissolution of silicon) 1.0000 ml/l - -"; locator=sol-0
+    / recipe-15; table headings=[''Compound'', ''Amount'', ''Unit'', ''Conc. [g/L]'',
+    ''Conc. [mM]'']. Exact excerpt: "Fill to a total volume of 1 liter with purified
+    H2O."; locator=sol-0 preparation step 4. new input -> solutions[7].concentration:
+    Working stock addition: 1.0000 ul/l / 1000 = 0.001 ML_PER_L. No reagent density
+    or solute percentage is inferred. Exact excerpt: "FeCl3 x 6 H2O (Stock solution
+    0.001g/50mL) 1.0000 ul/l - -"; locator=sol-0 / recipe-16; table headings=[''Compound'',
+    ''Amount'', ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "Fill to
+    a total volume of 1 liter with purified H2O."; locator=sol-0 preparation step
+    4. new input -> solutions[8].concentration: Working stock addition: 1.0000 ul/l
+    / 1000 = 0.001 ML_PER_L. No reagent density or solute percentage is inferred.
+    Exact excerpt: "Na2EDTA x 2 H2O (Stock solution 0.002g/50mL) 1.0000 ul/l - -";
+    locator=sol-0 / recipe-18; table headings=[''Compound'', ''Amount'', ''Unit'',
+    ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "Fill to a total volume of 1
+    liter with purified H2O."; locator=sol-0 preparation step 4. new input -> solutions[9].concentration:
+    Working stock addition: 1.0000 μl/l / 1000 = 0.001 ML_PER_L. No reagent density
+    or solute percentage is inferred. Exact excerpt: "MnCl2 x 4 H2O (Stock solution
+    0.01g/50mL) 1.0000 μl/l - -"; locator=sol-0 / recipe-19; table headings=[''Compound'',
+    ''Amount'', ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "Fill to
+    a total volume of 1 liter with purified H2O."; locator=sol-0 preparation step
+    4. new input -> solutions[10].concentration: Working stock addition: 1.0000 ml/l
+    / 1 = 1 ML_PER_L. No reagent density or solute percentage is inferred. Exact excerpt:
+    "ZnSO4 x 7 H2O (Stock solution 0.001g/50mL) 1.0000 ml/l - -"; locator=sol-0 /
+    recipe-20; table headings=[''Compound'', ''Amount'', ''Unit'', ''Conc. [g/L]'',
+    ''Conc. [mM]'']. Exact excerpt: "Fill to a total volume of 1 liter with purified
+    H2O."; locator=sol-0 preparation step 4. new input -> solutions[11].concentration:
+    Working stock addition: 1.0000 μl/l / 1000 = 0.001 ML_PER_L. No reagent density
+    or solute percentage is inferred. Exact excerpt: "CoCl2 x 6 H2O (Stock solution
+    0.0005g/50ml) 1.0000 μl/l - -"; locator=sol-0 / recipe-21; table headings=[''Compound'',
+    ''Amount'', ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "Fill to
+    a total volume of 1 liter with purified H2O."; locator=sol-0 preparation step
+    4. new input -> solutions[12].concentration: Working stock addition: 100.0000
+    μl/l / 1000 = 0.1 ML_PER_L. No reagent density or solute percentage is inferred.
+    Exact excerpt: "CuSO4 x 5 H2O (Stock solution 0.0013g/50mL) 100.0000 μl/l - -";
+    locator=sol-0 / recipe-22; table headings=[''Compound'', ''Amount'', ''Unit'',
+    ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "Fill to a total volume of 1
+    liter with purified H2O."; locator=sol-0 preparation step 4. new input -> solutions[13].concentration:
+    Working stock addition: 100.0000 ul/l / 1000 = 0.1 ML_PER_L. No reagent density
+    or solute percentage is inferred. Exact excerpt: "NiSO4 x 6 H2O (Stock solution
+    0.0005g/50mL) 100.0000 ul/l - -"; locator=sol-0 / recipe-23; table headings=[''Compound'',
+    ''Amount'', ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "Fill to
+    a total volume of 1 liter with purified H2O."; locator=sol-0 preparation step
+    4. new input -> solutions[14].concentration: Working stock addition: 1.0000 ml/l
+    / 1 = 1 ML_PER_L. No reagent density or solute percentage is inferred. Exact excerpt:
+    "Na2MoO4 x 2 H2O (Stock solution 0.001g/50mL) 1.0000 ml/l - -"; locator=sol-0
+    / recipe-24; table headings=[''Compound'', ''Amount'', ''Unit'', ''Conc. [g/L]'',
+    ''Conc. [mM]'']. Exact excerpt: "Fill to a total volume of 1 liter with purified
+    H2O."; locator=sol-0 preparation step 4. new input -> solutions[15].concentration:
+    Working stock addition: 100.0000 μl/l / 1000 = 0.1 ML_PER_L. No reagent density
+    or solute percentage is inferred. Exact excerpt: "H2SeO3 (Stock solution 0.0007g/50mL)
+    100.0000 μl/l - -"; locator=sol-0 / recipe-25; table headings=[''Compound'', ''Amount'',
+    ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "Fill to a total volume
+    of 1 liter with purified H2O."; locator=sol-0 preparation step 4. new input ->
+    solutions[16].concentration: Working stock addition: 1.0000 ml/l / 1 = 1 ML_PER_L.
+    No reagent density or solute percentage is inferred. Exact excerpt: "Na3VO4 (Stock
+    solution 0.001g/50mL) 1.0000 ml/l - -"; locator=sol-0 / recipe-26; table headings=[''Compound'',
+    ''Amount'', ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "Fill to
+    a total volume of 1 liter with purified H2O."; locator=sol-0 preparation step
+    4. new input -> solutions[17].concentration: Working stock addition: 100.0000
+    μl/l / 1000 = 0.1 ML_PER_L. No reagent density or solute percentage is inferred.
+    Exact excerpt: "K2CrO4 (Stock solution 0.0006g/50mL) 100.0000 μl/l - -"; locator=sol-0
+    / recipe-27; table headings=[''Compound'', ''Amount'', ''Unit'', ''Conc. [g/L]'',
+    ''Conc. [mM]'']. Exact excerpt: "Fill to a total volume of 1 liter with purified
+    H2O."; locator=sol-0 preparation step 4. new input -> solutions[18].concentration:
+    Working stock addition: 8.0000 μl/l / 1000 = 0.008 ML_PER_L. No reagent density
+    or solute percentage is inferred. Exact excerpt: "BaCO3 (Stock solution 1mg/ml.
+    Heavy metal. Filter by using 0.22 µm pore size (do not autoclave). Store in the
+    dark) 8.0000 μl/l - -"; locator=sol-0 / recipe-28; table headings=[''Compound'',
+    ''Amount'', ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "Fill to
+    a total volume of 1 liter with purified H2O."; locator=sol-0 preparation step
+    4. new input -> solutions[19].concentration: Working stock addition: 0.1000 μl/l
+    / 1000 = 0.0001 ML_PER_L. No reagent density or solute percentage is inferred.
+    Exact excerpt: "Cd(NO3)2 x 4 H2O (Stock solution 1mg/mL. Heavy metal. Store in
+    the dark) 0.1000 μl/l - -"; locator=sol-0 / recipe-29; table headings=[''Compound'',
+    ''Amount'', ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "Fill to
+    a total volume of 1 liter with purified H2O."; locator=sol-0 preparation step
+    4. new input -> solutions[20].concentration: Working stock addition: 0.0200 μl/l
+    / 1000 = 0.00002 ML_PER_L. No reagent density or solute percentage is inferred.
+    Exact excerpt: "PbCl2 (Stock solution 1mg/mL. Heavy metal. Store in the dark)
+    0.0200 μl/l - -"; locator=sol-0 / recipe-30; table headings=[''Compound'', ''Amount'',
+    ''Unit'', ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "Fill to a total volume
+    of 1 liter with purified H2O."; locator=sol-0 preparation step 4. new input ->
+    solutions[21].concentration: Working stock addition: 0.0020 μl/l / 1000 = 0.000002
+    ML_PER_L. No reagent density or solute percentage is inferred. Exact excerpt:
+    "AgNO3 (Stock solution 1mg/mL. Heavy metal. Store in the dark) 0.0020 μl/l - -";
+    locator=sol-0 / recipe-31; table headings=[''Compound'', ''Amount'', ''Unit'',
+    ''Conc. [g/L]'', ''Conc. [mM]'']. Exact excerpt: "Fill to a total volume of 1
+    liter with purified H2O."; locator=sol-0 preparation step 4. ingredients[31].concentration
+    -> solutions[22].concentration: Working stock addition: 1.3000 μl/l / 1000 = 0.0013
+    ML_PER_L. No reagent density or solute percentage is inferred. Exact excerpt:
+    "TiCl3 (Stock solution. Heavy metal. Use Sigma-Aldrich ref. 14010 (10-15% TiCl3
+    basis) and dilute 1:1000000. Store in the dark) 1.3000 μl/l - -"; locator=sol-0
+    / recipe-32; table headings=[''Compound'', ''Amount'', ''Unit'', ''Conc. [g/L]'',
+    ''Conc. [mM]'']. Exact excerpt: "Fill to a total volume of 1 liter with purified
+    H2O."; locator=sol-0 preparation step 4. notes -> notes: RS NNM retains nine direct
+    solute rates and now represents the 23 source-listed stocks separately. Final
+    makeup is 1 L with purified water; stock water amounts are unspecified. Prior
+    calculated final contributions are preserved in the claim audit, not duplicated
+    as direct ingredients. TiCl3 commercial percentage basis and solute concentration
+    remain unresolved. Exact excerpt: "Fill to a total volume of 1 liter with purified
+    H2O."; locator=sol-0 preparation step 4. Exact excerpt: "prepare stock solutions
+    in H2O at the specified concentration"; locator=sol-0 preparation step 2. User-contributed
+    MediaDive P4 page, accessed 2026-10-07; source_type=user_contributed_dataset_page;
+    page_sha256=c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b;
+    figure_sha256=245e477ae6e3c0f514270e7e62fc4c000110c022ae18c153c7ec8ceb9f03e4a2.
+    Numeric evidence is the page text, not OCR of the inspected diagram. No journal
+    validation or growth claim is implied.'

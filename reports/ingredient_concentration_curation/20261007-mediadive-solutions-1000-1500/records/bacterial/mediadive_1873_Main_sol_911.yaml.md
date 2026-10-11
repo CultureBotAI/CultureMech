@@ -1,0 +1,24 @@
+# Solution Concentration Review: Main sol. 911
+
+- Record: data/normalized_yaml/bacterial/mediadive_1873_Main_sol_911.yaml
+- ID: CultureMech:011294
+- Reviewed commit: `f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f`
+- Before SHA256: `de66513d70f2a2cd485a6310b23843b12733fa0fa49a81516953c2cd80db1716`
+- Proposed/result SHA256: `de66513d70f2a2cd485a6310b23843b12733fa0fa49a81516953c2cd80db1716`
+- Source: https://mediadive.dsmz.de/rest/solution/1873
+- Source SHA256: fb46a61db5624b64d6aa31dd946f66bd9b66d09a9503c3b70bb64304ab6d202c
+- Retrieved: 2026-10-07T08:57:18.378963+00:00
+- Source type: official DSMZ dataset; discovery: existing record source ID; authors/year not supplied.
+- State: reviewed; unchanged; unresolved claims remain unchanged.
+- Baseline schema errors: 0; proposed schema errors: 0.
+- Operational failure: none
+
+Source response, exact IDs/labels, arithmetic, and literal snippets were checked by the maintained guarded reviewer. This is not a claim of manual inspection of every source sentence or automated reference-validator success. Preparation-dependent quantities and unrepresented stocks remain open. Schema validity is not scientific proof.
+
+| Field | Ingredient | Old | Proposed | Status | DOI/PURL | Exact snippet | Locator | Calculation / decision | Action |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `composition[0].concentration` | Glycerol | {"unit": "PERCENT_V_V", "value": "5"} | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/solution/1873 | {<br>                "recipe_order": 2,<br>                "compound": "Glycerol",<br>                "compound_id": 72,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 5,<br>                "unit": "ml",<br>                "g_l": null,<br>                "mmol_l": null,<br>                "optional": 0<br>            } | $.data.recipe[1] (compound_id=72) | Unit or liquid/stock context requires source-specific review; no conversion guessed. | unchanged |
+| `composition[1].concentration` | Distilled water | {"unit": "PERCENT_V_V", "value": "900"} | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/solution/1873 | {<br>                "recipe_order": 3,<br>                "compound": "Distilled water",<br>                "compound_id": 4,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 900,<br>                "unit": "ml",<br>                "g_l": null,<br>                "mmol_l": null,<br>                "optional": 0<br>            } | $.data.recipe[2] (compound_id=4) | Preparation steps may specify make-up volume; manual water review required | unchanged |
+| `ingredients[0].concentration` | See source for composition | {"unit": "VARIABLE", "value": "variable"} | unknown / not asserted | unsupported | unknown / not asserted | unknown / not asserted | unknown / not asserted | Outside direct composition matching; unchanged. | unchanged |
+| `source.recipe[0]` | Bacto Middelbrook 7H11 agar (Difco 283810) | unknown / not asserted | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/solution/1873 | {<br>                "recipe_order": 1,<br>                "compound": null,<br>                "compound_id": null,<br>                "solution": "Bacto Middelbrook 7H11 agar (Difco 283810)",<br>                "solution_id": 5667,<br>                "condition": null,<br>                "attribute": "",<br>                "amount": 21,<br>                "unit": "g",<br>                "g_l": 11.0236,<br>                "mmol_l": null,<br>                "optional": 0<br>            } | $.data.recipe[0] | Source-only ingredient or nested stock addition; needs structural curation, not a direct-ingredient substitution. | unchanged |
+| `source.recipe[3]` | Bacto Middelbrook OADC enrichment (Difco 212240): | unknown / not asserted | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/solution/1873 | {<br>                "recipe_order": 4,<br>                "compound": null,<br>                "compound_id": null,<br>                "solution": "Bacto Middelbrook OADC enrichment (Difco 212240):",<br>                "solution_id": 5668,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 100,<br>                "unit": "ml",<br>                "g_l": null,<br>                "mmol_l": null,<br>                "optional": 0<br>            } | $.data.recipe[3] | Source-only ingredient or nested stock addition; needs structural curation, not a direct-ingredient substitution. | unchanged |

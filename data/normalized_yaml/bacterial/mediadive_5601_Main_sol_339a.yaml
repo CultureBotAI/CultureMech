@@ -35,6 +35,33 @@ composition:
     label: L-cysteine hydrochloride
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5601
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "L-Cysteine HCl",
+                      "compound_id": 1157,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.3,
+                      "unit": "g",
+                      "g_l": 0.3,
+                      "mmol_l": 1.90331,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[2].concentration (L-Cysteine
+      HCl) in MediaDive solution 5601; locator=$.data.recipe[2] (compound_id=1157).
+      Provider explicitly reports g_l=0.3. Arithmetic check: 0.3 g * 1 g/g / (1000
+      ml / 1000 ml per L) = 0.3 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T09:56:30.411176+00:00;
+      response SHA256=a844e18139b3620989c448cb369f5f3f7de1445cea87a81b193150b12f2844ea.'
 - preferred_term: D-Glucose
   concentration:
     value: '5'
@@ -47,6 +74,32 @@ composition:
     label: glucose
     confidence: 0.9
     match_type: manual_curated
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5601
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "D-Glucose",
+                      "compound_id": 211,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "g",
+                      "g_l": 5,
+                      "mmol_l": 27.7531,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[3].concentration (D-Glucose)
+      in MediaDive solution 5601; locator=$.data.recipe[3] (compound_id=211). Provider
+      explicitly reports g_l=5. Arithmetic check: 5 g * 1 g/g / (1000 ml / 1000 ml
+      per L) = 5 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T09:56:30.411176+00:00; response SHA256=a844e18139b3620989c448cb369f5f3f7de1445cea87a81b193150b12f2844ea.'
 - preferred_term: Na2CO3
   concentration:
     value: '1'
@@ -116,6 +169,16 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '2 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T09:59:54.456952+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/5601
+  changes: 'composition[2].concentration: {"unit": "G_PER_L", "value": "0.3"} -> {"unit":
+    "G_PER_L", "value": "0.3"} (evidence_only); composition[3].concentration: {"unit":
+    "G_PER_L", "value": "5"} -> {"unit": "G_PER_L", "value": "5"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -124,3 +187,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/5601
+  title: 'MediaDive solution 5601: Main sol. 339a'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=a844e18139b3620989c448cb369f5f3f7de1445cea87a81b193150b12f2844ea;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

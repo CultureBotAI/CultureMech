@@ -1,0 +1,705 @@
+{
+  "records": 46,
+  "accepted_claims": 264,
+  "retained_full_entries": 240,
+  "retained_amount_quotes": 257,
+  "records_with_full_entry_loss": 4,
+  "records_with_amount_quote_loss": 2,
+  "records_with_mapping_loss": 6,
+  "records_with_reference_loss": 6,
+  "records_with_event_loss": 6,
+  "scope": "Full entries require exact explanation retention; amount quotes require exact ingredient, quantity, reference, SUPPORT, snippet and field scope. Neither alone proves exact formulation equivalence of a concentration-independent group.",
+  "details": [
+    {
+      "path": "data/normalized_yaml/archaea/KOMODO_372_HALOBACTERIA_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/archaea/KOMODO_372_HALOBACTERIA_medium.yaml",
+        "data/normalized_yaml/archaea/halobacteria_medium.yaml",
+        "data/normalized_yaml/bacterial/jcm_medium_no_1241.yaml",
+        "data/normalized_yaml/bacterial/medium_372_modified_for_dsm_18341.yaml",
+        "data/normalized_yaml/bacterial/medium_372_modified_for_dsm_18342.yaml",
+        "data/normalized_yaml/bacterial/medium_372_modified_for_dsm_19336.yaml",
+        "data/normalized_yaml/bacterial/medium_372_modified_for_dsm_21622.yaml",
+        "data/normalized_yaml/bacterial/medium_372_modified_for_dsm_21769.yaml",
+        "data/normalized_yaml/bacterial/medium_372_modified_for_dsm_21771.yaml",
+        "data/normalized_yaml/bacterial/medium_372_modified_for_dsm_23158.yaml",
+        "data/normalized_yaml/bacterial/medium_372_modified_for_dsm_23862.yaml"
+      ],
+      "fingerprint": "a38d0d843e9da3abc9f0d2a94d230465eb19ff6860bbfb01f34f8e957eb09a3d",
+      "accepted_claims": 9,
+      "retained_full_entries": 9,
+      "retained_amount_quotes": 9,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/pediococcus_halophilus_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/DSMZ_227_PEDIOCOCCUS_HALOPHILUS_MEDIUM.yaml",
+        "data/normalized_yaml/bacterial/pediococcus_halophilus_medium.yaml"
+      ],
+      "fingerprint": "f424fef05e94314ed273da90335749c48f7d12cf2d54404702db556a6150f48d",
+      "accepted_claims": 10,
+      "retained_full_entries": 0,
+      "retained_amount_quotes": 10,
+      "mapping_retained": false,
+      "references_retained": false,
+      "event_retained": false
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_360_YPM_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/JCM_J840_YPM_MEDIUM.yaml",
+        "data/normalized_yaml/bacterial/KOMODO_360_YPM_medium.yaml",
+        "data/normalized_yaml/bacterial/ypm_medium.yaml"
+      ],
+      "fingerprint": "5ab86abcf3a253d85562c2e4fab029e9d18e4b0dbcb406d627b3aaaf87bc6c24",
+      "accepted_claims": 4,
+      "retained_full_entries": 0,
+      "retained_amount_quotes": 0,
+      "mapping_retained": false,
+      "references_retained": false,
+      "event_retained": false
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_221_AZOSPIRILLUM_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_221_AZOSPIRILLUM_medium.yaml",
+        "data/normalized_yaml/bacterial/azospirillum_medium.yaml"
+      ],
+      "fingerprint": "ea8b7a3069eef162caee8ffc0b7a19106222b3e676e9ceff6d04f9b17fa11b15",
+      "accepted_claims": 10,
+      "retained_full_entries": 10,
+      "retained_amount_quotes": 10,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_222_SP_-_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_222_SP_-_medium.yaml",
+        "data/normalized_yaml/bacterial/sp_medium.yaml"
+      ],
+      "fingerprint": "8e6c198e3774f77571510162822adb900530e317aa5792b2bf550fdd1c5c7637",
+      "accepted_claims": 6,
+      "retained_full_entries": 6,
+      "retained_amount_quotes": 6,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_223_POLYANGIUM_MEDIUM.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_223_POLYANGIUM_MEDIUM.yaml",
+        "data/normalized_yaml/bacterial/polyangium_medium.yaml"
+      ],
+      "fingerprint": "d56cf147a032731072f854f06f2b5779261c0ad043b0c8f933afe1c8a77c3f53",
+      "accepted_claims": 6,
+      "retained_full_entries": 6,
+      "retained_amount_quotes": 6,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_229_CORYNEBACTERIUM_medium_WITH_SALT.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_229_CORYNEBACTERIUM_medium_WITH_SALT.yaml",
+        "data/normalized_yaml/bacterial/KOMODO_53_CORYNEBACTERIUM_AGAR.yaml",
+        "data/normalized_yaml/bacterial/corynebacterium_agar.yaml",
+        "data/normalized_yaml/bacterial/corynebacterium_medium_with_salt.yaml",
+        "data/normalized_yaml/bacterial/medium_53_modified_for_dsm_16375.yaml",
+        "data/normalized_yaml/bacterial/medium_53_modified_for_dsm_16377.yaml",
+        "data/normalized_yaml/bacterial/medium_53_modified_for_dsm_16378.yaml"
+      ],
+      "fingerprint": "07c3706bae09d789e5ed9bb695aea08017c52c9c8ba7553428cbf4072f07fe28",
+      "accepted_claims": 4,
+      "retained_full_entries": 4,
+      "retained_amount_quotes": 4,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_231_PEDIOCOCCUS_DAMNOSUS_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_231_PEDIOCOCCUS_DAMNOSUS_medium.yaml",
+        "data/normalized_yaml/bacterial/medium_231_modified_for_dsm_12361.yaml",
+        "data/normalized_yaml/bacterial/medium_231_modified_for_dsm_18631.yaml",
+        "data/normalized_yaml/bacterial/medium_231_modified_for_dsm_19117.yaml",
+        "data/normalized_yaml/bacterial/medium_231_modified_for_dsm_20080.yaml",
+        "data/normalized_yaml/bacterial/medium_231_modified_for_dsm_20355.yaml",
+        "data/normalized_yaml/bacterial/medium_231_modified_for_dsm_22467.yaml",
+        "data/normalized_yaml/bacterial/pediococcus_damnosus_medium.yaml"
+      ],
+      "fingerprint": "e372db1001740c18c82ce5b05c92e4224cd7ea1be7be80e40e72efe235aafff1",
+      "accepted_claims": 9,
+      "retained_full_entries": 9,
+      "retained_amount_quotes": 9,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_237_ENB_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_237_ENB_medium.yaml",
+        "data/normalized_yaml/bacterial/enb_medium.yaml"
+      ],
+      "fingerprint": "ef5870bb6b188a5f4764a0280ccad3929e72e3060e18aa542964d5845c03758a",
+      "accepted_claims": 7,
+      "retained_full_entries": 7,
+      "retained_amount_quotes": 7,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_238_STREPTOMYCIN_NUTRIENT_AGAR.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_238_STREPTOMYCIN_NUTRIENT_AGAR.yaml",
+        "data/normalized_yaml/bacterial/streptomycin_nutrient_agar.yaml"
+      ],
+      "fingerprint": "6905b68d7e5a396e7b79dcdab632178ad5a133f18b9871a9aa97ce3abf9f04b5",
+      "accepted_claims": 3,
+      "retained_full_entries": 3,
+      "retained_amount_quotes": 3,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_240_CORYNEBACTERIUM_medium_WITH_BLOOD.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_240_CORYNEBACTERIUM_medium_WITH_BLOOD.yaml",
+        "data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml"
+      ],
+      "fingerprint": "bc65e1a0bcfd4e5130b267aa5308a9eda74dd56abfa92841d9fbef573001e829",
+      "accepted_claims": 4,
+      "retained_full_entries": 4,
+      "retained_amount_quotes": 4,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_242_BMM_-_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_242_BMM_-_medium.yaml",
+        "data/normalized_yaml/bacterial/bmm_medium.yaml"
+      ],
+      "fingerprint": "da93b88229ea7f22a9b3d1b9fe18515c5f1bf9a17031e7e5c79439caa0f8678d",
+      "accepted_claims": 10,
+      "retained_full_entries": 10,
+      "retained_amount_quotes": 10,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_250_Peptone_MEAT_EXTRACT_GLYCEROL_AGAR.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_250_Peptone_MEAT_EXTRACT_GLYCEROL_AGAR.yaml",
+        "data/normalized_yaml/bacterial/peptone_meat_extract_glycerol_agar.yaml"
+      ],
+      "fingerprint": "14f6bae7ceae582d8e6676372b44e36590e797e72d1d5353f292f2ddb413c6d1",
+      "accepted_claims": 3,
+      "retained_full_entries": 3,
+      "retained_amount_quotes": 3,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_251_Peptone_-_MEAT_EXTRACT_-_SOIL_EXTRACT_AGAR_PFE.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_251_Peptone_-_MEAT_EXTRACT_-_SOIL_EXTRACT_AGAR_PFE.yaml",
+        "data/normalized_yaml/bacterial/peptone_meat_extract_soil_extract_agar_pfe.yaml"
+      ],
+      "fingerprint": "24dc6219c6a5662d0f59997cfb38b1ec08209c07ec73abf9e8c36749bfe75b1c",
+      "accepted_claims": 4,
+      "retained_full_entries": 4,
+      "retained_amount_quotes": 4,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml",
+        "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml"
+      ],
+      "fingerprint": "5d5a1f2033a64a98948717cd80c153cc11f050418504c6d664ae3365b392e247",
+      "accepted_claims": 3,
+      "retained_full_entries": 3,
+      "retained_amount_quotes": 3,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_256_THERMUS_RUBER_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_256_THERMUS_RUBER_medium.yaml",
+        "data/normalized_yaml/bacterial/thermus_ruber_medium.yaml"
+      ],
+      "fingerprint": "5f78d8da9af1473ab038b056fae5cc3792866a02558e9c7544bc8d8ec2a57272",
+      "accepted_claims": 2,
+      "retained_full_entries": 2,
+      "retained_amount_quotes": 2,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_264_TOMATO_JUICE_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_264_TOMATO_JUICE_medium.yaml",
+        "data/normalized_yaml/bacterial/tomato_juice_medium.yaml"
+      ],
+      "fingerprint": "c595383acd8243677465c720d58fd1c06bf01d78c84fb16d9cfb44955505acb1",
+      "accepted_claims": 1,
+      "retained_full_entries": 1,
+      "retained_amount_quotes": 1,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_267_GINGER_BEER_PLANT_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_267_GINGER_BEER_PLANT_medium.yaml",
+        "data/normalized_yaml/bacterial/ginger_beer_plant_medium.yaml"
+      ],
+      "fingerprint": "73cd3552088a576912af7cbec6e3c6e1e6895376066f09cc7beae91a4751c164",
+      "accepted_claims": 1,
+      "retained_full_entries": 1,
+      "retained_amount_quotes": 1,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_281_HYPHOMONAS_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_281_HYPHOMONAS_medium.yaml",
+        "data/normalized_yaml/bacterial/hyphomonas_medium.yaml"
+      ],
+      "fingerprint": "7201c049a770d861ecce1308651963c12d6509b910560e8fb3f232a5d83fc054",
+      "accepted_claims": 1,
+      "retained_full_entries": 1,
+      "retained_amount_quotes": 1,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_305_BACILLUS_THERMOGLUCOSIDASIUS_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_305_BACILLUS_THERMOGLUCOSIDASIUS_medium.yaml",
+        "data/normalized_yaml/bacterial/bacillus_thermoglucosidasius_medium.yaml"
+      ],
+      "fingerprint": "292ea32e36b057dc40840bf5010e1c988d5f82d4946591d96ca46304c3e1f281",
+      "accepted_claims": 5,
+      "retained_full_entries": 5,
+      "retained_amount_quotes": 5,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_306_NY-AGAR.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_306_NY-AGAR.yaml",
+        "data/normalized_yaml/bacterial/ny_agar.yaml"
+      ],
+      "fingerprint": "8088d228baa12a50c7402a1dddf9af7f3ce0ab914bf29c6cb42ae5a564a8cd63",
+      "accepted_claims": 2,
+      "retained_full_entries": 2,
+      "retained_amount_quotes": 2,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_308_VIBRIO_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_308_VIBRIO_medium.yaml",
+        "data/normalized_yaml/bacterial/vibrio_medium.yaml"
+      ],
+      "fingerprint": "6048f058cfe20bddd4498eb223a24202ad7348f0e6c0d1b854f7a1cd03be2395",
+      "accepted_claims": 4,
+      "retained_full_entries": 4,
+      "retained_amount_quotes": 4,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_310_V-8_JUICE_AGAR.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_310_V-8_JUICE_AGAR.yaml",
+        "data/normalized_yaml/bacterial/v_8_juice_agar.yaml"
+      ],
+      "fingerprint": "cbcccaa896c9017b2f185124db371f2ed92373aa6b66e58377e4935b8dbc882d",
+      "accepted_claims": 2,
+      "retained_full_entries": 2,
+      "retained_amount_quotes": 2,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_340_CAPNOCYTOPHAGA_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_340_CAPNOCYTOPHAGA_medium.yaml",
+        "data/normalized_yaml/bacterial/capnocytophaga_medium.yaml",
+        "data/normalized_yaml/bacterial/medium_340_modified_for_dsm_7271.yaml"
+      ],
+      "fingerprint": "a7f2b87ec5cc7c7aa2630804b8e1bc258ba29c6ced4b3844f184e30ddc74d48c",
+      "accepted_claims": 5,
+      "retained_full_entries": 5,
+      "retained_amount_quotes": 5,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_344_FLEXIBACTER_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_344_FLEXIBACTER_medium.yaml",
+        "data/normalized_yaml/bacterial/KOMODO_729_MYX_AGAR.yaml",
+        "data/normalized_yaml/bacterial/flexibacter_medium.yaml",
+        "data/normalized_yaml/bacterial/myx_agar.yaml"
+      ],
+      "fingerprint": "61e8de34a2693164532abc53ad27bba97d5744de35e0bcd1fb8a88f519a28a24",
+      "accepted_claims": 3,
+      "retained_full_entries": 3,
+      "retained_amount_quotes": 3,
+      "mapping_retained": false,
+      "references_retained": false,
+      "event_retained": false
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_352_AZOSPIRILLUM_AMAZONENSE_MEDIUM.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_352_AZOSPIRILLUM_AMAZONENSE_MEDIUM.yaml",
+        "data/normalized_yaml/bacterial/azospirillum_amazonense_medium.yaml"
+      ],
+      "fingerprint": "f36c7e6d01d11abc5bf48d72447d5eb8a5b6f3a3b38b216cfe8e5b2c5fd3affa",
+      "accepted_claims": 8,
+      "retained_full_entries": 8,
+      "retained_amount_quotes": 8,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_354_L_WENSTEIN-JENSEN_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_354_L_WENSTEIN-JENSEN_medium.yaml",
+        "data/normalized_yaml/bacterial/l_wenstein_jensen_medium.yaml",
+        "data/normalized_yaml/bacterial/medium_354_modified_for_dsm_44338.yaml",
+        "data/normalized_yaml/bacterial/medium_354_modified_for_dsm_44339.yaml"
+      ],
+      "fingerprint": "5427140da26e5cbf92ff0d43eae015d550736f48173f9e390d37c1a4013d7af4",
+      "accepted_claims": 6,
+      "retained_full_entries": 6,
+      "retained_amount_quotes": 6,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_362_FLAVOBACTERIUM_TIRRENICUM_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_362_FLAVOBACTERIUM_TIRRENICUM_medium.yaml",
+        "data/normalized_yaml/bacterial/flavobacterium_tirrenicum_medium.yaml"
+      ],
+      "fingerprint": "bd91b795905eab73910e1c6af81c70d2a355c5f2cd7e2867328fa6235e2389f0",
+      "accepted_claims": 4,
+      "retained_full_entries": 4,
+      "retained_amount_quotes": 4,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_364_PYEA_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_364_PYEA_medium.yaml",
+        "data/normalized_yaml/bacterial/KOMODO_423_XENORHABDUS_medium.yaml",
+        "data/normalized_yaml/bacterial/pyea_medium.yaml",
+        "data/normalized_yaml/bacterial/stappia_quadratibracata_medium_28m_7.yaml",
+        "data/normalized_yaml/bacterial/xenorhabdus_medium.yaml"
+      ],
+      "fingerprint": "e650a705856a5678e63db754c376d529883c17d8d918de1e4955f054b6c6d973",
+      "accepted_claims": 4,
+      "retained_full_entries": 4,
+      "retained_amount_quotes": 4,
+      "mapping_retained": false,
+      "references_retained": false,
+      "event_retained": false
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_423_XENORHABDUS_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_364_PYEA_medium.yaml",
+        "data/normalized_yaml/bacterial/KOMODO_423_XENORHABDUS_medium.yaml",
+        "data/normalized_yaml/bacterial/pyea_medium.yaml",
+        "data/normalized_yaml/bacterial/stappia_quadratibracata_medium_28m_7.yaml",
+        "data/normalized_yaml/bacterial/xenorhabdus_medium.yaml"
+      ],
+      "fingerprint": "e650a705856a5678e63db754c376d529883c17d8d918de1e4955f054b6c6d973",
+      "accepted_claims": 3,
+      "retained_full_entries": 0,
+      "retained_amount_quotes": 0,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_365_PSEUDOMONAS_INDIGOFERA_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_365_PSEUDOMONAS_INDIGOFERA_medium.yaml",
+        "data/normalized_yaml/bacterial/pseudomonas_indigofera_medium.yaml"
+      ],
+      "fingerprint": "62d73333a00ad77852332393fa7c390270abb653958df43cc13ee751cbfb734a",
+      "accepted_claims": 4,
+      "retained_full_entries": 4,
+      "retained_amount_quotes": 4,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_370_HELIOBACTERIUM_CHLORUM_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_370_HELIOBACTERIUM_CHLORUM_medium.yaml",
+        "data/normalized_yaml/bacterial/heliobacterium_chlorum_medium.yaml"
+      ],
+      "fingerprint": "05c4645e96bf2d2b1255715ef7163bff1fd0103e932aa961c11c3746a4d6a96b",
+      "accepted_claims": 4,
+      "retained_full_entries": 4,
+      "retained_amount_quotes": 4,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_376_AN1_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_376_AN1_medium.yaml",
+        "data/normalized_yaml/bacterial/an1_medium.yaml"
+      ],
+      "fingerprint": "e0323906b2eb5bafb2712351f7012cbb190d299eed89510c1e811c301b29e755",
+      "accepted_claims": 4,
+      "retained_full_entries": 4,
+      "retained_amount_quotes": 4,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml",
+        "data/normalized_yaml/bacterial/arthrobacter_medium.yaml"
+      ],
+      "fingerprint": "0f84e43af63660298c73abfa8ca00dbe00338fb0483038174aaaa291b1f02184",
+      "accepted_claims": 14,
+      "retained_full_entries": 14,
+      "retained_amount_quotes": 14,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml",
+        "data/normalized_yaml/bacterial/baf_medium.yaml"
+      ],
+      "fingerprint": "d64ccf07f42abb5f224c2a9a81d6c7a9f02980093aca076809c64649bb838eeb",
+      "accepted_claims": 14,
+      "retained_full_entries": 14,
+      "retained_amount_quotes": 14,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_414_ACIDAMINOCOCCUS_FERMENTANS_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_414_ACIDAMINOCOCCUS_FERMENTANS_medium.yaml",
+        "data/normalized_yaml/bacterial/acidaminococcus_fermentans_medium.yaml"
+      ],
+      "fingerprint": "6d26e71ada3ccaad7ca4d5d3c318f604d34eca6e94e94b291c01c1c3fa2951b0",
+      "accepted_claims": 10,
+      "retained_full_entries": 10,
+      "retained_amount_quotes": 10,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_425_OATMEAL_AGAR.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_425_OATMEAL_AGAR.yaml",
+        "data/normalized_yaml/bacterial/oatmeal_agar.yaml"
+      ],
+      "fingerprint": "02cd7f64f6ad8f3bc99cbc263e9dfea3297655466bc406f118b5054c2567338a",
+      "accepted_claims": 2,
+      "retained_full_entries": 2,
+      "retained_amount_quotes": 2,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_426_ORGANIC_medium_79.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_426_ORGANIC_medium_79.yaml",
+        "data/normalized_yaml/bacterial/medium_426_modified_for_dsm_46365.yaml",
+        "data/normalized_yaml/bacterial/medium_426_modified_for_dsm_46628.yaml",
+        "data/normalized_yaml/bacterial/organic_medium_79.yaml"
+      ],
+      "fingerprint": "298273513a1b4708fdb10d15e4d4216704a0f137e44b63e8a20c9ae7e8d15426",
+      "accepted_claims": 5,
+      "retained_full_entries": 5,
+      "retained_amount_quotes": 5,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_427_MYKORRHIZA_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_427_MYKORRHIZA_medium.yaml",
+        "data/normalized_yaml/bacterial/mykorrhiza_medium.yaml"
+      ],
+      "fingerprint": "bb62a0c22f2f31db61df8cce991cbb903e8bb2236e563fe910631e623ea0b7c3",
+      "accepted_claims": 8,
+      "retained_full_entries": 8,
+      "retained_amount_quotes": 8,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_434_MARINOCOCCUS_ALBUS_-_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_434_MARINOCOCCUS_ALBUS_-_medium.yaml",
+        "data/normalized_yaml/bacterial/KOMODO_624_MH_medium.yaml",
+        "data/normalized_yaml/bacterial/marinococcus_albus_medium.yaml",
+        "data/normalized_yaml/bacterial/mh_medium.yaml"
+      ],
+      "fingerprint": "a409936e66d0b4f48057483cb31f8690911fff9249c170184b5d475601c7eb67",
+      "accepted_claims": 10,
+      "retained_full_entries": 10,
+      "retained_amount_quotes": 10,
+      "mapping_retained": false,
+      "references_retained": false,
+      "event_retained": false
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_449_M17_medium_FOR_LACTIC_STREPTOCOCCI.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_449_M17_medium_FOR_LACTIC_STREPTOCOCCI.yaml",
+        "data/normalized_yaml/bacterial/m17_medium_for_lactic_streptococci.yaml"
+      ],
+      "fingerprint": "3e65f74f174547af7f4caf83af7566037621270aed4ee7c528540c27d294f107",
+      "accepted_claims": 8,
+      "retained_full_entries": 8,
+      "retained_amount_quotes": 8,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_453_STANDARD_I_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_453_STANDARD_I_medium.yaml",
+        "data/normalized_yaml/bacterial/medium_453_modified_for_dsm_43934.yaml",
+        "data/normalized_yaml/bacterial/medium_453_modified_for_dsm_6341.yaml",
+        "data/normalized_yaml/bacterial/medium_453_modified_for_dsm_6349.yaml",
+        "data/normalized_yaml/bacterial/medium_453_modified_for_dsm_6364.yaml",
+        "data/normalized_yaml/bacterial/medium_453_modified_for_dsm_6366.yaml",
+        "data/normalized_yaml/bacterial/medium_453_modified_for_dsm_6406.yaml",
+        "data/normalized_yaml/bacterial/medium_453_modified_for_dsm_6453.yaml",
+        "data/normalized_yaml/bacterial/medium_453_modified_for_dsm_6454.yaml",
+        "data/normalized_yaml/bacterial/medium_453_modified_for_dsm_6455.yaml",
+        "data/normalized_yaml/bacterial/medium_453_modified_for_dsm_6458.yaml",
+        "data/normalized_yaml/bacterial/medium_453_modified_for_dsm_6472.yaml",
+        "data/normalized_yaml/bacterial/standard_i_medium.yaml"
+      ],
+      "fingerprint": "02d0ca210f6969bf165af67c00b2791e7bf900b97e696bd0721dbff44dacb326",
+      "accepted_claims": 5,
+      "retained_full_entries": 5,
+      "retained_amount_quotes": 5,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml",
+        "data/normalized_yaml/bacterial/amb_medium.yaml"
+      ],
+      "fingerprint": "aa343712dcfbfc6089e16a4afee3a9370d90544704374d900bd99081d068cd0e",
+      "accepted_claims": 9,
+      "retained_full_entries": 9,
+      "retained_amount_quotes": 9,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/orotic_acid_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/faecalicatena_orotica_medium.yaml",
+        "data/normalized_yaml/bacterial/orotic_acid_medium.yaml"
+      ],
+      "fingerprint": "0eac8af5813480c576c30eae94119cc31225df501c2e63d92694d31444c78747",
+      "accepted_claims": 7,
+      "retained_full_entries": 0,
+      "retained_amount_quotes": 7,
+      "mapping_retained": false,
+      "references_retained": false,
+      "event_retained": false
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/tryptone_yeast_extract_mineral_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/tryptone_yeast_extract_mineral_medium.yaml",
+        "data/normalized_yaml/fungal/tryptone_yeast_extract_mineral_medium.yaml"
+      ],
+      "fingerprint": "55c4022b06243fdcc18b7ecc9b5f33c6a4c8c3671b072ace29376e95a8a60fd5",
+      "accepted_claims": 11,
+      "retained_full_entries": 11,
+      "retained_amount_quotes": 11,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/yeast_extract_mineral_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/yeast_extract_mineral_medium.yaml",
+        "data/normalized_yaml/fungal/yeast_extract_mineral_medium.yaml"
+      ],
+      "fingerprint": "27ee043bdc89133260e2a0c829787bd960be05f94886d2b7c9da3c5e209c8601",
+      "accepted_claims": 6,
+      "retained_full_entries": 6,
+      "retained_amount_quotes": 6,
+      "mapping_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    }
+  ]
+}

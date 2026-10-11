@@ -16,6 +16,33 @@ composition:
     label: nicotinic acid
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/2765
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "Nicotinic acid",
+                      "compound_id": 139,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 400,
+                      "unit": "mg",
+                      "g_l": 0.4,
+                      "mmol_l": 3.24913,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Nicotinic
+      acid) in MediaDive solution 2765; locator=$.data.recipe[0] (compound_id=139).
+      Provider explicitly reports g_l=0.4. Arithmetic check: 400 mg * 0.001 g/mg /
+      (1000 ml / 1000 ml per L) = 0.400 g/L, consistent with the reported value at
+      its precision. Evidence supports the provider-declared concentration within
+      this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T09:15:33.096234+00:00;
+      response SHA256=c2fecbd6cd1bccd69345a3e8070ff6933c194a483781e8962cc23c14b49f9c9b.'
 - preferred_term: Thiamine
   concentration:
     value: '0.4'
@@ -28,6 +55,33 @@ composition:
     label: thiamine(1+)
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/2765
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Thiamine",
+                      "compound_id": 666,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 400,
+                      "unit": "mg",
+                      "g_l": 0.4,
+                      "mmol_l": 1.50739,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Thiamine)
+      in MediaDive solution 2765; locator=$.data.recipe[1] (compound_id=666). Provider
+      explicitly reports g_l=0.4. Arithmetic check: 400 mg * 0.001 g/mg / (1000 ml
+      / 1000 ml per L) = 0.400 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T09:15:33.096234+00:00;
+      response SHA256=c2fecbd6cd1bccd69345a3e8070ff6933c194a483781e8962cc23c14b49f9c9b.'
 - preferred_term: Biotin
   concentration:
     value: '0.08'
@@ -40,6 +94,33 @@ composition:
     label: biotin
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/2765
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "Biotin",
+                      "compound_id": 46,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 80,
+                      "unit": "mg",
+                      "g_l": 0.08,
+                      "mmol_l": 0.327453,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[2].concentration (Biotin)
+      in MediaDive solution 2765; locator=$.data.recipe[2] (compound_id=46). Provider
+      explicitly reports g_l=0.08. Arithmetic check: 80 mg * 0.001 g/mg / (1000 ml
+      / 1000 ml per L) = 0.080 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T09:15:33.096234+00:00;
+      response SHA256=c2fecbd6cd1bccd69345a3e8070ff6933c194a483781e8962cc23c14b49f9c9b.'
 - preferred_term: Vitamin B12
   concentration:
     value: '0.02'
@@ -52,6 +133,33 @@ composition:
     label: vitamin B12
     confidence: 0.9
     match_type: manual_curated
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/2765
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "Vitamin B12",
+                      "compound_id": 18,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 20,
+                      "unit": "mg",
+                      "g_l": 0.02,
+                      "mmol_l": 0.0147558,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[3].concentration (Vitamin
+      B12) in MediaDive solution 2765; locator=$.data.recipe[3] (compound_id=18).
+      Provider explicitly reports g_l=0.02. Arithmetic check: 20 mg * 0.001 g/mg /
+      (1000 ml / 1000 ml per L) = 0.020 g/L, consistent with the reported value at
+      its precision. Evidence supports the provider-declared concentration within
+      this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T09:15:33.096234+00:00;
+      response SHA256=c2fecbd6cd1bccd69345a3e8070ff6933c194a483781e8962cc23c14b49f9c9b.'
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -98,6 +206,19 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T09:21:52.094915+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/2765
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "0.4"} -> {"unit":
+    "G_PER_L", "value": "0.4"} (evidence_only); composition[1].concentration: {"unit":
+    "G_PER_L", "value": "0.4"} -> {"unit": "G_PER_L", "value": "0.4"} (evidence_only);
+    composition[2].concentration: {"unit": "G_PER_L", "value": "0.08"} -> {"unit":
+    "G_PER_L", "value": "0.08"} (evidence_only); composition[3].concentration: {"unit":
+    "G_PER_L", "value": "0.02"} -> {"unit": "G_PER_L", "value": "0.02"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -106,3 +227,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/2765
+  title: 'MediaDive solution 2765: Vitamin solution N1'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=c2fecbd6cd1bccd69345a3e8070ff6933c194a483781e8962cc23c14b49f9c9b;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

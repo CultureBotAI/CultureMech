@@ -1,6 +1,9 @@
+{% from "_partials/quantity.html.j2" import quantity %}
+{% set stock_composition = medium.composition is defined and medium.ingredients is not defined %}
+{% set ingredients = medium.composition if stock_composition else medium.ingredients %}
 <section id="ingredients">
-<h2>Ingredients <small class="muted">({{ medium.ingredients|length }})</small></h2>
-{% if medium.ingredients %}
+<h2>{{ 'Stock composition' if stock_composition else 'Ingredients' }} <small class="muted">({{ ingredients|length }})</small></h2>
+{% if ingredients %}
 <table class="ingredients">
 <thead>
 <tr>
@@ -12,7 +15,7 @@
 </tr>
 </thead>
 <tbody>
-{% for ing in medium.ingredients %}
+{% for ing in ingredients %}
 <tr>
   <td class="right muted">{{ loop.index }}</td>
   <td>
@@ -36,10 +39,7 @@
     {% endif %}
   </td>
   <td class="right">
-    {% if ing.concentration %}
-      {{ ing.concentration.value }}
-      <span class="muted">{{ ing.concentration.unit }}</span>
-    {% endif %}
+    {{ quantity(ing.concentration) }}
   </td>
   <td>
     {% if ing.term and ing.term.id %}

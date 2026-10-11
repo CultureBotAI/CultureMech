@@ -4,57 +4,17 @@ preferred_term: DAS Macro Solution
 term:
   id: MediaIngredientMech:UNMAPPED_0081
   label: DAS Macro Solution
-composition:
-- preferred_term: Sodium nitrate (0.70 M stock)
-  concentration:
-    value: '25.0'
-    unit: PERCENT_V_V
-  term:
-    id: CHEBI:63005
-    label: sodium nitrate
-  notes: Add 10 mL of 0.70 M NaNO3 stock solution
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001124
-- preferred_term: Disodium phosphate heptahydrate (0.02 M stock)
-  concentration:
-    value: '75.0'
-    unit: PERCENT_V_V
-  term:
-    id: CHEBI:34683
-    label: disodium hydrogenphosphate
-  notes: Add 30 mL of 0.02 M Na2HPO4·7H2O stock solution
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001114
-notes: 'DAS Macro Solution for Dasycladales Seawater Medium.
-
+composition: []
+notes: |
+  DAS Macro Solution for Dasycladales Seawater Medium.
   DAS = Dasycladales-specific formulation for marine algae.
-
   Provides macronutrients (nitrogen and phosphorus) for marine algae culture.
 
+  Preparation: Combine 10 mL of 0.70 M sodium nitrate stock with 30 mL of 0.02 M disodium hydrogen phosphate heptahydrate stock to make the stated 40 mL composite stock. Autoclave each component stock before addition; add aseptically in the listed order and swirl gently. The 25% and 75% volume fractions refer to these prepared stocks within this 40 mL mixture, not to the pure solutes. Component stock strengths remain on the nested compositions.
 
-  Preparation: This is a composite solution made from two component stocks:
+  Receiving-medium context: UTEX expresses the component additions per 3 L of DAS and separately labels the receiving concentrations as 2.3 mM and 0.2 mM. These are not the component stock strengths or a universal working dose for every medium.
 
-  - Component 1: 0.70 M sodium nitrate (NaNO3) stock solution
-
-  - Component 2: 0.02 M disodium phosphate heptahydrate (Na2HPO4·7H2O) stock solution
-
-
-  Autoclave both component stocks separately before preparing the DAS Macro Solution.
-
-  Aseptically add 10 mL of NaNO3 stock + 30 mL of Na2HPO4·7H2O stock.
-
-  Total volume: 40 mL. Swirl gently to mix.
-
-
-  Usage: Add 40 mL per 3 L of medium.
-
-
-  Final concentrations in medium: NaNO3 (2.3 mM), Na2HPO4·7H2O (0.2 mM)
-
-
-  Storage: Refrigerator temperature (4°C).
-
-  '
+  Storage: Refrigerator temperature; no exact temperature is established by this source.
 source_data:
   origin: MediaIngredientMech
   mediaingredientmech_id: UNMAPPED_0081
@@ -79,8 +39,157 @@ curation_history:
   curator: cleanup_residual_errors.py
   action: CLEANUP_RESIDUAL_ERRORS
   notes: R02_convert_exotic_units=2
+- timestamp: '2026-10-10T07:40:20.478855+00:00'
+  curator: codex
+  action: CURATED_UTEX_SEVEN_STOCK_AMOUNTS_FORMS_AND_BOUNDARIES
+  notes: Source-backed amount, supplied-form and preparation-stage review. Numerical
+    mass concentrations retained; unresolved source conflicts explicitly recorded.
+    No taxa-media association added.
+  source: https://utex.org/products/das-macro-solution
+  changes: '{"claims": [{"action_taken": "Relocated prepared-stock dose from pure-ingredient
+    composition to nested stock descriptor", "basis_snippet": "For 40 mL total", "calculation":
+    "10 mL / 40 mL * 100 = 25.0% prepared-stock volume fraction; not pure-solute percent
+    and not final DAS concentration.", "field": "composition[0].concentration", "ingredient":
+    "Sodium nitrate (0.70 M stock)", "locator": "formulation table row 1; Amount column
+    and volume heading", "old": {"unit": "PERCENT_V_V", "value": "25.0"}, "proposed":
+    {"unit": "PERCENT_V_V", "value": "25.0"}, "proposed_field": "solutions[0].concentration",
+    "reason": "Prepared-stock dose moved to its own descriptor; the exact phosphate
+    hydrate ontology mapping is explicitly unresolved.", "reference": "https://utex.org/products/das-macro-solution",
+    "snippet": "10 mL/3 L", "source_component": "NaNO3*autoclave before adding*(Fisher
+    BP360)", "status": "correct"}, {"action_taken": "Relocated prepared-stock dose
+    from pure-ingredient composition to nested stock descriptor", "basis_snippet":
+    "For 40 mL total", "calculation": "30 mL / 40 mL * 100 = 75.0% prepared-stock
+    volume fraction; not pure-solute percent and not final DAS concentration.", "field":
+    "composition[1].concentration", "ingredient": "Disodium phosphate heptahydrate
+    (0.02 M stock)", "locator": "formulation table row 2; Amount column and volume
+    heading", "old": {"unit": "PERCENT_V_V", "value": "75.0"}, "proposed": {"unit":
+    "PERCENT_V_V", "value": "75.0"}, "proposed_field": "solutions[1].concentration",
+    "reason": "Prepared-stock dose moved to its own descriptor; the exact phosphate
+    hydrate ontology mapping is explicitly unresolved.", "reference": "https://utex.org/products/das-macro-solution",
+    "snippet": "30 mL/3 L", "source_component": "Na2HPO4\u20227H2O*autoclave before
+    adding*(Sigma S 9390)", "status": "correct"}, {"action_taken": "Added source-explicit
+    component stock strength to nested composition", "basis_snippet": "Stock Solution
+    Concentration", "calculation": "Directly stated component-stock molarity; no final-medium
+    calculation.", "field": "solutions[0].composition[0].concentration", "ingredient":
+    "Sodium nitrate", "locator": "Table row 1", "old": null, "proposed": {"unit":
+    "MOLAR", "value": "0.70"}, "reference": "https://utex.org/products/das-macro-solution",
+    "snippet": "0.70 M", "status": "add"}, {"action_taken": "Added source-explicit
+    component stock strength to nested composition", "basis_snippet": "Stock Solution
+    Concentration", "calculation": "Directly stated component-stock molarity; no final-medium
+    calculation.", "field": "solutions[1].composition[0].concentration", "ingredient":
+    "Disodium hydrogen phosphate heptahydrate", "locator": "Table row 2", "old": null,
+    "proposed": {"unit": "MOLAR", "value": "0.02"}, "reference": "https://utex.org/products/das-macro-solution",
+    "snippet": "0.02 M", "status": "add"}], "context_notes": "Corrected preparation,
+    storage and stock/receiving concentration wording using root evidence; retained
+    unresolved source discrepancies.", "counts": {"bibliographic_entries_enriched":
+    1, "new_curation_history": 1, "new_evidence": 6, "new_quantity_slots": 2, "new_references":
+    3, "recipe_context_notes_corrected": 1, "stock_dose_basis_corrections": 2, "stock_nodes_relocated":
+    2, "unsupported_primary_identities_removed": 1}, "identity_changes": [], "stock_boundary":
+    "DAS Macro: two prepared-stock fractions moved from composition to solutions;
+    pure-salt term moved to the sodium nitrate composition; unsupported phosphate
+    hydrate mapping removed."}'
 references:
 - reference: https://utex.org/products/das-macro-solution
+  title: DAS Macro Solution Recipe | UTEX Culture Collection of Algae
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10; institution=UTEX Culture Collection of Algae; named authors,
+    publication year and DOI not stated.
 - reference: UTEX:das-macro-solution
 - reference: MediaIngredientMech:UNMAPPED_0081
+- reference: https://www.ebi.ac.uk/chebi/CHEBI:63005
+  title: sodium nitrate (CHEBI:63005)
+  notes: 'source_type=web_page; discovery_mode=cross_reference; accessed_on=2026-10-10;
+    Chemical identity evidence only; no recipe amount is inferred. Formula field. '
+- reference: https://www.sigmaaldrich.com/US/en/product/sigald/s9390
+  title: Sodium phosphate dibasic heptahydrate
+  notes: 'source_type=web_page; discovery_mode=cross_reference; accessed_on=2026-10-10;
+    Chemical identity evidence only; no recipe amount is inferred. Product S9390 heading;
+    formula Na2HPO4.7H2O and CAS 7782-85-6. '
+- reference: https://www.ebi.ac.uk/chebi/CHEBI:34683
+  title: disodium hydrogenphosphate (CHEBI:34683)
+  notes: 'source_type=web_page; discovery_mode=cross_reference; accessed_on=2026-10-10;
+    Chemical identity evidence only; no recipe amount is inferred. Formula field;
+    no seven waters in the structure. '
 category: bacterial
+evidence:
+- reference: https://utex.org/products/das-macro-solution
+  supports: SUPPORT
+  snippet: For 40 mL total
+  explanation: 'Supports notes and solutions[0].concentration / solutions[1].concentration.
+    Table rows 1 and 2 refer to prepared stocks; the heading fixes the composite volume.
+    Calculation: 10/40*100 = 25.0% v/v and 30/40*100 = 75.0% v/v. The /3 L amount
+    denominator is receiving DAS context, not this composite stock denominator. No
+    component stock quantity is presented as a pure-solute volume percent. Separate
+    source excerpts (Directions/table headings/footnote): ''For 40 mL total''; ''10
+    mL/3 L''; ''30 mL/3 L''; ''Stock Solution Concentration''; ''Final Concentration
+    in DAS''; ''autoclave before adding''; ''Aseptically add''; ''Swirl gently'';
+    ''Store at refrigerator temperature.'''
+solutions:
+- preferred_term: Sodium nitrate (0.70 M stock)
+  concentration:
+    value: '25.0'
+    unit: PERCENT_V_V
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001124
+  composition:
+  - preferred_term: Sodium nitrate
+    concentration:
+      value: '0.70'
+      unit: MOLAR
+    evidence:
+    - reference: https://utex.org/products/das-macro-solution
+      supports: SUPPORT
+      snippet: 0.70 M
+      explanation: Supports solutions[0].composition[0].concentration for Sodium nitrate
+        in component stock 1, not final DAS or the combined 40 mL mixture. Table row
+        1, Stock Solution Concentration column; component is 'NaNO3*autoclave before
+        adding*(Fisher BP360)'. No numeric conversion.
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:63005
+      supports: SUPPORT
+      snippet: NO3.Na
+      explanation: 'Supports solutions[0].composition[0] identity disposition only.
+        Supports retaining the existing sodium nitrate term on the dissolved ingredient,
+        not the prepared stock. Locator: Formula field'
+    term:
+      id: CHEBI:63005
+      label: sodium nitrate
+  notes: Prepared-stock fraction of the 40 mL DAS Macro Solution; component stock
+    1. Autoclave before addition.
+- preferred_term: Disodium phosphate heptahydrate (0.02 M stock)
+  concentration:
+    value: '75.0'
+    unit: PERCENT_V_V
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001114
+  composition:
+  - preferred_term: Disodium hydrogen phosphate heptahydrate
+    concentration:
+      value: '0.02'
+      unit: MOLAR
+    evidence:
+    - reference: https://utex.org/products/das-macro-solution
+      supports: SUPPORT
+      snippet: 0.02 M
+      explanation: Supports solutions[1].composition[0].concentration for Disodium
+        hydrogen phosphate heptahydrate in component stock 2, not final DAS or the
+        combined 40 mL mixture. Table row 2, Stock Solution Concentration column;
+        component is 'Na2HPO4•7H2O*autoclave before adding*(Sigma S 9390)'. No numeric
+        conversion.
+    - reference: https://www.sigmaaldrich.com/US/en/product/sigald/s9390
+      supports: SUPPORT
+      snippet: Sodium phosphate dibasic heptahydrate
+      explanation: 'Supports solutions[1].composition[0] identity disposition only.
+        Exact supplier identity for the UTEX-listed phosphate; not an amount. Locator:
+        Product S9390 heading; formula Na2HPO4.7H2O and CAS 7782-85-6'
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:34683
+      supports: SUPPORT
+      snippet: HO4P.2Na
+      explanation: 'Supports solutions[1].composition[0] identity disposition only.
+        Supports removal of an anhydrous grounding from the heptahydrate; not a replacement
+        ontology ID. Locator: Formula field; no seven waters in the structure'
+    chemical_formula: Na2HPO4.7H2O
+    notes: Exact heptahydrate supplied as Sigma S9390. The former CHEBI:34683 mapping
+      describes the anhydrous salt; exact hydrate ontology grounding remains unresolved.
+      The packaged MIM stock-label answer is not treated as proof of hydrate equivalence.
+  notes: Prepared-stock fraction of the 40 mL DAS Macro Solution; component stock
+    2. Autoclave before addition.

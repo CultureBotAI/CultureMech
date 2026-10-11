@@ -16,10 +16,36 @@ composition:
     label: sodium carbonate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/411
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "Na2CO3",
+                      "compound_id": 32,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1.5,
+                      "unit": "g",
+                      "g_l": 50,
+                      "mmol_l": 471.752,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Na2CO3)
+      in MediaDive solution 411; locator=$.data.recipe[0] (compound_id=32). Provider
+      explicitly reports g_l=50. Arithmetic check: 1.5 g * 1 g/g / (30 ml / 1000 ml
+      per L) = 5E+1 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 30. Retrieved 2026-10-07T08:23:12.433251+00:00; response SHA256=96aaf96f42da39b2fc5fb1503d7f9928d7375d224bf91cf222187b69b13cc69c.'
 - preferred_term: Distilled water
   concentration:
-    value: '1000.0000000000001'
-    unit: PERCENT_V_V
+    value: '0.03'
+    unit: L
   term:
     id: mediadive.compound:4
     label: Distilled water
@@ -28,6 +54,31 @@ composition:
     label: water
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/411
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 30,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Distilled
+      water) in MediaDive solution 411; locator=$.data.recipe[1] (compound_id=4).
+      Source water addition is 30 ml per prepared batch: 30 / 1000 = 0.03 L. No source
+      preparation step gives a competing make-up instruction. This is a batch dose,
+      not a volume percentage; no final-volume or solvent-density assumption is made.
+      Additional exact excerpt at $.data.volume: "volume": 30. Retrieved 2026-10-07T08:23:12.433251+00:00;
+      response SHA256=96aaf96f42da39b2fc5fb1503d7f9928d7375d224bf91cf222187b69b13cc69c.'
 preparation_notes: 'Original volume: 30 mL'
 curation_history:
 - timestamp: '2026-03-13T06:20:29.780924Z'
@@ -57,6 +108,17 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 1 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-10-07T08:27:51.574555+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/411
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "50"} -> {"unit":
+    "G_PER_L", "value": "50"} (evidence_only); composition[1].concentration: {"unit":
+    "PERCENT_V_V", "value": "1000.0000000000001"} -> {"unit": "L", "value": "0.03"}
+    (correct)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -65,3 +127,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/411
+  title: 'MediaDive solution 411: Solution B'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=96aaf96f42da39b2fc5fb1503d7f9928d7375d224bf91cf222187b69b13cc69c;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

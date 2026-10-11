@@ -1,0 +1,113 @@
+{
+  "terminal": true,
+  "passed": true,
+  "records_edited": 0,
+  "source_sha256": "f8fc139c6c37261eed3e543224ea652ac81bc4701374b3c872bd119970d2a1b9",
+  "plan_sha256": "413ab653a133f8b37d2d89b1f2f39fff23baab998bbdf05f78ae0c80fab06560",
+  "script_sha256": "f52416c05ae31410638a025e18aad6321235e9768d99c3540589621a06a77bac",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-yeast-mineral-source-preview/mutation-preview-v2/397.preview.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-yeast-mineral-source-preview/mutation-preview-v2/check-00.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-yeast-mineral-source-preview/mutation-preview-v2/397.preview.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-yeast-mineral-source-preview/mutation-preview-v2/check-01.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-yeast-mineral-source-preview/mutation-preview-v2/398.preview.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-yeast-mineral-source-preview/mutation-preview-v2/check-02.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-yeast-mineral-source-preview/mutation-preview-v2/398.preview.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-yeast-mineral-source-preview/mutation-preview-v2/check-03.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-yeast-mineral-source-preview/mutation-preview-v2/399.preview.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-yeast-mineral-source-preview/mutation-preview-v2/check-04.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-yeast-mineral-source-preview/mutation-preview-v2/399.preview.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-yeast-mineral-source-preview/mutation-preview-v2/check-05.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-yeast-mineral-source-preview/mutation-preview-v2/400.preview.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-yeast-mineral-source-preview/mutation-preview-v2/check-06.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-yeast-mineral-source-preview/mutation-preview-v2/400.preview.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-yeast-mineral-source-preview/mutation-preview-v2/check-07.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    }
+  ],
+  "proposed_counts": {
+    "new_curation_history": 4,
+    "quantity_corrections": 56,
+    "ingredient_context_notes_corrected": 84,
+    "ingredient_identities_corrected": 34,
+    "ingredient_mim_links_corrected": 12,
+    "ingredient_labels_corrected": 40,
+    "unsupported_ingredient_identity_slots_removed": 2,
+    "new_quantity_slots": 2,
+    "preparation_descriptions_corrected": 8,
+    "preparation_actions_corrected": 4,
+    "preparation_steps_added": 4,
+    "new_evidence": 218,
+    "new_references": 50,
+    "child_link_notes_corrected": 1,
+    "unquantified_ingredient_nodes_added": 2,
+    "relationship_dose_descriptions_corrected": 2
+  },
+  "normalized_inventory_unchanged": true,
+  "normalized_count": 15910,
+  "inventory_sha256": "ebf8b59e00cc0cb250352e5c1e69f87288d18bc942db165c2d5673c1b33656f5",
+  "application_guard_and_adversarial_tests_pending": true,
+  "all_record_goal_complete": false
+}

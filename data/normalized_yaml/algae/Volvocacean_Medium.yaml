@@ -11,8 +11,8 @@ media_term:
     label: Volvocacean Medium
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
-notes: UTEX prepares Volvocacean Medium by combining 800 mL prepared Waris Medium
-  with 200 mL prepared Euglena Medium.
+notes: UTEX combines 800 mL Waris Medium prepared without pH adjustment with 200 mL
+  Euglena Medium per liter of liquid blend.
 ingredients: []
 solutions:
 - preferred_term: Waris Medium
@@ -22,7 +22,8 @@ solutions:
   culturemech_term:
     id: CultureMech:000242
     label: Waris Medium
-  notes: UTEX lists 800 mL prepared Waris Medium per 1 L final medium.
+  notes: Waris is prepared without pH adjustment; 800 mL is used in the stated 1 L
+    liquid blend.
 - preferred_term: Euglena Medium
   concentration:
     value: '200'
@@ -34,11 +35,16 @@ solutions:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Prepare Waris Medium and Euglena Medium.
+  description: Prepare 1 L Waris Medium without pH adjustment and prepare 200 mL Euglena
+    Medium.
 - step_number: 2
   action: MIX
-  description: Combine the prepared component media.
+  description: Discard 200 mL of the Waris preparation. Combine the remaining 800
+    mL with the prepared 200 mL Euglena in a 2 L Erlenmeyer flask.
 - step_number: 3
+  action: AUTOCLAVE
+  description: Cover the flask and autoclave the combined medium.
+- step_number: 4
   action: STORE
   description: Store at refrigerator temperature.
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
@@ -86,19 +92,117 @@ curation_history:
   source: https://utex.org/products/volvocacean-medium
   notes: UTEX prepares Volvocacean Medium by combining 800 mL prepared Waris Medium
     with 200 mL prepared Euglena Medium.
+- timestamp: '2026-10-11T02:43:27.765962+00:00'
+  curator: codex
+  action: CURATED_UTEX_VOLVOCACEAN_BG11_CONCENTRATION_EVIDENCE
+  notes: Retained the source-supported 800/200 mL liquid blend, added concentration
+    evidence, restored the unadjusted-pH Waris preparation and autoclaving, and recorded
+    the optional 10.0 g agar addition separately. Linked parent compositions and unrelated
+    growth claims were not certified. No taxa-media associations added.
+  source: https://utex.org/products/volvocacean-medium
+  changes: '{"counts": {"bibliographic_entries_enriched": 1, "new_curation_history":
+    1, "new_evidence": 2, "optional_variants_added": 1, "parent_context_notes_corrected":
+    1, "preparation_sequences_corrected": 1, "recipe_context_notes_corrected": 1,
+    "stock_context_notes_corrected": 1, "variant_descriptions_corrected": 1}, "fields":
+    [{"after_present": true, "before_present": true, "counter": "stock_context_notes_corrected",
+    "new": "Waris is prepared without pH adjustment; 800 mL is used in the stated
+    1 L liquid blend.", "old": "UTEX lists 800 mL prepared Waris Medium per 1 L final
+    medium.", "pointer": ["solutions", 0, "notes"]}, {"after_present": true, "before_present":
+    true, "counter": "recipe_context_notes_corrected", "new": "UTEX combines 800 mL
+    Waris Medium prepared without pH adjustment with 200 mL Euglena Medium per liter
+    of liquid blend.", "old": "UTEX prepares Volvocacean Medium by combining 800 mL
+    prepared Waris Medium with 200 mL prepared Euglena Medium.", "pointer": ["notes"]},
+    {"after_present": true, "before_present": true, "counter": "parent_context_notes_corrected",
+    "new": "Combines 800 mL Waris Medium prepared without pH adjustment with 200 mL
+    Euglena Medium per liter of liquid blend.", "old": "Blends 800 mL Waris Medium
+    with 200 mL Euglena Medium per liter.", "pointer": ["parent_media", "notes"]},
+    {"after_present": true, "before_present": true, "counter": "variant_descriptions_corrected",
+    "new": ["Combines 800 mL Waris Medium prepared without pH adjustment with 200
+    mL Euglena Medium per liter of liquid blend."], "old": ["Blends 800 mL Waris Medium
+    with 200 mL Euglena Medium per liter."], "pointer": ["variant_modifications"]},
+    {"after_present": true, "before_present": true, "counter": "preparation_sequences_corrected",
+    "new": [{"action": "MIX", "description": "Prepare 1 L Waris Medium without pH
+    adjustment and prepare 200 mL Euglena Medium.", "step_number": 1}, {"action":
+    "MIX", "description": "Discard 200 mL of the Waris preparation. Combine the remaining
+    800 mL with the prepared 200 mL Euglena in a 2 L Erlenmeyer flask.", "step_number":
+    2}, {"action": "AUTOCLAVE", "description": "Cover the flask and autoclave the
+    combined medium.", "step_number": 3}, {"action": "STORE", "description": "Store
+    at refrigerator temperature.", "step_number": 4}], "old": [{"action": "MIX", "description":
+    "Prepare Waris Medium and Euglena Medium.", "step_number": 1}, {"action": "MIX",
+    "description": "Combine the prepared component media.", "step_number": 2}, {"action":
+    "STORE", "description": "Store at refrigerator temperature.", "step_number": 3}],
+    "pointer": ["preparation_steps"]}, {"after_present": true, "before_present": false,
+    "counter": "new_evidence", "new": [{"explanation": "Concentration claims solutions[0].concentration
+    (Waris, 800 mL/L) and solutions[1].concentration (Euglena, 200 mL/L), also variant_modifications[0]
+    and parent_media.notes. Table rows 1 and 2 give \"800 mL\" and \"200 mL\"; the
+    Directions heading is \"For 1 L Total\". Arithmetic: 800 + 200 = 1000 mL of liquid
+    blend. Directions 1 qualifies the Waris preparation with \"but do not adjust the
+    pH.\". Directions 3-4 discard 200 mL Waris before combining the rest with Euglena
+    in a 2 L flask; Directions 5 states \"Cover and autoclave.\". No final pH, sterilization
+    temperature/time, or linked parent composition is inferred.", "reference": "https://utex.org/products/volvocacean-medium",
+    "snippet": "800 mL", "supports": "SUPPORT"}], "old": null, "pointer": ["evidence"]},
+    {"after_present": true, "before_present": false, "counter": "optional_variants_added",
+    "new": [{"description": "Source-described agar alternative to the liquid blend.",
+    "evidence": [{"explanation": "variants[0].modifications[0]: Directions 4 optional
+    agar instruction specifies \"10.0 grams\" and \"do not mix.\"; Directions 5 specifies
+    \"Cover and autoclave.\". The amount is added after the stated 1 L liquid blend,
+    not asserted as a measured final-volume concentration.", "reference": "https://utex.org/products/volvocacean-medium",
+    "snippet": "10.0 grams", "supports": "SUPPORT"}], "modifications": ["After combining
+    the 800 mL Waris and 200 mL Euglena portions, add 10.0 g agar to the flask without
+    stirring; then cover and autoclave."], "name": "Optional agar formulation", "relationship":
+    "PHYSICAL_STATE_VARIANT"}], "old": null, "pointer": ["variants"]}, {"after_present":
+    true, "before_present": true, "counter": "bibliographic_entries_enriched", "new":
+    {"notes": "source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10; locator=#recipe, composition table and Directions; authors,
+    publication year and DOI not established.", "reference": "https://utex.org/products/volvocacean-medium",
+    "title": "Volvocacean Medium | UTEX Culture Collection of Algae"}, "old": {"reference":
+    "https://utex.org/products/volvocacean-medium"}, "pointer": ["references", 1]}]}'
 references:
 - reference: UTEX:volvocacean-medium
 - reference: https://utex.org/products/volvocacean-medium
+  title: Volvocacean Medium | UTEX Culture Collection of Algae
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10; locator=#recipe, composition table and Directions; authors,
+    publication year and DOI not established.
 original_name: Volvocacean Medium
 parent_media:
   path: data/normalized_yaml/algae/Waris_Medium.yaml
   relationship: SUPPLEMENTED_VARIANT
   id: CultureMech:000242
   name: waris_medium
-  notes: Blends 800 mL Waris Medium with 200 mL Euglena Medium per liter.
+  notes: Combines 800 mL Waris Medium prepared without pH adjustment with 200 mL Euglena
+    Medium per liter of liquid blend.
 variant_relationship: SUPPLEMENTED_VARIANT
 variant_modifications:
-- Blends 800 mL Waris Medium with 200 mL Euglena Medium per liter.
+- Combines 800 mL Waris Medium prepared without pH adjustment with 200 mL Euglena
+  Medium per liter of liquid blend.
 data_quality_flags:
 - has_ontology_mappings
 - ingredients_curated
+evidence:
+- reference: https://utex.org/products/volvocacean-medium
+  supports: SUPPORT
+  snippet: 800 mL
+  explanation: 'Concentration claims solutions[0].concentration (Waris, 800 mL/L)
+    and solutions[1].concentration (Euglena, 200 mL/L), also variant_modifications[0]
+    and parent_media.notes. Table rows 1 and 2 give "800 mL" and "200 mL"; the Directions
+    heading is "For 1 L Total". Arithmetic: 800 + 200 = 1000 mL of liquid blend. Directions
+    1 qualifies the Waris preparation with "but do not adjust the pH.". Directions
+    3-4 discard 200 mL Waris before combining the rest with Euglena in a 2 L flask;
+    Directions 5 states "Cover and autoclave.". No final pH, sterilization temperature/time,
+    or linked parent composition is inferred.'
+variants:
+- name: Optional agar formulation
+  relationship: PHYSICAL_STATE_VARIANT
+  description: Source-described agar alternative to the liquid blend.
+  modifications:
+  - After combining the 800 mL Waris and 200 mL Euglena portions, add 10.0 g agar
+    to the flask without stirring; then cover and autoclave.
+  evidence:
+  - reference: https://utex.org/products/volvocacean-medium
+    supports: SUPPORT
+    snippet: 10.0 grams
+    explanation: 'variants[0].modifications[0]: Directions 4 optional agar instruction
+      specifies "10.0 grams" and "do not mix."; Directions 5 specifies "Cover and
+      autoclave.". The amount is added after the stated 1 L liquid blend, not asserted
+      as a measured final-volume concentration.'

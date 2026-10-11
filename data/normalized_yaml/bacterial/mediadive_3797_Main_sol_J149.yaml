@@ -16,6 +16,33 @@ composition:
     label: tetramethylammonium
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3797
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "Tetramethyl ammonium",
+                      "compound_id": 1649,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "g",
+                      "g_l": 1,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Tetramethyl
+      ammonium) in MediaDive solution 3797; locator=$.data.recipe[0] (compound_id=1649).
+      Provider explicitly reports g_l=1. Arithmetic check: 1 g * 1 g/g / (1000 ml
+      / 1000 ml per L) = 1 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T09:25:10.475220+00:00;
+      response SHA256=07416ccdb8471417fd5389d611c8cea06d80402fa8ba2967e8fbf337af1bd39e.'
 - preferred_term: Thiamine HCl
   concentration:
     value: '0.0005'
@@ -28,6 +55,33 @@ composition:
     label: thiamine hydrochloride
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3797
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Thiamine HCl",
+                      "compound_id": 1207,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.5,
+                      "unit": "mg",
+                      "g_l": 0.0005,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Thiamine
+      HCl) in MediaDive solution 3797; locator=$.data.recipe[1] (compound_id=1207).
+      Provider explicitly reports g_l=0.0005. Arithmetic check: 0.5 mg * 0.001 g/mg
+      / (1000 ml / 1000 ml per L) = 0.0005 g/L, consistent with the reported value
+      at its precision. Evidence supports the provider-declared concentration within
+      this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T09:25:10.475220+00:00;
+      response SHA256=07416ccdb8471417fd5389d611c8cea06d80402fa8ba2967e8fbf337af1bd39e.'
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -40,6 +94,32 @@ composition:
     label: agar
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3797
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "Agar",
+                      "compound_id": 3,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 15,
+                      "unit": "g",
+                      "g_l": 15,
+                      "mmol_l": 44.5991,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[2].concentration (Agar) in
+      MediaDive solution 3797; locator=$.data.recipe[2] (compound_id=3). Provider
+      explicitly reports g_l=15. Arithmetic check: 15 g * 1 g/g / (1000 ml / 1000
+      ml per L) = 15 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T09:25:10.475220+00:00; response SHA256=07416ccdb8471417fd5389d611c8cea06d80402fa8ba2967e8fbf337af1bd39e.'
 curation_history:
 - timestamp: '2026-03-13T06:20:28.084661Z'
   curator: culturemech-id-assigner-v1.0
@@ -68,6 +148,18 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 1 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-10-07T09:30:59.704035+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/3797
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "1"} -> {"unit":
+    "G_PER_L", "value": "1"} (evidence_only); composition[1].concentration: {"unit":
+    "G_PER_L", "value": "0.0005"} -> {"unit": "G_PER_L", "value": "0.0005"} (evidence_only);
+    composition[2].concentration: {"unit": "G_PER_L", "value": "15"} -> {"unit": "G_PER_L",
+    "value": "15"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -76,3 +168,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/3797
+  title: 'MediaDive solution 3797: Main sol. J149'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=07416ccdb8471417fd5389d611c8cea06d80402fa8ba2967e8fbf337af1bd39e;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

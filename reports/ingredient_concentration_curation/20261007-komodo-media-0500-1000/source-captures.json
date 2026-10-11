@@ -1,0 +1,867 @@
+{
+  "record_count": 500,
+  "sources": {
+    "92": {
+      "url": "https://mediadive.dsmz.de/rest/medium/92",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/92",
+      "http_status": 200,
+      "sha256": "90b9abcaa8f06270200eb16a7d78e2113a9c0c6d93152bf430d865619f962a7f",
+      "accessed_at": "2026-10-07T10:42:02.867667+00:00"
+    },
+    "92a": {
+      "url": "https://mediadive.dsmz.de/rest/medium/92a",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/92a",
+      "http_status": 200,
+      "sha256": "c255abf049d02840205b8b411dd19fe1e25d768dadf919cecdfdd8aa2b1dd1a9",
+      "accessed_at": "2026-10-07T10:42:03.650456+00:00"
+    },
+    "93": {
+      "url": "https://mediadive.dsmz.de/rest/medium/93",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/93",
+      "http_status": 200,
+      "sha256": "78dd6c3a48d6daa78d95afe90d414840fcd2bb02f1d463206f5ae877a9747768",
+      "accessed_at": "2026-10-07T10:42:04.432522+00:00"
+    },
+    "95": {
+      "url": "https://mediadive.dsmz.de/rest/medium/95",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/95",
+      "http_status": 200,
+      "sha256": "766b96385d31d29ddcfaf05ce51d7f8f74e0a005320e167f1295008f3ee8805c",
+      "accessed_at": "2026-10-07T10:42:05.219570+00:00"
+    },
+    "97": {
+      "url": "https://mediadive.dsmz.de/rest/medium/97",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/97",
+      "http_status": 200,
+      "sha256": "3119abc1e1e85df8fd15b76e6d2a07a1e2f8b2a88fe81730981d9ca89285cce1",
+      "accessed_at": "2026-10-07T10:42:05.997846+00:00"
+    },
+    "98": {
+      "url": "https://mediadive.dsmz.de/rest/medium/98",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/98",
+      "http_status": 200,
+      "sha256": "9d0482c9b11252410d75c9a8043f79f52e705096c474ac4e59d08d64597a87d3",
+      "accessed_at": "2026-10-07T10:42:06.770473+00:00"
+    },
+    "101": {
+      "url": "https://mediadive.dsmz.de/rest/medium/101",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/101",
+      "http_status": 200,
+      "sha256": "762bacc1b539ed4dea529db4180b635a9c2aacea139352b6ae45928e78d9dbc4",
+      "accessed_at": "2026-10-07T10:42:07.550796+00:00"
+    },
+    "102": {
+      "url": "https://mediadive.dsmz.de/rest/medium/102",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/102",
+      "http_status": 200,
+      "sha256": "e5a4a1e76a49e0b3977733e352e0cb342eafee8538e243931b3a9722003bb4c5",
+      "accessed_at": "2026-10-07T10:42:08.328666+00:00"
+    },
+    "104": {
+      "url": "https://mediadive.dsmz.de/rest/medium/104",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/104",
+      "http_status": 200,
+      "sha256": "e67f3c2c5c5e685bdb2b961351b867815c13c953732269e241cd6f14d7153032",
+      "accessed_at": "2026-10-07T10:42:09.115476+00:00"
+    },
+    "104a": {
+      "url": "https://mediadive.dsmz.de/rest/medium/104a",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/104a",
+      "http_status": 200,
+      "sha256": "ef1b67351799838ce3483dceac84ffa6f3fdb4f2959b3cd7842038a03dee9a73",
+      "accessed_at": "2026-10-07T10:42:09.901473+00:00"
+    },
+    "104b": {
+      "url": "https://mediadive.dsmz.de/rest/medium/104b",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/104b",
+      "http_status": 200,
+      "sha256": "cd5661f3f3133a5896c4d74eacfe2b7a1b01447f80c4fa1b030e5f0528ad2145",
+      "accessed_at": "2026-10-07T10:42:10.681010+00:00"
+    },
+    "105": {
+      "url": "https://mediadive.dsmz.de/rest/medium/105",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/105",
+      "http_status": 200,
+      "sha256": "441ab4bbd2962c44a71fb8592d9e516744dcb930fb2384c790f352ce68e4de86",
+      "accessed_at": "2026-10-07T10:42:13.034849+00:00"
+    },
+    "108": {
+      "url": "https://mediadive.dsmz.de/rest/medium/108",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/108",
+      "http_status": 200,
+      "sha256": "655a9032464bbce77701f8a17b66425e88aae2b77a54738f875acec3443ae7ac",
+      "accessed_at": "2026-10-07T10:42:13.817530+00:00"
+    },
+    "109": {
+      "url": "https://mediadive.dsmz.de/rest/medium/109",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/109",
+      "http_status": 200,
+      "sha256": "77b82a49c2be6f93d3988cc38ac39ddfa13e02dc27230979cb5111fe5afeadfc",
+      "accessed_at": "2026-10-07T10:42:14.596361+00:00"
+    },
+    "110": {
+      "url": "https://mediadive.dsmz.de/rest/medium/110",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/110",
+      "http_status": 200,
+      "sha256": "5493e32cbe2d90b479f32dcef43e14cdd82199e7998d6d8e84aef1c7826dccf2",
+      "accessed_at": "2026-10-07T10:42:15.395604+00:00"
+    },
+    "111": {
+      "url": "https://mediadive.dsmz.de/rest/medium/111",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/111",
+      "http_status": 200,
+      "sha256": "55fa3c48de7789fb9e99215742233e9067f86705cdb7492c046fa783a5cc839b",
+      "accessed_at": "2026-10-07T10:42:16.969612+00:00"
+    },
+    "113": {
+      "url": "https://mediadive.dsmz.de/rest/medium/113",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/113",
+      "http_status": 200,
+      "sha256": "35b743a5a071ce8402a786094738f92ebdd699127865588a7c445147a2703976",
+      "accessed_at": "2026-10-07T10:42:17.756838+00:00"
+    },
+    "114": {
+      "url": "https://mediadive.dsmz.de/rest/medium/114",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/114",
+      "http_status": 200,
+      "sha256": "4b156371c33341643b148eb38b8c678dd018aec25b37463d4bdb7be02ce0ea68",
+      "accessed_at": "2026-10-07T10:42:19.478900+00:00"
+    },
+    "115": {
+      "url": "https://mediadive.dsmz.de/rest/medium/115",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/115",
+      "http_status": 200,
+      "sha256": "0eb4babbcfaeb7ba194fc7c4f24883c5e3313980890cccfb787ea1f7cab0f909",
+      "accessed_at": "2026-10-07T10:42:20.261840+00:00"
+    },
+    "118": {
+      "url": "https://mediadive.dsmz.de/rest/medium/118",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/118",
+      "http_status": 200,
+      "sha256": "e30d00ec0ac893012e58607450ba881d58bd07ca43b942cac68dfcb7d324ed2a",
+      "accessed_at": "2026-10-07T10:42:21.820943+00:00"
+    },
+    "119": {
+      "url": "https://mediadive.dsmz.de/rest/medium/119",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/119",
+      "http_status": 200,
+      "sha256": "2ef0379b2f6f083499de9281386d962be27ba59fcba5135710f46288227d666e",
+      "accessed_at": "2026-10-07T10:42:22.771548+00:00"
+    },
+    "120": {
+      "url": "https://mediadive.dsmz.de/rest/medium/120",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/120",
+      "http_status": 200,
+      "sha256": "17919abdbcca848741839a04c139623e3315c5a0ab123892187ac65dd375ccd6",
+      "accessed_at": "2026-10-07T10:42:26.589074+00:00"
+    },
+    "120a": {
+      "url": "https://mediadive.dsmz.de/rest/medium/120a",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/120a",
+      "http_status": 200,
+      "sha256": "a40261936beddcaf2ef9655812c2e25a271e501173a90aff5cb8cb92cf7121b4",
+      "accessed_at": "2026-10-07T10:42:27.539940+00:00"
+    },
+    "120b": {
+      "url": "https://mediadive.dsmz.de/rest/medium/120b",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/120b",
+      "http_status": 200,
+      "sha256": "deb732a4e2ce8aadf7e4cb742e0946e7508ec40385cba4b231ddc4659480ca79",
+      "accessed_at": "2026-10-07T10:42:28.503585+00:00"
+    },
+    "121": {
+      "url": "https://mediadive.dsmz.de/rest/medium/121",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/121",
+      "http_status": 200,
+      "sha256": "458aed02b028c62d7b883dc571a0846eebd339686380fa7dd50943337839e167",
+      "accessed_at": "2026-10-07T10:42:31.191590+00:00"
+    },
+    "122": {
+      "url": "https://mediadive.dsmz.de/rest/medium/122",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/122",
+      "http_status": 200,
+      "sha256": "ca3027781d7693e45e3080fc7ed85daf29a89896b532d128b83fbe6b8ed973f8",
+      "accessed_at": "2026-10-07T10:42:31.979922+00:00"
+    },
+    "123": {
+      "url": "https://mediadive.dsmz.de/rest/medium/123",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/123",
+      "http_status": 200,
+      "sha256": "e090eea64f402f9c200bd96e5f51e61b3bea169af8209be9f0d9eab29b06410b",
+      "accessed_at": "2026-10-07T10:42:32.763577+00:00"
+    },
+    "124": {
+      "url": "https://mediadive.dsmz.de/rest/medium/124",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/124",
+      "http_status": 200,
+      "sha256": "24781681a0b4ef0d46fe505d0abd8b8ce1372f8e9bd00aa0a41d29def94ac851",
+      "accessed_at": "2026-10-07T10:42:33.728430+00:00"
+    },
+    "124a": {
+      "url": "https://mediadive.dsmz.de/rest/medium/124a",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/124a",
+      "http_status": 404,
+      "sha256": "b5c9493e66496fb2c5d5e64c4bcf9675dd01382531706e8697e6092dc99dd8f1",
+      "accessed_at": "2026-10-07T20:58:53.485099+00:00"
+    },
+    "125": {
+      "url": "https://mediadive.dsmz.de/rest/medium/125",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/125",
+      "http_status": 200,
+      "sha256": "2ccb593505b6c8f5cd63fd63bf1ecee7b33357bca201285eb2e958b70aff5ba1",
+      "accessed_at": "2026-10-07T10:42:34.501511+00:00"
+    },
+    "126": {
+      "url": "https://mediadive.dsmz.de/rest/medium/126",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/126",
+      "http_status": 200,
+      "sha256": "10dd9d17da7979b728828f02befb9f6cd71b7c17d3b15af909acc1eb5a1d067a",
+      "accessed_at": "2026-10-07T10:42:35.281949+00:00"
+    },
+    "127": {
+      "url": "https://mediadive.dsmz.de/rest/medium/127",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/127",
+      "http_status": 200,
+      "sha256": "2b3a34f29c9cda4f4a76eb736164130b12821f56be10eda7669a77f3bbec9fa6",
+      "accessed_at": "2026-10-07T10:42:36.068379+00:00"
+    },
+    "129": {
+      "url": "https://mediadive.dsmz.de/rest/medium/129",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/129",
+      "http_status": 200,
+      "sha256": "5d1f36a91fce216d63d1d3447509fd753a402f48fad4a8b0e5d34db9415f31f1",
+      "accessed_at": "2026-10-07T10:42:36.852628+00:00"
+    },
+    "130": {
+      "url": "https://mediadive.dsmz.de/rest/medium/130",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/130",
+      "http_status": 200,
+      "sha256": "e3d69b6de1b5ae0270b62a898dd83988dd81501b0db7772a1354eaafd9f324b7",
+      "accessed_at": "2026-10-07T10:42:37.632992+00:00"
+    },
+    "131": {
+      "url": "https://mediadive.dsmz.de/rest/medium/131",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/131",
+      "http_status": 404,
+      "sha256": "b5c9493e66496fb2c5d5e64c4bcf9675dd01382531706e8697e6092dc99dd8f1",
+      "accessed_at": "2026-10-07T20:58:54.328732+00:00"
+    },
+    "133": {
+      "url": "https://mediadive.dsmz.de/rest/medium/133",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/133",
+      "http_status": 200,
+      "sha256": "d1cd25d4c2725024e7905139bb0d9f96216368d952a987e92cc6dee019ae3c13",
+      "accessed_at": "2026-10-07T10:42:38.419093+00:00"
+    },
+    "134": {
+      "url": "https://mediadive.dsmz.de/rest/medium/134",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/134",
+      "http_status": 200,
+      "sha256": "ee58de4ed7cc62985c33332374d1cebe43b6be02baba8d5defea657053a14cf2",
+      "accessed_at": "2026-10-07T10:42:39.199122+00:00"
+    },
+    "135": {
+      "url": "https://mediadive.dsmz.de/rest/medium/135",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/135",
+      "http_status": 200,
+      "sha256": "3b23282efa257805643bfc4c1c889b7792497db5720eb61ab458619318bf1d40",
+      "accessed_at": "2026-10-07T10:42:40.156663+00:00"
+    },
+    "136": {
+      "url": "https://mediadive.dsmz.de/rest/medium/136",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/136",
+      "http_status": 200,
+      "sha256": "2ac6f1f590ce5b80be92d7175cdb7beff208c979ff778413616ae37cbd87898a",
+      "accessed_at": "2026-10-07T10:42:43.815690+00:00"
+    },
+    "137": {
+      "url": "https://mediadive.dsmz.de/rest/medium/137",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/137",
+      "http_status": 200,
+      "sha256": "b0d8c7d01d024cfd15888c7008cab8caba89429dfd904b2887a07b11d5731146",
+      "accessed_at": "2026-10-07T10:42:44.593216+00:00"
+    },
+    "138": {
+      "url": "https://mediadive.dsmz.de/rest/medium/138",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/138",
+      "http_status": 200,
+      "sha256": "9d997bf0b8d7f427d7abfda9fe21d1acbbc96a8e39719c7405de71dc6790906f",
+      "accessed_at": "2026-10-07T10:42:45.376977+00:00"
+    },
+    "139": {
+      "url": "https://mediadive.dsmz.de/rest/medium/139",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/139",
+      "http_status": 200,
+      "sha256": "2bbbe38a302d25f1b85b805ab3cfb03733b608701c3d475e92a5eefc4718e64b",
+      "accessed_at": "2026-10-07T10:42:46.158347+00:00"
+    },
+    "140": {
+      "url": "https://mediadive.dsmz.de/rest/medium/140",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/140",
+      "http_status": 200,
+      "sha256": "bb9537d74d5d8399708dfb1828689902f49332a881e0b1d7d8e4b305ae2f658d",
+      "accessed_at": "2026-10-07T10:42:46.935904+00:00"
+    },
+    "141": {
+      "url": "https://mediadive.dsmz.de/rest/medium/141",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/141",
+      "http_status": 200,
+      "sha256": "cee18c5d5f47b12929ddfd8932a0fad0f6a7d865ae6edbec7c2c6e6e6e521563",
+      "accessed_at": "2026-10-07T10:42:47.889175+00:00"
+    },
+    "141a": {
+      "url": "https://mediadive.dsmz.de/rest/medium/141a",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/141a",
+      "http_status": 200,
+      "sha256": "8afd029f7ee53acb96276ac664688a079ee7941e1912850686b80d02aa3264d4",
+      "accessed_at": "2026-10-07T10:42:48.836529+00:00"
+    },
+    "142": {
+      "url": "https://mediadive.dsmz.de/rest/medium/142",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/142",
+      "http_status": 200,
+      "sha256": "477d735cc12d23e0b6d7e3c4eb24491f36394e9e55ed6fa65955d899960beef1",
+      "accessed_at": "2026-10-07T10:42:51.539799+00:00"
+    },
+    "142a": {
+      "url": "https://mediadive.dsmz.de/rest/medium/142a",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/142a",
+      "http_status": 200,
+      "sha256": "536705c7cafa6c52431700f015bb5efb6766f730e432fe57ff1c256edb3775a0",
+      "accessed_at": "2026-10-07T10:42:52.325764+00:00"
+    },
+    "143": {
+      "url": "https://mediadive.dsmz.de/rest/medium/143",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/143",
+      "http_status": 200,
+      "sha256": "9d66fd8ee89a936ce1d0328ed772b024cd65d9d86d762657eb37dc0bee45f3a0",
+      "accessed_at": "2026-10-07T10:42:53.109601+00:00"
+    },
+    "144": {
+      "url": "https://mediadive.dsmz.de/rest/medium/144",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/144",
+      "http_status": 200,
+      "sha256": "8c57a97235c33e5628b3cb3da867f48d01b0c85434aae66a019366a73228a183",
+      "accessed_at": "2026-10-07T10:42:54.060758+00:00"
+    },
+    "146": {
+      "url": "https://mediadive.dsmz.de/rest/medium/146",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/146",
+      "http_status": 200,
+      "sha256": "66f41d53b1037b7ea8662ac06112931f555da6fa3ade5049c7b0555b38356d61",
+      "accessed_at": "2026-10-07T10:42:56.744972+00:00"
+    },
+    "147": {
+      "url": "https://mediadive.dsmz.de/rest/medium/147",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/147",
+      "http_status": 200,
+      "sha256": "817b77ce34a3d29d5f130dee730b12620250baf92c762cfdf31e39b5d8b698bf",
+      "accessed_at": "2026-10-07T10:42:57.526138+00:00"
+    },
+    "148": {
+      "url": "https://mediadive.dsmz.de/rest/medium/148",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/148",
+      "http_status": 200,
+      "sha256": "8e4c1ea26fc248fcb1693c44281e9c24f26e4fd27cc7b9e49813cfb95eaf5cfa",
+      "accessed_at": "2026-10-07T10:42:58.312484+00:00"
+    },
+    "149": {
+      "url": "https://mediadive.dsmz.de/rest/medium/149",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/149",
+      "http_status": 200,
+      "sha256": "1faafc54359ad130a838b4166eee9ee3c49bba87117952bd3b4d0c7182c57ac4",
+      "accessed_at": "2026-10-07T10:42:59.277341+00:00"
+    },
+    "150": {
+      "url": "https://mediadive.dsmz.de/rest/medium/150",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/150",
+      "http_status": 200,
+      "sha256": "10871c9874076243d47e3083363cdf6546dc52b22244531c05267cae91b14b5b",
+      "accessed_at": "2026-10-07T10:43:00.058031+00:00"
+    },
+    "150a": {
+      "url": "https://mediadive.dsmz.de/rest/medium/150a",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/150a",
+      "http_status": 200,
+      "sha256": "e053816d9efe9821ead5250714f7ebc356819af77d60eade3699dd9751e0fd0a",
+      "accessed_at": "2026-10-07T10:43:00.838181+00:00"
+    },
+    "152": {
+      "url": "https://mediadive.dsmz.de/rest/medium/152",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/152",
+      "http_status": 200,
+      "sha256": "1c681bae538fdbc6e8a1a4cc3c0c564c666576e5630cc1f068629000c48852e8",
+      "accessed_at": "2026-10-07T10:43:01.623371+00:00"
+    },
+    "153": {
+      "url": "https://mediadive.dsmz.de/rest/medium/153",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/153",
+      "http_status": 200,
+      "sha256": "7d9914df4ebca9173018beaa7b5afb3ce09fdcc463ea01d2c8ee5d3f404e36b8",
+      "accessed_at": "2026-10-07T10:43:02.389673+00:00"
+    },
+    "155": {
+      "url": "https://mediadive.dsmz.de/rest/medium/155",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/155",
+      "http_status": 200,
+      "sha256": "6aeb035c71e72ffbac19ad3efb40d1768b6b61f5507376af8c5eae5ab7eb2a28",
+      "accessed_at": "2026-10-07T10:43:03.176128+00:00"
+    },
+    "156": {
+      "url": "https://mediadive.dsmz.de/rest/medium/156",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/156",
+      "http_status": 200,
+      "sha256": "691c4e77efda45ebd29b0506db44fd47be5a7a329697cb57043e7130c40b1736",
+      "accessed_at": "2026-10-07T10:43:03.945313+00:00"
+    },
+    "157": {
+      "url": "https://mediadive.dsmz.de/rest/medium/157",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/157",
+      "http_status": 200,
+      "sha256": "c1b37bf9ad06d2835a1497cd9c8ef67ec8d1d3fb9e4fa1505cbf0a9adac1362f",
+      "accessed_at": "2026-10-07T10:43:04.726831+00:00"
+    },
+    "158": {
+      "url": "https://mediadive.dsmz.de/rest/medium/158",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/158",
+      "http_status": 200,
+      "sha256": "71164e4166935fc47af34992c70bcf958c0ee74c1022cb05fc25bbc85bf75150",
+      "accessed_at": "2026-10-07T10:43:05.496190+00:00"
+    },
+    "159": {
+      "url": "https://mediadive.dsmz.de/rest/medium/159",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/159",
+      "http_status": 200,
+      "sha256": "252d0cf51880332169abf5b04235812719453b31ebb92dcc1eb06dd1a64482ba",
+      "accessed_at": "2026-10-07T10:43:06.277096+00:00"
+    },
+    "160": {
+      "url": "https://mediadive.dsmz.de/rest/medium/160",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/160",
+      "http_status": 200,
+      "sha256": "c6a847f039b60896100fa0f355b4b3a13242a6713337f16225b575e4c6166181",
+      "accessed_at": "2026-10-07T10:43:07.059232+00:00"
+    },
+    "161": {
+      "url": "https://mediadive.dsmz.de/rest/medium/161",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/161",
+      "http_status": 200,
+      "sha256": "53d710b65b9a45b9d21c2fddd18a86b41de41d18c0a4c2cbd7de44b0a2ef8666",
+      "accessed_at": "2026-10-07T10:43:08.016812+00:00"
+    },
+    "162": {
+      "url": "https://mediadive.dsmz.de/rest/medium/162",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/162",
+      "http_status": 200,
+      "sha256": "bbfd035bd32d6cd2ec94e969f8c8149b55a4c02853c699cd2ffa38e1874c8fb2",
+      "accessed_at": "2026-10-07T10:43:08.803497+00:00"
+    },
+    "163": {
+      "url": "https://mediadive.dsmz.de/rest/medium/163",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/163",
+      "http_status": 200,
+      "sha256": "416cb56b44e366b04018dcc6461bddf7d046003bc5a0dc7e9baa02db5c22fb6c",
+      "accessed_at": "2026-10-07T10:43:09.589095+00:00"
+    },
+    "164": {
+      "url": "https://mediadive.dsmz.de/rest/medium/164",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/164",
+      "http_status": 404,
+      "sha256": "b5c9493e66496fb2c5d5e64c4bcf9675dd01382531706e8697e6092dc99dd8f1",
+      "accessed_at": "2026-10-07T20:58:55.171954+00:00"
+    },
+    "165": {
+      "url": "https://mediadive.dsmz.de/rest/medium/165",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/165",
+      "http_status": 200,
+      "sha256": "aa1aa68534434f879e441aeed823afc2cb125abc5f8fa11a34c98fb319c142f2",
+      "accessed_at": "2026-10-07T10:43:10.552364+00:00"
+    },
+    "166": {
+      "url": "https://mediadive.dsmz.de/rest/medium/166",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/166",
+      "http_status": 200,
+      "sha256": "6d8d136379c5627b24f2367c4b35e90d1c46a61ba6c9df81252a56c6ebf87d66",
+      "accessed_at": "2026-10-07T10:43:11.328906+00:00"
+    },
+    "167": {
+      "url": "https://mediadive.dsmz.de/rest/medium/167",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/167",
+      "http_status": 200,
+      "sha256": "9d5cc8c76198ffaa3d75e17df0aaf509ba476812131978e9678e8d7cea933d8f",
+      "accessed_at": "2026-10-07T10:43:12.108081+00:00"
+    },
+    "168": {
+      "url": "https://mediadive.dsmz.de/rest/medium/168",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/168",
+      "http_status": 404,
+      "sha256": "b5c9493e66496fb2c5d5e64c4bcf9675dd01382531706e8697e6092dc99dd8f1",
+      "accessed_at": "2026-10-07T20:58:56.017744+00:00"
+    },
+    "169": {
+      "url": "https://mediadive.dsmz.de/rest/medium/169",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/169",
+      "http_status": 200,
+      "sha256": "0881709dd89d65eaf1dc2800d4e0ef45396ac87ade40d724de9d53ced59d449e",
+      "accessed_at": "2026-10-07T10:43:12.891893+00:00"
+    },
+    "170": {
+      "url": "https://mediadive.dsmz.de/rest/medium/170",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/170",
+      "http_status": 200,
+      "sha256": "e96c8bdad85f5526855f400ebc8b89b4ca8efc340d22b8d451b50c13addc8e87",
+      "accessed_at": "2026-10-07T10:43:14.639559+00:00"
+    },
+    "171": {
+      "url": "https://mediadive.dsmz.de/rest/medium/171",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/171",
+      "http_status": 200,
+      "sha256": "9579a98533230539fc34bdc806beb5b3621a1b46c6bfb4bc2750e37bec3c40bc",
+      "accessed_at": "2026-10-07T10:43:15.421916+00:00"
+    },
+    "172": {
+      "url": "https://mediadive.dsmz.de/rest/medium/172",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/172",
+      "http_status": 200,
+      "sha256": "061ca33653504b6b22c6c42759f89e901089ede41bcb13f152def2e39d9788bf",
+      "accessed_at": "2026-10-07T10:43:16.206590+00:00"
+    },
+    "172a": {
+      "url": "https://mediadive.dsmz.de/rest/medium/172a",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/172a",
+      "http_status": 200,
+      "sha256": "3b00e137d1becf5285a42d8e52507db9591828f301b415291d319b417f46e216",
+      "accessed_at": "2026-10-07T10:43:16.987253+00:00"
+    },
+    "173": {
+      "url": "https://mediadive.dsmz.de/rest/medium/173",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/173",
+      "http_status": 200,
+      "sha256": "a4e565b093a15290b69501c245e4dea5fd4fdab6ab3723722e92408d89c717e7",
+      "accessed_at": "2026-10-07T10:43:17.763264+00:00"
+    },
+    "174": {
+      "url": "https://mediadive.dsmz.de/rest/medium/174",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/174",
+      "http_status": 200,
+      "sha256": "dc3c363b38577c69aa5d66fe36f676578e1526da48e5cf0acfa6db8e98b886c9",
+      "accessed_at": "2026-10-07T10:43:18.545143+00:00"
+    },
+    "181": {
+      "url": "https://mediadive.dsmz.de/rest/medium/181",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/181",
+      "http_status": 200,
+      "sha256": "4e302d40236fa84f1d092ac18a5928eb2e01ae2c2a9ab8f054cef3d2df09c98e",
+      "accessed_at": "2026-10-07T10:43:19.314959+00:00"
+    },
+    "182": {
+      "url": "https://mediadive.dsmz.de/rest/medium/182",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/182",
+      "http_status": 200,
+      "sha256": "7d768ea80d53f04eed7bc2ccddc7ff84639c85ffcbf5fd23808a9fc4d53fe2e6",
+      "accessed_at": "2026-10-07T10:43:20.095847+00:00"
+    },
+    "182a": {
+      "url": "https://mediadive.dsmz.de/rest/medium/182a",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/182a",
+      "http_status": 200,
+      "sha256": "7b6a1997f63c5fe3522a80989196b51250f5020666340bb8d49bc25bb5566448",
+      "accessed_at": "2026-10-07T10:43:20.883954+00:00"
+    },
+    "183": {
+      "url": "https://mediadive.dsmz.de/rest/medium/183",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/183",
+      "http_status": 200,
+      "sha256": "db42050961f023af3c712e572bb9b37e0de6c1ae73a140af800b83352c84ea95",
+      "accessed_at": "2026-10-07T10:43:21.669352+00:00"
+    },
+    "184": {
+      "url": "https://mediadive.dsmz.de/rest/medium/184",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/184",
+      "http_status": 404,
+      "sha256": "b5c9493e66496fb2c5d5e64c4bcf9675dd01382531706e8697e6092dc99dd8f1",
+      "accessed_at": "2026-10-07T20:58:56.849114+00:00"
+    },
+    "185": {
+      "url": "https://mediadive.dsmz.de/rest/medium/185",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/185",
+      "http_status": 200,
+      "sha256": "2df811e9f488456070cfc61eca2d0662f02a7eadc36454b09f695154e9313d0b",
+      "accessed_at": "2026-10-07T10:43:22.444279+00:00"
+    },
+    "186": {
+      "url": "https://mediadive.dsmz.de/rest/medium/186",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/186",
+      "http_status": 200,
+      "sha256": "e5cd7acae270fad684ed7448b2ee0167aa49e0c47ee40068af36bc33656b057f",
+      "accessed_at": "2026-10-07T10:43:23.221380+00:00"
+    },
+    "187": {
+      "url": "https://mediadive.dsmz.de/rest/medium/187",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/187",
+      "http_status": 200,
+      "sha256": "07625361f0d69ed4448c7db3385b713adc4e36e147923c59f5975a572023f583",
+      "accessed_at": "2026-10-07T10:43:24.007559+00:00"
+    },
+    "188": {
+      "url": "https://mediadive.dsmz.de/rest/medium/188",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/188",
+      "http_status": 200,
+      "sha256": "3cacfe0b65ea361c10ad96742301d80bd20380c9e8f6e38a0d3dd6d000cedd42",
+      "accessed_at": "2026-10-07T10:43:24.781296+00:00"
+    },
+    "189": {
+      "url": "https://mediadive.dsmz.de/rest/medium/189",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/189",
+      "http_status": 200,
+      "sha256": "5f9a3c04ab01c39d3a249d81a5327ee074141354070941060433704b179cd74e",
+      "accessed_at": "2026-10-07T10:43:25.566116+00:00"
+    },
+    "190": {
+      "url": "https://mediadive.dsmz.de/rest/medium/190",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/190",
+      "http_status": 200,
+      "sha256": "0d2c886730b4b5e3e39efa7f4a831487faa1ea6273423391dbd2517549359716",
+      "accessed_at": "2026-10-07T10:43:26.355982+00:00"
+    },
+    "191": {
+      "url": "https://mediadive.dsmz.de/rest/medium/191",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/191",
+      "http_status": 200,
+      "sha256": "026776f8e80280cead09152fe12fa23f78abb1e4a4b89435e39a74870832ee87",
+      "accessed_at": "2026-10-07T10:43:27.139611+00:00"
+    },
+    "192": {
+      "url": "https://mediadive.dsmz.de/rest/medium/192",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/192",
+      "http_status": 200,
+      "sha256": "0c059634ef7dcf452b41b0a761f3d5d32825afda28d2e6bf4dc0a5557ae78e70",
+      "accessed_at": "2026-10-07T10:43:27.923939+00:00"
+    },
+    "193": {
+      "url": "https://mediadive.dsmz.de/rest/medium/193",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/193",
+      "http_status": 200,
+      "sha256": "34069ddcfe0c99cfd7272ecc4b728bcd8bff24c72763e80c548195ea9554bea2",
+      "accessed_at": "2026-10-07T10:43:28.884567+00:00"
+    },
+    "193a": {
+      "url": "https://mediadive.dsmz.de/rest/medium/193a",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/193a",
+      "http_status": 200,
+      "sha256": "dd4bdc934ba94f52ddb395643ef28fa640472741ebea3fae9ed728019f7894d7",
+      "accessed_at": "2026-10-07T10:43:29.850011+00:00"
+    },
+    "194": {
+      "url": "https://mediadive.dsmz.de/rest/medium/194",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/194",
+      "http_status": 200,
+      "sha256": "aa524734da0dcc4180b4260fe04f7477bc9f2238454fd8b987bb0f3bb05259c5",
+      "accessed_at": "2026-10-07T10:43:31.789700+00:00"
+    },
+    "195": {
+      "url": "https://mediadive.dsmz.de/rest/medium/195",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/195",
+      "http_status": 200,
+      "sha256": "601d019961b1527103a3a832f7faf7018e37cca8e4bde557ea51a378526c066e",
+      "accessed_at": "2026-10-07T10:43:34.684136+00:00"
+    },
+    "195a": {
+      "url": "https://mediadive.dsmz.de/rest/medium/195a",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/195a",
+      "http_status": 200,
+      "sha256": "a515957ca0f9f2ebc880f147a6b35831465b234d90ceebd6016e4f256dc6a07e",
+      "accessed_at": "2026-10-07T10:43:35.639694+00:00"
+    },
+    "196": {
+      "url": "https://mediadive.dsmz.de/rest/medium/196",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/196",
+      "http_status": 200,
+      "sha256": "855efb5893b3717f50664f314cf40be39abb4d057d81e5a2ce81bb0daa17b094",
+      "accessed_at": "2026-10-07T10:43:39.321862+00:00"
+    },
+    "197": {
+      "url": "https://mediadive.dsmz.de/rest/medium/197",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/197",
+      "http_status": 404,
+      "sha256": "b5c9493e66496fb2c5d5e64c4bcf9675dd01382531706e8697e6092dc99dd8f1",
+      "accessed_at": "2026-10-07T20:58:57.691369+00:00"
+    },
+    "198": {
+      "url": "https://mediadive.dsmz.de/rest/medium/198",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/198",
+      "http_status": 200,
+      "sha256": "2a9ae0e56a3d897089d380ae74e384d3833417eed17a394e6e777d7b9132f7dd",
+      "accessed_at": "2026-10-07T10:43:40.288186+00:00"
+    },
+    "199": {
+      "url": "https://mediadive.dsmz.de/rest/medium/199",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/199",
+      "http_status": 404,
+      "sha256": "b5c9493e66496fb2c5d5e64c4bcf9675dd01382531706e8697e6092dc99dd8f1",
+      "accessed_at": "2026-10-07T20:58:58.529657+00:00"
+    },
+    "200": {
+      "url": "https://mediadive.dsmz.de/rest/medium/200",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/200",
+      "http_status": 404,
+      "sha256": "b5c9493e66496fb2c5d5e64c4bcf9675dd01382531706e8697e6092dc99dd8f1",
+      "accessed_at": "2026-10-07T20:58:59.367935+00:00"
+    },
+    "202": {
+      "url": "https://mediadive.dsmz.de/rest/medium/202",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/202",
+      "http_status": 200,
+      "sha256": "3c44ad06b50d1b02ac5b5fc229990a0690faf5ca427daa677d9e47b40c3cdb44",
+      "accessed_at": "2026-10-07T10:43:42.218121+00:00"
+    },
+    "203": {
+      "url": "https://mediadive.dsmz.de/rest/medium/203",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/203",
+      "http_status": 200,
+      "sha256": "6654ea43d92d4035ff1e8d5e35204251d39965e8fa0ba150831ef59ca513897c",
+      "accessed_at": "2026-10-07T10:43:43.184905+00:00"
+    },
+    "204": {
+      "url": "https://mediadive.dsmz.de/rest/medium/204",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/204",
+      "http_status": 200,
+      "sha256": "d3d0b9d4ee3096c77883a31185b1c2804d717600d5f8d0ad5cf9d3115c0db66e",
+      "accessed_at": "2026-10-07T10:43:43.975932+00:00"
+    },
+    "205": {
+      "url": "https://mediadive.dsmz.de/rest/medium/205",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/205",
+      "http_status": 200,
+      "sha256": "2af39584b9065a99ccfc406b184af5f45c5523379b23584020fc75be79c753f1",
+      "accessed_at": "2026-10-07T10:43:44.753202+00:00"
+    },
+    "206": {
+      "url": "https://mediadive.dsmz.de/rest/medium/206",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/206",
+      "http_status": 200,
+      "sha256": "c905df7513fbe44b5bc01628d99dd7aba99dbc06927954824c6d4dfdeba51509",
+      "accessed_at": "2026-10-07T10:43:45.702240+00:00"
+    },
+    "207": {
+      "url": "https://mediadive.dsmz.de/rest/medium/207",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/207",
+      "http_status": 200,
+      "sha256": "4afac73c1cb654ba0b8e0a6eb1580c09234df34d501263599bba5ccd798a132e",
+      "accessed_at": "2026-10-07T10:43:46.649260+00:00"
+    },
+    "208": {
+      "url": "https://mediadive.dsmz.de/rest/medium/208",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/208",
+      "http_status": 404,
+      "sha256": "b5c9493e66496fb2c5d5e64c4bcf9675dd01382531706e8697e6092dc99dd8f1",
+      "accessed_at": "2026-10-07T20:59:00.198803+00:00"
+    },
+    "209": {
+      "url": "https://mediadive.dsmz.de/rest/medium/209",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/209",
+      "http_status": 200,
+      "sha256": "4b4fe734a5fc8aa20229c9a5739eb0f9a5bd19a352fb1addfcac4468aac55b2f",
+      "accessed_at": "2026-10-07T10:43:47.432309+00:00"
+    },
+    "210": {
+      "url": "https://mediadive.dsmz.de/rest/medium/210",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/210",
+      "http_status": 200,
+      "sha256": "170e54f135ffbf62d6995e82ef95b3e8cfeb4bd424b35adfb532b6ed674ec42c",
+      "accessed_at": "2026-10-07T10:43:48.382021+00:00"
+    },
+    "211": {
+      "url": "https://mediadive.dsmz.de/rest/medium/211",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/211",
+      "http_status": 200,
+      "sha256": "0eafd48e5fb9800e083910a7443ac3cc34ecdb6decc33a010932534658fc3ecb",
+      "accessed_at": "2026-10-07T10:43:49.335940+00:00"
+    },
+    "212": {
+      "url": "https://mediadive.dsmz.de/rest/medium/212",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/212",
+      "http_status": 200,
+      "sha256": "eeb8d159774c373d17aa022fae571326c7df8daf3c3d92eba337cdf78933d989",
+      "accessed_at": "2026-10-07T10:43:50.297891+00:00"
+    },
+    "213": {
+      "url": "https://mediadive.dsmz.de/rest/medium/213",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/213",
+      "http_status": 200,
+      "sha256": "06e0c6cb100d31d43680c5259ad1000e710ada56592d43b26f61b8727be26792",
+      "accessed_at": "2026-10-07T10:43:52.232641+00:00"
+    },
+    "214": {
+      "url": "https://mediadive.dsmz.de/rest/medium/214",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/214",
+      "http_status": 200,
+      "sha256": "ebaeddc62d1bac79e13218e8e45c0dbb1367dc103e6a987324879d6be18049ec",
+      "accessed_at": "2026-10-07T10:43:53.005705+00:00"
+    },
+    "215": {
+      "url": "https://mediadive.dsmz.de/rest/medium/215",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/215",
+      "http_status": 200,
+      "sha256": "63ec584a9081eac4a9977f7f2571dbcefc2010e5a2f38dcc8110255705519f22",
+      "accessed_at": "2026-10-07T10:43:53.787033+00:00"
+    },
+    "215a": {
+      "url": "https://mediadive.dsmz.de/rest/medium/215a",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/215a",
+      "http_status": 200,
+      "sha256": "0f7e9ffd16c03233276ace6b54efa338be0927081953c372483668b0d395a769",
+      "accessed_at": "2026-10-07T10:43:54.556376+00:00"
+    },
+    "215b": {
+      "url": "https://mediadive.dsmz.de/rest/medium/215b",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/215b",
+      "http_status": 200,
+      "sha256": "3d89e5dd0b25d382027b5569c9202d0bacca8299130897d8b66507f7b720508d",
+      "accessed_at": "2026-10-07T10:43:55.341916+00:00"
+    },
+    "215c": {
+      "url": "https://mediadive.dsmz.de/rest/medium/215c",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/215c",
+      "http_status": 200,
+      "sha256": "119f34e2aed0499f38707f6223ad8bf14f02a61161371188b846c4c6fe3df7dc",
+      "accessed_at": "2026-10-07T10:43:56.124751+00:00"
+    },
+    "216": {
+      "url": "https://mediadive.dsmz.de/rest/medium/216",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/216",
+      "http_status": 200,
+      "sha256": "efb411907a1b6de7a5994e262be575c8e41aef3d3502671f9ec820dd63ffd089",
+      "accessed_at": "2026-10-07T10:43:56.895138+00:00"
+    },
+    "217": {
+      "url": "https://mediadive.dsmz.de/rest/medium/217",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/217",
+      "http_status": 200,
+      "sha256": "df0125ba5c7391ece64b420d65138a9a48f67b1f847f4e99645d7cb70fd1bd5a",
+      "accessed_at": "2026-10-07T10:43:57.670510+00:00"
+    },
+    "218": {
+      "url": "https://mediadive.dsmz.de/rest/medium/218",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/218",
+      "http_status": 200,
+      "sha256": "ff3c5d5c0e2317b4399b0dcda65917390e1e251745e5fd131cc086479331f673",
+      "accessed_at": "2026-10-07T10:43:58.445711+00:00"
+    },
+    "219": {
+      "url": "https://mediadive.dsmz.de/rest/medium/219",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/219",
+      "http_status": 200,
+      "sha256": "0c23c8a08f076e69cec8f8e6a402f968b790871b861d6255cdb13b5403a86adb",
+      "accessed_at": "2026-10-07T10:43:59.230125+00:00"
+    },
+    "220": {
+      "url": "https://mediadive.dsmz.de/rest/medium/220",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/220",
+      "http_status": 200,
+      "sha256": "c09c9b910f047518eb245c42e0e8ceb4cc002d1f180d4dd6f155519492c04704",
+      "accessed_at": "2026-10-07T10:44:00.010375+00:00"
+    }
+  },
+  "missing_source_count": 9
+}

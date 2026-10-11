@@ -16,6 +16,32 @@ composition:
     label: glucose
     confidence: 0.9
     match_type: manual_curated
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/4627
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "D-Glucose",
+                      "compound_id": 211,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 10,
+                      "unit": "g",
+                      "g_l": 10,
+                      "mmol_l": 55.5062,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (D-Glucose)
+      in MediaDive solution 4627; locator=$.data.recipe[0] (compound_id=211). Provider
+      explicitly reports g_l=10. Arithmetic check: 10 g * 1 g/g / (1000 ml / 1000
+      ml per L) = 10 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T09:45:47.324454+00:00; response SHA256=6fbc3213168002bdce6bad6454d0434b96fdff1ad00c7041d8b10799148d9cef.'
 - preferred_term: Glycerol
   concentration:
     value: '15'
@@ -27,6 +53,32 @@ composition:
     id: CHEBI:17754
     label: glycerol
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/4627
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Glycerol",
+                      "compound_id": 72,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 15,
+                      "unit": "g",
+                      "g_l": 15,
+                      "mmol_l": 162.884,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Glycerol)
+      in MediaDive solution 4627; locator=$.data.recipe[1] (compound_id=72). Provider
+      explicitly reports g_l=15. Arithmetic check: 15 g * 1 g/g / (1000 ml / 1000
+      ml per L) = 15 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T09:45:47.324454+00:00; response SHA256=6fbc3213168002bdce6bad6454d0434b96fdff1ad00c7041d8b10799148d9cef.'
 - preferred_term: Bacto peptone
   concentration:
     value: '5'
@@ -48,6 +100,32 @@ composition:
   term:
     id: mediadive.compound:116
     label: Malt extract
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/4627
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 5,
+                      "compound": "Malt extract",
+                      "compound_id": 116,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "g",
+                      "g_l": 2,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[4].concentration (Malt extract)
+      in MediaDive solution 4627; locator=$.data.recipe[4] (compound_id=116). Provider
+      explicitly reports g_l=2. Arithmetic check: 2 g * 1 g/g / (1000 ml / 1000 ml
+      per L) = 2 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T09:45:47.324454+00:00; response SHA256=6fbc3213168002bdce6bad6454d0434b96fdff1ad00c7041d8b10799148d9cef.'
 - preferred_term: CaCO3
   concentration:
     value: '7'
@@ -60,6 +138,32 @@ composition:
     label: calcium carbonate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/4627
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 6,
+                      "compound": "CaCO3",
+                      "compound_id": 13,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 7,
+                      "unit": "g",
+                      "g_l": 7,
+                      "mmol_l": 69.9371,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[5].concentration (CaCO3)
+      in MediaDive solution 4627; locator=$.data.recipe[5] (compound_id=13). Provider
+      explicitly reports g_l=7. Arithmetic check: 7 g * 1 g/g / (1000 ml / 1000 ml
+      per L) = 7 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T09:45:47.324454+00:00; response SHA256=6fbc3213168002bdce6bad6454d0434b96fdff1ad00c7041d8b10799148d9cef.'
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -72,10 +176,36 @@ composition:
     label: agar
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/4627
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 7,
+                      "compound": "Agar",
+                      "compound_id": 3,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 15,
+                      "unit": "g",
+                      "g_l": 15,
+                      "mmol_l": 44.5991,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[6].concentration (Agar) in
+      MediaDive solution 4627; locator=$.data.recipe[6] (compound_id=3). Provider
+      explicitly reports g_l=15. Arithmetic check: 15 g * 1 g/g / (1000 ml / 1000
+      ml per L) = 15 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T09:45:47.324454+00:00; response SHA256=6fbc3213168002bdce6bad6454d0434b96fdff1ad00c7041d8b10799148d9cef.'
 - preferred_term: Distilled water
   concentration:
-    value: '1000'
-    unit: PERCENT_V_V
+    value: '1'
+    unit: L
   term:
     id: mediadive.compound:4
     label: Distilled water
@@ -84,6 +214,31 @@ composition:
     label: water
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/4627
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 8,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1000,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[7].concentration (Distilled
+      water) in MediaDive solution 4627; locator=$.data.recipe[7] (compound_id=4).
+      Source water addition is 1000 ml per prepared batch: 1000 / 1000 = 1 L. No source
+      preparation step gives a competing make-up instruction. This is a batch dose,
+      not a volume percentage; no final-volume or solvent-density assumption is made.
+      Additional exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T09:45:47.324454+00:00;
+      response SHA256=6fbc3213168002bdce6bad6454d0434b96fdff1ad00c7041d8b10799148d9cef.'
 curation_history:
 - timestamp: '2026-03-13T06:20:32.184999Z'
   curator: culturemech-id-assigner-v1.0
@@ -128,6 +283,22 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '2 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T09:46:43.027838+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/4627
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "10"} -> {"unit":
+    "G_PER_L", "value": "10"} (evidence_only); composition[1].concentration: {"unit":
+    "G_PER_L", "value": "15"} -> {"unit": "G_PER_L", "value": "15"} (evidence_only);
+    composition[4].concentration: {"unit": "G_PER_L", "value": "2"} -> {"unit": "G_PER_L",
+    "value": "2"} (evidence_only); composition[5].concentration: {"unit": "G_PER_L",
+    "value": "7"} -> {"unit": "G_PER_L", "value": "7"} (evidence_only); composition[6].concentration:
+    {"unit": "G_PER_L", "value": "15"} -> {"unit": "G_PER_L", "value": "15"} (evidence_only);
+    composition[7].concentration: {"unit": "PERCENT_V_V", "value": "1000"} -> {"unit":
+    "L", "value": "1"} (correct)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -136,3 +307,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/4627
+  title: 'MediaDive solution 4627: Main sol. J710'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=6fbc3213168002bdce6bad6454d0434b96fdff1ad00c7041d8b10799148d9cef;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

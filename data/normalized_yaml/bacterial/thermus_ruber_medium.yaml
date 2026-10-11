@@ -21,6 +21,28 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/256
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 2,
+                              "compound": "Yeast extract",
+                              "compound_id": 16,
+                              "amount": 1,
+                              "unit": "g",
+                              "g_l": 1,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[1].concentration (Yeast extract)
+      in MediaDive medium 256; locator=$.data.solutions[0].recipe[1]. Provider explicitly
+      reports g_l=1; check: 1 g * 1 g/g / (1000 ml / 1000 ml per L) = 1 g/L. This
+      supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:44:28.478236+00:00;
+      response SHA256=975cc321da2373e6f62cb1a622646c73311366ea923ec9032bcf4cd3fc8374dc.'
 - preferred_term: Starch
   term:
     id: CHEBI:28017
@@ -41,6 +63,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/256
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 4,
+                              "compound": "Agar",
+                              "compound_id": 3,
+                              "amount": 12,
+                              "unit": "g",
+                              "g_l": 12,
+                              "mmol_l": 35.6792,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[3].concentration (Agar) in
+      MediaDive medium 256; locator=$.data.solutions[0].recipe[3]. Provider explicitly
+      reports g_l=12; check: 12 g * 1 g/g / (1000 ml / 1000 ml per L) = 12 g/L. This
+      supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:44:28.478236+00:00;
+      response SHA256=975cc321da2373e6f62cb1a622646c73311366ea923ec9032bcf4cd3fc8374dc.'
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -71,9 +116,28 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-07T10:55:41.454416+00:00'
+  curator: codex
+  action: CURATED_MEDIUM_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Exact medium/source membership, ingredient inventory/forms, physical-state
+    conditions, literal snippets, and arithmetic checked. Stock boundaries, source-only
+    rows, preparation context, and variants remain explicit follow-up tasks; secondary
+    chemical mappings unchanged.
+  source: https://mediadive.dsmz.de/rest/medium/256
+  changes: 'ingredients[1].concentration: {"unit": "G_PER_L", "value": "1"} -> {"unit":
+    "G_PER_L", "value": "1"} (evidence_only); ingredients[3].concentration: {"unit":
+    "G_PER_L", "value": "12"} -> {"unit": "G_PER_L", "value": "12"} (evidence_only)'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_256_THERMUS_RUBER_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004660
   name: thermus_ruber_medium
   notes: Same source medium number and matching ingredient/concentration signature.
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/256
+  title: 'MediaDive medium 256: THERMUS RUBER MEDIUM'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; source_organization=DSMZ;
+    accessed_on=2026-10-07; locator=$.data.solutions[0]; response_sha256=975cc321da2373e6f62cb1a622646c73311366ea923ec9032bcf4cd3fc8374dc;
+    original_recipe=https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium256.pdf;
+    individual authors and publication year not supplied. Provider-declared main-recipe
+    amounts only.

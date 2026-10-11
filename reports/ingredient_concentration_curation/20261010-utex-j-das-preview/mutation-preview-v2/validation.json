@@ -1,0 +1,91 @@
+{
+  "terminal": true,
+  "passed": true,
+  "records_edited": 0,
+  "plan_sha256": "9e2627908e867ae57b5d8116de7ca98a13396978ddf8388bdc27aa270022d650",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/J_Medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-j-das-preview/mutation-preview-v2/validation-00.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/J_Medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-j-das-preview/mutation-preview-v2/validation-01.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "reports/ingredient_concentration_curation/20261010-utex-j-das-preview/mutation-preview-v2/proposed/J_Medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-j-das-preview/mutation-preview-v2/validation-02.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "reports/ingredient_concentration_curation/20261010-utex-j-das-preview/mutation-preview-v2/proposed/J_Medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-j-das-preview/mutation-preview-v2/validation-03.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/Dasycladales_Seawater_Medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-j-das-preview/mutation-preview-v2/validation-04.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/Dasycladales_Seawater_Medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-j-das-preview/mutation-preview-v2/validation-05.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "reports/ingredient_concentration_curation/20261010-utex-j-das-preview/mutation-preview-v2/proposed/Dasycladales_Seawater_Medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-j-das-preview/mutation-preview-v2/validation-06.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "reports/ingredient_concentration_curation/20261010-utex-j-das-preview/mutation-preview-v2/proposed/Dasycladales_Seawater_Medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-j-das-preview/mutation-preview-v2/validation-07.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    }
+  ],
+  "concentration_fields_checked": 36,
+  "altered_amounts_rejected": 36,
+  "limitation": "Not an application guard or full scientific completion; manual identity-ledger access limits and draft review issues remain."
+}

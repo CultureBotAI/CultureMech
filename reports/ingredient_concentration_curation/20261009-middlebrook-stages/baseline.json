@@ -1,0 +1,254 @@
+{
+  "terminal": true,
+  "phase": "baseline",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/middlebrook-baseline-0.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/middlebrook-baseline-1.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/madctw_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/middlebrook-baseline-2.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/madctw_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/middlebrook-baseline-3.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/middle_brook_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/middlebrook-baseline-4.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/middle_brook_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/middlebrook-baseline-5.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/middlebrook_7h10_plates_difco_supplemented_with_middlebrook_albumin_dextrose_catalase_and_tween_80.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/middlebrook-baseline-6.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/middlebrook_7h10_plates_difco_supplemented_with_middlebrook_albumin_dextrose_catalase_and_tween_80.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/middlebrook-baseline-7.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/middlebrook_7h10_with_oadc.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/middlebrook-baseline-8.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/middlebrook_7h10_with_oadc.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/middlebrook-baseline-9.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/middlebrook_7h11_agar.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/middlebrook-baseline-10.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/middlebrook_7h11_agar.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/middlebrook-baseline-11.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/middlebrook_7h11_agar_difco.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/middlebrook-baseline-12.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/middlebrook_7h11_agar_difco.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/middlebrook-baseline-13.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/middlebrook_7h11_solid_medium_supplemented_with_10_albumin_dextrose_and_catalase.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/middlebrook-baseline-14.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/middlebrook_7h11_solid_medium_supplemented_with_10_albumin_dextrose_and_catalase.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/middlebrook-baseline-15.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/middlebrook_7h9_broth_supplemented_with_oleic_acid_albumin_dextrose_catalase_difco.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/middlebrook-baseline-16.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/middlebrook_7h9_broth_supplemented_with_oleic_acid_albumin_dextrose_catalase_difco.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/middlebrook-baseline-17.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/middlebrook_7h9_broth_w_adc_enrichment.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/middlebrook-baseline-18.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/middlebrook_7h9_broth_w_adc_enrichment.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/middlebrook-baseline-19.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/middlebrook_7h9_difco_liquid_medium_supplemented_with_middlebrook_albumin_dextrose_catalase_and_tween_80.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/middlebrook-baseline-20.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/middlebrook_7h9_difco_liquid_medium_supplemented_with_middlebrook_albumin_dextrose_catalase_and_tween_80.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/middlebrook-baseline-21.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/middlebrook_7h9_liquid_medium_supplemented_with_10_albumin_dextrose_and_catalase.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/middlebrook-baseline-22.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/middlebrook_7h9_liquid_medium_supplemented_with_10_albumin_dextrose_and_catalase.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/middlebrook-baseline-23.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/supplemented_middlebrook.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/middlebrook-baseline-24.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/supplemented_middlebrook.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/middlebrook-baseline-25.log"
+    }
+  ],
+  "code_sha256": {
+    "scripts/repair_middlebrook_stages.py": "8789e6c41084ab61b41dbc6742f38f62217dcd42da889c38f5abd4b783f57bee",
+    "tests/test_middlebrook_stages.py": "921f96ffafce8f58bca6c6665ef068bb36caa93583c97617bd3ac5efd7af7d10",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-middlebrook-stages/audit.py": "e579c3e66520f601a4ef4a6940416a74c9370fac03085fc3b11405e1fb821e45"
+  },
+  "plan_sha256": "28032eb3f5837886b5e1d1b0b972bad659942781d4ca76950e2ee774df680e13",
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "d99a375e68d2bef008b27eae1eaa6da6fc414a7d67046a15a5d32a2661f813d2"
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "d99a375e68d2bef008b27eae1eaa6da6fc414a7d67046a15a5d32a2661f813d2"
+  }
+}

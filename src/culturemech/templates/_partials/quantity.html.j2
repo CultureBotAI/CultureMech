@@ -1,0 +1,9 @@
+{% macro quantity(concentration) -%}
+{% if concentration %}
+  {{ concentration.value }}
+  <span class="muted">{{ concentration.unit }}</span>
+  {% if concentration.per_volume %}
+    <span class="small">({{ concentration.per_volume }})</span>
+  {% endif %}
+{% endif %}
+{%- endmacro %}

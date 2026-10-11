@@ -1,0 +1,60 @@
+{
+  "records": 3,
+  "passed": 3,
+  "details": [
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_650_CENTENUM_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_650_CENTENUM_medium.yaml",
+        "data/normalized_yaml/bacterial/centenum_medium.yaml",
+        "data/normalized_yaml/bacterial/medium_650_modified_for_dsm_8319.yaml"
+      ],
+      "fingerprint": "7a7a49877038bd37c006d7808e0f4c2d7bcc9c509d01e032edb02c34dd26f5b1",
+      "checks": {
+        "ingredients": true,
+        "solutions": true,
+        "preparation_steps": true,
+        "notes": true,
+        "evidence": true,
+        "references": true,
+        "event": true
+      },
+      "passed": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_752_HALOMONAS_PANTELLERIENSE.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_752_HALOMONAS_PANTELLERIENSE.yaml"
+      ],
+      "fingerprint": "be1268e41db03a739a764c3fde1cc6a4d998ab16f9bc176036faa9161ee14903",
+      "checks": {
+        "ingredients": true,
+        "solutions": true,
+        "preparation_steps": true,
+        "notes": true,
+        "evidence": true,
+        "references": true,
+        "event": true
+      },
+      "passed": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_762_HALOMONAS_DESIDERATA_MEDIUM.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_762_HALOMONAS_DESIDERATA_MEDIUM.yaml"
+      ],
+      "fingerprint": "c638b1736a3d6b5e916adafa76694c8f1a4ac47bf6838ac5eba94b3329882953",
+      "checks": {
+        "ingredients": true,
+        "solutions": true,
+        "preparation_steps": true,
+        "notes": true,
+        "evidence": true,
+        "references": true,
+        "event": true
+      },
+      "passed": true
+    }
+  ],
+  "scope": "Exact formulation and provenance retention, not a claim that other members of concentration-independent groups are scientifically equivalent."
+}

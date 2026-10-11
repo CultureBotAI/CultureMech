@@ -39,8 +39,8 @@ composition:
     label: Malt extract
 - preferred_term: Distilled water
   concentration:
-    value: '1000'
-    unit: PERCENT_V_V
+    value: '1'
+    unit: L
   term:
     id: mediadive.compound:4
     label: Distilled water
@@ -49,6 +49,29 @@ composition:
     label: water
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5388
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 5,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1000,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: |-
+      Concentration evidence for composition[4].concentration (Distilled water) in MediaDive solution 5388; locator=$.data.recipe[4] (compound_id=4). Source-explicit water input: 1000 ml / 1000 ml per L = 1 L per preparation batch. This replaces the importer unit error (1000 PERCENT_V_V), not the recipe formulation. Separately located exact preparation excerpt at $.data.steps[0]: {
+                      "recipe_order": null,
+                      "step": "Adjust pH to 7.5."
+                  }. The inspected preparation only adjusts pH; it does not instruct make-up to a final volume. This is the listed water input, not a volume percentage, measured final volume, stock strength, or receiving-medium concentration. No density or final-volume assumption is made. Unchanged non-water amounts and chemical mappings are not newly verified by this follow-up. Retrieved 2026-10-07T09:54:22.160473+00:00; response SHA256=59165ed0791e49a7c5a77434671290dac90dc486f03079b4266943aa249c42a6.
 preparation_notes: Adjust pH to 7.5.
 curation_history:
 - timestamp: '2026-03-13T06:20:36.903391Z'
@@ -83,6 +106,15 @@ curation_history:
   action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
   notes: '3 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
     disambiguation, or mixture de-ground.'
+- timestamp: '2026-10-08T02:33:09.688098+00:00'
+  curator: codex
+  action: CORRECTED_SOURCE_EXPLICIT_WATER_INPUT_AFTER_PH_ADJUSTMENT_REVIEW
+  notes: Individually inspected source water row and pH-adjustment instruction; literal
+    snippet and locator attached. Existing non-water claims, provenance, preparation,
+    and identifiers preserved. No final-volume inference.
+  source: https://mediadive.dsmz.de/rest/solution/5388
+  changes: 'composition[4].concentration: 1000 PERCENT_V_V -> 1 L water input per
+    preparation batch (1000 ml / 1000).'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -91,3 +123,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/5388
+  title: 'MediaDive solution 5388: Main sol. J1251'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; response_sha256=59165ed0791e49a7c5a77434671290dac90dc486f03079b4266943aa249c42a6;
+    individual authors and publication year not supplied. Water input only; no stock
+    strength or final-volume assertion.

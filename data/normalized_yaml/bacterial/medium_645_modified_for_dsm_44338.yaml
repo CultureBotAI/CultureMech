@@ -10,270 +10,529 @@ media_term:
   term:
     id: komodo.medium:645_44338
     label: MEDIUM 645 MODIFIED FOR DSM 44338
-notes: 'Source: KOMODO ModelSEED | ID: 645_44338 | DSMZ Medium: 645 (mediadive.medium:645)
-  | Aerobic: No
+notes: |-
+  Source: KOMODO ModelSEED | ID: 645_44338 | DSMZ Medium: 645 (mediadive.medium:645) | Aerobic: No
 
-
+  Superseded historical provenance (not a current formulation claim):
   Commercial Product: LB Medium (Luria-Bertani, Miller formulation)
-
   Supplier: Multiple suppliers (Difco, Sigma, etc.)
-
   Catalog: Multiple (L3522 Sigma, 244520 BD)
-
   Source: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-
   Accessed: 2026-03-28
 
+  Constituent composition researched from product specification.
 
-  Constituent composition researched from product specification.'
+  This record now follows its own KOMODO table rather than the composition copied from DSMZ. Rates remain provider-qualified; a dilution mechanism is unresolved. Null PH Info is not replaced by a copied pH assertion. No source omission proves an experimentally absent ingredient.
+
+  Source-specific ingredient identities, quantity bases and preparation routes supersede the copied flattened amounts. Historical events are preserved. Chemical groundings are not comprehensively recertified; no taxa-media association is added.
 ingredients:
-- preferred_term: Bacto Middlebrook 7H10 agar
-  term:
-    id: CHEBI:2509
-    label: agar
-  concentration:
-    value: '20.9945'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: Glycerol
-  term:
-    id: CHEBI:17754
-    label: glycerol
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17754
-    label: glycerol
-- preferred_term: (NH4)2SO4
-  term:
-    id: CHEBI:62946
-    label: ammonium sulfate
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:62946
-    label: ammonium sulfate
-- preferred_term: KH2PO4
-  term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
-  concentration:
-    value: '1.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
-- preferred_term: Na2HPO4
-  term:
-    id: CHEBI:34683
-    label: disodium hydrogenphosphate
-  concentration:
-    value: '1.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:34683
-    label: disodium hydrogenphosphate
-- preferred_term: Sodium citrate
-  term:
-    id: CHEBI:53258
-    label: sodium citrate
-  concentration:
-    value: '0.4'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:53258
-    label: sodium citrate
-- preferred_term: MgSO4
-  term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-  concentration:
-    value: '0.025'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-- preferred_term: CaCl2
-  term:
-    id: CHEBI:3312
-    label: calcium dichloride
-  concentration:
-    value: '0.0005'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:3312
-    label: calcium dichloride
-- preferred_term: ZnSO4
-  term:
-    id: CHEBI:35176
-    label: zinc sulfate
-  concentration:
-    value: '0.001'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:35176
-    label: zinc sulfate
-- preferred_term: CuSO4
-  term:
-    id: CHEBI:23414
-    label: copper(II) sulfate
-  concentration:
-    value: '0.001'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:23414
-    label: copper(II) sulfate
 - preferred_term: L-Glutamic acid
   term:
     id: CHEBI:16015
     label: L-glutamic acid
   concentration:
-    value: '0.5'
+    value: '0.25'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:16015
     label: L-glutamic acid
-- preferred_term: Ferric ammonium citrate
+  notes: 'Provider-reported medium rate: Gram Amount 0.25 per liter. Preserve displayed
+    precision; the linked DSMZ batch/stock recipe does not independently explain this
+    rate. The Mol Amount column is not used to infer a new molarity or hydrate form.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338
+    supports: SUPPORT
+    snippet: L-Glutamic acid L-Glutamic acid SEED-cpd00023### 0.25 0.00
+    explanation: |-
+      ingredients[0].concentration: Provider-reported medium rate: Gram Amount 0.25 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[1]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: L-Glutamic acid L-Glutamic acid SEED-cpd00023### 0.25 0.00
+      ingredients[0].notes: Provider-reported medium rate: Gram Amount 0.25 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[1]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: Gram & Mol amounts are per Liter of medium.
+      ingredients[0].notes: Provider-reported medium rate: Gram Amount 0.25 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+- preferred_term: CuSO4
   term:
-    id: CHEBI:31604
-    label: ferric ammonium citrate
+    id: CHEBI:23414
+    label: copper(II) sulfate
   concentration:
-    value: '0.04'
+    value: '4.99E-4'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:31604
-    label: ferric ammonium citrate
-- preferred_term: Pyridoxine
+    id: CHEBI:23414
+    label: copper(II) sulfate
+  notes: 'Provider-reported medium rate: Gram Amount 4.99E-4 per liter. Preserve displayed
+    precision; the linked DSMZ batch/stock recipe does not independently explain this
+    rate. The Mol Amount column is not used to infer a new molarity or hydrate form.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338
+    supports: SUPPORT
+    snippet: CuSO4 CuSO4 SEED-cpd00048#cpd00058## 4.99E-4 3.14E-6
+    explanation: |-
+      ingredients[1].concentration: Provider-reported medium rate: Gram Amount 4.99E-4 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[2]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: CuSO4 CuSO4 SEED-cpd00048#cpd00058## 4.99E-4 3.14E-6
+      ingredients[1].notes: Provider-reported medium rate: Gram Amount 4.99E-4 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[2]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: Gram & Mol amounts are per Liter of medium.
+      ingredients[1].notes: Provider-reported medium rate: Gram Amount 4.99E-4 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+- preferred_term: Na2HPO4
   term:
-    id: CHEBI:16709
-    label: pyridoxine
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
   concentration:
-    value: '0.001'
+    value: '0.75'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:16709
-    label: pyridoxine
-- preferred_term: Biotin
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+  notes: 'Provider-reported medium rate: Gram Amount 0.75 per liter. Preserve displayed
+    precision; the linked DSMZ batch/stock recipe does not independently explain this
+    rate. The Mol Amount column is not used to infer a new molarity or hydrate form.
+    Source secondary-name ambiguity: displayed name ''Na2HPO4'' versus ''sodium phosphate
+    monobasique''; retained chemical annotations are not recertified.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338
+    supports: SUPPORT
+    snippet: Na2HPO4 sodium phosphate monobasique SEED-cpd00009#cpd00971## 0.75 0.01
+    explanation: |-
+      ingredients[2].concentration: Provider-reported medium rate: Gram Amount 0.75 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. Source secondary-name ambiguity: displayed name 'Na2HPO4' versus 'sodium phosphate monobasique'; retained chemical annotations are not recertified. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[3]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: Na2HPO4 sodium phosphate monobasique SEED-cpd00009#cpd00971## 0.75 0.01
+      ingredients[2].notes: Provider-reported medium rate: Gram Amount 0.75 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. Source secondary-name ambiguity: displayed name 'Na2HPO4' versus 'sodium phosphate monobasique'; retained chemical annotations are not recertified. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[3]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: Gram & Mol amounts are per Liter of medium.
+      ingredients[2].notes: Provider-reported medium rate: Gram Amount 0.75 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. Source secondary-name ambiguity: displayed name 'Na2HPO4' versus 'sodium phosphate monobasique'; retained chemical annotations are not recertified. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+- preferred_term: ZnSO4
   term:
-    id: CHEBI:15956
-    label: biotin
+    id: CHEBI:35176
+    label: zinc sulfate
   concentration:
-    value: '0.0005'
+    value: '4.99E-4'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:15956
-    label: biotin
-- preferred_term: Malachite green
+    id: CHEBI:35176
+    label: zinc sulfate
+  notes: 'Provider-reported medium rate: Gram Amount 4.99E-4 per liter. Preserve displayed
+    precision; the linked DSMZ batch/stock recipe does not independently explain this
+    rate. The Mol Amount column is not used to infer a new molarity or hydrate form.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338
+    supports: SUPPORT
+    snippet: ZnSO4 ZnSO4 SEED-cpd00034#cpd00048## 4.99E-4 3.10E-6
+    explanation: |-
+      ingredients[3].concentration: Provider-reported medium rate: Gram Amount 4.99E-4 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[4]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: ZnSO4 ZnSO4 SEED-cpd00034#cpd00048## 4.99E-4 3.10E-6
+      ingredients[3].notes: Provider-reported medium rate: Gram Amount 4.99E-4 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[4]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: Gram & Mol amounts are per Liter of medium.
+      ingredients[3].notes: Provider-reported medium rate: Gram Amount 4.99E-4 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+- preferred_term: Sodium citrate
   term:
-    id: CHEBI:72449
-    label: malachite green
+    id: CHEBI:53258
+    label: sodium citrate
   concentration:
-    value: '0.00025'
+    value: '0.20'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:72449
-    label: malachite green
+    id: CHEBI:53258
+    label: sodium citrate
+  notes: 'Provider-reported medium rate: Gram Amount 0.20 per liter. Preserve displayed
+    precision; the linked DSMZ batch/stock recipe does not independently explain this
+    rate. The Mol Amount column is not used to infer a new molarity or hydrate form.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338
+    supports: SUPPORT
+    snippet: Na-citrate Na-citrate SEED-cpd00137#cpd00971## 0.20 0.00
+    explanation: |-
+      ingredients[4].concentration: Provider-reported medium rate: Gram Amount 0.20 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[5]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: Na-citrate Na-citrate SEED-cpd00137#cpd00971## 0.20 0.00
+      ingredients[4].notes: Provider-reported medium rate: Gram Amount 0.20 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[5]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: Gram & Mol amounts are per Liter of medium.
+      ingredients[4].notes: Provider-reported medium rate: Gram Amount 0.20 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+- preferred_term: Distilled water
+  notes: 'The source Gram Amount is null: no fixed amount is asserted; missing is
+    not zero. The Mol Amount column is not used to infer a new molarity or hydrate
+    form.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338
+    supports: SUPPORT
+    snippet: Distilled water H2O SEED-cpd00001### null null
+    explanation: |-
+      ingredients[5].concentration: The source Gram Amount is null: no fixed amount is asserted; missing is not zero. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[6]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: Distilled water H2O SEED-cpd00001### null null
+      ingredients[5].notes: The source Gram Amount is null: no fixed amount is asserted; missing is not zero. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[6]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: Gram & Mol amounts are per Liter of medium.
+      ingredients[5].notes: The source Gram Amount is null: no fixed amount is asserted; missing is not zero. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
 - preferred_term: Agar
   term:
     id: CHEBI:2509
     label: agar
   concentration:
-    value: '15'
+    value: '7.48'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
-- preferred_term: Oleic acid
+  notes: 'Provider-reported medium rate: Gram Amount 7.48 per liter. Preserve displayed
+    precision; the linked DSMZ batch/stock recipe does not independently explain this
+    rate. The Mol Amount column is not used to infer a new molarity or hydrate form.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338
+    supports: SUPPORT
+    snippet: Agar Agar SEED-cpd13334### 7.48 null
+    explanation: |-
+      ingredients[6].concentration: Provider-reported medium rate: Gram Amount 7.48 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[7]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: Agar Agar SEED-cpd13334### 7.48 null
+      ingredients[6].notes: Provider-reported medium rate: Gram Amount 7.48 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[7]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: Gram & Mol amounts are per Liter of medium.
+      ingredients[6].notes: Provider-reported medium rate: Gram Amount 7.48 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+- preferred_term: Glycerol
   term:
-    id: CHEBI:16196
-    label: oleic acid
+    id: CHEBI:17754
+    label: glycerol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
+    label: glycerol
+  notes: 'The source Gram Amount is null: no fixed amount is asserted; missing is
+    not zero. The Mol Amount column is not used to infer a new molarity or hydrate
+    form.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338
+    supports: SUPPORT
+    snippet: Glycerol Glycerol SEED-cpd00100### null null
+    explanation: |-
+      ingredients[7].concentration: The source Gram Amount is null: no fixed amount is asserted; missing is not zero. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[8]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: Glycerol Glycerol SEED-cpd00100### null null
+      ingredients[7].notes: The source Gram Amount is null: no fixed amount is asserted; missing is not zero. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[8]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: Gram & Mol amounts are per Liter of medium.
+      ingredients[7].notes: The source Gram Amount is null: no fixed amount is asserted; missing is not zero. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
   concentration:
-    value: '0.5'
+    value: '0.75'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:16196
-    label: oleic acid
-- preferred_term: Tryptone
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  notes: 'Provider-reported medium rate: Gram Amount 0.75 per liter. Preserve displayed
+    precision; the linked DSMZ batch/stock recipe does not independently explain this
+    rate. The Mol Amount column is not used to infer a new molarity or hydrate form.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338
+    supports: SUPPORT
+    snippet: KH2PO4 Potassium dihydrogen phosphate SEED-cpd00009#cpd00205## 0.75 0.01
+    explanation: |-
+      ingredients[8].concentration: Provider-reported medium rate: Gram Amount 0.75 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[9]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: KH2PO4 Potassium dihydrogen phosphate SEED-cpd00009#cpd00205## 0.75 0.01
+      ingredients[8].notes: Provider-reported medium rate: Gram Amount 0.75 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[9]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: Gram & Mol amounts are per Liter of medium.
+      ingredients[8].notes: Provider-reported medium rate: Gram Amount 0.75 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+- preferred_term: Pyridoxine
   term:
-    id: MICRO:0000182
-    label: tryptone
+    id: CHEBI:16709
+    label: pyridoxine
   concentration:
-    value: '10.0'
+    value: '4.99E-4'
     unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
-    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
-  synonyms:
-  - synonym_text: pancreatic digest of casein
-    synonym_type: EXACT
-  - synonym_text: casein peptone
-    synonym_type: EXACT
-- preferred_term: Yeast extract
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16709
+    label: pyridoxine
+  notes: 'Provider-reported medium rate: Gram Amount 4.99E-4 per liter. Preserve displayed
+    precision; the linked DSMZ batch/stock recipe does not independently explain this
+    rate. The Mol Amount column is not used to infer a new molarity or hydrate form.
+    Source secondary-name ambiguity: displayed name ''Pyridoxine'' versus ''Pyridoxine
+    HCl''; retained chemical annotations are not recertified.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338
+    supports: SUPPORT
+    snippet: Pyridoxine Pyridoxine HCl SEED-cpd00099#cpd00263## 4.99E-4 2.44E-6
+    explanation: |-
+      ingredients[9].concentration: Provider-reported medium rate: Gram Amount 4.99E-4 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. Source secondary-name ambiguity: displayed name 'Pyridoxine' versus 'Pyridoxine HCl'; retained chemical annotations are not recertified. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[10]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: Pyridoxine Pyridoxine HCl SEED-cpd00099#cpd00263## 4.99E-4 2.44E-6
+      ingredients[9].notes: Provider-reported medium rate: Gram Amount 4.99E-4 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. Source secondary-name ambiguity: displayed name 'Pyridoxine' versus 'Pyridoxine HCl'; retained chemical annotations are not recertified. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[10]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: Gram & Mol amounts are per Liter of medium.
+      ingredients[9].notes: Provider-reported medium rate: Gram Amount 4.99E-4 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. Source secondary-name ambiguity: displayed name 'Pyridoxine' versus 'Pyridoxine HCl'; retained chemical annotations are not recertified. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+- preferred_term: Biotin
   term:
-    id: FOODON:03315426
-    label: yeast extract
+    id: CHEBI:15956
+    label: biotin
   concentration:
-    value: '5.0'
+    value: '2.49E-4'
     unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
-    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
-    product
-- preferred_term: Sodium chloride
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  concentration:
-    value: '10.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
-    (Luria-Bertani, Miller formulation) commercial product
-  synonyms:
-  - synonym_text: NaCl
-    synonym_type: EXACT
-  - synonym_text: table salt
-    synonym_type: EXACT
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
+    label: biotin
+  notes: 'Provider-reported medium rate: Gram Amount 2.49E-4 per liter. Preserve displayed
+    precision; the linked DSMZ batch/stock recipe does not independently explain this
+    rate. The Mol Amount column is not used to infer a new molarity or hydrate form.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338
+    supports: SUPPORT
+    snippet: Biotin Biotin SEED-cpd00104### 2.49E-4 1.03E-6
+    explanation: |-
+      ingredients[10].concentration: Provider-reported medium rate: Gram Amount 2.49E-4 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[11]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: Biotin Biotin SEED-cpd00104### 2.49E-4 1.03E-6
+      ingredients[10].notes: Provider-reported medium rate: Gram Amount 2.49E-4 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[11]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: Gram & Mol amounts are per Liter of medium.
+      ingredients[10].notes: Provider-reported medium rate: Gram Amount 2.49E-4 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
 - preferred_term: Dextrose
   term:
     id: CHEBI:17634
     label: D-glucose
   concentration:
-    value: '20'
+    value: '1.00'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17634
     label: D-glucose
+  notes: 'Provider-reported medium rate: Gram Amount 1.00 per liter. Preserve displayed
+    precision; the linked DSMZ batch/stock recipe does not independently explain this
+    rate. The Mol Amount column is not used to infer a new molarity or hydrate form.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338
+    supports: SUPPORT
+    snippet: Dextrose Dextrose SEED-cpd00027### 1.00 0.01
+    explanation: |-
+      ingredients[11].concentration: Provider-reported medium rate: Gram Amount 1.00 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[12]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: Dextrose Dextrose SEED-cpd00027### 1.00 0.01
+      ingredients[11].notes: Provider-reported medium rate: Gram Amount 1.00 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[12]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: Gram & Mol amounts are per Liter of medium.
+      ingredients[11].notes: Provider-reported medium rate: Gram Amount 1.00 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+- preferred_term: MgSO4
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  notes: 'Provider-reported medium rate: Gram Amount 0.01 per liter. Preserve displayed
+    precision; the linked DSMZ batch/stock recipe does not independently explain this
+    rate. The Mol Amount column is not used to infer a new molarity or hydrate form.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338
+    supports: SUPPORT
+    snippet: MgSO4 Magnesium sulfate SEED-cpd00048#cpd00254## 0.01 0.00
+    explanation: |-
+      ingredients[12].concentration: Provider-reported medium rate: Gram Amount 0.01 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[13]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: MgSO4 Magnesium sulfate SEED-cpd00048#cpd00254## 0.01 0.00
+      ingredients[12].notes: Provider-reported medium rate: Gram Amount 0.01 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[13]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: Gram & Mol amounts are per Liter of medium.
+      ingredients[12].notes: Provider-reported medium rate: Gram Amount 0.01 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
 - preferred_term: Catalase
   concentration:
-    value: '0.04'
+    value: '2.00E-3'
     unit: G_PER_L
+  notes: 'Provider-reported medium rate: Gram Amount 2.00E-3 per liter. Preserve displayed
+    precision; the linked DSMZ batch/stock recipe does not independently explain this
+    rate. The Mol Amount column is not used to infer a new molarity or hydrate form.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338
+    supports: SUPPORT
+    snippet: Catalase Catalase SEED-cpd12773### 2.00E-3 null
+    explanation: |-
+      ingredients[13].concentration: Provider-reported medium rate: Gram Amount 2.00E-3 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[14]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: Catalase Catalase SEED-cpd12773### 2.00E-3 null
+      ingredients[13].notes: Provider-reported medium rate: Gram Amount 2.00E-3 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[14]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: Gram & Mol amounts are per Liter of medium.
+      ingredients[13].notes: Provider-reported medium rate: Gram Amount 2.00E-3 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+- preferred_term: Ferric ammonium citrate
+  term:
+    id: CHEBI:31604
+    label: ferric ammonium citrate
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31604
+    label: ferric ammonium citrate
+  notes: 'Provider-reported medium rate: Gram Amount 0.02 per liter. Preserve displayed
+    precision; the linked DSMZ batch/stock recipe does not independently explain this
+    rate. The Mol Amount column is not used to infer a new molarity or hydrate form.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338
+    supports: SUPPORT
+    snippet: Ferric ammonium citrate Ferric ammonium citrate SEED-cpd00013#cpd00137#cpd10516#
+      0.02 0.00
+    explanation: |-
+      ingredients[14].concentration: Provider-reported medium rate: Gram Amount 0.02 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[15]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: Ferric ammonium citrate Ferric ammonium citrate SEED-cpd00013#cpd00137#cpd10516# 0.02 0.00
+      ingredients[14].notes: Provider-reported medium rate: Gram Amount 0.02 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[15]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: Gram & Mol amounts are per Liter of medium.
+      ingredients[14].notes: Provider-reported medium rate: Gram Amount 0.02 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+- preferred_term: Oleic acid
+  term:
+    id: CHEBI:16196
+    label: oleic acid
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16196
+    label: oleic acid
+  notes: 'Provider-reported medium rate: Gram Amount 0.02 per liter. Preserve displayed
+    precision; the linked DSMZ batch/stock recipe does not independently explain this
+    rate. The Mol Amount column is not used to infer a new molarity or hydrate form.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338
+    supports: SUPPORT
+    snippet: Oleic acid Oleic Acid SEED-cpd00536### 0.02 0.00
+    explanation: |-
+      ingredients[15].concentration: Provider-reported medium rate: Gram Amount 0.02 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[16]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: Oleic acid Oleic Acid SEED-cpd00536### 0.02 0.00
+      ingredients[15].notes: Provider-reported medium rate: Gram Amount 0.02 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[16]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: Gram & Mol amounts are per Liter of medium.
+      ingredients[15].notes: Provider-reported medium rate: Gram Amount 0.02 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: calcium dichloride
+  concentration:
+    value: '2.49E-4'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
+    label: calcium dichloride
+  notes: 'Provider-reported medium rate: Gram Amount 2.49E-4 per liter. Preserve displayed
+    precision; the linked DSMZ batch/stock recipe does not independently explain this
+    rate. The Mol Amount column is not used to infer a new molarity or hydrate form.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338
+    supports: SUPPORT
+    snippet: CaCl2 Calcium chloride SEED-cpd00063#cpd00099## 2.49E-4 2.27E-6
+    explanation: |-
+      ingredients[16].concentration: Provider-reported medium rate: Gram Amount 2.49E-4 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[17]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: CaCl2 Calcium chloride SEED-cpd00063#cpd00099## 2.49E-4 2.27E-6
+      ingredients[16].notes: Provider-reported medium rate: Gram Amount 2.49E-4 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[17]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: Gram & Mol amounts are per Liter of medium.
+      ingredients[16].notes: Provider-reported medium rate: Gram Amount 2.49E-4 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+- preferred_term: Albumin fraction V, bovine
+  concentration:
+    value: '2.49'
+    unit: G_PER_L
+  notes: 'Provider-reported medium rate: Gram Amount 2.49 per liter. Preserve displayed
+    precision; the linked DSMZ batch/stock recipe does not independently explain this
+    rate. The Mol Amount column is not used to infer a new molarity or hydrate form.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338
+    supports: SUPPORT
+    snippet: Albumin fraction V, bovine Albumin fraction V, bovine rich-peptone# 2.49
+      null
+    explanation: |-
+      ingredients[17].concentration: Provider-reported medium rate: Gram Amount 2.49 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[18]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: Albumin fraction V, bovine Albumin fraction V, bovine rich-peptone# 2.49 null
+      ingredients[17].notes: Provider-reported medium rate: Gram Amount 2.49 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[18]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: Gram & Mol amounts are per Liter of medium.
+      ingredients[17].notes: Provider-reported medium rate: Gram Amount 2.49 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
     label: sodium chloride
   concentration:
-    value: '8.5'
+    value: '0.42'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
+  notes: 'Provider-reported medium rate: Gram Amount 0.42 per liter. Preserve displayed
+    precision; the linked DSMZ batch/stock recipe does not independently explain this
+    rate. The Mol Amount column is not used to infer a new molarity or hydrate form.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338
+    supports: SUPPORT
+    snippet: NaCl NaCl SEED-cpd00099#cpd00971## 0.42 0.01
+    explanation: |-
+      ingredients[18].concentration: Provider-reported medium rate: Gram Amount 0.42 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[19]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: NaCl NaCl SEED-cpd00099#cpd00971## 0.42 0.01
+      ingredients[18].notes: Provider-reported medium rate: Gram Amount 0.42 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[19]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: Gram & Mol amounts are per Liter of medium.
+      ingredients[18].notes: Provider-reported medium rate: Gram Amount 0.42 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+  notes: 'Provider-reported medium rate: Gram Amount 0.25 per liter. Preserve displayed
+    precision; the linked DSMZ batch/stock recipe does not independently explain this
+    rate. The Mol Amount column is not used to infer a new molarity or hydrate form.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338
+    supports: SUPPORT
+    snippet: (NH4)2SO4 Ammonium sulfate SEED-cpd00013#cpd00048## 0.25 0.00
+    explanation: |-
+      ingredients[19].concentration: Provider-reported medium rate: Gram Amount 0.25 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[20]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: (NH4)2SO4 Ammonium sulfate SEED-cpd00013#cpd00048## 0.25 0.00
+      ingredients[19].notes: Provider-reported medium rate: Gram Amount 0.25 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[20]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: Gram & Mol amounts are per Liter of medium.
+      ingredients[19].notes: Provider-reported medium rate: Gram Amount 0.25 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+- preferred_term: Malachite green
+  term:
+    id: CHEBI:72449
+    label: malachite green
+  concentration:
+    value: '1.25E-4'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:72449
+    label: malachite green
+  notes: 'Provider-reported medium rate: Gram Amount 1.25E-4 per liter. Preserve displayed
+    precision; the linked DSMZ batch/stock recipe does not independently explain this
+    rate. The Mol Amount column is not used to infer a new molarity or hydrate form.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338
+    supports: SUPPORT
+    snippet: Malachite green Malachite green Malachite green# 1.25E-4 3.42E-7
+    explanation: |-
+      ingredients[20].concentration: Provider-reported medium rate: Gram Amount 1.25E-4 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[21]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: Malachite green Malachite green Malachite green# 1.25E-4 3.42E-7
+      ingredients[20].notes: Provider-reported medium rate: Gram Amount 1.25E-4 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[21]; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+      Additional exact excerpt: Gram & Mol amounts are per Liter of medium.
+      ingredients[20].notes: Provider-reported medium rate: Gram Amount 1.25E-4 per liter. Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount column is not used to infer a new molarity or hydrate form. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
 applications:
 - Microbial cultivation
 curation_history:
@@ -312,12 +571,514 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-10-09T01:29:53.718683+00:00'
+  curator: codex
+  action: RESTORED_LINKED_MIDDLEBROOK_FORMULATIONS_AND_VARIANT_SCOPES_WITH_EVIDENCE
+  notes: Restore source-specific Middlebrook ingredients, distinguish commercial/alternative/base/OADC
+    scopes, retain uncertainty and repair reciprocal family links without changing
+    permanent IDs.
+  source: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338
+  changes: '[{"old_field": "ingredients[10].concentration", "field": "ingredients[0].concentration",
+    "old": {"value": "0.5", "unit": "G_PER_L"}, "new": {"value": "0.25", "unit": "G_PER_L"},
+    "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "L-Glutamic acid L-Glutamic acid SEED-cpd00023### 0.25 0.00"}, {"old_field":
+    "ingredients[10].notes", "field": "ingredients[0].notes", "old": null, "new":
+    "Provider-reported medium rate: Gram Amount 0.25 per liter. Preserve displayed
+    precision; the linked DSMZ batch/stock recipe does not independently explain this
+    rate. The Mol Amount column is not used to infer a new molarity or hydrate form.",
+    "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "L-Glutamic acid L-Glutamic acid SEED-cpd00023### 0.25 0.00"}, {"old_field":
+    null, "field": "ingredients[0].notes", "old": null, "new": "Provider-reported
+    medium rate: Gram Amount 0.25 per liter. Preserve displayed precision; the linked
+    DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount
+    column is not used to infer a new molarity or hydrate form.", "status": "evidence_only",
+    "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Gram & Mol amounts are per Liter of medium."}, {"old_field": "ingredients[9].concentration",
+    "field": "ingredients[1].concentration", "old": {"value": "0.001", "unit": "G_PER_L"},
+    "new": {"value": "4.99E-4", "unit": "G_PER_L"}, "status": "correct", "reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "CuSO4 CuSO4 SEED-cpd00048#cpd00058## 4.99E-4 3.14E-6"}, {"old_field":
+    "ingredients[9].notes", "field": "ingredients[1].notes", "old": null, "new": "Provider-reported
+    medium rate: Gram Amount 4.99E-4 per liter. Preserve displayed precision; the
+    linked DSMZ batch/stock recipe does not independently explain this rate. The Mol
+    Amount column is not used to infer a new molarity or hydrate form.", "status":
+    "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "CuSO4 CuSO4 SEED-cpd00048#cpd00058## 4.99E-4 3.14E-6"}, {"old_field":
+    null, "field": "ingredients[1].notes", "old": null, "new": "Provider-reported
+    medium rate: Gram Amount 4.99E-4 per liter. Preserve displayed precision; the
+    linked DSMZ batch/stock recipe does not independently explain this rate. The Mol
+    Amount column is not used to infer a new molarity or hydrate form.", "status":
+    "evidence_only", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Gram & Mol amounts are per Liter of medium."}, {"old_field": "ingredients[4].concentration",
+    "field": "ingredients[2].concentration", "old": {"value": "1.5", "unit": "G_PER_L"},
+    "new": {"value": "0.75", "unit": "G_PER_L"}, "status": "correct", "reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Na2HPO4 sodium phosphate monobasique SEED-cpd00009#cpd00971## 0.75
+    0.01"}, {"old_field": "ingredients[4].notes", "field": "ingredients[2].notes",
+    "old": null, "new": "Provider-reported medium rate: Gram Amount 0.75 per liter.
+    Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently
+    explain this rate. The Mol Amount column is not used to infer a new molarity or
+    hydrate form. Source secondary-name ambiguity: displayed name ''Na2HPO4'' versus
+    ''sodium phosphate monobasique''; retained chemical annotations are not recertified.",
+    "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Na2HPO4 sodium phosphate monobasique SEED-cpd00009#cpd00971## 0.75
+    0.01"}, {"old_field": null, "field": "ingredients[2].notes", "old": null, "new":
+    "Provider-reported medium rate: Gram Amount 0.75 per liter. Preserve displayed
+    precision; the linked DSMZ batch/stock recipe does not independently explain this
+    rate. The Mol Amount column is not used to infer a new molarity or hydrate form.
+    Source secondary-name ambiguity: displayed name ''Na2HPO4'' versus ''sodium phosphate
+    monobasique''; retained chemical annotations are not recertified.", "status":
+    "evidence_only", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Gram & Mol amounts are per Liter of medium."}, {"old_field": "ingredients[8].concentration",
+    "field": "ingredients[3].concentration", "old": {"value": "0.001", "unit": "G_PER_L"},
+    "new": {"value": "4.99E-4", "unit": "G_PER_L"}, "status": "correct", "reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "ZnSO4 ZnSO4 SEED-cpd00034#cpd00048## 4.99E-4 3.10E-6"}, {"old_field":
+    "ingredients[8].notes", "field": "ingredients[3].notes", "old": null, "new": "Provider-reported
+    medium rate: Gram Amount 4.99E-4 per liter. Preserve displayed precision; the
+    linked DSMZ batch/stock recipe does not independently explain this rate. The Mol
+    Amount column is not used to infer a new molarity or hydrate form.", "status":
+    "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "ZnSO4 ZnSO4 SEED-cpd00034#cpd00048## 4.99E-4 3.10E-6"}, {"old_field":
+    null, "field": "ingredients[3].notes", "old": null, "new": "Provider-reported
+    medium rate: Gram Amount 4.99E-4 per liter. Preserve displayed precision; the
+    linked DSMZ batch/stock recipe does not independently explain this rate. The Mol
+    Amount column is not used to infer a new molarity or hydrate form.", "status":
+    "evidence_only", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Gram & Mol amounts are per Liter of medium."}, {"old_field": "ingredients[5].concentration",
+    "field": "ingredients[4].concentration", "old": {"value": "0.4", "unit": "G_PER_L"},
+    "new": {"value": "0.20", "unit": "G_PER_L"}, "status": "correct", "reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Na-citrate Na-citrate SEED-cpd00137#cpd00971## 0.20 0.00"}, {"old_field":
+    "ingredients[5].notes", "field": "ingredients[4].notes", "old": null, "new": "Provider-reported
+    medium rate: Gram Amount 0.20 per liter. Preserve displayed precision; the linked
+    DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount
+    column is not used to infer a new molarity or hydrate form.", "status": "correct",
+    "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Na-citrate Na-citrate SEED-cpd00137#cpd00971## 0.20 0.00"}, {"old_field":
+    null, "field": "ingredients[4].notes", "old": null, "new": "Provider-reported
+    medium rate: Gram Amount 0.20 per liter. Preserve displayed precision; the linked
+    DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount
+    column is not used to infer a new molarity or hydrate form.", "status": "evidence_only",
+    "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Gram & Mol amounts are per Liter of medium."}, {"old_field": null,
+    "field": "ingredients[5].concentration", "old": null, "new": null, "status": "add",
+    "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Distilled water H2O SEED-cpd00001### null null"}, {"old_field": null,
+    "field": "ingredients[5].notes", "old": null, "new": "The source Gram Amount is
+    null: no fixed amount is asserted; missing is not zero. The Mol Amount column
+    is not used to infer a new molarity or hydrate form.", "status": "add", "reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Distilled water H2O SEED-cpd00001### null null"}, {"old_field": null,
+    "field": "ingredients[5].notes", "old": null, "new": "The source Gram Amount is
+    null: no fixed amount is asserted; missing is not zero. The Mol Amount column
+    is not used to infer a new molarity or hydrate form.", "status": "evidence_only",
+    "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Gram & Mol amounts are per Liter of medium."}, {"old_field": "ingredients[15].concentration",
+    "field": "ingredients[6].concentration", "old": {"value": "15", "unit": "G_PER_L"},
+    "new": {"value": "7.48", "unit": "G_PER_L"}, "status": "correct", "reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Agar Agar SEED-cpd13334### 7.48 null"}, {"old_field": "ingredients[15].notes",
+    "field": "ingredients[6].notes", "old": null, "new": "Provider-reported medium
+    rate: Gram Amount 7.48 per liter. Preserve displayed precision; the linked DSMZ
+    batch/stock recipe does not independently explain this rate. The Mol Amount column
+    is not used to infer a new molarity or hydrate form.", "status": "correct", "reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Agar Agar SEED-cpd13334### 7.48 null"}, {"old_field": null, "field":
+    "ingredients[6].notes", "old": null, "new": "Provider-reported medium rate: Gram
+    Amount 7.48 per liter. Preserve displayed precision; the linked DSMZ batch/stock
+    recipe does not independently explain this rate. The Mol Amount column is not
+    used to infer a new molarity or hydrate form.", "status": "evidence_only", "reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Gram & Mol amounts are per Liter of medium."}, {"old_field": "ingredients[1].concentration",
+    "field": "ingredients[7].concentration", "old": {"value": "5", "unit": "G_PER_L"},
+    "new": null, "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Glycerol Glycerol SEED-cpd00100### null null"}, {"old_field": "ingredients[1].notes",
+    "field": "ingredients[7].notes", "old": null, "new": "The source Gram Amount is
+    null: no fixed amount is asserted; missing is not zero. The Mol Amount column
+    is not used to infer a new molarity or hydrate form.", "status": "correct", "reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Glycerol Glycerol SEED-cpd00100### null null"}, {"old_field": null,
+    "field": "ingredients[7].notes", "old": null, "new": "The source Gram Amount is
+    null: no fixed amount is asserted; missing is not zero. The Mol Amount column
+    is not used to infer a new molarity or hydrate form.", "status": "evidence_only",
+    "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Gram & Mol amounts are per Liter of medium."}, {"old_field": "ingredients[3].concentration",
+    "field": "ingredients[8].concentration", "old": {"value": "1.5", "unit": "G_PER_L"},
+    "new": {"value": "0.75", "unit": "G_PER_L"}, "status": "correct", "reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "KH2PO4 Potassium dihydrogen phosphate SEED-cpd00009#cpd00205## 0.75
+    0.01"}, {"old_field": "ingredients[3].notes", "field": "ingredients[8].notes",
+    "old": null, "new": "Provider-reported medium rate: Gram Amount 0.75 per liter.
+    Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently
+    explain this rate. The Mol Amount column is not used to infer a new molarity or
+    hydrate form.", "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "KH2PO4 Potassium dihydrogen phosphate SEED-cpd00009#cpd00205## 0.75
+    0.01"}, {"old_field": null, "field": "ingredients[8].notes", "old": null, "new":
+    "Provider-reported medium rate: Gram Amount 0.75 per liter. Preserve displayed
+    precision; the linked DSMZ batch/stock recipe does not independently explain this
+    rate. The Mol Amount column is not used to infer a new molarity or hydrate form.",
+    "status": "evidence_only", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Gram & Mol amounts are per Liter of medium."}, {"old_field": "ingredients[12].concentration",
+    "field": "ingredients[9].concentration", "old": {"value": "0.001", "unit": "G_PER_L"},
+    "new": {"value": "4.99E-4", "unit": "G_PER_L"}, "status": "correct", "reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Pyridoxine Pyridoxine HCl SEED-cpd00099#cpd00263## 4.99E-4 2.44E-6"},
+    {"old_field": "ingredients[12].notes", "field": "ingredients[9].notes", "old":
+    null, "new": "Provider-reported medium rate: Gram Amount 4.99E-4 per liter. Preserve
+    displayed precision; the linked DSMZ batch/stock recipe does not independently
+    explain this rate. The Mol Amount column is not used to infer a new molarity or
+    hydrate form. Source secondary-name ambiguity: displayed name ''Pyridoxine'' versus
+    ''Pyridoxine HCl''; retained chemical annotations are not recertified.", "status":
+    "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Pyridoxine Pyridoxine HCl SEED-cpd00099#cpd00263## 4.99E-4 2.44E-6"},
+    {"old_field": null, "field": "ingredients[9].notes", "old": null, "new": "Provider-reported
+    medium rate: Gram Amount 4.99E-4 per liter. Preserve displayed precision; the
+    linked DSMZ batch/stock recipe does not independently explain this rate. The Mol
+    Amount column is not used to infer a new molarity or hydrate form. Source secondary-name
+    ambiguity: displayed name ''Pyridoxine'' versus ''Pyridoxine HCl''; retained chemical
+    annotations are not recertified.", "status": "evidence_only", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Gram & Mol amounts are per Liter of medium."}, {"old_field": "ingredients[13].concentration",
+    "field": "ingredients[10].concentration", "old": {"value": "0.0005", "unit": "G_PER_L"},
+    "new": {"value": "2.49E-4", "unit": "G_PER_L"}, "status": "correct", "reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Biotin Biotin SEED-cpd00104### 2.49E-4 1.03E-6"}, {"old_field": "ingredients[13].notes",
+    "field": "ingredients[10].notes", "old": null, "new": "Provider-reported medium
+    rate: Gram Amount 2.49E-4 per liter. Preserve displayed precision; the linked
+    DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount
+    column is not used to infer a new molarity or hydrate form.", "status": "correct",
+    "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Biotin Biotin SEED-cpd00104### 2.49E-4 1.03E-6"}, {"old_field": null,
+    "field": "ingredients[10].notes", "old": null, "new": "Provider-reported medium
+    rate: Gram Amount 2.49E-4 per liter. Preserve displayed precision; the linked
+    DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount
+    column is not used to infer a new molarity or hydrate form.", "status": "evidence_only",
+    "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Gram & Mol amounts are per Liter of medium."}, {"old_field": "ingredients[20].concentration",
+    "field": "ingredients[11].concentration", "old": {"value": "20", "unit": "G_PER_L"},
+    "new": {"value": "1.00", "unit": "G_PER_L"}, "status": "correct", "reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Dextrose Dextrose SEED-cpd00027### 1.00 0.01"}, {"old_field": "ingredients[20].notes",
+    "field": "ingredients[11].notes", "old": null, "new": "Provider-reported medium
+    rate: Gram Amount 1.00 per liter. Preserve displayed precision; the linked DSMZ
+    batch/stock recipe does not independently explain this rate. The Mol Amount column
+    is not used to infer a new molarity or hydrate form.", "status": "correct", "reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Dextrose Dextrose SEED-cpd00027### 1.00 0.01"}, {"old_field": null,
+    "field": "ingredients[11].notes", "old": null, "new": "Provider-reported medium
+    rate: Gram Amount 1.00 per liter. Preserve displayed precision; the linked DSMZ
+    batch/stock recipe does not independently explain this rate. The Mol Amount column
+    is not used to infer a new molarity or hydrate form.", "status": "evidence_only",
+    "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Gram & Mol amounts are per Liter of medium."}, {"old_field": "ingredients[6].concentration",
+    "field": "ingredients[12].concentration", "old": {"value": "0.025", "unit": "G_PER_L"},
+    "new": {"value": "0.01", "unit": "G_PER_L"}, "status": "correct", "reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "MgSO4 Magnesium sulfate SEED-cpd00048#cpd00254## 0.01 0.00"}, {"old_field":
+    "ingredients[6].notes", "field": "ingredients[12].notes", "old": null, "new":
+    "Provider-reported medium rate: Gram Amount 0.01 per liter. Preserve displayed
+    precision; the linked DSMZ batch/stock recipe does not independently explain this
+    rate. The Mol Amount column is not used to infer a new molarity or hydrate form.",
+    "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "MgSO4 Magnesium sulfate SEED-cpd00048#cpd00254## 0.01 0.00"}, {"old_field":
+    null, "field": "ingredients[12].notes", "old": null, "new": "Provider-reported
+    medium rate: Gram Amount 0.01 per liter. Preserve displayed precision; the linked
+    DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount
+    column is not used to infer a new molarity or hydrate form.", "status": "evidence_only",
+    "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Gram & Mol amounts are per Liter of medium."}, {"old_field": "ingredients[21].concentration",
+    "field": "ingredients[13].concentration", "old": {"value": "0.04", "unit": "G_PER_L"},
+    "new": {"value": "2.00E-3", "unit": "G_PER_L"}, "status": "correct", "reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Catalase Catalase SEED-cpd12773### 2.00E-3 null"}, {"old_field": "ingredients[21].notes",
+    "field": "ingredients[13].notes", "old": null, "new": "Provider-reported medium
+    rate: Gram Amount 2.00E-3 per liter. Preserve displayed precision; the linked
+    DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount
+    column is not used to infer a new molarity or hydrate form.", "status": "correct",
+    "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Catalase Catalase SEED-cpd12773### 2.00E-3 null"}, {"old_field": null,
+    "field": "ingredients[13].notes", "old": null, "new": "Provider-reported medium
+    rate: Gram Amount 2.00E-3 per liter. Preserve displayed precision; the linked
+    DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount
+    column is not used to infer a new molarity or hydrate form.", "status": "evidence_only",
+    "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Gram & Mol amounts are per Liter of medium."}, {"old_field": "ingredients[11].concentration",
+    "field": "ingredients[14].concentration", "old": {"value": "0.04", "unit": "G_PER_L"},
+    "new": {"value": "0.02", "unit": "G_PER_L"}, "status": "correct", "reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Ferric ammonium citrate Ferric ammonium citrate SEED-cpd00013#cpd00137#cpd10516#
+    0.02 0.00"}, {"old_field": "ingredients[11].notes", "field": "ingredients[14].notes",
+    "old": null, "new": "Provider-reported medium rate: Gram Amount 0.02 per liter.
+    Preserve displayed precision; the linked DSMZ batch/stock recipe does not independently
+    explain this rate. The Mol Amount column is not used to infer a new molarity or
+    hydrate form.", "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Ferric ammonium citrate Ferric ammonium citrate SEED-cpd00013#cpd00137#cpd10516#
+    0.02 0.00"}, {"old_field": null, "field": "ingredients[14].notes", "old": null,
+    "new": "Provider-reported medium rate: Gram Amount 0.02 per liter. Preserve displayed
+    precision; the linked DSMZ batch/stock recipe does not independently explain this
+    rate. The Mol Amount column is not used to infer a new molarity or hydrate form.",
+    "status": "evidence_only", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Gram & Mol amounts are per Liter of medium."}, {"old_field": "ingredients[16].concentration",
+    "field": "ingredients[15].concentration", "old": {"value": "0.5", "unit": "G_PER_L"},
+    "new": {"value": "0.02", "unit": "G_PER_L"}, "status": "correct", "reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Oleic acid Oleic Acid SEED-cpd00536### 0.02 0.00"}, {"old_field":
+    "ingredients[16].notes", "field": "ingredients[15].notes", "old": null, "new":
+    "Provider-reported medium rate: Gram Amount 0.02 per liter. Preserve displayed
+    precision; the linked DSMZ batch/stock recipe does not independently explain this
+    rate. The Mol Amount column is not used to infer a new molarity or hydrate form.",
+    "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Oleic acid Oleic Acid SEED-cpd00536### 0.02 0.00"}, {"old_field":
+    null, "field": "ingredients[15].notes", "old": null, "new": "Provider-reported
+    medium rate: Gram Amount 0.02 per liter. Preserve displayed precision; the linked
+    DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount
+    column is not used to infer a new molarity or hydrate form.", "status": "evidence_only",
+    "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Gram & Mol amounts are per Liter of medium."}, {"old_field": "ingredients[7].concentration",
+    "field": "ingredients[16].concentration", "old": {"value": "0.0005", "unit": "G_PER_L"},
+    "new": {"value": "2.49E-4", "unit": "G_PER_L"}, "status": "correct", "reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "CaCl2 Calcium chloride SEED-cpd00063#cpd00099## 2.49E-4 2.27E-6"},
+    {"old_field": "ingredients[7].notes", "field": "ingredients[16].notes", "old":
+    null, "new": "Provider-reported medium rate: Gram Amount 2.49E-4 per liter. Preserve
+    displayed precision; the linked DSMZ batch/stock recipe does not independently
+    explain this rate. The Mol Amount column is not used to infer a new molarity or
+    hydrate form.", "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "CaCl2 Calcium chloride SEED-cpd00063#cpd00099## 2.49E-4 2.27E-6"},
+    {"old_field": null, "field": "ingredients[16].notes", "old": null, "new": "Provider-reported
+    medium rate: Gram Amount 2.49E-4 per liter. Preserve displayed precision; the
+    linked DSMZ batch/stock recipe does not independently explain this rate. The Mol
+    Amount column is not used to infer a new molarity or hydrate form.", "status":
+    "evidence_only", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Gram & Mol amounts are per Liter of medium."}, {"old_field": null,
+    "field": "ingredients[17].concentration", "old": null, "new": {"value": "2.49",
+    "unit": "G_PER_L"}, "status": "add", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Albumin fraction V, bovine Albumin fraction V, bovine rich-peptone#
+    2.49 null"}, {"old_field": null, "field": "ingredients[17].notes", "old": null,
+    "new": "Provider-reported medium rate: Gram Amount 2.49 per liter. Preserve displayed
+    precision; the linked DSMZ batch/stock recipe does not independently explain this
+    rate. The Mol Amount column is not used to infer a new molarity or hydrate form.",
+    "status": "add", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Albumin fraction V, bovine Albumin fraction V, bovine rich-peptone#
+    2.49 null"}, {"old_field": null, "field": "ingredients[17].notes", "old": null,
+    "new": "Provider-reported medium rate: Gram Amount 2.49 per liter. Preserve displayed
+    precision; the linked DSMZ batch/stock recipe does not independently explain this
+    rate. The Mol Amount column is not used to infer a new molarity or hydrate form.",
+    "status": "evidence_only", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Gram & Mol amounts are per Liter of medium."}, {"old_field": "ingredients[22].concentration",
+    "field": "ingredients[18].concentration", "old": {"value": "8.5", "unit": "G_PER_L"},
+    "new": {"value": "0.42", "unit": "G_PER_L"}, "status": "correct", "reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "NaCl NaCl SEED-cpd00099#cpd00971## 0.42 0.01"}, {"old_field": "ingredients[22].notes",
+    "field": "ingredients[18].notes", "old": null, "new": "Provider-reported medium
+    rate: Gram Amount 0.42 per liter. Preserve displayed precision; the linked DSMZ
+    batch/stock recipe does not independently explain this rate. The Mol Amount column
+    is not used to infer a new molarity or hydrate form.", "status": "correct", "reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "NaCl NaCl SEED-cpd00099#cpd00971## 0.42 0.01"}, {"old_field": null,
+    "field": "ingredients[18].notes", "old": null, "new": "Provider-reported medium
+    rate: Gram Amount 0.42 per liter. Preserve displayed precision; the linked DSMZ
+    batch/stock recipe does not independently explain this rate. The Mol Amount column
+    is not used to infer a new molarity or hydrate form.", "status": "evidence_only",
+    "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Gram & Mol amounts are per Liter of medium."}, {"old_field": "ingredients[2].concentration",
+    "field": "ingredients[19].concentration", "old": {"value": "0.5", "unit": "G_PER_L"},
+    "new": {"value": "0.25", "unit": "G_PER_L"}, "status": "correct", "reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "(NH4)2SO4 Ammonium sulfate SEED-cpd00013#cpd00048## 0.25 0.00"}, {"old_field":
+    "ingredients[2].notes", "field": "ingredients[19].notes", "old": null, "new":
+    "Provider-reported medium rate: Gram Amount 0.25 per liter. Preserve displayed
+    precision; the linked DSMZ batch/stock recipe does not independently explain this
+    rate. The Mol Amount column is not used to infer a new molarity or hydrate form.",
+    "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "(NH4)2SO4 Ammonium sulfate SEED-cpd00013#cpd00048## 0.25 0.00"}, {"old_field":
+    null, "field": "ingredients[19].notes", "old": null, "new": "Provider-reported
+    medium rate: Gram Amount 0.25 per liter. Preserve displayed precision; the linked
+    DSMZ batch/stock recipe does not independently explain this rate. The Mol Amount
+    column is not used to infer a new molarity or hydrate form.", "status": "evidence_only",
+    "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Gram & Mol amounts are per Liter of medium."}, {"old_field": "ingredients[14].concentration",
+    "field": "ingredients[20].concentration", "old": {"value": "0.00025", "unit":
+    "G_PER_L"}, "new": {"value": "1.25E-4", "unit": "G_PER_L"}, "status": "correct",
+    "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Malachite green Malachite green Malachite green# 1.25E-4 3.42E-7"},
+    {"old_field": "ingredients[14].notes", "field": "ingredients[20].notes", "old":
+    null, "new": "Provider-reported medium rate: Gram Amount 1.25E-4 per liter. Preserve
+    displayed precision; the linked DSMZ batch/stock recipe does not independently
+    explain this rate. The Mol Amount column is not used to infer a new molarity or
+    hydrate form.", "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Malachite green Malachite green Malachite green# 1.25E-4 3.42E-7"},
+    {"old_field": null, "field": "ingredients[20].notes", "old": null, "new": "Provider-reported
+    medium rate: Gram Amount 1.25E-4 per liter. Preserve displayed precision; the
+    linked DSMZ batch/stock recipe does not independently explain this rate. The Mol
+    Amount column is not used to infer a new molarity or hydrate form.", "status":
+    "evidence_only", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Gram & Mol amounts are per Liter of medium."}, {"old_field": null,
+    "field": "notes", "old": null, "new": "Source: KOMODO ModelSEED | ID: 645_44338
+    | DSMZ Medium: 645 (mediadive.medium:645) | Aerobic: No\n\nSuperseded historical
+    provenance (not a current formulation claim):\nCommercial Product: LB Medium (Luria-Bertani,
+    Miller formulation)\nSupplier: Multiple suppliers (Difco, Sigma, etc.)\nCatalog:
+    Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThis
+    record now follows its own KOMODO table rather than the composition copied from
+    DSMZ. Rates remain provider-qualified; a dilution mechanism is unresolved. Null
+    PH Info is not replaced by a copied pH assertion. No source omission proves an
+    experimentally absent ingredient.\n\nSource-specific ingredient identities, quantity
+    bases and preparation routes supersede the copied flattened amounts. Historical
+    events are preserved. Chemical groundings are not comprehensively recertified;
+    no taxa-media association is added.", "status": "evidence_only", "reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "PH Info: null"}, {"old_field": "ingredients[17].concentration", "field":
+    "notes", "old": {"value": "10.0", "unit": "G_PER_L"}, "new": "Source: KOMODO ModelSEED
+    | ID: 645_44338 | DSMZ Medium: 645 (mediadive.medium:645) | Aerobic: No\n\nSuperseded
+    historical provenance (not a current formulation claim):\nCommercial Product:
+    LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThis
+    record now follows its own KOMODO table rather than the composition copied from
+    DSMZ. Rates remain provider-qualified; a dilution mechanism is unresolved. Null
+    PH Info is not replaced by a copied pH assertion. No source omission proves an
+    experimentally absent ingredient.\n\nSource-specific ingredient identities, quantity
+    bases and preparation routes supersede the copied flattened amounts. Historical
+    events are preserved. Chemical groundings are not comprehensively recertified;
+    no taxa-media association is added.", "status": "remove_unsupported", "reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Albumin fraction V, bovine Albumin fraction V, bovine rich-peptone#
+    2.49 null"}, {"old_field": "ingredients[18].concentration", "field": "notes",
+    "old": {"value": "5.0", "unit": "G_PER_L"}, "new": "Source: KOMODO ModelSEED |
+    ID: 645_44338 | DSMZ Medium: 645 (mediadive.medium:645) | Aerobic: No\n\nSuperseded
+    historical provenance (not a current formulation claim):\nCommercial Product:
+    LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThis
+    record now follows its own KOMODO table rather than the composition copied from
+    DSMZ. Rates remain provider-qualified; a dilution mechanism is unresolved. Null
+    PH Info is not replaced by a copied pH assertion. No source omission proves an
+    experimentally absent ingredient.\n\nSource-specific ingredient identities, quantity
+    bases and preparation routes supersede the copied flattened amounts. Historical
+    events are preserved. Chemical groundings are not comprehensively recertified;
+    no taxa-media association is added.", "status": "remove_unsupported", "reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Albumin fraction V, bovine Albumin fraction V, bovine rich-peptone#
+    2.49 null"}, {"old_field": "ingredients[19].concentration", "field": "notes",
+    "old": {"value": "10.0", "unit": "G_PER_L"}, "new": "Source: KOMODO ModelSEED
+    | ID: 645_44338 | DSMZ Medium: 645 (mediadive.medium:645) | Aerobic: No\n\nSuperseded
+    historical provenance (not a current formulation claim):\nCommercial Product:
+    LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThis
+    record now follows its own KOMODO table rather than the composition copied from
+    DSMZ. Rates remain provider-qualified; a dilution mechanism is unresolved. Null
+    PH Info is not replaced by a copied pH assertion. No source omission proves an
+    experimentally absent ingredient.\n\nSource-specific ingredient identities, quantity
+    bases and preparation routes supersede the copied flattened amounts. Historical
+    events are preserved. Chemical groundings are not comprehensively recertified;
+    no taxa-media association is added.", "status": "remove_unsupported", "reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Albumin fraction V, bovine Albumin fraction V, bovine rich-peptone#
+    2.49 null"}, {"old_field": "ingredients[0].concentration", "field": "notes", "old":
+    {"value": "20.9945", "unit": "G_PER_L"}, "new": "Source: KOMODO ModelSEED | ID:
+    645_44338 | DSMZ Medium: 645 (mediadive.medium:645) | Aerobic: No\n\nSuperseded
+    historical provenance (not a current formulation claim):\nCommercial Product:
+    LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThis
+    record now follows its own KOMODO table rather than the composition copied from
+    DSMZ. Rates remain provider-qualified; a dilution mechanism is unresolved. Null
+    PH Info is not replaced by a copied pH assertion. No source omission proves an
+    experimentally absent ingredient.\n\nSource-specific ingredient identities, quantity
+    bases and preparation routes supersede the copied flattened amounts. Historical
+    events are preserved. Chemical groundings are not comprehensively recertified;
+    no taxa-media association is added.", "status": "remove_unsupported", "reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Albumin fraction V, bovine Albumin fraction V, bovine rich-peptone#
+    2.49 null"}, {"old_field": null, "field": "parent_media.relationship", "old":
+    null, "new": "STRAIN_SPECIFIC_VARIANT", "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Name: MEDIUM 645 MODIFIED FOR DSM 44338"}, {"old_field": "parent_media",
+    "field": "parent_media", "old": {"path": "data/normalized_yaml/bacterial/KOMODO_645a_HEMIN_medium_FOR_MYCOBACTERIUM.yaml",
+    "relationship": "SOURCE_DUPLICATE", "id": "CultureMech:006191", "name": "hemin_medium_for_mycobacterium"},
+    "new": {"path": "data/normalized_yaml/bacterial/middelbrook_medium.yaml", "id":
+    "CultureMech:006190", "name": "middelbrook_medium", "relationship": "STRAIN_SPECIFIC_VARIANT",
+    "notes": "The source explicitly names a medium modified for this DSM strain. Its
+    displayed table matches the KOMODO base but does not identify the modification;
+    no numerical difference or organism-growth association is inferred.", "evidence":
+    [{"reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "supports": "SUPPORT", "snippet": "Name: MEDIUM 645 MODIFIED FOR DSM 44338", "explanation":
+    "parent_media.relationship: The source explicitly names a medium modified for
+    this DSM strain. Its displayed table matches the KOMODO base but does not identify
+    the modification; no numerical difference or organism-growth association is inferred.
+    No unstated density, final volume, percent basis or chemical identifier is inferred.
+    Locator=original recipe table/text; accessed=2026-10-09T00:07:44.799288+00:00;
+    capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9."}]},
+    "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Albumin fraction V, bovine Albumin fraction V, bovine rich-peptone#
+    2.49 null"}, {"old_field": "variant_relationship", "field": "variant_relationship",
+    "old": "SOURCE_DUPLICATE", "new": "STRAIN_SPECIFIC_VARIANT", "status": "correct",
+    "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Albumin fraction V, bovine Albumin fraction V, bovine rich-peptone#
+    2.49 null"}, {"old_field": "variant_modifications", "field": "variant_modifications",
+    "old": ["Same ingredient and concentration signature; review as possible duplicate
+    source record."], "new": ["The source explicitly names a medium modified for this
+    DSM strain. Its displayed table matches the KOMODO base but does not identify
+    the modification; no numerical difference or organism-growth association is inferred."],
+    "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+    "snippet": "Albumin fraction V, bovine Albumin fraction V, bovine rich-peptone#
+    2.49 null"}]'
+solutions: []
+evidence:
+- reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338
+  supports: SUPPORT
+  snippet: 'PH Info: null'
+  explanation: |-
+    notes: This record now follows its own KOMODO table rather than the composition copied from DSMZ. Rates remain provider-qualified; a dilution mechanism is unresolved. Null PH Info is not replaced by a copied pH assertion. No source omission proves an experimentally absent ingredient. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+    Additional exact excerpt: Albumin fraction V, bovine Albumin fraction V, bovine rich-peptone# 2.49 null
+    notes: Restore source-listed albumin instead of the false LB constituent expansion. Genuine casein digest and NaCl entries are retained separately. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+    Additional exact excerpt: Albumin fraction V, bovine Albumin fraction V, bovine rich-peptone# 2.49 null
+    notes: Restore source-listed albumin instead of the false LB constituent expansion. Genuine casein digest and NaCl entries are retained separately. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+    Additional exact excerpt: Albumin fraction V, bovine Albumin fraction V, bovine rich-peptone# 2.49 null
+    notes: Restore source-listed albumin instead of the false LB constituent expansion. Genuine casein digest and NaCl entries are retained separately. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+    Additional exact excerpt: Albumin fraction V, bovine Albumin fraction V, bovine rich-peptone# 2.49 null
+    notes: Withdraw this copied DSMZ input that is not a separate ingredient in the complete inspected KOMODO table. Absence from that table is not proof of absence from the experimental preparation. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+    Additional exact excerpt: Albumin fraction V, bovine Albumin fraction V, bovine rich-peptone# 2.49 null
+    parent_media: Replace the copied exact-duplicate topology with reciprocal source-qualified family links; retain the previous links in history and preserve permanent IDs. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+    Additional exact excerpt: Albumin fraction V, bovine Albumin fraction V, bovine rich-peptone# 2.49 null
+    variant_relationship: Replace the copied exact-duplicate topology with reciprocal source-qualified family links; retain the previous links in history and preserve permanent IDs. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+
+    Additional exact excerpt: Albumin fraction V, bovine Albumin fraction V, bovine rich-peptone# 2.49 null
+    variant_modifications: Replace the copied exact-duplicate topology with reciprocal source-qualified family links; retain the previous links in history and preserve permanent IDs. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T00:07:44.799288+00:00; capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
 parent_media:
-  path: data/normalized_yaml/bacterial/KOMODO_645a_HEMIN_medium_FOR_MYCOBACTERIUM.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:006191
-  name: hemin_medium_for_mycobacterium
-variant_relationship: SOURCE_DUPLICATE
+  path: data/normalized_yaml/bacterial/middelbrook_medium.yaml
+  id: CultureMech:006190
+  name: middelbrook_medium
+  relationship: STRAIN_SPECIFIC_VARIANT
+  notes: The source explicitly names a medium modified for this DSM strain. Its displayed
+    table matches the KOMODO base but does not identify the modification; no numerical
+    difference or organism-growth association is inferred.
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338
+    supports: SUPPORT
+    snippet: 'Name: MEDIUM 645 MODIFIED FOR DSM 44338'
+    explanation: 'parent_media.relationship: The source explicitly names a medium
+      modified for this DSM strain. Its displayed table matches the KOMODO base but
+      does not identify the modification; no numerical difference or organism-growth
+      association is inferred. No unstated density, final volume, percent basis or
+      chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T00:07:44.799288+00:00;
+      capture SHA256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.'
+variant_relationship: STRAIN_SPECIFIC_VARIANT
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- The source explicitly names a medium modified for this DSM strain. Its displayed
+  table matches the KOMODO base but does not identify the modification; no numerical
+  difference or organism-growth association is inferred.
+references:
+- reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338
+  title: KOMODO - the Known Media Database
+  notes: source_type=web_page; discovery_mode=existing_record_reference; accessed_on=2026-10-09;
+    accession=K645_44338; capture_sha256=05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9.
+    Authors and publication year are not supplied; copyright/access years are not
+    publication years.

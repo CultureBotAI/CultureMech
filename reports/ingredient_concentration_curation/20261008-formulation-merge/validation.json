@@ -1,0 +1,47 @@
+{
+  "terminal": true,
+  "runtime": "Partial locked Python 3.13; not full CI",
+  "checks": [
+    {
+      "name": "full-tests",
+      "command": [
+        "just",
+        "test"
+      ],
+      "exit_code": 1,
+      "elapsed_seconds": 2442.75,
+      "log": "/tmp/ingredient-media-20261007/formulation-merge-full-tests.log"
+    },
+    {
+      "name": "fast-tests",
+      "command": [
+        "just",
+        "test-fast"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 375.93,
+      "log": "/tmp/ingredient-media-20261007/formulation-merge-fast-tests.log"
+    },
+    {
+      "name": "verify-merges",
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "exit_code": 1,
+      "elapsed_seconds": 148.68,
+      "log": "/tmp/ingredient-media-20261007/formulation-merge-verify-merges.log"
+    },
+    {
+      "name": "freshness",
+      "command": [
+        "just",
+        "audit-merge-freshness",
+        "--json"
+      ],
+      "exit_code": 1,
+      "elapsed_seconds": 320.68,
+      "log": "/tmp/ingredient-media-20261007/formulation-merge-freshness.log"
+    }
+  ]
+}

@@ -6,59 +6,6 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: Tryptone
-  term:
-    id: MICRO:0000182
-    label: tryptone
-  concentration:
-    value: '10.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
-    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
-  synonyms:
-  - synonym_text: pancreatic digest of casein
-    synonym_type: EXACT
-  - synonym_text: casein peptone
-    synonym_type: EXACT
-- preferred_term: Yeast extract
-  term:
-    id: FOODON:03315426
-    label: yeast extract
-  concentration:
-    value: '5.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
-    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
-    product
-- preferred_term: Sodium chloride
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  concentration:
-    value: '10.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
-    (Luria-Bertani, Miller formulation) commercial product
-  synonyms:
-  - synonym_text: NaCl
-    synonym_type: EXACT
-  - synonym_text: table salt
-    synonym_type: EXACT
 - preferred_term: Sodium sulfide
   concentration:
     value: '2.073'
@@ -69,6 +16,17 @@ ingredients:
   term:
     id: CHEBI:76208
     label: sodium sulfide (anhydrous)
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/473/
+    supports: SUPPORT
+    snippet: Sodium sulfide 2.073
+    explanation: 'ingredients[0] (Sodium sulfide), concentration in MEDIADB:473. Locator:
+      compound table, column header ''Amount (mM)''. The database directly reports
+      2.073 mM for this compound label; no conversion. Corroborating 2015-10-07 export
+      media_compounds row (medcompID, medID, compID, Amount_mM): (11068,473,16447,2.073).
+      Evidence concerns the database compound label, not independent validation of
+      existing ontology mappings, supplied hydrate form, or original-article quantities.
+      Accessed 2026-10-09.'
 - preferred_term: Cysteine-HCl
   term:
     id: CHEBI:91247
@@ -79,6 +37,17 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000223
     label: Cysteine-HCl
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/473/
+    supports: SUPPORT
+    snippet: Cysteine-HCl 3.172
+    explanation: 'ingredients[1] (Cysteine-HCl), concentration in MEDIADB:473. Locator:
+      compound table, column header ''Amount (mM)''. The database directly reports
+      3.172 mM for this compound label; no conversion. Corroborating 2015-10-07 export
+      media_compounds row (medcompID, medID, compID, Amount_mM): (11069,473,16390,3.172).
+      Evidence concerns the database compound label, not independent validation of
+      existing ontology mappings, supplied hydrate form, or original-article quantities.
+      Accessed 2026-10-09.'
 - preferred_term: 2-Mercaptoethanesulfonate
   term:
     id: CHEBI:17905
@@ -90,6 +59,17 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:17905
     label: coenzyme M
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/473/
+    supports: SUPPORT
+    snippet: 2-Mercaptoethanesulfonate 7.032e-06
+    explanation: 'ingredients[2] (2-Mercaptoethanesulfonate), concentration in MEDIADB:473.
+      Locator: compound table, column header ''Amount (mM)''. The database directly
+      reports 7.032e-06 mM for this compound label; no conversion. Corroborating 2015-10-07
+      export media_compounds row (medcompID, medID, compID, Amount_mM): (11071,473,2933,7.032e-06).
+      Evidence concerns the database compound label, not independent validation of
+      existing ontology mappings, supplied hydrate form, or original-article quantities.
+      Accessed 2026-10-09.'
 - preferred_term: Sodium bicarbonate
   concentration:
     value: '59.52'
@@ -100,6 +80,17 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/473/
+    supports: SUPPORT
+    snippet: Sodium bicarbonate 59.52
+    explanation: 'ingredients[3] (Sodium bicarbonate), concentration in MEDIADB:473.
+      Locator: compound table, column header ''Amount (mM)''. The database directly
+      reports 59.52 mM for this compound label; no conversion. Corroborating 2015-10-07
+      export media_compounds row (medcompID, medID, compID, Amount_mM): (11072,473,11046,59.52).
+      Evidence concerns the database compound label, not independent validation of
+      existing ontology mappings, supplied hydrate form, or original-article quantities.
+      Accessed 2026-10-09.'
 - preferred_term: Potassium chloride
   concentration:
     value: '4.493'
@@ -110,6 +101,17 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
     label: potassium chloride
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/473/
+    supports: SUPPORT
+    snippet: Potassium chloride 4.493
+    explanation: 'ingredients[4] (Potassium chloride), concentration in MEDIADB:473.
+      Locator: compound table, column header ''Amount (mM)''. The database directly
+      reports 4.493 mM for this compound label; no conversion. Corroborating 2015-10-07
+      export media_compounds row (medcompID, medID, compID, Amount_mM): (11073,473,16385,4.493).
+      Evidence concerns the database compound label, not independent validation of
+      existing ontology mappings, supplied hydrate form, or original-article quantities.
+      Accessed 2026-10-09.'
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -120,6 +122,17 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:8806
     label: Resazurin
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/473/
+    supports: SUPPORT
+    snippet: Resazurin 0.0004363
+    explanation: 'ingredients[5] (Resazurin), concentration in MEDIADB:473. Locator:
+      compound table, column header ''Amount (mM)''. The database directly reports
+      0.0004363 mM for this compound label; no conversion. Corroborating 2015-10-07
+      export media_compounds row (medcompID, medID, compID, Amount_mM): (11074,473,9671,0.0004363).
+      Evidence concerns the database compound label, not independent validation of
+      existing ontology mappings, supplied hydrate form, or original-article quantities.
+      Accessed 2026-10-09.'
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -130,10 +143,32 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/473/
+    supports: SUPPORT
+    snippet: Sodium chloride 376.0
+    explanation: 'ingredients[6] (Sodium chloride), concentration in MEDIADB:473.
+      Locator: compound table, column header ''Amount (mM)''. The database directly
+      reports 376.0 mM for this compound label; no conversion. Corroborating 2015-10-07
+      export media_compounds row (medcompID, medID, compID, Amount_mM): (11075,473,16384,376).
+      Evidence concerns the database compound label, not independent validation of
+      existing ontology mappings, supplied hydrate form, or original-article quantities.
+      Accessed 2026-10-09.'
 - preferred_term: 2-Methylpropanoate
   concentration:
     value: '0.05675'
     unit: MILLIMOLAR
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/473/
+    supports: SUPPORT
+    snippet: 2-Methylpropanoate 0.05675
+    explanation: 'ingredients[7] (2-Methylpropanoate), concentration in MEDIADB:473.
+      Locator: compound table, column header ''Amount (mM)''. The database directly
+      reports 0.05675 mM for this compound label; no conversion. Corroborating 2015-10-07
+      export media_compounds row (medcompID, medID, compID, Amount_mM): (11076,473,2216,0.05675).
+      Evidence concerns the database compound label, not independent validation of
+      existing ontology mappings, supplied hydrate form, or original-article quantities.
+      Accessed 2026-10-09.'
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -144,6 +179,17 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:35176
     label: zinc sulfate
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/473/
+    supports: SUPPORT
+    snippet: Zinc sulfate 0.003478
+    explanation: 'ingredients[8] (Zinc sulfate), concentration in MEDIADB:473. Locator:
+      compound table, column header ''Amount (mM)''. The database directly reports
+      0.003478 mM for this compound label; no conversion. Corroborating 2015-10-07
+      export media_compounds row (medcompID, medID, compID, Amount_mM): (11077,473,16399,0.003478).
+      Evidence concerns the database compound label, not independent validation of
+      existing ontology mappings, supplied hydrate form, or original-article quantities.
+      Accessed 2026-10-09.'
 - preferred_term: Sodium tungstate
   concentration:
     value: '0.003032'
@@ -151,6 +197,17 @@ ingredients:
   term:
     id: CHEBI:63940
     label: sodium tungstate
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/473/
+    supports: SUPPORT
+    snippet: Sodium tungstate 0.003032
+    explanation: 'ingredients[9] (Sodium tungstate), concentration in MEDIADB:473.
+      Locator: compound table, column header ''Amount (mM)''. The database directly
+      reports 0.003032 mM for this compound label; no conversion. Corroborating 2015-10-07
+      export media_compounds row (medcompID, medID, compID, Amount_mM): (11078,473,16455,0.003032).
+      Evidence concerns the database compound label, not independent validation of
+      existing ontology mappings, supplied hydrate form, or original-article quantities.
+      Accessed 2026-10-09.'
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
@@ -161,6 +218,17 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:44557
     label: nitrilotriacetic acid
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/473/
+    supports: SUPPORT
+    snippet: Nitrilotriacetic acid 0.07848
+    explanation: 'ingredients[10] (Nitrilotriacetic acid), concentration in MEDIADB:473.
+      Locator: compound table, column header ''Amount (mM)''. The database directly
+      reports 0.07848 mM for this compound label; no conversion. Corroborating 2015-10-07
+      export media_compounds row (medcompID, medID, compID, Amount_mM): (11079,473,13105,0.07848).
+      Evidence concerns the database compound label, not independent validation of
+      existing ontology mappings, supplied hydrate form, or original-article quantities.
+      Accessed 2026-10-09.'
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
@@ -171,6 +239,17 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:86364
     label: manganese(II) sulfate monohydrate
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/473/
+    supports: SUPPORT
+    snippet: Manganese sulfate 0.005347
+    explanation: 'ingredients[11] (Manganese sulfate), concentration in MEDIADB:473.
+      Locator: compound table, column header ''Amount (mM)''. The database directly
+      reports 0.005347 mM for this compound label; no conversion. Corroborating 2015-10-07
+      export media_compounds row (medcompID, medID, compID, Amount_mM): (11080,473,16395,0.005347).
+      Evidence concerns the database compound label, not independent validation of
+      existing ontology mappings, supplied hydrate form, or original-article quantities.
+      Accessed 2026-10-09.'
 - preferred_term: Nickel chloride
   concentration:
     value: '0.001052'
@@ -178,6 +257,17 @@ ingredients:
   term:
     id: CHEBI:34887
     label: nickel dichloride
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/473/
+    supports: SUPPORT
+    snippet: Nickel chloride 0.001052
+    explanation: 'ingredients[12] (Nickel chloride), concentration in MEDIADB:473.
+      Locator: compound table, column header ''Amount (mM)''. The database directly
+      reports 0.001052 mM for this compound label; no conversion. Corroborating 2015-10-07
+      export media_compounds row (medcompID, medID, compID, Amount_mM): (11081,473,13121,0.001052).
+      Evidence concerns the database compound label, not independent validation of
+      existing ontology mappings, supplied hydrate form, or original-article quantities.
+      Accessed 2026-10-09.'
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -188,6 +278,17 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
     label: ammonium chloride
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/473/
+    supports: SUPPORT
+    snippet: Ammonium chloride 9.348
+    explanation: 'ingredients[13] (Ammonium chloride), concentration in MEDIADB:473.
+      Locator: compound table, column header ''Amount (mM)''. The database directly
+      reports 9.348 mM for this compound label; no conversion. Corroborating 2015-10-07
+      export media_compounds row (medcompID, medID, compID, Amount_mM): (11082,473,16396,9.348).
+      Evidence concerns the database compound label, not independent validation of
+      existing ontology mappings, supplied hydrate form, or original-article quantities.
+      Accessed 2026-10-09.'
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -198,6 +299,17 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
     label: magnesium sulfate
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/473/
+    supports: SUPPORT
+    snippet: Magnesium sulfate 14.0
+    explanation: 'ingredients[14] (Magnesium sulfate), concentration in MEDIADB:473.
+      Locator: compound table, column header ''Amount (mM)''. The database directly
+      reports 14.0 mM for this compound label; no conversion. Corroborating 2015-10-07
+      export media_compounds row (medcompID, medID, compID, Amount_mM): (11083,473,16394,14).
+      Evidence concerns the database compound label, not independent validation of
+      existing ontology mappings, supplied hydrate form, or original-article quantities.
+      Accessed 2026-10-09.'
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.004133'
@@ -205,6 +317,17 @@ ingredients:
   term:
     id: CHEBI:75215
     label: sodium molybdate (anhydrous)
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/473/
+    supports: SUPPORT
+    snippet: Sodium molybdate 0.004133
+    explanation: 'ingredients[15] (Sodium molybdate), concentration in MEDIADB:473.
+      Locator: compound table, column header ''Amount (mM)''. The database directly
+      reports 0.004133 mM for this compound label; no conversion. Corroborating 2015-10-07
+      export media_compounds row (medcompID, medID, compID, Amount_mM): (11084,473,13862,0.004133).
+      Evidence concerns the database compound label, not independent validation of
+      existing ontology mappings, supplied hydrate form, or original-article quantities.
+      Accessed 2026-10-09.'
 - preferred_term: Magnesium chloride
   concentration:
     value: '13.53'
@@ -215,6 +338,17 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/473/
+    supports: SUPPORT
+    snippet: Magnesium chloride 13.53
+    explanation: 'ingredients[16] (Magnesium chloride), concentration in MEDIADB:473.
+      Locator: compound table, column header ''Amount (mM)''. The database directly
+      reports 13.53 mM for this compound label; no conversion. Corroborating 2015-10-07
+      export media_compounds row (medcompID, medID, compID, Amount_mM): (11085,473,6286,13.53).
+      Evidence concerns the database compound label, not independent validation of
+      existing ontology mappings, supplied hydrate form, or original-article quantities.
+      Accessed 2026-10-09.'
 - preferred_term: Cobalt chloride
   concentration:
     value: '0.004203'
@@ -222,14 +356,47 @@ ingredients:
   term:
     id: CHEBI:35696
     label: cobalt dichloride
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/473/
+    supports: SUPPORT
+    snippet: Cobalt chloride 0.004203
+    explanation: 'ingredients[17] (Cobalt chloride), concentration in MEDIADB:473.
+      Locator: compound table, column header ''Amount (mM)''. The database directly
+      reports 0.004203 mM for this compound label; no conversion. Corroborating 2015-10-07
+      export media_compounds row (medcompID, medID, compID, Amount_mM): (11086,473,16398,0.004203).
+      Evidence concerns the database compound label, not independent validation of
+      existing ontology mappings, supplied hydrate form, or original-article quantities.
+      Accessed 2026-10-09.'
 - preferred_term: Pentanoate
   concentration:
     value: '0.04896'
     unit: MILLIMOLAR
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/473/
+    supports: SUPPORT
+    snippet: Pentanoate 0.04896
+    explanation: 'ingredients[18] (Pentanoate), concentration in MEDIADB:473. Locator:
+      compound table, column header ''Amount (mM)''. The database directly reports
+      0.04896 mM for this compound label; no conversion. Corroborating 2015-10-07
+      export media_compounds row (medcompID, medID, compID, Amount_mM): (11087,473,739,0.04896).
+      Evidence concerns the database compound label, not independent validation of
+      existing ontology mappings, supplied hydrate form, or original-article quantities.
+      Accessed 2026-10-09.'
 - preferred_term: Ferrous ammonium sulfate
   concentration:
     value: '0.005355'
     unit: MILLIMOLAR
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/473/
+    supports: SUPPORT
+    snippet: Ferrous ammonium sulfate 0.005355
+    explanation: 'ingredients[19] (Ferrous ammonium sulfate), concentration in MEDIADB:473.
+      Locator: compound table, column header ''Amount (mM)''. The database directly
+      reports 0.005355 mM for this compound label; no conversion. Corroborating 2015-10-07
+      export media_compounds row (medcompID, medID, compID, Amount_mM): (11088,473,16484,0.005355).
+      Evidence concerns the database compound label, not independent validation of
+      existing ontology mappings, supplied hydrate form, or original-article quantities.
+      Accessed 2026-10-09.'
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.0004005'
@@ -237,6 +404,17 @@ ingredients:
   term:
     id: CHEBI:23414
     label: copper(II) sulfate
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/473/
+    supports: SUPPORT
+    snippet: Cupric sulfate 0.0004005
+    explanation: 'ingredients[20] (Cupric sulfate), concentration in MEDIADB:473.
+      Locator: compound table, column header ''Amount (mM)''. The database directly
+      reports 0.0004005 mM for this compound label; no conversion. Corroborating 2015-10-07
+      export media_compounds row (medcompID, medID, compID, Amount_mM): (11089,473,16405,0.0004005).
+      Evidence concerns the database compound label, not independent validation of
+      existing ontology mappings, supplied hydrate form, or original-article quantities.
+      Accessed 2026-10-09.'
 - preferred_term: Sodium selenite
   concentration:
     value: '0.01156'
@@ -244,6 +422,17 @@ ingredients:
   term:
     id: CHEBI:48843
     label: disodium selenite
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/473/
+    supports: SUPPORT
+    snippet: Sodium selenite 0.01156
+    explanation: 'ingredients[21] (Sodium selenite), concentration in MEDIADB:473.
+      Locator: compound table, column header ''Amount (mM)''. The database directly
+      reports 0.01156 mM for this compound label; no conversion. Corroborating 2015-10-07
+      export media_compounds row (medcompID, medID, compID, Amount_mM): (11090,473,16411,0.01156).
+      Evidence concerns the database compound label, not independent validation of
+      existing ontology mappings, supplied hydrate form, or original-article quantities.
+      Accessed 2026-10-09.'
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '1.085'
@@ -251,6 +440,17 @@ ingredients:
   term:
     id: CHEBI:3312
     label: calcium dichloride
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/473/
+    supports: SUPPORT
+    snippet: Calcium chloride anhydrous 1.085
+    explanation: 'ingredients[22] (Calcium chloride anhydrous), concentration in MEDIADB:473.
+      Locator: compound table, column header ''Amount (mM)''. The database directly
+      reports 1.085 mM for this compound label; no conversion. Corroborating 2015-10-07
+      export media_compounds row (medcompID, medID, compID, Amount_mM): (11091,473,6656,1.085).
+      Evidence concerns the database compound label, not independent validation of
+      existing ontology mappings, supplied hydrate form, or original-article quantities.
+      Accessed 2026-10-09.'
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '0.8038'
@@ -258,6 +458,47 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/473/
+    supports: SUPPORT
+    snippet: Potassium dibasic phosphate 0.8038
+    explanation: 'ingredients[23] (Potassium dibasic phosphate), concentration in
+      MEDIADB:473. Locator: compound table, column header ''Amount (mM)''. The database
+      directly reports 0.8038 mM for this compound label; no conversion. Corroborating
+      2015-10-07 export media_compounds row (medcompID, medID, compID, Amount_mM):
+      (11092,473,11628,0.8038). Evidence concerns the database compound label, not
+      independent validation of existing ontology mappings, supplied hydrate form,
+      or original-article quantities. Accessed 2026-10-09.'
+- preferred_term: 2-methylbutanoic acid
+  concentration:
+    value: '0.04896'
+    unit: MILLIMOLAR
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/473/
+    supports: SUPPORT
+    snippet: 2-methylbutanoic acid 0.04896
+    explanation: 'ingredients[24] (2-methylbutanoic acid), concentration in MEDIADB:473.
+      Locator: compound table, column header ''Amount (mM)''. The database directly
+      reports 0.04896 mM for this compound label; no conversion. Corroborating 2015-10-07
+      export media_compounds row (medcompID, medID, compID, Amount_mM): (11067,473,16492,0.04896).
+      Evidence concerns the database compound label, not independent validation of
+      existing ontology mappings, supplied hydrate form, or original-article quantities.
+      Accessed 2026-10-09.'
+- preferred_term: 3-Methylbutanoic acid
+  concentration:
+    value: '0.04896'
+    unit: MILLIMOLAR
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/473/
+    supports: SUPPORT
+    snippet: 3-Methylbutanoic acid 0.04896
+    explanation: 'ingredients[25] (3-Methylbutanoic acid), concentration in MEDIADB:473.
+      Locator: compound table, column header ''Amount (mM)''. The database directly
+      reports 0.04896 mM for this compound label; no conversion. Corroborating 2015-10-07
+      export media_compounds row (medcompID, medID, compID, Amount_mM): (11070,473,6782,0.04896).
+      Evidence concerns the database compound label, not independent validation of
+      existing ontology mappings, supplied hydrate form, or original-article quantities.
+      Accessed 2026-10-09.'
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -310,29 +551,101 @@ curation_history:
   notes: Restored the medium's own name in media_term.term.label, original_name. The
     MediaDB SQL parser truncated every value containing a parenthesis at that parenthesis;
     recovered from media_database.07Oct2015.sql.
+- timestamp: '2026-10-09T18:40:40.422932+00:00'
+  curator: codex
+  action: RESTORED_MEDIADB_INGREDIENT_MEMBERSHIP_AND_UNKNOWN_AMOUNTS
+  notes: Restored the exact MediaDB formulation and distinguished missing from variable
+    amounts. Every current ingredient has a source-table snippet. Evidence establishes
+    MediaDB's reported amounts for its own compound labels, not an independent verification
+    of the original articles or existing chemical-form mappings. Existing preparation,
+    classification, physical-state and organism claims are unchanged and are not certified
+    by the concentration table. No mass conversion, final-volume assumption, exact-variant
+    merge or taxa-media association.
+  source: https://mediadb.systemsbiology.net/defined_media/media/473/
+  changes: '{"concentration_evidence_added": 26, "removed_lb_nodes": [{"node": {"concentration":
+    {"unit": "G_PER_L", "value": "10.0"}, "notes": "Pancreatic digest of casein providing
+    amino acids, peptides, and nitrogen; Constituent of LB Medium (Luria-Bertani,
+    Miller formulation) commercial product", "preferred_term": "Tryptone", "supplier_catalog":
+    {"catalog_number": "Multiple (L3522 Sigma, 244520 BD)", "product_url": "https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/",
+    "supplier_name": "Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+    Miller formulation)"}, "synonyms": [{"synonym_text": "pancreatic digest of casein",
+    "synonym_type": "EXACT"}, {"synonym_text": "casein peptone", "synonym_type": "EXACT"}],
+    "term": {"id": "MICRO:0000182", "label": "tryptone"}}, "pointer": ["ingredients",
+    0]}, {"node": {"concentration": {"unit": "G_PER_L", "value": "5.0"}, "notes":
+    "Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and trace
+    elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
+    product", "preferred_term": "Yeast extract", "supplier_catalog": {"catalog_number":
+    "Multiple (L3522 Sigma, 244520 BD)", "product_url": "https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/",
+    "supplier_name": "Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+    Miller formulation)"}, "term": {"id": "FOODON:03315426", "label": "yeast extract"}},
+    "pointer": ["ingredients", 1]}, {"node": {"concentration": {"unit": "G_PER_L",
+    "value": "10.0"}, "notes": "Maintains osmotic equilibrium (Miller formulation);
+    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product",
+    "preferred_term": "Sodium chloride", "supplier_catalog": {"catalog_number": "Multiple
+    (L3522 Sigma, 244520 BD)", "product_url": "https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/",
+    "supplier_name": "Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+    Miller formulation)"}, "synonyms": [{"synonym_text": "NaCl", "synonym_type": "EXACT"},
+    {"synonym_text": "table salt", "synonym_type": "EXACT"}], "term": {"id": "CHEBI:26710",
+    "label": "sodium chloride"}}, "pointer": ["ingredients", 2]}], "restored_ingredients":
+    ["2-methylbutanoic acid", "3-Methylbutanoic acid"], "withdrawn_variable_defaults":
+    []}'
 media_term:
   preferred_term: MediaDB Medium 473
   term:
     id: MEDIADB:473
     label: McN Medium (Whitman)
 notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
-  Reference: https://mediadb.systemsbiology.net/
-
-
-  Commercial Product: LB Medium (Luria-Bertani, Miller formulation)
-
-  Supplier: Multiple suppliers (Difco, Sigma, etc.)
-
-  Catalog: Multiple (L3522 Sigma, 244520 BD)
-
-  Source: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-
-  Accessed: 2026-03-28
-
-
-  Constituent composition researched from product specification.'
+  Reference: https://mediadb.systemsbiology.net/'
 applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
 high_metal: true
+evidence:
+- reference: https://mediadb.systemsbiology.net/defined_media/media/473/
+  supports: SUPPORT
+  snippet: Sodium chloride 376.0
+  explanation: 'Ingredient membership correction for MEDIADB:473: the complete 26-compound
+    table, corroborated against the versioned export, does not list Tryptone or Yeast
+    extract and lists sodium chloride only at 376.0 mM under ''Amount (mM)''. Removed
+    the unrelated LB product expansion [{"node": {"concentration": {"unit": "G_PER_L",
+    "value": "10.0"}, "notes": "Pancreatic digest of casein providing amino acids,
+    peptides, and nitrogen; Constituent of LB Medium (Luria-Bertani, Miller formulation)
+    commercial product", "preferred_term": "Tryptone", "supplier_catalog": {"catalog_number":
+    "Multiple (L3522 Sigma, 244520 BD)", "product_url": "https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/",
+    "supplier_name": "Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+    Miller formulation)"}, "synonyms": [{"synonym_text": "pancreatic digest of casein",
+    "synonym_type": "EXACT"}, {"synonym_text": "casein peptone", "synonym_type": "EXACT"}],
+    "term": {"id": "MICRO:0000182", "label": "tryptone"}}, "pointer": ["ingredients",
+    0]}, {"node": {"concentration": {"unit": "G_PER_L", "value": "5.0"}, "notes":
+    "Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and trace
+    elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
+    product", "preferred_term": "Yeast extract", "supplier_catalog": {"catalog_number":
+    "Multiple (L3522 Sigma, 244520 BD)", "product_url": "https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/",
+    "supplier_name": "Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+    Miller formulation)"}, "term": {"id": "FOODON:03315426", "label": "yeast extract"}},
+    "pointer": ["ingredients", 1]}, {"node": {"concentration": {"unit": "G_PER_L",
+    "value": "10.0"}, "notes": "Maintains osmotic equilibrium (Miller formulation);
+    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product",
+    "preferred_term": "Sodium chloride", "supplier_catalog": {"catalog_number": "Multiple
+    (L3522 Sigma, 244520 BD)", "product_url": "https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/",
+    "supplier_name": "Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+    Miller formulation)"}, "synonyms": [{"synonym_text": "NaCl", "synonym_type": "EXACT"},
+    {"synonym_text": "table salt", "synonym_type": "EXACT"}], "term": {"id": "CHEBI:26710",
+    "label": "sodium chloride"}}, "pointer": ["ingredients", 2]}] and its copied root
+    commercial-product note. The original source note is preserved. This is a correction
+    to this database formulation, not a general statement about other variants.'
+references:
+- reference: https://mediadb.systemsbiology.net/defined_media/media/473/
+  title: 'Media: Mcn medium (whitman)'
+  notes: source_type=database_recipe_web_page; discovery_mode=source_accession; accessed_on=2026-10-09;
+    publisher=Institute for Systems Biology; raw_html_sha256=1558246e80d6e005e73b3cbeb51f9b8e138b378f9ea30d117f5385944769a285;
+    locator=Compound / Amount (mM) table; article DOI, individual authors and page
+    publication year not established for this recipe page.
+- reference: https://mediadb.systemsbiology.net/static/defined_media/downloads/media_database.07Oct2015.sql.gz
+  title: MediaDB SQL database export, 7 October 2015
+  year: 2015
+  notes: source_type=versioned_database_export; discovery_mode=official_download_page;
+    accessed_on=2026-10-09; publisher=Institute for Systems Biology; uncompressed_sha256=e2c60258e2389d4ad383695eb3e01429a67eac90807fe14d02a6728777d35b5c;
+    locator=media_names, media_compounds and compounds tables; the database paper's
+    DOI is not treated as evidence for individual amounts.

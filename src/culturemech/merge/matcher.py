@@ -5,11 +5,15 @@ Groups recipes by fingerprint to identify duplicates with identical ingredients.
 
 from collections import defaultdict
 from pathlib import Path
-from typing import Dict, List
 
 import yaml
 
-from culturemech.merge.fingerprint import RecipeFingerprinter
+from culturemech.merge.fingerprint import (
+    RecipeFingerprinter,
+    StandaloneSolutionError,
+    UnfingerprintableMediumError,
+)
+from culturemech.merge.formulation import FormulationFingerprinter
 
 
 class RecipeMatcher:
@@ -29,16 +33,19 @@ class RecipeMatcher:
 
     def group_recipes(
         self,
-        recipe_files: List[Path],
+        recipe_files: list[Path],
         min_group_size: int = 1,
-        progress_callback=None
-    ) -> Dict[str, List[Path]]:
-        """Group recipes by fingerprint.
+        progress_callback=None,
+        *,
+        fail_on_invalid: bool = False,
+    ) -> dict[str, list[Path]]:
+        """Group candidates by fingerprint, not permission to merge formulations.
 
         Args:
             recipe_files: List of recipe YAML file paths
             min_group_size: Minimum group size to include in results (default: 1)
             progress_callback: Optional callback function called with (current, total)
+            fail_on_invalid: Abort on malformed input instead of recording a skip.
 
         Returns:
             Dictionary mapping fingerprint -> list of recipe paths
@@ -50,7 +57,8 @@ class RecipeMatcher:
         fingerprint_groups = defaultdict(list)
         total = len(recipe_files)
         skipped_no_fp = 0  # No fingerprint generated
-        skipped_error = 0   # Error during processing
+        skipped_error = 0  # Error during processing
+        excluded_solutions = 0
         skipped_reasons = defaultdict(int)
 
         for i, recipe_path in enumerate(recipe_files, 1):
@@ -60,7 +68,7 @@ class RecipeMatcher:
                 # Skip recipes that can't be fingerprinted (no valid ingredients)
                 if fingerprint is None:
                     skipped_no_fp += 1
-                    skipped_reasons['no_valid_ingredients'] += 1
+                    skipped_reasons["no_valid_ingredients"] += 1
                     if progress_callback and i % 500 == 0:
                         progress_callback(i, total)
                     continue
@@ -70,23 +78,34 @@ class RecipeMatcher:
                 if progress_callback and i % 500 == 0:
                     progress_callback(i, total)
 
+            except StandaloneSolutionError:
+                # Expected routing, not a malformed or unquantified medium.
+                excluded_solutions += 1
+                if progress_callback and i % 500 == 0:
+                    progress_callback(i, total)
+                continue
+
             except ValueError as e:
+                if fail_on_invalid and not isinstance(e, UnfingerprintableMediumError):
+                    raise ValueError(f"Invalid formulation {recipe_path}: {e}") from e
                 # Expected errors (no ingredients field, etc.)
                 skipped_error += 1
                 error_msg = str(e)
-                if 'no ingredients' in error_msg.lower():
-                    skipped_reasons['no_ingredients_field'] += 1
+                if "no ingredients" in error_msg.lower():
+                    skipped_reasons["no_ingredients_field"] += 1
                 else:
-                    skipped_reasons['other_error'] += 1
+                    skipped_reasons["other_error"] += 1
 
                 if progress_callback and i % 500 == 0:
                     progress_callback(i, total)
                 continue
 
             except Exception as e:
+                if fail_on_invalid:
+                    raise ValueError(f"Cannot read formulation {recipe_path}: {e}") from e
                 # Unexpected errors
                 skipped_error += 1
-                skipped_reasons['unexpected_error'] += 1
+                skipped_reasons["unexpected_error"] += 1
                 if progress_callback and i % 500 == 0:
                     progress_callback(i, total)
                 continue
@@ -97,11 +116,12 @@ class RecipeMatcher:
 
         # Store skip statistics as metadata
         self._last_skip_stats = {
-            'total_processed': total,
-            'skipped_no_fingerprint': skipped_no_fp,
-            'skipped_error': skipped_error,
-            'successfully_fingerprinted': len(fingerprint_groups),
-            'reasons': dict(skipped_reasons)
+            "total_processed": total,
+            "excluded_solutions": excluded_solutions,
+            "skipped_no_fingerprint": skipped_no_fp,
+            "skipped_error": skipped_error,
+            "successfully_fingerprinted": sum(len(paths) for paths in fingerprint_groups.values()),
+            "reasons": dict(skipped_reasons),
         }
 
         # Filter by minimum group size
@@ -114,11 +134,28 @@ class RecipeMatcher:
 
         return dict(fingerprint_groups)
 
-    def find_duplicates(
+    def group_formulations(
         self,
-        recipe_files: List[Path],
-        progress_callback=None
-    ) -> Dict[str, List[Path]]:
+        recipe_files: list[Path],
+        min_group_size: int = 1,
+        progress_callback=None,
+    ) -> dict[str, list[Path]]:
+        """Group only losslessly compatible formulations for automatic merging.
+
+        Keys are formulation hashes used for grouping/output filenames, not the
+        legacy concentration-independent ``merge_fingerprint`` schema field.
+        Use group_recipes/find_duplicates for broader candidate discovery.
+        """
+        matcher = RecipeMatcher(FormulationFingerprinter())
+        groups = matcher.group_recipes(
+            recipe_files, min_group_size, progress_callback, fail_on_invalid=True
+        )
+        self._last_skip_stats = matcher._last_skip_stats
+        return groups
+
+    def find_duplicates(
+        self, recipe_files: list[Path], progress_callback=None
+    ) -> dict[str, list[Path]]:
         """Find duplicate recipes (groups with 2+ recipes).
 
         This is a convenience method that calls group_recipes with min_group_size=2.
@@ -134,12 +171,10 @@ class RecipeMatcher:
             ValueError: If any recipe is invalid
         """
         return self.group_recipes(
-            recipe_files=recipe_files,
-            min_group_size=2,
-            progress_callback=progress_callback
+            recipe_files=recipe_files, min_group_size=2, progress_callback=progress_callback
         )
 
-    def _load_recipe(self, path: Path) -> Dict:
+    def _load_recipe(self, path: Path) -> dict:
         """Load recipe from YAML file.
 
         Args:
@@ -156,20 +191,17 @@ class RecipeMatcher:
             raise FileNotFoundError(f"Recipe file not found: {path}")
 
         try:
-            with open(path, 'r', encoding='utf-8') as f:
+            with open(path, encoding="utf-8") as f:
                 recipe = yaml.safe_load(f)
         except yaml.YAMLError as e:
-            raise ValueError(f"Invalid YAML in {path}: {e}")
+            raise ValueError(f"Invalid YAML in {path}: {e}") from e
 
         if not isinstance(recipe, dict):
             raise ValueError(f"Recipe is not a dictionary: {path}")
 
         return recipe
 
-    def get_duplicate_stats(
-        self,
-        recipe_files: List[Path]
-    ) -> Dict:
+    def get_duplicate_stats(self, recipe_files: list[Path]) -> dict:
         """Generate statistics about duplicate recipes.
 
         Args:
@@ -186,36 +218,26 @@ class RecipeMatcher:
             - largest_group_size: Size of largest duplicate group
         """
         all_groups = self.group_recipes(recipe_files, min_group_size=1)
-        duplicate_groups = {
-            fp: paths
-            for fp, paths in all_groups.items()
-            if len(paths) >= 2
-        }
+        duplicate_groups = {fp: paths for fp, paths in all_groups.items() if len(paths) >= 2}
 
         total_recipes = len(recipe_files)
         unique_recipes = len(all_groups)
         num_duplicate_groups = len(duplicate_groups)
 
         # Total duplicates = sum of (group_size - 1) for each duplicate group
-        total_duplicates = sum(
-            len(paths) - 1
-            for paths in duplicate_groups.values()
-        )
+        total_duplicates = sum(len(paths) - 1 for paths in duplicate_groups.values())
 
         reduction = total_duplicates
         reduction_percentage = (reduction / total_recipes * 100) if total_recipes > 0 else 0
 
-        largest_group_size = max(
-            (len(paths) for paths in all_groups.values()),
-            default=0
-        )
+        largest_group_size = max((len(paths) for paths in all_groups.values()), default=0)
 
         return {
-            'total_recipes': total_recipes,
-            'unique_recipes': unique_recipes,
-            'duplicate_groups': num_duplicate_groups,
-            'total_duplicates': total_duplicates,
-            'reduction': reduction,
-            'reduction_percentage': round(reduction_percentage, 1),
-            'largest_group_size': largest_group_size,
+            "total_recipes": total_recipes,
+            "unique_recipes": unique_recipes,
+            "duplicate_groups": num_duplicate_groups,
+            "total_duplicates": total_duplicates,
+            "reduction": reduction,
+            "reduction_percentage": round(reduction_percentage, 1),
+            "largest_group_size": largest_group_size,
         }

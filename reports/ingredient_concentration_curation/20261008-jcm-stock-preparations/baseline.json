@@ -1,0 +1,126 @@
+{
+  "terminal": true,
+  "runtime": "Partial locked Python 3.13; not full CI",
+  "checks": [
+    {
+      "name": "schema-J151",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/archaea/JCM_J151_PYROCOCCUS_MEDIUM.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/jcm-stock-baseline-schema-J151.log"
+    },
+    {
+      "name": "strict-J151",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/archaea/JCM_J151_PYROCOCCUS_MEDIUM.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/jcm-stock-baseline-strict-J151.log"
+    },
+    {
+      "name": "schema-J187",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/archaea/desulfurococcus_amylolyticus_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/jcm-stock-baseline-schema-J187.log"
+    },
+    {
+      "name": "strict-J187",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/archaea/desulfurococcus_amylolyticus_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/jcm-stock-baseline-strict-J187.log"
+    },
+    {
+      "name": "schema-J197",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/jcm_medium_no_197.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/jcm-stock-baseline-schema-J197.log"
+    },
+    {
+      "name": "strict-J197",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/jcm_medium_no_197.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/jcm-stock-baseline-strict-J197.log"
+    },
+    {
+      "name": "schema-M142",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/jcm-stock-baseline-schema-M142.log"
+    },
+    {
+      "name": "strict-M142",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/jcm-stock-baseline-strict-M142.log"
+    },
+    {
+      "name": "schema-M180",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/jcm-stock-baseline-schema-M180.log"
+    },
+    {
+      "name": "strict-M180",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/jcm-stock-baseline-strict-M180.log"
+    },
+    {
+      "name": "schema-M190",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/togo_medium_m190.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/jcm-stock-baseline-schema-M190.log"
+    },
+    {
+      "name": "strict-M190",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/togo_medium_m190.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/jcm-stock-baseline-strict-M190.log"
+    }
+  ]
+}

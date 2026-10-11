@@ -1,0 +1,128 @@
+{
+  "terminal": true,
+  "runtime": "Partial locked Python 3.13; not full CI",
+  "checks": [
+    {
+      "name": "schema",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/mediadive_3846_FeCl2_solution.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/fecl2-post-schema.log"
+    },
+    {
+      "name": "strict-record",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/mediadive_3846_FeCl2_solution.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/fecl2-post-strict-record.log"
+    },
+    {
+      "name": "readback",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/repair_fecl2_stock_concentration.py",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/fecl2-post-readback.log"
+    },
+    {
+      "name": "noop",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/repair_fecl2_stock_concentration.py",
+        "--apply"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/fecl2-post-noop.log"
+    },
+    {
+      "name": "tests",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_fecl2_stock_concentration.py",
+        "tests/test_solution_concentration_batch.py",
+        "tests/test_record_io.py",
+        "tests/test_concentration_plausibility.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/fecl2-post-tests.log"
+    },
+    {
+      "name": "strict-corpus",
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/fecl2-post-strict-corpus.log"
+    },
+    {
+      "name": "ids",
+      "command": [
+        "just",
+        "assign-ids-check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/fecl2-post-ids.log"
+    },
+    {
+      "name": "fast",
+      "command": [
+        "just",
+        "test-fast"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/fecl2-post-fast.log"
+    },
+    {
+      "name": "products",
+      "command": [
+        "just",
+        "validate-products"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/fecl2-post-products.log"
+    },
+    {
+      "name": "verify-merges",
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/fecl2-post-verify-merges.log"
+    },
+    {
+      "name": "freshness",
+      "command": [
+        "just",
+        "audit-merge-freshness",
+        "--json"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/fecl2-post-freshness.log"
+    },
+    {
+      "name": "diff-check",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/fecl2-post-diff-check.log"
+    }
+  ]
+}

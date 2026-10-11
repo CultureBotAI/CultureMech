@@ -1,0 +1,23 @@
+# Solution Concentration Review: Reducing solution
+
+- Record: data/normalized_yaml/bacterial/mediadive_3892_Reducing_solution.yaml
+- ID: CultureMech:012959
+- Reviewed commit: `f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f`
+- Before SHA256: `161bcdba5d4b825743ce0900fccbc824f87590a601d16cb39cf5c568e60ade02`
+- Proposed/result SHA256: `355e9c0ee3390afcc50447b73431fea46dbd376284db63aef73f85b1225e1afd`
+- Source: https://mediadive.dsmz.de/rest/solution/3892
+- Source SHA256: d70a91ddc61360f40b5faf2f88484cfbf2a25def39cf62e332ec3eacb4aaf268
+- Retrieved: 2026-10-07T09:26:11.377214+00:00
+- Source type: official DSMZ dataset; discovery: existing record source ID; authors/year not supplied.
+- State: changed locally; unresolved claims remain unchanged.
+- Baseline schema errors: 0; proposed schema errors: 0.
+- Operational failure: none
+
+Source response, exact IDs/labels, arithmetic, and literal snippets were checked by the maintained guarded reviewer. This is not a claim of manual inspection of every source sentence or automated reference-validator success. Preparation-dependent quantities and unrepresented stocks remain open. Schema validity is not scientific proof.
+
+| Field | Ingredient | Old | Proposed | Status | DOI/PURL | Exact snippet | Locator | Calculation / decision | Action |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `composition[0].concentration` | NaOH | {"unit": "PERCENT_V_V", "value": "1000.0"} | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/solution/3892 | {<br>                "recipe_order": 1,<br>                "compound": "NaOH",<br>                "compound_id": 256,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": "0.2 N",<br>                "amount": 200,<br>                "unit": "ml",<br>                "g_l": null,<br>                "mmol_l": null,<br>                "optional": 0<br>            } | $.data.recipe[0] (compound_id=256) | Source attribute may encode stock strength, material grade, or preparation context; not discarded. | unchanged |
+| `composition[1].concentration` | Na2S x 9 H2O | {"unit": "G_PER_L", "value": "12.5"} | {"unit": "G_PER_L", "value": "12.5"} | evidence_only | https://mediadive.dsmz.de/rest/solution/3892 | {<br>                "recipe_order": 2,<br>                "compound": "Na2S x 9 H2O",<br>                "compound_id": 54,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 2.5,<br>                "unit": "g",<br>                "g_l": 12.5,<br>                "mmol_l": 52.0439,<br>                "optional": 0<br>            } | $.data.recipe[1] (compound_id=54) | Provider explicitly reports g_l=12.5. Arithmetic check: 2.5 g * 1 g/g / (200 ml / 1000 ml per L) = 12.5 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: "volume": 200. | applied |
+| `composition[2].concentration` | L-Cysteine HCl x H2O | {"unit": "G_PER_L", "value": "12.5"} | {"unit": "G_PER_L", "value": "12.5"} | evidence_only | https://mediadive.dsmz.de/rest/solution/3892 | {<br>                "recipe_order": 3,<br>                "compound": "L-Cysteine HCl x H2O",<br>                "compound_id": 770,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 2.5,<br>                "unit": "g",<br>                "g_l": 12.5,<br>                "mmol_l": null,<br>                "optional": 0<br>            } | $.data.recipe[2] (compound_id=770) | Provider explicitly reports g_l=12.5. Arithmetic check: 2.5 g * 1 g/g / (200 ml / 1000 ml per L) = 12.5 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: "volume": 200. | applied |
+| `ingredients[0].concentration` | See source for composition | {"unit": "VARIABLE", "value": "variable"} | unknown / not asserted | unsupported | unknown / not asserted | unknown / not asserted | unknown / not asserted | Outside direct composition matching; unchanged. | unchanged |

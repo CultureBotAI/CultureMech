@@ -8,161 +8,226 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '901.0'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component [Merged 2 duplicates: 900.0, 1.0]'
+    value: '0.9'
+    unit: L
+  notes: |-
+    Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component [Merged 2 duplicates: 900.0, 1.0]
+
+    Source water batch input: 900 ml = 0.9 L. This is not a measured final volume.
+
+    The earlier duplicate-summing note is superseded: it combined separate preparation scopes and source units. This node carries only the batch input at the cited source row; other occurrences are separate scoped ingredients.
   term:
     id: CHEBI:15377
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "Distilled water",
+                "volume": 900,
+                "unit": "ml",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001001"
+    explanation: |-
+      ingredients[0].concentration: Source water batch input: 900 ml = 0.9 L. This is not a measured final volume. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[0].items[0]; accessed=2026-10-08T14:42:50.881844+00:00; capture SHA256=bf09d4cf728597024c4add694aa5abc8c9d76b37f6e501dd2f213b0133515865.
+
+      Additional exact excerpt: {
+                "component_name": "Distilled water",
+                "volume": 900,
+                "unit": "ml",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001001"
+      ingredients[0].notes: The earlier duplicate-summing note is superseded: it combined separate preparation scopes and source units. This node carries only the batch input at the cited source row; other occurrences are separate scoped ingredients. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[0].items[0]; accessed=2026-10-08T14:42:50.881844+00:00; capture SHA256=bf09d4cf728597024c4add694aa5abc8c9d76b37f6e501dd2f213b0133515865.
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268
+    supports: SUPPORT
+    snippet: Distilled water 900.0 ml
+    explanation: 'ingredients[0].notes: Original table corroborates exact form and
+      batch input at this preparation stage. A water input or stock label does not
+      establish final volume or a per-liter dose. No final-medium volume, percentage
+      basis, density or chemical grounding is inferred. Locator=original recipe text;
+      accessed=2026-10-08T14:48:27.082797+00:00; capture SHA256=c32d195d9f14ce56e2d0b8bddf52d1a78b47da62d9bb938373b8a6d43e20a1e2.'
 - preferred_term: Sodium succinate
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
-    component'
+  notes: |-
+    Role: Growth factor; Properties: Organic compound, Defined component, Simple component
+
+    Source batch input: 0.2 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
   term:
     id: CHEBI:63675
     label: sodium succinate (anhydrous)
   mediaingredientmech_chebi_term:
     id: CHEBI:63675
     label: sodium succinate (anhydrous)
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "Sodium succinate",
+                "volume": 0.2,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001070"
+    explanation: 'ingredients[1].concentration: Source batch input: 0.2 g. Final preparation
+      volume is not independently established; the unsupported g/L assertion is withdrawn,
+      not replaced by an assumed one-liter concentration. No final-medium volume,
+      percentage basis, density or chemical grounding is inferred. Locator=components[0].items[1];
+      accessed=2026-10-08T14:42:50.881844+00:00; capture SHA256=bf09d4cf728597024c4add694aa5abc8c9d76b37f6e501dd2f213b0133515865.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268
+    supports: SUPPORT
+    snippet: Sodium succinate 0.2 g
+    explanation: 'ingredients[1].notes: Original table corroborates exact form and
+      batch input at this preparation stage. A water input or stock label does not
+      establish final volume or a per-liter dose. No final-medium volume, percentage
+      basis, density or chemical grounding is inferred. Locator=original recipe text;
+      accessed=2026-10-08T14:48:27.082797+00:00; capture SHA256=c32d195d9f14ce56e2d0b8bddf52d1a78b47da62d9bb938373b8a6d43e20a1e2.'
 - preferred_term: Na2SiO3・9H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: |-
+    Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component
+
+    Source batch input: 1 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
   term:
     id: CHEBI:132108
     label: sodium silicate nonahydrate
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "Na2SiO3・9H2O",
+                "volume": 1,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001198"
+    explanation: 'ingredients[2].concentration: Source batch input: 1 g. Final preparation
+      volume is not independently established; the unsupported g/L assertion is withdrawn,
+      not replaced by an assumed one-liter concentration. No final-medium volume,
+      percentage basis, density or chemical grounding is inferred. Locator=components[0].items[2];
+      accessed=2026-10-08T14:42:50.881844+00:00; capture SHA256=bf09d4cf728597024c4add694aa5abc8c9d76b37f6e501dd2f213b0133515865.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268
+    supports: SUPPORT
+    snippet: Na2SiO3·9H2O 1.0 g
+    explanation: 'ingredients[2].notes: Original table corroborates exact form and
+      batch input at this preparation stage. A water input or stock label does not
+      establish final volume or a per-liter dose. No final-medium volume, percentage
+      basis, density or chemical grounding is inferred. Locator=original recipe text;
+      accessed=2026-10-08T14:48:27.082797+00:00; capture SHA256=c32d195d9f14ce56e2d0b8bddf52d1a78b47da62d9bb938373b8a6d43e20a1e2.'
 - preferred_term: Glucose
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
-    component'
+  notes: |-
+    Role: Carbon source; Properties: Organic compound, Defined component, Simple component
+
+    Source batch input: 0.2 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
   term:
     id: CHEBI:17234
     label: glucose
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "Glucose",
+                "volume": 0.2,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001815"
+    explanation: 'ingredients[3].concentration: Source batch input: 0.2 g. Final preparation
+      volume is not independently established; the unsupported g/L assertion is withdrawn,
+      not replaced by an assumed one-liter concentration. No final-medium volume,
+      percentage basis, density or chemical grounding is inferred. Locator=components[0].items[3];
+      accessed=2026-10-08T14:42:50.881844+00:00; capture SHA256=bf09d4cf728597024c4add694aa5abc8c9d76b37f6e501dd2f213b0133515865.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268
+    supports: SUPPORT
+    snippet: Glucose 0.2 g
+    explanation: 'ingredients[3].notes: Original table corroborates exact form and
+      batch input at this preparation stage. A water input or stock label does not
+      establish final volume or a per-liter dose. No final-medium volume, percentage
+      basis, density or chemical grounding is inferred. Locator=original recipe text;
+      accessed=2026-10-08T14:48:27.082797+00:00; capture SHA256=c32d195d9f14ce56e2d0b8bddf52d1a78b47da62d9bb938373b8a6d43e20a1e2.'
 - preferred_term: Yeast extract (BD-Difco)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  notes: |-
+    Properties: Undefined component
+
+    Source batch input: 1 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "Yeast extract (BD-Difco)",
+                "volume": 1,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001018"
+    explanation: 'ingredients[4].concentration: Source batch input: 1 g. Final preparation
+      volume is not independently established; the unsupported g/L assertion is withdrawn,
+      not replaced by an assumed one-liter concentration. No final-medium volume,
+      percentage basis, density or chemical grounding is inferred. Locator=components[0].items[4];
+      accessed=2026-10-08T14:42:50.881844+00:00; capture SHA256=bf09d4cf728597024c4add694aa5abc8c9d76b37f6e501dd2f213b0133515865.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268
+    supports: SUPPORT
+    snippet: Yeast extract (BD-Difco) 1.0 g
+    explanation: 'ingredients[4].notes: Original table corroborates exact form and
+      batch input at this preparation stage. A water input or stock label does not
+      establish final volume or a per-liter dose. No final-medium volume, percentage
+      basis, density or chemical grounding is inferred. Locator=original recipe text;
+      accessed=2026-10-08T14:48:27.082797+00:00; capture SHA256=c32d195d9f14ce56e2d0b8bddf52d1a78b47da62d9bb938373b8a6d43e20a1e2.'
 - preferred_term: Na2S2O3・5H2O
-  concentration:
-    value: '2.48'
-    unit: G_PER_L
-  notes: 'Properties: Inorganic compound, Simple component, Defined component'
+  notes: |-
+    Properties: Inorganic compound, Simple component, Defined component
+
+    Source batch input: 2.48 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
   term:
     id: CHEBI:32150
     label: sodium thiosulfate pentahydrate
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "Na2S2O3・5H2O",
+                "volume": 2.48,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001041"
+    explanation: 'ingredients[5].concentration: Source batch input: 2.48 g. Final
+      preparation volume is not independently established; the unsupported g/L assertion
+      is withdrawn, not replaced by an assumed one-liter concentration. No final-medium
+      volume, percentage basis, density or chemical grounding is inferred. Locator=components[0].items[5];
+      accessed=2026-10-08T14:42:50.881844+00:00; capture SHA256=bf09d4cf728597024c4add694aa5abc8c9d76b37f6e501dd2f213b0133515865.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268
+    supports: SUPPORT
+    snippet: Na2S2O3·5H2O 2.48 g
+    explanation: 'ingredients[5].notes: Original table corroborates exact form and
+      batch input at this preparation stage. A water input or stock label does not
+      establish final volume or a per-liter dose. No final-medium volume, percentage
+      basis, density or chemical grounding is inferred. Locator=original recipe text;
+      accessed=2026-10-08T14:48:27.082797+00:00; capture SHA256=c32d195d9f14ce56e2d0b8bddf52d1a78b47da62d9bb938373b8a6d43e20a1e2.'
 - preferred_term: Bacto peptone (BD-Difco)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: MJ(-N) synthetic seawater (see below)
-  concentration:
-    value: '100'
-    unit: G_PER_L
-- preferred_term: MgSO4・7H2O
-  concentration:
-    value: '3.4'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
-- preferred_term: NaCl
-  concentration:
-    value: '30'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: CaCl2・2H2O
-  concentration:
-    value: '0.14'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-- preferred_term: K2HPO4
-  concentration:
-    value: '0.14'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
-  term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-- preferred_term: MgCl2・6H2O
-  concentration:
-    value: '4.18'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:86345
-    label: magnesium dichloride hexahydrate
-- preferred_term: KCl
-  concentration:
-    value: '0.33'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:32588
-    label: potassium chloride
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32588
-    label: potassium chloride
-- preferred_term: NiCl2・6H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:34887
-    label: nickel dichloride
-- preferred_term: Na2SeO3・5H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:131361
-    label: disodium selenite pentahydrate
-- preferred_term: Fe(NH4)2(SO4)2・6H2O
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:76181
-    label: ferrous ammonium sulfate hexahydrate
+  notes: |-
+    Properties: Undefined component
+
+    Source batch input: 1 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "Bacto peptone (BD-Difco)",
+                "volume": 1,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001089"
+    explanation: 'ingredients[6].concentration: Source batch input: 1 g. Final preparation
+      volume is not independently established; the unsupported g/L assertion is withdrawn,
+      not replaced by an assumed one-liter concentration. No final-medium volume,
+      percentage basis, density or chemical grounding is inferred. Locator=components[0].items[6];
+      accessed=2026-10-08T14:42:50.881844+00:00; capture SHA256=bf09d4cf728597024c4add694aa5abc8c9d76b37f6e501dd2f213b0133515865.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268
+    supports: SUPPORT
+    snippet: Bacto peptone (BD-Difco) 1.0 g
+    explanation: 'ingredients[6].notes: Original table corroborates exact form and
+      batch input at this preparation stage. A water input or stock label does not
+      establish final volume or a per-liter dose. No final-medium volume, percentage
+      basis, density or chemical grounding is inferred. Locator=original recipe text;
+      accessed=2026-10-08T14:48:27.082797+00:00; capture SHA256=c32d195d9f14ce56e2d0b8bddf52d1a78b47da62d9bb938373b8a6d43e20a1e2.'
 media_term:
   preferred_term: TOGO Medium M260
   term:
@@ -229,11 +294,1192 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-10-08T20:12:07.152932+00:00'
+  curator: codex
+  action: REPAIRED_M258_IDENTITY_AND_M260_NESTED_STOCK_WITH_EVIDENCE
+  notes: Corrected stock boundaries and unsupported quantity assertions with exact
+    batch-amount evidence. M258 supersedes its erroneous LB expansion and restores
+    alpha-methylbutyric acid, rumen/fatty-acid preparations and separate reducing
+    agents. M260 nests the trace-mineral dose inside MJ(-N) seawater. Preserved unrelated
+    annotations and append-only history. No final volume, percent basis or chemical
+    grounding inferred.
+  source: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260
+  changes: '[{"old_field": "ingredients[0].concentration", "field": "ingredients[0].concentration",
+    "old": {"value": "901.0", "unit": "G_PER_L"}, "new": {"value": "0.9", "unit":
+    "L"}, "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260",
+    "snippet": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\":
+    900,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\""},
+    {"old_field": "ingredients[0].notes", "field": "ingredients[0].notes", "old":
+    "Role: Solvating media; Properties: Inorganic compound, Defined component, Simple
+    component [Merged 2 duplicates: 900.0, 1.0]", "new": "Role: Solvating media; Properties:
+    Inorganic compound, Defined component, Simple component [Merged 2 duplicates:
+    900.0, 1.0]\n\nSource water batch input: 900 ml = 0.9 L. This is not a measured
+    final volume.\n\nThe earlier duplicate-summing note is superseded: it combined
+    separate preparation scopes and source units. This node carries only the batch
+    input at the cited source row; other occurrences are separate scoped ingredients.",
+    "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260",
+    "snippet": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\":
+    900,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\""},
+    {"old_field": null, "field": "ingredients[0].notes", "old": null, "new": "Role:
+    Solvating media; Properties: Inorganic compound, Defined component, Simple component
+    [Merged 2 duplicates: 900.0, 1.0]\n\nSource water batch input: 900 ml = 0.9 L.
+    This is not a measured final volume.\n\nThe earlier duplicate-summing note is
+    superseded: it combined separate preparation scopes and source units. This node
+    carries only the batch input at the cited source row; other occurrences are separate
+    scoped ingredients.", "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268",
+    "snippet": "Distilled water 900.0 ml"}, {"old_field": "ingredients[1].concentration",
+    "field": "ingredients[1].concentration", "old": {"value": "0.2", "unit": "G_PER_L"},
+    "new": null, "status": "remove_unsupported", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260",
+    "snippet": "{\n          \"component_name\": \"Sodium succinate\",\n          \"volume\":
+    0.2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001070\""},
+    {"old_field": null, "field": "ingredients[1].notes", "old": null, "new": "Role:
+    Growth factor; Properties: Organic compound, Defined component, Simple component\n\nSource
+    batch input: 0.2 g. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration.", "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268",
+    "snippet": "Sodium succinate 0.2 g"}, {"old_field": "ingredients[2].concentration",
+    "field": "ingredients[2].concentration", "old": {"value": "1", "unit": "G_PER_L"},
+    "new": null, "status": "remove_unsupported", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260",
+    "snippet": "{\n          \"component_name\": \"Na2SiO3\u30fb9H2O\",\n          \"volume\":
+    1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001198\""},
+    {"old_field": null, "field": "ingredients[2].notes", "old": null, "new": "Role:
+    Mineral source; Properties: Inorganic compound, Defined component, Simple component\n\nSource
+    batch input: 1 g. Final preparation volume is not independently established; the
+    unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+    "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268",
+    "snippet": "Na2SiO3\u00b79H2O 1.0 g"}, {"old_field": "ingredients[3].concentration",
+    "field": "ingredients[3].concentration", "old": {"value": "0.2", "unit": "G_PER_L"},
+    "new": null, "status": "remove_unsupported", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260",
+    "snippet": "{\n          \"component_name\": \"Glucose\",\n          \"volume\":
+    0.2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001815\""},
+    {"old_field": null, "field": "ingredients[3].notes", "old": null, "new": "Role:
+    Carbon source; Properties: Organic compound, Defined component, Simple component\n\nSource
+    batch input: 0.2 g. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration.", "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268",
+    "snippet": "Glucose 0.2 g"}, {"old_field": "ingredients[4].concentration", "field":
+    "ingredients[4].concentration", "old": {"value": "1", "unit": "G_PER_L"}, "new":
+    null, "status": "remove_unsupported", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260",
+    "snippet": "{\n          \"component_name\": \"Yeast extract (BD-Difco)\",\n          \"volume\":
+    1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001018\""},
+    {"old_field": null, "field": "ingredients[4].notes", "old": null, "new": "Properties:
+    Undefined component\n\nSource batch input: 1 g. Final preparation volume is not
+    independently established; the unsupported g/L assertion is withdrawn, not replaced
+    by an assumed one-liter concentration.", "status": "evidence_only", "reference":
+    "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268", "snippet": "Yeast extract
+    (BD-Difco) 1.0 g"}, {"old_field": "ingredients[5].concentration", "field": "ingredients[5].concentration",
+    "old": {"value": "2.48", "unit": "G_PER_L"}, "new": null, "status": "remove_unsupported",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260",
+    "snippet": "{\n          \"component_name\": \"Na2S2O3\u30fb5H2O\",\n          \"volume\":
+    2.48,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001041\""},
+    {"old_field": null, "field": "ingredients[5].notes", "old": null, "new": "Properties:
+    Inorganic compound, Simple component, Defined component\n\nSource batch input:
+    2.48 g. Final preparation volume is not independently established; the unsupported
+    g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+    "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268",
+    "snippet": "Na2S2O3\u00b75H2O 2.48 g"}, {"old_field": "ingredients[6].concentration",
+    "field": "ingredients[6].concentration", "old": {"value": "1", "unit": "G_PER_L"},
+    "new": null, "status": "remove_unsupported", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260",
+    "snippet": "{\n          \"component_name\": \"Bacto peptone (BD-Difco)\",\n          \"volume\":
+    1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001089\""},
+    {"old_field": null, "field": "ingredients[6].notes", "old": null, "new": "Properties:
+    Undefined component\n\nSource batch input: 1 g. Final preparation volume is not
+    independently established; the unsupported g/L assertion is withdrawn, not replaced
+    by an assumed one-liter concentration.", "status": "evidence_only", "reference":
+    "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268", "snippet": "Bacto peptone
+    (BD-Difco) 1.0 g"}, {"old_field": "ingredients[7].concentration", "field": "solutions[0].concentration",
+    "old": {"value": "100", "unit": "G_PER_L"}, "new": {"value": "0.1", "unit": "L"},
+    "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260",
+    "snippet": "{\n          \"component_name\": \"MJ(-N) synthetic seawater (see
+    below)\",\n          \"volume\": 100,\n          \"unit\": \"ml\""}, {"old_field":
+    null, "field": "solutions[0].concentration", "old": null, "new": {"value": "0.1",
+    "unit": "L"}, "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268",
+    "snippet": "MJ(-N) synthetic seawater (see below) 100.0 ml"}, {"old_field": null,
+    "field": "solutions[0].notes", "old": null, "new": "Source stock addition: 100
+    ml = 0.1 L per receiving batch, not grams per liter or a dose per final liter.\n\nExpand
+    only this named preparation, not the complete referenced medium. Water input does
+    not establish final stock volume; no final-medium rate is inferred.", "status":
+    "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268",
+    "snippet": "MJ(-N) synthetic seawater:"}, {"old_field": "ingredients[0].concentration",
+    "field": "solutions[0].composition[0].concentration", "old": {"value": "901.0",
+    "unit": "G_PER_L"}, "new": {"value": "1", "unit": "L"}, "status": "correct", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260", "snippet":
+    "{\n          \"component_name\": \"Distilled water\",\n          \"volume\":
+    1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\""},
+    {"old_field": "ingredients[0].notes", "field": "solutions[0].composition[0].notes",
+    "old": "Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component [Merged 2 duplicates: 900.0, 1.0]", "new": "Role: Solvating media;
+    Properties: Inorganic compound, Defined component, Simple component [Merged 2
+    duplicates: 900.0, 1.0]\n\nSource water batch input: 1 L = 1 L. This is not a
+    measured final volume.\n\nThe earlier duplicate-summing note is superseded: it
+    combined separate preparation scopes and source units. This node carries only
+    the batch input at the cited source row; other occurrences are separate scoped
+    ingredients.", "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260",
+    "snippet": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\":
+    1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\""},
+    {"old_field": null, "field": "solutions[0].composition[0].notes", "old": null,
+    "new": "Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component [Merged 2 duplicates: 900.0, 1.0]\n\nSource water batch input:
+    1 L = 1 L. This is not a measured final volume.\n\nThe earlier duplicate-summing
+    note is superseded: it combined separate preparation scopes and source units.
+    This node carries only the batch input at the cited source row; other occurrences
+    are separate scoped ingredients.", "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268",
+    "snippet": "Distilled water 1.0 L"}, {"old_field": "ingredients[8].concentration",
+    "field": "solutions[0].composition[1].concentration", "old": {"value": "3.4",
+    "unit": "G_PER_L"}, "new": null, "status": "remove_unsupported", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260", "snippet":
+    "{\n          \"component_name\": \"MgSO4\u30fb7H2O\",\n          \"volume\":
+    3.4,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001002\""},
+    {"old_field": null, "field": "solutions[0].composition[1].notes", "old": null,
+    "new": "Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component\n\nSource batch input: 3.4 g. Final preparation volume is not
+    independently established; the unsupported g/L assertion is withdrawn, not replaced
+    by an assumed one-liter concentration.", "status": "evidence_only", "reference":
+    "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268", "snippet": "MgSO4\u00b77H2O
+    3.4 g"}, {"old_field": "ingredients[9].concentration", "field": "solutions[0].composition[2].concentration",
+    "old": {"value": "30", "unit": "G_PER_L"}, "new": null, "status": "remove_unsupported",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260",
+    "snippet": "{\n          \"component_name\": \"NaCl\",\n          \"volume\":
+    30,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001004\""},
+    {"old_field": null, "field": "solutions[0].composition[2].notes", "old": null,
+    "new": "Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component\n\nSource batch input: 30 g. Final preparation volume is not
+    independently established; the unsupported g/L assertion is withdrawn, not replaced
+    by an assumed one-liter concentration.", "status": "evidence_only", "reference":
+    "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268", "snippet": "NaCl 30.0
+    g"}, {"old_field": "ingredients[10].concentration", "field": "solutions[0].composition[3].concentration",
+    "old": {"value": "0.14", "unit": "G_PER_L"}, "new": null, "status": "remove_unsupported",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260",
+    "snippet": "{\n          \"component_name\": \"CaCl2\u30fb2H2O\",\n          \"volume\":
+    0.14,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001005\""},
+    {"old_field": null, "field": "solutions[0].composition[3].notes", "old": null,
+    "new": "Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component\n\nSource batch input: 0.14 g. Final preparation volume is not
+    independently established; the unsupported g/L assertion is withdrawn, not replaced
+    by an assumed one-liter concentration.", "status": "evidence_only", "reference":
+    "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268", "snippet": "CaCl2\u00b72H2O
+    0.14 g"}, {"old_field": "ingredients[11].concentration", "field": "solutions[0].composition[4].concentration",
+    "old": {"value": "0.14", "unit": "G_PER_L"}, "new": null, "status": "remove_unsupported",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260",
+    "snippet": "{\n          \"component_name\": \"K2HPO4\",\n          \"volume\":
+    0.14,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001009\""},
+    {"old_field": null, "field": "solutions[0].composition[4].notes", "old": null,
+    "new": "Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component\n\nSource batch input: 0.14 g. Final preparation volume is not independently
+    established; the unsupported g/L assertion is withdrawn, not replaced by an assumed
+    one-liter concentration.", "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268",
+    "snippet": "K2HPO4 0.14 g"}, {"old_field": "ingredients[12].concentration", "field":
+    "solutions[0].composition[5].concentration", "old": {"value": "4.18", "unit":
+    "G_PER_L"}, "new": null, "status": "remove_unsupported", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260",
+    "snippet": "{\n          \"component_name\": \"MgCl2\u30fb6H2O\",\n          \"volume\":
+    4.18,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001013\""},
+    {"old_field": null, "field": "solutions[0].composition[5].notes", "old": null,
+    "new": "Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component\n\nSource batch input: 4.18 g. Final preparation volume is not
+    independently established; the unsupported g/L assertion is withdrawn, not replaced
+    by an assumed one-liter concentration.", "status": "evidence_only", "reference":
+    "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268", "snippet": "MgCl2\u00b76H2O
+    4.18 g"}, {"old_field": "ingredients[13].concentration", "field": "solutions[0].composition[6].concentration",
+    "old": {"value": "0.33", "unit": "G_PER_L"}, "new": null, "status": "remove_unsupported",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260",
+    "snippet": "{\n          \"component_name\": \"KCl\",\n          \"volume\": 0.33,\n          \"unit\":
+    \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001017\""}, {"old_field":
+    null, "field": "solutions[0].composition[6].notes", "old": null, "new": "Role:
+    Mineral source; Properties: Inorganic compound, Defined component, Simple component\n\nSource
+    batch input: 0.33 g. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration.", "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268",
+    "snippet": "KCl 0.33 g"}, {"old_field": "ingredients[14].concentration", "field":
+    "solutions[0].composition[7].concentration", "old": {"value": "0.5", "unit": "G_PER_L"},
+    "new": null, "status": "remove_unsupported", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260",
+    "snippet": "{\n          \"component_name\": \"NiCl2\u30fb6H2O\",\n          \"volume\":
+    0.5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001022\""},
+    {"old_field": null, "field": "solutions[0].composition[7].notes", "old": null,
+    "new": "Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component\n\nSource batch input: 0.5 mg. Final preparation volume is not
+    independently established; the unsupported g/L assertion is withdrawn, not replaced
+    by an assumed one-liter concentration.", "status": "evidence_only", "reference":
+    "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268", "snippet": "NiCl2\u00b76H2O
+    0.5 mg"}, {"old_field": "ingredients[15].concentration", "field": "solutions[0].composition[8].concentration",
+    "old": {"value": "0.5", "unit": "G_PER_L"}, "new": null, "status": "remove_unsupported",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260",
+    "snippet": "{\n          \"component_name\": \"Na2SeO3\u30fb5H2O\",\n          \"volume\":
+    0.5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001046\""},
+    {"old_field": null, "field": "solutions[0].composition[8].notes", "old": null,
+    "new": "Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component\n\nSource batch input: 0.5 mg. Final preparation volume is not
+    independently established; the unsupported g/L assertion is withdrawn, not replaced
+    by an assumed one-liter concentration.", "status": "evidence_only", "reference":
+    "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268", "snippet": "Na2SeO3\u00b75H2O
+    0.5 mg"}, {"old_field": "ingredients[16].concentration", "field": "solutions[0].composition[9].concentration",
+    "old": {"value": "0.01", "unit": "G_PER_L"}, "new": null, "status": "remove_unsupported",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260",
+    "snippet": "{\n          \"component_name\": \"Fe(NH4)2(SO4)2\u30fb6H2O\",\n          \"volume\":
+    0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001076\""},
+    {"old_field": null, "field": "solutions[0].composition[9].notes", "old": null,
+    "new": "Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component\n\nSource batch input: 0.01 g. Final preparation volume is not
+    independently established; the unsupported g/L assertion is withdrawn, not replaced
+    by an assumed one-liter concentration.", "status": "evidence_only", "reference":
+    "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268", "snippet": "Fe(NH4)2(SO4)2\u00b76H2O
+    0.01 g"}, {"old_field": "solutions[0].concentration", "field": "solutions[0].solutions[0].concentration",
+    "old": {"value": "10", "unit": "G_PER_L"}, "new": {"value": "0.01", "unit": "L"},
+    "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260",
+    "snippet": "{\n          \"component_name\": \"Trace minerals (see Medium [M142])\",\n          \"volume\":
+    10,\n          \"unit\": \"ml\""}, {"old_field": null, "field": "solutions[0].solutions[0].concentration",
+    "old": null, "new": {"value": "0.01", "unit": "L"}, "status": "evidence_only",
+    "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268", "snippet":
+    "Trace minerals (see Medium No. 151) 10.0 ml"}, {"old_field": null, "field": "solutions[0].solutions[0].notes",
+    "old": null, "new": "Cross-reference to Medium M142\n\nSource stock addition:
+    10 ml = 0.01 L per receiving batch, not grams per liter or a dose per final liter.
+    This dose belongs to the enclosing stock preparation, not directly to the final
+    medium.\n\nExpand only this named preparation, not the complete referenced medium.
+    Water input does not establish final stock volume; no final-medium rate is inferred.",
+    "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+    "snippet": "Trace minerals:"}, {"old_field": null, "field": "solutions[0].solutions[0].composition[0].concentration",
+    "old": null, "new": {"value": "1", "unit": "L"}, "status": "add", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142", "snippet":
+    "{\n          \"component_name\": \"Distilled water\",\n          \"volume\":
+    1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\""},
+    {"old_field": null, "field": "solutions[0].solutions[0].composition[0].notes",
+    "old": null, "new": "Source water batch input: 1 L = 1 L. This is not a measured
+    final volume.", "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+    "snippet": "Distilled water 1.0 L"}, {"old_field": null, "field": "solutions[0].solutions[0].composition[1].notes",
+    "old": null, "new": "Source batch input: 3 g. Final preparation volume is not
+    independently established; the source batch amount is retained without asserting
+    a final concentration.", "status": "add", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+    "snippet": "{\n          \"component_name\": \"MgSO4\u30fb7H2O\",\n          \"volume\":
+    3,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001002\""},
+    {"old_field": null, "field": "solutions[0].solutions[0].composition[1].notes",
+    "old": null, "new": "Source batch input: 3 g. Final preparation volume is not
+    independently established; the source batch amount is retained without asserting
+    a final concentration.", "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+    "snippet": "MgSO4\u00b77H2O 3.0 g"}, {"old_field": null, "field": "solutions[0].solutions[0].composition[2].notes",
+    "old": null, "new": "Source batch input: 1 g. Final preparation volume is not
+    independently established; the source batch amount is retained without asserting
+    a final concentration.", "status": "add", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+    "snippet": "{\n          \"component_name\": \"NaCl\",\n          \"volume\":
+    1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001004\""},
+    {"old_field": null, "field": "solutions[0].solutions[0].composition[2].notes",
+    "old": null, "new": "Source batch input: 1 g. Final preparation volume is not
+    independently established; the source batch amount is retained without asserting
+    a final concentration.", "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+    "snippet": "NaCl 1.0 g"}, {"old_field": null, "field": "solutions[0].solutions[0].composition[3].notes",
+    "old": null, "new": "Source batch input: 0.1 g. Final preparation volume is not
+    independently established; the source batch amount is retained without asserting
+    a final concentration.", "status": "add", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+    "snippet": "{\n          \"component_name\": \"CaCl2\u30fb2H2O\",\n          \"volume\":
+    0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001005\""},
+    {"old_field": null, "field": "solutions[0].solutions[0].composition[3].notes",
+    "old": null, "new": "Source batch input: 0.1 g. Final preparation volume is not
+    independently established; the source batch amount is retained without asserting
+    a final concentration.", "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+    "snippet": "CaCl2\u00b72H2O 0.1 g"}, {"old_field": null, "field": "solutions[0].solutions[0].composition[4].notes",
+    "old": null, "new": "Source batch input: 0.01 g. Final preparation volume is not
+    independently established; the source batch amount is retained without asserting
+    a final concentration.", "status": "add", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+    "snippet": "{\n          \"component_name\": \"Na2MoO4\u30fb2H2O\",\n          \"volume\":
+    0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001011\""},
+    {"old_field": null, "field": "solutions[0].solutions[0].composition[4].notes",
+    "old": null, "new": "Source batch input: 0.01 g. Final preparation volume is not
+    independently established; the source batch amount is retained without asserting
+    a final concentration.", "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+    "snippet": "Na2MoO4\u00b72H2O 0.01 g"}, {"old_field": null, "field": "solutions[0].solutions[0].composition[5].notes",
+    "old": null, "new": "Source batch input: 0.01 g. Final preparation volume is not
+    independently established; the source batch amount is retained without asserting
+    a final concentration.", "status": "add", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+    "snippet": "{\n          \"component_name\": \"H3BO3\",\n          \"volume\":
+    0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001015\""},
+    {"old_field": null, "field": "solutions[0].solutions[0].composition[5].notes",
+    "old": null, "new": "Source batch input: 0.01 g. Final preparation volume is not
+    independently established; the source batch amount is retained without asserting
+    a final concentration.", "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+    "snippet": "H3BO3 0.01 g"}, {"old_field": null, "field": "solutions[0].solutions[0].composition[6].notes",
+    "old": null, "new": "Source batch input: 0.1 g. Final preparation volume is not
+    independently established; the source batch amount is retained without asserting
+    a final concentration.", "status": "add", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+    "snippet": "{\n          \"component_name\": \"FeSO4\u30fb7H2O\",\n          \"volume\":
+    0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001016\""},
+    {"old_field": null, "field": "solutions[0].solutions[0].composition[6].notes",
+    "old": null, "new": "Source batch input: 0.1 g. Final preparation volume is not
+    independently established; the source batch amount is retained without asserting
+    a final concentration.", "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+    "snippet": "FeSO4\u00b77H2O 0.1 g"}, {"old_field": null, "field": "solutions[0].solutions[0].composition[7].notes",
+    "old": null, "new": "Source batch input: 0.1 g. Final preparation volume is not
+    independently established; the source batch amount is retained without asserting
+    a final concentration.", "status": "add", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+    "snippet": "{\n          \"component_name\": \"ZnSO4\u30fb7H2O\",\n          \"volume\":
+    0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001023\""},
+    {"old_field": null, "field": "solutions[0].solutions[0].composition[7].notes",
+    "old": null, "new": "Source batch input: 0.1 g. Final preparation volume is not
+    independently established; the source batch amount is retained without asserting
+    a final concentration.", "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+    "snippet": "ZnSO4\u00b77H2O 0.1 g"}, {"old_field": null, "field": "solutions[0].solutions[0].composition[8].notes",
+    "old": null, "new": "Source batch input: 0.01 g. Final preparation volume is not
+    independently established; the source batch amount is retained without asserting
+    a final concentration.", "status": "add", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+    "snippet": "{\n          \"component_name\": \"CuSO4\u30fb5H2O\",\n          \"volume\":
+    0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001039\""},
+    {"old_field": null, "field": "solutions[0].solutions[0].composition[8].notes",
+    "old": null, "new": "Source batch input: 0.01 g. Final preparation volume is not
+    independently established; the source batch amount is retained without asserting
+    a final concentration.", "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+    "snippet": "CuSO4\u00b75H2O 0.01 g"}, {"old_field": null, "field": "solutions[0].solutions[0].composition[9].notes",
+    "old": null, "new": "Source batch input: 0.1 g. Final preparation volume is not
+    independently established; the source batch amount is retained without asserting
+    a final concentration.", "status": "add", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+    "snippet": "{\n          \"component_name\": \"CoSO4\u30fb7H2O\",\n          \"volume\":
+    0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001050\""},
+    {"old_field": null, "field": "solutions[0].solutions[0].composition[9].notes",
+    "old": null, "new": "Source batch input: 0.1 g. Final preparation volume is not
+    independently established; the source batch amount is retained without asserting
+    a final concentration.", "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+    "snippet": "CoSO4\u00b77H2O 0.1 g"}, {"old_field": null, "field": "solutions[0].solutions[0].composition[10].notes",
+    "old": null, "new": "Source batch input: 1.5 g. Final preparation volume is not
+    independently established; the source batch amount is retained without asserting
+    a final concentration.", "status": "add", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+    "snippet": "{\n          \"component_name\": \"Nitrilotriacetic acid\",\n          \"volume\":
+    1.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001053\""},
+    {"old_field": null, "field": "solutions[0].solutions[0].composition[10].notes",
+    "old": null, "new": "Source batch input: 1.5 g. Final preparation volume is not
+    independently established; the source batch amount is retained without asserting
+    a final concentration.", "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+    "snippet": "Nitrilotriacetic acid 1.5 g"}, {"old_field": null, "field": "solutions[0].solutions[0].composition[11].notes",
+    "old": null, "new": "Source batch input: 0.5 g. Final preparation volume is not
+    independently established; the source batch amount is retained without asserting
+    a final concentration.", "status": "add", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+    "snippet": "{\n          \"component_name\": \"MnSO4\u30fbxH2O\",\n          \"volume\":
+    0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001065\""},
+    {"old_field": null, "field": "solutions[0].solutions[0].composition[11].notes",
+    "old": null, "new": "Source batch input: 0.5 g. Final preparation volume is not
+    independently established; the source batch amount is retained without asserting
+    a final concentration.", "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+    "snippet": "MnSO4\u00b7xH2O 0.5 g"}, {"old_field": null, "field": "solutions[0].solutions[0].composition[12].notes",
+    "old": null, "new": "Source batch input: 0.01 g. Final preparation volume is not
+    independently established; the source batch amount is retained without asserting
+    a final concentration.", "status": "add", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+    "snippet": "{\n          \"component_name\": \"AlK(SO4)2\",\n          \"volume\":
+    0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001088\""},
+    {"old_field": null, "field": "solutions[0].solutions[0].composition[12].notes",
+    "old": null, "new": "Source batch input: 0.01 g. Final preparation volume is not
+    independently established; the source batch amount is retained without asserting
+    a final concentration.", "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+    "snippet": "AlK(SO4)2 0.01 g"}, {"old_field": null, "field": "solutions[0].solutions[0].solutions[0].notes",
+    "old": null, "new": "Stock pH-adjustment reagent with no fixed dose or numeric
+    strength.", "status": "add", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+    "snippet": "{\n          \"component_name\": \"KOH solution\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001903\""}, {"old_field": null, "field": "solutions[0].solutions[0].solutions[0].notes",
+    "old": null, "new": "Stock pH-adjustment reagent with no fixed dose or numeric
+    strength.", "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+    "snippet": "Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
+    Then proceed to add minerals. Adjust final pH to 7.0."}, {"old_field": null, "field":
+    "solutions[0].solutions[0].preparation_notes", "old": null, "new": "Dissolve nitrilotriacetic
+    acid and adjust pH to 6.5 with KOH solution. Then proceed to add minerals. Adjust
+    final pH to 7.0.", "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+    "snippet": "Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
+    Then proceed to add minerals. Adjust final pH to 7.0."}, {"old_field": null, "field":
+    "preparation_steps[0].description", "old": null, "new": "Adjust pH to 7.5.", "status":
+    "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268",
+    "snippet": "Adjust pH to 7.5."}]'
 solutions:
-- preferred_term: Trace minerals (see Medium [M142])
-  composition: []
-  notes: Cross-reference to Medium M142
+- preferred_term: MJ(-N) synthetic seawater (see below)
   concentration:
-    value: '10'
-    unit: G_PER_L
-  name: Unknown solution
+    value: '0.1'
+    unit: L
+  composition:
+  - preferred_term: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+    notes: |-
+      Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component [Merged 2 duplicates: 900.0, 1.0]
+
+      Source water batch input: 1 L = 1 L. This is not a measured final volume.
+
+      The earlier duplicate-summing note is superseded: it combined separate preparation scopes and source units. This node carries only the batch input at the cited source row; other occurrences are separate scoped ingredients.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Distilled water",
+                  "volume": 1,
+                  "unit": "L",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001001"
+      explanation: |-
+        solutions[0].composition[0].concentration: Source water batch input: 1 L = 1 L. This is not a measured final volume. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[1].items[0]; accessed=2026-10-08T14:42:50.881844+00:00; capture SHA256=bf09d4cf728597024c4add694aa5abc8c9d76b37f6e501dd2f213b0133515865.
+
+        Additional exact excerpt: {
+                  "component_name": "Distilled water",
+                  "volume": 1,
+                  "unit": "L",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001001"
+        solutions[0].composition[0].notes: The earlier duplicate-summing note is superseded: it combined separate preparation scopes and source units. This node carries only the batch input at the cited source row; other occurrences are separate scoped ingredients. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[1].items[0]; accessed=2026-10-08T14:42:50.881844+00:00; capture SHA256=bf09d4cf728597024c4add694aa5abc8c9d76b37f6e501dd2f213b0133515865.
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268
+      supports: SUPPORT
+      snippet: Distilled water 1.0 L
+      explanation: 'solutions[0].composition[0].notes: Original table corroborates
+        exact form and batch input at this preparation stage. A water input or stock
+        label does not establish final volume or a per-liter dose. No final-medium
+        volume, percentage basis, density or chemical grounding is inferred. Locator=original
+        recipe text; accessed=2026-10-08T14:48:27.082797+00:00; capture SHA256=c32d195d9f14ce56e2d0b8bddf52d1a78b47da62d9bb938373b8a6d43e20a1e2.'
+  - preferred_term: MgSO4・7H2O
+    notes: |-
+      Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component
+
+      Source batch input: 3.4 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "MgSO4・7H2O",
+                  "volume": 3.4,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001002"
+      explanation: 'solutions[0].composition[1].concentration: Source batch input:
+        3.4 g. Final preparation volume is not independently established; the unsupported
+        g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+        No final-medium volume, percentage basis, density or chemical grounding is
+        inferred. Locator=components[1].items[1]; accessed=2026-10-08T14:42:50.881844+00:00;
+        capture SHA256=bf09d4cf728597024c4add694aa5abc8c9d76b37f6e501dd2f213b0133515865.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268
+      supports: SUPPORT
+      snippet: MgSO4·7H2O 3.4 g
+      explanation: 'solutions[0].composition[1].notes: Original table corroborates
+        exact form and batch input at this preparation stage. A water input or stock
+        label does not establish final volume or a per-liter dose. No final-medium
+        volume, percentage basis, density or chemical grounding is inferred. Locator=original
+        recipe text; accessed=2026-10-08T14:48:27.082797+00:00; capture SHA256=c32d195d9f14ce56e2d0b8bddf52d1a78b47da62d9bb938373b8a6d43e20a1e2.'
+  - preferred_term: NaCl
+    notes: |-
+      Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component
+
+      Source batch input: 30 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "NaCl",
+                  "volume": 30,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001004"
+      explanation: 'solutions[0].composition[2].concentration: Source batch input:
+        30 g. Final preparation volume is not independently established; the unsupported
+        g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+        No final-medium volume, percentage basis, density or chemical grounding is
+        inferred. Locator=components[1].items[2]; accessed=2026-10-08T14:42:50.881844+00:00;
+        capture SHA256=bf09d4cf728597024c4add694aa5abc8c9d76b37f6e501dd2f213b0133515865.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268
+      supports: SUPPORT
+      snippet: NaCl 30.0 g
+      explanation: 'solutions[0].composition[2].notes: Original table corroborates
+        exact form and batch input at this preparation stage. A water input or stock
+        label does not establish final volume or a per-liter dose. No final-medium
+        volume, percentage basis, density or chemical grounding is inferred. Locator=original
+        recipe text; accessed=2026-10-08T14:48:27.082797+00:00; capture SHA256=c32d195d9f14ce56e2d0b8bddf52d1a78b47da62d9bb938373b8a6d43e20a1e2.'
+  - preferred_term: CaCl2・2H2O
+    notes: |-
+      Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component
+
+      Source batch input: 0.14 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "CaCl2・2H2O",
+                  "volume": 0.14,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001005"
+      explanation: 'solutions[0].composition[3].concentration: Source batch input:
+        0.14 g. Final preparation volume is not independently established; the unsupported
+        g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+        No final-medium volume, percentage basis, density or chemical grounding is
+        inferred. Locator=components[1].items[3]; accessed=2026-10-08T14:42:50.881844+00:00;
+        capture SHA256=bf09d4cf728597024c4add694aa5abc8c9d76b37f6e501dd2f213b0133515865.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268
+      supports: SUPPORT
+      snippet: CaCl2·2H2O 0.14 g
+      explanation: 'solutions[0].composition[3].notes: Original table corroborates
+        exact form and batch input at this preparation stage. A water input or stock
+        label does not establish final volume or a per-liter dose. No final-medium
+        volume, percentage basis, density or chemical grounding is inferred. Locator=original
+        recipe text; accessed=2026-10-08T14:48:27.082797+00:00; capture SHA256=c32d195d9f14ce56e2d0b8bddf52d1a78b47da62d9bb938373b8a6d43e20a1e2.'
+  - preferred_term: K2HPO4
+    notes: |-
+      Role: Buffer; Properties: Inorganic compound, Defined component, Simple component
+
+      Source batch input: 0.14 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+    term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "K2HPO4",
+                  "volume": 0.14,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001009"
+      explanation: 'solutions[0].composition[4].concentration: Source batch input:
+        0.14 g. Final preparation volume is not independently established; the unsupported
+        g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+        No final-medium volume, percentage basis, density or chemical grounding is
+        inferred. Locator=components[1].items[4]; accessed=2026-10-08T14:42:50.881844+00:00;
+        capture SHA256=bf09d4cf728597024c4add694aa5abc8c9d76b37f6e501dd2f213b0133515865.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268
+      supports: SUPPORT
+      snippet: K2HPO4 0.14 g
+      explanation: 'solutions[0].composition[4].notes: Original table corroborates
+        exact form and batch input at this preparation stage. A water input or stock
+        label does not establish final volume or a per-liter dose. No final-medium
+        volume, percentage basis, density or chemical grounding is inferred. Locator=original
+        recipe text; accessed=2026-10-08T14:48:27.082797+00:00; capture SHA256=c32d195d9f14ce56e2d0b8bddf52d1a78b47da62d9bb938373b8a6d43e20a1e2.'
+  - preferred_term: MgCl2・6H2O
+    notes: |-
+      Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component
+
+      Source batch input: 4.18 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+    term:
+      id: CHEBI:86345
+      label: magnesium dichloride hexahydrate
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "MgCl2・6H2O",
+                  "volume": 4.18,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001013"
+      explanation: 'solutions[0].composition[5].concentration: Source batch input:
+        4.18 g. Final preparation volume is not independently established; the unsupported
+        g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+        No final-medium volume, percentage basis, density or chemical grounding is
+        inferred. Locator=components[1].items[5]; accessed=2026-10-08T14:42:50.881844+00:00;
+        capture SHA256=bf09d4cf728597024c4add694aa5abc8c9d76b37f6e501dd2f213b0133515865.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268
+      supports: SUPPORT
+      snippet: MgCl2·6H2O 4.18 g
+      explanation: 'solutions[0].composition[5].notes: Original table corroborates
+        exact form and batch input at this preparation stage. A water input or stock
+        label does not establish final volume or a per-liter dose. No final-medium
+        volume, percentage basis, density or chemical grounding is inferred. Locator=original
+        recipe text; accessed=2026-10-08T14:48:27.082797+00:00; capture SHA256=c32d195d9f14ce56e2d0b8bddf52d1a78b47da62d9bb938373b8a6d43e20a1e2.'
+  - preferred_term: KCl
+    notes: |-
+      Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component
+
+      Source batch input: 0.33 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+    term:
+      id: CHEBI:32588
+      label: potassium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32588
+      label: potassium chloride
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "KCl",
+                  "volume": 0.33,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001017"
+      explanation: 'solutions[0].composition[6].concentration: Source batch input:
+        0.33 g. Final preparation volume is not independently established; the unsupported
+        g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+        No final-medium volume, percentage basis, density or chemical grounding is
+        inferred. Locator=components[1].items[6]; accessed=2026-10-08T14:42:50.881844+00:00;
+        capture SHA256=bf09d4cf728597024c4add694aa5abc8c9d76b37f6e501dd2f213b0133515865.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268
+      supports: SUPPORT
+      snippet: KCl 0.33 g
+      explanation: 'solutions[0].composition[6].notes: Original table corroborates
+        exact form and batch input at this preparation stage. A water input or stock
+        label does not establish final volume or a per-liter dose. No final-medium
+        volume, percentage basis, density or chemical grounding is inferred. Locator=original
+        recipe text; accessed=2026-10-08T14:48:27.082797+00:00; capture SHA256=c32d195d9f14ce56e2d0b8bddf52d1a78b47da62d9bb938373b8a6d43e20a1e2.'
+  - preferred_term: NiCl2・6H2O
+    notes: |-
+      Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component
+
+      Source batch input: 0.5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+    term:
+      id: CHEBI:34887
+      label: nickel dichloride
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "NiCl2・6H2O",
+                  "volume": 0.5,
+                  "unit": "mg",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001022"
+      explanation: 'solutions[0].composition[7].concentration: Source batch input:
+        0.5 mg. Final preparation volume is not independently established; the unsupported
+        g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+        No final-medium volume, percentage basis, density or chemical grounding is
+        inferred. Locator=components[1].items[7]; accessed=2026-10-08T14:42:50.881844+00:00;
+        capture SHA256=bf09d4cf728597024c4add694aa5abc8c9d76b37f6e501dd2f213b0133515865.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268
+      supports: SUPPORT
+      snippet: NiCl2·6H2O 0.5 mg
+      explanation: 'solutions[0].composition[7].notes: Original table corroborates
+        exact form and batch input at this preparation stage. A water input or stock
+        label does not establish final volume or a per-liter dose. No final-medium
+        volume, percentage basis, density or chemical grounding is inferred. Locator=original
+        recipe text; accessed=2026-10-08T14:48:27.082797+00:00; capture SHA256=c32d195d9f14ce56e2d0b8bddf52d1a78b47da62d9bb938373b8a6d43e20a1e2.'
+  - preferred_term: Na2SeO3・5H2O
+    notes: |-
+      Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component
+
+      Source batch input: 0.5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+    term:
+      id: CHEBI:131361
+      label: disodium selenite pentahydrate
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Na2SeO3・5H2O",
+                  "volume": 0.5,
+                  "unit": "mg",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001046"
+      explanation: 'solutions[0].composition[8].concentration: Source batch input:
+        0.5 mg. Final preparation volume is not independently established; the unsupported
+        g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+        No final-medium volume, percentage basis, density or chemical grounding is
+        inferred. Locator=components[1].items[8]; accessed=2026-10-08T14:42:50.881844+00:00;
+        capture SHA256=bf09d4cf728597024c4add694aa5abc8c9d76b37f6e501dd2f213b0133515865.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268
+      supports: SUPPORT
+      snippet: Na2SeO3·5H2O 0.5 mg
+      explanation: 'solutions[0].composition[8].notes: Original table corroborates
+        exact form and batch input at this preparation stage. A water input or stock
+        label does not establish final volume or a per-liter dose. No final-medium
+        volume, percentage basis, density or chemical grounding is inferred. Locator=original
+        recipe text; accessed=2026-10-08T14:48:27.082797+00:00; capture SHA256=c32d195d9f14ce56e2d0b8bddf52d1a78b47da62d9bb938373b8a6d43e20a1e2.'
+  - preferred_term: Fe(NH4)2(SO4)2・6H2O
+    notes: |-
+      Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component
+
+      Source batch input: 0.01 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+    term:
+      id: CHEBI:76181
+      label: ferrous ammonium sulfate hexahydrate
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Fe(NH4)2(SO4)2・6H2O",
+                  "volume": 0.01,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001076"
+      explanation: 'solutions[0].composition[9].concentration: Source batch input:
+        0.01 g. Final preparation volume is not independently established; the unsupported
+        g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+        No final-medium volume, percentage basis, density or chemical grounding is
+        inferred. Locator=components[1].items[9]; accessed=2026-10-08T14:42:50.881844+00:00;
+        capture SHA256=bf09d4cf728597024c4add694aa5abc8c9d76b37f6e501dd2f213b0133515865.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268
+      supports: SUPPORT
+      snippet: Fe(NH4)2(SO4)2·6H2O 0.01 g
+      explanation: 'solutions[0].composition[9].notes: Original table corroborates
+        exact form and batch input at this preparation stage. A water input or stock
+        label does not establish final volume or a per-liter dose. No final-medium
+        volume, percentage basis, density or chemical grounding is inferred. Locator=original
+        recipe text; accessed=2026-10-08T14:48:27.082797+00:00; capture SHA256=c32d195d9f14ce56e2d0b8bddf52d1a78b47da62d9bb938373b8a6d43e20a1e2.'
+  notes: |-
+    Source stock addition: 100 ml = 0.1 L per receiving batch, not grams per liter or a dose per final liter.
+
+    Expand only this named preparation, not the complete referenced medium. Water input does not establish final stock volume; no final-medium rate is inferred.
+  solutions:
+  - preferred_term: Trace minerals (see Medium [M142])
+    composition:
+    - preferred_term: Distilled water
+      concentration:
+        value: '1'
+        unit: L
+      notes: 'Source water batch input: 1 L = 1 L. This is not a measured final volume.'
+      evidence:
+      - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142
+        supports: SUPPORT
+        snippet: |-
+          {
+                    "component_name": "Distilled water",
+                    "volume": 1,
+                    "unit": "L",
+                    "gmo": "http://purl.jp/bio/10/gmo/GMO_001001"
+        explanation: 'solutions[0].solutions[0].composition[0].concentration: Source
+          water batch input: 1 L = 1 L. This is not a measured final volume. No final-medium
+          volume, percentage basis, density or chemical grounding is inferred. Locator=components[2].items[0];
+          accessed=2026-10-08T13:22:45.018884+00:00; capture SHA256=610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33.'
+      - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151
+        supports: SUPPORT
+        snippet: Distilled water 1.0 L
+        explanation: 'solutions[0].solutions[0].composition[0].notes: Original table
+          corroborates exact form and batch input at this preparation stage. A water
+          input or stock label does not establish final volume or a per-liter dose.
+          No final-medium volume, percentage basis, density or chemical grounding
+          is inferred. Locator=original recipe text; accessed=2026-10-08T13:22:47.001452+00:00;
+          capture SHA256=6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7.'
+    - preferred_term: MgSO4・7H2O
+      notes: 'Source batch input: 3 g. Final preparation volume is not independently
+        established; the source batch amount is retained without asserting a final
+        concentration.'
+      evidence:
+      - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142
+        supports: SUPPORT
+        snippet: |-
+          {
+                    "component_name": "MgSO4・7H2O",
+                    "volume": 3,
+                    "unit": "g",
+                    "gmo": "http://purl.jp/bio/10/gmo/GMO_001002"
+        explanation: 'solutions[0].solutions[0].composition[1].notes: Source batch
+          input: 3 g. Final preparation volume is not independently established; the
+          source batch amount is retained without asserting a final concentration.
+          No final-medium volume, percentage basis, density or chemical grounding
+          is inferred. Locator=components[2].items[1]; accessed=2026-10-08T13:22:45.018884+00:00;
+          capture SHA256=610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33.'
+      - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151
+        supports: SUPPORT
+        snippet: MgSO4·7H2O 3.0 g
+        explanation: 'solutions[0].solutions[0].composition[1].notes: Original table
+          corroborates exact form and batch input at this preparation stage. A water
+          input or stock label does not establish final volume or a per-liter dose.
+          No final-medium volume, percentage basis, density or chemical grounding
+          is inferred. Locator=original recipe text; accessed=2026-10-08T13:22:47.001452+00:00;
+          capture SHA256=6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7.'
+    - preferred_term: NaCl
+      notes: 'Source batch input: 1 g. Final preparation volume is not independently
+        established; the source batch amount is retained without asserting a final
+        concentration.'
+      evidence:
+      - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142
+        supports: SUPPORT
+        snippet: |-
+          {
+                    "component_name": "NaCl",
+                    "volume": 1,
+                    "unit": "g",
+                    "gmo": "http://purl.jp/bio/10/gmo/GMO_001004"
+        explanation: 'solutions[0].solutions[0].composition[2].notes: Source batch
+          input: 1 g. Final preparation volume is not independently established; the
+          source batch amount is retained without asserting a final concentration.
+          No final-medium volume, percentage basis, density or chemical grounding
+          is inferred. Locator=components[2].items[2]; accessed=2026-10-08T13:22:45.018884+00:00;
+          capture SHA256=610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33.'
+      - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151
+        supports: SUPPORT
+        snippet: NaCl 1.0 g
+        explanation: 'solutions[0].solutions[0].composition[2].notes: Original table
+          corroborates exact form and batch input at this preparation stage. A water
+          input or stock label does not establish final volume or a per-liter dose.
+          No final-medium volume, percentage basis, density or chemical grounding
+          is inferred. Locator=original recipe text; accessed=2026-10-08T13:22:47.001452+00:00;
+          capture SHA256=6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7.'
+    - preferred_term: CaCl2・2H2O
+      notes: 'Source batch input: 0.1 g. Final preparation volume is not independently
+        established; the source batch amount is retained without asserting a final
+        concentration.'
+      evidence:
+      - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142
+        supports: SUPPORT
+        snippet: |-
+          {
+                    "component_name": "CaCl2・2H2O",
+                    "volume": 0.1,
+                    "unit": "g",
+                    "gmo": "http://purl.jp/bio/10/gmo/GMO_001005"
+        explanation: 'solutions[0].solutions[0].composition[3].notes: Source batch
+          input: 0.1 g. Final preparation volume is not independently established;
+          the source batch amount is retained without asserting a final concentration.
+          No final-medium volume, percentage basis, density or chemical grounding
+          is inferred. Locator=components[2].items[3]; accessed=2026-10-08T13:22:45.018884+00:00;
+          capture SHA256=610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33.'
+      - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151
+        supports: SUPPORT
+        snippet: CaCl2·2H2O 0.1 g
+        explanation: 'solutions[0].solutions[0].composition[3].notes: Original table
+          corroborates exact form and batch input at this preparation stage. A water
+          input or stock label does not establish final volume or a per-liter dose.
+          No final-medium volume, percentage basis, density or chemical grounding
+          is inferred. Locator=original recipe text; accessed=2026-10-08T13:22:47.001452+00:00;
+          capture SHA256=6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7.'
+    - preferred_term: Na2MoO4・2H2O
+      notes: 'Source batch input: 0.01 g. Final preparation volume is not independently
+        established; the source batch amount is retained without asserting a final
+        concentration.'
+      evidence:
+      - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142
+        supports: SUPPORT
+        snippet: |-
+          {
+                    "component_name": "Na2MoO4・2H2O",
+                    "volume": 0.01,
+                    "unit": "g",
+                    "gmo": "http://purl.jp/bio/10/gmo/GMO_001011"
+        explanation: 'solutions[0].solutions[0].composition[4].notes: Source batch
+          input: 0.01 g. Final preparation volume is not independently established;
+          the source batch amount is retained without asserting a final concentration.
+          No final-medium volume, percentage basis, density or chemical grounding
+          is inferred. Locator=components[2].items[4]; accessed=2026-10-08T13:22:45.018884+00:00;
+          capture SHA256=610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33.'
+      - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151
+        supports: SUPPORT
+        snippet: Na2MoO4·2H2O 0.01 g
+        explanation: 'solutions[0].solutions[0].composition[4].notes: Original table
+          corroborates exact form and batch input at this preparation stage. A water
+          input or stock label does not establish final volume or a per-liter dose.
+          No final-medium volume, percentage basis, density or chemical grounding
+          is inferred. Locator=original recipe text; accessed=2026-10-08T13:22:47.001452+00:00;
+          capture SHA256=6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7.'
+    - preferred_term: H3BO3
+      notes: 'Source batch input: 0.01 g. Final preparation volume is not independently
+        established; the source batch amount is retained without asserting a final
+        concentration.'
+      evidence:
+      - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142
+        supports: SUPPORT
+        snippet: |-
+          {
+                    "component_name": "H3BO3",
+                    "volume": 0.01,
+                    "unit": "g",
+                    "gmo": "http://purl.jp/bio/10/gmo/GMO_001015"
+        explanation: 'solutions[0].solutions[0].composition[5].notes: Source batch
+          input: 0.01 g. Final preparation volume is not independently established;
+          the source batch amount is retained without asserting a final concentration.
+          No final-medium volume, percentage basis, density or chemical grounding
+          is inferred. Locator=components[2].items[5]; accessed=2026-10-08T13:22:45.018884+00:00;
+          capture SHA256=610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33.'
+      - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151
+        supports: SUPPORT
+        snippet: H3BO3 0.01 g
+        explanation: 'solutions[0].solutions[0].composition[5].notes: Original table
+          corroborates exact form and batch input at this preparation stage. A water
+          input or stock label does not establish final volume or a per-liter dose.
+          No final-medium volume, percentage basis, density or chemical grounding
+          is inferred. Locator=original recipe text; accessed=2026-10-08T13:22:47.001452+00:00;
+          capture SHA256=6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7.'
+    - preferred_term: FeSO4・7H2O
+      notes: 'Source batch input: 0.1 g. Final preparation volume is not independently
+        established; the source batch amount is retained without asserting a final
+        concentration.'
+      evidence:
+      - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142
+        supports: SUPPORT
+        snippet: |-
+          {
+                    "component_name": "FeSO4・7H2O",
+                    "volume": 0.1,
+                    "unit": "g",
+                    "gmo": "http://purl.jp/bio/10/gmo/GMO_001016"
+        explanation: 'solutions[0].solutions[0].composition[6].notes: Source batch
+          input: 0.1 g. Final preparation volume is not independently established;
+          the source batch amount is retained without asserting a final concentration.
+          No final-medium volume, percentage basis, density or chemical grounding
+          is inferred. Locator=components[2].items[6]; accessed=2026-10-08T13:22:45.018884+00:00;
+          capture SHA256=610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33.'
+      - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151
+        supports: SUPPORT
+        snippet: FeSO4·7H2O 0.1 g
+        explanation: 'solutions[0].solutions[0].composition[6].notes: Original table
+          corroborates exact form and batch input at this preparation stage. A water
+          input or stock label does not establish final volume or a per-liter dose.
+          No final-medium volume, percentage basis, density or chemical grounding
+          is inferred. Locator=original recipe text; accessed=2026-10-08T13:22:47.001452+00:00;
+          capture SHA256=6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7.'
+    - preferred_term: ZnSO4・7H2O
+      notes: 'Source batch input: 0.1 g. Final preparation volume is not independently
+        established; the source batch amount is retained without asserting a final
+        concentration.'
+      evidence:
+      - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142
+        supports: SUPPORT
+        snippet: |-
+          {
+                    "component_name": "ZnSO4・7H2O",
+                    "volume": 0.1,
+                    "unit": "g",
+                    "gmo": "http://purl.jp/bio/10/gmo/GMO_001023"
+        explanation: 'solutions[0].solutions[0].composition[7].notes: Source batch
+          input: 0.1 g. Final preparation volume is not independently established;
+          the source batch amount is retained without asserting a final concentration.
+          No final-medium volume, percentage basis, density or chemical grounding
+          is inferred. Locator=components[2].items[7]; accessed=2026-10-08T13:22:45.018884+00:00;
+          capture SHA256=610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33.'
+      - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151
+        supports: SUPPORT
+        snippet: ZnSO4·7H2O 0.1 g
+        explanation: 'solutions[0].solutions[0].composition[7].notes: Original table
+          corroborates exact form and batch input at this preparation stage. A water
+          input or stock label does not establish final volume or a per-liter dose.
+          No final-medium volume, percentage basis, density or chemical grounding
+          is inferred. Locator=original recipe text; accessed=2026-10-08T13:22:47.001452+00:00;
+          capture SHA256=6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7.'
+    - preferred_term: CuSO4・5H2O
+      notes: 'Source batch input: 0.01 g. Final preparation volume is not independently
+        established; the source batch amount is retained without asserting a final
+        concentration.'
+      evidence:
+      - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142
+        supports: SUPPORT
+        snippet: |-
+          {
+                    "component_name": "CuSO4・5H2O",
+                    "volume": 0.01,
+                    "unit": "g",
+                    "gmo": "http://purl.jp/bio/10/gmo/GMO_001039"
+        explanation: 'solutions[0].solutions[0].composition[8].notes: Source batch
+          input: 0.01 g. Final preparation volume is not independently established;
+          the source batch amount is retained without asserting a final concentration.
+          No final-medium volume, percentage basis, density or chemical grounding
+          is inferred. Locator=components[2].items[8]; accessed=2026-10-08T13:22:45.018884+00:00;
+          capture SHA256=610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33.'
+      - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151
+        supports: SUPPORT
+        snippet: CuSO4·5H2O 0.01 g
+        explanation: 'solutions[0].solutions[0].composition[8].notes: Original table
+          corroborates exact form and batch input at this preparation stage. A water
+          input or stock label does not establish final volume or a per-liter dose.
+          No final-medium volume, percentage basis, density or chemical grounding
+          is inferred. Locator=original recipe text; accessed=2026-10-08T13:22:47.001452+00:00;
+          capture SHA256=6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7.'
+    - preferred_term: CoSO4・7H2O
+      notes: 'Source batch input: 0.1 g. Final preparation volume is not independently
+        established; the source batch amount is retained without asserting a final
+        concentration.'
+      evidence:
+      - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142
+        supports: SUPPORT
+        snippet: |-
+          {
+                    "component_name": "CoSO4・7H2O",
+                    "volume": 0.1,
+                    "unit": "g",
+                    "gmo": "http://purl.jp/bio/10/gmo/GMO_001050"
+        explanation: 'solutions[0].solutions[0].composition[9].notes: Source batch
+          input: 0.1 g. Final preparation volume is not independently established;
+          the source batch amount is retained without asserting a final concentration.
+          No final-medium volume, percentage basis, density or chemical grounding
+          is inferred. Locator=components[2].items[9]; accessed=2026-10-08T13:22:45.018884+00:00;
+          capture SHA256=610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33.'
+      - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151
+        supports: SUPPORT
+        snippet: CoSO4·7H2O 0.1 g
+        explanation: 'solutions[0].solutions[0].composition[9].notes: Original table
+          corroborates exact form and batch input at this preparation stage. A water
+          input or stock label does not establish final volume or a per-liter dose.
+          No final-medium volume, percentage basis, density or chemical grounding
+          is inferred. Locator=original recipe text; accessed=2026-10-08T13:22:47.001452+00:00;
+          capture SHA256=6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7.'
+    - preferred_term: Nitrilotriacetic acid
+      notes: 'Source batch input: 1.5 g. Final preparation volume is not independently
+        established; the source batch amount is retained without asserting a final
+        concentration.'
+      evidence:
+      - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142
+        supports: SUPPORT
+        snippet: |-
+          {
+                    "component_name": "Nitrilotriacetic acid",
+                    "volume": 1.5,
+                    "unit": "g",
+                    "gmo": "http://purl.jp/bio/10/gmo/GMO_001053"
+        explanation: 'solutions[0].solutions[0].composition[10].notes: Source batch
+          input: 1.5 g. Final preparation volume is not independently established;
+          the source batch amount is retained without asserting a final concentration.
+          No final-medium volume, percentage basis, density or chemical grounding
+          is inferred. Locator=components[2].items[10]; accessed=2026-10-08T13:22:45.018884+00:00;
+          capture SHA256=610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33.'
+      - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151
+        supports: SUPPORT
+        snippet: Nitrilotriacetic acid 1.5 g
+        explanation: 'solutions[0].solutions[0].composition[10].notes: Original table
+          corroborates exact form and batch input at this preparation stage. A water
+          input or stock label does not establish final volume or a per-liter dose.
+          No final-medium volume, percentage basis, density or chemical grounding
+          is inferred. Locator=original recipe text; accessed=2026-10-08T13:22:47.001452+00:00;
+          capture SHA256=6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7.'
+    - preferred_term: MnSO4・xH2O
+      notes: 'Source batch input: 0.5 g. Final preparation volume is not independently
+        established; the source batch amount is retained without asserting a final
+        concentration.'
+      evidence:
+      - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142
+        supports: SUPPORT
+        snippet: |-
+          {
+                    "component_name": "MnSO4・xH2O",
+                    "volume": 0.5,
+                    "unit": "g",
+                    "gmo": "http://purl.jp/bio/10/gmo/GMO_001065"
+        explanation: 'solutions[0].solutions[0].composition[11].notes: Source batch
+          input: 0.5 g. Final preparation volume is not independently established;
+          the source batch amount is retained without asserting a final concentration.
+          No final-medium volume, percentage basis, density or chemical grounding
+          is inferred. Locator=components[2].items[11]; accessed=2026-10-08T13:22:45.018884+00:00;
+          capture SHA256=610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33.'
+      - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151
+        supports: SUPPORT
+        snippet: MnSO4·xH2O 0.5 g
+        explanation: 'solutions[0].solutions[0].composition[11].notes: Original table
+          corroborates exact form and batch input at this preparation stage. A water
+          input or stock label does not establish final volume or a per-liter dose.
+          No final-medium volume, percentage basis, density or chemical grounding
+          is inferred. Locator=original recipe text; accessed=2026-10-08T13:22:47.001452+00:00;
+          capture SHA256=6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7.'
+    - preferred_term: AlK(SO4)2
+      notes: 'Source batch input: 0.01 g. Final preparation volume is not independently
+        established; the source batch amount is retained without asserting a final
+        concentration.'
+      evidence:
+      - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142
+        supports: SUPPORT
+        snippet: |-
+          {
+                    "component_name": "AlK(SO4)2",
+                    "volume": 0.01,
+                    "unit": "g",
+                    "gmo": "http://purl.jp/bio/10/gmo/GMO_001088"
+        explanation: 'solutions[0].solutions[0].composition[12].notes: Source batch
+          input: 0.01 g. Final preparation volume is not independently established;
+          the source batch amount is retained without asserting a final concentration.
+          No final-medium volume, percentage basis, density or chemical grounding
+          is inferred. Locator=components[2].items[12]; accessed=2026-10-08T13:22:45.018884+00:00;
+          capture SHA256=610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33.'
+      - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151
+        supports: SUPPORT
+        snippet: AlK(SO4)2 0.01 g
+        explanation: 'solutions[0].solutions[0].composition[12].notes: Original table
+          corroborates exact form and batch input at this preparation stage. A water
+          input or stock label does not establish final volume or a per-liter dose.
+          No final-medium volume, percentage basis, density or chemical grounding
+          is inferred. Locator=original recipe text; accessed=2026-10-08T13:22:47.001452+00:00;
+          capture SHA256=6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7.'
+    notes: |-
+      Cross-reference to Medium M142
+
+      Source stock addition: 10 ml = 0.01 L per receiving batch, not grams per liter or a dose per final liter. This dose belongs to the enclosing stock preparation, not directly to the final medium.
+
+      Expand only this named preparation, not the complete referenced medium. Water input does not establish final stock volume; no final-medium rate is inferred.
+    concentration:
+      value: '0.01'
+      unit: L
+    name: Unknown solution
+    solutions:
+    - preferred_term: KOH solution
+      composition: []
+      notes: Stock pH-adjustment reagent with no fixed dose or numeric strength.
+    preparation_notes: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH
+      solution. Then proceed to add minerals. Adjust final pH to 7.0.
+evidence:
+- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260
+  supports: SUPPORT
+  snippet: |-
+    {
+              "component_name": "MJ(-N) synthetic seawater (see below)",
+              "volume": 100,
+              "unit": "ml"
+  explanation: |-
+    solutions[0].concentration: Source stock addition: 100 ml = 0.1 L per receiving batch, not grams per liter or a dose per final liter. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[0].items[7]; accessed=2026-10-08T14:42:50.881844+00:00; capture SHA256=bf09d4cf728597024c4add694aa5abc8c9d76b37f6e501dd2f213b0133515865.
+
+    Additional exact excerpt: {
+              "component_name": "Trace minerals (see Medium [M142])",
+              "volume": 10,
+              "unit": "ml"
+    solutions[0].solutions[0].concentration: Source stock addition: 10 ml = 0.01 L per receiving batch, not grams per liter or a dose per final liter. This dose belongs to the enclosing stock preparation, not directly to the final medium. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[1].items[10]; accessed=2026-10-08T14:42:50.881844+00:00; capture SHA256=bf09d4cf728597024c4add694aa5abc8c9d76b37f6e501dd2f213b0133515865.
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268
+  supports: SUPPORT
+  snippet: MJ(-N) synthetic seawater (see below) 100.0 ml
+  explanation: |-
+    solutions[0].concentration: Original table corroborates exact form and batch input at this preparation stage. A water input or stock label does not establish final volume or a per-liter dose. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T14:48:27.082797+00:00; capture SHA256=c32d195d9f14ce56e2d0b8bddf52d1a78b47da62d9bb938373b8a6d43e20a1e2.
+
+    Additional exact excerpt: MJ(-N) synthetic seawater:
+    solutions[0].notes: Expand only this named preparation, not the complete referenced medium. Water input does not establish final stock volume; no final-medium rate is inferred. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T14:48:27.082797+00:00; capture SHA256=c32d195d9f14ce56e2d0b8bddf52d1a78b47da62d9bb938373b8a6d43e20a1e2.
+
+    Additional exact excerpt: Trace minerals (see Medium No. 151) 10.0 ml
+    solutions[0].solutions[0].concentration: Original table corroborates exact form and batch input at this preparation stage. A water input or stock label does not establish final volume or a per-liter dose. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T14:48:27.082797+00:00; capture SHA256=c32d195d9f14ce56e2d0b8bddf52d1a78b47da62d9bb938373b8a6d43e20a1e2.
+
+    Additional exact excerpt: Adjust pH to 7.5.
+    preparation_steps[0].description: Recipe-specific preparation order and stage; no inferred percentage basis, pore size, addition dose or final volume. Example aliquot/vessel sizes are not batch denominators. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T14:48:27.082797+00:00; capture SHA256=c32d195d9f14ce56e2d0b8bddf52d1a78b47da62d9bb938373b8a6d43e20a1e2.
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151
+  supports: SUPPORT
+  snippet: 'Trace minerals:'
+  explanation: |-
+    solutions[0].solutions[0].notes: Expand only this named preparation, not the complete referenced medium. Water input does not establish final stock volume; no final-medium rate is inferred. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T13:22:47.001452+00:00; capture SHA256=6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7.
+
+    Additional exact excerpt: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to add minerals. Adjust final pH to 7.0.
+    solutions[0].solutions[0].solutions[0].notes: Unquantified trace-stock titrant only. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T13:22:47.001452+00:00; capture SHA256=6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7.
+
+    Additional exact excerpt: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to add minerals. Adjust final pH to 7.0.
+    solutions[0].solutions[0].preparation_notes: This preparation belongs only to the named stock, not the receiving medium. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T13:22:47.001452+00:00; capture SHA256=6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7.
+- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142
+  supports: SUPPORT
+  snippet: |-
+    {
+              "component_name": "KOH solution",
+              "gmo": "http://purl.jp/bio/10/gmo/GMO_001903"
+  explanation: 'solutions[0].solutions[0].solutions[0].notes: Stock pH-adjustment
+    reagent with no fixed dose or numeric strength. No final-medium volume, percentage
+    basis, density or chemical grounding is inferred. Locator=components[2].items[13];
+    accessed=2026-10-08T13:22:45.018884+00:00; capture SHA256=610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33.'
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.5.
+references:
+- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M260
+  title: MJ/YPGS Medium
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-08;
+    capture_sha256=bf09d4cf728597024c4add694aa5abc8c9d76b37f6e501dd2f213b0133515865.
+    Authors and publication year not supplied. Recipe quantities/preparation only;
+    chemical groundings, legacy quality flags and growth claims are not recertified.
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=268
+  title: Medium data
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-08; capture_sha256=c32d195d9f14ce56e2d0b8bddf52d1a78b47da62d9bb938373b8a6d43e20a1e2.
+    Authors and publication year not supplied. Recipe quantities/preparation only;
+    chemical groundings, legacy quality flags and growth claims are not recertified.
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151
+  title: Medium data
+  notes: source_type=culture_collection_page; discovery_mode=cross_reference; accessed_on=2026-10-08;
+    capture_sha256=6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7.
+    Authors and publication year not supplied. Recipe quantities/preparation only;
+    chemical groundings, legacy quality flags and growth claims are not recertified.
+- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142
+  title: Pyrococcus Medium
+  notes: source_type=dataset; discovery_mode=cross_reference; accessed_on=2026-10-08;
+    capture_sha256=610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33.
+    Authors and publication year not supplied. Recipe quantities/preparation only;
+    chemical groundings, legacy quality flags and growth claims are not recertified.

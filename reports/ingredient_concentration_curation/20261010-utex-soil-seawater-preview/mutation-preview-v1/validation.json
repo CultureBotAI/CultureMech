@@ -1,0 +1,300 @@
+{
+  "terminal": true,
+  "passed": true,
+  "plan_sha256": "02e2766eff09cf1aa9ec5f235f7ea660f5f52f1fddbeca535dc5bbf125218899",
+  "records_edited": 0,
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/soil_seawater_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/validation-00.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/soil_seawater_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/validation-01.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/proposed/soil_seawater_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/validation-02.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/proposed/soil_seawater_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/validation-03.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/1_2_soil_seawater_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/validation-04.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/1_2_soil_seawater_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/validation-05.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/proposed/1_2_soil_seawater_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/validation-06.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/proposed/1_2_soil_seawater_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/validation-07.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/1_3_soil_seawater_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/validation-08.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/1_3_soil_seawater_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/validation-09.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/proposed/1_3_soil_seawater_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/validation-10.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/proposed/1_3_soil_seawater_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/validation-11.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/1_4_soil_seawater_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/validation-12.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/1_4_soil_seawater_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/validation-13.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/proposed/1_4_soil_seawater_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/validation-14.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/proposed/1_4_soil_seawater_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/validation-15.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/1_5_soil_seawater_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/validation-16.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/1_5_soil_seawater_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/validation-17.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/proposed/1_5_soil_seawater_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/validation-18.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/proposed/1_5_soil_seawater_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/validation-19.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/2x_soil_seawater_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/validation-20.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/2x_soil_seawater_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/validation-21.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/proposed/2x_soil_seawater_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/validation-22.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/proposed/2x_soil_seawater_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/validation-23.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/5_3_soil_seawater_agar_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/validation-24.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/5_3_soil_seawater_agar_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/validation-25.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/proposed/5_3_soil_seawater_agar_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/validation-26.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/proposed/5_3_soil_seawater_agar_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/validation-27.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    }
+  ],
+  "totals": {
+    "concentration_fields": 15,
+    "optional_variants": 5,
+    "evidence_entries": 35
+  },
+  "counterfactuals_rejected": {
+    "optional_dose": 5,
+    "value": 15,
+    "unit": 15,
+    "basis": 30
+  },
+  "limitation": "No guarded application or completed general scientific review; all source and publication limitations remain explicit."
+}

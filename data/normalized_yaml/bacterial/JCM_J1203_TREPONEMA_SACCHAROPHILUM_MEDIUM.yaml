@@ -11,223 +11,585 @@ media_term:
   term:
     id: mediadive.medium:J1203
     label: TREPONEMA SACCHAROPHILUM MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203
+notes: |-
+  Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203
 
-
+  Superseded historical provenance (not a current formulation claim):
   Commercial Product: LB Medium (Luria-Bertani, Miller formulation)
-
   Supplier: Multiple suppliers (Difco, Sigma, etc.)
-
   Catalog: Multiple (L3522 Sigma, 244520 BD)
-
   Source: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-
   Accessed: 2026-03-28
 
+  Constituent composition researched from product specification.
 
-  Constituent composition researched from product specification.'
+  The earlier LB commercial-product expansion is superseded: the exact recipe specifies a methylbutyric acid input instead. Remove only the reviewed LB supplier nodes, preserving genuine peptone, yeast extract and salt entries. Restore the acid at its source preparation stage, without inventing a chemical ID.
 ingredients:
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-  concentration:
-    value: '0.11976'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  notes: 'Source batch input: 0.12 g. Final preparation volume is not independently
+    established; the unsupported g/L assertion is withdrawn, not replaced by an assumed
+    one-liter concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J1203
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 1,
+                              "compound": "CaCl2 x 2 H2O",
+                              "compound_id": 7,
+                              "amount": 0.12,
+                              "unit": "g",
+                              "g_l": 0.11976,
+                              "mmol_l": 0.814614,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[0].concentration: Source batch input: 0.12 g. Final
+      preparation volume is not independently established; the unsupported g/L assertion
+      is withdrawn, not replaced by an assumed one-liter concentration. No final-medium
+      volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[0];
+      accessed=2026-10-08T20:33:36.630402+00:00; capture SHA256=b18a76a2f2c477e3f8b375011da4d4899b476d046e41e76e30af7870d7429e31.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203
+    supports: SUPPORT
+    snippet: CaCl2·2H2O 0.12 g
+    explanation: 'ingredients[0].notes: Original table corroborates the source batch
+      input and exact preparation scope. Provider stock g_l, when retained, is separately
+      attributed to the API; this quote does not establish final volume. No final-medium
+      volume, percentage basis, density or chemical grounding is inferred. Locator=original
+      recipe text; accessed=2026-10-08T20:33:37.880950+00:00; capture SHA256=09c76a99bd8b45736f9319e7d87c2c0013f28b1e507408cace54ded04e155343.'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
-  concentration:
-    value: '0.189621'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
+  notes: 'Source batch input: 0.19 g. Final preparation volume is not independently
+    established; the unsupported g/L assertion is withdrawn, not replaced by an assumed
+    one-liter concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J1203
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 2,
+                              "compound": "MgSO4 x 7 H2O",
+                              "compound_id": 8,
+                              "amount": 0.19,
+                              "unit": "g",
+                              "g_l": 0.189621,
+                              "mmol_l": 0.769327,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[1].concentration: Source batch input: 0.19 g. Final
+      preparation volume is not independently established; the unsupported g/L assertion
+      is withdrawn, not replaced by an assumed one-liter concentration. No final-medium
+      volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[1];
+      accessed=2026-10-08T20:33:36.630402+00:00; capture SHA256=b18a76a2f2c477e3f8b375011da4d4899b476d046e41e76e30af7870d7429e31.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203
+    supports: SUPPORT
+    snippet: MgSO4·7H2O 0.19 g
+    explanation: 'ingredients[1].notes: Original table corroborates the source batch
+      input and exact preparation scope. Provider stock g_l, when retained, is separately
+      attributed to the API; this quote does not establish final volume. No final-medium
+      volume, percentage basis, density or chemical grounding is inferred. Locator=original
+      recipe text; accessed=2026-10-08T20:33:37.880950+00:00; capture SHA256=09c76a99bd8b45736f9319e7d87c2c0013f28b1e507408cace54ded04e155343.'
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
-  concentration:
-    value: '0.449102'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
+  notes: 'Source batch input: 0.45 g. Final preparation volume is not independently
+    established; the unsupported g/L assertion is withdrawn, not replaced by an assumed
+    one-liter concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J1203
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 3,
+                              "compound": "KH2PO4",
+                              "compound_id": 11,
+                              "amount": 0.45,
+                              "unit": "g",
+                              "g_l": 0.449102,
+                              "mmol_l": 3.30013,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[2].concentration: Source batch input: 0.45 g. Final
+      preparation volume is not independently established; the unsupported g/L assertion
+      is withdrawn, not replaced by an assumed one-liter concentration. No final-medium
+      volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[2];
+      accessed=2026-10-08T20:33:36.630402+00:00; capture SHA256=b18a76a2f2c477e3f8b375011da4d4899b476d046e41e76e30af7870d7429e31.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203
+    supports: SUPPORT
+    snippet: KH2PO4 0.45 g
+    explanation: 'ingredients[2].notes: Original table corroborates the source batch
+      input and exact preparation scope. Provider stock g_l, when retained, is separately
+      attributed to the API; this quote does not establish final volume. No final-medium
+      volume, percentage basis, density or chemical grounding is inferred. Locator=original
+      recipe text; accessed=2026-10-08T20:33:37.880950+00:00; capture SHA256=09c76a99bd8b45736f9319e7d87c2c0013f28b1e507408cace54ded04e155343.'
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  concentration:
-    value: '0.449102'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  notes: 'Source batch input: 0.45 g. Final preparation volume is not independently
+    established; the unsupported g/L assertion is withdrawn, not replaced by an assumed
+    one-liter concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J1203
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 4,
+                              "compound": "K2HPO4",
+                              "compound_id": 10,
+                              "amount": 0.45,
+                              "unit": "g",
+                              "g_l": 0.449102,
+                              "mmol_l": 2.57844,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[3].concentration: Source batch input: 0.45 g. Final
+      preparation volume is not independently established; the unsupported g/L assertion
+      is withdrawn, not replaced by an assumed one-liter concentration. No final-medium
+      volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[3];
+      accessed=2026-10-08T20:33:36.630402+00:00; capture SHA256=b18a76a2f2c477e3f8b375011da4d4899b476d046e41e76e30af7870d7429e31.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203
+    supports: SUPPORT
+    snippet: K2HPO4 0.45 g
+    explanation: 'ingredients[3].notes: Original table corroborates the source batch
+      input and exact preparation scope. Provider stock g_l, when retained, is separately
+      attributed to the API; this quote does not establish final volume. No final-medium
+      volume, percentage basis, density or chemical grounding is inferred. Locator=original
+      recipe text; accessed=2026-10-08T20:33:37.880950+00:00; capture SHA256=09c76a99bd8b45736f9319e7d87c2c0013f28b1e507408cace54ded04e155343.'
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
     label: sodium chloride
-  concentration:
-    value: '0.898204'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
+  notes: 'Source batch input: 0.9 g. Final preparation volume is not independently
+    established; the unsupported g/L assertion is withdrawn, not replaced by an assumed
+    one-liter concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J1203
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 5,
+                              "compound": "NaCl",
+                              "compound_id": 43,
+                              "amount": 0.9,
+                              "unit": "g",
+                              "g_l": 0.898204,
+                              "mmol_l": 15.3697,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[4].concentration: Source batch input: 0.9 g. Final preparation
+      volume is not independently established; the unsupported g/L assertion is withdrawn,
+      not replaced by an assumed one-liter concentration. No final-medium volume,
+      percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[4];
+      accessed=2026-10-08T20:33:36.630402+00:00; capture SHA256=b18a76a2f2c477e3f8b375011da4d4899b476d046e41e76e30af7870d7429e31.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203
+    supports: SUPPORT
+    snippet: NaCl 0.9 g
+    explanation: 'ingredients[4].notes: Original table corroborates the source batch
+      input and exact preparation scope. Provider stock g_l, when retained, is separately
+      attributed to the API; this quote does not establish final volume. No final-medium
+      volume, percentage basis, density or chemical grounding is inferred. Locator=original
+      recipe text; accessed=2026-10-08T20:33:37.880950+00:00; capture SHA256=09c76a99bd8b45736f9319e7d87c2c0013f28b1e507408cace54ded04e155343.'
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
     label: ammonium sulfate
-  concentration:
-    value: '0.898204'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
     label: ammonium sulfate
+  notes: 'Source batch input: 0.9 g. Final preparation volume is not independently
+    established; the unsupported g/L assertion is withdrawn, not replaced by an assumed
+    one-liter concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J1203
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 6,
+                              "compound": "(NH4)2SO4",
+                              "compound_id": 27,
+                              "amount": 0.9,
+                              "unit": "g",
+                              "g_l": 0.898204,
+                              "mmol_l": 6.79736,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[5].concentration: Source batch input: 0.9 g. Final preparation
+      volume is not independently established; the unsupported g/L assertion is withdrawn,
+      not replaced by an assumed one-liter concentration. No final-medium volume,
+      percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[5];
+      accessed=2026-10-08T20:33:36.630402+00:00; capture SHA256=b18a76a2f2c477e3f8b375011da4d4899b476d046e41e76e30af7870d7429e31.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203
+    supports: SUPPORT
+    snippet: (NH4)2SO4 0.9 g
+    explanation: 'ingredients[5].notes: Original table corroborates the source batch
+      input and exact preparation scope. Provider stock g_l, when retained, is separately
+      attributed to the API; this quote does not establish final volume. No final-medium
+      volume, percentage basis, density or chemical grounding is inferred. Locator=original
+      recipe text; accessed=2026-10-08T20:33:37.880950+00:00; capture SHA256=09c76a99bd8b45736f9319e7d87c2c0013f28b1e507408cace54ded04e155343.'
 - preferred_term: Yeast extract
-  concentration:
-    value: '1.99601'
-    unit: G_PER_L
+  notes: 'Source batch input: 2 g. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration. Source qualifier: BD-Difco.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J1203
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 7,
+                              "compound": "Yeast extract",
+                              "compound_id": 16,
+                              "attribute": "BD-Difco",
+                              "amount": 2,
+                              "unit": "g",
+                              "g_l": 1.99601,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[6].concentration: Source batch input: 2 g. Final preparation
+      volume is not independently established; the unsupported g/L assertion is withdrawn,
+      not replaced by an assumed one-liter concentration. Source qualifier: BD-Difco.
+      No final-medium volume, percentage basis, density or chemical grounding is inferred.
+      Locator=data.solutions[0].recipe[6]; accessed=2026-10-08T20:33:36.630402+00:00;
+      capture SHA256=b18a76a2f2c477e3f8b375011da4d4899b476d046e41e76e30af7870d7429e31.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203
+    supports: SUPPORT
+    snippet: Yeast extract (BD-Difco) 2.0 g
+    explanation: 'ingredients[6].notes: Original table corroborates the source batch
+      input and exact preparation scope. Provider stock g_l, when retained, is separately
+      attributed to the API; this quote does not establish final volume. No final-medium
+      volume, percentage basis, density or chemical grounding is inferred. Locator=original
+      recipe text; accessed=2026-10-08T20:33:37.880950+00:00; capture SHA256=09c76a99bd8b45736f9319e7d87c2c0013f28b1e507408cace54ded04e155343.'
 - preferred_term: Trypticase peptone
-  concentration:
-    value: '1.99601'
-    unit: G_PER_L
+  notes: 'Source batch input: 2 g. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J1203
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 8,
+                              "compound": "Trypticase peptone",
+                              "compound_id": 124,
+                              "amount": 2,
+                              "unit": "g",
+                              "g_l": 1.99601,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[7].concentration: Source batch input: 2 g. Final preparation
+      volume is not independently established; the unsupported g/L assertion is withdrawn,
+      not replaced by an assumed one-liter concentration. No final-medium volume,
+      percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[7];
+      accessed=2026-10-08T20:33:36.630402+00:00; capture SHA256=b18a76a2f2c477e3f8b375011da4d4899b476d046e41e76e30af7870d7429e31.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203
+    supports: SUPPORT
+    snippet: Trypticase peptone 2.0 g
+    explanation: 'ingredients[7].notes: Original table corroborates the source batch
+      input and exact preparation scope. Provider stock g_l, when retained, is separately
+      attributed to the API; this quote does not establish final volume. No final-medium
+      volume, percentage basis, density or chemical grounding is inferred. Locator=original
+      recipe text; accessed=2026-10-08T20:33:37.880950+00:00; capture SHA256=09c76a99bd8b45736f9319e7d87c2c0013f28b1e507408cace54ded04e155343.'
 - preferred_term: n-Butyric acid
   term:
     id: CHEBI:30772
     label: butyric acid
   concentration:
-    value: '0.4'
-    unit: G_PER_L
+    value: '0.0004'
+    unit: L
   mediaingredientmech_chebi_term:
     id: CHEBI:30772
     label: butyric acid
+  notes: 'Source liquid batch input: 0.4 ml = 0.0004 L. This is not grams per liter,
+    a dose per final liter, or a density-based mass conversion.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J1203
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 9,
+                              "compound": "n-Butyric acid",
+                              "compound_id": 376,
+                              "amount": 0.4,
+                              "unit": "ml",
+                              "optional": 0
+                          }
+    explanation: 'ingredients[8].concentration: Source liquid batch input: 0.4 ml
+      = 0.0004 L. This is not grams per liter, a dose per final liter, or a density-based
+      mass conversion. No final-medium volume, percentage basis, density or chemical
+      grounding is inferred. Locator=data.solutions[0].recipe[8]; accessed=2026-10-08T20:33:36.630402+00:00;
+      capture SHA256=b18a76a2f2c477e3f8b375011da4d4899b476d046e41e76e30af7870d7429e31.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203
+    supports: SUPPORT
+    snippet: n-Butyric acid 0.4 ml
+    explanation: 'ingredients[8].notes: Original table corroborates the source batch
+      input and exact preparation scope. Provider stock g_l, when retained, is separately
+      attributed to the API; this quote does not establish final volume. No final-medium
+      volume, percentage basis, density or chemical grounding is inferred. Locator=original
+      recipe text; accessed=2026-10-08T20:33:37.880950+00:00; capture SHA256=09c76a99bd8b45736f9319e7d87c2c0013f28b1e507408cace54ded04e155343.'
 - preferred_term: iso-Butyric acid
   term:
     id: CHEBI:16135
     label: isobutyric acid
   concentration:
-    value: '0.4'
-    unit: G_PER_L
+    value: '0.0004'
+    unit: L
   mediaingredientmech_chebi_term:
     id: CHEBI:16135
     label: isobutyric acid
-- preferred_term: Tryptone
-  term:
-    id: MICRO:0000182
-    label: tryptone
+  notes: 'Source liquid batch input: 0.4 ml = 0.0004 L. This is not grams per liter,
+    a dose per final liter, or a density-based mass conversion.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J1203
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 10,
+                              "compound": "iso-Butyric acid",
+                              "compound_id": 377,
+                              "amount": 0.4,
+                              "unit": "ml",
+                              "optional": 0
+                          }
+    explanation: 'ingredients[9].concentration: Source liquid batch input: 0.4 ml
+      = 0.0004 L. This is not grams per liter, a dose per final liter, or a density-based
+      mass conversion. No final-medium volume, percentage basis, density or chemical
+      grounding is inferred. Locator=data.solutions[0].recipe[9]; accessed=2026-10-08T20:33:36.630402+00:00;
+      capture SHA256=b18a76a2f2c477e3f8b375011da4d4899b476d046e41e76e30af7870d7429e31.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203
+    supports: SUPPORT
+    snippet: iso-Butyric acid 0.4 ml
+    explanation: 'ingredients[9].notes: Original table corroborates the source batch
+      input and exact preparation scope. Provider stock g_l, when retained, is separately
+      attributed to the API; this quote does not establish final volume. No final-medium
+      volume, percentage basis, density or chemical grounding is inferred. Locator=original
+      recipe text; accessed=2026-10-08T20:33:37.880950+00:00; capture SHA256=09c76a99bd8b45736f9319e7d87c2c0013f28b1e507408cace54ded04e155343.'
+- preferred_term: DL-2-Methylbutyric acid
   concentration:
-    value: '10.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
-    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
-  synonyms:
-  - synonym_text: pancreatic digest of casein
-    synonym_type: EXACT
-  - synonym_text: casein peptone
-    synonym_type: EXACT
-- preferred_term: Yeast extract
-  term:
-    id: FOODON:03315426
-    label: yeast extract
-  concentration:
-    value: '5.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
-    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
-    product
-- preferred_term: Sodium chloride
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  concentration:
-    value: '10.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
-    (Luria-Bertani, Miller formulation) commercial product
-  synonyms:
-  - synonym_text: NaCl
-    synonym_type: EXACT
-  - synonym_text: table salt
-    synonym_type: EXACT
+    value: '0.0002'
+    unit: L
+  notes: 'Source liquid batch input: 0.2 ml = 0.0002 L. This is not grams per liter,
+    a dose per final liter, or a density-based mass conversion.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J1203
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 11,
+                              "compound": "DL-2-Methylbutyric acid",
+                              "compound_id": 223,
+                              "amount": 0.2,
+                              "unit": "ml",
+                              "optional": 0
+                          }
+    explanation: 'ingredients[10].concentration: Source liquid batch input: 0.2 ml
+      = 0.0002 L. This is not grams per liter, a dose per final liter, or a density-based
+      mass conversion. No final-medium volume, percentage basis, density or chemical
+      grounding is inferred. Locator=data.solutions[0].recipe[10]; accessed=2026-10-08T20:33:36.630402+00:00;
+      capture SHA256=b18a76a2f2c477e3f8b375011da4d4899b476d046e41e76e30af7870d7429e31.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203
+    supports: SUPPORT
+    snippet: DL-2-Methyl butyric acid 0.2 ml
+    explanation: 'ingredients[10].notes: Original table corroborates the source batch
+      input and exact preparation scope. Provider stock g_l, when retained, is separately
+      attributed to the API; this quote does not establish final volume. No final-medium
+      volume, percentage basis, density or chemical grounding is inferred. Locator=original
+      recipe text; accessed=2026-10-08T20:33:37.880950+00:00; capture SHA256=09c76a99bd8b45736f9319e7d87c2c0013f28b1e507408cace54ded04e155343.'
 - preferred_term: n-Valeric acid
   term:
     id: CHEBI:17418
     label: valeric acid
   concentration:
-    value: '0.2'
-    unit: G_PER_L
+    value: '0.0002'
+    unit: L
   mediaingredientmech_chebi_term:
     id: CHEBI:17418
     label: valeric acid
+  notes: 'Source liquid batch input: 0.2 ml = 0.0002 L. This is not grams per liter,
+    a dose per final liter, or a density-based mass conversion.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J1203
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 12,
+                              "compound": "n-Valeric acid",
+                              "compound_id": 288,
+                              "amount": 0.2,
+                              "unit": "ml",
+                              "optional": 0
+                          }
+    explanation: 'ingredients[11].concentration: Source liquid batch input: 0.2 ml
+      = 0.0002 L. This is not grams per liter, a dose per final liter, or a density-based
+      mass conversion. No final-medium volume, percentage basis, density or chemical
+      grounding is inferred. Locator=data.solutions[0].recipe[11]; accessed=2026-10-08T20:33:36.630402+00:00;
+      capture SHA256=b18a76a2f2c477e3f8b375011da4d4899b476d046e41e76e30af7870d7429e31.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203
+    supports: SUPPORT
+    snippet: n-Valeric acid 0.2 ml
+    explanation: 'ingredients[11].notes: Original table corroborates the source batch
+      input and exact preparation scope. Provider stock g_l, when retained, is separately
+      attributed to the API; this quote does not establish final volume. No final-medium
+      volume, percentage basis, density or chemical grounding is inferred. Locator=original
+      recipe text; accessed=2026-10-08T20:33:37.880950+00:00; capture SHA256=09c76a99bd8b45736f9319e7d87c2c0013f28b1e507408cace54ded04e155343.'
 - preferred_term: iso-Valeric acid
   term:
     id: CHEBI:28484
     label: isovaleric acid
   concentration:
-    value: '0.2'
-    unit: G_PER_L
+    value: '0.0002'
+    unit: L
   mediaingredientmech_term:
     id: MediaIngredientMech:000378
     label: iso-Valeric acid
-- preferred_term: Resazurin
-  term:
-    id: CHEBI:8806
-    label: Resazurin
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:8806
-    label: Resazurin
+  notes: 'Source liquid batch input: 0.2 ml = 0.0002 L. This is not grams per liter,
+    a dose per final liter, or a density-based mass conversion.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J1203
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 13,
+                              "compound": "iso-Valeric acid",
+                              "compound_id": 378,
+                              "amount": 0.2,
+                              "unit": "ml",
+                              "optional": 0
+                          }
+    explanation: 'ingredients[12].concentration: Source liquid batch input: 0.2 ml
+      = 0.0002 L. This is not grams per liter, a dose per final liter, or a density-based
+      mass conversion. No final-medium volume, percentage basis, density or chemical
+      grounding is inferred. Locator=data.solutions[0].recipe[12]; accessed=2026-10-08T20:33:36.630402+00:00;
+      capture SHA256=b18a76a2f2c477e3f8b375011da4d4899b476d046e41e76e30af7870d7429e31.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203
+    supports: SUPPORT
+    snippet: iso-Valeric acid 0.2 ml
+    explanation: 'ingredients[12].notes: Original table corroborates the source batch
+      input and exact preparation scope. Provider stock g_l, when retained, is separately
+      attributed to the API; this quote does not establish final volume. No final-medium
+      volume, percentage basis, density or chemical grounding is inferred. Locator=original
+      recipe text; accessed=2026-10-08T20:33:37.880950+00:00; capture SHA256=09c76a99bd8b45736f9319e7d87c2c0013f28b1e507408cace54ded04e155343.'
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
     label: L-cysteine hydrochloride hydrate
-  concentration:
-    value: '0.998004'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:91248
     label: L-cysteine hydrochloride hydrate
+  notes: 'Source batch input: 1 g. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J1203
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 15,
+                              "compound": "L-Cysteine HCl x H2O",
+                              "compound_id": 770,
+                              "amount": 1,
+                              "unit": "g",
+                              "g_l": 0.998004,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[13].concentration: Source batch input: 1 g. Final preparation
+      volume is not independently established; the unsupported g/L assertion is withdrawn,
+      not replaced by an assumed one-liter concentration. No final-medium volume,
+      percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[14];
+      accessed=2026-10-08T20:33:36.630402+00:00; capture SHA256=b18a76a2f2c477e3f8b375011da4d4899b476d046e41e76e30af7870d7429e31.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203
+    supports: SUPPORT
+    snippet: L-Cysteine·HCl·H2O 1.0 g
+    explanation: 'ingredients[13].notes: Original table corroborates the source batch
+      input and exact preparation scope. Provider stock g_l, when retained, is separately
+      attributed to the API; this quote does not establish final volume. No final-medium
+      volume, percentage basis, density or chemical grounding is inferred. Locator=original
+      recipe text; accessed=2026-10-08T20:33:37.880950+00:00; capture SHA256=09c76a99bd8b45736f9319e7d87c2c0013f28b1e507408cace54ded04e155343.'
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
     label: sodium carbonate
-  concentration:
-    value: '2.49501'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:29377
     label: sodium carbonate
-- preferred_term: Glucose
-  term:
-    id: CHEBI:17234
-    label: glucose
+  notes: 'Source batch input: 2.5 g. Final preparation volume is not independently
+    established; the unsupported g/L assertion is withdrawn, not replaced by an assumed
+    one-liter concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J1203
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 16,
+                              "compound": "Na2CO3",
+                              "compound_id": 32,
+                              "amount": 2.5,
+                              "unit": "g",
+                              "g_l": 2.49501,
+                              "mmol_l": 23.5405,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[14].concentration: Source batch input: 2.5 g. Final
+      preparation volume is not independently established; the unsupported g/L assertion
+      is withdrawn, not replaced by an assumed one-liter concentration. No final-medium
+      volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[15];
+      accessed=2026-10-08T20:33:36.630402+00:00; capture SHA256=b18a76a2f2c477e3f8b375011da4d4899b476d046e41e76e30af7870d7429e31.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203
+    supports: SUPPORT
+    snippet: Na2CO3 2.5 g
+    explanation: 'ingredients[14].notes: Original table corroborates the source batch
+      input and exact preparation scope. Provider stock g_l, when retained, is separately
+      attributed to the API; this quote does not establish final volume. No final-medium
+      volume, percentage basis, density or chemical grounding is inferred. Locator=original
+      recipe text; accessed=2026-10-08T20:33:37.880950+00:00; capture SHA256=09c76a99bd8b45736f9319e7d87c2c0013f28b1e507408cace54ded04e155343.'
+- preferred_term: Distilled water
   concentration:
-    value: '1.99601'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17234
-    label: glucose
+    value: '1'
+    unit: L
+  notes: 'Source water batch input: 1000 ml = 1 L. This is not a measured final volume.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J1203
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 18,
+                              "compound": "Distilled water",
+                              "compound_id": 4,
+                              "amount": 1000,
+                              "unit": "ml",
+                              "optional": 0
+                          }
+    explanation: 'ingredients[15].concentration: Source water batch input: 1000 ml
+      = 1 L. This is not a measured final volume. No final-medium volume, percentage
+      basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[17];
+      accessed=2026-10-08T20:33:36.630402+00:00; capture SHA256=b18a76a2f2c477e3f8b375011da4d4899b476d046e41e76e30af7870d7429e31.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203
+    supports: SUPPORT
+    snippet: Distilled water 1.0 L
+    explanation: 'ingredients[15].notes: Original table corroborates the source batch
+      input and exact preparation scope. Provider stock g_l, when retained, is separately
+      attributed to the API; this quote does not establish final volume. No final-medium
+      volume, percentage basis, density or chemical grounding is inferred. Locator=original
+      recipe text; accessed=2026-10-08T20:33:37.880950+00:00; capture SHA256=09c76a99bd8b45736f9319e7d87c2c0013f28b1e507408cace54ded04e155343.'
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -272,3 +634,464 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-10-08T20:41:03.546066+00:00'
+  curator: codex
+  action: RESTORED_JCM_ACID_IDENTITIES_AND_PREPARATION_SCOPES_WITH_EVIDENCE
+  notes: Superseded the erroneous LB expansion, restored source-specific fatty acids,
+    stock definitions and doses, and retained exact preparation-stage amounts with
+    supporting snippets. Preserved genuine same-labelled ingredients, unrelated annotations
+    and append-only history. No final volume, percent basis, density or chemical grounding
+    inferred.
+  source: https://mediadive.dsmz.de/rest/medium/J1203
+  changes: '[{"old_field": "ingredients[10].concentration", "field": "notes", "old":
+    {"value": "10.0", "unit": "G_PER_L"}, "new": "Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203\n\nSuperseded
+    historical provenance (not a current formulation claim):\nCommercial Product:
+    LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThe
+    earlier LB commercial-product expansion is superseded: the exact recipe specifies
+    a methylbutyric acid input instead. Remove only the reviewed LB supplier nodes,
+    preserving genuine peptone, yeast extract and salt entries. Restore the acid at
+    its source preparation stage, without inventing a chemical ID.", "status": "correct",
+    "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203", "snippet":
+    "DL-2-Methyl butyric acid 0.2 ml"}, {"old_field": "ingredients[11].concentration",
+    "field": "notes", "old": {"value": "5.0", "unit": "G_PER_L"}, "new": "Source:
+    JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203\n\nSuperseded
+    historical provenance (not a current formulation claim):\nCommercial Product:
+    LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThe
+    earlier LB commercial-product expansion is superseded: the exact recipe specifies
+    a methylbutyric acid input instead. Remove only the reviewed LB supplier nodes,
+    preserving genuine peptone, yeast extract and salt entries. Restore the acid at
+    its source preparation stage, without inventing a chemical ID.", "status": "correct",
+    "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203", "snippet":
+    "DL-2-Methyl butyric acid 0.2 ml"}, {"old_field": "ingredients[12].concentration",
+    "field": "notes", "old": {"value": "10.0", "unit": "G_PER_L"}, "new": "Source:
+    JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203\n\nSuperseded
+    historical provenance (not a current formulation claim):\nCommercial Product:
+    LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThe
+    earlier LB commercial-product expansion is superseded: the exact recipe specifies
+    a methylbutyric acid input instead. Remove only the reviewed LB supplier nodes,
+    preserving genuine peptone, yeast extract and salt entries. Restore the acid at
+    its source preparation stage, without inventing a chemical ID.", "status": "correct",
+    "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203", "snippet":
+    "DL-2-Methyl butyric acid 0.2 ml"}, {"old_field": "ingredients[0].concentration",
+    "field": "ingredients[0].concentration", "old": {"value": "0.11976", "unit": "G_PER_L"},
+    "new": null, "status": "remove_unsupported", "reference": "https://mediadive.dsmz.de/rest/medium/J1203",
+    "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\":
+    0.12,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.11976,\n                        \"mmol_l\": 0.814614,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[0].notes",
+    "old": null, "new": "Source batch input: 0.12 g. Final preparation volume is not
+    independently established; the unsupported g/L assertion is withdrawn, not replaced
+    by an assumed one-liter concentration.", "status": "evidence_only", "reference":
+    "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203", "snippet": "CaCl2\u00b72H2O
+    0.12 g"}, {"old_field": "ingredients[1].concentration", "field": "ingredients[1].concentration",
+    "old": {"value": "0.189621", "unit": "G_PER_L"}, "new": null, "status": "remove_unsupported",
+    "reference": "https://mediadive.dsmz.de/rest/medium/J1203", "snippet": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\":
+    8,\n                        \"amount\": 0.19,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.189621,\n                        \"mmol_l\":
+    0.769327,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "ingredients[1].notes", "old": null, "new": "Source batch input:
+    0.19 g. Final preparation volume is not independently established; the unsupported
+    g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+    "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203",
+    "snippet": "MgSO4\u00b77H2O 0.19 g"}, {"old_field": "ingredients[2].concentration",
+    "field": "ingredients[2].concentration", "old": {"value": "0.449102", "unit":
+    "G_PER_L"}, "new": null, "status": "remove_unsupported", "reference": "https://mediadive.dsmz.de/rest/medium/J1203",
+    "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\":
+    0.45,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.449102,\n                        \"mmol_l\": 3.30013,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[2].notes",
+    "old": null, "new": "Source batch input: 0.45 g. Final preparation volume is not
+    independently established; the unsupported g/L assertion is withdrawn, not replaced
+    by an assumed one-liter concentration.", "status": "evidence_only", "reference":
+    "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203", "snippet": "KH2PO4
+    0.45 g"}, {"old_field": "ingredients[3].concentration", "field": "ingredients[3].concentration",
+    "old": {"value": "0.449102", "unit": "G_PER_L"}, "new": null, "status": "remove_unsupported",
+    "reference": "https://mediadive.dsmz.de/rest/medium/J1203", "snippet": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\":
+    10,\n                        \"amount\": 0.45,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.449102,\n                        \"mmol_l\":
+    2.57844,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "ingredients[3].notes", "old": null, "new": "Source batch input:
+    0.45 g. Final preparation volume is not independently established; the unsupported
+    g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+    "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203",
+    "snippet": "K2HPO4 0.45 g"}, {"old_field": "ingredients[4].concentration", "field":
+    "ingredients[4].concentration", "old": {"value": "0.898204", "unit": "G_PER_L"},
+    "new": null, "status": "remove_unsupported", "reference": "https://mediadive.dsmz.de/rest/medium/J1203",
+    "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\":
+    0.9,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.898204,\n                        \"mmol_l\": 15.3697,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[4].notes",
+    "old": null, "new": "Source batch input: 0.9 g. Final preparation volume is not
+    independently established; the unsupported g/L assertion is withdrawn, not replaced
+    by an assumed one-liter concentration.", "status": "evidence_only", "reference":
+    "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203", "snippet": "NaCl 0.9
+    g"}, {"old_field": "ingredients[5].concentration", "field": "ingredients[5].concentration",
+    "old": {"value": "0.898204", "unit": "G_PER_L"}, "new": null, "status": "remove_unsupported",
+    "reference": "https://mediadive.dsmz.de/rest/medium/J1203", "snippet": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\":
+    27,\n                        \"amount\": 0.9,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.898204,\n                        \"mmol_l\":
+    6.79736,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "ingredients[5].notes", "old": null, "new": "Source batch input:
+    0.9 g. Final preparation volume is not independently established; the unsupported
+    g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+    "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203",
+    "snippet": "(NH4)2SO4 0.9 g"}, {"old_field": "ingredients[6].concentration", "field":
+    "ingredients[6].concentration", "old": {"value": "1.99601", "unit": "G_PER_L"},
+    "new": null, "status": "remove_unsupported", "reference": "https://mediadive.dsmz.de/rest/medium/J1203",
+    "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\":
+    \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"attribute\":
+    \"BD-Difco\",\n                        \"amount\": 2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.99601,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[6].notes",
+    "old": null, "new": "Source batch input: 2 g. Final preparation volume is not
+    independently established; the unsupported g/L assertion is withdrawn, not replaced
+    by an assumed one-liter concentration. Source qualifier: BD-Difco.", "status":
+    "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203",
+    "snippet": "Yeast extract (BD-Difco) 2.0 g"}, {"old_field": "ingredients[7].concentration",
+    "field": "ingredients[7].concentration", "old": {"value": "1.99601", "unit": "G_PER_L"},
+    "new": null, "status": "remove_unsupported", "reference": "https://mediadive.dsmz.de/rest/medium/J1203",
+    "snippet": "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"Trypticase peptone\",\n                        \"compound_id\": 124,\n                        \"amount\":
+    2,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    1.99601,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "ingredients[7].notes", "old": null, "new": "Source batch input:
+    2 g. Final preparation volume is not independently established; the unsupported
+    g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+    "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203",
+    "snippet": "Trypticase peptone 2.0 g"}, {"old_field": "ingredients[8].concentration",
+    "field": "ingredients[8].concentration", "old": {"value": "0.4", "unit": "G_PER_L"},
+    "new": {"value": "0.0004", "unit": "L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/J1203",
+    "snippet": "{\n                        \"recipe_order\": 9,\n                        \"compound\":
+    \"n-Butyric acid\",\n                        \"compound_id\": 376,\n                        \"amount\":
+    0.4,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[8].notes",
+    "old": null, "new": "Source liquid batch input: 0.4 ml = 0.0004 L. This is not
+    grams per liter, a dose per final liter, or a density-based mass conversion.",
+    "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203",
+    "snippet": "n-Butyric acid 0.4 ml"}, {"old_field": "ingredients[9].concentration",
+    "field": "ingredients[9].concentration", "old": {"value": "0.4", "unit": "G_PER_L"},
+    "new": {"value": "0.0004", "unit": "L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/J1203",
+    "snippet": "{\n                        \"recipe_order\": 10,\n                        \"compound\":
+    \"iso-Butyric acid\",\n                        \"compound_id\": 377,\n                        \"amount\":
+    0.4,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[9].notes",
+    "old": null, "new": "Source liquid batch input: 0.4 ml = 0.0004 L. This is not
+    grams per liter, a dose per final liter, or a density-based mass conversion.",
+    "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203",
+    "snippet": "iso-Butyric acid 0.4 ml"}, {"old_field": null, "field": "ingredients[10].concentration",
+    "old": null, "new": {"value": "0.0002", "unit": "L"}, "status": "add", "reference":
+    "https://mediadive.dsmz.de/rest/medium/J1203", "snippet": "{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"DL-2-Methylbutyric acid\",\n                        \"compound_id\":
+    223,\n                        \"amount\": 0.2,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "ingredients[10].notes", "old": null, "new": "Source liquid batch
+    input: 0.2 ml = 0.0002 L. This is not grams per liter, a dose per final liter,
+    or a density-based mass conversion.", "status": "evidence_only", "reference":
+    "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203", "snippet": "DL-2-Methyl
+    butyric acid 0.2 ml"}, {"old_field": "ingredients[13].concentration", "field":
+    "ingredients[11].concentration", "old": {"value": "0.2", "unit": "G_PER_L"}, "new":
+    {"value": "0.0002", "unit": "L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/J1203",
+    "snippet": "{\n                        \"recipe_order\": 12,\n                        \"compound\":
+    \"n-Valeric acid\",\n                        \"compound_id\": 288,\n                        \"amount\":
+    0.2,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[11].notes",
+    "old": null, "new": "Source liquid batch input: 0.2 ml = 0.0002 L. This is not
+    grams per liter, a dose per final liter, or a density-based mass conversion.",
+    "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203",
+    "snippet": "n-Valeric acid 0.2 ml"}, {"old_field": "ingredients[14].concentration",
+    "field": "ingredients[12].concentration", "old": {"value": "0.2", "unit": "G_PER_L"},
+    "new": {"value": "0.0002", "unit": "L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/J1203",
+    "snippet": "{\n                        \"recipe_order\": 13,\n                        \"compound\":
+    \"iso-Valeric acid\",\n                        \"compound_id\": 378,\n                        \"amount\":
+    0.2,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[12].notes",
+    "old": null, "new": "Source liquid batch input: 0.2 ml = 0.0002 L. This is not
+    grams per liter, a dose per final liter, or a density-based mass conversion.",
+    "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203",
+    "snippet": "iso-Valeric acid 0.2 ml"}, {"old_field": "ingredients[16].concentration",
+    "field": "ingredients[13].concentration", "old": {"value": "0.998004", "unit":
+    "G_PER_L"}, "new": null, "status": "remove_unsupported", "reference": "https://mediadive.dsmz.de/rest/medium/J1203",
+    "snippet": "{\n                        \"recipe_order\": 15,\n                        \"compound\":
+    \"L-Cysteine HCl x H2O\",\n                        \"compound_id\": 770,\n                        \"amount\":
+    1,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.998004,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "ingredients[13].notes", "old": null, "new": "Source batch input:
+    1 g. Final preparation volume is not independently established; the unsupported
+    g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+    "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203",
+    "snippet": "L-Cysteine\u00b7HCl\u00b7H2O 1.0 g"}, {"old_field": "ingredients[17].concentration",
+    "field": "ingredients[14].concentration", "old": {"value": "2.49501", "unit":
+    "G_PER_L"}, "new": null, "status": "remove_unsupported", "reference": "https://mediadive.dsmz.de/rest/medium/J1203",
+    "snippet": "{\n                        \"recipe_order\": 16,\n                        \"compound\":
+    \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"amount\":
+    2.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    2.49501,\n                        \"mmol_l\": 23.5405,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[14].notes",
+    "old": null, "new": "Source batch input: 2.5 g. Final preparation volume is not
+    independently established; the unsupported g/L assertion is withdrawn, not replaced
+    by an assumed one-liter concentration.", "status": "evidence_only", "reference":
+    "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203", "snippet": "Na2CO3
+    2.5 g"}, {"old_field": null, "field": "ingredients[15].concentration", "old":
+    null, "new": {"value": "1", "unit": "L"}, "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/J1203",
+    "snippet": "{\n                        \"recipe_order\": 18,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    1000,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[15].notes",
+    "old": null, "new": "Source water batch input: 1000 ml = 1 L. This is not a measured
+    final volume.", "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203",
+    "snippet": "Distilled water 1.0 L"}, {"old_field": null, "field": "solutions[0].concentration",
+    "old": null, "new": {"value": "0.001", "unit": "L"}, "status": "add", "reference":
+    "https://mediadive.dsmz.de/rest/medium/J1203", "snippet": "{\n                        \"recipe_order\":
+    14,\n                        \"compound\": \"Resazurin\",\n                        \"compound_id\":
+    25,\n                        \"attribute\": \"0.05%\",\n                        \"amount\":
+    1,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[0].concentration",
+    "old": null, "new": {"value": "0.001", "unit": "L"}, "status": "evidence_only",
+    "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203", "snippet":
+    "0.05% Resazurin solution 1.0 ml"}, {"old_field": "ingredients[15].concentration",
+    "field": "solutions[0].concentration", "old": {"value": "1", "unit": "G_PER_L"},
+    "new": {"value": "0.001", "unit": "L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/J1203",
+    "snippet": "{\n                        \"recipe_order\": 14,\n                        \"compound\":
+    \"Resazurin\",\n                        \"compound_id\": 25,\n                        \"attribute\":
+    \"0.05%\",\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[0].composition[0].notes", "old": null, "new": "Source
+    reagent label: 0.05% Resazurin solution. Percentage basis is unspecified; no numeric
+    resazurin concentration or stock-batch mass is asserted. The enclosing descriptor
+    holds the 1 ml receiving-batch dose.", "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/J1203",
+    "snippet": "{\n                        \"recipe_order\": 14,\n                        \"compound\":
+    \"Resazurin\",\n                        \"compound_id\": 25,\n                        \"attribute\":
+    \"0.05%\",\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[0].composition[0].notes", "old": null, "new": "Source
+    reagent label: 0.05% Resazurin solution. Percentage basis is unspecified; no numeric
+    resazurin concentration or stock-batch mass is asserted. The enclosing descriptor
+    holds the 1 ml receiving-batch dose.", "status": "evidence_only", "reference":
+    "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203", "snippet": "0.05% Resazurin
+    solution 1.0 ml"}, {"old_field": null, "field": "solutions[1].preparation_notes",
+    "old": null, "new": "Thereafter, add glucose from an anoxic stock solution prepared
+    under 100% N2 gas atmosphere and sterilized by filtration.", "status": "evidence_only",
+    "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203", "snippet":
+    "Thereafter, add glucose from an anoxic stock solution prepared under 100% N2
+    gas atmosphere and sterilized by filtration."}, {"old_field": "ingredients[18].concentration",
+    "field": "solutions[1].composition[0].concentration", "old": {"value": "1.99601",
+    "unit": "G_PER_L"}, "new": null, "status": "remove_unsupported", "reference":
+    "https://mediadive.dsmz.de/rest/medium/J1203", "snippet": "{\n                        \"recipe_order\":
+    17,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\":
+    5,\n                        \"amount\": 2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.99601,\n                        \"mmol_l\":
+    11.0791,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[1].composition[0].notes", "old": null, "new": "Source
+    batch input: 2 g. Final preparation volume is not independently established; the
+    unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+    This is the contribution specified for the receiving medium batch, not the mass
+    for preparing an unspecified volume of stock.", "status": "evidence_only", "reference":
+    "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203", "snippet": "Glucose
+    2.0 g"}, {"old_field": null, "field": "solutions[1].composition[0].notes", "old":
+    null, "new": "Source batch input: 2 g. Final preparation volume is not independently
+    established; the unsupported g/L assertion is withdrawn, not replaced by an assumed
+    one-liter concentration. This is the contribution specified for the receiving
+    medium batch, not the mass for preparing an unspecified volume of stock.", "status":
+    "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203",
+    "snippet": "Thereafter, add glucose from an anoxic stock solution prepared under
+    100% N2 gas atmosphere and sterilized by filtration."}, {"old_field": "preparation_steps",
+    "field": "preparation_steps", "old": [{"step_number": 1, "action": "AUTOCLAVE",
+    "description": "Dissolve ingredients (except cysteine, carbonate and glucose),
+    adjust pH to 7.0 and sparge medium with 100% CO2 gas for 30-45 min to make it
+    anoxic. Add cysteine and carbonate, then equilibrate the medium with 100% CO2
+    gas to pH 7.0. Distribute medium under 100% CO2 gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. Thereafter, add glucose from an anoxic stock
+    solution prepared under 100% N2 gas atmosphere and sterilized by filtration. Adjust
+    pH of complete medium to 7.0, if necessary."}], "new": [{"step_number": 1, "action":
+    "AUTOCLAVE", "description": "Dissolve ingredients (except cysteine, carbonate
+    and glucose), adjust pH to 7.0 and sparge medium with 100% CO2 gas for 30-45 min
+    to make it anoxic. Add cysteine and carbonate, then equilibrate the medium with
+    100% CO2 gas to pH 7.0. Distribute medium under 100% CO2 gas atmosphere into anoxic
+    Hungate-type tubes or serum vials and autoclave. Thereafter, add glucose from
+    an anoxic stock solution prepared under 100% N2 gas atmosphere and sterilized
+    by filtration. Adjust pH of complete medium to 7.0, if necessary."}], "status":
+    "evidence_only", "reference": "https://mediadive.dsmz.de/rest/medium/J1203", "snippet":
+    "[\n                    {\n                        \"step\": \"Dissolve ingredients
+    (except cysteine, carbonate and glucose), adjust pH to 7.0 and sparge medium with
+    100% CO2 gas for 30-45 min to make it anoxic. Add cysteine and carbonate, then
+    equilibrate the medium with 100% CO2 gas to pH 7.0. Distribute medium under 100%
+    CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    Thereafter, add glucose from an anoxic stock solution prepared under 100% N2 gas
+    atmosphere and sterilized by filtration. Adjust pH of complete medium to 7.0,
+    if necessary.\"\n                    }\n                ]"}, {"old_field": "ph_value",
+    "field": "ph_value", "old": 7.0, "new": 7.0, "status": "evidence_only", "reference":
+    "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203", "snippet": "pH to 7.0"}]'
+solutions:
+- preferred_term: 0.05% Resazurin solution
+  composition:
+  - preferred_term: Resazurin
+    term:
+      id: CHEBI:8806
+      label: Resazurin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:8806
+      label: Resazurin
+    notes: 'Source reagent label: 0.05% Resazurin solution. Percentage basis is unspecified;
+      no numeric resazurin concentration or stock-batch mass is asserted. The enclosing
+      descriptor holds the 1 ml receiving-batch dose.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J1203
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 14,
+                                "compound": "Resazurin",
+                                "compound_id": 25,
+                                "attribute": "0.05%",
+                                "amount": 1,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[0].notes: Source reagent label: 0.05%
+        Resazurin solution. Percentage basis is unspecified; no numeric resazurin
+        concentration or stock-batch mass is asserted. The enclosing descriptor holds
+        the 1 ml receiving-batch dose. No final-medium volume, percentage basis, density
+        or chemical grounding is inferred. Locator=data.solutions[0].recipe[13]; accessed=2026-10-08T20:33:36.630402+00:00;
+        capture SHA256=b18a76a2f2c477e3f8b375011da4d4899b476d046e41e76e30af7870d7429e31.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203
+      supports: SUPPORT
+      snippet: 0.05% Resazurin solution 1.0 ml
+      explanation: 'solutions[0].composition[0].notes: Source reagent label: 0.05%
+        Resazurin solution. Percentage basis is unspecified; no numeric resazurin
+        concentration or stock-batch mass is asserted. The enclosing descriptor holds
+        the 1 ml receiving-batch dose. No final-medium volume, percentage basis, density
+        or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T20:33:37.880950+00:00;
+        capture SHA256=09c76a99bd8b45736f9319e7d87c2c0013f28b1e507408cace54ded04e155343.'
+  concentration:
+    value: '0.001'
+    unit: L
+  notes: 'Source preparation input: 1 ml = 0.001 L per receiving batch, not grams
+    per liter or a dose per final liter.'
+- preferred_term: Glucose separately prepared solution
+  composition:
+  - preferred_term: Glucose
+    term:
+      id: CHEBI:17234
+      label: glucose
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17234
+      label: glucose
+    notes: 'Source batch input: 2 g. Final preparation volume is not independently
+      established; the unsupported g/L assertion is withdrawn, not replaced by an
+      assumed one-liter concentration. This is the contribution specified for the
+      receiving medium batch, not the mass for preparing an unspecified volume of
+      stock.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J1203
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 17,
+                                "compound": "Glucose",
+                                "compound_id": 5,
+                                "amount": 2,
+                                "unit": "g",
+                                "g_l": 1.99601,
+                                "mmol_l": 11.0791,
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[0].concentration: Source batch input:
+        2 g. Final preparation volume is not independently established; the unsupported
+        g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+        This is the contribution specified for the receiving medium batch, not the
+        mass for preparing an unspecified volume of stock. No final-medium volume,
+        percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[16];
+        accessed=2026-10-08T20:33:36.630402+00:00; capture SHA256=b18a76a2f2c477e3f8b375011da4d4899b476d046e41e76e30af7870d7429e31.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203
+      supports: SUPPORT
+      snippet: Glucose 2.0 g
+      explanation: |-
+        solutions[1].composition[0].notes: Original table corroborates the source batch input and exact preparation scope. Provider stock g_l, when retained, is separately attributed to the API; this quote does not establish final volume. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T20:33:37.880950+00:00; capture SHA256=09c76a99bd8b45736f9319e7d87c2c0013f28b1e507408cace54ded04e155343.
+
+        Additional exact excerpt: Thereafter, add glucose from an anoxic stock solution prepared under 100% N2 gas atmosphere and sterilized by filtration.
+        solutions[1].composition[0].notes: Separate preparation: composition notes retain the receiving-batch contribution, not a stock-batch recipe. Stock solvent volume, numeric strength and addition volume are unspecified. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T20:33:37.880950+00:00; capture SHA256=09c76a99bd8b45736f9319e7d87c2c0013f28b1e507408cace54ded04e155343.
+  notes: 'Separate preparation: composition notes retain the receiving-batch contribution,
+    not a stock-batch recipe. Stock solvent volume, numeric strength and addition
+    volume are unspecified.'
+  preparation_notes: Thereafter, add glucose from an anoxic stock solution prepared
+    under 100% N2 gas atmosphere and sterilized by filtration.
+evidence:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203
+  supports: SUPPORT
+  snippet: DL-2-Methyl butyric acid 0.2 ml
+  explanation: |-
+    notes: The earlier LB commercial-product expansion is superseded: the exact recipe specifies a methylbutyric acid input instead. Remove only the reviewed LB supplier nodes, preserving genuine peptone, yeast extract and salt entries. Restore the acid at its source preparation stage, without inventing a chemical ID. Removed node: Tryptone. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T20:33:37.880950+00:00; capture SHA256=09c76a99bd8b45736f9319e7d87c2c0013f28b1e507408cace54ded04e155343.
+
+    Additional exact excerpt: DL-2-Methyl butyric acid 0.2 ml
+    notes: The earlier LB commercial-product expansion is superseded: the exact recipe specifies a methylbutyric acid input instead. Remove only the reviewed LB supplier nodes, preserving genuine peptone, yeast extract and salt entries. Restore the acid at its source preparation stage, without inventing a chemical ID. Removed node: Yeast extract. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T20:33:37.880950+00:00; capture SHA256=09c76a99bd8b45736f9319e7d87c2c0013f28b1e507408cace54ded04e155343.
+
+    Additional exact excerpt: DL-2-Methyl butyric acid 0.2 ml
+    notes: The earlier LB commercial-product expansion is superseded: the exact recipe specifies a methylbutyric acid input instead. Remove only the reviewed LB supplier nodes, preserving genuine peptone, yeast extract and salt entries. Restore the acid at its source preparation stage, without inventing a chemical ID. Removed node: Sodium chloride. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T20:33:37.880950+00:00; capture SHA256=09c76a99bd8b45736f9319e7d87c2c0013f28b1e507408cace54ded04e155343.
+
+    Additional exact excerpt: 0.05% Resazurin solution 1.0 ml
+    solutions[0].concentration: Original table corroborates the source batch input and exact preparation scope. Provider stock g_l, when retained, is separately attributed to the API; this quote does not establish final volume. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T20:33:37.880950+00:00; capture SHA256=09c76a99bd8b45736f9319e7d87c2c0013f28b1e507408cace54ded04e155343.
+
+    Additional exact excerpt: Thereafter, add glucose from an anoxic stock solution prepared under 100% N2 gas atmosphere and sterilized by filtration.
+    solutions[1].preparation_notes: Separate preparation: composition notes retain the receiving-batch contribution, not a stock-batch recipe. Stock solvent volume, numeric strength and addition volume are unspecified. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T20:33:37.880950+00:00; capture SHA256=09c76a99bd8b45736f9319e7d87c2c0013f28b1e507408cace54ded04e155343.
+
+    Additional exact excerpt: pH to 7.0
+    ph_value: Receiving-medium pH from the recipe-specific preparation. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T20:33:37.880950+00:00; capture SHA256=09c76a99bd8b45736f9319e7d87c2c0013f28b1e507408cace54ded04e155343.
+- reference: https://mediadive.dsmz.de/rest/medium/J1203
+  supports: SUPPORT
+  snippet: |-
+    {
+                            "recipe_order": 14,
+                            "compound": "Resazurin",
+                            "compound_id": 25,
+                            "attribute": "0.05%",
+                            "amount": 1,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+  explanation: |-
+    solutions[0].concentration: Source preparation input: 1 ml = 0.001 L per receiving batch, not grams per liter or a dose per final liter. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[13]; accessed=2026-10-08T20:33:36.630402+00:00; capture SHA256=b18a76a2f2c477e3f8b375011da4d4899b476d046e41e76e30af7870d7429e31.
+
+    Additional exact excerpt: {
+                            "recipe_order": 14,
+                            "compound": "Resazurin",
+                            "compound_id": 25,
+                            "attribute": "0.05%",
+                            "amount": 1,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+    solutions[0].concentration: Move the misencoded 1 ml solution input onto its stock descriptor. The 0.05% basis is unspecified; do not calculate resazurin mass or stock strength. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[13]; accessed=2026-10-08T20:33:36.630402+00:00; capture SHA256=b18a76a2f2c477e3f8b375011da4d4899b476d046e41e76e30af7870d7429e31.
+
+    Additional exact excerpt: [
+                        {
+                            "step": "Dissolve ingredients (except cysteine, carbonate and glucose), adjust pH to 7.0 and sparge medium with 100% CO2 gas for 30-45 min to make it anoxic. Add cysteine and carbonate, then equilibrate the medium with 100% CO2 gas to pH 7.0. Distribute medium under 100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Thereafter, add glucose from an anoxic stock solution prepared under 100% N2 gas atmosphere and sterilized by filtration. Adjust pH of complete medium to 7.0, if necessary."
+                        }
+                    ]
+    preparation_steps: Keep the exact receiving-medium procedure and order; stock-only procedures are scoped to their descriptors. Gas atmospheres are not numeric dissolved concentrations. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps; accessed=2026-10-08T20:33:36.630402+00:00; capture SHA256=b18a76a2f2c477e3f8b375011da4d4899b476d046e41e76e30af7870d7429e31.
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203
+  title: Medium data
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-08; capture_sha256=09c76a99bd8b45736f9319e7d87c2c0013f28b1e507408cace54ded04e155343.
+    Authors and publication year not supplied. Provider-declared stock rates are not
+    independent final-volume measurements. Existing chemical groundings and organism-growth
+    claims are not recertified.
+- reference: https://mediadive.dsmz.de/rest/medium/J1203
+  title: TREPONEMA SACCHAROPHILUM MEDIUM
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-08;
+    capture_sha256=b18a76a2f2c477e3f8b375011da4d4899b476d046e41e76e30af7870d7429e31.
+    Authors and publication year not supplied. Provider-declared stock rates are not
+    independent final-volume measurements. Existing chemical groundings and organism-growth
+    claims are not recertified.

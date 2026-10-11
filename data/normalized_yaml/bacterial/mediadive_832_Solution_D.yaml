@@ -16,6 +16,32 @@ composition:
     label: sodium octadecanoate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/832
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "Na-stearate",
+                      "compound_id": 298,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.61,
+                      "unit": "g",
+                      "g_l": 30.5,
+                      "mmol_l": 99.5236,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Na-stearate)
+      in MediaDive solution 832; locator=$.data.recipe[0] (compound_id=298). Provider
+      explicitly reports g_l=30.5. Arithmetic check: 0.61 g * 1 g/g / (20 ml / 1000
+      ml per L) = 30.5 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 20. Retrieved 2026-10-07T08:46:56.139587+00:00; response SHA256=936d74d6581810024d89c1ae71cca45725d0c4683fb428e605487fb1ee80bb31.'
 - preferred_term: Distilled water
   concentration:
     value: '1000.0'
@@ -60,6 +86,15 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-10-07T08:52:28.993811+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/832
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "30.5"} ->
+    {"unit": "G_PER_L", "value": "30.5"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -68,3 +103,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/832
+  title: 'MediaDive solution 832: Solution D'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=936d74d6581810024d89c1ae71cca45725d0c4683fb428e605487fb1ee80bb31;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

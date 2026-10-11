@@ -1,0 +1,42 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "apply",
+  "checks": [],
+  "source_sha256": "490eaa0ddf3d76f2a8f1fa48e582a25c089ae5978c89c83f4b9915b1a48b600e",
+  "code_sha256": {
+    "scripts/repair_yeast_chebi_references.py": "f168cdb417d0e108c956d45e89ccfa3e9449f1be9f8002939f2b6b6c71751ff8",
+    "tests/test_yeast_chebi_references.py": "acc514f61ca3884e5f22584470762a66ceaadb210214a5c83939db87df74b6eb"
+  },
+  "inventory_before_sha256": "80e46610470e342131e2ebcdfc6770a67e351713dafbb30c29b78e4b86d596df",
+  "publication_ready": false,
+  "all_record_goal_complete": false,
+  "applied": {
+    "changed": 4,
+    "pending": 0,
+    "already_applied": 0
+  },
+  "readback": {
+    "changed": 0,
+    "pending": 0,
+    "already_applied": 4
+  },
+  "repeat": {
+    "changed": 0,
+    "pending": 0,
+    "already_applied": 4
+  },
+  "counts": {
+    "evidence_reference_urls_corrected": 40,
+    "bibliography_reference_urls_corrected": 40,
+    "new_curation_history": 4
+  },
+  "changed_paths": [
+    "data/normalized_yaml/fungal/yeast_mineral_medium_10_g_l_glucose.yaml",
+    "data/normalized_yaml/fungal/yeast_mineral_medium_7_5_g_l_ethanol.yaml",
+    "data/normalized_yaml/fungal/yeast_mineral_medium_25_g_l_glucose.yaml",
+    "data/normalized_yaml/fungal/yeast_mineral_medium_7_9_g_l_ethanol.yaml"
+  ],
+  "inventory_after_sha256": "b3cd07676477703b1f08992fa3017d0a48b2c5e374429dfe9f26c3108514fd87",
+  "normalized_inventory_unchanged": false
+}

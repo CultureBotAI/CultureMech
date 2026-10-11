@@ -15,23 +15,25 @@ composition:
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
     label: boric acid
-notes: 'Boron stock solution for Bold Basal Medium (BBM) and related algae culture
-  media.
-
+  evidence:
+  - reference: https://utex.org/products/bbm-boron-stock-solution
+    supports: SUPPORT
+    snippet: 11 g
+    explanation: 'Supports composition[0].concentration only as this standalone stock''s
+      mass or supplied-liquid volume per liter. Directions items 1 and 2; component
+      printed as ''H3BO3''; Amount excerpt: ''11 g''. Final-volume excerpt: ''Bring
+      the total volume to 1 Liter''. Existing value and precision retained; no molecular-weight,
+      density, receiving-medium or working-dose conversion. '
+notes: |
+  Boron stock solution for Bold Basal Medium (BBM) and related algae culture media.
   Provides boron as an essential micronutrient for algae growth.
 
-
   Preparation: Dissolve 11 g boric acid in approximately 900 mL distilled water,
-
   then bring to 1 L total volume.
-
 
   Storage: Room temperature in darkness.
 
-
-  Final stock concentration: H3BO3 (~9 µM)
-
-  '
+  Source discrepancy: the preparation specifies 11 g H3BO3 per final 1 L, but the same page also prints approximately 9 micromolar as a final solution concentration. That parenthetical is not treated as verified stock molarity. The mass concentration is retained; no replacement molarity or receiving-medium interpretation is inferred.
 source_data:
   origin: MediaIngredientMech
   mediaingredientmech_id: UNMAPPED_0064
@@ -58,8 +60,50 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-10T06:43:40+00:00'
+  curator: codex
+  action: CURATED_UTEX_MIGRATED_STOCK_CONCENTRATION_EVIDENCE
+  notes: Source-backed evidence and stock-context review. No structured concentrations
+    or identities changed; conflicts stay explicit.
+  source: https://utex.org/products/bbm-boron-stock-solution
+  changes: '{"claims": [{"action_taken": "Added scoped SUPPORT evidence; numeric value
+    retained", "basis_snippet": "Bring the total volume to 1 Liter", "calculation":
+    "No numeric change proposed; preparation amount per explicitly stated one-liter
+    total stock volume.", "field": "composition[0].concentration", "ingredient": "Boric
+    acid", "locator": "Directions items 1 and 2", "old": {"unit": "G_PER_L", "value":
+    "11.0"}, "proposed": {"unit": "G_PER_L", "value": "11.0"}, "reference": "https://utex.org/products/bbm-boron-stock-solution",
+    "snippet": "11 g", "source_component": "H3BO3", "status": "evidence_only"}], "notes":
+    {"new": "Boron stock solution for Bold Basal Medium (BBM) and related algae culture
+    media.\nProvides boron as an essential micronutrient for algae growth.\n\nPreparation:
+    Dissolve 11 g boric acid in approximately 900 mL distilled water,\nthen bring
+    to 1 L total volume.\n\nStorage: Room temperature in darkness.\n\nSource discrepancy:
+    the preparation specifies 11 g H3BO3 per final 1 L, but the same page also prints
+    approximately 9 micromolar as a final solution concentration. That parenthetical
+    is not treated as verified stock molarity. The mass concentration is retained;
+    no replacement molarity or receiving-medium interpretation is inferred.\n", "old":
+    "Boron stock solution for Bold Basal Medium (BBM) and related algae culture media.\nProvides
+    boron as an essential micronutrient for algae growth.\n\nPreparation: Dissolve
+    11 g boric acid in approximately 900 mL distilled water,\nthen bring to 1 L total
+    volume.\n\nStorage: Room temperature in darkness.\n\nFinal stock concentration:
+    H3BO3 (~9 \u00b5M)\n", "snippet": "final solution concentration: ~ 9"}, "references":
+    {"added_fields": ["title", "notes"], "reference": "https://utex.org/products/bbm-boron-stock-solution"}}'
 references:
 - reference: https://utex.org/products/bbm-boron-stock-solution
+  title: BBM Boron Stock Solution Recipe
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10; publisher=UTEX Culture Collection of Algae; locator=Directions
+    and formulation table where present. No named author, publication year or DOI
+    established. Amount and final-volume statements are reviewed separately from conflicting
+    concentration annotations; see scoped evidence.
 - reference: UTEX:bbm-boron-stock-solution
 - reference: MediaIngredientMech:UNMAPPED_0064
 category: bacterial
+evidence:
+- reference: https://utex.org/products/bbm-boron-stock-solution
+  supports: SUPPORT
+  snippet: 'final solution concentration: ~ 9'
+  explanation: Supports documenting the source discrepancy in notes, not approving
+    that molarity. Directions separately say 'dissolve 11 g of H3BO3' and 'Bring the
+    total volume to 1 Liter'. The structured 11.0 g/L amount retains its precision
+    and explicit final-volume basis; the inconsistent parenthetical is identified
+    as unverified without an invented replacement.

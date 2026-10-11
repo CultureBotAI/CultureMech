@@ -25,6 +25,16 @@ ingredients:
     id: CHEBI:15377
     label: water
   notes: UTEX lists 500 mL sterile dH2O per 1 L final medium.
+  evidence:
+  - reference: https://utex.org/products/one-half-erdschreibers-medium
+    supports: SUPPORT
+    snippet: 500 mL
+    explanation: 'Supports ingredients[0].concentration for dH2O. Exact component
+      cell: ''sterile dH2O''; amount cell: ''500 mL''; exact basis heading: "For 1
+      L Total". 500 mL / 1 L total = 500 mL/L; the 1 L basis is explicitly stated
+      by the recipe, not assumed. Locator: #recipe, composition table row 2. This
+      supports the prepared-medium input dose only, not its constituent concentrations,
+      chemical identities, salinity, or organism growth claims.'
 solutions:
 - preferred_term: Erdschreiber's Medium
   concentration:
@@ -87,9 +97,37 @@ curation_history:
   source: https://utex.org/products/one-half-erdschreibers-medium
   notes: UTEX prepares this dilution by mixing prepared Erdschreiber's Medium with
     sterile distilled water in a 1:1 ratio for 15 ppt salinity.
+- timestamp: '2026-10-10T21:33:31.850583+00:00'
+  curator: codex
+  action: CURATED_UTEX_PREPARED_BLEND_CONCENTRATION_EVIDENCE
+  notes: Retain prepared-medium addition amounts with exact source-URL/snippet evidence.
+    No numeric changes, ontology repairs, linked-recipe certification, or taxa-media
+    associations. Preserve the quarter-strength source ratio conflict explicitly.
+  source: https://utex.org/products/one-half-erdschreibers-medium
+  changes: '{"claims": [{"basis_snippet": "For 1 L Total", "calculation": "500 mL
+    / 1 L total = 500 mL/L; the 1 L basis is explicitly stated by the recipe, not
+    assumed.", "component_snippet": "Erdschreiber''s Medium", "decision": "Retain
+    quantity and attach exact source evidence.", "field": "solutions[0].concentration",
+    "ingredient": "Erdschreiber''s Medium", "locator": "#recipe, composition table,
+    Amount column", "old": {"unit": "ML_PER_L", "value": "500"}, "proposed": {"unit":
+    "ML_PER_L", "value": "500"}, "reference": "https://utex.org/products/one-half-erdschreibers-medium",
+    "snippet": "500 mL", "source_table_row": 1, "status": "evidence_only", "unresolved":
+    "None for this input amount and volume basis."}, {"basis_snippet": "For 1 L Total",
+    "calculation": "500 mL / 1 L total = 500 mL/L; the 1 L basis is explicitly stated
+    by the recipe, not assumed.", "component_snippet": "sterile dH2O", "decision":
+    "Retain quantity and attach exact source evidence.", "field": "ingredients[0].concentration",
+    "ingredient": "dH2O", "locator": "#recipe, composition table, Amount column",
+    "old": {"unit": "ML_PER_L", "value": "500"}, "proposed": {"unit": "ML_PER_L",
+    "value": "500"}, "reference": "https://utex.org/products/one-half-erdschreibers-medium",
+    "snippet": "500 mL", "source_table_row": 2, "status": "evidence_only", "unresolved":
+    "None for this input amount and volume basis."}], "counts": {"bibliographic_entries_enriched":
+    1, "new_curation_history": 1, "new_evidence": 2}}'
 references:
 - reference: UTEX:one-half-erdschreibers-medium
 - reference: https://utex.org/products/one-half-erdschreibers-medium
+  title: 1/2 Erdschreiber Medium | UTEX Culture Collection of Algae
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10; Named authors, publication year and DOI not established.
 original_name: 1/2 Erdschreiber Medium
 parent_media:
   path: data/normalized_yaml/algae/erdschreibers_medium.yaml
@@ -103,3 +141,13 @@ variant_modifications:
 data_quality_flags:
 - has_ontology_mappings
 - ingredients_curated
+evidence:
+- reference: https://utex.org/products/one-half-erdschreibers-medium
+  supports: SUPPORT
+  snippet: 500 mL
+  explanation: 'Supports solutions[0].concentration for Erdschreiber''s Medium. Exact
+    component cell: "Erdschreiber''s Medium"; amount cell: ''500 mL''; exact basis
+    heading: "For 1 L Total". 500 mL / 1 L total = 500 mL/L; the 1 L basis is explicitly
+    stated by the recipe, not assumed. Locator: #recipe, composition table row 1.
+    This supports the prepared-medium input dose only, not its constituent concentrations,
+    chemical identities, salinity, or organism growth claims.'

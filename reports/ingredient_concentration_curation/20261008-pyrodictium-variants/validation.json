@@ -1,0 +1,158 @@
+{
+  "terminal": true,
+  "publication_ready": false,
+  "all_record_goal_complete": false,
+  "applied_records": 3,
+  "source_responses_refreshed": 8,
+  "normalized_count": 15910,
+  "normalized_sha256": "56a1e7d74710535fa9ea37fd3859560d08414fe5b8eb38e9290efd5d1f630c9c",
+  "records": {
+    "data/normalized_yaml/archaea/TOGO_M196_Pyrodictium_Brockii_Medium.yaml": "fb291d288018bb2734480086dd68220c6cc8251c3aed4500d2f2d81c00117945",
+    "data/normalized_yaml/archaea/TOGO_M197_Pyrodictium_Ocultum_Medium.yaml": "4e8b7c669f28528915ea38298f89ab7ecf082b42048578aaa86f283088daee6e",
+    "data/normalized_yaml/archaea/TOGO_M198_Pyrodictium_Abysii_Medium.yaml": "28be27d6cd89d6b24a7ac0314a240537db65559b33383fe28b9b6aec4c4b0c53"
+  },
+  "reference_checks": {
+    "M196": {
+      "checks": 48,
+      "all_valid": true,
+      "issues": []
+    },
+    "M197": {
+      "checks": 48,
+      "all_valid": true,
+      "issues": []
+    },
+    "M198": {
+      "checks": 50,
+      "all_valid": true,
+      "issues": []
+    }
+  },
+  "tests_passed": {
+    "fast": "8451 passed, 16 skipped, 1945 deselected, 2 warnings in 631.71s (0:10:31)",
+    "final": "495 passed, 2 warnings in 128.66s (0:02:08)"
+  },
+  "failed_global_gates": [
+    {
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/pyrodictium-post-9.log"
+    },
+    {
+      "command": [
+        "just",
+        "audit-merge-freshness",
+        "--json"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/pyrodictium-post-10.log"
+    }
+  ],
+  "merge_verification": {
+    "name_conflicts": 1247,
+    "fingerprint_issues": 3287
+  },
+  "freshness": {
+    "tracked_total": 6320,
+    "fresh_total": 10777,
+    "only_in_tracked": 4275,
+    "only_in_fresh": 8732,
+    "changed": 2045,
+    "unchanged": 0
+  },
+  "cumulative_audit": {
+    "stock_nodes_relocated": 616,
+    "new_quantity_slots": 268,
+    "unsupported_quantity_slots_removed": 460,
+    "new_evidence": 31530,
+    "new_curation_history": 5346,
+    "new_references": 5540,
+    "stock_stage_concentrations_rebased": 137,
+    "stock_descriptors_added": 181,
+    "quantity_corrections": 1409,
+    "copied_ingredient_nodes_replaced_by_reference": 37,
+    "ingredient_context_notes_added": 264,
+    "water_input_nodes_added": 27,
+    "recipe_context_notes_corrected": 26,
+    "parent_links_corrected": 5,
+    "source_amount_conflicts_repaired": 3,
+    "unquantified_carrier_nodes_added": 77,
+    "evidence_scopes_corrected": 172,
+    "ingredient_context_notes_corrected": 9,
+    "preparation_actions_corrected": 7,
+    "preparation_descriptions_corrected": 4,
+    "preparation_steps_added": 14,
+    "batch_mass_notes_unverified_concentrations": 48,
+    "stock_dose_basis_corrections": 85,
+    "duplicate_stock_nodes_removed": 1,
+    "variant_links_added": 8,
+    "explicit_medium_rates_verified": 3,
+    "child_links_corrected": 5,
+    "preparation_steps_relocated": 9,
+    "water_input_notes_added": 9,
+    "inline_variant_options_added": 8,
+    "extraction_preparations_added": 1,
+    "base_preparations_added": 9,
+    "preparation_records_restored": 3,
+    "supplement_nodes_moved_to_variants": 4,
+    "corrected_evidence_snippets": 2,
+    "stock_context_notes_corrected": 8,
+    "extraction_preparations_restructured": 2,
+    "source_version_alternatives_added": 4,
+    "copied_ingredient_nodes_removed": 3,
+    "composition_classifications_corrected": 2,
+    "final_quantity_slots_added": 1,
+    "explicitly_omitted_ingredient_nodes": 1,
+    "ingredient_source_attributions_corrected": 1,
+    "bibliographic_entries_enriched": 1,
+    "excluded_alternative_nodes_removed": 1,
+    "ingredient_labels_corrected": 1,
+    "preparation_text_encodings_corrected": 1,
+    "unquantified_solvent_nodes_added": 1,
+    "ingredient_doses_relocated_to_stock": 1,
+    "identity_conflicts_retained_unquantified": 2,
+    "unquantified_makeup_nodes_added": 1,
+    "stock_preparation_notes_added": 1,
+    "edited_records": 5142
+  },
+  "followup_unique_records": 11769,
+  "outside_this_followup": 4141,
+  "remaining_M142_queue": 83,
+  "reports": {
+    "application.json": "cc8bd136f2b6b0515fbf02fc83017aea7d2a93ba3988307c5b8f3073953f60be",
+    "applied-audit.json": "af34656b0522f8657df99310503535c6987a2de08875943e7cb3080281d9c449",
+    "baseline.json": "f1420f2d4b775ba2d18538a33f0600b2381dd547a11635612d52890c02b06df1",
+    "corpus.json": "2d764c0ee96cc27fed632aa5cbd4886bf4fecc11515d275c0af97b313bba3e0c",
+    "cumulative-audit.json": "5ee8058ae3a22f70216929f44e638431dd4ad8fc362efab39b97784ece4f8f6d",
+    "fast.json": "eb19797fd9bb24fd6d449de897347d8e451dd49167ec7cd482761a6100263813",
+    "final.json": "f4e16330dddb796e1bc79a523561472f092f8271a9ceb17775c37b825a48950a",
+    "followup-coverage.json": "0e2a2e24113db1d5e55411ed9e28a589cb8327ed23016553786a98b45c80a54e",
+    "index-refresh-application.json": "baa8c630f9088d1ba376238b6aec331a310b9105e25f62eb8b109f10828a51ff",
+    "index-refresh-plan.json": "6c8440c00a7a6d8b27998c56c7a07ae14ccac27294208c8cf033e7cc2959fc6c",
+    "live.json": "fc4b3a3999993d7a36fe806d77d7e74babdd9ec332ec4e2f96e7cee99ec009c5",
+    "merge-retention.json": "04736cbf67a3150669fcba536605a390500fda6f9c233af31cdb77899cd80c19",
+    "plan.json": "22462f30fb1c0cdd80da6f3fa011b6c13358567436a9089cc8294a179b936433",
+    "post.json": "0c3295e4cabb7d394b8403a10ff8d790a31c2043ac1ee91b651b6648c021c96a",
+    "preview-audit.json": "af34656b0522f8657df99310503535c6987a2de08875943e7cb3080281d9c449",
+    "reconciliation.json": "9dc3b9965ef1bac2be3b55028b53235dfba8a6f64becd87e78c726bf81b347a3",
+    "remaining-queue.json": "a0b45d5ae87496e9242ce75bed02a78fd13d6f78af05f392dbb9569edc2e3635"
+  },
+  "code_sha256": {
+    "scripts/repair_pyrodictium_variants.py": "98429d7ea245ad5d9665442ef476c98548c76a74082e03eacef2ab8c79ca6f2f",
+    "tests/test_pyrodictium_variants.py": "cf8cd50c4301379adfcb99d81e2db09aaf63d72b2bee373766036311adf6c4d7",
+    "reports/ingredient_concentration_curation/20261008-pyrodictium-variants/audit.py": "4927e855dd032ac3bd307d9e49b7a9751d32a3c05b00a1db7cd0d20feeba2f2d",
+    "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "ffc43382582adca4640bf52ea9737e3a2338dcd4b4326bdb140ebb008a37f17a"
+  },
+  "commit_push_PR_merge_branch_cleanup": "Not performed; requested publication workflow remains incomplete.",
+  "runtime": "Existing partial locked Python 3.13 environment; not clean CI. Full test suite not rerun for this localized data repair.",
+  "corpus_checks": {
+    "strict_explicit_root_scanned": 15910,
+    "ids_scanned": 15910,
+    "product_warnings": 91,
+    "product_skipped_no_adapter": 96087,
+    "ingredient_groundings_recertified": false
+  }
+}

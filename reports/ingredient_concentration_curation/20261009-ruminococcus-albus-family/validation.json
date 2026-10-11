@@ -1,0 +1,253 @@
+{
+  "terminal": true,
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "normalized_count": 15910,
+  "normalized_sha256": "2be09e9249a816360bba52b76c1f3d889e12aae7bfd90d12771f117acb01a0d1",
+  "only_reviewed_records_changed": true,
+  "applied_records": 10,
+  "independent_audit_totals": {
+    "source_nodes": 138,
+    "old_quantity_slots": 126,
+    "claims": 507,
+    "new_evidence": 155,
+    "new_references": 16,
+    "new_curation_history": 10
+  },
+  "tests_passed": {
+    "focused-v2": "568 passed, 2 warnings in 120.09s (0:02:00)",
+    "fast": "12269 passed, 16 skipped, 1975 deselected, 2 warnings in 2102.62s (0:35:02)",
+    "qa": "96 passed in 141.03s (0:02:21)"
+  },
+  "reference_checks": {
+    "passed": 179,
+    "failed": 0,
+    "mode": "offline hash-checked official captures",
+    "fresh_refresh_passed": false
+  },
+  "remaining_failed_gates": [
+    {
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "exit_code": 1,
+      "log": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/post-30.log",
+      "log_sha256": "5805b24f18e21d820f11b68dcc303cde408521c8cdde4754a609651dce876028"
+    },
+    {
+      "command": [
+        "just",
+        "audit-merge-freshness",
+        "--json"
+      ],
+      "exit_code": 1,
+      "log": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/post-31.log",
+      "log_sha256": "2107ac0936315a30099f0dcaedfda05a34a6b58d9c3b8b47ff338047b6a9764b"
+    }
+  ],
+  "merge_verification": {
+    "name_conflicts": 1247,
+    "fingerprint_issues": 3287
+  },
+  "freshness": {
+    "tracked_total": 6320,
+    "fresh_total": 10779,
+    "only_in_tracked": 4275,
+    "only_in_fresh": 8734,
+    "changed": 2045,
+    "unchanged": 0
+  },
+  "corpus_checks": {
+    "strict_scanned": 15910,
+    "ids_passed": true,
+    "product_warnings": 91,
+    "product_skipped_no_adapter": 96001,
+    "cohort_variant_findings": 0,
+    "global_variant_findings": 0,
+    "chemical_groundings_recertified": false
+  },
+  "runtime_merge_retention": {
+    "cohort_medium_shaped_records": 6,
+    "standalone_solutions_excluded": 4,
+    "routing": {
+      "total_processed": 15910,
+      "excluded_solutions": 4785,
+      "skipped_no_fingerprint": 2,
+      "skipped_error": 338,
+      "successfully_fingerprinted": 10785,
+      "reasons": {
+        "other_error": 338,
+        "no_valid_ingredients": 2
+      }
+    },
+    "groups": 10779,
+    "restored_K3017_now_grouped": true
+  },
+  "unchanged_dispositions": [
+    {
+      "key": "DJ675",
+      "path": "data/normalized_yaml/bacterial/JCM_J675_RUMINOCOCCUS_ALBUS_MEDIUM.yaml",
+      "status": "Already curated comparison, unchanged; do not count historical evidence again.",
+      "claim_rows": 23,
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/records/DJ675.md",
+      "report_sha256": "c8987cf6b007874b80957c86abf988d3581877694f9df5e0a5ae819b50f907b6"
+    },
+    {
+      "key": "S4674",
+      "path": "data/normalized_yaml/bacterial/mediadive_4674_Mineral_solution_2.yaml",
+      "status": "Six supported amounts unchanged; placeholder/title corrections remain queued.",
+      "claim_rows": 7,
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/records/S4674.md",
+      "report_sha256": "5f5122469a01c2b60242104c37e06f610a1aae1317f236424a710aba7d9e0f4f"
+    },
+    {
+      "key": "K3037",
+      "path": "data/normalized_yaml/bacterial/mineral_solution_2_medium_436.yaml",
+      "status": "Blocked source access; unchanged and unresolved, not reviewed-complete.",
+      "claim_rows": 1,
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/records/K3037.md",
+      "report_sha256": "dd10afde0c71a8899ace86b0ca9023accf718d9865f1b37a9f8cb6ffff6b6c1c"
+    }
+  ],
+  "cumulative_audit": {
+    "stock_nodes_relocated": 825,
+    "new_quantity_slots": 364,
+    "unsupported_quantity_slots_removed": 869,
+    "new_evidence": 35437,
+    "new_curation_history": 5453,
+    "new_references": 5795,
+    "stock_stage_concentrations_rebased": 199,
+    "stock_descriptors_added": 241,
+    "quantity_corrections": 1455,
+    "stock_dose_basis_corrections": 128,
+    "copied_ingredient_nodes_replaced_by_reference": 37,
+    "ingredient_context_notes_added": 268,
+    "water_input_nodes_added": 27,
+    "recipe_context_notes_corrected": 26,
+    "parent_links_corrected": 7,
+    "source_amount_conflicts_repaired": 3,
+    "unquantified_carrier_nodes_added": 88,
+    "evidence_scopes_corrected": 172,
+    "ingredient_context_notes_corrected": 9,
+    "preparation_actions_corrected": 8,
+    "preparation_descriptions_corrected": 4,
+    "preparation_steps_added": 69,
+    "batch_mass_notes_unverified_concentrations": 48,
+    "duplicate_stock_nodes_removed": 1,
+    "variant_links_added": 8,
+    "explicit_medium_rates_verified": 3,
+    "unsupported_flags_removed": 1,
+    "child_links_corrected": 7,
+    "preparation_steps_relocated": 18,
+    "inline_variant_options_added": 14,
+    "water_input_notes_added": 9,
+    "extraction_preparations_added": 1,
+    "base_preparations_added": 9,
+    "preparation_records_restored": 3,
+    "supplement_nodes_moved_to_variants": 4,
+    "corrected_evidence_snippets": 2,
+    "stock_context_notes_corrected": 8,
+    "extraction_preparations_restructured": 2,
+    "source_version_alternatives_added": 4,
+    "copied_ingredient_nodes_removed": 3,
+    "composition_classifications_corrected": 2,
+    "final_quantity_slots_added": 1,
+    "explicitly_omitted_ingredient_nodes": 1,
+    "ingredient_source_attributions_corrected": 1,
+    "bibliographic_entries_enriched": 1,
+    "excluded_alternative_nodes_removed": 1,
+    "ingredient_labels_corrected": 1,
+    "preparation_text_encodings_corrected": 1,
+    "unquantified_solvent_nodes_added": 1,
+    "ingredient_doses_relocated_to_stock": 1,
+    "identity_conflicts_retained_unquantified": 2,
+    "unquantified_makeup_nodes_added": 1,
+    "stock_preparation_notes_added": 1,
+    "edited_records": 5245
+  },
+  "followup_unique_records": 11801,
+  "outside_this_followup": 4109,
+  "remaining_queues": {
+    "identity": 38,
+    "M142_separate": 71
+  },
+  "remaining_inventory": {
+    "family_count": 30,
+    "external_neighbor_count": 1,
+    "identity_error_count": 4,
+    "title_candidate_entries": 4865,
+    "title_candidate_paths": 4863
+  },
+  "taxa_media_associations_added": 0,
+  "environment_limit": "Existing partial locked Python 3.13 environment, not clean CI or full-suite certification",
+  "receipt_sha256": {
+    "apply": "296e92867650b3fccdfae5ae437263e5c2e411142eed05b42c925fcc1c9d1a63",
+    "audit": "70164e2e791eb3b5a2ac116ff1030b34f3d64c2c9e6593add70ab89616e68ab0",
+    "corpus": "9fc78fd65ec243c74399491d19aa774fbcc43e1d6a3ff9410a5a5183ada31b79",
+    "cumulative-audit": "476dd8333cc4669ce0eaaf6f22804720a856ac81661fb8ac6d7a25e969929ad0",
+    "fast": "a87e3b883291c7bbc1bcaccb9d2b62e5161c0fb01dcc1f167d76d567f37bb0e3",
+    "focused": "97f1e2140a7905059fabce18913f285b8b32d9e9d28f080e53c6694c6289632e",
+    "focused-v2": "43465ff2ecf6fbb830ada1fabe4b67dd4b4ddbf160d91d3de5470a58fbf40b48",
+    "followup-coverage": "48bc999f55f97b08b3d5390c74f19b56c4dfa6ab103a236ec5586ec663733a3d",
+    "index-refresh-plan": "8cc777c1a9674f2d758fcefb9fd513eb1eb95de6597e8653d293dc273aa6ef0b",
+    "ledgers": "8861eb8fa21260e711ab121e28286dc4acd998384d47fa7dd5f4c6b695d2863b",
+    "next-lb-identity-context": "a92c0e865aabfa1521b06365df8bee84e961e7d12ff0c55f19b17af42d470c85",
+    "plan": "47771aa8b0a5d36a7ae339456df36304c2cdabd7508ec526f8f269106bb14332",
+    "post": "4b8467a8d1cab00ad1d8113bcc731ab03eefb37acc0a13e7fc57db078afd702f",
+    "presentation": "17afa6e181a9b0341553729b0181978184d3563f814e70ef74acefba812277b1",
+    "presentation-applied": "6b3b2e2788d00e58659b4de4312e832a9af084aeedb3870281a420e0020d42f4",
+    "preview-retry1": "0f15ef32b749da5a382a21234d86ee59bcdbf22457500f06469f22ff10bc9d3e",
+    "qa": "ff8abdca0327eab9b04ca2642e8e39fcf76a309c1706efa0a952be75ae290891",
+    "reconcile-indexes": "ab634926de113265534171ce344708cbdf977f9f539b5887fc9e511ca86c7a6a",
+    "reconcile-reports": "b79fd13bdfbb9a92d240d7cf1f58470ebe063b1831f5784fd1629a9d4f2cd707",
+    "reconcile-retention": "c93b0ea5e12293947d78d08690544c041001cd6e52d74a2ac7114b6c7e7793bd",
+    "references": "1d34c6db403bf5311473b3522a9e9bbfe31bcc4b33db172ecee482eeeef6566f",
+    "remaining-inventory": "c463cdb5383368b6a93fffad0071f1765deeb1b84cf0187c6fe2625fc6f408e1",
+    "remaining-queue": "6a1832e0120b13eae7c35e102f87d9372026e53c73e92a17f9af93ddb14f7250",
+    "schema": "b0dc7ea1ea6cb684d9f1e62f1e79c13aa6cf5b1a8e597b1959aae1e82d3b9acc",
+    "validation-preview": "a9f49f317be4f051f9f874d162c815d9923efb4e770f16d6fb67b03a8c021654"
+  },
+  "code_sha256": {
+    "scripts/repair_ruminococcus_albus_family.py": "25db938745f061004f02434bb6a0b1705cc3ddf2946ae59a2aa25ece12ede393",
+    "tests/test_ruminococcus_albus_family.py": "4d798d631ec050acb0a7a50ccbf80383d884d54fbea9d7886d3e432e904cc97b",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/audit.py": "54318bf5e16502264775acba6805631a6cd8ed58b9db0f6ebb9b66c84679068b",
+    "scripts/repair_oteb_family.py": "90aa83324ff1b28708921a00c409f50b4c4bd12eb15f09ae8feb0e1010916795",
+    "scripts/repair_methanogen_stock_boundaries.py": "8d4d32c7dc3cb2586242a188f958087482df3aff553d1dbc468c422eddb037ba",
+    "scripts/repair_lactalbumin_formulations.py": "3c16a3f4a2e543d280d3ccbb20a63138f2b409602d8b168b7fc742abe63b1769",
+    "scripts/repair_jcm_stock_preparations.py": "7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a",
+    "scripts/repair_mediadive_stock_concentration_evidence.py": "1badfa99205690cf6082d95db7dafbd6d4927b617027bc61fbaaf9dbd597c974",
+    "scripts/review_medium_concentration_evidence.py": "ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a",
+    "src/culturemech/validation/recipe_references.py": "1ef57389727347c242f45a85a9ed8908803423bc10307f53a888dac67ce06b67",
+    "src/culturemech/validation/write_validated.py": "8e1e2185231caecbe3dc99908c783cd83340b1e93fa9115ff1445d4b3820897e",
+    "src/culturemech/schema/culturemech.yaml": "461478d900fdee29a52c3d14656bcf369443bfdd0f4a534aa9d385f25df1cf8a",
+    "tests/test_medium_concentration_batch.py": "2ee4f198ce68c6e59eb6e3f7aca0d2bb3a062bfe8f7746e09c4ee898d9bf59ab",
+    "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "897e4551f0963f32b1d090dd2a42ce9cb1b4876b74bcdc18e98d59a503138a34",
+    "tests/conftest.py": "f43cf452431b950a079fcee0a3c7e978067039fba749c956da1c94510c33b68b",
+    "scripts/validate_media_variant_links.py": "d18ef71320a0c50abe085e151d0d0d4d963007d1e1c9afbefab97581a983e31e"
+  },
+  "canonical_report_sha256": {
+    "reports/ingredient_concentration_curation/20261007-komodo-media-1000-1500/records/bacterial/KOMODO_436_RUMINOCOCCUS_ALBUS_medium.yaml.md": "5f01f84212c3474902d465b22ee0dfa73040086aab76e37b1f6cf3a4c5d5fd1d",
+    "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/applied-records/M694.md": "12576baafaa429bcc8ddc87d6d2e3555be1d2bc01cf6d64839e8fff5267d27b3",
+    "reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/fatty_acid_mixture_medium_436.yaml.md": "70b2a3108e729ffebd7e4ecec0804abc434dc8c1f66cf00fdd84a4384fcd3b3a",
+    "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0500-1000/records/bacterial/mediadive_882_Main_sol_436.yaml.md": "6a151af7c7065da2e40cd3a9e6c79e04f3e2808a636ea7012c89b7f11af8f952",
+    "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0500-1000/records/bacterial/mediadive_883_Mineral_solution_1.yaml.md": "49141013a1a7a6c42083f154ee63545aad49a3463c10e1805fd3d2c315debd90",
+    "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0500-1000/records/bacterial/mediadive_884_Mineral_solution_2.yaml.md": "5a9fe33003062a412eb4becf126b912f00c52bb523a784f63ce3145b55a78601",
+    "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0500-1000/records/bacterial/mediadive_885_Fatty_acid_mixture.yaml.md": "1da2154700a5ce69ac25a8d4c414e9e475b7f2c55c0b8325ce9222f1e7040930",
+    "reports/ingredient_concentration_curation/20261007-komodo-media-1000-1500/records/bacterial/medium_436_modified_for_dsm_18848.yaml.md": "391e70f33790e3ebb4f04f9b3e8588630629692f2743e76a2fa7fb90b8c99365",
+    "reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/bacterial/ruminococcus_albus_medium.yaml.md": "1b66c4c3a14b525c78517aa747b7fd6b0a7cac4e58c603f1366a41cae4b92d13",
+    "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/applied-records/M2636.md": "2ca0314d86ace9b756fce4583f386d451ee8402c14b846d0b53b5373a5946996"
+  },
+  "applied_ledger_sha256": {
+    "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/applied-records/D436.md": "29fda0f2a4ce045deb722bca0247981a49e37a27d1f4c4030af7f7b7696becab",
+    "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/applied-records/K3017.md": "d766ff848c469bb9e1d701282721c13e12bdad007a5984b0d47c73a81aad6c08",
+    "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/applied-records/K436.md": "cb19c5693d59b8722b25104e46139d7a88a5b2146397b8ca47a4b6a3abe2d4a3",
+    "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/applied-records/K436_18848.md": "a86ae284c397f292e4cf80e5eba298abe5497297f2e64df5d725173f63a1fd7d",
+    "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/applied-records/M2636.md": "2ca0314d86ace9b756fce4583f386d451ee8402c14b846d0b53b5373a5946996",
+    "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/applied-records/M694.md": "12576baafaa429bcc8ddc87d6d2e3555be1d2bc01cf6d64839e8fff5267d27b3",
+    "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/applied-records/S882.md": "c5cd8601be9a7113a39744f0859533da50095bf65d457c3b8fe927b19adbdaf9",
+    "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/applied-records/S883.md": "1aaee06c29d0a277da11e83b0cec331c54f64d12a9163a9afb736ffe4cc93d8e",
+    "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/applied-records/S884.md": "24bd25e9c932a119183633198132d4c25d1dedec71f62570b050c6227527d705",
+    "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/applied-records/S885.md": "892abf6f275b0b5c4518b9de56322451bd12880c3f1029984bbe3e3b1db01b55"
+  }
+}

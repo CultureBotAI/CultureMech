@@ -1,0 +1,208 @@
+{
+  "terminal": true,
+  "local_applied_record_checks_passed": true,
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "normalized_count": 15910,
+  "normalized_inventory_sha256": "5fb7aa3854ad7d9a61f4d5b02b53487df4503f3cdcf137eaa516d7d74b5d2f75",
+  "counts": {
+    "new_evidence": 37203,
+    "new_curation_history": 5610,
+    "bibliographic_entries_enriched": 32,
+    "quantity_corrections": 1743,
+    "ingredient_context_notes_corrected": 107,
+    "new_references": 6014,
+    "unsupported_quantity_slots_removed": 936,
+    "ingredient_labels_corrected": 53,
+    "ingredient_identities_corrected": 12,
+    "preparation_descriptions_corrected": 61,
+    "child_link_notes_corrected": 1,
+    "preparation_actions_corrected": 66,
+    "stock_nodes_relocated": 842,
+    "new_quantity_slots": 379,
+    "stock_stage_concentrations_rebased": 203,
+    "stock_descriptors_added": 247,
+    "stock_dose_basis_corrections": 128,
+    "copied_ingredient_nodes_replaced_by_reference": 37,
+    "ingredient_context_notes_added": 268,
+    "water_input_nodes_added": 28,
+    "recipe_context_notes_corrected": 30,
+    "parent_links_corrected": 7,
+    "source_amount_conflicts_repaired": 3,
+    "unquantified_carrier_nodes_added": 91,
+    "evidence_scopes_corrected": 172,
+    "preparation_steps_added": 69,
+    "batch_mass_notes_unverified_concentrations": 48,
+    "duplicate_stock_nodes_removed": 1,
+    "variant_links_added": 10,
+    "explicit_medium_rates_verified": 3,
+    "unsupported_flags_removed": 3,
+    "child_links_corrected": 7,
+    "unsupported_primary_identities_removed": 4,
+    "ingredient_evidence_explanations_extended": 3,
+    "preparation_steps_relocated": 18,
+    "inline_variant_options_added": 16,
+    "water_input_notes_added": 9,
+    "extraction_preparations_added": 1,
+    "unquantified_ingredient_nodes_added": 2,
+    "base_preparations_added": 9,
+    "preparation_records_restored": 4,
+    "supplement_nodes_moved_to_variants": 4,
+    "supplied_hydrate_identities_corrected": 87,
+    "copied_ingredient_nodes_removed": 15,
+    "corrected_evidence_snippets": 2,
+    "stock_context_notes_corrected": 8,
+    "extraction_preparations_restructured": 2,
+    "source_version_alternatives_added": 4,
+    "composition_classifications_corrected": 2,
+    "final_quantity_slots_added": 1,
+    "explicitly_omitted_ingredient_nodes": 1,
+    "ingredient_source_attributions_corrected": 1,
+    "unsupported_secondary_identities_removed": 1,
+    "excluded_alternative_nodes_removed": 1,
+    "preparation_text_encodings_corrected": 1,
+    "unquantified_solvent_nodes_added": 1,
+    "ingredient_doses_relocated_to_stock": 1,
+    "identity_conflicts_retained_unquantified": 2,
+    "unquantified_makeup_nodes_added": 1,
+    "stock_preparation_notes_added": 1,
+    "edited_records": 5371
+  },
+  "followup_unique_records": 11899,
+  "outside_this_followup": 4011,
+  "new_batch": {
+    "new_evidence": 110,
+    "new_curation_history": 5,
+    "new_references": 17,
+    "bibliographic_entries_enriched": 21,
+    "unsupported_quantity_slots_removed": 21,
+    "ingredient_context_notes_corrected": 66,
+    "ingredient_labels_corrected": 12,
+    "ingredient_identities_corrected": 12,
+    "preparation_descriptions_corrected": 1,
+    "child_link_notes_corrected": 1,
+    "quantity_corrections": 1,
+    "preparation_actions_corrected": 1,
+    "records": 5,
+    "ingredient_and_stock_claim_rows": 105,
+    "taxa_media_associations": 0
+  },
+  "batch_quantity_claim_dispositions": {
+    "evidence_only": 83,
+    "correct": 22
+  },
+  "production_reference_checks": {
+    "aborted_commands_without_claim_results": 4,
+    "failed_snippet": 1,
+    "passed_title": 1,
+    "passed_snippet": 1
+  },
+  "production_reference_results": [
+    {
+      "record": "data/normalized_yaml/algae/1_F_2_Medium.yaml",
+      "returncode": 2,
+      "per_claim_results_available": false,
+      "error": "[ERROR] reference_validation: HTTPSConnectionPool(host='www.sigmaaldrich.com', port=443): Read timed out. (read timeout=30)"
+    },
+    {
+      "record": "data/normalized_yaml/algae/5_F_2_Medium.yaml",
+      "returncode": 2,
+      "per_claim_results_available": false,
+      "error": "[ERROR] reference_validation: HTTPSConnectionPool(host='www.sigmaaldrich.com', port=443): Read timed out. (read timeout=30)"
+    },
+    {
+      "record": "data/normalized_yaml/algae/8_ppt_F_2_Medium.yaml",
+      "returncode": 2,
+      "per_claim_results_available": false,
+      "error": "[ERROR] reference_validation: HTTPSConnectionPool(host='www.sigmaaldrich.com', port=443): Read timed out. (read timeout=30)"
+    },
+    {
+      "record": "data/normalized_yaml/algae/F_2_Medium.yaml",
+      "returncode": 2,
+      "per_claim_results_available": false,
+      "error": "[ERROR] reference_validation: HTTPSConnectionPool(host='www.sigmaaldrich.com', port=443): Read timed out. (read timeout=30)"
+    },
+    {
+      "record": "data/normalized_yaml/algae/f_2_nh4_medium.yaml",
+      "returncode": 1,
+      "per_claim_results_available": true,
+      "valid": false,
+      "issues": [
+        "Text part not found as substring: 'add a pinch of NH 4 MgPO 4 to each flask.'"
+      ]
+    }
+  ],
+  "production_reference_gate_passed": false,
+  "reference_limitations": [
+    "Four recipe commands abort on a Sigma timeout and yield no per-snippet results; no automatic snippet passes are inferred for them.",
+    "NH4 snippet has extraction whitespace inside the chemical formula and fails literal matching; its title and aliquot snippet pass.",
+    "Manual source/table/PDF/identity inspection is separate from the failed production reference gate."
+  ],
+  "remaining_record_issues": [
+    "NH4 parent_media.notes and variant_modifications[0] retain legacy 175 mL flask wording; need evidence-backed append-only correction to 175 mL aliquot in 250 mL flask.",
+    "The Trace Metals Solution mass/molar column discrepancy is unresolved; no corrected molarity or receiving-medium concentration was inferred.",
+    "Three existing F/2 literature variants remain outside this UTEX recipe batch.",
+    "HTML/PDF salinity version differences and the missing 5% vitamin-addition step remain explicit limitations."
+  ],
+  "corpus_commands": [
+    {
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "just",
+        "assign-ids-check"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "just",
+        "validate-products"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "just",
+        "check-mim-label-index"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "returncode": 1
+    },
+    {
+      "command": [
+        "just",
+        "audit-merge-freshness"
+      ],
+      "returncode": 1
+    }
+  ],
+  "fast_test_summary": "14913 passed, 16 skipped, 3498 deselected, 2 warnings in 2149.98s (0:35:49)",
+  "fast_tier_passed": true,
+  "full_test_suite_pass_asserted": false,
+  "receipts_sha256": {
+    "preview": "f20aa86c276ae2b83b022afb9739be86f1623de8559a33293139118954d2e380",
+    "apply": "fb07d3dfbd0a5fe32e3c87834cab55ab9a867a18605a21f04c5be7587d46593d",
+    "reconcile-baseline": "776383fb1e86b10f5a2effd9801cc2a53bf6cf63d3184d51fb99b9826632b1db",
+    "reconcile-reports": "3ed006cde70d4e284fcddc8218965b6cf515a6fbbfc2e6a3b3ac433e68b751ca",
+    "reconcile-cumulative": "25d82ed568f134ad881fa8094a1f6638c2b09e2aab7a27a90bc650aa0a0461d0",
+    "reconcile-indexes": "efe295e0347639efe3d5736ce8a0df31607ab864d251e379686d585c9aa82dd3",
+    "reconcile-retention": "522656a5b4cf89720f9f6243f2ecf4e6e24b1b1905ccb8fc2b8f4e6858086980",
+    "post": "1bdd91a915fa7d58543df9223a04770030efe9a4723166ab76c92cf99f6af573",
+    "references": "9b16182bb4b24f1c59214a79e863b056d60097f2d1a47ef02ece8f481d5ec8a4",
+    "corpus": "6cc06c54207c0b1168398491d40ed0eaa389381ac6122782e4c0e428a3b66574",
+    "fast": "d5a4482d518751f7146ce3350d3dbba7295112b3d59e7cb3f715ca3dd49de3d3",
+    "postflight": "9cdcc5619ba308d43c17b1b4af61c5c141a45ca349ee99689e12051c9b659197"
+  }
+}

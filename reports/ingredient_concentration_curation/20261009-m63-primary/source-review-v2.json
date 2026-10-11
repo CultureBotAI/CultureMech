@@ -1,0 +1,1507 @@
+{
+  "reference": "doi:10.1186/1471-2180-10-256",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2964678/",
+  "raw_html_sha256": "e20c2446581d88af76ccae9b37fa4d8252bedd8659e7032073652aa9fee6725b",
+  "doi_resolved_to": "https://link.springer.com/article/10.1186/1471-2180-10-256",
+  "title": "Involvement of EupR, a response regulator of the NarL/FixJ family, in the control of the uptake of the compatible solutes ectoines by the halophilic bacterium Chromohalobacter salexigens",
+  "authors": [
+    "Javier Rodr\u00edguez-Moya",
+    "Montserrat Argando\u00f1a",
+    "Mercedes Reina-Bueno",
+    "Joaqu\u00edn J Nieto",
+    "Fernando Iglesias-Guerra",
+    "Mohamed Jebbar",
+    "Carmen Vargas"
+  ],
+  "year": 2010,
+  "source_type": "journal_article",
+  "discovery_mode": "cross_reference",
+  "accessed_on": "2026-10-09",
+  "license": "CC BY 2.0",
+  "figure_locator": "Figure 1 caption; PMC element F1, panels A-D",
+  "methods_locator": "Methods / Bacterial strains, plasmids and growth conditions",
+  "excerpts": {
+    "carbon": "20 mM glucose, 20 mM ectoine, or 20 mM hydroxyectoine",
+    "salt": "0.6 (A), 0.75 (B), 1.5 (C) and 2.5 (D) M NaCl.",
+    "salt_basis": "The osmotic strength of M63 was increased by the addition of a 0.6 to 2.5 M final concentration of NaCl.",
+    "ectoine_basis": "When used as the sole carbon sources, ectoine and hydroxyectoine (bitop AG, Witten, Germany) were added to the media at a final concentration of 20 mM.",
+    "koh": "The pH of all media was adjusted to 7.2 with KOH."
+  },
+  "base_recipe_reference_lead": "Csonka LN. A third L-proline permease in Salmonella typhimurium which functions in media of elevated osmotic strength. J Bacteriol. 1982;151:1433\u20131443. doi: 10.1128/jb.151.3.1433-1443.1982.",
+  "cohort_assessment_sha256": "bfd6b6a15fe29cd8c3024c568952407ba92ccd27576a1603cb80c3ef4284b78d",
+  "records": [
+    {
+      "key": "4",
+      "path": "data/normalized_yaml/bacterial/modified_m63_medium_with_glucose_and_0_6_m_nacl.yaml",
+      "id": "CultureMech:007395",
+      "before_sha256": "4c33d7ffba676aaf33c0308eca938e6dfbab175aab7755c1a27ae1c6e6eb5e15",
+      "source_term": "MEDIADB:4",
+      "carbon": "glucose",
+      "salt_molar": "0.6",
+      "panel": "A",
+      "database_source_lead": {
+        "values": {
+          "sourceID": "4",
+          "First_Author": "Rodriguez-moya",
+          "Journal": "Bmc microbiology",
+          "Year": "2010",
+          "Title": "Involvement of eupr, a response regulator of the narl/fixj family, in the control of the uptake of the compatible solutes ectoines by the halophilic bacterium chromohalobacter salexigens. ",
+          "Link": "http://www.biomedcentral.com/content/pdf/1471-2180-10-256.pdf",
+          "pubmed_id": "20942908"
+        },
+        "snippet": "(4,'Rodriguez-moya','Bmc microbiology',2010,'Involvement of eupr, a response regulator of the narl/fixj family, in the control of the uptake of the compatible solutes ectoines by the halophilic bacterium chromohalobacter salexigens. ','http://www.biomedcentral.com/content/pdf/1471-2180-10-256.pdf',20942908)",
+        "line": 437
+      },
+      "ingredients_before": [
+        {
+          "preferred_term": "D-Glucose",
+          "term": {
+            "id": "CHEBI:17634",
+            "label": "D-glucose"
+          },
+          "concentration": {
+            "value": "20.0",
+            "unit": "MILLIMOLAR"
+          },
+          "notes": "Cross-references: KEGG:glc_D",
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:17634",
+            "label": "D-glucose"
+          }
+        },
+        {
+          "preferred_term": "Potassium hydroxide",
+          "concentration": {
+            "value": "75.0",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:32035",
+            "label": "potassium hydroxide"
+          }
+        },
+        {
+          "preferred_term": "Potassium dibasic phosphate",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:131527",
+            "label": "dipotassium hydrogen phosphate"
+          }
+        },
+        {
+          "preferred_term": "Sodium chloride",
+          "term": {
+            "id": "CHEBI:26710",
+            "label": "sodium chloride"
+          },
+          "concentration": {
+            "value": "600.0",
+            "unit": "MILLIMOLAR"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:26710",
+            "label": "sodium chloride"
+          }
+        },
+        {
+          "preferred_term": "Magnesium sulfate",
+          "term": {
+            "id": "CHEBI:32599",
+            "label": "magnesium sulfate"
+          },
+          "concentration": {
+            "value": "0.16",
+            "unit": "MILLIMOLAR"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:32599",
+            "label": "magnesium sulfate"
+          }
+        },
+        {
+          "preferred_term": "Ferrous sulfate",
+          "concentration": {
+            "value": "0.0018",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:75832",
+            "label": "iron(2+) sulfate (anhydrous)"
+          }
+        },
+        {
+          "preferred_term": "Ammonium sulfate",
+          "term": {
+            "id": "CHEBI:62946",
+            "label": "ammonium sulfate"
+          },
+          "concentration": {
+            "value": "15.0",
+            "unit": "MILLIMOLAR"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:62946",
+            "label": "ammonium sulfate"
+          }
+        }
+      ]
+    },
+    {
+      "key": "5",
+      "path": "data/normalized_yaml/bacterial/modified_m63_medium_with_glucose_and_0_75_m_nacl.yaml",
+      "id": "CultureMech:007406",
+      "before_sha256": "d6f6725a8eeda43f633e1f2e7f3a7d607b9928ef34e26e04e020f0d8d5377c95",
+      "source_term": "MEDIADB:5",
+      "carbon": "glucose",
+      "salt_molar": "0.75",
+      "panel": "B",
+      "database_source_lead": {
+        "values": {
+          "sourceID": "4",
+          "First_Author": "Rodriguez-moya",
+          "Journal": "Bmc microbiology",
+          "Year": "2010",
+          "Title": "Involvement of eupr, a response regulator of the narl/fixj family, in the control of the uptake of the compatible solutes ectoines by the halophilic bacterium chromohalobacter salexigens. ",
+          "Link": "http://www.biomedcentral.com/content/pdf/1471-2180-10-256.pdf",
+          "pubmed_id": "20942908"
+        },
+        "snippet": "(4,'Rodriguez-moya','Bmc microbiology',2010,'Involvement of eupr, a response regulator of the narl/fixj family, in the control of the uptake of the compatible solutes ectoines by the halophilic bacterium chromohalobacter salexigens. ','http://www.biomedcentral.com/content/pdf/1471-2180-10-256.pdf',20942908)",
+        "line": 437
+      },
+      "ingredients_before": [
+        {
+          "preferred_term": "D-Glucose",
+          "term": {
+            "id": "CHEBI:17634",
+            "label": "D-glucose"
+          },
+          "concentration": {
+            "value": "20.0",
+            "unit": "MILLIMOLAR"
+          },
+          "notes": "Cross-references: KEGG:glc_D",
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:17634",
+            "label": "D-glucose"
+          }
+        },
+        {
+          "preferred_term": "Potassium hydroxide",
+          "concentration": {
+            "value": "75.0",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:32035",
+            "label": "potassium hydroxide"
+          }
+        },
+        {
+          "preferred_term": "Potassium dibasic phosphate",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:131527",
+            "label": "dipotassium hydrogen phosphate"
+          }
+        },
+        {
+          "preferred_term": "Sodium chloride",
+          "term": {
+            "id": "CHEBI:26710",
+            "label": "sodium chloride"
+          },
+          "concentration": {
+            "value": "750.0",
+            "unit": "MILLIMOLAR"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:26710",
+            "label": "sodium chloride"
+          }
+        },
+        {
+          "preferred_term": "Magnesium sulfate",
+          "term": {
+            "id": "CHEBI:32599",
+            "label": "magnesium sulfate"
+          },
+          "concentration": {
+            "value": "0.16",
+            "unit": "MILLIMOLAR"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:32599",
+            "label": "magnesium sulfate"
+          }
+        },
+        {
+          "preferred_term": "Ferrous sulfate",
+          "concentration": {
+            "value": "0.0018",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:75832",
+            "label": "iron(2+) sulfate (anhydrous)"
+          }
+        },
+        {
+          "preferred_term": "Ammonium sulfate",
+          "term": {
+            "id": "CHEBI:62946",
+            "label": "ammonium sulfate"
+          },
+          "concentration": {
+            "value": "15.0",
+            "unit": "MILLIMOLAR"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:62946",
+            "label": "ammonium sulfate"
+          }
+        }
+      ]
+    },
+    {
+      "key": "6",
+      "path": "data/normalized_yaml/bacterial/modified_m63_medium_with_glucose_and_1_5_m_nacl.yaml",
+      "id": "CultureMech:007417",
+      "before_sha256": "0194ac7cf185cccc1e1c12326f6dcd21a467e9283c3cbb2452eba6df8278c622",
+      "source_term": "MEDIADB:6",
+      "carbon": "glucose",
+      "salt_molar": "1.5",
+      "panel": "C",
+      "database_source_lead": {
+        "values": {
+          "sourceID": "4",
+          "First_Author": "Rodriguez-moya",
+          "Journal": "Bmc microbiology",
+          "Year": "2010",
+          "Title": "Involvement of eupr, a response regulator of the narl/fixj family, in the control of the uptake of the compatible solutes ectoines by the halophilic bacterium chromohalobacter salexigens. ",
+          "Link": "http://www.biomedcentral.com/content/pdf/1471-2180-10-256.pdf",
+          "pubmed_id": "20942908"
+        },
+        "snippet": "(4,'Rodriguez-moya','Bmc microbiology',2010,'Involvement of eupr, a response regulator of the narl/fixj family, in the control of the uptake of the compatible solutes ectoines by the halophilic bacterium chromohalobacter salexigens. ','http://www.biomedcentral.com/content/pdf/1471-2180-10-256.pdf',20942908)",
+        "line": 437
+      },
+      "ingredients_before": [
+        {
+          "preferred_term": "D-Glucose",
+          "term": {
+            "id": "CHEBI:17634",
+            "label": "D-glucose"
+          },
+          "concentration": {
+            "value": "20.0",
+            "unit": "MILLIMOLAR"
+          },
+          "notes": "Cross-references: KEGG:glc_D",
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:17634",
+            "label": "D-glucose"
+          }
+        },
+        {
+          "preferred_term": "Potassium hydroxide",
+          "concentration": {
+            "value": "75.0",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:32035",
+            "label": "potassium hydroxide"
+          }
+        },
+        {
+          "preferred_term": "Potassium dibasic phosphate",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:131527",
+            "label": "dipotassium hydrogen phosphate"
+          }
+        },
+        {
+          "preferred_term": "Sodium chloride",
+          "term": {
+            "id": "CHEBI:26710",
+            "label": "sodium chloride"
+          },
+          "concentration": {
+            "value": "1500.0",
+            "unit": "MILLIMOLAR"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:26710",
+            "label": "sodium chloride"
+          }
+        },
+        {
+          "preferred_term": "Magnesium sulfate",
+          "term": {
+            "id": "CHEBI:32599",
+            "label": "magnesium sulfate"
+          },
+          "concentration": {
+            "value": "0.16",
+            "unit": "MILLIMOLAR"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:32599",
+            "label": "magnesium sulfate"
+          }
+        },
+        {
+          "preferred_term": "Ferrous sulfate",
+          "concentration": {
+            "value": "0.0018",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:75832",
+            "label": "iron(2+) sulfate (anhydrous)"
+          }
+        },
+        {
+          "preferred_term": "Ammonium sulfate",
+          "term": {
+            "id": "CHEBI:62946",
+            "label": "ammonium sulfate"
+          },
+          "concentration": {
+            "value": "15.0",
+            "unit": "MILLIMOLAR"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:62946",
+            "label": "ammonium sulfate"
+          }
+        }
+      ]
+    },
+    {
+      "key": "7",
+      "path": "data/normalized_yaml/bacterial/modified_m63_medium_with_glucose_and_2_5_m_nacl.yaml",
+      "id": "CultureMech:007428",
+      "before_sha256": "321a18f34cac51dac8dbd8795f0abefd4e21f1a0aab13cfcbb272adfcd9b524d",
+      "source_term": "MEDIADB:7",
+      "carbon": "glucose",
+      "salt_molar": "2.5",
+      "panel": "D",
+      "database_source_lead": {
+        "values": {
+          "sourceID": "4",
+          "First_Author": "Rodriguez-moya",
+          "Journal": "Bmc microbiology",
+          "Year": "2010",
+          "Title": "Involvement of eupr, a response regulator of the narl/fixj family, in the control of the uptake of the compatible solutes ectoines by the halophilic bacterium chromohalobacter salexigens. ",
+          "Link": "http://www.biomedcentral.com/content/pdf/1471-2180-10-256.pdf",
+          "pubmed_id": "20942908"
+        },
+        "snippet": "(4,'Rodriguez-moya','Bmc microbiology',2010,'Involvement of eupr, a response regulator of the narl/fixj family, in the control of the uptake of the compatible solutes ectoines by the halophilic bacterium chromohalobacter salexigens. ','http://www.biomedcentral.com/content/pdf/1471-2180-10-256.pdf',20942908)",
+        "line": 437
+      },
+      "ingredients_before": [
+        {
+          "preferred_term": "D-Glucose",
+          "term": {
+            "id": "CHEBI:17634",
+            "label": "D-glucose"
+          },
+          "concentration": {
+            "value": "20.0",
+            "unit": "MILLIMOLAR"
+          },
+          "notes": "Cross-references: KEGG:glc_D",
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:17634",
+            "label": "D-glucose"
+          }
+        },
+        {
+          "preferred_term": "Potassium hydroxide",
+          "concentration": {
+            "value": "75.0",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:32035",
+            "label": "potassium hydroxide"
+          }
+        },
+        {
+          "preferred_term": "Potassium dibasic phosphate",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:131527",
+            "label": "dipotassium hydrogen phosphate"
+          }
+        },
+        {
+          "preferred_term": "Sodium chloride",
+          "term": {
+            "id": "CHEBI:26710",
+            "label": "sodium chloride"
+          },
+          "concentration": {
+            "value": "2500.0",
+            "unit": "MILLIMOLAR"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:26710",
+            "label": "sodium chloride"
+          }
+        },
+        {
+          "preferred_term": "Magnesium sulfate",
+          "term": {
+            "id": "CHEBI:32599",
+            "label": "magnesium sulfate"
+          },
+          "concentration": {
+            "value": "0.16",
+            "unit": "MILLIMOLAR"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:32599",
+            "label": "magnesium sulfate"
+          }
+        },
+        {
+          "preferred_term": "Ferrous sulfate",
+          "concentration": {
+            "value": "0.0018",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:75832",
+            "label": "iron(2+) sulfate (anhydrous)"
+          }
+        },
+        {
+          "preferred_term": "Ammonium sulfate",
+          "term": {
+            "id": "CHEBI:62946",
+            "label": "ammonium sulfate"
+          },
+          "concentration": {
+            "value": "15.0",
+            "unit": "MILLIMOLAR"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:62946",
+            "label": "ammonium sulfate"
+          }
+        }
+      ]
+    },
+    {
+      "key": "8",
+      "path": "data/normalized_yaml/bacterial/modified_m63_medium_with_ectoine_and_0_6_m_nacl.yaml",
+      "id": "CultureMech:007437",
+      "before_sha256": "057b24bbd338fb9f6125bda818088e378156c126004f9704e4a6bb03987f3c29",
+      "source_term": "MEDIADB:8",
+      "carbon": "ectoine",
+      "salt_molar": "0.6",
+      "panel": "A",
+      "database_source_lead": {
+        "values": {
+          "sourceID": "4",
+          "First_Author": "Rodriguez-moya",
+          "Journal": "Bmc microbiology",
+          "Year": "2010",
+          "Title": "Involvement of eupr, a response regulator of the narl/fixj family, in the control of the uptake of the compatible solutes ectoines by the halophilic bacterium chromohalobacter salexigens. ",
+          "Link": "http://www.biomedcentral.com/content/pdf/1471-2180-10-256.pdf",
+          "pubmed_id": "20942908"
+        },
+        "snippet": "(4,'Rodriguez-moya','Bmc microbiology',2010,'Involvement of eupr, a response regulator of the narl/fixj family, in the control of the uptake of the compatible solutes ectoines by the halophilic bacterium chromohalobacter salexigens. ','http://www.biomedcentral.com/content/pdf/1471-2180-10-256.pdf',20942908)",
+        "line": 437
+      },
+      "ingredients_before": [
+        {
+          "preferred_term": "Ectoine",
+          "concentration": {
+            "value": "20.0",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:27592",
+            "label": "ectoine"
+          }
+        },
+        {
+          "preferred_term": "Potassium hydroxide",
+          "concentration": {
+            "value": "75.0",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:32035",
+            "label": "potassium hydroxide"
+          }
+        },
+        {
+          "preferred_term": "Potassium dibasic phosphate",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:131527",
+            "label": "dipotassium hydrogen phosphate"
+          }
+        },
+        {
+          "preferred_term": "Sodium chloride",
+          "term": {
+            "id": "CHEBI:26710",
+            "label": "sodium chloride"
+          },
+          "concentration": {
+            "value": "600.0",
+            "unit": "MILLIMOLAR"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:26710",
+            "label": "sodium chloride"
+          }
+        },
+        {
+          "preferred_term": "Magnesium sulfate",
+          "term": {
+            "id": "CHEBI:32599",
+            "label": "magnesium sulfate"
+          },
+          "concentration": {
+            "value": "0.16",
+            "unit": "MILLIMOLAR"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:32599",
+            "label": "magnesium sulfate"
+          }
+        },
+        {
+          "preferred_term": "Ferrous sulfate",
+          "concentration": {
+            "value": "0.0018",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:75832",
+            "label": "iron(2+) sulfate (anhydrous)"
+          }
+        },
+        {
+          "preferred_term": "Ammonium sulfate",
+          "term": {
+            "id": "CHEBI:62946",
+            "label": "ammonium sulfate"
+          },
+          "concentration": {
+            "value": "15.0",
+            "unit": "MILLIMOLAR"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:62946",
+            "label": "ammonium sulfate"
+          }
+        }
+      ]
+    },
+    {
+      "key": "9",
+      "path": "data/normalized_yaml/bacterial/modified_m63_medium_with_ectoine_and_0_75_m_nacl.yaml",
+      "id": "CultureMech:007448",
+      "before_sha256": "dbeb3fac13f7bed424b95d8964dec2e565510754ac299f90b1698d2cf4659e4a",
+      "source_term": "MEDIADB:9",
+      "carbon": "ectoine",
+      "salt_molar": "0.75",
+      "panel": "B",
+      "database_source_lead": {
+        "values": {
+          "sourceID": "4",
+          "First_Author": "Rodriguez-moya",
+          "Journal": "Bmc microbiology",
+          "Year": "2010",
+          "Title": "Involvement of eupr, a response regulator of the narl/fixj family, in the control of the uptake of the compatible solutes ectoines by the halophilic bacterium chromohalobacter salexigens. ",
+          "Link": "http://www.biomedcentral.com/content/pdf/1471-2180-10-256.pdf",
+          "pubmed_id": "20942908"
+        },
+        "snippet": "(4,'Rodriguez-moya','Bmc microbiology',2010,'Involvement of eupr, a response regulator of the narl/fixj family, in the control of the uptake of the compatible solutes ectoines by the halophilic bacterium chromohalobacter salexigens. ','http://www.biomedcentral.com/content/pdf/1471-2180-10-256.pdf',20942908)",
+        "line": 437
+      },
+      "ingredients_before": [
+        {
+          "preferred_term": "Ectoine",
+          "concentration": {
+            "value": "20.0",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:27592",
+            "label": "ectoine"
+          }
+        },
+        {
+          "preferred_term": "Potassium hydroxide",
+          "concentration": {
+            "value": "75.0",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:32035",
+            "label": "potassium hydroxide"
+          }
+        },
+        {
+          "preferred_term": "Potassium dibasic phosphate",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:131527",
+            "label": "dipotassium hydrogen phosphate"
+          }
+        },
+        {
+          "preferred_term": "Sodium chloride",
+          "term": {
+            "id": "CHEBI:26710",
+            "label": "sodium chloride"
+          },
+          "concentration": {
+            "value": "750.0",
+            "unit": "MILLIMOLAR"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:26710",
+            "label": "sodium chloride"
+          }
+        },
+        {
+          "preferred_term": "Magnesium sulfate",
+          "term": {
+            "id": "CHEBI:32599",
+            "label": "magnesium sulfate"
+          },
+          "concentration": {
+            "value": "0.16",
+            "unit": "MILLIMOLAR"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:32599",
+            "label": "magnesium sulfate"
+          }
+        },
+        {
+          "preferred_term": "Ferrous sulfate",
+          "concentration": {
+            "value": "0.0018",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:75832",
+            "label": "iron(2+) sulfate (anhydrous)"
+          }
+        },
+        {
+          "preferred_term": "Ammonium sulfate",
+          "term": {
+            "id": "CHEBI:62946",
+            "label": "ammonium sulfate"
+          },
+          "concentration": {
+            "value": "15.0",
+            "unit": "MILLIMOLAR"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:62946",
+            "label": "ammonium sulfate"
+          }
+        }
+      ]
+    },
+    {
+      "key": "10",
+      "path": "data/normalized_yaml/bacterial/modified_m63_medium_with_ectoine_and_1_5_m_nacl.yaml",
+      "id": "CultureMech:006996",
+      "before_sha256": "af5896522da4375bf42e8f51d071d4a7cab4db624a5ad73d53b18a74afe758c5",
+      "source_term": "MEDIADB:10",
+      "carbon": "ectoine",
+      "salt_molar": "1.5",
+      "panel": "C",
+      "database_source_lead": {
+        "values": {
+          "sourceID": "4",
+          "First_Author": "Rodriguez-moya",
+          "Journal": "Bmc microbiology",
+          "Year": "2010",
+          "Title": "Involvement of eupr, a response regulator of the narl/fixj family, in the control of the uptake of the compatible solutes ectoines by the halophilic bacterium chromohalobacter salexigens. ",
+          "Link": "http://www.biomedcentral.com/content/pdf/1471-2180-10-256.pdf",
+          "pubmed_id": "20942908"
+        },
+        "snippet": "(4,'Rodriguez-moya','Bmc microbiology',2010,'Involvement of eupr, a response regulator of the narl/fixj family, in the control of the uptake of the compatible solutes ectoines by the halophilic bacterium chromohalobacter salexigens. ','http://www.biomedcentral.com/content/pdf/1471-2180-10-256.pdf',20942908)",
+        "line": 437
+      },
+      "ingredients_before": [
+        {
+          "preferred_term": "Ectoine",
+          "concentration": {
+            "value": "20.0",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:27592",
+            "label": "ectoine"
+          }
+        },
+        {
+          "preferred_term": "Potassium hydroxide",
+          "concentration": {
+            "value": "75.0",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:32035",
+            "label": "potassium hydroxide"
+          }
+        },
+        {
+          "preferred_term": "Potassium dibasic phosphate",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:131527",
+            "label": "dipotassium hydrogen phosphate"
+          }
+        },
+        {
+          "preferred_term": "Sodium chloride",
+          "term": {
+            "id": "CHEBI:26710",
+            "label": "sodium chloride"
+          },
+          "concentration": {
+            "value": "1500.0",
+            "unit": "MILLIMOLAR"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:26710",
+            "label": "sodium chloride"
+          }
+        },
+        {
+          "preferred_term": "Magnesium sulfate",
+          "term": {
+            "id": "CHEBI:32599",
+            "label": "magnesium sulfate"
+          },
+          "concentration": {
+            "value": "0.16",
+            "unit": "MILLIMOLAR"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:32599",
+            "label": "magnesium sulfate"
+          }
+        },
+        {
+          "preferred_term": "Ferrous sulfate",
+          "concentration": {
+            "value": "0.0018",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:75832",
+            "label": "iron(2+) sulfate (anhydrous)"
+          }
+        },
+        {
+          "preferred_term": "Ammonium sulfate",
+          "term": {
+            "id": "CHEBI:62946",
+            "label": "ammonium sulfate"
+          },
+          "concentration": {
+            "value": "15.0",
+            "unit": "MILLIMOLAR"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:62946",
+            "label": "ammonium sulfate"
+          }
+        }
+      ]
+    },
+    {
+      "key": "11",
+      "path": "data/normalized_yaml/bacterial/modified_m63_medium_with_ectoine_and_2_5_m_nacl.yaml",
+      "id": "CultureMech:007007",
+      "before_sha256": "d2754ec5d35d6347cd4328768387c425e91260bcea684094a8cf311ab7645b8b",
+      "source_term": "MEDIADB:11",
+      "carbon": "ectoine",
+      "salt_molar": "2.5",
+      "panel": "D",
+      "database_source_lead": {
+        "values": {
+          "sourceID": "4",
+          "First_Author": "Rodriguez-moya",
+          "Journal": "Bmc microbiology",
+          "Year": "2010",
+          "Title": "Involvement of eupr, a response regulator of the narl/fixj family, in the control of the uptake of the compatible solutes ectoines by the halophilic bacterium chromohalobacter salexigens. ",
+          "Link": "http://www.biomedcentral.com/content/pdf/1471-2180-10-256.pdf",
+          "pubmed_id": "20942908"
+        },
+        "snippet": "(4,'Rodriguez-moya','Bmc microbiology',2010,'Involvement of eupr, a response regulator of the narl/fixj family, in the control of the uptake of the compatible solutes ectoines by the halophilic bacterium chromohalobacter salexigens. ','http://www.biomedcentral.com/content/pdf/1471-2180-10-256.pdf',20942908)",
+        "line": 437
+      },
+      "ingredients_before": [
+        {
+          "preferred_term": "Ectoine",
+          "concentration": {
+            "value": "20.0",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:27592",
+            "label": "ectoine"
+          }
+        },
+        {
+          "preferred_term": "Potassium hydroxide",
+          "concentration": {
+            "value": "75.0",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:32035",
+            "label": "potassium hydroxide"
+          }
+        },
+        {
+          "preferred_term": "Potassium dibasic phosphate",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:131527",
+            "label": "dipotassium hydrogen phosphate"
+          }
+        },
+        {
+          "preferred_term": "Sodium chloride",
+          "term": {
+            "id": "CHEBI:26710",
+            "label": "sodium chloride"
+          },
+          "concentration": {
+            "value": "2500.0",
+            "unit": "MILLIMOLAR"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:26710",
+            "label": "sodium chloride"
+          }
+        },
+        {
+          "preferred_term": "Magnesium sulfate",
+          "term": {
+            "id": "CHEBI:32599",
+            "label": "magnesium sulfate"
+          },
+          "concentration": {
+            "value": "0.16",
+            "unit": "MILLIMOLAR"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:32599",
+            "label": "magnesium sulfate"
+          }
+        },
+        {
+          "preferred_term": "Ferrous sulfate",
+          "concentration": {
+            "value": "0.0018",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:75832",
+            "label": "iron(2+) sulfate (anhydrous)"
+          }
+        },
+        {
+          "preferred_term": "Ammonium sulfate",
+          "term": {
+            "id": "CHEBI:62946",
+            "label": "ammonium sulfate"
+          },
+          "concentration": {
+            "value": "15.0",
+            "unit": "MILLIMOLAR"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:62946",
+            "label": "ammonium sulfate"
+          }
+        }
+      ]
+    },
+    {
+      "key": "12",
+      "path": "data/normalized_yaml/bacterial/modified_m63_medium_with_hydroxyectoine_and_0_6_m_nacl.yaml",
+      "id": "CultureMech:007018",
+      "before_sha256": "30dd3ce09b02265487b837f69ec19ddddc6c0788112bb5605cb78da55f7cbf25",
+      "source_term": "MEDIADB:12",
+      "carbon": "hydroxyectoine",
+      "salt_molar": "0.6",
+      "panel": "A",
+      "database_source_lead": {
+        "values": {
+          "sourceID": "4",
+          "First_Author": "Rodriguez-moya",
+          "Journal": "Bmc microbiology",
+          "Year": "2010",
+          "Title": "Involvement of eupr, a response regulator of the narl/fixj family, in the control of the uptake of the compatible solutes ectoines by the halophilic bacterium chromohalobacter salexigens. ",
+          "Link": "http://www.biomedcentral.com/content/pdf/1471-2180-10-256.pdf",
+          "pubmed_id": "20942908"
+        },
+        "snippet": "(4,'Rodriguez-moya','Bmc microbiology',2010,'Involvement of eupr, a response regulator of the narl/fixj family, in the control of the uptake of the compatible solutes ectoines by the halophilic bacterium chromohalobacter salexigens. ','http://www.biomedcentral.com/content/pdf/1471-2180-10-256.pdf',20942908)",
+        "line": 437
+      },
+      "ingredients_before": [
+        {
+          "preferred_term": "Potassium hydroxide",
+          "concentration": {
+            "value": "75.0",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:32035",
+            "label": "potassium hydroxide"
+          }
+        },
+        {
+          "preferred_term": "Potassium dibasic phosphate",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:131527",
+            "label": "dipotassium hydrogen phosphate"
+          }
+        },
+        {
+          "preferred_term": "5-Hydroxyectoine",
+          "concentration": {
+            "value": "20.0",
+            "unit": "MILLIMOLAR"
+          }
+        },
+        {
+          "preferred_term": "Sodium chloride",
+          "term": {
+            "id": "CHEBI:26710",
+            "label": "sodium chloride"
+          },
+          "concentration": {
+            "value": "600.0",
+            "unit": "MILLIMOLAR"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:26710",
+            "label": "sodium chloride"
+          }
+        },
+        {
+          "preferred_term": "Magnesium sulfate",
+          "term": {
+            "id": "CHEBI:32599",
+            "label": "magnesium sulfate"
+          },
+          "concentration": {
+            "value": "0.16",
+            "unit": "MILLIMOLAR"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:32599",
+            "label": "magnesium sulfate"
+          }
+        },
+        {
+          "preferred_term": "Ferrous sulfate",
+          "concentration": {
+            "value": "0.0018",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:75832",
+            "label": "iron(2+) sulfate (anhydrous)"
+          }
+        },
+        {
+          "preferred_term": "Ammonium sulfate",
+          "term": {
+            "id": "CHEBI:62946",
+            "label": "ammonium sulfate"
+          },
+          "concentration": {
+            "value": "15.0",
+            "unit": "MILLIMOLAR"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:62946",
+            "label": "ammonium sulfate"
+          }
+        }
+      ]
+    },
+    {
+      "key": "13",
+      "path": "data/normalized_yaml/bacterial/modified_m63_medium_with_hydroxyectoine_and_0_75_m_nacl.yaml",
+      "id": "CultureMech:007029",
+      "before_sha256": "fb308985500a0e7e8225ddef4d07cd2fb334d158ef8b67f10d1c8819e5255324",
+      "source_term": "MEDIADB:13",
+      "carbon": "hydroxyectoine",
+      "salt_molar": "0.75",
+      "panel": "B",
+      "database_source_lead": {
+        "values": {
+          "sourceID": "4",
+          "First_Author": "Rodriguez-moya",
+          "Journal": "Bmc microbiology",
+          "Year": "2010",
+          "Title": "Involvement of eupr, a response regulator of the narl/fixj family, in the control of the uptake of the compatible solutes ectoines by the halophilic bacterium chromohalobacter salexigens. ",
+          "Link": "http://www.biomedcentral.com/content/pdf/1471-2180-10-256.pdf",
+          "pubmed_id": "20942908"
+        },
+        "snippet": "(4,'Rodriguez-moya','Bmc microbiology',2010,'Involvement of eupr, a response regulator of the narl/fixj family, in the control of the uptake of the compatible solutes ectoines by the halophilic bacterium chromohalobacter salexigens. ','http://www.biomedcentral.com/content/pdf/1471-2180-10-256.pdf',20942908)",
+        "line": 437
+      },
+      "ingredients_before": [
+        {
+          "preferred_term": "Potassium hydroxide",
+          "concentration": {
+            "value": "75.0",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:32035",
+            "label": "potassium hydroxide"
+          }
+        },
+        {
+          "preferred_term": "Potassium dibasic phosphate",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:131527",
+            "label": "dipotassium hydrogen phosphate"
+          }
+        },
+        {
+          "preferred_term": "5-Hydroxyectoine",
+          "concentration": {
+            "value": "20.0",
+            "unit": "MILLIMOLAR"
+          }
+        },
+        {
+          "preferred_term": "Sodium chloride",
+          "term": {
+            "id": "CHEBI:26710",
+            "label": "sodium chloride"
+          },
+          "concentration": {
+            "value": "750.0",
+            "unit": "MILLIMOLAR"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:26710",
+            "label": "sodium chloride"
+          }
+        },
+        {
+          "preferred_term": "Magnesium sulfate",
+          "term": {
+            "id": "CHEBI:32599",
+            "label": "magnesium sulfate"
+          },
+          "concentration": {
+            "value": "0.16",
+            "unit": "MILLIMOLAR"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:32599",
+            "label": "magnesium sulfate"
+          }
+        },
+        {
+          "preferred_term": "Ferrous sulfate",
+          "concentration": {
+            "value": "0.0018",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:75832",
+            "label": "iron(2+) sulfate (anhydrous)"
+          }
+        },
+        {
+          "preferred_term": "Ammonium sulfate",
+          "term": {
+            "id": "CHEBI:62946",
+            "label": "ammonium sulfate"
+          },
+          "concentration": {
+            "value": "15.0",
+            "unit": "MILLIMOLAR"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:62946",
+            "label": "ammonium sulfate"
+          }
+        }
+      ]
+    },
+    {
+      "key": "14",
+      "path": "data/normalized_yaml/bacterial/modified_m63_medium_with_hydroxyectoine_and_1_5_m_nacl.yaml",
+      "id": "CultureMech:007040",
+      "before_sha256": "0562a1a5f34a29227b64faa5519aeeaffff5a4e270604e7a18bd4fbac0cf29b4",
+      "source_term": "MEDIADB:14",
+      "carbon": "hydroxyectoine",
+      "salt_molar": "1.5",
+      "panel": "C",
+      "database_source_lead": {
+        "values": {
+          "sourceID": "4",
+          "First_Author": "Rodriguez-moya",
+          "Journal": "Bmc microbiology",
+          "Year": "2010",
+          "Title": "Involvement of eupr, a response regulator of the narl/fixj family, in the control of the uptake of the compatible solutes ectoines by the halophilic bacterium chromohalobacter salexigens. ",
+          "Link": "http://www.biomedcentral.com/content/pdf/1471-2180-10-256.pdf",
+          "pubmed_id": "20942908"
+        },
+        "snippet": "(4,'Rodriguez-moya','Bmc microbiology',2010,'Involvement of eupr, a response regulator of the narl/fixj family, in the control of the uptake of the compatible solutes ectoines by the halophilic bacterium chromohalobacter salexigens. ','http://www.biomedcentral.com/content/pdf/1471-2180-10-256.pdf',20942908)",
+        "line": 437
+      },
+      "ingredients_before": [
+        {
+          "preferred_term": "Potassium hydroxide",
+          "concentration": {
+            "value": "75.0",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:32035",
+            "label": "potassium hydroxide"
+          }
+        },
+        {
+          "preferred_term": "Potassium dibasic phosphate",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:131527",
+            "label": "dipotassium hydrogen phosphate"
+          }
+        },
+        {
+          "preferred_term": "5-Hydroxyectoine",
+          "concentration": {
+            "value": "20.0",
+            "unit": "MILLIMOLAR"
+          }
+        },
+        {
+          "preferred_term": "Sodium chloride",
+          "term": {
+            "id": "CHEBI:26710",
+            "label": "sodium chloride"
+          },
+          "concentration": {
+            "value": "1500.0",
+            "unit": "MILLIMOLAR"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:26710",
+            "label": "sodium chloride"
+          }
+        },
+        {
+          "preferred_term": "Magnesium sulfate",
+          "term": {
+            "id": "CHEBI:32599",
+            "label": "magnesium sulfate"
+          },
+          "concentration": {
+            "value": "0.16",
+            "unit": "MILLIMOLAR"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:32599",
+            "label": "magnesium sulfate"
+          }
+        },
+        {
+          "preferred_term": "Ferrous sulfate",
+          "concentration": {
+            "value": "0.0018",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:75832",
+            "label": "iron(2+) sulfate (anhydrous)"
+          }
+        },
+        {
+          "preferred_term": "Ammonium sulfate",
+          "term": {
+            "id": "CHEBI:62946",
+            "label": "ammonium sulfate"
+          },
+          "concentration": {
+            "value": "15.0",
+            "unit": "MILLIMOLAR"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:62946",
+            "label": "ammonium sulfate"
+          }
+        }
+      ]
+    },
+    {
+      "key": "15",
+      "path": "data/normalized_yaml/bacterial/modified_m63_medium_with_hydroxyectoine_and_2_5_m_nacl.yaml",
+      "id": "CultureMech:007050",
+      "before_sha256": "ef73ad729d845031618091e2b3c5f2c43a7ad69633e49715d52797957e6cd2d5",
+      "source_term": "MEDIADB:15",
+      "carbon": "hydroxyectoine",
+      "salt_molar": "2.5",
+      "panel": "D",
+      "database_source_lead": {
+        "values": {
+          "sourceID": "4",
+          "First_Author": "Rodriguez-moya",
+          "Journal": "Bmc microbiology",
+          "Year": "2010",
+          "Title": "Involvement of eupr, a response regulator of the narl/fixj family, in the control of the uptake of the compatible solutes ectoines by the halophilic bacterium chromohalobacter salexigens. ",
+          "Link": "http://www.biomedcentral.com/content/pdf/1471-2180-10-256.pdf",
+          "pubmed_id": "20942908"
+        },
+        "snippet": "(4,'Rodriguez-moya','Bmc microbiology',2010,'Involvement of eupr, a response regulator of the narl/fixj family, in the control of the uptake of the compatible solutes ectoines by the halophilic bacterium chromohalobacter salexigens. ','http://www.biomedcentral.com/content/pdf/1471-2180-10-256.pdf',20942908)",
+        "line": 437
+      },
+      "ingredients_before": [
+        {
+          "preferred_term": "Potassium hydroxide",
+          "concentration": {
+            "value": "75.0",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:32035",
+            "label": "potassium hydroxide"
+          }
+        },
+        {
+          "preferred_term": "Potassium dibasic phosphate",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:131527",
+            "label": "dipotassium hydrogen phosphate"
+          }
+        },
+        {
+          "preferred_term": "5-Hydroxyectoine",
+          "concentration": {
+            "value": "20.0",
+            "unit": "MILLIMOLAR"
+          }
+        },
+        {
+          "preferred_term": "Sodium chloride",
+          "term": {
+            "id": "CHEBI:26710",
+            "label": "sodium chloride"
+          },
+          "concentration": {
+            "value": "2500.0",
+            "unit": "MILLIMOLAR"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:26710",
+            "label": "sodium chloride"
+          }
+        },
+        {
+          "preferred_term": "Magnesium sulfate",
+          "term": {
+            "id": "CHEBI:32599",
+            "label": "magnesium sulfate"
+          },
+          "concentration": {
+            "value": "0.16",
+            "unit": "MILLIMOLAR"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:32599",
+            "label": "magnesium sulfate"
+          }
+        },
+        {
+          "preferred_term": "Ferrous sulfate",
+          "concentration": {
+            "value": "0.0018",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:75832",
+            "label": "iron(2+) sulfate (anhydrous)"
+          }
+        },
+        {
+          "preferred_term": "Ammonium sulfate",
+          "term": {
+            "id": "CHEBI:62946",
+            "label": "ammonium sulfate"
+          },
+          "concentration": {
+            "value": "15.0",
+            "unit": "MILLIMOLAR"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:62946",
+            "label": "ammonium sulfate"
+          }
+        }
+      ]
+    }
+  ],
+  "scope": "84 supported ingredient amounts with no numeric changes; 36 chemical-form corrections (12 phosphate and 24 sulfate hydrate identities). No preparation, growth association, or parent/variant-link edits. This is not a complete scientific review of all record fields.",
+  "base_source": {
+    "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC220425/",
+    "doi": "doi:10.1128/jb.151.3.1433-1443.1982",
+    "title": "A third L-proline permease in Salmonella typhimurium which functions in media of elevated osmotic strength",
+    "authors": "L N Csonka",
+    "year": 1982,
+    "source_type": "journal_article",
+    "discovery_mode": "cross_reference",
+    "accessed_on": "2026-10-09",
+    "locator": "Printed page 1433, right column, Materials and Methods / Media and growth conditions",
+    "page_image_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/04ea/220425/442ea1a9a792/jbacter00256-0375.png",
+    "capture_sha256": {
+      "PMC220425.html": "1158f43d637de73510d5f645bcde7881018cf2ea0f91965fbdaf6f16e70537f6",
+      "PMC220425-p1433.png": "9b8c0a0050877d193f8919e54198df121f4c75479bbae6072882b92e0ed2d18b",
+      "PMC220425-p1434.png": "6e504b7c4ce75d7ebbbcf32ddd136cc74ba65aa3972d7b8bc8c6c362884cdb2d"
+    },
+    "transcription": "Manual visual inspection of printed pages 1433 and 1434; formula subscripts flattened to ordinary digits, typographic whitespace normalized. The PDF endpoint returned HTML, not a PDF; no PDF text extraction claimed.",
+    "rows": {
+      "Potassium hydroxide": {
+        "snippet": "0.075 M KOH",
+        "millimolar": "75.0",
+        "proposed_label": "Potassium hydroxide"
+      },
+      "Potassium dibasic phosphate": {
+        "snippet": "0.1 M KH2PO4",
+        "millimolar": "100.0",
+        "proposed_label": "Potassium dihydrogen phosphate",
+        "resolution": {
+          "query_label": "Potassium dihydrogen phosphate",
+          "identifier": "CHEBI:63036",
+          "ontology_id": "CHEBI:63036",
+          "mim_preferred_term": "KH2PO4",
+          "matched_label": "Potassium dihydrogen phosphate",
+          "match_type": "synonym",
+          "mapping_status": "MAPPED",
+          "ambiguity": "unique",
+          "resolution_source": "mim_exact",
+          "local_identifier": null,
+          "source_compound_id": null,
+          "reason": "trusted MIM label-index answer"
+        },
+        "term": {
+          "id": "CHEBI:63036",
+          "label": "potassium dihydrogen phosphate"
+        }
+      },
+      "Magnesium sulfate": {
+        "snippet": "0.16 mM MgSO4 \u00b7 7H2O",
+        "millimolar": "0.16",
+        "proposed_label": "Magnesium sulfate heptahydrate",
+        "resolution": {
+          "query_label": "Magnesium sulfate heptahydrate",
+          "identifier": "CHEBI:31795",
+          "ontology_id": "CHEBI:31795",
+          "mim_preferred_term": "MgSO4 x 7 H2O",
+          "matched_label": "Magnesium sulfate heptahydrate",
+          "match_type": "synonym",
+          "mapping_status": "MAPPED",
+          "ambiguity": "unique",
+          "resolution_source": "mim_exact",
+          "local_identifier": null,
+          "source_compound_id": null,
+          "reason": "trusted MIM label-index answer"
+        },
+        "term": {
+          "id": "CHEBI:31795",
+          "label": "magnesium sulfate heptahydrate"
+        }
+      },
+      "Ferrous sulfate": {
+        "snippet": "1.8 \u03bcM FeSO4 \u00b7 7H2O",
+        "millimolar": "0.0018",
+        "proposed_label": "Ferrous sulfate heptahydrate",
+        "resolution": {
+          "query_label": "Ferrous sulfate heptahydrate",
+          "identifier": "CHEBI:75836",
+          "ontology_id": "CHEBI:75836",
+          "mim_preferred_term": "FeSO4 x 7 H2O",
+          "matched_label": "ferrous sulfate heptahydrate",
+          "match_type": "synonym",
+          "mapping_status": "MAPPED",
+          "ambiguity": "unique",
+          "resolution_source": "mim_exact",
+          "local_identifier": null,
+          "source_compound_id": null,
+          "reason": "trusted MIM label-index answer"
+        },
+        "term": {
+          "id": "CHEBI:75836",
+          "label": "iron(2+) sulfate heptahydrate"
+        }
+      },
+      "Ammonium sulfate": {
+        "snippet": "0.015 M (NH4)2SO4",
+        "millimolar": "15.0",
+        "proposed_label": "Ammonium sulfate"
+      }
+    },
+    "scope": "Rodriguez-Moya et al. (2010) Methods cites this article as M63 reference 48. Five base ingredients are taken from that explicit recipe cross-reference. The 2010 article overrides the carbon condition, salt and pH-adjustment reagent. Do not import the 1982 carbon amount, organism-specific supplements, growth conditions or genetic experiments into the 2010 media."
+  }
+}

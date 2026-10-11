@@ -11,172 +11,38 @@ media_term:
   term:
     id: mediadive.medium:265
     label: THERMOFILUM PENDENS MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf'
+notes: |-
+  Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf
+
+  Original-source preparation scope: mineral salt base plus separately prepared yeast-extract, sucrose, sulfur, polar-lipid and sulfide additions under 100% nitrogen. Historical aerobic/import annotations are not endorsed. Basal rates remain provider-declared 1000 ml normalizations only. The original PDF supplies stock strengths and batch doses; its lipid range differs from the API's modified protocol. Neither source establishes a measured final receiving volume. Chemical mappings, parent/variant links and prior curation history are preserved, not independently revalidated.
 ingredients:
-- preferred_term: (NH4)2SO4
-  term:
-    id: CHEBI:62946
-    label: ammonium sulfate
-  concentration:
-    value: '1.3'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:62946
-    label: ammonium sulfate
-- preferred_term: KH2PO4
-  term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
-  concentration:
-    value: '0.28'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-  concentration:
-    value: '0.07'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-- preferred_term: FeCl3 x 6 H2O
-  term:
-    id: CHEBI:86254
-    label: iron trichloride hexahydrate
-  concentration:
-    value: '0.02'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86254
-    label: iron trichloride hexahydrate
-- preferred_term: MnCl2 x 4 H2O
-  term:
-    id: CHEBI:86368
-    label: manganese(II) chloride tetrahydrate
-  concentration:
-    value: '0.0018'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86368
-    label: manganese(II) chloride tetrahydrate
-- preferred_term: Na2B4O7 x 10 H2O
-  concentration:
-    value: '0.0045'
-    unit: G_PER_L
-  term:
-    id: CHEBI:131366
-    label: disodium tetraborate decahydrate
-- preferred_term: ZnSO4 x 7 H2O
-  term:
-    id: CHEBI:32312
-    label: zinc sulfate heptahydrate
-  concentration:
-    value: '0.00022'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32312
-    label: zinc sulfate heptahydrate
-- preferred_term: CuCl2 x 2 H2O
-  term:
-    id: CHEBI:86318
-    label: copper(II) chloride dihydrate
-  concentration:
-    value: 5e-05
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86318
-    label: copper(II) chloride dihydrate
-- preferred_term: Na2MoO4 x 2 H2O
-  term:
-    id: CHEBI:75213
-    label: sodium molybdate dihydrate
-  concentration:
-    value: 3e-05
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:75213
-    label: sodium molybdate dihydrate
-- preferred_term: VOSO4 x 2 H2O
-  term:
-    id: CHEBI:87009
-    label: vanadyl sulfate dihydrate
-  concentration:
-    value: 3e-05
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:87009
-    label: vanadyl sulfate dihydrate
-- preferred_term: CoSO4 x 7 H2O
-  term:
-    id: CHEBI:91244
-    label: cobalt(2+) sulfate heptahydrate
-  concentration:
-    value: 1e-05
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:91244
-    label: cobalt(2+) sulfate heptahydrate
-- preferred_term: Yeast extract
-  concentration:
-    value: '0.02'
-    unit: G_PER_L
-  notes: ' (boiled and filter-sterilized, not autoclaved)'
-- preferred_term: Sucrose
-  term:
-    id: CHEBI:17992
-    label: sucrose
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17992
-    label: sucrose
 - preferred_term: Sulfur
   term:
     id: CHEBI:26833
     label: sulfur atom
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: ' (sterilized by steaming for 3 hours on 3 consecutive days)'
+  notes: 'Source batch input: 10 g powdered sulfur, sterilized separately by steaming
+    for 3 h on each of three successive days and added to the autoclaved mineral salt
+    preparation. The former 10 g/L is not retained as a final-medium concentration;
+    final volume is unspecified.'
   mediaingredientmech_chebi_term:
     id: CHEBI:26833
     label: sulfur atom
-- preferred_term: Polar lipid fraction
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: ' (adjust if required)'
-- preferred_term: Na2S x 9 H2O
-  term:
-    id: CHEBI:76209
-    label: sodium sulfide nonahydrate
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:76209
-    label: sodium sulfide nonahydrate
+  evidence:
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf
+    supports: SUPPORT
+    snippet: "sulfur (10 g)-sterilized by steaming for 3 h on each of \nthree successive\
+      \ days"
+    explanation: 'ingredients[0].notes (withdraw_rate), locator=page 1, recipe/preparation:
+      Retain the explicit 10 g batch input and separate sterilization, without asserting
+      g/L. Additional exact table excerpt: Sulfur, powdered 10.00 g. Chemical mapping
+      is unchanged. Source SHA256=904a0973cffadca97f2da8c6b8cd2a89f5f842d53bdb98212d27aa86741ab173;
+      accessed_on=2026-10-07. Ingredient ontology mappings remain unchanged.'
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
   description: Adjust final pH to 5.2.
 - step_number: 2
-  action: AUTOCLAVE
+  action: MIX
   description: 'Prepare the medium anaerobically under 100% nitrogen. The following
     constituents are prepared separately and added to the autoclaved mineral salt
     solution: Yeast extract (20 ml of 10% w/v solution)-boiled for few minutes, not
@@ -190,7 +56,8 @@ preparation_steps:
   description: Sparge medium with 100% N2 gas mixture to make anoxic.
 - step_number: 4
   action: AUTOCLAVE
-  description: Autoclave at 121 °C for 15 min.
+  description: Autoclave the mineral salt preparation at 121 °C for 15 min; prepare
+    the supplements separately as specified.
 - step_number: 5
   action: MIX
   description: 'after autoclaving add the following sterile solutions:'
@@ -231,6 +98,108 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-10-07T10:55:41.454416+00:00'
+  curator: codex
+  action: CURATED_MEDIUM_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Exact medium/source membership, ingredient inventory/forms, physical-state
+    conditions, literal snippets, and arithmetic checked. Stock boundaries, source-only
+    rows, preparation context, and variants remain explicit follow-up tasks; secondary
+    chemical mappings unchanged.
+  source: https://mediadive.dsmz.de/rest/medium/265
+  changes: 'ingredients[0].concentration: {"unit": "G_PER_L", "value": "1.3"} -> {"unit":
+    "G_PER_L", "value": "1.3"} (evidence_only); ingredients[1].concentration: {"unit":
+    "G_PER_L", "value": "0.28"} -> {"unit": "G_PER_L", "value": "0.28"} (evidence_only);
+    ingredients[2].concentration: {"unit": "G_PER_L", "value": "0.25"} -> {"unit":
+    "G_PER_L", "value": "0.25"} (evidence_only); ingredients[3].concentration: {"unit":
+    "G_PER_L", "value": "0.07"} -> {"unit": "G_PER_L", "value": "0.07"} (evidence_only);
+    ingredients[4].concentration: {"unit": "G_PER_L", "value": "0.02"} -> {"unit":
+    "G_PER_L", "value": "0.02"} (evidence_only); ingredients[5].concentration: {"unit":
+    "G_PER_L", "value": "0.0018"} -> {"unit": "G_PER_L", "value": "0.0018"} (evidence_only);
+    ingredients[6].concentration: {"unit": "G_PER_L", "value": "0.0045"} -> {"unit":
+    "G_PER_L", "value": "0.0045"} (evidence_only); ingredients[7].concentration: {"unit":
+    "G_PER_L", "value": "0.00022"} -> {"unit": "G_PER_L", "value": "0.00022"} (evidence_only);
+    ingredients[8].concentration: {"unit": "G_PER_L", "value": "5e-05"} -> {"unit":
+    "G_PER_L", "value": "5e-05"} (evidence_only); ingredients[9].concentration: {"unit":
+    "G_PER_L", "value": "3e-05"} -> {"unit": "G_PER_L", "value": "3e-05"} (evidence_only);
+    ingredients[10].concentration: {"unit": "G_PER_L", "value": "3e-05"} -> {"unit":
+    "G_PER_L", "value": "3e-05"} (evidence_only); ingredients[11].concentration: {"unit":
+    "G_PER_L", "value": "1e-05"} -> {"unit": "G_PER_L", "value": "1e-05"} (evidence_only)'
+- timestamp: '2026-10-07T23:16:26.355318+00:00'
+  curator: codex
+  action: RESTORED_DSMZ265_STOCK_STAGES_AND_ORIGINAL_SOURCE_DOSES
+  notes: Restored mineral base, three percentage stocks and lipid suspension; corrected
+    water input and yeast stock basis; withdrew unsupported sulfur/lipid rates. Preserved
+    original-source/API disagreement, all prior snippets, history, IDs, chemical mappings
+    and variant links. No growth association or final receiving concentration inferred.
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf; https://mediadive.dsmz.de/rest/medium/265
+  changes: 'solutions[0].composition[0].concentration: {"value": "1.3", "unit": "G_PER_L"}
+    -> {"value": "1.3", "unit": "G_PER_L"} (relocate); solutions[0].composition[1].concentration:
+    {"value": "0.28", "unit": "G_PER_L"} -> {"value": "0.28", "unit": "G_PER_L"} (relocate);
+    solutions[0].composition[2].concentration: {"value": "0.25", "unit": "G_PER_L"}
+    -> {"value": "0.25", "unit": "G_PER_L"} (relocate); solutions[0].composition[3].concentration:
+    {"value": "0.07", "unit": "G_PER_L"} -> {"value": "0.07", "unit": "G_PER_L"} (relocate);
+    solutions[0].composition[4].concentration: {"value": "0.02", "unit": "G_PER_L"}
+    -> {"value": "0.02", "unit": "G_PER_L"} (relocate); solutions[0].composition[5].concentration:
+    {"value": "0.0018", "unit": "G_PER_L"} -> {"value": "0.0018", "unit": "G_PER_L"}
+    (relocate); solutions[0].composition[6].concentration: {"value": "0.0045", "unit":
+    "G_PER_L"} -> {"value": "0.0045", "unit": "G_PER_L"} (relocate); solutions[0].composition[7].concentration:
+    {"value": "0.00022", "unit": "G_PER_L"} -> {"value": "0.00022", "unit": "G_PER_L"}
+    (relocate); solutions[0].composition[8].concentration: {"value": "5e-05", "unit":
+    "G_PER_L"} -> {"value": "5e-05", "unit": "G_PER_L"} (relocate); solutions[0].composition[9].concentration:
+    {"value": "3e-05", "unit": "G_PER_L"} -> {"value": "3e-05", "unit": "G_PER_L"}
+    (relocate); solutions[0].composition[10].concentration: {"value": "3e-05", "unit":
+    "G_PER_L"} -> {"value": "3e-05", "unit": "G_PER_L"} (relocate); solutions[0].composition[11].concentration:
+    {"value": "1e-05", "unit": "G_PER_L"} -> {"value": "1e-05", "unit": "G_PER_L"}
+    (relocate); solutions[0].composition[12].concentration: null -> {"value": "1",
+    "unit": "L"} (add); solutions[1].composition[0].concentration: {"value": "0.02",
+    "unit": "G_PER_L"} -> {"value": "10", "unit": "PERCENT_W_V"} (correct_stock_basis);
+    solutions[1].concentration: null -> {"value": "0.02", "unit": "L"} (add_stock_dose);
+    solutions[1].composition[1].notes: null -> "Stock solvent according to the API
+    attribute; no fixed carrier volume is specified." (restore_carrier); solutions[1].composition[0].notes:
+    " (boiled and filter-sterilized, not autoclaved)" -> "10% w/v in the separately
+    prepared stock, not the former imported final-medium rate. Original source: 20
+    ml stock contains 2 g yeast extract; the API''s 20 mg/l and former 0.02 g/L disagree.
+    The PDF calls for boiling, not autoclaving; its instruction does not add a separate
+    yeast filtration step." (retain_conflict); solutions[2].composition[0].concentration:
+    {"value": "2", "unit": "G_PER_L"} -> {"value": "10", "unit": "PERCENT_W_V"} (correct_stock_basis);
+    solutions[2].concentration: null -> {"value": "0.02", "unit": "L"} (add_stock_dose);
+    solutions[2].composition[1].notes: null -> "Stock solvent according to the API
+    attribute; no fixed carrier volume is specified." (restore_carrier); solutions[3].composition[0].concentration:
+    {"value": "0.3", "unit": "G_PER_L"} -> {"value": "3", "unit": "PERCENT_W_V"} (correct_stock_basis);
+    solutions[3].concentration: null -> {"value": "0.01", "unit": "L"} (add_stock_dose);
+    solutions[3].composition[1].notes: null -> "Stock solvent according to the API
+    attribute; no fixed carrier volume is specified." (restore_carrier); ingredients[0].notes:
+    {"value": "10", "unit": "G_PER_L"} -> "Source batch input: 10 g powdered sulfur,
+    sterilized separately by steaming for 3 h on each of three successive days and
+    added to the autoclaved mineral salt preparation. The former 10 g/L is not retained
+    as a final-medium concentration; final volume is unspecified." (withdraw_rate);
+    solutions[4].composition[0].notes: {"value": "10", "unit": "G_PER_L"} -> "Source
+    material: aqueous polar-lipid suspension prepared from Thermoproteus tenax (DSM
+    2078) or another archaebacterium. Composition, extraction yield and lipid mass
+    concentration are not specified. Former mass/percentage encoding is withdrawn."
+    (withdraw_rate); solutions[4].concentration: null -> {"value": "0.006-0.012",
+    "unit": "L"} (add_stock_dose); solutions[4].notes: null -> "Original PDF batch
+    dose: 6-12 ml. The API alternatively lists 10 ml/l and a modified biomass extraction
+    procedure; that version is retained in evidence, not silently substituted for
+    the original range or used to calculate final lipid concentration." (retain_version_difference);
+    notes: "Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf"
+    -> "Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf\n\nOriginal-source
+    preparation scope: mineral salt base plus separately prepared yeast-extract, sucrose,
+    sulfur, polar-lipid and sulfide additions under 100% nitrogen. Historical aerobic/import
+    annotations are not endorsed. Basal rates remain provider-declared 1000 ml normalizations
+    only. The original PDF supplies stock strengths and batch doses; its lipid range
+    differs from the API''s modified protocol. Neither source establishes a measured
+    final receiving volume. Chemical mappings, parent/variant links and prior curation
+    history are preserved, not independently revalidated." (correct_scope); solutions[0].source:
+    null -> "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf" (restore_stock_boundary);
+    solutions[1].source: null -> "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf"
+    (restore_stock_boundary); solutions[2].source: null -> "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf"
+    (restore_stock_boundary); solutions[3].source: null -> "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf"
+    (restore_stock_boundary); solutions[4].source: null -> "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf"
+    (restore_stock_boundary); preparation_steps[1].action: "AUTOCLAVE" -> "MIX" (correct_scope);
+    preparation_steps[3].description: "Autoclave at 121 \u00b0C for 15 min." -> "Autoclave
+    the mineral salt preparation at 121 \u00b0C for 15 min; prepare the supplements
+    separately as specified." (correct_scope)'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_265_THERMOFILUM_PENDENS_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -238,3 +207,718 @@ variant_children:
   name: thermofilum_pendens_medium
   notes: KOMODO record is an exact source duplicate of DSMZ Medium 265; local ingredient
     and concentration signatures match.
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/265
+  title: 'MediaDive medium 265: THERMOFILUM PENDENS MEDIUM'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; source_organization=DSMZ;
+    accessed_on=2026-10-07; locator=$.data.solutions[0]; response_sha256=f2c57ed580e65928e82bad4eb0a6d48371d2c6fc60b0bb2f2369754570306dea;
+    original_recipe=https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf;
+    individual authors and publication year not supplied. Provider-declared main-recipe
+    amounts only.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf
+  title: DSMZ 265. THERMOFILUM PENDENS MEDIUM
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-07; source_sha256=904a0973cffadca97f2da8c6b8cd2a89f5f842d53bdb98212d27aa86741ab173;
+    individual authors and publication year not established. PDF copyright/creation
+    years are not treated as publication year. Original PDF and API differences are
+    explicitly retained.
+solutions:
+- preferred_term: Mineral salt preparation for medium 265
+  composition:
+  - preferred_term: (NH4)2SO4
+    term:
+      id: CHEBI:62946
+      label: ammonium sulfate
+    concentration:
+      value: '1.3'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:62946
+      label: ammonium sulfate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/265
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 1,
+                                "compound": "(NH4)2SO4",
+                                "compound_id": 27,
+                                "amount": 1.3,
+                                "unit": "g",
+                                "g_l": 1.3,
+                                "mmol_l": 9.83805,
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[0].composition[0].concentration (relocate), locator=$.data.solutions[0].recipe[0]: Relocate the source-reported mineral rate to its basal preparation; no complete-medium concentration is inferred. Mineral-base batch input: 1.3 g. Retained 1.3 g/L is the provider-declared 1000 ml normalization, not a verified concentration after supplement addition or a measured final base volume. Additional exact preparation excerpt: {
+                                "recipe_order": 15,
+                                "step": "Prepare the medium anaerobically under 100% nitrogen. The following constituents are prepared separately and added to the autoclaved mineral salt solution: Yeast extract (20 ml of 10% w/v solution)-boiled for few minutes, not autoclaved; sucrose (20 ml of 10% w/v solution)-filter-sterilized; sulfur (10 g)-sterilized by steaming for 3 h on each of three successive days; polar lipid fraction (6 - 12ml)-prepared as described by W. Zillig et al. (1983), Syst. Appl. Microbiol. 4: 79 - 87; Na2S x 9 H2O (10 ml of 3% w/v solution)-autoclaved under nitrogen atmosphere."
+                            } Source SHA256=f2c57ed580e65928e82bad4eb0a6d48371d2c6fc60b0bb2f2369754570306dea; accessed_on=2026-10-07. Ingredient ontology mappings remain unchanged. Historical explanation (superseded where stage/scope differs): Concentration evidence for ingredients[0].concentration ((NH4)2SO4) in MediaDive medium 265; locator=$.data.solutions[0].recipe[0]. Provider explicitly reports g_l=1.3; check: 1.3 g * 1 g/g / (1000 ml / 1000 ml per L) = 1.3 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:44:36.719407+00:00; response SHA256=f2c57ed580e65928e82bad4eb0a6d48371d2c6fc60b0bb2f2369754570306dea.
+    notes: 'Mineral-base batch input: 1.3 g. Retained 1.3 g/L is the provider-declared
+      1000 ml normalization, not a verified concentration after supplement addition
+      or a measured final base volume.'
+  - preferred_term: KH2PO4
+    term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+    concentration:
+      value: '0.28'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/265
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 2,
+                                "compound": "KH2PO4",
+                                "compound_id": 11,
+                                "amount": 0.28,
+                                "unit": "g",
+                                "g_l": 0.28,
+                                "mmol_l": 2.05754,
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[0].composition[1].concentration (relocate), locator=$.data.solutions[0].recipe[1]: Relocate the source-reported mineral rate to its basal preparation; no complete-medium concentration is inferred. Mineral-base batch input: 0.28 g. Retained 0.28 g/L is the provider-declared 1000 ml normalization, not a verified concentration after supplement addition or a measured final base volume. Additional exact preparation excerpt: {
+                                "recipe_order": 15,
+                                "step": "Prepare the medium anaerobically under 100% nitrogen. The following constituents are prepared separately and added to the autoclaved mineral salt solution: Yeast extract (20 ml of 10% w/v solution)-boiled for few minutes, not autoclaved; sucrose (20 ml of 10% w/v solution)-filter-sterilized; sulfur (10 g)-sterilized by steaming for 3 h on each of three successive days; polar lipid fraction (6 - 12ml)-prepared as described by W. Zillig et al. (1983), Syst. Appl. Microbiol. 4: 79 - 87; Na2S x 9 H2O (10 ml of 3% w/v solution)-autoclaved under nitrogen atmosphere."
+                            } Source SHA256=f2c57ed580e65928e82bad4eb0a6d48371d2c6fc60b0bb2f2369754570306dea; accessed_on=2026-10-07. Ingredient ontology mappings remain unchanged. Historical explanation (superseded where stage/scope differs): Concentration evidence for ingredients[1].concentration (KH2PO4) in MediaDive medium 265; locator=$.data.solutions[0].recipe[1]. Provider explicitly reports g_l=0.28; check: 0.28 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.28 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:44:36.719407+00:00; response SHA256=f2c57ed580e65928e82bad4eb0a6d48371d2c6fc60b0bb2f2369754570306dea.
+    notes: 'Mineral-base batch input: 0.28 g. Retained 0.28 g/L is the provider-declared
+      1000 ml normalization, not a verified concentration after supplement addition
+      or a measured final base volume.'
+  - preferred_term: MgSO4 x 7 H2O
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    concentration:
+      value: '0.25'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/265
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 3,
+                                "compound": "MgSO4 x 7 H2O",
+                                "compound_id": 8,
+                                "amount": 0.25,
+                                "unit": "g",
+                                "g_l": 0.25,
+                                "mmol_l": 1.0143,
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[0].composition[2].concentration (relocate), locator=$.data.solutions[0].recipe[2]: Relocate the source-reported mineral rate to its basal preparation; no complete-medium concentration is inferred. Mineral-base batch input: 0.25 g. Retained 0.25 g/L is the provider-declared 1000 ml normalization, not a verified concentration after supplement addition or a measured final base volume. Additional exact preparation excerpt: {
+                                "recipe_order": 15,
+                                "step": "Prepare the medium anaerobically under 100% nitrogen. The following constituents are prepared separately and added to the autoclaved mineral salt solution: Yeast extract (20 ml of 10% w/v solution)-boiled for few minutes, not autoclaved; sucrose (20 ml of 10% w/v solution)-filter-sterilized; sulfur (10 g)-sterilized by steaming for 3 h on each of three successive days; polar lipid fraction (6 - 12ml)-prepared as described by W. Zillig et al. (1983), Syst. Appl. Microbiol. 4: 79 - 87; Na2S x 9 H2O (10 ml of 3% w/v solution)-autoclaved under nitrogen atmosphere."
+                            } Source SHA256=f2c57ed580e65928e82bad4eb0a6d48371d2c6fc60b0bb2f2369754570306dea; accessed_on=2026-10-07. Ingredient ontology mappings remain unchanged. Historical explanation (superseded where stage/scope differs): Concentration evidence for ingredients[2].concentration (MgSO4 x 7 H2O) in MediaDive medium 265; locator=$.data.solutions[0].recipe[2]. Provider explicitly reports g_l=0.25; check: 0.25 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.25 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:44:36.719407+00:00; response SHA256=f2c57ed580e65928e82bad4eb0a6d48371d2c6fc60b0bb2f2369754570306dea.
+    notes: 'Mineral-base batch input: 0.25 g. Retained 0.25 g/L is the provider-declared
+      1000 ml normalization, not a verified concentration after supplement addition
+      or a measured final base volume.'
+  - preferred_term: CaCl2 x 2 H2O
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    concentration:
+      value: '0.07'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/265
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 4,
+                                "compound": "CaCl2 x 2 H2O",
+                                "compound_id": 7,
+                                "amount": 0.07,
+                                "unit": "g",
+                                "g_l": 0.07,
+                                "mmol_l": 0.476142,
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[0].composition[3].concentration (relocate), locator=$.data.solutions[0].recipe[3]: Relocate the source-reported mineral rate to its basal preparation; no complete-medium concentration is inferred. Mineral-base batch input: 0.07 g. Retained 0.07 g/L is the provider-declared 1000 ml normalization, not a verified concentration after supplement addition or a measured final base volume. Additional exact preparation excerpt: {
+                                "recipe_order": 15,
+                                "step": "Prepare the medium anaerobically under 100% nitrogen. The following constituents are prepared separately and added to the autoclaved mineral salt solution: Yeast extract (20 ml of 10% w/v solution)-boiled for few minutes, not autoclaved; sucrose (20 ml of 10% w/v solution)-filter-sterilized; sulfur (10 g)-sterilized by steaming for 3 h on each of three successive days; polar lipid fraction (6 - 12ml)-prepared as described by W. Zillig et al. (1983), Syst. Appl. Microbiol. 4: 79 - 87; Na2S x 9 H2O (10 ml of 3% w/v solution)-autoclaved under nitrogen atmosphere."
+                            } Source SHA256=f2c57ed580e65928e82bad4eb0a6d48371d2c6fc60b0bb2f2369754570306dea; accessed_on=2026-10-07. Ingredient ontology mappings remain unchanged. Historical explanation (superseded where stage/scope differs): Concentration evidence for ingredients[3].concentration (CaCl2 x 2 H2O) in MediaDive medium 265; locator=$.data.solutions[0].recipe[3]. Provider explicitly reports g_l=0.07; check: 0.07 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.07 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:44:36.719407+00:00; response SHA256=f2c57ed580e65928e82bad4eb0a6d48371d2c6fc60b0bb2f2369754570306dea.
+    notes: 'Mineral-base batch input: 0.07 g. Retained 0.07 g/L is the provider-declared
+      1000 ml normalization, not a verified concentration after supplement addition
+      or a measured final base volume.'
+  - preferred_term: FeCl3 x 6 H2O
+    term:
+      id: CHEBI:86254
+      label: iron trichloride hexahydrate
+    concentration:
+      value: '0.02'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86254
+      label: iron trichloride hexahydrate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/265
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 5,
+                                "compound": "FeCl3 x 6 H2O",
+                                "compound_id": 82,
+                                "amount": 0.02,
+                                "unit": "g",
+                                "g_l": 0.02,
+                                "mmol_l": 0.073993,
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[0].composition[4].concentration (relocate), locator=$.data.solutions[0].recipe[4]: Relocate the source-reported mineral rate to its basal preparation; no complete-medium concentration is inferred. Mineral-base batch input: 0.02 g. Retained 0.02 g/L is the provider-declared 1000 ml normalization, not a verified concentration after supplement addition or a measured final base volume. Additional exact preparation excerpt: {
+                                "recipe_order": 15,
+                                "step": "Prepare the medium anaerobically under 100% nitrogen. The following constituents are prepared separately and added to the autoclaved mineral salt solution: Yeast extract (20 ml of 10% w/v solution)-boiled for few minutes, not autoclaved; sucrose (20 ml of 10% w/v solution)-filter-sterilized; sulfur (10 g)-sterilized by steaming for 3 h on each of three successive days; polar lipid fraction (6 - 12ml)-prepared as described by W. Zillig et al. (1983), Syst. Appl. Microbiol. 4: 79 - 87; Na2S x 9 H2O (10 ml of 3% w/v solution)-autoclaved under nitrogen atmosphere."
+                            } Source SHA256=f2c57ed580e65928e82bad4eb0a6d48371d2c6fc60b0bb2f2369754570306dea; accessed_on=2026-10-07. Ingredient ontology mappings remain unchanged. Historical explanation (superseded where stage/scope differs): Concentration evidence for ingredients[4].concentration (FeCl3 x 6 H2O) in MediaDive medium 265; locator=$.data.solutions[0].recipe[4]. Provider explicitly reports g_l=0.02; check: 0.02 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.02 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:44:36.719407+00:00; response SHA256=f2c57ed580e65928e82bad4eb0a6d48371d2c6fc60b0bb2f2369754570306dea.
+    notes: 'Mineral-base batch input: 0.02 g. Retained 0.02 g/L is the provider-declared
+      1000 ml normalization, not a verified concentration after supplement addition
+      or a measured final base volume.'
+  - preferred_term: MnCl2 x 4 H2O
+    term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    concentration:
+      value: '0.0018'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/265
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 6,
+                                "compound": "MnCl2 x 4 H2O",
+                                "compound_id": 36,
+                                "amount": 1.8,
+                                "unit": "mg",
+                                "g_l": 0.0018,
+                                "mmol_l": 0.00909527,
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[0].composition[5].concentration (relocate), locator=$.data.solutions[0].recipe[5]: Relocate the source-reported mineral rate to its basal preparation; no complete-medium concentration is inferred. Mineral-base batch input: 1.8 mg. Retained 0.0018 g/L is the provider-declared 1000 ml normalization, not a verified concentration after supplement addition or a measured final base volume. Additional exact preparation excerpt: {
+                                "recipe_order": 15,
+                                "step": "Prepare the medium anaerobically under 100% nitrogen. The following constituents are prepared separately and added to the autoclaved mineral salt solution: Yeast extract (20 ml of 10% w/v solution)-boiled for few minutes, not autoclaved; sucrose (20 ml of 10% w/v solution)-filter-sterilized; sulfur (10 g)-sterilized by steaming for 3 h on each of three successive days; polar lipid fraction (6 - 12ml)-prepared as described by W. Zillig et al. (1983), Syst. Appl. Microbiol. 4: 79 - 87; Na2S x 9 H2O (10 ml of 3% w/v solution)-autoclaved under nitrogen atmosphere."
+                            } Source SHA256=f2c57ed580e65928e82bad4eb0a6d48371d2c6fc60b0bb2f2369754570306dea; accessed_on=2026-10-07. Ingredient ontology mappings remain unchanged. Historical explanation (superseded where stage/scope differs): Concentration evidence for ingredients[5].concentration (MnCl2 x 4 H2O) in MediaDive medium 265; locator=$.data.solutions[0].recipe[5]. Provider explicitly reports g_l=0.0018; check: 1.8 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.0018 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:44:36.719407+00:00; response SHA256=f2c57ed580e65928e82bad4eb0a6d48371d2c6fc60b0bb2f2369754570306dea.
+    notes: 'Mineral-base batch input: 1.8 mg. Retained 0.0018 g/L is the provider-declared
+      1000 ml normalization, not a verified concentration after supplement addition
+      or a measured final base volume.'
+  - preferred_term: Na2B4O7 x 10 H2O
+    concentration:
+      value: '0.0045'
+      unit: G_PER_L
+    term:
+      id: CHEBI:131366
+      label: disodium tetraborate decahydrate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/265
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 7,
+                                "compound": "Na2B4O7 x 10 H2O",
+                                "compound_id": 196,
+                                "amount": 4.5,
+                                "unit": "mg",
+                                "g_l": 0.0045,
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[0].composition[6].concentration (relocate), locator=$.data.solutions[0].recipe[6]: Relocate the source-reported mineral rate to its basal preparation; no complete-medium concentration is inferred. Mineral-base batch input: 4.5 mg. Retained 0.0045 g/L is the provider-declared 1000 ml normalization, not a verified concentration after supplement addition or a measured final base volume. Additional exact preparation excerpt: {
+                                "recipe_order": 15,
+                                "step": "Prepare the medium anaerobically under 100% nitrogen. The following constituents are prepared separately and added to the autoclaved mineral salt solution: Yeast extract (20 ml of 10% w/v solution)-boiled for few minutes, not autoclaved; sucrose (20 ml of 10% w/v solution)-filter-sterilized; sulfur (10 g)-sterilized by steaming for 3 h on each of three successive days; polar lipid fraction (6 - 12ml)-prepared as described by W. Zillig et al. (1983), Syst. Appl. Microbiol. 4: 79 - 87; Na2S x 9 H2O (10 ml of 3% w/v solution)-autoclaved under nitrogen atmosphere."
+                            } Source SHA256=f2c57ed580e65928e82bad4eb0a6d48371d2c6fc60b0bb2f2369754570306dea; accessed_on=2026-10-07. Ingredient ontology mappings remain unchanged. Historical explanation (superseded where stage/scope differs): Concentration evidence for ingredients[6].concentration (Na2B4O7 x 10 H2O) in MediaDive medium 265; locator=$.data.solutions[0].recipe[6]. Provider explicitly reports g_l=0.0045; check: 4.5 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.0045 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:44:36.719407+00:00; response SHA256=f2c57ed580e65928e82bad4eb0a6d48371d2c6fc60b0bb2f2369754570306dea.
+    notes: 'Mineral-base batch input: 4.5 mg. Retained 0.0045 g/L is the provider-declared
+      1000 ml normalization, not a verified concentration after supplement addition
+      or a measured final base volume.'
+  - preferred_term: ZnSO4 x 7 H2O
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    concentration:
+      value: '0.00022'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/265
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 8,
+                                "compound": "ZnSO4 x 7 H2O",
+                                "compound_id": 35,
+                                "amount": 0.22,
+                                "unit": "mg",
+                                "g_l": 0.00022,
+                                "mmol_l": 0.000765055,
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[0].composition[7].concentration (relocate), locator=$.data.solutions[0].recipe[7]: Relocate the source-reported mineral rate to its basal preparation; no complete-medium concentration is inferred. Mineral-base batch input: 0.22 mg. Retained 0.00022 g/L is the provider-declared 1000 ml normalization, not a verified concentration after supplement addition or a measured final base volume. Additional exact preparation excerpt: {
+                                "recipe_order": 15,
+                                "step": "Prepare the medium anaerobically under 100% nitrogen. The following constituents are prepared separately and added to the autoclaved mineral salt solution: Yeast extract (20 ml of 10% w/v solution)-boiled for few minutes, not autoclaved; sucrose (20 ml of 10% w/v solution)-filter-sterilized; sulfur (10 g)-sterilized by steaming for 3 h on each of three successive days; polar lipid fraction (6 - 12ml)-prepared as described by W. Zillig et al. (1983), Syst. Appl. Microbiol. 4: 79 - 87; Na2S x 9 H2O (10 ml of 3% w/v solution)-autoclaved under nitrogen atmosphere."
+                            } Source SHA256=f2c57ed580e65928e82bad4eb0a6d48371d2c6fc60b0bb2f2369754570306dea; accessed_on=2026-10-07. Ingredient ontology mappings remain unchanged. Historical explanation (superseded where stage/scope differs): Concentration evidence for ingredients[7].concentration (ZnSO4 x 7 H2O) in MediaDive medium 265; locator=$.data.solutions[0].recipe[7]. Provider explicitly reports g_l=0.00022; check: 0.22 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.00022 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:44:36.719407+00:00; response SHA256=f2c57ed580e65928e82bad4eb0a6d48371d2c6fc60b0bb2f2369754570306dea.
+    notes: 'Mineral-base batch input: 0.22 mg. Retained 0.00022 g/L is the provider-declared
+      1000 ml normalization, not a verified concentration after supplement addition
+      or a measured final base volume.'
+  - preferred_term: CuCl2 x 2 H2O
+    term:
+      id: CHEBI:86318
+      label: copper(II) chloride dihydrate
+    concentration:
+      value: 5e-05
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86318
+      label: copper(II) chloride dihydrate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/265
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 9,
+                                "compound": "CuCl2 x 2 H2O",
+                                "compound_id": 39,
+                                "amount": 0.05,
+                                "unit": "mg",
+                                "g_l": 5.0e-5,
+                                "mmol_l": 0.000293284,
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[0].composition[8].concentration (relocate), locator=$.data.solutions[0].recipe[8]: Relocate the source-reported mineral rate to its basal preparation; no complete-medium concentration is inferred. Mineral-base batch input: 0.05 mg. Retained 5e-05 g/L is the provider-declared 1000 ml normalization, not a verified concentration after supplement addition or a measured final base volume. Additional exact preparation excerpt: {
+                                "recipe_order": 15,
+                                "step": "Prepare the medium anaerobically under 100% nitrogen. The following constituents are prepared separately and added to the autoclaved mineral salt solution: Yeast extract (20 ml of 10% w/v solution)-boiled for few minutes, not autoclaved; sucrose (20 ml of 10% w/v solution)-filter-sterilized; sulfur (10 g)-sterilized by steaming for 3 h on each of three successive days; polar lipid fraction (6 - 12ml)-prepared as described by W. Zillig et al. (1983), Syst. Appl. Microbiol. 4: 79 - 87; Na2S x 9 H2O (10 ml of 3% w/v solution)-autoclaved under nitrogen atmosphere."
+                            } Source SHA256=f2c57ed580e65928e82bad4eb0a6d48371d2c6fc60b0bb2f2369754570306dea; accessed_on=2026-10-07. Ingredient ontology mappings remain unchanged. Historical explanation (superseded where stage/scope differs): Concentration evidence for ingredients[8].concentration (CuCl2 x 2 H2O) in MediaDive medium 265; locator=$.data.solutions[0].recipe[8]. Provider explicitly reports g_l=5e-05; check: 0.05 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.00005 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:44:36.719407+00:00; response SHA256=f2c57ed580e65928e82bad4eb0a6d48371d2c6fc60b0bb2f2369754570306dea.
+    notes: 'Mineral-base batch input: 0.05 mg. Retained 5e-05 g/L is the provider-declared
+      1000 ml normalization, not a verified concentration after supplement addition
+      or a measured final base volume.'
+  - preferred_term: Na2MoO4 x 2 H2O
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    concentration:
+      value: 3e-05
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/265
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 10,
+                                "compound": "Na2MoO4 x 2 H2O",
+                                "compound_id": 9,
+                                "amount": 0.03,
+                                "unit": "mg",
+                                "g_l": 3.0e-5,
+                                "mmol_l": 0.000123993,
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[0].composition[9].concentration (relocate), locator=$.data.solutions[0].recipe[9]: Relocate the source-reported mineral rate to its basal preparation; no complete-medium concentration is inferred. Mineral-base batch input: 0.03 mg. Retained 3e-05 g/L is the provider-declared 1000 ml normalization, not a verified concentration after supplement addition or a measured final base volume. Additional exact preparation excerpt: {
+                                "recipe_order": 15,
+                                "step": "Prepare the medium anaerobically under 100% nitrogen. The following constituents are prepared separately and added to the autoclaved mineral salt solution: Yeast extract (20 ml of 10% w/v solution)-boiled for few minutes, not autoclaved; sucrose (20 ml of 10% w/v solution)-filter-sterilized; sulfur (10 g)-sterilized by steaming for 3 h on each of three successive days; polar lipid fraction (6 - 12ml)-prepared as described by W. Zillig et al. (1983), Syst. Appl. Microbiol. 4: 79 - 87; Na2S x 9 H2O (10 ml of 3% w/v solution)-autoclaved under nitrogen atmosphere."
+                            } Source SHA256=f2c57ed580e65928e82bad4eb0a6d48371d2c6fc60b0bb2f2369754570306dea; accessed_on=2026-10-07. Ingredient ontology mappings remain unchanged. Historical explanation (superseded where stage/scope differs): Concentration evidence for ingredients[9].concentration (Na2MoO4 x 2 H2O) in MediaDive medium 265; locator=$.data.solutions[0].recipe[9]. Provider explicitly reports g_l=3e-05; check: 0.03 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.00003 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:44:36.719407+00:00; response SHA256=f2c57ed580e65928e82bad4eb0a6d48371d2c6fc60b0bb2f2369754570306dea.
+    notes: 'Mineral-base batch input: 0.03 mg. Retained 3e-05 g/L is the provider-declared
+      1000 ml normalization, not a verified concentration after supplement addition
+      or a measured final base volume.'
+  - preferred_term: VOSO4 x 2 H2O
+    term:
+      id: CHEBI:87009
+      label: vanadyl sulfate dihydrate
+    concentration:
+      value: 3e-05
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:87009
+      label: vanadyl sulfate dihydrate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/265
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 11,
+                                "compound": "VOSO4 x 2 H2O",
+                                "compound_id": 197,
+                                "amount": 0.03,
+                                "unit": "mg",
+                                "g_l": 3.0e-5,
+                                "mmol_l": 0.000150728,
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[0].composition[10].concentration (relocate), locator=$.data.solutions[0].recipe[10]: Relocate the source-reported mineral rate to its basal preparation; no complete-medium concentration is inferred. Mineral-base batch input: 0.03 mg. Retained 3e-05 g/L is the provider-declared 1000 ml normalization, not a verified concentration after supplement addition or a measured final base volume. Additional exact preparation excerpt: {
+                                "recipe_order": 15,
+                                "step": "Prepare the medium anaerobically under 100% nitrogen. The following constituents are prepared separately and added to the autoclaved mineral salt solution: Yeast extract (20 ml of 10% w/v solution)-boiled for few minutes, not autoclaved; sucrose (20 ml of 10% w/v solution)-filter-sterilized; sulfur (10 g)-sterilized by steaming for 3 h on each of three successive days; polar lipid fraction (6 - 12ml)-prepared as described by W. Zillig et al. (1983), Syst. Appl. Microbiol. 4: 79 - 87; Na2S x 9 H2O (10 ml of 3% w/v solution)-autoclaved under nitrogen atmosphere."
+                            } Source SHA256=f2c57ed580e65928e82bad4eb0a6d48371d2c6fc60b0bb2f2369754570306dea; accessed_on=2026-10-07. Ingredient ontology mappings remain unchanged. Historical explanation (superseded where stage/scope differs): Concentration evidence for ingredients[10].concentration (VOSO4 x 2 H2O) in MediaDive medium 265; locator=$.data.solutions[0].recipe[10]. Provider explicitly reports g_l=3e-05; check: 0.03 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.00003 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:44:36.719407+00:00; response SHA256=f2c57ed580e65928e82bad4eb0a6d48371d2c6fc60b0bb2f2369754570306dea.
+    notes: 'Mineral-base batch input: 0.03 mg. Retained 3e-05 g/L is the provider-declared
+      1000 ml normalization, not a verified concentration after supplement addition
+      or a measured final base volume.'
+  - preferred_term: CoSO4 x 7 H2O
+    term:
+      id: CHEBI:91244
+      label: cobalt(2+) sulfate heptahydrate
+    concentration:
+      value: 1e-05
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:91244
+      label: cobalt(2+) sulfate heptahydrate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/265
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 12,
+                                "compound": "CoSO4 x 7 H2O",
+                                "compound_id": 198,
+                                "amount": 0.01,
+                                "unit": "mg",
+                                "g_l": 1.0e-5,
+                                "mmol_l": 6.45178e-5,
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[0].composition[11].concentration (relocate), locator=$.data.solutions[0].recipe[11]: Relocate the source-reported mineral rate to its basal preparation; no complete-medium concentration is inferred. Mineral-base batch input: 0.01 mg. Retained 1e-05 g/L is the provider-declared 1000 ml normalization, not a verified concentration after supplement addition or a measured final base volume. Additional exact preparation excerpt: {
+                                "recipe_order": 15,
+                                "step": "Prepare the medium anaerobically under 100% nitrogen. The following constituents are prepared separately and added to the autoclaved mineral salt solution: Yeast extract (20 ml of 10% w/v solution)-boiled for few minutes, not autoclaved; sucrose (20 ml of 10% w/v solution)-filter-sterilized; sulfur (10 g)-sterilized by steaming for 3 h on each of three successive days; polar lipid fraction (6 - 12ml)-prepared as described by W. Zillig et al. (1983), Syst. Appl. Microbiol. 4: 79 - 87; Na2S x 9 H2O (10 ml of 3% w/v solution)-autoclaved under nitrogen atmosphere."
+                            } Source SHA256=f2c57ed580e65928e82bad4eb0a6d48371d2c6fc60b0bb2f2369754570306dea; accessed_on=2026-10-07. Ingredient ontology mappings remain unchanged. Historical explanation (superseded where stage/scope differs): Concentration evidence for ingredients[11].concentration (CoSO4 x 7 H2O) in MediaDive medium 265; locator=$.data.solutions[0].recipe[11]. Provider explicitly reports g_l=1e-05; check: 0.01 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.00001 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:44:36.719407+00:00; response SHA256=f2c57ed580e65928e82bad4eb0a6d48371d2c6fc60b0bb2f2369754570306dea.
+    notes: 'Mineral-base batch input: 0.01 mg. Retained 1e-05 g/L is the provider-declared
+      1000 ml normalization, not a verified concentration after supplement addition
+      or a measured final base volume.'
+  - preferred_term: Distilled water
+    term:
+      id: mediadive.compound:4
+      label: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+    notes: 1000 ml distilled-water input per mineral-base batch, not a final-volume
+      instruction.
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf
+      supports: SUPPORT
+      snippet: Distilled water 1000.00 ml
+      explanation: 'solutions[0].composition[12].concentration (add), locator=page
+        1, recipe/preparation: 1000 ml / 1000 ml per L = 1 L input. Supports the water
+        label and input-basis note; not a percentage or final volume. Source SHA256=904a0973cffadca97f2da8c6b8cd2a89f5f842d53bdb98212d27aa86741ab173;
+        accessed_on=2026-10-07. Ingredient ontology mappings remain unchanged.'
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf
+  preparation_notes: Prepare the mineral salt base anaerobically under 100% nitrogen
+    and autoclave before separately prepared supplements are added.
+  notes: 1000 ml distilled water is a batch input, not final-volume makeup. The retained
+    basal g/L values are provider-reported rates on the API's 1000 ml basis, not measured
+    final stock or complete-medium concentrations. No base addition volume is inferred.
+- preferred_term: Yeast extract stock (10% w/v)
+  composition:
+  - preferred_term: Yeast extract
+    concentration:
+      value: '10'
+      unit: PERCENT_W_V
+    notes: '10% w/v in the separately prepared stock, not the former imported final-medium
+      rate. Original source: 20 ml stock contains 2 g yeast extract; the API''s 20
+      mg/l and former 0.02 g/L disagree. The PDF calls for boiling, not autoclaving;
+      its instruction does not add a separate yeast filtration step.'
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf
+      supports: SUPPORT
+      snippet: "Yeast extract (20 \nml of 10% w/v solution)-boiled for few minutes,\
+        \ not autoclaved"
+      explanation: 'solutions[1].composition[0].concentration (correct_stock_basis),
+        locator=page 1, recipe/preparation: The original source explicitly specifies
+        10% w/v. This replaces a flattened rate with stock strength; it is not a numerical
+        correction of a measured complete-medium concentration. Supports stock name
+        and preparation scope too. Source SHA256=904a0973cffadca97f2da8c6b8cd2a89f5f842d53bdb98212d27aa86741ab173;
+        accessed_on=2026-10-07. Ingredient ontology mappings remain unchanged.'
+    - reference: https://mediadive.dsmz.de/rest/medium/265
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 19,
+                                "compound": "Yeast extract",
+                                "compound_id": 16,
+                                "condition": "boiled and filter-sterilized, not autoclaved",
+                                "attribute": "10% in water (w/v)",
+                                "amount": 20,
+                                "unit": "mg/l",
+                                "g_l": 0.02,
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[0].notes (retain_conflict), locator=$.data.solutions[0].recipe[13]:
+        Counterevidence is retained in this explanation: API amount=20 mg/l and g_l=0.02
+        conflict with its own 20 ml of 10% w/v preparation and the original PDF''s
+        2 g input. SUPPORT here applies only to documenting that source disagreement,
+        not to endorsing the old concentration. Source SHA256=f2c57ed580e65928e82bad4eb0a6d48371d2c6fc60b0bb2f2369754570306dea;
+        accessed_on=2026-10-07. Ingredient ontology mappings remain unchanged.'
+  - preferred_term: Water
+    notes: Stock solvent according to the API attribute; no fixed carrier volume is
+      specified.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/265
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 19,
+                                "compound": "Yeast extract",
+                                "compound_id": 16,
+                                "condition": "boiled and filter-sterilized, not autoclaved",
+                                "attribute": "10% in water (w/v)",
+                                "amount": 20,
+                                "unit": "mg/l",
+                                "g_l": 0.02,
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[1].notes (restore_carrier), locator=$.data.solutions[0].recipe[13]:
+        The source attribute explicitly identifies water. It does not specify a solvent
+        input volume. No water concentration is invented. Source SHA256=f2c57ed580e65928e82bad4eb0a6d48371d2c6fc60b0bb2f2369754570306dea;
+        accessed_on=2026-10-07. Ingredient ontology mappings remain unchanged.'
+  concentration:
+    value: '0.02'
+    unit: L
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf
+  preparation_notes: Yeast extract (20 ml of 10% w/v solution)-boiled for few minutes,
+    not autoclaved
+  notes: Original-recipe batch addition, not liters per liter of final medium. Stock
+    strength and batch dose are separate claims; the stock solvent amount and final
+    receiving volume are not inferred.
+- preferred_term: Sucrose stock (10% w/v)
+  composition:
+  - preferred_term: Sucrose
+    term:
+      id: CHEBI:17992
+      label: sucrose
+    concentration:
+      value: '10'
+      unit: PERCENT_W_V
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17992
+      label: sucrose
+    notes: 10% w/v in the separately prepared stock, not the former imported final-medium
+      rate. Receiving-medium concentration is unresolved because its final volume
+      is not established.
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf
+      supports: SUPPORT
+      snippet: "sucrose (20 ml of 10% \nw/v solution)-filter-sterilized"
+      explanation: 'solutions[2].composition[0].concentration (correct_stock_basis),
+        locator=page 1, recipe/preparation: The original source explicitly specifies
+        10% w/v. This replaces a flattened rate with stock strength; it is not a numerical
+        correction of a measured complete-medium concentration. Supports stock name
+        and preparation scope too. Source SHA256=904a0973cffadca97f2da8c6b8cd2a89f5f842d53bdb98212d27aa86741ab173;
+        accessed_on=2026-10-07. Ingredient ontology mappings remain unchanged.'
+  - preferred_term: Water
+    notes: Stock solvent according to the API attribute; no fixed carrier volume is
+      specified.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/265
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 20,
+                                "compound": "Sucrose",
+                                "compound_id": 108,
+                                "attribute": "10% in water (w/v)",
+                                "amount": 20,
+                                "unit": "ml/l",
+                                "g_l": 2,
+                                "mmol_l": 5.84283,
+                                "optional": 0
+                            }
+      explanation: 'solutions[2].composition[1].notes (restore_carrier), locator=$.data.solutions[0].recipe[14]:
+        The source attribute explicitly identifies water. It does not specify a solvent
+        input volume. No water concentration is invented. Source SHA256=f2c57ed580e65928e82bad4eb0a6d48371d2c6fc60b0bb2f2369754570306dea;
+        accessed_on=2026-10-07. Ingredient ontology mappings remain unchanged.'
+  concentration:
+    value: '0.02'
+    unit: L
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf
+  preparation_notes: sucrose (20 ml of 10% w/v solution)-filter-sterilized
+  notes: Original-recipe batch addition, not liters per liter of final medium. Stock
+    strength and batch dose are separate claims; the stock solvent amount and final
+    receiving volume are not inferred.
+- preferred_term: Na2S x 9 H2O stock (3% w/v)
+  composition:
+  - preferred_term: Na2S x 9 H2O
+    term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
+    concentration:
+      value: '3'
+      unit: PERCENT_W_V
+    mediaingredientmech_chebi_term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
+    notes: 3% w/v in the separately prepared stock, not the former imported final-medium
+      rate. Receiving-medium concentration is unresolved because its final volume
+      is not established.
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf
+      supports: SUPPORT
+      snippet: "Na2S x 9 H2O (10 ml of 3% w/v \nsolution)-autoclaved under nitrogen\
+        \ atmosphere."
+      explanation: 'solutions[3].composition[0].concentration (correct_stock_basis),
+        locator=page 1, recipe/preparation: The original source explicitly specifies
+        3% w/v. This replaces a flattened rate with stock strength; it is not a numerical
+        correction of a measured complete-medium concentration. Supports stock name
+        and preparation scope too. Source SHA256=904a0973cffadca97f2da8c6b8cd2a89f5f842d53bdb98212d27aa86741ab173;
+        accessed_on=2026-10-07. Ingredient ontology mappings remain unchanged.'
+  - preferred_term: Water
+    notes: Stock solvent according to the API attribute; no fixed carrier volume is
+      specified.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/265
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 23,
+                                "compound": "Na2S x 9 H2O",
+                                "compound_id": 54,
+                                "attribute": "3% (w/v) in water, autoclaved under N2",
+                                "amount": 10,
+                                "unit": "ml/l",
+                                "g_l": 0.3,
+                                "mmol_l": 1.24905,
+                                "optional": 0
+                            }
+      explanation: 'solutions[3].composition[1].notes (restore_carrier), locator=$.data.solutions[0].recipe[17]:
+        The source attribute explicitly identifies water. It does not specify a solvent
+        input volume. No water concentration is invented. Source SHA256=f2c57ed580e65928e82bad4eb0a6d48371d2c6fc60b0bb2f2369754570306dea;
+        accessed_on=2026-10-07. Ingredient ontology mappings remain unchanged.'
+  concentration:
+    value: '0.01'
+    unit: L
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf
+  preparation_notes: Na2S x 9 H2O (10 ml of 3% w/v solution)-autoclaved under nitrogen
+    atmosphere.
+  notes: Original-recipe batch addition, not liters per liter of final medium. Stock
+    strength and batch dose are separate claims; the stock solvent amount and final
+    receiving volume are not inferred.
+- preferred_term: Polar lipid aqueous suspension
+  composition:
+  - preferred_term: Polar lipid fraction
+    notes: 'Source material: aqueous polar-lipid suspension prepared from Thermoproteus
+      tenax (DSM 2078) or another archaebacterium. Composition, extraction yield and
+      lipid mass concentration are not specified. Former mass/percentage encoding
+      is withdrawn.'
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf
+      supports: SUPPORT
+      snippet: "Polar lipid fraction prepared from \n Thermoproteus tenax (DSM 2078)\
+        \ \n or from any other archaebacterium, \n aqueous suspension 6 - 12.00 ml"
+      explanation: 'solutions[4].composition[0].notes (withdraw_rate), locator=page
+        1, recipe/preparation: A suspension volume does not support the old g/L or
+        percent encoding. Preserve material identity without invented chemical mapping,
+        composition or extraction yield. Source SHA256=904a0973cffadca97f2da8c6b8cd2a89f5f842d53bdb98212d27aa86741ab173;
+        accessed_on=2026-10-07. Ingredient ontology mappings remain unchanged.'
+    - reference: https://mediadive.dsmz.de/rest/medium/265
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 22,
+                                "compound": "Polar lipid fraction",
+                                "compound_id": 2081,
+                                "condition": "adjust if required",
+                                "attribute": "aqueous suspension prepared from any Archaeon, filter sterilized",
+                                "amount": 10,
+                                "unit": "ml/l",
+                                "optional": 0
+                            }
+      explanation: 'solutions[4].notes (retain_version_difference), locator=$.data.solutions[0].recipe[16]:
+        The dataset lists a 10 ml/l aqueous suspension. This records the disagreement
+        with the PDF''s 6-12 ml batch range; it does not endorse a hybrid formulation
+        or the old mass/percentage amount. Source SHA256=f2c57ed580e65928e82bad4eb0a6d48371d2c6fc60b0bb2f2369754570306dea;
+        accessed_on=2026-10-07. Ingredient ontology mappings remain unchanged.'
+  concentration:
+    value: 0.006-0.012
+    unit: L
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf
+  preparation_notes: Use the separately prepared polar lipid fraction described in
+    the original recipe. The cited Zillig procedure was not inspected and its detailed
+    extraction is not inferred.
+  notes: 'Original PDF batch dose: 6-12 ml. The API alternatively lists 10 ml/l and
+    a modified biomass extraction procedure; that version is retained in evidence,
+    not silently substituted for the original range or used to calculate final lipid
+    concentration.'
+evidence:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf
+  supports: SUPPORT
+  snippet: "Yeast extract (20 \nml of 10% w/v solution)-boiled for few minutes, not\
+    \ autoclaved"
+  explanation: "solutions[1].concentration (add_stock_dose), locator=page 1, recipe/preparation:\
+    \ Source batch dose converted from ml to 0.02 L by dividing by 1000; no final-volume\
+    \ denominator. Supports separate stock boundary and preparation. solutions[2].concentration\
+    \ (add_stock_dose), locator=page 1, recipe/preparation: Source batch dose converted\
+    \ from ml to 0.02 L by dividing by 1000; no final-volume denominator. Supports\
+    \ separate stock boundary and preparation. Additional exact excerpt: sucrose (20\
+    \ ml of 10% \nw/v solution)-filter-sterilized solutions[3].concentration (add_stock_dose),\
+    \ locator=page 1, recipe/preparation: Source batch dose converted from ml to 0.01\
+    \ L by dividing by 1000; no final-volume denominator. Supports separate stock\
+    \ boundary and preparation. Additional exact excerpt: Na2S x 9 H2O (10 ml of 3%\
+    \ w/v \nsolution)-autoclaved under nitrogen atmosphere. solutions[4].concentration\
+    \ (add_stock_dose), locator=page 1, recipe/preparation: 6-12 ml / 1000 ml per\
+    \ L = 0.006-0.012 L per source batch. Preserve the range; do not choose its midpoint\
+    \ or infer a per-liter dose. Additional exact excerpt: aqueous suspension 6 -\
+    \ 12.00 ml notes (correct_scope), locator=page 1, recipe/preparation: Qualify\
+    \ source stages, historical import annotations and unresolved final-volume/version\
+    \ scope. Additional exact excerpt: Prepare the medium anaerobically under 100%\
+    \ nitrogen. solutions[0].source (restore_stock_boundary), locator=page 1, recipe/preparation:\
+    \ Original recipe explicitly separates the mineral base and supplements. Descriptor\
+    \ labels are curator labels, not new source accessions. Stock metadata must be\
+    \ read with its separately evidenced quantity and preparation notes. Additional\
+    \ exact excerpt: prepared separately and added to the autoclaved mineral salt\
+    \ solution: solutions[1].source (restore_stock_boundary), locator=page 1, recipe/preparation:\
+    \ Original recipe explicitly separates the mineral base and supplements. Descriptor\
+    \ labels are curator labels, not new source accessions. Stock metadata must be\
+    \ read with its separately evidenced quantity and preparation notes. Additional\
+    \ exact excerpt: prepared separately and added to the autoclaved mineral salt\
+    \ solution: solutions[2].source (restore_stock_boundary), locator=page 1, recipe/preparation:\
+    \ Original recipe explicitly separates the mineral base and supplements. Descriptor\
+    \ labels are curator labels, not new source accessions. Stock metadata must be\
+    \ read with its separately evidenced quantity and preparation notes. Additional\
+    \ exact excerpt: prepared separately and added to the autoclaved mineral salt\
+    \ solution: solutions[3].source (restore_stock_boundary), locator=page 1, recipe/preparation:\
+    \ Original recipe explicitly separates the mineral base and supplements. Descriptor\
+    \ labels are curator labels, not new source accessions. Stock metadata must be\
+    \ read with its separately evidenced quantity and preparation notes. Additional\
+    \ exact excerpt: prepared separately and added to the autoclaved mineral salt\
+    \ solution: solutions[4].source (restore_stock_boundary), locator=page 1, recipe/preparation:\
+    \ Original recipe explicitly separates the mineral base and supplements. Descriptor\
+    \ labels are curator labels, not new source accessions. Stock metadata must be\
+    \ read with its separately evidenced quantity and preparation notes. Additional\
+    \ exact excerpt: prepared separately and added to the autoclaved mineral salt\
+    \ solution: Source SHA256=904a0973cffadca97f2da8c6b8cd2a89f5f842d53bdb98212d27aa86741ab173;\
+    \ accessed_on=2026-10-07. Ingredient ontology mappings remain unchanged."
+- reference: https://mediadive.dsmz.de/rest/medium/265
+  supports: SUPPORT
+  snippet: |-
+    {
+                            "recipe_order": 15,
+                            "step": "Prepare the medium anaerobically under 100% nitrogen. The following constituents are prepared separately and added to the autoclaved mineral salt solution: Yeast extract (20 ml of 10% w/v solution)-boiled for few minutes, not autoclaved; sucrose (20 ml of 10% w/v solution)-filter-sterilized; sulfur (10 g)-sterilized by steaming for 3 h on each of three successive days; polar lipid fraction (6 - 12ml)-prepared as described by W. Zillig et al. (1983), Syst. Appl. Microbiol. 4: 79 - 87; Na2S x 9 H2O (10 ml of 3% w/v solution)-autoclaved under nitrogen atmosphere."
+                        }
+  explanation: |-
+    preparation_steps[1].action (correct_scope), locator=$.data.solutions[0].steps[1]: The compound instruction assembles separately treated supplements; AUTOCLAVE must not imply autoclaving yeast or the complete supplemented medium. preparation_steps[3].description (correct_scope), locator=$.data.solutions[0].steps[3]: Scope this API autoclave instruction to the mineral base using the explicit separate-supplement instruction. Additional exact excerpt: {
+                            "recipe_order": 15,
+                            "step": "Prepare the medium anaerobically under 100% nitrogen. The following constituents are prepared separately and added to the autoclaved mineral salt solution: Yeast extract (20 ml of 10% w/v solution)-boiled for few minutes, not autoclaved; sucrose (20 ml of 10% w/v solution)-filter-sterilized; sulfur (10 g)-sterilized by steaming for 3 h on each of three successive days; polar lipid fraction (6 - 12ml)-prepared as described by W. Zillig et al. (1983), Syst. Appl. Microbiol. 4: 79 - 87; Na2S x 9 H2O (10 ml of 3% w/v solution)-autoclaved under nitrogen atmosphere."
+                        } Additional exact excerpt: {
+                            "recipe_order": 17,
+                            "step": "Autoclave at 121 \u00b0C for 15 min."
+                        } Source SHA256=f2c57ed580e65928e82bad4eb0a6d48371d2c6fc60b0bb2f2369754570306dea; accessed_on=2026-10-07. Ingredient ontology mappings remain unchanged.

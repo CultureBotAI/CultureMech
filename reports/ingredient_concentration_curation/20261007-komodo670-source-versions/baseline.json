@@ -1,0 +1,94 @@
+{
+  "terminal": true,
+  "phase": "baseline",
+  "runtime": "Partial locked Python 3.13; not full CI",
+  "checks": [
+    {
+      "name": "tests",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_komodo670_source_versions.py",
+        "tests/test_dsmz546_659_670_stocks.py",
+        "tests/test_repair_komodo_670_ms_ph_score10.py",
+        "tests/test_medium_concentration_review.py",
+        "tests/test_solution_concentration_review.py",
+        "tests/test_record_io.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo670-versions-baseline-tests.log"
+    },
+    {
+      "name": "source-capture-bytes",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "/tmp/ingredient-media-20261007/inspect_670_archive.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo670-versions-baseline-source-capture-bytes.log"
+    },
+    {
+      "name": "schema-9463",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/for_dsm_9463.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo670-versions-baseline-schema-9463.log"
+    },
+    {
+      "name": "schema-9466",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/for_dsm_9466.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo670-versions-baseline-schema-9466.log"
+    },
+    {
+      "name": "schema-9467",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/for_dsm_9467.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo670-versions-baseline-schema-9467.log"
+    },
+    {
+      "name": "schema-9468",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/for_dsm_9468.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo670-versions-baseline-schema-9468.log"
+    },
+    {
+      "name": "schema-parent",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/KOMODO_670_MS-MEDIUM.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo670-versions-baseline-schema-parent.log"
+    },
+    {
+      "name": "strict",
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo670-versions-baseline-strict.log"
+    }
+  ]
+}

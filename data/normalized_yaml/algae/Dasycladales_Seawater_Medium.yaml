@@ -11,86 +11,159 @@ media_term:
     label: Dasycladales Seawater Medium
 description: Algae culture medium from UTEX Culture Collection. Suitable for saltwater
   algae cultivation.
-notes: UTEX prepares Dasycladales Seawater Medium from 30 ppt Pasteurized Seawater,
+notes: 'UTEX prepares Dasycladales Seawater Medium from 30 ppt Pasteurized Seawater,
   Soil+Seawater Medium, DAS Macro Solution, Modified P-IV chelated Micronutrient Solution,
-  and DAS Vitamin Cocktail.
+  and DAS Vitamin Cocktail. Unresolved source-volume conflict: both HTML and the linked
+  PDF say "For 3 L Total", yet direct preparation of 3 L seawater followed by 121.5
+  mL of supplements. The seawater fraction is unquantified; four supplement doses
+  explicitly use starting-seawater volume, without substituting an assumed 3.1215
+  L final volume. Literal batch inputs remain 3 L seawater, 50 mL Soil+Seawater Medium,
+  40 mL DAS Macro Solution, 30 mL Modified P-IV stock and 1.5 mL vitamin cocktail.
+  Stock compositions are independent of this receiving-volume conflict; no final DAS
+  molarity is recalculated.'
 ingredients:
 - preferred_term: Pasteurized Seawater
-  concentration:
-    value: '1000'
-    unit: ML_PER_L
   term:
     id: ENVO:00002149
     label: sea water
-  notes: Converted from 3 L Pasteurized Seawater at 30 ppt per 3 L recipe.
+  notes: UTEX lists 3 L for the recipe labelled 3 L total. The directions start with
+    3 L seawater before supplement addition, so the final-volume basis remains unresolved.
+    This literal input is not asserted as a per-final-liter concentration.
   physicochemical_roles:
   - OSMOTIC_AGENT
+  evidence:
+  - reference: https://utex.org/products/dasycladales-seawater-medium
+    supports: SUPPORT
+    snippet: 3 L
+    explanation: 'Supports removal of the unsupported final-volume assertion at ingredients[0].concentration
+      and the replacement notes. UTEX lists 3 L for the recipe labelled 3 L total.
+      The directions start with 3 L seawater before supplement addition, so the final-volume
+      basis remains unresolved. This literal input is not asserted as a per-final-liter
+      concentration. Separate basis excerpt: ''Prepare 3 L of Pasteurized Seawater
+      (30 ppt).''. Locator: Formulation table row 1; Directions 1-2 and total-volume
+      heading.'
 - preferred_term: Soil+Seawater Medium
   concentration:
     value: '16.66666666666666666666666667'
     unit: ML_PER_L
+    per_volume: per liter of starting Pasteurized Seawater before supplement addition
   culturemech_term:
     id: CultureMech:000221
     label: Soil+Seawater Medium
-  notes: Converted from 50 mL Soil+Seawater Medium per 3 L Dasycladales recipe.
+  notes: Add 50 mL to the initial 3 L of Pasteurized Seawater. The structured dose
+    is per liter of starting seawater, not per liter of final DAS medium.
+  evidence:
+  - reference: https://utex.org/products/dasycladales-seawater-medium
+    supports: SUPPORT
+    snippet: 50 mL/3 L
+    explanation: 'Supports ingredients[1].concentration, its per_volume basis, and
+      replacement notes. 50 mL / 3 L starting seawater = 16.66666666666666666666666667
+      mL/L of starting seawater (repeating decimals rounded to the existing 28-digit
+      precision). Separate directions excerpt: ''Prepare 3 L of Pasteurized Seawater
+      (30 ppt).''. Separate heading excerpt: "For 3 L Total". The source heading conflicts
+      with the preparation sequence; no final-volume concentration or additive final
+      volume is inferred. Locator: Formulation table row 2; Directions 1-2 and total-volume
+      heading.'
 solutions:
 - preferred_term: DAS Macro Solution
   concentration:
     value: '13.33333333333333333333333333'
     unit: ML_PER_L
+    per_volume: per liter of starting Pasteurized Seawater before supplement addition
   term:
     id: kgmicrobe.ingredient:das_macro_solution
     label: DAS Macro Solution
-  composition:
+  notes: Add 40 mL to the initial 3 L of Pasteurized Seawater. The structured dose
+    is per liter of starting seawater, not per liter of final DAS medium.
+  solutions:
   - preferred_term: NaNO3 0.70 M stock
     concentration:
       value: '25'
       unit: PERCENT_V_V
-    term:
-      id: CHEBI:63005
-      label: sodium nitrate
-    mediaingredientmech_chebi_term:
-      id: CHEBI:63005
-      label: sodium nitrate
-    supplier_catalog:
-      supplier_name: Fisher
-      catalog_number: BP360
-    notes: Component stock contributes 10 mL to the 40 mL DAS Macro Solution; UTEX
-      reports 2.3 mM final NaNO3 in DAS.
-    nutritional_roles:
-    - NITROGEN_SOURCE
+    composition:
+    - preferred_term: Sodium nitrate
+      term:
+        id: CHEBI:63005
+        label: sodium nitrate
+      mediaingredientmech_chebi_term:
+        id: CHEBI:63005
+        label: sodium nitrate
+      supplier_catalog:
+        supplier_name: Fisher
+        catalog_number: BP360
+      notes: Source-explicit component-stock strength; no final DAS concentration
+        inferred.
+      nutritional_roles:
+      - NITROGEN_SOURCE
+      concentration:
+        value: '0.70'
+        unit: MOLAR
+      evidence:
+      - reference: https://utex.org/products/das-macro-solution
+        supports: SUPPORT
+        snippet: 0.70 M
+        explanation: Supports solutions[0].solutions[0].composition[0].concentration
+          for Sodium nitrate in component stock 1, not final DAS or the combined 40
+          mL mixture. Table row 1, Stock Solution Concentration column; component
+          is 'NaNO3*autoclave before adding*(Fisher BP360)'. No numeric conversion.
+      - reference: https://www.ebi.ac.uk/chebi/CHEBI:63005
+        supports: SUPPORT
+        snippet: NO3.Na
+        explanation: 'Supports solutions[0].solutions[0].composition[0] identity disposition
+          only. Supports retaining the existing sodium nitrate term on the dissolved
+          ingredient, not the prepared stock. Locator: Formula field'
   - preferred_term: Na2HPO4 x 7 H2O 0.02 M stock
     concentration:
       value: '75'
       unit: PERCENT_V_V
-    term:
-      id: CHEBI:34683
-      label: Na2HPO4
-    mediaingredientmech_chebi_term:
-      id: CHEBI:34683
-      label: Na2HPO4
-    supplier_catalog:
-      supplier_name: Sigma
-      catalog_number: S 9390
-    notes: Component stock contributes 30 mL to the 40 mL DAS Macro Solution; UTEX
-      reports 0.2 mM final Na2HPO4 x 7 H2O in DAS.
-    nutritional_roles:
-    - PHOSPHATE_SOURCE
-    physicochemical_roles:
-    - BUFFER
-  notes: Converted from 40 mL DAS Macro Solution per 3 L Dasycladales recipe.
+    composition:
+    - preferred_term: Disodium hydrogen phosphate heptahydrate
+      supplier_catalog:
+        supplier_name: Sigma
+        catalog_number: S 9390
+      notes: Exact heptahydrate supplied as Sigma S9390. The former CHEBI:34683 mapping
+        describes the anhydrous salt; exact hydrate ontology grounding remains unresolved.
+        The packaged MIM stock-label answer is not treated as proof of hydrate equivalence.
+      nutritional_roles:
+      - PHOSPHATE_SOURCE
+      physicochemical_roles:
+      - BUFFER
+      concentration:
+        value: '0.02'
+        unit: MOLAR
+      chemical_formula: Na2HPO4.7H2O
+      evidence:
+      - reference: https://utex.org/products/das-macro-solution
+        supports: SUPPORT
+        snippet: 0.02 M
+        explanation: Supports solutions[0].solutions[1].composition[0].concentration
+          for Disodium hydrogen phosphate heptahydrate in component stock 2, not final
+          DAS or the combined 40 mL mixture. Table row 2, Stock Solution Concentration
+          column; component is 'Na2HPO4•7H2O*autoclave before adding*(Sigma S 9390)'.
+          No numeric conversion.
+      - reference: https://www.sigmaaldrich.com/US/en/product/sigald/s9390
+        supports: SUPPORT
+        snippet: Sodium phosphate dibasic heptahydrate
+        explanation: 'Supports solutions[0].solutions[1].composition[0] identity disposition
+          only. Exact supplier identity for the UTEX-listed phosphate; not an amount.
+          Locator: Product S9390 heading; formula Na2HPO4.7H2O and CAS 7782-85-6'
+      - reference: https://www.ebi.ac.uk/chebi/CHEBI:34683
+        supports: SUPPORT
+        snippet: HO4P.2Na
+        explanation: 'Supports solutions[0].solutions[1].composition[0] identity disposition
+          only. Supports removal of an anhydrous grounding from the heptahydrate;
+          not a replacement ontology ID. Locator: Formula field; no seven waters in
+          the structure'
 - preferred_term: Modified P-IV chelated Micronutrient Solution
   concentration:
     value: '10'
     unit: ML_PER_L
+    per_volume: per liter of starting Pasteurized Seawater before supplement addition
   term:
     id: kgmicrobe.ingredient:modified_p-iv_chelated_micronutrient_solution
     label: Modified P-IV chelated Micronutrient Solution
   composition:
   - preferred_term: dH2O
-    concentration:
-      value: '1000'
-      unit: ML_PER_L
     term:
       id: CHEBI:15377
       label: water
@@ -98,7 +171,18 @@ solutions:
       id: CHEBI:15377
       label: water
     notes: UTEX starts the Modified P-IV recipe with approximately 900 mL dH2O and
-      brings the final volume to 1 L.
+      brings the final volume to 1 L. The stated total is solution volume; the exact
+      final quantity of pure water is not specified.
+    evidence:
+    - reference: https://utex.org/products/modified-p-iv-chelated-micronutrient-solution
+      supports: SUPPORT
+      snippet: Bring total volume to 1 L with dH2O.
+      explanation: 'Supports removal of the unsupported final-volume assertion at
+        solutions[1].composition[0].concentration and the replacement notes. UTEX
+        starts the Modified P-IV recipe with approximately 900 mL dH2O and brings
+        the final volume to 1 L. The stated total is solution volume; the exact final
+        quantity of pure water is not specified. Separate basis excerpt: ''For 1 L
+        Total''. Locator: Directions / formulation table.'
   - preferred_term: Na2EDTA x 2 H2O
     concentration:
       value: '0.2'
@@ -112,10 +196,22 @@ solutions:
     supplier_catalog:
       supplier_name: Sigma
       catalog_number: ED255
-    notes: UTEX lists 0.2 g/L Na2EDTA x 2 H2O, 0.54 mM stock, and 5.4 uM final in
-      medium.
+    notes: The source amount is 0.2 g/L. Printed molarity annotations are retained
+      as source assertions only; no receiving-medium molarity is independently verified
+      from them in this review.
     physicochemical_roles:
     - CHELATOR
+    evidence:
+    - reference: https://utex.org/products/modified-p-iv-chelated-micronutrient-solution
+      supports: SUPPORT
+      snippet: 0.2 g/L
+      explanation: 'Supports solutions[1].composition[1].concentration for this preparation
+        stage. Retain this supplied-product stock mass amount and add scoped evidence.
+        Printed molarity annotations remain source assertions, not independently verified
+        conversions. Separate basis excerpt: ''For 1 L Total''. Locator: Formulation
+        table row 1, Amount column. Calculation: 0.2 g / 1 L = 0.2 g/L. Also scopes
+        solutions[1].composition[1].notes. Printed concentration cells: [''0.54 mM'',
+        ''5.4 µM'']. '
   - preferred_term: HEEDTA
     concentration:
       value: '0.03'
@@ -123,9 +219,22 @@ solutions:
     supplier_catalog:
       supplier_name: Sigma
       catalog_number: H-7154
-    notes: UTEX lists 0.03 g/L HEEDTA, 0.11 mM stock, and 1.1 uM final in medium.
+    notes: The source amount is 0.03 g/L. Printed molarity annotations are retained
+      as source assertions only; no receiving-medium molarity is independently verified
+      from them in this review.
     physicochemical_roles:
     - CHELATOR
+    evidence:
+    - reference: https://utex.org/products/modified-p-iv-chelated-micronutrient-solution
+      supports: SUPPORT
+      snippet: 0.03 g/L
+      explanation: 'Supports solutions[1].composition[2].concentration for this preparation
+        stage. Retain this supplied-product stock mass amount and add scoped evidence.
+        Printed molarity annotations remain source assertions, not independently verified
+        conversions. Separate basis excerpt: ''For 1 L Total''. Locator: Formulation
+        table row 2, Amount column. Calculation: 0.03 g / 1 L = 0.03 g/L. Also scopes
+        solutions[1].composition[2].notes. Printed concentration cells: [''0.11 mM'',
+        ''1.1 µM'']. '
   - preferred_term: FeCl3 x 6 H2O
     concentration:
       value: '0.1'
@@ -139,10 +248,23 @@ solutions:
     supplier_catalog:
       supplier_name: Sigma
       catalog_number: F-1513
-    notes: UTEX lists 0.1 g/L FeCl3 x 6 H2O, 0.37 mM stock, and 3.7 uM final in medium.
+    notes: The source amount is 0.1 g/L. Printed molarity annotations are retained
+      as source assertions only; no receiving-medium molarity is independently verified
+      from them in this review.
     nutritional_roles:
     - IRON_SOURCE
     - TRACE_ELEMENT
+    evidence:
+    - reference: https://utex.org/products/modified-p-iv-chelated-micronutrient-solution
+      supports: SUPPORT
+      snippet: 0.1 g/L
+      explanation: 'Supports solutions[1].composition[3].concentration for this preparation
+        stage. Retain this supplied-product stock mass amount and add scoped evidence.
+        Printed molarity annotations remain source assertions, not independently verified
+        conversions. Separate basis excerpt: ''For 1 L Total''. Locator: Formulation
+        table row 3, Amount column. Calculation: 0.1 g / 1 L = 0.1 g/L. Also scopes
+        solutions[1].composition[3].notes. Printed concentration cells: [''0.37 mM'',
+        ''3.7 µM'']. '
   - preferred_term: MnCl2 x 4 H2O
     concentration:
       value: '0.04'
@@ -156,10 +278,22 @@ solutions:
     supplier_catalog:
       supplier_name: Baker
       catalog_number: '2540'
-    notes: UTEX lists 0.04 g/L MnCl2 x 4 H2O, 0.20 mM stock, and 2.02 uM final in
-      medium.
+    notes: The source amount is 0.04 g/L. Printed molarity annotations are retained
+      as source assertions only; no receiving-medium molarity is independently verified
+      from them in this review.
     nutritional_roles:
     - TRACE_ELEMENT
+    evidence:
+    - reference: https://utex.org/products/modified-p-iv-chelated-micronutrient-solution
+      supports: SUPPORT
+      snippet: 0.04 g/L
+      explanation: 'Supports solutions[1].composition[4].concentration for this preparation
+        stage. Retain this supplied-product stock mass amount and add scoped evidence.
+        Printed molarity annotations remain source assertions, not independently verified
+        conversions. Separate basis excerpt: ''For 1 L Total''. Locator: Formulation
+        table row 4, Amount column. Calculation: 0.04 g / 1 L = 0.04 g/L. Also scopes
+        solutions[1].composition[4].notes. Printed concentration cells: [''0.20 mM'',
+        ''2.02 µM'']. '
   - preferred_term: ZnCl2
     concentration:
       value: '0.005'
@@ -173,9 +307,22 @@ solutions:
     supplier_catalog:
       supplier_name: Sigma
       catalog_number: Z-0152
-    notes: UTEX lists 0.005 g/L ZnCl2, 0.037 mM stock, and 0.37 uM final in medium.
+    notes: The source amount is 0.005 g/L. Printed molarity annotations are retained
+      as source assertions only; no receiving-medium molarity is independently verified
+      from them in this review.
     nutritional_roles:
     - TRACE_ELEMENT
+    evidence:
+    - reference: https://utex.org/products/modified-p-iv-chelated-micronutrient-solution
+      supports: SUPPORT
+      snippet: 0.005 g/L
+      explanation: 'Supports solutions[1].composition[5].concentration for this preparation
+        stage. Retain this supplied-product stock mass amount and add scoped evidence.
+        Printed molarity annotations remain source assertions, not independently verified
+        conversions. Separate basis excerpt: ''For 1 L Total''. Locator: Formulation
+        table row 5, Amount column. Calculation: 0.005 g / 1 L = 0.005 g/L. Also scopes
+        solutions[1].composition[5].notes. Printed concentration cells: [''0.037 mM'',
+        ''0.37 µM'']. '
   - preferred_term: CoCl2 x 6 H2O
     concentration:
       value: '0.002'
@@ -189,10 +336,22 @@ solutions:
     supplier_catalog:
       supplier_name: Sigma
       catalog_number: C-3169
-    notes: UTEX lists 0.002 g/L CoCl2 x 6 H2O, 0.008 mM stock, and 0.084 uM final
-      in medium.
+    notes: The source amount is 0.002 g/L. Printed molarity annotations are retained
+      as source assertions only; no receiving-medium molarity is independently verified
+      from them in this review.
     nutritional_roles:
     - TRACE_ELEMENT
+    evidence:
+    - reference: https://utex.org/products/modified-p-iv-chelated-micronutrient-solution
+      supports: SUPPORT
+      snippet: 0.002 g/L
+      explanation: 'Supports solutions[1].composition[6].concentration for this preparation
+        stage. Retain this supplied-product stock mass amount and add scoped evidence.
+        Printed molarity annotations remain source assertions, not independently verified
+        conversions. Separate basis excerpt: ''For 1 L Total''. Locator: Formulation
+        table row 6, Amount column. Calculation: 0.002 g / 1 L = 0.002 g/L. Also scopes
+        solutions[1].composition[6].notes. Printed concentration cells: [''0.008 mM'',
+        ''0.084 µM'']. '
   - preferred_term: Na2MoO4 x 2 H2O
     concentration:
       value: '0.004'
@@ -206,24 +365,34 @@ solutions:
     supplier_catalog:
       supplier_name: J.T. Baker
       catalog_number: '3764'
-    notes: UTEX lists 0.004 g/L Na2MoO4 x 2 H2O, 0.017 mM stock, and 0.17 uM final
-      in medium.
+    notes: The source amount is 0.004 g/L. Printed molarity annotations are retained
+      as source assertions only; no receiving-medium molarity is independently verified
+      from them in this review.
     nutritional_roles:
     - TRACE_ELEMENT
-  notes: UTEX adds 30 mL Modified P-IV chelated Micronutrient Solution per 3 L Dasycladales
-    recipe.
+    evidence:
+    - reference: https://utex.org/products/modified-p-iv-chelated-micronutrient-solution
+      supports: SUPPORT
+      snippet: 0.004 g/L
+      explanation: 'Supports solutions[1].composition[7].concentration for this preparation
+        stage. Retain this supplied-product stock mass amount and add scoped evidence.
+        Printed molarity annotations remain source assertions, not independently verified
+        conversions. Separate basis excerpt: ''For 1 L Total''. Locator: Formulation
+        table row 7, Amount column. Calculation: 0.004 g / 1 L = 0.004 g/L. Also scopes
+        solutions[1].composition[7].notes. Printed concentration cells: [''0.017 mM'',
+        ''0.17 µM'']. '
+  notes: Add 30 mL to the initial 3 L of Pasteurized Seawater. The structured dose
+    is per liter of starting seawater, not per liter of final DAS medium.
 - preferred_term: DAS Vitamin Cocktail
   concentration:
     value: '0.5'
     unit: ML_PER_L
+    per_volume: per liter of starting Pasteurized Seawater before supplement addition
   term:
     id: kgmicrobe.ingredient:das_vitamin_cocktail
     label: DAS Vitamin Cocktail
   composition:
   - preferred_term: dH2O
-    concentration:
-      value: '1000'
-      unit: ML_PER_L
     term:
       id: CHEBI:15377
       label: water
@@ -231,7 +400,18 @@ solutions:
       id: CHEBI:15377
       label: water
     notes: UTEX starts the DAS Vitamin Cocktail with approximately 85 mL dH2O and
-      brings the final volume to 100 mL.
+      brings the final volume to 100 mL. The stated total is solution volume; the
+      exact final quantity of pure water is not specified.
+    evidence:
+    - reference: https://utex.org/products/das-vitamin-cocktail
+      supports: SUPPORT
+      snippet: Bring total volume to 100 mL with dH2O.
+      explanation: 'Supports removal of the unsupported final-volume assertion at
+        solutions[2].composition[0].concentration and the replacement notes. UTEX
+        starts the DAS Vitamin Cocktail with approximately 85 mL dH2O and brings the
+        final volume to 100 mL. The stated total is solution volume; the exact final
+        quantity of pure water is not specified. Separate basis excerpt: ''For 100
+        mL Total''. Locator: Directions / formulation table.'
   - preferred_term: Tricine
     concentration:
       value: '9'
@@ -245,27 +425,67 @@ solutions:
     supplier_catalog:
       supplier_name: Sigma
       catalog_number: T 5816-256
-    notes: Converted from 0.9 g Tricine per 100 mL; UTEX adjusts the cocktail to pH
-      8.0.
+    notes: The source amount is 0.9 g/100 mL. Printed molarity annotations are retained
+      as source assertions only; no receiving-medium molarity is independently verified
+      from them in this review.
     physicochemical_roles:
     - BUFFER
-  - preferred_term: Thiamine
+    evidence:
+    - reference: https://utex.org/products/das-vitamin-cocktail
+      supports: SUPPORT
+      snippet: 0.9 g/100 mL
+      explanation: 'Supports solutions[2].composition[1].concentration for this preparation
+        stage. Retain this supplied-product stock mass amount and add scoped evidence.
+        Printed molarity annotations remain source assertions, not independently verified
+        conversions. Separate basis excerpt: ''For 100 mL Total''. Locator: Formulation
+        table row 1, Amount column. Calculation: 0.9 g / 0.1 L = 9 g/L. Also scopes
+        solutions[2].composition[1].notes. Printed concentration cells: []. '
+  - preferred_term: Thiamine hydrochloride
     concentration:
       value: '0.67'
       unit: G_PER_L
     term:
-      id: CHEBI:18385
-      label: thiamine(1+)
+      id: CHEBI:49105
+      label: thiamine hydrochloride
     mediaingredientmech_chebi_term:
-      id: CHEBI:18385
-      label: thiamine(1+)
+      id: CHEBI:49105
+      label: thiamine hydrochloride
     supplier_catalog:
       supplier_name: Sigma
       catalog_number: T 1270
-    notes: Converted from 0.067 g/100 mL; UTEX reports 2.0 mM stock and 0.99 uM final
-      in DAS.
+    notes: The source amount is 0.067 g/100 mL. Printed molarity annotations are retained
+      as source assertions only; no receiving-medium molarity is independently verified
+      from them in this review.
     nutritional_roles:
     - VITAMIN_SOURCE
+    evidence:
+    - reference: https://utex.org/products/das-vitamin-cocktail
+      supports: SUPPORT
+      snippet: 0.067 g/100 mL
+      explanation: 'Supports solutions[2].composition[2].concentration for this preparation
+        stage. Retain this supplied-product stock mass amount and add scoped evidence.
+        Printed molarity annotations remain source assertions, not independently verified
+        conversions. Correct the supplied salt identity using the exact-product evidence
+        in the seven-stock identity ledger; recheck source access limits and current
+        mappings before applying. Separate basis excerpt: ''For 100 mL Total''. Locator:
+        Formulation table row 2, Amount column. Calculation: 0.067 g / 0.1 L = 0.67
+        g/L. Also scopes solutions[2].composition[2].notes. Printed concentration
+        cells: [''2.0 mM'', ''0.99 µM'']. '
+    - reference: https://www.sigmaaldrich.com/CA/en/product/sigma/t1270
+      supports: SUPPORT
+      snippet: Thiamine hydrochloride
+      explanation: 'Supports solutions[2].composition[2].term and supplied-form label/MIM-link
+        correction from CHEBI:18385 to CHEBI:49105. Exact UTEX-listed supplier product,
+        identity only. Formula and InChIKey agree with CHEBI:49105. Locator: Product
+        T1270 heading; CAS 67-03-8 and InChIKey DPJRMOMPQZCRJU-UHFFFAOYSA-M separately
+        inspected. The g/L amount is unchanged and sourced separately to UTEX.'
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:49105
+      supports: SUPPORT
+      snippet: C12H17N4OS.Cl.HCl
+      explanation: 'Supports solutions[2].composition[2].term and supplied-form label/MIM-link
+        correction from CHEBI:18385 to CHEBI:49105. chemical identity only; not a
+        recipe amount Locator: Formula field. The g/L amount is unchanged and sourced
+        separately to UTEX.'
   - preferred_term: Biotin
     concentration:
       value: '0.01'
@@ -279,10 +499,22 @@ solutions:
     supplier_catalog:
       supplier_name: Sigma
       catalog_number: B 4639
-    notes: Converted from 0.001 g/100 mL; UTEX reports 0.041 mM stock and 0.02 uM
-      final in DAS.
+    notes: The source amount is 0.001 g/100 mL. Printed molarity annotations are retained
+      as source assertions only; no receiving-medium molarity is independently verified
+      from them in this review.
     nutritional_roles:
     - VITAMIN_SOURCE
+    evidence:
+    - reference: https://utex.org/products/das-vitamin-cocktail
+      supports: SUPPORT
+      snippet: 0.001 g/100 mL
+      explanation: 'Supports solutions[2].composition[3].concentration for this preparation
+        stage. Retain this supplied-product stock mass amount and add scoped evidence.
+        Printed molarity annotations remain source assertions, not independently verified
+        conversions. Separate basis excerpt: ''For 100 mL Total''. Locator: Formulation
+        table row 3, Amount column. Calculation: 0.001 g / 0.1 L = 0.01 g/L. Also
+        scopes solutions[2].composition[3].notes. Printed concentration cells: [''0.041
+        mM'', ''0.02 µM'']. '
   - preferred_term: Vitamin B12
     concentration:
       value: '0.008'
@@ -296,27 +528,70 @@ solutions:
     supplier_catalog:
       supplier_name: Sigma
       catalog_number: V 6629
-    notes: Converted from 0.0008 g/100 mL; UTEX reports adding B12 after autoclaving,
-      0.0059 mM stock, and 0.0029 uM final in DAS.
+    notes: The B12 table row says add after autoclaving, while the directions specify
+      filtration without an autoclave step. The sterilization sequence remains unresolved.
     nutritional_roles:
     - VITAMIN_SOURCE
-  - preferred_term: Pantothenate
+    evidence:
+    - reference: https://utex.org/products/das-vitamin-cocktail
+      supports: SUPPORT
+      snippet: 0.0008 g/100 mL
+      explanation: 'Supports solutions[2].composition[4].concentration for this preparation
+        stage. Retain this supplied-product stock mass amount and add scoped evidence.
+        Printed molarity annotations remain source assertions, not independently verified
+        conversions. Separate basis excerpt: ''For 100 mL Total''. Locator: Formulation
+        table row 4, Amount column. Calculation: 0.0008 g / 0.1 L = 0.008 g/L. Also
+        scopes solutions[2].composition[4].notes. Printed concentration cells: [''0.0059
+        mM'', ''0.0029 µM''].  Separate exact excerpt: ''add after autoclaving''.
+        Supports solutions[2].composition[4].notes. Separate Directions excerpt: "0.45
+        µm Millipore filter". No missing autoclave step is inferred.'
+  - preferred_term: Calcium D-(+)-pantothenate
     concentration:
       value: '0.02'
       unit: G_PER_L
     term:
-      id: CHEBI:7916
-      label: Pantothenic acid
+      id: CHEBI:31345
+      label: Calcium pantothenate
     mediaingredientmech_chebi_term:
-      id: CHEBI:7916
-      label: Pantothenic acid
+      id: CHEBI:31345
+      label: Calcium pantothenate
     supplier_catalog:
       supplier_name: Sigma
       catalog_number: P 2250
-    notes: Converted from 0.002 g/100 mL; UTEX reports 0.091 mM stock and 0.046 uM
-      final in DAS.
+    notes: The source amount is 0.002 g/100 mL. Printed molarity annotations are retained
+      as source assertions only; no receiving-medium molarity is independently verified
+      from them in this review.
     nutritional_roles:
     - VITAMIN_SOURCE
+    evidence:
+    - reference: https://utex.org/products/das-vitamin-cocktail
+      supports: SUPPORT
+      snippet: 0.002 g/100 mL
+      explanation: 'Supports solutions[2].composition[5].concentration for this preparation
+        stage. Retain this supplied-product stock mass amount and add scoped evidence.
+        Printed molarity annotations remain source assertions, not independently verified
+        conversions. Correct the supplied salt identity using the exact-product evidence
+        in the seven-stock identity ledger; recheck source access limits and current
+        mappings before applying. Separate basis excerpt: ''For 100 mL Total''. Locator:
+        Formulation table row 5, Amount column. Calculation: 0.002 g / 0.1 L = 0.02
+        g/L. Also scopes solutions[2].composition[5].notes. Printed concentration
+        cells: [''0.091 mM'', ''0.046 µM'']. '
+    - reference: https://www.sigmaaldrich.com/US/en/sds/SIGMA/P2250
+      supports: SUPPORT
+      snippet: D-Pantothenic acid hemicalcium salt
+      explanation: 'Supports solutions[2].composition[5].term and supplied-form label/MIM-link
+        correction from CHEBI:7916 to CHEBI:31345. Exact UTEX-listed supplier product,
+        identity only. CAS 137-08-6 matches CHEBI:31345; hemicalcium and two-ligand
+        calcium formula units describe the same material, not a mass conversion. Locator:
+        Section 1.1, page 1; formula and CAS in section 3.1, page 2. The g/L amount
+        is unchanged and sourced separately to UTEX.'
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:31345
+      supports: SUPPORT
+      snippet: 2C9H16NO5.Ca
+      explanation: 'Supports solutions[2].composition[5].term and supplied-form label/MIM-link
+        correction from CHEBI:7916 to CHEBI:31345. chemical identity only; not a recipe
+        amount Locator: Formula field. The g/L amount is unchanged and sourced separately
+        to UTEX.'
   - preferred_term: PABA
     concentration:
       value: '0.04'
@@ -330,11 +605,24 @@ solutions:
     supplier_catalog:
       supplier_name: Sigma
       catalog_number: A 1174
-    notes: Converted from 0.004 g/100 mL p-aminobenzoic acid; UTEX reports 0.291 mM
-      stock and 0.15 uM final in DAS.
+    notes: The source amount is 0.004 g/100 mL. Printed molarity annotations are retained
+      as source assertions only; no receiving-medium molarity is independently verified
+      from them in this review.
     nutritional_roles:
     - VITAMIN_SOURCE
-  notes: Converted from 1.5 mL DAS Vitamin Cocktail per 3 L Dasycladales recipe.
+    evidence:
+    - reference: https://utex.org/products/das-vitamin-cocktail
+      supports: SUPPORT
+      snippet: 0.004 g/100 mL
+      explanation: 'Supports solutions[2].composition[6].concentration for this preparation
+        stage. Retain this supplied-product stock mass amount and add scoped evidence.
+        Printed molarity annotations remain source assertions, not independently verified
+        conversions. Separate basis excerpt: ''For 100 mL Total''. Locator: Formulation
+        table row 6, Amount column. Calculation: 0.004 g / 0.1 L = 0.04 g/L. Also
+        scopes solutions[2].composition[6].notes. Printed concentration cells: [''0.291
+        mM'', ''0.15 µM'']. '
+  notes: Add 1.5 mL to the initial 3 L of Pasteurized Seawater. The structured dose
+    is per liter of starting seawater, not per liter of final DAS medium.
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -394,14 +682,362 @@ curation_history:
   notes: UTEX prepares Dasycladales Seawater Medium from 30 ppt Pasteurized Seawater,
     Soil+Seawater Medium, DAS Macro Solution, Modified P-IV chelated Micronutrient
     Solution, and DAS Vitamin Cocktail.
+- timestamp: '2026-10-10T08:16:36.702755+00:00'
+  curator: codex
+  action: CURATED_UTEX_J_DAS_RECEIVING_MEDIA_EVIDENCE
+  notes: Evidence-backed amount and stock-boundary review; source conflicts remain
+    explicit. No taxa-media association added.
+  source: https://utex.org/products/dasycladales-seawater-medium
+  changes: '{"claims": [{"action_taken": "Remove unsupported concentration; literal
+    source input retained in notes and evidence.", "basis_snippet": "Prepare 3 L of
+    Pasteurized Seawater (30 ppt).", "calculation": "No conversion applied", "decision":
+    "The heading says For 3 L Total, but the directions start with 3 L seawater before
+    supplements. Preserve the exact batch input; do not certify the stored per-final-liter
+    value or invent a 3.1215 L final volume. Proposed removal of the derived concentration
+    requires preserving all literal input amounts in evidence and notes.", "field":
+    "ingredients[0].concentration", "ingredient": "Pasteurized Seawater", "locator":
+    "Formulation table row 1; Directions 1-2 and total-volume heading", "old": {"unit":
+    "ML_PER_L", "value": "1000"}, "old_term": {"id": "ENVO:00002149", "label": "sea
+    water"}, "proposed": null, "reference": "https://utex.org/products/dasycladales-seawater-medium",
+    "snippet": "3 L", "status": "conflict"}, {"action_taken": "Specify the carrier-volume
+    basis; numerical dose unchanged.", "basis_snippet": "Prepare 3 L of Pasteurized
+    Seawater (30 ppt).", "calculation": "50 mL / 3 L starting seawater = 16.66666666666666666666666667
+    mL/L of starting seawater (repeating decimals rounded to the existing 28-digit
+    precision).", "decision": "Retain the supported input-volume ratio with an explicit
+    carrier basis; final-medium concentration remains unresolved.", "field": "ingredients[1].concentration",
+    "ingredient": "Soil+Seawater Medium", "locator": "Formulation table row 2; Directions
+    1-2 and total-volume heading", "old": {"unit": "ML_PER_L", "value": "16.66666666666666666666666667"},
+    "old_term": null, "proposed": {"per_volume": "per liter of starting Pasteurized
+    Seawater before supplement addition", "unit": "ML_PER_L", "value": "16.66666666666666666666666667"},
+    "reference": "https://utex.org/products/dasycladales-seawater-medium", "snippet":
+    "50 mL/3 L", "source_final_volume_conflict": true, "status": "correct"}, {"action_taken":
+    "Specify the carrier-volume basis; numerical dose unchanged.", "basis_snippet":
+    "Prepare 3 L of Pasteurized Seawater (30 ppt).", "calculation": "40 mL / 3 L starting
+    seawater = 13.33333333333333333333333333 mL/L of starting seawater (repeating
+    decimals rounded to the existing 28-digit precision).", "decision": "Retain the
+    supported input-volume ratio with an explicit carrier basis; final-medium concentration
+    remains unresolved.", "field": "solutions[0].concentration", "ingredient": "DAS
+    Macro Solution", "locator": "Formulation table row 3; Directions 1-2 and total-volume
+    heading", "old": {"unit": "ML_PER_L", "value": "13.33333333333333333333333333"},
+    "old_term": {"id": "kgmicrobe.ingredient:das_macro_solution", "label": "DAS Macro
+    Solution"}, "proposed": {"per_volume": "per liter of starting Pasteurized Seawater
+    before supplement addition", "unit": "ML_PER_L", "value": "13.33333333333333333333333333"},
+    "reference": "https://utex.org/products/dasycladales-seawater-medium", "snippet":
+    "40 mL/3 L", "source_final_volume_conflict": true, "status": "correct"}, {"action_taken":
+    "Specify the carrier-volume basis; numerical dose unchanged.", "basis_snippet":
+    "Prepare 3 L of Pasteurized Seawater (30 ppt).", "calculation": "30 mL / 3 L starting
+    seawater = 10 mL/L of starting seawater (repeating decimals rounded to the existing
+    28-digit precision).", "decision": "Retain the supported input-volume ratio with
+    an explicit carrier basis; final-medium concentration remains unresolved.", "field":
+    "solutions[1].concentration", "ingredient": "Modified P-IV chelated Micronutrient
+    Solution", "locator": "Formulation table row 4; Directions 1-2 and total-volume
+    heading", "old": {"unit": "ML_PER_L", "value": "10"}, "old_term": {"id": "kgmicrobe.ingredient:modified_p-iv_chelated_micronutrient_solution",
+    "label": "Modified P-IV chelated Micronutrient Solution"}, "proposed": {"per_volume":
+    "per liter of starting Pasteurized Seawater before supplement addition", "unit":
+    "ML_PER_L", "value": "10"}, "reference": "https://utex.org/products/dasycladales-seawater-medium",
+    "snippet": "30 mL/3 L", "source_final_volume_conflict": true, "status": "correct"},
+    {"action_taken": "Specify the carrier-volume basis; numerical dose unchanged.",
+    "basis_snippet": "Prepare 3 L of Pasteurized Seawater (30 ppt).", "calculation":
+    "1.5 mL / 3 L starting seawater = 0.5 mL/L of starting seawater (repeating decimals
+    rounded to the existing 28-digit precision).", "decision": "Retain the supported
+    input-volume ratio with an explicit carrier basis; final-medium concentration
+    remains unresolved.", "field": "solutions[2].concentration", "ingredient": "DAS
+    Vitamin Cocktail", "locator": "Formulation table row 5; Directions 1-2 and total-volume
+    heading", "old": {"unit": "ML_PER_L", "value": "0.5"}, "old_term": {"id": "kgmicrobe.ingredient:das_vitamin_cocktail",
+    "label": "DAS Vitamin Cocktail"}, "proposed": {"per_volume": "per liter of starting
+    Pasteurized Seawater before supplement addition", "unit": "ML_PER_L", "value":
+    "0.5"}, "reference": "https://utex.org/products/dasycladales-seawater-medium",
+    "snippet": "1.5 mL/3 L", "source_final_volume_conflict": true, "status": "correct"},
+    {"action_taken": "Relocate to prepared-stock descriptor; dose fraction unchanged.",
+    "basis_snippet": "For 40 mL total", "calculation": "10 mL / 40 mL * 100 = 25.00%
+    v/v of prepared stock, not pure chemical.", "decision": "Move the prepared-stock
+    fraction to a nested stock descriptor; retain supplier and role metadata on the
+    appropriate chemical. Add the separately printed inner stock molarity. Remove
+    the unsupported phosphate-heptahydrate mapping to anhydrous CHEBI:34683.", "field":
+    "solutions[0].composition[0].concentration", "ingredient": "NaNO3 0.70 M stock",
+    "locator": "Formulation table row 1", "old": {"unit": "PERCENT_V_V", "value":
+    "25"}, "old_term": {"id": "CHEBI:63005", "label": "sodium nitrate"}, "proposed":
+    {"unit": "PERCENT_V_V", "value": "25"}, "proposed_field": "solutions[0].solutions[0].concentration",
+    "reference": "https://utex.org/products/das-macro-solution", "snippet": "10 mL/3
+    L", "status": "correct"}, {"action_taken": "Relocate to prepared-stock descriptor;
+    dose fraction unchanged.", "basis_snippet": "For 40 mL total", "calculation":
+    "30 mL / 40 mL * 100 = 75.00% v/v of prepared stock, not pure chemical.", "decision":
+    "Move the prepared-stock fraction to a nested stock descriptor; retain supplier
+    and role metadata on the appropriate chemical. Add the separately printed inner
+    stock molarity. Remove the unsupported phosphate-heptahydrate mapping to anhydrous
+    CHEBI:34683.", "field": "solutions[0].composition[1].concentration", "ingredient":
+    "Na2HPO4 x 7 H2O 0.02 M stock", "locator": "Formulation table row 2", "old": {"unit":
+    "PERCENT_V_V", "value": "75"}, "old_term": {"id": "CHEBI:34683", "label": "Na2HPO4"},
+    "proposed": {"unit": "PERCENT_V_V", "value": "75"}, "proposed_field": "solutions[0].solutions[1].concentration",
+    "reference": "https://utex.org/products/das-macro-solution", "snippet": "30 mL/3
+    L", "status": "correct"}, {"action_taken": "Remove unsupported concentration;
+    literal source input retained in notes and evidence.", "basis_snippet": "For 1
+    L Total", "calculation": "No conversion applied", "decision": "Remove the unsupported
+    1000 mL/L water assertion; retain the starting-water and makeup instructions.",
+    "field": "solutions[1].composition[0].concentration", "ingredient": "dH2O", "locator":
+    "Directions / formulation table", "old": {"unit": "ML_PER_L", "value": "1000"},
+    "old_term": {"id": "CHEBI:15377", "label": "water"}, "proposed": null, "reference":
+    "https://utex.org/products/modified-p-iv-chelated-micronutrient-solution", "snippet":
+    "Bring total volume to 1 L with dH2O.", "status": "unsupported"}, {"action_taken":
+    "Attach scoped evidence; numerical concentration unchanged.", "basis_snippet":
+    "For 1 L Total", "calculation": "0.2 g / 1 L = 0.2 g/L", "decision": "Retain this
+    supplied-product stock mass amount and add scoped evidence. Printed molarity annotations
+    remain source assertions, not independently verified conversions.", "field": "solutions[1].composition[1].concentration",
+    "ingredient": "Na2EDTA x 2 H2O", "locator": "Formulation table row 1, Amount column",
+    "old": {"unit": "G_PER_L", "value": "0.2"}, "old_term": {"id": "CHEBI:64758",
+    "label": "EDTA disodium salt dihydrate"}, "proposed": {"unit": "G_PER_L", "value":
+    "0.2"}, "reference": "https://utex.org/products/modified-p-iv-chelated-micronutrient-solution",
+    "snippet": "0.2 g/L", "status": "evidence_only"}, {"action_taken": "Attach scoped
+    evidence; numerical concentration unchanged.", "basis_snippet": "For 1 L Total",
+    "calculation": "0.03 g / 1 L = 0.03 g/L", "decision": "Retain this supplied-product
+    stock mass amount and add scoped evidence. Printed molarity annotations remain
+    source assertions, not independently verified conversions.", "field": "solutions[1].composition[2].concentration",
+    "ingredient": "HEEDTA", "locator": "Formulation table row 2, Amount column", "old":
+    {"unit": "G_PER_L", "value": "0.03"}, "old_term": null, "proposed": {"unit": "G_PER_L",
+    "value": "0.03"}, "reference": "https://utex.org/products/modified-p-iv-chelated-micronutrient-solution",
+    "snippet": "0.03 g/L", "status": "evidence_only"}, {"action_taken": "Attach scoped
+    evidence; numerical concentration unchanged.", "basis_snippet": "For 1 L Total",
+    "calculation": "0.1 g / 1 L = 0.1 g/L", "decision": "Retain this supplied-product
+    stock mass amount and add scoped evidence. Printed molarity annotations remain
+    source assertions, not independently verified conversions.", "field": "solutions[1].composition[3].concentration",
+    "ingredient": "FeCl3 x 6 H2O", "locator": "Formulation table row 3, Amount column",
+    "old": {"unit": "G_PER_L", "value": "0.1"}, "old_term": {"id": "CHEBI:86254",
+    "label": "iron trichloride hexahydrate"}, "proposed": {"unit": "G_PER_L", "value":
+    "0.1"}, "reference": "https://utex.org/products/modified-p-iv-chelated-micronutrient-solution",
+    "snippet": "0.1 g/L", "status": "evidence_only"}, {"action_taken": "Attach scoped
+    evidence; numerical concentration unchanged.", "basis_snippet": "For 1 L Total",
+    "calculation": "0.04 g / 1 L = 0.04 g/L", "decision": "Retain this supplied-product
+    stock mass amount and add scoped evidence. Printed molarity annotations remain
+    source assertions, not independently verified conversions.", "field": "solutions[1].composition[4].concentration",
+    "ingredient": "MnCl2 x 4 H2O", "locator": "Formulation table row 4, Amount column",
+    "old": {"unit": "G_PER_L", "value": "0.04"}, "old_term": {"id": "CHEBI:86368",
+    "label": "manganese(II) chloride tetrahydrate"}, "proposed": {"unit": "G_PER_L",
+    "value": "0.04"}, "reference": "https://utex.org/products/modified-p-iv-chelated-micronutrient-solution",
+    "snippet": "0.04 g/L", "status": "evidence_only"}, {"action_taken": "Attach scoped
+    evidence; numerical concentration unchanged.", "basis_snippet": "For 1 L Total",
+    "calculation": "0.005 g / 1 L = 0.005 g/L", "decision": "Retain this supplied-product
+    stock mass amount and add scoped evidence. Printed molarity annotations remain
+    source assertions, not independently verified conversions.", "field": "solutions[1].composition[5].concentration",
+    "ingredient": "ZnCl2", "locator": "Formulation table row 5, Amount column", "old":
+    {"unit": "G_PER_L", "value": "0.005"}, "old_term": {"id": "CHEBI:49976", "label":
+    "zinc chloride"}, "proposed": {"unit": "G_PER_L", "value": "0.005"}, "reference":
+    "https://utex.org/products/modified-p-iv-chelated-micronutrient-solution", "snippet":
+    "0.005 g/L", "status": "evidence_only"}, {"action_taken": "Attach scoped evidence;
+    numerical concentration unchanged.", "basis_snippet": "For 1 L Total", "calculation":
+    "0.002 g / 1 L = 0.002 g/L", "decision": "Retain this supplied-product stock mass
+    amount and add scoped evidence. Printed molarity annotations remain source assertions,
+    not independently verified conversions.", "field": "solutions[1].composition[6].concentration",
+    "ingredient": "CoCl2 x 6 H2O", "locator": "Formulation table row 6, Amount column",
+    "old": {"unit": "G_PER_L", "value": "0.002"}, "old_term": {"id": "CHEBI:53503",
+    "label": "cobalt chloride hexahydrate"}, "proposed": {"unit": "G_PER_L", "value":
+    "0.002"}, "reference": "https://utex.org/products/modified-p-iv-chelated-micronutrient-solution",
+    "snippet": "0.002 g/L", "status": "evidence_only"}, {"action_taken": "Attach scoped
+    evidence; numerical concentration unchanged.", "basis_snippet": "For 1 L Total",
+    "calculation": "0.004 g / 1 L = 0.004 g/L", "decision": "Retain this supplied-product
+    stock mass amount and add scoped evidence. Printed molarity annotations remain
+    source assertions, not independently verified conversions.", "field": "solutions[1].composition[7].concentration",
+    "ingredient": "Na2MoO4 x 2 H2O", "locator": "Formulation table row 7, Amount column",
+    "old": {"unit": "G_PER_L", "value": "0.004"}, "old_term": {"id": "CHEBI:75213",
+    "label": "sodium molybdate dihydrate"}, "proposed": {"unit": "G_PER_L", "value":
+    "0.004"}, "reference": "https://utex.org/products/modified-p-iv-chelated-micronutrient-solution",
+    "snippet": "0.004 g/L", "status": "evidence_only"}, {"action_taken": "Remove unsupported
+    concentration; literal source input retained in notes and evidence.", "basis_snippet":
+    "For 100 mL Total", "calculation": "No conversion applied", "decision": "Remove
+    the unsupported 1000 mL/L water assertion; retain the starting-water and makeup
+    instructions.", "field": "solutions[2].composition[0].concentration", "ingredient":
+    "dH2O", "locator": "Directions / formulation table", "old": {"unit": "ML_PER_L",
+    "value": "1000"}, "old_term": {"id": "CHEBI:15377", "label": "water"}, "proposed":
+    null, "reference": "https://utex.org/products/das-vitamin-cocktail", "snippet":
+    "Bring total volume to 100 mL with dH2O.", "status": "unsupported"}, {"action_taken":
+    "Attach scoped evidence; numerical concentration unchanged.", "basis_snippet":
+    "For 100 mL Total", "calculation": "0.9 g / 0.1 L = 9 g/L", "decision": "Retain
+    this supplied-product stock mass amount and add scoped evidence. Printed molarity
+    annotations remain source assertions, not independently verified conversions.",
+    "field": "solutions[2].composition[1].concentration", "ingredient": "Tricine",
+    "locator": "Formulation table row 1, Amount column", "old": {"unit": "G_PER_L",
+    "value": "9"}, "old_term": {"id": "CHEBI:46760", "label": "Tricine"}, "proposed":
+    {"unit": "G_PER_L", "value": "9"}, "reference": "https://utex.org/products/das-vitamin-cocktail",
+    "snippet": "0.9 g/100 mL", "status": "evidence_only"}, {"action_taken": "Attach
+    scoped evidence; numerical concentration unchanged.", "basis_snippet": "For 100
+    mL Total", "calculation": "0.067 g / 0.1 L = 0.67 g/L", "decision": "Retain this
+    supplied-product stock mass amount and add scoped evidence. Printed molarity annotations
+    remain source assertions, not independently verified conversions. Correct the
+    supplied salt identity using the exact-product evidence in the seven-stock identity
+    ledger; recheck source access limits and current mappings before applying.", "field":
+    "solutions[2].composition[2].concentration", "ingredient": "Thiamine", "locator":
+    "Formulation table row 2, Amount column", "old": {"unit": "G_PER_L", "value":
+    "0.67"}, "old_term": {"id": "CHEBI:18385", "label": "thiamine(1+)"}, "proposed":
+    {"unit": "G_PER_L", "value": "0.67"}, "reference": "https://utex.org/products/das-vitamin-cocktail",
+    "snippet": "0.067 g/100 mL", "status": "correct"}, {"action_taken": "Attach scoped
+    evidence; numerical concentration unchanged.", "basis_snippet": "For 100 mL Total",
+    "calculation": "0.001 g / 0.1 L = 0.01 g/L", "decision": "Retain this supplied-product
+    stock mass amount and add scoped evidence. Printed molarity annotations remain
+    source assertions, not independently verified conversions.", "field": "solutions[2].composition[3].concentration",
+    "ingredient": "Biotin", "locator": "Formulation table row 3, Amount column", "old":
+    {"unit": "G_PER_L", "value": "0.01"}, "old_term": {"id": "CHEBI:15956", "label":
+    "biotin"}, "proposed": {"unit": "G_PER_L", "value": "0.01"}, "reference": "https://utex.org/products/das-vitamin-cocktail",
+    "snippet": "0.001 g/100 mL", "status": "evidence_only"}, {"action_taken": "Attach
+    scoped evidence; numerical concentration unchanged.", "basis_snippet": "For 100
+    mL Total", "calculation": "0.0008 g / 0.1 L = 0.008 g/L", "decision": "Retain
+    this supplied-product stock mass amount and add scoped evidence. Printed molarity
+    annotations remain source assertions, not independently verified conversions.",
+    "field": "solutions[2].composition[4].concentration", "ingredient": "Vitamin B12",
+    "locator": "Formulation table row 4, Amount column", "old": {"unit": "G_PER_L",
+    "value": "0.008"}, "old_term": {"id": "CHEBI:176843", "label": "vitamin B12"},
+    "proposed": {"unit": "G_PER_L", "value": "0.008"}, "reference": "https://utex.org/products/das-vitamin-cocktail",
+    "snippet": "0.0008 g/100 mL", "status": "evidence_only"}, {"action_taken": "Attach
+    scoped evidence; numerical concentration unchanged.", "basis_snippet": "For 100
+    mL Total", "calculation": "0.002 g / 0.1 L = 0.02 g/L", "decision": "Retain this
+    supplied-product stock mass amount and add scoped evidence. Printed molarity annotations
+    remain source assertions, not independently verified conversions. Correct the
+    supplied salt identity using the exact-product evidence in the seven-stock identity
+    ledger; recheck source access limits and current mappings before applying.", "field":
+    "solutions[2].composition[5].concentration", "ingredient": "Pantothenate", "locator":
+    "Formulation table row 5, Amount column", "old": {"unit": "G_PER_L", "value":
+    "0.02"}, "old_term": {"id": "CHEBI:7916", "label": "Pantothenic acid"}, "proposed":
+    {"unit": "G_PER_L", "value": "0.02"}, "reference": "https://utex.org/products/das-vitamin-cocktail",
+    "snippet": "0.002 g/100 mL", "status": "correct"}, {"action_taken": "Attach scoped
+    evidence; numerical concentration unchanged.", "basis_snippet": "For 100 mL Total",
+    "calculation": "0.004 g / 0.1 L = 0.04 g/L", "decision": "Retain this supplied-product
+    stock mass amount and add scoped evidence. Printed molarity annotations remain
+    source assertions, not independently verified conversions.", "field": "solutions[2].composition[6].concentration",
+    "ingredient": "PABA", "locator": "Formulation table row 6, Amount column", "old":
+    {"unit": "G_PER_L", "value": "0.04"}, "old_term": {"id": "CHEBI:30753", "label":
+    "p-Aminobenzoic acid"}, "proposed": {"unit": "G_PER_L", "value": "0.04"}, "reference":
+    "https://utex.org/products/das-vitamin-cocktail", "snippet": "0.004 g/100 mL",
+    "status": "evidence_only"}, {"action_taken": "Add source-explicit nested chemical
+    concentration.", "basis_snippet": "Stock Solution Concentration", "calculation":
+    "Directly stated component-stock strength.", "field": "solutions[0].solutions[0].composition[0].concentration",
+    "ingredient": "Sodium nitrate", "locator": "Formulation table row 1", "old": null,
+    "proposed": {"unit": "MOLAR", "value": "0.70"}, "reference": "https://utex.org/products/das-macro-solution",
+    "snippet": "0.70 M", "status": "add"}, {"action_taken": "Add source-explicit nested
+    chemical concentration.", "basis_snippet": "Stock Solution Concentration", "calculation":
+    "Directly stated component-stock strength.", "field": "solutions[0].solutions[1].composition[0].concentration",
+    "ingredient": "Disodium hydrogen phosphate heptahydrate", "locator": "Formulation
+    table row 2", "old": null, "proposed": {"unit": "MOLAR", "value": "0.02"}, "reference":
+    "https://utex.org/products/das-macro-solution", "snippet": "0.02 M", "status":
+    "add"}], "counts": {"bibliographic_entries_enriched": 4, "ingredient_context_notes_corrected":
+    19, "ingredient_dose_basis_corrections": 1, "ingredient_identities_corrected":
+    2, "ingredient_labels_corrected": 4, "ingredient_mim_links_corrected": 2, "new_curation_history":
+    1, "new_evidence": 28, "new_quantity_slots": 2, "new_references": 7, "recipe_context_notes_corrected":
+    1, "stock_context_notes_corrected": 3, "stock_dose_basis_corrections": 5, "stock_nodes_relocated":
+    2, "unsupported_primary_identities_removed": 1, "unsupported_quantity_slots_removed":
+    3, "unsupported_secondary_identities_removed": 1}, "identity_changes": [{"new_label":
+    "Sodium nitrate", "new_term": {"id": "CHEBI:63005", "label": "sodium nitrate"},
+    "old_label": "NaNO3 0.70 M stock", "old_term": {"id": "CHEBI:63005", "label":
+    "sodium nitrate"}, "original_field": "solutions[0].composition[0]", "sources":
+    [{"reference": "https://utex.org/products/das-macro-solution", "snippet": "0.70
+    M"}, {"reference": "https://www.ebi.ac.uk/chebi/CHEBI:63005", "snippet": "NO3.Na"}]},
+    {"new_label": "Disodium hydrogen phosphate heptahydrate", "new_term": null, "old_label":
+    "Na2HPO4 x 7 H2O 0.02 M stock", "old_term": {"id": "CHEBI:34683", "label": "Na2HPO4"},
+    "original_field": "solutions[0].composition[1]", "sources": [{"reference": "https://utex.org/products/das-macro-solution",
+    "snippet": "0.02 M"}, {"reference": "https://www.sigmaaldrich.com/US/en/product/sigald/s9390",
+    "snippet": "Sodium phosphate dibasic heptahydrate"}, {"reference": "https://www.ebi.ac.uk/chebi/CHEBI:34683",
+    "snippet": "HO4P.2Na"}]}, {"new_label": "Thiamine hydrochloride", "new_term":
+    {"id": "CHEBI:49105", "label": "thiamine hydrochloride"}, "old_label": "Thiamine",
+    "old_term": {"id": "CHEBI:18385", "label": "thiamine(1+)"}, "original_field":
+    "solutions[2].composition[2]", "sources": [{"reference": "https://utex.org/products/das-vitamin-cocktail",
+    "snippet": "0.067 g/100 mL"}, {"reference": "https://www.sigmaaldrich.com/CA/en/product/sigma/t1270",
+    "snippet": "Thiamine hydrochloride"}, {"reference": "https://www.ebi.ac.uk/chebi/CHEBI:49105",
+    "snippet": "C12H17N4OS.Cl.HCl"}]}, {"new_label": "Calcium D-(+)-pantothenate",
+    "new_term": {"id": "CHEBI:31345", "label": "Calcium pantothenate"}, "old_label":
+    "Pantothenate", "old_term": {"id": "CHEBI:7916", "label": "Pantothenic acid"},
+    "original_field": "solutions[2].composition[5]", "sources": [{"reference": "https://utex.org/products/das-vitamin-cocktail",
+    "snippet": "0.002 g/100 mL"}, {"reference": "https://www.sigmaaldrich.com/US/en/sds/SIGMA/P2250",
+    "snippet": "D-Pantothenic acid hemicalcium salt"}, {"reference": "https://www.ebi.ac.uk/chebi/CHEBI:31345",
+    "snippet": "2C9H16NO5.Ca"}]}], "scope": "Every changed amount or removal is linked
+    to an exact source excerpt; identity changes use supplier/ChEBI evidence attached
+    to the corrected ingredients."}'
 references:
 - reference: UTEX:dasycladales-seawater-medium
 - reference: https://utex.org/products/dasycladales-seawater-medium
+  title: Dasycladales Seawater Medium | UTEX Culture Collection of Algae
+  notes: 'source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10; Named authors, publication year and DOI not established. '
 - reference: https://utex.org/products/soil-plus-seawater-medium
 - reference: https://utex.org/products/das-macro-solution
+  title: DAS Macro Solution Recipe | UTEX Culture Collection of Algae
+  notes: 'source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10; Named authors, publication year and DOI not established. '
 - reference: https://utex.org/products/modified-p-iv-chelated-micronutrient-solution
+  title: Modified P-IV Chelated Micronutrient Solution Component Recipe | UTEX Culture
+    Collection of Algae
+  notes: 'source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10; Named authors, publication year and DOI not established. '
 - reference: https://utex.org/products/das-vitamin-cocktail
+  title: DAS Vitamin Cocktail | UTEX Culture Collection of Algae
+  notes: 'source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10; Named authors, publication year and DOI not established. '
+- reference: https://www.ebi.ac.uk/chebi/CHEBI:31345
+  title: Calcium pantothenate (CHEBI:31345)
+  notes: 'source_type=web_page; discovery_mode=cross_reference; accessed_on=2026-10-10;
+    Named authors, publication year and DOI not established. '
+- reference: https://www.ebi.ac.uk/chebi/CHEBI:34683
+  title: disodium hydrogenphosphate (CHEBI:34683)
+  notes: 'source_type=web_page; discovery_mode=cross_reference; accessed_on=2026-10-10;
+    Named authors, publication year and DOI not established. '
+- reference: https://www.ebi.ac.uk/chebi/CHEBI:49105
+  title: thiamine hydrochloride (CHEBI:49105)
+  notes: 'source_type=web_page; discovery_mode=cross_reference; accessed_on=2026-10-10;
+    Named authors, publication year and DOI not established. '
+- reference: https://www.ebi.ac.uk/chebi/CHEBI:63005
+  title: sodium nitrate (CHEBI:63005)
+  notes: 'source_type=web_page; discovery_mode=cross_reference; accessed_on=2026-10-10;
+    Named authors, publication year and DOI not established. '
+- reference: https://www.sigmaaldrich.com/CA/en/product/sigma/t1270
+  title: Thiamine hydrochloride
+  notes: 'source_type=web_page; discovery_mode=cross_reference; accessed_on=2026-10-10;
+    Named authors, publication year and DOI not established. '
+- reference: https://www.sigmaaldrich.com/US/en/product/sigald/s9390
+  title: Sodium phosphate dibasic heptahydrate
+  notes: 'source_type=web_page; discovery_mode=cross_reference; accessed_on=2026-10-10;
+    Named authors, publication year and DOI not established. '
+- reference: https://www.sigmaaldrich.com/US/en/sds/SIGMA/P2250
+  title: Sigma P2250 Safety Data Sheet
+  notes: source_type=web_page; discovery_mode=cross_reference; accessed_on=2026-10-10;
+    Named authors, publication year and DOI not established. Primary PDF text inspected
+    with web tool. Screenshot retrieval returned 404; no rendered-page inspection
+    asserted. Product-page retries and local capture timed out.
 original_name: Dasycladales Seawater Medium
 data_quality_flags:
 - has_ontology_mappings
 - ingredients_curated
+evidence:
+- reference: https://utex.org/products/dasycladales-seawater-medium
+  supports: SUPPORT
+  snippet: 40 mL/3 L
+  explanation: 'Supports solutions[0].concentration, its per_volume basis, and replacement
+    notes. 40 mL / 3 L starting seawater = 13.33333333333333333333333333 mL/L of starting
+    seawater (repeating decimals rounded to the existing 28-digit precision). Separate
+    directions excerpt: ''Prepare 3 L of Pasteurized Seawater (30 ppt).''. Separate
+    heading excerpt: "For 3 L Total". The source heading conflicts with the preparation
+    sequence; no final-volume concentration or additive final volume is inferred.
+    Locator: Formulation table row 3; Directions 1-2 and total-volume heading. Separate
+    exact excerpt: ''30 mL/3 L''. Supports solutions[1].concentration, its per_volume
+    basis, and replacement notes. 30 mL / 3 L starting seawater = 10 mL/L of starting
+    seawater (repeating decimals rounded to the existing 28-digit precision). Separate
+    directions excerpt: ''Prepare 3 L of Pasteurized Seawater (30 ppt).''. Separate
+    heading excerpt: "For 3 L Total". The source heading conflicts with the preparation
+    sequence; no final-volume concentration or additive final volume is inferred.
+    Locator: Formulation table row 4; Directions 1-2 and total-volume heading. Separate
+    exact excerpt: ''1.5 mL/3 L''. Supports solutions[2].concentration, its per_volume
+    basis, and replacement notes. 1.5 mL / 3 L starting seawater = 0.5 mL/L of starting
+    seawater (repeating decimals rounded to the existing 28-digit precision). Separate
+    directions excerpt: ''Prepare 3 L of Pasteurized Seawater (30 ppt).''. Separate
+    heading excerpt: "For 3 L Total". The source heading conflicts with the preparation
+    sequence; no final-volume concentration or additive final volume is inferred.
+    Locator: Formulation table row 5; Directions 1-2 and total-volume heading. Separate
+    exact excerpt: ''For 3 L Total''. Supports notes documenting the unresolved volume
+    conflict. Separate excerpt: "Prepare 3 L of Pasteurized Seawater (30 ppt)." Table
+    supplement inputs total 50 + 40 + 30 + 1.5 = 121.5 mL; this arithmetic is not
+    evidence of a measured final volume.'
+- reference: https://utex.org/products/das-macro-solution
+  supports: SUPPORT
+  snippet: 10 mL/3 L
+  explanation: 'Supports solutions[0].solutions[0].concentration. 10 mL / 40 mL *
+    100 = 25.00% v/v of prepared stock, not pure chemical. Separate volume excerpt:
+    "For 40 mL total". This is the inner composite-stock basis, not final DAS volume.
+    Separate exact excerpt: ''30 mL/3 L''. Supports solutions[0].solutions[1].concentration.
+    30 mL / 40 mL * 100 = 75.00% v/v of prepared stock, not pure chemical. Separate
+    volume excerpt: "For 40 mL total". This is the inner composite-stock basis, not
+    final DAS volume.'

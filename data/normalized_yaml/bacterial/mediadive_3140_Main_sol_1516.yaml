@@ -16,6 +16,33 @@ composition:
     label: sodium sulfide (anhydrous)
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3140
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "Na2S x H2O",
+                      "compound_id": 1075,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.3,
+                      "unit": "g",
+                      "g_l": 0.3,
+                      "mmol_l": 3.84394,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Na2S x
+      H2O) in MediaDive solution 3140; locator=$.data.recipe[3] (compound_id=1075).
+      Provider explicitly reports g_l=0.3. Arithmetic check: 0.3 g * 1 g/g / (1000
+      ml / 1000 ml per L) = 0.3 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T09:18:48.667999+00:00;
+      response SHA256=3b225b97c2bcc885f72e2c85663ebcfa444b5c5185b80b77bba40ecaeb32b8f1.'
 preparation_notes: "Prepare the liquid medium. Boil the medium in a water bath and\
   \ cool under N2 to room temperature. Adjust to pH 5.8-6.2. Dispense the medium into\
   \ Hungate tubes or serum bottles under gassing with N2. Sterilize by autoclaving.\
@@ -52,6 +79,15 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 1 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-10-07T09:21:52.094915+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/3140
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "0.3"} -> {"unit":
+    "G_PER_L", "value": "0.3"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -60,3 +96,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/3140
+  title: 'MediaDive solution 3140: Main sol. 1516'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=3b225b97c2bcc885f72e2c85663ebcfa444b5c5185b80b77bba40ecaeb32b8f1;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

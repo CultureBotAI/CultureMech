@@ -16,6 +16,33 @@ composition:
     label: calcium chloride dihydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/599
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "CaCl2 x 2 H2O",
+                      "compound_id": 7,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.12,
+                      "unit": "g",
+                      "g_l": 0.11976,
+                      "mmol_l": 0.814614,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (CaCl2 x
+      2 H2O) in MediaDive solution 599; locator=$.data.recipe[0] (compound_id=7).
+      Provider explicitly reports g_l=0.11976. Arithmetic check: 0.12 g * 1 g/g /
+      (1002 ml / 1000 ml per L) = 0.1197604790419161676646706587 g/L, consistent with
+      the reported value at its precision. Evidence supports the provider-declared
+      concentration within this solution, not a concentration in a receiving medium
+      or an independently measured final volume. Water addition alone is not used
+      to infer a final volume. Additional exact excerpt at $.data.volume: "volume":
+      1002. Retrieved 2026-10-07T08:25:03.840787+00:00; response SHA256=4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647.'
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.189621'
@@ -28,6 +55,33 @@ composition:
     label: magnesium sulfate heptahydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/599
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "MgSO4 x 7 H2O",
+                      "compound_id": 8,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.19,
+                      "unit": "g",
+                      "g_l": 0.189621,
+                      "mmol_l": 0.769327,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (MgSO4 x
+      7 H2O) in MediaDive solution 599; locator=$.data.recipe[1] (compound_id=8).
+      Provider explicitly reports g_l=0.189621. Arithmetic check: 0.19 g * 1 g/g /
+      (1002 ml / 1000 ml per L) = 0.1896207584830339321357285429 g/L, consistent with
+      the reported value at its precision. Evidence supports the provider-declared
+      concentration within this solution, not a concentration in a receiving medium
+      or an independently measured final volume. Water addition alone is not used
+      to infer a final volume. Additional exact excerpt at $.data.volume: "volume":
+      1002. Retrieved 2026-10-07T08:25:03.840787+00:00; response SHA256=4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647.'
 - preferred_term: KH2PO4
   concentration:
     value: '0.449102'
@@ -40,6 +94,33 @@ composition:
     label: potassium dihydrogen phosphate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/599
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "KH2PO4",
+                      "compound_id": 11,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.45,
+                      "unit": "g",
+                      "g_l": 0.449102,
+                      "mmol_l": 3.30016,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[2].concentration (KH2PO4)
+      in MediaDive solution 599; locator=$.data.recipe[2] (compound_id=11). Provider
+      explicitly reports g_l=0.449102. Arithmetic check: 0.45 g * 1 g/g / (1002 ml
+      / 1000 ml per L) = 0.4491017964071856287425149701 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1002. Retrieved 2026-10-07T08:25:03.840787+00:00;
+      response SHA256=4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647.'
 - preferred_term: K2HPO4
   concentration:
     value: '0.449102'
@@ -52,6 +133,33 @@ composition:
     label: dipotassium hydrogen phosphate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/599
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "K2HPO4",
+                      "compound_id": 10,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.45,
+                      "unit": "g",
+                      "g_l": 0.449102,
+                      "mmol_l": 2.57844,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[3].concentration (K2HPO4)
+      in MediaDive solution 599; locator=$.data.recipe[3] (compound_id=10). Provider
+      explicitly reports g_l=0.449102. Arithmetic check: 0.45 g * 1 g/g / (1002 ml
+      / 1000 ml per L) = 0.4491017964071856287425149701 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1002. Retrieved 2026-10-07T08:25:03.840787+00:00;
+      response SHA256=4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647.'
 - preferred_term: NaCl
   concentration:
     value: '0.898204'
@@ -64,6 +172,33 @@ composition:
     label: sodium chloride
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/599
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 5,
+                      "compound": "NaCl",
+                      "compound_id": 43,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.9,
+                      "unit": "g",
+                      "g_l": 0.898204,
+                      "mmol_l": 15.3697,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[4].concentration (NaCl) in
+      MediaDive solution 599; locator=$.data.recipe[4] (compound_id=43). Provider
+      explicitly reports g_l=0.898204. Arithmetic check: 0.9 g * 1 g/g / (1002 ml
+      / 1000 ml per L) = 0.8982035928143712574850299401 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1002. Retrieved 2026-10-07T08:25:03.840787+00:00;
+      response SHA256=4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647.'
 - preferred_term: (NH4)2SO4
   concentration:
     value: '0.898204'
@@ -76,6 +211,33 @@ composition:
     label: ammonium sulfate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/599
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 6,
+                      "compound": "(NH4)2SO4",
+                      "compound_id": 27,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.9,
+                      "unit": "g",
+                      "g_l": 0.898204,
+                      "mmol_l": 6.79736,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[5].concentration ((NH4)2SO4)
+      in MediaDive solution 599; locator=$.data.recipe[5] (compound_id=27). Provider
+      explicitly reports g_l=0.898204. Arithmetic check: 0.9 g * 1 g/g / (1002 ml
+      / 1000 ml per L) = 0.8982035928143712574850299401 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1002. Retrieved 2026-10-07T08:25:03.840787+00:00;
+      response SHA256=4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647.'
 - preferred_term: Yeast extract
   concentration:
     value: '1.99601'
@@ -83,6 +245,32 @@ composition:
   term:
     id: mediadive.compound:16
     label: Yeast extract
+  notes: Retain source-reported g_l=1.99601 within this specific stock preparation.
+    This is not a universal working dose or a concentration in a receiving medium;
+    no new mass-from-liquid conversion is inferred.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/599
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 7,
+                      "compound": "Yeast extract",
+                      "compound_id": 16,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": "OXOID",
+                      "amount": 2,
+                      "unit": "g",
+                      "g_l": 1.99601,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'composition[6].concentration: Retain source-reported g_l=1.99601
+      within this specific stock preparation. This is not a universal working dose
+      or a concentration in a receiving medium; no new mass-from-liquid conversion
+      is inferred. Locator=[''data'', ''recipe'', 6]; accessed=2026-10-09T11:32:26.505608+00:00;
+      source SHA256=4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647.'
 - preferred_term: Trypticase peptone
   concentration:
     value: '1.99601'
@@ -90,6 +278,32 @@ composition:
   term:
     id: mediadive.compound:124
     label: Trypticase peptone
+  notes: Retain source-reported g_l=1.99601 within this specific stock preparation.
+    This is not a universal working dose or a concentration in a receiving medium;
+    no new mass-from-liquid conversion is inferred.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/599
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 8,
+                      "compound": "Trypticase peptone",
+                      "compound_id": 124,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": "BD BBL",
+                      "amount": 2,
+                      "unit": "g",
+                      "g_l": 1.99601,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'composition[7].concentration: Retain source-reported g_l=1.99601
+      within this specific stock preparation. This is not a universal working dose
+      or a concentration in a receiving medium; no new mass-from-liquid conversion
+      is inferred. Locator=[''data'', ''recipe'', 7]; accessed=2026-10-09T11:32:26.505608+00:00;
+      source SHA256=4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647.'
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.000499002'
@@ -97,11 +311,66 @@ composition:
   term:
     id: mediadive.compound:1852
     label: Sodium resazurin
-  chebi_term:
-    id: CHEBI:8806
-    label: Resazurin
-    confidence: 0.7
-    match_type: corpus_consensus
+  notes: Retain source-reported g_l=0.000499002 within this specific stock preparation.
+    This is not a universal working dose or a concentration in a receiving medium;
+    no new mass-from-liquid conversion is inferred. The original corroborates 0.1%
+    w/v = 1 g/L reagent; 1 g/L * 0.0005 L / 1.002 L = 0.0004990019960079840319361277445
+    g/L. Keep the supported solute rate; do not add a second dose for the same resazurin
+    input.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/599
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 15,
+                      "compound": "Sodium resazurin",
+                      "compound_id": 1852,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": "0.1% w/v",
+                      "amount": 0.5,
+                      "unit": "ml",
+                      "g_l": 0.000499002,
+                      "mmol_l": 0.00198671,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[8].concentration: Retain source-reported g_l=0.000499002 within this specific stock preparation. This is not a universal working dose or a concentration in a receiving medium; no new mass-from-liquid conversion is inferred. The original corroborates 0.1% w/v = 1 g/L reagent; 1 g/L * 0.0005 L / 1.002 L = 0.0004990019960079840319361277445 g/L. Keep the supported solute rate; do not add a second dose for the same resazurin input. Locator=['data', 'recipe', 9]; accessed=2026-10-09T11:32:26.505608+00:00; source SHA256=4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647.
+
+      Additional exact excerpt at ['data', 'recipe', 9]:
+      {
+                      "recipe_order": 15,
+                      "compound": "Sodium resazurin",
+                      "compound_id": 1852,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": "0.1% w/v",
+                      "amount": 0.5,
+                      "unit": "ml",
+                      "g_l": 0.000499002,
+                      "mmol_l": 0.00198671,
+                      "optional": 0
+                  }
+      composition[8].chebi_term: Withdraw secondary CHEBI:8806, whose local ChEBI formula C12H7NO4 is sodium-free; retain the source compound1852 identity and supported mass rate. MIM still maps the sodium label to this term, so publication identity remains unresolved. No replacement ontology term is asserted. Locator=['data', 'recipe', 9]; accessed=2026-10-09T11:32:26.505608+00:00; source SHA256=4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647.
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf
+    supports: SUPPORT
+    snippet: Sodium resazurin (0.1% w/v)                                        0.50        ml
+    explanation: |-
+      composition[8].concentration: Retain source-reported g_l=0.000499002 within this specific stock preparation. This is not a universal working dose or a concentration in a receiving medium; no new mass-from-liquid conversion is inferred. The original corroborates 0.1% w/v = 1 g/L reagent; 1 g/L * 0.0005 L / 1.002 L = 0.0004990019960079840319361277445 g/L. Keep the supported solute rate; do not add a second dose for the same resazurin input. Locator=page 1, main table; accessed=2026-10-09T11:32:24.475381+00:00; source SHA256=cc4ffe328060eadf4a992f8024f1beb6b1f6238f7d836c7552783b0f9b29fdca.
+
+      Additional exact excerpt at page 1, final-volume heading:
+      Final volume: 1002 ml
+      composition[8].concentration: Retain source-reported g_l=0.000499002 within this specific stock preparation. This is not a universal working dose or a concentration in a receiving medium; no new mass-from-liquid conversion is inferred. The original corroborates 0.1% w/v = 1 g/L reagent; 1 g/L * 0.0005 L / 1.002 L = 0.0004990019960079840319361277445 g/L. Keep the supported solute rate; do not add a second dose for the same resazurin input. Locator=page 1, final-volume heading; accessed=2026-10-09T11:32:24.475381+00:00; source SHA256=cc4ffe328060eadf4a992f8024f1beb6b1f6238f7d836c7552783b0f9b29fdca.
+
+      Additional exact excerpt at page 1, main table:
+      Sodium resazurin (0.1% w/v)                                        0.50        ml
+      composition[8].chebi_term: Withdraw secondary CHEBI:8806, whose local ChEBI formula C12H7NO4 is sodium-free; retain the source compound1852 identity and supported mass rate. MIM still maps the sodium label to this term, so publication identity remains unresolved. No replacement ontology term is asserted. Locator=page 1, main table; accessed=2026-10-09T11:32:24.475381+00:00; source SHA256=cc4ffe328060eadf4a992f8024f1beb6b1f6238f7d836c7552783b0f9b29fdca.
+
+      Additional exact excerpt at page 1, final-volume heading:
+      Final volume: 1002 ml
+      composition[8].chebi_term: Withdraw secondary CHEBI:8806, whose local ChEBI formula C12H7NO4 is sodium-free; retain the source compound1852 identity and supported mass rate. MIM still maps the sodium label to this term, so publication identity remains unresolved. No replacement ontology term is asserted. Locator=page 1, final-volume heading; accessed=2026-10-09T11:32:24.475381+00:00; source SHA256=cc4ffe328060eadf4a992f8024f1beb6b1f6238f7d836c7552783b0f9b29fdca.
 - preferred_term: L-Cysteine HCl x H2O
   concentration:
     value: '0.998004'
@@ -114,6 +383,33 @@ composition:
     label: L-cysteine hydrochloride hydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/599
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 16,
+                      "compound": "L-Cysteine HCl x H2O",
+                      "compound_id": 770,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "g",
+                      "g_l": 0.998004,
+                      "mmol_l": 5.68223,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[9].concentration (L-Cysteine
+      HCl x H2O) in MediaDive solution 599; locator=$.data.recipe[10] (compound_id=770).
+      Provider explicitly reports g_l=0.998004. Arithmetic check: 1 g * 1 g/g / (1002
+      ml / 1000 ml per L) = 0.9980039920159680638722554890 g/L, consistent with the
+      reported value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1002. Retrieved 2026-10-07T08:25:03.840787+00:00;
+      response SHA256=4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647.'
 - preferred_term: Na2CO3
   concentration:
     value: '2.49501'
@@ -126,6 +422,33 @@ composition:
     label: sodium carbonate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/599
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 17,
+                      "compound": "Na2CO3",
+                      "compound_id": 32,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2.5,
+                      "unit": "g",
+                      "g_l": 2.49501,
+                      "mmol_l": 23.5405,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[10].concentration (Na2CO3)
+      in MediaDive solution 599; locator=$.data.recipe[11] (compound_id=32). Provider
+      explicitly reports g_l=2.49501. Arithmetic check: 2.5 g * 1 g/g / (1002 ml /
+      1000 ml per L) = 2.495009980039920159680638723 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1002. Retrieved 2026-10-07T08:25:03.840787+00:00;
+      response SHA256=4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647.'
 - preferred_term: D-Glucose
   concentration:
     value: '1.99601'
@@ -138,11 +461,41 @@ composition:
     label: glucose
     confidence: 0.9
     match_type: manual_curated
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/599
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 18,
+                      "compound": "D-Glucose",
+                      "compound_id": 211,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "g",
+                      "g_l": 1.99601,
+                      "mmol_l": 11.0791,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[11].concentration (D-Glucose)
+      in MediaDive solution 599; locator=$.data.recipe[12] (compound_id=211). Provider
+      explicitly reports g_l=1.99601. Arithmetic check: 2 g * 1 g/g / (1002 ml / 1000
+      ml per L) = 1.996007984031936127744510978 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1002. Retrieved 2026-10-07T08:25:03.840787+00:00;
+      response SHA256=4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647.'
 - preferred_term: Agar
   concentration:
     value: '11.976'
     unit: G_PER_L
-  notes: for solid medium
+  notes: |-
+    for solid medium
+
+    Retain source-reported g_l=11.976 within this specific stock preparation. This is not a universal working dose or a concentration in a receiving medium; no new mass-from-liquid conversion is inferred. The source table gives 12 g in 1002 ml (11.976 g/L after provider rounding), while the procedure gives 12.00 g/l. Retain the existing conditional table-derived rate pending the final scoped proposal; do not average or apply it to liquid formulations.
   term:
     id: mediadive.compound:3
     label: Agar
@@ -151,10 +504,45 @@ composition:
     label: agar
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/599
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 19,
+                      "compound": "Agar",
+                      "compound_id": 3,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": "for solid medium",
+                      "attribute": "BD Bacto",
+                      "amount": 12,
+                      "unit": "g",
+                      "g_l": 11.976,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'composition[12].concentration: Retain source-reported g_l=11.976
+      within this specific stock preparation. This is not a universal working dose
+      or a concentration in a receiving medium; no new mass-from-liquid conversion
+      is inferred. The source table gives 12 g in 1002 ml (11.976 g/L after provider
+      rounding), while the procedure gives 12.00 g/l. Retain the existing conditional
+      table-derived rate pending the final scoped proposal; do not average or apply
+      it to liquid formulations. Locator=[''data'', ''recipe'', 13]; accessed=2026-10-09T11:32:26.505608+00:00;
+      source SHA256=4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647.'
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf
+    supports: SUPPORT
+    snippet: Agar (BD Bacto), for solid medium                                 12.00          g
+    explanation: |-
+      composition[12].concentration: Retain source-reported g_l=11.976 within this specific stock preparation. This is not a universal working dose or a concentration in a receiving medium; no new mass-from-liquid conversion is inferred. The source table gives 12 g in 1002 ml (11.976 g/L after provider rounding), while the procedure gives 12.00 g/l. Retain the existing conditional table-derived rate pending the final scoped proposal; do not average or apply it to liquid formulations. Locator=page 1, main table; accessed=2026-10-09T11:32:24.475381+00:00; source SHA256=cc4ffe328060eadf4a992f8024f1beb6b1f6238f7d836c7552783b0f9b29fdca.
+
+      Additional exact excerpt at page 1, step 2:
+      2. For solid medium add 12.00 g/l agar (BD Bacto).
+      composition[12].concentration: Retain source-reported g_l=11.976 within this specific stock preparation. This is not a universal working dose or a concentration in a receiving medium; no new mass-from-liquid conversion is inferred. The source table gives 12 g in 1002 ml (11.976 g/L after provider rounding), while the procedure gives 12.00 g/l. Retain the existing conditional table-derived rate pending the final scoped proposal; do not average or apply it to liquid formulations. Locator=page 1, step 2; accessed=2026-10-09T11:32:24.475381+00:00; source SHA256=cc4ffe328060eadf4a992f8024f1beb6b1f6238f7d836c7552783b0f9b29fdca.
 - preferred_term: Distilled water
   concentration:
     value: '998.003992015968'
-    unit: PERCENT_V_V
+    unit: ML_PER_L
   term:
     id: mediadive.compound:4
     label: Distilled water
@@ -163,6 +551,41 @@ composition:
     label: water
     confidence: 0.7
     match_type: corpus_consensus
+  notes: 1000 ml input / 1.002 L explicitly stated final volume = 998.0039920159680638722554890
+    ml/L, matching the stored number at its precision. Correct the unit only; do not
+    infer the denominator by summing liquid inputs.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/599
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 20,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1000,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'composition[13].concentration: 1000 ml input / 1.002 L explicitly
+      stated final volume = 998.0039920159680638722554890 ml/L, matching the stored
+      number at its precision. Correct the unit only; do not infer the denominator
+      by summing liquid inputs. Locator=[''data'', ''recipe'', 14]; accessed=2026-10-09T11:32:26.505608+00:00;
+      source SHA256=4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647.'
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf
+    supports: SUPPORT
+    snippet: Distilled water                                                1000.00         ml
+    explanation: |-
+      composition[13].concentration: 1000 ml input / 1.002 L explicitly stated final volume = 998.0039920159680638722554890 ml/L, matching the stored number at its precision. Correct the unit only; do not infer the denominator by summing liquid inputs. Locator=page 1, main table; accessed=2026-10-09T11:32:24.475381+00:00; source SHA256=cc4ffe328060eadf4a992f8024f1beb6b1f6238f7d836c7552783b0f9b29fdca.
+
+      Additional exact excerpt at page 1, final-volume heading:
+      Final volume: 1002 ml
+      composition[13].concentration: 1000 ml input / 1.002 L explicitly stated final volume = 998.0039920159680638722554890 ml/L, matching the stored number at its precision. Correct the unit only; do not infer the denominator by summing liquid inputs. Locator=page 1, final-volume heading; accessed=2026-10-09T11:32:24.475381+00:00; source SHA256=cc4ffe328060eadf4a992f8024f1beb6b1f6238f7d836c7552783b0f9b29fdca.
 preparation_notes: 'Dissolve ingredients (except cysteine, carbonate and glucose),
   adjust pH to 7.0 and sparge medium with 100% CO2 gas for 30 - 45 min to make it
   anoxic. Add the cysteine and carbonate, then equilibrate the medium with the CO2
@@ -213,11 +636,346 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '2 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
-ingredients:
-- preferred_term: See source for composition
-  concentration:
-    value: variable
-    unit: VARIABLE
-data_quality_flags:
-- incomplete_composition
+- timestamp: '2026-10-07T08:27:51.574555+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/599
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "0.11976"}
+    -> {"unit": "G_PER_L", "value": "0.11976"} (evidence_only); composition[1].concentration:
+    {"unit": "G_PER_L", "value": "0.189621"} -> {"unit": "G_PER_L", "value": "0.189621"}
+    (evidence_only); composition[2].concentration: {"unit": "G_PER_L", "value": "0.449102"}
+    -> {"unit": "G_PER_L", "value": "0.449102"} (evidence_only); composition[3].concentration:
+    {"unit": "G_PER_L", "value": "0.449102"} -> {"unit": "G_PER_L", "value": "0.449102"}
+    (evidence_only); composition[4].concentration: {"unit": "G_PER_L", "value": "0.898204"}
+    -> {"unit": "G_PER_L", "value": "0.898204"} (evidence_only); composition[5].concentration:
+    {"unit": "G_PER_L", "value": "0.898204"} -> {"unit": "G_PER_L", "value": "0.898204"}
+    (evidence_only); composition[9].concentration: {"unit": "G_PER_L", "value": "0.998004"}
+    -> {"unit": "G_PER_L", "value": "0.998004"} (evidence_only); composition[10].concentration:
+    {"unit": "G_PER_L", "value": "2.49501"} -> {"unit": "G_PER_L", "value": "2.49501"}
+    (evidence_only); composition[11].concentration: {"unit": "G_PER_L", "value": "1.99601"}
+    -> {"unit": "G_PER_L", "value": "1.99601"} (evidence_only)'
+- timestamp: '2026-10-09T17:38:33.880426+00:00'
+  curator: codex
+  action: RESTORED_MEDIUM323_SOURCE_SPECIFIC_INGREDIENTS
+  notes: 'Source-specific ingredient quantities, stock stages, identities and preparation
+    were reviewed against pinned official captures. Each changed formulation claim
+    has a persistent source URL and exact evidence snippet. Earlier evidence, IDs
+    and history are preserved. The source-linked medium relationship is uncertain,
+    not an exact duplicate or proven direction of derivation. Remaining limitations:
+    MIM sodium-resazurin publication identity remains unresolved; D-glucose secondary
+    generic CHEBI:17234 retained, not certified as an exact stereochemical identity;
+    Conditional agar table rate 11.976 g/L differs from procedural 12.00 g/L; retained
+    as a disclosed source conflict'
+  source: https://mediadive.dsmz.de/rest/solution/599
+  changes: '{"field_changes": [{"field": "composition[6].notes", "old": null, "new":
+    "Retain source-reported g_l=1.99601 within this specific stock preparation. This
+    is not a universal working dose or a concentration in a receiving medium; no new
+    mass-from-liquid conversion is inferred."}, {"field": "composition[7].notes",
+    "old": null, "new": "Retain source-reported g_l=1.99601 within this specific stock
+    preparation. This is not a universal working dose or a concentration in a receiving
+    medium; no new mass-from-liquid conversion is inferred."}, {"field": "composition[8].chebi_term",
+    "old": {"id": "CHEBI:8806", "label": "Resazurin", "confidence": 0.7, "match_type":
+    "corpus_consensus"}, "new": null}, {"field": "composition[8].notes", "old": null,
+    "new": "Retain source-reported g_l=0.000499002 within this specific stock preparation.
+    This is not a universal working dose or a concentration in a receiving medium;
+    no new mass-from-liquid conversion is inferred. The original corroborates 0.1%
+    w/v = 1 g/L reagent; 1 g/L * 0.0005 L / 1.002 L = 0.0004990019960079840319361277445
+    g/L. Keep the supported solute rate; do not add a second dose for the same resazurin
+    input."}, {"field": "composition[12].notes", "old": "for solid medium", "new":
+    "for solid medium\n\nRetain source-reported g_l=11.976 within this specific stock
+    preparation. This is not a universal working dose or a concentration in a receiving
+    medium; no new mass-from-liquid conversion is inferred. The source table gives
+    12 g in 1002 ml (11.976 g/L after provider rounding), while the procedure gives
+    12.00 g/l. Retain the existing conditional table-derived rate pending the final
+    scoped proposal; do not average or apply it to liquid formulations."}, {"field":
+    "composition[13].concentration.unit", "old": "PERCENT_V_V", "new": "ML_PER_L"},
+    {"field": "composition[13].notes", "old": null, "new": "1000 ml input / 1.002
+    L explicitly stated final volume = 998.0039920159680638722554890 ml/L, matching
+    the stored number at its precision. Correct the unit only; do not infer the denominator
+    by summing liquid inputs."}, {"field": "data_quality_flags", "old": ["incomplete_composition"],
+    "new": null}, {"field": "ingredients", "old": [{"preferred_term": "See source
+    for composition", "concentration": {"value": "variable", "unit": "VARIABLE"}}],
+    "new": null}, {"field": "solutions", "old": null, "new": [{"preferred_term": "Fatty
+    acid mixture", "culturemech_term": {"id": "CultureMech:015061", "label": "Fatty
+    acid mixture"}, "concentration": {"value": "0.0014", "unit": "L"}, "notes": "Exact
+    1.4 ml batch input of MediaDive solution6552 to solution599, not a universal stock
+    working dose."}]}], "evidence_and_bibliography_changes": ["composition[6].evidence",
+    "composition[7].evidence", "composition[8].evidence", "composition[12].evidence",
+    "composition[13].evidence", "evidence", "references[0].title", "references[1]"],
+    "full_semantic_delta_sha256": "c57af1277705de2b32fdd363fb976656e51e4fb8a2a538a1e9630d0b5b29b1db",
+    "source_capture_sha256": "8c802303cf38982bebc07777a71a7d2dab5d4c01d44c0cc1d1c8136d866a39a4",
+    "old_evidence_preserved": true}'
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/599
+  title: Main sol. 323
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf
+  title: '323: TREPONEMA SACCHAROPHILUM MEDIUM'
+  notes: source_type=culture_collection_page; discovery_mode=cross_reference; accessed_on=2026-10-09;
+    capture_sha256=cc4ffe328060eadf4a992f8024f1beb6b1f6238f7d836c7552783b0f9b29fdca.
+    Individual authors and publication year unknown; copyright/access years are not
+    publication years.
+solutions:
+- preferred_term: Fatty acid mixture
+  culturemech_term:
+    id: CultureMech:015061
+    label: Fatty acid mixture
+  concentration:
+    value: '0.0014'
+    unit: L
+  notes: Exact 1.4 ml batch input of MediaDive solution6552 to solution599, not a
+    universal stock working dose.
+evidence:
+- reference: https://mediadive.dsmz.de/rest/solution/599
+  supports: SUPPORT
+  snippet: |-
+    {
+                    "recipe_order": 14,
+                    "compound": null,
+                    "compound_id": null,
+                    "solution": "Fatty acid mixture",
+                    "solution_id": 6552,
+                    "condition": null,
+                    "attribute": null,
+                    "amount": 1.4,
+                    "unit": "ml",
+                    "g_l": null,
+                    "mmol_l": null,
+                    "optional": 0
+                }
+  explanation: |-
+    solutions[0].concentration: 1.4 ml / 1000 ml per L = 0.0014 L batch addition to solution599. Evidence belongs on the enclosing solution recipe's root evidence list, not an ingredient or a universal working concentration on solution6552. Locator=['data', 'recipe', 8]; accessed=2026-10-09T11:32:26.505608+00:00; source SHA256=4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647.
+
+    Additional exact excerpt at ['data', 'recipe']:
+    [
+                {
+                    "recipe_order": 1,
+                    "compound": "CaCl2 x 2 H2O",
+                    "compound_id": 7,
+                    "solution": null,
+                    "solution_id": null,
+                    "condition": null,
+                    "attribute": null,
+                    "amount": 0.12,
+                    "unit": "g",
+                    "g_l": 0.11976,
+                    "mmol_l": 0.814614,
+                    "optional": 0
+                },
+                {
+                    "recipe_order": 2,
+                    "compound": "MgSO4 x 7 H2O",
+                    "compound_id": 8,
+                    "solution": null,
+                    "solution_id": null,
+                    "condition": null,
+                    "attribute": null,
+                    "amount": 0.19,
+                    "unit": "g",
+                    "g_l": 0.189621,
+                    "mmol_l": 0.769327,
+                    "optional": 0
+                },
+                {
+                    "recipe_order": 3,
+                    "compound": "KH2PO4",
+                    "compound_id": 11,
+                    "solution": null,
+                    "solution_id": null,
+                    "condition": null,
+                    "attribute": null,
+                    "amount": 0.45,
+                    "unit": "g",
+                    "g_l": 0.449102,
+                    "mmol_l": 3.30016,
+                    "optional": 0
+                },
+                {
+                    "recipe_order": 4,
+                    "compound": "K2HPO4",
+                    "compound_id": 10,
+                    "solution": null,
+                    "solution_id": null,
+                    "condition": null,
+                    "attribute": null,
+                    "amount": 0.45,
+                    "unit": "g",
+                    "g_l": 0.449102,
+                    "mmol_l": 2.57844,
+                    "optional": 0
+                },
+                {
+                    "recipe_order": 5,
+                    "compound": "NaCl",
+                    "compound_id": 43,
+                    "solution": null,
+                    "solution_id": null,
+                    "condition": null,
+                    "attribute": null,
+                    "amount": 0.9,
+                    "unit": "g",
+                    "g_l": 0.898204,
+                    "mmol_l": 15.3697,
+                    "optional": 0
+                },
+                {
+                    "recipe_order": 6,
+                    "compound": "(NH4)2SO4",
+                    "compound_id": 27,
+                    "solution": null,
+                    "solution_id": null,
+                    "condition": null,
+                    "attribute": null,
+                    "amount": 0.9,
+                    "unit": "g",
+                    "g_l": 0.898204,
+                    "mmol_l": 6.79736,
+                    "optional": 0
+                },
+                {
+                    "recipe_order": 7,
+                    "compound": "Yeast extract",
+                    "compound_id": 16,
+                    "solution": null,
+                    "solution_id": null,
+                    "condition": null,
+                    "attribute": "OXOID",
+                    "amount": 2,
+                    "unit": "g",
+                    "g_l": 1.99601,
+                    "mmol_l": null,
+                    "optional": 0
+                },
+                {
+                    "recipe_order": 8,
+                    "compound": "Trypticase peptone",
+                    "compound_id": 124,
+                    "solution": null,
+                    "solution_id": null,
+                    "condition": null,
+                    "attribute": "BD BBL",
+                    "amount": 2,
+                    "unit": "g",
+                    "g_l": 1.99601,
+                    "mmol_l": null,
+                    "optional": 0
+                },
+                {
+                    "recipe_order": 14,
+                    "compound": null,
+                    "compound_id": null,
+                    "solution": "Fatty acid mixture",
+                    "solution_id": 6552,
+                    "condition": null,
+                    "attribute": null,
+                    "amount": 1.4,
+                    "unit": "ml",
+                    "g_l": null,
+                    "mmol_l": null,
+                    "optional": 0
+                },
+                {
+                    "recipe_order": 15,
+                    "compound": "Sodium resazurin",
+                    "compound_id": 1852,
+                    "solution": null,
+                    "solution_id": null,
+                    "condition": null,
+                    "attribute": "0.1% w/v",
+                    "amount": 0.5,
+                    "unit": "ml",
+                    "g_l": 0.000499002,
+                    "mmol_l": 0.00198671,
+                    "optional": 0
+                },
+                {
+                    "recipe_order": 16,
+                    "compound": "L-Cysteine HCl x H2O",
+                    "compound_id": 770,
+                    "solution": null,
+                    "solution_id": null,
+                    "condition": null,
+                    "attribute": null,
+                    "amount": 1,
+                    "unit": "g",
+                    "g_l": 0.998004,
+                    "mmol_l": 5.68223,
+                    "optional": 0
+                },
+                {
+                    "recipe_order": 17,
+                    "compound": "Na2CO3",
+                    "compound_id": 32,
+                    "solution": null,
+                    "solution_id": null,
+                    "condition": null,
+                    "attribute": null,
+                    "amount": 2.5,
+                    "unit": "g",
+                    "g_l": 2.49501,
+                    "mmol_l": 23.5405,
+                    "optional": 0
+                },
+                {
+                    "recipe_order": 18,
+                    "compound": "D-Glucose",
+                    "compound_id": 211,
+                    "solution": null,
+                    "solution_id": null,
+                    "condition": null,
+                    "attribute": null,
+                    "amount": 2,
+                    "unit": "g",
+                    "g_l": 1.99601,
+                    "mmol_l": 11.0791,
+                    "optional": 0
+                },
+                {
+                    "recipe_order": 19,
+                    "compound": "Agar",
+                    "compound_id": 3,
+                    "solution": null,
+                    "solution_id": null,
+                    "condition": "for solid medium",
+                    "attribute": "BD Bacto",
+                    "amount": 12,
+                    "unit": "g",
+                    "g_l": 11.976,
+                    "mmol_l": null,
+                    "optional": 0
+                },
+                {
+                    "recipe_order": 20,
+                    "compound": "Distilled water",
+                    "compound_id": 4,
+                    "solution": null,
+                    "solution_id": null,
+                    "condition": null,
+                    "attribute": null,
+                    "amount": 1000,
+                    "unit": "ml",
+                    "g_l": null,
+                    "mmol_l": null,
+                    "optional": 0
+                }
+            ]
+    ingredients; data_quality_flags: The exact source supplies a concrete composition. Remove this importer-created placeholder, not any source ingredient. For S599 the missing solution6552 addition must also be restored before removing the incomplete-composition flag. Root formulation evidence and independent full-node accounting are required. Locator=['data', 'recipe']; accessed=2026-10-09T11:32:26.505608+00:00; source SHA256=4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647.
+
+    Additional exact excerpt at ['data', 'name']:
+    "Main sol. 323"
+    references[0].title: Use the exact title returned for solution599, without the previously added prefix. Earlier bibliography notes are retained. Locator=['data', 'name']; accessed=2026-10-09T11:32:26.505608+00:00; source SHA256=4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf
+  supports: SUPPORT
+  snippet: Fatty acid mixture                                                 1.40        ml
+  explanation: 'solutions[0].concentration: 1.4 ml / 1000 ml per L = 0.0014 L batch
+    addition to solution599. Evidence belongs on the enclosing solution recipe''s
+    root evidence list, not an ingredient or a universal working concentration on
+    solution6552. Locator=page 1, main table; accessed=2026-10-09T11:32:24.475381+00:00;
+    source SHA256=cc4ffe328060eadf4a992f8024f1beb6b1f6238f7d836c7552783b0f9b29fdca.'

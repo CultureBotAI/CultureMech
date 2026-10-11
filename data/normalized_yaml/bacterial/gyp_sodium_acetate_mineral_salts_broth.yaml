@@ -23,6 +23,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J68
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 1,
+                              "compound": "Glucose",
+                              "compound_id": 5,
+                              "amount": 10,
+                              "unit": "g",
+                              "g_l": 10,
+                              "mmol_l": 55.5062,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[0].concentration (Glucose)
+      in MediaDive medium J68; locator=$.data.solutions[0].recipe[0]. Provider explicitly
+      reports g_l=10; check: 10 g * 1 g/g / (1000 ml / 1000 ml per L) = 10 g/L. This
+      supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T14:01:37.277958+00:00;
+      response SHA256=c893893d3f0b5b01c8a4ba0ed5892676ff135e7cc0ded18b5ee3d0d4bd08efe0.'
 - preferred_term: Yeast extract
   concentration:
     value: '10'
@@ -41,6 +64,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:32954
     label: sodium acetate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J68
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 4,
+                              "compound": "Sodium acetate",
+                              "compound_id": 731,
+                              "amount": 10,
+                              "unit": "g",
+                              "g_l": 10,
+                              "mmol_l": 121.907,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[3].concentration (Sodium
+      acetate) in MediaDive medium J68; locator=$.data.solutions[0].recipe[3]. Provider
+      explicitly reports g_l=10; check: 10 g * 1 g/g / (1000 ml / 1000 ml per L) =
+      10 g/L. This supports the provider-declared main-recipe concentration, not an
+      independently measured final volume, a stock composition, or a downstream assay
+      dilution. Water alone does not establish final volume. Exact source ingredient
+      labels/forms are matched; secondary ontology mappings are not validated by this
+      evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved
+      2026-10-07T14:01:37.277958+00:00; response SHA256=c893893d3f0b5b01c8a4ba0ed5892676ff135e7cc0ded18b5ee3d0d4bd08efe0.'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -51,6 +97,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J68
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 5,
+                              "compound": "MgSO4 x 7 H2O",
+                              "compound_id": 8,
+                              "amount": 0.2,
+                              "unit": "g",
+                              "g_l": 0.2,
+                              "mmol_l": 0.811438,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[4].concentration (MgSO4 x
+      7 H2O) in MediaDive medium J68; locator=$.data.solutions[0].recipe[4]. Provider
+      explicitly reports g_l=0.2; check: 0.2 g * 1 g/g / (1000 ml / 1000 ml per L)
+      = 0.2 g/L. This supports the provider-declared main-recipe concentration, not
+      an independently measured final volume, a stock composition, or a downstream
+      assay dilution. Water alone does not establish final volume. Exact source ingredient
+      labels/forms are matched; secondary ontology mappings are not validated by this
+      evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved
+      2026-10-07T14:01:37.277958+00:00; response SHA256=c893893d3f0b5b01c8a4ba0ed5892676ff135e7cc0ded18b5ee3d0d4bd08efe0.'
 - preferred_term: MnSO4 x n H2O
   concentration:
     value: '0.01'
@@ -58,6 +127,28 @@ ingredients:
   term:
     id: CHEBI:86360
     label: manganese(II) sulfate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J68
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 6,
+                              "compound": "MnSO4 x n H2O",
+                              "compound_id": 1000,
+                              "amount": 10,
+                              "unit": "mg",
+                              "g_l": 0.01,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[5].concentration (MnSO4 x
+      n H2O) in MediaDive medium J68; locator=$.data.solutions[0].recipe[5]. Provider
+      explicitly reports g_l=0.01; check: 10 mg * 0.001 g/mg / (1000 ml / 1000 ml
+      per L) = 0.010 g/L. This supports the provider-declared main-recipe concentration,
+      not an independently measured final volume, a stock composition, or a downstream
+      assay dilution. Water alone does not establish final volume. Exact source ingredient
+      labels/forms are matched; secondary ontology mappings are not validated by this
+      evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved
+      2026-10-07T14:01:37.277958+00:00; response SHA256=c893893d3f0b5b01c8a4ba0ed5892676ff135e7cc0ded18b5ee3d0d4bd08efe0.'
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -68,6 +159,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
     label: iron(2+) sulfate heptahydrate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J68
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 7,
+                              "compound": "FeSO4 x 7 H2O",
+                              "compound_id": 12,
+                              "amount": 10,
+                              "unit": "mg",
+                              "g_l": 0.01,
+                              "mmol_l": 0.0359693,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[6].concentration (FeSO4 x
+      7 H2O) in MediaDive medium J68; locator=$.data.solutions[0].recipe[6]. Provider
+      explicitly reports g_l=0.01; check: 10 mg * 0.001 g/mg / (1000 ml / 1000 ml
+      per L) = 0.010 g/L. This supports the provider-declared main-recipe concentration,
+      not an independently measured final volume, a stock composition, or a downstream
+      assay dilution. Water alone does not establish final volume. Exact source ingredient
+      labels/forms are matched; secondary ontology mappings are not validated by this
+      evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved
+      2026-10-07T14:01:37.277958+00:00; response SHA256=c893893d3f0b5b01c8a4ba0ed5892676ff135e7cc0ded18b5ee3d0d4bd08efe0.'
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -78,6 +192,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J68
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 8,
+                              "compound": "NaCl",
+                              "compound_id": 43,
+                              "amount": 10,
+                              "unit": "mg",
+                              "g_l": 0.01,
+                              "mmol_l": 0.171116,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[7].concentration (NaCl) in
+      MediaDive medium J68; locator=$.data.solutions[0].recipe[7]. Provider explicitly
+      reports g_l=0.01; check: 10 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.010
+      g/L. This supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T14:01:37.277958+00:00;
+      response SHA256=c893893d3f0b5b01c8a4ba0ed5892676ff135e7cc0ded18b5ee3d0d4bd08efe0.'
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -118,6 +255,23 @@ curation_history:
   changes: Added reciprocal variant_children links
   source: JCM Medium 68-69 and TOGO Medium M61
   notes: Mirrored curated official-simple parent_media links on the parent record.
+- timestamp: '2026-10-07T14:33:27.670564+00:00'
+  curator: codex
+  action: CURATED_MEDIUM_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Exact medium/source membership, ingredient inventory/forms, physical-state
+    conditions, literal snippets, and arithmetic checked. Stock boundaries, source-only
+    rows, preparation context, and variants remain explicit follow-up tasks; secondary
+    chemical mappings unchanged.
+  source: https://mediadive.dsmz.de/rest/medium/J68
+  changes: 'ingredients[0].concentration: {"unit": "G_PER_L", "value": "10"} -> {"unit":
+    "G_PER_L", "value": "10"} (evidence_only); ingredients[3].concentration: {"unit":
+    "G_PER_L", "value": "10"} -> {"unit": "G_PER_L", "value": "10"} (evidence_only);
+    ingredients[4].concentration: {"unit": "G_PER_L", "value": "0.2"} -> {"unit":
+    "G_PER_L", "value": "0.2"} (evidence_only); ingredients[5].concentration: {"unit":
+    "G_PER_L", "value": "0.01"} -> {"unit": "G_PER_L", "value": "0.01"} (evidence_only);
+    ingredients[6].concentration: {"unit": "G_PER_L", "value": "0.01"} -> {"unit":
+    "G_PER_L", "value": "0.01"} (evidence_only); ingredients[7].concentration: {"unit":
+    "G_PER_L", "value": "0.01"} -> {"unit": "G_PER_L", "value": "0.01"} (evidence_only)'
 variant_children:
 - path: data/normalized_yaml/bacterial/jcm_medium_no_69.yaml
   relationship: SALINITY_VARIANT
@@ -129,3 +283,12 @@ variant_children:
   id: CultureMech:010019
   name: togo_medium_m61
   notes: Supplements 1.0 L GYP-sodium acetate-mineral salts broth with 50.0 g/L NaCl.
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/J68
+  title: 'MediaDive medium J68: GYP-SODIUM ACETATE-MINERAL SALTS BROTH'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; source_organization=DSMZ;
+    accessed_on=2026-10-07; locator=$.data.solutions[0]; response_sha256=c893893d3f0b5b01c8a4ba0ed5892676ff135e7cc0ded18b5ee3d0d4bd08efe0;
+    original_recipe=https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=68; individual
+    authors and publication year not supplied. Provider-declared main-recipe amounts
+    only. Original recipe collection=JCM; GRMD accession=68; DSMZ is the MediaDive
+    dataset provider, not the original recipe collection.

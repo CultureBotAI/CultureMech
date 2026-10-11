@@ -16,6 +16,32 @@ composition:
     label: boric acid
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/6144
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "H3BO3",
+                      "compound_id": 37,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.496,
+                      "unit": "g",
+                      "g_l": 2.48,
+                      "mmol_l": 40.1035,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (H3BO3)
+      in MediaDive solution 6144; locator=$.data.recipe[0] (compound_id=37). Provider
+      explicitly reports g_l=2.48. Arithmetic check: 0.496 g * 1 g/g / (200 ml / 1000
+      ml per L) = 2.48 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 200. Retrieved 2026-10-07T10:00:35.358316+00:00; response SHA256=c20c7cb39edd109cc9c3930485c8dfcfa87d4632395abec0c977c4ef48a84685.'
 - preferred_term: MnCl2 x 4 H2O
   concentration:
     value: '1.39'
@@ -28,6 +54,33 @@ composition:
     label: manganese(II) chloride tetrahydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/6144
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "MnCl2 x 4 H2O",
+                      "compound_id": 36,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.278,
+                      "unit": "g",
+                      "g_l": 1.39,
+                      "mmol_l": 7.02357,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (MnCl2 x
+      4 H2O) in MediaDive solution 6144; locator=$.data.recipe[1] (compound_id=36).
+      Provider explicitly reports g_l=1.39. Arithmetic check: 0.278 g * 1 g/g / (200
+      ml / 1000 ml per L) = 1.39 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 200. Retrieved 2026-10-07T10:00:35.358316+00:00;
+      response SHA256=c20c7cb39edd109cc9c3930485c8dfcfa87d4632395abec0c977c4ef48a84685.'
 - preferred_term: (NH4)6Mo7O24 x 4 H2O
   concentration:
     value: '1'
@@ -40,6 +93,33 @@ composition:
     label: ammonium molybdate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/6144
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "(NH4)6Mo7O24 x 4 H2O",
+                      "compound_id": 120,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.2,
+                      "unit": "g",
+                      "g_l": 1,
+                      "mmol_l": 0.809153,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[2].concentration ((NH4)6Mo7O24
+      x 4 H2O) in MediaDive solution 6144; locator=$.data.recipe[2] (compound_id=120).
+      Provider explicitly reports g_l=1. Arithmetic check: 0.2 g * 1 g/g / (200 ml
+      / 1000 ml per L) = 1 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 200. Retrieved 2026-10-07T10:00:35.358316+00:00;
+      response SHA256=c20c7cb39edd109cc9c3930485c8dfcfa87d4632395abec0c977c4ef48a84685.'
 preparation_notes: 'Original volume: 200 mL'
 curation_history:
 - timestamp: '2026-03-13T06:20:39.763890Z'
@@ -69,6 +149,18 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-10-07T10:04:07.640757+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/6144
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "2.48"} ->
+    {"unit": "G_PER_L", "value": "2.48"} (evidence_only); composition[1].concentration:
+    {"unit": "G_PER_L", "value": "1.39"} -> {"unit": "G_PER_L", "value": "1.39"} (evidence_only);
+    composition[2].concentration: {"unit": "G_PER_L", "value": "1"} -> {"unit": "G_PER_L",
+    "value": "1"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -77,3 +169,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/6144
+  title: 'MediaDive solution 6144: Stock solution 2'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=c20c7cb39edd109cc9c3930485c8dfcfa87d4632395abec0c977c4ef48a84685;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

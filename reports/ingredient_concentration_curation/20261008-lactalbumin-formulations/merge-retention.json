@@ -1,0 +1,42 @@
+{
+  "terminal": true,
+  "source_sha256": "d99a375e68d2bef008b27eae1eaa6da6fc414a7d67046a15a5d32a2661f813d2",
+  "input_records": 15910,
+  "output_groups": 10777,
+  "targets": [
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_1021_SODALIS_GLOSSINIDIUS_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_1021_SODALIS_GLOSSINIDIUS_medium.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/medium_1021_modified_for_dsm_16929.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/medium_1021_modified_for_dsm_16929.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mitsuhashi_maramorosch_m_m_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/mitsuhashi_maramorosch_m_m_medium.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/sodalis_glossinidius_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/sodalis_glossinidius_medium.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    }
+  ],
+  "derived_yaml_written": false,
+  "scope": "Full-corpus routing; only the four repaired outputs recertified."
+}

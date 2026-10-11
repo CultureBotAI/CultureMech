@@ -1,0 +1,231 @@
+{
+  "terminal": true,
+  "local_applied_record_checks_passed": true,
+  "scheduled_validation_runs_terminal": true,
+  "all_validation_gates_passed": false,
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "normalized_count": 15910,
+  "normalized_inventory_sha256": "be8cf9562c14ac1ab986d2df248c242b8f47db726278b34831044efce989b9f7",
+  "counts": {
+    "new_evidence": 37379,
+    "new_curation_history": 5623,
+    "bibliographic_entries_enriched": 73,
+    "quantity_corrections": 1751,
+    "ingredient_context_notes_corrected": 156,
+    "new_references": 6044,
+    "unsupported_quantity_slots_removed": 968,
+    "ingredient_labels_corrected": 65,
+    "ingredient_identities_corrected": 20,
+    "preparation_descriptions_corrected": 61,
+    "variant_context_descriptions_corrected": 2,
+    "variant_quantity_texts_corrected": 2,
+    "stock_context_notes_corrected": 10,
+    "preparation_actions_corrected": 67,
+    "recipe_context_notes_corrected": 32,
+    "child_link_notes_corrected": 2,
+    "stock_nodes_relocated": 862,
+    "stock_dose_basis_corrections": 148,
+    "unsupported_primary_identities_removed": 8,
+    "unsupported_secondary_identities_removed": 5,
+    "relationship_dose_descriptions_corrected": 13,
+    "variant_evidence_explanations_extended": 1,
+    "variant_evidence_snippets_added": 1,
+    "stock_labels_corrected": 1,
+    "root_evidence_explanations_corrected": 1,
+    "corrected_evidence_snippets": 3,
+    "new_quantity_slots": 379,
+    "stock_stage_concentrations_rebased": 203,
+    "stock_descriptors_added": 247,
+    "copied_ingredient_nodes_replaced_by_reference": 37,
+    "ingredient_context_notes_added": 268,
+    "water_input_nodes_added": 28,
+    "parent_links_corrected": 7,
+    "source_amount_conflicts_repaired": 3,
+    "unquantified_carrier_nodes_added": 91,
+    "evidence_scopes_corrected": 172,
+    "preparation_steps_added": 69,
+    "batch_mass_notes_unverified_concentrations": 48,
+    "duplicate_stock_nodes_removed": 1,
+    "variant_links_added": 10,
+    "explicit_medium_rates_verified": 3,
+    "unsupported_flags_removed": 3,
+    "child_links_corrected": 7,
+    "ingredient_evidence_explanations_extended": 3,
+    "preparation_steps_relocated": 18,
+    "inline_variant_options_added": 16,
+    "water_input_notes_added": 9,
+    "extraction_preparations_added": 1,
+    "unquantified_ingredient_nodes_added": 2,
+    "base_preparations_added": 9,
+    "preparation_records_restored": 4,
+    "supplement_nodes_moved_to_variants": 4,
+    "supplied_hydrate_identities_corrected": 87,
+    "copied_ingredient_nodes_removed": 15,
+    "extraction_preparations_restructured": 2,
+    "source_version_alternatives_added": 4,
+    "composition_classifications_corrected": 2,
+    "final_quantity_slots_added": 1,
+    "explicitly_omitted_ingredient_nodes": 1,
+    "ingredient_source_attributions_corrected": 1,
+    "excluded_alternative_nodes_removed": 1,
+    "preparation_text_encodings_corrected": 1,
+    "unquantified_solvent_nodes_added": 1,
+    "ingredient_doses_relocated_to_stock": 1,
+    "identity_conflicts_retained_unquantified": 2,
+    "unquantified_makeup_nodes_added": 1,
+    "stock_preparation_notes_added": 1,
+    "edited_records": 5382
+  },
+  "followup_unique_records": 11910,
+  "outside_this_followup": 4000,
+  "new_batch": {
+    "new_curation_history": 5,
+    "new_references": 2,
+    "bibliographic_entries_enriched": 9,
+    "new_evidence": 40,
+    "child_link_notes_corrected": 1,
+    "unsupported_quantity_slots_removed": 8,
+    "variant_context_descriptions_corrected": 2,
+    "variant_quantity_texts_corrected": 1,
+    "stock_context_notes_corrected": 2,
+    "ingredient_context_notes_corrected": 1,
+    "preparation_actions_corrected": 1,
+    "recipe_context_notes_corrected": 2,
+    "relationship_dose_descriptions_corrected": 2,
+    "stock_labels_corrected": 1,
+    "records": 5,
+    "structured_claim_rows": 40,
+    "narrative_claim_rows": 5,
+    "newly_edited_records": 5,
+    "canonical_coverage_increment": 5,
+    "structured_numeric_replacements": 0,
+    "taxa_media_associations": 0
+  },
+  "production_reference_checks": {
+    "passed_snippet": 43,
+    "passed_title": 12,
+    "failed_snippet": 1
+  },
+  "production_reference_results": [
+    {
+      "record": "data/normalized_yaml/algae/Bristol_Medium.yaml",
+      "returncode": 0,
+      "per_claim_results_available": true,
+      "valid": true,
+      "issues": []
+    },
+    {
+      "record": "data/normalized_yaml/algae/Bold_Basal_Medium.yaml",
+      "returncode": 1,
+      "per_claim_results_available": true,
+      "valid": false,
+      "issues": [
+        "Text part not found as substring: '0.25, 0.75, 2.50, 5.0, and 15.0 ng/L' (note: only abstract available for doi:10.3390/plants11131669, full text may contain this excerpt)"
+      ]
+    },
+    {
+      "record": "data/normalized_yaml/algae/Botryococcus_Medium.yaml",
+      "returncode": 0,
+      "per_claim_results_available": true,
+      "valid": true,
+      "issues": []
+    },
+    {
+      "record": "data/normalized_yaml/algae/Proteose_Medium.yaml",
+      "returncode": 0,
+      "per_claim_results_available": true,
+      "valid": true,
+      "issues": []
+    },
+    {
+      "record": "data/normalized_yaml/algae/bristol_nacl_medium.yaml",
+      "returncode": 0,
+      "per_claim_results_available": true,
+      "valid": true,
+      "issues": []
+    }
+  ],
+  "production_reference_gate_passed": false,
+  "reference_limitations": [
+    "An aborted command without JSON supplies no per-claim validation results.",
+    "Manual source inspection and captured-snippet matching are not automatic live-reference passes."
+  ],
+  "remaining_source_issues": [
+    "The BBM trace source prints MnCl with tetrahydrate; its intended chemical identity and the existing MnCl2 amount remain unverified. Added node evidence supports only that source-spelling conflict.",
+    "BBM trace concentration columns and stock-page parenthetical micromolar values conflict with explicit stock preparation amounts. Preserve inspected Amount-per-litre stock recipes, not those incompatible columns; no new final-medium conversions.",
+    "The BBM iron stock does not specify acid strength. No density, purity or molarity is assumed.",
+    "The BBM study cites Stein 1973; exact equivalence with the current UTEX parent is unverified. NH4Cl ppm basis and culture working volume remain unspecified; no numerical conversion or aliquot inference.",
+    "Bristol-NaCl uses an unfinished parent preparation; its table one-litre row is not certified as a working dose of completed Bristol. The reference and explicit stage notes are retained without a fabricated dose.",
+    "Optional agar formulations are not silently added to these liquid records. No new taxa-media associations, IDs or growth/role assertions are curated.",
+    "Supplier-catalog identities, generic incubation/light claims and unrelated preexisting organism evidence are not blanket-certified by this ingredient review."
+  ],
+  "corpus_commands": [
+    {
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "just",
+        "assign-ids-check"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "just",
+        "validate-products"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "just",
+        "check-mim-label-index"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "returncode": 1
+    },
+    {
+      "command": [
+        "just",
+        "audit-merge-freshness"
+      ],
+      "returncode": 1
+    }
+  ],
+  "fast_tier_pending": false,
+  "fast_tier_passed": true,
+  "fast_test_summary": "15154 passed, 16 skipped, 3498 deselected, 2 warnings in 1921.61s (0:32:01)",
+  "full_test_suite_pass_asserted": false,
+  "code_sha256": {
+    "scripts/review_utex_bristol_bbm.py": "31358f8b8babead53b1016480bb545868b1e077b17314193bd3bf1bd6878aa38",
+    "tests/test_utex_bristol_bbm.py": "eeee4384586b397431394d0cf15aefdba9709ebffa28ac46b5087a22932d8d27"
+  },
+  "audit_registry_sha256": "7c9f0380c709f22c46ed581b00036ae28aa475d615c66ce562b2f73619ed7493",
+  "receipts_sha256": {
+    "preview": "eff417e959be89d75e9d303adc419b09cebffbad10b0bb127a70f5469bf08d94",
+    "apply": "cb123402db9d016f6f89a6ad34b1fc33c98b35efc2f8dcc524df5616db241b06",
+    "reconcile-baseline": "4a5f38b64836ba45b1d070b30826c51b239e7cabecdd313198fbf54c30c8e419",
+    "reconcile-reports": "de951c5075d1e404ade00a90d006aa8c42e1f736aa615cf8109643dba66f3865",
+    "reconcile-cumulative": "f650cbf5324d30f8f26d7a5d1832c9b86e84a27d473774c651d8e4d62d3c60a6",
+    "reconcile-indexes": "169c4a0d41cbdf9a3278ea299cca94db5bf85d251af4ea86157f0dd63399aa2b",
+    "reconcile-retention": "a14a8060d8981c07849d922f67167740ac1e6e1eff085b75cb3b3c4256bd9cf2",
+    "post": "42470ac88133cec924a199224c82be1ce15dc7d1c5eca8e3a2170d9ecba0bacb",
+    "references": "f4b74b41559f2a9c9e975229712e2bad1d3fe72017c9745b060de8971c4e8a73",
+    "corpus": "43df9fd4c63c059876f3bdaf0fbf91b82d62a4a6520f8cc961956505d1974ef7",
+    "postflight": "8e78b28a78107fc254366c1fd9006e070c9b93649908f1f947626f2831fdf9e5",
+    "references-live": "c1e3c954cdaced3d2e8aea932d696855eed9eb86da0e598ea689d874a17eac26",
+    "fast": "870ba549ef4cae7dd57232f2a3bad7251f40d9eed859c48047e93c64834dc004"
+  }
+}

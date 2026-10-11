@@ -1,0 +1,244 @@
+{
+  "terminal": true,
+  "phase": "apply",
+  "checks": [],
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "b2fe53f9a5f5c2a28ce3af156e7c8d7c95e000e1f150df9ac3799f8a4e454cfe"
+  },
+  "code_sha256": {
+    "scripts/repair_ruminococcus_albus_family.py": "25db938745f061004f02434bb6a0b1705cc3ddf2946ae59a2aa25ece12ede393",
+    "tests/test_ruminococcus_albus_family.py": "4d798d631ec050acb0a7a50ccbf80383d884d54fbea9d7886d3e432e904cc97b",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/audit.py": "54318bf5e16502264775acba6805631a6cd8ed58b9db0f6ebb9b66c84679068b",
+    "scripts/repair_oteb_family.py": "90aa83324ff1b28708921a00c409f50b4c4bd12eb15f09ae8feb0e1010916795",
+    "scripts/repair_methanogen_stock_boundaries.py": "8d4d32c7dc3cb2586242a188f958087482df3aff553d1dbc468c422eddb037ba",
+    "scripts/repair_lactalbumin_formulations.py": "3c16a3f4a2e543d280d3ccbb20a63138f2b409602d8b168b7fc742abe63b1769",
+    "scripts/repair_jcm_stock_preparations.py": "7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a",
+    "scripts/repair_mediadive_stock_concentration_evidence.py": "1badfa99205690cf6082d95db7dafbd6d4927b617027bc61fbaaf9dbd597c974",
+    "scripts/review_medium_concentration_evidence.py": "ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a",
+    "src/culturemech/validation/recipe_references.py": "1ef57389727347c242f45a85a9ed8908803423bc10307f53a888dac67ce06b67",
+    "src/culturemech/validation/write_validated.py": "8e1e2185231caecbe3dc99908c783cd83340b1e93fa9115ff1445d4b3820897e",
+    "src/culturemech/schema/culturemech.yaml": "461478d900fdee29a52c3d14656bcf369443bfdd0f4a534aa9d385f25df1cf8a"
+  },
+  "plan_sha256": "47771aa8b0a5d36a7ae339456df36304c2cdabd7508ec526f8f269106bb14332",
+  "context_sha256": "45d48a0e66d0504c0bea2655ea38f2a88c4c3034f8f4bd520f6e6848e22d0b55",
+  "preview_validation_sha256": "a9f49f317be4f051f9f874d162c815d9923efb4e770f16d6fb67b03a8c021654",
+  "current_focused_sha256": "43465ff2ecf6fbb830ada1fabe4b67dd4b4ddbf160d91d3de5470a58fbf40b48",
+  "reviewed_code_successors": [
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/audit.py",
+    "scripts/repair_ruminococcus_albus_family.py",
+    "tests/test_ruminococcus_albus_family.py"
+  ],
+  "preview_document_archive": [
+    {
+      "source": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/README.md",
+      "archive": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/preview-documents/README.md",
+      "sha256": "c9941a610608c38d327ac90e4dd781144f416c3c6a0cdd5c954540e68b3a3a3f"
+    },
+    {
+      "source": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/adversarial-review.md",
+      "archive": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/preview-documents/adversarial-review.md",
+      "sha256": "67f01738c973c1544c95edfa091e2ab9c5a869a95828fa20d6722f83ff162347"
+    },
+    {
+      "source": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/issue-source-conflicts.md",
+      "archive": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/preview-documents/issue-source-conflicts.md",
+      "sha256": "c967b4fd4b38b584bc0f13fd87a766c1b0e0c957fafc2f471e64f6fd6fa79b67"
+    },
+    {
+      "source": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/next-work.md",
+      "archive": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/preview-documents/next-work.md",
+      "sha256": "81e9ca481cb12c3de2c8fce4661c342083da8085fc1b532b45cb784a36e79697"
+    }
+  ],
+  "preview_audit": {
+    "K436": {
+      "source_nodes": 19,
+      "old_quantity_slots": 18,
+      "claims": 67,
+      "new_evidence": 22,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "M694": {
+      "source_nodes": 25,
+      "old_quantity_slots": 24,
+      "claims": 85,
+      "new_evidence": 24,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K3017": {
+      "source_nodes": 4,
+      "old_quantity_slots": 0,
+      "claims": 15,
+      "new_evidence": 5,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "S882": {
+      "source_nodes": 11,
+      "old_quantity_slots": 9,
+      "claims": 28,
+      "new_evidence": 4,
+      "new_references": 0,
+      "new_curation_history": 1
+    },
+    "S883": {
+      "source_nodes": 1,
+      "old_quantity_slots": 2,
+      "claims": 8,
+      "new_evidence": 1,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "S884": {
+      "source_nodes": 5,
+      "old_quantity_slots": 6,
+      "claims": 21,
+      "new_evidence": 5,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "S885": {
+      "source_nodes": 4,
+      "old_quantity_slots": 5,
+      "claims": 19,
+      "new_evidence": 5,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K436_18848": {
+      "source_nodes": 21,
+      "old_quantity_slots": 18,
+      "claims": 73,
+      "new_evidence": 23,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "D436": {
+      "source_nodes": 21,
+      "old_quantity_slots": 18,
+      "claims": 95,
+      "new_evidence": 39,
+      "new_references": 3,
+      "new_curation_history": 1
+    },
+    "M2636": {
+      "source_nodes": 27,
+      "old_quantity_slots": 26,
+      "claims": 96,
+      "new_evidence": 27,
+      "new_references": 3,
+      "new_curation_history": 1
+    }
+  },
+  "application": {
+    "mode": "apply",
+    "records": 10,
+    "changed": 10,
+    "already_applied": 0,
+    "claims": 507
+  },
+  "readback": {
+    "mode": "verify",
+    "records": 10,
+    "changed": 0,
+    "already_applied": 10,
+    "claims": 507
+  },
+  "noop": {
+    "mode": "apply",
+    "records": 10,
+    "changed": 0,
+    "already_applied": 10,
+    "claims": 507
+  },
+  "applied_audit": {
+    "K436": {
+      "source_nodes": 19,
+      "old_quantity_slots": 18,
+      "claims": 67,
+      "new_evidence": 22,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "M694": {
+      "source_nodes": 25,
+      "old_quantity_slots": 24,
+      "claims": 85,
+      "new_evidence": 24,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K3017": {
+      "source_nodes": 4,
+      "old_quantity_slots": 0,
+      "claims": 15,
+      "new_evidence": 5,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "S882": {
+      "source_nodes": 11,
+      "old_quantity_slots": 9,
+      "claims": 28,
+      "new_evidence": 4,
+      "new_references": 0,
+      "new_curation_history": 1
+    },
+    "S883": {
+      "source_nodes": 1,
+      "old_quantity_slots": 2,
+      "claims": 8,
+      "new_evidence": 1,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "S884": {
+      "source_nodes": 5,
+      "old_quantity_slots": 6,
+      "claims": 21,
+      "new_evidence": 5,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "S885": {
+      "source_nodes": 4,
+      "old_quantity_slots": 5,
+      "claims": 19,
+      "new_evidence": 5,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K436_18848": {
+      "source_nodes": 21,
+      "old_quantity_slots": 18,
+      "claims": 73,
+      "new_evidence": 23,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "D436": {
+      "source_nodes": 21,
+      "old_quantity_slots": 18,
+      "claims": 95,
+      "new_evidence": 39,
+      "new_references": 3,
+      "new_curation_history": 1
+    },
+    "M2636": {
+      "source_nodes": 27,
+      "old_quantity_slots": 26,
+      "claims": 96,
+      "new_evidence": 27,
+      "new_references": 3,
+      "new_curation_history": 1
+    }
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "2be09e9249a816360bba52b76c1f3d889e12aae7bfd90d12771f117acb01a0d1"
+  },
+  "only_reviewed_records_changed": true
+}

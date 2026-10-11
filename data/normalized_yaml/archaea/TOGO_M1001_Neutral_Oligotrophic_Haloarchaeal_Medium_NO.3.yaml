@@ -8,72 +8,266 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '233'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '0.233'
+    unit: L
+  notes: |-
+    Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component
+
+    Source batch input: 233 ml = 0.233 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made.
   term:
     id: CHEBI:15377
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1001
+    supports: SUPPORT
+    snippet: |2-
+                "component_name": "Distilled water",
+                "volume": 233,
+                "unit": "ml",
+    explanation: 'ingredients[0].concentration (Distilled water): Source batch input:
+      233 ml = 0.233 L. This is an input volume, not g/L, ml/L, or a final-medium
+      volume. No density or final-volume assumption is made. Locator=$.components[0].items[0];
+      source SHA256=106eedca103eca454196c35494137b6835936de6747254fa4aab2ae0993002c7;
+      accessed=2026-10-08T09:21:43.134345+00:00.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954
+    supports: SUPPORT
+    snippet: Distilled water 233.0 ml
+    explanation: 'ingredients[0].concentration (Distilled water): Source batch input:
+      233 ml = 0.233 L. This is an input volume, not g/L, ml/L, or a final-medium
+      volume. No density or final-volume assumption is made. Original-source locator=Recipe
+      table row: Distilled water. Capture SHA256=f7665ac33e1c984081ebe595da1c4ab35ca8356aeaccd91a986ffc6d73dd6971;
+      accessed=2026-10-08T09:21:46.165737+00:00.'
 - preferred_term: Yeast extract
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  notes: |-
+    Role: Nutrient source; Properties: Undefined component
+
+    JCM954 specifies 1.0 g per recipe batch for this component. The existing G_PER_L value is retained but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final make-up volume is specified. The evidence supports this batch-mass note only, not the retained final-medium concentration.
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1001
+    supports: SUPPORT
+    snippet: |2-
+                "component_name": "Yeast extract",
+                "volume": 1,
+                "unit": "g",
+    explanation: 'ingredients[1].concentration (Yeast extract): JCM954 specifies 1.0
+      g per recipe batch for this component. The existing G_PER_L value is retained
+      but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave
+      additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final
+      make-up volume is specified. The evidence supports this batch-mass note only,
+      not the retained final-medium concentration. Locator=$.components[0].items[1];
+      source SHA256=106eedca103eca454196c35494137b6835936de6747254fa4aab2ae0993002c7;
+      accessed=2026-10-08T09:21:43.134345+00:00.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954
+    supports: SUPPORT
+    snippet: Yeast extract 1.0 g
+    explanation: 'ingredients[1].concentration (Yeast extract): JCM954 specifies 1.0
+      g per recipe batch for this component. The existing G_PER_L value is retained
+      but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave
+      additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final
+      make-up volume is specified. The evidence supports this batch-mass note only,
+      not the retained final-medium concentration. Original-source locator=Recipe
+      table row: Yeast extract. Capture SHA256=f7665ac33e1c984081ebe595da1c4ab35ca8356aeaccd91a986ffc6d73dd6971;
+      accessed=2026-10-08T09:21:46.165737+00:00.'
 - preferred_term: Sodium acetate
   concentration:
     value: '0.25'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Organic compound, Simple component, Defined component'
+  notes: |-
+    Role: Buffer; Properties: Organic compound, Simple component, Defined component
+
+    JCM954 specifies 0.25 g per recipe batch for this component. The existing G_PER_L value is retained but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final make-up volume is specified. The evidence supports this batch-mass note only, not the retained final-medium concentration.
   term:
     id: CHEBI:32954
     label: sodium acetate
   mediaingredientmech_chebi_term:
     id: CHEBI:32954
     label: sodium acetate
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1001
+    supports: SUPPORT
+    snippet: |2-
+                "component_name": "Sodium acetate",
+                "volume": 0.25,
+                "unit": "g",
+    explanation: 'ingredients[2].concentration (Sodium acetate): JCM954 specifies
+      0.25 g per recipe batch for this component. The existing G_PER_L value is retained
+      but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave
+      additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final
+      make-up volume is specified. The evidence supports this batch-mass note only,
+      not the retained final-medium concentration. Locator=$.components[0].items[2];
+      source SHA256=106eedca103eca454196c35494137b6835936de6747254fa4aab2ae0993002c7;
+      accessed=2026-10-08T09:21:43.134345+00:00.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954
+    supports: SUPPORT
+    snippet: Sodium acetate 0.25 g
+    explanation: 'ingredients[2].concentration (Sodium acetate): JCM954 specifies
+      0.25 g per recipe batch for this component. The existing G_PER_L value is retained
+      but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave
+      additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final
+      make-up volume is specified. The evidence supports this batch-mass note only,
+      not the retained final-medium concentration. Original-source locator=Recipe
+      table row: Sodium acetate. Capture SHA256=f7665ac33e1c984081ebe595da1c4ab35ca8356aeaccd91a986ffc6d73dd6971;
+      accessed=2026-10-08T09:21:46.165737+00:00.'
 - preferred_term: Sodium pyruvate
   concentration:
     value: '0.25'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
-    compound'
+  notes: |-
+    Role: Carbon source; Properties: Simple component, Defined component, Organic compound
+
+    JCM954 specifies 0.25 g per recipe batch for this component. The existing G_PER_L value is retained but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final make-up volume is specified. The evidence supports this batch-mass note only, not the retained final-medium concentration.
   term:
     id: CHEBI:50144
     label: sodium pyruvate
   mediaingredientmech_chebi_term:
     id: CHEBI:50144
     label: sodium pyruvate
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1001
+    supports: SUPPORT
+    snippet: |2-
+                "component_name": "Sodium pyruvate",
+                "volume": 0.25,
+                "unit": "g",
+    explanation: 'ingredients[3].concentration (Sodium pyruvate): JCM954 specifies
+      0.25 g per recipe batch for this component. The existing G_PER_L value is retained
+      but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave
+      additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final
+      make-up volume is specified. The evidence supports this batch-mass note only,
+      not the retained final-medium concentration. Locator=$.components[0].items[3];
+      source SHA256=106eedca103eca454196c35494137b6835936de6747254fa4aab2ae0993002c7;
+      accessed=2026-10-08T09:21:43.134345+00:00.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954
+    supports: SUPPORT
+    snippet: Sodium pyruvate 0.25 g
+    explanation: 'ingredients[3].concentration (Sodium pyruvate): JCM954 specifies
+      0.25 g per recipe batch for this component. The existing G_PER_L value is retained
+      but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave
+      additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final
+      make-up volume is specified. The evidence supports this batch-mass note only,
+      not the retained final-medium concentration. Original-source locator=Recipe
+      table row: Sodium pyruvate. Capture SHA256=f7665ac33e1c984081ebe595da1c4ab35ca8356aeaccd91a986ffc6d73dd6971;
+      accessed=2026-10-08T09:21:46.165737+00:00.'
 - preferred_term: Sodium lactate
   concentration:
     value: '0.25'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
+  notes: |-
+    Role: Carbon source; Properties: Defined component, Organic compound, Simple component
+
+    JCM954 specifies 0.25 g per recipe batch for this component. The existing G_PER_L value is retained but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final make-up volume is specified. The evidence supports this batch-mass note only, not the retained final-medium concentration.
   term:
     id: CHEBI:75228
     label: sodium lactate
   mediaingredientmech_chebi_term:
     id: CHEBI:75228
     label: sodium lactate
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1001
+    supports: SUPPORT
+    snippet: |2-
+                "component_name": "Sodium lactate",
+                "volume": 0.25,
+                "unit": "g",
+    explanation: 'ingredients[4].concentration (Sodium lactate): JCM954 specifies
+      0.25 g per recipe batch for this component. The existing G_PER_L value is retained
+      but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave
+      additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final
+      make-up volume is specified. The evidence supports this batch-mass note only,
+      not the retained final-medium concentration. Locator=$.components[0].items[4];
+      source SHA256=106eedca103eca454196c35494137b6835936de6747254fa4aab2ae0993002c7;
+      accessed=2026-10-08T09:21:43.134345+00:00.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954
+    supports: SUPPORT
+    snippet: Sodium lactate 0.25 g
+    explanation: 'ingredients[4].concentration (Sodium lactate): JCM954 specifies
+      0.25 g per recipe batch for this component. The existing G_PER_L value is retained
+      but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave
+      additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final
+      make-up volume is specified. The evidence supports this batch-mass note only,
+      not the retained final-medium concentration. Original-source locator=Recipe
+      table row: Sodium lactate. Capture SHA256=f7665ac33e1c984081ebe595da1c4ab35ca8356aeaccd91a986ffc6d73dd6971;
+      accessed=2026-10-08T09:21:46.165737+00:00.'
 - preferred_term: Fish peptone (Fluka)
   concentration:
     value: '0.25'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  notes: |-
+    Role: Nutrient source; Properties: Undefined component
+
+    JCM954 specifies 0.25 g per recipe batch for this component. The existing G_PER_L value is retained but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final make-up volume is specified. The evidence supports this batch-mass note only, not the retained final-medium concentration.
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1001
+    supports: SUPPORT
+    snippet: |2-
+                "component_name": "Fish peptone (Fluka)",
+                "volume": 0.25,
+                "unit": "g",
+    explanation: 'ingredients[5].concentration (Fish peptone (Fluka)): JCM954 specifies
+      0.25 g per recipe batch for this component. The existing G_PER_L value is retained
+      but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave
+      additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final
+      make-up volume is specified. The evidence supports this batch-mass note only,
+      not the retained final-medium concentration. Locator=$.components[0].items[5];
+      source SHA256=106eedca103eca454196c35494137b6835936de6747254fa4aab2ae0993002c7;
+      accessed=2026-10-08T09:21:43.134345+00:00.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954
+    supports: SUPPORT
+    snippet: Fish peptone (Fluka) 0.25 g
+    explanation: 'ingredients[5].concentration (Fish peptone (Fluka)): JCM954 specifies
+      0.25 g per recipe batch for this component. The existing G_PER_L value is retained
+      but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave
+      additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final
+      make-up volume is specified. The evidence supports this batch-mass note only,
+      not the retained final-medium concentration. Original-source locator=Recipe
+      table row: Fish peptone (Fluka). Capture SHA256=f7665ac33e1c984081ebe595da1c4ab35ca8356aeaccd91a986ffc6d73dd6971;
+      accessed=2026-10-08T09:21:46.165737+00:00.'
 - preferred_term: Sodium formate
   concentration:
     value: '0.25'
     unit: G_PER_L
-  notes: 'Properties: Defined component, Inorganic compound, Simple component'
+  notes: |-
+    Properties: Defined component, Inorganic compound, Simple component
+
+    JCM954 specifies 0.25 g per recipe batch for this component. The existing G_PER_L value is retained but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final make-up volume is specified. The evidence supports this batch-mass note only, not the retained final-medium concentration.
   term:
     id: CHEBI:62965
     label: sodium formate
   mediaingredientmech_chebi_term:
     id: CHEBI:62965
     label: sodium formate
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1001
+    supports: SUPPORT
+    snippet: |2-
+                "component_name": "Sodium formate",
+                "volume": 0.25,
+                "unit": "g",
+    explanation: 'ingredients[6].concentration (Sodium formate): JCM954 specifies
+      0.25 g per recipe batch for this component. The existing G_PER_L value is retained
+      but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave
+      additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final
+      make-up volume is specified. The evidence supports this batch-mass note only,
+      not the retained final-medium concentration. Locator=$.components[0].items[6];
+      source SHA256=106eedca103eca454196c35494137b6835936de6747254fa4aab2ae0993002c7;
+      accessed=2026-10-08T09:21:43.134345+00:00.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954
+    supports: SUPPORT
+    snippet: Sodium formate 0.25 g
+    explanation: 'ingredients[6].concentration (Sodium formate): JCM954 specifies
+      0.25 g per recipe batch for this component. The existing G_PER_L value is retained
+      but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave
+      additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final
+      make-up volume is specified. The evidence supports this batch-mass note only,
+      not the retained final-medium concentration. Original-source locator=Recipe
+      table row: Sodium formate. Capture SHA256=f7665ac33e1c984081ebe595da1c4ab35ca8356aeaccd91a986ffc6d73dd6971;
+      accessed=2026-10-08T09:21:46.165737+00:00.'
 media_term:
   preferred_term: TOGO Medium M1001
   term:
@@ -127,26 +321,130 @@ curation_history:
   notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-08T09:28:19.729810+00:00'
+  curator: codex
+  action: CORRECTED_TOGO_JCM954_INPUT_VOLUMES_AND_STOCK_STRENGTH
+  notes: Source-pinned TOGO/JCM954 pair. Corrected four batch-volume units; added
+    explicit NH4Cl stock strength. Batch-mass notes do not validate retained G_PER_L
+    values. No inferred final volume, organism claims, chemical mappings, or historical
+    events changed.
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954
+  changes: 'ingredients[0].concentration: {''value'': ''233'', ''unit'': ''G_PER_L''}
+    -> {''value'': ''0.233'', ''unit'': ''L''} (corrected batch volume); ingredients[1].concentration:
+    {''value'': ''1'', ''unit'': ''G_PER_L''} -> {''value'': ''1'', ''unit'': ''G_PER_L''}
+    (added batch-mass note/evidence; concentration unchanged); ingredients[2].concentration:
+    {''value'': ''0.25'', ''unit'': ''G_PER_L''} -> {''value'': ''0.25'', ''unit'':
+    ''G_PER_L''} (added batch-mass note/evidence; concentration unchanged); ingredients[3].concentration:
+    {''value'': ''0.25'', ''unit'': ''G_PER_L''} -> {''value'': ''0.25'', ''unit'':
+    ''G_PER_L''} (added batch-mass note/evidence; concentration unchanged); ingredients[4].concentration:
+    {''value'': ''0.25'', ''unit'': ''G_PER_L''} -> {''value'': ''0.25'', ''unit'':
+    ''G_PER_L''} (added batch-mass note/evidence; concentration unchanged); ingredients[5].concentration:
+    {''value'': ''0.25'', ''unit'': ''G_PER_L''} -> {''value'': ''0.25'', ''unit'':
+    ''G_PER_L''} (added batch-mass note/evidence; concentration unchanged); ingredients[6].concentration:
+    {''value'': ''0.25'', ''unit'': ''G_PER_L''} -> {''value'': ''0.25'', ''unit'':
+    ''G_PER_L''} (added batch-mass note/evidence; concentration unchanged); solutions[0].concentration:
+    {''value'': ''767'', ''unit'': ''G_PER_L''} -> {''value'': ''0.767'', ''unit'':
+    ''L''} (corrected batch volume); solutions[1].concentration: {''value'': ''5'',
+    ''unit'': ''G_PER_L''} -> {''value'': ''0.005'', ''unit'': ''L''} (corrected batch
+    volume); solutions[2].concentration: {''value'': ''2'', ''unit'': ''G_PER_L''}
+    -> {''value'': ''0.002'', ''unit'': ''L''} (corrected batch volume); solutions[1].composition[0].concentration:
+    None -> {''value'': ''1'', ''unit'': ''MOLAR''} (added explicit stock composition
+    strength)'
 solutions:
 - preferred_term: MDS salt water (see Medium [M578])
   composition: []
-  notes: Cross-reference to Medium M578
+  notes: |-
+    Cross-reference to Medium M578
+
+    Source batch input: 767 ml = 0.767 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made.
   concentration:
-    value: '767'
-    unit: G_PER_L
+    value: '0.767'
+    unit: L
   name: Unknown solution
 - preferred_term: 1 M NH4Cl solution*
-  composition: []
+  composition:
+  - preferred_term: NH4Cl
+    concentration:
+      value: '1'
+      unit: MOLAR
+    notes: Explicit 1 M NH4Cl stock strength, not its final-medium concentration.
+      The batch addition remains 5 ml; no final dilution is calculated.
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1001
+      supports: SUPPORT
+      snippet: |2-
+                  "component_name": "1 M NH4Cl solution*",
+                  "volume": 5,
+                  "unit": "ml",
+                  "conc_value": 1,
+                  "conc_unit": "M",
+      explanation: 'solutions[1].composition[0].concentration: Explicit 1 M NH4Cl
+        stock strength, not its final-medium concentration. The batch addition remains
+        5 ml; no final dilution is calculated. Locator=$.components[1].items[0]; original
+        JCM954 table 2 row 1.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954
+      supports: SUPPORT
+      snippet: 1 M NH4Cl solution* 5.0 ml
+      explanation: 'solutions[1].composition[0].concentration: Explicit 1 M NH4Cl
+        stock strength, not its final-medium concentration. The batch addition remains
+        5 ml; no final dilution is calculated. Locator=$.components[1].items[0]; original
+        JCM954 table 2 row 1.'
   concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
-    Solution'
+    value: '0.005'
+    unit: L
+  notes: |-
+    Role: Nitrogen source; Properties: Defined component, Inorganic compound, Solution
+
+    Source batch input: 5 ml = 0.005 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made. Add after autoclaving and cooling; stock strength is distinct from dose.
   name: Unknown solution
 - preferred_term: Potassium phosphate buffer (see Medium [M578])
   composition: []
-  notes: Cross-reference to Medium M578
+  notes: |-
+    Cross-reference to Medium M578
+
+    Source batch input: 2 ml = 0.002 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made. Add after autoclaving and cooling; stock strength is distinct from dose.
   concentration:
-    value: '2'
-    unit: G_PER_L
+    value: '0.002'
+    unit: L
   name: Unknown solution
+evidence:
+- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1001
+  supports: SUPPORT
+  snippet: |2-
+              "component_name": "MDS salt water (see Medium [M578])",
+              "volume": 767,
+              "unit": "ml",
+  explanation: |-
+    solutions[0].concentration (MDS salt water (see Medium [M578])): Source batch input: 767 ml = 0.767 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made. Separate JCM954 preparation excerpt: "Autoclave and, after cooling, add the following solutions (*filter-sterilized or autoclaved) to the medium.". Locator=$.components[0].items[7]; source SHA256=106eedca103eca454196c35494137b6835936de6747254fa4aab2ae0993002c7; accessed=2026-10-08T09:21:43.134345+00:00.
+
+    Additional exact excerpt:           "component_name": "1 M NH4Cl solution*",
+              "volume": 5,
+              "unit": "ml",
+    solutions[1].concentration (1 M NH4Cl solution*): Source batch input: 5 ml = 0.005 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made. Add after autoclaving and cooling; stock strength is distinct from dose. Separate JCM954 preparation excerpt: "Autoclave and, after cooling, add the following solutions (*filter-sterilized or autoclaved) to the medium.". Locator=$.components[1].items[0]; source SHA256=106eedca103eca454196c35494137b6835936de6747254fa4aab2ae0993002c7; accessed=2026-10-08T09:21:43.134345+00:00.
+
+    Additional exact excerpt:           "component_name": "Potassium phosphate buffer (see Medium [M578])",
+              "volume": 2,
+              "unit": "ml",
+    solutions[2].concentration (Potassium phosphate buffer (see Medium [M578])): Source batch input: 2 ml = 0.002 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made. Add after autoclaving and cooling; stock strength is distinct from dose. Separate JCM954 preparation excerpt: "Autoclave and, after cooling, add the following solutions (*filter-sterilized or autoclaved) to the medium.". Locator=$.components[1].items[1]; source SHA256=106eedca103eca454196c35494137b6835936de6747254fa4aab2ae0993002c7; accessed=2026-10-08T09:21:43.134345+00:00.
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954
+  supports: SUPPORT
+  snippet: MDS salt water (see Medium No. 574) 767.0 ml
+  explanation: |-
+    solutions[0].concentration (MDS salt water (see Medium [M578])): Source batch input: 767 ml = 0.767 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made. Separate JCM954 preparation excerpt: "Autoclave and, after cooling, add the following solutions (*filter-sterilized or autoclaved) to the medium.". Original-source locator=Recipe table row: MDS salt water (see Medium No. 574). Capture SHA256=f7665ac33e1c984081ebe595da1c4ab35ca8356aeaccd91a986ffc6d73dd6971; accessed=2026-10-08T09:21:46.165737+00:00.
+
+    Additional exact excerpt: 1 M NH4Cl solution* 5.0 ml
+    solutions[1].concentration (1 M NH4Cl solution*): Source batch input: 5 ml = 0.005 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made. Add after autoclaving and cooling; stock strength is distinct from dose. Separate JCM954 preparation excerpt: "Autoclave and, after cooling, add the following solutions (*filter-sterilized or autoclaved) to the medium.". Original-source locator=Recipe table row: 1 M NH4Cl solution*. Capture SHA256=f7665ac33e1c984081ebe595da1c4ab35ca8356aeaccd91a986ffc6d73dd6971; accessed=2026-10-08T09:21:46.165737+00:00.
+
+    Additional exact excerpt: Potassium phosphate buffer (see Medium No. 574) 2.0 ml
+    solutions[2].concentration (Potassium phosphate buffer (see Medium [M578])): Source batch input: 2 ml = 0.002 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made. Add after autoclaving and cooling; stock strength is distinct from dose. Separate JCM954 preparation excerpt: "Autoclave and, after cooling, add the following solutions (*filter-sterilized or autoclaved) to the medium.". Original-source locator=Recipe table row: Potassium phosphate buffer (see Medium No. 574). Capture SHA256=f7665ac33e1c984081ebe595da1c4ab35ca8356aeaccd91a986ffc6d73dd6971; accessed=2026-10-08T09:21:46.165737+00:00.
+references:
+- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1001
+  title: Neutral Oligotrophic Haloarchaeal Medium NO.3
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-08;
+    accession=M1001; original_accession=JCM_M954; response_sha256=106eedca103eca454196c35494137b6835936de6747254fa4aab2ae0993002c7.
+    Authors and publication year not supplied.
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954
+  title: Medium data
+  notes: source_type=culture_collection_page; discovery_mode=cross_reference; accessed_on=2026-10-08;
+    recipe=954 NEUTRAL OLIGOTROPHIC HALOARCHAEAL MEDIUM NO.3. Authors and publication
+    year not supplied; site copyright year is not a publication year.

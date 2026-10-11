@@ -1,0 +1,492 @@
+{
+  "record_path": "data/normalized_yaml/bacterial/taiyang_medium_no_9_prototype.yaml",
+  "id": "CultureMech:010432",
+  "before_sha256": "6f0af5cbde2378df09c65c04e464faad031284e475f67fd857a98d42ab9534c1",
+  "reference": "https://mediadive.dsmz.de/medium/P2",
+  "source_sha256": "b8081b72d9351bd6e873c6c77484baccd7c01a39cd6bd4cd557ec3568e6eff85",
+  "scope": "Read-only source/local graph comparison. No applied YAML or completed per-record review is claimed. User-contributed untested medium, no verified journal methods. Preserve full stock topology, conditional agar and preparation attributes; source labels are not new ontology groundings.",
+  "claims": [
+    {
+      "field": "ingredients[0].concentration",
+      "ingredient": "Clarified rumen fluid",
+      "old": {
+        "value": "25",
+        "unit": "ML_PER_L"
+      },
+      "proposed": {
+        "value": "25",
+        "unit": "ML_PER_L"
+      },
+      "status": "evidence_only_candidate_not_applied",
+      "reference": "https://mediadive.dsmz.de/medium/P2",
+      "snippet": "Clarified rumen fluid 25.0 ml/l - -",
+      "locator": "sol-0 / recipe-0",
+      "calculation": "Direct source per-liter input rate; not total amount after expanding stocks. "
+    },
+    {
+      "field": "ingredients[1].concentration",
+      "ingredient": "Sheep blood",
+      "old": {
+        "value": "25",
+        "unit": "ML_PER_L"
+      },
+      "proposed": {
+        "value": "25",
+        "unit": "ML_PER_L"
+      },
+      "status": "evidence_only_candidate_not_applied",
+      "reference": "https://mediadive.dsmz.de/medium/P2",
+      "snippet": "Sheep blood 25.0 ml/l - -",
+      "locator": "sol-0 / recipe-1",
+      "calculation": "Direct source per-liter input rate; not total amount after expanding stocks. "
+    },
+    {
+      "field": "ingredients[2].concentration",
+      "ingredient": "Peptone",
+      "old": {
+        "value": "1",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "1",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only_candidate_not_applied",
+      "reference": "https://mediadive.dsmz.de/medium/P2",
+      "snippet": "Peptone 1.0 g/l 1 -",
+      "locator": "sol-0 / recipe-3",
+      "calculation": "Direct source per-liter input rate; not total amount after expanding stocks. "
+    },
+    {
+      "field": "ingredients[3].concentration",
+      "ingredient": "Yeast extract",
+      "old": {
+        "value": "1",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "1",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only_candidate_not_applied",
+      "reference": "https://mediadive.dsmz.de/medium/P2",
+      "snippet": "Yeast extract 1.0 g/l 1 -",
+      "locator": "sol-0 / recipe-4",
+      "calculation": "Direct source per-liter input rate; not total amount after expanding stocks. "
+    },
+    {
+      "field": "ingredients[4].concentration",
+      "ingredient": "NaCl",
+      "old": {
+        "value": "1",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "1",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only_candidate_not_applied",
+      "reference": "https://mediadive.dsmz.de/medium/P2",
+      "snippet": "NaCl 1.0 g/l 1 17.112",
+      "locator": "sol-0 / recipe-5",
+      "calculation": "Direct source per-liter input rate; not total amount after expanding stocks. "
+    },
+    {
+      "field": "ingredients[5].concentration",
+      "ingredient": "Cellulose",
+      "old": {
+        "value": "0.5",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "0.5",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only_candidate_not_applied",
+      "reference": "https://mediadive.dsmz.de/medium/P2",
+      "snippet": "Cellulose 0.5 g/l 0.5 -",
+      "locator": "sol-0 / recipe-6",
+      "calculation": "Direct source per-liter input rate; not total amount after expanding stocks. "
+    },
+    {
+      "field": "ingredients[6].concentration",
+      "ingredient": "Pectin",
+      "old": {
+        "value": "0.5",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "0.5",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only_candidate_not_applied",
+      "reference": "https://mediadive.dsmz.de/medium/P2",
+      "snippet": "Pectin 0.5 g/l 0.5 2.575",
+      "locator": "sol-0 / recipe-7",
+      "calculation": "Direct source per-liter input rate; not total amount after expanding stocks. "
+    },
+    {
+      "field": "ingredients[7].concentration",
+      "ingredient": "Starch",
+      "old": {
+        "value": "0.5",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "0.5",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only_candidate_not_applied",
+      "reference": "https://mediadive.dsmz.de/medium/P2",
+      "snippet": "Starch 0.5 g/l 0.5 -",
+      "locator": "sol-0 / recipe-8",
+      "calculation": "Direct source per-liter input rate; not total amount after expanding stocks. "
+    },
+    {
+      "field": "ingredients[8].concentration",
+      "ingredient": "Inulin",
+      "old": {
+        "value": "0.5",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "0.5",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only_candidate_not_applied",
+      "reference": "https://mediadive.dsmz.de/medium/P2",
+      "snippet": "Inulin 0.5 g/l 0.5 -",
+      "locator": "sol-0 / recipe-9",
+      "calculation": "Direct source per-liter input rate; not total amount after expanding stocks. "
+    },
+    {
+      "field": "ingredients[9].concentration",
+      "ingredient": "Trehalose",
+      "old": {
+        "value": "0.5",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "0.5",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only_candidate_not_applied",
+      "reference": "https://mediadive.dsmz.de/medium/P2",
+      "snippet": "Trehalose (filtrate sterilization) 0.5 g/l 0.5 1.461",
+      "locator": "sol-0 / recipe-10",
+      "calculation": "Direct source per-liter input rate; not total amount after expanding stocks. "
+    },
+    {
+      "field": "ingredients[10].concentration",
+      "ingredient": "Sodium pyruvate",
+      "old": {
+        "value": "1",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "1",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only_candidate_not_applied",
+      "reference": "https://mediadive.dsmz.de/medium/P2",
+      "snippet": "Sodium pyruvate (filtrate sterilization) 1.0 g/l 1 9.088",
+      "locator": "sol-0 / recipe-11",
+      "calculation": "Direct source per-liter input rate; not total amount after expanding stocks. "
+    },
+    {
+      "field": "ingredients[11].concentration",
+      "ingredient": "dextrin",
+      "old": {
+        "value": "0.5",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "0.5",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only_candidate_not_applied",
+      "reference": "https://mediadive.dsmz.de/medium/P2",
+      "snippet": "dextrin 0.5 g/l 0.5 -",
+      "locator": "sol-0 / recipe-12",
+      "calculation": "Direct source per-liter input rate; not total amount after expanding stocks. "
+    },
+    {
+      "field": "ingredients[12].concentration",
+      "ingredient": "L-Cysteine HCl",
+      "old": {
+        "value": "0.1",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "0.1",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only_candidate_not_applied",
+      "reference": "https://mediadive.dsmz.de/medium/P2",
+      "snippet": "L-Cysteine HCl (filtrate sterilization) 0.1 g/l 0.1 0.634",
+      "locator": "sol-0 / recipe-13",
+      "calculation": "Direct source per-liter input rate; not total amount after expanding stocks. "
+    },
+    {
+      "field": "ingredients[13].concentration",
+      "ingredient": "Agar",
+      "old": {
+        "value": "15",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "15",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only_candidate_not_applied",
+      "reference": "https://mediadive.dsmz.de/medium/P2",
+      "snippet": "agar (for solid plate medium) 15.0 g/l 15 -",
+      "locator": "sol-0 / recipe-16",
+      "calculation": "Direct source per-liter input rate; not total amount after expanding stocks. Agar is supported only for the record's explicit SOLID_AGAR state."
+    },
+    {
+      "field": "solutions[0].concentration",
+      "ingredient": "Artifical Sea Water",
+      "old": {
+        "value": "50",
+        "unit": "ML_PER_L"
+      },
+      "proposed": {
+        "value": "50",
+        "unit": "ML_PER_L"
+      },
+      "status": "evidence_only_candidate_not_applied",
+      "reference": "https://mediadive.dsmz.de/medium/P2",
+      "snippet": "Artifical Sea Water 50.0 ml - -",
+      "locator": "sol-0 / recipe-2",
+      "calculation": "50.0 ml / source-declared 1 L main-recipe scale; dataset working dose, not a claim that the source supplies a detailed final-water makeup instruction."
+    },
+    {
+      "field": "solutions[1].concentration",
+      "ingredient": "Haemin solution",
+      "old": {
+        "value": "10",
+        "unit": "ML_PER_L"
+      },
+      "proposed": {
+        "value": "10",
+        "unit": "ML_PER_L"
+      },
+      "status": "evidence_only_candidate_not_applied",
+      "reference": "https://mediadive.dsmz.de/medium/P2",
+      "snippet": "Haemin solution (filtrate sterilization) 10.0 ml - -",
+      "locator": "sol-0 / recipe-14",
+      "calculation": "10.0 ml / source-declared 1 L main-recipe scale; dataset working dose, not a claim that the source supplies a detailed final-water makeup instruction."
+    },
+    {
+      "field": "solutions[0].composition[0].concentration",
+      "ingredient": "NaCl",
+      "old": {
+        "value": "23.47",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "23.47",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only_candidate_not_applied",
+      "reference": "https://mediadive.dsmz.de/medium/P2",
+      "snippet": "NaCl 23.47 g/l 23.47 401.608",
+      "locator": "sol-660 / recipe-0",
+      "calculation": "23.47 g/l * 1 = 23.47 g/L inside the seawater stock; no expansion into the final medium."
+    },
+    {
+      "field": "solutions[0].composition[1].concentration",
+      "ingredient": "Na2SO4",
+      "old": {
+        "value": "3.92",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "3.92",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only_candidate_not_applied",
+      "reference": "https://mediadive.dsmz.de/medium/P2",
+      "snippet": "Na2SO4 3.92 g/l 3.92 27.598",
+      "locator": "sol-660 / recipe-1",
+      "calculation": "3.92 g/l * 1 = 3.92 g/L inside the seawater stock; no expansion into the final medium."
+    },
+    {
+      "field": "solutions[0].composition[2].concentration",
+      "ingredient": "MgCl2 x 6 H2O",
+      "old": {
+        "value": "10.64",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "10.64",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only_candidate_not_applied",
+      "reference": "https://mediadive.dsmz.de/medium/P2",
+      "snippet": "MgCl2 x 6 H2O 10.64 g/l 10.64 52.336",
+      "locator": "sol-660 / recipe-3",
+      "calculation": "10.64 g/l * 1 = 10.64 g/L inside the seawater stock; no expansion into the final medium."
+    },
+    {
+      "field": "solutions[0].composition[3].concentration",
+      "ingredient": "CaCl2",
+      "old": {
+        "value": "1.10",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "1.10",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only_candidate_not_applied",
+      "reference": "https://mediadive.dsmz.de/medium/P2",
+      "snippet": "CaCl2 1.10 g/l 1.1 9.912",
+      "locator": "sol-660 / recipe-4",
+      "calculation": "1.10 g/l * 1 = 1.10 g/L inside the seawater stock; no expansion into the final medium."
+    },
+    {
+      "field": "solutions[0].composition[4].concentration",
+      "ingredient": "NaHCO3",
+      "old": {
+        "value": "0.192",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "0.192",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only_candidate_not_applied",
+      "reference": "https://mediadive.dsmz.de/medium/P2",
+      "snippet": "NaHCO3 192.00 mg/l 0.192 2.286",
+      "locator": "sol-660 / recipe-5",
+      "calculation": "192.00 mg/l * 0.001 = 0.19200 g/L inside the seawater stock; no expansion into the final medium."
+    },
+    {
+      "field": "solutions[0].composition[5].concentration",
+      "ingredient": "KCl",
+      "old": {
+        "value": "0.664",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "0.664",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only_candidate_not_applied",
+      "reference": "https://mediadive.dsmz.de/medium/P2",
+      "snippet": "KCl 664.00 mg/l 0.664 8.907",
+      "locator": "sol-660 / recipe-6",
+      "calculation": "664.00 mg/l * 0.001 = 0.66400 g/L inside the seawater stock; no expansion into the final medium."
+    },
+    {
+      "field": "solutions[0].composition[6].concentration",
+      "ingredient": "KBr",
+      "old": {
+        "value": "0.096",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "0.096",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only_candidate_not_applied",
+      "reference": "https://mediadive.dsmz.de/medium/P2",
+      "snippet": "KBr 96.00 mg/l 0.096 0.807",
+      "locator": "sol-660 / recipe-7",
+      "calculation": "96.00 mg/l * 0.001 = 0.09600 g/L inside the seawater stock; no expansion into the final medium."
+    },
+    {
+      "field": "solutions[0].composition[7].concentration",
+      "ingredient": "H3BO3",
+      "old": {
+        "value": "0.026",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "0.026",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only_candidate_not_applied",
+      "reference": "https://mediadive.dsmz.de/medium/P2",
+      "snippet": "H3BO3 26.00 mg/l 0.026 0.42",
+      "locator": "sol-660 / recipe-8",
+      "calculation": "26.00 mg/l * 0.001 = 0.02600 g/L inside the seawater stock; no expansion into the final medium."
+    },
+    {
+      "field": "solutions[0].composition[8].concentration",
+      "ingredient": "SrCl2",
+      "old": {
+        "value": "0.024",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "0.024",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only_candidate_not_applied",
+      "reference": "https://mediadive.dsmz.de/medium/P2",
+      "snippet": "SrCl2 24.00 mg/l 0.024 0.151",
+      "locator": "sol-660 / recipe-9",
+      "calculation": "24.00 mg/l * 0.001 = 0.02400 g/L inside the seawater stock; no expansion into the final medium."
+    },
+    {
+      "field": "solutions[0].composition[9].concentration",
+      "ingredient": "NaF",
+      "old": {
+        "value": "0.003",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "0.003",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only_candidate_not_applied",
+      "reference": "https://mediadive.dsmz.de/medium/P2",
+      "snippet": "NaF 3.00 mg/l 0.003 0.071",
+      "locator": "sol-660 / recipe-10",
+      "calculation": "3.00 mg/l * 0.001 = 0.00300 g/L inside the seawater stock; no expansion into the final medium."
+    },
+    {
+      "field": "solutions[1].composition[0].concentration",
+      "ingredient": "Haemin",
+      "old": {
+        "value": "0.5",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "0.5",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only_candidate_not_applied",
+      "reference": "https://mediadive.dsmz.de/medium/P2",
+      "snippet": "Haemin 50 mg 0.5 0.767",
+      "locator": "sol-124 / recipe-0",
+      "calculation": "50 mg / 0.100 L = 0.5 g/L stock; final stock makeup is explicit in the preparation step."
+    },
+    {
+      "field": "solutions[1].composition[1].concentration",
+      "ingredient": "NaOH (1 N)",
+      "old": {
+        "value": "10",
+        "unit": "ML_PER_L"
+      },
+      "proposed": {
+        "value": "10",
+        "unit": "ML_PER_L"
+      },
+      "status": "evidence_only_candidate_not_applied",
+      "reference": "https://mediadive.dsmz.de/medium/P2",
+      "snippet": "NaOH (1 N) 1 ml - -",
+      "locator": "sol-124 / recipe-1",
+      "calculation": "1 ml of the source-specified 1 N reagent / 0.100 L stock = 10 ML_PER_L input rate; not a concentration assertion for solid NaOH and not an inferred normality-to-molarity conversion."
+    }
+  ],
+  "water_makeup": {
+    "status": "not_quantified",
+    "source_snippet": "1 Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled water and filter sterilize. Store refrigerated.",
+    "missing_local_component": "solutions[1].composition: distilled water used to make up the haemin stock",
+    "next_action": "Represent the water as a make-up ingredient without a fixed added-water amount, with the exact preparation snippet. Do not assert 100 ml of water added. Source locators are page-scoped, not newly verified global solution accessions."
+  }
+}

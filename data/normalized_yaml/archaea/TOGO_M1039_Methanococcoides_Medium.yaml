@@ -12,6 +12,27 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Nutrient source; Properties: Defined component, Organic compound,
     Simple component'
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1039
+    supports: SUPPORT
+    snippet: |2-
+                "component_name": "trimethylamine・HCl",
+                "volume": 3,
+                "unit": "g/L",
+    explanation: 'ingredients[0].concentration: Explicit 3 g/L trimethylamine hydrochloride
+      supplement, not an inferred stock dilution. Recipe-specific source evidence;
+      batch inputs are not final-medium concentrations. No final volume, unspecified
+      percentage basis, ontology grounding or growth claim is inferred. Locator=$.components[0].items[0];
+      accessed=2026-10-08T10:14:03.854291+00:00; capture SHA256=929f45c5edd73721bba61f830b6a7706fb82aa34495f2f5a0681196ae912475c.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=986
+    supports: SUPPORT
+    snippet: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    explanation: 'ingredients[0].concentration: The original collection recipe explicitly
+      requires 3.0 g/L trimethylamine hydrochloride. This is the supplement, not a
+      concentration inferred from the base recipe. Recipe-specific source evidence;
+      batch inputs are not final-medium concentrations. No final volume, unspecified
+      percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986
+      recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.'
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -71,11 +92,102 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=2
+- timestamp: '2026-10-08T10:47:19.502771+00:00'
+  curator: codex
+  action: REPAIRED_METHANOGEN_STOCK_DOSES_AND_BASE_REFERENCE_WITH_EVIDENCE
+  notes: Corrected recipe-specific quantities and provenance; preserved stock-strength
+    conflicts and unresolved final-volume/base-composition claims. Existing history,
+    conditions and organism claims unchanged.
+  source: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1039
+  changes: 'solutions[0].concentration -> solutions[0].concentration: {''value'':
+    ''1'', ''unit'': ''G_PER_L''} -> {''value'': ''1'', ''unit'': ''L''} (correct);
+    ingredients[0].concentration -> ingredients[0].concentration: {''value'': ''3'',
+    ''unit'': ''G_PER_L''} -> {''value'': ''3'', ''unit'': ''G_PER_L''} (evidence_only);
+    None -> preparation_steps[0].description: None -> Use Medium No. [265] supplemented
+    with 3.0 g/L trimethylamine・HCl and adjust pH to 7.0 -- 7.2. Prepare the medium
+    and cultivate under a N2--CO2(80:20, v/v) gas mixture. (add_stage); ingredients[1].concentration
+    -> ingredients[1].concentration: {''value'': ''variable'', ''unit'': ''VARIABLE''}
+    -> {''value'': ''variable'', ''unit'': ''VARIABLE''} (unsupported); ingredients[2].concentration
+    -> ingredients[2].concentration: {''value'': ''variable'', ''unit'': ''VARIABLE''}
+    -> {''value'': ''variable'', ''unit'': ''VARIABLE''} (unsupported); None -> solutions[0].culturemech_term:
+    None -> {''id'': ''CultureMech:009148'', ''label'': ''methanogenium_medium''}
+    (add_reference); None -> solutions[0].culturemech_term: None -> {''id'': ''CultureMech:009148'',
+    ''label'': ''methanogenium_medium''} (evidence_only); ingredients[0].concentration
+    -> ingredients[0].concentration: {''value'': ''3'', ''unit'': ''G_PER_L''} ->
+    {''value'': ''3'', ''unit'': ''G_PER_L''} (evidence_only); solutions[0].composition
+    -> solutions[0].composition: [] -> [] (unsupported)'
 solutions:
 - preferred_term: METHANOGENIUM MEDIUM (see Medium [M257])
   composition: []
-  notes: Cross-reference to Medium M257
+  notes: |-
+    Cross-reference to Medium M257
+
+    TOGO specifies 1 L of referenced M257 base medium as a recipe input, not 1 g/L or a measured final-medium volume. This dose is dataset-specific; inherited base concentrations remain unverified.
   concentration:
     value: '1'
-    unit: G_PER_L
+    unit: L
   name: Unknown solution
+  culturemech_term:
+    id: CultureMech:009148
+    label: methanogenium_medium
+evidence:
+- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1039
+  supports: SUPPORT
+  snippet: |2-
+              "component_name": "METHANOGENIUM MEDIUM (see Medium [M257])",
+              "volume": 1,
+              "unit": "L",
+  explanation: |-
+    solutions[0].concentration: TOGO specifies 1 L of referenced M257 base medium as a recipe input, not 1 g/L or a measured final-medium volume. This dose is dataset-specific; inherited base concentrations remain unverified. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=$.components[0].items[1]; accessed=2026-10-08T10:14:03.854291+00:00; capture SHA256=929f45c5edd73721bba61f830b6a7706fb82aa34495f2f5a0681196ae912475c.
+
+    Additional exact excerpt: Use Medium No. [265] supplemented with 3.0 g/L trimethylamine・HCl and adjust pH to 7.0 -- 7.2. Prepare the medium and cultivate under a N2--CO2(80:20, v/v) gas mixture.
+    preparation_steps[0].description: Restore source-specific base/supplement, pH and gas instructions; do not inherit the base medium's different gas mixture. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=$.comments[1].comment; accessed=2026-10-08T10:14:03.854291+00:00; capture SHA256=929f45c5edd73721bba61f830b6a7706fb82aa34495f2f5a0681196ae912475c.
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=986
+  supports: SUPPORT
+  snippet: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+  explanation: 'solutions[0].culturemech_term: Reference to JCM265, matched to tracked
+    data/normalized_yaml/archaea/TOGO_M257_Methanogenium_Medium.yaml (CultureMech:009148).
+    This establishes base identity, not validation of copied concentrations. Recipe-specific
+    source evidence; batch inputs are not final-medium concentrations. No final volume,
+    unspecified percentage basis, ontology grounding or growth claim is inferred.
+    Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00;
+    capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.'
+- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M257
+  supports: SUPPORT
+  snippet: |-
+    {
+        "gm": "http://togomedium.org/medium/M257",
+        "name": "Methanogenium Medium",
+        "original_media_id": "JCM_M265",
+        "src_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=265"
+      }
+  explanation: 'solutions[0].culturemech_term: Cross-reference source accession and
+    name verify the linked base recipe identity only. Recipe-specific source evidence;
+    batch inputs are not final-medium concentrations. No final volume, unspecified
+    percentage basis, ontology grounding or growth claim is inferred. Locator=$.meta;
+    accessed=2026-10-08T10:36:39.664706+00:00; capture SHA256=8362e9b72c107a89d5ee3198ba6631dac1674e68b88f34ff252aa616032fd513.'
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Use Medium No. [265] supplemented with 3.0 g/L trimethylamine・HCl and
+    adjust pH to 7.0 -- 7.2. Prepare the medium and cultivate under a N2--CO2(80:20,
+    v/v) gas mixture.
+references:
+- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1039
+  title: Methanococcoides Medium
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-08;
+    capture_sha256=929f45c5edd73721bba61f830b6a7706fb82aa34495f2f5a0681196ae912475c.
+    Authors and publication year not supplied; page copyright year is not publication
+    metadata.
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=986
+  title: Medium data
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-08; capture_sha256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+    Authors and publication year not supplied; page copyright year is not publication
+    metadata.
+- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M257
+  title: Methanogenium Medium
+  notes: source_type=dataset; discovery_mode=cross_reference; accessed_on=2026-10-08;
+    capture_sha256=8362e9b72c107a89d5ee3198ba6631dac1674e68b88f34ff252aa616032fd513.
+    Authors and publication year not supplied; page copyright year is not publication
+    metadata.

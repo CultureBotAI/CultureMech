@@ -30,6 +30,32 @@ composition:
     label: sodium chloride
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/570
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "NaCl",
+                      "compound_id": 43,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "g",
+                      "g_l": 5,
+                      "mmol_l": 85.5578,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[2].concentration (NaCl) in
+      MediaDive solution 570; locator=$.data.recipe[2] (compound_id=43). Provider
+      explicitly reports g_l=5. Arithmetic check: 5 g * 1 g/g / (1000 ml / 1000 ml
+      per L) = 5 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T08:24:43.513992+00:00; response SHA256=2aed25dfabf832d56eaa9713ffd6ffe1f699642bb545369bdfb848aac1f58134.'
 - preferred_term: K2HPO4
   concentration:
     value: '2.5'
@@ -42,6 +68,32 @@ composition:
     label: dipotassium hydrogen phosphate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/570
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "K2HPO4",
+                      "compound_id": 10,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2.5,
+                      "unit": "g",
+                      "g_l": 2.5,
+                      "mmol_l": 14.3533,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[3].concentration (K2HPO4)
+      in MediaDive solution 570; locator=$.data.recipe[3] (compound_id=10). Provider
+      explicitly reports g_l=2.5. Arithmetic check: 2.5 g * 1 g/g / (1000 ml / 1000
+      ml per L) = 2.5 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T08:24:43.513992+00:00; response SHA256=2aed25dfabf832d56eaa9713ffd6ffe1f699642bb545369bdfb848aac1f58134.'
 - preferred_term: Yeast extract
   concentration:
     value: '4'
@@ -49,6 +101,32 @@ composition:
   term:
     id: mediadive.compound:16
     label: Yeast extract
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/570
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 5,
+                      "compound": "Yeast extract",
+                      "compound_id": 16,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 4,
+                      "unit": "g",
+                      "g_l": 4,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[4].concentration (Yeast extract)
+      in MediaDive solution 570; locator=$.data.recipe[4] (compound_id=16). Provider
+      explicitly reports g_l=4. Arithmetic check: 4 g * 1 g/g / (1000 ml / 1000 ml
+      per L) = 4 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T08:24:43.513992+00:00; response SHA256=2aed25dfabf832d56eaa9713ffd6ffe1f699642bb545369bdfb848aac1f58134.'
 - preferred_term: Horse serum
   concentration:
     value: '100'
@@ -129,6 +207,18 @@ curation_history:
     MICRO:0000175 (remove_chebi_term). Reviewed identities: https://github.com/CultureBotAI/MediaIngredientMech/tree/24562493919391df4468a4285b7c997960cc8868.
     Publication resolver: MIM label index 9f09e4fb97fb0e6cbbd6f25baca40b36512adb88.
     MediaDive source IDs and concentrations preserved.'
+- timestamp: '2026-10-07T08:27:51.574555+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/570
+  changes: 'composition[2].concentration: {"unit": "G_PER_L", "value": "5"} -> {"unit":
+    "G_PER_L", "value": "5"} (evidence_only); composition[3].concentration: {"unit":
+    "G_PER_L", "value": "2.5"} -> {"unit": "G_PER_L", "value": "2.5"} (evidence_only);
+    composition[4].concentration: {"unit": "G_PER_L", "value": "4"} -> {"unit": "G_PER_L",
+    "value": "4"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -137,3 +227,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/570
+  title: 'MediaDive solution 570: Main sol. 303'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=2aed25dfabf832d56eaa9713ffd6ffe1f699642bb545369bdfb848aac1f58134;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

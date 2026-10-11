@@ -1,0 +1,68 @@
+{
+  "terminal": true,
+  "input_records": 15910,
+  "output_groups": 10777,
+  "routing": {
+    "total_processed": 15910,
+    "excluded_solutions": 4785,
+    "skipped_no_fingerprint": 2,
+    "skipped_error": 340,
+    "successfully_fingerprinted": 10783,
+    "reasons": {
+      "other_error": 340,
+      "no_valid_ingredients": 2
+    }
+  },
+  "targets": [
+    {
+      "path": "data/normalized_yaml/archaea/JCM_J151_PYROCOCCUS_MEDIUM.yaml",
+      "group_paths": [
+        "data/normalized_yaml/archaea/JCM_J151_PYROCOCCUS_MEDIUM.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    },
+    {
+      "path": "data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    },
+    {
+      "path": "data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    },
+    {
+      "path": "data/normalized_yaml/archaea/desulfurococcus_amylolyticus_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/archaea/desulfurococcus_amylolyticus_medium.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/jcm_medium_no_197.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/jcm_medium_no_197.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/togo_medium_m190.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    }
+  ],
+  "source_sha256": "8569699adb42e2fe6cb80997535456aecf4ebb9822f7fa34267574fe5a5234fb",
+  "derived_yaml_written": false
+}

@@ -1,0 +1,39 @@
+{
+  "terminal": true,
+  "record_hashes_verified": 6,
+  "report_rows_verified": 136,
+  "source_checks": [
+    {
+      "medium_id": "1157",
+      "pdf_hash_and_text": true,
+      "paired_apis": true,
+      "mapping": true
+    },
+    {
+      "medium_id": "1164",
+      "pdf_hash_and_text": true,
+      "paired_apis": true,
+      "mapping": true
+    }
+  ],
+  "readback": {
+    "mode": "verify",
+    "records": 6,
+    "changed": 0,
+    "already_applied": 6,
+    "scoped_claims": 136
+  },
+  "focused_tests": 156,
+  "historical_cohorts_verified": 3,
+  "publication_ready": false,
+  "all_record_goal_complete": false,
+  "known_failed_gates": {
+    "retention": 1,
+    "references": 1,
+    "verify-merges": 1,
+    "freshness": 1
+  },
+  "initial_focused_test_failure_resolved_by": "focused-recheck.json",
+  "network_reference_recheck": "reference-validation-network-recheck.json",
+  "scope": "Exact six-record applied plan and actual source captures verified; partial locked Python 3.13, not full CI. Broader unresolved corpus and merge/citation gates remain."
+}

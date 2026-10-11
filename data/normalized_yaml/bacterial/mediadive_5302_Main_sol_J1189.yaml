@@ -54,6 +54,32 @@ composition:
     label: sodium chloride
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5302
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 5,
+                      "compound": "NaCl",
+                      "compound_id": 43,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 50,
+                      "unit": "g",
+                      "g_l": 50,
+                      "mmol_l": 855.578,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[4].concentration (NaCl) in
+      MediaDive solution 5302; locator=$.data.recipe[4] (compound_id=43). Provider
+      explicitly reports g_l=50. Arithmetic check: 50 g * 1 g/g / (1000 ml / 1000
+      ml per L) = 50 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T09:53:22.218536+00:00; response SHA256=10ee12cc1bbfaed0fa962455eb92e354f5e32fefb3170fa5434baed8897194ff.'
 - preferred_term: Distilled water
   concentration:
     value: '990'
@@ -100,6 +126,15 @@ curation_history:
   action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
   notes: '2 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
     disambiguation, or mixture de-ground.'
+- timestamp: '2026-10-07T09:59:54.456952+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/5302
+  changes: 'composition[4].concentration: {"unit": "G_PER_L", "value": "50"} -> {"unit":
+    "G_PER_L", "value": "50"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -108,3 +143,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/5302
+  title: 'MediaDive solution 5302: Main sol. J1189'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=10ee12cc1bbfaed0fa962455eb92e354f5e32fefb3170fa5434baed8897194ff;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

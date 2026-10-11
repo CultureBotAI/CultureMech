@@ -8,22 +8,10 @@ physical_state: SOLID_AGAR
 ph_range:
   min: 6.7
   max: 7.0
-notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 323 | DSMZ Medium: 323 (mediadive.medium:323)
-  | Aerobic: Yes
+notes: |-
+  pH buffer: KOH | Source: KOMODO ModelSEED | ID: 323 | DSMZ Medium: 323 (mediadive.medium:323) | Aerobic: Yes
 
-
-  Commercial Product: LB Medium (Luria-Bertani, Miller formulation)
-
-  Supplier: Multiple suppliers (Difco, Sigma, etc.)
-
-  Catalog: Multiple (L3522 Sigma, 244520 BD)
-
-  Source: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-
-  Accessed: 2026-03-28
-
-
-  Constituent composition researched from product specification.'
+  Source-specific KOMODO amounts are not copied from DSMZ323. Use the compound-table amount of 1.13 g/L for Cysteine-HCl x H2O. Its row explicitly includes SEED-cpd00084, which this same source names L-Cysteine in the SEED metabolite table. Retain the existing L-cysteine hydrochloride hydrate links on that source-specific identity evidence. The aggregate SEED molar concentration is quoted only to identify the row; it is not converted into a supplied-salt amount or substituted for the compound-table rate. Unresolved: Required physical_state SOLID_AGAR remains an unverified legacy classification; exact KOMODO table has no agar and DSMZ is a different quantified formulation.
 media_term:
   preferred_term: KOMODO Medium 323
   term:
@@ -35,221 +23,434 @@ ingredients:
     id: CHEBI:86158
     label: calcium chloride dihydrate
   concentration:
-    value: '0.11976'
+    value: '0.13'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  notes: Use the gram amount in this exact KOMODO compound table with its explicit
+    per-liter basis, not the different DSMZ formulation or the separate SEED aggregate
+    table.
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323
+    supports: SUPPORT
+    snippet: Gram & Mol amounts are per Liter of medium. Trace metabolites & gases
+      usually do not have amounts
+    explanation: |-
+      ingredients[0].concentration: Use the gram amount in this exact KOMODO compound table with its explicit per-liter basis, not the different DSMZ formulation or the separate SEED aggregate table. Locator=Metabolites list heading; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
+
+      Additional exact excerpt at Metabolites list, compound=CaCl2 x 2 H2O:
+      CaCl2 x 2 H2O Calcium chloride SEED-cpd00063#cpd00099## 0.13 0.00
+      ingredients[0].concentration: Use the gram amount in this exact KOMODO compound table with its explicit per-liter basis, not the different DSMZ formulation or the separate SEED aggregate table. Locator=Metabolites list, compound=CaCl2 x 2 H2O; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
   concentration:
-    value: '0.189621'
+    value: '0.22'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
+  notes: Use the gram amount in this exact KOMODO compound table with its explicit
+    per-liter basis, not the different DSMZ formulation or the separate SEED aggregate
+    table.
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323
+    supports: SUPPORT
+    snippet: Gram & Mol amounts are per Liter of medium. Trace metabolites & gases
+      usually do not have amounts
+    explanation: |-
+      ingredients[1].concentration: Use the gram amount in this exact KOMODO compound table with its explicit per-liter basis, not the different DSMZ formulation or the separate SEED aggregate table. Locator=Metabolites list heading; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
+
+      Additional exact excerpt at Metabolites list, compound=MgSO4 x 7 H2O:
+      MgSO4 x 7 H2O Magnesium sulfate SEED-cpd00048#cpd00254## 0.22 0.00
+      ingredients[1].concentration: Use the gram amount in this exact KOMODO compound table with its explicit per-liter basis, not the different DSMZ formulation or the separate SEED aggregate table. Locator=Metabolites list, compound=MgSO4 x 7 H2O; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
   concentration:
-    value: '0.449102'
+    value: '0.51'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
+  notes: Use the gram amount in this exact KOMODO compound table with its explicit
+    per-liter basis, not the different DSMZ formulation or the separate SEED aggregate
+    table.
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323
+    supports: SUPPORT
+    snippet: Gram & Mol amounts are per Liter of medium. Trace metabolites & gases
+      usually do not have amounts
+    explanation: |-
+      ingredients[2].concentration: Use the gram amount in this exact KOMODO compound table with its explicit per-liter basis, not the different DSMZ formulation or the separate SEED aggregate table. Locator=Metabolites list heading; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
+
+      Additional exact excerpt at Metabolites list, compound=KH2PO4:
+      KH2PO4 Potassium dihydrogen phosphate SEED-cpd00009#cpd00205## 0.51 0.00
+      ingredients[2].concentration: Use the gram amount in this exact KOMODO compound table with its explicit per-liter basis, not the different DSMZ formulation or the separate SEED aggregate table. Locator=Metabolites list, compound=KH2PO4; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
   concentration:
-    value: '0.449102'
+    value: '0.51'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  notes: Use the gram amount in this exact KOMODO compound table with its explicit
+    per-liter basis, not the different DSMZ formulation or the separate SEED aggregate
+    table.
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323
+    supports: SUPPORT
+    snippet: Gram & Mol amounts are per Liter of medium. Trace metabolites & gases
+      usually do not have amounts
+    explanation: |-
+      ingredients[3].concentration: Use the gram amount in this exact KOMODO compound table with its explicit per-liter basis, not the different DSMZ formulation or the separate SEED aggregate table. Locator=Metabolites list heading; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
+
+      Additional exact excerpt at Metabolites list, compound=K2HPO4:
+      K2HPO4 di Potassium hydrogen phosphate SEED-cpd00009#cpd00205## 0.51 0.00
+      ingredients[3].concentration: Use the gram amount in this exact KOMODO compound table with its explicit per-liter basis, not the different DSMZ formulation or the separate SEED aggregate table. Locator=Metabolites list, compound=K2HPO4; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
     label: sodium chloride
   concentration:
-    value: '0.898204'
+    value: '1.02'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
+  notes: Use the gram amount in this exact KOMODO compound table with its explicit
+    per-liter basis, not the different DSMZ formulation or the separate SEED aggregate
+    table.
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323
+    supports: SUPPORT
+    snippet: Gram & Mol amounts are per Liter of medium. Trace metabolites & gases
+      usually do not have amounts
+    explanation: |-
+      ingredients[4].concentration: Use the gram amount in this exact KOMODO compound table with its explicit per-liter basis, not the different DSMZ formulation or the separate SEED aggregate table. Locator=Metabolites list heading; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
+
+      Additional exact excerpt at Metabolites list, compound=NaCl:
+      NaCl NaCl SEED-cpd00099#cpd00971## 1.02 0.02
+      ingredients[4].concentration: Use the gram amount in this exact KOMODO compound table with its explicit per-liter basis, not the different DSMZ formulation or the separate SEED aggregate table. Locator=Metabolites list, compound=NaCl; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
     label: ammonium sulfate
   concentration:
-    value: '0.898204'
+    value: '1.02'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
     label: ammonium sulfate
+  notes: Use the gram amount in this exact KOMODO compound table with its explicit
+    per-liter basis, not the different DSMZ formulation or the separate SEED aggregate
+    table.
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323
+    supports: SUPPORT
+    snippet: Gram & Mol amounts are per Liter of medium. Trace metabolites & gases
+      usually do not have amounts
+    explanation: |-
+      ingredients[5].concentration: Use the gram amount in this exact KOMODO compound table with its explicit per-liter basis, not the different DSMZ formulation or the separate SEED aggregate table. Locator=Metabolites list heading; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
+
+      Additional exact excerpt at Metabolites list, compound=(NH4)2SO4:
+      (NH4)2SO4 Ammonium sulfate SEED-cpd00013#cpd00048## 1.02 0.01
+      ingredients[5].concentration: Use the gram amount in this exact KOMODO compound table with its explicit per-liter basis, not the different DSMZ formulation or the separate SEED aggregate table. Locator=Metabolites list, compound=(NH4)2SO4; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
 - preferred_term: Yeast extract
   concentration:
-    value: '1.99601'
+    value: '2.27'
     unit: G_PER_L
+  notes: Use the gram amount in this exact KOMODO compound table with its explicit
+    per-liter basis, not the different DSMZ formulation or the separate SEED aggregate
+    table.
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323
+    supports: SUPPORT
+    snippet: Gram & Mol amounts are per Liter of medium. Trace metabolites & gases
+      usually do not have amounts
+    explanation: |-
+      ingredients[6].concentration: Use the gram amount in this exact KOMODO compound table with its explicit per-liter basis, not the different DSMZ formulation or the separate SEED aggregate table. Locator=Metabolites list heading; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
+
+      Additional exact excerpt at Metabolites list, compound=Yeast extract (Oxoid):
+      Yeast extract (Oxoid) Yeast extract rich-peptone# 2.27 null
+      ingredients[6].concentration: Use the gram amount in this exact KOMODO compound table with its explicit per-liter basis, not the different DSMZ formulation or the separate SEED aggregate table. Locator=Metabolites list, compound=Yeast extract (Oxoid); accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
 - preferred_term: Trypticase peptone
   concentration:
-    value: '1.99601'
+    value: '2.27'
     unit: G_PER_L
-- preferred_term: Sodium resazurin
+  notes: Use the gram amount in this exact KOMODO compound table with its explicit
+    per-liter basis, not the different DSMZ formulation or the separate SEED aggregate
+    table.
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323
+    supports: SUPPORT
+    snippet: Gram & Mol amounts are per Liter of medium. Trace metabolites & gases
+      usually do not have amounts
+    explanation: |-
+      ingredients[7].concentration: Use the gram amount in this exact KOMODO compound table with its explicit per-liter basis, not the different DSMZ formulation or the separate SEED aggregate table. Locator=Metabolites list heading; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
+
+      Additional exact excerpt at Metabolites list, compound=Trypticase (BBL):
+      Trypticase (BBL) Trypticase rich-peptone# 2.27 null
+      ingredients[7].concentration: Use the gram amount in this exact KOMODO compound table with its explicit per-liter basis, not the different DSMZ formulation or the separate SEED aggregate table. Locator=Metabolites list, compound=Trypticase (BBL); accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
+- preferred_term: Resazurin
   concentration:
-    value: '0.000499002'
+    value: '0.00113'
     unit: G_PER_L
   term:
     id: CHEBI:8806
     label: Resazurin
-- preferred_term: L-Cysteine HCl x H2O
+  notes: Use the gram amount in this exact KOMODO compound table with its explicit
+    per-liter basis, not the different DSMZ formulation or the separate SEED aggregate
+    table. The source says Resazurin, not sodium resazurin. The rate cannot silently
+    be attached to the sodium-salt name; the current base-compound CHEBI link is not
+    newly certified by this comparison. The record now uses the exact source chemical
+    name Resazurin; no sodium salt is asserted for this KOMODO input.
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323
+    supports: SUPPORT
+    snippet: Gram & Mol amounts are per Liter of medium. Trace metabolites & gases
+      usually do not have amounts
+    explanation: |-
+      ingredients[8].concentration: Use the gram amount in this exact KOMODO compound table with its explicit per-liter basis, not the different DSMZ formulation or the separate SEED aggregate table. The source says Resazurin, not sodium resazurin. The rate cannot silently be attached to the sodium-salt name; the current base-compound CHEBI link is not newly certified by this comparison. The record now uses the exact source chemical name Resazurin; no sodium salt is asserted for this KOMODO input. Locator=Metabolites list heading; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
+
+      Additional exact excerpt at Metabolites list, compound=Resazurin:
+      Resazurin Resazurin SEED-cpd08053### 1.13E-3 4.95E-6
+      ingredients[8].concentration: Use the gram amount in this exact KOMODO compound table with its explicit per-liter basis, not the different DSMZ formulation or the separate SEED aggregate table. The source says Resazurin, not sodium resazurin. The rate cannot silently be attached to the sodium-salt name; the current base-compound CHEBI link is not newly certified by this comparison. The record now uses the exact source chemical name Resazurin; no sodium salt is asserted for this KOMODO input. Locator=Metabolites list, compound=Resazurin; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
+- preferred_term: Cysteine-HCl x H2O
+  concentration:
+    value: '1.13'
+    unit: G_PER_L
+  notes: Use the compound-table amount of 1.13 g/L for Cysteine-HCl x H2O. Its row
+    explicitly includes SEED-cpd00084, which this same source names L-Cysteine in
+    the SEED metabolite table. Retain the existing L-cysteine hydrochloride hydrate
+    links on that source-specific identity evidence. The aggregate SEED molar concentration
+    is quoted only to identify the row; it is not converted into a supplied-salt amount
+    or substituted for the compound-table rate.
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323
+    supports: SUPPORT
+    snippet: Cysteine-HCl x H2O Cysteine-HCl SEED-cpd00084#cpd00099## 1.13 0.01
+    explanation: |-
+      ingredients[9].concentration; ingredients[9].term; ingredients[9].mediaingredientmech_chebi_term: Use the compound-table amount of 1.13 g/L for Cysteine-HCl x H2O. Its row explicitly includes SEED-cpd00084, which this same source names L-Cysteine in the SEED metabolite table. Retain the existing L-cysteine hydrochloride hydrate links on that source-specific identity evidence. The aggregate SEED molar concentration is quoted only to identify the row; it is not converted into a supplied-salt amount or substituted for the compound-table rate. Additional exact excerpt at the compound-table heading: Gram & Mol amounts are per Liter of medium. Trace metabolites & gases usually do not have amounts
+      Additional exact excerpt at SEED metabolites list, cpd00084:
+      cpd00084 L-Cysteine 0.006514835812130637
+      Locator=compound and SEED metabolite tables; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
   term:
     id: CHEBI:91248
     label: L-cysteine hydrochloride hydrate
-  concentration:
-    value: '0.998004'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:91248
     label: L-cysteine hydrochloride hydrate
-- preferred_term: Na2CO3
-  term:
-    id: CHEBI:29377
-    label: sodium carbonate
-  concentration:
-    value: '2.49501'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:29377
-    label: sodium carbonate
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
     label: D-glucose
   concentration:
-    value: '1.99601'
+    value: '2.27'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17634
     label: D-glucose
-- preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: agar
-  concentration:
-    value: '11.976'
-    unit: G_PER_L
-  notes: ' (for solid medium)'
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
+  notes: Use the gram amount in this exact KOMODO compound table with its explicit
+    per-liter basis, not the different DSMZ formulation or the separate SEED aggregate
+    table.
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323
+    supports: SUPPORT
+    snippet: Gram & Mol amounts are per Liter of medium. Trace metabolites & gases
+      usually do not have amounts
+    explanation: |-
+      ingredients[10].concentration: Use the gram amount in this exact KOMODO compound table with its explicit per-liter basis, not the different DSMZ formulation or the separate SEED aggregate table. Locator=Metabolites list heading; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
+
+      Additional exact excerpt at Metabolites list, compound=Glucose:
+      Glucose D-Glucose SEED-cpd00027### 2.27 0.01
+      ingredients[10].concentration: Use the gram amount in this exact KOMODO compound table with its explicit per-liter basis, not the different DSMZ formulation or the separate SEED aggregate table. Locator=Metabolites list, compound=Glucose; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
 - preferred_term: n-Butyric acid
   term:
     id: CHEBI:30772
     label: butyric acid
-  concentration:
-    value: '5.8'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:30772
     label: butyric acid
+  notes: The exact KOMODO compound row has a null gram amount. The current quantity
+    was copied from a different DSMZ preparation/stock stage. Retain the ingredient
+    identity but withdraw this unsupported numeric assertion; missing is neither zero
+    nor a measured amount. No concentration is supplied by the separate SEED aggregate
+    table.
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323
+    supports: SUPPORT
+    snippet: Gram & Mol amounts are per Liter of medium. Trace metabolites & gases
+      usually do not have amounts
+    explanation: |-
+      ingredients[11].concentration: The exact KOMODO compound row has a null gram amount. The current quantity was copied from a different DSMZ preparation/stock stage. Retain the ingredient identity but withdraw this unsupported numeric assertion; missing is neither zero nor a measured amount. No concentration is supplied by the separate SEED aggregate table. Locator=Metabolites list heading; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
+
+      Additional exact excerpt at Metabolites list, compound=n-Butyric acid:
+      n-Butyric acid n-Butyric acid SEED-cpd00211### null null
+      ingredients[11].concentration: The exact KOMODO compound row has a null gram amount. The current quantity was copied from a different DSMZ preparation/stock stage. Retain the ingredient identity but withdraw this unsupported numeric assertion; missing is neither zero nor a measured amount. No concentration is supplied by the separate SEED aggregate table. Locator=Metabolites list, compound=n-Butyric acid; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
 - preferred_term: iso-Butyric acid
   term:
     id: CHEBI:16135
     label: isobutyric acid
-  concentration:
-    value: '275.5'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:16135
     label: isobutyric acid
-- preferred_term: Tryptone
-  term:
-    id: MICRO:0000182
-    label: tryptone
-  concentration:
-    value: '10.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
-    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
-  synonyms:
-  - synonym_text: pancreatic digest of casein
-    synonym_type: EXACT
-  - synonym_text: casein peptone
-    synonym_type: EXACT
-- preferred_term: Yeast extract
-  term:
-    id: FOODON:03315426
-    label: yeast extract
-  concentration:
-    value: '5.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
-    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
-    product
-- preferred_term: Sodium chloride
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  concentration:
-    value: '10.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
-    (Luria-Bertani, Miller formulation) commercial product
-  synonyms:
-  - synonym_text: NaCl
-    synonym_type: EXACT
-  - synonym_text: table salt
-    synonym_type: EXACT
+  notes: The exact KOMODO compound row has a null gram amount. The current quantity
+    was copied from a different DSMZ preparation/stock stage. Retain the ingredient
+    identity but withdraw this unsupported numeric assertion; missing is neither zero
+    nor a measured amount. No concentration is supplied by the separate SEED aggregate
+    table.
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323
+    supports: SUPPORT
+    snippet: Gram & Mol amounts are per Liter of medium. Trace metabolites & gases
+      usually do not have amounts
+    explanation: |-
+      ingredients[12].concentration: The exact KOMODO compound row has a null gram amount. The current quantity was copied from a different DSMZ preparation/stock stage. Retain the ingredient identity but withdraw this unsupported numeric assertion; missing is neither zero nor a measured amount. No concentration is supplied by the separate SEED aggregate table. Locator=Metabolites list heading; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
+
+      Additional exact excerpt at Metabolites list, compound=iso-Butyric acid:
+      iso-Butyric acid iso-Butyric acid SEED-cpd01711### null null
+      ingredients[12].concentration: The exact KOMODO compound row has a null gram amount. The current quantity was copied from a different DSMZ preparation/stock stage. Retain the ingredient identity but withdraw this unsupported numeric assertion; missing is neither zero nor a measured amount. No concentration is supplied by the separate SEED aggregate table. Locator=Metabolites list, compound=iso-Butyric acid; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
 - preferred_term: n-Valeric acid
   term:
     id: CHEBI:17418
     label: valeric acid
-  concentration:
-    value: '131.46'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17418
     label: valeric acid
+  notes: The exact KOMODO compound row has a null gram amount. The current quantity
+    was copied from a different DSMZ preparation/stock stage. Retain the ingredient
+    identity but withdraw this unsupported numeric assertion; missing is neither zero
+    nor a measured amount. No concentration is supplied by the separate SEED aggregate
+    table.
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323
+    supports: SUPPORT
+    snippet: Gram & Mol amounts are per Liter of medium. Trace metabolites & gases
+      usually do not have amounts
+    explanation: |-
+      ingredients[13].concentration: The exact KOMODO compound row has a null gram amount. The current quantity was copied from a different DSMZ preparation/stock stage. Retain the ingredient identity but withdraw this unsupported numeric assertion; missing is neither zero nor a measured amount. No concentration is supplied by the separate SEED aggregate table. Locator=Metabolites list heading; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
+
+      Additional exact excerpt at Metabolites list, compound=n-Valeric acid:
+      n-Valeric acid n-Valeric acid SEED-cpd00597### null null
+      ingredients[13].concentration: The exact KOMODO compound row has a null gram amount. The current quantity was copied from a different DSMZ preparation/stock stage. Retain the ingredient identity but withdraw this unsupported numeric assertion; missing is neither zero nor a measured amount. No concentration is supplied by the separate SEED aggregate table. Locator=Metabolites list, compound=n-Valeric acid; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
 - preferred_term: iso-Valeric acid
   term:
     id: CHEBI:28484
     label: isovaleric acid
-  concentration:
-    value: '130.34'
-    unit: G_PER_L
   mediaingredientmech_term:
     id: MediaIngredientMech:000378
     label: iso-Valeric acid
+  notes: The exact KOMODO compound row has a null gram amount. The current quantity
+    was copied from a different DSMZ preparation/stock stage. Retain the ingredient
+    identity but withdraw this unsupported numeric assertion; missing is neither zero
+    nor a measured amount. No concentration is supplied by the separate SEED aggregate
+    table.
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323
+    supports: SUPPORT
+    snippet: Gram & Mol amounts are per Liter of medium. Trace metabolites & gases
+      usually do not have amounts
+    explanation: |-
+      ingredients[14].concentration: The exact KOMODO compound row has a null gram amount. The current quantity was copied from a different DSMZ preparation/stock stage. Retain the ingredient identity but withdraw this unsupported numeric assertion; missing is neither zero nor a measured amount. No concentration is supplied by the separate SEED aggregate table. Locator=Metabolites list heading; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
+
+      Additional exact excerpt at Metabolites list, compound=iso-Valeric acid:
+      iso-Valeric acid iso-Valeric acid SEED-cpd05178### null null
+      ingredients[14].concentration: The exact KOMODO compound row has a null gram amount. The current quantity was copied from a different DSMZ preparation/stock stage. Retain the ingredient identity but withdraw this unsupported numeric assertion; missing is neither zero nor a measured amount. No concentration is supplied by the separate SEED aggregate table. Locator=Metabolites list, compound=iso-Valeric acid; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
 - preferred_term: KOH
   term:
     id: CHEBI:32035
     label: potassium hydroxide
-  notes: pH adjustment (extracted from notes)
+  notes: |-
+    pH adjustment (extracted from notes)
+
+    KOH is the stated pH reagent for 6.7-7.0, without a fixed quantity. Keep variable pH adjustment; do not infer zero or copy another recipe's amount.
   concentration:
     value: variable
     unit: VARIABLE
   mediaingredientmech_chebi_term:
     id: CHEBI:32035
     label: potassium hydroxide
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323
+    supports: SUPPORT
+    snippet: Gram & Mol amounts are per Liter of medium. Trace metabolites & gases
+      usually do not have amounts
+    explanation: |-
+      ingredients[15].concentration: KOH is the stated pH reagent for 6.7-7.0, without a fixed quantity. Keep variable pH adjustment; do not infer zero or copy another recipe's amount. Locator=Metabolites list heading; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
+
+      Additional exact excerpt at Metabolites list, compound=KOH:
+      KOH KOH SEED-cpd00001#cpd00205## null null
+      ingredients[15].concentration: KOH is the stated pH reagent for 6.7-7.0, without a fixed quantity. Keep variable pH adjustment; do not infer zero or copy another recipe's amount. Locator=Metabolites list, compound=KOH; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
+
+      Additional exact excerpt at medium feature table:
+      PH Info: 6.7 - 7.0, KOH
+      ingredients[15].concentration: KOH is the stated pH reagent for 6.7-7.0, without a fixed quantity. Keep variable pH adjustment; do not infer zero or copy another recipe's amount. Locator=medium feature table; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
+- preferred_term: NaHCO3
+  concentration:
+    value: '5.67'
+    unit: G_PER_L
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323
+    supports: SUPPORT
+    snippet: NaHCO3 sodium bicarbonate SEED-cpd00242#cpd00971#cpd09249# 5.67 0.07
+    explanation: |-
+      ingredients[16]: Exact KOMODO compound-table input. Null amounts remain unquantified; the two water labels remain distinct source rows. NaHCO3 is not the removed Na2CO3, so no carbonate identifiers are reused. Locator=compound table: NaHCO3; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
+
+      Additional exact excerpt at compound-table heading:
+      Gram & Mol amounts are per Liter of medium. Trace metabolites & gases usually do not have amounts
+      ingredients[16]: Exact KOMODO compound-table input. Null amounts remain unquantified; the two water labels remain distinct source rows. NaHCO3 is not the removed Na2CO3, so no carbonate identifiers are reused. Locator=compound-table heading; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
+- preferred_term: DL-2-Methylbutyric acid
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323
+    supports: SUPPORT
+    snippet: DL-2-Methylbutyric acid DL-2-Methylbutyric acid 2-Methylbutyric acid#
+      null null
+    explanation: |-
+      ingredients[17]: Exact KOMODO compound-table input. Null amounts remain unquantified; the two water labels remain distinct source rows. NaHCO3 is not the removed Na2CO3, so no carbonate identifiers are reused. Locator=compound table: DL-2-Methylbutyric acid; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
+
+      Additional exact excerpt at compound-table heading:
+      Gram & Mol amounts are per Liter of medium. Trace metabolites & gases usually do not have amounts
+      ingredients[17]: Exact KOMODO compound-table input. Null amounts remain unquantified; the two water labels remain distinct source rows. NaHCO3 is not the removed Na2CO3, so no carbonate identifiers are reused. Locator=compound-table heading; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
+- preferred_term: H2O
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323
+    supports: SUPPORT
+    snippet: H2O H2O SEED-cpd00001### null null
+    explanation: |-
+      ingredients[18]: Exact KOMODO compound-table input. Null amounts remain unquantified; the two water labels remain distinct source rows. NaHCO3 is not the removed Na2CO3, so no carbonate identifiers are reused. Locator=compound table: H2O; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
+
+      Additional exact excerpt at compound-table heading:
+      Gram & Mol amounts are per Liter of medium. Trace metabolites & gases usually do not have amounts
+      ingredients[18]: Exact KOMODO compound-table input. Null amounts remain unquantified; the two water labels remain distinct source rows. NaHCO3 is not the removed Na2CO3, so no carbonate identifiers are reused. Locator=compound-table heading; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
+- preferred_term: CO2
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323
+    supports: SUPPORT
+    snippet: CO2 CO2 SEED-cpd00011### null null
+    explanation: |-
+      ingredients[19]: Exact KOMODO compound-table input. Null amounts remain unquantified; the two water labels remain distinct source rows. NaHCO3 is not the removed Na2CO3, so no carbonate identifiers are reused. Locator=compound table: CO2; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
+
+      Additional exact excerpt at compound-table heading:
+      Gram & Mol amounts are per Liter of medium. Trace metabolites & gases usually do not have amounts
+      ingredients[19]: Exact KOMODO compound-table input. Null amounts remain unquantified; the two water labels remain distinct source rows. NaHCO3 is not the removed Na2CO3, so no carbonate identifiers are reused. Locator=compound-table heading; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
+- preferred_term: Distilled water
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323
+    supports: SUPPORT
+    snippet: Distilled water H2O SEED-cpd00001### null null
+    explanation: |-
+      ingredients[20]: Exact KOMODO compound-table input. Null amounts remain unquantified; the two water labels remain distinct source rows. NaHCO3 is not the removed Na2CO3, so no carbonate identifiers are reused. Locator=compound table: Distilled water; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
+
+      Additional exact excerpt at compound-table heading:
+      Gram & Mol amounts are per Liter of medium. Trace metabolites & gases usually do not have amounts
+      ingredients[20]: Exact KOMODO compound-table input. Null amounts remain unquantified; the two water labels remain distinct source rows. NaHCO3 is not the removed Na2CO3, so no carbonate identifiers are reused. Locator=compound-table heading; accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
 applications:
 - Microbial cultivation
 curation_history:
@@ -304,4 +505,476 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-10-09T17:38:33.880426+00:00'
+  curator: codex
+  action: RESTORED_MEDIUM323_SOURCE_SPECIFIC_INGREDIENTS
+  notes: 'Source-specific ingredient quantities, stock stages, identities and preparation
+    were reviewed against pinned official captures. Each changed formulation claim
+    has a persistent source URL and exact evidence snippet. Earlier evidence, IDs
+    and history are preserved. The source-linked medium relationship is uncertain,
+    not an exact duplicate or proven direction of derivation. Remaining limitations:
+    Required physical_state SOLID_AGAR remains an unverified legacy classification;
+    exact KOMODO table has no agar and DSMZ is a different quantified formulation'
+  source: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323
+  changes: '{"field_changes": [{"field": "ingredients[0].concentration.value", "old":
+    "0.11976", "new": "0.13"}, {"field": "ingredients[0].notes", "old": null, "new":
+    "Use the gram amount in this exact KOMODO compound table with its explicit per-liter
+    basis, not the different DSMZ formulation or the separate SEED aggregate table."},
+    {"field": "ingredients[1].concentration.value", "old": "0.189621", "new": "0.22"},
+    {"field": "ingredients[1].notes", "old": null, "new": "Use the gram amount in
+    this exact KOMODO compound table with its explicit per-liter basis, not the different
+    DSMZ formulation or the separate SEED aggregate table."}, {"field": "ingredients[2].concentration.value",
+    "old": "0.449102", "new": "0.51"}, {"field": "ingredients[2].notes", "old": null,
+    "new": "Use the gram amount in this exact KOMODO compound table with its explicit
+    per-liter basis, not the different DSMZ formulation or the separate SEED aggregate
+    table."}, {"field": "ingredients[3].concentration.value", "old": "0.449102", "new":
+    "0.51"}, {"field": "ingredients[3].notes", "old": null, "new": "Use the gram amount
+    in this exact KOMODO compound table with its explicit per-liter basis, not the
+    different DSMZ formulation or the separate SEED aggregate table."}, {"field":
+    "ingredients[4].concentration.value", "old": "0.898204", "new": "1.02"}, {"field":
+    "ingredients[4].notes", "old": null, "new": "Use the gram amount in this exact
+    KOMODO compound table with its explicit per-liter basis, not the different DSMZ
+    formulation or the separate SEED aggregate table."}, {"field": "ingredients[5].concentration.value",
+    "old": "0.898204", "new": "1.02"}, {"field": "ingredients[5].notes", "old": null,
+    "new": "Use the gram amount in this exact KOMODO compound table with its explicit
+    per-liter basis, not the different DSMZ formulation or the separate SEED aggregate
+    table."}, {"field": "ingredients[6].concentration.value", "old": "1.99601", "new":
+    "2.27"}, {"field": "ingredients[6].notes", "old": null, "new": "Use the gram amount
+    in this exact KOMODO compound table with its explicit per-liter basis, not the
+    different DSMZ formulation or the separate SEED aggregate table."}, {"field":
+    "ingredients[7].concentration.value", "old": "1.99601", "new": "2.27"}, {"field":
+    "ingredients[7].notes", "old": null, "new": "Use the gram amount in this exact
+    KOMODO compound table with its explicit per-liter basis, not the different DSMZ
+    formulation or the separate SEED aggregate table."}, {"field": "ingredients[8].concentration.value",
+    "old": "0.000499002", "new": "0.00113"}, {"field": "ingredients[8].notes", "old":
+    null, "new": "Use the gram amount in this exact KOMODO compound table with its
+    explicit per-liter basis, not the different DSMZ formulation or the separate SEED
+    aggregate table. The source says Resazurin, not sodium resazurin. The rate cannot
+    silently be attached to the sodium-salt name; the current base-compound CHEBI
+    link is not newly certified by this comparison. The record now uses the exact
+    source chemical name Resazurin; no sodium salt is asserted for this KOMODO input."},
+    {"field": "ingredients[8].preferred_term", "old": "Sodium resazurin", "new": "Resazurin"},
+    {"field": "ingredients[9].concentration.value", "old": "0.998004", "new": "1.13"},
+    {"field": "ingredients[9].notes", "old": null, "new": "Use the compound-table
+    amount of 1.13 g/L for Cysteine-HCl x H2O. Its row explicitly includes SEED-cpd00084,
+    which this same source names L-Cysteine in the SEED metabolite table. Retain the
+    existing L-cysteine hydrochloride hydrate links on that source-specific identity
+    evidence. The aggregate SEED molar concentration is quoted only to identify the
+    row; it is not converted into a supplied-salt amount or substituted for the compound-table
+    rate."}, {"field": "ingredients[9].preferred_term", "old": "L-Cysteine HCl x H2O",
+    "new": "Cysteine-HCl x H2O"}, {"field": "ingredients[10].concentration.value",
+    "old": "2.49501", "new": "2.27"}, {"field": "ingredients[10].mediaingredientmech_chebi_term.id",
+    "old": "CHEBI:29377", "new": "CHEBI:17634"}, {"field": "ingredients[10].mediaingredientmech_chebi_term.label",
+    "old": "sodium carbonate", "new": "D-glucose"}, {"field": "ingredients[10].notes",
+    "old": null, "new": "Use the gram amount in this exact KOMODO compound table with
+    its explicit per-liter basis, not the different DSMZ formulation or the separate
+    SEED aggregate table."}, {"field": "ingredients[10].preferred_term", "old": "Na2CO3",
+    "new": "D-Glucose"}, {"field": "ingredients[10].term.id", "old": "CHEBI:29377",
+    "new": "CHEBI:17634"}, {"field": "ingredients[10].term.label", "old": "sodium
+    carbonate", "new": "D-glucose"}, {"field": "ingredients[11].concentration", "old":
+    {"value": "1.99601", "unit": "G_PER_L"}, "new": null}, {"field": "ingredients[11].mediaingredientmech_chebi_term.id",
+    "old": "CHEBI:17634", "new": "CHEBI:30772"}, {"field": "ingredients[11].mediaingredientmech_chebi_term.label",
+    "old": "D-glucose", "new": "butyric acid"}, {"field": "ingredients[11].notes",
+    "old": null, "new": "The exact KOMODO compound row has a null gram amount. The
+    current quantity was copied from a different DSMZ preparation/stock stage. Retain
+    the ingredient identity but withdraw this unsupported numeric assertion; missing
+    is neither zero nor a measured amount. No concentration is supplied by the separate
+    SEED aggregate table."}, {"field": "ingredients[11].preferred_term", "old": "D-Glucose",
+    "new": "n-Butyric acid"}, {"field": "ingredients[11].term.id", "old": "CHEBI:17634",
+    "new": "CHEBI:30772"}, {"field": "ingredients[11].term.label", "old": "D-glucose",
+    "new": "butyric acid"}, {"field": "ingredients[12].concentration", "old": {"value":
+    "11.976", "unit": "G_PER_L"}, "new": null}, {"field": "ingredients[12].mediaingredientmech_chebi_term.id",
+    "old": "CHEBI:2509", "new": "CHEBI:16135"}, {"field": "ingredients[12].mediaingredientmech_chebi_term.label",
+    "old": "agar", "new": "isobutyric acid"}, {"field": "ingredients[12].notes", "old":
+    " (for solid medium)", "new": "The exact KOMODO compound row has a null gram amount.
+    The current quantity was copied from a different DSMZ preparation/stock stage.
+    Retain the ingredient identity but withdraw this unsupported numeric assertion;
+    missing is neither zero nor a measured amount. No concentration is supplied by
+    the separate SEED aggregate table."}, {"field": "ingredients[12].preferred_term",
+    "old": "Agar", "new": "iso-Butyric acid"}, {"field": "ingredients[12].term.id",
+    "old": "CHEBI:2509", "new": "CHEBI:16135"}, {"field": "ingredients[12].term.label",
+    "old": "agar", "new": "isobutyric acid"}, {"field": "ingredients[13].concentration",
+    "old": {"value": "5.8", "unit": "G_PER_L"}, "new": null}, {"field": "ingredients[13].mediaingredientmech_chebi_term.id",
+    "old": "CHEBI:30772", "new": "CHEBI:17418"}, {"field": "ingredients[13].mediaingredientmech_chebi_term.label",
+    "old": "butyric acid", "new": "valeric acid"}, {"field": "ingredients[13].notes",
+    "old": null, "new": "The exact KOMODO compound row has a null gram amount. The
+    current quantity was copied from a different DSMZ preparation/stock stage. Retain
+    the ingredient identity but withdraw this unsupported numeric assertion; missing
+    is neither zero nor a measured amount. No concentration is supplied by the separate
+    SEED aggregate table."}, {"field": "ingredients[13].preferred_term", "old": "n-Butyric
+    acid", "new": "n-Valeric acid"}, {"field": "ingredients[13].term.id", "old": "CHEBI:30772",
+    "new": "CHEBI:17418"}, {"field": "ingredients[13].term.label", "old": "butyric
+    acid", "new": "valeric acid"}, {"field": "ingredients[14].concentration", "old":
+    {"value": "275.5", "unit": "G_PER_L"}, "new": null}, {"field": "ingredients[14].mediaingredientmech_chebi_term",
+    "old": {"id": "CHEBI:16135", "label": "isobutyric acid"}, "new": null}, {"field":
+    "ingredients[14].mediaingredientmech_term", "old": null, "new": {"id": "MediaIngredientMech:000378",
+    "label": "iso-Valeric acid"}}, {"field": "ingredients[14].notes", "old": null,
+    "new": "The exact KOMODO compound row has a null gram amount. The current quantity
+    was copied from a different DSMZ preparation/stock stage. Retain the ingredient
+    identity but withdraw this unsupported numeric assertion; missing is neither zero
+    nor a measured amount. No concentration is supplied by the separate SEED aggregate
+    table."}, {"field": "ingredients[14].preferred_term", "old": "iso-Butyric acid",
+    "new": "iso-Valeric acid"}, {"field": "ingredients[14].term.id", "old": "CHEBI:16135",
+    "new": "CHEBI:28484"}, {"field": "ingredients[14].term.label", "old": "isobutyric
+    acid", "new": "isovaleric acid"}, {"field": "ingredients[15].concentration.unit",
+    "old": "G_PER_L", "new": "VARIABLE"}, {"field": "ingredients[15].concentration.value",
+    "old": "10.0", "new": "variable"}, {"field": "ingredients[15].mediaingredientmech_chebi_term",
+    "old": null, "new": {"id": "CHEBI:32035", "label": "potassium hydroxide"}}, {"field":
+    "ingredients[15].notes", "old": "Pancreatic digest of casein providing amino acids,
+    peptides, and nitrogen; Constituent of LB Medium (Luria-Bertani, Miller formulation)
+    commercial product", "new": "pH adjustment (extracted from notes)\n\nKOH is the
+    stated pH reagent for 6.7-7.0, without a fixed quantity. Keep variable pH adjustment;
+    do not infer zero or copy another recipe''s amount."}, {"field": "ingredients[15].preferred_term",
+    "old": "Tryptone", "new": "KOH"}, {"field": "ingredients[15].supplier_catalog",
+    "old": {"supplier_name": "Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+    Miller formulation)", "catalog_number": "Multiple (L3522 Sigma, 244520 BD)", "product_url":
+    "https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/"},
+    "new": null}, {"field": "ingredients[15].synonyms", "old": [{"synonym_text": "pancreatic
+    digest of casein", "synonym_type": "EXACT"}, {"synonym_text": "casein peptone",
+    "synonym_type": "EXACT"}], "new": null}, {"field": "ingredients[15].term.id",
+    "old": "MICRO:0000182", "new": "CHEBI:32035"}, {"field": "ingredients[15].term.label",
+    "old": "tryptone", "new": "potassium hydroxide"}, {"field": "ingredients[16].concentration.value",
+    "old": "5.0", "new": "5.67"}, {"field": "ingredients[16].notes", "old": "Autodigest
+    of Saccharomyces cerevisiae providing vitamins, amino acids, and trace elements;
+    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product",
+    "new": null}, {"field": "ingredients[16].preferred_term", "old": "Yeast extract",
+    "new": "NaHCO3"}, {"field": "ingredients[16].supplier_catalog", "old": {"supplier_name":
+    "Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani, Miller formulation)",
+    "catalog_number": "Multiple (L3522 Sigma, 244520 BD)", "product_url": "https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/"},
+    "new": null}, {"field": "ingredients[16].term", "old": {"id": "FOODON:03315426",
+    "label": "yeast extract"}, "new": null}, {"field": "ingredients[17].concentration",
+    "old": {"value": "10.0", "unit": "G_PER_L"}, "new": null}, {"field": "ingredients[17].notes",
+    "old": "Maintains osmotic equilibrium (Miller formulation); Constituent of LB
+    Medium (Luria-Bertani, Miller formulation) commercial product", "new": null},
+    {"field": "ingredients[17].preferred_term", "old": "Sodium chloride", "new": "DL-2-Methylbutyric
+    acid"}, {"field": "ingredients[17].supplier_catalog", "old": {"supplier_name":
+    "Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani, Miller formulation)",
+    "catalog_number": "Multiple (L3522 Sigma, 244520 BD)", "product_url": "https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/"},
+    "new": null}, {"field": "ingredients[17].synonyms", "old": [{"synonym_text": "NaCl",
+    "synonym_type": "EXACT"}, {"synonym_text": "table salt", "synonym_type": "EXACT"}],
+    "new": null}, {"field": "ingredients[17].term", "old": {"id": "CHEBI:26710", "label":
+    "sodium chloride"}, "new": null}, {"field": "ingredients[18].concentration", "old":
+    {"value": "131.46", "unit": "G_PER_L"}, "new": null}, {"field": "ingredients[18].mediaingredientmech_chebi_term",
+    "old": {"id": "CHEBI:17418", "label": "valeric acid"}, "new": null}, {"field":
+    "ingredients[18].preferred_term", "old": "n-Valeric acid", "new": "H2O"}, {"field":
+    "ingredients[18].term", "old": {"id": "CHEBI:17418", "label": "valeric acid"},
+    "new": null}, {"field": "ingredients[19].concentration", "old": {"value": "130.34",
+    "unit": "G_PER_L"}, "new": null}, {"field": "ingredients[19].mediaingredientmech_term",
+    "old": {"id": "MediaIngredientMech:000378", "label": "iso-Valeric acid"}, "new":
+    null}, {"field": "ingredients[19].preferred_term", "old": "iso-Valeric acid",
+    "new": "CO2"}, {"field": "ingredients[19].term", "old": {"id": "CHEBI:28484",
+    "label": "isovaleric acid"}, "new": null}, {"field": "ingredients[20].concentration",
+    "old": {"value": "variable", "unit": "VARIABLE"}, "new": null}, {"field": "ingredients[20].mediaingredientmech_chebi_term",
+    "old": {"id": "CHEBI:32035", "label": "potassium hydroxide"}, "new": null}, {"field":
+    "ingredients[20].notes", "old": "pH adjustment (extracted from notes)", "new":
+    null}, {"field": "ingredients[20].preferred_term", "old": "KOH", "new": "Distilled
+    water"}, {"field": "ingredients[20].term", "old": {"id": "CHEBI:32035", "label":
+    "potassium hydroxide"}, "new": null}, {"field": "notes", "old": "pH buffer: KOH
+    | Source: KOMODO ModelSEED | ID: 323 | DSMZ Medium: 323 (mediadive.medium:323)
+    | Aerobic: Yes\n\nCommercial Product: LB Medium (Luria-Bertani, Miller formulation)\nSupplier:
+    Multiple suppliers (Difco, Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520
+    BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.",
+    "new": "pH buffer: KOH | Source: KOMODO ModelSEED | ID: 323 | DSMZ Medium: 323
+    (mediadive.medium:323) | Aerobic: Yes\n\nSource-specific KOMODO amounts are not
+    copied from DSMZ323. Use the compound-table amount of 1.13 g/L for Cysteine-HCl
+    x H2O. Its row explicitly includes SEED-cpd00084, which this same source names
+    L-Cysteine in the SEED metabolite table. Retain the existing L-cysteine hydrochloride
+    hydrate links on that source-specific identity evidence. The aggregate SEED molar
+    concentration is quoted only to identify the row; it is not converted into a supplied-salt
+    amount or substituted for the compound-table rate. Unresolved: Required physical_state
+    SOLID_AGAR remains an unverified legacy classification; exact KOMODO table has
+    no agar and DSMZ is a different quantified formulation."}, {"field": "parent_media",
+    "old": null, "new": {"id": "CultureMech:001425", "name": "treponema_saccharophilum_medium",
+    "path": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+    "relationship": "UNCERTAIN", "notes": "Candidate cross-source relationship only:
+    KOMODO323 links to DSMZ323 instructions, but its own compound table has NaHCO3
+    rather than Na2CO3, different rates and unquantified fatty-acid inputs. Neither
+    exact duplication nor a historical direction of derivation is established. DSMZ
+    is the catalog reference, not authority to overwrite the distinct KOMODO formulation;
+    do not merge these records as identical.", "evidence": [{"reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+    "supports": "SUPPORT", "snippet": "Instructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf",
+    "explanation": "Candidate cross-source relationship only: KOMODO323 links to DSMZ323
+    instructions, but its own compound table has NaHCO3 rather than Na2CO3, different
+    rates and unquantified fatty-acid inputs. Neither exact duplication nor a historical
+    direction of derivation is established. DSMZ is the catalog reference, not authority
+    to overwrite the distinct KOMODO formulation; do not merge these records as identical.
+    Locator=medium features, Instructions; accessed=2026-10-09T11:32:22.156087+00:00;
+    source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
+    Supports the candidate link, not equivalence."}]}}, {"field": "variant_modifications",
+    "old": null, "new": ["KOMODO reports NaHCO3 at 5.67 g/L; DSMZ323 reports Na2CO3
+    at 2.49501 g/L.", "KOMODO gives different direct ingredient rates and null fatty-acid
+    input amounts.", "KOMODO has no agar row; its required legacy physical_state remains
+    unverified."]}, {"field": "variant_relationship", "old": null, "new": "UNCERTAIN"}],
+    "evidence_and_bibliography_changes": ["evidence", "ingredients[0].evidence", "ingredients[1].evidence",
+    "ingredients[2].evidence", "ingredients[3].evidence", "ingredients[4].evidence",
+    "ingredients[5].evidence", "ingredients[6].evidence", "ingredients[7].evidence",
+    "ingredients[8].evidence", "ingredients[9].evidence", "ingredients[10].evidence",
+    "ingredients[11].evidence", "ingredients[12].evidence", "ingredients[13].evidence",
+    "ingredients[14].evidence", "ingredients[15].evidence", "ingredients[16].evidence",
+    "ingredients[17].evidence", "ingredients[18].evidence", "ingredients[19].evidence",
+    "ingredients[20].evidence", "references"], "full_semantic_delta_sha256": "97cbf4989d030557d0802b72e091fb5928deb26d40cddca42a8a7e424641d469",
+    "source_capture_sha256": "8c802303cf38982bebc07777a71a7d2dab5d4c01d44c0cc1d1c8136d866a39a4",
+    "old_evidence_preserved": true}'
 ph_value: 7.0
+references:
+- reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323
+  title: KOMODO - the Known Media Database
+  notes: source_type=web_page; discovery_mode=cross_reference; accessed_on=2026-10-09;
+    capture_sha256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
+    Individual authors and publication year unknown; copyright/access years are not
+    publication years.
+evidence:
+- reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323
+  supports: SUPPORT
+  snippet: Gram & Mol amounts are per Liter of medium. Trace metabolites & gases usually
+    do not have amounts
+  explanation: "ingredients[10]: KOMODO lists NaHCO3 at 5.67 g/L, not Na2CO3. These\
+    \ are different chemicals. Withdraw the copied carbonate assertion and propose\
+    \ a separate source-specific bicarbonate node; do not put 5.67 on the old carbonate\
+    \ identity or silently reuse its chemical links. This path identifies the removed\
+    \ historical node, not a current ingredient. Locator=Metabolites list heading;\
+    \ accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.\n\
+    \nAdditional exact excerpt at Metabolites list: entire 21-row compound table and\
+    \ identifying header; exclude the SEED aggregate table:\nMedium: TREPONEMA SACCHAROPHILUM\
+    \ medium\nID: 323\nName: TREPONEMA SACCHAROPHILUM medium\nPH Info: 6.7 - 7.0,\
+    \ KOH\nIs Complex: true\nIs Aerobic: true\nIs SubMedium: false\nRemarks: \nInstructions:\
+    \ http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf\nMetabolites\
+    \ list\nCompounds in the medium listed by their compound names. Gram & Mol amounts\
+    \ are per Liter of medium. Trace metabolites & gases usually do not have amounts\n\
+    Name Semi unique name Unique Name Gram Amount Mol Amount\nNaHCO3 sodium bicarbonate\
+    \ SEED-cpd00242#cpd00971#cpd09249# 5.67 0.07\niso-Valeric acid iso-Valeric acid\
+    \ SEED-cpd05178### null null\nDL-2-Methylbutyric acid DL-2-Methylbutyric acid\
+    \ 2-Methylbutyric acid# null null\nH2O H2O SEED-cpd00001### null null\nKOH KOH\
+    \ SEED-cpd00001#cpd00205## null null\nCysteine-HCl x H2O Cysteine-HCl SEED-cpd00084#cpd00099##\
+    \ 1.13 0.01\nYeast extract (Oxoid) Yeast extract rich-peptone# 2.27 null\nCO2\
+    \ CO2 SEED-cpd00011### null null\nDistilled water H2O SEED-cpd00001### null null\n\
+    K2HPO4 di Potassium hydrogen phosphate SEED-cpd00009#cpd00205## 0.51 0.00\nKH2PO4\
+    \ Potassium dihydrogen phosphate SEED-cpd00009#cpd00205## 0.51 0.00\nGlucose D-Glucose\
+    \ SEED-cpd00027### 2.27 0.01\niso-Butyric acid iso-Butyric acid SEED-cpd01711###\
+    \ null null\nn-Valeric acid n-Valeric acid SEED-cpd00597### null null\nMgSO4 x\
+    \ 7 H2O Magnesium sulfate SEED-cpd00048#cpd00254## 0.22 0.00\nCaCl2 x 2 H2O Calcium\
+    \ chloride SEED-cpd00063#cpd00099## 0.13 0.00\nn-Butyric acid n-Butyric acid SEED-cpd00211###\
+    \ null null\nResazurin Resazurin SEED-cpd08053### 1.13E-3 4.95E-6\nNaCl NaCl SEED-cpd00099#cpd00971##\
+    \ 1.02 0.02\nTrypticase (BBL) Trypticase rich-peptone# 2.27 null\n(NH4)2SO4 Ammonium\
+    \ sulfate SEED-cpd00013#cpd00048## 1.02 0.01\ningredients[10]: KOMODO lists NaHCO3\
+    \ at 5.67 g/L, not Na2CO3. These are different chemicals. Withdraw the copied\
+    \ carbonate assertion and propose a separate source-specific bicarbonate node;\
+    \ do not put 5.67 on the old carbonate identity or silently reuse its chemical\
+    \ links. This path identifies the removed historical node, not a current ingredient.\
+    \ Locator=Metabolites list: entire 21-row compound table and identifying header;\
+    \ exclude the SEED aggregate table; accessed=2026-10-09T11:32:22.156087+00:00;\
+    \ source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.\n\
+    \nAdditional exact excerpt at Metabolites list heading:\nGram & Mol amounts are\
+    \ per Liter of medium. Trace metabolites & gases usually do not have amounts\n\
+    ingredients[12]: KOMODO's complete table has no agar row. The linked DSMZ instructions\
+    \ describe a different quantified formulation and cannot silently supply this\
+    \ amount. The required SOLID_AGAR classification remains unresolved; neither invent\
+    \ LIQUID nor treat schema validity as evidence. A guarded proposal must disclose\
+    \ this record-level limitation. This path identifies the removed historical node,\
+    \ not a current ingredient. Locator=Metabolites list heading; accessed=2026-10-09T11:32:22.156087+00:00;\
+    \ source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.\n\
+    \nAdditional exact excerpt at Metabolites list: entire 21-row compound table and\
+    \ identifying header; exclude the SEED aggregate table:\nMedium: TREPONEMA SACCHAROPHILUM\
+    \ medium\nID: 323\nName: TREPONEMA SACCHAROPHILUM medium\nPH Info: 6.7 - 7.0,\
+    \ KOH\nIs Complex: true\nIs Aerobic: true\nIs SubMedium: false\nRemarks: \nInstructions:\
+    \ http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf\nMetabolites\
+    \ list\nCompounds in the medium listed by their compound names. Gram & Mol amounts\
+    \ are per Liter of medium. Trace metabolites & gases usually do not have amounts\n\
+    Name Semi unique name Unique Name Gram Amount Mol Amount\nNaHCO3 sodium bicarbonate\
+    \ SEED-cpd00242#cpd00971#cpd09249# 5.67 0.07\niso-Valeric acid iso-Valeric acid\
+    \ SEED-cpd05178### null null\nDL-2-Methylbutyric acid DL-2-Methylbutyric acid\
+    \ 2-Methylbutyric acid# null null\nH2O H2O SEED-cpd00001### null null\nKOH KOH\
+    \ SEED-cpd00001#cpd00205## null null\nCysteine-HCl x H2O Cysteine-HCl SEED-cpd00084#cpd00099##\
+    \ 1.13 0.01\nYeast extract (Oxoid) Yeast extract rich-peptone# 2.27 null\nCO2\
+    \ CO2 SEED-cpd00011### null null\nDistilled water H2O SEED-cpd00001### null null\n\
+    K2HPO4 di Potassium hydrogen phosphate SEED-cpd00009#cpd00205## 0.51 0.00\nKH2PO4\
+    \ Potassium dihydrogen phosphate SEED-cpd00009#cpd00205## 0.51 0.00\nGlucose D-Glucose\
+    \ SEED-cpd00027### 2.27 0.01\niso-Butyric acid iso-Butyric acid SEED-cpd01711###\
+    \ null null\nn-Valeric acid n-Valeric acid SEED-cpd00597### null null\nMgSO4 x\
+    \ 7 H2O Magnesium sulfate SEED-cpd00048#cpd00254## 0.22 0.00\nCaCl2 x 2 H2O Calcium\
+    \ chloride SEED-cpd00063#cpd00099## 0.13 0.00\nn-Butyric acid n-Butyric acid SEED-cpd00211###\
+    \ null null\nResazurin Resazurin SEED-cpd08053### 1.13E-3 4.95E-6\nNaCl NaCl SEED-cpd00099#cpd00971##\
+    \ 1.02 0.02\nTrypticase (BBL) Trypticase rich-peptone# 2.27 null\n(NH4)2SO4 Ammonium\
+    \ sulfate SEED-cpd00013#cpd00048## 1.02 0.01\ningredients[12]: KOMODO's complete\
+    \ table has no agar row. The linked DSMZ instructions describe a different quantified\
+    \ formulation and cannot silently supply this amount. The required SOLID_AGAR\
+    \ classification remains unresolved; neither invent LIQUID nor treat schema validity\
+    \ as evidence. A guarded proposal must disclose this record-level limitation.\
+    \ This path identifies the removed historical node, not a current ingredient.\
+    \ Locator=Metabolites list: entire 21-row compound table and identifying header;\
+    \ exclude the SEED aggregate table; accessed=2026-10-09T11:32:22.156087+00:00;\
+    \ source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.\n\
+    \nAdditional exact excerpt at Metabolites list: entire 21-row compound table and\
+    \ identifying header; exclude the SEED aggregate table:\nMedium: TREPONEMA SACCHAROPHILUM\
+    \ medium\nID: 323\nName: TREPONEMA SACCHAROPHILUM medium\nPH Info: 6.7 - 7.0,\
+    \ KOH\nIs Complex: true\nIs Aerobic: true\nIs SubMedium: false\nRemarks: \nInstructions:\
+    \ http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf\nMetabolites\
+    \ list\nCompounds in the medium listed by their compound names. Gram & Mol amounts\
+    \ are per Liter of medium. Trace metabolites & gases usually do not have amounts\n\
+    Name Semi unique name Unique Name Gram Amount Mol Amount\nNaHCO3 sodium bicarbonate\
+    \ SEED-cpd00242#cpd00971#cpd09249# 5.67 0.07\niso-Valeric acid iso-Valeric acid\
+    \ SEED-cpd05178### null null\nDL-2-Methylbutyric acid DL-2-Methylbutyric acid\
+    \ 2-Methylbutyric acid# null null\nH2O H2O SEED-cpd00001### null null\nKOH KOH\
+    \ SEED-cpd00001#cpd00205## null null\nCysteine-HCl x H2O Cysteine-HCl SEED-cpd00084#cpd00099##\
+    \ 1.13 0.01\nYeast extract (Oxoid) Yeast extract rich-peptone# 2.27 null\nCO2\
+    \ CO2 SEED-cpd00011### null null\nDistilled water H2O SEED-cpd00001### null null\n\
+    K2HPO4 di Potassium hydrogen phosphate SEED-cpd00009#cpd00205## 0.51 0.00\nKH2PO4\
+    \ Potassium dihydrogen phosphate SEED-cpd00009#cpd00205## 0.51 0.00\nGlucose D-Glucose\
+    \ SEED-cpd00027### 2.27 0.01\niso-Butyric acid iso-Butyric acid SEED-cpd01711###\
+    \ null null\nn-Valeric acid n-Valeric acid SEED-cpd00597### null null\nMgSO4 x\
+    \ 7 H2O Magnesium sulfate SEED-cpd00048#cpd00254## 0.22 0.00\nCaCl2 x 2 H2O Calcium\
+    \ chloride SEED-cpd00063#cpd00099## 0.13 0.00\nn-Butyric acid n-Butyric acid SEED-cpd00211###\
+    \ null null\nResazurin Resazurin SEED-cpd08053### 1.13E-3 4.95E-6\nNaCl NaCl SEED-cpd00099#cpd00971##\
+    \ 1.02 0.02\nTrypticase (BBL) Trypticase rich-peptone# 2.27 null\n(NH4)2SO4 Ammonium\
+    \ sulfate SEED-cpd00013#cpd00048## 1.02 0.01\ningredients[15]: The complete exact\
+    \ formulation does not contain this appended LB product. Remove this identified\
+    \ product node and its LB-only notes/catalog context. Preserve the distinct, source-backed\
+    \ yeast-extract, peptone and sodium-chloride entries. Preserve historical events\
+    \ and document the removal on root evidence. This path identifies the removed\
+    \ historical node, not a current ingredient. Locator=Metabolites list: entire\
+    \ 21-row compound table and identifying header; exclude the SEED aggregate table;\
+    \ accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.\n\
+    \nAdditional exact excerpt at Metabolites list: entire 21-row compound table and\
+    \ identifying header; exclude the SEED aggregate table:\nMedium: TREPONEMA SACCHAROPHILUM\
+    \ medium\nID: 323\nName: TREPONEMA SACCHAROPHILUM medium\nPH Info: 6.7 - 7.0,\
+    \ KOH\nIs Complex: true\nIs Aerobic: true\nIs SubMedium: false\nRemarks: \nInstructions:\
+    \ http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf\nMetabolites\
+    \ list\nCompounds in the medium listed by their compound names. Gram & Mol amounts\
+    \ are per Liter of medium. Trace metabolites & gases usually do not have amounts\n\
+    Name Semi unique name Unique Name Gram Amount Mol Amount\nNaHCO3 sodium bicarbonate\
+    \ SEED-cpd00242#cpd00971#cpd09249# 5.67 0.07\niso-Valeric acid iso-Valeric acid\
+    \ SEED-cpd05178### null null\nDL-2-Methylbutyric acid DL-2-Methylbutyric acid\
+    \ 2-Methylbutyric acid# null null\nH2O H2O SEED-cpd00001### null null\nKOH KOH\
+    \ SEED-cpd00001#cpd00205## null null\nCysteine-HCl x H2O Cysteine-HCl SEED-cpd00084#cpd00099##\
+    \ 1.13 0.01\nYeast extract (Oxoid) Yeast extract rich-peptone# 2.27 null\nCO2\
+    \ CO2 SEED-cpd00011### null null\nDistilled water H2O SEED-cpd00001### null null\n\
+    K2HPO4 di Potassium hydrogen phosphate SEED-cpd00009#cpd00205## 0.51 0.00\nKH2PO4\
+    \ Potassium dihydrogen phosphate SEED-cpd00009#cpd00205## 0.51 0.00\nGlucose D-Glucose\
+    \ SEED-cpd00027### 2.27 0.01\niso-Butyric acid iso-Butyric acid SEED-cpd01711###\
+    \ null null\nn-Valeric acid n-Valeric acid SEED-cpd00597### null null\nMgSO4 x\
+    \ 7 H2O Magnesium sulfate SEED-cpd00048#cpd00254## 0.22 0.00\nCaCl2 x 2 H2O Calcium\
+    \ chloride SEED-cpd00063#cpd00099## 0.13 0.00\nn-Butyric acid n-Butyric acid SEED-cpd00211###\
+    \ null null\nResazurin Resazurin SEED-cpd08053### 1.13E-3 4.95E-6\nNaCl NaCl SEED-cpd00099#cpd00971##\
+    \ 1.02 0.02\nTrypticase (BBL) Trypticase rich-peptone# 2.27 null\n(NH4)2SO4 Ammonium\
+    \ sulfate SEED-cpd00013#cpd00048## 1.02 0.01\ningredients[16]: The complete exact\
+    \ formulation does not contain this appended LB product. Remove this identified\
+    \ product node and its LB-only notes/catalog context. Preserve the distinct, source-backed\
+    \ yeast-extract, peptone and sodium-chloride entries. Preserve historical events\
+    \ and document the removal on root evidence. This path identifies the removed\
+    \ historical node, not a current ingredient. Locator=Metabolites list: entire\
+    \ 21-row compound table and identifying header; exclude the SEED aggregate table;\
+    \ accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.\n\
+    \nAdditional exact excerpt at Metabolites list: entire 21-row compound table and\
+    \ identifying header; exclude the SEED aggregate table:\nMedium: TREPONEMA SACCHAROPHILUM\
+    \ medium\nID: 323\nName: TREPONEMA SACCHAROPHILUM medium\nPH Info: 6.7 - 7.0,\
+    \ KOH\nIs Complex: true\nIs Aerobic: true\nIs SubMedium: false\nRemarks: \nInstructions:\
+    \ http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf\nMetabolites\
+    \ list\nCompounds in the medium listed by their compound names. Gram & Mol amounts\
+    \ are per Liter of medium. Trace metabolites & gases usually do not have amounts\n\
+    Name Semi unique name Unique Name Gram Amount Mol Amount\nNaHCO3 sodium bicarbonate\
+    \ SEED-cpd00242#cpd00971#cpd09249# 5.67 0.07\niso-Valeric acid iso-Valeric acid\
+    \ SEED-cpd05178### null null\nDL-2-Methylbutyric acid DL-2-Methylbutyric acid\
+    \ 2-Methylbutyric acid# null null\nH2O H2O SEED-cpd00001### null null\nKOH KOH\
+    \ SEED-cpd00001#cpd00205## null null\nCysteine-HCl x H2O Cysteine-HCl SEED-cpd00084#cpd00099##\
+    \ 1.13 0.01\nYeast extract (Oxoid) Yeast extract rich-peptone# 2.27 null\nCO2\
+    \ CO2 SEED-cpd00011### null null\nDistilled water H2O SEED-cpd00001### null null\n\
+    K2HPO4 di Potassium hydrogen phosphate SEED-cpd00009#cpd00205## 0.51 0.00\nKH2PO4\
+    \ Potassium dihydrogen phosphate SEED-cpd00009#cpd00205## 0.51 0.00\nGlucose D-Glucose\
+    \ SEED-cpd00027### 2.27 0.01\niso-Butyric acid iso-Butyric acid SEED-cpd01711###\
+    \ null null\nn-Valeric acid n-Valeric acid SEED-cpd00597### null null\nMgSO4 x\
+    \ 7 H2O Magnesium sulfate SEED-cpd00048#cpd00254## 0.22 0.00\nCaCl2 x 2 H2O Calcium\
+    \ chloride SEED-cpd00063#cpd00099## 0.13 0.00\nn-Butyric acid n-Butyric acid SEED-cpd00211###\
+    \ null null\nResazurin Resazurin SEED-cpd08053### 1.13E-3 4.95E-6\nNaCl NaCl SEED-cpd00099#cpd00971##\
+    \ 1.02 0.02\nTrypticase (BBL) Trypticase rich-peptone# 2.27 null\n(NH4)2SO4 Ammonium\
+    \ sulfate SEED-cpd00013#cpd00048## 1.02 0.01\ningredients[17]: The complete exact\
+    \ formulation does not contain this appended LB product. Remove this identified\
+    \ product node and its LB-only notes/catalog context. Preserve the distinct, source-backed\
+    \ yeast-extract, peptone and sodium-chloride entries. Preserve historical events\
+    \ and document the removal on root evidence. This path identifies the removed\
+    \ historical node, not a current ingredient. Locator=Metabolites list: entire\
+    \ 21-row compound table and identifying header; exclude the SEED aggregate table;\
+    \ accessed=2026-10-09T11:32:22.156087+00:00; source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.\n\
+    \nAdditional exact excerpt at Metabolites list: entire 21-row compound table and\
+    \ identifying header; exclude the SEED aggregate table:\nMedium: TREPONEMA SACCHAROPHILUM\
+    \ medium\nID: 323\nName: TREPONEMA SACCHAROPHILUM medium\nPH Info: 6.7 - 7.0,\
+    \ KOH\nIs Complex: true\nIs Aerobic: true\nIs SubMedium: false\nRemarks: \nInstructions:\
+    \ http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf\nMetabolites\
+    \ list\nCompounds in the medium listed by their compound names. Gram & Mol amounts\
+    \ are per Liter of medium. Trace metabolites & gases usually do not have amounts\n\
+    Name Semi unique name Unique Name Gram Amount Mol Amount\nNaHCO3 sodium bicarbonate\
+    \ SEED-cpd00242#cpd00971#cpd09249# 5.67 0.07\niso-Valeric acid iso-Valeric acid\
+    \ SEED-cpd05178### null null\nDL-2-Methylbutyric acid DL-2-Methylbutyric acid\
+    \ 2-Methylbutyric acid# null null\nH2O H2O SEED-cpd00001### null null\nKOH KOH\
+    \ SEED-cpd00001#cpd00205## null null\nCysteine-HCl x H2O Cysteine-HCl SEED-cpd00084#cpd00099##\
+    \ 1.13 0.01\nYeast extract (Oxoid) Yeast extract rich-peptone# 2.27 null\nCO2\
+    \ CO2 SEED-cpd00011### null null\nDistilled water H2O SEED-cpd00001### null null\n\
+    K2HPO4 di Potassium hydrogen phosphate SEED-cpd00009#cpd00205## 0.51 0.00\nKH2PO4\
+    \ Potassium dihydrogen phosphate SEED-cpd00009#cpd00205## 0.51 0.00\nGlucose D-Glucose\
+    \ SEED-cpd00027### 2.27 0.01\niso-Butyric acid iso-Butyric acid SEED-cpd01711###\
+    \ null null\nn-Valeric acid n-Valeric acid SEED-cpd00597### null null\nMgSO4 x\
+    \ 7 H2O Magnesium sulfate SEED-cpd00048#cpd00254## 0.22 0.00\nCaCl2 x 2 H2O Calcium\
+    \ chloride SEED-cpd00063#cpd00099## 0.13 0.00\nn-Butyric acid n-Butyric acid SEED-cpd00211###\
+    \ null null\nResazurin Resazurin SEED-cpd08053### 1.13E-3 4.95E-6\nNaCl NaCl SEED-cpd00099#cpd00971##\
+    \ 1.02 0.02\nTrypticase (BBL) Trypticase rich-peptone# 2.27 null\n(NH4)2SO4 Ammonium\
+    \ sulfate SEED-cpd00013#cpd00048## 1.02 0.01\nnotes: Remove unrelated appended\
+    \ LB product notes and the three LB-only nodes; preserve the genuine source yeast\
+    \ extract, peptone and NaCl entries. Old values and provenance remain in append-only\
+    \ history and the pinned review. Locator=Metabolites list: entire 21-row compound\
+    \ table and identifying header; exclude the SEED aggregate table; accessed=2026-10-09T11:32:22.156087+00:00;\
+    \ source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.\n\
+    \nAdditional exact excerpt at Metabolites list: entire 21-row compound table and\
+    \ identifying header; exclude the SEED aggregate table:\nMedium: TREPONEMA SACCHAROPHILUM\
+    \ medium\nID: 323\nName: TREPONEMA SACCHAROPHILUM medium\nPH Info: 6.7 - 7.0,\
+    \ KOH\nIs Complex: true\nIs Aerobic: true\nIs SubMedium: false\nRemarks: \nInstructions:\
+    \ http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf\nMetabolites\
+    \ list\nCompounds in the medium listed by their compound names. Gram & Mol amounts\
+    \ are per Liter of medium. Trace metabolites & gases usually do not have amounts\n\
+    Name Semi unique name Unique Name Gram Amount Mol Amount\nNaHCO3 sodium bicarbonate\
+    \ SEED-cpd00242#cpd00971#cpd09249# 5.67 0.07\niso-Valeric acid iso-Valeric acid\
+    \ SEED-cpd05178### null null\nDL-2-Methylbutyric acid DL-2-Methylbutyric acid\
+    \ 2-Methylbutyric acid# null null\nH2O H2O SEED-cpd00001### null null\nKOH KOH\
+    \ SEED-cpd00001#cpd00205## null null\nCysteine-HCl x H2O Cysteine-HCl SEED-cpd00084#cpd00099##\
+    \ 1.13 0.01\nYeast extract (Oxoid) Yeast extract rich-peptone# 2.27 null\nCO2\
+    \ CO2 SEED-cpd00011### null null\nDistilled water H2O SEED-cpd00001### null null\n\
+    K2HPO4 di Potassium hydrogen phosphate SEED-cpd00009#cpd00205## 0.51 0.00\nKH2PO4\
+    \ Potassium dihydrogen phosphate SEED-cpd00009#cpd00205## 0.51 0.00\nGlucose D-Glucose\
+    \ SEED-cpd00027### 2.27 0.01\niso-Butyric acid iso-Butyric acid SEED-cpd01711###\
+    \ null null\nn-Valeric acid n-Valeric acid SEED-cpd00597### null null\nMgSO4 x\
+    \ 7 H2O Magnesium sulfate SEED-cpd00048#cpd00254## 0.22 0.00\nCaCl2 x 2 H2O Calcium\
+    \ chloride SEED-cpd00063#cpd00099## 0.13 0.00\nn-Butyric acid n-Butyric acid SEED-cpd00211###\
+    \ null null\nResazurin Resazurin SEED-cpd08053### 1.13E-3 4.95E-6\nNaCl NaCl SEED-cpd00099#cpd00971##\
+    \ 1.02 0.02\nTrypticase (BBL) Trypticase rich-peptone# 2.27 null\n(NH4)2SO4 Ammonium\
+    \ sulfate SEED-cpd00013#cpd00048## 1.02 0.01\nphysical_state; notes: The required\
+    \ physical_state is retained as unresolved legacy data, not affirmed by this source.\
+    \ The linked DSMZ instructions have different amounts and cannot silently establish\
+    \ this formulation's physical state. Locator=Metabolites list: entire 21-row compound\
+    \ table and identifying header; exclude the SEED aggregate table; accessed=2026-10-09T11:32:22.156087+00:00;\
+    \ source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8."
+parent_media:
+  id: CultureMech:001425
+  name: treponema_saccharophilum_medium
+  path: data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml
+  relationship: UNCERTAIN
+  notes: 'Candidate cross-source relationship only: KOMODO323 links to DSMZ323 instructions,
+    but its own compound table has NaHCO3 rather than Na2CO3, different rates and
+    unquantified fatty-acid inputs. Neither exact duplication nor a historical direction
+    of derivation is established. DSMZ is the catalog reference, not authority to
+    overwrite the distinct KOMODO formulation; do not merge these records as identical.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323
+    supports: SUPPORT
+    snippet: 'Instructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf'
+    explanation: 'Candidate cross-source relationship only: KOMODO323 links to DSMZ323
+      instructions, but its own compound table has NaHCO3 rather than Na2CO3, different
+      rates and unquantified fatty-acid inputs. Neither exact duplication nor a historical
+      direction of derivation is established. DSMZ is the catalog reference, not authority
+      to overwrite the distinct KOMODO formulation; do not merge these records as
+      identical. Locator=medium features, Instructions; accessed=2026-10-09T11:32:22.156087+00:00;
+      source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
+      Supports the candidate link, not equivalence.'
+variant_relationship: UNCERTAIN
+variant_modifications:
+- KOMODO reports NaHCO3 at 5.67 g/L; DSMZ323 reports Na2CO3 at 2.49501 g/L.
+- KOMODO gives different direct ingredient rates and null fatty-acid input amounts.
+- KOMODO has no agar row; its required legacy physical_state remains unverified.

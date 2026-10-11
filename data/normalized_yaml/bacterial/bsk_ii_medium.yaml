@@ -8,175 +8,757 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '900'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '0.9'
+    unit: L
+  notes: |-
+    Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component
+
+    Source input is 900 ml water = 0.9 L, not 900 g/L or a measured final volume.
   term:
     id: CHEBI:15377
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "Distilled water",
+                "volume": 900,
+                "unit": "ml",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001001",
+                "gmo_id": "GMO_001001",
+                "label": "Distilled water",
+                "properties": [
+                  {
+                    "id": "GMO_000046",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000046",
+                    "label": "Defined component"
+                  },
+                  {
+                    "id": "GMO_000040",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000040",
+                    "label": "Inorganic compound"
+                  },
+                  {
+                    "id": "GMO_000049",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000049",
+                    "label": "Simple component"
+                  }
+                ],
+                "roles": [
+                  {
+                    "id": "GMO_000044",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000044",
+                    "label": "Solvating media"
+                  }
+                ]
+              }
+    explanation: |-
+      ingredients[0].concentration: Source input is 900 ml water = 0.9 L, not 900 g/L or a measured final volume. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[0].items[0]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
+
+      Additional exact excerpt: {
+                "component_name": "Distilled water",
+                "volume": 900,
+                "unit": "ml",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001001",
+                "gmo_id": "GMO_001001",
+                "label": "Distilled water",
+                "properties": [
+                  {
+                    "id": "GMO_000046",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000046",
+                    "label": "Defined component"
+                  },
+                  {
+                    "id": "GMO_000040",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000040",
+                    "label": "Inorganic compound"
+                  },
+                  {
+                    "id": "GMO_000049",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000049",
+                    "label": "Simple component"
+                  }
+                ],
+                "roles": [
+                  {
+                    "id": "GMO_000044",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000044",
+                    "label": "Solvating media"
+                  }
+                ]
+              }
+      ingredients[0].notes: Source input is 900 ml water = 0.9 L, not 900 g/L or a measured final volume. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[0].items[0]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
 - preferred_term: sodium bicarbonate
-  concentration:
-    value: '2.2'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: |-
+    Role: Buffer; Properties: Defined component, Simple component, Inorganic compound
+
+    Source batch input: 2.2 g. No final-medium volume is specified after gelatin and serum; do not reinterpret batch mass as g/L.
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "sodium bicarbonate",
+                "volume": 2.2,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001019",
+                "gmo_id": "GMO_001019",
+                "label": "Sodium bicarbonate",
+                "properties": [
+                  {
+                    "id": "GMO_000046",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000046",
+                    "label": "Defined component"
+                  },
+                  {
+                    "id": "GMO_000049",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000049",
+                    "label": "Simple component"
+                  },
+                  {
+                    "id": "GMO_000040",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000040",
+                    "label": "Inorganic compound"
+                  }
+                ],
+                "roles": [
+                  {
+                    "id": "GMO_000038",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000038",
+                    "label": "Buffer"
+                  }
+                ]
+              }
+    explanation: |-
+      ingredients[1].concentration: Source batch input: 2.2 g. No final-medium volume is specified after gelatin and serum; do not reinterpret batch mass as g/L. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[0].items[1]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
+
+      Additional exact excerpt: {
+                "component_name": "sodium bicarbonate",
+                "volume": 2.2,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001019",
+                "gmo_id": "GMO_001019",
+                "label": "Sodium bicarbonate",
+                "properties": [
+                  {
+                    "id": "GMO_000046",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000046",
+                    "label": "Defined component"
+                  },
+                  {
+                    "id": "GMO_000049",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000049",
+                    "label": "Simple component"
+                  },
+                  {
+                    "id": "GMO_000040",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000040",
+                    "label": "Inorganic compound"
+                  }
+                ],
+                "roles": [
+                  {
+                    "id": "GMO_000038",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000038",
+                    "label": "Buffer"
+                  }
+                ]
+              }
+      ingredients[1].notes: Source batch input: 2.2 g. No final-medium volume is specified after gelatin and serum; do not reinterpret batch mass as g/L. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[0].items[1]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
 - preferred_term: sodium pyruvate
-  concentration:
-    value: '0.8'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
-    component'
+  notes: |-
+    Role: Carbon source; Properties: Organic compound, Defined component, Simple component
+
+    Source batch input: 0.8 g. No final-medium volume is specified after gelatin and serum; do not reinterpret batch mass as g/L.
   term:
     id: CHEBI:50144
     label: sodium pyruvate
   mediaingredientmech_chebi_term:
     id: CHEBI:50144
     label: sodium pyruvate
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "sodium pyruvate",
+                "volume": 0.8,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001055",
+                "gmo_id": "GMO_001055",
+                "label": "Sodium pyruvate",
+                "properties": [
+                  {
+                    "id": "GMO_000041",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000041",
+                    "label": "Organic compound"
+                  },
+                  {
+                    "id": "GMO_000046",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000046",
+                    "label": "Defined component"
+                  },
+                  {
+                    "id": "GMO_000049",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000049",
+                    "label": "Simple component"
+                  }
+                ],
+                "roles": [
+                  {
+                    "id": "GMO_000063",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000063",
+                    "label": "Carbon source"
+                  }
+                ]
+              }
+    explanation: |-
+      ingredients[2].concentration: Source batch input: 0.8 g. No final-medium volume is specified after gelatin and serum; do not reinterpret batch mass as g/L. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[0].items[2]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
+
+      Additional exact excerpt: {
+                "component_name": "sodium pyruvate",
+                "volume": 0.8,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001055",
+                "gmo_id": "GMO_001055",
+                "label": "Sodium pyruvate",
+                "properties": [
+                  {
+                    "id": "GMO_000041",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000041",
+                    "label": "Organic compound"
+                  },
+                  {
+                    "id": "GMO_000046",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000046",
+                    "label": "Defined component"
+                  },
+                  {
+                    "id": "GMO_000049",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000049",
+                    "label": "Simple component"
+                  }
+                ],
+                "roles": [
+                  {
+                    "id": "GMO_000063",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000063",
+                    "label": "Carbon source"
+                  }
+                ]
+              }
+      ingredients[2].notes: Source batch input: 0.8 g. No final-medium volume is specified after gelatin and serum; do not reinterpret batch mass as g/L. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[0].items[2]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
 - preferred_term: sodium citrate
-  concentration:
-    value: '0.7'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Organic compound, Defined component, Simple component'
+  notes: |-
+    Role: Buffer; Properties: Organic compound, Defined component, Simple component
+
+    Source batch input: 0.7 g. No final-medium volume is specified after gelatin and serum; do not reinterpret batch mass as g/L.
   term:
     id: CHEBI:53258
     label: sodium citrate
   mediaingredientmech_chebi_term:
     id: CHEBI:53258
     label: sodium citrate
-- preferred_term: Tryptone
-  term:
-    id: MICRO:0000182
-    label: tryptone
-  concentration:
-    value: '10.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
-    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
-  synonyms:
-  - synonym_text: pancreatic digest of casein
-    synonym_type: EXACT
-  - synonym_text: casein peptone
-    synonym_type: EXACT
-- preferred_term: Yeast extract
-  term:
-    id: FOODON:03315426
-    label: yeast extract
-  concentration:
-    value: '5.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
-    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
-    product
-- preferred_term: Sodium chloride
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  concentration:
-    value: '10.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
-    (Luria-Bertani, Miller formulation) commercial product
-  synonyms:
-  - synonym_text: NaCl
-    synonym_type: EXACT
-  - synonym_text: table salt
-    synonym_type: EXACT
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "sodium citrate",
+                "volume": 0.7,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001109",
+                "gmo_id": "GMO_001109",
+                "label": "Sodium citrate",
+                "properties": [
+                  {
+                    "id": "GMO_000041",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000041",
+                    "label": "Organic compound"
+                  },
+                  {
+                    "id": "GMO_000046",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000046",
+                    "label": "Defined component"
+                  },
+                  {
+                    "id": "GMO_000049",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000049",
+                    "label": "Simple component"
+                  }
+                ],
+                "roles": [
+                  {
+                    "id": "GMO_000038",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000038",
+                    "label": "Buffer"
+                  }
+                ]
+              }
+    explanation: |-
+      ingredients[3].concentration: Source batch input: 0.7 g. No final-medium volume is specified after gelatin and serum; do not reinterpret batch mass as g/L. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[0].items[3]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
+
+      Additional exact excerpt: {
+                "component_name": "sodium citrate",
+                "volume": 0.7,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001109",
+                "gmo_id": "GMO_001109",
+                "label": "Sodium citrate",
+                "properties": [
+                  {
+                    "id": "GMO_000041",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000041",
+                    "label": "Organic compound"
+                  },
+                  {
+                    "id": "GMO_000046",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000046",
+                    "label": "Defined component"
+                  },
+                  {
+                    "id": "GMO_000049",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000049",
+                    "label": "Simple component"
+                  }
+                ],
+                "roles": [
+                  {
+                    "id": "GMO_000038",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000038",
+                    "label": "Buffer"
+                  }
+                ]
+              }
+      ingredients[3].notes: Source batch input: 0.7 g. No final-medium volume is specified after gelatin and serum; do not reinterpret batch mass as g/L. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[0].items[3]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
+- preferred_term: bovine serum albumin, FractionV (Miles Laboratories, Elkhart, IN,
+    No.81-003)
+  notes: 'Source batch input: 50 g. No final-medium volume is specified after gelatin
+    and serum; do not reinterpret batch mass as g/L.'
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "bovine serum albumin, FractionV (Miles Laboratories, Elkhart, IN, No.81-003)",
+                "volume": 50,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001520",
+                "gmo_id": "GMO_001520",
+                "label": "Bovine serum albumin",
+                "properties": [
+                  {
+                    "id": "GMO_000047",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000047",
+                    "label": "Undefined component"
+                  }
+                ],
+                "roles": [
+                  {
+                    "id": "GMO_000042",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000042",
+                    "label": "Nutrient source"
+                  }
+                ]
+              }
+    explanation: |-
+      ingredients[4].concentration: Source batch input: 50 g. No final-medium volume is specified after gelatin and serum; do not reinterpret batch mass as g/L. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[0].items[4]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
+
+      Additional exact excerpt: {
+                "component_name": "bovine serum albumin, FractionV (Miles Laboratories, Elkhart, IN, No.81-003)",
+                "volume": 50,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001520",
+                "gmo_id": "GMO_001520",
+                "label": "Bovine serum albumin",
+                "properties": [
+                  {
+                    "id": "GMO_000047",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000047",
+                    "label": "Undefined component"
+                  }
+                ],
+                "roles": [
+                  {
+                    "id": "GMO_000042",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000042",
+                    "label": "Nutrient source"
+                  }
+                ]
+              }
+      ingredients[4].notes: Source batch input: 50 g. No final-medium volume is specified after gelatin and serum; do not reinterpret batch mass as g/L. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[0].items[4]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
 - preferred_term: Yeastolate (Difco)
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  notes: |-
+    Role: Nutrient source; Properties: Undefined component
+
+    Source batch input: 2 g. No final-medium volume is specified after gelatin and serum; do not reinterpret batch mass as g/L.
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "Yeastolate (Difco)",
+                "volume": 2,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001657",
+                "gmo_id": "GMO_001657",
+                "label": "Bacto &trade; TC yeastolate",
+                "properties": [
+                  {
+                    "id": "GMO_000047",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000047",
+                    "label": "Undefined component"
+                  }
+                ],
+                "roles": [
+                  {
+                    "id": "GMO_000042",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000042",
+                    "label": "Nutrient source"
+                  }
+                ]
+              }
+    explanation: |-
+      ingredients[5].concentration: Source batch input: 2 g. No final-medium volume is specified after gelatin and serum; do not reinterpret batch mass as g/L. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[0].items[5]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
+
+      Additional exact excerpt: {
+                "component_name": "Yeastolate (Difco)",
+                "volume": 2,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001657",
+                "gmo_id": "GMO_001657",
+                "label": "Bacto &trade; TC yeastolate",
+                "properties": [
+                  {
+                    "id": "GMO_000047",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000047",
+                    "label": "Undefined component"
+                  }
+                ],
+                "roles": [
+                  {
+                    "id": "GMO_000042",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000042",
+                    "label": "Nutrient source"
+                  }
+                ]
+              }
+      ingredients[5].notes: Source batch input: 2 g. No final-medium volume is specified after gelatin and serum; do not reinterpret batch mass as g/L. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[0].items[5]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
 - preferred_term: N-acetylglucosamine (Sigma)
-  concentration:
-    value: '0.4'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
-    component'
+  notes: |-
+    Role: Carbon source; Properties: Organic compound, Defined component, Simple component
+
+    Source batch input: 0.4 g. No final-medium volume is specified after gelatin and serum; do not reinterpret batch mass as g/L.
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "N-acetylglucosamine (Sigma)",
+                "volume": 0.4,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001708",
+                "gmo_id": "GMO_001708",
+                "label": "N-acetylglucosamine (Sigma)",
+                "properties": [
+                  {
+                    "id": "GMO_000041",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000041",
+                    "label": "Organic compound"
+                  },
+                  {
+                    "id": "GMO_000046",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000046",
+                    "label": "Defined component"
+                  },
+                  {
+                    "id": "GMO_000049",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000049",
+                    "label": "Simple component"
+                  }
+                ],
+                "roles": [
+                  {
+                    "id": "GMO_000063",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000063",
+                    "label": "Carbon source"
+                  }
+                ]
+              }
+    explanation: |-
+      ingredients[6].concentration: Source batch input: 0.4 g. No final-medium volume is specified after gelatin and serum; do not reinterpret batch mass as g/L. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[0].items[6]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
+
+      Additional exact excerpt: {
+                "component_name": "N-acetylglucosamine (Sigma)",
+                "volume": 0.4,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001708",
+                "gmo_id": "GMO_001708",
+                "label": "N-acetylglucosamine (Sigma)",
+                "properties": [
+                  {
+                    "id": "GMO_000041",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000041",
+                    "label": "Organic compound"
+                  },
+                  {
+                    "id": "GMO_000046",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000046",
+                    "label": "Defined component"
+                  },
+                  {
+                    "id": "GMO_000049",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000049",
+                    "label": "Simple component"
+                  }
+                ],
+                "roles": [
+                  {
+                    "id": "GMO_000063",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000063",
+                    "label": "Carbon source"
+                  }
+                ]
+              }
+      ingredients[6].notes: Source batch input: 0.4 g. No final-medium volume is specified after gelatin and serum; do not reinterpret batch mass as g/L. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[0].items[6]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
 - preferred_term: N-2-hydroxyethylpiperazine-N-2-ethanesulfonic acid (HEPES, Sigma
     Chemical Co., St. Louis, MO)
-  concentration:
-    value: '6'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Organic compound, Defined component, Simple component'
+  notes: |-
+    Role: Buffer; Properties: Organic compound, Defined component, Simple component
+
+    Source batch input: 6 g. No final-medium volume is specified after gelatin and serum; do not reinterpret batch mass as g/L.
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "N-2-hydroxyethylpiperazine-N-2-ethanesulfonic acid (HEPES, Sigma Chemical Co., St. Louis, MO)",
+                "volume": 6,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001749",
+                "gmo_id": "GMO_001749",
+                "label": "HEPES (Sigma)",
+                "properties": [
+                  {
+                    "id": "GMO_000041",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000041",
+                    "label": "Organic compound"
+                  },
+                  {
+                    "id": "GMO_000046",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000046",
+                    "label": "Defined component"
+                  },
+                  {
+                    "id": "GMO_000049",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000049",
+                    "label": "Simple component"
+                  }
+                ],
+                "roles": [
+                  {
+                    "id": "GMO_000038",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000038",
+                    "label": "Buffer"
+                  }
+                ]
+              }
+    explanation: |-
+      ingredients[7].concentration: Source batch input: 6 g. No final-medium volume is specified after gelatin and serum; do not reinterpret batch mass as g/L. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[0].items[7]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
+
+      Additional exact excerpt: {
+                "component_name": "N-2-hydroxyethylpiperazine-N-2-ethanesulfonic acid (HEPES, Sigma Chemical Co., St. Louis, MO)",
+                "volume": 6,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001749",
+                "gmo_id": "GMO_001749",
+                "label": "HEPES (Sigma)",
+                "properties": [
+                  {
+                    "id": "GMO_000041",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000041",
+                    "label": "Organic compound"
+                  },
+                  {
+                    "id": "GMO_000046",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000046",
+                    "label": "Defined component"
+                  },
+                  {
+                    "id": "GMO_000049",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000049",
+                    "label": "Simple component"
+                  }
+                ],
+                "roles": [
+                  {
+                    "id": "GMO_000038",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000038",
+                    "label": "Buffer"
+                  }
+                ]
+              }
+      ingredients[7].notes: Source batch input: 6 g. No final-medium volume is specified after gelatin and serum; do not reinterpret batch mass as g/L. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[0].items[7]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
 - preferred_term: glucose
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
-    component'
+  notes: |-
+    Role: Carbon source; Properties: Organic compound, Simple component, Defined component
+
+    Source batch input: 5 g. No final-medium volume is specified after gelatin and serum; do not reinterpret batch mass as g/L.
   term:
     id: CHEBI:17234
     label: glucose
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
-- preferred_term: 10X concentrate of CMRL 1066 without glutamine (Gibco Laboratories,
-    GrandIsland, NY, No.330-1540)
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Complex component'
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "glucose",
+                "volume": 5,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001815",
+                "gmo_id": "GMO_001815",
+                "label": "Glucose",
+                "properties": [
+                  {
+                    "id": "GMO_000041",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000041",
+                    "label": "Organic compound"
+                  },
+                  {
+                    "id": "GMO_000049",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000049",
+                    "label": "Simple component"
+                  },
+                  {
+                    "id": "GMO_000046",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000046",
+                    "label": "Defined component"
+                  }
+                ],
+                "roles": [
+                  {
+                    "id": "GMO_000063",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000063",
+                    "label": "Carbon source"
+                  }
+                ]
+              }
+    explanation: |-
+      ingredients[8].concentration: Source batch input: 5 g. No final-medium volume is specified after gelatin and serum; do not reinterpret batch mass as g/L. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[0].items[8]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
+
+      Additional exact excerpt: {
+                "component_name": "glucose",
+                "volume": 5,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001815",
+                "gmo_id": "GMO_001815",
+                "label": "Glucose",
+                "properties": [
+                  {
+                    "id": "GMO_000041",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000041",
+                    "label": "Organic compound"
+                  },
+                  {
+                    "id": "GMO_000049",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000049",
+                    "label": "Simple component"
+                  },
+                  {
+                    "id": "GMO_000046",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000046",
+                    "label": "Defined component"
+                  }
+                ],
+                "roles": [
+                  {
+                    "id": "GMO_000063",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000063",
+                    "label": "Carbon source"
+                  }
+                ]
+              }
+      ingredients[8].notes: Source batch input: 5 g. No final-medium volume is specified after gelatin and serum; do not reinterpret batch mass as g/L. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[0].items[8]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
 - preferred_term: Neopeptone (Difco Laboratories, Detroit, Ml)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: NaOH
-  notes: 'Properties: Defined component, Inorganic compound, Solution'
-  term:
-    id: CHEBI:32145
-    label: sodium hydroxide
-  concentration:
-    value: variable
-    unit: VARIABLE
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32145
-    label: sodium hydroxide
+  notes: |-
+    Properties: Undefined component
+
+    Source batch input: 5 g. No final-medium volume is specified after gelatin and serum; do not reinterpret batch mass as g/L.
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "Neopeptone (Difco Laboratories, Detroit, Ml)",
+                "volume": 5,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001610",
+                "gmo_id": "GMO_001610",
+                "label": "Bacto &trade; Neopeptone",
+                "properties": [
+                  {
+                    "id": "GMO_000047",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000047",
+                    "label": "Undefined component"
+                  }
+                ],
+                "roles": []
+              }
+    explanation: |-
+      ingredients[9].concentration: Source batch input: 5 g. No final-medium volume is specified after gelatin and serum; do not reinterpret batch mass as g/L. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[0].items[10]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
+
+      Additional exact excerpt: {
+                "component_name": "Neopeptone (Difco Laboratories, Detroit, Ml)",
+                "volume": 5,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001610",
+                "gmo_id": "GMO_001610",
+                "label": "Bacto &trade; Neopeptone",
+                "properties": [
+                  {
+                    "id": "GMO_000047",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000047",
+                    "label": "Undefined component"
+                  }
+                ],
+                "roles": []
+              }
+      ingredients[9].notes: Source batch input: 5 g. No final-medium volume is specified after gelatin and serum; do not reinterpret batch mass as g/L. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[0].items[10]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
 media_term:
   preferred_term: TOGO Medium M2410
   term:
     id: TOGO:M2410
     label: BSK II Medium
-notes: 'Source: https://togomedium.org/medium/M2410
+notes: |-
+  Source: https://togomedium.org/medium/M2410
 
-
+  Superseded historical provenance (not a current formulation claim):
   Commercial Product: LB Medium (Luria-Bertani, Miller formulation)
-
   Supplier: Multiple suppliers (Difco, Sigma, etc.)
-
   Catalog: Multiple (L3522 Sigma, 244520 BD)
-
   Source: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-
   Accessed: 2026-03-28
 
+  Constituent composition researched from product specification.
 
-  Constituent composition researched from product specification.'
+  The false LB constituent expansion is withdrawn in favor of this source's bovine serum albumin input. Existing unrelated chemical annotations are preserved, not recertified. This repair does not assert equivalence with other BSK formulations or add organism-growth evidence.
+
+  9. Incubate at 34-37°C
+
+  *Hamilton, Montana, is at an altitude of 1,200m. At lower elevations the containiers may need to be filled to a higher level.
 applications:
 - Microbial cultivation
 curation_history:
@@ -214,3 +796,889 @@ curation_history:
   notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-08T23:24:53.639909+00:00'
+  curator: codex
+  action: RESTORED_SOURCE_SPECIFIC_BSK_FORMULATIONS_WITH_INGREDIENT_EVIDENCE
+  notes: Restore source-specific albumin, quantity scopes, missing inputs and preparation
+    boundaries. Preserve ID, prior history and unrelated groundings. Unknown doses,
+    percentage bases and final volumes stay unknown; distinct formulations are not
+    blended.
+  source: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410
+  changes: '[{"old_field": "ingredients[0].concentration", "field": "ingredients[0].concentration",
+    "old": {"value": "900", "unit": "G_PER_L"}, "new": {"value": "0.9", "unit": "L"},
+    "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+    "snippet": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\":
+    900,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\":
+    \"GMO_001001\",\n          \"label\": \"Distilled water\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating
+    media\"\n            }\n          ]\n        }"}, {"old_field": "ingredients[0].notes",
+    "field": "ingredients[0].notes", "old": "Role: Solvating media; Properties: Defined
+    component, Inorganic compound, Simple component", "new": "Role: Solvating media;
+    Properties: Defined component, Inorganic compound, Simple component\n\nSource
+    input is 900 ml water = 0.9 L, not 900 g/L or a measured final volume.", "status":
+    "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+    "snippet": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\":
+    900,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\":
+    \"GMO_001001\",\n          \"label\": \"Distilled water\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating
+    media\"\n            }\n          ]\n        }"}, {"old_field": "ingredients[1].concentration",
+    "field": "ingredients[1].concentration", "old": {"value": "2.2", "unit": "G_PER_L"},
+    "new": null, "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+    "snippet": "{\n          \"component_name\": \"sodium bicarbonate\",\n          \"volume\":
+    2.2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001019\",\n          \"gmo_id\":
+    \"GMO_001019\",\n          \"label\": \"Sodium bicarbonate\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\":
+    \"Buffer\"\n            }\n          ]\n        }"}, {"old_field": "ingredients[1].notes",
+    "field": "ingredients[1].notes", "old": "Role: Buffer; Properties: Defined component,
+    Simple component, Inorganic compound", "new": "Role: Buffer; Properties: Defined
+    component, Simple component, Inorganic compound\n\nSource batch input: 2.2 g.
+    No final-medium volume is specified after gelatin and serum; do not reinterpret
+    batch mass as g/L.", "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+    "snippet": "{\n          \"component_name\": \"sodium bicarbonate\",\n          \"volume\":
+    2.2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001019\",\n          \"gmo_id\":
+    \"GMO_001019\",\n          \"label\": \"Sodium bicarbonate\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\":
+    \"Buffer\"\n            }\n          ]\n        }"}, {"old_field": "ingredients[2].concentration",
+    "field": "ingredients[2].concentration", "old": {"value": "0.8", "unit": "G_PER_L"},
+    "new": null, "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+    "snippet": "{\n          \"component_name\": \"sodium pyruvate\",\n          \"volume\":
+    0.8,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001055\",\n          \"gmo_id\":
+    \"GMO_001055\",\n          \"label\": \"Sodium pyruvate\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000063\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\": \"Carbon source\"\n            }\n          ]\n        }"},
+    {"old_field": "ingredients[2].notes", "field": "ingredients[2].notes", "old":
+    "Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component", "new": "Role: Carbon source; Properties: Organic compound, Defined
+    component, Simple component\n\nSource batch input: 0.8 g. No final-medium volume
+    is specified after gelatin and serum; do not reinterpret batch mass as g/L.",
+    "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+    "snippet": "{\n          \"component_name\": \"sodium pyruvate\",\n          \"volume\":
+    0.8,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001055\",\n          \"gmo_id\":
+    \"GMO_001055\",\n          \"label\": \"Sodium pyruvate\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000063\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\": \"Carbon source\"\n            }\n          ]\n        }"},
+    {"old_field": "ingredients[3].concentration", "field": "ingredients[3].concentration",
+    "old": {"value": "0.7", "unit": "G_PER_L"}, "new": null, "status": "correct",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+    "snippet": "{\n          \"component_name\": \"sodium citrate\",\n          \"volume\":
+    0.7,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001109\",\n          \"gmo_id\":
+    \"GMO_001109\",\n          \"label\": \"Sodium citrate\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }"},
+    {"old_field": "ingredients[3].notes", "field": "ingredients[3].notes", "old":
+    "Role: Buffer; Properties: Organic compound, Defined component, Simple component",
+    "new": "Role: Buffer; Properties: Organic compound, Defined component, Simple
+    component\n\nSource batch input: 0.7 g. No final-medium volume is specified after
+    gelatin and serum; do not reinterpret batch mass as g/L.", "status": "correct",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+    "snippet": "{\n          \"component_name\": \"sodium citrate\",\n          \"volume\":
+    0.7,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001109\",\n          \"gmo_id\":
+    \"GMO_001109\",\n          \"label\": \"Sodium citrate\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }"},
+    {"old_field": null, "field": "ingredients[4].concentration", "old": null, "new":
+    null, "status": "add", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+    "snippet": "{\n          \"component_name\": \"bovine serum albumin, FractionV
+    (Miles Laboratories, Elkhart, IN, No.81-003)\",\n          \"volume\": 50,\n          \"unit\":
+    \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001520\",\n          \"gmo_id\":
+    \"GMO_001520\",\n          \"label\": \"Bovine serum albumin\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined
+    component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000042\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000042\",\n              \"label\":
+    \"Nutrient source\"\n            }\n          ]\n        }"}, {"old_field": null,
+    "field": "ingredients[4].notes", "old": null, "new": "Source batch input: 50 g.
+    No final-medium volume is specified after gelatin and serum; do not reinterpret
+    batch mass as g/L.", "status": "add", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+    "snippet": "{\n          \"component_name\": \"bovine serum albumin, FractionV
+    (Miles Laboratories, Elkhart, IN, No.81-003)\",\n          \"volume\": 50,\n          \"unit\":
+    \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001520\",\n          \"gmo_id\":
+    \"GMO_001520\",\n          \"label\": \"Bovine serum albumin\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined
+    component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000042\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000042\",\n              \"label\":
+    \"Nutrient source\"\n            }\n          ]\n        }"}, {"old_field": "ingredients[7].concentration",
+    "field": "ingredients[5].concentration", "old": {"value": "2", "unit": "G_PER_L"},
+    "new": null, "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+    "snippet": "{\n          \"component_name\": \"Yeastolate (Difco)\",\n          \"volume\":
+    2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001657\",\n          \"gmo_id\":
+    \"GMO_001657\",\n          \"label\": \"Bacto &trade; TC yeastolate\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined
+    component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000042\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000042\",\n              \"label\":
+    \"Nutrient source\"\n            }\n          ]\n        }"}, {"old_field": "ingredients[7].notes",
+    "field": "ingredients[5].notes", "old": "Role: Nutrient source; Properties: Undefined
+    component", "new": "Role: Nutrient source; Properties: Undefined component\n\nSource
+    batch input: 2 g. No final-medium volume is specified after gelatin and serum;
+    do not reinterpret batch mass as g/L.", "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+    "snippet": "{\n          \"component_name\": \"Yeastolate (Difco)\",\n          \"volume\":
+    2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001657\",\n          \"gmo_id\":
+    \"GMO_001657\",\n          \"label\": \"Bacto &trade; TC yeastolate\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined
+    component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000042\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000042\",\n              \"label\":
+    \"Nutrient source\"\n            }\n          ]\n        }"}, {"old_field": "ingredients[8].concentration",
+    "field": "ingredients[6].concentration", "old": {"value": "0.4", "unit": "G_PER_L"},
+    "new": null, "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+    "snippet": "{\n          \"component_name\": \"N-acetylglucosamine (Sigma)\",\n          \"volume\":
+    0.4,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001708\",\n          \"gmo_id\":
+    \"GMO_001708\",\n          \"label\": \"N-acetylglucosamine (Sigma)\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000063\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\": \"Carbon source\"\n            }\n          ]\n        }"},
+    {"old_field": "ingredients[8].notes", "field": "ingredients[6].notes", "old":
+    "Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component", "new": "Role: Carbon source; Properties: Organic compound, Defined
+    component, Simple component\n\nSource batch input: 0.4 g. No final-medium volume
+    is specified after gelatin and serum; do not reinterpret batch mass as g/L.",
+    "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+    "snippet": "{\n          \"component_name\": \"N-acetylglucosamine (Sigma)\",\n          \"volume\":
+    0.4,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001708\",\n          \"gmo_id\":
+    \"GMO_001708\",\n          \"label\": \"N-acetylglucosamine (Sigma)\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000063\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\": \"Carbon source\"\n            }\n          ]\n        }"},
+    {"old_field": "ingredients[9].concentration", "field": "ingredients[7].concentration",
+    "old": {"value": "6", "unit": "G_PER_L"}, "new": null, "status": "correct", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410", "snippet":
+    "{\n          \"component_name\": \"N-2-hydroxyethylpiperazine-N-2-ethanesulfonic
+    acid (HEPES, Sigma Chemical Co., St. Louis, MO)\",\n          \"volume\": 6,\n          \"unit\":
+    \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001749\",\n          \"gmo_id\":
+    \"GMO_001749\",\n          \"label\": \"HEPES (Sigma)\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }"},
+    {"old_field": "ingredients[9].notes", "field": "ingredients[7].notes", "old":
+    "Role: Buffer; Properties: Organic compound, Defined component, Simple component",
+    "new": "Role: Buffer; Properties: Organic compound, Defined component, Simple
+    component\n\nSource batch input: 6 g. No final-medium volume is specified after
+    gelatin and serum; do not reinterpret batch mass as g/L.", "status": "correct",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+    "snippet": "{\n          \"component_name\": \"N-2-hydroxyethylpiperazine-N-2-ethanesulfonic
+    acid (HEPES, Sigma Chemical Co., St. Louis, MO)\",\n          \"volume\": 6,\n          \"unit\":
+    \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001749\",\n          \"gmo_id\":
+    \"GMO_001749\",\n          \"label\": \"HEPES (Sigma)\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }"},
+    {"old_field": "ingredients[10].concentration", "field": "ingredients[8].concentration",
+    "old": {"value": "5", "unit": "G_PER_L"}, "new": null, "status": "correct", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410", "snippet":
+    "{\n          \"component_name\": \"glucose\",\n          \"volume\": 5,\n          \"unit\":
+    \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001815\",\n          \"gmo_id\":
+    \"GMO_001815\",\n          \"label\": \"Glucose\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\":
+    \"Carbon source\"\n            }\n          ]\n        }"}, {"old_field": "ingredients[10].notes",
+    "field": "ingredients[8].notes", "old": "Role: Carbon source; Properties: Organic
+    compound, Simple component, Defined component", "new": "Role: Carbon source; Properties:
+    Organic compound, Simple component, Defined component\n\nSource batch input: 5
+    g. No final-medium volume is specified after gelatin and serum; do not reinterpret
+    batch mass as g/L.", "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+    "snippet": "{\n          \"component_name\": \"glucose\",\n          \"volume\":
+    5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001815\",\n          \"gmo_id\":
+    \"GMO_001815\",\n          \"label\": \"Glucose\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\":
+    \"Carbon source\"\n            }\n          ]\n        }"}, {"old_field": "ingredients[12].concentration",
+    "field": "ingredients[9].concentration", "old": {"value": "5", "unit": "G_PER_L"},
+    "new": null, "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+    "snippet": "{\n          \"component_name\": \"Neopeptone (Difco Laboratories,
+    Detroit, Ml)\",\n          \"volume\": 5,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001610\",\n          \"gmo_id\": \"GMO_001610\",\n          \"label\":
+    \"Bacto &trade; Neopeptone\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\":
+    \"Undefined component\"\n            }\n          ],\n          \"roles\": []\n        }"},
+    {"old_field": "ingredients[12].notes", "field": "ingredients[9].notes", "old":
+    "Properties: Undefined component", "new": "Properties: Undefined component\n\nSource
+    batch input: 5 g. No final-medium volume is specified after gelatin and serum;
+    do not reinterpret batch mass as g/L.", "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+    "snippet": "{\n          \"component_name\": \"Neopeptone (Difco Laboratories,
+    Detroit, Ml)\",\n          \"volume\": 5,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001610\",\n          \"gmo_id\": \"GMO_001610\",\n          \"label\":
+    \"Bacto &trade; Neopeptone\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\":
+    \"Undefined component\"\n            }\n          ],\n          \"roles\": []\n        }"},
+    {"old_field": "ingredients[11].concentration", "field": "solutions[0].concentration",
+    "old": {"value": "100", "unit": "G_PER_L"}, "new": {"value": "0.1", "unit": "L"},
+    "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+    "snippet": "{\n          \"component_name\": \"10X concentrate of CMRL 1066 without
+    glutamine (Gibco Laboratories, GrandIsland, NY, No.330-1540)\",\n          \"volume\":
+    100,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001523\",\n          \"gmo_id\":
+    \"GMO_001523\",\n          \"label\": \"CMRL 1066 (Gibco 330-1540)\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000050\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000050\",\n              \"label\": \"Complex
+    component\"\n            }\n          ],\n          \"roles\": []\n        }"},
+    {"old_field": "ingredients[11].notes", "field": "solutions[0].notes", "old": "Properties:
+    Defined component, Complex component", "new": "Properties: Defined component,
+    Complex component\n\nSource dose: 100 ml = 0.1 L of the specified 10X CMRL 1066
+    without glutamine. No product composition or final-medium g/L is inferred.", "status":
+    "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+    "snippet": "{\n          \"component_name\": \"10X concentrate of CMRL 1066 without
+    glutamine (Gibco Laboratories, GrandIsland, NY, No.330-1540)\",\n          \"volume\":
+    100,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001523\",\n          \"gmo_id\":
+    \"GMO_001523\",\n          \"label\": \"CMRL 1066 (Gibco 330-1540)\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000050\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000050\",\n              \"label\": \"Complex
+    component\"\n            }\n          ],\n          \"roles\": []\n        }"},
+    {"old_field": "ingredients[13].concentration", "field": "solutions[1].composition[0].concentration",
+    "old": {"value": "variable", "unit": "VARIABLE"}, "new": null, "status": "correct",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+    "snippet": "{\n          \"component_name\": \"NaOH\",\n          \"conc_value\":
+    1,\n          \"conc_unit\": \"N\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001300\",\n          \"gmo_id\":
+    \"GMO_001300\",\n          \"label\": \"Sodium hydroxide solution\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            }\n          ],\n          \"roles\":
+    []\n        }"}, {"old_field": null, "field": "solutions[1].composition[0].concentration",
+    "old": null, "new": null, "status": "evidence_only", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+    "snippet": "{\n      \"paragraph_index\": 4,\n      \"comment\": \"4. Adjust pH
+    of medium at 20-25\u00b0C to 7.6 with 1 N NaOH.\"\n    }"}, {"old_field": "ingredients[13].notes",
+    "field": "solutions[1].composition[0].notes", "old": "Properties: Defined component,
+    Inorganic compound, Solution", "new": "Properties: Defined component, Inorganic
+    compound, Solution\n\nSource stock strength is 1 N, not an asserted molarity or
+    final-medium concentration. Titrate to pH 7.6 at 20-25 C before gelatin/serum
+    additions; no fixed dose is given.", "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+    "snippet": "{\n          \"component_name\": \"NaOH\",\n          \"conc_value\":
+    1,\n          \"conc_unit\": \"N\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001300\",\n          \"gmo_id\":
+    \"GMO_001300\",\n          \"label\": \"Sodium hydroxide solution\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            }\n          ],\n          \"roles\":
+    []\n        }"}, {"old_field": null, "field": "solutions[1].composition[0].notes",
+    "old": null, "new": "Properties: Defined component, Inorganic compound, Solution\n\nSource
+    stock strength is 1 N, not an asserted molarity or final-medium concentration.
+    Titrate to pH 7.6 at 20-25 C before gelatin/serum additions; no fixed dose is
+    given.", "status": "evidence_only", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+    "snippet": "{\n      \"paragraph_index\": 4,\n      \"comment\": \"4. Adjust pH
+    of medium at 20-25\u00b0C to 7.6 with 1 N NaOH.\"\n    }"}, {"old_field": null,
+    "field": "solutions[2].concentration", "old": null, "new": {"value": "0.2", "unit":
+    "L"}, "status": "add", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+    "snippet": "{\n      \"paragraph_index\": 5,\n      \"comment\": \"5. Add 200ml
+    of 7 percent gelatin (Difco) which had been dissolved in boilinig water.\"\n    }"},
+    {"old_field": null, "field": "solutions[2].preparation_notes", "old": null, "new":
+    "Dissolve gelatin in boiling water as the source describes, then add 200 ml of
+    this stock after pH adjustment. No gelatin mass or final-medium percentage is
+    calculated.", "status": "add", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+    "snippet": "{\n      \"paragraph_index\": 5,\n      \"comment\": \"5. Add 200ml
+    of 7 percent gelatin (Difco) which had been dissolved in boilinig water.\"\n    }"},
+    {"old_field": null, "field": "solutions[2].composition[0].notes", "old": null,
+    "new": "Difco gelatin stock: 7 percent, with no stated w/v, w/w or v/v basis.
+    No numeric stock mass concentration is asserted.", "status": "add", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410", "snippet":
+    "{\n      \"paragraph_index\": 5,\n      \"comment\": \"5. Add 200ml of 7 percent
+    gelatin (Difco) which had been dissolved in boilinig water.\"\n    }"}, {"old_field":
+    null, "field": "solutions[3].notes", "old": null, "new": "Before use, add unheated
+    rabbit serum (trace hemolyzed; Pel-Freez Biologicals) to a final 6 percent. Percentage
+    basis and fixed batch dose are not stated; neither is guessed.", "status": "add",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+    "snippet": "{\n      \"paragraph_index\": 7,\n      \"comment\": \"7. Before use,
+    add unheated rabbit serum(\\\\\\\"trace hemolyzed\\\\\\\"; Pel-Freez Biologicals,
+    Inc., Rogers, AR) to a final concentration of 6 percent.\"\n    }"}, {"old_field":
+    null, "field": "preparation_steps[0].description", "old": null, "new": "1. After
+    detergent cleaning, all glassware is rinsed thoroughly with glass-distilled water
+    and then autoclaved.", "status": "add", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+    "snippet": "{\n      \"paragraph_index\": 1,\n      \"comment\": \"1. After detergent
+    cleaning, all glassware is rinsed thoroughly with glass-distilled water and then
+    autoclaved.\"\n    }"}, {"old_field": null, "field": "preparation_steps[1].description",
+    "old": null, "new": "2. To 900ml of glass-distilled water are added 100ml of 10X
+    concentrate of CMRL 1066 without glutamine (Gibco Laboratories, GrandIsland, NY,
+    No.330-1540).", "status": "add", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+    "snippet": "{\n      \"paragraph_index\": 2,\n      \"comment\": \"2. To 900ml
+    of glass-distilled water are added 100ml of 10X concentrate of CMRL 1066 without
+    glutamine (Gibco Laboratories, GrandIsland, NY, No.330-1540).\"\n    }"}, {"old_field":
+    null, "field": "preparation_steps[2].description", "old": null, "new": "Add the
+    source-listed ingredients to the diluted CMRL 1066. The provider requests an addition
+    order, but its item array is not accepted as that order; exact addition order
+    remains unresolved here.", "status": "add", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+    "snippet": "{\n      \"paragraph_index\": 3,\n      \"comment\": \"3. Add to the
+    IX CMRL 1066 in the following order:\"\n    }"}, {"old_field": null, "field":
+    "preparation_steps[3].description", "old": null, "new": "4. Adjust pH of medium
+    at 20-25\u00b0C to 7.6 with 1 N NaOH.", "status": "add", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+    "snippet": "{\n      \"paragraph_index\": 4,\n      \"comment\": \"4. Adjust pH
+    of medium at 20-25\u00b0C to 7.6 with 1 N NaOH.\"\n    }"}, {"old_field": null,
+    "field": "preparation_steps[4].description", "old": null, "new": "5. Add 200ml
+    of 7 percent gelatin (Difco) which had been dissolved in boilinig water.", "status":
+    "add", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+    "snippet": "{\n      \"paragraph_index\": 5,\n      \"comment\": \"5. Add 200ml
+    of 7 percent gelatin (Difco) which had been dissolved in boilinig water.\"\n    }"},
+    {"old_field": null, "field": "preparation_steps[5].description", "old": null,
+    "new": "6. Sterilize by filtration with air pressure (0.2 \u03bcm nitrocellulose,
+    Millipore Corp., Bedford, MA). Store medium at 4\u00b0C.", "status": "add", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410", "snippet":
+    "{\n      \"paragraph_index\": 6,\n      \"comment\": \"6. Sterilize by filtration
+    with air pressure (0.2 \u03bcm nitrocellulose, Millipore Corp., Bedford, MA).
+    Store medium at 4\u00b0C.\"\n    }"}, {"old_field": null, "field": "preparation_steps[6].description",
+    "old": null, "new": "7. Before use, add unheated rabbit serum(\\\"trace hemolyzed\\\";
+    Pel-Freez Biologicals, Inc., Rogers, AR) to a final concentration of 6 percent.",
+    "status": "add", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+    "snippet": "{\n      \"paragraph_index\": 7,\n      \"comment\": \"7. Before use,
+    add unheated rabbit serum(\\\\\\\"trace hemolyzed\\\\\\\"; Pel-Freez Biologicals,
+    Inc., Rogers, AR) to a final concentration of 6 percent.\"\n    }"}, {"old_field":
+    null, "field": "preparation_steps[7].description", "old": null, "new": "8. Dispense
+    to glass or polystyrene tubes or bottles. Fill containers to 50 to 90 percent
+    capacity and captightly.*", "status": "add", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+    "snippet": "{\n      \"paragraph_index\": 8,\n      \"comment\": \"8. Dispense
+    to glass or polystyrene tubes or bottles. Fill containers to 50 to 90 percent
+    capacity and captightly.*\"\n    }"}, {"old_field": "notes", "field": "notes",
+    "old": "Source: https://togomedium.org/medium/M2410\n\nCommercial Product: LB
+    Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.",
+    "new": "Source: https://togomedium.org/medium/M2410\n\nSuperseded historical provenance
+    (not a current formulation claim):\nCommercial Product: LB Medium (Luria-Bertani,
+    Miller formulation)\nSupplier: Multiple suppliers (Difco, Sigma, etc.)\nCatalog:
+    Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThe
+    false LB constituent expansion is withdrawn in favor of this source''s bovine
+    serum albumin input. Existing unrelated chemical annotations are preserved, not
+    recertified. This repair does not assert equivalence with other BSK formulations
+    or add organism-growth evidence.\n\n9. Incubate at 34-37\u00b0C\n\n*Hamilton,
+    Montana, is at an altitude of 1,200m. At lower elevations the containiers may
+    need to be filled to a higher level.", "status": "add", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+    "snippet": "{\n      \"paragraph_index\": 9,\n      \"comment\": \"9. Incubate
+    at 34-37\u00b0C\"\n    }"}, {"old_field": "notes", "field": "notes", "old": "Source:
+    https://togomedium.org/medium/M2410\n\nCommercial Product: LB Medium (Luria-Bertani,
+    Miller formulation)\nSupplier: Multiple suppliers (Difco, Sigma, etc.)\nCatalog:
+    Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.",
+    "new": "Source: https://togomedium.org/medium/M2410\n\nSuperseded historical provenance
+    (not a current formulation claim):\nCommercial Product: LB Medium (Luria-Bertani,
+    Miller formulation)\nSupplier: Multiple suppliers (Difco, Sigma, etc.)\nCatalog:
+    Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThe
+    false LB constituent expansion is withdrawn in favor of this source''s bovine
+    serum albumin input. Existing unrelated chemical annotations are preserved, not
+    recertified. This repair does not assert equivalence with other BSK formulations
+    or add organism-growth evidence.\n\n9. Incubate at 34-37\u00b0C\n\n*Hamilton,
+    Montana, is at an altitude of 1,200m. At lower elevations the containiers may
+    need to be filled to a higher level.", "status": "add", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410",
+    "snippet": "{\n      \"paragraph_index\": 10,\n      \"comment\": \"*Hamilton,
+    Montana, is at an altitude of 1,200m. At lower elevations the containiers may
+    need to be filled to a higher level.\"\n    }"}, {"old_field": "ingredients[4].concentration",
+    "field": "notes", "old": {"value": "10.0", "unit": "G_PER_L"}, "new": "Source:
+    https://togomedium.org/medium/M2410\n\nSuperseded historical provenance (not a
+    current formulation claim):\nCommercial Product: LB Medium (Luria-Bertani, Miller
+    formulation)\nSupplier: Multiple suppliers (Difco, Sigma, etc.)\nCatalog: Multiple
+    (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThe
+    false LB constituent expansion is withdrawn in favor of this source''s bovine
+    serum albumin input. Existing unrelated chemical annotations are preserved, not
+    recertified. This repair does not assert equivalence with other BSK formulations
+    or add organism-growth evidence.\n\n9. Incubate at 34-37\u00b0C\n\n*Hamilton,
+    Montana, is at an altitude of 1,200m. At lower elevations the containiers may
+    need to be filled to a higher level.", "status": "remove_unsupported", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410", "snippet":
+    "{\n          \"component_name\": \"bovine serum albumin, FractionV (Miles Laboratories,
+    Elkhart, IN, No.81-003)\",\n          \"volume\": 50,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001520\",\n          \"gmo_id\": \"GMO_001520\",\n          \"label\":
+    \"Bovine serum albumin\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\":
+    \"Undefined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000042\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000042\",\n              \"label\":
+    \"Nutrient source\"\n            }\n          ]\n        }"}, {"old_field": "ingredients[5].concentration",
+    "field": "notes", "old": {"value": "5.0", "unit": "G_PER_L"}, "new": "Source:
+    https://togomedium.org/medium/M2410\n\nSuperseded historical provenance (not a
+    current formulation claim):\nCommercial Product: LB Medium (Luria-Bertani, Miller
+    formulation)\nSupplier: Multiple suppliers (Difco, Sigma, etc.)\nCatalog: Multiple
+    (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThe
+    false LB constituent expansion is withdrawn in favor of this source''s bovine
+    serum albumin input. Existing unrelated chemical annotations are preserved, not
+    recertified. This repair does not assert equivalence with other BSK formulations
+    or add organism-growth evidence.\n\n9. Incubate at 34-37\u00b0C\n\n*Hamilton,
+    Montana, is at an altitude of 1,200m. At lower elevations the containiers may
+    need to be filled to a higher level.", "status": "remove_unsupported", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410", "snippet":
+    "{\n          \"component_name\": \"bovine serum albumin, FractionV (Miles Laboratories,
+    Elkhart, IN, No.81-003)\",\n          \"volume\": 50,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001520\",\n          \"gmo_id\": \"GMO_001520\",\n          \"label\":
+    \"Bovine serum albumin\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\":
+    \"Undefined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000042\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000042\",\n              \"label\":
+    \"Nutrient source\"\n            }\n          ]\n        }"}, {"old_field": "ingredients[6].concentration",
+    "field": "notes", "old": {"value": "10.0", "unit": "G_PER_L"}, "new": "Source:
+    https://togomedium.org/medium/M2410\n\nSuperseded historical provenance (not a
+    current formulation claim):\nCommercial Product: LB Medium (Luria-Bertani, Miller
+    formulation)\nSupplier: Multiple suppliers (Difco, Sigma, etc.)\nCatalog: Multiple
+    (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThe
+    false LB constituent expansion is withdrawn in favor of this source''s bovine
+    serum albumin input. Existing unrelated chemical annotations are preserved, not
+    recertified. This repair does not assert equivalence with other BSK formulations
+    or add organism-growth evidence.\n\n9. Incubate at 34-37\u00b0C\n\n*Hamilton,
+    Montana, is at an altitude of 1,200m. At lower elevations the containiers may
+    need to be filled to a higher level.", "status": "remove_unsupported", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410", "snippet":
+    "{\n          \"component_name\": \"bovine serum albumin, FractionV (Miles Laboratories,
+    Elkhart, IN, No.81-003)\",\n          \"volume\": 50,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001520\",\n          \"gmo_id\": \"GMO_001520\",\n          \"label\":
+    \"Bovine serum albumin\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\":
+    \"Undefined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000042\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000042\",\n              \"label\":
+    \"Nutrient source\"\n            }\n          ]\n        }"}]'
+solutions:
+- preferred_term: 10X concentrate of CMRL 1066 without glutamine (Gibco Laboratories,
+    GrandIsland, NY, No.330-1540)
+  concentration:
+    value: '0.1'
+    unit: L
+  notes: |-
+    Properties: Defined component, Complex component
+
+    Source dose: 100 ml = 0.1 L of the specified 10X CMRL 1066 without glutamine. No product composition or final-medium g/L is inferred.
+- preferred_term: NaOH solution (1 N)
+  composition:
+  - preferred_term: NaOH
+    notes: |-
+      Properties: Defined component, Inorganic compound, Solution
+
+      Source stock strength is 1 N, not an asserted molarity or final-medium concentration. Titrate to pH 7.6 at 20-25 C before gelatin/serum additions; no fixed dose is given.
+    term:
+      id: CHEBI:32145
+      label: sodium hydroxide
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32145
+      label: sodium hydroxide
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "NaOH",
+                  "conc_value": 1,
+                  "conc_unit": "N",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001300",
+                  "gmo_id": "GMO_001300",
+                  "label": "Sodium hydroxide solution",
+                  "properties": [
+                    {
+                      "id": "GMO_000046",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000046",
+                      "label": "Defined component"
+                    },
+                    {
+                      "id": "GMO_000040",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000040",
+                      "label": "Inorganic compound"
+                    },
+                    {
+                      "id": "GMO_000051",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000051",
+                      "label": "Solution"
+                    }
+                  ],
+                  "roles": []
+                }
+      explanation: |-
+        solutions[1].composition[0].concentration: Properties: Defined component, Inorganic compound, Solution
+
+        Source stock strength is 1 N, not an asserted molarity or final-medium concentration. Titrate to pH 7.6 at 20-25 C before gelatin/serum additions; no fixed dose is given. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[0].items[11]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
+
+        Additional exact excerpt: {
+              "paragraph_index": 4,
+              "comment": "4. Adjust pH of medium at 20-25°C to 7.6 with 1 N NaOH."
+            }
+        solutions[1].composition[0].concentration: Preserve the temperature-specific adjustment before subsequent additions. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=comments[3]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
+
+        Additional exact excerpt: {
+                  "component_name": "NaOH",
+                  "conc_value": 1,
+                  "conc_unit": "N",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001300",
+                  "gmo_id": "GMO_001300",
+                  "label": "Sodium hydroxide solution",
+                  "properties": [
+                    {
+                      "id": "GMO_000046",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000046",
+                      "label": "Defined component"
+                    },
+                    {
+                      "id": "GMO_000040",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000040",
+                      "label": "Inorganic compound"
+                    },
+                    {
+                      "id": "GMO_000051",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000051",
+                      "label": "Solution"
+                    }
+                  ],
+                  "roles": []
+                }
+        solutions[1].composition[0].notes: Properties: Defined component, Inorganic compound, Solution
+
+        Source stock strength is 1 N, not an asserted molarity or final-medium concentration. Titrate to pH 7.6 at 20-25 C before gelatin/serum additions; no fixed dose is given. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[0].items[11]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
+
+        Additional exact excerpt: {
+              "paragraph_index": 4,
+              "comment": "4. Adjust pH of medium at 20-25°C to 7.6 with 1 N NaOH."
+            }
+        solutions[1].composition[0].notes: Preserve the temperature-specific adjustment before subsequent additions. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=comments[3]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
+- preferred_term: Gelatin solution (7 percent; basis unspecified)
+  concentration:
+    value: '0.2'
+    unit: L
+  composition:
+  - preferred_term: Gelatin
+    notes: 'Difco gelatin stock: 7 percent, with no stated w/v, w/w or v/v basis.
+      No numeric stock mass concentration is asserted.'
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410
+      supports: SUPPORT
+      snippet: |-
+        {
+              "paragraph_index": 5,
+              "comment": "5. Add 200ml of 7 percent gelatin (Difco) which had been dissolved in boilinig water."
+            }
+      explanation: 'solutions[2].composition[0].notes: Preserve the reported percentage
+        as qualified text only. No final-medium volume, percentage basis, density
+        or chemical grounding is inferred. Locator=comments[4]; accessed=2026-10-08T22:21:55.422296+00:00;
+        capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.'
+  preparation_notes: Dissolve gelatin in boiling water as the source describes, then
+    add 200 ml of this stock after pH adjustment. No gelatin mass or final-medium
+    percentage is calculated.
+- preferred_term: Unheated rabbit serum
+  notes: Before use, add unheated rabbit serum (trace hemolyzed; Pel-Freez Biologicals)
+    to a final 6 percent. Percentage basis and fixed batch dose are not stated; neither
+    is guessed.
+evidence:
+- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410
+  supports: SUPPORT
+  snippet: |-
+    {
+              "component_name": "10X concentrate of CMRL 1066 without glutamine (Gibco Laboratories, GrandIsland, NY, No.330-1540)",
+              "volume": 100,
+              "unit": "ml",
+              "gmo": "http://purl.jp/bio/10/gmo/GMO_001523",
+              "gmo_id": "GMO_001523",
+              "label": "CMRL 1066 (Gibco 330-1540)",
+              "properties": [
+                {
+                  "id": "GMO_000046",
+                  "uri": "http://purl.jp/bio/10/gmo/GMO_000046",
+                  "label": "Defined component"
+                },
+                {
+                  "id": "GMO_000050",
+                  "uri": "http://purl.jp/bio/10/gmo/GMO_000050",
+                  "label": "Complex component"
+                }
+              ],
+              "roles": []
+            }
+  explanation: |-
+    solutions[0].concentration: Properties: Defined component, Complex component
+
+    Source dose: 100 ml = 0.1 L of the specified 10X CMRL 1066 without glutamine. No product composition or final-medium g/L is inferred. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[0].items[9]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
+
+    Additional exact excerpt: {
+              "component_name": "10X concentrate of CMRL 1066 without glutamine (Gibco Laboratories, GrandIsland, NY, No.330-1540)",
+              "volume": 100,
+              "unit": "ml",
+              "gmo": "http://purl.jp/bio/10/gmo/GMO_001523",
+              "gmo_id": "GMO_001523",
+              "label": "CMRL 1066 (Gibco 330-1540)",
+              "properties": [
+                {
+                  "id": "GMO_000046",
+                  "uri": "http://purl.jp/bio/10/gmo/GMO_000046",
+                  "label": "Defined component"
+                },
+                {
+                  "id": "GMO_000050",
+                  "uri": "http://purl.jp/bio/10/gmo/GMO_000050",
+                  "label": "Complex component"
+                }
+              ],
+              "roles": []
+            }
+    solutions[0].notes: Properties: Defined component, Complex component
+
+    Source dose: 100 ml = 0.1 L of the specified 10X CMRL 1066 without glutamine. No product composition or final-medium g/L is inferred. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[0].items[9]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
+
+    Additional exact excerpt: {
+          "paragraph_index": 5,
+          "comment": "5. Add 200ml of 7 percent gelatin (Difco) which had been dissolved in boilinig water."
+        }
+    solutions[2].concentration: 200 ml / 1000 = 0.2 L is a stock batch dose; the 7 percent strength has an unstated basis. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=comments[4]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
+
+    Additional exact excerpt: {
+          "paragraph_index": 5,
+          "comment": "5. Add 200ml of 7 percent gelatin (Difco) which had been dissolved in boilinig water."
+        }
+    solutions[2].preparation_notes: 200 ml / 1000 = 0.2 L is a stock batch dose; the 7 percent strength has an unstated basis. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=comments[4]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
+
+    Additional exact excerpt: {
+          "paragraph_index": 7,
+          "comment": "7. Before use, add unheated rabbit serum(\\\"trace hemolyzed\\\"; Pel-Freez Biologicals, Inc., Rogers, AR) to a final concentration of 6 percent."
+        }
+    solutions[3].notes: Preserve unheated serum and the stated final percentage without selecting a basis or inventing a dose. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=comments[6]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
+
+    Additional exact excerpt: {
+          "paragraph_index": 1,
+          "comment": "1. After detergent cleaning, all glassware is rinsed thoroughly with glass-distilled water and then autoclaved."
+        }
+    preparation_steps[0].description: Retain source sequence, temperature and treatment. Use FILTER rather than the 0.22 micrometer-specific enum for the stated 0.2 micrometer membrane. Do not infer dry-ingredient addition order from API array order. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=comments[0]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
+
+    Additional exact excerpt: {
+          "paragraph_index": 2,
+          "comment": "2. To 900ml of glass-distilled water are added 100ml of 10X concentrate of CMRL 1066 without glutamine (Gibco Laboratories, GrandIsland, NY, No.330-1540)."
+        }
+    preparation_steps[1].description: Retain source sequence, temperature and treatment. Use FILTER rather than the 0.22 micrometer-specific enum for the stated 0.2 micrometer membrane. Do not infer dry-ingredient addition order from API array order. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=comments[1]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
+
+    Additional exact excerpt: {
+          "paragraph_index": 3,
+          "comment": "3. Add to the IX CMRL 1066 in the following order:"
+        }
+    preparation_steps[2].description: Retain source sequence, temperature and treatment. Use FILTER rather than the 0.22 micrometer-specific enum for the stated 0.2 micrometer membrane. Do not infer dry-ingredient addition order from API array order. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=comments[2]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
+
+    Additional exact excerpt: {
+          "paragraph_index": 4,
+          "comment": "4. Adjust pH of medium at 20-25°C to 7.6 with 1 N NaOH."
+        }
+    preparation_steps[3].description: Retain source sequence, temperature and treatment. Use FILTER rather than the 0.22 micrometer-specific enum for the stated 0.2 micrometer membrane. Do not infer dry-ingredient addition order from API array order. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=comments[3]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
+
+    Additional exact excerpt: {
+          "paragraph_index": 5,
+          "comment": "5. Add 200ml of 7 percent gelatin (Difco) which had been dissolved in boilinig water."
+        }
+    preparation_steps[4].description: Retain source sequence, temperature and treatment. Use FILTER rather than the 0.22 micrometer-specific enum for the stated 0.2 micrometer membrane. Do not infer dry-ingredient addition order from API array order. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=comments[4]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
+
+    Additional exact excerpt: {
+          "paragraph_index": 6,
+          "comment": "6. Sterilize by filtration with air pressure (0.2 μm nitrocellulose, Millipore Corp., Bedford, MA). Store medium at 4°C."
+        }
+    preparation_steps[5].description: Retain source sequence, temperature and treatment. Use FILTER rather than the 0.22 micrometer-specific enum for the stated 0.2 micrometer membrane. Do not infer dry-ingredient addition order from API array order. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=comments[5]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
+
+    Additional exact excerpt: {
+          "paragraph_index": 7,
+          "comment": "7. Before use, add unheated rabbit serum(\\\"trace hemolyzed\\\"; Pel-Freez Biologicals, Inc., Rogers, AR) to a final concentration of 6 percent."
+        }
+    preparation_steps[6].description: Retain source sequence, temperature and treatment. Use FILTER rather than the 0.22 micrometer-specific enum for the stated 0.2 micrometer membrane. Do not infer dry-ingredient addition order from API array order. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=comments[6]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
+
+    Additional exact excerpt: {
+          "paragraph_index": 8,
+          "comment": "8. Dispense to glass or polystyrene tubes or bottles. Fill containers to 50 to 90 percent capacity and captightly.*"
+        }
+    preparation_steps[7].description: Retain source sequence, temperature and treatment. Use FILTER rather than the 0.22 micrometer-specific enum for the stated 0.2 micrometer membrane. Do not infer dry-ingredient addition order from API array order. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=comments[7]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
+
+    Additional exact excerpt: {
+          "paragraph_index": 9,
+          "comment": "9. Incubate at 34-37°C"
+        }
+    notes: Preserve source incubation and altitude-dependent container-fill context as text, not a guessed preparation action. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=comments[8]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
+
+    Additional exact excerpt: {
+          "paragraph_index": 10,
+          "comment": "*Hamilton, Montana, is at an altitude of 1,200m. At lower elevations the containiers may need to be filled to a higher level."
+        }
+    notes: Preserve source incubation and altitude-dependent container-fill context as text, not a guessed preparation action. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=comments[9]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
+
+    Additional exact excerpt: {
+              "component_name": "bovine serum albumin, FractionV (Miles Laboratories, Elkhart, IN, No.81-003)",
+              "volume": 50,
+              "unit": "g",
+              "gmo": "http://purl.jp/bio/10/gmo/GMO_001520",
+              "gmo_id": "GMO_001520",
+              "label": "Bovine serum albumin",
+              "properties": [
+                {
+                  "id": "GMO_000047",
+                  "uri": "http://purl.jp/bio/10/gmo/GMO_000047",
+                  "label": "Undefined component"
+                }
+              ],
+              "roles": [
+                {
+                  "id": "GMO_000042",
+                  "uri": "http://purl.jp/bio/10/gmo/GMO_000042",
+                  "label": "Nutrient source"
+                }
+              ]
+            }
+    notes: Remove the unsupported LB ingredient and its dose; the exact source specifies bovine serum albumin instead. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[0].items[4]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
+
+    Additional exact excerpt: {
+              "component_name": "bovine serum albumin, FractionV (Miles Laboratories, Elkhart, IN, No.81-003)",
+              "volume": 50,
+              "unit": "g",
+              "gmo": "http://purl.jp/bio/10/gmo/GMO_001520",
+              "gmo_id": "GMO_001520",
+              "label": "Bovine serum albumin",
+              "properties": [
+                {
+                  "id": "GMO_000047",
+                  "uri": "http://purl.jp/bio/10/gmo/GMO_000047",
+                  "label": "Undefined component"
+                }
+              ],
+              "roles": [
+                {
+                  "id": "GMO_000042",
+                  "uri": "http://purl.jp/bio/10/gmo/GMO_000042",
+                  "label": "Nutrient source"
+                }
+              ]
+            }
+    notes: Remove the unsupported LB ingredient and its dose; the exact source specifies bovine serum albumin instead. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[0].items[4]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
+
+    Additional exact excerpt: {
+              "component_name": "bovine serum albumin, FractionV (Miles Laboratories, Elkhart, IN, No.81-003)",
+              "volume": 50,
+              "unit": "g",
+              "gmo": "http://purl.jp/bio/10/gmo/GMO_001520",
+              "gmo_id": "GMO_001520",
+              "label": "Bovine serum albumin",
+              "properties": [
+                {
+                  "id": "GMO_000047",
+                  "uri": "http://purl.jp/bio/10/gmo/GMO_000047",
+                  "label": "Undefined component"
+                }
+              ],
+              "roles": [
+                {
+                  "id": "GMO_000042",
+                  "uri": "http://purl.jp/bio/10/gmo/GMO_000042",
+                  "label": "Nutrient source"
+                }
+              ]
+            }
+    notes: Remove the unsupported LB ingredient and its dose; the exact source specifies bovine serum albumin instead. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[0].items[4]; accessed=2026-10-08T22:21:55.422296+00:00; capture SHA256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 1. After detergent cleaning, all glassware is rinsed thoroughly with
+    glass-distilled water and then autoclaved.
+- step_number: 2
+  action: MIX
+  description: 2. To 900ml of glass-distilled water are added 100ml of 10X concentrate
+    of CMRL 1066 without glutamine (Gibco Laboratories, GrandIsland, NY, No.330-1540).
+- step_number: 3
+  action: DISSOLVE
+  description: Add the source-listed ingredients to the diluted CMRL 1066. The provider
+    requests an addition order, but its item array is not accepted as that order;
+    exact addition order remains unresolved here.
+- step_number: 4
+  action: ADJUST_PH
+  description: 4. Adjust pH of medium at 20-25°C to 7.6 with 1 N NaOH.
+- step_number: 5
+  action: MIX
+  description: 5. Add 200ml of 7 percent gelatin (Difco) which had been dissolved
+    in boilinig water.
+- step_number: 6
+  action: FILTER
+  description: 6. Sterilize by filtration with air pressure (0.2 μm nitrocellulose,
+    Millipore Corp., Bedford, MA). Store medium at 4°C.
+- step_number: 7
+  action: MIX
+  description: 7. Before use, add unheated rabbit serum(\"trace hemolyzed\"; Pel-Freez
+    Biologicals, Inc., Rogers, AR) to a final concentration of 6 percent.
+- step_number: 8
+  action: ALIQUOT
+  description: 8. Dispense to glass or polystyrene tubes or bottles. Fill containers
+    to 50 to 90 percent capacity and captightly.*
+references:
+- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2410
+  title: BSK II Medium
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-08;
+    capture_sha256=93db04af9cbb6a6c2f04836a8b1c16e5e19c1bfa9731f25c6417d41d59ce24b4.
+    Authors and publication year are not supplied; copyright year is not publication
+    year. Source-specific formulation evidence, not growth evidence.

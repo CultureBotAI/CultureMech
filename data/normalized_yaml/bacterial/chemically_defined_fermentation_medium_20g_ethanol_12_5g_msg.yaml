@@ -13,17 +13,50 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  notes: 'Primary recipe input: 5 g K2HPO4 per 1 L distilled water. Final solution
+    volume is not explicit. The stored molarity is retained as a database assertion,
+    not independently verified final-medium concentration; no conversion was applied.'
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/328/
+    supports: SUPPORT
+    snippet: '28.71'
+    explanation: 'MediaDB 328, Compound table, Potassium dibasic phosphate row, Amount
+      (mM) column: supports only the upstream database assertion at ingredients[0].concentration,
+      28.71 mM. The numeric cell and its own row/column were inspected together and
+      agree with the dated SQL export. This is not independent article verification
+      of final-medium molarity or the old chemical grounding.'
+  - reference: doi:10.1128/AEM.67.6.2596-2602.2001
+    supports: SUPPORT
+    snippet: 5 g
+    explanation: Supports the supplied ingredient/input note at ingredients[0], K2HPO4,
+      5 g per 1 L distilled-water input in Culture on synthetic medium. The source
+      does not explicitly make this a final solution volume. The retained MediaDB
+      molarity remains unverified against the article; this evidence does not certify
+      that concentration and no mass/molar conversion is made.
 - preferred_term: Ethanol
   term:
     id: CHEBI:16236
     label: ethanol
   concentration:
-    value: '434.12'
-    unit: MILLIMOLAR
-  notes: 'Cross-references: KEGG:etoh'
+    value: '20'
+    unit: G_PER_L
+  notes: 'Cross-references: KEGG:etoh The source''s initial 20 g/L input replaces
+    MediaDB 434.12 mM; this is source-unit restoration, not a claim that the database
+    conversion was numerically wrong.'
   mediaingredientmech_chebi_term:
     id: CHEBI:16236
     label: ethanol
+  evidence:
+  - reference: doi:10.1128/AEM.67.6.2596-2602.2001
+    supports: SUPPORT
+    snippet: '20'
+    explanation: 'Supports ingredients[1].concentration for Ethanol: 20 g/L as an
+      initial nutrient input. Locator: Table 2 data row 6, initial carbon concentration
+      column. The snippet is the exact numeric cell/substring, with the chemical row,
+      initial-concentration column and g/L basis separately inspected. It is not a
+      residual measurement or product titre. Replace the historical MediaDB molarity
+      with directly stated source units; no molecular weight or conversion arithmetic
+      is used.'
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
@@ -34,13 +67,58 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
     label: boric acid
-- preferred_term: Ferrous sulfate
+  notes: 'Primary recipe input: 11 mg H3BO3 per 1 L distilled water. Final solution
+    volume is not explicit. The stored molarity is retained as a database assertion,
+    not independently verified final-medium concentration; no conversion was applied.'
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/328/
+    supports: SUPPORT
+    snippet: '0.1779'
+    explanation: 'MediaDB 328, Compound table, Boric acid row, Amount (mM) column:
+      supports only the upstream database assertion at ingredients[2].concentration,
+      0.1779 mM. The numeric cell and its own row/column were inspected together and
+      agree with the dated SQL export. This is not independent article verification
+      of final-medium molarity or the old chemical grounding.'
+  - reference: doi:10.1128/AEM.67.6.2596-2602.2001
+    supports: SUPPORT
+    snippet: 11 mg
+    explanation: Supports the supplied ingredient/input note at ingredients[2], H3BO3,
+      11 mg per 1 L distilled-water input in Culture on synthetic medium. The source
+      does not explicitly make this a final solution volume. The retained MediaDB
+      molarity remains unverified against the article; this evidence does not certify
+      that concentration and no mass/molar conversion is made.
+- preferred_term: iron(2+) sulfate heptahydrate
   concentration:
     value: '0.7194'
     unit: MILLIMOLAR
   term:
-    id: CHEBI:75832
-    label: iron(2+) sulfate (anhydrous)
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+  notes: 'Primary recipe input: 0.2 g FeSO4.7H2O per 1 L distilled water. Final solution
+    volume is not explicit. The stored molarity is retained as a database assertion,
+    not independently verified final-medium concentration; no conversion was applied.'
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/328/
+    supports: SUPPORT
+    snippet: '0.7194'
+    explanation: 'MediaDB 328, Compound table, Ferrous sulfate row, Amount (mM) column:
+      supports only the upstream database assertion at ingredients[3].concentration,
+      0.7194 mM. The numeric cell and its own row/column were inspected together and
+      agree with the dated SQL export. This is not independent article verification
+      of final-medium molarity or the old chemical grounding.'
+  - reference: doi:10.1128/AEM.67.6.2596-2602.2001
+    supports: SUPPORT
+    snippet: FeSO4 · 7H2O
+    explanation: Supports the supplied ingredient/input note at ingredients[3], FeSO4.7H2O,
+      0.2 g per 1 L distilled-water input in Culture on synthetic medium. The source
+      does not explicitly make this a final solution volume. The retained MediaDB
+      molarity remains unverified against the article; this evidence does not certify
+      that concentration and no mass/molar conversion is made.
+  - reference: https://www.ebi.ac.uk/chebi/CHEBI:75836
+    supports: SUPPORT
+    snippet: Fe.7H2O.O4S
+    explanation: Formula field verifies the supplied hydrate identity at ingredients[3];
+      the paper separately specifies its use. Not recipe-amount or growth evidence.
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '36.74'
@@ -48,67 +126,247 @@ ingredients:
   term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
-- preferred_term: Calcium chloride anhydrous
+  notes: 'Primary recipe input: 5 g KH2PO4 per 1 L distilled water. Final solution
+    volume is not explicit. The stored molarity is retained as a database assertion,
+    not independently verified final-medium concentration; no conversion was applied.'
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/328/
+    supports: SUPPORT
+    snippet: '36.74'
+    explanation: 'MediaDB 328, Compound table, Potassium dihydrogen phosphate row,
+      Amount (mM) column: supports only the upstream database assertion at ingredients[4].concentration,
+      36.74 mM. The numeric cell and its own row/column were inspected together and
+      agree with the dated SQL export. This is not independent article verification
+      of final-medium molarity or the old chemical grounding.'
+  - reference: doi:10.1128/AEM.67.6.2596-2602.2001
+    supports: SUPPORT
+    snippet: 5 g
+    explanation: Supports the supplied ingredient/input note at ingredients[4], KH2PO4,
+      5 g per 1 L distilled-water input in Culture on synthetic medium. The source
+      does not explicitly make this a final solution volume. The retained MediaDB
+      molarity remains unverified against the article; this evidence does not certify
+      that concentration and no mass/molar conversion is made.
+- preferred_term: calcium chloride dihydrate
   concentration:
     value: '0.136'
     unit: MILLIMOLAR
   term:
-    id: CHEBI:3312
-    label: calcium dichloride
-- preferred_term: Manganese sulfate
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Primary recipe input: 20 mg CaCl2.2H2O per 1 L distilled water. Final solution
+    volume is not explicit. The stored molarity is retained as a database assertion,
+    not independently verified final-medium concentration; no conversion was applied.'
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/328/
+    supports: SUPPORT
+    snippet: '0.136'
+    explanation: 'MediaDB 328, Compound table, Calcium chloride anhydrous row, Amount
+      (mM) column: supports only the upstream database assertion at ingredients[5].concentration,
+      0.136 mM. The numeric cell and its own row/column were inspected together and
+      agree with the dated SQL export. This is not independent article verification
+      of final-medium molarity or the old chemical grounding.'
+  - reference: doi:10.1128/AEM.67.6.2596-2602.2001
+    supports: SUPPORT
+    snippet: CaCl2 · 2H2O
+    explanation: Supports the supplied ingredient/input note at ingredients[5], CaCl2.2H2O,
+      20 mg per 1 L distilled-water input in Culture on synthetic medium. The source
+      does not explicitly make this a final solution volume. The retained MediaDB
+      molarity remains unverified against the article; this evidence does not certify
+      that concentration and no mass/molar conversion is made.
+  - reference: https://www.ebi.ac.uk/chebi/CHEBI:86158
+    supports: SUPPORT
+    snippet: Ca.2Cl.2H2O
+    explanation: Formula field verifies the supplied hydrate identity at ingredients[5];
+      the paper separately specifies its use. Not recipe-amount or growth evidence.
+- preferred_term: manganese(II) sulfate tetrahydrate
   term:
-    id: CHEBI:86364
-    label: manganese(II) sulfate monohydrate
+    id: CHEBI:86358
+    label: manganese(II) sulfate tetrahydrate
   concentration:
     value: '0.4483'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
-    id: CHEBI:86364
-    label: manganese(II) sulfate monohydrate
-- preferred_term: Magnesium sulfate
+    id: CHEBI:86358
+    label: manganese(II) sulfate tetrahydrate
+  notes: 'Primary recipe input: 0.1 g MnSO4.4H2O per 1 L distilled water. Final solution
+    volume is not explicit. The stored molarity is retained as a database assertion,
+    not independently verified final-medium concentration; no conversion was applied.'
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/328/
+    supports: SUPPORT
+    snippet: '0.4483'
+    explanation: 'MediaDB 328, Compound table, Manganese sulfate row, Amount (mM)
+      column: supports only the upstream database assertion at ingredients[6].concentration,
+      0.4483 mM. The numeric cell and its own row/column were inspected together and
+      agree with the dated SQL export. This is not independent article verification
+      of final-medium molarity or the old chemical grounding.'
+  - reference: doi:10.1128/AEM.67.6.2596-2602.2001
+    supports: SUPPORT
+    snippet: MnSO4 · 4H2O
+    explanation: Supports the supplied ingredient/input note at ingredients[6], MnSO4.4H2O,
+      0.1 g per 1 L distilled-water input in Culture on synthetic medium. The source
+      does not explicitly make this a final solution volume. The retained MediaDB
+      molarity remains unverified against the article; this evidence does not certify
+      that concentration and no mass/molar conversion is made.
+  - reference: https://www.ebi.ac.uk/chebi/CHEBI:86358
+    supports: SUPPORT
+    snippet: 4H2O.Mn.O4S
+    explanation: Formula field verifies the supplied hydrate identity at ingredients[6];
+      the paper separately specifies its use. Not recipe-amount or growth evidence.
+- preferred_term: magnesium sulfate heptahydrate
   term:
-    id: CHEBI:32599
-    label: magnesium sulfate
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '0.4057'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-- preferred_term: Zinc sulfate
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  notes: 'Primary recipe input: 0.1 g MgSO4.7H2O per 1 L distilled water. Final solution
+    volume is not explicit. The stored molarity is retained as a database assertion,
+    not independently verified final-medium concentration; no conversion was applied.'
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/328/
+    supports: SUPPORT
+    snippet: '0.4057'
+    explanation: 'MediaDB 328, Compound table, Magnesium sulfate row, Amount (mM)
+      column: supports only the upstream database assertion at ingredients[7].concentration,
+      0.4057 mM. The numeric cell and its own row/column were inspected together and
+      agree with the dated SQL export. This is not independent article verification
+      of final-medium molarity or the old chemical grounding.'
+  - reference: doi:10.1128/AEM.67.6.2596-2602.2001
+    supports: SUPPORT
+    snippet: MgSO4 · 7H2O
+    explanation: Supports the supplied ingredient/input note at ingredients[7], MgSO4.7H2O,
+      0.1 g per 1 L distilled-water input in Culture on synthetic medium. The source
+      does not explicitly make this a final solution volume. The retained MediaDB
+      molarity remains unverified against the article; this evidence does not certify
+      that concentration and no mass/molar conversion is made.
+  - reference: https://www.ebi.ac.uk/chebi/CHEBI:31795
+    supports: SUPPORT
+    snippet: 7H2O.Mg.O4S
+    explanation: Formula field verifies the supplied hydrate identity at ingredients[7];
+      the paper separately specifies its use. Not recipe-amount or growth evidence.
+- preferred_term: zinc sulfate heptahydrate
   term:
-    id: CHEBI:35176
-    label: zinc sulfate
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
   concentration:
     value: '0.6955'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
-    id: CHEBI:35176
-    label: zinc sulfate
-- preferred_term: Cupric chloride
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+  notes: 'Primary recipe input: 0.2 g ZnSO4.7H2O per 1 L distilled water. Final solution
+    volume is not explicit. The stored molarity is retained as a database assertion,
+    not independently verified final-medium concentration; no conversion was applied.'
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/328/
+    supports: SUPPORT
+    snippet: '0.6955'
+    explanation: 'MediaDB 328, Compound table, Zinc sulfate row, Amount (mM) column:
+      supports only the upstream database assertion at ingredients[8].concentration,
+      0.6955 mM. The numeric cell and its own row/column were inspected together and
+      agree with the dated SQL export. This is not independent article verification
+      of final-medium molarity or the old chemical grounding.'
+  - reference: doi:10.1128/AEM.67.6.2596-2602.2001
+    supports: SUPPORT
+    snippet: ZnSO4 · 7H2O
+    explanation: Supports the supplied ingredient/input note at ingredients[8], ZnSO4.7H2O,
+      0.2 g per 1 L distilled-water input in Culture on synthetic medium. The source
+      does not explicitly make this a final solution volume. The retained MediaDB
+      molarity remains unverified against the article; this evidence does not certify
+      that concentration and no mass/molar conversion is made.
+  - reference: https://www.ebi.ac.uk/chebi/CHEBI:32312
+    supports: SUPPORT
+    snippet: 7H2O.O4S.Zn
+    explanation: Formula field verifies the supplied hydrate identity at ingredients[8];
+      the paper separately specifies its use. Not recipe-amount or growth evidence.
+- preferred_term: copper(II) chloride dihydrate
   concentration:
     value: '0.02933'
     unit: MILLIMOLAR
-  term:
-    id: CHEBI:49553
-    label: copper(II) chloride
-- preferred_term: Molybdic acid ammonium salt tetrahydrate
+  notes: 'Primary recipe input: 5 mg CuCl2.2H2O per 1 L distilled water. Final solution
+    volume is not explicit. The stored molarity is retained as a database assertion,
+    not independently verified final-medium concentration; no conversion was applied.
+    No exact supplied-hydrate identifier is assigned: the packaged candidate''s public
+    ChEBI page was unavailable. The prior non-hydrate grounding is withdrawn, not
+    a new identifier inferred.'
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/328/
+    supports: SUPPORT
+    snippet: '0.02933'
+    explanation: 'MediaDB 328, Compound table, Cupric chloride row, Amount (mM) column:
+      supports only the upstream database assertion at ingredients[9].concentration,
+      0.02933 mM. The numeric cell and its own row/column were inspected together
+      and agree with the dated SQL export. This is not independent article verification
+      of final-medium molarity or the old chemical grounding.'
+  - reference: doi:10.1128/AEM.67.6.2596-2602.2001
+    supports: SUPPORT
+    snippet: CuCl2 · 2H2O
+    explanation: Supports the supplied ingredient/input note at ingredients[9], CuCl2.2H2O,
+      5 mg per 1 L distilled-water input in Culture on synthetic medium. The source
+      does not explicitly make this a final solution volume. The retained MediaDB
+      molarity remains unverified against the article; this evidence does not certify
+      that concentration and no mass/molar conversion is made.
+- preferred_term: Ammonium heptamolybdate tetrahydrate
   concentration:
     value: '0.004045'
     unit: MILLIMOLAR
-  term:
-    id: CHEBI:91249
-    label: ammonium molybdate
-- preferred_term: Sodium Glutamate
+  notes: 'Primary recipe input: 5 mg (NH4)6Mo7O24.4H2O per 1 L distilled water. Final
+    solution volume is not explicit. The stored molarity is retained as a database
+    assertion, not independently verified final-medium concentration; no conversion
+    was applied. CHEBI:91249 identifies orthomolybdate, not the source heptamolybdate
+    tetrahydrate. The conflicting mapping is withdrawn; no replacement is assigned
+    and the MIM snapshot is unchanged.'
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/328/
+    supports: SUPPORT
+    snippet: '0.004045'
+    explanation: 'MediaDB 328, Compound table, Molybdic acid ammonium salt tetrahydrate
+      row, Amount (mM) column: supports only the upstream database assertion at ingredients[10].concentration,
+      0.004045 mM. The numeric cell and its own row/column were inspected together
+      and agree with the dated SQL export. This is not independent article verification
+      of final-medium molarity or the old chemical grounding.'
+  - reference: doi:10.1128/AEM.67.6.2596-2602.2001
+    supports: SUPPORT
+    snippet: (NH4)6Mo7O24 · 4H2O
+    explanation: Supports the supplied ingredient/input note at ingredients[10], (NH4)6Mo7O24.4H2O,
+      5 mg per 1 L distilled-water input in Culture on synthetic medium. The source
+      does not explicitly make this a final solution volume. The retained MediaDB
+      molarity remains unverified against the article; this evidence does not certify
+      that concentration and no mass/molar conversion is made.
+  - reference: https://www.ebi.ac.uk/chebi/CHEBI:91249
+    supports: SUPPORT
+    snippet: 2H4N.MoO4
+    explanation: The official Formula field shows why CHEBI:91249 is not the supplied
+      heptamolybdate tetrahydrate at ingredients[10]. Supports withdrawing that mapping,
+      not the concentration. The misleading MIM synonym is not used to reassign it;
+      no replacement identifier is invented.
+- preferred_term: Sodium glutamate monohydrate
   concentration:
-    value: '66.8'
-    unit: MILLIMOLAR
-  term:
-    id: CHEBI:64220
-    label: monosodium glutamate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:64220
-    label: monosodium glutamate
+    value: '12.5'
+    unit: G_PER_L
+  notes: 'The source''s initial 12.5 g/L input replaces MediaDB 66.8 mM; this is source-unit
+    restoration, not a claim that the database conversion was numerically wrong. No
+    exact supplied-hydrate identifier is assigned: the packaged candidate''s public
+    ChEBI page was unavailable. The prior non-hydrate grounding is withdrawn, not
+    a new identifier inferred.'
+  evidence:
+  - reference: doi:10.1128/AEM.67.6.2596-2602.2001
+    supports: SUPPORT
+    snippet: '12.5'
+    explanation: 'Supports ingredients[11].concentration for Sodium Glutamate: 12.5
+      g/L as an initial nutrient input. Locator: Results / Influence of carbon source,
+      first paragraph; Table 2 footnote a distinguishes 9.8 g/L glutamic-acid equivalents.
+      The snippet is the exact numeric cell/substring, with the chemical row, initial-concentration
+      column and g/L basis separately inspected. It is not a residual measurement
+      or product titre. Replace the historical MediaDB molarity with directly stated
+      source units; no molecular weight or conversion arithmetic is used. The supplied
+      form is sodium glutamate monohydrate, not the 9.8 g/L glutamic-acid-equivalent
+      footnote value. Separately inspected supplied-form excerpt: ''mono-hydrate sodium
+      glutamate'' in Culture on synthetic medium.'
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -155,6 +413,507 @@ curation_history:
   notes: Restored the medium's own name in media_term.term.label, original_name. The
     MediaDB SQL parser truncated every value containing a parenthesis at that parenthesis;
     recovered from media_database.07Oct2015.sql.
+- timestamp: '2026-10-10T05:02:53.552216+00:00'
+  curator: codex
+  action: CURATED_HAJJAJ_SOURCED_INGREDIENT_AMOUNTS_AND_FORMS
+  notes: The 180 retained mineral molarities in article-linked records remain upstream
+    database assertions; water-input basis is not assumed to be final solution volume.
+    The two unlinked sibling records retain all 26 database molarities. Their primary-paper
+    association and remaining chemical forms are unresolved, not borrowed from the
+    linked family. Copper and sodium-glutamate hydrate identifiers remain unassigned
+    after withdrawal of unverified non-hydrate grounding. Isoleucine stereochemistry
+    is unspecified, not inferred. Heptamolybdate has no replacement identifier; the
+    conflicting packaged MIM synonym is not used and the immutable index is unchanged.
+    The source's Table 2 glutamic-acid equivalents are not the weighed sodium-glutamate
+    hydrate; record 318 retains the batch-text/Figure 3 glucose discrepancy in evidence.
+    Paper and ontology verification is manual; no raw primary-article capture or successful
+    automated DOI full-text verification is asserted. Existing preparation, classification,
+    application and organism/role claims are preserved and not certified by this ingredient
+    curation. No IDs, category paths, growth claims or taxa-media associations are
+    added.
+  source: doi:10.1128/AEM.67.6.2596-2602.2001; https://www.ebi.ac.uk/chebi/CHEBI:75836;
+    https://www.ebi.ac.uk/chebi/CHEBI:86158; https://www.ebi.ac.uk/chebi/CHEBI:86358;
+    https://www.ebi.ac.uk/chebi/CHEBI:31795; https://www.ebi.ac.uk/chebi/CHEBI:32312;
+    https://www.ebi.ac.uk/chebi/CHEBI:91249; https://mediadb.systemsbiology.net/defined_media/media/328/
+  changes: '[{"counts": {"ingredient_context_notes_corrected": 1}, "kind": "set",
+    "locator": "Materials and Methods / Culture on synthetic medium", "new": "Primary
+    recipe input: 5 g K2HPO4 per 1 L distilled water. Final solution volume is not
+    explicit. The stored molarity is retained as a database assertion, not independently
+    verified final-medium concentration; no conversion was applied.", "old": null,
+    "old_present": false, "pointer": ["ingredients", 0, "notes"], "reason": "Keep
+    source units, provenance and unresolved identity/volume limits explicit.", "reference":
+    "doi:10.1128/AEM.67.6.2596-2602.2001", "snippet": "5 g"}, {"counts": {"new_evidence":
+    2}, "kind": "set", "locator": "Materials and Methods / Culture on synthetic medium",
+    "new": [{"explanation": "MediaDB 328, Compound table, Potassium dibasic phosphate
+    row, Amount (mM) column: supports only the upstream database assertion at ingredients[0].concentration,
+    28.71 mM. The numeric cell and its own row/column were inspected together and
+    agree with the dated SQL export. This is not independent article verification
+    of final-medium molarity or the old chemical grounding.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/328/",
+    "snippet": "28.71", "supports": "SUPPORT"}, {"explanation": "Supports the supplied
+    ingredient/input note at ingredients[0], K2HPO4, 5 g per 1 L distilled-water input
+    in Culture on synthetic medium. The source does not explicitly make this a final
+    solution volume. The retained MediaDB molarity remains unverified against the
+    article; this evidence does not certify that concentration and no mass/molar conversion
+    is made.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001", "snippet": "5 g",
+    "supports": "SUPPORT"}], "old": null, "old_present": false, "pointer": ["ingredients",
+    0, "evidence"], "reason": "Attach evidence to its exact amount, source-input note
+    or identity claim.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001", "snippet":
+    "5 g"}, {"counts": {"quantity_corrections": 1}, "kind": "set", "locator": "Table
+    2 data row 6, initial carbon concentration column", "new": {"unit": "G_PER_L",
+    "value": "20"}, "old": {"unit": "MILLIMOLAR", "value": "434.12"}, "old_present":
+    true, "pointer": ["ingredients", 1, "concentration"], "reason": "Supports ingredients[1].concentration
+    for Ethanol: 20 g/L as an initial nutrient input. Locator: Table 2 data row 6,
+    initial carbon concentration column. The snippet is the exact numeric cell/substring,
+    with the chemical row, initial-concentration column and g/L basis separately inspected.
+    It is not a residual measurement or product titre. Replace the historical MediaDB
+    molarity with directly stated source units; no molecular weight or conversion
+    arithmetic is used.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001", "snippet":
+    "20"}, {"counts": {"ingredient_context_notes_corrected": 1}, "kind": "set", "locator":
+    "Table 2 data row 6, initial carbon concentration column", "new": "Cross-references:
+    KEGG:etoh The source''s initial 20 g/L input replaces MediaDB 434.12 mM; this
+    is source-unit restoration, not a claim that the database conversion was numerically
+    wrong.", "old": "Cross-references: KEGG:etoh", "old_present": true, "pointer":
+    ["ingredients", 1, "notes"], "reason": "Keep source units, provenance and unresolved
+    identity/volume limits explicit.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001",
+    "snippet": "20"}, {"counts": {"new_evidence": 1}, "kind": "set", "locator": "Table
+    2 data row 6, initial carbon concentration column", "new": [{"explanation": "Supports
+    ingredients[1].concentration for Ethanol: 20 g/L as an initial nutrient input.
+    Locator: Table 2 data row 6, initial carbon concentration column. The snippet
+    is the exact numeric cell/substring, with the chemical row, initial-concentration
+    column and g/L basis separately inspected. It is not a residual measurement or
+    product titre. Replace the historical MediaDB molarity with directly stated source
+    units; no molecular weight or conversion arithmetic is used.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001",
+    "snippet": "20", "supports": "SUPPORT"}], "old": null, "old_present": false, "pointer":
+    ["ingredients", 1, "evidence"], "reason": "Attach evidence to its exact amount,
+    source-input note or identity claim.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001",
+    "snippet": "20"}, {"counts": {"ingredient_context_notes_corrected": 1}, "kind":
+    "set", "locator": "Materials and Methods / Culture on synthetic medium", "new":
+    "Primary recipe input: 11 mg H3BO3 per 1 L distilled water. Final solution volume
+    is not explicit. The stored molarity is retained as a database assertion, not
+    independently verified final-medium concentration; no conversion was applied.",
+    "old": null, "old_present": false, "pointer": ["ingredients", 2, "notes"], "reason":
+    "Keep source units, provenance and unresolved identity/volume limits explicit.",
+    "reference": "doi:10.1128/AEM.67.6.2596-2602.2001", "snippet": "11 mg"}, {"counts":
+    {"new_evidence": 2}, "kind": "set", "locator": "Materials and Methods / Culture
+    on synthetic medium", "new": [{"explanation": "MediaDB 328, Compound table, Boric
+    acid row, Amount (mM) column: supports only the upstream database assertion at
+    ingredients[2].concentration, 0.1779 mM. The numeric cell and its own row/column
+    were inspected together and agree with the dated SQL export. This is not independent
+    article verification of final-medium molarity or the old chemical grounding.",
+    "reference": "https://mediadb.systemsbiology.net/defined_media/media/328/", "snippet":
+    "0.1779", "supports": "SUPPORT"}, {"explanation": "Supports the supplied ingredient/input
+    note at ingredients[2], H3BO3, 11 mg per 1 L distilled-water input in Culture
+    on synthetic medium. The source does not explicitly make this a final solution
+    volume. The retained MediaDB molarity remains unverified against the article;
+    this evidence does not certify that concentration and no mass/molar conversion
+    is made.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001", "snippet": "11
+    mg", "supports": "SUPPORT"}], "old": null, "old_present": false, "pointer": ["ingredients",
+    2, "evidence"], "reason": "Attach evidence to its exact amount, source-input note
+    or identity claim.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001", "snippet":
+    "11 mg"}, {"counts": {"ingredient_labels_corrected": 1}, "kind": "set", "locator":
+    "Culture on synthetic medium", "new": "iron(2+) sulfate heptahydrate", "old":
+    "Ferrous sulfate", "old_present": true, "pointer": ["ingredients", 3, "preferred_term"],
+    "reason": "Represent the supplied chemical form without changing an unresolved
+    molarity.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001", "snippet": "FeSO4
+    \u00b7 7H2O"}, {"counts": {"ingredient_identities_corrected": 1}, "kind": "set",
+    "locator": "Formula", "new": {"id": "CHEBI:75836", "label": "iron(2+) sulfate
+    heptahydrate"}, "old": {"id": "CHEBI:75832", "label": "iron(2+) sulfate (anhydrous)"},
+    "old_present": true, "pointer": ["ingredients", 3, "term"], "reason": "Replace
+    a generic or wrong-hydrate grounding with the verified supplied form.", "reference":
+    "https://www.ebi.ac.uk/chebi/CHEBI:75836", "snippet": "Fe.7H2O.O4S"}, {"counts":
+    {"ingredient_context_notes_corrected": 1}, "kind": "set", "locator": "Materials
+    and Methods / Culture on synthetic medium", "new": "Primary recipe input: 0.2
+    g FeSO4.7H2O per 1 L distilled water. Final solution volume is not explicit. The
+    stored molarity is retained as a database assertion, not independently verified
+    final-medium concentration; no conversion was applied.", "old": null, "old_present":
+    false, "pointer": ["ingredients", 3, "notes"], "reason": "Keep source units, provenance
+    and unresolved identity/volume limits explicit.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001",
+    "snippet": "FeSO4 \u00b7 7H2O"}, {"counts": {"new_evidence": 3}, "kind": "set",
+    "locator": "Materials and Methods / Culture on synthetic medium", "new": [{"explanation":
+    "MediaDB 328, Compound table, Ferrous sulfate row, Amount (mM) column: supports
+    only the upstream database assertion at ingredients[3].concentration, 0.7194 mM.
+    The numeric cell and its own row/column were inspected together and agree with
+    the dated SQL export. This is not independent article verification of final-medium
+    molarity or the old chemical grounding.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/328/",
+    "snippet": "0.7194", "supports": "SUPPORT"}, {"explanation": "Supports the supplied
+    ingredient/input note at ingredients[3], FeSO4.7H2O, 0.2 g per 1 L distilled-water
+    input in Culture on synthetic medium. The source does not explicitly make this
+    a final solution volume. The retained MediaDB molarity remains unverified against
+    the article; this evidence does not certify that concentration and no mass/molar
+    conversion is made.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001", "snippet":
+    "FeSO4 \u00b7 7H2O", "supports": "SUPPORT"}, {"explanation": "Formula field verifies
+    the supplied hydrate identity at ingredients[3]; the paper separately specifies
+    its use. Not recipe-amount or growth evidence.", "reference": "https://www.ebi.ac.uk/chebi/CHEBI:75836",
+    "snippet": "Fe.7H2O.O4S", "supports": "SUPPORT"}], "old": null, "old_present":
+    false, "pointer": ["ingredients", 3, "evidence"], "reason": "Attach evidence to
+    its exact amount, source-input note or identity claim.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001",
+    "snippet": "FeSO4 \u00b7 7H2O"}, {"counts": {"ingredient_context_notes_corrected":
+    1}, "kind": "set", "locator": "Materials and Methods / Culture on synthetic medium",
+    "new": "Primary recipe input: 5 g KH2PO4 per 1 L distilled water. Final solution
+    volume is not explicit. The stored molarity is retained as a database assertion,
+    not independently verified final-medium concentration; no conversion was applied.",
+    "old": null, "old_present": false, "pointer": ["ingredients", 4, "notes"], "reason":
+    "Keep source units, provenance and unresolved identity/volume limits explicit.",
+    "reference": "doi:10.1128/AEM.67.6.2596-2602.2001", "snippet": "5 g"}, {"counts":
+    {"new_evidence": 2}, "kind": "set", "locator": "Materials and Methods / Culture
+    on synthetic medium", "new": [{"explanation": "MediaDB 328, Compound table, Potassium
+    dihydrogen phosphate row, Amount (mM) column: supports only the upstream database
+    assertion at ingredients[4].concentration, 36.74 mM. The numeric cell and its
+    own row/column were inspected together and agree with the dated SQL export. This
+    is not independent article verification of final-medium molarity or the old chemical
+    grounding.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/328/",
+    "snippet": "36.74", "supports": "SUPPORT"}, {"explanation": "Supports the supplied
+    ingredient/input note at ingredients[4], KH2PO4, 5 g per 1 L distilled-water input
+    in Culture on synthetic medium. The source does not explicitly make this a final
+    solution volume. The retained MediaDB molarity remains unverified against the
+    article; this evidence does not certify that concentration and no mass/molar conversion
+    is made.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001", "snippet": "5 g",
+    "supports": "SUPPORT"}], "old": null, "old_present": false, "pointer": ["ingredients",
+    4, "evidence"], "reason": "Attach evidence to its exact amount, source-input note
+    or identity claim.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001", "snippet":
+    "5 g"}, {"counts": {"ingredient_labels_corrected": 1}, "kind": "set", "locator":
+    "Culture on synthetic medium", "new": "calcium chloride dihydrate", "old": "Calcium
+    chloride anhydrous", "old_present": true, "pointer": ["ingredients", 5, "preferred_term"],
+    "reason": "Represent the supplied chemical form without changing an unresolved
+    molarity.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001", "snippet": "CaCl2
+    \u00b7 2H2O"}, {"counts": {"ingredient_identities_corrected": 1}, "kind": "set",
+    "locator": "Formula", "new": {"id": "CHEBI:86158", "label": "calcium chloride
+    dihydrate"}, "old": {"id": "CHEBI:3312", "label": "calcium dichloride"}, "old_present":
+    true, "pointer": ["ingredients", 5, "term"], "reason": "Replace a generic or wrong-hydrate
+    grounding with the verified supplied form.", "reference": "https://www.ebi.ac.uk/chebi/CHEBI:86158",
+    "snippet": "Ca.2Cl.2H2O"}, {"counts": {"ingredient_context_notes_corrected": 1},
+    "kind": "set", "locator": "Materials and Methods / Culture on synthetic medium",
+    "new": "Primary recipe input: 20 mg CaCl2.2H2O per 1 L distilled water. Final
+    solution volume is not explicit. The stored molarity is retained as a database
+    assertion, not independently verified final-medium concentration; no conversion
+    was applied.", "old": null, "old_present": false, "pointer": ["ingredients", 5,
+    "notes"], "reason": "Keep source units, provenance and unresolved identity/volume
+    limits explicit.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001", "snippet":
+    "CaCl2 \u00b7 2H2O"}, {"counts": {"new_evidence": 3}, "kind": "set", "locator":
+    "Materials and Methods / Culture on synthetic medium", "new": [{"explanation":
+    "MediaDB 328, Compound table, Calcium chloride anhydrous row, Amount (mM) column:
+    supports only the upstream database assertion at ingredients[5].concentration,
+    0.136 mM. The numeric cell and its own row/column were inspected together and
+    agree with the dated SQL export. This is not independent article verification
+    of final-medium molarity or the old chemical grounding.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/328/",
+    "snippet": "0.136", "supports": "SUPPORT"}, {"explanation": "Supports the supplied
+    ingredient/input note at ingredients[5], CaCl2.2H2O, 20 mg per 1 L distilled-water
+    input in Culture on synthetic medium. The source does not explicitly make this
+    a final solution volume. The retained MediaDB molarity remains unverified against
+    the article; this evidence does not certify that concentration and no mass/molar
+    conversion is made.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001", "snippet":
+    "CaCl2 \u00b7 2H2O", "supports": "SUPPORT"}, {"explanation": "Formula field verifies
+    the supplied hydrate identity at ingredients[5]; the paper separately specifies
+    its use. Not recipe-amount or growth evidence.", "reference": "https://www.ebi.ac.uk/chebi/CHEBI:86158",
+    "snippet": "Ca.2Cl.2H2O", "supports": "SUPPORT"}], "old": null, "old_present":
+    false, "pointer": ["ingredients", 5, "evidence"], "reason": "Attach evidence to
+    its exact amount, source-input note or identity claim.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001",
+    "snippet": "CaCl2 \u00b7 2H2O"}, {"counts": {"ingredient_labels_corrected": 1},
+    "kind": "set", "locator": "Culture on synthetic medium", "new": "manganese(II)
+    sulfate tetrahydrate", "old": "Manganese sulfate", "old_present": true, "pointer":
+    ["ingredients", 6, "preferred_term"], "reason": "Represent the supplied chemical
+    form without changing an unresolved molarity.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001",
+    "snippet": "MnSO4 \u00b7 4H2O"}, {"counts": {"ingredient_identities_corrected":
+    1}, "kind": "set", "locator": "Formula", "new": {"id": "CHEBI:86358", "label":
+    "manganese(II) sulfate tetrahydrate"}, "old": {"id": "CHEBI:86364", "label": "manganese(II)
+    sulfate monohydrate"}, "old_present": true, "pointer": ["ingredients", 6, "term"],
+    "reason": "Replace a generic or wrong-hydrate grounding with the verified supplied
+    form.", "reference": "https://www.ebi.ac.uk/chebi/CHEBI:86358", "snippet": "4H2O.Mn.O4S"},
+    {"counts": {"ingredient_mim_links_corrected": 1}, "kind": "set", "locator": "Formula",
+    "new": {"id": "CHEBI:86358", "label": "manganese(II) sulfate tetrahydrate"}, "old":
+    {"id": "CHEBI:86364", "label": "manganese(II) sulfate monohydrate"}, "old_present":
+    true, "pointer": ["ingredients", 6, "mediaingredientmech_chebi_term"], "reason":
+    "Replace a generic or wrong-hydrate grounding with the verified supplied form.",
+    "reference": "https://www.ebi.ac.uk/chebi/CHEBI:86358", "snippet": "4H2O.Mn.O4S"},
+    {"counts": {"ingredient_context_notes_corrected": 1}, "kind": "set", "locator":
+    "Materials and Methods / Culture on synthetic medium", "new": "Primary recipe
+    input: 0.1 g MnSO4.4H2O per 1 L distilled water. Final solution volume is not
+    explicit. The stored molarity is retained as a database assertion, not independently
+    verified final-medium concentration; no conversion was applied.", "old": null,
+    "old_present": false, "pointer": ["ingredients", 6, "notes"], "reason": "Keep
+    source units, provenance and unresolved identity/volume limits explicit.", "reference":
+    "doi:10.1128/AEM.67.6.2596-2602.2001", "snippet": "MnSO4 \u00b7 4H2O"}, {"counts":
+    {"new_evidence": 3}, "kind": "set", "locator": "Materials and Methods / Culture
+    on synthetic medium", "new": [{"explanation": "MediaDB 328, Compound table, Manganese
+    sulfate row, Amount (mM) column: supports only the upstream database assertion
+    at ingredients[6].concentration, 0.4483 mM. The numeric cell and its own row/column
+    were inspected together and agree with the dated SQL export. This is not independent
+    article verification of final-medium molarity or the old chemical grounding.",
+    "reference": "https://mediadb.systemsbiology.net/defined_media/media/328/", "snippet":
+    "0.4483", "supports": "SUPPORT"}, {"explanation": "Supports the supplied ingredient/input
+    note at ingredients[6], MnSO4.4H2O, 0.1 g per 1 L distilled-water input in Culture
+    on synthetic medium. The source does not explicitly make this a final solution
+    volume. The retained MediaDB molarity remains unverified against the article;
+    this evidence does not certify that concentration and no mass/molar conversion
+    is made.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001", "snippet": "MnSO4
+    \u00b7 4H2O", "supports": "SUPPORT"}, {"explanation": "Formula field verifies
+    the supplied hydrate identity at ingredients[6]; the paper separately specifies
+    its use. Not recipe-amount or growth evidence.", "reference": "https://www.ebi.ac.uk/chebi/CHEBI:86358",
+    "snippet": "4H2O.Mn.O4S", "supports": "SUPPORT"}], "old": null, "old_present":
+    false, "pointer": ["ingredients", 6, "evidence"], "reason": "Attach evidence to
+    its exact amount, source-input note or identity claim.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001",
+    "snippet": "MnSO4 \u00b7 4H2O"}, {"counts": {"ingredient_labels_corrected": 1},
+    "kind": "set", "locator": "Culture on synthetic medium", "new": "magnesium sulfate
+    heptahydrate", "old": "Magnesium sulfate", "old_present": true, "pointer": ["ingredients",
+    7, "preferred_term"], "reason": "Represent the supplied chemical form without
+    changing an unresolved molarity.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001",
+    "snippet": "MgSO4 \u00b7 7H2O"}, {"counts": {"ingredient_identities_corrected":
+    1}, "kind": "set", "locator": "Formula", "new": {"id": "CHEBI:31795", "label":
+    "magnesium sulfate heptahydrate"}, "old": {"id": "CHEBI:32599", "label": "magnesium
+    sulfate"}, "old_present": true, "pointer": ["ingredients", 7, "term"], "reason":
+    "Replace a generic or wrong-hydrate grounding with the verified supplied form.",
+    "reference": "https://www.ebi.ac.uk/chebi/CHEBI:31795", "snippet": "7H2O.Mg.O4S"},
+    {"counts": {"ingredient_mim_links_corrected": 1}, "kind": "set", "locator": "Formula",
+    "new": {"id": "CHEBI:31795", "label": "magnesium sulfate heptahydrate"}, "old":
+    {"id": "CHEBI:32599", "label": "magnesium sulfate"}, "old_present": true, "pointer":
+    ["ingredients", 7, "mediaingredientmech_chebi_term"], "reason": "Replace a generic
+    or wrong-hydrate grounding with the verified supplied form.", "reference": "https://www.ebi.ac.uk/chebi/CHEBI:31795",
+    "snippet": "7H2O.Mg.O4S"}, {"counts": {"ingredient_context_notes_corrected": 1},
+    "kind": "set", "locator": "Materials and Methods / Culture on synthetic medium",
+    "new": "Primary recipe input: 0.1 g MgSO4.7H2O per 1 L distilled water. Final
+    solution volume is not explicit. The stored molarity is retained as a database
+    assertion, not independently verified final-medium concentration; no conversion
+    was applied.", "old": null, "old_present": false, "pointer": ["ingredients", 7,
+    "notes"], "reason": "Keep source units, provenance and unresolved identity/volume
+    limits explicit.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001", "snippet":
+    "MgSO4 \u00b7 7H2O"}, {"counts": {"new_evidence": 3}, "kind": "set", "locator":
+    "Materials and Methods / Culture on synthetic medium", "new": [{"explanation":
+    "MediaDB 328, Compound table, Magnesium sulfate row, Amount (mM) column: supports
+    only the upstream database assertion at ingredients[7].concentration, 0.4057 mM.
+    The numeric cell and its own row/column were inspected together and agree with
+    the dated SQL export. This is not independent article verification of final-medium
+    molarity or the old chemical grounding.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/328/",
+    "snippet": "0.4057", "supports": "SUPPORT"}, {"explanation": "Supports the supplied
+    ingredient/input note at ingredients[7], MgSO4.7H2O, 0.1 g per 1 L distilled-water
+    input in Culture on synthetic medium. The source does not explicitly make this
+    a final solution volume. The retained MediaDB molarity remains unverified against
+    the article; this evidence does not certify that concentration and no mass/molar
+    conversion is made.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001", "snippet":
+    "MgSO4 \u00b7 7H2O", "supports": "SUPPORT"}, {"explanation": "Formula field verifies
+    the supplied hydrate identity at ingredients[7]; the paper separately specifies
+    its use. Not recipe-amount or growth evidence.", "reference": "https://www.ebi.ac.uk/chebi/CHEBI:31795",
+    "snippet": "7H2O.Mg.O4S", "supports": "SUPPORT"}], "old": null, "old_present":
+    false, "pointer": ["ingredients", 7, "evidence"], "reason": "Attach evidence to
+    its exact amount, source-input note or identity claim.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001",
+    "snippet": "MgSO4 \u00b7 7H2O"}, {"counts": {"ingredient_labels_corrected": 1},
+    "kind": "set", "locator": "Culture on synthetic medium", "new": "zinc sulfate
+    heptahydrate", "old": "Zinc sulfate", "old_present": true, "pointer": ["ingredients",
+    8, "preferred_term"], "reason": "Represent the supplied chemical form without
+    changing an unresolved molarity.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001",
+    "snippet": "ZnSO4 \u00b7 7H2O"}, {"counts": {"ingredient_identities_corrected":
+    1}, "kind": "set", "locator": "Formula", "new": {"id": "CHEBI:32312", "label":
+    "zinc sulfate heptahydrate"}, "old": {"id": "CHEBI:35176", "label": "zinc sulfate"},
+    "old_present": true, "pointer": ["ingredients", 8, "term"], "reason": "Replace
+    a generic or wrong-hydrate grounding with the verified supplied form.", "reference":
+    "https://www.ebi.ac.uk/chebi/CHEBI:32312", "snippet": "7H2O.O4S.Zn"}, {"counts":
+    {"ingredient_mim_links_corrected": 1}, "kind": "set", "locator": "Formula", "new":
+    {"id": "CHEBI:32312", "label": "zinc sulfate heptahydrate"}, "old": {"id": "CHEBI:35176",
+    "label": "zinc sulfate"}, "old_present": true, "pointer": ["ingredients", 8, "mediaingredientmech_chebi_term"],
+    "reason": "Replace a generic or wrong-hydrate grounding with the verified supplied
+    form.", "reference": "https://www.ebi.ac.uk/chebi/CHEBI:32312", "snippet": "7H2O.O4S.Zn"},
+    {"counts": {"ingredient_context_notes_corrected": 1}, "kind": "set", "locator":
+    "Materials and Methods / Culture on synthetic medium", "new": "Primary recipe
+    input: 0.2 g ZnSO4.7H2O per 1 L distilled water. Final solution volume is not
+    explicit. The stored molarity is retained as a database assertion, not independently
+    verified final-medium concentration; no conversion was applied.", "old": null,
+    "old_present": false, "pointer": ["ingredients", 8, "notes"], "reason": "Keep
+    source units, provenance and unresolved identity/volume limits explicit.", "reference":
+    "doi:10.1128/AEM.67.6.2596-2602.2001", "snippet": "ZnSO4 \u00b7 7H2O"}, {"counts":
+    {"new_evidence": 3}, "kind": "set", "locator": "Materials and Methods / Culture
+    on synthetic medium", "new": [{"explanation": "MediaDB 328, Compound table, Zinc
+    sulfate row, Amount (mM) column: supports only the upstream database assertion
+    at ingredients[8].concentration, 0.6955 mM. The numeric cell and its own row/column
+    were inspected together and agree with the dated SQL export. This is not independent
+    article verification of final-medium molarity or the old chemical grounding.",
+    "reference": "https://mediadb.systemsbiology.net/defined_media/media/328/", "snippet":
+    "0.6955", "supports": "SUPPORT"}, {"explanation": "Supports the supplied ingredient/input
+    note at ingredients[8], ZnSO4.7H2O, 0.2 g per 1 L distilled-water input in Culture
+    on synthetic medium. The source does not explicitly make this a final solution
+    volume. The retained MediaDB molarity remains unverified against the article;
+    this evidence does not certify that concentration and no mass/molar conversion
+    is made.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001", "snippet": "ZnSO4
+    \u00b7 7H2O", "supports": "SUPPORT"}, {"explanation": "Formula field verifies
+    the supplied hydrate identity at ingredients[8]; the paper separately specifies
+    its use. Not recipe-amount or growth evidence.", "reference": "https://www.ebi.ac.uk/chebi/CHEBI:32312",
+    "snippet": "7H2O.O4S.Zn", "supports": "SUPPORT"}], "old": null, "old_present":
+    false, "pointer": ["ingredients", 8, "evidence"], "reason": "Attach evidence to
+    its exact amount, source-input note or identity claim.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001",
+    "snippet": "ZnSO4 \u00b7 7H2O"}, {"counts": {"ingredient_labels_corrected": 1},
+    "kind": "set", "locator": "Culture on synthetic medium", "new": "copper(II) chloride
+    dihydrate", "old": "Cupric chloride", "old_present": true, "pointer": ["ingredients",
+    9, "preferred_term"], "reason": "Represent the supplied chemical form without
+    changing an unresolved molarity.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001",
+    "snippet": "CuCl2 \u00b7 2H2O"}, {"counts": {"unsupported_ingredient_identity_slots_removed":
+    1}, "kind": "remove", "locator": "Culture on synthetic medium", "new": null, "old":
+    {"id": "CHEBI:49553", "label": "copper(II) chloride"}, "old_present": true, "pointer":
+    ["ingredients", 9, "term"], "reason": "Withdraw the unverified non-hydrate grounding;
+    no independently verified replacement is assigned.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001",
+    "snippet": "CuCl2 \u00b7 2H2O"}, {"counts": {"ingredient_context_notes_corrected":
+    1}, "kind": "set", "locator": "Materials and Methods / Culture on synthetic medium",
+    "new": "Primary recipe input: 5 mg CuCl2.2H2O per 1 L distilled water. Final solution
+    volume is not explicit. The stored molarity is retained as a database assertion,
+    not independently verified final-medium concentration; no conversion was applied.
+    No exact supplied-hydrate identifier is assigned: the packaged candidate''s public
+    ChEBI page was unavailable. The prior non-hydrate grounding is withdrawn, not
+    a new identifier inferred.", "old": null, "old_present": false, "pointer": ["ingredients",
+    9, "notes"], "reason": "Keep source units, provenance and unresolved identity/volume
+    limits explicit.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001", "snippet":
+    "CuCl2 \u00b7 2H2O"}, {"counts": {"new_evidence": 2}, "kind": "set", "locator":
+    "Materials and Methods / Culture on synthetic medium", "new": [{"explanation":
+    "MediaDB 328, Compound table, Cupric chloride row, Amount (mM) column: supports
+    only the upstream database assertion at ingredients[9].concentration, 0.02933
+    mM. The numeric cell and its own row/column were inspected together and agree
+    with the dated SQL export. This is not independent article verification of final-medium
+    molarity or the old chemical grounding.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/328/",
+    "snippet": "0.02933", "supports": "SUPPORT"}, {"explanation": "Supports the supplied
+    ingredient/input note at ingredients[9], CuCl2.2H2O, 5 mg per 1 L distilled-water
+    input in Culture on synthetic medium. The source does not explicitly make this
+    a final solution volume. The retained MediaDB molarity remains unverified against
+    the article; this evidence does not certify that concentration and no mass/molar
+    conversion is made.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001", "snippet":
+    "CuCl2 \u00b7 2H2O", "supports": "SUPPORT"}], "old": null, "old_present": false,
+    "pointer": ["ingredients", 9, "evidence"], "reason": "Attach evidence to its exact
+    amount, source-input note or identity claim.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001",
+    "snippet": "CuCl2 \u00b7 2H2O"}, {"counts": {"ingredient_labels_corrected": 1},
+    "kind": "set", "locator": "Culture on synthetic medium", "new": "Ammonium heptamolybdate
+    tetrahydrate", "old": "Molybdic acid ammonium salt tetrahydrate", "old_present":
+    true, "pointer": ["ingredients", 10, "preferred_term"], "reason": "Represent the
+    supplied chemical form without changing an unresolved molarity.", "reference":
+    "doi:10.1128/AEM.67.6.2596-2602.2001", "snippet": "(NH4)6Mo7O24 \u00b7 4H2O"},
+    {"counts": {"unsupported_ingredient_identity_slots_removed": 1}, "kind": "remove",
+    "locator": "Formula", "new": null, "old": {"id": "CHEBI:91249", "label": "ammonium
+    molybdate"}, "old_present": true, "pointer": ["ingredients", 10, "term"], "reason":
+    "Remove orthomolybdate grounding from source heptamolybdate tetrahydrate.", "reference":
+    "https://www.ebi.ac.uk/chebi/CHEBI:91249", "snippet": "2H4N.MoO4"}, {"counts":
+    {"ingredient_context_notes_corrected": 1}, "kind": "set", "locator": "Materials
+    and Methods / Culture on synthetic medium", "new": "Primary recipe input: 5 mg
+    (NH4)6Mo7O24.4H2O per 1 L distilled water. Final solution volume is not explicit.
+    The stored molarity is retained as a database assertion, not independently verified
+    final-medium concentration; no conversion was applied. CHEBI:91249 identifies
+    orthomolybdate, not the source heptamolybdate tetrahydrate. The conflicting mapping
+    is withdrawn; no replacement is assigned and the MIM snapshot is unchanged.",
+    "old": null, "old_present": false, "pointer": ["ingredients", 10, "notes"], "reason":
+    "Keep source units, provenance and unresolved identity/volume limits explicit.",
+    "reference": "doi:10.1128/AEM.67.6.2596-2602.2001", "snippet": "(NH4)6Mo7O24 \u00b7
+    4H2O"}, {"counts": {"new_evidence": 3}, "kind": "set", "locator": "Materials and
+    Methods / Culture on synthetic medium", "new": [{"explanation": "MediaDB 328,
+    Compound table, Molybdic acid ammonium salt tetrahydrate row, Amount (mM) column:
+    supports only the upstream database assertion at ingredients[10].concentration,
+    0.004045 mM. The numeric cell and its own row/column were inspected together and
+    agree with the dated SQL export. This is not independent article verification
+    of final-medium molarity or the old chemical grounding.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/328/",
+    "snippet": "0.004045", "supports": "SUPPORT"}, {"explanation": "Supports the supplied
+    ingredient/input note at ingredients[10], (NH4)6Mo7O24.4H2O, 5 mg per 1 L distilled-water
+    input in Culture on synthetic medium. The source does not explicitly make this
+    a final solution volume. The retained MediaDB molarity remains unverified against
+    the article; this evidence does not certify that concentration and no mass/molar
+    conversion is made.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001", "snippet":
+    "(NH4)6Mo7O24 \u00b7 4H2O", "supports": "SUPPORT"}, {"explanation": "The official
+    Formula field shows why CHEBI:91249 is not the supplied heptamolybdate tetrahydrate
+    at ingredients[10]. Supports withdrawing that mapping, not the concentration.
+    The misleading MIM synonym is not used to reassign it; no replacement identifier
+    is invented.", "reference": "https://www.ebi.ac.uk/chebi/CHEBI:91249", "snippet":
+    "2H4N.MoO4", "supports": "SUPPORT"}], "old": null, "old_present": false, "pointer":
+    ["ingredients", 10, "evidence"], "reason": "Attach evidence to its exact amount,
+    source-input note or identity claim.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001",
+    "snippet": "(NH4)6Mo7O24 \u00b7 4H2O"}, {"counts": {"quantity_corrections": 1},
+    "kind": "set", "locator": "Results / Influence of carbon source, first paragraph;
+    Table 2 footnote a distinguishes 9.8 g/L glutamic-acid equivalents", "new": {"unit":
+    "G_PER_L", "value": "12.5"}, "old": {"unit": "MILLIMOLAR", "value": "66.8"}, "old_present":
+    true, "pointer": ["ingredients", 11, "concentration"], "reason": "Supports ingredients[11].concentration
+    for Sodium Glutamate: 12.5 g/L as an initial nutrient input. Locator: Results
+    / Influence of carbon source, first paragraph; Table 2 footnote a distinguishes
+    9.8 g/L glutamic-acid equivalents. The snippet is the exact numeric cell/substring,
+    with the chemical row, initial-concentration column and g/L basis separately inspected.
+    It is not a residual measurement or product titre. Replace the historical MediaDB
+    molarity with directly stated source units; no molecular weight or conversion
+    arithmetic is used. The supplied form is sodium glutamate monohydrate, not the
+    9.8 g/L glutamic-acid-equivalent footnote value.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001",
+    "snippet": "12.5"}, {"counts": {"ingredient_labels_corrected": 1}, "kind": "set",
+    "locator": "Culture on synthetic medium", "new": "Sodium glutamate monohydrate",
+    "old": "Sodium Glutamate", "old_present": true, "pointer": ["ingredients", 11,
+    "preferred_term"], "reason": "Represent the supplied chemical form without changing
+    an unresolved molarity.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001",
+    "snippet": "mono-hydrate sodium glutamate"}, {"counts": {"unsupported_ingredient_identity_slots_removed":
+    1}, "kind": "remove", "locator": "Culture on synthetic medium", "new": null, "old":
+    {"id": "CHEBI:64220", "label": "monosodium glutamate"}, "old_present": true, "pointer":
+    ["ingredients", 11, "term"], "reason": "Withdraw the unverified non-hydrate grounding;
+    no independently verified replacement is assigned.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001",
+    "snippet": "mono-hydrate sodium glutamate"}, {"counts": {"unsupported_ingredient_identity_slots_removed":
+    1}, "kind": "remove", "locator": "Culture on synthetic medium", "new": null, "old":
+    {"id": "CHEBI:64220", "label": "monosodium glutamate"}, "old_present": true, "pointer":
+    ["ingredients", 11, "mediaingredientmech_chebi_term"], "reason": "Withdraw the
+    unverified non-hydrate grounding; no independently verified replacement is assigned.",
+    "reference": "doi:10.1128/AEM.67.6.2596-2602.2001", "snippet": "mono-hydrate sodium
+    glutamate"}, {"counts": {"ingredient_context_notes_corrected": 1}, "kind": "set",
+    "locator": "Results / Influence of carbon source, first paragraph; Table 2 footnote
+    a distinguishes 9.8 g/L glutamic-acid equivalents", "new": "The source''s initial
+    12.5 g/L input replaces MediaDB 66.8 mM; this is source-unit restoration, not
+    a claim that the database conversion was numerically wrong. No exact supplied-hydrate
+    identifier is assigned: the packaged candidate''s public ChEBI page was unavailable.
+    The prior non-hydrate grounding is withdrawn, not a new identifier inferred.",
+    "old": null, "old_present": false, "pointer": ["ingredients", 11, "notes"], "reason":
+    "Keep source units, provenance and unresolved identity/volume limits explicit.",
+    "reference": "doi:10.1128/AEM.67.6.2596-2602.2001", "snippet": "12.5"}, {"counts":
+    {"new_evidence": 1}, "kind": "set", "locator": "Results / Influence of carbon
+    source, first paragraph; Table 2 footnote a distinguishes 9.8 g/L glutamic-acid
+    equivalents", "new": [{"explanation": "Supports ingredients[11].concentration
+    for Sodium Glutamate: 12.5 g/L as an initial nutrient input. Locator: Results
+    / Influence of carbon source, first paragraph; Table 2 footnote a distinguishes
+    9.8 g/L glutamic-acid equivalents. The snippet is the exact numeric cell/substring,
+    with the chemical row, initial-concentration column and g/L basis separately inspected.
+    It is not a residual measurement or product titre. Replace the historical MediaDB
+    molarity with directly stated source units; no molecular weight or conversion
+    arithmetic is used. The supplied form is sodium glutamate monohydrate, not the
+    9.8 g/L glutamic-acid-equivalent footnote value. Separately inspected supplied-form
+    excerpt: ''mono-hydrate sodium glutamate'' in Culture on synthetic medium.", "reference":
+    "doi:10.1128/AEM.67.6.2596-2602.2001", "snippet": "12.5", "supports": "SUPPORT"}],
+    "old": null, "old_present": false, "pointer": ["ingredients", 11, "evidence"],
+    "reason": "Attach evidence to its exact amount, source-input note or identity
+    claim.", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001", "snippet": "12.5"},
+    {"counts": {"new_references": 8}, "kind": "set", "locator": "Compound table; associated
+    article and ontology sources", "new": [{"authors": "Hassan Hajjaj; Peter Niederberger;
+    Philippe Duboc", "notes": "source_type=journal_article; discovery_mode=MediaDB
+    source 121 PubMed cross-reference; accessed_on=2026-10-10; manual publisher full-text
+    reading; no downloaded capture. ", "reference": "doi:10.1128/AEM.67.6.2596-2602.2001",
+    "title": "Lovastatin Biosynthesis by Aspergillus terreus in a Chemically Defined
+    Medium", "year": 2001}, {"authors": "Institute for Systems Biology", "notes":
+    "source_type=dataset; discovery_mode=existing MEDIADB accession; accessed_on=2026-10-09;
+    hash-pinned official recipe HTML table. Publication year unknown; no copyright
+    or last-modified year substituted. ", "reference": "https://mediadb.systemsbiology.net/defined_media/media/328/",
+    "title": "Media: Chemically defined fermentation medium (20g ethanol + 12.5g msg)"},
+    {"authors": "ChEBI, EMBL-EBI", "notes": "source_type=ontology_record; discovery_mode=packaged
+    MIM exact-label result followed to official ChEBI page; accessed_on=2026-10-10;
+    manual web-tool inspection; no raw capture. Publication year unknown; no copyright
+    or last-modified year substituted. ", "reference": "https://www.ebi.ac.uk/chebi/CHEBI:75836",
+    "title": "iron(2+) sulfate heptahydrate (CHEBI:75836)"}, {"authors": "ChEBI, EMBL-EBI",
+    "notes": "source_type=ontology_record; discovery_mode=packaged MIM exact-label
+    result followed to official ChEBI page; accessed_on=2026-10-10; manual web-tool
+    inspection; no raw capture. Publication year unknown; no copyright or last-modified
+    year substituted. ", "reference": "https://www.ebi.ac.uk/chebi/CHEBI:86158", "title":
+    "calcium chloride dihydrate (CHEBI:86158)"}, {"authors": "ChEBI, EMBL-EBI", "notes":
+    "source_type=ontology_record; discovery_mode=packaged MIM exact-label result followed
+    to official ChEBI page; accessed_on=2026-10-10; manual web-tool inspection; no
+    raw capture. Publication year unknown; no copyright or last-modified year substituted.
+    ", "reference": "https://www.ebi.ac.uk/chebi/CHEBI:86358", "title": "manganese(II)
+    sulfate tetrahydrate (CHEBI:86358)"}, {"authors": "ChEBI, EMBL-EBI", "notes":
+    "source_type=ontology_record; discovery_mode=packaged MIM exact-label result followed
+    to official ChEBI page; accessed_on=2026-10-10; manual web-tool inspection; no
+    raw capture. Publication year unknown; no copyright or last-modified year substituted.
+    ", "reference": "https://www.ebi.ac.uk/chebi/CHEBI:31795", "title": "magnesium
+    sulfate heptahydrate (CHEBI:31795)"}, {"authors": "ChEBI, EMBL-EBI", "notes":
+    "source_type=ontology_record; discovery_mode=packaged MIM exact-label result followed
+    to official ChEBI page; accessed_on=2026-10-10; manual web-tool inspection; no
+    raw capture. Publication year unknown; no copyright or last-modified year substituted.
+    ", "reference": "https://www.ebi.ac.uk/chebi/CHEBI:32312", "title": "zinc sulfate
+    heptahydrate (CHEBI:32312)"}, {"authors": "ChEBI, EMBL-EBI", "notes": "source_type=ontology_record;
+    discovery_mode=inspection of conflicting MIM exact-label answer; accessed_on=2026-10-10;
+    manual official ChEBI page reading; no raw capture. Publication year unknown;
+    no copyright or last-modified year substituted. ", "reference": "https://www.ebi.ac.uk/chebi/CHEBI:91249",
+    "title": "ammonium molybdate (CHEBI:91249)"}], "old": null, "old_present": false,
+    "pointer": ["references"], "reason": "Add bibliography and source-discovery provenance.",
+    "reference": "https://mediadb.systemsbiology.net/defined_media/media/328/", "snippet":
+    "28.71"}]'
 media_term:
   preferred_term: MediaDB Medium 328
   term:
@@ -166,3 +925,52 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: doi:10.1128/AEM.67.6.2596-2602.2001
+  title: Lovastatin Biosynthesis by Aspergillus terreus in a Chemically Defined Medium
+  authors: Hassan Hajjaj; Peter Niederberger; Philippe Duboc
+  year: 2001
+  notes: 'source_type=journal_article; discovery_mode=MediaDB source 121 PubMed cross-reference;
+    accessed_on=2026-10-10; manual publisher full-text reading; no downloaded capture. '
+- reference: https://mediadb.systemsbiology.net/defined_media/media/328/
+  title: 'Media: Chemically defined fermentation medium (20g ethanol + 12.5g msg)'
+  authors: Institute for Systems Biology
+  notes: 'source_type=dataset; discovery_mode=existing MEDIADB accession; accessed_on=2026-10-09;
+    hash-pinned official recipe HTML table. Publication year unknown; no copyright
+    or last-modified year substituted. '
+- reference: https://www.ebi.ac.uk/chebi/CHEBI:75836
+  title: iron(2+) sulfate heptahydrate (CHEBI:75836)
+  authors: ChEBI, EMBL-EBI
+  notes: 'source_type=ontology_record; discovery_mode=packaged MIM exact-label result
+    followed to official ChEBI page; accessed_on=2026-10-10; manual web-tool inspection;
+    no raw capture. Publication year unknown; no copyright or last-modified year substituted. '
+- reference: https://www.ebi.ac.uk/chebi/CHEBI:86158
+  title: calcium chloride dihydrate (CHEBI:86158)
+  authors: ChEBI, EMBL-EBI
+  notes: 'source_type=ontology_record; discovery_mode=packaged MIM exact-label result
+    followed to official ChEBI page; accessed_on=2026-10-10; manual web-tool inspection;
+    no raw capture. Publication year unknown; no copyright or last-modified year substituted. '
+- reference: https://www.ebi.ac.uk/chebi/CHEBI:86358
+  title: manganese(II) sulfate tetrahydrate (CHEBI:86358)
+  authors: ChEBI, EMBL-EBI
+  notes: 'source_type=ontology_record; discovery_mode=packaged MIM exact-label result
+    followed to official ChEBI page; accessed_on=2026-10-10; manual web-tool inspection;
+    no raw capture. Publication year unknown; no copyright or last-modified year substituted. '
+- reference: https://www.ebi.ac.uk/chebi/CHEBI:31795
+  title: magnesium sulfate heptahydrate (CHEBI:31795)
+  authors: ChEBI, EMBL-EBI
+  notes: 'source_type=ontology_record; discovery_mode=packaged MIM exact-label result
+    followed to official ChEBI page; accessed_on=2026-10-10; manual web-tool inspection;
+    no raw capture. Publication year unknown; no copyright or last-modified year substituted. '
+- reference: https://www.ebi.ac.uk/chebi/CHEBI:32312
+  title: zinc sulfate heptahydrate (CHEBI:32312)
+  authors: ChEBI, EMBL-EBI
+  notes: 'source_type=ontology_record; discovery_mode=packaged MIM exact-label result
+    followed to official ChEBI page; accessed_on=2026-10-10; manual web-tool inspection;
+    no raw capture. Publication year unknown; no copyright or last-modified year substituted. '
+- reference: https://www.ebi.ac.uk/chebi/CHEBI:91249
+  title: ammonium molybdate (CHEBI:91249)
+  authors: ChEBI, EMBL-EBI
+  notes: 'source_type=ontology_record; discovery_mode=inspection of conflicting MIM
+    exact-label answer; accessed_on=2026-10-10; manual official ChEBI page reading;
+    no raw capture. Publication year unknown; no copyright or last-modified year substituted. '

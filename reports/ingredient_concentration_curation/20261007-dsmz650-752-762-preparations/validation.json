@@ -1,0 +1,425 @@
+{
+  "terminal": true,
+  "runtime": "Partial locked Python 3.13; not full CI",
+  "phase": "post",
+  "checks": [
+    {
+      "name": "apply",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/repair_dsmz650_752_762_preparations.py",
+        "--apply",
+        "--reports"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-preparations-post-apply.log"
+    },
+    {
+      "name": "readback",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/repair_dsmz650_752_762_preparations.py",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-preparations-post-readback.log"
+    },
+    {
+      "name": "noop",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/repair_dsmz650_752_762_preparations.py",
+        "--apply"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-preparations-post-noop.log"
+    },
+    {
+      "name": "independent-audit",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz650-752-762-preparations/audit.py",
+        "--applied",
+        "--out",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz650-752-762-preparations/diff-audit.json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-preparations-post-independent-audit.log"
+    },
+    {
+      "name": "schema-650-medium",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/centenum_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-preparations-post-schema-650-medium.log"
+    },
+    {
+      "name": "schema-752-medium",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/halomonas_pantelleriense.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-preparations-post-schema-752-medium.log"
+    },
+    {
+      "name": "schema-762-medium",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/halomonas_desiderata_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-preparations-post-schema-762-medium.log"
+    },
+    {
+      "name": "schema-650-solution",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/mediadive_1378_Main_sol_650.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-preparations-post-schema-650-solution.log"
+    },
+    {
+      "name": "schema-752-solution",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/mediadive_1538_Main_sol_752.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-preparations-post-schema-752-solution.log"
+    },
+    {
+      "name": "schema-762-solution",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/mediadive_1552_Main_sol_762.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-preparations-post-schema-762-solution.log"
+    },
+    {
+      "name": "strict",
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-preparations-post-strict.log"
+    },
+    {
+      "name": "ids",
+      "command": [
+        "just",
+        "assign-ids-check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-preparations-post-ids.log"
+    },
+    {
+      "name": "prior-media-0500-1000",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/review_medium_concentration_evidence.py",
+        "--cache",
+        "/tmp/ingredient-media-20261007/sources",
+        "--plan",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/plan.json",
+        "--verify",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz2-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-medium-stock-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz13-stock-only/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-extraction-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-komodo12-extraction/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-jcm896-final-volume/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-jcm1105-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-percent-supplements/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-public-direct/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-public-stocks/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-public-input-basis/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-rs-stock-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz111-preparation/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz125-alternatives/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz265-preparations/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz467-469-inputs/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz489-stocks/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-solutions-water-ph7/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-solutions-water-ph-adjustments/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-komodo650-752-762-preparations/plan.json",
+        "--followup-plan",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz650-752-762-preparations/plan.json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-preparations-post-prior-media-0500-1000.log"
+    },
+    {
+      "name": "prior-solutions-0500-1000",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/review_solution_concentration_evidence.py",
+        "--cache",
+        "/tmp/ingredient-solutions-20261007/sources",
+        "--plan",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-mediadive-solutions-0500-1000/plan.json",
+        "--verify",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz2-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-medium-stock-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz13-stock-only/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-extraction-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-komodo12-extraction/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-jcm896-final-volume/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-jcm1105-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-percent-supplements/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-public-direct/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-public-stocks/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-public-input-basis/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-rs-stock-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz111-preparation/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz125-alternatives/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz265-preparations/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz467-469-inputs/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz489-stocks/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-solutions-water-ph7/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-solutions-water-ph-adjustments/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-komodo650-752-762-preparations/plan.json",
+        "--followup-plan",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz650-752-762-preparations/plan.json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-preparations-post-prior-solutions-0500-1000.log"
+    },
+    {
+      "name": "prior-solutions-1000-1500",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/review_solution_concentration_evidence.py",
+        "--cache",
+        "/tmp/ingredient-solutions-20261007/sources",
+        "--plan",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-mediadive-solutions-1000-1500/plan.json",
+        "--verify",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz2-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-medium-stock-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz13-stock-only/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-extraction-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-komodo12-extraction/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-jcm896-final-volume/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-jcm1105-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-percent-supplements/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-public-direct/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-public-stocks/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-public-input-basis/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-rs-stock-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz111-preparation/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz125-alternatives/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz265-preparations/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz467-469-inputs/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz489-stocks/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-solutions-water-ph7/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-solutions-water-ph-adjustments/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-komodo650-752-762-preparations/plan.json",
+        "--followup-plan",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz650-752-762-preparations/plan.json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-preparations-post-prior-solutions-1000-1500.log"
+    },
+    {
+      "name": "cumulative-diff",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-preparations-post-cumulative-diff.log"
+    },
+    {
+      "name": "coverage",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/summarize_followup_coverage.py",
+        "--out",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-followup-coverage-after-dsmz-preparations.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz2-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-medium-stock-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz13-stock-only/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-extraction-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-komodo12-extraction/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-jcm896-final-volume/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-jcm1105-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-percent-supplements/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-public-direct/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-public-stocks/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-public-input-basis/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-rs-stock-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz111-preparation/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz125-alternatives/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz265-preparations/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz467-469-inputs/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz489-stocks/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-solutions-water-ph7/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-solutions-water-ph-adjustments/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-komodo650-752-762-preparations/plan.json",
+        "--followup-plan",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz650-752-762-preparations/plan.json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-preparations-post-coverage.log"
+    },
+    {
+      "name": "tests",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_dsmz650_752_762_preparations.py",
+        "tests/test_dsmz467_469_inputs.py",
+        "tests/test_medium_concentration_review.py",
+        "tests/test_solution_concentration_review.py",
+        "tests/test_record_io.py",
+        "tests/test_solution_merge_routing.py",
+        "--junitxml",
+        "/tmp/ingredient-media-20261007/dsmz-preparations-post-tests.xml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-preparations-post-tests.log"
+    },
+    {
+      "name": "products",
+      "command": [
+        "just",
+        "validate-products"
+      ],
+      "exit_code": 2,
+      "log": "/tmp/ingredient-media-20261007/dsmz-preparations-post-products.log"
+    },
+    {
+      "name": "verify-merges",
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/dsmz-preparations-post-verify-merges.log"
+    },
+    {
+      "name": "freshness",
+      "command": [
+        "just",
+        "audit-merge-freshness",
+        "--json"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/dsmz-preparations-post-freshness.log"
+    },
+    {
+      "name": "diff-check",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-preparations-post-diff-check.log"
+    }
+  ]
+}

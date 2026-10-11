@@ -1,0 +1,26 @@
+{
+  "terminal": true,
+  "source_sha256": "080aa90bdd97929b8a85e7ea3580ffaad4260d05d203723ca31bebfeef838433",
+  "input_records": 15910,
+  "output_groups": 10777,
+  "targets": [
+    {
+      "path": "data/normalized_yaml/archaea/TOGO_M208_Pyrobaculum_Aerophilum_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/archaea/TOGO_M208_Pyrobaculum_Aerophilum_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/togo_medium_m209.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/togo_medium_m209.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    }
+  ],
+  "derived_yaml_written": false,
+  "scope": "Full corpus routing; only the two repaired outputs recertified."
+}

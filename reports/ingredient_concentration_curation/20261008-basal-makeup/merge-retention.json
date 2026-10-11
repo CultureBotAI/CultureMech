@@ -1,0 +1,42 @@
+{
+  "terminal": true,
+  "source_sha256": "b8f024d6b5c7faa334609caa01c6ce2e2ffd395e322d6459da1b6865597d46dc",
+  "input_records": 15910,
+  "output_groups": 10777,
+  "targets": [
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M809_Modified_Haloanaerobium_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/TOGO_M809_Modified_Haloanaerobium_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M823_S200_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/TOGO_M823_S200_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M853_Halanaerobacter_Jeridensis_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/TOGO_M853_Halanaerobacter_Jeridensis_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M975_Halanaerobium_Sehlinense_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/TOGO_M975_Halanaerobium_Sehlinense_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    }
+  ],
+  "derived_yaml_written": false,
+  "scope": "Full corpus routing; only four repaired outputs recertified."
+}

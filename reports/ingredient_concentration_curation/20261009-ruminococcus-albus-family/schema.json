@@ -1,0 +1,266 @@
+{
+  "terminal": true,
+  "phase": "schema",
+  "records_applied": 0,
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/436-preview-yaml/K436.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/schema-0.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/436-preview-yaml/K436.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/schema-1.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/436-preview-yaml/M694.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/schema-2.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/436-preview-yaml/M694.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/schema-3.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/436-preview-yaml/K3017.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/schema-4.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/436-preview-yaml/K3017.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/schema-5.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/436-preview-yaml/S882.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/schema-6.log",
+      "log_sha256": "ab8f4f36a4dbbc200d03d225ed9af2b0e7056b0fd224253188cad9054bc0abf2"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/436-preview-yaml/S882.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/schema-7.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/436-preview-yaml/S883.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/schema-8.log",
+      "log_sha256": "ab8f4f36a4dbbc200d03d225ed9af2b0e7056b0fd224253188cad9054bc0abf2"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/436-preview-yaml/S883.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/schema-9.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/436-preview-yaml/S884.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/schema-10.log",
+      "log_sha256": "ab8f4f36a4dbbc200d03d225ed9af2b0e7056b0fd224253188cad9054bc0abf2"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/436-preview-yaml/S884.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/schema-11.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/436-preview-yaml/S885.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/schema-12.log",
+      "log_sha256": "ab8f4f36a4dbbc200d03d225ed9af2b0e7056b0fd224253188cad9054bc0abf2"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/436-preview-yaml/S885.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/schema-13.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/436-preview-yaml/K436_18848.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/schema-14.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/436-preview-yaml/K436_18848.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/schema-15.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/436-preview-yaml/D436.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/schema-16.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/436-preview-yaml/D436.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/schema-17.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/436-preview-yaml/M2636.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/schema-18.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/436-preview-yaml/M2636.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/schema-19.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    }
+  ],
+  "code_sha256": {
+    "scripts/repair_ruminococcus_albus_family.py": "bd50694b6d094e72ced5c9869da14b889485d99b92f8a826fddfbbe92af5abff",
+    "tests/test_ruminococcus_albus_family.py": "20603276de67540569eb13e065ec796a753b0e2a571a77f15f029914a84daaa0",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/audit.py": "9f73f42bb35238527ec827d020eb2438d0b6b2dbb9e1018c38025ee5f29e269b",
+    "scripts/repair_oteb_family.py": "90aa83324ff1b28708921a00c409f50b4c4bd12eb15f09ae8feb0e1010916795",
+    "scripts/repair_methanogen_stock_boundaries.py": "8d4d32c7dc3cb2586242a188f958087482df3aff553d1dbc468c422eddb037ba",
+    "scripts/repair_lactalbumin_formulations.py": "3c16a3f4a2e543d280d3ccbb20a63138f2b409602d8b168b7fc742abe63b1769",
+    "scripts/repair_jcm_stock_preparations.py": "7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a",
+    "scripts/repair_mediadive_stock_concentration_evidence.py": "1badfa99205690cf6082d95db7dafbd6d4927b617027bc61fbaaf9dbd597c974",
+    "scripts/review_medium_concentration_evidence.py": "ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a",
+    "src/culturemech/validation/recipe_references.py": "1ef57389727347c242f45a85a9ed8908803423bc10307f53a888dac67ce06b67",
+    "src/culturemech/validation/write_validated.py": "8e1e2185231caecbe3dc99908c783cd83340b1e93fa9115ff1445d4b3820897e",
+    "src/culturemech/schema/culturemech.yaml": "461478d900fdee29a52c3d14656bcf369443bfdd0f4a534aa9d385f25df1cf8a"
+  },
+  "plan_sha256": "47771aa8b0a5d36a7ae339456df36304c2cdabd7508ec526f8f269106bb14332",
+  "context_sha256": "45d48a0e66d0504c0bea2655ea38f2a88c4c3034f8f4bd520f6e6848e22d0b55",
+  "inventory_before": "b2fe53f9a5f5c2a28ce3af156e7c8d7c95e000e1f150df9ac3799f8a4e454cfe",
+  "files": [
+    {
+      "path": "/tmp/ingredient-media-20261007/436-preview-yaml/K436.yaml",
+      "sha256": "20efca3af40aca7fb5401e895eabb08963175a94447c6ed16628428e9d9c1a95"
+    },
+    {
+      "path": "/tmp/ingredient-media-20261007/436-preview-yaml/M694.yaml",
+      "sha256": "3b69719fe6d6fa347a143e8c8cd51363553e229a06d78a60c988e6c018dda72f"
+    },
+    {
+      "path": "/tmp/ingredient-media-20261007/436-preview-yaml/K3017.yaml",
+      "sha256": "7e37845ad726dba20ab059a5aebb07b7bf28ded5c325cff5226433d7addc50af"
+    },
+    {
+      "path": "/tmp/ingredient-media-20261007/436-preview-yaml/S882.yaml",
+      "sha256": "9b0621ec343da452f06fea20dd09d9513157274baa0ecf55217a31396e57afdf"
+    },
+    {
+      "path": "/tmp/ingredient-media-20261007/436-preview-yaml/S883.yaml",
+      "sha256": "ad927b861ec3dbbe1c364dd3f1726f36fee30aebc9b750ee12c9987dd8643f68"
+    },
+    {
+      "path": "/tmp/ingredient-media-20261007/436-preview-yaml/S884.yaml",
+      "sha256": "f56e9bb31123026b824f2d33a2af0dcb4c98c3ab91729d09897c6f1af48fe3e8"
+    },
+    {
+      "path": "/tmp/ingredient-media-20261007/436-preview-yaml/S885.yaml",
+      "sha256": "dbb351350993be48b8476b1dc746159b48d7d7e4b735def836c3ba5dce518931"
+    },
+    {
+      "path": "/tmp/ingredient-media-20261007/436-preview-yaml/K436_18848.yaml",
+      "sha256": "657aba4a32d95d2b1ddec37a69753b244153d02feb8881bb929650c77a1d8253"
+    },
+    {
+      "path": "/tmp/ingredient-media-20261007/436-preview-yaml/D436.yaml",
+      "sha256": "34fbeafc8f67913ecde48fbdc77b1fc68e555ee1ad4f723fe93c3f84304c78d5"
+    },
+    {
+      "path": "/tmp/ingredient-media-20261007/436-preview-yaml/M2636.yaml",
+      "sha256": "b3951d835e8e68b68711923477d59d06e155f565bfacfe60c68ed405f8a5913b"
+    }
+  ]
+}

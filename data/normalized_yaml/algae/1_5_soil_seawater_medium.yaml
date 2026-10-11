@@ -15,59 +15,84 @@ notes: UTEX prepares 1/5 Soil+Seawater Medium by combining Pasteurized Seawater 
   dH2O 1:4 before steaming with Green House Soil.
 ingredients:
 - preferred_term: Green House Soil
-  concentration:
-    value: 1 tsp per 200 mL recipe
-    unit: VARIABLE
-  notes: UTEX lists 1 tsp Green House Soil per 200 mL final medium.
-- preferred_term: CaCO3
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  term:
-    id: CHEBI:3311
-    label: calcium carbonate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:3311
-    label: calcium carbonate
-  supplier_catalog:
-    supplier_name: Fisher
-    catalog_number: C 64
-  notes: Optional in the UTEX recipe; converted from 1 mg per 200 mL final medium.
-  physicochemical_roles:
-  - BUFFER
+  notes: The source fixes the soil dose at 1 tsp for its 200 mL recipe. Teaspoon size
+    and soil density are not established; no mass or standardized volume conversion
+    is asserted.
+  evidence:
+  - reference: https://utex.org/products/one-fifth-soil-plus-seawater-medium
+    supports: SUPPORT
+    snippet: 1 tsp
+    explanation: 'Supports ingredients[0].notes and associated ingredient/preparation
+      notes. Original field: ingredients[0].concentration.  The source specifies a
+      fixed teaspoon dose, not a variable quantity. Remove the misleading VARIABLE
+      concentration and retain the exact dose in notes and evidence; teaspoon size
+      and soil density are not established. Calculation: No numerical conversion applied.
+      Separate basis excerpt: ''For 200 mL Total''. Locator: Formulation table row
+      position 1; Directions total-volume heading.'
 - preferred_term: Pasteurized Seawater
   concentration:
     value: '200'
     unit: ML_PER_L
+    per_volume: per liter of the combined stated seawater and dH2O input volumes,
+      before soil addition
   term:
     id: ENVO:00002149
     label: sea water
-  notes: Converted from 40 mL Pasteurized Seawater per 200 mL final medium.
+  notes: 40 mL / 0.2 L combined stated liquid inputs = 200 mL/L of input liquids.
+    This input-volume ratio is not asserted as a measured final-medium concentration.
   physicochemical_roles:
   - OSMOTIC_AGENT
+  evidence:
+  - reference: https://utex.org/products/one-fifth-soil-plus-seawater-medium
+    supports: SUPPORT
+    snippet: 40 mL
+    explanation: 'Supports ingredients[1].concentration and associated ingredient/preparation
+      notes. Original field: ingredients[2].concentration.  Retain the source recipe
+      input ratio with an explicit input-volume basis. The source total is 200 mL
+      of liquid components; the final mixture after soil addition is not measured
+      here. Calculation: 40 mL / 0.2 L combined stated liquid inputs = 200 mL/L of
+      input liquids.. Separate basis excerpt: ''For 200 mL Total''. Locator: Formulation
+      table row position 3; Directions total-volume heading.'
 - preferred_term: dH2O
   concentration:
     value: '800'
     unit: ML_PER_L
+    per_volume: per liter of the combined stated seawater and dH2O input volumes,
+      before soil addition
   term:
     id: CHEBI:15377
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
-  notes: Converted from 160 mL dH2O per 200 mL final medium.
+  notes: 160 mL / 0.2 L combined stated liquid inputs = 800 mL/L of input liquids.
+    This input-volume ratio is not asserted as a measured final-medium concentration.
+  evidence:
+  - reference: https://utex.org/products/one-fifth-soil-plus-seawater-medium
+    supports: SUPPORT
+    snippet: 160 mL
+    explanation: 'Supports ingredients[2].concentration and associated ingredient/preparation
+      notes. Original field: ingredients[3].concentration.  Retain the source recipe
+      input ratio with an explicit input-volume basis. The source total is 200 mL
+      of liquid components; the final mixture after soil addition is not measured
+      here. Calculation: 160 mL / 0.2 L combined stated liquid inputs = 800 mL/L of
+      input liquids.. Separate basis excerpt: ''For 200 mL Total''. Locator: Formulation
+      table row position 4; Directions total-volume heading.'
 solutions: []
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Combine Green House Soil, CaCO3, Pasteurized Seawater, and dH2O.
+  description: Combine Green House Soil and Pasteurized Seawater with dH2O; add calcium
+    carbonate only for the optional supplemented formulation.
 - step_number: 2
   action: HEAT
-  description: Cover and steam for two consecutive days for 3 hours on each day.
+  description: Cover the medium container and steam for two consecutive days, three
+    hours on each day. Raise temperature gradually to approximately 95 C in 15 minutes,
+    then just over 98 C for the three-hour duration. Cool gradually at room temperature.
 - step_number: 3
   action: STORE
-  description: Refrigerate for at least 24 hours, then bring to room temperature before
-    use.
+  description: Refrigerate at 10 C for at least 24 hours and bring to room temperature
+    before use.
 salinity: saltwater
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
@@ -114,9 +139,87 @@ curation_history:
   source: https://utex.org/products/one-fifth-soil-plus-seawater-medium
   notes: UTEX prepares 1/5 Soil+Seawater Medium by combining Pasteurized Seawater
     and dH2O 1:4 before steaming with Green House Soil.
+- timestamp: '2026-10-10T08:24:09.034201+00:00'
+  curator: codex
+  action: CURATED_UTEX_SOIL_SEAWATER_INPUT_AMOUNTS_AND_OPTIONAL_CARBONATE
+  notes: Source-backed input amounts, optional carbonate and preparation details.
+    No taxa-media association added; no fixed teaspoon conversion or inferred final
+    volume.
+  source: https://utex.org/products/one-fifth-soil-plus-seawater-medium
+  changes: '{"additional_findings": [{"decision": "Preserve the source heat ramp and
+    gradual cooling when completing the abbreviated preparation instructions; do not
+    invent pressure/autoclave temperature.", "field": "preparation_steps", "reference":
+    "https://utex.org/products/one-fifth-soil-plus-seawater-medium", "snippets": ["Cover
+    the medium container and steam for 2 consecutive days, 3 hours on each day.",
+    "Pasteurization is a gradual rising of temperature to approximately 95 \u00b0C
+    in 15 minutes.", "Then increased just over 98 \u00b0C for the 3 hour duration.",
+    "Cooling occurs gradually at room temperature."]}, {"decision": "The one-fifth
+    source explicitly specifies 10 C storage; this does not apply to the other family
+    members.", "field": "preparation_steps[2]", "reference": "https://utex.org/products/one-fifth-soil-plus-seawater-medium",
+    "snippets": ["Refrigerate (10 \u00b0C) 24 hours or more and bring to room temperature
+    before using."]}], "claims": [{"action_taken": "Remove the unsupported structured
+    concentration; preserve the literal input in notes and evidence.", "basis_snippet":
+    "For 200 mL Total", "calculation": "No numerical conversion applied", "decision":
+    "The source specifies a fixed teaspoon dose, not a variable quantity. Remove the
+    misleading VARIABLE concentration and retain the exact dose in notes and evidence;
+    teaspoon size and soil density are not established.", "field": "ingredients[0].concentration",
+    "ingredient": "Green House Soil", "locator": "Formulation table row position 1;
+    Directions total-volume heading", "old": {"unit": "VARIABLE", "value": "1 tsp
+    per 200 mL recipe"}, "old_term": null, "proposed": null, "proposed_field": "ingredients[0].notes",
+    "reference": "https://utex.org/products/one-fifth-soil-plus-seawater-medium",
+    "snippet": "1 tsp", "status": "schema_gap"}, {"action_taken": "Relocate the optional
+    carbonate dose from mandatory composition to a source-supported inline variant.",
+    "basis_snippet": "For 200 mL Total", "calculation": "No new concentration inferred;
+    the source-literal amount belongs only to the optional formulation.", "decision":
+    "Move optional calcium carbonate out of mandatory parent composition into an evidence-backed
+    inline variant. Preserve the literal 1 mg recipe dose, supplier/identity provenance
+    and printed rounded 0.05 mM as a source annotation; do not assert universal carbonate
+    addition.", "field": "ingredients[1].concentration", "ingredient": "CaCO3", "locator":
+    "Formulation table row position 2; Directions total-volume heading", "old": {"unit":
+    "G_PER_L", "value": "0.005"}, "old_term": {"id": "CHEBI:3311", "label": "calcium
+    carbonate"}, "proposed": ["Optionally add 1 mg calcium carbonate (Fisher C 64)
+    to the source 200 mL recipe before steaming."], "proposed_field": "variants[0].modifications",
+    "reference": "https://utex.org/products/one-fifth-soil-plus-seawater-medium",
+    "snippet": "1 mg", "status": "correct"}, {"action_taken": "Add the explicit source-input
+    volume basis; numerical amount unchanged.", "basis_snippet": "For 200 mL Total",
+    "calculation": "40 mL / 0.2 L combined stated liquid inputs = 200 mL/L of input
+    liquids.", "decision": "Retain the source recipe input ratio with an explicit
+    input-volume basis. The source total is 200 mL of liquid components; the final
+    mixture after soil addition is not measured here.", "field": "ingredients[2].concentration",
+    "ingredient": "Pasteurized Seawater", "locator": "Formulation table row position
+    3; Directions total-volume heading", "old": {"unit": "ML_PER_L", "value": "200"},
+    "old_term": {"id": "ENVO:00002149", "label": "sea water"}, "proposed": {"per_volume":
+    "per liter of the combined stated seawater and dH2O input volumes, before soil
+    addition", "unit": "ML_PER_L", "value": "200"}, "proposed_field": "ingredients[1].concentration",
+    "reference": "https://utex.org/products/one-fifth-soil-plus-seawater-medium",
+    "snippet": "40 mL", "status": "correct"}, {"action_taken": "Add the explicit source-input
+    volume basis; numerical amount unchanged.", "basis_snippet": "For 200 mL Total",
+    "calculation": "160 mL / 0.2 L combined stated liquid inputs = 800 mL/L of input
+    liquids.", "decision": "Retain the source recipe input ratio with an explicit
+    input-volume basis. The source total is 200 mL of liquid components; the final
+    mixture after soil addition is not measured here.", "field": "ingredients[3].concentration",
+    "ingredient": "dH2O", "locator": "Formulation table row position 4; Directions
+    total-volume heading", "old": {"unit": "ML_PER_L", "value": "800"}, "old_term":
+    {"id": "CHEBI:15377", "label": "water"}, "proposed": {"per_volume": "per liter
+    of the combined stated seawater and dH2O input volumes, before soil addition",
+    "unit": "ML_PER_L", "value": "800"}, "proposed_field": "ingredients[2].concentration",
+    "reference": "https://utex.org/products/one-fifth-soil-plus-seawater-medium",
+    "snippet": "160 mL", "status": "correct"}], "counts": {"bibliographic_entries_enriched":
+    1, "ingredient_context_notes_corrected": 3, "ingredient_dose_basis_corrections":
+    2, "inline_variant_options_added": 1, "new_curation_history": 1, "new_evidence":
+    5, "preparation_descriptions_corrected": 3, "supplement_nodes_moved_to_variants":
+    1, "unsupported_quantity_slots_removed": 1}, "removed_optional_ingredient": {"concentration":
+    {"unit": "G_PER_L", "value": "0.005"}, "mediaingredientmech_chebi_term": {"id":
+    "CHEBI:3311", "label": "calcium carbonate"}, "notes": "Optional in the UTEX recipe;
+    converted from 1 mg per 200 mL final medium.", "physicochemical_roles": ["BUFFER"],
+    "preferred_term": "CaCO3", "supplier_catalog": {"catalog_number": "C 64", "supplier_name":
+    "Fisher"}, "term": {"id": "CHEBI:3311", "label": "calcium carbonate"}}}'
 references:
 - reference: UTEX:one-fifth-soil-plus-seawater-medium
 - reference: https://utex.org/products/one-fifth-soil-plus-seawater-medium
+  title: 1/5 Soil+Seawater Medium | UTEX Culture Collection of Algae
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10; Named authors, publication year and DOI not established.
 original_name: 1/5 Soil + Seawater Medium
 data_quality_flags:
 - has_ontology_mappings
@@ -130,3 +233,48 @@ parent_media:
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
 - Dilutes the seawater phase 1:4 with dH2O for 6 ppt salinity.
+variants:
+- name: 1/5 Soil+Seawater Medium with optional calcium carbonate
+  relationship: SUPPLEMENTED_VARIANT
+  description: Source-listed optional calcium carbonate supplement.
+  modifications:
+  - Optionally add 1 mg calcium carbonate (Fisher C 64) to the source 200 mL recipe
+    before steaming.
+  purpose: Preserve the explicitly optional carbonate formulation
+  evidence:
+  - reference: https://utex.org/products/one-fifth-soil-plus-seawater-medium
+    supports: SUPPORT
+    snippet: 1 mg
+    explanation: 'Supports variants[0].modifications and removal of the mandatory
+      carbonate node at old ingredients[1]. Separate source component excerpt: ''CaCO3
+      (optional) (Fisher C 64)''. Separate printed concentration excerpt: ''0.05 mM'';
+      the printed molarity is a source annotation for the optional formulation, not
+      a universal parent concentration. Move optional calcium carbonate out of mandatory
+      parent composition into an evidence-backed inline variant. Preserve the literal
+      1 mg recipe dose, supplier/identity provenance and printed rounded 0.05 mM as
+      a source annotation; do not assert universal carbonate addition. Calculation:
+      No new concentration inferred; the source-literal amount belongs only to the
+      optional formulation.. Separate basis excerpt: ''For 200 mL Total''. Locator:
+      Formulation table row position 2; Directions total-volume heading.'
+evidence:
+- reference: https://utex.org/products/one-fifth-soil-plus-seawater-medium
+  supports: SUPPORT
+  snippet: CaCO3 (optional) (Fisher C 64)
+  explanation: 'Supports preparation_steps[0].description: carbonate is optional,
+    not a mandatory parent ingredient. Separate exact excerpt: ''Cover the medium
+    container and steam for 2 consecutive days, 3 hours on each day.''. Supports preparation_steps:
+    Preserve the source heat ramp and gradual cooling when completing the abbreviated
+    preparation instructions; do not invent pressure/autoclave temperature. Separate
+    exact excerpt: ''Pasteurization is a gradual rising of temperature to approximately
+    95 °C in 15 minutes.''. Supports preparation_steps: Preserve the source heat ramp
+    and gradual cooling when completing the abbreviated preparation instructions;
+    do not invent pressure/autoclave temperature. Separate exact excerpt: ''Then increased
+    just over 98 °C for the 3 hour duration.''. Supports preparation_steps: Preserve
+    the source heat ramp and gradual cooling when completing the abbreviated preparation
+    instructions; do not invent pressure/autoclave temperature. Separate exact excerpt:
+    ''Cooling occurs gradually at room temperature.''. Supports preparation_steps:
+    Preserve the source heat ramp and gradual cooling when completing the abbreviated
+    preparation instructions; do not invent pressure/autoclave temperature. Separate
+    exact excerpt: ''Refrigerate (10 °C) 24 hours or more and bring to room temperature
+    before using.''. Supports preparation_steps[2]: The one-fifth source explicitly
+    specifies 10 C storage; this does not apply to the other family members.'

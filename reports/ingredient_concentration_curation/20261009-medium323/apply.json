@@ -1,0 +1,37 @@
+{
+  "terminal": true,
+  "phase": "apply",
+  "checks": [],
+  "records_edited": 4,
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "plan_sha256": "71b9301315980361beeb07cc155c3ecd9106757ac7fb881a23d962c488678339",
+  "code_sha256": {
+    "scripts/repair_medium323_ingredients.py": "427ae876a4c1f87d8c72341767ff9f16a6579885d709c0069bd6b36aa7a5f2e1",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-medium323/audit.py": "8f3955ca9da2d0f2f95f71db1b797f2117ebfc0c447c9e05e682336f8063c215",
+    "tests/test_medium323_ingredients.py": "fc94b28c2edeffda2c00f6ddaf8f88183b22bb2646d5ff1e68861d7e3fe662be"
+  },
+  "normalized_count": 15910,
+  "inventory_before_sha256": "a68900ae05b0e2f039f26488b0b6a4d9860219d3ed878d57b7cc8ae562e77320",
+  "application": {
+    "changed": 4,
+    "already_applied": 0
+  },
+  "readback": {
+    "changed": 0,
+    "already_applied": 4
+  },
+  "repeat_noop": {
+    "changed": 0,
+    "already_applied": 4
+  },
+  "passed": true,
+  "inventory_after_sha256": "5c924e8930a76b2a7b18cfda27ab52e14b5fda2cbbcb56ecaf4c78ff9f4ba4a1",
+  "changed_paths": [
+    "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+    "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+    "data/normalized_yaml/bacterial/mediadive_6552_Fatty_acid_mixture.yaml",
+    "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml"
+  ],
+  "only_intended_records_changed": true
+}

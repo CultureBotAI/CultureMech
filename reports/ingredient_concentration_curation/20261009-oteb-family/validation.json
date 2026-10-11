@@ -1,0 +1,224 @@
+{
+  "terminal": true,
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "normalized_count": 15910,
+  "normalized_sha256": "b2fe53f9a5f5c2a28ce3af156e7c8d7c95e000e1f150df9ac3799f8a4e454cfe",
+  "only_reviewed_records_changed": true,
+  "applied_records": 6,
+  "independent_audit_totals": {
+    "source_nodes": 127,
+    "old_quantity_slots": 115,
+    "claims": 449,
+    "new_evidence": 154,
+    "new_references": 9,
+    "new_curation_history": 6
+  },
+  "tests_passed": {
+    "focused": "495 passed, 2 warnings in 97.62s (0:01:37)",
+    "fast": "11972 passed, 16 skipped, 1970 deselected, 2 warnings in 1713.51s (0:28:33)",
+    "qa": "91 passed in 100.73s (0:01:40)"
+  },
+  "reference_checks": {
+    "passed": 180,
+    "failed": 0,
+    "mode": "offline hash-checked official captures",
+    "fresh_refresh_passed": false
+  },
+  "remaining_failed_gates": [
+    {
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "exit_code": 1,
+      "log": "reports/ingredient_concentration_curation/20261009-oteb-family/post-18.log",
+      "log_sha256": "22cc198e9795e0f430a28fd800be0b28322f3b2f9e643776bcdf3b31b2d27636"
+    },
+    {
+      "command": [
+        "just",
+        "audit-merge-freshness",
+        "--json"
+      ],
+      "exit_code": 1,
+      "log": "reports/ingredient_concentration_curation/20261009-oteb-family/post-19.log",
+      "log_sha256": "f091b4c76ad0039aec19f92dfba5104a6aba517cf37711edd0ada1f23eaf0cc9"
+    }
+  ],
+  "merge_verification": {
+    "name_conflicts": 1247,
+    "fingerprint_issues": 3287
+  },
+  "freshness": {
+    "tracked_total": 6320,
+    "fresh_total": 10778,
+    "only_in_tracked": 4275,
+    "only_in_fresh": 8733,
+    "changed": 2045,
+    "unchanged": 0
+  },
+  "corpus_checks": {
+    "strict_scanned": 15910,
+    "ids_passed": true,
+    "product_warnings": 91,
+    "product_skipped_no_adapter": 96005,
+    "cohort_variant_findings": 0,
+    "global_variant_findings": 0,
+    "chemical_groundings_recertified": false
+  },
+  "runtime_merge_retention": {
+    "cohort_medium_shaped_records": 4,
+    "standalone_solutions_excluded": 2,
+    "routing": {
+      "total_processed": 15910,
+      "excluded_solutions": 4785,
+      "skipped_no_fingerprint": 2,
+      "skipped_error": 339,
+      "successfully_fingerprinted": 10784,
+      "reasons": {
+        "other_error": 339,
+        "no_valid_ingredients": 2
+      }
+    },
+    "groups": 10778,
+    "restored_K6000_now_grouped": true
+  },
+  "cumulative_audit": {
+    "stock_nodes_relocated": 825,
+    "new_quantity_slots": 364,
+    "unsupported_quantity_slots_removed": 869,
+    "new_evidence": 35282,
+    "new_curation_history": 5443,
+    "new_references": 5779,
+    "stock_stage_concentrations_rebased": 199,
+    "stock_descriptors_added": 241,
+    "quantity_corrections": 1455,
+    "stock_dose_basis_corrections": 128,
+    "copied_ingredient_nodes_replaced_by_reference": 37,
+    "ingredient_context_notes_added": 268,
+    "water_input_nodes_added": 27,
+    "recipe_context_notes_corrected": 26,
+    "parent_links_corrected": 7,
+    "source_amount_conflicts_repaired": 3,
+    "unquantified_carrier_nodes_added": 88,
+    "evidence_scopes_corrected": 172,
+    "ingredient_context_notes_corrected": 9,
+    "preparation_actions_corrected": 8,
+    "preparation_descriptions_corrected": 4,
+    "preparation_steps_added": 69,
+    "batch_mass_notes_unverified_concentrations": 48,
+    "duplicate_stock_nodes_removed": 1,
+    "variant_links_added": 8,
+    "explicit_medium_rates_verified": 3,
+    "unsupported_flags_removed": 1,
+    "child_links_corrected": 7,
+    "preparation_steps_relocated": 18,
+    "inline_variant_options_added": 14,
+    "water_input_notes_added": 9,
+    "extraction_preparations_added": 1,
+    "base_preparations_added": 9,
+    "preparation_records_restored": 3,
+    "supplement_nodes_moved_to_variants": 4,
+    "corrected_evidence_snippets": 2,
+    "stock_context_notes_corrected": 8,
+    "extraction_preparations_restructured": 2,
+    "source_version_alternatives_added": 4,
+    "copied_ingredient_nodes_removed": 3,
+    "composition_classifications_corrected": 2,
+    "final_quantity_slots_added": 1,
+    "explicitly_omitted_ingredient_nodes": 1,
+    "ingredient_source_attributions_corrected": 1,
+    "bibliographic_entries_enriched": 1,
+    "excluded_alternative_nodes_removed": 1,
+    "ingredient_labels_corrected": 1,
+    "preparation_text_encodings_corrected": 1,
+    "unquantified_solvent_nodes_added": 1,
+    "ingredient_doses_relocated_to_stock": 1,
+    "identity_conflicts_retained_unquantified": 2,
+    "unquantified_makeup_nodes_added": 1,
+    "stock_preparation_notes_added": 1,
+    "edited_records": 5236
+  },
+  "followup_unique_records": 11799,
+  "outside_this_followup": 4111,
+  "remaining_queues": {
+    "identity": 43,
+    "M142_separate": 71
+  },
+  "remaining_inventory": {
+    "family_count": 33,
+    "external_neighbor_count": 1,
+    "identity_error_count": 4,
+    "title_candidate_entries": 4866,
+    "title_candidate_paths": 4864
+  },
+  "taxa_media_associations_added": 0,
+  "environment_limit": "Existing partial locked Python 3.13 environment, not clean CI or full-suite certification",
+  "receipt_sha256": {
+    "apply": "5e34f6a64df71885e82ddb70636cc5deb89c70c744d21a356fdb857facae1466",
+    "audit": "489a26d1f8d063bb1f1d26e67a3428996a5f3ec0aba454cd72cd2b25f7035f43",
+    "cached": "28e2e1c8cfc7779a763b09c26477f9108270bae4dd576743c5dfb1ed91583842",
+    "context": "8f4e87e29247c1a0dfea3ce78ff0283c3456f1fbf7fd5b3bd3343eff06b0b52c",
+    "corpus": "a077f7329950d2667f1257a2fe9ebd303cea9d96a4460ce09d97de5d0f149c48",
+    "cumulative-audit": "507577a337e6eacea4871784e815a3e5fcc3180a76388f66d1c02957612a4db2",
+    "fast": "7eae442b7dc6f11f386929ede626da8596f7dfb2fe853e3c31c3686d6c4e356f",
+    "focused": "6e011a616fa569e8c75b2b3455ed839fa415f58d460646d5ecbbeccdb860d32b",
+    "followup-coverage": "b619adf5c242f12ddc1654e9926c65a7ceec1f8239c9e26ce1ef748de77da394",
+    "index-refresh-plan": "195c5391907002d18ab2a479e1b30752ed4ad2e0332c9f4f596ba3cef4557be1",
+    "ledgers": "54a55987e1348a892080a77b360c4f6c25b323448a6e65c759ddfb5c3ea80fc2",
+    "next-lb-identity-context": "616f4c8acecfa69666c89411968d24f786024ca2cf07d496db3ba4ac57712693",
+    "plan": "d5e5b76a6b77434f3c0b79cf2502b3de47ad5eb70305e57430348154c83c4d8e",
+    "post": "40f15a9ace59cd59c55d237a5e756ae01e56800154bc17db03bf8283f08ea2dc",
+    "presentation": "8de2262adc391be95db4faa442aa387cddbcc0ea03ab1a2e6ae5c70f2cb2ae63",
+    "presentation-applied": "b5962a366c1f9cd12039ca13c6256662961e11e4a4b6c8219bbf4038ea60366c",
+    "qa": "e0be03b8b54e71b377c714ee5c851e94285073275b13f12bc6fed36358318d16",
+    "reconcile-indexes": "02f420f9adec4a19da35b8e63481dc3d52003438319126b86850f74906654b77",
+    "reconcile-reports": "1629ea9aee45ce23ae32c85d44adf836bc21dbde3695f5ba2ac91065d1878839",
+    "reconcile-retention": "1c1af00aa8453e148317cee0486c18bb81ed60e03b8627fd4267bfb9ef1fcd1e",
+    "remaining-inventory": "3ff1f52aaae1ef5534ad4a0a49b207033a6b1e25ae7d6530cdd9505e24a536e8",
+    "remaining-queue": "6a1832e0120b13eae7c35e102f87d9372026e53c73e92a17f9af93ddb14f7250",
+    "schema-preview": "0b6cdd9100ac8f9be2085aa71d2a4f2cafd6e85c96aab92ca5990eedb6aa2973",
+    "source-review": "ffdafa2dd3e9e1a939259b24fcce9f1335d16504b08ca797dcb3a8636b28a498",
+    "validation-preview": "d187efd7ab3ff383b1f4ba9fd1ddaa3982254a7ff5a257285190c5870f0abe20"
+  },
+  "code_sha256": {
+    "scripts/repair_oteb_family.py": "90aa83324ff1b28708921a00c409f50b4c4bd12eb15f09ae8feb0e1010916795",
+    "tests/test_oteb_family.py": "2a4fbe1915636b839c6614a2dd0ebce789d58bdc4afbad294256e883db6abf6a",
+    "reports/ingredient_concentration_curation/20261009-oteb-family/audit.py": "72d7eabc0cc2905965cd413ef250a97b379e3e487c4aaaeb7277f83458d639f8",
+    "scripts/repair_methanogen_stock_boundaries.py": "8d4d32c7dc3cb2586242a188f958087482df3aff553d1dbc468c422eddb037ba",
+    "scripts/repair_lactalbumin_formulations.py": "3c16a3f4a2e543d280d3ccbb20a63138f2b409602d8b168b7fc742abe63b1769",
+    "scripts/repair_jcm_stock_preparations.py": "7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a",
+    "scripts/review_solution_concentration_evidence.py": "40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a",
+    "scripts/review_medium_concentration_evidence.py": "ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a",
+    "scripts/validate_recipe_references.py": "087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b",
+    "src/culturemech/validation/write_validated.py": "8e1e2185231caecbe3dc99908c783cd83340b1e93fa9115ff1445d4b3820897e",
+    "src/culturemech/validation/recipe_references.py": "1ef57389727347c242f45a85a9ed8908803423bc10307f53a888dac67ce06b67",
+    "src/culturemech/curate/curation_event.py": "e8aa053ba6dd06485b29ca5da640f91ef96513feff18492a72adc12f40130024",
+    "src/culturemech/schema/culturemech.yaml": "461478d900fdee29a52c3d14656bcf369443bfdd0f4a534aa9d385f25df1cf8a",
+    "src/culturemech/merge/formulation.py": "985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab",
+    "src/culturemech/merge/merger.py": "b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6",
+    "src/culturemech/merge/matcher.py": "5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885",
+    "src/culturemech/merge/fingerprint.py": "9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e",
+    "tests/test_medium_concentration_batch.py": "703314eead7eae2e1d4573ecd170c0f3c7ab753193f0aa7957cbcdc5690d39f7",
+    "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "629b12991a0154e89c821dc48df0fd45dfabbbd43e38fcec5a0cb50e4efdcc9c",
+    "tests/test_repair_komodo_dsmz_submedia_score15.py": "2c50a61595adc051b6858349561af2ceac49bace378193acf2e755de5248888d",
+    "tests/conftest.py": "f43cf452431b950a079fcee0a3c7e978067039fba749c956da1c94510c33b68b"
+  },
+  "canonical_report_sha256": {
+    "reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/KOMODO_1245_OTEB-MEDIUM.yaml.md": "82295674306aedc3c84ad0f39155eee3fa8947b3e13977643d1e699e9a07ff73",
+    "reports/ingredient_concentration_curation/20261007-mediadive-solutions-1500-2000/records/bacterial/mediadive_2474_Main_sol_1245.yaml.md": "48f2b8833a9e73232739450c3738b1f8462e064395c6b7b3b51b3d3f97bd48ca",
+    "reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/medium_1245_modified_for_dsm_18691.yaml.md": "bc0dc29bf4ba467c7beabb03d45d5ee834256552ae433510a451fb92ac536040",
+    "reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/oteb_medium.yaml.md": "b59800191b6279a9be8b5e27f5bf42095ee19a5b792d250cdceadd83be1437a4",
+    "reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/sugar_stock_solution_medium_1245.yaml.md": "0e569b8e6a67727ee386465bbc7e74cf8862af0e0bd742a6e36057c9cfbb5f0f",
+    "reports/ingredient_concentration_curation/20261007-mediadive-solutions-4000-4500/records/bacterial/mediadive_5688_Sugar_Stock_Solution.yaml.md": "af09d3e60d628d7a276e87101126c238ecb99a310200ff99cd009279a3cab14e"
+  },
+  "applied_ledger_sha256": {
+    "reports/ingredient_concentration_curation/20261009-oteb-family/applied-records/D1245.md": "214adbd7c37c006b1e81d54febfb46a7888531c2d6874c93729e5e373a1a9cbf",
+    "reports/ingredient_concentration_curation/20261009-oteb-family/applied-records/K1245.md": "d99099641218c4c1f988ba303ff107781954115ba93fa5140f946bf73558679b",
+    "reports/ingredient_concentration_curation/20261009-oteb-family/applied-records/K1245_18691.md": "ceb53e0b5ff95abea5a60c4d1b34851caeb0ea86d2ab91e45e75fed8ef315602",
+    "reports/ingredient_concentration_curation/20261009-oteb-family/applied-records/K6000.md": "3db2efe59d27af1d43ded656882b78b4962b26bbe05cada7062856df8ff9cf0c",
+    "reports/ingredient_concentration_curation/20261009-oteb-family/applied-records/S2474.md": "2cc4bc07bfc398b744966a1791fb6b3baa242f765bc47edc74c01d2f43e8dd22",
+    "reports/ingredient_concentration_curation/20261009-oteb-family/applied-records/S5688.md": "9ae67144366df7ae89b54055427681410d0c08b8cfe804d0051c0345760a77c2"
+  }
+}

@@ -145,6 +145,40 @@ def test_variant_link_validator_checks_bidirectional_links():
     assert "does not link back" in findings[0].message
 
 
+def test_variant_validation_reports_honor_output_directory(tmp_path, monkeypatch):
+    from scripts import validate_media_variant_links as validator
+
+    defaults = tmp_path / "default-reports"
+    defaults.mkdir()
+    default_tsv = defaults / "media_variant_link_validation.tsv"
+    default_md = defaults / "media_variant_link_validation.md"
+    default_tsv.write_text("existing TSV\n")
+    default_md.write_text("existing Markdown\n")
+    monkeypatch.setattr(validator, "OUT_TSV", default_tsv)
+    monkeypatch.setattr(validator, "OUT_MD", default_md)
+    destination = tmp_path / "requested-reports"
+    paths = validator.write_reports([], RecipeIndex({}, {}), destination)
+    assert paths == (destination / default_tsv.name, destination / default_md.name)
+    assert all(p.exists() for p in paths)
+    assert "No parent/child media-variant link problems found." in paths[1].read_text()
+    assert default_tsv.read_text() == "existing TSV\n"
+    assert default_md.read_text() == "existing Markdown\n"
+
+
+def test_variant_validation_cli_reports_external_paths(tmp_path, monkeypatch, capsys):
+    from scripts import validate_media_variant_links as validator
+
+    destination = tmp_path / "external-reports"
+    monkeypatch.setattr(validator, "load_recipes", lambda root: RecipeIndex({}, {}))
+    monkeypatch.setattr(
+        "sys.argv", ["validate_media_variant_links", "--reports-dir", str(destination)]
+    )
+    assert validator.main() == 0
+    output = capsys.readouterr().out
+    assert f"Wrote {destination / 'media_variant_link_validation.tsv'}" in output
+    assert f"Wrote {destination / 'media_variant_link_validation.md'}" in output
+
+
 def test_variant_proposal_prefers_base_parent_and_classifies_relationships():
     parent = {
         "yaml_path": "data/normalized_yaml/bacterial/KOMODO_11_MRS_medium.yaml",

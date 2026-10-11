@@ -11,8 +11,10 @@ media_term:
   term:
     id: mediadive.medium:P7
     label: N27 RHODOSPIRILLACEAE MEDIUM (modified)
-notes: MediaDive public Medium P7 provides the current N27 Rhodospirillaceae 1 L recipe
-  with Fe(III) citrate, Vitamin B12, and Trace element solution SL-6 stocks.
+notes: MediaDive public P7 lists main ingredients, three stocks and 1000 ml water.
+  Retained g/L values are dataset-reported rates, not verified physical final-medium
+  concentrations. Liquid doses are recorded as batch inputs. Iron-citrate percentage
+  basis and B12 final stock volume are unresolved; no final-medium dilution is inferred.
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -22,11 +24,35 @@ ingredients:
   term:
     id: FOODON:03315426
     label: yeast extract
+  evidence:
+  - reference: https://mediadive.dsmz.de/medium/P7
+    supports: SUPPORT
+    snippet: Yeast extract 0.30 g 0.3 -
+    explanation: 'ingredients[0].concentration: Retains only the dataset''s explicitly
+      displayed Conc. [g/L] rate. The recipe also lists 1000 ml water; this is not
+      independent evidence that final physical volume is 1 L. No final-volume conversion
+      or stock-contribution addition was performed. Source: user-contributed MediaDive
+      P7 page, accessed 2026-10-07, SHA256=ce4a93ee29dbf3008a4bfcedd4962718c0bd6feb95b38b2d5dc5951ed2a29dcd.
+      HTML entities decoded and whitespace collapsed; no curated collection recipe,
+      journal validation or growth claim is implied. Exact excerpt: "Yeast extract
+      0.30 g 0.3 -"; locator=sol-24 / recipe-0; Conc. [g/L] column.'
 - preferred_term: Disodium succinate
   concentration:
     value: '1'
     unit: G_PER_L
   source: MediaDive public Medium P7
+  evidence:
+  - reference: https://mediadive.dsmz.de/medium/P7
+    supports: SUPPORT
+    snippet: Disodium succinate 1.00 g 1 6.171
+    explanation: 'ingredients[1].concentration: Retains only the dataset''s explicitly
+      displayed Conc. [g/L] rate. The recipe also lists 1000 ml water; this is not
+      independent evidence that final physical volume is 1 L. No final-volume conversion
+      or stock-contribution addition was performed. Source: user-contributed MediaDive
+      P7 page, accessed 2026-10-07, SHA256=ce4a93ee29dbf3008a4bfcedd4962718c0bd6feb95b38b2d5dc5951ed2a29dcd.
+      HTML entities decoded and whitespace collapsed; no curated collection recipe,
+      journal validation or growth claim is implied. Exact excerpt: "Disodium succinate
+      1.00 g 1 6.171"; locator=sol-24 / recipe-1; Conc. [g/L] column.'
 - preferred_term: Ammonium acetate
   concentration:
     value: '0.5'
@@ -38,6 +64,18 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:62947
     label: ammonium acetate
+  evidence:
+  - reference: https://mediadive.dsmz.de/medium/P7
+    supports: SUPPORT
+    snippet: Ammonium acetate 0.50 g 0.5 6.487
+    explanation: 'ingredients[2].concentration: Retains only the dataset''s explicitly
+      displayed Conc. [g/L] rate. The recipe also lists 1000 ml water; this is not
+      independent evidence that final physical volume is 1 L. No final-volume conversion
+      or stock-contribution addition was performed. Source: user-contributed MediaDive
+      P7 page, accessed 2026-10-07, SHA256=ce4a93ee29dbf3008a4bfcedd4962718c0bd6feb95b38b2d5dc5951ed2a29dcd.
+      HTML entities decoded and whitespace collapsed; no curated collection recipe,
+      journal validation or growth claim is implied. Exact excerpt: "Ammonium acetate
+      0.50 g 0.5 6.487"; locator=sol-24 / recipe-2; Conc. [g/L] column.'
 - preferred_term: KH2PO4
   concentration:
     value: '0.5'
@@ -49,6 +87,18 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
+  evidence:
+  - reference: https://mediadive.dsmz.de/medium/P7
+    supports: SUPPORT
+    snippet: KH2PO4 0.50 g 0.5 3.674
+    explanation: 'ingredients[3].concentration: Retains only the dataset''s explicitly
+      displayed Conc. [g/L] rate. The recipe also lists 1000 ml water; this is not
+      independent evidence that final physical volume is 1 L. No final-volume conversion
+      or stock-contribution addition was performed. Source: user-contributed MediaDive
+      P7 page, accessed 2026-10-07, SHA256=ce4a93ee29dbf3008a4bfcedd4962718c0bd6feb95b38b2d5dc5951ed2a29dcd.
+      HTML entities decoded and whitespace collapsed; no curated collection recipe,
+      journal validation or growth claim is implied. Exact excerpt: "KH2PO4 0.50 g
+      0.5 3.674"; locator=sol-24 / recipe-4; Conc. [g/L] column.'
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.4'
@@ -60,6 +110,18 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
+  evidence:
+  - reference: https://mediadive.dsmz.de/medium/P7
+    supports: SUPPORT
+    snippet: MgSO4 x 7 H2O 0.40 g 0.4 1.623
+    explanation: 'ingredients[4].concentration: Retains only the dataset''s explicitly
+      displayed Conc. [g/L] rate. The recipe also lists 1000 ml water; this is not
+      independent evidence that final physical volume is 1 L. No final-volume conversion
+      or stock-contribution addition was performed. Source: user-contributed MediaDive
+      P7 page, accessed 2026-10-07, SHA256=ce4a93ee29dbf3008a4bfcedd4962718c0bd6feb95b38b2d5dc5951ed2a29dcd.
+      HTML entities decoded and whitespace collapsed; no curated collection recipe,
+      journal validation or growth claim is implied. Exact excerpt: "MgSO4 x 7 H2O
+      0.40 g 0.4 1.623"; locator=sol-24 / recipe-5; Conc. [g/L] column.'
 - preferred_term: NaCl
   concentration:
     value: '0.4'
@@ -71,6 +133,18 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
+  evidence:
+  - reference: https://mediadive.dsmz.de/medium/P7
+    supports: SUPPORT
+    snippet: NaCl 0.40 g 0.4 6.845
+    explanation: 'ingredients[5].concentration: Retains only the dataset''s explicitly
+      displayed Conc. [g/L] rate. The recipe also lists 1000 ml water; this is not
+      independent evidence that final physical volume is 1 L. No final-volume conversion
+      or stock-contribution addition was performed. Source: user-contributed MediaDive
+      P7 page, accessed 2026-10-07, SHA256=ce4a93ee29dbf3008a4bfcedd4962718c0bd6feb95b38b2d5dc5951ed2a29dcd.
+      HTML entities decoded and whitespace collapsed; no curated collection recipe,
+      journal validation or growth claim is implied. Exact excerpt: "NaCl 0.40 g 0.4
+      6.845"; locator=sol-24 / recipe-6; Conc. [g/L] column.'
 - preferred_term: NH4Cl
   concentration:
     value: '0.4'
@@ -82,6 +156,18 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
     label: ammonium chloride
+  evidence:
+  - reference: https://mediadive.dsmz.de/medium/P7
+    supports: SUPPORT
+    snippet: NH4Cl 0.40 g 0.4 7.478
+    explanation: 'ingredients[6].concentration: Retains only the dataset''s explicitly
+      displayed Conc. [g/L] rate. The recipe also lists 1000 ml water; this is not
+      independent evidence that final physical volume is 1 L. No final-volume conversion
+      or stock-contribution addition was performed. Source: user-contributed MediaDive
+      P7 page, accessed 2026-10-07, SHA256=ce4a93ee29dbf3008a4bfcedd4962718c0bd6feb95b38b2d5dc5951ed2a29dcd.
+      HTML entities decoded and whitespace collapsed; no curated collection recipe,
+      journal validation or growth claim is implied. Exact excerpt: "NH4Cl 0.40 g
+      0.4 7.478"; locator=sol-24 / recipe-7; Conc. [g/L] column.'
 - preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '0.05'
@@ -93,10 +179,22 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  evidence:
+  - reference: https://mediadive.dsmz.de/medium/P7
+    supports: SUPPORT
+    snippet: CaCl2 x 2 H2O 0.05 g 0.05 0.34
+    explanation: 'ingredients[7].concentration: Retains only the dataset''s explicitly
+      displayed Conc. [g/L] rate. The recipe also lists 1000 ml water; this is not
+      independent evidence that final physical volume is 1 L. No final-volume conversion
+      or stock-contribution addition was performed. Source: user-contributed MediaDive
+      P7 page, accessed 2026-10-07, SHA256=ce4a93ee29dbf3008a4bfcedd4962718c0bd6feb95b38b2d5dc5951ed2a29dcd.
+      HTML entities decoded and whitespace collapsed; no curated collection recipe,
+      journal validation or growth claim is implied. Exact excerpt: "CaCl2 x 2 H2O
+      0.05 g 0.05 0.34"; locator=sol-24 / recipe-8; Conc. [g/L] column.'
 - preferred_term: Ethanol
   concentration:
-    value: '0.5'
-    unit: ML_PER_L
+    value: '0.0005'
+    unit: L
   source: MediaDive public Medium P7
   term:
     id: CHEBI:16236
@@ -104,6 +202,44 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:16236
     label: ethanol
+  notes: Source input 0.50 ml per listed recipe batch, represented as 0.0005 L, not
+    L/L. The listed 1000 ml water is not an explicit final-medium makeup instruction.
+  evidence:
+  - reference: https://mediadive.dsmz.de/medium/P7
+    supports: SUPPORT
+    snippet: Ethanol 0.50 ml - -
+    explanation: 'ingredients[8].concentration: Source input 0.50 ml per listed recipe
+      batch, represented as 0.0005 L, not L/L. The listed 1000 ml water is not an
+      explicit final-medium makeup instruction. Source: user-contributed MediaDive
+      P7 page, accessed 2026-10-07, SHA256=ce4a93ee29dbf3008a4bfcedd4962718c0bd6feb95b38b2d5dc5951ed2a29dcd.
+      HTML entities decoded and whitespace collapsed; no curated collection recipe,
+      journal validation or growth claim is implied. Exact excerpt: "Ethanol 0.50
+      ml - -"; locator=sol-24 / recipe-17. ingredients[8].notes: Source input 0.50
+      ml per listed recipe batch, represented as 0.0005 L, not L/L. The listed 1000
+      ml water is not an explicit final-medium makeup instruction. Source: user-contributed
+      MediaDive P7 page, accessed 2026-10-07, SHA256=ce4a93ee29dbf3008a4bfcedd4962718c0bd6feb95b38b2d5dc5951ed2a29dcd.
+      HTML entities decoded and whitespace collapsed; no curated collection recipe,
+      journal validation or growth claim is implied. Exact excerpt: "Ethanol 0.50
+      ml - -"; locator=sol-24 / recipe-17.'
+- preferred_term: Distilled water
+  source: MediaDive public Medium P7
+  notes: 'Reported water input: 1000 ml = 1 L per listed main recipe batch; not final-medium
+    volume or L/L. The other listed liquid inputs total 6.9 ml; no 1006.9 ml final
+    volume is inferred.'
+  concentration:
+    value: '1'
+    unit: L
+  evidence:
+  - reference: https://mediadive.dsmz.de/medium/P7
+    supports: SUPPORT
+    snippet: Distilled water 1000.00 ml - -
+    explanation: 'ingredients[9].concentration: Reported water input: 1000 ml = 1
+      L per listed main recipe batch; not final-medium volume or L/L. The other listed
+      liquid inputs total 6.9 ml; no 1006.9 ml final volume is inferred. Source: user-contributed
+      MediaDive P7 page, accessed 2026-10-07, SHA256=ce4a93ee29dbf3008a4bfcedd4962718c0bd6feb95b38b2d5dc5951ed2a29dcd.
+      HTML entities decoded and whitespace collapsed; no curated collection recipe,
+      journal validation or growth claim is implied. Exact excerpt: "Distilled water
+      1000.00 ml - -"; locator=sol-24 / recipe-13.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -137,6 +273,74 @@ curation_history:
   source: https://www.bacmedia.dsmz.de/medium/P7
   notes: MediaDive public Medium P7 provides the current N27 Rhodospirillaceae 1 L
     recipe with Fe(III) citrate, Vitamin B12, and Trace element solution SL-6 stocks.
+- timestamp: '2026-10-07T18:33:50.669117+00:00'
+  curator: codex
+  action: CORRECTED_PUBLIC_RECIPE_INPUT_BASES_WITH_SCOPED_EVIDENCE
+  notes: Source-backed input and evidence repairs only. Preserved stable ID, chemical
+    mappings, history, physical state, pH, preparation and variants. No inferred final
+    volume, percent basis, stock dilution or growth association.
+  source: https://mediadive.dsmz.de/medium/P7
+  changes: 'ingredients[0].concentration: {"unit": "G_PER_L", "value": "0.3"} -> {"unit":
+    "G_PER_L", "value": "0.3"} [evidence_only]; ingredients[1].concentration: {"unit":
+    "G_PER_L", "value": "1"} -> {"unit": "G_PER_L", "value": "1"} [evidence_only];
+    ingredients[2].concentration: {"unit": "G_PER_L", "value": "0.5"} -> {"unit":
+    "G_PER_L", "value": "0.5"} [evidence_only]; ingredients[3].concentration: {"unit":
+    "G_PER_L", "value": "0.5"} -> {"unit": "G_PER_L", "value": "0.5"} [evidence_only];
+    ingredients[4].concentration: {"unit": "G_PER_L", "value": "0.4"} -> {"unit":
+    "G_PER_L", "value": "0.4"} [evidence_only]; ingredients[5].concentration: {"unit":
+    "G_PER_L", "value": "0.4"} -> {"unit": "G_PER_L", "value": "0.4"} [evidence_only];
+    ingredients[6].concentration: {"unit": "G_PER_L", "value": "0.4"} -> {"unit":
+    "G_PER_L", "value": "0.4"} [evidence_only]; ingredients[7].concentration: {"unit":
+    "G_PER_L", "value": "0.05"} -> {"unit": "G_PER_L", "value": "0.05"} [evidence_only];
+    solutions[2].composition[0].concentration: {"unit": "G_PER_L", "value": "0.1"}
+    -> {"unit": "G_PER_L", "value": "0.1"} [evidence_only]; solutions[2].composition[1].concentration:
+    {"unit": "G_PER_L", "value": "0.03"} -> {"unit": "G_PER_L", "value": "0.03"} [evidence_only];
+    solutions[2].composition[2].concentration: {"unit": "G_PER_L", "value": "0.3"}
+    -> {"unit": "G_PER_L", "value": "0.3"} [evidence_only]; solutions[2].composition[3].concentration:
+    {"unit": "G_PER_L", "value": "0.2"} -> {"unit": "G_PER_L", "value": "0.2"} [evidence_only];
+    solutions[2].composition[4].concentration: {"unit": "G_PER_L", "value": "0.01"}
+    -> {"unit": "G_PER_L", "value": "0.01"} [evidence_only]; solutions[2].composition[5].concentration:
+    {"unit": "G_PER_L", "value": "0.02"} -> {"unit": "G_PER_L", "value": "0.02"} [evidence_only];
+    solutions[2].composition[6].concentration: {"unit": "G_PER_L", "value": "0.03"}
+    -> {"unit": "G_PER_L", "value": "0.03"} [evidence_only]; ingredients[8].concentration:
+    {"unit": "ML_PER_L", "value": "0.5"} -> {"unit": "L", "value": "0.0005"} [correct];
+    ingredients[8].notes: null -> "Source input 0.50 ml per listed recipe batch, represented
+    as 0.0005 L, not L/L. The listed 1000 ml water is not an explicit final-medium
+    makeup instruction." [add_context]; solutions[0].concentration: {"unit": "ML_PER_L",
+    "value": "5"} -> {"unit": "L", "value": "0.005"} [correct]; solutions[0].notes:
+    "P7 adds 5 ml of a 0.1% Fe(III) citrate stock in H2O." -> "P7 adds 5 ml of a 0.1%
+    Fe(III) citrate stock in H2O. Source input 5.00 ml per listed recipe batch, represented
+    as 0.005 L, not L/L. The listed 1000 ml water is not an explicit final-medium
+    makeup instruction." [correct_context]; solutions[1].concentration: {"unit": "ML_PER_L",
+    "value": "0.4"} -> {"unit": "L", "value": "0.0004"} [correct]; solutions[1].notes:
+    "P7 adds 0.4 ml of a 10 mg Vitamin B12 per 100 ml H2O stock." -> "P7 adds 0.4
+    ml of a 10 mg Vitamin B12 per 100 ml H2O stock. Source input 0.40 ml per listed
+    recipe batch, represented as 0.0004 L, not L/L. The listed 1000 ml water is not
+    an explicit final-medium makeup instruction." [correct_context]; solutions[2].concentration:
+    {"unit": "ML_PER_L", "value": "1"} -> {"unit": "L", "value": "0.001"} [correct];
+    solutions[2].notes: "MediaDive public Medium P7 adds 1 ml Trace element solution
+    SL-6 per 1 L medium." -> "Source input 1.00 ml per listed recipe batch, represented
+    as 0.001 L, not L/L. The listed 1000 ml water is not an explicit final-medium
+    makeup instruction." [correct_context]; solutions[0].composition[0].concentration:
+    {"unit": "G_PER_L", "value": "1"} -> null [correct]; solutions[0].composition[0].notes:
+    null -> "The source states 0.1% Fe(III) citrate in H2O without a mass/volume,
+    mass/mass or volume/volume basis. Removed the unsupported 1 g/L assertion; no
+    numeric percentage or final-medium concentration is inferred." [add_context];
+    solutions[1].composition[0].concentration: {"unit": "G_PER_L", "value": "0.1"}
+    -> null [correct]; solutions[1].composition[0].notes: null -> "Source stock inputs
+    are 10 mg Vitamin B12 in 100 ml H2O. This specifies solvent input, not final stock
+    makeup. Removed the unsupported 0.1 g/L assertion; the 10 mg batch mass is retained
+    here because no mass-only concentration unit exists in the schema." [add_context];
+    solutions[0].composition[1].concentration: null -> null [not_quantified]; solutions[1].composition[1].concentration:
+    null -> {"unit": "L", "value": "0.1"} [add]; solutions[2].composition[7].concentration:
+    null -> {"unit": "L", "value": "1"} [add]; ingredients[9].concentration: null
+    -> {"unit": "L", "value": "1"} [add]; notes: "MediaDive public Medium P7 provides
+    the current N27 Rhodospirillaceae 1 L recipe with Fe(III) citrate, Vitamin B12,
+    and Trace element solution SL-6 stocks." -> "MediaDive public P7 lists main ingredients,
+    three stocks and 1000 ml water. Retained g/L values are dataset-reported rates,
+    not verified physical final-medium concentrations. Liquid doses are recorded as
+    batch inputs. Iron-citrate percentage basis and B12 final stock volume are unresolved;
+    no final-medium dilution is inferred." [correct_context]'
 data_quality_flags:
 - ingredients_curated
 - has_ontology_mappings
@@ -144,14 +348,13 @@ data_quality_flags:
 solutions:
 - preferred_term: Fe(III) citrate stock
   concentration:
-    value: '5'
-    unit: ML_PER_L
-  notes: P7 adds 5 ml of a 0.1% Fe(III) citrate stock in H2O.
+    value: '0.005'
+    unit: L
+  notes: P7 adds 5 ml of a 0.1% Fe(III) citrate stock in H2O. Source input 5.00 ml
+    per listed recipe batch, represented as 0.005 L, not L/L. The listed 1000 ml water
+    is not an explicit final-medium makeup instruction.
   composition:
   - preferred_term: Fe(III) citrate
-    concentration:
-      value: '1'
-      unit: G_PER_L
     source: MediaDive public Medium P7
     term:
       id: CHEBI:144421
@@ -159,16 +362,53 @@ solutions:
     mediaingredientmech_chebi_term:
       id: CHEBI:144421
       label: Fe(III) citrate
+    notes: The source states 0.1% Fe(III) citrate in H2O without a mass/volume, mass/mass
+      or volume/volume basis. Removed the unsupported 1 g/L assertion; no numeric
+      percentage or final-medium concentration is inferred.
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P7
+      supports: SUPPORT
+      snippet: Fe(III) citrate (0.1% in H2O) 5.00 ml 0.005 0.02
+      explanation: 'solutions[0].composition[0].concentration: The source states 0.1%
+        Fe(III) citrate in H2O without a mass/volume, mass/mass or volume/volume basis.
+        Removed the unsupported 1 g/L assertion; no numeric percentage or final-medium
+        concentration is inferred. Source: user-contributed MediaDive P7 page, accessed
+        2026-10-07, SHA256=ce4a93ee29dbf3008a4bfcedd4962718c0bd6feb95b38b2d5dc5951ed2a29dcd.
+        HTML entities decoded and whitespace collapsed; no curated collection recipe,
+        journal validation or growth claim is implied. Exact excerpt: "Fe(III) citrate
+        (0.1% in H2O) 5.00 ml 0.005 0.02"; locator=sol-24 / recipe-3 stock label.
+        solutions[0].composition[0].notes: The source states 0.1% Fe(III) citrate
+        in H2O without a mass/volume, mass/mass or volume/volume basis. Removed the
+        unsupported 1 g/L assertion; no numeric percentage or final-medium concentration
+        is inferred. Source: user-contributed MediaDive P7 page, accessed 2026-10-07,
+        SHA256=ce4a93ee29dbf3008a4bfcedd4962718c0bd6feb95b38b2d5dc5951ed2a29dcd. HTML
+        entities decoded and whitespace collapsed; no curated collection recipe, journal
+        validation or growth claim is implied. Exact excerpt: "Fe(III) citrate (0.1%
+        in H2O) 5.00 ml 0.005 0.02"; locator=sol-24 / recipe-3 stock label.'
+  - preferred_term: Water
+    source: MediaDive public Medium P7
+    notes: Water is the stated stock solvent; its amount and the percent basis are
+      unspecified. No water quantity is asserted.
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P7
+      supports: SUPPORT
+      snippet: 0.1% in H2O
+      explanation: 'solutions[0].composition[1].concentration: Water is the stated
+        stock solvent; its amount and the percent basis are unspecified. No water
+        quantity is asserted. Source: user-contributed MediaDive P7 page, accessed
+        2026-10-07, SHA256=ce4a93ee29dbf3008a4bfcedd4962718c0bd6feb95b38b2d5dc5951ed2a29dcd.
+        HTML entities decoded and whitespace collapsed; no curated collection recipe,
+        journal validation or growth claim is implied. Exact excerpt: "0.1% in H2O";
+        locator=sol-24 / recipe-3.'
 - preferred_term: Vitamin B12 stock
   concentration:
-    value: '0.4'
-    unit: ML_PER_L
-  notes: P7 adds 0.4 ml of a 10 mg Vitamin B12 per 100 ml H2O stock.
+    value: '0.0004'
+    unit: L
+  notes: P7 adds 0.4 ml of a 10 mg Vitamin B12 per 100 ml H2O stock. Source input
+    0.40 ml per listed recipe batch, represented as 0.0004 L, not L/L. The listed
+    1000 ml water is not an explicit final-medium makeup instruction.
   composition:
   - preferred_term: Vitamin B12
-    concentration:
-      value: '0.1'
-      unit: G_PER_L
     source: MediaDive public Medium P7
     term:
       id: CHEBI:176843
@@ -176,23 +416,89 @@ solutions:
     mediaingredientmech_chebi_term:
       id: CHEBI:176843
       label: vitamin B12
+    notes: Source stock inputs are 10 mg Vitamin B12 in 100 ml H2O. This specifies
+      solvent input, not final stock makeup. Removed the unsupported 0.1 g/L assertion;
+      the 10 mg batch mass is retained here because no mass-only concentration unit
+      exists in the schema.
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P7
+      supports: SUPPORT
+      snippet: Vitamin B12 (10 mg in 100 ml H2O) 0.40 ml - -
+      explanation: 'solutions[1].composition[0].concentration: Source stock inputs
+        are 10 mg Vitamin B12 in 100 ml H2O. This specifies solvent input, not final
+        stock makeup. Removed the unsupported 0.1 g/L assertion; the 10 mg batch mass
+        is retained here because no mass-only concentration unit exists in the schema.
+        Source: user-contributed MediaDive P7 page, accessed 2026-10-07, SHA256=ce4a93ee29dbf3008a4bfcedd4962718c0bd6feb95b38b2d5dc5951ed2a29dcd.
+        HTML entities decoded and whitespace collapsed; no curated collection recipe,
+        journal validation or growth claim is implied. Exact excerpt: "Vitamin B12
+        (10 mg in 100 ml H2O) 0.40 ml - -"; locator=sol-24 / recipe-9 stock label.
+        solutions[1].composition[0].notes: Source stock inputs are 10 mg Vitamin B12
+        in 100 ml H2O. This specifies solvent input, not final stock makeup. Removed
+        the unsupported 0.1 g/L assertion; the 10 mg batch mass is retained here because
+        no mass-only concentration unit exists in the schema. Source: user-contributed
+        MediaDive P7 page, accessed 2026-10-07, SHA256=ce4a93ee29dbf3008a4bfcedd4962718c0bd6feb95b38b2d5dc5951ed2a29dcd.
+        HTML entities decoded and whitespace collapsed; no curated collection recipe,
+        journal validation or growth claim is implied. Exact excerpt: "Vitamin B12
+        (10 mg in 100 ml H2O) 0.40 ml - -"; locator=sol-24 / recipe-9 stock label.'
+  - preferred_term: Water
+    source: MediaDive public Medium P7
+    notes: 'Stock solvent input: 100 ml H2O = 0.1 L for 10 mg B12; not final-stock
+      volume or L/L. No concentration of B12 is derived.'
+    concentration:
+      value: '0.1'
+      unit: L
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P7
+      supports: SUPPORT
+      snippet: 10 mg in 100 ml H2O
+      explanation: 'solutions[1].composition[1].concentration: Stock solvent input:
+        100 ml H2O = 0.1 L for 10 mg B12; not final-stock volume or L/L. No concentration
+        of B12 is derived. Source: user-contributed MediaDive P7 page, accessed 2026-10-07,
+        SHA256=ce4a93ee29dbf3008a4bfcedd4962718c0bd6feb95b38b2d5dc5951ed2a29dcd. HTML
+        entities decoded and whitespace collapsed; no curated collection recipe, journal
+        validation or growth claim is implied. Exact excerpt: "10 mg in 100 ml H2O";
+        locator=sol-24 / recipe-9.'
 - preferred_term: Trace element solution SL-6
   concentration:
-    value: '1'
-    unit: ML_PER_L
-  notes: MediaDive public Medium P7 adds 1 ml Trace element solution SL-6 per 1 L
-    medium.
+    value: '0.001'
+    unit: L
+  notes: Source input 1.00 ml per listed recipe batch, represented as 0.001 L, not
+    L/L. The listed 1000 ml water is not an explicit final-medium makeup instruction.
   composition:
   - preferred_term: ZnSO4 x 7 H2O
     concentration:
       value: '0.1'
       unit: G_PER_L
     source: MediaDive public Medium P7
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P7
+      supports: SUPPORT
+      snippet: ZnSO4 x 7 H2O 0.10 g 0.1 0.348
+      explanation: 'solutions[2].composition[0].concentration: Stock, not final medium:
+        source mass 0.10 g / declared 1 L stock = 0.1 g/L. The badge is a dataset
+        volume declaration, not a measured volume. No working dilution is inferred.
+        Source: user-contributed MediaDive P7 page, accessed 2026-10-07, SHA256=ce4a93ee29dbf3008a4bfcedd4962718c0bd6feb95b38b2d5dc5951ed2a29dcd.
+        HTML entities decoded and whitespace collapsed; no curated collection recipe,
+        journal validation or growth claim is implied. Exact excerpt: "ZnSO4 x 7 H2O
+        0.10 g 0.1 0.348"; locator=sol-25 / recipe-0 and volume badge title ''Final
+        volume of this solution'', value 1000; page scale ml.'
   - preferred_term: MnCl2 x 4 H2O
     concentration:
       value: '0.03'
       unit: G_PER_L
     source: MediaDive public Medium P7
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P7
+      supports: SUPPORT
+      snippet: MnCl2 x 4 H2O 0.03 g 0.03 0.152
+      explanation: 'solutions[2].composition[1].concentration: Stock, not final medium:
+        source mass 0.03 g / declared 1 L stock = 0.03 g/L. The badge is a dataset
+        volume declaration, not a measured volume. No working dilution is inferred.
+        Source: user-contributed MediaDive P7 page, accessed 2026-10-07, SHA256=ce4a93ee29dbf3008a4bfcedd4962718c0bd6feb95b38b2d5dc5951ed2a29dcd.
+        HTML entities decoded and whitespace collapsed; no curated collection recipe,
+        journal validation or growth claim is implied. Exact excerpt: "MnCl2 x 4 H2O
+        0.03 g 0.03 0.152"; locator=sol-25 / recipe-1 and volume badge title ''Final
+        volume of this solution'', value 1000; page scale ml.'
   - preferred_term: H3BO3
     concentration:
       value: '0.3'
@@ -204,21 +510,69 @@ solutions:
     mediaingredientmech_chebi_term:
       id: CHEBI:33118
       label: boric acid
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P7
+      supports: SUPPORT
+      snippet: H3BO3 0.30 g 0.3 4.851
+      explanation: 'solutions[2].composition[2].concentration: Stock, not final medium:
+        source mass 0.30 g / declared 1 L stock = 0.3 g/L. The badge is a dataset
+        volume declaration, not a measured volume. No working dilution is inferred.
+        Source: user-contributed MediaDive P7 page, accessed 2026-10-07, SHA256=ce4a93ee29dbf3008a4bfcedd4962718c0bd6feb95b38b2d5dc5951ed2a29dcd.
+        HTML entities decoded and whitespace collapsed; no curated collection recipe,
+        journal validation or growth claim is implied. Exact excerpt: "H3BO3 0.30
+        g 0.3 4.851"; locator=sol-25 / recipe-2 and volume badge title ''Final volume
+        of this solution'', value 1000; page scale ml.'
   - preferred_term: CoCl2 x 6 H2O
     concentration:
       value: '0.2'
       unit: G_PER_L
     source: MediaDive public Medium P7
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P7
+      supports: SUPPORT
+      snippet: CoCl2 x 6 H2O 0.20 g 0.2 1.54
+      explanation: 'solutions[2].composition[3].concentration: Stock, not final medium:
+        source mass 0.20 g / declared 1 L stock = 0.2 g/L. The badge is a dataset
+        volume declaration, not a measured volume. No working dilution is inferred.
+        Source: user-contributed MediaDive P7 page, accessed 2026-10-07, SHA256=ce4a93ee29dbf3008a4bfcedd4962718c0bd6feb95b38b2d5dc5951ed2a29dcd.
+        HTML entities decoded and whitespace collapsed; no curated collection recipe,
+        journal validation or growth claim is implied. Exact excerpt: "CoCl2 x 6 H2O
+        0.20 g 0.2 1.54"; locator=sol-25 / recipe-3 and volume badge title ''Final
+        volume of this solution'', value 1000; page scale ml.'
   - preferred_term: CuCl2 x 2 H2O
     concentration:
       value: '0.01'
       unit: G_PER_L
     source: MediaDive public Medium P7
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P7
+      supports: SUPPORT
+      snippet: CuCl2 x 2 H2O 0.01 g 0.01 0.059
+      explanation: 'solutions[2].composition[4].concentration: Stock, not final medium:
+        source mass 0.01 g / declared 1 L stock = 0.01 g/L. The badge is a dataset
+        volume declaration, not a measured volume. No working dilution is inferred.
+        Source: user-contributed MediaDive P7 page, accessed 2026-10-07, SHA256=ce4a93ee29dbf3008a4bfcedd4962718c0bd6feb95b38b2d5dc5951ed2a29dcd.
+        HTML entities decoded and whitespace collapsed; no curated collection recipe,
+        journal validation or growth claim is implied. Exact excerpt: "CuCl2 x 2 H2O
+        0.01 g 0.01 0.059"; locator=sol-25 / recipe-4 and volume badge title ''Final
+        volume of this solution'', value 1000; page scale ml.'
   - preferred_term: NiCl2 x 6 H2O
     concentration:
       value: '0.02'
       unit: G_PER_L
     source: MediaDive public Medium P7
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P7
+      supports: SUPPORT
+      snippet: NiCl2 x 6 H2O 0.02 g 0.02 0.154
+      explanation: 'solutions[2].composition[5].concentration: Stock, not final medium:
+        source mass 0.02 g / declared 1 L stock = 0.02 g/L. The badge is a dataset
+        volume declaration, not a measured volume. No working dilution is inferred.
+        Source: user-contributed MediaDive P7 page, accessed 2026-10-07, SHA256=ce4a93ee29dbf3008a4bfcedd4962718c0bd6feb95b38b2d5dc5951ed2a29dcd.
+        HTML entities decoded and whitespace collapsed; no curated collection recipe,
+        journal validation or growth claim is implied. Exact excerpt: "NiCl2 x 6 H2O
+        0.02 g 0.02 0.154"; locator=sol-25 / recipe-5 and volume badge title ''Final
+        volume of this solution'', value 1000; page scale ml.'
   - preferred_term: Na2MoO4 x 2 H2O
     concentration:
       value: '0.03'
@@ -230,6 +584,37 @@ solutions:
     mediaingredientmech_chebi_term:
       id: CHEBI:75213
       label: sodium molybdate dihydrate
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P7
+      supports: SUPPORT
+      snippet: Na2MoO4 x 2 H2O 0.03 g 0.03 0.124
+      explanation: 'solutions[2].composition[6].concentration: Stock, not final medium:
+        source mass 0.03 g / declared 1 L stock = 0.03 g/L. The badge is a dataset
+        volume declaration, not a measured volume. No working dilution is inferred.
+        Source: user-contributed MediaDive P7 page, accessed 2026-10-07, SHA256=ce4a93ee29dbf3008a4bfcedd4962718c0bd6feb95b38b2d5dc5951ed2a29dcd.
+        HTML entities decoded and whitespace collapsed; no curated collection recipe,
+        journal validation or growth claim is implied. Exact excerpt: "Na2MoO4 x 2
+        H2O 0.03 g 0.03 0.124"; locator=sol-25 / recipe-6 and volume badge title ''Final
+        volume of this solution'', value 1000; page scale ml.'
+  - preferred_term: Distilled water
+    source: MediaDive public Medium P7
+    notes: 'Reported water input: 1000 ml = 1 L per listed SL-6 stock batch; not L/L.
+      The separate final-volume badge declares 1000 ml; the source does not specify
+      a makeup procedure.'
+    concentration:
+      value: '1'
+      unit: L
+    evidence:
+    - reference: https://mediadive.dsmz.de/medium/P7
+      supports: SUPPORT
+      snippet: Distilled water 1000.00 ml - -
+      explanation: 'solutions[2].composition[7].concentration: Reported water input:
+        1000 ml = 1 L per listed SL-6 stock batch; not L/L. The separate final-volume
+        badge declares 1000 ml; the source does not specify a makeup procedure. Source:
+        user-contributed MediaDive P7 page, accessed 2026-10-07, SHA256=ce4a93ee29dbf3008a4bfcedd4962718c0bd6feb95b38b2d5dc5951ed2a29dcd.
+        HTML entities decoded and whitespace collapsed; no curated collection recipe,
+        journal validation or growth claim is implied. Exact excerpt: "Distilled water
+        1000.00 ml - -"; locator=sol-25 / recipe-7.'
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -243,3 +628,60 @@ preparation_steps:
   description: Autoclave at 121 C for 15 min.
 references:
 - reference: https://www.bacmedia.dsmz.de/medium/P7
+- reference: https://mediadive.dsmz.de/medium/P7
+  title: N27 RHODOSPIRILLACEAE MEDIUM (modified) - MediaDive public Medium P7
+  authors: Lorenz
+  year: 2023
+  notes: source_type=user_contributed_dataset_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-07; publication year is the page year. Page states these user
+    media are not curated or tested and no valid reference is given. No DOI or journal
+    authorship invented; legacy bacmedia URL retained. capture_sha256=ce4a93ee29dbf3008a4bfcedd4962718c0bd6feb95b38b2d5dc5951ed2a29dcd.
+evidence:
+- reference: https://mediadive.dsmz.de/medium/P7
+  supports: SUPPORT
+  snippet: Fe(III) citrate (0.1% in H2O) 5.00 ml 0.005 0.02
+  explanation: 'solutions[0].concentration: Source input 5.00 ml per listed recipe
+    batch, represented as 0.005 L, not L/L. The listed 1000 ml water is not an explicit
+    final-medium makeup instruction. Source: user-contributed MediaDive P7 page, accessed
+    2026-10-07, SHA256=ce4a93ee29dbf3008a4bfcedd4962718c0bd6feb95b38b2d5dc5951ed2a29dcd.
+    HTML entities decoded and whitespace collapsed; no curated collection recipe,
+    journal validation or growth claim is implied. Exact excerpt: "Fe(III) citrate
+    (0.1% in H2O) 5.00 ml 0.005 0.02"; locator=sol-24 / recipe-3. solutions[0].notes:
+    Source input 5.00 ml per listed recipe batch, represented as 0.005 L, not L/L.
+    The listed 1000 ml water is not an explicit final-medium makeup instruction. Source:
+    user-contributed MediaDive P7 page, accessed 2026-10-07, SHA256=ce4a93ee29dbf3008a4bfcedd4962718c0bd6feb95b38b2d5dc5951ed2a29dcd.
+    HTML entities decoded and whitespace collapsed; no curated collection recipe,
+    journal validation or growth claim is implied. Exact excerpt: "Fe(III) citrate
+    (0.1% in H2O) 5.00 ml 0.005 0.02"; locator=sol-24 / recipe-3. solutions[1].concentration:
+    Source input 0.40 ml per listed recipe batch, represented as 0.0004 L, not L/L.
+    The listed 1000 ml water is not an explicit final-medium makeup instruction. Source:
+    user-contributed MediaDive P7 page, accessed 2026-10-07, SHA256=ce4a93ee29dbf3008a4bfcedd4962718c0bd6feb95b38b2d5dc5951ed2a29dcd.
+    HTML entities decoded and whitespace collapsed; no curated collection recipe,
+    journal validation or growth claim is implied. Exact excerpt: "Vitamin B12 (10
+    mg in 100 ml H2O) 0.40 ml - -"; locator=sol-24 / recipe-9. solutions[1].notes:
+    Source input 0.40 ml per listed recipe batch, represented as 0.0004 L, not L/L.
+    The listed 1000 ml water is not an explicit final-medium makeup instruction. Source:
+    user-contributed MediaDive P7 page, accessed 2026-10-07, SHA256=ce4a93ee29dbf3008a4bfcedd4962718c0bd6feb95b38b2d5dc5951ed2a29dcd.
+    HTML entities decoded and whitespace collapsed; no curated collection recipe,
+    journal validation or growth claim is implied. Exact excerpt: "Vitamin B12 (10
+    mg in 100 ml H2O) 0.40 ml - -"; locator=sol-24 / recipe-9. solutions[2].concentration:
+    Source input 1.00 ml per listed recipe batch, represented as 0.001 L, not L/L.
+    The listed 1000 ml water is not an explicit final-medium makeup instruction. Source:
+    user-contributed MediaDive P7 page, accessed 2026-10-07, SHA256=ce4a93ee29dbf3008a4bfcedd4962718c0bd6feb95b38b2d5dc5951ed2a29dcd.
+    HTML entities decoded and whitespace collapsed; no curated collection recipe,
+    journal validation or growth claim is implied. Exact excerpt: "Trace element solution
+    SL-6 1.00 ml - -"; locator=sol-24 / recipe-10. solutions[2].notes: Source input
+    1.00 ml per listed recipe batch, represented as 0.001 L, not L/L. The listed 1000
+    ml water is not an explicit final-medium makeup instruction. Source: user-contributed
+    MediaDive P7 page, accessed 2026-10-07, SHA256=ce4a93ee29dbf3008a4bfcedd4962718c0bd6feb95b38b2d5dc5951ed2a29dcd.
+    HTML entities decoded and whitespace collapsed; no curated collection recipe,
+    journal validation or growth claim is implied. Exact excerpt: "Trace element solution
+    SL-6 1.00 ml - -"; locator=sol-24 / recipe-10. notes: MediaDive public P7 lists
+    main ingredients, three stocks and 1000 ml water. Retained g/L values are dataset-reported
+    rates, not verified physical final-medium concentrations. Liquid doses are recorded
+    as batch inputs. Iron-citrate percentage basis and B12 final stock volume are
+    unresolved; no final-medium dilution is inferred. Source: user-contributed MediaDive
+    P7 page, accessed 2026-10-07, SHA256=ce4a93ee29dbf3008a4bfcedd4962718c0bd6feb95b38b2d5dc5951ed2a29dcd.
+    HTML entities decoded and whitespace collapsed; no curated collection recipe,
+    journal validation or growth claim is implied. Exact excerpt: "Distilled water
+    1000.00 ml - -"; locator=sol-24 / recipe-13 and all main table rows.'

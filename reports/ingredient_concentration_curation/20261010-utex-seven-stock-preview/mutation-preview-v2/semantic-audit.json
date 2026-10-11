@@ -1,0 +1,420 @@
+{
+  "terminal": true,
+  "passed": true,
+  "plan_sha256": "9a74e5496124432d48df9f83e4d62b2a6646bae12a6082ebfa534740bcea2f94",
+  "counts": {
+    "concentration_claims": 36,
+    "captured_snippet_entries": 49,
+    "manual_identity_ledger_entries": 8
+  },
+  "source_captures_reparsed": 16,
+  "rejected_mutations": [
+    {
+      "path": "data/normalized_yaml/bacterial/DAS_Macro_Solution.yaml",
+      "field": "solutions[0].concentration",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/DAS_Macro_Solution.yaml",
+      "field": "solutions[0].composition[0].concentration",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/DAS_Macro_Solution.yaml",
+      "field": "solutions[1].concentration",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/DAS_Macro_Solution.yaml",
+      "field": "solutions[1].composition[0].concentration",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/DAS_Macro_Solution.yaml",
+      "fault": "unit"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/DAS_Macro_Solution.yaml",
+      "fault": "snippet"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/DAS_Macro_Solution.yaml",
+      "fault": "support"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/DAS_Macro_Solution.yaml",
+      "fault": "identity"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/DAS_Macro_Solution.yaml",
+      "fault": "notes"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/DAS_Macro_Solution.yaml",
+      "fault": "history"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/DAS_Macro_Solution.yaml",
+      "fault": "reference"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/DAS_Macro_Solution.yaml",
+      "fault": "year"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/DAS_Vitamin_Cocktail.yaml",
+      "field": "composition[0].concentration",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/DAS_Vitamin_Cocktail.yaml",
+      "field": "composition[1].concentration",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/DAS_Vitamin_Cocktail.yaml",
+      "field": "composition[2].concentration",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/DAS_Vitamin_Cocktail.yaml",
+      "field": "composition[3].concentration",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/DAS_Vitamin_Cocktail.yaml",
+      "field": "composition[4].concentration",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/DAS_Vitamin_Cocktail.yaml",
+      "field": "composition[5].concentration",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/DAS_Vitamin_Cocktail.yaml",
+      "fault": "unit"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/DAS_Vitamin_Cocktail.yaml",
+      "fault": "snippet"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/DAS_Vitamin_Cocktail.yaml",
+      "fault": "support"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/DAS_Vitamin_Cocktail.yaml",
+      "fault": "identity"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/DAS_Vitamin_Cocktail.yaml",
+      "fault": "notes"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/DAS_Vitamin_Cocktail.yaml",
+      "fault": "history"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/DAS_Vitamin_Cocktail.yaml",
+      "fault": "reference"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/DAS_Vitamin_Cocktail.yaml",
+      "fault": "year"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/EDTA_Stock.yaml",
+      "field": "composition[0].concentration",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/EDTA_Stock.yaml",
+      "field": "composition[1].concentration",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/EDTA_Stock.yaml",
+      "fault": "unit"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/EDTA_Stock.yaml",
+      "fault": "snippet"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/EDTA_Stock.yaml",
+      "fault": "support"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/EDTA_Stock.yaml",
+      "fault": "identity"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/EDTA_Stock.yaml",
+      "fault": "notes"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/EDTA_Stock.yaml",
+      "fault": "history"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/EDTA_Stock.yaml",
+      "fault": "reference"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/EDTA_Stock.yaml",
+      "fault": "year"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/G9_Trace_Metals_for_J_medium.yaml",
+      "field": "composition[0].concentration",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/G9_Trace_Metals_for_J_medium.yaml",
+      "field": "composition[1].concentration",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/G9_Trace_Metals_for_J_medium.yaml",
+      "field": "composition[2].concentration",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/G9_Trace_Metals_for_J_medium.yaml",
+      "field": "composition[3].concentration",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/G9_Trace_Metals_for_J_medium.yaml",
+      "field": "composition[4].concentration",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/G9_Trace_Metals_for_J_medium.yaml",
+      "field": "composition[5].concentration",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/G9_Trace_Metals_for_J_medium.yaml",
+      "field": "composition[6].concentration",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/G9_Trace_Metals_for_J_medium.yaml",
+      "fault": "unit"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/G9_Trace_Metals_for_J_medium.yaml",
+      "fault": "snippet"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/G9_Trace_Metals_for_J_medium.yaml",
+      "fault": "support"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/G9_Trace_Metals_for_J_medium.yaml",
+      "fault": "identity"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/G9_Trace_Metals_for_J_medium.yaml",
+      "fault": "notes"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/G9_Trace_Metals_for_J_medium.yaml",
+      "fault": "history"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/G9_Trace_Metals_for_J_medium.yaml",
+      "fault": "reference"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/G9_Trace_Metals_for_J_medium.yaml",
+      "fault": "year"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Macro_Component_1_for_J_Medium.yaml",
+      "field": "composition[0].concentration",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Macro_Component_1_for_J_Medium.yaml",
+      "field": "composition[1].concentration",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Macro_Component_1_for_J_Medium.yaml",
+      "field": "composition[2].concentration",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Macro_Component_1_for_J_Medium.yaml",
+      "field": "composition[3].concentration",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Macro_Component_1_for_J_Medium.yaml",
+      "fault": "unit"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Macro_Component_1_for_J_Medium.yaml",
+      "fault": "snippet"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Macro_Component_1_for_J_Medium.yaml",
+      "fault": "support"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Macro_Component_1_for_J_Medium.yaml",
+      "fault": "identity"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Macro_Component_1_for_J_Medium.yaml",
+      "fault": "notes"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Macro_Component_1_for_J_Medium.yaml",
+      "fault": "history"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Macro_Component_1_for_J_Medium.yaml",
+      "fault": "reference"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Macro_Component_1_for_J_Medium.yaml",
+      "fault": "year"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Macro_Component_2_for_J_medium.yaml",
+      "field": "composition[0].concentration",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Macro_Component_2_for_J_medium.yaml",
+      "field": "composition[1].concentration",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Macro_Component_2_for_J_medium.yaml",
+      "field": "composition[2].concentration",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Macro_Component_2_for_J_medium.yaml",
+      "field": "composition[3].concentration",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Macro_Component_2_for_J_medium.yaml",
+      "fault": "unit"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Macro_Component_2_for_J_medium.yaml",
+      "fault": "snippet"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Macro_Component_2_for_J_medium.yaml",
+      "fault": "support"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Macro_Component_2_for_J_medium.yaml",
+      "fault": "identity"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Macro_Component_2_for_J_medium.yaml",
+      "fault": "notes"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Macro_Component_2_for_J_medium.yaml",
+      "fault": "history"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Macro_Component_2_for_J_medium.yaml",
+      "fault": "reference"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Macro_Component_2_for_J_medium.yaml",
+      "fault": "year"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Minor_Nutrients.yaml",
+      "field": "composition[0].concentration",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Minor_Nutrients.yaml",
+      "field": "composition[1].concentration",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Minor_Nutrients.yaml",
+      "field": "composition[2].concentration",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Minor_Nutrients.yaml",
+      "field": "composition[3].concentration",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Minor_Nutrients.yaml",
+      "field": "composition[4].concentration",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Minor_Nutrients.yaml",
+      "field": "composition[5].concentration",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Minor_Nutrients.yaml",
+      "field": "composition[6].concentration",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Minor_Nutrients.yaml",
+      "field": "composition[7].concentration",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Minor_Nutrients.yaml",
+      "field": "composition[8].concentration",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Minor_Nutrients.yaml",
+      "fault": "unit"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Minor_Nutrients.yaml",
+      "fault": "snippet"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Minor_Nutrients.yaml",
+      "fault": "support"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Minor_Nutrients.yaml",
+      "fault": "identity"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Minor_Nutrients.yaml",
+      "fault": "notes"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Minor_Nutrients.yaml",
+      "fault": "history"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Minor_Nutrients.yaml",
+      "fault": "reference"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Minor_Nutrients.yaml",
+      "fault": "year"
+    }
+  ],
+  "records_edited": 0,
+  "manual_ledger_scope_note": "Supplier and uncaptured ChEBI identities retain manual-source provenance; this audit is not a fresh live-source validation.",
+  "all_record_goal_complete": false
+}

@@ -1,0 +1,79 @@
+{
+  "terminal": true,
+  "phase": "baseline",
+  "runtime": "Partial locked Python 3.13; not full CI",
+  "checks": [
+    {
+      "name": "independent-preview",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "reports/ingredient_concentration_curation/20261008-dsmz803-1046-1065-water/audit.py",
+        "--out",
+        "reports/ingredient_concentration_curation/20261008-dsmz803-1046-1065-water/preflight.json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/water-803-baseline-independent-preview.log",
+      "artifact": null
+    },
+    {
+      "name": "schema-MediaRecipe",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/linkml-validate",
+        "--schema",
+        "src/culturemech/schema/culturemech.yaml",
+        "--target-class",
+        "MediaRecipe",
+        "data/normalized_yaml/bacterial/KOMODO_803_SPHAEROTILUS-LEPTOTHRIX_medium.yaml",
+        "data/normalized_yaml/bacterial/sphaerotilus_leptothrix_medium.yaml",
+        "data/normalized_yaml/bacterial/KOMODO_1046_ANOXYBACILLUS_AMYLOLYTICUS_medium.yaml",
+        "data/normalized_yaml/bacterial/anoxybacillus_amylolyticus_medium.yaml",
+        "data/normalized_yaml/bacterial/KOMODO_1065_M1-NOCARDIOPSIS_ARABIA_medium.yaml",
+        "data/normalized_yaml/bacterial/m1_nocardiopsis_arabia_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/water-803-baseline-schema-MediaRecipe.log",
+      "artifact": null
+    },
+    {
+      "name": "schema-SolutionRecipe",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/linkml-validate",
+        "--schema",
+        "src/culturemech/schema/culturemech.yaml",
+        "--target-class",
+        "SolutionRecipe",
+        "data/normalized_yaml/bacterial/mediadive_1634_Main_sol_803.yaml",
+        "data/normalized_yaml/bacterial/mediadive_2114_Main_sol_1046.yaml",
+        "data/normalized_yaml/bacterial/mediadive_2155_Main_sol_1065.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/water-803-baseline-schema-SolutionRecipe.log",
+      "artifact": null
+    },
+    {
+      "name": "strict",
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/water-803-baseline-strict.log",
+      "artifact": null
+    }
+  ],
+  "test_suites": {
+    "guard_tests": [
+      {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "0",
+        "tests": "34",
+        "time": "7.146",
+        "timestamp": "2026-10-08T00:22:53.563240-07:00",
+        "hostname": "Marcins-MacBook-Pro-2.local"
+      }
+    ]
+  },
+  "pdf_bytes_and_extracted_pages_checked": 3
+}

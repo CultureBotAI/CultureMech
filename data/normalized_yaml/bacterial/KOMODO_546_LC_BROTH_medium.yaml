@@ -11,17 +11,64 @@ media_term:
   term:
     id: komodo.medium:546
     label: LC BROTH medium
-notes: 'Source: KOMODO ModelSEED | ID: 546 | DSMZ Medium: 546 (mediadive.medium:546)
-  | Aerobic: No'
+notes: |-
+  Source: KOMODO ModelSEED | ID: 546 | DSMZ Medium: 546 (mediadive.medium:546) | Aerobic: No
+
+  Stock follow-up: quantities distinguish base-water inputs, stock strengths and batch doses; no measured final volume or new growth claim is inferred. Existing chemical mappings and variant links are retained, not independently validated.
 ingredients:
 - preferred_term: Tryptone
   concentration:
     value: '10'
     unit: G_PER_L
+  notes: 'Source batch input: 10 g. Retained g/L is the provider-declared nominal
+    main-recipe rate (volume field 1000 ml), not a separately prepared base or stock
+    concentration, or an independently measured final-volume concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/546
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 1,
+                              "compound": "Tryptone",
+                              "compound_id": 71,
+                              "amount": 10,
+                              "unit": "g",
+                              "g_l": 10,
+                              "mmol_l": 140.687,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[0].concentration (evidence_only), locator=$.data.solutions[0].recipe[0]:
+      Source batch input: 10 g. Retained g/L is the provider-declared nominal main-recipe
+      rate (volume field 1000 ml), not a separately prepared base or stock concentration,
+      or an independently measured final-volume concentration. Additional exact excerpt
+      at $.data.solutions[0].volume: 1000 Retrieved 2026-10-07T12:15:35.027435+00:00;
+      response SHA256=3880d23c7675675d8ebac12c440db993819fbc5faf23c4a052d31474c6da181e.'
 - preferred_term: Yeast extract
   concentration:
     value: '5'
     unit: G_PER_L
+  notes: 'Source batch input: 5 g. Retained g/L is the provider-declared nominal main-recipe
+    rate (volume field 1000 ml), not a separately prepared base or stock concentration,
+    or an independently measured final-volume concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/546
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 2,
+                              "compound": "Yeast extract",
+                              "compound_id": 16,
+                              "amount": 5,
+                              "unit": "g",
+                              "g_l": 5,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[1].concentration (evidence_only), locator=$.data.solutions[0].recipe[1]:
+      Source batch input: 5 g. Retained g/L is the provider-declared nominal main-recipe
+      rate (volume field 1000 ml), not a separately prepared base or stock concentration,
+      or an independently measured final-volume concentration. Additional exact excerpt
+      at $.data.solutions[0].volume: 1000 Retrieved 2026-10-07T12:15:35.027435+00:00;
+      response SHA256=3880d23c7675675d8ebac12c440db993819fbc5faf23c4a052d31474c6da181e.'
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -32,6 +79,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
+  notes: 'Source batch input: 10 g. Retained g/L is the provider-declared nominal
+    main-recipe rate (volume field 1000 ml), not a separately prepared base or stock
+    concentration, or an independently measured final-volume concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/546
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 3,
+                              "compound": "NaCl",
+                              "compound_id": 43,
+                              "amount": 10,
+                              "unit": "g",
+                              "g_l": 10,
+                              "mmol_l": 171.116,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[2].concentration (evidence_only), locator=$.data.solutions[0].recipe[2]:
+      Source batch input: 10 g. Retained g/L is the provider-declared nominal main-recipe
+      rate (volume field 1000 ml), not a separately prepared base or stock concentration,
+      or an independently measured final-volume concentration. Additional exact excerpt
+      at $.data.solutions[0].volume: 1000 Retrieved 2026-10-07T12:15:35.027435+00:00;
+      response SHA256=3880d23c7675675d8ebac12c440db993819fbc5faf23c4a052d31474c6da181e.'
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -42,26 +112,54 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
-- preferred_term: CaCl2 x 2 H2O
+  notes: 'Source batch input: 1 g. Retained g/L is the provider-declared nominal main-recipe
+    rate (volume field 1000 ml), not a separately prepared base or stock concentration,
+    or an independently measured final-volume concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/546
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 4,
+                              "compound": "Glucose",
+                              "compound_id": 5,
+                              "amount": 1,
+                              "unit": "g",
+                              "g_l": 1,
+                              "mmol_l": 5.55062,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[3].concentration (evidence_only), locator=$.data.solutions[0].recipe[3]:
+      Source batch input: 1 g. Retained g/L is the provider-declared nominal main-recipe
+      rate (volume field 1000 ml), not a separately prepared base or stock concentration,
+      or an independently measured final-volume concentration. Additional exact excerpt
+      at $.data.solutions[0].volume: 1000 Retrieved 2026-10-07T12:15:35.027435+00:00;
+      response SHA256=3880d23c7675675d8ebac12c440db993819fbc5faf23c4a052d31474c6da181e.'
+- preferred_term: Distilled water
   term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
+    id: mediadive.compound:4
+    label: Distilled water
   concentration:
-    value: '0.735075'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
-  concentration:
-    value: '1.23238'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
+    value: '0.99'
+    unit: L
+  notes: Distilled-water input to the base per recipe batch, not final medium volume
+    or stock carrier volume.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/546
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 5,
+                              "compound": "Distilled water",
+                              "compound_id": 4,
+                              "amount": 990,
+                              "unit": "ml",
+                              "optional": 0
+                          }
+    explanation: 'ingredients[4].concentration (add), locator=$.data.solutions[0].recipe[4]:
+      Distilled-water input to the base per recipe batch, not final medium volume
+      or stock carrier volume. Convert 990 ml / 1000 = 0.99 L; no density assumption.
+      Retrieved 2026-10-07T12:15:35.027435+00:00; response SHA256=3880d23c7675675d8ebac12c440db993819fbc5faf23c4a052d31474c6da181e.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -92,6 +190,34 @@ curation_history:
   notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-08T04:59:45.451604+00:00'
+  curator: codex
+  action: CORRECTED_DSMZ546_659_670_STOCK_STAGES
+  notes: Restored source-explicit stock strengths/doses and base-water inputs; prior
+    excerpts, history and mappings preserved. No strain-variant or growth curation
+    is claimed.
+  source: https://mediadive.dsmz.de/rest/medium/546
+  changes: 'ingredients[0].concentration: {"value": "10", "unit": "G_PER_L"} -> {"value":
+    "10", "unit": "G_PER_L"} (evidence_only); ingredients[1].concentration: {"value":
+    "5", "unit": "G_PER_L"} -> {"value": "5", "unit": "G_PER_L"} (evidence_only);
+    ingredients[2].concentration: {"value": "10", "unit": "G_PER_L"} -> {"value":
+    "10", "unit": "G_PER_L"} (evidence_only); ingredients[3].concentration: {"value":
+    "1", "unit": "G_PER_L"} -> {"value": "1", "unit": "G_PER_L"} (evidence_only);
+    ingredients[4].concentration: null -> {"value": "0.99", "unit": "L"} (add); solutions[0].composition[0].concentration:
+    {"value": "0.735075", "unit": "G_PER_L"} -> {"value": "1", "unit": "MOLAR"} (correct_stock_basis);
+    solutions[0].concentration: null -> {"value": "0.005", "unit": "L"} (add); solutions[1].composition[0].concentration:
+    {"value": "1.23238", "unit": "G_PER_L"} -> {"value": "1", "unit": "MOLAR"} (correct_stock_basis);
+    solutions[1].concentration: null -> {"value": "0.005", "unit": "L"} (add); preparation_steps:
+    null -> [{"step_number": 1, "action": "ADJUST_PH", "description": "Adjust pH to
+    7.4."}, {"step_number": 2, "action": "HEAT", "description": "Sterilize at 121\u00b0C
+    for 15 min. Cool to 50\u00b0C and add 5 ml 1 M CaCl2 x 2 H2O and 5 ml 1 M MgSO4
+    x 7 H2O as sterile solutions."}] (add_preparation); notes: "Source: KOMODO ModelSEED
+    | ID: 546 | DSMZ Medium: 546 (mediadive.medium:546) | Aerobic: No" -> "Source:
+    KOMODO ModelSEED | ID: 546 | DSMZ Medium: 546 (mediadive.medium:546) | Aerobic:
+    No\n\nStock follow-up: quantities distinguish base-water inputs, stock strengths
+    and batch doses; no measured final volume or new growth claim is inferred. Existing
+    chemical mappings and variant links are retained, not independently validated."
+    (clarify_scope)'
 parent_media:
   path: data/normalized_yaml/bacterial/lc_broth_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -103,3 +229,161 @@ variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
 - Same ingredient and concentration signature; KOMODO record copied from the matching
   DSMZ medium source.
+solutions:
+- preferred_term: CaCl2 x 2 H2O stock
+  composition:
+  - preferred_term: CaCl2 x 2 H2O
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    concentration:
+      value: '1'
+      unit: MOLAR
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    notes: Source-explicit stock strength, not a final-medium concentration. The former
+      flattened value is replaced at the stock stage; no molecular-weight or density
+      conversion is inferred.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/546
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 6,
+                                "compound": "CaCl2 x 2 H2O",
+                                "compound_id": 7,
+                                "attribute": "1 M",
+                                "amount": 5,
+                                "unit": "ml",
+                                "g_l": 0.735075,
+                                "mmol_l": 5,
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[0].composition[0].concentration (correct_stock_basis), locator=$.data.solutions[0].recipe[5]: Source-explicit stock strength, not a final-medium concentration. The former flattened value is replaced at the stock stage; no molecular-weight or density conversion is inferred. Additional exact excerpt at $.data.solutions[0].steps[1]: {
+                                "step": "Sterilize at 121\u00b0C for 15 min. Cool to 50\u00b0C and add 5 ml 1 M CaCl2 x 2 H2O and 5 ml 1 M MgSO4 x 7 H2O as sterile solutions."
+                            } Retrieved 2026-10-07T12:15:35.027435+00:00; response SHA256=3880d23c7675675d8ebac12c440db993819fbc5faf23c4a052d31474c6da181e.
+  concentration:
+    value: '0.005'
+    unit: L
+  source: https://mediadive.dsmz.de/rest/medium/546
+  notes: 5 ml stock addition per recipe batch, not per liter of an inferred final
+    medium. Carrier amount and final-medium concentration are not inferred.
+- preferred_term: MgSO4 x 7 H2O stock
+  composition:
+  - preferred_term: MgSO4 x 7 H2O
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    concentration:
+      value: '1'
+      unit: MOLAR
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    notes: Source-explicit stock strength, not a final-medium concentration. The former
+      flattened value is replaced at the stock stage; no molecular-weight or density
+      conversion is inferred.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/546
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 7,
+                                "compound": "MgSO4 x 7 H2O",
+                                "compound_id": 8,
+                                "attribute": "1 M",
+                                "amount": 5,
+                                "unit": "ml",
+                                "g_l": 1.23238,
+                                "mmol_l": 5,
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[1].composition[0].concentration (correct_stock_basis), locator=$.data.solutions[0].recipe[6]: Source-explicit stock strength, not a final-medium concentration. The former flattened value is replaced at the stock stage; no molecular-weight or density conversion is inferred. Additional exact excerpt at $.data.solutions[0].steps[1]: {
+                                "step": "Sterilize at 121\u00b0C for 15 min. Cool to 50\u00b0C and add 5 ml 1 M CaCl2 x 2 H2O and 5 ml 1 M MgSO4 x 7 H2O as sterile solutions."
+                            } Retrieved 2026-10-07T12:15:35.027435+00:00; response SHA256=3880d23c7675675d8ebac12c440db993819fbc5faf23c4a052d31474c6da181e.
+  concentration:
+    value: '0.005'
+    unit: L
+  source: https://mediadive.dsmz.de/rest/medium/546
+  notes: 5 ml stock addition per recipe batch, not per liter of an inferred final
+    medium. Carrier amount and final-medium concentration are not inferred.
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.4.
+- step_number: 2
+  action: HEAT
+  description: Sterilize at 121°C for 15 min. Cool to 50°C and add 5 ml 1 M CaCl2
+    x 2 H2O and 5 ml 1 M MgSO4 x 7 H2O as sterile solutions.
+evidence:
+- reference: https://mediadive.dsmz.de/rest/medium/546
+  supports: SUPPORT
+  snippet: |-
+    {
+                            "recipe_order": 6,
+                            "compound": "CaCl2 x 2 H2O",
+                            "compound_id": 7,
+                            "attribute": "1 M",
+                            "amount": 5,
+                            "unit": "ml",
+                            "g_l": 0.735075,
+                            "mmol_l": 5,
+                            "optional": 0
+                        }
+  explanation: |-
+    solutions[0].concentration (add), locator=$.data.solutions[0].recipe[5]: 5 ml stock addition per recipe batch, not per liter of an inferred final medium. Carrier amount and final-medium concentration are not inferred. Convert ml / 1000 = 0.005 L. Descriptor is a curator label, not a new accession. Additional exact excerpt at $.data.solutions[0].steps[1]: {
+                            "step": "Sterilize at 121\u00b0C for 15 min. Cool to 50\u00b0C and add 5 ml 1 M CaCl2 x 2 H2O and 5 ml 1 M MgSO4 x 7 H2O as sterile solutions."
+                        } solutions[1].concentration (add), locator=$.data.solutions[0].recipe[6]: 5 ml stock addition per recipe batch, not per liter of an inferred final medium. Carrier amount and final-medium concentration are not inferred. Convert ml / 1000 = 0.005 L. Descriptor is a curator label, not a new accession. Additional exact excerpt: {
+                            "recipe_order": 7,
+                            "compound": "MgSO4 x 7 H2O",
+                            "compound_id": 8,
+                            "attribute": "1 M",
+                            "amount": 5,
+                            "unit": "ml",
+                            "g_l": 1.23238,
+                            "mmol_l": 5,
+                            "optional": 0
+                        } Additional exact excerpt at $.data.solutions[0].steps[1]: {
+                            "step": "Sterilize at 121\u00b0C for 15 min. Cool to 50\u00b0C and add 5 ml 1 M CaCl2 x 2 H2O and 5 ml 1 M MgSO4 x 7 H2O as sterile solutions."
+                        } preparation_steps (add_preparation), locator=$.data.solutions[0].steps: Retain the source's preparation stages verbatim. For 670, filter sterilization applies to the iron stock; static incubation is preserved in notes, not labeled MIX. Additional exact excerpt: [
+                        {
+                            "step": "Adjust pH to 7.4."
+                        },
+                        {
+                            "step": "Sterilize at 121\u00b0C for 15 min. Cool to 50\u00b0C and add 5 ml 1 M CaCl2 x 2 H2O and 5 ml 1 M MgSO4 x 7 H2O as sterile solutions."
+                        }
+                    ] notes (clarify_scope), locator=$.data.solutions[0].steps: Document preparation scope and source limitations; retain the complete static-incubation instruction for 670. Additional exact excerpt: [
+                        {
+                            "step": "Adjust pH to 7.4."
+                        },
+                        {
+                            "step": "Sterilize at 121\u00b0C for 15 min. Cool to 50\u00b0C and add 5 ml 1 M CaCl2 x 2 H2O and 5 ml 1 M MgSO4 x 7 H2O as sterile solutions."
+                        }
+                    ] Retrieved 2026-10-07T12:15:35.027435+00:00; response SHA256=3880d23c7675675d8ebac12c440db993819fbc5faf23c4a052d31474c6da181e.
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  supports: SUPPORT
+  snippet: "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=546'\
+    \ >546</a></TD>\n\t\t\t\t\t<TD>LC BROTH medium</TD>\n\t\t\t\t\t<TD> 7.4</TD>\n\
+    \t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n\
+    <TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium546.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium546.pdf</a></TD>\n\t\
+    \t\t\t</TR>"
+  explanation: KOMODO 546 maps to https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium546.pdf.
+    Mapping evidence establishes source identity only, not ingredient amounts. Retrieved
+    2026-10-07T13:01:23.350274+00:00; response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/546
+  title: 'MediaDive medium 546: LC BROTH MEDIUM'
+  notes: source_type=dataset; discovery_mode=cross_reference; accessed_on=2026-10-07;
+    response_sha256=3880d23c7675675d8ebac12c440db993819fbc5faf23c4a052d31474c6da181e;
+    original_recipe=https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium546.pdf;
+    individual authors and publication year not supplied.
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  title: KOMODO - the Known Media Database
+  notes: source_type=dataset; discovery_mode=cross_reference; accessed_on=2026-10-07;
+    response_sha256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a;
+    locator=medium row 546; identity mapping only; individual authors and publication
+    year not supplied.

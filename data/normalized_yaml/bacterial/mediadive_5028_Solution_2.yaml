@@ -28,6 +28,33 @@ composition:
     label: disodium hydrogenphosphate dihydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5028
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Na2HPO4 x 2 H2O",
+                      "compound_id": 181,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.01,
+                      "unit": "g",
+                      "g_l": 0.185185,
+                      "mmol_l": 1.3045,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Na2HPO4
+      x 2 H2O) in MediaDive solution 5028; locator=$.data.recipe[1] (compound_id=181).
+      Provider explicitly reports g_l=0.185185. Arithmetic check: 0.01 g * 1 g/g /
+      (54 ml / 1000 ml per L) = 0.1851851851851851851851851852 g/L, consistent with
+      the reported value at its precision. Evidence supports the provider-declared
+      concentration within this solution, not a concentration in a receiving medium
+      or an independently measured final volume. Water addition alone is not used
+      to infer a final volume. Additional exact excerpt at $.data.volume: "volume":
+      54. Retrieved 2026-10-07T09:50:10.257347+00:00; response SHA256=3e714a521eb230de44456fc9458ac1e156af890baeb2b6c6bba65dd5150e9f58.'
 - preferred_term: Ampicillin
   concentration:
     value: '74.07407407407408'
@@ -89,6 +116,15 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T09:53:16.572361+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/5028
+  changes: 'composition[1].concentration: {"unit": "G_PER_L", "value": "0.185185"}
+    -> {"unit": "G_PER_L", "value": "0.185185"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -97,3 +133,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/5028
+  title: 'MediaDive solution 5028: Solution 2'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=3e714a521eb230de44456fc9458ac1e156af890baeb2b6c6bba65dd5150e9f58;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

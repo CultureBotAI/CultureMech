@@ -5,22 +5,50 @@ category: archaea
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 7.1
 media_term:
   preferred_term: JCM Medium J168
   term:
     id: mediadive.medium:J168
     label: HALOBACTERIA MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168'
+notes: |-
+  Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+
+  Source preparation excerpts: "Add components to distilled water and bring volume to 1.0 L."; "Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.". These instructions are not converted into an inferred step ordering. Separate JCM168 excerpts: "Adjust pH to 7.0-7.2."; "For preparation of solid medium, add 20.0 g/L agar.". The agar option is selected only for M160; liquid formulations remain unchanged.
 ingredients:
 - preferred_term: Casamino acids
   concentration:
     value: '5'
     unit: G_PER_L
+  notes: 'JCM168 specifies 5.0 g in the recipe brought to 1.0 L; 5.0 g / 1.0 L gives
+    the stated per-liter rate. Separate exact volume excerpt: "Add components to distilled
+    water and bring volume to 1.0 L.". Hydrate form is retained; no molar or density
+    conversion is used.'
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+    supports: SUPPORT
+    snippet: Casamino acids (BD-Difco) 5.0 g
+    explanation: |-
+      ingredients[0].concentration: JCM168 specifies 5.0 g in the recipe brought to 1.0 L; 5.0 g / 1.0 L gives the stated per-liter rate. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Hydrate form is retained; no molar or density conversion is used. Source locator: exact recipe row or preparation instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+      Additional exact excerpt: Casamino acids (BD-Difco) 5.0 g
+      ingredients[0].notes: JCM168 specifies 5.0 g in the recipe brought to 1.0 L; 5.0 g / 1.0 L gives the stated per-liter rate. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Hydrate form is retained; no molar or density conversion is used. Source locator: exact recipe row or preparation instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
 - preferred_term: Yeast extract
   concentration:
     value: '5'
     unit: G_PER_L
+  notes: 'JCM168 specifies 5.0 g in the recipe brought to 1.0 L; 5.0 g / 1.0 L gives
+    the stated per-liter rate. Separate exact volume excerpt: "Add components to distilled
+    water and bring volume to 1.0 L.". Hydrate form is retained; no molar or density
+    conversion is used.'
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+    supports: SUPPORT
+    snippet: Yeast extract (BD-Difco) 5.0 g
+    explanation: |-
+      ingredients[1].concentration: JCM168 specifies 5.0 g in the recipe brought to 1.0 L; 5.0 g / 1.0 L gives the stated per-liter rate. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Hydrate form is retained; no molar or density conversion is used. Source locator: exact recipe row or preparation instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+      Additional exact excerpt: Yeast extract (BD-Difco) 5.0 g
+      ingredients[1].notes: JCM168 specifies 5.0 g in the recipe brought to 1.0 L; 5.0 g / 1.0 L gives the stated per-liter rate. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Hydrate form is retained; no molar or density conversion is used. Source locator: exact recipe row or preparation instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
 - preferred_term: Na glutamate
   term:
     id: CHEBI:64220
@@ -31,6 +59,19 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:64220
     label: monosodium glutamate
+  notes: 'JCM168 specifies 1.0 g in the recipe brought to 1.0 L; 1.0 g / 1.0 L gives
+    the stated per-liter rate. Separate exact volume excerpt: "Add components to distilled
+    water and bring volume to 1.0 L.". Hydrate form is retained; no molar or density
+    conversion is used.'
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+    supports: SUPPORT
+    snippet: Sodium glutamate 1.0 g
+    explanation: |-
+      ingredients[2].concentration: JCM168 specifies 1.0 g in the recipe brought to 1.0 L; 1.0 g / 1.0 L gives the stated per-liter rate. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Hydrate form is retained; no molar or density conversion is used. Source locator: exact recipe row or preparation instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+      Additional exact excerpt: Sodium glutamate 1.0 g
+      ingredients[2].notes: JCM168 specifies 1.0 g in the recipe brought to 1.0 L; 1.0 g / 1.0 L gives the stated per-liter rate. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Hydrate form is retained; no molar or density conversion is used. Source locator: exact recipe row or preparation instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
 - preferred_term: Trisodium citrate
   term:
     id: CHEBI:53258
@@ -41,6 +82,19 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:53258
     label: sodium citrate
+  notes: 'JCM168 specifies 3.0 g in the recipe brought to 1.0 L; 3.0 g / 1.0 L gives
+    the stated per-liter rate. Separate exact volume excerpt: "Add components to distilled
+    water and bring volume to 1.0 L.". Hydrate form is retained; no molar or density
+    conversion is used.'
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+    supports: SUPPORT
+    snippet: Trisodium citrate 3.0 g
+    explanation: |-
+      ingredients[3].concentration: JCM168 specifies 3.0 g in the recipe brought to 1.0 L; 3.0 g / 1.0 L gives the stated per-liter rate. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Hydrate form is retained; no molar or density conversion is used. Source locator: exact recipe row or preparation instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+      Additional exact excerpt: Trisodium citrate 3.0 g
+      ingredients[3].notes: JCM168 specifies 3.0 g in the recipe brought to 1.0 L; 3.0 g / 1.0 L gives the stated per-liter rate. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Hydrate form is retained; no molar or density conversion is used. Source locator: exact recipe row or preparation instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -51,6 +105,19 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
+  notes: 'JCM168 specifies 20.0 g in the recipe brought to 1.0 L; 20.0 g / 1.0 L gives
+    the stated per-liter rate. Separate exact volume excerpt: "Add components to distilled
+    water and bring volume to 1.0 L.". Hydrate form is retained; no molar or density
+    conversion is used.'
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+    supports: SUPPORT
+    snippet: MgSO4·7H2O 20.0 g
+    explanation: |-
+      ingredients[4].concentration: JCM168 specifies 20.0 g in the recipe brought to 1.0 L; 20.0 g / 1.0 L gives the stated per-liter rate. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Hydrate form is retained; no molar or density conversion is used. Source locator: exact recipe row or preparation instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+      Additional exact excerpt: MgSO4·7H2O 20.0 g
+      ingredients[4].notes: JCM168 specifies 20.0 g in the recipe brought to 1.0 L; 20.0 g / 1.0 L gives the stated per-liter rate. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Hydrate form is retained; no molar or density conversion is used. Source locator: exact recipe row or preparation instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -61,6 +128,19 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
     label: potassium chloride
+  notes: 'JCM168 specifies 2.0 g in the recipe brought to 1.0 L; 2.0 g / 1.0 L gives
+    the stated per-liter rate. Separate exact volume excerpt: "Add components to distilled
+    water and bring volume to 1.0 L.". Hydrate form is retained; no molar or density
+    conversion is used.'
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+    supports: SUPPORT
+    snippet: KCl 2.0 g
+    explanation: |-
+      ingredients[5].concentration: JCM168 specifies 2.0 g in the recipe brought to 1.0 L; 2.0 g / 1.0 L gives the stated per-liter rate. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Hydrate form is retained; no molar or density conversion is used. Source locator: exact recipe row or preparation instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+      Additional exact excerpt: KCl 2.0 g
+      ingredients[5].notes: JCM168 specifies 2.0 g in the recipe brought to 1.0 L; 2.0 g / 1.0 L gives the stated per-liter rate. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Hydrate form is retained; no molar or density conversion is used. Source locator: exact recipe row or preparation instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -71,6 +151,19 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
+  notes: 'JCM168 specifies 200.0 g in the recipe brought to 1.0 L; 200.0 g / 1.0 L
+    gives the stated per-liter rate. Separate exact volume excerpt: "Add components
+    to distilled water and bring volume to 1.0 L.". Hydrate form is retained; no molar
+    or density conversion is used.'
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+    supports: SUPPORT
+    snippet: NaCl 200.0 g
+    explanation: |-
+      ingredients[6].concentration: JCM168 specifies 200.0 g in the recipe brought to 1.0 L; 200.0 g / 1.0 L gives the stated per-liter rate. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Hydrate form is retained; no molar or density conversion is used. Source locator: exact recipe row or preparation instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+      Additional exact excerpt: NaCl 200.0 g
+      ingredients[6].notes: JCM168 specifies 200.0 g in the recipe brought to 1.0 L; 200.0 g / 1.0 L gives the stated per-liter rate. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Hydrate form is retained; no molar or density conversion is used. Source locator: exact recipe row or preparation instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
@@ -81,6 +174,19 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:86249
     label: iron dichloride tetrahydrate
+  notes: 'JCM168 specifies 36.0 mg in the recipe brought to 1.0 L; 36.0 mg / 1.0 L
+    gives the stated per-liter rate. Separate exact volume excerpt: "Add components
+    to distilled water and bring volume to 1.0 L.". Hydrate form is retained; no molar
+    or density conversion is used.'
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+    supports: SUPPORT
+    snippet: FeCl2·4H2O 36.0 mg
+    explanation: |-
+      ingredients[7].concentration: JCM168 specifies 36.0 mg in the recipe brought to 1.0 L; 36.0 mg / 1.0 L gives the stated per-liter rate. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Hydrate form is retained; no molar or density conversion is used. Source locator: exact recipe row or preparation instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+      Additional exact excerpt: FeCl2·4H2O 36.0 mg
+      ingredients[7].notes: JCM168 specifies 36.0 mg in the recipe brought to 1.0 L; 36.0 mg / 1.0 L gives the stated per-liter rate. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Hydrate form is retained; no molar or density conversion is used. Source locator: exact recipe row or preparation instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -91,6 +197,35 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:86368
     label: manganese(II) chloride tetrahydrate
+  notes: 'JCM168 specifies 0.36 mg in the recipe brought to 1.0 L; 0.36 mg / 1.0 L
+    gives the stated per-liter rate. Separate exact volume excerpt: "Add components
+    to distilled water and bring volume to 1.0 L.". Hydrate form is retained; no molar
+    or density conversion is used.'
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+    supports: SUPPORT
+    snippet: MnCl2·4H2O 0.36 mg
+    explanation: |-
+      ingredients[8].concentration: JCM168 specifies 0.36 mg in the recipe brought to 1.0 L; 0.36 mg / 1.0 L gives the stated per-liter rate. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Hydrate form is retained; no molar or density conversion is used. Source locator: exact recipe row or preparation instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+      Additional exact excerpt: MnCl2·4H2O 0.36 mg
+      ingredients[8].notes: JCM168 specifies 0.36 mg in the recipe brought to 1.0 L; 0.36 mg / 1.0 L gives the stated per-liter rate. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Hydrate form is retained; no molar or density conversion is used. Source locator: exact recipe row or preparation instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+- preferred_term: distilled water
+  notes: Distilled water is used to bring the recipe to 1.0 L final volume. Its individual
+    input volume and mass are unspecified; the imported 1 g/L is not supported, and
+    the table's 1 L is not a fixed water dose.
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+    supports: SUPPORT
+    snippet: Add components to distilled water and bring volume to 1.0 L.
+    explanation: |-
+      ingredients[9].concentration: Distilled water is used to bring the recipe to 1.0 L final volume. Its individual input volume and mass are unspecified; the imported 1 g/L is not supported, and the table's 1 L is not a fixed water dose. Source locator: exact recipe row or preparation instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+      Additional exact excerpt: Add components to distilled water and bring volume to 1.0 L.
+      ingredients[9].notes: Distilled water is used to bring the recipe to 1.0 L final volume. Its individual input volume and mass are unspecified; the imported 1 g/L is not supported, and the table's 1 L is not a fixed water dose. Source locator: exact recipe row or preparation instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+      Additional exact excerpt: Add components to distilled water and bring volume to 1.0 L.
+      ingredients[9].preferred_term: Distilled water is used to bring the recipe to 1.0 L final volume. Its individual input volume and mass are unspecified; the imported 1 g/L is not supported, and the table's 1 L is not a fixed water dose. Source locator: exact recipe row or preparation instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -137,35 +272,298 @@ curation_history:
   notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-10-09T12:51:15.611095+00:00'
+  curator: codex
+  action: CURATED_HALOBACTERIA_SOURCE_CONCENTRATIONS
+  notes: Source-specific ingredient review with exact PURL-backed excerpts. Trace
+    metals use mg/L, water is final-volume make-up, and modified-medium magnesium
+    retains the explicit source target and preparation ambiguity. Existing chemical
+    mappings and high-metal flags are preserved; no taxa-media claims are added.
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+  changes: |-
+    ingredients[0].notes: None -> JCM168 specifies 5.0 g in the recipe brought to 1.0 L; 5.0 g / 1.0 L gives the stated per-liter rate. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Hydrate form is retained; no molar or density conversion is used.; ingredients[1].notes: None -> JCM168 specifies 5.0 g in the recipe brought to 1.0 L; 5.0 g / 1.0 L gives the stated per-liter rate. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Hydrate form is retained; no molar or density conversion is used.; ingredients[2].notes: None -> JCM168 specifies 1.0 g in the recipe brought to 1.0 L; 1.0 g / 1.0 L gives the stated per-liter rate. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Hydrate form is retained; no molar or density conversion is used.; ingredients[3].notes: None -> JCM168 specifies 3.0 g in the recipe brought to 1.0 L; 3.0 g / 1.0 L gives the stated per-liter rate. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Hydrate form is retained; no molar or density conversion is used.; ingredients[4].notes: None -> JCM168 specifies 20.0 g in the recipe brought to 1.0 L; 20.0 g / 1.0 L gives the stated per-liter rate. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Hydrate form is retained; no molar or density conversion is used.; ingredients[5].notes: None -> JCM168 specifies 2.0 g in the recipe brought to 1.0 L; 2.0 g / 1.0 L gives the stated per-liter rate. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Hydrate form is retained; no molar or density conversion is used.; ingredients[6].notes: None -> JCM168 specifies 200.0 g in the recipe brought to 1.0 L; 200.0 g / 1.0 L gives the stated per-liter rate. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Hydrate form is retained; no molar or density conversion is used.; ingredients[7].notes: None -> JCM168 specifies 36.0 mg in the recipe brought to 1.0 L; 36.0 mg / 1.0 L gives the stated per-liter rate. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Hydrate form is retained; no molar or density conversion is used.; ingredients[8].notes: None -> JCM168 specifies 0.36 mg in the recipe brought to 1.0 L; 0.36 mg / 1.0 L gives the stated per-liter rate. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Hydrate form is retained; no molar or density conversion is used.; ingredients[9].notes: None -> Distilled water is used to bring the recipe to 1.0 L final volume. Its individual input volume and mass are unspecified; the imported 1 g/L is not supported, and the table's 1 L is not a fixed water dose.; ingredients[9].preferred_term: None -> distilled water; ph_value: 7.1 -> None; ph_range: None -> {'min': 7.0, 'max': 7.2}; variant_children[2].path: data/normalized_yaml/bacterial/modified_halobacteria_medium_2.yaml -> data/normalized_yaml/archaea/modified_halobacteria_medium_2.yaml; variant_children[2].relationship: SOURCE_DUPLICATE -> DERIVED_FROM; variant_children[2].notes: Same ingredient and concentration signature; review as possible duplicate source record. -> JCM1007 modifies JCM168 with sodium pyruvate, a distinct magnesium target and pH 8.0. It is not a SOURCE_DUPLICATE. Correct the reviewed reciprocal link's stale category path only; other family relationships need separate source review.; notes: Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168 -> Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+
+    Source preparation excerpts: "Add components to distilled water and bring volume to 1.0 L."; "Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.". These instructions are not converted into an inferred step ordering. Separate JCM168 excerpts: "Adjust pH to 7.0-7.2."; "For preparation of solid medium, add 20.0 g/L agar.". The agar option is selected only for M160; liquid formulations remain unchanged.
+- timestamp: '2026-10-09T14:23:51.976655+00:00'
+  curator: codex
+  action: CURATED_HALOBACTERIA_VARIANT_CONCENTRATIONS_AND_PREPARATION_STAGES
+  notes: Source-specific ingredient and variant review. Every change has an exact
+    PURL-backed excerpt. Prepared-base quantities, unquantified water/titrant, source
+    limitations, chemical identities and prior history are preserved; no taxa-media
+    assertions are added.
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=572; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1008; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=914;
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=377; https://mediadive.dsmz.de/download/medium/J1132/json
+  changes: 'variant_children[1]: {''path'': ''data/normalized_yaml/bacterial/modified_halobacteria_medium.yaml'',
+    ''relationship'': ''SOURCE_DUPLICATE'', ''id'': ''CultureMech:002920'', ''name'':
+    ''modified_halobacteria_medium'', ''notes'': ''Same ingredient and concentration
+    signature; review as possible duplicate source record.''} -> {''path'': ''data/normalized_yaml/archaea/modified_halobacteria_medium.yaml'',
+    ''relationship'': ''DERIVED_FROM'', ''id'': ''CultureMech:002920'', ''name'':
+    ''modified_halobacteria_medium'', ''notes'': ''The modified recipe uses 2 g/L
+    magnesium sulfate heptahydrate and post-autoclave pH 7.5 with sterile carbonate
+    solution. It is derived from the J168 base, not a duplicate or a concentration-only
+    change.''}; variant_children[1]: {''path'': ''data/normalized_yaml/bacterial/modified_halobacteria_medium.yaml'',
+    ''relationship'': ''SOURCE_DUPLICATE'', ''id'': ''CultureMech:002920'', ''name'':
+    ''modified_halobacteria_medium'', ''notes'': ''Same ingredient and concentration
+    signature; review as possible duplicate source record.''} -> {''path'': ''data/normalized_yaml/archaea/modified_halobacteria_medium.yaml'',
+    ''relationship'': ''DERIVED_FROM'', ''id'': ''CultureMech:002920'', ''name'':
+    ''modified_halobacteria_medium'', ''notes'': ''The modified recipe uses 2 g/L
+    magnesium sulfate heptahydrate and post-autoclave pH 7.5 with sterile carbonate
+    solution. It is derived from the J168 base, not a duplicate or a concentration-only
+    change.''}; variant_children[3]: {''path'': ''data/normalized_yaml/bacterial/modified_halobacteria_medium_3.yaml'',
+    ''relationship'': ''SOURCE_DUPLICATE'', ''id'': ''CultureMech:002192'', ''name'':
+    ''modified_halobacteria_medium_3'', ''notes'': ''Same ingredient and concentration
+    signature; review as possible duplicate source record.''} -> {''path'': ''data/normalized_yaml/archaea/modified_halobacteria_medium_3.yaml'',
+    ''relationship'': ''DERIVED_FROM'', ''id'': ''CultureMech:002192'', ''name'':
+    ''modified_halobacteria_medium_3'', ''notes'': "This JCM-derived formulation changes
+    NaCl to 270 g/L, magnesium sulfate heptahydrate to 15 g/L and pH to 7.5. It is
+    not a source duplicate or a salt-only change. JCM1008 explicitly states the modified
+    270 g/L NaCl and 15 g/L magnesium sulfate heptahydrate formulation, corroborated
+    by TOGO M1065''s g/L rows. The word supplemented leaves an operational ambiguity:
+    adding magnesium to the unchanged 20 g/L base cannot lower its concentration to
+    15 g/L. No 35 g/L magnesium or 470 g/L sodium chloride sum is inferred, and this
+    curation does not resolve that preparation ambiguity."}; variant_children[3]:
+    {''path'': ''data/normalized_yaml/bacterial/modified_halobacteria_medium_3.yaml'',
+    ''relationship'': ''SOURCE_DUPLICATE'', ''id'': ''CultureMech:002192'', ''name'':
+    ''modified_halobacteria_medium_3'', ''notes'': ''Same ingredient and concentration
+    signature; review as possible duplicate source record.''} -> {''path'': ''data/normalized_yaml/archaea/modified_halobacteria_medium_3.yaml'',
+    ''relationship'': ''DERIVED_FROM'', ''id'': ''CultureMech:002192'', ''name'':
+    ''modified_halobacteria_medium_3'', ''notes'': "This JCM-derived formulation changes
+    NaCl to 270 g/L, magnesium sulfate heptahydrate to 15 g/L and pH to 7.5. It is
+    not a source duplicate or a salt-only change. JCM1008 explicitly states the modified
+    270 g/L NaCl and 15 g/L magnesium sulfate heptahydrate formulation, corroborated
+    by TOGO M1065''s g/L rows. The word supplemented leaves an operational ambiguity:
+    adding magnesium to the unchanged 20 g/L base cannot lower its concentration to
+    15 g/L. No 35 g/L magnesium or 470 g/L sodium chloride sum is inferred, and this
+    curation does not resolve that preparation ambiguity."}; variant_children[5]:
+    None -> {''path'': ''data/normalized_yaml/archaea/halobacteria_medium_with_15_nacl.yaml'',
+    ''relationship'': ''SALINITY_VARIANT'', ''id'': ''CultureMech:003262'', ''name'':
+    ''halobacteria_medium_with_15_nacl'', ''notes'': "The recipe changes NaCl from
+    the referenced base''s 200 g/L to 150 g/L. Retain the reviewed liquid/solid distinction
+    and source-explicit agar option; correct exact tracked paths."}; variant_children[5]:
+    None -> {''path'': ''data/normalized_yaml/archaea/halobacteria_medium_with_15_nacl.yaml'',
+    ''relationship'': ''SALINITY_VARIANT'', ''id'': ''CultureMech:003262'', ''name'':
+    ''halobacteria_medium_with_15_nacl'', ''notes'': "The recipe changes NaCl from
+    the referenced base''s 200 g/L to 150 g/L. Retain the reviewed liquid/solid distinction
+    and source-explicit agar option; correct exact tracked paths."}; variant_children[4]:
+    {''path'': ''data/normalized_yaml/bacterial/JCM_J377_LENTIBACILLUS_MEDIUM.yaml'',
+    ''relationship'': ''SALINITY_VARIANT'', ''id'': ''CultureMech:002734'', ''name'':
+    ''lentibacillus_medium'', ''notes'': ''NaCl decreased from 200 g/L to 100 g/L
+    while the JCM Halobacteria/Lentibacillus base formulation and pH remain unchanged.''}
+    -> {''path'': ''data/normalized_yaml/bacterial/JCM_J377_LENTIBACILLUS_MEDIUM.yaml'',
+    ''relationship'': ''SALINITY_VARIANT'', ''id'': ''CultureMech:002734'', ''name'':
+    ''lentibacillus_medium'', ''notes'': ''Preserve the reviewed liquid salinity-variant
+    relationship: the exact J377 and J168 base tables agree except NaCl 100 versus
+    200 g per 1 L; retain pH 7.0-7.2 and correct exact tracked paths.''}; variant_children[4]:
+    {''path'': ''data/normalized_yaml/bacterial/JCM_J377_LENTIBACILLUS_MEDIUM.yaml'',
+    ''relationship'': ''SALINITY_VARIANT'', ''id'': ''CultureMech:002734'', ''name'':
+    ''lentibacillus_medium'', ''notes'': ''NaCl decreased from 200 g/L to 100 g/L
+    while the JCM Halobacteria/Lentibacillus base formulation and pH remain unchanged.''}
+    -> {''path'': ''data/normalized_yaml/bacterial/JCM_J377_LENTIBACILLUS_MEDIUM.yaml'',
+    ''relationship'': ''SALINITY_VARIANT'', ''id'': ''CultureMech:002734'', ''name'':
+    ''lentibacillus_medium'', ''notes'': ''Preserve the reviewed liquid salinity-variant
+    relationship: the exact J377 and J168 base tables agree except NaCl 100 versus
+    200 g per 1 L; retain pH 7.0-7.2 and correct exact tracked paths.''}; variant_children[0]:
+    {''path'': ''data/normalized_yaml/bacterial/halobacteria_medium_ph_8_0.yaml'',
+    ''relationship'': ''SOURCE_DUPLICATE'', ''id'': ''CultureMech:002305'', ''name'':
+    ''halobacteria_medium_ph_8_0'', ''notes'': ''Same ingredient and concentration
+    signature; review as possible duplicate source record.''} -> {''path'': ''data/normalized_yaml/archaea/halobacteria_medium_ph_8_0.yaml'',
+    ''relationship'': ''PH_VARIANT'', ''id'': ''CultureMech:002305'', ''name'': ''halobacteria_medium_ph_8_0'',
+    ''notes'': ''These concentrations describe the prepared J168/M159 base, not an
+    asserted post-titration final-medium concentration. The recipe uses 1 L of prepared
+    base and then adjusts pH to 8.0. The titrant identity, dose and resulting final
+    volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium
+    dilution factor. Existing chemical mappings and roles are preserved, not independently
+    recertified. The captured MediaDive J1132 provider dataset identifies this preparation;
+    the original JCM1132 page returned Nothing found. This is not a recovered JCM
+    original or a DOI-backed publication.''}; variant_children[0]: {''path'': ''data/normalized_yaml/bacterial/halobacteria_medium_ph_8_0.yaml'',
+    ''relationship'': ''SOURCE_DUPLICATE'', ''id'': ''CultureMech:002305'', ''name'':
+    ''halobacteria_medium_ph_8_0'', ''notes'': ''Same ingredient and concentration
+    signature; review as possible duplicate source record.''} -> {''path'': ''data/normalized_yaml/archaea/halobacteria_medium_ph_8_0.yaml'',
+    ''relationship'': ''PH_VARIANT'', ''id'': ''CultureMech:002305'', ''name'': ''halobacteria_medium_ph_8_0'',
+    ''notes'': ''These concentrations describe the prepared J168/M159 base, not an
+    asserted post-titration final-medium concentration. The recipe uses 1 L of prepared
+    base and then adjusts pH to 8.0. The titrant identity, dose and resulting final
+    volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium
+    dilution factor. Existing chemical mappings and roles are preserved, not independently
+    recertified. The captured MediaDive J1132 provider dataset identifies this preparation;
+    the original JCM1132 page returned Nothing found. This is not a recovered JCM
+    original or a DOI-backed publication.''}'
 high_metal: true
 variant_children:
-- path: data/normalized_yaml/bacterial/halobacteria_medium_ph_8_0.yaml
-  relationship: SOURCE_DUPLICATE
+- path: data/normalized_yaml/archaea/halobacteria_medium_ph_8_0.yaml
+  relationship: PH_VARIANT
   id: CultureMech:002305
   name: halobacteria_medium_ph_8_0
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/modified_halobacteria_medium.yaml
-  relationship: SOURCE_DUPLICATE
+  notes: These concentrations describe the prepared J168/M159 base, not an asserted
+    post-titration final-medium concentration. The recipe uses 1 L of prepared base
+    and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume
+    are unspecified; do not infer a carbonate reagent, zero dose, or final-medium
+    dilution factor. Existing chemical mappings and roles are preserved, not independently
+    recertified. The captured MediaDive J1132 provider dataset identifies this preparation;
+    the original JCM1132 page returned Nothing found. This is not a recovered JCM
+    original or a DOI-backed publication.
+- path: data/normalized_yaml/archaea/modified_halobacteria_medium.yaml
+  relationship: DERIVED_FROM
   id: CultureMech:002920
   name: modified_halobacteria_medium
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/modified_halobacteria_medium_2.yaml
-  relationship: SOURCE_DUPLICATE
+  notes: The modified recipe uses 2 g/L magnesium sulfate heptahydrate and post-autoclave
+    pH 7.5 with sterile carbonate solution. It is derived from the J168 base, not
+    a duplicate or a concentration-only change.
+- path: data/normalized_yaml/archaea/modified_halobacteria_medium_2.yaml
+  relationship: DERIVED_FROM
   id: CultureMech:002191
   name: modified_halobacteria_medium_2
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
-- path: data/normalized_yaml/bacterial/modified_halobacteria_medium_3.yaml
-  relationship: SOURCE_DUPLICATE
+  notes: JCM1007 modifies JCM168 with sodium pyruvate, a distinct magnesium target
+    and pH 8.0. It is not a SOURCE_DUPLICATE. Correct the reviewed reciprocal link's
+    stale category path only; other family relationships need separate source review.
+- path: data/normalized_yaml/archaea/modified_halobacteria_medium_3.yaml
+  relationship: DERIVED_FROM
   id: CultureMech:002192
   name: modified_halobacteria_medium_3
-  notes: Same ingredient and concentration signature; review as possible duplicate
-    source record.
+  notes: 'This JCM-derived formulation changes NaCl to 270 g/L, magnesium sulfate
+    heptahydrate to 15 g/L and pH to 7.5. It is not a source duplicate or a salt-only
+    change. JCM1008 explicitly states the modified 270 g/L NaCl and 15 g/L magnesium
+    sulfate heptahydrate formulation, corroborated by TOGO M1065''s g/L rows. The
+    word supplemented leaves an operational ambiguity: adding magnesium to the unchanged
+    20 g/L base cannot lower its concentration to 15 g/L. No 35 g/L magnesium or 470
+    g/L sodium chloride sum is inferred, and this curation does not resolve that preparation
+    ambiguity.'
 - path: data/normalized_yaml/bacterial/JCM_J377_LENTIBACILLUS_MEDIUM.yaml
   relationship: SALINITY_VARIANT
   id: CultureMech:002734
   name: lentibacillus_medium
-  notes: NaCl decreased from 200 g/L to 100 g/L while the JCM Halobacteria/Lentibacillus
-    base formulation and pH remain unchanged.
+  notes: 'Preserve the reviewed liquid salinity-variant relationship: the exact J377
+    and J168 base tables agree except NaCl 100 versus 200 g per 1 L; retain pH 7.0-7.2
+    and correct exact tracked paths.'
+- path: data/normalized_yaml/archaea/halobacteria_medium_with_15_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:003262
+  name: halobacteria_medium_with_15_nacl
+  notes: The recipe changes NaCl from the referenced base's 200 g/L to 150 g/L. Retain
+    the reviewed liquid/solid distinction and source-explicit agar option; correct
+    exact tracked paths.
+evidence:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+  supports: SUPPORT
+  snippet: Adjust pH to 7.0-7.2.
+  explanation: |-
+    ph_value: Retain the source range, not its midpoint as a single target. Source locator: exact recipe row or preparation instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+    Additional exact excerpt: Adjust pH to 7.0-7.2.
+    ph_range: Source-explicit pH range. Source locator: exact recipe row or preparation instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+    Additional exact excerpt: Add components to distilled water and bring volume to 1.0 L.
+    notes: Source preparation excerpts: "Add components to distilled water and bring volume to 1.0 L."; "Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.". These instructions are not converted into an inferred step ordering. Separate JCM168 excerpts: "Adjust pH to 7.0-7.2."; "For preparation of solid medium, add 20.0 g/L agar.". The agar option is selected only for M160; liquid formulations remain unchanged. Source locator: exact recipe row or preparation instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+    Additional exact excerpt: Adjust pH to 7.0-7.2.
+    variant_children[1]: The modified recipe uses 2 g/L magnesium sulfate heptahydrate and post-autoclave pH 7.5 with sterile carbonate solution. It is derived from the J168 base, not a duplicate or a concentration-only change. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+    Additional exact excerpt: Adjust pH to 7.0-7.2.
+    variant_children[3]: This JCM-derived formulation changes NaCl to 270 g/L, magnesium sulfate heptahydrate to 15 g/L and pH to 7.5. It is not a source duplicate or a salt-only change. JCM1008 explicitly states the modified 270 g/L NaCl and 15 g/L magnesium sulfate heptahydrate formulation, corroborated by TOGO M1065's g/L rows. The word supplemented leaves an operational ambiguity: adding magnesium to the unchanged 20 g/L base cannot lower its concentration to 15 g/L. No 35 g/L magnesium or 470 g/L sodium chloride sum is inferred, and this curation does not resolve that preparation ambiguity. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+    Additional exact excerpt: NaCl 200.0 g
+    variant_children[5]: The recipe changes NaCl from the referenced base's 200 g/L to 150 g/L. Retain the reviewed liquid/solid distinction and source-explicit agar option; correct exact tracked paths. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+    Additional exact excerpt: NaCl 200.0 g
+    variant_children[4]: Preserve the reviewed liquid salinity-variant relationship: the exact J377 and J168 base tables agree except NaCl 100 versus 200 g per 1 L; retain pH 7.0-7.2 and correct exact tracked paths. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1007
+  supports: SUPPORT
+  snippet: Use Medium No. 168 supplemented with 1.0 g/L sodium pyruvate and 1.0 g/L
+    MgSO4·7H2O (final).
+  explanation: |-
+    variant_children[2].path: JCM1007 modifies JCM168 with sodium pyruvate, a distinct magnesium target and pH 8.0. It is not a SOURCE_DUPLICATE. Correct the reviewed reciprocal link's stale category path only; other family relationships need separate source review. Source locator: exact recipe row or preparation instruction; accessed=2026-10-09T12:44:06.959675+00:00; source SHA256=42595646cf9fd573785d8b1c93ecb19abfe6461740ee4ec65329d84065c0ea67.
+
+    Additional exact excerpt: Use Medium No. 168 supplemented with 1.0 g/L sodium pyruvate and 1.0 g/L MgSO4·7H2O (final).
+    variant_children[2].relationship: JCM1007 modifies JCM168 with sodium pyruvate, a distinct magnesium target and pH 8.0. It is not a SOURCE_DUPLICATE. Correct the reviewed reciprocal link's stale category path only; other family relationships need separate source review. Source locator: exact recipe row or preparation instruction; accessed=2026-10-09T12:44:06.959675+00:00; source SHA256=42595646cf9fd573785d8b1c93ecb19abfe6461740ee4ec65329d84065c0ea67.
+
+    Additional exact excerpt: Use Medium No. 168 supplemented with 1.0 g/L sodium pyruvate and 1.0 g/L MgSO4·7H2O (final).
+    variant_children[2].notes: JCM1007 modifies JCM168 with sodium pyruvate, a distinct magnesium target and pH 8.0. It is not a SOURCE_DUPLICATE. Correct the reviewed reciprocal link's stale category path only; other family relationships need separate source review. Source locator: exact recipe row or preparation instruction; accessed=2026-10-09T12:44:06.959675+00:00; source SHA256=42595646cf9fd573785d8b1c93ecb19abfe6461740ee4ec65329d84065c0ea67.
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=572
+  supports: SUPPORT
+  snippet: Use Medium No. 168 with 2.0 g/L MgSO4·7H2O (final). After autoclaving,
+    adjust pH to 7.5 with sterile Na2CO3 solution.
+  explanation: 'variant_children[1]: The modified recipe uses 2 g/L magnesium sulfate
+    heptahydrate and post-autoclave pH 7.5 with sterile carbonate solution. It is
+    derived from the J168 base, not a duplicate or a concentration-only change. Exact
+    captured recipe row/instruction; accessed=2026-10-09T13:07:27.820151+00:00; source
+    SHA256=84af33834f842463362cc33d5578a6b69c5125c915352d92169eeb44fdf26527.'
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1008
+  supports: SUPPORT
+  snippet: Use Medium No. 168 supplemented with 270.0 g/L NaCl (final) and 15.0 g/L
+    MgSO4·7H2O. Adjust pH to 7.5.
+  explanation: 'variant_children[3]: This JCM-derived formulation changes NaCl to
+    270 g/L, magnesium sulfate heptahydrate to 15 g/L and pH to 7.5. It is not a source
+    duplicate or a salt-only change. JCM1008 explicitly states the modified 270 g/L
+    NaCl and 15 g/L magnesium sulfate heptahydrate formulation, corroborated by TOGO
+    M1065''s g/L rows. The word supplemented leaves an operational ambiguity: adding
+    magnesium to the unchanged 20 g/L base cannot lower its concentration to 15 g/L.
+    No 35 g/L magnesium or 470 g/L sodium chloride sum is inferred, and this curation
+    does not resolve that preparation ambiguity. Exact captured recipe row/instruction;
+    accessed=2026-10-09T13:07:24.587087+00:00; source SHA256=ad017a0bb9efd89b6a22178d1a0b67dff0c436b6d6e6fc893244dcb97bd84c90.'
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=914
+  supports: SUPPORT
+  snippet: Use Medium No. 168 with 150.0 g/L (final) NaCl.
+  explanation: 'variant_children[5]: The recipe changes NaCl from the referenced base''s
+    200 g/L to 150 g/L. Retain the reviewed liquid/solid distinction and source-explicit
+    agar option; correct exact tracked paths. Exact captured recipe row/instruction;
+    accessed=2026-10-09T13:07:28.892808+00:00; source SHA256=ab4c988225409e9022465a888ec90d3483ad7f1eddbeced2da5adaa4ca1d7d61.'
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=377
+  supports: SUPPORT
+  snippet: NaCl 100.0 g
+  explanation: 'variant_children[4]: Preserve the reviewed liquid salinity-variant
+    relationship: the exact J377 and J168 base tables agree except NaCl 100 versus
+    200 g per 1 L; retain pH 7.0-7.2 and correct exact tracked paths. Exact captured
+    recipe row/instruction; accessed=2026-10-09T13:07:26.734193+00:00; source SHA256=5017d8af49ea8978911b043b36431198a591a282f90b940f5cc30ff497c9f3e4.'
+- reference: https://mediadive.dsmz.de/download/medium/J1132/json
+  supports: SUPPORT
+  snippet: '{"recipe No.":2,"solution":"Main sol. J168","solution_id":3823,"amount":1000,"unit":"ml","optional":"no"}'
+  explanation: |-
+    variant_children[0]: These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. The captured MediaDive J1132 provider dataset identifies this preparation; the original JCM1132 page returned Nothing found. This is not a recovered JCM original or a DOI-backed publication. Exact captured recipe row/instruction; accessed=2026-10-09T13:30:20.541546+00:00; source SHA256=be2b3a61d686d51ba4eae113b54863097a007ad9800c6c26e74c4944e83c3fe9.
+
+    Additional exact excerpt: {"step":"Adjust pH to 8.0."}
+    variant_children[0]: These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. The captured MediaDive J1132 provider dataset identifies this preparation; the original JCM1132 page returned Nothing found. This is not a recovered JCM original or a DOI-backed publication. Exact captured recipe row/instruction; accessed=2026-10-09T13:30:20.541546+00:00; source SHA256=be2b3a61d686d51ba4eae113b54863097a007ad9800c6c26e74c4944e83c3fe9.
+ph_range:
+  min: 7.0
+  max: 7.2
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+  title: Medium data
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-09; accession=JCM168; response_sha256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+    Authors and publication year are not supplied; copyright year is not treated as
+    publication year.
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1007
+  title: Medium data
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-09; accession=JCM1007; response_sha256=42595646cf9fd573785d8b1c93ecb19abfe6461740ee4ec65329d84065c0ea67.
+    Authors and publication year are not supplied; copyright year is not treated as
+    publication year.
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=572
+  title: Medium data
+  notes: source_type=culture_collection_page; discovery_mode=cross_reference; accessed_on=2026-10-09;
+    accession=J572; response_sha256=84af33834f842463362cc33d5578a6b69c5125c915352d92169eeb44fdf26527.
+    Authors/year are not supplied; no publication year or DOI is invented.
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1008
+  title: Medium data
+  notes: source_type=culture_collection_page; discovery_mode=cross_reference; accessed_on=2026-10-09;
+    accession=J1008; response_sha256=ad017a0bb9efd89b6a22178d1a0b67dff0c436b6d6e6fc893244dcb97bd84c90.
+    Authors/year are not supplied; no publication year or DOI is invented.
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=914
+  title: Medium data
+  notes: source_type=culture_collection_page; discovery_mode=cross_reference; accessed_on=2026-10-09;
+    accession=J914; response_sha256=ab4c988225409e9022465a888ec90d3483ad7f1eddbeced2da5adaa4ca1d7d61.
+    Authors/year are not supplied; no publication year or DOI is invented.
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=377
+  title: Medium data
+  notes: source_type=culture_collection_page; discovery_mode=cross_reference; accessed_on=2026-10-09;
+    accession=J377; response_sha256=5017d8af49ea8978911b043b36431198a591a282f90b940f5cc30ff497c9f3e4.
+    Authors/year are not supplied; no publication year or DOI is invented.
+- reference: https://mediadive.dsmz.de/download/medium/J1132/json
+  title: HALOBACTERIA MEDIUM (pH 8.0)
+  notes: source_type=dataset; discovery_mode=manual_web_search; accessed_on=2026-10-09;
+    accession=E1132; response_sha256=be2b3a61d686d51ba4eae113b54863097a007ad9800c6c26e74c4944e83c3fe9.
+    Authors/year are not supplied; no publication year or DOI is invented. The captured
+    MediaDive J1132 provider dataset identifies this preparation; the original JCM1132
+    page returned Nothing found. This is not a recovered JCM original or a DOI-backed
+    publication.

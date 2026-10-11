@@ -6,8 +6,8 @@ term:
 composition:
 - preferred_term: Distilled water
   concentration:
-    value: '900.0'
-    unit: PERCENT_V_V
+    value: '0.009'
+    unit: L
   term:
     id: mediadive.compound:4
     label: Distilled water
@@ -16,6 +16,31 @@ composition:
     label: water
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/2124
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 9,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Distilled
+      water) in MediaDive solution 2124; locator=$.data.recipe[1] (compound_id=4).
+      Source water addition is 9 ml per prepared batch: 9 / 1000 = 0.009 L. No source
+      preparation step gives a competing make-up instruction. This is a batch dose,
+      not a volume percentage; no final-volume or solvent-density assumption is made.
+      Additional exact excerpt at $.data.volume: "volume": 10. Retrieved 2026-10-07T09:09:15.514257+00:00;
+      response SHA256=ec04efe208cf7fdbdada3a836f4c0dcb13ed85a155ad93fe4e40c919e7bbf9ab.'
 preparation_notes: 'Original volume: 10 mL'
 curation_history:
 - timestamp: '2026-03-13T06:20:20.219498Z'
@@ -45,6 +70,15 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 1 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-10-07T09:15:06.636792+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/2124
+  changes: 'composition[0].concentration: {"unit": "PERCENT_V_V", "value": "900.0"}
+    -> {"unit": "L", "value": "0.009"} (correct)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -53,3 +87,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/2124
+  title: 'MediaDive solution 2124: Solution G'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=ec04efe208cf7fdbdada3a836f4c0dcb13ed85a155ad93fe4e40c919e7bbf9ab;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

@@ -11,6 +11,32 @@ composition:
   term:
     id: mediadive.compound:19
     label: Bacto peptone
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/221
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Bacto peptone",
+                      "compound_id": 19,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "g",
+                      "g_l": 5,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Bacto peptone)
+      in MediaDive solution 221; locator=$.data.recipe[1] (compound_id=19). Provider
+      explicitly reports g_l=5. Arithmetic check: 5 g * 1 g/g / (1000 ml / 1000 ml
+      per L) = 5 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T08:21:27.433635+00:00; response SHA256=19351d96fa03cac50a6dcf077df86163fc42df893a924d65f8af52cd7b2d1029.'
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -30,6 +56,32 @@ composition:
     label: agar
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/221
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "Agar",
+                      "compound_id": 3,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 15,
+                      "unit": "g",
+                      "g_l": 15,
+                      "mmol_l": 44.5991,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[2].concentration (Agar) in
+      MediaDive solution 221; locator=$.data.recipe[3] (compound_id=3). Provider explicitly
+      reports g_l=15. Arithmetic check: 15 g * 1 g/g / (1000 ml / 1000 ml per L) =
+      15 g/L, consistent with the reported value at its precision. Evidence supports
+      the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T08:21:27.433635+00:00; response SHA256=19351d96fa03cac50a6dcf077df86163fc42df893a924d65f8af52cd7b2d1029.'
 preparation_notes: To 1000 ml "Synthetic sea water" (see medium 79) add 5 g Bacto
   Peptone, 1 g Bacto Yeast extract, and 15 g agar. Alternatively medium 514 may be
   used.
@@ -71,6 +123,16 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T08:27:51.574555+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/221
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "5"} -> {"unit":
+    "G_PER_L", "value": "5"} (evidence_only); composition[2].concentration: {"unit":
+    "G_PER_L", "value": "15"} -> {"unit": "G_PER_L", "value": "15"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -79,3 +141,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/221
+  title: 'MediaDive solution 221: Main sol. 123'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=19351d96fa03cac50a6dcf077df86163fc42df893a924d65f8af52cd7b2d1029;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

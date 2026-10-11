@@ -130,19 +130,67 @@ $ just validate-terms data/normalized_yaml/bacterial/CCAP_C101_S_W_Ca.yaml
 
 ### Reference Validation (`linkml-reference-validator`)
 
-Validates evidence items with PMID/DOI references:
-- **Reference format**: `PMID:12345678` or `doi:10.1038/...`
-- **Snippet accuracy**: Quoted text must appear in the paper
+`just validate-references`, the reference phase of `just validate`, and the
+layered strict validator now call `scripts/validate_recipe_references.py`.
+The wrapper retains the upstream LinkML plugin's schema-driven traversal and
+literature-reference handling. For these exact HTTPS endpoints it instead uses
+literal official-recipe checks:
 
-**Checks:**
-- ✅ PMID/DOI resolves to a real publication
-- ✅ Snippet text is an exact substring of the paper's abstract/full text
-- ❌ Catches paraphrased or fabricated quotes
+- TOGO `sparqlist/api/gmdb_medium_by_gmid?gm_id=M...`
+- JCM `cgi-bin/jcm/jcm_grmd?GRMD=...`
+- MediaDive `rest/medium/...` and `rest/solution/...`
+- MediaDB `mediadb.systemsbiology.net/defined_media/media/<positive integer>/`
+- DSMZ `microorganisms/medium/pdf/DSMZ_Medium....pdf`
+- KOMODO `(komodo/)servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=...`
 
-**When it runs:**
-- Only validates `EvidenceItem` instances with both `reference` and `snippet` populated
-- Skips historical recipes without PMIDs (no error)
-- Creates `references_cache/` for downloaded abstracts
+These checks verify the returned accession, preserve brackets, chemical case,
+hydrate digits, signs, decimals and units, and fold only presentation whitespace.
+JCM table cells are separated while inline chemical subscripts stay attached.
+Recipe API titles come from their metadata; an invented descriptive title does
+not pass merely because the accession matches. Official-source errors never
+fall back to fuzzy matching or skipped-prefix success.
+
+KOMODO detail pages require the exact accession and medium heading, one feature
+table, one five-column ingredient table and the provider's per-liter statement.
+Matching preserves displayed amounts, nulls and inline chemical digits; it does
+not interpret the Gram/Mol columns as sufficient evidence for serum density or
+other conversions. Duplicate/ambiguous rows, hidden content and changed table
+shapes fail closed. Calculated SEED ion totals and unrelated page text are not
+included in the recipe matching text. Unsupported page shapes require review.
+
+MediaDB requires matching title/heading and self-accession link, one compound
+table with its stated row count, and the exact `Amount (mM)` header. A quote must
+match within one title, header, or ingredient row; text from separate rows is
+not concatenated into evidence. `None` is preserved, not converted to zero.
+Duplicate compounds, malformed amounts/cells, and hidden or inert recipe content
+fail closed. Other page prose is excluded. Database-table agreement does not
+verify the original article's formulation. MediaDB SQL-export URLs still use the
+upstream route; this adapter does not waive missing export metadata.
+
+Raw responses are cached separately under
+`references_cache/official-recipes-v1/`, with URL, timestamp and SHA256 integrity
+checks. Old generic Markdown captures are not reused. Corrupt caches fail closed;
+refresh them explicitly:
+
+```bash
+uv run python scripts/validate_recipe_references.py path/to/record.yaml --refresh
+uv run python scripts/validate_recipe_references.py path/to/record.yaml --json
+```
+
+Use `--cache-dir` or `--config` for a different cache/configuration. The JSON
+output includes successful and failed checks, unlike the upstream CLI's count
+of issues. MediaRecipe versus SolutionRecipe is inferred unless
+`--target-class` is supplied. Reference occurrence checks do not establish
+scientific entailment, completeness, stock scope, chemical identity, or correct
+concentration arithmetic. Missing snippets still need the separate ingredient
+review; zero reference checks is not proof that a record is fully evidenced.
+
+Other references, including `PMID:12345678` and `doi:10.1038/...`, retain the
+upstream validator's configured retrieval, normalization and matching behavior.
+There is no blanket exemption for historical or non-PMID references: unresolved
+sources must be reported according to that configuration. The LinkML plugin
+checks populated excerpt/reference pairs and separately checks bibliography
+titles where present.
 
 ## Current Schema Coverage
 

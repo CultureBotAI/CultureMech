@@ -1,0 +1,34 @@
+{
+  "terminal": true,
+  "source_sha256": "56a1e7d74710535fa9ea37fd3859560d08414fe5b8eb38e9290efd5d1f630c9c",
+  "input_records": 15910,
+  "output_groups": 10777,
+  "targets": [
+    {
+      "path": "data/normalized_yaml/archaea/TOGO_M196_Pyrodictium_Brockii_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/archaea/TOGO_M196_Pyrodictium_Brockii_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    },
+    {
+      "path": "data/normalized_yaml/archaea/TOGO_M197_Pyrodictium_Ocultum_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/archaea/TOGO_M197_Pyrodictium_Ocultum_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    },
+    {
+      "path": "data/normalized_yaml/archaea/TOGO_M198_Pyrodictium_Abysii_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/archaea/TOGO_M198_Pyrodictium_Abysii_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    }
+  ],
+  "derived_yaml_written": false,
+  "scope": "Full corpus routing; only three repaired outputs recertified."
+}

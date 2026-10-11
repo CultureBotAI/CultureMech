@@ -1,0 +1,79 @@
+{
+  "terminal": true,
+  "normalized_input_hash_unchanged": true,
+  "production_code_hashes_match_retention": true,
+  "derived_manifest_matches_preview": true,
+  "checks": [
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "src/culturemech/merge/fingerprint.py",
+        "src/culturemech/merge/formulation.py",
+        "src/culturemech/merge/matcher.py",
+        "src/culturemech/merge/merger.py",
+        "src/culturemech/merge/merge_recipes.py",
+        "tests/test_formulation_merge.py",
+        "tests/test_formulation_merge_audit.py",
+        "tests/test_methanogen_merge_retention.py",
+        "tests/test_merger.py",
+        "reports/ingredient_concentration_curation/20261008-formulation-merge/audit.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz111-preparation/retention.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/formulation-final-0.log"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "src/culturemech/merge/fingerprint.py",
+        "src/culturemech/merge/formulation.py",
+        "src/culturemech/merge/matcher.py",
+        "src/culturemech/merge/merger.py",
+        "src/culturemech/merge/merge_recipes.py",
+        "tests/test_formulation_merge.py",
+        "tests/test_formulation_merge_audit.py",
+        "tests/test_methanogen_merge_retention.py",
+        "tests/test_merger.py",
+        "reports/ingredient_concentration_curation/20261008-formulation-merge/audit.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz111-preparation/retention.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/formulation-final-1.log"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/formulation-final-2.log"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_formulation_merge.py",
+        "tests/test_formulation_merge_audit.py",
+        "tests/test_methanogen_merge_retention.py",
+        "tests/test_merger.py",
+        "tests/test_fingerprint.py",
+        "tests/test_solution_merge_routing.py",
+        "tests/test_dsmz13_stock_only.py",
+        "tests/test_import_nbrc_live_candidates.py",
+        "tests/test_derived_artifacts.py::test_the_manifest_matches_a_fresh_computation",
+        "tests/test_recipe_indexes.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/formulation-final-3.log"
+    }
+  ],
+  "refreshed_index_files_verified": 8,
+  "publication_ready": false
+}

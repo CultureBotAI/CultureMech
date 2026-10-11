@@ -16,6 +16,33 @@ composition:
     label: potassium dihydrogen phosphate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/2793
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "KH2PO4",
+                      "compound_id": 11,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 37.425,
+                      "unit": "g",
+                      "g_l": 37.425,
+                      "mmol_l": 275.012,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (KH2PO4)
+      in MediaDive solution 2793; locator=$.data.recipe[0] (compound_id=11). Provider
+      explicitly reports g_l=37.425. Arithmetic check: 37.425 g * 1 g/g / (1000 ml
+      / 1000 ml per L) = 37.425 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T09:15:43.279294+00:00;
+      response SHA256=44bbdff72650be5952fbeb83b5d133b0b3da28821a6072595b6497bad8acd699.'
 - preferred_term: Na2HPO4
   concentration:
     value: '48.95'
@@ -28,6 +55,33 @@ composition:
     label: disodium hydrogenphosphate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/2793
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Na2HPO4",
+                      "compound_id": 233,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 48.95,
+                      "unit": "g",
+                      "g_l": 48.95,
+                      "mmol_l": 344.818,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Na2HPO4)
+      in MediaDive solution 2793; locator=$.data.recipe[1] (compound_id=233). Provider
+      explicitly reports g_l=48.95. Arithmetic check: 48.95 g * 1 g/g / (1000 ml /
+      1000 ml per L) = 48.95 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T09:15:43.279294+00:00;
+      response SHA256=44bbdff72650be5952fbeb83b5d133b0b3da28821a6072595b6497bad8acd699.'
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -69,6 +123,17 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-10-07T09:21:52.094915+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/2793
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "37.425"} ->
+    {"unit": "G_PER_L", "value": "37.425"} (evidence_only); composition[1].concentration:
+    {"unit": "G_PER_L", "value": "48.95"} -> {"unit": "G_PER_L", "value": "48.95"}
+    (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -77,3 +142,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/2793
+  title: 'MediaDive solution 2793: Phosphate Buffer, pH 6.7'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=44bbdff72650be5952fbeb83b5d133b0b3da28821a6072595b6497bad8acd699;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

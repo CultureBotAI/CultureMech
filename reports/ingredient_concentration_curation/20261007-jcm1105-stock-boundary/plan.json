@@ -1,0 +1,333 @@
+{
+  "version": 1,
+  "action": "CORRECTED_JCM1105_ORIGINAL_RECIPE_STOCK_BOUNDARY",
+  "commit": "f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f",
+  "created_at": "2026-10-07T15:59:37.485409+00:00",
+  "records": [
+    {
+      "path": "data/normalized_yaml/bacterial/virgibacillus_merv_medium.yaml",
+      "id": "CultureMech:002283",
+      "medium_id": "J1105",
+      "action": "CORRECTED_JCM1105_ORIGINAL_RECIPE_STOCK_BOUNDARY",
+      "before_text": "id: CultureMech:002283\nname: virgibacillus_merv_medium\noriginal_name: VIRGIBACILLUS MERV MEDIUM\ncategory: bacterial\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: LIQUID\nph_value: 8.0\nmedia_term:\n  preferred_term: JCM Medium J1105\n  term:\n    id: mediadive.medium:J1105\n    label: VIRGIBACILLUS MERV MEDIUM\nnotes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1105'\ningredients:\n- preferred_term: Yeast extract\n  concentration:\n    value: '1000'\n    unit: G_PER_L\n- preferred_term: Trisodium citrate x 3 H2O\n  concentration:\n    value: '300'\n    unit: G_PER_L\n  mediaingredientmech_chebi_term:\n    id: CHEBI:53258\n    label: sodium citrate\n  term:\n    id: CHEBI:53258\n    label: sodium citrate\n- preferred_term: MgSO4 x 7 H2O\n  term:\n    id: CHEBI:31795\n    label: magnesium sulfate heptahydrate\n  concentration:\n    value: '100'\n    unit: G_PER_L\n  mediaingredientmech_chebi_term:\n    id: CHEBI:31795\n    label: magnesium sulfate heptahydrate\n- preferred_term: KCl\n  term:\n    id: CHEBI:32588\n    label: potassium chloride\n  concentration:\n    value: '300'\n    unit: G_PER_L\n  mediaingredientmech_chebi_term:\n    id: CHEBI:32588\n    label: potassium chloride\n- preferred_term: NaCl\n  term:\n    id: CHEBI:26710\n    label: sodium chloride\n  concentration:\n    value: '10000'\n    unit: G_PER_L\n  mediaingredientmech_chebi_term:\n    id: CHEBI:26710\n    label: sodium chloride\n- preferred_term: Na2CO3\n  term:\n    id: CHEBI:29377\n    label: sodium carbonate\n  concentration:\n    value: '10'\n    unit: G_PER_L\n  mediaingredientmech_chebi_term:\n    id: CHEBI:29377\n    label: sodium carbonate\npreparation_steps:\n- step_number: 1\n  action: AUTOCLAVE\n  description: 'Add components to distilled water and bring volume to 1.0 L. For preparation\n    of solid medium, add 20.0 g/L agar. After autoclaving, add the following solution\n    (autoclaved):'\n- step_number: 2\n  action: ADJUST_PH\n  description: Readjust pH to 8.0, if necessary.\napplications:\n- Microbial cultivation\ncuration_history:\n- timestamp: '2026-01-26T17:53:18.650080Z'\n  curator: mediadive-import\n  action: Imported from MediaDive\n  notes: 'Source: JCM, ID: J1105'\n- timestamp: '2026-03-13T06:19:11.972330Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:002283'\n- timestamp: '2026-03-17T06:30:56.000000Z'\n  curator: mediaingredientmech-enrichment-v1.0\n  action: Added MediaIngredientMech links\n  notes: Linked ingredients to MediaIngredientMech identifiers\n- timestamp: '2026-03-17T19:45:24.866794+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"VIRGIBACILLUS MERV MEDIUM\" to \"virgibacillus_merv_medium\"\n    for consistent matching\n- timestamp: '2026-06-05T07:41:55.090718+00:00'\n  curator: mim-legacy-to-chebi-migration-v1.0\n  action: Refreshed legacy MediaIngredientMech links to CHEBI keying\n  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term\n    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN\n    id scheme.'\n- timestamp: '2026-06-10T07:47:14.494444+00:00'\n  curator: primary-term-label-canonicalization-v1.0\n  action: Canonicalized primary term label to OBO canonical (OAK)\n  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.\nhigh_metal: true\n",
+      "before_sha256": "349e8317e227697953c3b6feafc3cba1aabc29c827f35c792803896cb2e311e7",
+      "after_text": "id: CultureMech:002283\nname: virgibacillus_merv_medium\noriginal_name: VIRGIBACILLUS MERV MEDIUM\ncategory: bacterial\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: LIQUID\nph_value: 8.0\nmedia_term:\n  preferred_term: JCM Medium J1105\n  term:\n    id: mediadive.medium:J1105\n    label: VIRGIBACILLUS MERV MEDIUM\nnotes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1105'\ningredients: []\npreparation_steps:\n- step_number: 1\n  action: AUTOCLAVE\n  description: Autoclave the prepared 1.0 L base. After autoclaving, add 10.0 ml of\n    the autoclaved 10% Na2CO3 solution.\n- step_number: 2\n  action: ADJUST_PH\n  description: Readjust pH to 8.0, if necessary.\napplications:\n- Microbial cultivation\ncuration_history:\n- timestamp: '2026-01-26T17:53:18.650080Z'\n  curator: mediadive-import\n  action: Imported from MediaDive\n  notes: 'Source: JCM, ID: J1105'\n- timestamp: '2026-03-13T06:19:11.972330Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:002283'\n- timestamp: '2026-03-17T06:30:56.000000Z'\n  curator: mediaingredientmech-enrichment-v1.0\n  action: Added MediaIngredientMech links\n  notes: Linked ingredients to MediaIngredientMech identifiers\n- timestamp: '2026-03-17T19:45:24.866794+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"VIRGIBACILLUS MERV MEDIUM\" to \"virgibacillus_merv_medium\"\n    for consistent matching\n- timestamp: '2026-06-05T07:41:55.090718+00:00'\n  curator: mim-legacy-to-chebi-migration-v1.0\n  action: Refreshed legacy MediaIngredientMech links to CHEBI keying\n  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term\n    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN\n    id scheme.'\n- timestamp: '2026-06-10T07:47:14.494444+00:00'\n  curator: primary-term-label-canonicalization-v1.0\n  action: Canonicalized primary term label to OBO canonical (OAK)\n  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.\n- timestamp: '2026-10-07T15:59:37.485409+00:00'\n  curator: codex\n  action: CORRECTED_JCM1105_ORIGINAL_RECIPE_STOCK_BOUNDARY\n  notes: Restored six ingredient nodes to the original base and carbonate-stock stages;\n    corrected five base concentrations using explicit 1 L makeup; removed unsupported\n    carbonate g/L and retained unspecified 10% strength in notes. Added two explicit\n    batch-volume doses and scoped preparation. IDs, prior history, mappings, liquid\n    state, pH and unrelated metadata preserved.\n  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1105\n  changes: 'ingredients[0].concentration -> solutions[0].composition[0].concentration:\n    {\"unit\": \"G_PER_L\", \"value\": \"1000\"} -> {\"unit\": \"G_PER_L\", \"value\": \"10\"}; ingredients[1].concentration\n    -> solutions[0].composition[1].concentration: {\"unit\": \"G_PER_L\", \"value\": \"300\"}\n    -> {\"unit\": \"G_PER_L\", \"value\": \"3\"}; ingredients[2].concentration -> solutions[0].composition[2].concentration:\n    {\"unit\": \"G_PER_L\", \"value\": \"100\"} -> {\"unit\": \"G_PER_L\", \"value\": \"1\"}; ingredients[3].concentration\n    -> solutions[0].composition[3].concentration: {\"unit\": \"G_PER_L\", \"value\": \"300\"}\n    -> {\"unit\": \"G_PER_L\", \"value\": \"3\"}; ingredients[4].concentration -> solutions[0].composition[4].concentration:\n    {\"unit\": \"G_PER_L\", \"value\": \"10000\"} -> {\"unit\": \"G_PER_L\", \"value\": \"100\"};\n    ingredients[5].concentration -> solutions[1].composition[0].concentration: {\"unit\":\n    \"G_PER_L\", \"value\": \"10\"} -> null; None -> solutions[0].concentration: null ->\n    {\"unit\": \"L\", \"value\": \"1\"}; None -> solutions[1].concentration: null -> {\"unit\":\n    \"L\", \"value\": \"0.010\"}; preparation_steps[0].description -> solutions[0].preparation_notes:\n    \"Add components to distilled water and bring volume to 1.0 L. For preparation\n    of solid medium, add 20.0 g/L agar. After autoclaving, add the following solution\n    (autoclaved):\" -> \"Add components to distilled water and bring volume to 1.0 L.\n    For preparation of solid medium, add 20.0 g/L agar.\"; None -> solutions[1].preparation_notes:\n    null -> \"Autoclave the carbonate solution before adding it to the autoclaved base.\";\n    preparation_steps[0].description -> preparation_steps[0].description: \"Add components\n    to distilled water and bring volume to 1.0 L. For preparation of solid medium,\n    add 20.0 g/L agar. After autoclaving, add the following solution (autoclaved):\"\n    -> \"Autoclave the prepared 1.0 L base. After autoclaving, add 10.0 ml of the autoclaved\n    10% Na2CO3 solution.\"'\nhigh_metal: true\nsolutions:\n- preferred_term: JCM 1105 base solution\n  concentration:\n    value: '1'\n    unit: L\n  notes: The complete 1.0 L prepared base is used per recipe batch; this is not a\n    final-medium volume or per-liter working dose.\n  composition:\n  - preferred_term: Yeast extract\n    concentration:\n      value: '10'\n      unit: G_PER_L\n    evidence:\n    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1105\n      supports: SUPPORT\n      snippet: Yeast extract 10.0 g\n      explanation: 'Relocates ingredients[0] to solutions[0].composition[0] and corrects\n        solutions[0].composition[0].concentration (Yeast extract) to the prepared-base\n        amount: 10.0 g / 1.0 L = 10 g/L. Additional exact makeup quote: \"Add components\n        to distilled water and bring volume to 1.0 L.\"; locator=prose between the\n        first and second tables. The imported quantity divided by the later 10 ml\n        stock dose, not the 1 L base. Original JCM 1105 recipe; accessed 2026-10-07;\n        capture SHA256=2c7d8a4ae523578495afb0f7de58f4185a15a9cd5a489e938f46602d714356f8.\n        HTML entities decoded and display whitespace normalized; chemical digits and\n        source hydrate forms preserved. These are distinct preparation stages; no\n        complete-medium final volume, density, percentage basis, ontology equivalence\n        or growth claim is inferred.'\n  - preferred_term: Trisodium citrate x 3 H2O\n    concentration:\n      value: '3'\n      unit: G_PER_L\n    mediaingredientmech_chebi_term:\n      id: CHEBI:53258\n      label: sodium citrate\n    term:\n      id: CHEBI:53258\n      label: sodium citrate\n    evidence:\n    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1105\n      supports: SUPPORT\n      snippet: Trisodium citrate\u00b73H2O 3.0 g\n      explanation: 'Relocates ingredients[1] to solutions[0].composition[1] and corrects\n        solutions[0].composition[1].concentration (Trisodium citrate\u00b73H2O) to the\n        prepared-base amount: 3.0 g / 1.0 L = 3 g/L. Additional exact makeup quote:\n        \"Add components to distilled water and bring volume to 1.0 L.\"; locator=prose\n        between the first and second tables. The imported quantity divided by the\n        later 10 ml stock dose, not the 1 L base. Original JCM 1105 recipe; accessed\n        2026-10-07; capture SHA256=2c7d8a4ae523578495afb0f7de58f4185a15a9cd5a489e938f46602d714356f8.\n        HTML entities decoded and display whitespace normalized; chemical digits and\n        source hydrate forms preserved. These are distinct preparation stages; no\n        complete-medium final volume, density, percentage basis, ontology equivalence\n        or growth claim is inferred.'\n  - preferred_term: MgSO4 x 7 H2O\n    term:\n      id: CHEBI:31795\n      label: magnesium sulfate heptahydrate\n    concentration:\n      value: '1'\n      unit: G_PER_L\n    mediaingredientmech_chebi_term:\n      id: CHEBI:31795\n      label: magnesium sulfate heptahydrate\n    evidence:\n    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1105\n      supports: SUPPORT\n      snippet: MgSO4\u00b77H2O 1.0 g\n      explanation: 'Relocates ingredients[2] to solutions[0].composition[2] and corrects\n        solutions[0].composition[2].concentration (MgSO4\u00b77H2O) to the prepared-base\n        amount: 1.0 g / 1.0 L = 1 g/L. Additional exact makeup quote: \"Add components\n        to distilled water and bring volume to 1.0 L.\"; locator=prose between the\n        first and second tables. The imported quantity divided by the later 10 ml\n        stock dose, not the 1 L base. Original JCM 1105 recipe; accessed 2026-10-07;\n        capture SHA256=2c7d8a4ae523578495afb0f7de58f4185a15a9cd5a489e938f46602d714356f8.\n        HTML entities decoded and display whitespace normalized; chemical digits and\n        source hydrate forms preserved. These are distinct preparation stages; no\n        complete-medium final volume, density, percentage basis, ontology equivalence\n        or growth claim is inferred.'\n  - preferred_term: KCl\n    term:\n      id: CHEBI:32588\n      label: potassium chloride\n    concentration:\n      value: '3'\n      unit: G_PER_L\n    mediaingredientmech_chebi_term:\n      id: CHEBI:32588\n      label: potassium chloride\n    evidence:\n    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1105\n      supports: SUPPORT\n      snippet: KCl 3.0 g\n      explanation: 'Relocates ingredients[3] to solutions[0].composition[3] and corrects\n        solutions[0].composition[3].concentration (KCl) to the prepared-base amount:\n        3.0 g / 1.0 L = 3 g/L. Additional exact makeup quote: \"Add components to distilled\n        water and bring volume to 1.0 L.\"; locator=prose between the first and second\n        tables. The imported quantity divided by the later 10 ml stock dose, not the\n        1 L base. Original JCM 1105 recipe; accessed 2026-10-07; capture SHA256=2c7d8a4ae523578495afb0f7de58f4185a15a9cd5a489e938f46602d714356f8.\n        HTML entities decoded and display whitespace normalized; chemical digits and\n        source hydrate forms preserved. These are distinct preparation stages; no\n        complete-medium final volume, density, percentage basis, ontology equivalence\n        or growth claim is inferred.'\n  - preferred_term: NaCl\n    term:\n      id: CHEBI:26710\n      label: sodium chloride\n    concentration:\n      value: '100'\n      unit: G_PER_L\n    mediaingredientmech_chebi_term:\n      id: CHEBI:26710\n      label: sodium chloride\n    evidence:\n    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1105\n      supports: SUPPORT\n      snippet: NaCl 100.0 g\n      explanation: 'Relocates ingredients[4] to solutions[0].composition[4] and corrects\n        solutions[0].composition[4].concentration (NaCl) to the prepared-base amount:\n        100.0 g / 1.0 L = 100 g/L. Additional exact makeup quote: \"Add components\n        to distilled water and bring volume to 1.0 L.\"; locator=prose between the\n        first and second tables. The imported quantity divided by the later 10 ml\n        stock dose, not the 1 L base. Original JCM 1105 recipe; accessed 2026-10-07;\n        capture SHA256=2c7d8a4ae523578495afb0f7de58f4185a15a9cd5a489e938f46602d714356f8.\n        HTML entities decoded and display whitespace normalized; chemical digits and\n        source hydrate forms preserved. These are distinct preparation stages; no\n        complete-medium final volume, density, percentage basis, ontology equivalence\n        or growth claim is inferred.'\n  preparation_notes: Add components to distilled water and bring volume to 1.0 L.\n    For preparation of solid medium, add 20.0 g/L agar.\n- preferred_term: 10% Na2CO3 solution\n  concentration:\n    value: '0.010'\n    unit: L\n  notes: Add 10.0 ml per recipe batch after autoclaving the 1.0 L base. The percentage\n    basis and final-medium volume are not specified.\n  composition:\n  - preferred_term: Na2CO3\n    term:\n      id: CHEBI:29377\n      label: sodium carbonate\n    mediaingredientmech_chebi_term:\n      id: CHEBI:29377\n      label: sodium carbonate\n    notes: Original JCM 1105 specifies a 10% Na2CO3 solution without its percentage\n      basis. The 10.0 ml addition is a stock dose, not 10 g/L carbonate. No numeric\n      stock or final-medium carbonate concentration is asserted.\n    evidence:\n    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1105\n      supports: SUPPORT\n      snippet: 10% Na2CO3 solution 10.0 ml\n      explanation: Relocates ingredients[5] to solutions[1].composition[0], removes\n        the unsupported 10 g/L encoding from solutions[1].composition[0].concentration\n        and records the source's unspecified percentage basis in solutions[1].composition[0].notes.\n        The original table states a 10.0 ml stock addition, not a carbonate mass.\n        No numeric carbonate concentration is asserted at either stage. Original JCM\n        1105 recipe; accessed 2026-10-07; capture SHA256=2c7d8a4ae523578495afb0f7de58f4185a15a9cd5a489e938f46602d714356f8.\n        HTML entities decoded and display whitespace normalized; chemical digits and\n        source hydrate forms preserved. These are distinct preparation stages; no\n        complete-medium final volume, density, percentage basis, ontology equivalence\n        or growth claim is inferred.\n  preparation_notes: Autoclave the carbonate solution before adding it to the autoclaved\n    base.\nevidence:\n- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1105\n  supports: SUPPORT\n  snippet: Add components to distilled water and bring volume to 1.0 L.\n  explanation: 'The explicitly prepared 1.0 L base is used per recipe batch. This\n    creates solutions[0].concentration as a batch amount, not a final-volume claim.\n    Original JCM 1105 recipe; accessed 2026-10-07; capture SHA256=2c7d8a4ae523578495afb0f7de58f4185a15a9cd5a489e938f46602d714356f8.\n    HTML entities decoded and display whitespace normalized; chemical digits and source\n    hydrate forms preserved. These are distinct preparation stages; no complete-medium\n    final volume, density, percentage basis, ontology equivalence or growth claim\n    is inferred. The original 10.0 ml dose / 1000 ml per L = 0.010 L per batch. This\n    creates solutions[1].concentration, not a per-liter working dose or carbonate\n    mass. Original JCM 1105 recipe; accessed 2026-10-07; capture SHA256=2c7d8a4ae523578495afb0f7de58f4185a15a9cd5a489e938f46602d714356f8.\n    HTML entities decoded and display whitespace normalized; chemical digits and source\n    hydrate forms preserved. These are distinct preparation stages; no complete-medium\n    final volume, density, percentage basis, ontology equivalence or growth claim\n    is inferred. Moves base makeup and conditional agar instructions into solutions[0].preparation_notes.\n    Liquid physical state remains unchanged; no agar is added. Original JCM 1105 recipe;\n    accessed 2026-10-07; capture SHA256=2c7d8a4ae523578495afb0f7de58f4185a15a9cd5a489e938f46602d714356f8.\n    HTML entities decoded and display whitespace normalized; chemical digits and source\n    hydrate forms preserved. These are distinct preparation stages; no complete-medium\n    final volume, density, percentage basis, ontology equivalence or growth claim\n    is inferred. Records the source''s separately autoclaved carbonate-stock preparation\n    in solutions[1].preparation_notes. Original JCM 1105 recipe; accessed 2026-10-07;\n    capture SHA256=2c7d8a4ae523578495afb0f7de58f4185a15a9cd5a489e938f46602d714356f8.\n    HTML entities decoded and display whitespace normalized; chemical digits and source\n    hydrate forms preserved. These are distinct preparation stages; no complete-medium\n    final volume, density, percentage basis, ontology equivalence or growth claim\n    is inferred. Clarifies preparation_steps[0].description after moving base makeup\n    to its solution: autoclave the base, then add the autoclaved 10.0 ml stock. The\n    existing AUTOCLAVE action and later pH readjustment are preserved. Original JCM\n    1105 recipe; accessed 2026-10-07; capture SHA256=2c7d8a4ae523578495afb0f7de58f4185a15a9cd5a489e938f46602d714356f8.\n    HTML entities decoded and display whitespace normalized; chemical digits and source\n    hydrate forms preserved. These are distinct preparation stages; no complete-medium\n    final volume, density, percentage basis, ontology equivalence or growth claim\n    is inferred. Additional exact preparation excerpt: \"Add components to distilled\n    water and bring volume to 1.0 L. For preparation of solid medium, add 20.0 g/L\n    agar. After autoclaving, add the following solution (autoclaved):\"; locator=between\n    the tables. Additional exact stock-row excerpt: \"10% Na2CO3 solution 10.0 ml\";\n    locator=second table, sole row.'\nreferences:\n- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1105\n  title: 'JCM 1105: VIRGIBACILLUS MERV MEDIUM'\n  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;\n    source_organization=JCM; accessed_on=2026-10-07; capture_sha256=2c7d8a4ae523578495afb0f7de58f4185a15a9cd5a489e938f46602d714356f8;\n    locator=two ingredient tables and intervening/following preparation. Individual\n    authors and recipe publication year are not supplied; copyright year is not publication\n    evidence.\n",
+      "after_sha256": "f9dcaf8cc5d5b611156003e914b6e89689101638ab325278b9b959a09e58bdd4",
+      "source_sha256": "2c7d8a4ae523578495afb0f7de58f4185a15a9cd5a489e938f46602d714356f8",
+      "source_accessed_at": "2026-10-07",
+      "claims": [
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            0,
+            "concentration"
+          ],
+          "old_pointer": [
+            "ingredients",
+            0,
+            "concentration"
+          ],
+          "field": "solutions[0].composition[0].concentration",
+          "old_field": "ingredients[0].concentration",
+          "old": {
+            "value": "1000",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "10",
+            "unit": "G_PER_L"
+          },
+          "status": "correct",
+          "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1105",
+          "snippet": "Yeast extract 10.0 g",
+          "locator": "first table, row 1",
+          "explanation": "Relocates ingredients[0] to solutions[0].composition[0] and corrects solutions[0].composition[0].concentration (Yeast extract) to the prepared-base amount: 10.0 g / 1.0 L = 10 g/L. Additional exact makeup quote: \"Add components to distilled water and bring volume to 1.0 L.\"; locator=prose between the first and second tables. The imported quantity divided by the later 10 ml stock dose, not the 1 L base. Original JCM 1105 recipe; accessed 2026-10-07; capture SHA256=2c7d8a4ae523578495afb0f7de58f4185a15a9cd5a489e938f46602d714356f8. HTML entities decoded and display whitespace normalized; chemical digits and source hydrate forms preserved. These are distinct preparation stages; no complete-medium final volume, density, percentage basis, ontology equivalence or growth claim is inferred.",
+          "evidence_pointer": [
+            "solutions",
+            0,
+            "composition",
+            0
+          ]
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            1,
+            "concentration"
+          ],
+          "old_pointer": [
+            "ingredients",
+            1,
+            "concentration"
+          ],
+          "field": "solutions[0].composition[1].concentration",
+          "old_field": "ingredients[1].concentration",
+          "old": {
+            "value": "300",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "3",
+            "unit": "G_PER_L"
+          },
+          "status": "correct",
+          "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1105",
+          "snippet": "Trisodium citrate\u00b73H2O 3.0 g",
+          "locator": "first table, row 2",
+          "explanation": "Relocates ingredients[1] to solutions[0].composition[1] and corrects solutions[0].composition[1].concentration (Trisodium citrate\u00b73H2O) to the prepared-base amount: 3.0 g / 1.0 L = 3 g/L. Additional exact makeup quote: \"Add components to distilled water and bring volume to 1.0 L.\"; locator=prose between the first and second tables. The imported quantity divided by the later 10 ml stock dose, not the 1 L base. Original JCM 1105 recipe; accessed 2026-10-07; capture SHA256=2c7d8a4ae523578495afb0f7de58f4185a15a9cd5a489e938f46602d714356f8. HTML entities decoded and display whitespace normalized; chemical digits and source hydrate forms preserved. These are distinct preparation stages; no complete-medium final volume, density, percentage basis, ontology equivalence or growth claim is inferred.",
+          "evidence_pointer": [
+            "solutions",
+            0,
+            "composition",
+            1
+          ]
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            2,
+            "concentration"
+          ],
+          "old_pointer": [
+            "ingredients",
+            2,
+            "concentration"
+          ],
+          "field": "solutions[0].composition[2].concentration",
+          "old_field": "ingredients[2].concentration",
+          "old": {
+            "value": "100",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "status": "correct",
+          "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1105",
+          "snippet": "MgSO4\u00b77H2O 1.0 g",
+          "locator": "first table, row 3",
+          "explanation": "Relocates ingredients[2] to solutions[0].composition[2] and corrects solutions[0].composition[2].concentration (MgSO4\u00b77H2O) to the prepared-base amount: 1.0 g / 1.0 L = 1 g/L. Additional exact makeup quote: \"Add components to distilled water and bring volume to 1.0 L.\"; locator=prose between the first and second tables. The imported quantity divided by the later 10 ml stock dose, not the 1 L base. Original JCM 1105 recipe; accessed 2026-10-07; capture SHA256=2c7d8a4ae523578495afb0f7de58f4185a15a9cd5a489e938f46602d714356f8. HTML entities decoded and display whitespace normalized; chemical digits and source hydrate forms preserved. These are distinct preparation stages; no complete-medium final volume, density, percentage basis, ontology equivalence or growth claim is inferred.",
+          "evidence_pointer": [
+            "solutions",
+            0,
+            "composition",
+            2
+          ]
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            3,
+            "concentration"
+          ],
+          "old_pointer": [
+            "ingredients",
+            3,
+            "concentration"
+          ],
+          "field": "solutions[0].composition[3].concentration",
+          "old_field": "ingredients[3].concentration",
+          "old": {
+            "value": "300",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "3",
+            "unit": "G_PER_L"
+          },
+          "status": "correct",
+          "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1105",
+          "snippet": "KCl 3.0 g",
+          "locator": "first table, row 4",
+          "explanation": "Relocates ingredients[3] to solutions[0].composition[3] and corrects solutions[0].composition[3].concentration (KCl) to the prepared-base amount: 3.0 g / 1.0 L = 3 g/L. Additional exact makeup quote: \"Add components to distilled water and bring volume to 1.0 L.\"; locator=prose between the first and second tables. The imported quantity divided by the later 10 ml stock dose, not the 1 L base. Original JCM 1105 recipe; accessed 2026-10-07; capture SHA256=2c7d8a4ae523578495afb0f7de58f4185a15a9cd5a489e938f46602d714356f8. HTML entities decoded and display whitespace normalized; chemical digits and source hydrate forms preserved. These are distinct preparation stages; no complete-medium final volume, density, percentage basis, ontology equivalence or growth claim is inferred.",
+          "evidence_pointer": [
+            "solutions",
+            0,
+            "composition",
+            3
+          ]
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            4,
+            "concentration"
+          ],
+          "old_pointer": [
+            "ingredients",
+            4,
+            "concentration"
+          ],
+          "field": "solutions[0].composition[4].concentration",
+          "old_field": "ingredients[4].concentration",
+          "old": {
+            "value": "10000",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "100",
+            "unit": "G_PER_L"
+          },
+          "status": "correct",
+          "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1105",
+          "snippet": "NaCl 100.0 g",
+          "locator": "first table, row 5",
+          "explanation": "Relocates ingredients[4] to solutions[0].composition[4] and corrects solutions[0].composition[4].concentration (NaCl) to the prepared-base amount: 100.0 g / 1.0 L = 100 g/L. Additional exact makeup quote: \"Add components to distilled water and bring volume to 1.0 L.\"; locator=prose between the first and second tables. The imported quantity divided by the later 10 ml stock dose, not the 1 L base. Original JCM 1105 recipe; accessed 2026-10-07; capture SHA256=2c7d8a4ae523578495afb0f7de58f4185a15a9cd5a489e938f46602d714356f8. HTML entities decoded and display whitespace normalized; chemical digits and source hydrate forms preserved. These are distinct preparation stages; no complete-medium final volume, density, percentage basis, ontology equivalence or growth claim is inferred.",
+          "evidence_pointer": [
+            "solutions",
+            0,
+            "composition",
+            4
+          ]
+        },
+        {
+          "pointer": [
+            "solutions",
+            1,
+            "composition",
+            0,
+            "concentration"
+          ],
+          "old_pointer": [
+            "ingredients",
+            5,
+            "concentration"
+          ],
+          "field": "solutions[1].composition[0].concentration",
+          "old_field": "ingredients[5].concentration",
+          "old": {
+            "value": "10",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "remove_unsupported",
+          "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1105",
+          "snippet": "10% Na2CO3 solution 10.0 ml",
+          "locator": "second table, sole row",
+          "explanation": "Relocates ingredients[5] to solutions[1].composition[0], removes the unsupported 10 g/L encoding from solutions[1].composition[0].concentration and records the source's unspecified percentage basis in solutions[1].composition[0].notes. The original table states a 10.0 ml stock addition, not a carbonate mass. No numeric carbonate concentration is asserted at either stage. Original JCM 1105 recipe; accessed 2026-10-07; capture SHA256=2c7d8a4ae523578495afb0f7de58f4185a15a9cd5a489e938f46602d714356f8. HTML entities decoded and display whitespace normalized; chemical digits and source hydrate forms preserved. These are distinct preparation stages; no complete-medium final volume, density, percentage basis, ontology equivalence or growth claim is inferred.",
+          "evidence_pointer": [
+            "solutions",
+            1,
+            "composition",
+            0
+          ]
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "concentration"
+          ],
+          "old_pointer": null,
+          "field": "solutions[0].concentration",
+          "old_field": null,
+          "old": null,
+          "new": {
+            "value": "1",
+            "unit": "L"
+          },
+          "status": "add",
+          "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1105",
+          "snippet": "Add components to distilled water and bring volume to 1.0 L.",
+          "locator": "inter-table preparation",
+          "explanation": "The explicitly prepared 1.0 L base is used per recipe batch. This creates solutions[0].concentration as a batch amount, not a final-volume claim. Original JCM 1105 recipe; accessed 2026-10-07; capture SHA256=2c7d8a4ae523578495afb0f7de58f4185a15a9cd5a489e938f46602d714356f8. HTML entities decoded and display whitespace normalized; chemical digits and source hydrate forms preserved. These are distinct preparation stages; no complete-medium final volume, density, percentage basis, ontology equivalence or growth claim is inferred.",
+          "evidence_pointer": []
+        },
+        {
+          "pointer": [
+            "solutions",
+            1,
+            "concentration"
+          ],
+          "old_pointer": null,
+          "field": "solutions[1].concentration",
+          "old_field": null,
+          "old": null,
+          "new": {
+            "value": "0.010",
+            "unit": "L"
+          },
+          "status": "add",
+          "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1105",
+          "snippet": "10% Na2CO3 solution 10.0 ml",
+          "locator": "second table, sole row",
+          "explanation": "The original 10.0 ml dose / 1000 ml per L = 0.010 L per batch. This creates solutions[1].concentration, not a per-liter working dose or carbonate mass. Original JCM 1105 recipe; accessed 2026-10-07; capture SHA256=2c7d8a4ae523578495afb0f7de58f4185a15a9cd5a489e938f46602d714356f8. HTML entities decoded and display whitespace normalized; chemical digits and source hydrate forms preserved. These are distinct preparation stages; no complete-medium final volume, density, percentage basis, ontology equivalence or growth claim is inferred.",
+          "evidence_pointer": []
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "preparation_notes"
+          ],
+          "old_pointer": [
+            "preparation_steps",
+            0,
+            "description"
+          ],
+          "field": "solutions[0].preparation_notes",
+          "old_field": "preparation_steps[0].description",
+          "old": "Add components to distilled water and bring volume to 1.0 L. For preparation of solid medium, add 20.0 g/L agar. After autoclaving, add the following solution (autoclaved):",
+          "new": "Add components to distilled water and bring volume to 1.0 L. For preparation of solid medium, add 20.0 g/L agar.",
+          "status": "correct_stage",
+          "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1105",
+          "snippet": "Add components to distilled water and bring volume to 1.0 L. For preparation of solid medium, add 20.0 g/L agar. After autoclaving, add the following solution (autoclaved):",
+          "locator": "inter-table preparation",
+          "explanation": "Moves base makeup and conditional agar instructions into solutions[0].preparation_notes. Liquid physical state remains unchanged; no agar is added. Original JCM 1105 recipe; accessed 2026-10-07; capture SHA256=2c7d8a4ae523578495afb0f7de58f4185a15a9cd5a489e938f46602d714356f8. HTML entities decoded and display whitespace normalized; chemical digits and source hydrate forms preserved. These are distinct preparation stages; no complete-medium final volume, density, percentage basis, ontology equivalence or growth claim is inferred.",
+          "evidence_pointer": []
+        },
+        {
+          "pointer": [
+            "solutions",
+            1,
+            "preparation_notes"
+          ],
+          "old_pointer": null,
+          "field": "solutions[1].preparation_notes",
+          "old_field": null,
+          "old": null,
+          "new": "Autoclave the carbonate solution before adding it to the autoclaved base.",
+          "status": "add_stage",
+          "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1105",
+          "snippet": "After autoclaving, add the following solution (autoclaved):",
+          "locator": "inter-table preparation",
+          "explanation": "Records the source's separately autoclaved carbonate-stock preparation in solutions[1].preparation_notes. Original JCM 1105 recipe; accessed 2026-10-07; capture SHA256=2c7d8a4ae523578495afb0f7de58f4185a15a9cd5a489e938f46602d714356f8. HTML entities decoded and display whitespace normalized; chemical digits and source hydrate forms preserved. These are distinct preparation stages; no complete-medium final volume, density, percentage basis, ontology equivalence or growth claim is inferred.",
+          "evidence_pointer": []
+        },
+        {
+          "pointer": [
+            "preparation_steps",
+            0,
+            "description"
+          ],
+          "old_pointer": [
+            "preparation_steps",
+            0,
+            "description"
+          ],
+          "field": "preparation_steps[0].description",
+          "old_field": "preparation_steps[0].description",
+          "old": "Add components to distilled water and bring volume to 1.0 L. For preparation of solid medium, add 20.0 g/L agar. After autoclaving, add the following solution (autoclaved):",
+          "new": "Autoclave the prepared 1.0 L base. After autoclaving, add 10.0 ml of the autoclaved 10% Na2CO3 solution.",
+          "status": "correct_stage",
+          "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1105",
+          "snippet": "Add components to distilled water and bring volume to 1.0 L. For preparation of solid medium, add 20.0 g/L agar. After autoclaving, add the following solution (autoclaved):",
+          "locator": "inter-table preparation and following stock table",
+          "explanation": "Clarifies preparation_steps[0].description after moving base makeup to its solution: autoclave the base, then add the autoclaved 10.0 ml stock. The existing AUTOCLAVE action and later pH readjustment are preserved. Original JCM 1105 recipe; accessed 2026-10-07; capture SHA256=2c7d8a4ae523578495afb0f7de58f4185a15a9cd5a489e938f46602d714356f8. HTML entities decoded and display whitespace normalized; chemical digits and source hydrate forms preserved. These are distinct preparation stages; no complete-medium final volume, density, percentage basis, ontology equivalence or growth claim is inferred.",
+          "evidence_pointer": []
+        }
+      ]
+    }
+  ]
+}

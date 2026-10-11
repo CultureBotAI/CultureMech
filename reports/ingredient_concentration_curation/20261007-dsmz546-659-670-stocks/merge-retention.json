@@ -1,0 +1,159 @@
+{
+  "records": 9,
+  "passed": 5,
+  "details": [
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_546_LC_BROTH_medium.yaml",
+      "status": "medium_merge_checked",
+      "fingerprint": "dbd8b8ab66daf170486a4e8619c180917f0fcee4c301668ddd613d1ed9ee48c2",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_546_LC_BROTH_medium.yaml",
+        "data/normalized_yaml/bacterial/lc_broth_medium.yaml"
+      ],
+      "checks": {
+        "ingredients": true,
+        "solutions": true,
+        "preparation_steps": true,
+        "notes": true,
+        "evidence": true,
+        "references": true,
+        "event": true
+      },
+      "passed": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/lc_broth_medium.yaml",
+      "status": "medium_merge_checked",
+      "fingerprint": "dbd8b8ab66daf170486a4e8619c180917f0fcee4c301668ddd613d1ed9ee48c2",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_546_LC_BROTH_medium.yaml",
+        "data/normalized_yaml/bacterial/lc_broth_medium.yaml"
+      ],
+      "checks": {
+        "ingredients": false,
+        "solutions": true,
+        "preparation_steps": true,
+        "notes": false,
+        "evidence": false,
+        "references": false,
+        "event": false
+      },
+      "passed": false
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_659_M17_medium_modified.yaml",
+      "status": "medium_merge_checked",
+      "fingerprint": "64fc0ba318251e061eb25454bd494eadc7fd885ba13e6e9dc9a6ace8fd52f15c",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_659_M17_medium_modified.yaml",
+        "data/normalized_yaml/bacterial/m17_medium_modified.yaml"
+      ],
+      "checks": {
+        "ingredients": true,
+        "solutions": true,
+        "preparation_steps": true,
+        "notes": true,
+        "evidence": true,
+        "references": true,
+        "event": true
+      },
+      "passed": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/m17_medium_modified.yaml",
+      "status": "medium_merge_checked",
+      "fingerprint": "64fc0ba318251e061eb25454bd494eadc7fd885ba13e6e9dc9a6ace8fd52f15c",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_659_M17_medium_modified.yaml",
+        "data/normalized_yaml/bacterial/m17_medium_modified.yaml"
+      ],
+      "checks": {
+        "ingredients": false,
+        "solutions": true,
+        "preparation_steps": true,
+        "notes": false,
+        "evidence": false,
+        "references": false,
+        "event": false
+      },
+      "passed": false
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_670_MS-MEDIUM.yaml",
+      "status": "medium_merge_checked",
+      "fingerprint": "c55ea50e3802b4b4a560bddc553566f77d7d890fb57533880daaa7aa654e46b0",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_670_MS-MEDIUM.yaml",
+        "data/normalized_yaml/bacterial/acidiferrobacter_ms_medium.yaml"
+      ],
+      "checks": {
+        "ingredients": true,
+        "solutions": true,
+        "preparation_steps": true,
+        "notes": false,
+        "evidence": false,
+        "references": false,
+        "event": false
+      },
+      "passed": false
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/acidiferrobacter_ms_medium.yaml",
+      "status": "medium_merge_checked",
+      "fingerprint": "c55ea50e3802b4b4a560bddc553566f77d7d890fb57533880daaa7aa654e46b0",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_670_MS-MEDIUM.yaml",
+        "data/normalized_yaml/bacterial/acidiferrobacter_ms_medium.yaml"
+      ],
+      "checks": {
+        "ingredients": false,
+        "solutions": true,
+        "preparation_steps": true,
+        "notes": true,
+        "evidence": true,
+        "references": true,
+        "event": true
+      },
+      "passed": false
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_1205_Main_sol_546.yaml",
+      "status": "standalone_solution_routing_checked",
+      "checks": {
+        "excluded_from_medium_groups": true,
+        "medium_fingerprint_rejected": true
+      },
+      "passed": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_1390_Main_sol_659.yaml",
+      "status": "standalone_solution_routing_checked",
+      "checks": {
+        "excluded_from_medium_groups": true,
+        "medium_fingerprint_rejected": true
+      },
+      "passed": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_1413_Main_sol_670.yaml",
+      "status": "standalone_solution_routing_checked",
+      "checks": {
+        "excluded_from_medium_groups": true,
+        "medium_fingerprint_rejected": true
+      },
+      "passed": true
+    }
+  ],
+  "routing_stats": {
+    "total_processed": 15910,
+    "excluded_solutions": 4785,
+    "skipped_no_fingerprint": 2,
+    "skipped_error": 340,
+    "successfully_fingerprinted": 10783,
+    "reasons": {
+      "other_error": 340,
+      "no_valid_ingredients": 2
+    }
+  },
+  "scope": "Exact medium formulation/provenance retention and correct standalone routing; not proof that members of concentration-independent groups are identical formulations."
+}

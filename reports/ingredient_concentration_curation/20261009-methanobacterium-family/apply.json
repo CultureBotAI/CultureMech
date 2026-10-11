@@ -1,0 +1,372 @@
+{
+  "terminal": true,
+  "phase": "apply",
+  "checks": [],
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "27d92206953ca936698bfef2073b2c6ca5564b860007d866d29e6f941c3d1419"
+  },
+  "code_sha256": {
+    "scripts/repair_methanobacterium_family.py": "87a3dec56047f5aeaa394a7c65788ee86c297ab086d142c0597e82983ac1f90f",
+    "tests/test_methanobacterium_family.py": "b402ee4ba9088302faa60da467b2ed06bcab302601174722a33f66436267382e",
+    "reports/ingredient_concentration_curation/20261009-methanobacterium-family/audit.py": "31c3125ed89f27f37c516b13d71636fa3b5ac9ce4ee50820ab0f130e10c0c383"
+  },
+  "plan_sha256": "302bb7c856b8b4b885a35de19edcadc32efc77b115ea3fe23630c288503a775d",
+  "preview_validation_sha256": "783079e989f2aa8effdc09ec9d9e27767df4e01239fa1f20a399565272b3f265",
+  "preview_document_archive": [
+    {
+      "source": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/README.md",
+      "archive": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/preview-documents/README.md",
+      "sha256": "7aba6ac109f72f48fd2971043b7b4f13b9cf93a74729ea92a5cc6f03465ceb6b"
+    },
+    {
+      "source": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/adversarial-review.md",
+      "archive": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/preview-documents/adversarial-review.md",
+      "sha256": "30414b8efb45ee0223097e1c6aad0db62155d562e8e444c691542cc02588b04c"
+    },
+    {
+      "source": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/issue-source-conflicts.md",
+      "archive": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/preview-documents/issue-source-conflicts.md",
+      "sha256": "69ad7cc71eef818fb31926fa0c86fe2fea69a3433e621b37bbfe1a4fb1cf34db"
+    },
+    {
+      "source": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/next-work.md",
+      "archive": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/preview-documents/next-work.md",
+      "sha256": "a6f190710d1e35144dcb3d5167ab99c55fdf1a4179a7c427816fa3f11f2b6fe8"
+    }
+  ],
+  "preview_audit": {
+    "K119": {
+      "source_nodes": 32,
+      "old_quantity_slots": 34,
+      "claims": 164,
+      "new_evidence": 50,
+      "new_references": 17,
+      "new_curation_history": 1
+    },
+    "D119b": {
+      "source_nodes": 44,
+      "old_quantity_slots": 34,
+      "claims": 212,
+      "new_evidence": 77,
+      "new_references": 3,
+      "new_curation_history": 1
+    },
+    "K119.1": {
+      "source_nodes": 43,
+      "old_quantity_slots": 34,
+      "claims": 195,
+      "new_evidence": 46,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_11975": {
+      "source_nodes": 32,
+      "old_quantity_slots": 34,
+      "claims": 147,
+      "new_evidence": 35,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_11977": {
+      "source_nodes": 32,
+      "old_quantity_slots": 34,
+      "claims": 148,
+      "new_evidence": 35,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_11978": {
+      "source_nodes": 32,
+      "old_quantity_slots": 34,
+      "claims": 148,
+      "new_evidence": 35,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_11979": {
+      "source_nodes": 32,
+      "old_quantity_slots": 34,
+      "claims": 147,
+      "new_evidence": 35,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_11995": {
+      "source_nodes": 32,
+      "old_quantity_slots": 34,
+      "claims": 148,
+      "new_evidence": 35,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_1224": {
+      "source_nodes": 32,
+      "old_quantity_slots": 34,
+      "claims": 147,
+      "new_evidence": 35,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_15163": {
+      "source_nodes": 32,
+      "old_quantity_slots": 34,
+      "claims": 148,
+      "new_evidence": 35,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_3468": {
+      "source_nodes": 34,
+      "old_quantity_slots": 34,
+      "claims": 154,
+      "new_evidence": 37,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_4855": {
+      "source_nodes": 34,
+      "old_quantity_slots": 34,
+      "claims": 155,
+      "new_evidence": 37,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_6216": {
+      "source_nodes": 32,
+      "old_quantity_slots": 34,
+      "claims": 148,
+      "new_evidence": 35,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_7057": {
+      "source_nodes": 33,
+      "old_quantity_slots": 34,
+      "claims": 152,
+      "new_evidence": 36,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_7256": {
+      "source_nodes": 33,
+      "old_quantity_slots": 34,
+      "claims": 151,
+      "new_evidence": 36,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_9575": {
+      "source_nodes": 32,
+      "old_quantity_slots": 34,
+      "claims": 148,
+      "new_evidence": 35,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "D119": {
+      "source_nodes": 37,
+      "old_quantity_slots": 30,
+      "claims": 239,
+      "new_evidence": 84,
+      "new_references": 4,
+      "new_curation_history": 1
+    },
+    "D119c": {
+      "source_nodes": 37,
+      "old_quantity_slots": 30,
+      "claims": 176,
+      "new_evidence": 67,
+      "new_references": 3,
+      "new_curation_history": 1
+    },
+    "D119a": {
+      "source_nodes": 35,
+      "old_quantity_slots": 29,
+      "claims": 168,
+      "new_evidence": 62,
+      "new_references": 2,
+      "new_curation_history": 1
+    }
+  },
+  "application": {
+    "mode": "apply",
+    "records": 19,
+    "changed": 19,
+    "already_applied": 0,
+    "claims": 3095
+  },
+  "readback": {
+    "mode": "verify",
+    "records": 19,
+    "changed": 0,
+    "already_applied": 19,
+    "claims": 3095
+  },
+  "noop": {
+    "mode": "apply",
+    "records": 19,
+    "changed": 0,
+    "already_applied": 19,
+    "claims": 3095
+  },
+  "applied_audit": {
+    "K119": {
+      "source_nodes": 32,
+      "old_quantity_slots": 34,
+      "claims": 164,
+      "new_evidence": 50,
+      "new_references": 17,
+      "new_curation_history": 1
+    },
+    "D119b": {
+      "source_nodes": 44,
+      "old_quantity_slots": 34,
+      "claims": 212,
+      "new_evidence": 77,
+      "new_references": 3,
+      "new_curation_history": 1
+    },
+    "K119.1": {
+      "source_nodes": 43,
+      "old_quantity_slots": 34,
+      "claims": 195,
+      "new_evidence": 46,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_11975": {
+      "source_nodes": 32,
+      "old_quantity_slots": 34,
+      "claims": 147,
+      "new_evidence": 35,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_11977": {
+      "source_nodes": 32,
+      "old_quantity_slots": 34,
+      "claims": 148,
+      "new_evidence": 35,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_11978": {
+      "source_nodes": 32,
+      "old_quantity_slots": 34,
+      "claims": 148,
+      "new_evidence": 35,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_11979": {
+      "source_nodes": 32,
+      "old_quantity_slots": 34,
+      "claims": 147,
+      "new_evidence": 35,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_11995": {
+      "source_nodes": 32,
+      "old_quantity_slots": 34,
+      "claims": 148,
+      "new_evidence": 35,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_1224": {
+      "source_nodes": 32,
+      "old_quantity_slots": 34,
+      "claims": 147,
+      "new_evidence": 35,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_15163": {
+      "source_nodes": 32,
+      "old_quantity_slots": 34,
+      "claims": 148,
+      "new_evidence": 35,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_3468": {
+      "source_nodes": 34,
+      "old_quantity_slots": 34,
+      "claims": 154,
+      "new_evidence": 37,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_4855": {
+      "source_nodes": 34,
+      "old_quantity_slots": 34,
+      "claims": 155,
+      "new_evidence": 37,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_6216": {
+      "source_nodes": 32,
+      "old_quantity_slots": 34,
+      "claims": 148,
+      "new_evidence": 35,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_7057": {
+      "source_nodes": 33,
+      "old_quantity_slots": 34,
+      "claims": 152,
+      "new_evidence": 36,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_7256": {
+      "source_nodes": 33,
+      "old_quantity_slots": 34,
+      "claims": 151,
+      "new_evidence": 36,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_9575": {
+      "source_nodes": 32,
+      "old_quantity_slots": 34,
+      "claims": 148,
+      "new_evidence": 35,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "D119": {
+      "source_nodes": 37,
+      "old_quantity_slots": 30,
+      "claims": 239,
+      "new_evidence": 84,
+      "new_references": 4,
+      "new_curation_history": 1
+    },
+    "D119c": {
+      "source_nodes": 37,
+      "old_quantity_slots": 30,
+      "claims": 176,
+      "new_evidence": 67,
+      "new_references": 3,
+      "new_curation_history": 1
+    },
+    "D119a": {
+      "source_nodes": 35,
+      "old_quantity_slots": 29,
+      "claims": 168,
+      "new_evidence": 62,
+      "new_references": 2,
+      "new_curation_history": 1
+    }
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "db8f5426f9aade2d77f947de6f5c4a756f3ed214bede448fbb31d273085da30f"
+  },
+  "only_reviewed_records_changed": true
+}

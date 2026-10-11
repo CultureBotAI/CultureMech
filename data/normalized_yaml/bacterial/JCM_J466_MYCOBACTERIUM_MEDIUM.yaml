@@ -21,6 +21,28 @@ ingredients:
   concentration:
     value: '1.90476'
     unit: G_PER_L
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J466
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 2,
+                              "compound": "Proteose peptone no. 3",
+                              "compound_id": 316,
+                              "amount": 2,
+                              "unit": "g",
+                              "g_l": 1.90476,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[1].concentration (Proteose
+      peptone no. 3) in MediaDive medium J466; locator=$.data.solutions[0].recipe[1].
+      Provider explicitly reports g_l=1.90476; check: 2 g * 1 g/g / (1050 ml / 1000
+      ml per L) = 1.904761904761904761904761905 g/L. This supports the provider-declared
+      main-recipe concentration, not an independently measured final volume, a stock
+      composition, or a downstream assay dilution. Water alone does not establish
+      final volume. Exact source ingredient labels/forms are matched; secondary ontology
+      mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume
+      (ml): 1050. Retrieved 2026-10-07T14:06:58.904889+00:00; response SHA256=8576771a8e3aa5af9816217bca4d34a461163e3ef9cf68300576454122b00391.'
 - preferred_term: Casein peptone
   concentration:
     value: '1.90476'
@@ -36,6 +58,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J466
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 4,
+                              "compound": "Na2HPO4 x 12 H2O",
+                              "compound_id": 95,
+                              "amount": 2.5,
+                              "unit": "g",
+                              "g_l": 2.38095,
+                              "mmol_l": 16.7721,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[3].concentration (Na2HPO4
+      x 12 H2O) in MediaDive medium J466; locator=$.data.solutions[0].recipe[3]. Provider
+      explicitly reports g_l=2.38095; check: 2.5 g * 1 g/g / (1050 ml / 1000 ml per
+      L) = 2.380952380952380952380952381 g/L. This supports the provider-declared
+      main-recipe concentration, not an independently measured final volume, a stock
+      composition, or a downstream assay dilution. Water alone does not establish
+      final volume. Exact source ingredient labels/forms are matched; secondary ontology
+      mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume
+      (ml): 1050. Retrieved 2026-10-07T14:06:58.904889+00:00; response SHA256=8576771a8e3aa5af9816217bca4d34a461163e3ef9cf68300576454122b00391.'
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -46,6 +91,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J466
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 5,
+                              "compound": "KH2PO4",
+                              "compound_id": 11,
+                              "amount": 1,
+                              "unit": "g",
+                              "g_l": 0.952381,
+                              "mmol_l": 6.99838,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[4].concentration (KH2PO4)
+      in MediaDive medium J466; locator=$.data.solutions[0].recipe[4]. Provider explicitly
+      reports g_l=0.952381; check: 1 g * 1 g/g / (1050 ml / 1000 ml per L) = 0.9523809523809523809523809524
+      g/L. This supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1050. Retrieved 2026-10-07T14:06:58.904889+00:00;
+      response SHA256=8576771a8e3aa5af9816217bca4d34a461163e3ef9cf68300576454122b00391.'
 - preferred_term: Trisodium citrate
   term:
     id: CHEBI:53258
@@ -56,6 +124,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:53258
     label: sodium citrate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J466
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 6,
+                              "compound": "Trisodium citrate",
+                              "compound_id": 1047,
+                              "amount": 1.5,
+                              "unit": "g",
+                              "g_l": 1.42857,
+                              "mmol_l": 5.5356,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[5].concentration (Trisodium
+      citrate) in MediaDive medium J466; locator=$.data.solutions[0].recipe[5]. Provider
+      explicitly reports g_l=1.42857; check: 1.5 g * 1 g/g / (1050 ml / 1000 ml per
+      L) = 1.428571428571428571428571429 g/L. This supports the provider-declared
+      main-recipe concentration, not an independently measured final volume, a stock
+      composition, or a downstream assay dilution. Water alone does not establish
+      final volume. Exact source ingredient labels/forms are matched; secondary ontology
+      mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume
+      (ml): 1050. Retrieved 2026-10-07T14:06:58.904889+00:00; response SHA256=8576771a8e3aa5af9816217bca4d34a461163e3ef9cf68300576454122b00391.'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -66,6 +157,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J466
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 7,
+                              "compound": "MgSO4 x 7 H2O",
+                              "compound_id": 8,
+                              "amount": 0.6,
+                              "unit": "g",
+                              "g_l": 0.571429,
+                              "mmol_l": 2.31839,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[6].concentration (MgSO4 x
+      7 H2O) in MediaDive medium J466; locator=$.data.solutions[0].recipe[6]. Provider
+      explicitly reports g_l=0.571429; check: 0.6 g * 1 g/g / (1050 ml / 1000 ml per
+      L) = 0.5714285714285714285714285714 g/L. This supports the provider-declared
+      main-recipe concentration, not an independently measured final volume, a stock
+      composition, or a downstream assay dilution. Water alone does not establish
+      final volume. Exact source ingredient labels/forms are matched; secondary ontology
+      mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume
+      (ml): 1050. Retrieved 2026-10-07T14:06:58.904889+00:00; response SHA256=8576771a8e3aa5af9816217bca4d34a461163e3ef9cf68300576454122b00391.'
 - preferred_term: Glycerol
   term:
     id: CHEBI:17754
@@ -86,6 +200,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:53426
     label: polysorbate 80
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J466
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 9,
+                              "compound": "Tween 80",
+                              "compound_id": 22,
+                              "amount": 0.5,
+                              "unit": "g",
+                              "g_l": 0.47619,
+                              "mmol_l": 0.363826,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[8].concentration (Tween 80)
+      in MediaDive medium J466; locator=$.data.solutions[0].recipe[8]. Provider explicitly
+      reports g_l=0.47619; check: 0.5 g * 1 g/g / (1050 ml / 1000 ml per L) = 0.4761904761904761904761904762
+      g/L. This supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1050. Retrieved 2026-10-07T14:06:58.904889+00:00;
+      response SHA256=8576771a8e3aa5af9816217bca4d34a461163e3ef9cf68300576454122b00391.'
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -96,6 +233,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J466
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 10,
+                              "compound": "Agar",
+                              "compound_id": 3,
+                              "amount": 15,
+                              "unit": "g",
+                              "g_l": 14.2857,
+                              "mmol_l": 42.4753,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[9].concentration (Agar) in
+      MediaDive medium J466; locator=$.data.solutions[0].recipe[9]. Provider explicitly
+      reports g_l=14.2857; check: 15 g * 1 g/g / (1050 ml / 1000 ml per L) = 14.28571428571428571428571429
+      g/L. This supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1050. Retrieved 2026-10-07T14:06:58.904889+00:00;
+      response SHA256=8576771a8e3aa5af9816217bca4d34a461163e3ef9cf68300576454122b00391.'
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -130,3 +290,31 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-10-07T14:33:27.670564+00:00'
+  curator: codex
+  action: CURATED_MEDIUM_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Exact medium/source membership, ingredient inventory/forms, physical-state
+    conditions, literal snippets, and arithmetic checked. Stock boundaries, source-only
+    rows, preparation context, and variants remain explicit follow-up tasks; secondary
+    chemical mappings unchanged.
+  source: https://mediadive.dsmz.de/rest/medium/J466
+  changes: 'ingredients[1].concentration: {"unit": "G_PER_L", "value": "1.90476"}
+    -> {"unit": "G_PER_L", "value": "1.90476"} (evidence_only); ingredients[3].concentration:
+    {"unit": "G_PER_L", "value": "2.38095"} -> {"unit": "G_PER_L", "value": "2.38095"}
+    (evidence_only); ingredients[4].concentration: {"unit": "G_PER_L", "value": "0.952381"}
+    -> {"unit": "G_PER_L", "value": "0.952381"} (evidence_only); ingredients[5].concentration:
+    {"unit": "G_PER_L", "value": "1.42857"} -> {"unit": "G_PER_L", "value": "1.42857"}
+    (evidence_only); ingredients[6].concentration: {"unit": "G_PER_L", "value": "0.571429"}
+    -> {"unit": "G_PER_L", "value": "0.571429"} (evidence_only); ingredients[8].concentration:
+    {"unit": "G_PER_L", "value": "0.47619"} -> {"unit": "G_PER_L", "value": "0.47619"}
+    (evidence_only); ingredients[9].concentration: {"unit": "G_PER_L", "value": "14.2857"}
+    -> {"unit": "G_PER_L", "value": "14.2857"} (evidence_only)'
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/J466
+  title: 'MediaDive medium J466: MYCOBACTERIUM MEDIUM'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; source_organization=DSMZ;
+    accessed_on=2026-10-07; locator=$.data.solutions[0]; response_sha256=8576771a8e3aa5af9816217bca4d34a461163e3ef9cf68300576454122b00391;
+    original_recipe=https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=466; individual
+    authors and publication year not supplied. Provider-declared main-recipe amounts
+    only. Original recipe collection=JCM; GRMD accession=466; DSMZ is the MediaDive
+    dataset provider, not the original recipe collection.

@@ -16,10 +16,37 @@ composition:
     label: L-cysteine hydrochloride hydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1003
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "L-Cysteine HCl x H2O",
+                      "compound_id": 770,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "g",
+                      "g_l": 50,
+                      "mmol_l": 284.68,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (L-Cysteine
+      HCl x H2O) in MediaDive solution 1003; locator=$.data.recipe[0] (compound_id=770).
+      Provider explicitly reports g_l=50. Arithmetic check: 1 g * 1 g/g / (20 ml /
+      1000 ml per L) = 5E+1 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 20. Retrieved 2026-10-07T08:48:31.764641+00:00;
+      response SHA256=cecda3445ad20cf38fec692a6f8a322d2bfa7acbd34e9836f67aadc8323dc477.'
 - preferred_term: Distilled water
   concentration:
-    value: '1000.0'
-    unit: PERCENT_V_V
+    value: '0.02'
+    unit: L
   term:
     id: mediadive.compound:4
     label: Distilled water
@@ -28,6 +55,31 @@ composition:
     label: water
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1003
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 20,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Distilled
+      water) in MediaDive solution 1003; locator=$.data.recipe[1] (compound_id=4).
+      Source water addition is 20 ml per prepared batch: 20 / 1000 = 0.02 L. No source
+      preparation step gives a competing make-up instruction. This is a batch dose,
+      not a volume percentage; no final-volume or solvent-density assumption is made.
+      Additional exact excerpt at $.data.volume: "volume": 20. Retrieved 2026-10-07T08:48:31.764641+00:00;
+      response SHA256=cecda3445ad20cf38fec692a6f8a322d2bfa7acbd34e9836f67aadc8323dc477.'
 preparation_notes: 'Original volume: 20 mL'
 curation_history:
 - timestamp: '2026-03-13T06:20:14.392921Z'
@@ -57,6 +109,16 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-10-07T08:52:28.993811+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/1003
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "50"} -> {"unit":
+    "G_PER_L", "value": "50"} (evidence_only); composition[1].concentration: {"unit":
+    "PERCENT_V_V", "value": "1000.0"} -> {"unit": "L", "value": "0.02"} (correct)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -65,3 +127,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/1003
+  title: 'MediaDive solution 1003: Solution E'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=cecda3445ad20cf38fec692a6f8a322d2bfa7acbd34e9836f67aadc8323dc477;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

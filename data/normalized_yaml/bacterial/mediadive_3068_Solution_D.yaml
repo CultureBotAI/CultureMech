@@ -16,6 +16,33 @@ composition:
     label: pyridoxal hydrochloride
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3068
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "Pyridoxal hydrochloride",
+                      "compound_id": 338,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 10,
+                      "unit": "mg",
+                      "g_l": 0.1,
+                      "mmol_l": 0.491111,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Pyridoxal
+      hydrochloride) in MediaDive solution 3068; locator=$.data.recipe[0] (compound_id=338).
+      Provider explicitly reports g_l=0.1. Arithmetic check: 10 mg * 0.001 g/mg /
+      (100 ml / 1000 ml per L) = 0.10 g/L, consistent with the reported value at its
+      precision. Evidence supports the provider-declared concentration within this
+      solution, not a concentration in a receiving medium or an independently measured
+      final volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 100. Retrieved 2026-10-07T09:18:09.660448+00:00;
+      response SHA256=4b32b9389a5d3bb29878d97ad2e2ecb0cf30f28fe3b2af83d2333c12539a8b5a.'
 - preferred_term: Pyridoxal phosphate
   concentration:
     value: '0.1'
@@ -28,6 +55,33 @@ composition:
     label: pyridoxal 5'-phosphate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3068
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Pyridoxal phosphate",
+                      "compound_id": 780,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 10,
+                      "unit": "mg",
+                      "g_l": 0.1,
+                      "mmol_l": 0.404629,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Pyridoxal
+      phosphate) in MediaDive solution 3068; locator=$.data.recipe[1] (compound_id=780).
+      Provider explicitly reports g_l=0.1. Arithmetic check: 10 mg * 0.001 g/mg /
+      (100 ml / 1000 ml per L) = 0.10 g/L, consistent with the reported value at its
+      precision. Evidence supports the provider-declared concentration within this
+      solution, not a concentration in a receiving medium or an independently measured
+      final volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 100. Retrieved 2026-10-07T09:18:09.660448+00:00;
+      response SHA256=4b32b9389a5d3bb29878d97ad2e2ecb0cf30f28fe3b2af83d2333c12539a8b5a.'
 - preferred_term: D
   concentration:
     value: '11.2'
@@ -53,6 +107,33 @@ composition:
     label: hypoxanthine
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3068
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "Hypoxanthine",
+                      "compound_id": 1348,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2.8,
+                      "unit": "mg",
+                      "g_l": 0.028,
+                      "mmol_l": 0.205713,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[3].concentration (Hypoxanthine)
+      in MediaDive solution 3068; locator=$.data.recipe[3] (compound_id=1348). Provider
+      explicitly reports g_l=0.028. Arithmetic check: 2.8 mg * 0.001 g/mg / (100 ml
+      / 1000 ml per L) = 0.028 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 100. Retrieved 2026-10-07T09:18:09.660448+00:00;
+      response SHA256=4b32b9389a5d3bb29878d97ad2e2ecb0cf30f28fe3b2af83d2333c12539a8b5a.'
 - preferred_term: Uracil
   concentration:
     value: '0.022'
@@ -65,6 +146,33 @@ composition:
     label: uracil
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3068
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 5,
+                      "compound": "Uracil",
+                      "compound_id": 1349,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2.2,
+                      "unit": "mg",
+                      "g_l": 0.022,
+                      "mmol_l": 0.196271,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[4].concentration (Uracil)
+      in MediaDive solution 3068; locator=$.data.recipe[4] (compound_id=1349). Provider
+      explicitly reports g_l=0.022. Arithmetic check: 2.2 mg * 0.001 g/mg / (100 ml
+      / 1000 ml per L) = 0.022 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 100. Retrieved 2026-10-07T09:18:09.660448+00:00;
+      response SHA256=4b32b9389a5d3bb29878d97ad2e2ecb0cf30f28fe3b2af83d2333c12539a8b5a.'
 - preferred_term: Thymidine
   concentration:
     value: '0.048'
@@ -77,6 +185,33 @@ composition:
     label: thymidine
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3068
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 6,
+                      "compound": "Thymidine",
+                      "compound_id": 455,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 4.8,
+                      "unit": "mg",
+                      "g_l": 0.048,
+                      "mmol_l": 0.198159,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[5].concentration (Thymidine)
+      in MediaDive solution 3068; locator=$.data.recipe[5] (compound_id=455). Provider
+      explicitly reports g_l=0.048. Arithmetic check: 4.8 mg * 0.001 g/mg / (100 ml
+      / 1000 ml per L) = 0.048 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 100. Retrieved 2026-10-07T09:18:09.660448+00:00;
+      response SHA256=4b32b9389a5d3bb29878d97ad2e2ecb0cf30f28fe3b2af83d2333c12539a8b5a.'
 - preferred_term: N-(2-acetamido)-2-aminoethanesulfonic acid
   concentration:
     value: '0.036'
@@ -89,6 +224,33 @@ composition:
     label: N-(2-acetamido)-2-aminoethanesulfonic acid
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3068
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 7,
+                      "compound": "N-(2-acetamido)-2-aminoethanesulfonic acid",
+                      "compound_id": 1350,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 3.6,
+                      "unit": "mg",
+                      "g_l": 0.036,
+                      "mmol_l": 0.197586,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[6].concentration (N-(2-acetamido)-2-aminoethanesulfonic
+      acid) in MediaDive solution 3068; locator=$.data.recipe[6] (compound_id=1350).
+      Provider explicitly reports g_l=0.036. Arithmetic check: 3.6 mg * 0.001 g/mg
+      / (100 ml / 1000 ml per L) = 0.036 g/L, consistent with the reported value at
+      its precision. Evidence supports the provider-declared concentration within
+      this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 100. Retrieved 2026-10-07T09:18:09.660448+00:00;
+      response SHA256=4b32b9389a5d3bb29878d97ad2e2ecb0cf30f28fe3b2af83d2333c12539a8b5a.'
 - preferred_term: DL-carnitine
   concentration:
     value: '4'
@@ -101,6 +263,33 @@ composition:
     label: carnitine
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3068
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 8,
+                      "compound": "DL-carnitine",
+                      "compound_id": 1351,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 400,
+                      "unit": "mg",
+                      "g_l": 4,
+                      "mmol_l": 24.814,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[7].concentration (DL-carnitine)
+      in MediaDive solution 3068; locator=$.data.recipe[7] (compound_id=1351). Provider
+      explicitly reports g_l=4. Arithmetic check: 400 mg * 0.001 g/mg / (100 ml /
+      1000 ml per L) = 4.00 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 100. Retrieved 2026-10-07T09:18:09.660448+00:00;
+      response SHA256=4b32b9389a5d3bb29878d97ad2e2ecb0cf30f28fe3b2af83d2333c12539a8b5a.'
 - preferred_term: Putrescine 2 HCl
   concentration:
     value: '0.1'
@@ -112,6 +301,33 @@ composition:
     id: CHEBI:17148
     label: putrescine
     match_type: manual_curated
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3068
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 9,
+                      "compound": "Putrescine 2 HCl",
+                      "compound_id": 1352,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 10,
+                      "unit": "mg",
+                      "g_l": 0.1,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[8].concentration (Putrescine
+      2 HCl) in MediaDive solution 3068; locator=$.data.recipe[8] (compound_id=1352).
+      Provider explicitly reports g_l=0.1. Arithmetic check: 10 mg * 0.001 g/mg /
+      (100 ml / 1000 ml per L) = 0.10 g/L, consistent with the reported value at its
+      precision. Evidence supports the provider-declared concentration within this
+      solution, not a concentration in a receiving medium or an independently measured
+      final volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 100. Retrieved 2026-10-07T09:18:09.660448+00:00;
+      response SHA256=4b32b9389a5d3bb29878d97ad2e2ecb0cf30f28fe3b2af83d2333c12539a8b5a.'
 - preferred_term: Phenol red
   concentration:
     value: '0.2'
@@ -174,6 +390,25 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 5 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-10-07T09:21:52.094915+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/3068
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "0.1"} -> {"unit":
+    "G_PER_L", "value": "0.1"} (evidence_only); composition[1].concentration: {"unit":
+    "G_PER_L", "value": "0.1"} -> {"unit": "G_PER_L", "value": "0.1"} (evidence_only);
+    composition[3].concentration: {"unit": "G_PER_L", "value": "0.028"} -> {"unit":
+    "G_PER_L", "value": "0.028"} (evidence_only); composition[4].concentration: {"unit":
+    "G_PER_L", "value": "0.022"} -> {"unit": "G_PER_L", "value": "0.022"} (evidence_only);
+    composition[5].concentration: {"unit": "G_PER_L", "value": "0.048"} -> {"unit":
+    "G_PER_L", "value": "0.048"} (evidence_only); composition[6].concentration: {"unit":
+    "G_PER_L", "value": "0.036"} -> {"unit": "G_PER_L", "value": "0.036"} (evidence_only);
+    composition[7].concentration: {"unit": "G_PER_L", "value": "4"} -> {"unit": "G_PER_L",
+    "value": "4"} (evidence_only); composition[8].concentration: {"unit": "G_PER_L",
+    "value": "0.1"} -> {"unit": "G_PER_L", "value": "0.1"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -182,3 +417,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/3068
+  title: 'MediaDive solution 3068: Solution D'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=4b32b9389a5d3bb29878d97ad2e2ecb0cf30f28fe3b2af83d2333c12539a8b5a;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

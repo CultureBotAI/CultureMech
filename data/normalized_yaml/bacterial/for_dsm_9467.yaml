@@ -2,12 +2,14 @@ id: CultureMech:006263
 name: for_dsm_9467
 original_name: For DSM 9467
 category: bacterial
-medium_type: DEFINED
-composition_type: DEFINED
+medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 3.0
-notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 670.4 | DSMZ Medium: 670
-  (mediadive.medium:670) | Aerobic: No'
+notes: |-
+  pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 670.4 | DSMZ Medium: 670 (mediadive.medium:670) | Aerobic: No
+
+  Curated formulation: the explicitly named DSM strain instructions in BacDive 4303 archive version 2 (2017), not the current DSMZ 670 formulation. The archive agrees with the KOMODO pH profile, but that agreement does not prove which recipe version KOMODO originally imported. Current DSMZ differences are a separate inline variant. The BacDive biological record is DSM 2392; only its reproduced, explicitly named recipe instructions are used here, not its growth, temperature or taxonomic claims. Batch mass, unspecified percent basis, normality and final-volume gaps remain explicit. New ingredient labels are source labels, not independently resolved ontology mappings.
 media_term:
   preferred_term: KOMODO Medium 670.4
   term:
@@ -18,63 +20,133 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
-  concentration:
-    value: '2'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
     label: ammonium sulfate
+  notes: 'Archived batch input: 2.00 g in a recipe with 1000 ml distilled-water input.
+    No final volume is stated; mass-only grams have no schema unit. The former G_PER_L
+    assertion is withdrawn, not rounded or interpreted as a measured final concentration.'
+  evidence:
+  - reference: https://bacdive.dsmz.de/pdf/4303?doi=10.13145%2Fbacdive4303.20170829.2
+    supports: SUPPORT
+    snippet: |-
+      (NH4)2SO4 2.00 g MgSO4 x 7 H2O 0.25 g K2HPO4 0.10 g KCl 0.10 g
+      Distilled water 1000.00 ml
+    explanation: 'ingredients[0].concentration (remove_unsupported): Archived batch
+      input: 2.00 g in a recipe with 1000 ml distilled-water input. No final volume
+      is stated; mass-only grams have no schema unit. The former G_PER_L assertion
+      is withdrawn, not rounded or interpreted as a measured final concentration.
+      Locator: PDF page 2, Ref. 1071 culture medium composition. ingredients[0].notes
+      (schema_gap): Preserve the exact source batch mass and denominator limitation.
+      Locator: PDF page 2, Ref. 1071 culture medium composition.'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
+  notes: 'Archived batch input: 0.25 g in a recipe with 1000 ml distilled-water input.
+    No final volume is stated; mass-only grams have no schema unit. The former G_PER_L
+    assertion is withdrawn, not rounded or interpreted as a measured final concentration.'
+  evidence:
+  - reference: https://bacdive.dsmz.de/pdf/4303?doi=10.13145%2Fbacdive4303.20170829.2
+    supports: SUPPORT
+    snippet: |-
+      (NH4)2SO4 2.00 g MgSO4 x 7 H2O 0.25 g K2HPO4 0.10 g KCl 0.10 g
+      Distilled water 1000.00 ml
+    explanation: 'ingredients[1].concentration (remove_unsupported): Archived batch
+      input: 0.25 g in a recipe with 1000 ml distilled-water input. No final volume
+      is stated; mass-only grams have no schema unit. The former G_PER_L assertion
+      is withdrawn, not rounded or interpreted as a measured final concentration.
+      Locator: PDF page 2, Ref. 1071 culture medium composition. ingredients[1].notes
+      (schema_gap): Preserve the exact source batch mass and denominator limitation.
+      Locator: PDF page 2, Ref. 1071 culture medium composition.'
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  notes: 'Archived batch input: 0.10 g in a recipe with 1000 ml distilled-water input.
+    No final volume is stated; mass-only grams have no schema unit. The former G_PER_L
+    assertion is withdrawn, not rounded or interpreted as a measured final concentration.'
+  evidence:
+  - reference: https://bacdive.dsmz.de/pdf/4303?doi=10.13145%2Fbacdive4303.20170829.2
+    supports: SUPPORT
+    snippet: |-
+      (NH4)2SO4 2.00 g MgSO4 x 7 H2O 0.25 g K2HPO4 0.10 g KCl 0.10 g
+      Distilled water 1000.00 ml
+    explanation: 'ingredients[2].concentration (remove_unsupported): Archived batch
+      input: 0.10 g in a recipe with 1000 ml distilled-water input. No final volume
+      is stated; mass-only grams have no schema unit. The former G_PER_L assertion
+      is withdrawn, not rounded or interpreted as a measured final concentration.
+      Locator: PDF page 2, Ref. 1071 culture medium composition. ingredients[2].notes
+      (schema_gap): Preserve the exact source batch mass and denominator limitation.
+      Locator: PDF page 2, Ref. 1071 culture medium composition.'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
     label: potassium chloride
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
     label: potassium chloride
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: iron(2+) sulfate heptahydrate
+  notes: 'Archived batch input: 0.10 g in a recipe with 1000 ml distilled-water input.
+    No final volume is stated; mass-only grams have no schema unit. The former G_PER_L
+    assertion is withdrawn, not rounded or interpreted as a measured final concentration.'
+  evidence:
+  - reference: https://bacdive.dsmz.de/pdf/4303?doi=10.13145%2Fbacdive4303.20170829.2
+    supports: SUPPORT
+    snippet: |-
+      (NH4)2SO4 2.00 g MgSO4 x 7 H2O 0.25 g K2HPO4 0.10 g KCl 0.10 g
+      Distilled water 1000.00 ml
+    explanation: 'ingredients[3].concentration (remove_unsupported): Archived batch
+      input: 0.10 g in a recipe with 1000 ml distilled-water input. No final volume
+      is stated; mass-only grams have no schema unit. The former G_PER_L assertion
+      is withdrawn, not rounded or interpreted as a measured final concentration.
+      Locator: PDF page 2, Ref. 1071 culture medium composition. ingredients[3].notes
+      (schema_gap): Preserve the exact source batch mass and denominator limitation.
+      Locator: PDF page 2, Ref. 1071 culture medium composition.'
+- preferred_term: Distilled water
   concentration:
-    value: '20'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:75836
-    label: iron(2+) sulfate heptahydrate
+    value: '1'
+    unit: L
+  notes: 1000 ml distilled-water input per archived recipe batch, not the final medium
+    volume.
+  evidence:
+  - reference: https://bacdive.dsmz.de/pdf/4303?doi=10.13145%2Fbacdive4303.20170829.2
+    supports: SUPPORT
+    snippet: Distilled water 1000.00 ml
+    explanation: 'ingredients[4].concentration (add): 1000 ml distilled-water input
+      per archived recipe batch, not the final medium volume. Conversion: 1000 ml
+      / 1000 = 1 L. Locator: PDF page 2, Ref. 1071 culture medium composition.'
 - preferred_term: H2SO4
   term:
     id: CHEBI:26836
     label: sulfuric acid
-  notes: pH adjustment (extracted from notes)
-  concentration:
-    value: variable
-    unit: VARIABLE
+  notes: 'Archived pH-adjustment reagent: 2 N sulfuric acid, added to reach pH 3.0
+    before autoclaving. Dose is unquantified. Normality is preserved in text because
+    the concentration enum has no NORMAL unit; it is not a final-medium concentration.'
   mediaingredientmech_chebi_term:
     id: CHEBI:26836
     label: sulfuric acid
+  evidence:
+  - reference: https://bacdive.dsmz.de/pdf/4303?doi=10.13145%2Fbacdive4303.20170829.2
+    supports: SUPPORT
+    snippet: |-
+      For DSM 9467: Adjust pH of MS-medium to 3.0 with 2N
+      H2SO4 prior to autoclaving. Before use, add 0.2% glucose from filter
+      sterilized 10% w/v stock solution, and 0.01% yeast extract from
+      autoclaved 1% stock solution.
+    explanation: 'ingredients[5].concentration (remove_placeholder): Withdraw the
+      schema-default variable placeholder; the source specifies titration to pH, not
+      a dose or final concentration. Locator: PDF page 2, Ref. 1071 culture medium
+      composition. ingredients[5].notes (not_quantified): Archived pH-adjustment reagent:
+      2 N sulfuric acid, added to reach pH 3.0 before autoclaving. Dose is unquantified.
+      Normality is preserved in text because the concentration enum has no NORMAL
+      unit; it is not a final-medium concentration. Locator: PDF page 2, Ref. 1071
+      culture medium composition.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -126,14 +198,271 @@ curation_history:
   changes: Linked as a KOMODO 670 pH variant
   source: KOMODO Medium 670.4
   notes: Marked KOMODO Medium 670.4 as a pH 3 strain-specific MS-MEDIUM variant.
+- timestamp: '2026-10-08T05:41:55.293153+00:00'
+  curator: codex
+  action: CURATED_KOMODO670_STRAIN_RECIPES_WITH_SEPARATE_SOURCE_VERSIONS
+  notes: Explicit archived formulation curation with separate current-source alternatives;
+    no new organism-growth association. Prior history is preserved, not endorsed.
+  source: https://bacdive.dsmz.de/pdf/4303?doi=10.13145%2Fbacdive4303.20170829.2
+  changes: 'ingredients[0].concentration: {"value": "2", "unit": "G_PER_L"} -> null
+    (remove_unsupported); ingredients[0].notes: null -> "Archived batch input: 2.00
+    g in a recipe with 1000 ml distilled-water input. No final volume is stated; mass-only
+    grams have no schema unit. The former G_PER_L assertion is withdrawn, not rounded
+    or interpreted as a measured final concentration." (schema_gap); ingredients[1].concentration:
+    {"value": "0.25", "unit": "G_PER_L"} -> null (remove_unsupported); ingredients[1].notes:
+    null -> "Archived batch input: 0.25 g in a recipe with 1000 ml distilled-water
+    input. No final volume is stated; mass-only grams have no schema unit. The former
+    G_PER_L assertion is withdrawn, not rounded or interpreted as a measured final
+    concentration." (schema_gap); ingredients[2].concentration: {"value": "0.1", "unit":
+    "G_PER_L"} -> null (remove_unsupported); ingredients[2].notes: null -> "Archived
+    batch input: 0.10 g in a recipe with 1000 ml distilled-water input. No final volume
+    is stated; mass-only grams have no schema unit. The former G_PER_L assertion is
+    withdrawn, not rounded or interpreted as a measured final concentration." (schema_gap);
+    ingredients[3].concentration: {"value": "0.1", "unit": "G_PER_L"} -> null (remove_unsupported);
+    ingredients[3].notes: null -> "Archived batch input: 0.10 g in a recipe with 1000
+    ml distilled-water input. No final volume is stated; mass-only grams have no schema
+    unit. The former G_PER_L assertion is withdrawn, not rounded or interpreted as
+    a measured final concentration." (schema_gap); ingredients[4].concentration: null
+    -> {"value": "1", "unit": "L"} (add); ingredients[5].concentration: {"value":
+    "variable", "unit": "VARIABLE"} -> null (remove_placeholder); ingredients[4]:
+    {"preferred_term": "FeSO4 x 7 H2O", "term": {"id": "CHEBI:75836", "label": "iron(2+)
+    sulfate heptahydrate"}, "concentration": {"value": "20", "unit": "G_PER_L"}, "mediaingredientmech_chebi_term":
+    {"id": "CHEBI:75836", "label": "iron(2+) sulfate heptahydrate"}} -> null (remove_copied_ingredient);
+    ingredients[4]: {"preferred_term": "FeSO4 x 7 H2O", "term": {"id": "CHEBI:75836",
+    "label": "iron(2+) sulfate heptahydrate"}, "concentration": {"value": "20", "unit":
+    "G_PER_L"}, "mediaingredientmech_chebi_term": {"id": "CHEBI:75836", "label": "iron(2+)
+    sulfate heptahydrate"}} -> null (corroborate_omission); ingredients[5].notes:
+    "pH adjustment (extracted from notes)" -> "Archived pH-adjustment reagent: 2 N
+    sulfuric acid, added to reach pH 3.0 before autoclaving. Dose is unquantified.
+    Normality is preserved in text because the concentration enum has no NORMAL unit;
+    it is not a final-medium concentration." (not_quantified); solutions[0].composition[0].concentration:
+    null -> {"value": "10", "unit": "PERCENT_W_V"} (add); solutions[1].composition[0].notes:
+    null -> "Archived stock strength is 1% without a stated percent basis; final target
+    is 0.01%, also without a stated basis. No structured concentration or dilution
+    calculation is asserted." (schema_gap); solutions[0].notes: null -> "Filter-sterilized
+    stock; add before use. No dose is inferred from the ambiguous final percent."
+    (not_quantified); solutions[1].notes: null -> "Autoclaved stock; add before use.
+    Stock addition volume is unspecified." (not_quantified); medium_type: "DEFINED"
+    -> "COMPLEX" (correct_classification); composition_type: "DEFINED" -> "UNDEFINED"
+    (correct_classification); ph_value: 3.0 -> 3.0 (evidence_only); preparation_steps:
+    null -> [{"step_number": 1, "action": "ADJUST_PH", "description": "For DSM 9467:
+    Adjust pH of MS-medium to 3.0 with 2N H2SO4 prior to autoclaving. Before use,
+    add 0.2% glucose from filter sterilized 10% w/v stock solution, and 0.01% yeast
+    extract from autoclaved 1% stock solution."}] (add_preparation); notes: "pH buffer:
+    H2SO4 | Source: KOMODO ModelSEED | ID: 670.4 | DSMZ Medium: 670 (mediadive.medium:670)
+    | Aerobic: No" -> "pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 670.4 | DSMZ
+    Medium: 670 (mediadive.medium:670) | Aerobic: No\n\nCurated formulation: the explicitly
+    named DSM strain instructions in BacDive 4303 archive version 2 (2017), not the
+    current DSMZ 670 formulation. The archive agrees with the KOMODO pH profile, but
+    that agreement does not prove which recipe version KOMODO originally imported.
+    Current DSMZ differences are a separate inline variant. The BacDive biological
+    record is DSM 2392; only its reproduced, explicitly named recipe instructions
+    are used here, not its growth, temperature or taxonomic claims. Batch mass, unspecified
+    percent basis, normality and final-volume gaps remain explicit. New ingredient
+    labels are source labels, not independently resolved ontology mappings." (clarify_scope);
+    data_quality_flags: ["ingredients_curated"] -> ["pending_curation"] (correct_review_status);
+    variant_relationship: "PH_VARIANT" -> "STRAIN_SPECIFIC_VARIANT" (correct); variant_modifications:
+    ["KOMODO Medium 670.4 specifies pH 3 for this DSM-specific MS-MEDIUM variant."]
+    -> ["Historical 1000 ml water-input recipe; separate current-source formulation
+    is in variants.", "For DSM 9467: Adjust pH of MS-medium to 3.0 with 2N H2SO4 prior
+    to autoclaving. Before use, add 0.2% glucose from filter sterilized 10% w/v stock
+    solution, and 0.01% yeast extract from autoclaved 1% stock solution."] (correct);
+    parent_media.relationship: "PH_VARIANT" -> "STRAIN_SPECIFIC_VARIANT" (correct);
+    parent_media.notes: "KOMODO Medium 670 is the pH 2.2 MS-MEDIUM base for KOMODO
+    Medium 670.4." -> "Archived DSM 9467 formulation related to the current-source
+    MS-MEDIUM parent; source version and preparation differ, not only pH." (correct);
+    media_term: {"preferred_term": "KOMODO Medium 670.4", "term": {"id": "komodo.medium:670.4",
+    "label": "For DSM 9467"}} -> {"preferred_term": "KOMODO Medium 670.4", "term":
+    {"id": "komodo.medium:670.4", "label": "For DSM 9467"}} (identity_only); variants[0].modifications:
+    null -> ["Current DSMZ 670 base table uses 950 ml distilled-water input, not the
+    archive''s 1000 ml; this is not a stated final volume.", "Current base preparation
+    is autoclaving for 15 min at 121 C; incubate statically without shaking. These
+    instructions are not imported into the historical formulation.", "Current source:
+    pH 3.0 with 1 N H2SO4, not archived 2 N acid; omit iron. Add 2.00 g/L D-glucose
+    and 0.1 g/L yeast extract from filter-sterilized stocks of unspecified strength/dose,
+    rather than the archived stock specifications."] (separate_source_version); variants[0].description:
+    null -> "Separate recipe version; not applied to the asserted archived formulation."
+    (separate_source_version)'
 data_quality_flags:
-- ingredients_curated
+- pending_curation
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_670_MS-MEDIUM.yaml
-  relationship: PH_VARIANT
+  relationship: STRAIN_SPECIFIC_VARIANT
   id: CultureMech:006265
   name: ms_medium
-  notes: KOMODO Medium 670 is the pH 2.2 MS-MEDIUM base for KOMODO Medium 670.4.
-variant_relationship: PH_VARIANT
+  notes: Archived DSM 9467 formulation related to the current-source MS-MEDIUM parent;
+    source version and preparation differ, not only pH.
+  evidence:
+  - reference: https://bacdive.dsmz.de/pdf/4303?doi=10.13145%2Fbacdive4303.20170829.2
+    supports: SUPPORT
+    snippet: |-
+      For DSM 9467: Adjust pH of MS-medium to 3.0 with 2N
+      H2SO4 prior to autoclaving. Before use, add 0.2% glucose from filter
+      sterilized 10% w/v stock solution, and 0.01% yeast extract from
+      autoclaved 1% stock solution.
+    explanation: 'variant_relationship (correct): Archived DSM 9467 formulation related
+      to the current-source MS-MEDIUM parent; source version and preparation differ,
+      not only pH. Locator: PDF page 2, Ref. 1071 culture medium composition. variant_modifications
+      (correct): Archived DSM 9467 formulation related to the current-source MS-MEDIUM
+      parent; source version and preparation differ, not only pH. Locator: PDF page
+      2, Ref. 1071 culture medium composition. parent_media.relationship (correct):
+      Archived DSM 9467 formulation related to the current-source MS-MEDIUM parent;
+      source version and preparation differ, not only pH. Locator: PDF page 2, Ref.
+      1071 culture medium composition. parent_media.notes (correct): Archived DSM
+      9467 formulation related to the current-source MS-MEDIUM parent; source version
+      and preparation differ, not only pH. Locator: PDF page 2, Ref. 1071 culture
+      medium composition.'
+variant_relationship: STRAIN_SPECIFIC_VARIANT
 variant_modifications:
-- KOMODO Medium 670.4 specifies pH 3 for this DSM-specific MS-MEDIUM variant.
+- Historical 1000 ml water-input recipe; separate current-source formulation is in
+  variants.
+- 'For DSM 9467: Adjust pH of MS-medium to 3.0 with 2N H2SO4 prior to autoclaving.
+  Before use, add 0.2% glucose from filter sterilized 10% w/v stock solution, and
+  0.01% yeast extract from autoclaved 1% stock solution.'
+evidence:
+- reference: https://bacdive.dsmz.de/pdf/4303?doi=10.13145%2Fbacdive4303.20170829.2
+  supports: SUPPORT
+  snippet: |-
+    For DSM 9467: Adjust pH of MS-medium to 3.0 with 2N
+    H2SO4 prior to autoclaving. Before use, add 0.2% glucose from filter
+    sterilized 10% w/v stock solution, and 0.01% yeast extract from
+    autoclaved 1% stock solution.
+  explanation: |-
+    ingredients[4] (remove_copied_ingredient): The archived base contains only the four salts and water, and this named-strain instruction adds no iron. The current-source instruction independently says to omit FeSO4 x 7 H2O. Locator: PDF page 2, Ref. 1071 culture medium composition. solutions[0].notes (not_quantified): Filter-sterilized stock; add before use. No dose is inferred from the ambiguous final percent. Solution names are curator labels, not new accessions. Locator: PDF page 2, Ref. 1071 culture medium composition. solutions[1].notes (not_quantified): Autoclaved stock; add before use. Stock addition volume is unspecified. Solution names are curator labels, not new accessions. Locator: PDF page 2, Ref. 1071 culture medium composition. medium_type (correct_classification): Curator classification: source-required yeast extract prevents an entirely chemically defined formulation. Locator: PDF page 2, Ref. 1071 culture medium composition. composition_type (correct_classification): Curator classification: source-required yeast extract prevents an entirely chemically defined formulation. Locator: PDF page 2, Ref. 1071 culture medium composition. ph_value (evidence_only): Retain the archived named-strain pH, not an averaged or substituted value. Locator: PDF page 2, Ref. 1071 culture medium composition. preparation_steps (add_preparation): Retain the complete historical strain instruction, including ordered additions and alternative stock sterilization, without importing current-source parameters. Locator: PDF page 2, Ref. 1071 culture medium composition. notes (clarify_scope): Curated formulation: the explicitly named DSM strain instructions in BacDive 4303 archive version 2 (2017), not the current DSMZ 670 formulation. The archive agrees with the KOMODO pH profile, but that agreement does not prove which recipe version KOMODO originally imported. Current DSMZ differences are a separate inline variant. The BacDive biological record is DSM 2392; only its reproduced, explicitly named recipe instructions are used here, not its growth, temperature or taxonomic claims. Batch mass, unspecified percent basis, normality and final-volume gaps remain explicit. New ingredient labels are source labels, not independently resolved ontology mappings. Locator: PDF page 2, Ref. 1071 culture medium composition. Additional exact excerpt: (NH4)2SO4 2.00 g MgSO4 x 7 H2O 0.25 g K2HPO4 0.10 g KCl 0.10 g
+    Distilled water 1000.00 ml data_quality_flags (correct_review_status): Withdraw the inherited ingredients_curated flag: unresolved volume/normality/identity gaps and source-version attribution still need curation. Locator: PDF page 2, Ref. 1071 culture medium composition.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf
+  supports: SUPPORT
+  snippet: |-
+    For DSM 9467: Adjust  pH to 3.0  with 1 N H2SO4  prior to autoclaving   and  omit  FeSO4 x
+    7 H2O from the medium. Before use, add 2.00 g/l D-glucose and 0.1 g/l yeast extract from
+    filter-sterilized stock solutions.
+  explanation: 'ingredients[4] (corroborate_omission): Only iron omission is corroborated
+    across versions; other current-source values are not applied here. Locator: PDF
+    page 1.'
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  supports: SUPPORT
+  snippet: "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=670.4'\
+    \ >670.4</a></TD>\n\t\t\t\t\t<TD> For DSM 9467</TD>\n\t\t\t\t\t<TD> 3.0, H2SO4</TD>\n\
+    \t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n\
+    <TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf</a></TD>\n\t\
+    \t\t\t</TR>"
+  explanation: 'media_term (identity_only): Exact KOMODO strain/accession mapping;
+    this row does not date or prove identity with the archived recipe. Locator: KOMODO
+    table row 670.'
+solutions:
+- preferred_term: Archived glucose stock
+  source: https://bacdive.dsmz.de/pdf/4303?doi=10.13145%2Fbacdive4303.20170829.2
+  composition:
+  - preferred_term: Glucose
+    concentration:
+      value: '10'
+      unit: PERCENT_W_V
+    notes: Archived stock strength is explicitly 10% w/v. Final target is reported
+      as 0.2% without a percent basis; it is not normalized to g/L. Stock dose is
+      unspecified; the archive does not specify glucose stereochemistry.
+    evidence:
+    - reference: https://bacdive.dsmz.de/pdf/4303?doi=10.13145%2Fbacdive4303.20170829.2
+      supports: SUPPORT
+      snippet: |-
+        For DSM 9467: Adjust pH of MS-medium to 3.0 with 2N
+        H2SO4 prior to autoclaving. Before use, add 0.2% glucose from filter
+        sterilized 10% w/v stock solution, and 0.01% yeast extract from
+        autoclaved 1% stock solution.
+      explanation: 'solutions[0].composition[0].concentration (add): Archived stock
+        strength is explicitly 10% w/v. Final target is reported as 0.2% without a
+        percent basis; it is not normalized to g/L. Stock dose is unspecified; the
+        archive does not specify glucose stereochemistry. Locator: PDF page 2, Ref.
+        1071 culture medium composition.'
+  notes: Filter-sterilized stock; add before use. No dose is inferred from the ambiguous
+    final percent.
+- preferred_term: Archived yeast extract stock
+  source: https://bacdive.dsmz.de/pdf/4303?doi=10.13145%2Fbacdive4303.20170829.2
+  composition:
+  - preferred_term: Yeast extract
+    notes: Archived stock strength is 1% without a stated percent basis; final target
+      is 0.01%, also without a stated basis. No structured concentration or dilution
+      calculation is asserted.
+    evidence:
+    - reference: https://bacdive.dsmz.de/pdf/4303?doi=10.13145%2Fbacdive4303.20170829.2
+      supports: SUPPORT
+      snippet: |-
+        For DSM 9467: Adjust pH of MS-medium to 3.0 with 2N
+        H2SO4 prior to autoclaving. Before use, add 0.2% glucose from filter
+        sterilized 10% w/v stock solution, and 0.01% yeast extract from
+        autoclaved 1% stock solution.
+      explanation: 'solutions[1].composition[0].notes (schema_gap): Archived stock
+        strength is 1% without a stated percent basis; final target is 0.01%, also
+        without a stated basis. No structured concentration or dilution calculation
+        is asserted. Locator: PDF page 2, Ref. 1071 culture medium composition.'
+  notes: Autoclaved stock; add before use. Stock addition volume is unspecified.
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: 'For DSM 9467: Adjust pH of MS-medium to 3.0 with 2N H2SO4 prior to
+    autoclaving. Before use, add 0.2% glucose from filter sterilized 10% w/v stock
+    solution, and 0.01% yeast extract from autoclaved 1% stock solution.'
+variants:
+- name: DSM 9467 current DSMZ 670 source formulation
+  relationship: DERIVED_FROM
+  description: Separate recipe version; not applied to the asserted archived formulation.
+  modifications:
+  - Current DSMZ 670 base table uses 950 ml distilled-water input, not the archive's
+    1000 ml; this is not a stated final volume.
+  - Current base preparation is autoclaving for 15 min at 121 C; incubate statically
+    without shaking. These instructions are not imported into the historical formulation.
+  - 'Current source: pH 3.0 with 1 N H2SO4, not archived 2 N acid; omit iron. Add
+    2.00 g/L D-glucose and 0.1 g/L yeast extract from filter-sterilized stocks of
+    unspecified strength/dose, rather than the archived stock specifications.'
+  evidence:
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf
+    supports: SUPPORT
+    snippet: |-
+      For DSM 9467: Adjust  pH to 3.0  with 1 N H2SO4  prior to autoclaving   and  omit  FeSO4 x
+      7 H2O from the medium. Before use, add 2.00 g/l D-glucose and 0.1 g/l yeast extract from
+      filter-sterilized stock solutions.
+    explanation: |-
+      variants[0].modifications (separate_source_version): Current-source changes apply only to this inline alternative; they do not repair the archive by substitution. Locator: PDF page 1. variants[0].description (separate_source_version): The same current-source base table and preparation qualify this alternative; final volume remains unstated. Locator: PDF page 1. Additional exact excerpt: 670: ACIDIFERROBACTER (MS) MEDIUM
+      (NH4)2SO4 2.00 g
+      MgSO4 x 7 H2O 0.25 g
+      K2HPO4 0.10 g
+      KCl 0.10 g
+      FeSO4 x 7 H2O (40% w/v in 0.2 N H2SO4) 50.00 ml
+      Distilled water 950.00 ml
+      1. Dissolve ingredients except ferrous sulfate and adjust pH to 2.2 with 4 N H2SO4. Sterilize
+      medium by autoclaving for 15 min at 121°C. Before use, add  FeSO4 x 7 H2O from a 40%
+      (w/v) stock solution prepared with 0.2 N H2SO4 and filter-sterilized under 100% N2 gas
+      atmosphere.
+      2. Note: Incubate statically without shaking.
+references:
+- reference: https://bacdive.dsmz.de/pdf/4303?doi=10.13145%2Fbacdive4303.20170829.2
+  title: Acidiferrobacter thiooxydans Hallberg et al. 2011
+  authors: Reimer, L.C.; Vetcininova, A.; Soehngen, C.; Podstawka, A.; Gleim, D.;
+    Overmann, J.
+  year: 2017
+  notes: source_type=dataset; discovery_mode=manual_web_search; accessed_on=2026-10-08;
+    version=2; DOI=doi:10.13145/bacdive4303.20170829.2; locator=PDF page 2, Ref. 1071
+    culture medium composition; bibliography verified via DataCite; archive landing
+    page resolves this exact PDF; named strain recipe instructions only, not growth
+    metadata for those strains.
+- reference: doi:10.13145/bacdive4303.20170829.2
+  title: Acidiferrobacter thiooxydans Hallberg et al. 2011
+  authors: Reimer, L.C.; Vetcininova, A.; Soehngen, C.; Podstawka, A.; Gleim, D.;
+    Overmann, J.
+  year: 2017
+  notes: source_type=dataset; discovery_mode=manual_web_search; accessed_on=2026-10-08;
+    version=2; DOI=doi:10.13145/bacdive4303.20170829.2; locator=PDF page 2, Ref. 1071
+    culture medium composition; bibliography verified via DataCite; archive landing
+    page resolves this exact PDF; named strain recipe instructions only, not growth
+    metadata for those strains. PDF=https://bacdive.dsmz.de/pdf/4303?doi=10.13145%2Fbacdive4303.20170829.2
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf
+  title: '670: ACIDIFERROBACTER (MS) MEDIUM'
+  notes: source_type=culture_collection_page; discovery_mode=cross_reference; accessed_on=2026-10-08;
+    response_sha256=e21dbc3f7c16cf301001aaa5ca4ca7aa57fb486cbccba0995c46e094946917ab;
+    current-source alternative only; no individual authors or publication year supplied;
+    copyright year is not a publication date.
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  title: KOMODO - the Known Media Database
+  notes: source_type=dataset; discovery_mode=cross_reference; accessed_on=2026-10-07;
+    strain/accession and pH mapping only; no concentration or archived-version identity
+    inferred.

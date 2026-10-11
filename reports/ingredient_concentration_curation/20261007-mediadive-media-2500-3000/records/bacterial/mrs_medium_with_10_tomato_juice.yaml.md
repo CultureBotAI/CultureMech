@@ -1,0 +1,24 @@
+# Medium Concentration Review: MRS MEDIUM WITH 10% TOMATO JUICE
+
+- Record: data/normalized_yaml/bacterial/mrs_medium_with_10_tomato_juice.yaml
+- ID: CultureMech:003148
+- Reviewed commit: `f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f`
+- Before SHA256: `cff5bcb9f2034ce5ada96519ed987629c78ec81966ce37053d19ebc1e692228a`
+- Proposed/result SHA256: `9e96f512914ac0af131ccd6dceb1cd2904c9816f0d91f5cceee4308c88c3f2df`
+- Source: https://mediadive.dsmz.de/rest/medium/J803
+- Source SHA256: 17f667806cba03cb3daf2390d442a904ea55a0f0669fbb8a31ab79e07e3aa92e
+- Retrieved: 2026-10-07T14:39:46.179760+00:00
+- Source type: official DSMZ dataset; discovery: existing record source ID; authors/year not supplied.
+- State: changed locally; unresolved claims remain unchanged.
+- Baseline schema errors: 0; proposed schema errors: 0.
+- Operational failure: none
+
+Source response, exact IDs/labels, arithmetic, and literal snippets were checked by the maintained guarded reviewer. This is not a claim of manual inspection of every source sentence or automated reference-validator success. Preparation-dependent quantities and unrepresented stocks remain open. Schema validity is not scientific proof.
+
+| Field | Ingredient | Old | Proposed | Status | DOI/PURL | Exact snippet | Locator | Calculation / decision | Action |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `ingredients[0].concentration` | MRS broth | {"unit": "G_PER_L", "value": "55"} | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/medium/J803 | {<br>                        "recipe_order": 1,<br>                        "compound": "MRS broth",<br>                        "compound_id": 1899,<br>                        "attribute": "BD-Difco",<br>                        "amount": 55,<br>                        "unit": "g",<br>                        "g_l": 55,<br>                        "optional": 0<br>                    } | $.data.solutions[0].recipe[0] | Optional addition or source attribute needs separate formulation/stock-strength review. | unchanged |
+| `ingredients[1].concentration` | L-Cysteine HCl x H2O | {"unit": "G_PER_L", "value": "0.5"} | {"unit": "G_PER_L", "value": "0.5"} | evidence_only | https://mediadive.dsmz.de/rest/medium/J803 | {<br>                        "recipe_order": 2,<br>                        "compound": "L-Cysteine HCl x H2O",<br>                        "compound_id": 770,<br>                        "amount": 0.5,<br>                        "unit": "g",<br>                        "g_l": 0.5,<br>                        "optional": 0<br>                    } | $.data.solutions[0].recipe[1] | Provider explicitly reports g_l=0.5; check: 0.5 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.5 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. | applied |
+| `ingredients[2].concentration` | Tomato juice | {"unit": "G_PER_L", "value": "100"} | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/medium/J803 | {<br>                        "recipe_order": 3,<br>                        "compound": "Tomato juice",<br>                        "compound_id": 105,<br>                        "condition": " filtered",<br>                        "amount": 100,<br>                        "unit": "ml",<br>                        "optional": 0<br>                    } | $.data.solutions[0].recipe[2] | Conditional source row is not established for this physical state/formulation. | unchanged |
+| `source.data.solutions[0].recipe[3]` | Distilled water | unknown / not asserted | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/medium/J803 | {<br>                        "recipe_order": 4,<br>                        "compound": "Distilled water",<br>                        "compound_id": 4,<br>                        "amount": 900,<br>                        "unit": "ml",<br>                        "optional": 0<br>                    } | $.data.solutions[0].recipe[3] | Source row has no established direct-medium match. Stock, omitted solvent, optional, and missing ingredients require explicit follow-up; not silently endorsed or discarded. | unchanged |
+| `source.data.solutions[0].steps[0]` | preparation context | unknown / not asserted | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/medium/J803 | {<br>                        "step": "Adjust pH to 5.2."<br>                    } | $.data.solutions[0].steps[0] | Preparation context retained for source-specific follow-up, including supplements and downstream dilutions; no additional amount inferred from prose. | unchanged |

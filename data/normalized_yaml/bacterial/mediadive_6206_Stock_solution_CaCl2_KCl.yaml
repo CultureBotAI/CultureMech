@@ -16,6 +16,33 @@ composition:
     label: calcium chloride dihydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/6206
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "CaCl2 x 2 H2O",
+                      "compound_id": 7,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.43,
+                      "unit": "g",
+                      "g_l": 4.3,
+                      "mmol_l": 29.2487,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (CaCl2 x
+      2 H2O) in MediaDive solution 6206; locator=$.data.recipe[0] (compound_id=7).
+      Provider explicitly reports g_l=4.3. Arithmetic check: 0.43 g * 1 g/g / (100
+      ml / 1000 ml per L) = 4.3 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 100. Retrieved 2026-10-07T10:01:16.509838+00:00;
+      response SHA256=2868fd2b9a188b393c8b87ffae0141845b7cedccdc814616d759d42e9e31123a.'
 - preferred_term: KCl
   concentration:
     value: '1.6'
@@ -28,6 +55,32 @@ composition:
     label: potassium chloride
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/6206
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "KCl",
+                      "compound_id": 61,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.16,
+                      "unit": "g",
+                      "g_l": 1.6,
+                      "mmol_l": 21.4621,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (KCl) in
+      MediaDive solution 6206; locator=$.data.recipe[1] (compound_id=61). Provider
+      explicitly reports g_l=1.6. Arithmetic check: 0.16 g * 1 g/g / (100 ml / 1000
+      ml per L) = 1.6 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 100. Retrieved 2026-10-07T10:01:16.509838+00:00; response SHA256=2868fd2b9a188b393c8b87ffae0141845b7cedccdc814616d759d42e9e31123a.'
 preparation_notes: 'Original volume: 100 mL'
 curation_history:
 - timestamp: '2026-03-13T06:20:39.975657Z'
@@ -57,6 +110,16 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 1 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-10-07T10:04:07.640757+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/6206
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "4.3"} -> {"unit":
+    "G_PER_L", "value": "4.3"} (evidence_only); composition[1].concentration: {"unit":
+    "G_PER_L", "value": "1.6"} -> {"unit": "G_PER_L", "value": "1.6"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -65,3 +128,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/6206
+  title: 'MediaDive solution 6206: Stock solution (CaCl2/KCl)'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=2868fd2b9a188b393c8b87ffae0141845b7cedccdc814616d759d42e9e31123a;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

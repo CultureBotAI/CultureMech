@@ -11,6 +11,32 @@ composition:
   term:
     id: mediadive.compound:1
     label: Peptone
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/136
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "Peptone",
+                      "compound_id": 1,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "g",
+                      "g_l": 5,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Peptone)
+      in MediaDive solution 136; locator=$.data.recipe[0] (compound_id=1). Provider
+      explicitly reports g_l=5. Arithmetic check: 5 g * 1 g/g / (1000 ml / 1000 ml
+      per L) = 5 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T08:20:37.579186+00:00; response SHA256=649ef0a111207f3c4c938c684398351a68763de43e28e983f26651c7f6fa9154.'
 - preferred_term: Beef extract
   concentration:
     value: '3'
@@ -18,6 +44,32 @@ composition:
   term:
     id: mediadive.compound:85
     label: Beef extract
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/136
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Beef extract",
+                      "compound_id": 85,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 3,
+                      "unit": "g",
+                      "g_l": 3,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Beef extract)
+      in MediaDive solution 136; locator=$.data.recipe[1] (compound_id=85). Provider
+      explicitly reports g_l=3. Arithmetic check: 3 g * 1 g/g / (1000 ml / 1000 ml
+      per L) = 3 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T08:20:37.579186+00:00; response SHA256=649ef0a111207f3c4c938c684398351a68763de43e28e983f26651c7f6fa9154.'
 - preferred_term: Glycerol
   concentration:
     value: '20'
@@ -29,6 +81,32 @@ composition:
     id: CHEBI:17754
     label: glycerol
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/136
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "Glycerol",
+                      "compound_id": 72,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 20,
+                      "unit": "g",
+                      "g_l": 20,
+                      "mmol_l": 217.179,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[2].concentration (Glycerol)
+      in MediaDive solution 136; locator=$.data.recipe[2] (compound_id=72). Provider
+      explicitly reports g_l=20. Arithmetic check: 20 g * 1 g/g / (1000 ml / 1000
+      ml per L) = 20 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T08:20:37.579186+00:00; response SHA256=649ef0a111207f3c4c938c684398351a68763de43e28e983f26651c7f6fa9154.'
 - preferred_term: Soil extract
   concentration:
     value: '150'
@@ -60,6 +138,32 @@ composition:
     label: agar
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/136
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 6,
+                      "compound": "Agar",
+                      "compound_id": 3,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 15,
+                      "unit": "g",
+                      "g_l": 15,
+                      "mmol_l": 44.5991,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[5].concentration (Agar) in
+      MediaDive solution 136; locator=$.data.recipe[5] (compound_id=3). Provider explicitly
+      reports g_l=15. Arithmetic check: 15 g * 1 g/g / (1000 ml / 1000 ml per L) =
+      15 g/L, consistent with the reported value at its precision. Evidence supports
+      the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T08:20:37.579186+00:00; response SHA256=649ef0a111207f3c4c938c684398351a68763de43e28e983f26651c7f6fa9154.'
 preparation_notes: Adjust pH to 7.0. Soil extract is prepared by sieving air dried
   garden soil through a coarse sieve and autoclaving 400 g with 960 ml of distilled
   water at 121°C for one hour. After the mixture is cool and settled, the supernatant
@@ -109,6 +213,19 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T08:27:51.574555+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/136
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "5"} -> {"unit":
+    "G_PER_L", "value": "5"} (evidence_only); composition[1].concentration: {"unit":
+    "G_PER_L", "value": "3"} -> {"unit": "G_PER_L", "value": "3"} (evidence_only);
+    composition[2].concentration: {"unit": "G_PER_L", "value": "20"} -> {"unit": "G_PER_L",
+    "value": "20"} (evidence_only); composition[5].concentration: {"unit": "G_PER_L",
+    "value": "15"} -> {"unit": "G_PER_L", "value": "15"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -117,3 +234,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/136
+  title: 'MediaDive solution 136: Main sol. 80'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=649ef0a111207f3c4c938c684398351a68763de43e28e983f26651c7f6fa9154;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

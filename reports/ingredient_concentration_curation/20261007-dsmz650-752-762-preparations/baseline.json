@@ -1,0 +1,97 @@
+{
+  "terminal": true,
+  "runtime": "Partial locked Python 3.13; not full CI",
+  "phase": "baseline",
+  "checks": [
+    {
+      "name": "tests",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_dsmz650_752_762_preparations.py",
+        "tests/test_dsmz467_469_inputs.py",
+        "tests/test_medium_concentration_review.py",
+        "tests/test_solution_concentration_review.py",
+        "tests/test_record_io.py",
+        "tests/test_solution_merge_routing.py",
+        "--junitxml",
+        "/tmp/ingredient-media-20261007/dsmz-preparations-baseline-tests.xml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-preparations-baseline-tests.log"
+    },
+    {
+      "name": "schema-650-medium",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/centenum_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-preparations-baseline-schema-650-medium.log"
+    },
+    {
+      "name": "schema-752-medium",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/halomonas_pantelleriense.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-preparations-baseline-schema-752-medium.log"
+    },
+    {
+      "name": "schema-762-medium",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/halomonas_desiderata_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-preparations-baseline-schema-762-medium.log"
+    },
+    {
+      "name": "schema-650-solution",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/mediadive_1378_Main_sol_650.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-preparations-baseline-schema-650-solution.log"
+    },
+    {
+      "name": "schema-752-solution",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/mediadive_1538_Main_sol_752.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-preparations-baseline-schema-752-solution.log"
+    },
+    {
+      "name": "schema-762-solution",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/mediadive_1552_Main_sol_762.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-preparations-baseline-schema-762-solution.log"
+    },
+    {
+      "name": "strict",
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-preparations-baseline-strict.log"
+    }
+  ]
+}

@@ -14,9 +14,6 @@ description: Algae culture medium from UTEX Culture Collection. Suitable for fre
 notes: UTEX prepares Bristol Medium from six mineral stocks diluted in dH2O and autoclaved.
 ingredients:
 - preferred_term: dH2O
-  concentration:
-    value: '1000'
-    unit: ML_PER_L
   term:
     id: CHEBI:15377
     label: water
@@ -24,6 +21,14 @@ ingredients:
     id: CHEBI:15377
     label: water
   notes: UTEX starts the 1 L Bristol Medium recipe with approximately 900 mL dH2O.
+  evidence:
+  - reference: https://utex.org/products/bristol-medium
+    supports: SUPPORT
+    snippet: total volume to 1 L
+    explanation: 'ingredients[0].concentration: the source specifies make-up to the
+      final medium or stock volume, not a fixed water input. Remove the unsupported
+      1000 mL/L assertion while retaining the water node and preparation notes. This
+      is not a replacement numeric amount. Locator: Directions make-up step.'
 - preferred_term: NaNO3
   concentration:
     value: '2.94'
@@ -40,6 +45,15 @@ ingredients:
   notes: UTEX adds 10 mL/L of a 10 g/400 mL dH2O stock, for 2.94 mM final.
   nutritional_roles:
   - NITROGEN_SOURCE
+  evidence:
+  - reference: https://utex.org/products/bristol-medium
+    supports: SUPPORT
+    snippet: 2.94 mM
+    explanation: 'ingredients[1].concentration: Exact final molarity in the named
+      row; stock input is separate and not independently re-expanded. The source table
+      labels this cell Final Concentration; keep the source molarity and hydrate form
+      without importing stock composition as a direct amount. Locator: recipe table,
+      row 1, Final Concentration.'
 - preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '0.17'
@@ -54,6 +68,15 @@ ingredients:
     supplier_name: Sigma
     catalog_number: C-3881
   notes: UTEX adds 10 mL/L of a 1 g/400 mL dH2O stock, for 0.17 mM final.
+  evidence:
+  - reference: https://utex.org/products/bristol-medium
+    supports: SUPPORT
+    snippet: 0.17 mM
+    explanation: 'ingredients[2].concentration: Exact final molarity in the named
+      row; stock input is separate and not independently re-expanded. The source table
+      labels this cell Final Concentration; keep the source molarity and hydrate form
+      without importing stock composition as a direct amount. Locator: recipe table,
+      row 2, Final Concentration.'
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.3'
@@ -71,6 +94,15 @@ ingredients:
   nutritional_roles:
   - SULFUR_SOURCE
   - TRACE_ELEMENT
+  evidence:
+  - reference: https://utex.org/products/bristol-medium
+    supports: SUPPORT
+    snippet: 0.3 mM
+    explanation: 'ingredients[3].concentration: Exact final molarity in the named
+      row; stock input is separate and not independently re-expanded. The source table
+      labels this cell Final Concentration; keep the source molarity and hydrate form
+      without importing stock composition as a direct amount. Locator: recipe table,
+      row 3, Final Concentration.'
 - preferred_term: K2HPO4
   concentration:
     value: '0.43'
@@ -89,6 +121,15 @@ ingredients:
   - PHOSPHATE_SOURCE
   physicochemical_roles:
   - BUFFER
+  evidence:
+  - reference: https://utex.org/products/bristol-medium
+    supports: SUPPORT
+    snippet: 0.43 mM
+    explanation: 'ingredients[4].concentration: Exact final molarity in the named
+      row; stock input is separate and not independently re-expanded. The source table
+      labels this cell Final Concentration; keep the source molarity and hydrate form
+      without importing stock composition as a direct amount. Locator: recipe table,
+      row 4, Final Concentration.'
 - preferred_term: KH2PO4
   concentration:
     value: '1.29'
@@ -107,6 +148,15 @@ ingredients:
   - PHOSPHATE_SOURCE
   physicochemical_roles:
   - BUFFER
+  evidence:
+  - reference: https://utex.org/products/bristol-medium
+    supports: SUPPORT
+    snippet: 1.29 mM
+    explanation: 'ingredients[5].concentration: Exact final molarity in the named
+      row; stock input is separate and not independently re-expanded. The source table
+      labels this cell Final Concentration; keep the source molarity and hydrate form
+      without importing stock composition as a direct amount. Locator: recipe table,
+      row 5, Final Concentration.'
 - preferred_term: NaCl
   concentration:
     value: '0.43'
@@ -121,6 +171,15 @@ ingredients:
     supplier_name: Fisher
     catalog_number: S271-500
   notes: UTEX adds 10 mL/L of a 1 g/400 mL dH2O stock, for 0.43 mM final.
+  evidence:
+  - reference: https://utex.org/products/bristol-medium
+    supports: SUPPORT
+    snippet: 0.43 mM
+    explanation: 'ingredients[6].concentration: Exact final molarity in the named
+      row; stock input is separate and not independently re-expanded. The source table
+      labels this cell Final Concentration; keep the source molarity and hydrate form
+      without importing stock composition as a direct amount. Locator: recipe table,
+      row 6, Final Concentration.'
 solutions: []
 preparation_steps:
 - step_number: 1
@@ -197,9 +256,180 @@ curation_history:
   source: https://utex.org/products/bristol-medium
   notes: UTEX prepares Bristol Medium from six mineral stocks diluted in dH2O and
     autoclaved.
+- timestamp: '2026-10-10T03:53:28.828041+00:00'
+  curator: codex
+  action: CURATED_UTEX_BRISTOL_BBM_INGREDIENT_AND_PREPARATION_EVIDENCE
+  notes: The BBM trace source prints MnCl with tetrahydrate; its intended chemical
+    identity and the existing MnCl2 amount remain unverified. Added node evidence
+    supports only that source-spelling conflict. BBM trace concentration columns and
+    stock-page parenthetical micromolar values conflict with explicit stock preparation
+    amounts. Preserve inspected Amount-per-litre stock recipes, not those incompatible
+    columns; no new final-medium conversions. The BBM iron stock does not specify
+    acid strength. No density, purity or molarity is assumed. The BBM study cites
+    Stein 1973; exact equivalence with the current UTEX parent is unverified. NH4Cl
+    ppm basis and culture working volume remain unspecified; no numerical conversion
+    or aliquot inference. Bristol-NaCl uses an unfinished parent preparation; its
+    table one-litre row is not certified as a working dose of completed Bristol. The
+    reference and explicit stage notes are retained without a fabricated dose. Optional
+    agar formulations are not silently added to these liquid records. No new taxa-media
+    associations, IDs or growth/role assertions are curated. Supplier-catalog identities,
+    generic incubation/light claims and unrelated preexisting organism evidence are
+    not blanket-certified by this ingredient review.
+  source: https://utex.org/products/bristol-medium; https://utex.org/products/bristol-nacl-medium
+  changes: '[{"counts": {"unsupported_quantity_slots_removed": 1}, "kind": "remove",
+    "locator": "Directions make-up step", "new": null, "old": {"unit": "ML_PER_L",
+    "value": "1000"}, "old_present": true, "pointer": ["ingredients", 0, "concentration"],
+    "reason": "ingredients[0].concentration: the source specifies make-up to the final
+    medium or stock volume, not a fixed water input. Remove the unsupported 1000 mL/L
+    assertion while retaining the water node and preparation notes. This is not a
+    replacement numeric amount.", "reference": "https://utex.org/products/bristol-medium",
+    "snippet": "total volume to 1 L"}, {"counts": {"child_link_notes_corrected": 1},
+    "kind": "set", "locator": "Bristol-NaCl Directions 1-2 and table", "new": "Bristol-NaCl
+    uses this mineral preparation only through step one; it adds 3.6 g NaCl before
+    making the child up to 1 L, not to a litre of completed Bristol Medium.", "old":
+    "Adds 3.6 g/L NaCl to prepared Bristol Medium.", "old_present": true, "pointer":
+    ["variant_children", 3, "notes"], "reason": "Keep the reciprocal relationship
+    consistent with the child preparation stage.", "reference": "https://utex.org/products/bristol-nacl-medium",
+    "snippet": "Prepare Bristol Medium through step one."}, {"counts": {"new_evidence":
+    1}, "kind": "set", "locator": "ingredients[0].concentration: the source specifies
+    make-up to the final medium or stock volume, not a fixed water input. Remove the
+    unsupported 1000 mL/L assertion while retaining the water node and preparation
+    notes. This is not a replacement numeric amount. Locator: Directions make-up step.",
+    "new": [{"explanation": "ingredients[0].concentration: the source specifies make-up
+    to the final medium or stock volume, not a fixed water input. Remove the unsupported
+    1000 mL/L assertion while retaining the water node and preparation notes. This
+    is not a replacement numeric amount. Locator: Directions make-up step.", "reference":
+    "https://utex.org/products/bristol-medium", "snippet": "total volume to 1 L",
+    "supports": "SUPPORT"}], "old": null, "old_present": false, "pointer": ["ingredients",
+    0, "evidence"], "reason": "Attach the scoped, inspected support without altering
+    existing evidence.", "reference": "https://utex.org/products/bristol-medium",
+    "snippet": "total volume to 1 L"}, {"counts": {"new_evidence": 1}, "kind": "set",
+    "locator": "ingredients[1].concentration: Exact final molarity in the named row;
+    stock input is separate and not independently re-expanded. The source table labels
+    this cell Final Concentration; keep the source molarity and hydrate form without
+    importing stock composition as a direct amount. Locator: recipe table, row 1,
+    Final Concentration.", "new": [{"explanation": "ingredients[1].concentration:
+    Exact final molarity in the named row; stock input is separate and not independently
+    re-expanded. The source table labels this cell Final Concentration; keep the source
+    molarity and hydrate form without importing stock composition as a direct amount.
+    Locator: recipe table, row 1, Final Concentration.", "reference": "https://utex.org/products/bristol-medium",
+    "snippet": "2.94 mM", "supports": "SUPPORT"}], "old": null, "old_present": false,
+    "pointer": ["ingredients", 1, "evidence"], "reason": "Attach the scoped, inspected
+    support without altering existing evidence.", "reference": "https://utex.org/products/bristol-medium",
+    "snippet": "2.94 mM"}, {"counts": {"new_evidence": 1}, "kind": "set", "locator":
+    "ingredients[2].concentration: Exact final molarity in the named row; stock input
+    is separate and not independently re-expanded. The source table labels this cell
+    Final Concentration; keep the source molarity and hydrate form without importing
+    stock composition as a direct amount. Locator: recipe table, row 2, Final Concentration.",
+    "new": [{"explanation": "ingredients[2].concentration: Exact final molarity in
+    the named row; stock input is separate and not independently re-expanded. The
+    source table labels this cell Final Concentration; keep the source molarity and
+    hydrate form without importing stock composition as a direct amount. Locator:
+    recipe table, row 2, Final Concentration.", "reference": "https://utex.org/products/bristol-medium",
+    "snippet": "0.17 mM", "supports": "SUPPORT"}], "old": null, "old_present": false,
+    "pointer": ["ingredients", 2, "evidence"], "reason": "Attach the scoped, inspected
+    support without altering existing evidence.", "reference": "https://utex.org/products/bristol-medium",
+    "snippet": "0.17 mM"}, {"counts": {"new_evidence": 1}, "kind": "set", "locator":
+    "ingredients[3].concentration: Exact final molarity in the named row; stock input
+    is separate and not independently re-expanded. The source table labels this cell
+    Final Concentration; keep the source molarity and hydrate form without importing
+    stock composition as a direct amount. Locator: recipe table, row 3, Final Concentration.",
+    "new": [{"explanation": "ingredients[3].concentration: Exact final molarity in
+    the named row; stock input is separate and not independently re-expanded. The
+    source table labels this cell Final Concentration; keep the source molarity and
+    hydrate form without importing stock composition as a direct amount. Locator:
+    recipe table, row 3, Final Concentration.", "reference": "https://utex.org/products/bristol-medium",
+    "snippet": "0.3 mM", "supports": "SUPPORT"}], "old": null, "old_present": false,
+    "pointer": ["ingredients", 3, "evidence"], "reason": "Attach the scoped, inspected
+    support without altering existing evidence.", "reference": "https://utex.org/products/bristol-medium",
+    "snippet": "0.3 mM"}, {"counts": {"new_evidence": 1}, "kind": "set", "locator":
+    "ingredients[4].concentration: Exact final molarity in the named row; stock input
+    is separate and not independently re-expanded. The source table labels this cell
+    Final Concentration; keep the source molarity and hydrate form without importing
+    stock composition as a direct amount. Locator: recipe table, row 4, Final Concentration.",
+    "new": [{"explanation": "ingredients[4].concentration: Exact final molarity in
+    the named row; stock input is separate and not independently re-expanded. The
+    source table labels this cell Final Concentration; keep the source molarity and
+    hydrate form without importing stock composition as a direct amount. Locator:
+    recipe table, row 4, Final Concentration.", "reference": "https://utex.org/products/bristol-medium",
+    "snippet": "0.43 mM", "supports": "SUPPORT"}], "old": null, "old_present": false,
+    "pointer": ["ingredients", 4, "evidence"], "reason": "Attach the scoped, inspected
+    support without altering existing evidence.", "reference": "https://utex.org/products/bristol-medium",
+    "snippet": "0.43 mM"}, {"counts": {"new_evidence": 1}, "kind": "set", "locator":
+    "ingredients[5].concentration: Exact final molarity in the named row; stock input
+    is separate and not independently re-expanded. The source table labels this cell
+    Final Concentration; keep the source molarity and hydrate form without importing
+    stock composition as a direct amount. Locator: recipe table, row 5, Final Concentration.",
+    "new": [{"explanation": "ingredients[5].concentration: Exact final molarity in
+    the named row; stock input is separate and not independently re-expanded. The
+    source table labels this cell Final Concentration; keep the source molarity and
+    hydrate form without importing stock composition as a direct amount. Locator:
+    recipe table, row 5, Final Concentration.", "reference": "https://utex.org/products/bristol-medium",
+    "snippet": "1.29 mM", "supports": "SUPPORT"}], "old": null, "old_present": false,
+    "pointer": ["ingredients", 5, "evidence"], "reason": "Attach the scoped, inspected
+    support without altering existing evidence.", "reference": "https://utex.org/products/bristol-medium",
+    "snippet": "1.29 mM"}, {"counts": {"new_evidence": 1}, "kind": "set", "locator":
+    "ingredients[6].concentration: Exact final molarity in the named row; stock input
+    is separate and not independently re-expanded. The source table labels this cell
+    Final Concentration; keep the source molarity and hydrate form without importing
+    stock composition as a direct amount. Locator: recipe table, row 6, Final Concentration.",
+    "new": [{"explanation": "ingredients[6].concentration: Exact final molarity in
+    the named row; stock input is separate and not independently re-expanded. The
+    source table labels this cell Final Concentration; keep the source molarity and
+    hydrate form without importing stock composition as a direct amount. Locator:
+    recipe table, row 6, Final Concentration.", "reference": "https://utex.org/products/bristol-medium",
+    "snippet": "0.43 mM", "supports": "SUPPORT"}], "old": null, "old_present": false,
+    "pointer": ["ingredients", 6, "evidence"], "reason": "Attach the scoped, inspected
+    support without altering existing evidence.", "reference": "https://utex.org/products/bristol-medium",
+    "snippet": "0.43 mM"}, {"counts": {"new_evidence": 1}, "kind": "set", "locator":
+    "variant_children[3].notes: the linked Bristol-NaCl child stops Bristol preparation
+    after the first step, adds its salt, then performs final volume adjustment. Locator:
+    Bristol-NaCl Directions 1-2.", "new": [{"explanation": "variant_children[3].notes:
+    the linked Bristol-NaCl child stops Bristol preparation after the first step,
+    adds its salt, then performs final volume adjustment. Locator: Bristol-NaCl Directions
+    1-2.", "reference": "https://utex.org/products/bristol-nacl-medium", "snippet":
+    "Prepare Bristol Medium through step one.", "supports": "SUPPORT"}], "old": null,
+    "old_present": false, "pointer": ["variant_children", 3, "evidence"], "reason":
+    "Attach the scoped, inspected support without altering existing evidence.", "reference":
+    "https://utex.org/products/bristol-nacl-medium", "snippet": "Prepare Bristol Medium
+    through step one."}, {"counts": {"bibliographic_entries_enriched": 1}, "kind":
+    "set", "locator": "source title/author context and inspected recipe or methods",
+    "new": {"authors": "UTEX Culture Collection of Algae", "notes": "source_type=culture_collection_page;
+    discovery_mode=existing_record_reference; accessed_on=2026-10-10. Exact recipe
+    or study formulation and preparation stage are retained; source conflicts are
+    not silently repaired. Recipe publication year is unknown; website/PDF copyright
+    is not used as publication year.", "reference": "https://utex.org/products/bristol-medium",
+    "title": "Bristol Medium | UTEX Culture Collection of Algae"}, "old": {"reference":
+    "https://utex.org/products/bristol-medium"}, "old_present": true, "pointer": ["references",
+    1], "reason": "Enrich the existing reference with verified provenance.", "reference":
+    "https://utex.org/products/bristol-medium", "snippet": "total volume to 1 L"},
+    {"counts": {"new_references": 1}, "kind": "append", "locator": "source title/author
+    context and inspected recipe or methods", "new": [{"authors": "UTEX Culture Collection
+    of Algae", "notes": "source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10. Exact recipe or study formulation and preparation stage
+    are retained; source conflicts are not silently repaired. Recipe publication year
+    is unknown; website/PDF copyright is not used as publication year.", "reference":
+    "https://utex.org/products/bristol-nacl-medium", "title": "Bristol-NaCl Medium
+    | UTEX Culture Collection of Algae"}], "old_length": 2, "pointer": ["references"],
+    "reason": "Add the inspected formulation/relationship sources.", "reference":
+    "https://utex.org/products/bristol-nacl-medium", "snippet": "Prepare Bristol Medium
+    through step one."}]'
 references:
 - reference: UTEX:bristol-medium
 - reference: https://utex.org/products/bristol-medium
+  title: Bristol Medium | UTEX Culture Collection of Algae
+  authors: UTEX Culture Collection of Algae
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10. Exact recipe or study formulation and preparation stage
+    are retained; source conflicts are not silently repaired. Recipe publication year
+    is unknown; website/PDF copyright is not used as publication year.
+- reference: https://utex.org/products/bristol-nacl-medium
+  title: Bristol-NaCl Medium | UTEX Culture Collection of Algae
+  authors: UTEX Culture Collection of Algae
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10. Exact recipe or study formulation and preparation stage
+    are retained; source conflicts are not silently repaired. Recipe publication year
+    is unknown; website/PDF copyright is not used as publication year.
 original_name: Bristol Medium
 organism_culture_type: isolate
 target_organisms:
@@ -239,7 +469,16 @@ variant_children:
   relationship: SUPPLEMENTED_VARIANT
   id: CultureMech:000036
   name: bristol_nacl_medium
-  notes: Adds 3.6 g/L NaCl to prepared Bristol Medium.
+  notes: Bristol-NaCl uses this mineral preparation only through step one; it adds
+    3.6 g NaCl before making the child up to 1 L, not to a litre of completed Bristol
+    Medium.
+  evidence:
+  - reference: https://utex.org/products/bristol-nacl-medium
+    supports: SUPPORT
+    snippet: Prepare Bristol Medium through step one.
+    explanation: 'variant_children[3].notes: the linked Bristol-NaCl child stops Bristol
+      preparation after the first step, adds its salt, then performs final volume
+      adjustment. Locator: Bristol-NaCl Directions 1-2.'
 data_quality_flags:
 - has_ontology_mappings
 - ingredients_curated

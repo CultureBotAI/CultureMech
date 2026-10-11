@@ -1,0 +1,70 @@
+{
+  "matches": [
+    {
+      "path": "data/normalized_yaml/archaea/halophile_medium.yaml",
+      "field": "$.ingredients[12]",
+      "term": {
+        "id": "CHEBI:75215",
+        "label": "sodium molybdate (anhydrous)"
+      },
+      "chebi_term": null,
+      "mim": {
+        "id": "CHEBI:75215",
+        "label": "sodium molybdate (anhydrous)"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/elusimicrobium_minutum_medium.yaml",
+      "field": "$.ingredients[18]",
+      "term": {
+        "id": "CHEBI:75215",
+        "label": "sodium molybdate (anhydrous)"
+      },
+      "chebi_term": null,
+      "mim": null
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/halophile_medium.yaml",
+      "field": "$.ingredients[12]",
+      "term": {
+        "id": "CHEBI:75215",
+        "label": "sodium molybdate (anhydrous)"
+      },
+      "chebi_term": null,
+      "mim": {
+        "id": "CHEBI:75215",
+        "label": "sodium molybdate (anhydrous)"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_1383_Trace_element_solution.yaml",
+      "field": "$.composition[4]",
+      "term": {
+        "id": "mediadive.compound:641",
+        "label": "Na2MoO4 x H2O"
+      },
+      "chebi_term": {
+        "id": "CHEBI:75215",
+        "label": "sodium molybdate (anhydrous)",
+        "confidence": 0.7,
+        "match_type": "corpus_consensus"
+      },
+      "mim": null
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/trace_element_solution_medium_1263.yaml",
+      "field": "$.ingredients[9]",
+      "term": {
+        "id": "CHEBI:75215",
+        "label": "sodium molybdate (anhydrous)"
+      },
+      "chebi_term": null,
+      "mim": {
+        "id": "CHEBI:75215",
+        "label": "sodium molybdate (anhydrous)"
+      }
+    }
+  ],
+  "nodes": 5,
+  "records": 5
+}

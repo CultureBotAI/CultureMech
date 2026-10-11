@@ -18,6 +18,32 @@ composition:
   term:
     id: mediadive.compound:16
     label: Yeast extract
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/89
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Yeast extract",
+                      "compound_id": 16,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "g",
+                      "g_l": 2,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Yeast extract)
+      in MediaDive solution 89; locator=$.data.recipe[1] (compound_id=16). Provider
+      explicitly reports g_l=2. Arithmetic check: 2 g * 1 g/g / (1000 ml / 1000 ml
+      per L) = 2 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T08:20:11.681961+00:00; response SHA256=eaddc85f63ea52d8704ca92fbf6e5de6e8598401b12f127d09b82feeff495f52.'
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.0005'
@@ -42,6 +68,33 @@ composition:
     label: iron(2+) sulfate heptahydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/89
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "FeSO4 x 7 H2O",
+                      "compound_id": 12,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.2,
+                      "unit": "g",
+                      "g_l": 0.2,
+                      "mmol_l": 0.719386,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[3].concentration (FeSO4 x
+      7 H2O) in MediaDive solution 89; locator=$.data.recipe[3] (compound_id=12).
+      Provider explicitly reports g_l=0.2. Arithmetic check: 0.2 g * 1 g/g / (1000
+      ml / 1000 ml per L) = 0.2 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T08:20:11.681961+00:00;
+      response SHA256=eaddc85f63ea52d8704ca92fbf6e5de6e8598401b12f127d09b82feeff495f52.'
 - preferred_term: Sucrose
   concentration:
     value: '10'
@@ -54,6 +107,32 @@ composition:
     label: sucrose
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/89
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 5,
+                      "compound": "Sucrose",
+                      "compound_id": 108,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 10,
+                      "unit": "g",
+                      "g_l": 10,
+                      "mmol_l": 29.2141,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[4].concentration (Sucrose)
+      in MediaDive solution 89; locator=$.data.recipe[4] (compound_id=108). Provider
+      explicitly reports g_l=10. Arithmetic check: 10 g * 1 g/g / (1000 ml / 1000
+      ml per L) = 10 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T08:20:11.681961+00:00; response SHA256=eaddc85f63ea52d8704ca92fbf6e5de6e8598401b12f127d09b82feeff495f52.'
 - preferred_term: Na2SO3
   concentration:
     value: '0.2'
@@ -66,6 +145,32 @@ composition:
     label: sodium sulfite
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/89
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 6,
+                      "compound": "Na2SO3",
+                      "compound_id": 109,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.2,
+                      "unit": "g",
+                      "g_l": 0.2,
+                      "mmol_l": 1.58667,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[5].concentration (Na2SO3)
+      in MediaDive solution 89; locator=$.data.recipe[5] (compound_id=109). Provider
+      explicitly reports g_l=0.2. Arithmetic check: 0.2 g * 1 g/g / (1000 ml / 1000
+      ml per L) = 0.2 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T08:20:11.681961+00:00; response SHA256=eaddc85f63ea52d8704ca92fbf6e5de6e8598401b12f127d09b82feeff495f52.'
 - preferred_term: Na2S2O3 x 5 H2O
   concentration:
     value: '0.08'
@@ -78,6 +183,33 @@ composition:
     label: sodium thiosulfate pentahydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/89
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 7,
+                      "compound": "Na2S2O3 x 5 H2O",
+                      "compound_id": 65,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.08,
+                      "unit": "g",
+                      "g_l": 0.08,
+                      "mmol_l": 0.322339,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[6].concentration (Na2S2O3
+      x 5 H2O) in MediaDive solution 89; locator=$.data.recipe[6] (compound_id=65).
+      Provider explicitly reports g_l=0.08. Arithmetic check: 0.08 g * 1 g/g / (1000
+      ml / 1000 ml per L) = 0.08 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T08:20:11.681961+00:00;
+      response SHA256=eaddc85f63ea52d8704ca92fbf6e5de6e8598401b12f127d09b82feeff495f52.'
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -135,6 +267,20 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T08:27:51.574555+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/89
+  changes: 'composition[1].concentration: {"unit": "G_PER_L", "value": "2"} -> {"unit":
+    "G_PER_L", "value": "2"} (evidence_only); composition[3].concentration: {"unit":
+    "G_PER_L", "value": "0.2"} -> {"unit": "G_PER_L", "value": "0.2"} (evidence_only);
+    composition[4].concentration: {"unit": "G_PER_L", "value": "10"} -> {"unit": "G_PER_L",
+    "value": "10"} (evidence_only); composition[5].concentration: {"unit": "G_PER_L",
+    "value": "0.2"} -> {"unit": "G_PER_L", "value": "0.2"} (evidence_only); composition[6].concentration:
+    {"unit": "G_PER_L", "value": "0.08"} -> {"unit": "G_PER_L", "value": "0.08"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -143,3 +289,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/89
+  title: 'MediaDive solution 89: Main sol. 61'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=eaddc85f63ea52d8704ca92fbf6e5de6e8598401b12f127d09b82feeff495f52;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

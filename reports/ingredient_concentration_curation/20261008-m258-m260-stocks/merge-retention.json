@@ -1,0 +1,26 @@
+{
+  "terminal": true,
+  "source_sha256": "60abc9aa956835c409849c117d0d09ae5b63a21ad5524273d3eba2867b1ee116",
+  "input_records": 15910,
+  "output_groups": 10777,
+  "targets": [
+    {
+      "path": "data/normalized_yaml/archaea/TOGO_M258_Methanomicrobium_Mobile_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/archaea/TOGO_M258_Methanomicrobium_Mobile_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M260_MJ_YPGS_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/TOGO_M260_MJ_YPGS_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    }
+  ],
+  "derived_yaml_written": false,
+  "scope": "Full corpus routing; only the two repaired outputs recertified."
+}

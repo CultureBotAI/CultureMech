@@ -23,14 +23,84 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/452
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 1,
+                              "compound": "Glucose",
+                              "compound_id": 5,
+                              "amount": 10,
+                              "unit": "g",
+                              "g_l": 10,
+                              "mmol_l": 55.5062,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[0].concentration (evidence_only), locator=$.data.solutions[0].recipe[0]:
+      Source solution 903 (Main sol. 452) explicitly reports g_l=10. Arithmetic check:
+      10 g; provider volume 1000 ml; computed 10 g/L. Additional exact value at $.data.solutions[0].volume
+      (ml): 1000. The numeric value and chemical mappings are preserved. This supports
+      the provider-declared preparation concentration, not an independently measured
+      final volume or downstream dilution. Source retrieved 2026-10-07T10:47:14.801559+00:00;
+      response SHA256=a46d186ce3e6f533cd3e250ad15ca3baba919c858d8366da814c5328945e4fb4.
+      Original DSMZ PDF recipe chain visually cross-checked: 452. Secondary ontology
+      mappings and parent/variant relationships were preserved, not validated by this
+      amount evidence.'
 - preferred_term: Peptone
   concentration:
     value: '10'
     unit: G_PER_L
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/452
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 2,
+                              "compound": "Peptone",
+                              "compound_id": 1,
+                              "amount": 10,
+                              "unit": "g",
+                              "g_l": 10,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[1].concentration (evidence_only), locator=$.data.solutions[0].recipe[1]:
+      Source solution 903 (Main sol. 452) explicitly reports g_l=10. Arithmetic check:
+      10 g; provider volume 1000 ml; computed 10 g/L. Additional exact value at $.data.solutions[0].volume
+      (ml): 1000. The numeric value and chemical mappings are preserved. This supports
+      the provider-declared preparation concentration, not an independently measured
+      final volume or downstream dilution. Source retrieved 2026-10-07T10:47:14.801559+00:00;
+      response SHA256=a46d186ce3e6f533cd3e250ad15ca3baba919c858d8366da814c5328945e4fb4.
+      Original DSMZ PDF recipe chain visually cross-checked: 452. Secondary ontology
+      mappings and parent/variant relationships were preserved, not validated by this
+      amount evidence.'
 - preferred_term: Yeast extract
   concentration:
     value: '15'
     unit: G_PER_L
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/452
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 3,
+                              "compound": "Yeast extract",
+                              "compound_id": 16,
+                              "amount": 15,
+                              "unit": "g",
+                              "g_l": 15,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[2].concentration (evidence_only), locator=$.data.solutions[0].recipe[2]:
+      Source solution 903 (Main sol. 452) explicitly reports g_l=15. Arithmetic check:
+      15 g; provider volume 1000 ml; computed 15 g/L. Additional exact value at $.data.solutions[0].volume
+      (ml): 1000. The numeric value and chemical mappings are preserved. This supports
+      the provider-declared preparation concentration, not an independently measured
+      final volume or downstream dilution. Source retrieved 2026-10-07T10:47:14.801559+00:00;
+      response SHA256=a46d186ce3e6f533cd3e250ad15ca3baba919c858d8366da814c5328945e4fb4.
+      Original DSMZ PDF recipe chain visually cross-checked: 452. Secondary ontology
+      mappings and parent/variant relationships were preserved, not validated by this
+      amount evidence.'
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -41,86 +111,56 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
-- preferred_term: KH2PO4
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/452
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 4,
+                              "compound": "Agar",
+                              "compound_id": 3,
+                              "amount": 10,
+                              "unit": "g",
+                              "g_l": 10,
+                              "mmol_l": 29.7327,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[3].concentration (evidence_only), locator=$.data.solutions[0].recipe[3]:
+      Source solution 903 (Main sol. 452) explicitly reports g_l=10. Arithmetic check:
+      10 g; provider volume 1000 ml; computed 10 g/L. Additional exact value at $.data.solutions[0].volume
+      (ml): 1000. The numeric value and chemical mappings are preserved. This supports
+      the provider-declared preparation concentration, not an independently measured
+      final volume or downstream dilution. Source retrieved 2026-10-07T10:47:14.801559+00:00;
+      response SHA256=a46d186ce3e6f533cd3e250ad15ca3baba919c858d8366da814c5328945e4fb4.
+      Original DSMZ PDF recipe chain visually cross-checked: 452. Secondary ontology
+      mappings and parent/variant relationships were preserved, not validated by this
+      amount evidence.'
+- preferred_term: Distilled water
   term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
+    id: mediadive.compound:4
+    label: Distilled water
   concentration:
-    value: '5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
-- preferred_term: K2HPO4
-  term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
-  concentration:
-    value: '30'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: MnSO4 x 5 H2O
-  term:
-    id: CHEBI:131524
-    label: manganese(II) sulfate pentahydrate
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:131524
-    label: manganese(II) sulfate pentahydrate
-- preferred_term: CuSO4 x 5 H2O
-  term:
-    id: CHEBI:31440
-    label: copper(II) sulfate pentahydrate
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31440
-    label: copper(II) sulfate pentahydrate
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: iron(2+) sulfate heptahydrate
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:75836
-    label: iron(2+) sulfate heptahydrate
-- preferred_term: Na3-citrate
-  term:
-    id: CHEBI:53258
-    label: sodium citrate
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:53258
-    label: sodium citrate
+    value: '0.98'
+    unit: L
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/452
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 5,
+                              "compound": "Distilled water",
+                              "compound_id": 4,
+                              "amount": 980,
+                              "unit": "ml",
+                              "optional": 0
+                          }
+    explanation: 'ingredients[4].concentration (add), locator=$.data.solutions[0].recipe[4]:
+      Explicit 980 ml water / 1000 ml per L = 0.98 L in this preparation batch. This
+      is an addition amount, not a claim of final volume, stock strength, or percent
+      basis. Source retrieved 2026-10-07T10:47:14.801559+00:00; response SHA256=a46d186ce3e6f533cd3e250ad15ca3baba919c858d8366da814c5328945e4fb4.
+      Original DSMZ PDF recipe chain visually cross-checked: 452. Secondary ontology
+      mappings and parent/variant relationships were preserved, not validated by this
+      amount evidence.'
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -155,6 +195,47 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-10-07T11:35:03.558874+00:00'
+  curator: codex
+  action: RESTORED_REVIEWED_MEDIUM_STOCK_BOUNDARIES
+  notes: Exact source graph, complete ingredient inventory, amounts, and original
+    PDF recipe chain checked. Numeric concentrations and chemical mappings preserved;
+    stock doses and water are explicit batch amounts. No final-medium stock dilution
+    inferred. Parent/variant relationships remain separately unreviewed.
+  source: https://mediadive.dsmz.de/rest/medium/452; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium452.pdf
+  changes: '[''ingredients'', 0, ''concentration''] -> ingredients[0].concentration:
+    {''value'': ''10'', ''unit'': ''G_PER_L''} -> {''value'': ''10'', ''unit'': ''G_PER_L''}
+    (evidence_only); [''ingredients'', 1, ''concentration''] -> ingredients[1].concentration:
+    {''value'': ''10'', ''unit'': ''G_PER_L''} -> {''value'': ''10'', ''unit'': ''G_PER_L''}
+    (evidence_only); [''ingredients'', 2, ''concentration''] -> ingredients[2].concentration:
+    {''value'': ''15'', ''unit'': ''G_PER_L''} -> {''value'': ''15'', ''unit'': ''G_PER_L''}
+    (evidence_only); [''ingredients'', 3, ''concentration''] -> ingredients[3].concentration:
+    {''value'': ''10'', ''unit'': ''G_PER_L''} -> {''value'': ''10'', ''unit'': ''G_PER_L''}
+    (evidence_only); None -> ingredients[4].concentration: None -> {''value'': ''0.98'',
+    ''unit'': ''L''} (add); None -> solutions[0].concentration: None -> {''value'':
+    ''0.01'', ''unit'': ''L''} (add); [''ingredients'', 4, ''concentration''] -> solutions[0].composition[0].concentration:
+    {''value'': ''5'', ''unit'': ''G_PER_L''} -> {''value'': ''5'', ''unit'': ''G_PER_L''}
+    (relocate); [''ingredients'', 5, ''concentration''] -> solutions[0].composition[1].concentration:
+    {''value'': ''5'', ''unit'': ''G_PER_L''} -> {''value'': ''5'', ''unit'': ''G_PER_L''}
+    (relocate); None -> solutions[0].composition[2].concentration: None -> {''value'':
+    ''0.1'', ''unit'': ''L''} (add); None -> solutions[1].concentration: None -> {''value'':
+    ''0.01'', ''unit'': ''L''} (add); [''ingredients'', 6, ''concentration''] -> solutions[1].composition[0].concentration:
+    {''value'': ''30'', ''unit'': ''G_PER_L''} -> {''value'': ''30'', ''unit'': ''G_PER_L''}
+    (relocate); [''ingredients'', 7, ''concentration''] -> solutions[1].composition[1].concentration:
+    {''value'': ''1'', ''unit'': ''G_PER_L''} -> {''value'': ''1'', ''unit'': ''G_PER_L''}
+    (relocate); [''ingredients'', 8, ''concentration''] -> solutions[1].composition[2].concentration:
+    {''value'': ''1'', ''unit'': ''G_PER_L''} -> {''value'': ''1'', ''unit'': ''G_PER_L''}
+    (relocate); [''ingredients'', 9, ''concentration''] -> solutions[1].composition[3].concentration:
+    {''value'': ''0.1'', ''unit'': ''G_PER_L''} -> {''value'': ''0.1'', ''unit'':
+    ''G_PER_L''} (relocate); None -> solutions[1].composition[4].concentration: None
+    -> {''value'': ''0.1'', ''unit'': ''L''} (add); None -> solutions[2].concentration:
+    None -> {''value'': ''0.001'', ''unit'': ''L''} (add); [''ingredients'', 10, ''concentration'']
+    -> solutions[2].composition[0].concentration: {''value'': ''1'', ''unit'': ''G_PER_L''}
+    -> {''value'': ''1'', ''unit'': ''G_PER_L''} (relocate); [''ingredients'', 11,
+    ''concentration''] -> solutions[2].composition[1].concentration: {''value'': ''20'',
+    ''unit'': ''G_PER_L''} -> {''value'': ''20'', ''unit'': ''G_PER_L''} (relocate);
+    None -> solutions[2].composition[2].concentration: None -> {''value'': ''0.1'',
+    ''unit'': ''L''} (add)'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_452_GLUCOSE_medium_NAKAYAMA.yaml
   relationship: SOURCE_DUPLICATE
@@ -162,3 +243,430 @@ variant_children:
   name: glucose_medium_nakayama
   notes: Same ingredient and concentration signature; KOMODO record copied from the
     matching DSMZ medium source.
+solutions:
+- preferred_term: Solution A
+  term:
+    id: mediadive.solution:904
+    label: Solution A
+  concentration:
+    value: '0.01'
+    unit: L
+  composition:
+  - preferred_term: KH2PO4
+    term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+    concentration:
+      value: '5'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/452
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 1,
+                                "compound": "KH2PO4",
+                                "compound_id": 11,
+                                "amount": 0.5,
+                                "unit": "g",
+                                "g_l": 5,
+                                "mmol_l": 36.7417,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[0].concentration (relocate), locator=$.data.solutions[1].recipe[0]:
+        Source solution 904 (Solution A) explicitly reports g_l=5. Arithmetic check:
+        0.5 g; provider volume 100 ml; computed 5 g/L. Additional exact value at $.data.solutions[1].volume
+        (ml): 100. The numeric value and chemical mappings are preserved. This supports
+        the provider-declared preparation concentration, not an independently measured
+        final volume or downstream dilution. Relocated from ingredients[4] into the
+        explicitly linked stock; it is not a direct receiving-medium concentration.
+        Source retrieved 2026-10-07T10:47:14.801559+00:00; response SHA256=a46d186ce3e6f533cd3e250ad15ca3baba919c858d8366da814c5328945e4fb4.
+        Original DSMZ PDF recipe chain visually cross-checked: 452. Secondary ontology
+        mappings and parent/variant relationships were preserved, not validated by
+        this amount evidence.'
+  - preferred_term: K2HPO4
+    term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+    concentration:
+      value: '5'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/452
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 2,
+                                "compound": "K2HPO4",
+                                "compound_id": 10,
+                                "amount": 0.5,
+                                "unit": "g",
+                                "g_l": 5,
+                                "mmol_l": 28.7066,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[1].concentration (relocate), locator=$.data.solutions[1].recipe[1]:
+        Source solution 904 (Solution A) explicitly reports g_l=5. Arithmetic check:
+        0.5 g; provider volume 100 ml; computed 5 g/L. Additional exact value at $.data.solutions[1].volume
+        (ml): 100. The numeric value and chemical mappings are preserved. This supports
+        the provider-declared preparation concentration, not an independently measured
+        final volume or downstream dilution. Relocated from ingredients[5] into the
+        explicitly linked stock; it is not a direct receiving-medium concentration.
+        Source retrieved 2026-10-07T10:47:14.801559+00:00; response SHA256=a46d186ce3e6f533cd3e250ad15ca3baba919c858d8366da814c5328945e4fb4.
+        Original DSMZ PDF recipe chain visually cross-checked: 452. Secondary ontology
+        mappings and parent/variant relationships were preserved, not validated by
+        this amount evidence.'
+  - preferred_term: Distilled water
+    term:
+      id: mediadive.compound:4
+      label: Distilled water
+    concentration:
+      value: '0.1'
+      unit: L
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/452
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 3,
+                                "compound": "Distilled water",
+                                "compound_id": 4,
+                                "amount": 100,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[2].concentration (add), locator=$.data.solutions[1].recipe[2]:
+        Explicit 100 ml water / 1000 ml per L = 0.1 L in this preparation batch. This
+        is an addition amount, not a claim of final volume, stock strength, or percent
+        basis. Source retrieved 2026-10-07T10:47:14.801559+00:00; response SHA256=a46d186ce3e6f533cd3e250ad15ca3baba919c858d8366da814c5328945e4fb4.
+        Original DSMZ PDF recipe chain visually cross-checked: 452. Secondary ontology
+        mappings and parent/variant relationships were preserved, not validated by
+        this amount evidence.'
+- preferred_term: Solution B
+  term:
+    id: mediadive.solution:905
+    label: Solution B
+  concentration:
+    value: '0.01'
+    unit: L
+  composition:
+  - preferred_term: MgSO4 x 7 H2O
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    concentration:
+      value: '30'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/452
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 1,
+                                "compound": "MgSO4 x 7 H2O",
+                                "compound_id": 8,
+                                "amount": 3,
+                                "unit": "g",
+                                "g_l": 30,
+                                "mmol_l": 121.716,
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[0].concentration (relocate), locator=$.data.solutions[2].recipe[0]:
+        Source solution 905 (Solution B) explicitly reports g_l=30. Arithmetic check:
+        3 g; provider volume 100 ml; computed 3E+1 g/L. Additional exact value at
+        $.data.solutions[2].volume (ml): 100. The numeric value and chemical mappings
+        are preserved. This supports the provider-declared preparation concentration,
+        not an independently measured final volume or downstream dilution. Relocated
+        from ingredients[6] into the explicitly linked stock; it is not a direct receiving-medium
+        concentration. Source retrieved 2026-10-07T10:47:14.801559+00:00; response
+        SHA256=a46d186ce3e6f533cd3e250ad15ca3baba919c858d8366da814c5328945e4fb4. Original
+        DSMZ PDF recipe chain visually cross-checked: 452. Secondary ontology mappings
+        and parent/variant relationships were preserved, not validated by this amount
+        evidence.'
+  - preferred_term: NaCl
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/452
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 2,
+                                "compound": "NaCl",
+                                "compound_id": 43,
+                                "amount": 0.1,
+                                "unit": "g",
+                                "g_l": 1,
+                                "mmol_l": 17.1116,
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[1].concentration (relocate), locator=$.data.solutions[2].recipe[1]:
+        Source solution 905 (Solution B) explicitly reports g_l=1. Arithmetic check:
+        0.1 g; provider volume 100 ml; computed 1 g/L. Additional exact value at $.data.solutions[2].volume
+        (ml): 100. The numeric value and chemical mappings are preserved. This supports
+        the provider-declared preparation concentration, not an independently measured
+        final volume or downstream dilution. Relocated from ingredients[7] into the
+        explicitly linked stock; it is not a direct receiving-medium concentration.
+        Source retrieved 2026-10-07T10:47:14.801559+00:00; response SHA256=a46d186ce3e6f533cd3e250ad15ca3baba919c858d8366da814c5328945e4fb4.
+        Original DSMZ PDF recipe chain visually cross-checked: 452. Secondary ontology
+        mappings and parent/variant relationships were preserved, not validated by
+        this amount evidence.'
+  - preferred_term: MnSO4 x 5 H2O
+    term:
+      id: CHEBI:131524
+      label: manganese(II) sulfate pentahydrate
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:131524
+      label: manganese(II) sulfate pentahydrate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/452
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 3,
+                                "compound": "MnSO4 x 5 H2O",
+                                "compound_id": 234,
+                                "amount": 0.1,
+                                "unit": "g",
+                                "g_l": 1,
+                                "mmol_l": 4.14804,
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[2].concentration (relocate), locator=$.data.solutions[2].recipe[2]:
+        Source solution 905 (Solution B) explicitly reports g_l=1. Arithmetic check:
+        0.1 g; provider volume 100 ml; computed 1 g/L. Additional exact value at $.data.solutions[2].volume
+        (ml): 100. The numeric value and chemical mappings are preserved. This supports
+        the provider-declared preparation concentration, not an independently measured
+        final volume or downstream dilution. Relocated from ingredients[8] into the
+        explicitly linked stock; it is not a direct receiving-medium concentration.
+        Source retrieved 2026-10-07T10:47:14.801559+00:00; response SHA256=a46d186ce3e6f533cd3e250ad15ca3baba919c858d8366da814c5328945e4fb4.
+        Original DSMZ PDF recipe chain visually cross-checked: 452. Secondary ontology
+        mappings and parent/variant relationships were preserved, not validated by
+        this amount evidence.'
+  - preferred_term: CuSO4 x 5 H2O
+    term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/452
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 4,
+                                "compound": "CuSO4 x 5 H2O",
+                                "compound_id": 121,
+                                "amount": 0.01,
+                                "unit": "g",
+                                "g_l": 0.1,
+                                "mmol_l": 0.400503,
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[3].concentration (relocate), locator=$.data.solutions[2].recipe[3]:
+        Source solution 905 (Solution B) explicitly reports g_l=0.1. Arithmetic check:
+        0.01 g; provider volume 100 ml; computed 0.1 g/L. Additional exact value at
+        $.data.solutions[2].volume (ml): 100. The numeric value and chemical mappings
+        are preserved. This supports the provider-declared preparation concentration,
+        not an independently measured final volume or downstream dilution. Relocated
+        from ingredients[9] into the explicitly linked stock; it is not a direct receiving-medium
+        concentration. Source retrieved 2026-10-07T10:47:14.801559+00:00; response
+        SHA256=a46d186ce3e6f533cd3e250ad15ca3baba919c858d8366da814c5328945e4fb4. Original
+        DSMZ PDF recipe chain visually cross-checked: 452. Secondary ontology mappings
+        and parent/variant relationships were preserved, not validated by this amount
+        evidence.'
+  - preferred_term: Distilled water
+    term:
+      id: mediadive.compound:4
+      label: Distilled water
+    concentration:
+      value: '0.1'
+      unit: L
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/452
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 5,
+                                "compound": "Distilled water",
+                                "compound_id": 4,
+                                "amount": 100,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[4].concentration (add), locator=$.data.solutions[2].recipe[4]:
+        Explicit 100 ml water / 1000 ml per L = 0.1 L in this preparation batch. This
+        is an addition amount, not a claim of final volume, stock strength, or percent
+        basis. Source retrieved 2026-10-07T10:47:14.801559+00:00; response SHA256=a46d186ce3e6f533cd3e250ad15ca3baba919c858d8366da814c5328945e4fb4.
+        Original DSMZ PDF recipe chain visually cross-checked: 452. Secondary ontology
+        mappings and parent/variant relationships were preserved, not validated by
+        this amount evidence.'
+- preferred_term: Solution C
+  term:
+    id: mediadive.solution:906
+    label: Solution C
+  concentration:
+    value: '0.001'
+    unit: L
+  composition:
+  - preferred_term: FeSO4 x 7 H2O
+    term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/452
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 1,
+                                "compound": "FeSO4 x 7 H2O",
+                                "compound_id": 12,
+                                "amount": 0.1,
+                                "unit": "g",
+                                "g_l": 1,
+                                "mmol_l": 3.59693,
+                                "optional": 0
+                            }
+      explanation: 'solutions[2].composition[0].concentration (relocate), locator=$.data.solutions[3].recipe[0]:
+        Source solution 906 (Solution C) explicitly reports g_l=1. Arithmetic check:
+        0.1 g; provider volume 100 ml; computed 1 g/L. Additional exact value at $.data.solutions[3].volume
+        (ml): 100. The numeric value and chemical mappings are preserved. This supports
+        the provider-declared preparation concentration, not an independently measured
+        final volume or downstream dilution. Relocated from ingredients[10] into the
+        explicitly linked stock; it is not a direct receiving-medium concentration.
+        Source retrieved 2026-10-07T10:47:14.801559+00:00; response SHA256=a46d186ce3e6f533cd3e250ad15ca3baba919c858d8366da814c5328945e4fb4.
+        Original DSMZ PDF recipe chain visually cross-checked: 452. Secondary ontology
+        mappings and parent/variant relationships were preserved, not validated by
+        this amount evidence.'
+  - preferred_term: Na3-citrate
+    term:
+      id: CHEBI:53258
+      label: sodium citrate
+    concentration:
+      value: '20'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53258
+      label: sodium citrate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/452
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 2,
+                                "compound": "Na3-citrate",
+                                "compound_id": 205,
+                                "amount": 2,
+                                "unit": "g",
+                                "g_l": 20,
+                                "mmol_l": 77.4987,
+                                "optional": 0
+                            }
+      explanation: 'solutions[2].composition[1].concentration (relocate), locator=$.data.solutions[3].recipe[1]:
+        Source solution 906 (Solution C) explicitly reports g_l=20. Arithmetic check:
+        2 g; provider volume 100 ml; computed 2E+1 g/L. Additional exact value at
+        $.data.solutions[3].volume (ml): 100. The numeric value and chemical mappings
+        are preserved. This supports the provider-declared preparation concentration,
+        not an independently measured final volume or downstream dilution. Relocated
+        from ingredients[11] into the explicitly linked stock; it is not a direct
+        receiving-medium concentration. Source retrieved 2026-10-07T10:47:14.801559+00:00;
+        response SHA256=a46d186ce3e6f533cd3e250ad15ca3baba919c858d8366da814c5328945e4fb4.
+        Original DSMZ PDF recipe chain visually cross-checked: 452. Secondary ontology
+        mappings and parent/variant relationships were preserved, not validated by
+        this amount evidence.'
+  - preferred_term: Distilled water
+    term:
+      id: mediadive.compound:4
+      label: Distilled water
+    concentration:
+      value: '0.1'
+      unit: L
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/452
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 3,
+                                "compound": "Distilled water",
+                                "compound_id": 4,
+                                "amount": 100,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+      explanation: 'solutions[2].composition[2].concentration (add), locator=$.data.solutions[3].recipe[2]:
+        Explicit 100 ml water / 1000 ml per L = 0.1 L in this preparation batch. This
+        is an addition amount, not a claim of final volume, stock strength, or percent
+        basis. Source retrieved 2026-10-07T10:47:14.801559+00:00; response SHA256=a46d186ce3e6f533cd3e250ad15ca3baba919c858d8366da814c5328945e4fb4.
+        Original DSMZ PDF recipe chain visually cross-checked: 452. Secondary ontology
+        mappings and parent/variant relationships were preserved, not validated by
+        this amount evidence.'
+evidence:
+- reference: https://mediadive.dsmz.de/rest/medium/452
+  supports: SUPPORT
+  snippet: |-
+    {
+                            "recipe_order": 6,
+                            "solution": "Solution A",
+                            "solution_id": 904,
+                            "amount": 10,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+  explanation: |-
+    solutions[0].concentration (add), locator=$.data.solutions[0].recipe[5]: Explicit 10 ml / 1000 ml per L = 0.01 L per receiving batch. The exact solution_id establishes this stock boundary; no final-volume dilution or dose from another medium is inferred. solutions[1].concentration (add), locator=$.data.solutions[0].recipe[6]: Explicit 10 ml / 1000 ml per L = 0.01 L per receiving batch. The exact solution_id establishes this stock boundary; no final-volume dilution or dose from another medium is inferred. Additional exact excerpt: {
+                            "recipe_order": 7,
+                            "solution": "Solution B",
+                            "solution_id": 905,
+                            "amount": 10,
+                            "unit": "ml",
+                            "optional": 0
+                        } solutions[2].concentration (add), locator=$.data.solutions[0].recipe[7]: Explicit 1 ml / 1000 ml per L = 0.001 L per receiving batch. The exact solution_id establishes this stock boundary; no final-volume dilution or dose from another medium is inferred. Additional exact excerpt: {
+                            "recipe_order": 8,
+                            "solution": "Solution C",
+                            "solution_id": 906,
+                            "amount": 1,
+                            "unit": "ml",
+                            "optional": 0
+                        } Source retrieved 2026-10-07T10:47:14.801559+00:00; response SHA256=a46d186ce3e6f533cd3e250ad15ca3baba919c858d8366da814c5328945e4fb4. Original DSMZ PDF recipe chain visually cross-checked: 452. Secondary ontology mappings and parent/variant relationships were preserved, not validated by this amount evidence.
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/452
+  title: 'MediaDive medium 452: GLUCOSE MEDIUM (NAKAYAMA)'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; source_organization=DSMZ;
+    accessed_on=2026-10-07; response_sha256=a46d186ce3e6f533cd3e250ad15ca3baba919c858d8366da814c5328945e4fb4;
+    individual authors and publication year not established. PDF copyright is not
+    a publication date.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium452.pdf
+  title: 'DSMZ medium 452: official recipe'
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    source_organization=DSMZ; accessed_on=2026-10-07; response_sha256=e0cc3cb64fcf765793ff9064a8de060201aa4a3f020881546f58094216f6426e;
+    individual authors and publication year not established. PDF copyright is not
+    a publication date.

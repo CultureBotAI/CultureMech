@@ -7,275 +7,106 @@ composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Tween 80
-  concentration:
-    value: '0.05'
-    unit: PERCENT_W_V
-  notes: 'Role: Surfactant; Properties: Organic compound, Defined component, Simple
-    component'
+  notes: |-
+    Role: Surfactant; Properties: Organic compound, Defined component, Simple component
+
+    Source amount: 0.05 %; scope: main preparation input. Percentage basis is unspecified; the earlier w/v or g/L assertion is withdrawn, not replaced with an assumed basis.
   term:
     id: CHEBI:53426
     label: polysorbate 80
   mediaingredientmech_chebi_term:
     id: CHEBI:53426
     label: polysorbate 80
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "Tween 80",
+                "volume": 0.05,
+                "unit": "%",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001060"
+    explanation: |-
+      ingredients[0].concentration: Source amount: 0.05 %; scope: main preparation input. Percentage basis is unspecified; the earlier w/v or g/L assertion is withdrawn, not replaced with an assumed basis. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[0].items[0]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+
+      Additional exact excerpt: {
+                "component_name": "Tween 80",
+                "volume": 0.05,
+                "unit": "%",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001060"
+      ingredients[0].notes: Source amount: 0.05 %; scope: main preparation input. Percentage basis is unspecified; the earlier w/v or g/L assertion is withdrawn, not replaced with an assumed basis. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[0].items[0]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
 - preferred_term: Glycerol
-  concentration:
-    value: '0.2'
-    unit: PERCENT_W_V
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
-    component'
+  notes: |-
+    Role: Carbon source; Properties: Organic compound, Defined component, Simple component
+
+    Source amount: 0.2 %; scope: main preparation input. Percentage basis is unspecified; the earlier w/v or g/L assertion is withdrawn, not replaced with an assumed basis.
   term:
     id: CHEBI:17754
     label: glycerol
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
     label: glycerol
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "Glycerol",
+                "volume": 0.2,
+                "unit": "%",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001083"
+    explanation: |-
+      ingredients[1].concentration: Source amount: 0.2 %; scope: main preparation input. Percentage basis is unspecified; the earlier w/v or g/L assertion is withdrawn, not replaced with an assumed basis. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[0].items[1]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+
+      Additional exact excerpt: {
+                "component_name": "Glycerol",
+                "volume": 0.2,
+                "unit": "%",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001083"
+      ingredients[1].notes: Source amount: 0.2 %; scope: main preparation input. Percentage basis is unspecified; the earlier w/v or g/L assertion is withdrawn, not replaced with an assumed basis. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[0].items[1]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
 - preferred_term: DI Water
-  concentration:
-    value: '90'
-    unit: PERCENT_W_V
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component [WARNING: 2 duplicates with conflicting units] [MANUAL REVIEW
-    REQUIRED: PERCENT_W_V incompatible with absolute units]'
-- preferred_term: Middlebrook 7H9 broth
-  concentration:
-    value: '4.7'
-    unit: G_PER_L
-- preferred_term: ADC Enrichment
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Monopotassium Phosphate
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
-  term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
-- preferred_term: Biotin
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:15956
-    label: biotin
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15956
-    label: biotin
-- preferred_term: Ammonium Sulfate
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:62946
-    label: ammonium sulfate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:62946
-    label: ammonium sulfate
-- preferred_term: Calcium Chloride
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-- preferred_term: Disodium Phosphate
-  concentration:
-    value: '2.5'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
-  term:
-    id: CHEBI:34683
-    label: disodium hydrogenphosphate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:34683
-    label: disodium hydrogenphosphate
-- preferred_term: Magnesium Sulfate
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-- preferred_term: Copper Sulfate
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:23414
-    label: copper(II) sulfate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:23414
-    label: copper(II) sulfate
-- preferred_term: Sodium Citrate
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:53258
-    label: sodium citrate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:53258
-    label: sodium citrate
-- preferred_term: Ferric Ammonium Citrate
-  concentration:
-    value: '0.04'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:31604
-    label: ferric ammonium citrate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31604
-    label: ferric ammonium citrate
-- preferred_term: L-Glutamic Acid
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:16015
-    label: L-glutamic acid
-  mediaingredientmech_chebi_term:
-    id: CHEBI:16015
-    label: L-glutamic acid
-- preferred_term: Pyridoxine
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:16709
-    label: pyridoxine
-  mediaingredientmech_chebi_term:
-    id: CHEBI:16709
-    label: pyridoxine
-- preferred_term: Zinc Sulfate
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:35176
-    label: zinc sulfate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:35176
-    label: zinc sulfate
-- preferred_term: Dextrose
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
-    component'
-  term:
-    id: CHEBI:17634
-    label: D-glucose
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17634
-    label: D-glucose
-- preferred_term: Tryptone
-  term:
-    id: MICRO:0000182
-    label: tryptone
-  concentration:
-    value: '10.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
-    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
-  synonyms:
-  - synonym_text: pancreatic digest of casein
-    synonym_type: EXACT
-  - synonym_text: casein peptone
-    synonym_type: EXACT
-- preferred_term: Yeast extract
-  term:
-    id: FOODON:03315426
-    label: yeast extract
-  concentration:
-    value: '5.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
-    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
-    product
-- preferred_term: Sodium chloride
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  concentration:
-    value: '10.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
-    (Luria-Bertani, Miller formulation) commercial product
-  synonyms:
-  - synonym_text: NaCl
-    synonym_type: EXACT
-  - synonym_text: table salt
-    synonym_type: EXACT
-- preferred_term: Catalase (beef)
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Simple component'
+  notes: |-
+    Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component [WARNING: 2 duplicates with conflicting units] [MANUAL REVIEW REQUIRED: PERCENT_W_V incompatible with absolute units]
+
+    Source amount: 90 %; scope: main preparation input. Percentage basis is unspecified; the earlier w/v or g/L assertion is withdrawn, not replaced with an assumed basis.
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "DI Water",
+                "volume": 90,
+                "unit": "%",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001695"
+    explanation: |-
+      ingredients[2].concentration: Source amount: 90 %; scope: main preparation input. Percentage basis is unspecified; the earlier w/v or g/L assertion is withdrawn, not replaced with an assumed basis. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[0].items[2]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+
+      Additional exact excerpt: {
+                "component_name": "DI Water",
+                "volume": 90,
+                "unit": "%",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001695"
+      ingredients[2].notes: Source amount: 90 %; scope: main preparation input. Percentage basis is unspecified; the earlier w/v or g/L assertion is withdrawn, not replaced with an assumed basis. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[0].items[2]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
 media_term:
   preferred_term: TOGO Medium M2403
   term:
     id: TOGO:M2403
     label: MADCTw medium
-notes: 'Source: https://togomedium.org/medium/M2403
+notes: |-
+  Source: https://togomedium.org/medium/M2403
 
-
+  Superseded historical provenance (not a current formulation claim):
   Commercial Product: LB Medium (Luria-Bertani, Miller formulation)
-
   Supplier: Multiple suppliers (Difco, Sigma, etc.)
-
   Catalog: Multiple (L3522 Sigma, 244520 BD)
-
   Source: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-
   Accessed: 2026-03-28
 
+  Constituent composition researched from product specification.
 
-  Constituent composition researched from product specification.'
+  False LB constituent expansion is withdrawn. Source-specific amounts and preparation boundaries supersede flattened concentrations. Existing chemical annotations and earlier history are preserved, not recertified; no organism-growth association is added.
+
+  Source preparation context (main preparation): Middlebrook 7H9 medium (Difco) containing 10% (v/v) albumin‐dextrose‐catalase (ADC, Difco) enrichment, 0.2% glycerol and 0.05% Tween 80 (MADCTw)
 applications:
 - Microbial cultivation
 curation_history:
@@ -320,3 +151,935 @@ curation_history:
   notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-10-09T00:43:54.768901+00:00'
+  curator: codex
+  action: RESTORED_MIDDLEBROOK_INGREDIENT_AND_STOCK_SCOPES_WITH_EVIDENCE
+  notes: Restore albumin and separate basal inputs, commercial-base detail and ADC/OADC
+    stock amounts/doses. Correct volume/mass confusion; retain unsupported mass/percent
+    bases and source-version conflicts explicitly. Preserve IDs and all prior history.
+  source: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403
+  changes: '[{"old_field": "ingredients[0].concentration", "field": "ingredients[0].concentration",
+    "old": {"value": "0.05", "unit": "PERCENT_W_V"}, "new": null, "status": "correct",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"Tween 80\",\n          \"volume\":
+    0.05,\n          \"unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001060\""},
+    {"old_field": "ingredients[0].notes", "field": "ingredients[0].notes", "old":
+    "Role: Surfactant; Properties: Organic compound, Defined component, Simple component",
+    "new": "Role: Surfactant; Properties: Organic compound, Defined component, Simple
+    component\n\nSource amount: 0.05 %; scope: main preparation input. Percentage
+    basis is unspecified; the earlier w/v or g/L assertion is withdrawn, not replaced
+    with an assumed basis.", "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"Tween 80\",\n          \"volume\":
+    0.05,\n          \"unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001060\""},
+    {"old_field": "ingredients[1].concentration", "field": "ingredients[1].concentration",
+    "old": {"value": "0.2", "unit": "PERCENT_W_V"}, "new": null, "status": "correct",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"Glycerol\",\n          \"volume\":
+    0.2,\n          \"unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001083\""},
+    {"old_field": "ingredients[1].notes", "field": "ingredients[1].notes", "old":
+    "Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component", "new": "Role: Carbon source; Properties: Organic compound, Defined
+    component, Simple component\n\nSource amount: 0.2 %; scope: main preparation input.
+    Percentage basis is unspecified; the earlier w/v or g/L assertion is withdrawn,
+    not replaced with an assumed basis.", "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"Glycerol\",\n          \"volume\":
+    0.2,\n          \"unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001083\""},
+    {"old_field": "ingredients[2].concentration", "field": "ingredients[2].concentration",
+    "old": {"value": "90", "unit": "PERCENT_W_V"}, "new": null, "status": "correct",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"DI Water\",\n          \"volume\":
+    90,\n          \"unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001695\""},
+    {"old_field": "ingredients[2].notes", "field": "ingredients[2].notes", "old":
+    "Role: Solvating media; Properties: Inorganic compound, Defined component, Simple
+    component [WARNING: 2 duplicates with conflicting units] [MANUAL REVIEW REQUIRED:
+    PERCENT_W_V incompatible with absolute units]", "new": "Role: Solvating media;
+    Properties: Inorganic compound, Defined component, Simple component [WARNING:
+    2 duplicates with conflicting units] [MANUAL REVIEW REQUIRED: PERCENT_W_V incompatible
+    with absolute units]\n\nSource amount: 90 %; scope: main preparation input. Percentage
+    basis is unspecified; the earlier w/v or g/L assertion is withdrawn, not replaced
+    with an assumed basis.", "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"DI Water\",\n          \"volume\":
+    90,\n          \"unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001695\""},
+    {"old_field": "ingredients[3].concentration", "field": "solutions[0].concentration",
+    "old": {"value": "4.7", "unit": "G_PER_L"}, "new": null, "status": "correct",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"Middlebrook 7H9 broth\",\n          \"volume\":
+    4.7,\n          \"unit\": \"g\""}, {"old_field": "ingredients[3].notes", "field":
+    "solutions[0].notes", "old": null, "new": "Source amount: 4.7 g; scope: main preparation
+    input. This table does not give an explicit final-volume denominator. Preserve
+    the exact mass here; no g/L conversion is asserted. The schema has no mass-only
+    concentration unit. Inline commercial-base formula detail, not extra simultaneous
+    ingredients. Its table masses have no verified volume/dilution basis.", "status":
+    "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"Middlebrook 7H9 broth\",\n          \"volume\":
+    4.7,\n          \"unit\": \"g\""}, {"old_field": "ingredients[3].name", "field":
+    "solutions[0].name", "old": null, "new": "Middlebrook 7H9 broth", "status": "correct",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"Middlebrook 7H9 broth\",\n          \"volume\":
+    4.7,\n          \"unit\": \"g\""}, {"old_field": "ingredients[5].concentration",
+    "field": "solutions[0].composition[0].concentration", "old": {"value": "1", "unit":
+    "G_PER_L"}, "new": null, "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"Monopotassium Phosphate\",\n          \"volume\":
+    1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001006\""},
+    {"old_field": "ingredients[5].notes", "field": "solutions[0].composition[0].notes",
+    "old": "Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component", "new": "Role: Buffer; Properties: Inorganic compound, Defined component,
+    Simple component\n\nSource amount: 1 g; scope: Middlebrook 7H9 broth formula-detail
+    table. This table does not give an explicit final-volume denominator. Preserve
+    the exact mass here; no g/L conversion is asserted. The schema has no mass-only
+    concentration unit.", "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"Monopotassium Phosphate\",\n          \"volume\":
+    1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001006\""},
+    {"old_field": "ingredients[6].concentration", "field": "solutions[0].composition[1].concentration",
+    "old": {"value": "0.5", "unit": "G_PER_L"}, "new": null, "status": "correct",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"Biotin\",\n          \"volume\":
+    0.5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001025\""},
+    {"old_field": "ingredients[6].notes", "field": "solutions[0].composition[1].notes",
+    "old": "Role: Vitamin; Properties: Organic compound, Defined component, Simple
+    component", "new": "Role: Vitamin; Properties: Organic compound, Defined component,
+    Simple component\n\nSource amount: 0.5 mg; scope: Middlebrook 7H9 broth formula-detail
+    table. This table does not give an explicit final-volume denominator. Preserve
+    the exact mass here; no g/L conversion is asserted. The schema has no mass-only
+    concentration unit.", "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"Biotin\",\n          \"volume\":
+    0.5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001025\""},
+    {"old_field": "ingredients[7].concentration", "field": "solutions[0].composition[2].concentration",
+    "old": {"value": "0.5", "unit": "G_PER_L"}, "new": null, "status": "correct",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"Ammonium Sulfate\",\n          \"volume\":
+    0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001030\""},
+    {"old_field": "ingredients[7].notes", "field": "solutions[0].composition[2].notes",
+    "old": "Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component", "new": "Role: Nitrogen source; Properties: Inorganic compound,
+    Defined component, Simple component\n\nSource amount: 0.5 g; scope: Middlebrook
+    7H9 broth formula-detail table. This table does not give an explicit final-volume
+    denominator. Preserve the exact mass here; no g/L conversion is asserted. The
+    schema has no mass-only concentration unit.", "status": "correct", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403", "snippet":
+    "{\n          \"component_name\": \"Ammonium Sulfate\",\n          \"volume\":
+    0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001030\""},
+    {"old_field": "ingredients[8].concentration", "field": "solutions[0].composition[3].concentration",
+    "old": {"value": "0.5", "unit": "G_PER_L"}, "new": null, "status": "correct",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"Calcium Chloride\",\n          \"volume\":
+    0.5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001061\""},
+    {"old_field": "ingredients[8].notes", "field": "solutions[0].composition[3].notes",
+    "old": "Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component", "new": "Role: Mineral source; Properties: Inorganic compound,
+    Defined component, Simple component\n\nSource amount: 0.5 mg; scope: Middlebrook
+    7H9 broth formula-detail table. This table does not give an explicit final-volume
+    denominator. Preserve the exact mass here; no g/L conversion is asserted. The
+    schema has no mass-only concentration unit.", "status": "correct", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403", "snippet":
+    "{\n          \"component_name\": \"Calcium Chloride\",\n          \"volume\":
+    0.5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001061\""},
+    {"old_field": "ingredients[9].concentration", "field": "solutions[0].composition[4].concentration",
+    "old": {"value": "2.5", "unit": "G_PER_L"}, "new": null, "status": "correct",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"Disodium Phosphate\",\n          \"volume\":
+    2.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001069\""},
+    {"old_field": "ingredients[9].notes", "field": "solutions[0].composition[4].notes",
+    "old": "Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component", "new": "Role: Buffer; Properties: Inorganic compound, Defined component,
+    Simple component\n\nSource amount: 2.5 g; scope: Middlebrook 7H9 broth formula-detail
+    table. This table does not give an explicit final-volume denominator. Preserve
+    the exact mass here; no g/L conversion is asserted. The schema has no mass-only
+    concentration unit.", "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"Disodium Phosphate\",\n          \"volume\":
+    2.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001069\""},
+    {"old_field": "ingredients[10].concentration", "field": "solutions[0].composition[5].concentration",
+    "old": {"value": "0.05", "unit": "G_PER_L"}, "new": null, "status": "correct",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"Magnesium Sulfate\",\n          \"volume\":
+    0.05,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001096\""},
+    {"old_field": "ingredients[10].notes", "field": "solutions[0].composition[5].notes",
+    "old": "Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component", "new": "Role: Mineral source; Properties: Inorganic compound,
+    Defined component, Simple component\n\nSource amount: 0.05 g; scope: Middlebrook
+    7H9 broth formula-detail table. This table does not give an explicit final-volume
+    denominator. Preserve the exact mass here; no g/L conversion is asserted. The
+    schema has no mass-only concentration unit.", "status": "correct", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403", "snippet":
+    "{\n          \"component_name\": \"Magnesium Sulfate\",\n          \"volume\":
+    0.05,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001096\""},
+    {"old_field": "ingredients[11].concentration", "field": "solutions[0].composition[6].concentration",
+    "old": {"value": "1", "unit": "G_PER_L"}, "new": null, "status": "correct", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403", "snippet":
+    "{\n          \"component_name\": \"Copper Sulfate\",\n          \"volume\": 1,\n          \"unit\":
+    \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001103\""}, {"old_field":
+    "ingredients[11].notes", "field": "solutions[0].composition[6].notes", "old":
+    "Role: Mineral source; Properties: Inorganic compound, Defined component, Simple
+    component", "new": "Role: Mineral source; Properties: Inorganic compound, Defined
+    component, Simple component\n\nSource amount: 1 mg; scope: Middlebrook 7H9 broth
+    formula-detail table. This table does not give an explicit final-volume denominator.
+    Preserve the exact mass here; no g/L conversion is asserted. The schema has no
+    mass-only concentration unit.", "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"Copper Sulfate\",\n          \"volume\":
+    1,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001103\""},
+    {"old_field": "ingredients[12].concentration", "field": "solutions[0].composition[7].concentration",
+    "old": {"value": "0.1", "unit": "G_PER_L"}, "new": null, "status": "correct",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"Sodium Citrate\",\n          \"volume\":
+    0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001109\""},
+    {"old_field": "ingredients[12].notes", "field": "solutions[0].composition[7].notes",
+    "old": "Role: Buffer; Properties: Organic compound, Defined component, Simple
+    component", "new": "Role: Buffer; Properties: Organic compound, Defined component,
+    Simple component\n\nSource amount: 0.1 g; scope: Middlebrook 7H9 broth formula-detail
+    table. This table does not give an explicit final-volume denominator. Preserve
+    the exact mass here; no g/L conversion is asserted. The schema has no mass-only
+    concentration unit.", "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"Sodium Citrate\",\n          \"volume\":
+    0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001109\""},
+    {"old_field": "ingredients[13].concentration", "field": "solutions[0].composition[8].concentration",
+    "old": {"value": "0.04", "unit": "G_PER_L"}, "new": null, "status": "correct",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"Ferric Ammonium Citrate\",\n          \"volume\":
+    0.04,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001147\""},
+    {"old_field": "ingredients[13].notes", "field": "solutions[0].composition[8].notes",
+    "old": "Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component", "new": "Role: Nitrogen source; Properties: Organic compound,
+    Defined component, Simple component\n\nSource amount: 0.04 g; scope: Middlebrook
+    7H9 broth formula-detail table. This table does not give an explicit final-volume
+    denominator. Preserve the exact mass here; no g/L conversion is asserted. The
+    schema has no mass-only concentration unit.", "status": "correct", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403", "snippet":
+    "{\n          \"component_name\": \"Ferric Ammonium Citrate\",\n          \"volume\":
+    0.04,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001147\""},
+    {"old_field": "ingredients[14].concentration", "field": "solutions[0].composition[9].concentration",
+    "old": {"value": "0.5", "unit": "G_PER_L"}, "new": null, "status": "correct",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"L-Glutamic Acid\",\n          \"volume\":
+    0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001570\""},
+    {"old_field": "ingredients[14].notes", "field": "solutions[0].composition[9].notes",
+    "old": "Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component", "new": "Role: Nitrogen source; Properties: Organic compound,
+    Defined component, Simple component\n\nSource amount: 0.5 g; scope: Middlebrook
+    7H9 broth formula-detail table. This table does not give an explicit final-volume
+    denominator. Preserve the exact mass here; no g/L conversion is asserted. The
+    schema has no mass-only concentration unit.", "status": "correct", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403", "snippet":
+    "{\n          \"component_name\": \"L-Glutamic Acid\",\n          \"volume\":
+    0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001570\""},
+    {"old_field": "ingredients[15].concentration", "field": "solutions[0].composition[10].concentration",
+    "old": {"value": "1", "unit": "G_PER_L"}, "new": null, "status": "correct", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403", "snippet":
+    "{\n          \"component_name\": \"Pyridoxine\",\n          \"volume\": 1,\n          \"unit\":
+    \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001632\""}, {"old_field":
+    "ingredients[15].notes", "field": "solutions[0].composition[10].notes", "old":
+    "Role: Vitamin; Properties: Organic compound, Defined component, Simple component",
+    "new": "Role: Vitamin; Properties: Organic compound, Defined component, Simple
+    component\n\nSource amount: 1 mg; scope: Middlebrook 7H9 broth formula-detail
+    table. This table does not give an explicit final-volume denominator. Preserve
+    the exact mass here; no g/L conversion is asserted. The schema has no mass-only
+    concentration unit.", "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"Pyridoxine\",\n          \"volume\":
+    1,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001632\""},
+    {"old_field": "ingredients[16].concentration", "field": "solutions[0].composition[11].concentration",
+    "old": {"value": "1", "unit": "G_PER_L"}, "new": null, "status": "correct", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403", "snippet":
+    "{\n          \"component_name\": \"Zinc Sulfate\",\n          \"volume\": 1,\n          \"unit\":
+    \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001764\""}, {"old_field":
+    "ingredients[16].notes", "field": "solutions[0].composition[11].notes", "old":
+    "Role: Mineral source; Properties: Inorganic compound, Defined component, Simple
+    component", "new": "Role: Mineral source; Properties: Inorganic compound, Defined
+    component, Simple component\n\nSource amount: 1 mg; scope: Middlebrook 7H9 broth
+    formula-detail table. This table does not give an explicit final-volume denominator.
+    Preserve the exact mass here; no g/L conversion is asserted. The schema has no
+    mass-only concentration unit.", "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"Zinc Sulfate\",\n          \"volume\":
+    1,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001764\""},
+    {"old_field": "ingredients[4].concentration", "field": "solutions[1].concentration",
+    "old": {"value": "10", "unit": "G_PER_L"}, "new": {"value": "10", "unit": "PERCENT_V_V"},
+    "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"ADC Enrichment\",\n          \"volume\":
+    10,\n          \"unit\": \"% (v/v)\""}, {"old_field": "ingredients[4].notes",
+    "field": "solutions[1].notes", "old": null, "new": "Source amount: 10 % (v/v);
+    scope: main preparation input. The percentage basis is explicitly volume/volume.
+    Inline enrichment composition is separate from its dose and from finished-medium
+    concentrations.\n\nSource preparation context (ADC Enrichment): Filter Sterilize.\n\nSource
+    preparation context (ADC Enrichment): Store any unused portion with lot information
+    and Media Number in 2-8\u00baC.", "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"ADC Enrichment\",\n          \"volume\":
+    10,\n          \"unit\": \"% (v/v)\""}, {"old_field": "ingredients[4].name", "field":
+    "solutions[1].name", "old": null, "new": "ADC Enrichment", "status": "correct",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"ADC Enrichment\",\n          \"volume\":
+    10,\n          \"unit\": \"% (v/v)\""}, {"old_field": "ingredients[17].concentration",
+    "field": "solutions[1].composition[0].concentration", "old": {"value": "2", "unit":
+    "G_PER_L"}, "new": null, "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"Dextrose\",\n          \"volume\":
+    2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001010\""},
+    {"old_field": "ingredients[17].notes", "field": "solutions[1].composition[0].notes",
+    "old": "Role: Carbon source; Properties: Organic compound, Defined component,
+    Simple component", "new": "Role: Carbon source; Properties: Organic compound,
+    Defined component, Simple component\n\nSource amount: 2 g; scope: ADC Enrichment
+    stock preparation. This table does not give an explicit final-volume denominator.
+    Preserve the exact mass here; no g/L conversion is asserted. The schema has no
+    mass-only concentration unit.", "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"Dextrose\",\n          \"volume\":
+    2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001010\""},
+    {"old_field": null, "field": "solutions[1].composition[1].concentration", "old":
+    null, "new": null, "status": "add", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"Bovine Serum Albumin, Frac V\",\n          \"volume\":
+    5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001520\""},
+    {"old_field": null, "field": "solutions[1].composition[1].notes", "old": null,
+    "new": "Source amount: 5 g; scope: ADC Enrichment stock preparation. This table
+    does not give an explicit final-volume denominator. Preserve the exact mass here;
+    no g/L conversion is asserted. The schema has no mass-only concentration unit.",
+    "status": "add", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"Bovine Serum Albumin, Frac V\",\n          \"volume\":
+    5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001520\""},
+    {"old_field": "ingredients[2].concentration", "field": "solutions[1].composition[2].concentration",
+    "old": {"value": "90", "unit": "PERCENT_W_V"}, "new": {"value": "0.1", "unit":
+    "L"}, "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"DI Water\",\n          \"volume\":
+    100,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001695\""},
+    {"old_field": "ingredients[2].notes", "field": "solutions[1].composition[2].notes",
+    "old": "Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component [WARNING: 2 duplicates with conflicting units] [MANUAL REVIEW
+    REQUIRED: PERCENT_W_V incompatible with absolute units]", "new": "Role: Solvating
+    media; Properties: Inorganic compound, Defined component, Simple component [WARNING:
+    2 duplicates with conflicting units] [MANUAL REVIEW REQUIRED: PERCENT_W_V incompatible
+    with absolute units]\n\nSource amount: 100 ml; scope: ADC Enrichment stock preparation.
+    Volume-only input/dose, not a final-volume marker; 100 ml = 0.1 L.", "status":
+    "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"DI Water\",\n          \"volume\":
+    100,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001695\""},
+    {"old_field": "ingredients[21].concentration", "field": "solutions[1].composition[3].concentration",
+    "old": {"value": "3", "unit": "G_PER_L"}, "new": null, "status": "correct", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403", "snippet":
+    "{\n          \"component_name\": \"Catalase (beef)\",\n          \"volume\":
+    3,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001938\""},
+    {"old_field": "ingredients[21].notes", "field": "solutions[1].composition[3].notes",
+    "old": "Properties: Defined component, Simple component", "new": "Properties:
+    Defined component, Simple component\n\nSource amount: 3 mg; scope: ADC Enrichment
+    stock preparation. This table does not give an explicit final-volume denominator.
+    Preserve the exact mass here; no g/L conversion is asserted. The schema has no
+    mass-only concentration unit.", "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"Catalase (beef)\",\n          \"volume\":
+    3,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001938\""},
+    {"old_field": "notes", "field": "notes", "old": "Source: https://togomedium.org/medium/M2403\n\nCommercial
+    Product: LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers
+    (Difco, Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.",
+    "new": "Source: https://togomedium.org/medium/M2403\n\nSuperseded historical provenance
+    (not a current formulation claim):\nCommercial Product: LB Medium (Luria-Bertani,
+    Miller formulation)\nSupplier: Multiple suppliers (Difco, Sigma, etc.)\nCatalog:
+    Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nFalse
+    LB constituent expansion is withdrawn. Source-specific amounts and preparation
+    boundaries supersede flattened concentrations. Existing chemical annotations and
+    earlier history are preserved, not recertified; no organism-growth association
+    is added.\n\nSource preparation context (main preparation): Middlebrook 7H9 medium
+    (Difco) containing 10% (v/v) albumin\u2010dextrose\u2010catalase (ADC, Difco)
+    enrichment, 0.2% glycerol and 0.05% Tween 80 (MADCTw)", "status": "evidence_only",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "\"Middlebrook 7H9 medium (Difco) containing 10% (v/v) albumin\u2010dextrose\u2010catalase
+    (ADC, Difco) enrichment, 0.2% glycerol and 0.05% Tween 80 (MADCTw)\""}, {"old_field":
+    null, "field": "solutions[1].notes", "old": null, "new": "Source amount: 10 %
+    (v/v); scope: main preparation input. The percentage basis is explicitly volume/volume.
+    Inline enrichment composition is separate from its dose and from finished-medium
+    concentrations.\n\nSource preparation context (ADC Enrichment): Filter Sterilize.\n\nSource
+    preparation context (ADC Enrichment): Store any unused portion with lot information
+    and Media Number in 2-8\u00baC.", "status": "evidence_only", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "\"Filter Sterilize.\""}, {"old_field": null, "field": "solutions[1].notes",
+    "old": null, "new": "Source amount: 10 % (v/v); scope: main preparation input.
+    The percentage basis is explicitly volume/volume. Inline enrichment composition
+    is separate from its dose and from finished-medium concentrations.\n\nSource preparation
+    context (ADC Enrichment): Filter Sterilize.\n\nSource preparation context (ADC
+    Enrichment): Store any unused portion with lot information and Media Number in
+    2-8\u00baC.", "status": "evidence_only", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "\"Store any unused portion with lot information and Media Number in
+    2-8\u00baC.\""}, {"old_field": "ingredients[18].concentration", "field": "notes",
+    "old": {"value": "10.0", "unit": "G_PER_L"}, "new": "Source: https://togomedium.org/medium/M2403\n\nSuperseded
+    historical provenance (not a current formulation claim):\nCommercial Product:
+    LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nFalse
+    LB constituent expansion is withdrawn. Source-specific amounts and preparation
+    boundaries supersede flattened concentrations. Existing chemical annotations and
+    earlier history are preserved, not recertified; no organism-growth association
+    is added.\n\nSource preparation context (main preparation): Middlebrook 7H9 medium
+    (Difco) containing 10% (v/v) albumin\u2010dextrose\u2010catalase (ADC, Difco)
+    enrichment, 0.2% glycerol and 0.05% Tween 80 (MADCTw)", "status": "remove_unsupported",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"Bovine Serum Albumin, Frac V\",\n          \"volume\":
+    5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001520\""},
+    {"old_field": "ingredients[19].concentration", "field": "notes", "old": {"value":
+    "5.0", "unit": "G_PER_L"}, "new": "Source: https://togomedium.org/medium/M2403\n\nSuperseded
+    historical provenance (not a current formulation claim):\nCommercial Product:
+    LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nFalse
+    LB constituent expansion is withdrawn. Source-specific amounts and preparation
+    boundaries supersede flattened concentrations. Existing chemical annotations and
+    earlier history are preserved, not recertified; no organism-growth association
+    is added.\n\nSource preparation context (main preparation): Middlebrook 7H9 medium
+    (Difco) containing 10% (v/v) albumin\u2010dextrose\u2010catalase (ADC, Difco)
+    enrichment, 0.2% glycerol and 0.05% Tween 80 (MADCTw)", "status": "remove_unsupported",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"Bovine Serum Albumin, Frac V\",\n          \"volume\":
+    5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001520\""},
+    {"old_field": "ingredients[20].concentration", "field": "notes", "old": {"value":
+    "10.0", "unit": "G_PER_L"}, "new": "Source: https://togomedium.org/medium/M2403\n\nSuperseded
+    historical provenance (not a current formulation claim):\nCommercial Product:
+    LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nFalse
+    LB constituent expansion is withdrawn. Source-specific amounts and preparation
+    boundaries supersede flattened concentrations. Existing chemical annotations and
+    earlier history are preserved, not recertified; no organism-growth association
+    is added.\n\nSource preparation context (main preparation): Middlebrook 7H9 medium
+    (Difco) containing 10% (v/v) albumin\u2010dextrose\u2010catalase (ADC, Difco)
+    enrichment, 0.2% glycerol and 0.05% Tween 80 (MADCTw)", "status": "remove_unsupported",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403",
+    "snippet": "{\n          \"component_name\": \"Bovine Serum Albumin, Frac V\",\n          \"volume\":
+    5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001520\""}]'
+solutions:
+- preferred_term: Middlebrook 7H9 broth
+  composition:
+  - preferred_term: Monopotassium Phosphate
+    notes: |-
+      Role: Buffer; Properties: Inorganic compound, Defined component, Simple component
+
+      Source amount: 1 g; scope: Middlebrook 7H9 broth formula-detail table. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit.
+    term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Monopotassium Phosphate",
+                  "volume": 1,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001006"
+      explanation: |-
+        solutions[0].composition[0].concentration: Source amount: 1 g; scope: Middlebrook 7H9 broth formula-detail table. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[0]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+
+        Additional exact excerpt: {
+                  "component_name": "Monopotassium Phosphate",
+                  "volume": 1,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001006"
+        solutions[0].composition[0].notes: Source amount: 1 g; scope: Middlebrook 7H9 broth formula-detail table. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[0]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+  - preferred_term: Biotin
+    notes: |-
+      Role: Vitamin; Properties: Organic compound, Defined component, Simple component
+
+      Source amount: 0.5 mg; scope: Middlebrook 7H9 broth formula-detail table. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit.
+    term:
+      id: CHEBI:15956
+      label: biotin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15956
+      label: biotin
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Biotin",
+                  "volume": 0.5,
+                  "unit": "mg",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001025"
+      explanation: |-
+        solutions[0].composition[1].concentration: Source amount: 0.5 mg; scope: Middlebrook 7H9 broth formula-detail table. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[1]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+
+        Additional exact excerpt: {
+                  "component_name": "Biotin",
+                  "volume": 0.5,
+                  "unit": "mg",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001025"
+        solutions[0].composition[1].notes: Source amount: 0.5 mg; scope: Middlebrook 7H9 broth formula-detail table. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[1]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+  - preferred_term: Ammonium Sulfate
+    notes: |-
+      Role: Nitrogen source; Properties: Inorganic compound, Defined component, Simple component
+
+      Source amount: 0.5 g; scope: Middlebrook 7H9 broth formula-detail table. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit.
+    term:
+      id: CHEBI:62946
+      label: ammonium sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:62946
+      label: ammonium sulfate
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Ammonium Sulfate",
+                  "volume": 0.5,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001030"
+      explanation: |-
+        solutions[0].composition[2].concentration: Source amount: 0.5 g; scope: Middlebrook 7H9 broth formula-detail table. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[2]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+
+        Additional exact excerpt: {
+                  "component_name": "Ammonium Sulfate",
+                  "volume": 0.5,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001030"
+        solutions[0].composition[2].notes: Source amount: 0.5 g; scope: Middlebrook 7H9 broth formula-detail table. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[2]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+  - preferred_term: Calcium Chloride
+    notes: |-
+      Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component
+
+      Source amount: 0.5 mg; scope: Middlebrook 7H9 broth formula-detail table. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit.
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Calcium Chloride",
+                  "volume": 0.5,
+                  "unit": "mg",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001061"
+      explanation: |-
+        solutions[0].composition[3].concentration: Source amount: 0.5 mg; scope: Middlebrook 7H9 broth formula-detail table. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[3]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+
+        Additional exact excerpt: {
+                  "component_name": "Calcium Chloride",
+                  "volume": 0.5,
+                  "unit": "mg",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001061"
+        solutions[0].composition[3].notes: Source amount: 0.5 mg; scope: Middlebrook 7H9 broth formula-detail table. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[3]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+  - preferred_term: Disodium Phosphate
+    notes: |-
+      Role: Buffer; Properties: Inorganic compound, Defined component, Simple component
+
+      Source amount: 2.5 g; scope: Middlebrook 7H9 broth formula-detail table. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit.
+    term:
+      id: CHEBI:34683
+      label: disodium hydrogenphosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:34683
+      label: disodium hydrogenphosphate
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Disodium Phosphate",
+                  "volume": 2.5,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001069"
+      explanation: |-
+        solutions[0].composition[4].concentration: Source amount: 2.5 g; scope: Middlebrook 7H9 broth formula-detail table. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[4]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+
+        Additional exact excerpt: {
+                  "component_name": "Disodium Phosphate",
+                  "volume": 2.5,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001069"
+        solutions[0].composition[4].notes: Source amount: 2.5 g; scope: Middlebrook 7H9 broth formula-detail table. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[4]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+  - preferred_term: Magnesium Sulfate
+    notes: |-
+      Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component
+
+      Source amount: 0.05 g; scope: Middlebrook 7H9 broth formula-detail table. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit.
+    term:
+      id: CHEBI:32599
+      label: magnesium sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32599
+      label: magnesium sulfate
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Magnesium Sulfate",
+                  "volume": 0.05,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001096"
+      explanation: |-
+        solutions[0].composition[5].concentration: Source amount: 0.05 g; scope: Middlebrook 7H9 broth formula-detail table. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[5]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+
+        Additional exact excerpt: {
+                  "component_name": "Magnesium Sulfate",
+                  "volume": 0.05,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001096"
+        solutions[0].composition[5].notes: Source amount: 0.05 g; scope: Middlebrook 7H9 broth formula-detail table. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[5]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+  - preferred_term: Copper Sulfate
+    notes: |-
+      Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component
+
+      Source amount: 1 mg; scope: Middlebrook 7H9 broth formula-detail table. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit.
+    term:
+      id: CHEBI:23414
+      label: copper(II) sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:23414
+      label: copper(II) sulfate
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Copper Sulfate",
+                  "volume": 1,
+                  "unit": "mg",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001103"
+      explanation: |-
+        solutions[0].composition[6].concentration: Source amount: 1 mg; scope: Middlebrook 7H9 broth formula-detail table. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[6]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+
+        Additional exact excerpt: {
+                  "component_name": "Copper Sulfate",
+                  "volume": 1,
+                  "unit": "mg",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001103"
+        solutions[0].composition[6].notes: Source amount: 1 mg; scope: Middlebrook 7H9 broth formula-detail table. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[6]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+  - preferred_term: Sodium Citrate
+    notes: |-
+      Role: Buffer; Properties: Organic compound, Defined component, Simple component
+
+      Source amount: 0.1 g; scope: Middlebrook 7H9 broth formula-detail table. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit.
+    term:
+      id: CHEBI:53258
+      label: sodium citrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53258
+      label: sodium citrate
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Sodium Citrate",
+                  "volume": 0.1,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001109"
+      explanation: |-
+        solutions[0].composition[7].concentration: Source amount: 0.1 g; scope: Middlebrook 7H9 broth formula-detail table. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[7]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+
+        Additional exact excerpt: {
+                  "component_name": "Sodium Citrate",
+                  "volume": 0.1,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001109"
+        solutions[0].composition[7].notes: Source amount: 0.1 g; scope: Middlebrook 7H9 broth formula-detail table. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[7]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+  - preferred_term: Ferric Ammonium Citrate
+    notes: |-
+      Role: Nitrogen source; Properties: Organic compound, Defined component, Simple component
+
+      Source amount: 0.04 g; scope: Middlebrook 7H9 broth formula-detail table. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit.
+    term:
+      id: CHEBI:31604
+      label: ferric ammonium citrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31604
+      label: ferric ammonium citrate
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Ferric Ammonium Citrate",
+                  "volume": 0.04,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001147"
+      explanation: |-
+        solutions[0].composition[8].concentration: Source amount: 0.04 g; scope: Middlebrook 7H9 broth formula-detail table. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[8]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+
+        Additional exact excerpt: {
+                  "component_name": "Ferric Ammonium Citrate",
+                  "volume": 0.04,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001147"
+        solutions[0].composition[8].notes: Source amount: 0.04 g; scope: Middlebrook 7H9 broth formula-detail table. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[8]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+  - preferred_term: L-Glutamic Acid
+    notes: |-
+      Role: Nitrogen source; Properties: Organic compound, Defined component, Simple component
+
+      Source amount: 0.5 g; scope: Middlebrook 7H9 broth formula-detail table. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit.
+    term:
+      id: CHEBI:16015
+      label: L-glutamic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:16015
+      label: L-glutamic acid
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "L-Glutamic Acid",
+                  "volume": 0.5,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001570"
+      explanation: |-
+        solutions[0].composition[9].concentration: Source amount: 0.5 g; scope: Middlebrook 7H9 broth formula-detail table. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[9]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+
+        Additional exact excerpt: {
+                  "component_name": "L-Glutamic Acid",
+                  "volume": 0.5,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001570"
+        solutions[0].composition[9].notes: Source amount: 0.5 g; scope: Middlebrook 7H9 broth formula-detail table. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[9]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+  - preferred_term: Pyridoxine
+    notes: |-
+      Role: Vitamin; Properties: Organic compound, Defined component, Simple component
+
+      Source amount: 1 mg; scope: Middlebrook 7H9 broth formula-detail table. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit.
+    term:
+      id: CHEBI:16709
+      label: pyridoxine
+    mediaingredientmech_chebi_term:
+      id: CHEBI:16709
+      label: pyridoxine
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Pyridoxine",
+                  "volume": 1,
+                  "unit": "mg",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001632"
+      explanation: |-
+        solutions[0].composition[10].concentration: Source amount: 1 mg; scope: Middlebrook 7H9 broth formula-detail table. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[10]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+
+        Additional exact excerpt: {
+                  "component_name": "Pyridoxine",
+                  "volume": 1,
+                  "unit": "mg",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001632"
+        solutions[0].composition[10].notes: Source amount: 1 mg; scope: Middlebrook 7H9 broth formula-detail table. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[10]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+  - preferred_term: Zinc Sulfate
+    notes: |-
+      Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component
+
+      Source amount: 1 mg; scope: Middlebrook 7H9 broth formula-detail table. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit.
+    term:
+      id: CHEBI:35176
+      label: zinc sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:35176
+      label: zinc sulfate
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Zinc Sulfate",
+                  "volume": 1,
+                  "unit": "mg",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001764"
+      explanation: |-
+        solutions[0].composition[11].concentration: Source amount: 1 mg; scope: Middlebrook 7H9 broth formula-detail table. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[11]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+
+        Additional exact excerpt: {
+                  "component_name": "Zinc Sulfate",
+                  "volume": 1,
+                  "unit": "mg",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001764"
+        solutions[0].composition[11].notes: Source amount: 1 mg; scope: Middlebrook 7H9 broth formula-detail table. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[11]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+  name: Middlebrook 7H9 broth
+  notes: 'Source amount: 4.7 g; scope: main preparation input. This table does not
+    give an explicit final-volume denominator. Preserve the exact mass here; no g/L
+    conversion is asserted. The schema has no mass-only concentration unit. Inline
+    commercial-base formula detail, not extra simultaneous ingredients. Its table
+    masses have no verified volume/dilution basis.'
+- preferred_term: ADC Enrichment
+  concentration:
+    value: '10'
+    unit: PERCENT_V_V
+  composition:
+  - preferred_term: Dextrose
+    notes: |-
+      Role: Carbon source; Properties: Organic compound, Defined component, Simple component
+
+      Source amount: 2 g; scope: ADC Enrichment stock preparation. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit.
+    term:
+      id: CHEBI:17634
+      label: D-glucose
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17634
+      label: D-glucose
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Dextrose",
+                  "volume": 2,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001010"
+      explanation: |-
+        solutions[1].composition[0].concentration: Source amount: 2 g; scope: ADC Enrichment stock preparation. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[2].items[0]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+
+        Additional exact excerpt: {
+                  "component_name": "Dextrose",
+                  "volume": 2,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001010"
+        solutions[1].composition[0].notes: Source amount: 2 g; scope: ADC Enrichment stock preparation. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[2].items[0]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+  - preferred_term: Bovine Serum Albumin, Frac V
+    notes: 'Source amount: 5 g; scope: ADC Enrichment stock preparation. This table
+      does not give an explicit final-volume denominator. Preserve the exact mass
+      here; no g/L conversion is asserted. The schema has no mass-only concentration
+      unit.'
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Bovine Serum Albumin, Frac V",
+                  "volume": 5,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001520"
+      explanation: |-
+        solutions[1].composition[1].concentration: Source amount: 5 g; scope: ADC Enrichment stock preparation. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[2].items[1]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+
+        Additional exact excerpt: {
+                  "component_name": "Bovine Serum Albumin, Frac V",
+                  "volume": 5,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001520"
+        solutions[1].composition[1].notes: Source amount: 5 g; scope: ADC Enrichment stock preparation. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[2].items[1]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+  - preferred_term: DI Water
+    concentration:
+      value: '0.1'
+      unit: L
+    notes: |-
+      Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component [WARNING: 2 duplicates with conflicting units] [MANUAL REVIEW REQUIRED: PERCENT_W_V incompatible with absolute units]
+
+      Source amount: 100 ml; scope: ADC Enrichment stock preparation. Volume-only input/dose, not a final-volume marker; 100 ml = 0.1 L.
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "DI Water",
+                  "volume": 100,
+                  "unit": "ml",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001695"
+      explanation: |-
+        solutions[1].composition[2].concentration: Source amount: 100 ml; scope: ADC Enrichment stock preparation. Volume-only input/dose, not a final-volume marker; 100 ml = 0.1 L. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[2].items[2]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+
+        Additional exact excerpt: {
+                  "component_name": "DI Water",
+                  "volume": 100,
+                  "unit": "ml",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001695"
+        solutions[1].composition[2].notes: Source amount: 100 ml; scope: ADC Enrichment stock preparation. Volume-only input/dose, not a final-volume marker; 100 ml = 0.1 L. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[2].items[2]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+  - preferred_term: Catalase (beef)
+    notes: |-
+      Properties: Defined component, Simple component
+
+      Source amount: 3 mg; scope: ADC Enrichment stock preparation. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit.
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Catalase (beef)",
+                  "volume": 3,
+                  "unit": "mg",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001938"
+      explanation: |-
+        solutions[1].composition[3].concentration: Source amount: 3 mg; scope: ADC Enrichment stock preparation. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[2].items[3]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+
+        Additional exact excerpt: {
+                  "component_name": "Catalase (beef)",
+                  "volume": 3,
+                  "unit": "mg",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001938"
+        solutions[1].composition[3].notes: Source amount: 3 mg; scope: ADC Enrichment stock preparation. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[2].items[3]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+  name: ADC Enrichment
+  notes: |-
+    Source amount: 10 % (v/v); scope: main preparation input. The percentage basis is explicitly volume/volume. Inline enrichment composition is separate from its dose and from finished-medium concentrations.
+
+    Source preparation context (ADC Enrichment): Filter Sterilize.
+
+    Source preparation context (ADC Enrichment): Store any unused portion with lot information and Media Number in 2-8ºC.
+evidence:
+- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403
+  supports: SUPPORT
+  snippet: |-
+    {
+              "component_name": "Middlebrook 7H9 broth",
+              "volume": 4.7,
+              "unit": "g"
+  explanation: |-
+    solutions[0].concentration: Source amount: 4.7 g; scope: main preparation input. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. Inline commercial-base formula detail, not extra simultaneous ingredients. Its table masses have no verified volume/dilution basis. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[0].items[3]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+
+    Additional exact excerpt: {
+              "component_name": "Middlebrook 7H9 broth",
+              "volume": 4.7,
+              "unit": "g"
+    solutions[0].notes: Source amount: 4.7 g; scope: main preparation input. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. Inline commercial-base formula detail, not extra simultaneous ingredients. Its table masses have no verified volume/dilution basis. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[0].items[3]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+
+    Additional exact excerpt: {
+              "component_name": "Middlebrook 7H9 broth",
+              "volume": 4.7,
+              "unit": "g"
+    solutions[0].name: Source amount: 4.7 g; scope: main preparation input. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. Inline commercial-base formula detail, not extra simultaneous ingredients. Its table masses have no verified volume/dilution basis. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[0].items[3]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+
+    Additional exact excerpt: {
+              "component_name": "ADC Enrichment",
+              "volume": 10,
+              "unit": "% (v/v)"
+    solutions[1].concentration: Source amount: 10 % (v/v); scope: main preparation input. The percentage basis is explicitly volume/volume. Inline enrichment composition is separate from its dose and from finished-medium concentrations. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[0].items[4]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+
+    Additional exact excerpt: {
+              "component_name": "ADC Enrichment",
+              "volume": 10,
+              "unit": "% (v/v)"
+    solutions[1].notes: Source amount: 10 % (v/v); scope: main preparation input. The percentage basis is explicitly volume/volume. Inline enrichment composition is separate from its dose and from finished-medium concentrations. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[0].items[4]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+
+    Additional exact excerpt: {
+              "component_name": "ADC Enrichment",
+              "volume": 10,
+              "unit": "% (v/v)"
+    solutions[1].name: Source amount: 10 % (v/v); scope: main preparation input. The percentage basis is explicitly volume/volume. Inline enrichment composition is separate from its dose and from finished-medium concentrations. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[0].items[4]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+
+    Additional exact excerpt: "Middlebrook 7H9 medium (Difco) containing 10% (v/v) albumin‐dextrose‐catalase (ADC, Difco) enrichment, 0.2% glycerol and 0.05% Tween 80 (MADCTw)"
+    notes: Source preparation context (main preparation): Middlebrook 7H9 medium (Difco) containing 10% (v/v) albumin‐dextrose‐catalase (ADC, Difco) enrichment, 0.2% glycerol and 0.05% Tween 80 (MADCTw) No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=comments[0].comment; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+
+    Additional exact excerpt: "Filter Sterilize."
+    solutions[1].notes: Source preparation context (ADC Enrichment): Filter Sterilize. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=comments[3].comment; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+
+    Additional exact excerpt: "Store any unused portion with lot information and Media Number in 2-8ºC."
+    solutions[1].notes: Source preparation context (ADC Enrichment): Store any unused portion with lot information and Media Number in 2-8ºC. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=comments[4].comment; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+
+    Additional exact excerpt: {
+              "component_name": "Bovine Serum Albumin, Frac V",
+              "volume": 5,
+              "unit": "g",
+              "gmo": "http://purl.jp/bio/10/gmo/GMO_001520"
+    notes: Restore the source's albumin entry and remove this falsely substituted LB constituent and concentration; the complete source formulation contains no LB preparation. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[2].items[1]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+
+    Additional exact excerpt: {
+              "component_name": "Bovine Serum Albumin, Frac V",
+              "volume": 5,
+              "unit": "g",
+              "gmo": "http://purl.jp/bio/10/gmo/GMO_001520"
+    notes: Restore the source's albumin entry and remove this falsely substituted LB constituent and concentration; the complete source formulation contains no LB preparation. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[2].items[1]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+
+    Additional exact excerpt: {
+              "component_name": "Bovine Serum Albumin, Frac V",
+              "volume": 5,
+              "unit": "g",
+              "gmo": "http://purl.jp/bio/10/gmo/GMO_001520"
+    notes: Restore the source's albumin entry and remove this falsely substituted LB constituent and concentration; the complete source formulation contains no LB preparation. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[2].items[1]; accessed=2026-10-09T00:07:44.407453+00:00; capture SHA256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+references:
+- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2403
+  title: MADCTw medium
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-09;
+    accession=M2403; capture_sha256=6a7fd648a1fe15e468873b23c03df794a126da0bd466b99f16e583751be2d6a6.
+    Authors and publication year are not supplied; access/copyright years are not
+    publication years. Formulation evidence, not newly curated growth evidence.

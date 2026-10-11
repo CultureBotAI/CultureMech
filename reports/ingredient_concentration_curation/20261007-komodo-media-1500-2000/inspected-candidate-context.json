@@ -1,0 +1,3795 @@
+[
+  {
+    "path": "data/normalized_yaml/bacterial/KOMODO_460_NITROGEN-FREE_medium_FOR_PSEUDOMONAS_STUTZERI.yaml",
+    "medium_id": "460",
+    "before_sha256": "9697808ad60bdcc33b98888cb909b2fe3913a3ae2cf662da5223eda51a099b67",
+    "local": {
+      "id": "CultureMech:005466",
+      "name": "nitrogen_free_medium_for_pseudomonas_stutzeri",
+      "original_name": "NITROGEN-FREE medium FOR PSEUDOMONAS STUTZERI",
+      "category": "bacterial",
+      "medium_type": "COMPLEX",
+      "composition_type": "SEMI_DEFINED",
+      "physical_state": "LIQUID",
+      "ph_value": 7.0,
+      "media_term": {
+        "preferred_term": "KOMODO Medium 460",
+        "term": {
+          "id": "komodo.medium:460",
+          "label": "NITROGEN-FREE medium FOR PSEUDOMONAS STUTZERI"
+        }
+      },
+      "notes": "Source: KOMODO ModelSEED | ID: 460 | DSMZ Medium: 460 (mediadive.medium:460) | Aerobic: No",
+      "ingredients": [
+        {
+          "preferred_term": "K2HPO4",
+          "term": {
+            "id": "CHEBI:131527",
+            "label": "dipotassium hydrogen phosphate"
+          },
+          "concentration": {
+            "value": "0.5",
+            "unit": "G_PER_L"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:131527",
+            "label": "dipotassium hydrogen phosphate"
+          }
+        },
+        {
+          "preferred_term": "MgSO4 x 7 H2O",
+          "term": {
+            "id": "CHEBI:31795",
+            "label": "magnesium sulfate heptahydrate"
+          },
+          "concentration": {
+            "value": "0.2",
+            "unit": "G_PER_L"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:31795",
+            "label": "magnesium sulfate heptahydrate"
+          }
+        },
+        {
+          "preferred_term": "NaCl",
+          "term": {
+            "id": "CHEBI:26710",
+            "label": "sodium chloride"
+          },
+          "concentration": {
+            "value": "0.1",
+            "unit": "G_PER_L"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:26710",
+            "label": "sodium chloride"
+          }
+        },
+        {
+          "preferred_term": "Yeast extract",
+          "concentration": {
+            "value": "0.2",
+            "unit": "G_PER_L"
+          }
+        },
+        {
+          "preferred_term": "FeCl3 x 6 H2O",
+          "term": {
+            "id": "CHEBI:86254",
+            "label": "iron trichloride hexahydrate"
+          },
+          "concentration": {
+            "value": "0.015",
+            "unit": "G_PER_L"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:86254",
+            "label": "iron trichloride hexahydrate"
+          }
+        },
+        {
+          "preferred_term": "DL-Na-malate",
+          "term": {
+            "id": "CHEBI:91260",
+            "label": "disodium malate"
+          },
+          "concentration": {
+            "value": "6.6",
+            "unit": "G_PER_L"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:91260",
+            "label": "disodium malate"
+          }
+        }
+      ],
+      "applications": [
+        "Microbial cultivation"
+      ],
+      "curation_history": [
+        {
+          "timestamp": "2026-01-27T01:15:02.fZ",
+          "curator": "komodo-web-import",
+          "action": "Imported from KOMODO web table",
+          "notes": "Source: KOMODO, ID: 460"
+        },
+        {
+          "timestamp": "2026-02-03T11:19:13.778326",
+          "curator": "dsmz-resolver-v1.0",
+          "action": "Enriched with DSMZ composition",
+          "notes": "Copied ingredients from DSMZ Medium 460"
+        },
+        {
+          "timestamp": "2026-03-13T06:19:33.146658Z",
+          "curator": "culturemech-id-assigner-v1.0",
+          "action": "Assigned CultureMech ID",
+          "notes": "Assigned stable identifier: CultureMech:005466"
+        },
+        {
+          "timestamp": "2026-03-17T06:30:39.000000Z",
+          "curator": "mediaingredientmech-enrichment-v1.0",
+          "action": "Added MediaIngredientMech links",
+          "notes": "Linked ingredients to MediaIngredientMech identifiers"
+        },
+        {
+          "timestamp": "2026-03-17T19:45:49.216620+00:00",
+          "curator": "normalize_media_names_to_snake_case.py",
+          "action": "NAME_NORMALIZED",
+          "notes": "Normalized name from \"NITROGEN-FREE medium FOR PSEUDOMONAS STUTZERI\" to \"nitrogen_free_medium_for_pseudomonas_stutzeri\" for consistent matching"
+        },
+        {
+          "timestamp": "2026-06-05T07:40:23.512442+00:00",
+          "curator": "mim-legacy-to-chebi-migration-v1.0",
+          "action": "Refreshed legacy MediaIngredientMech links to CHEBI keying",
+          "notes": "Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term (id-safe: ingredient's own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN id scheme."
+        },
+        {
+          "timestamp": "2026-06-10T07:46:44.952375+00:00",
+          "curator": "primary-term-label-canonicalization-v1.0",
+          "action": "Canonicalized primary term label to OBO canonical (OAK)",
+          "notes": "1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi."
+        }
+      ],
+      "variant_children": [
+        {
+          "path": "data/normalized_yaml/bacterial/medium_460_modified_for_dsm_4166.yaml",
+          "relationship": "SOURCE_DUPLICATE",
+          "id": "CultureMech:005465",
+          "name": "medium_460_modified_for_dsm_4166",
+          "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+        }
+      ],
+      "parent_media": {
+        "path": "data/normalized_yaml/bacterial/nitrogen_free_medium_for_pseudomonas_stutzeri.yaml",
+        "relationship": "SOURCE_DUPLICATE",
+        "id": "CultureMech:001574",
+        "name": "nitrogen_free_medium_for_pseudomonas_stutzeri",
+        "notes": "KOMODO record states DSMZ Medium 460 provenance and exactly matches the single same-category DSMZ parent signature."
+      },
+      "variant_relationship": "SOURCE_DUPLICATE",
+      "variant_modifications": [
+        "Same ingredient and concentration signature; KOMODO record copied from the matching DSMZ medium source."
+      ]
+    },
+    "source": {
+      "medium": {
+        "id": 460,
+        "name": "NITROGEN-FREE MEDIUM FOR PSEUDOMONAS STUTZERI",
+        "complex_medium": "yes",
+        "min_pH": 7,
+        "max_pH": 7,
+        "source": "DSMZ",
+        "link": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium460.pdf"
+      },
+      "solutions": [
+        {
+          "id": 924,
+          "name": "Main sol. 460",
+          "volume": 1000,
+          "recipe": [
+            {
+              "recipe_order": 1,
+              "compound": "K2HPO4",
+              "compound_id": 10,
+              "amount": 0.5,
+              "unit": "g",
+              "g_l": 0.5,
+              "mmol_l": 2.87066,
+              "optional": 0
+            },
+            {
+              "recipe_order": 2,
+              "compound": "MgSO4 x 7 H2O",
+              "compound_id": 8,
+              "amount": 0.2,
+              "unit": "g",
+              "g_l": 0.2,
+              "mmol_l": 0.811438,
+              "optional": 0
+            },
+            {
+              "recipe_order": 3,
+              "compound": "NaCl",
+              "compound_id": 43,
+              "amount": 0.1,
+              "unit": "g",
+              "g_l": 0.1,
+              "mmol_l": 1.71116,
+              "optional": 0
+            },
+            {
+              "recipe_order": 4,
+              "compound": "Yeast extract",
+              "compound_id": 16,
+              "amount": 0.2,
+              "unit": "g",
+              "g_l": 0.2,
+              "optional": 0
+            },
+            {
+              "recipe_order": 5,
+              "compound": "FeCl3 x 6 H2O",
+              "compound_id": 82,
+              "amount": 15,
+              "unit": "mg",
+              "g_l": 0.015,
+              "mmol_l": 0.0554947,
+              "optional": 0
+            },
+            {
+              "recipe_order": 6,
+              "compound": "DL-Na-malate",
+              "compound_id": 495,
+              "amount": 6.6,
+              "unit": "g",
+              "g_l": 6.6,
+              "mmol_l": 37.068,
+              "optional": 0
+            },
+            {
+              "recipe_order": 7,
+              "compound": "Distilled water",
+              "compound_id": 4,
+              "amount": 1000,
+              "unit": "ml",
+              "optional": 0
+            }
+          ],
+          "steps": [
+            {
+              "step": "Adjust pH to 7.0."
+            }
+          ]
+        }
+      ]
+    },
+    "source_metadata": {
+      "url": "https://mediadive.dsmz.de/rest/medium/460",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/460",
+      "http_status": 200,
+      "sha256": "d79a3e3ff703e4816bd9875be0174706145153b9e65459591410911db233e799",
+      "accessed_at": "2026-10-07T10:47:25.535441+00:00"
+    },
+    "mapping": {
+      "cells": [
+        "460",
+        "NITROGEN-FREE medium FOR PSEUDOMONAS STUTZERI",
+        "7.0",
+        "true",
+        "false",
+        "false",
+        "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium460.pdf"
+      ],
+      "links": [
+        {
+          "href": "/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=460"
+        },
+        {
+          "href": "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium460.pdf"
+        }
+      ],
+      "snippet": "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=460' >460</a></TD>\n\t\t\t\t\t<TD>NITROGEN-FREE medium FOR PSEUDOMONAS STUTZERI</TD>\n\t\t\t\t\t<TD> 7.0</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium460.pdf' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium460.pdf</a></TD>\n\t\t\t\t</TR>",
+      "medium_id": "460",
+      "original_recipe": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium460.pdf"
+    },
+    "claims": [
+      {
+        "pointer": [
+          "ingredients",
+          0
+        ],
+        "field": "ingredients[0].concentration",
+        "ingredient": "K2HPO4",
+        "old": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/460",
+        "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 2.87066,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[0]",
+        "explanation": "Provider explicitly reports g_l=0.5; check: 0.5 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.5 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 460 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          1
+        ],
+        "field": "ingredients[1].concentration",
+        "ingredient": "MgSO4 x 7 H2O",
+        "old": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/460",
+        "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 0.811438,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[1]",
+        "explanation": "Provider explicitly reports g_l=0.2; check: 0.2 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.2 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 460 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          2
+        ],
+        "field": "ingredients[2].concentration",
+        "ingredient": "NaCl",
+        "old": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/460",
+        "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 1.71116,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[2]",
+        "explanation": "Provider explicitly reports g_l=0.1; check: 0.1 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.1 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 460 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          3
+        ],
+        "field": "ingredients[3].concentration",
+        "ingredient": "Yeast extract",
+        "old": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/460",
+        "snippet": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[3]",
+        "explanation": "Provider explicitly reports g_l=0.2; check: 0.2 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.2 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 460 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          4
+        ],
+        "field": "ingredients[4].concentration",
+        "ingredient": "FeCl3 x 6 H2O",
+        "old": {
+          "value": "0.015",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "0.015",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/460",
+        "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"FeCl3 x 6 H2O\",\n                        \"compound_id\": 82,\n                        \"amount\": 15,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.015,\n                        \"mmol_l\": 0.0554947,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[4]",
+        "explanation": "Provider explicitly reports g_l=0.015; check: 15 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.015 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 460 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          5
+        ],
+        "field": "ingredients[5].concentration",
+        "ingredient": "DL-Na-malate",
+        "old": {
+          "value": "6.6",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "6.6",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/460",
+        "snippet": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"DL-Na-malate\",\n                        \"compound_id\": 495,\n                        \"amount\": 6.6,\n                        \"unit\": \"g\",\n                        \"g_l\": 6.6,\n                        \"mmol_l\": 37.068,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[5]",
+        "explanation": "Provider explicitly reports g_l=6.6; check: 6.6 g * 1 g/g / (1000 ml / 1000 ml per L) = 6.6 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 460 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": null,
+        "field": "variant_children[0]",
+        "ingredient": "medium_460_modified_for_dsm_4166",
+        "old": {
+          "path": "data/normalized_yaml/bacterial/medium_460_modified_for_dsm_4166.yaml",
+          "relationship": "SOURCE_DUPLICATE",
+          "id": "CultureMech:005465",
+          "name": "medium_460_modified_for_dsm_4166",
+          "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+        },
+        "new": null,
+        "status": "unsupported",
+        "reference": null,
+        "snippet": null,
+        "locator": null,
+        "explanation": "Variant formulation/relationship requires its own exact source; parent evidence is not propagated."
+      },
+      {
+        "pointer": null,
+        "field": "parent_media",
+        "ingredient": "nitrogen_free_medium_for_pseudomonas_stutzeri",
+        "old": {
+          "path": "data/normalized_yaml/bacterial/nitrogen_free_medium_for_pseudomonas_stutzeri.yaml",
+          "relationship": "SOURCE_DUPLICATE",
+          "id": "CultureMech:001574",
+          "name": "nitrogen_free_medium_for_pseudomonas_stutzeri",
+          "notes": "KOMODO record states DSMZ Medium 460 provenance and exactly matches the single same-category DSMZ parent signature."
+        },
+        "new": null,
+        "status": "unsupported",
+        "reference": null,
+        "snippet": null,
+        "locator": null,
+        "explanation": "Variant formulation/relationship requires its own exact source; parent evidence is not propagated."
+      },
+      {
+        "pointer": null,
+        "field": "source.data.solutions[0].recipe[6]",
+        "ingredient": "Distilled water",
+        "old": null,
+        "new": null,
+        "status": "unsupported",
+        "reference": "https://mediadive.dsmz.de/rest/medium/460",
+        "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[6]",
+        "explanation": "Source row has no established direct-medium match. Stock, omitted solvent, optional, and missing ingredients require explicit follow-up; not silently endorsed or discarded."
+      },
+      {
+        "pointer": null,
+        "field": "source.data.solutions[0].steps[0]",
+        "ingredient": "preparation context",
+        "old": null,
+        "new": null,
+        "status": "unsupported",
+        "reference": "https://mediadive.dsmz.de/rest/medium/460",
+        "snippet": "{\n                        \"step\": \"Adjust pH to 7.0.\"\n                    }",
+        "locator": "$.data.solutions[0].steps[0]",
+        "explanation": "Preparation context retained for source-specific follow-up, including supplements and downstream dilutions; no additional amount inferred from prose."
+      }
+    ]
+  },
+  {
+    "path": "data/normalized_yaml/bacterial/KOMODO_464_PLATE_COUNT_AGAR.yaml",
+    "medium_id": "464",
+    "before_sha256": "a1b0edfd4735596471973ce6f7afefefdbc0866b6e07279aa28d5bc4096fdb3b",
+    "local": {
+      "id": "CultureMech:005519",
+      "name": "plate_count_agar",
+      "original_name": "PLATE COUNT AGAR",
+      "category": "bacterial",
+      "medium_type": "COMPLEX",
+      "composition_type": "UNDEFINED",
+      "physical_state": "SOLID_AGAR",
+      "ph_value": 7.0,
+      "media_term": {
+        "preferred_term": "KOMODO Medium 464",
+        "term": {
+          "id": "komodo.medium:464",
+          "label": "PLATE COUNT AGAR"
+        }
+      },
+      "notes": "Source: KOMODO ModelSEED | ID: 464 | DSMZ Medium: 464 (mediadive.medium:464) | Aerobic: No",
+      "ingredients": [
+        {
+          "preferred_term": "Tryptone",
+          "concentration": {
+            "value": "5",
+            "unit": "G_PER_L"
+          }
+        },
+        {
+          "preferred_term": "Yeast extract",
+          "concentration": {
+            "value": "2.5",
+            "unit": "G_PER_L"
+          }
+        },
+        {
+          "preferred_term": "Dextrose",
+          "term": {
+            "id": "CHEBI:17634",
+            "label": "D-glucose"
+          },
+          "concentration": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:17634",
+            "label": "D-glucose"
+          }
+        },
+        {
+          "preferred_term": "Agar",
+          "term": {
+            "id": "CHEBI:2509",
+            "label": "agar"
+          },
+          "concentration": {
+            "value": "15",
+            "unit": "G_PER_L"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:2509",
+            "label": "agar"
+          }
+        }
+      ],
+      "applications": [
+        "Microbial cultivation"
+      ],
+      "curation_history": [
+        {
+          "timestamp": "2026-01-27T01:15:02.fZ",
+          "curator": "komodo-web-import",
+          "action": "Imported from KOMODO web table",
+          "notes": "Source: KOMODO, ID: 464"
+        },
+        {
+          "timestamp": "2026-02-03T11:19:17.050354",
+          "curator": "dsmz-resolver-v1.0",
+          "action": "Enriched with DSMZ composition",
+          "notes": "Copied ingredients from DSMZ Medium 464"
+        },
+        {
+          "timestamp": "2026-03-13T06:19:33.562358Z",
+          "curator": "culturemech-id-assigner-v1.0",
+          "action": "Assigned CultureMech ID",
+          "notes": "Assigned stable identifier: CultureMech:005519"
+        },
+        {
+          "timestamp": "2026-03-17T06:30:48.000000Z",
+          "curator": "mediaingredientmech-enrichment-v1.0",
+          "action": "Added MediaIngredientMech links",
+          "notes": "Linked ingredients to MediaIngredientMech identifiers"
+        },
+        {
+          "timestamp": "2026-03-17T19:45:49.693611+00:00",
+          "curator": "normalize_media_names_to_snake_case.py",
+          "action": "NAME_NORMALIZED",
+          "notes": "Normalized name from \"PLATE COUNT AGAR\" to \"plate_count_agar\" for consistent matching"
+        },
+        {
+          "timestamp": "2026-06-05T07:40:23.626922+00:00",
+          "curator": "mim-legacy-to-chebi-migration-v1.0",
+          "action": "Refreshed legacy MediaIngredientMech links to CHEBI keying",
+          "notes": "Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term (id-safe: ingredient's own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN id scheme."
+        }
+      ],
+      "variant_children": [
+        {
+          "path": "data/normalized_yaml/bacterial/medium_464_modified_for_dsm_11199.yaml",
+          "relationship": "SOURCE_DUPLICATE",
+          "id": "CultureMech:005509",
+          "name": "medium_464_modified_for_dsm_11199",
+          "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+        },
+        {
+          "path": "data/normalized_yaml/bacterial/medium_464_modified_for_dsm_15726.yaml",
+          "relationship": "SOURCE_DUPLICATE",
+          "id": "CultureMech:005510",
+          "name": "medium_464_modified_for_dsm_15726",
+          "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+        },
+        {
+          "path": "data/normalized_yaml/bacterial/medium_464_modified_for_dsm_15727.yaml",
+          "relationship": "SOURCE_DUPLICATE",
+          "id": "CultureMech:005511",
+          "name": "medium_464_modified_for_dsm_15727",
+          "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+        },
+        {
+          "path": "data/normalized_yaml/bacterial/medium_464_modified_for_dsm_15891.yaml",
+          "relationship": "SOURCE_DUPLICATE",
+          "id": "CultureMech:005512",
+          "name": "medium_464_modified_for_dsm_15891",
+          "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+        },
+        {
+          "path": "data/normalized_yaml/bacterial/medium_464_modified_for_dsm_17107.yaml",
+          "relationship": "SOURCE_DUPLICATE",
+          "id": "CultureMech:005513",
+          "name": "medium_464_modified_for_dsm_17107",
+          "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+        },
+        {
+          "path": "data/normalized_yaml/bacterial/medium_464_modified_for_dsm_1986.yaml",
+          "relationship": "SOURCE_DUPLICATE",
+          "id": "CultureMech:005514",
+          "name": "medium_464_modified_for_dsm_1986",
+          "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+        },
+        {
+          "path": "data/normalized_yaml/bacterial/medium_464_modified_for_dsm_2114.yaml",
+          "relationship": "SOURCE_DUPLICATE",
+          "id": "CultureMech:005515",
+          "name": "medium_464_modified_for_dsm_2114",
+          "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+        },
+        {
+          "path": "data/normalized_yaml/bacterial/medium_464_modified_for_dsm_2117.yaml",
+          "relationship": "SOURCE_DUPLICATE",
+          "id": "CultureMech:005516",
+          "name": "medium_464_modified_for_dsm_2117",
+          "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+        },
+        {
+          "path": "data/normalized_yaml/bacterial/medium_464_modified_for_dsm_22870.yaml",
+          "relationship": "SOURCE_DUPLICATE",
+          "id": "CultureMech:005517",
+          "name": "medium_464_modified_for_dsm_22870",
+          "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+        },
+        {
+          "path": "data/normalized_yaml/bacterial/medium_464_modified_for_dsm_6824.yaml",
+          "relationship": "SOURCE_DUPLICATE",
+          "id": "CultureMech:005518",
+          "name": "medium_464_modified_for_dsm_6824",
+          "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+        }
+      ],
+      "parent_media": {
+        "path": "data/normalized_yaml/bacterial/plate_count_agar.yaml",
+        "relationship": "SOURCE_DUPLICATE",
+        "id": "CultureMech:001583",
+        "name": "plate_count_agar",
+        "notes": "KOMODO record states DSMZ Medium 464 provenance and exactly matches the single same-category DSMZ parent signature."
+      },
+      "variant_relationship": "SOURCE_DUPLICATE",
+      "variant_modifications": [
+        "Same ingredient and concentration signature; KOMODO record copied from the matching DSMZ medium source."
+      ]
+    },
+    "source": {
+      "medium": {
+        "id": 464,
+        "name": "PLATE COUNT AGAR",
+        "complex_medium": "yes",
+        "min_pH": 7,
+        "max_pH": 7,
+        "source": "DSMZ",
+        "link": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium464.pdf"
+      },
+      "solutions": [
+        {
+          "id": 942,
+          "name": "Main sol. 464",
+          "volume": 1000,
+          "recipe": [
+            {
+              "recipe_order": 1,
+              "compound": "Tryptone",
+              "compound_id": 71,
+              "amount": 5,
+              "unit": "g",
+              "g_l": 5,
+              "mmol_l": 70.3433,
+              "optional": 0
+            },
+            {
+              "recipe_order": 2,
+              "compound": "Yeast extract",
+              "compound_id": 16,
+              "amount": 2.5,
+              "unit": "g",
+              "g_l": 2.5,
+              "optional": 0
+            },
+            {
+              "recipe_order": 3,
+              "compound": "Dextrose",
+              "compound_id": 60,
+              "amount": 1,
+              "unit": "g",
+              "g_l": 1,
+              "mmol_l": 5.04617,
+              "optional": 0
+            },
+            {
+              "recipe_order": 4,
+              "compound": "Agar",
+              "compound_id": 3,
+              "amount": 15,
+              "unit": "g",
+              "g_l": 15,
+              "mmol_l": 44.5991,
+              "optional": 0
+            },
+            {
+              "recipe_order": 5,
+              "compound": "Distilled water",
+              "compound_id": 4,
+              "amount": 1000,
+              "unit": "ml",
+              "optional": 0
+            }
+          ],
+          "steps": [
+            {
+              "step": "Adjust pH to 7.0."
+            }
+          ]
+        }
+      ]
+    },
+    "source_metadata": {
+      "url": "https://mediadive.dsmz.de/rest/medium/464",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/464",
+      "http_status": 200,
+      "sha256": "1b1d6da7bcb91079093c4d151010201518587f76f2cadb4f85ee4b32d29bad98",
+      "accessed_at": "2026-10-07T10:47:32.925755+00:00"
+    },
+    "mapping": {
+      "cells": [
+        "464",
+        "PLATE COUNT AGAR",
+        "7.0",
+        "true",
+        "false",
+        "false",
+        "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium464.pdf"
+      ],
+      "links": [
+        {
+          "href": "/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=464"
+        },
+        {
+          "href": "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium464.pdf"
+        }
+      ],
+      "snippet": "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=464' >464</a></TD>\n\t\t\t\t\t<TD>PLATE COUNT AGAR</TD>\n\t\t\t\t\t<TD> 7.0</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium464.pdf' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium464.pdf</a></TD>\n\t\t\t\t</TR>",
+      "medium_id": "464",
+      "original_recipe": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium464.pdf"
+    },
+    "claims": [
+      {
+        "pointer": [
+          "ingredients",
+          0
+        ],
+        "field": "ingredients[0].concentration",
+        "ingredient": "Tryptone",
+        "old": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/464",
+        "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Tryptone\",\n                        \"compound_id\": 71,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\": 70.3433,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[0]",
+        "explanation": "Provider explicitly reports g_l=5; check: 5 g * 1 g/g / (1000 ml / 1000 ml per L) = 5 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 464 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          1
+        ],
+        "field": "ingredients[1].concentration",
+        "ingredient": "Yeast extract",
+        "old": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/464",
+        "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 2.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.5,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[1]",
+        "explanation": "Provider explicitly reports g_l=2.5; check: 2.5 g * 1 g/g / (1000 ml / 1000 ml per L) = 2.5 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 464 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          2
+        ],
+        "field": "ingredients[2].concentration",
+        "ingredient": "Dextrose",
+        "old": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/464",
+        "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Dextrose\",\n                        \"compound_id\": 60,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\": 5.04617,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[2]",
+        "explanation": "Provider explicitly reports g_l=1; check: 1 g * 1 g/g / (1000 ml / 1000 ml per L) = 1 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 464 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          3
+        ],
+        "field": "ingredients[3].concentration",
+        "ingredient": "Agar",
+        "old": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/464",
+        "snippet": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Agar\",\n                        \"compound_id\": 3,\n                        \"amount\": 15,\n                        \"unit\": \"g\",\n                        \"g_l\": 15,\n                        \"mmol_l\": 44.5991,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[3]",
+        "explanation": "Provider explicitly reports g_l=15; check: 15 g * 1 g/g / (1000 ml / 1000 ml per L) = 15 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 464 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": null,
+        "field": "variant_children[0]",
+        "ingredient": "medium_464_modified_for_dsm_11199",
+        "old": {
+          "path": "data/normalized_yaml/bacterial/medium_464_modified_for_dsm_11199.yaml",
+          "relationship": "SOURCE_DUPLICATE",
+          "id": "CultureMech:005509",
+          "name": "medium_464_modified_for_dsm_11199",
+          "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+        },
+        "new": null,
+        "status": "unsupported",
+        "reference": null,
+        "snippet": null,
+        "locator": null,
+        "explanation": "Variant formulation/relationship requires its own exact source; parent evidence is not propagated."
+      },
+      {
+        "pointer": null,
+        "field": "variant_children[1]",
+        "ingredient": "medium_464_modified_for_dsm_15726",
+        "old": {
+          "path": "data/normalized_yaml/bacterial/medium_464_modified_for_dsm_15726.yaml",
+          "relationship": "SOURCE_DUPLICATE",
+          "id": "CultureMech:005510",
+          "name": "medium_464_modified_for_dsm_15726",
+          "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+        },
+        "new": null,
+        "status": "unsupported",
+        "reference": null,
+        "snippet": null,
+        "locator": null,
+        "explanation": "Variant formulation/relationship requires its own exact source; parent evidence is not propagated."
+      },
+      {
+        "pointer": null,
+        "field": "variant_children[2]",
+        "ingredient": "medium_464_modified_for_dsm_15727",
+        "old": {
+          "path": "data/normalized_yaml/bacterial/medium_464_modified_for_dsm_15727.yaml",
+          "relationship": "SOURCE_DUPLICATE",
+          "id": "CultureMech:005511",
+          "name": "medium_464_modified_for_dsm_15727",
+          "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+        },
+        "new": null,
+        "status": "unsupported",
+        "reference": null,
+        "snippet": null,
+        "locator": null,
+        "explanation": "Variant formulation/relationship requires its own exact source; parent evidence is not propagated."
+      },
+      {
+        "pointer": null,
+        "field": "variant_children[3]",
+        "ingredient": "medium_464_modified_for_dsm_15891",
+        "old": {
+          "path": "data/normalized_yaml/bacterial/medium_464_modified_for_dsm_15891.yaml",
+          "relationship": "SOURCE_DUPLICATE",
+          "id": "CultureMech:005512",
+          "name": "medium_464_modified_for_dsm_15891",
+          "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+        },
+        "new": null,
+        "status": "unsupported",
+        "reference": null,
+        "snippet": null,
+        "locator": null,
+        "explanation": "Variant formulation/relationship requires its own exact source; parent evidence is not propagated."
+      },
+      {
+        "pointer": null,
+        "field": "variant_children[4]",
+        "ingredient": "medium_464_modified_for_dsm_17107",
+        "old": {
+          "path": "data/normalized_yaml/bacterial/medium_464_modified_for_dsm_17107.yaml",
+          "relationship": "SOURCE_DUPLICATE",
+          "id": "CultureMech:005513",
+          "name": "medium_464_modified_for_dsm_17107",
+          "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+        },
+        "new": null,
+        "status": "unsupported",
+        "reference": null,
+        "snippet": null,
+        "locator": null,
+        "explanation": "Variant formulation/relationship requires its own exact source; parent evidence is not propagated."
+      },
+      {
+        "pointer": null,
+        "field": "variant_children[5]",
+        "ingredient": "medium_464_modified_for_dsm_1986",
+        "old": {
+          "path": "data/normalized_yaml/bacterial/medium_464_modified_for_dsm_1986.yaml",
+          "relationship": "SOURCE_DUPLICATE",
+          "id": "CultureMech:005514",
+          "name": "medium_464_modified_for_dsm_1986",
+          "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+        },
+        "new": null,
+        "status": "unsupported",
+        "reference": null,
+        "snippet": null,
+        "locator": null,
+        "explanation": "Variant formulation/relationship requires its own exact source; parent evidence is not propagated."
+      },
+      {
+        "pointer": null,
+        "field": "variant_children[6]",
+        "ingredient": "medium_464_modified_for_dsm_2114",
+        "old": {
+          "path": "data/normalized_yaml/bacterial/medium_464_modified_for_dsm_2114.yaml",
+          "relationship": "SOURCE_DUPLICATE",
+          "id": "CultureMech:005515",
+          "name": "medium_464_modified_for_dsm_2114",
+          "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+        },
+        "new": null,
+        "status": "unsupported",
+        "reference": null,
+        "snippet": null,
+        "locator": null,
+        "explanation": "Variant formulation/relationship requires its own exact source; parent evidence is not propagated."
+      },
+      {
+        "pointer": null,
+        "field": "variant_children[7]",
+        "ingredient": "medium_464_modified_for_dsm_2117",
+        "old": {
+          "path": "data/normalized_yaml/bacterial/medium_464_modified_for_dsm_2117.yaml",
+          "relationship": "SOURCE_DUPLICATE",
+          "id": "CultureMech:005516",
+          "name": "medium_464_modified_for_dsm_2117",
+          "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+        },
+        "new": null,
+        "status": "unsupported",
+        "reference": null,
+        "snippet": null,
+        "locator": null,
+        "explanation": "Variant formulation/relationship requires its own exact source; parent evidence is not propagated."
+      },
+      {
+        "pointer": null,
+        "field": "variant_children[8]",
+        "ingredient": "medium_464_modified_for_dsm_22870",
+        "old": {
+          "path": "data/normalized_yaml/bacterial/medium_464_modified_for_dsm_22870.yaml",
+          "relationship": "SOURCE_DUPLICATE",
+          "id": "CultureMech:005517",
+          "name": "medium_464_modified_for_dsm_22870",
+          "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+        },
+        "new": null,
+        "status": "unsupported",
+        "reference": null,
+        "snippet": null,
+        "locator": null,
+        "explanation": "Variant formulation/relationship requires its own exact source; parent evidence is not propagated."
+      },
+      {
+        "pointer": null,
+        "field": "variant_children[9]",
+        "ingredient": "medium_464_modified_for_dsm_6824",
+        "old": {
+          "path": "data/normalized_yaml/bacterial/medium_464_modified_for_dsm_6824.yaml",
+          "relationship": "SOURCE_DUPLICATE",
+          "id": "CultureMech:005518",
+          "name": "medium_464_modified_for_dsm_6824",
+          "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+        },
+        "new": null,
+        "status": "unsupported",
+        "reference": null,
+        "snippet": null,
+        "locator": null,
+        "explanation": "Variant formulation/relationship requires its own exact source; parent evidence is not propagated."
+      },
+      {
+        "pointer": null,
+        "field": "parent_media",
+        "ingredient": "plate_count_agar",
+        "old": {
+          "path": "data/normalized_yaml/bacterial/plate_count_agar.yaml",
+          "relationship": "SOURCE_DUPLICATE",
+          "id": "CultureMech:001583",
+          "name": "plate_count_agar",
+          "notes": "KOMODO record states DSMZ Medium 464 provenance and exactly matches the single same-category DSMZ parent signature."
+        },
+        "new": null,
+        "status": "unsupported",
+        "reference": null,
+        "snippet": null,
+        "locator": null,
+        "explanation": "Variant formulation/relationship requires its own exact source; parent evidence is not propagated."
+      },
+      {
+        "pointer": null,
+        "field": "source.data.solutions[0].recipe[4]",
+        "ingredient": "Distilled water",
+        "old": null,
+        "new": null,
+        "status": "unsupported",
+        "reference": "https://mediadive.dsmz.de/rest/medium/464",
+        "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[4]",
+        "explanation": "Source row has no established direct-medium match. Stock, omitted solvent, optional, and missing ingredients require explicit follow-up; not silently endorsed or discarded."
+      },
+      {
+        "pointer": null,
+        "field": "source.data.solutions[0].steps[0]",
+        "ingredient": "preparation context",
+        "old": null,
+        "new": null,
+        "status": "unsupported",
+        "reference": "https://mediadive.dsmz.de/rest/medium/464",
+        "snippet": "{\n                        \"step\": \"Adjust pH to 7.0.\"\n                    }",
+        "locator": "$.data.solutions[0].steps[0]",
+        "explanation": "Preparation context retained for source-specific follow-up, including supplements and downstream dilutions; no additional amount inferred from prose."
+      }
+    ]
+  },
+  {
+    "path": "data/normalized_yaml/bacterial/KOMODO_467_OTTOW_medium.yaml",
+    "medium_id": "467",
+    "before_sha256": "d2cbe73992776265b13c7338744f9fd47d7f37984b9eb05630298f570f090586",
+    "local": {
+      "id": "CultureMech:005580",
+      "name": "ottow_medium",
+      "original_name": "OTTOW medium",
+      "category": "bacterial",
+      "medium_type": "COMPLEX",
+      "composition_type": "UNDEFINED",
+      "physical_state": "LIQUID",
+      "ph_value": 8.5,
+      "media_term": {
+        "preferred_term": "KOMODO Medium 467",
+        "term": {
+          "id": "komodo.medium:467",
+          "label": "OTTOW medium"
+        }
+      },
+      "notes": "Source: KOMODO ModelSEED | ID: 467 | DSMZ Medium: 467 (mediadive.medium:467) | Aerobic: No",
+      "ingredients": [
+        {
+          "preferred_term": "Glucose",
+          "term": {
+            "id": "CHEBI:17234",
+            "label": "glucose"
+          },
+          "concentration": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:17234",
+            "label": "glucose"
+          }
+        },
+        {
+          "preferred_term": "Peptone",
+          "concentration": {
+            "value": "7.5",
+            "unit": "G_PER_L"
+          },
+          "term": {
+            "id": "MICRO:0000178",
+            "label": "Peptone"
+          }
+        },
+        {
+          "preferred_term": "Meat extract",
+          "concentration": {
+            "value": "5",
+            "unit": "G_PER_L"
+          }
+        },
+        {
+          "preferred_term": "Yeast extract",
+          "concentration": {
+            "value": "2.5",
+            "unit": "G_PER_L"
+          },
+          "term": {
+            "id": "FOODON:03315426",
+            "label": "Yeast extract"
+          }
+        },
+        {
+          "preferred_term": "Casamino acids",
+          "concentration": {
+            "value": "2.5",
+            "unit": "G_PER_L"
+          },
+          "term": {
+            "id": "FOODON:03315719",
+            "label": "Casamino acids"
+          }
+        },
+        {
+          "preferred_term": "NaCl",
+          "term": {
+            "id": "CHEBI:26710",
+            "label": "sodium chloride"
+          },
+          "concentration": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:26710",
+            "label": "sodium chloride"
+          }
+        },
+        {
+          "preferred_term": "Tap water",
+          "term": {
+            "id": "CHEBI:15377",
+            "label": "water"
+          },
+          "concentration": {
+            "value": "1000",
+            "unit": "G_PER_L"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:15377",
+            "label": "water"
+          }
+        }
+      ],
+      "applications": [
+        "Microbial cultivation"
+      ],
+      "curation_history": [
+        {
+          "timestamp": "2026-01-27T01:15:02.fZ",
+          "curator": "komodo-web-import",
+          "action": "Imported from KOMODO web table",
+          "notes": "Source: KOMODO, ID: 467"
+        },
+        {
+          "timestamp": "2026-02-03T11:19:04.387955",
+          "curator": "dsmz-resolver-v1.0",
+          "action": "Enriched with DSMZ composition",
+          "notes": "Copied ingredients from DSMZ Medium 467"
+        },
+        {
+          "timestamp": "2026-03-13T06:19:34.278502Z",
+          "curator": "culturemech-id-assigner-v1.0",
+          "action": "Assigned CultureMech ID",
+          "notes": "Assigned stable identifier: CultureMech:005580"
+        },
+        {
+          "timestamp": "2026-03-17T06:30:09.000000Z",
+          "curator": "mediaingredientmech-enrichment-v1.0",
+          "action": "Added MediaIngredientMech links",
+          "notes": "Linked ingredients to MediaIngredientMech identifiers"
+        },
+        {
+          "timestamp": "2026-03-17T19:45:50.489211+00:00",
+          "curator": "normalize_media_names_to_snake_case.py",
+          "action": "NAME_NORMALIZED",
+          "notes": "Normalized name from \"OTTOW medium\" to \"ottow_medium\" for consistent matching"
+        },
+        {
+          "timestamp": "2026-06-05T07:40:23.869827+00:00",
+          "curator": "mim-legacy-to-chebi-migration-v1.0",
+          "action": "Refreshed legacy MediaIngredientMech links to CHEBI keying",
+          "notes": "Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term (id-safe: ingredient's own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN id scheme."
+        },
+        {
+          "timestamp": "2026-06-08T23:19:28.251102+00:00",
+          "curator": "chebi-regrounding-v1.0",
+          "action": "Corrected CHEBI ingredient grounding (audit G21/G22)",
+          "notes": "Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md). Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2, selenate; casamino acids de-grounded (mixture, no single CHEBI)."
+        },
+        {
+          "timestamp": "2026-09-13T00:00:00-07:00",
+          "curator": "repair_komodo_score10_exact_terms_batch2.py",
+          "action": "GROUNDED_KOMODO_SCORE10_EXACT_TERMS_BATCH2",
+          "changes": "Grounded exact KOMODO score-10 ingredients",
+          "source": "src/culturemech/data/mediaingredientmech/label_index.csv",
+          "notes": "Applied local mappings for Casamino acids, Peptone, Yeast extract."
+        }
+      ],
+      "parent_media": {
+        "path": "data/normalized_yaml/bacterial/ottow_medium.yaml",
+        "relationship": "SOURCE_DUPLICATE",
+        "id": "CultureMech:001596",
+        "name": "ottow_medium",
+        "notes": "KOMODO record states DSMZ Medium 467 provenance and exactly matches the single same-category DSMZ parent signature."
+      },
+      "variant_relationship": "SOURCE_DUPLICATE",
+      "variant_modifications": [
+        "Same ingredient and concentration signature; KOMODO record copied from the matching DSMZ medium source."
+      ]
+    },
+    "source": {
+      "medium": {
+        "id": 467,
+        "name": "OTTOW MEDIUM",
+        "complex_medium": "yes",
+        "min_pH": 8.5,
+        "max_pH": 8.5,
+        "source": "DSMZ",
+        "link": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf"
+      },
+      "solutions": [
+        {
+          "id": 959,
+          "name": "Main sol. 467",
+          "volume": 1000,
+          "recipe": [
+            {
+              "recipe_order": 1,
+              "compound": "Glucose",
+              "compound_id": 5,
+              "amount": 1,
+              "unit": "g",
+              "g_l": 1,
+              "mmol_l": 5.55062,
+              "optional": 0
+            },
+            {
+              "recipe_order": 2,
+              "compound": "Peptone",
+              "compound_id": 1,
+              "amount": 7.5,
+              "unit": "g",
+              "g_l": 7.5,
+              "optional": 0
+            },
+            {
+              "recipe_order": 3,
+              "compound": "Meat extract",
+              "compound_id": 2,
+              "amount": 5,
+              "unit": "g",
+              "g_l": 5,
+              "optional": 0
+            },
+            {
+              "recipe_order": 4,
+              "compound": "Yeast extract",
+              "compound_id": 16,
+              "amount": 2.5,
+              "unit": "g",
+              "g_l": 2.5,
+              "optional": 0
+            },
+            {
+              "recipe_order": 5,
+              "compound": "Casamino acids",
+              "compound_id": 101,
+              "amount": 2.5,
+              "unit": "g",
+              "g_l": 2.5,
+              "optional": 0
+            },
+            {
+              "recipe_order": 6,
+              "compound": "NaCl",
+              "compound_id": 43,
+              "amount": 5,
+              "unit": "g",
+              "g_l": 5,
+              "mmol_l": 85.5578,
+              "optional": 0
+            },
+            {
+              "recipe_order": 7,
+              "compound": "Tap water",
+              "compound_id": 322,
+              "amount": 1000,
+              "unit": "ml",
+              "optional": 0
+            }
+          ],
+          "steps": [
+            {
+              "step": "Adjust pH to 8.5."
+            }
+          ],
+          "equipment": {
+            "4550": "Autoclave"
+          }
+        }
+      ]
+    },
+    "source_metadata": {
+      "url": "https://mediadive.dsmz.de/rest/medium/467",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/467",
+      "http_status": 200,
+      "sha256": "4cc8a7f8e8222c810dac9ca0f528d2e87025d890a2157de4d378bab51dd733e5",
+      "accessed_at": "2026-10-07T10:47:44.270303+00:00"
+    },
+    "mapping": {
+      "cells": [
+        "467",
+        "OTTOW medium",
+        "8.5",
+        "true",
+        "false",
+        "false",
+        "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf"
+      ],
+      "links": [
+        {
+          "href": "/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=467"
+        },
+        {
+          "href": "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf"
+        }
+      ],
+      "snippet": "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=467' >467</a></TD>\n\t\t\t\t\t<TD>OTTOW medium</TD>\n\t\t\t\t\t<TD> 8.5</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf</a></TD>\n\t\t\t\t</TR>",
+      "medium_id": "467",
+      "original_recipe": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf"
+    },
+    "claims": [
+      {
+        "pointer": [
+          "ingredients",
+          0
+        ],
+        "field": "ingredients[0].concentration",
+        "ingredient": "Glucose",
+        "old": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/467",
+        "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\": 5,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\": 5.55062,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[0]",
+        "explanation": "Provider explicitly reports g_l=1; check: 1 g * 1 g/g / (1000 ml / 1000 ml per L) = 1 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 467 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          1
+        ],
+        "field": "ingredients[1].concentration",
+        "ingredient": "Peptone",
+        "old": {
+          "value": "7.5",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "7.5",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/467",
+        "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Peptone\",\n                        \"compound_id\": 1,\n                        \"amount\": 7.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 7.5,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[1]",
+        "explanation": "Provider explicitly reports g_l=7.5; check: 7.5 g * 1 g/g / (1000 ml / 1000 ml per L) = 7.5 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 467 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          2
+        ],
+        "field": "ingredients[2].concentration",
+        "ingredient": "Meat extract",
+        "old": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/467",
+        "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Meat extract\",\n                        \"compound_id\": 2,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[2]",
+        "explanation": "Provider explicitly reports g_l=5; check: 5 g * 1 g/g / (1000 ml / 1000 ml per L) = 5 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 467 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          3
+        ],
+        "field": "ingredients[3].concentration",
+        "ingredient": "Yeast extract",
+        "old": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/467",
+        "snippet": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 2.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.5,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[3]",
+        "explanation": "Provider explicitly reports g_l=2.5; check: 2.5 g * 1 g/g / (1000 ml / 1000 ml per L) = 2.5 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 467 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          4
+        ],
+        "field": "ingredients[4].concentration",
+        "ingredient": "Casamino acids",
+        "old": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/467",
+        "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Casamino acids\",\n                        \"compound_id\": 101,\n                        \"amount\": 2.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.5,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[4]",
+        "explanation": "Provider explicitly reports g_l=2.5; check: 2.5 g * 1 g/g / (1000 ml / 1000 ml per L) = 2.5 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 467 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          5
+        ],
+        "field": "ingredients[5].concentration",
+        "ingredient": "NaCl",
+        "old": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/467",
+        "snippet": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\": 85.5578,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[5]",
+        "explanation": "Provider explicitly reports g_l=5; check: 5 g * 1 g/g / (1000 ml / 1000 ml per L) = 5 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 467 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          6
+        ],
+        "field": "ingredients[6].concentration",
+        "ingredient": "Tap water",
+        "old": {
+          "value": "1000",
+          "unit": "G_PER_L"
+        },
+        "new": null,
+        "status": "unsupported",
+        "reference": "https://mediadive.dsmz.de/rest/medium/467",
+        "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Tap water\",\n                        \"compound_id\": 322,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[6]",
+        "explanation": "Liquid dose, percent basis, molar conversion, or other unit needs source-specific review; no water-based final volume is inferred."
+      },
+      {
+        "pointer": null,
+        "field": "parent_media",
+        "ingredient": "ottow_medium",
+        "old": {
+          "path": "data/normalized_yaml/bacterial/ottow_medium.yaml",
+          "relationship": "SOURCE_DUPLICATE",
+          "id": "CultureMech:001596",
+          "name": "ottow_medium",
+          "notes": "KOMODO record states DSMZ Medium 467 provenance and exactly matches the single same-category DSMZ parent signature."
+        },
+        "new": null,
+        "status": "unsupported",
+        "reference": null,
+        "snippet": null,
+        "locator": null,
+        "explanation": "Variant formulation/relationship requires its own exact source; parent evidence is not propagated."
+      },
+      {
+        "pointer": null,
+        "field": "source.data.solutions[0].steps[0]",
+        "ingredient": "preparation context",
+        "old": null,
+        "new": null,
+        "status": "unsupported",
+        "reference": "https://mediadive.dsmz.de/rest/medium/467",
+        "snippet": "{\n                        \"step\": \"Adjust pH to 8.5.\"\n                    }",
+        "locator": "$.data.solutions[0].steps[0]",
+        "explanation": "Preparation context retained for source-specific follow-up, including supplements and downstream dilutions; no additional amount inferred from prose."
+      }
+    ]
+  },
+  {
+    "path": "data/normalized_yaml/bacterial/KOMODO_468_EXIGUOBACTERIUM_MEDIUM.yaml",
+    "medium_id": "468",
+    "before_sha256": "3a586bd097f9415ee0934fe4c10f859d2e5321e0dbf6489affdb0144db4d6ea5",
+    "local": {
+      "id": "CultureMech:005581",
+      "name": "exiguobacterium_medium",
+      "original_name": "EXIGUOBACTERIUM MEDIUM",
+      "category": "bacterial",
+      "medium_type": "COMPLEX",
+      "composition_type": "UNDEFINED",
+      "physical_state": "LIQUID",
+      "ph_value": 8.0,
+      "media_term": {
+        "preferred_term": "KOMODO Medium 468",
+        "term": {
+          "id": "komodo.medium:468",
+          "label": "EXIGUOBACTERIUM MEDIUM"
+        }
+      },
+      "notes": "Source: KOMODO ModelSEED | ID: 468 | DSMZ Medium: 468 (mediadive.medium:468) | Aerobic: No",
+      "ingredients": [
+        {
+          "preferred_term": "Nutrient broth No. 2",
+          "concentration": {
+            "value": "25",
+            "unit": "G_PER_L"
+          }
+        },
+        {
+          "preferred_term": "Yeast extract",
+          "concentration": {
+            "value": "3",
+            "unit": "G_PER_L"
+          },
+          "term": {
+            "id": "FOODON:03315426",
+            "label": "Yeast extract"
+          }
+        },
+        {
+          "preferred_term": "Glucose",
+          "term": {
+            "id": "CHEBI:17234",
+            "label": "glucose"
+          },
+          "concentration": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:17234",
+            "label": "glucose"
+          }
+        }
+      ],
+      "applications": [
+        "Microbial cultivation"
+      ],
+      "curation_history": [
+        {
+          "timestamp": "2026-01-27T01:15:02.fZ",
+          "curator": "komodo-web-import",
+          "action": "Imported from KOMODO web table",
+          "notes": "Source: KOMODO, ID: 468"
+        },
+        {
+          "timestamp": "2026-02-03T11:19:10.775738",
+          "curator": "dsmz-resolver-v1.0",
+          "action": "Enriched with DSMZ composition",
+          "notes": "Copied ingredients from DSMZ Medium 468"
+        },
+        {
+          "timestamp": "2026-03-13T06:19:34.281476Z",
+          "curator": "culturemech-id-assigner-v1.0",
+          "action": "Assigned CultureMech ID",
+          "notes": "Assigned stable identifier: CultureMech:005581"
+        },
+        {
+          "timestamp": "2026-03-17T06:30:28.000000Z",
+          "curator": "mediaingredientmech-enrichment-v1.0",
+          "action": "Added MediaIngredientMech links",
+          "notes": "Linked ingredients to MediaIngredientMech identifiers"
+        },
+        {
+          "timestamp": "2026-03-17T19:45:50.492752+00:00",
+          "curator": "normalize_media_names_to_snake_case.py",
+          "action": "NAME_NORMALIZED",
+          "notes": "Normalized name from \"EXIGUOBACTERIUM MEDIUM\" to \"exiguobacterium_medium\" for consistent matching"
+        },
+        {
+          "timestamp": "2026-06-05T07:40:23.874060+00:00",
+          "curator": "mim-legacy-to-chebi-migration-v1.0",
+          "action": "Refreshed legacy MediaIngredientMech links to CHEBI keying",
+          "notes": "Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term (id-safe: ingredient's own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN id scheme."
+        },
+        {
+          "timestamp": "2026-09-13T00:00:00-07:00",
+          "curator": "repair_komodo_score10_exact_terms_batch2.py",
+          "action": "GROUNDED_KOMODO_SCORE10_EXACT_TERMS_BATCH2",
+          "changes": "Grounded exact KOMODO score-10 ingredients",
+          "source": "src/culturemech/data/mediaingredientmech/label_index.csv",
+          "notes": "Applied local mappings for Yeast extract."
+        }
+      ],
+      "parent_media": {
+        "path": "data/normalized_yaml/bacterial/exiguobacterium_medium.yaml",
+        "relationship": "SOURCE_DUPLICATE",
+        "id": "CultureMech:001597",
+        "name": "exiguobacterium_medium",
+        "notes": "KOMODO record states DSMZ Medium 468 provenance and exactly matches the single same-category DSMZ parent signature."
+      },
+      "variant_relationship": "SOURCE_DUPLICATE",
+      "variant_modifications": [
+        "Same ingredient and concentration signature; KOMODO record copied from the matching DSMZ medium source."
+      ]
+    },
+    "source": {
+      "medium": {
+        "id": 468,
+        "name": "EXIGUOBACTERIUM MEDIUM",
+        "complex_medium": "yes",
+        "min_pH": 8,
+        "max_pH": 8,
+        "source": "DSMZ",
+        "link": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium468.pdf"
+      },
+      "solutions": [
+        {
+          "id": 960,
+          "name": "Main sol. 468",
+          "volume": 1000,
+          "recipe": [
+            {
+              "recipe_order": 1,
+              "compound": "Nutrient broth No. 2",
+              "compound_id": 501,
+              "attribute": "Oxoid",
+              "amount": 25,
+              "unit": "g",
+              "g_l": 25,
+              "optional": 0
+            },
+            {
+              "recipe_order": 2,
+              "compound": "Yeast extract",
+              "compound_id": 16,
+              "amount": 3,
+              "unit": "g",
+              "g_l": 3,
+              "optional": 0
+            },
+            {
+              "recipe_order": 3,
+              "compound": "Glucose",
+              "compound_id": 5,
+              "amount": 5,
+              "unit": "g",
+              "g_l": 5,
+              "mmol_l": 27.7531,
+              "optional": 0
+            },
+            {
+              "recipe_order": 4,
+              "compound": "Distilled water",
+              "compound_id": 4,
+              "amount": 1000,
+              "unit": "ml",
+              "optional": 0
+            }
+          ],
+          "steps": [
+            {
+              "step": "Adjust pH to 8.0."
+            }
+          ],
+          "equipment": {
+            "4552": "Autoclave"
+          }
+        }
+      ]
+    },
+    "source_metadata": {
+      "url": "https://mediadive.dsmz.de/rest/medium/468",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/468",
+      "http_status": 200,
+      "sha256": "5ee40b07942781a9aebd10ac50e5fff83df641fcc00338b1397e07173134717d",
+      "accessed_at": "2026-10-07T12:14:14.097569+00:00"
+    },
+    "mapping": {
+      "cells": [
+        "468",
+        "EXIGUOBACTERIUM MEDIUM",
+        "8.0",
+        "true",
+        "false",
+        "false",
+        "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium468.pdf"
+      ],
+      "links": [
+        {
+          "href": "/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=468"
+        },
+        {
+          "href": "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium468.pdf"
+        }
+      ],
+      "snippet": "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=468' >468</a></TD>\n\t\t\t\t\t<TD>EXIGUOBACTERIUM MEDIUM</TD>\n\t\t\t\t\t<TD> 8.0</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium468.pdf' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium468.pdf</a></TD>\n\t\t\t\t</TR>",
+      "medium_id": "468",
+      "original_recipe": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium468.pdf"
+    },
+    "claims": [
+      {
+        "pointer": [
+          "ingredients",
+          0
+        ],
+        "field": "ingredients[0].concentration",
+        "ingredient": "Nutrient broth No. 2",
+        "old": {
+          "value": "25",
+          "unit": "G_PER_L"
+        },
+        "new": null,
+        "status": "unsupported",
+        "reference": "https://mediadive.dsmz.de/rest/medium/468",
+        "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Nutrient broth No. 2\",\n                        \"compound_id\": 501,\n                        \"attribute\": \"Oxoid\",\n                        \"amount\": 25,\n                        \"unit\": \"g\",\n                        \"g_l\": 25,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[0]",
+        "explanation": "Optional addition or source attribute needs separate formulation/stock-strength review."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          1
+        ],
+        "field": "ingredients[1].concentration",
+        "ingredient": "Yeast extract",
+        "old": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/468",
+        "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 3,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[1]",
+        "explanation": "Provider explicitly reports g_l=3; check: 3 g * 1 g/g / (1000 ml / 1000 ml per L) = 3 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 468 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          2
+        ],
+        "field": "ingredients[2].concentration",
+        "ingredient": "Glucose",
+        "old": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/468",
+        "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\": 5,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\": 27.7531,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[2]",
+        "explanation": "Provider explicitly reports g_l=5; check: 5 g * 1 g/g / (1000 ml / 1000 ml per L) = 5 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 468 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": null,
+        "field": "parent_media",
+        "ingredient": "exiguobacterium_medium",
+        "old": {
+          "path": "data/normalized_yaml/bacterial/exiguobacterium_medium.yaml",
+          "relationship": "SOURCE_DUPLICATE",
+          "id": "CultureMech:001597",
+          "name": "exiguobacterium_medium",
+          "notes": "KOMODO record states DSMZ Medium 468 provenance and exactly matches the single same-category DSMZ parent signature."
+        },
+        "new": null,
+        "status": "unsupported",
+        "reference": null,
+        "snippet": null,
+        "locator": null,
+        "explanation": "Variant formulation/relationship requires its own exact source; parent evidence is not propagated."
+      },
+      {
+        "pointer": null,
+        "field": "source.data.solutions[0].recipe[3]",
+        "ingredient": "Distilled water",
+        "old": null,
+        "new": null,
+        "status": "unsupported",
+        "reference": "https://mediadive.dsmz.de/rest/medium/468",
+        "snippet": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[3]",
+        "explanation": "Source row has no established direct-medium match. Stock, omitted solvent, optional, and missing ingredients require explicit follow-up; not silently endorsed or discarded."
+      },
+      {
+        "pointer": null,
+        "field": "source.data.solutions[0].steps[0]",
+        "ingredient": "preparation context",
+        "old": null,
+        "new": null,
+        "status": "unsupported",
+        "reference": "https://mediadive.dsmz.de/rest/medium/468",
+        "snippet": "{\n                        \"step\": \"Adjust pH to 8.0.\"\n                    }",
+        "locator": "$.data.solutions[0].steps[0]",
+        "explanation": "Preparation context retained for source-specific follow-up, including supplements and downstream dilutions; no additional amount inferred from prose."
+      }
+    ]
+  },
+  {
+    "path": "data/normalized_yaml/bacterial/KOMODO_469_YM-CATALASE_medium.yaml",
+    "medium_id": "469",
+    "before_sha256": "880a392bff5f4a81984f5ae45400fb1b121cfe1c97a2a186f3a07b26b360eace",
+    "local": {
+      "id": "CultureMech:005582",
+      "name": "ym_catalase_medium",
+      "original_name": "YM-CATALASE medium",
+      "category": "bacterial",
+      "medium_type": "COMPLEX",
+      "composition_type": "UNDEFINED",
+      "physical_state": "LIQUID",
+      "ph_value": 7.0,
+      "media_term": {
+        "preferred_term": "KOMODO Medium 469",
+        "term": {
+          "id": "komodo.medium:469",
+          "label": "YM-CATALASE medium"
+        }
+      },
+      "notes": "Source: KOMODO ModelSEED | ID: 469 | DSMZ Medium: 469 (mediadive.medium:469) | Aerobic: No",
+      "ingredients": [
+        {
+          "preferred_term": "Yeast extract",
+          "concentration": {
+            "value": "5",
+            "unit": "G_PER_L"
+          }
+        },
+        {
+          "preferred_term": "Malt extract",
+          "concentration": {
+            "value": "5",
+            "unit": "G_PER_L"
+          }
+        },
+        {
+          "preferred_term": "K2HPO4",
+          "term": {
+            "id": "CHEBI:131527",
+            "label": "dipotassium hydrogen phosphate"
+          },
+          "concentration": {
+            "value": "5.7",
+            "unit": "G_PER_L"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:131527",
+            "label": "dipotassium hydrogen phosphate"
+          }
+        },
+        {
+          "preferred_term": "MgSO4 x 7 H2O",
+          "term": {
+            "id": "CHEBI:31795",
+            "label": "magnesium sulfate heptahydrate"
+          },
+          "concentration": {
+            "value": "0.2",
+            "unit": "G_PER_L"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:31795",
+            "label": "magnesium sulfate heptahydrate"
+          }
+        },
+        {
+          "preferred_term": "NH4H2PO4",
+          "term": {
+            "id": "CHEBI:62982",
+            "label": "ammonium dihydrogen phosphate"
+          },
+          "concentration": {
+            "value": "1.2",
+            "unit": "G_PER_L"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:62982",
+            "label": "ammonium dihydrogen phosphate"
+          }
+        },
+        {
+          "preferred_term": "Catalase",
+          "concentration": {
+            "value": "0.06",
+            "unit": "G_PER_L"
+          }
+        }
+      ],
+      "applications": [
+        "Microbial cultivation"
+      ],
+      "curation_history": [
+        {
+          "timestamp": "2026-06-14T05:58:58.561437+00:00",
+          "curator": "idnf-grounding-fix-v1.0",
+          "action": "Fixed ID_NOT_FOUND term groundings",
+          "notes": "Absent/obsolete CHEBI term ids fixed - 0 re-grounded to the correct CHEBI, 1 de-grounded (mixture or unverifiable)."
+        },
+        {
+          "timestamp": "2026-01-27T01:15:02.fZ",
+          "curator": "komodo-web-import",
+          "action": "Imported from KOMODO web table",
+          "notes": "Source: KOMODO, ID: 469"
+        },
+        {
+          "timestamp": "2026-02-03T11:19:08.126110",
+          "curator": "dsmz-resolver-v1.0",
+          "action": "Enriched with DSMZ composition",
+          "notes": "Copied ingredients from DSMZ Medium 469"
+        },
+        {
+          "timestamp": "2026-03-13T06:19:34.284737Z",
+          "curator": "culturemech-id-assigner-v1.0",
+          "action": "Assigned CultureMech ID",
+          "notes": "Assigned stable identifier: CultureMech:005582"
+        },
+        {
+          "timestamp": "2026-03-17T06:30:20.000000Z",
+          "curator": "mediaingredientmech-enrichment-v1.0",
+          "action": "Added MediaIngredientMech links",
+          "notes": "Linked ingredients to MediaIngredientMech identifiers"
+        },
+        {
+          "timestamp": "2026-03-17T19:45:50.496347+00:00",
+          "curator": "normalize_media_names_to_snake_case.py",
+          "action": "NAME_NORMALIZED",
+          "notes": "Normalized name from \"YM-CATALASE medium\" to \"ym_catalase_medium\" for consistent matching"
+        },
+        {
+          "timestamp": "2026-06-05T07:40:23.878515+00:00",
+          "curator": "mim-legacy-to-chebi-migration-v1.0",
+          "action": "Refreshed legacy MediaIngredientMech links to CHEBI keying",
+          "notes": "Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term (id-safe: ingredient's own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN id scheme."
+        },
+        {
+          "timestamp": "2026-06-10T07:46:45.085484+00:00",
+          "curator": "primary-term-label-canonicalization-v1.0",
+          "action": "Canonicalized primary term label to OBO canonical (OAK)",
+          "notes": "1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi."
+        }
+      ],
+      "parent_media": {
+        "path": "data/normalized_yaml/bacterial/ym_catalase_medium.yaml",
+        "relationship": "SOURCE_DUPLICATE",
+        "id": "CultureMech:001598",
+        "name": "ym_catalase_medium",
+        "notes": "KOMODO record states DSMZ Medium 469 provenance and exactly matches the single same-category DSMZ parent signature."
+      },
+      "variant_relationship": "SOURCE_DUPLICATE",
+      "variant_modifications": [
+        "Same ingredient and concentration signature; KOMODO record copied from the matching DSMZ medium source."
+      ]
+    },
+    "source": {
+      "medium": {
+        "id": 469,
+        "name": "YM-CATALASE MEDIUM",
+        "complex_medium": "yes",
+        "min_pH": 7,
+        "max_pH": 7,
+        "source": "DSMZ",
+        "link": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf"
+      },
+      "solutions": [
+        {
+          "id": 961,
+          "name": "Main sol. 469",
+          "volume": 1000,
+          "recipe": [
+            {
+              "recipe_order": 1,
+              "compound": "Yeast extract",
+              "compound_id": 16,
+              "amount": 5,
+              "unit": "g",
+              "g_l": 5,
+              "optional": 0
+            },
+            {
+              "recipe_order": 2,
+              "compound": "Malt extract",
+              "compound_id": 116,
+              "amount": 5,
+              "unit": "g",
+              "g_l": 5,
+              "optional": 0
+            },
+            {
+              "recipe_order": 3,
+              "compound": "K2HPO4",
+              "compound_id": 10,
+              "amount": 5.7,
+              "unit": "g",
+              "g_l": 5.7,
+              "mmol_l": 32.7255,
+              "optional": 0
+            },
+            {
+              "recipe_order": 4,
+              "compound": "MgSO4 x 7 H2O",
+              "compound_id": 8,
+              "amount": 0.2,
+              "unit": "g",
+              "g_l": 0.2,
+              "mmol_l": 0.811438,
+              "optional": 0
+            },
+            {
+              "recipe_order": 5,
+              "compound": "NH4H2PO4",
+              "compound_id": 413,
+              "amount": 1.2,
+              "unit": "g",
+              "g_l": 1.2,
+              "mmol_l": 10.4321,
+              "optional": 0
+            },
+            {
+              "recipe_order": 6,
+              "compound": "Catalase",
+              "compound_id": 270,
+              "attribute": "Sigma C-10",
+              "amount": 60,
+              "unit": "mg",
+              "g_l": 0.06,
+              "optional": 0
+            },
+            {
+              "recipe_order": 7,
+              "compound": "Distilled water",
+              "compound_id": 4,
+              "amount": 980,
+              "unit": "ml",
+              "optional": 0
+            }
+          ],
+          "steps": [
+            {
+              "step": "Adjust pH to 7.0. Add catalase and MgSO4 to 10 ml of distilled water each, and sterilize separately by filtration. Cool down autoclaved main solution to 50\u00b0C, and aseptically add catalase and MgSO4 solution."
+            }
+          ],
+          "equipment": {
+            "1748": "Filter",
+            "4553": "Autoclave"
+          }
+        }
+      ]
+    },
+    "source_metadata": {
+      "url": "https://mediadive.dsmz.de/rest/medium/469",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/469",
+      "http_status": 200,
+      "sha256": "5ca531fbbc4074a41bcbf759e584098a0a62205ce8cbbc20d1c06801955e2833",
+      "accessed_at": "2026-10-07T12:14:14.876069+00:00"
+    },
+    "mapping": {
+      "cells": [
+        "469",
+        "YM-CATALASE medium",
+        "7.0",
+        "true",
+        "false",
+        "false",
+        "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf"
+      ],
+      "links": [
+        {
+          "href": "/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=469"
+        },
+        {
+          "href": "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf"
+        }
+      ],
+      "snippet": "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=469' >469</a></TD>\n\t\t\t\t\t<TD>YM-CATALASE medium</TD>\n\t\t\t\t\t<TD> 7.0</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf</a></TD>\n\t\t\t\t</TR>",
+      "medium_id": "469",
+      "original_recipe": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf"
+    },
+    "claims": [
+      {
+        "pointer": [
+          "ingredients",
+          0
+        ],
+        "field": "ingredients[0].concentration",
+        "ingredient": "Yeast extract",
+        "old": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/469",
+        "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[0]",
+        "explanation": "Provider explicitly reports g_l=5; check: 5 g * 1 g/g / (1000 ml / 1000 ml per L) = 5 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 469 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          1
+        ],
+        "field": "ingredients[1].concentration",
+        "ingredient": "Malt extract",
+        "old": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/469",
+        "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Malt extract\",\n                        \"compound_id\": 116,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[1]",
+        "explanation": "Provider explicitly reports g_l=5; check: 5 g * 1 g/g / (1000 ml / 1000 ml per L) = 5 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 469 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          2
+        ],
+        "field": "ingredients[2].concentration",
+        "ingredient": "K2HPO4",
+        "old": {
+          "value": "5.7",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "5.7",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/469",
+        "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 5.7,\n                        \"unit\": \"g\",\n                        \"g_l\": 5.7,\n                        \"mmol_l\": 32.7255,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[2]",
+        "explanation": "Provider explicitly reports g_l=5.7; check: 5.7 g * 1 g/g / (1000 ml / 1000 ml per L) = 5.7 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 469 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          3
+        ],
+        "field": "ingredients[3].concentration",
+        "ingredient": "MgSO4 x 7 H2O",
+        "old": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/469",
+        "snippet": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 0.811438,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[3]",
+        "explanation": "Provider explicitly reports g_l=0.2; check: 0.2 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.2 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 469 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          4
+        ],
+        "field": "ingredients[4].concentration",
+        "ingredient": "NH4H2PO4",
+        "old": {
+          "value": "1.2",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "1.2",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/469",
+        "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"NH4H2PO4\",\n                        \"compound_id\": 413,\n                        \"amount\": 1.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.2,\n                        \"mmol_l\": 10.4321,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[4]",
+        "explanation": "Provider explicitly reports g_l=1.2; check: 1.2 g * 1 g/g / (1000 ml / 1000 ml per L) = 1.2 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 469 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          5
+        ],
+        "field": "ingredients[5].concentration",
+        "ingredient": "Catalase",
+        "old": {
+          "value": "0.06",
+          "unit": "G_PER_L"
+        },
+        "new": null,
+        "status": "unsupported",
+        "reference": "https://mediadive.dsmz.de/rest/medium/469",
+        "snippet": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Catalase\",\n                        \"compound_id\": 270,\n                        \"attribute\": \"Sigma C-10\",\n                        \"amount\": 60,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.06,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[5]",
+        "explanation": "Optional addition or source attribute needs separate formulation/stock-strength review."
+      },
+      {
+        "pointer": null,
+        "field": "parent_media",
+        "ingredient": "ym_catalase_medium",
+        "old": {
+          "path": "data/normalized_yaml/bacterial/ym_catalase_medium.yaml",
+          "relationship": "SOURCE_DUPLICATE",
+          "id": "CultureMech:001598",
+          "name": "ym_catalase_medium",
+          "notes": "KOMODO record states DSMZ Medium 469 provenance and exactly matches the single same-category DSMZ parent signature."
+        },
+        "new": null,
+        "status": "unsupported",
+        "reference": null,
+        "snippet": null,
+        "locator": null,
+        "explanation": "Variant formulation/relationship requires its own exact source; parent evidence is not propagated."
+      },
+      {
+        "pointer": null,
+        "field": "source.data.solutions[0].recipe[6]",
+        "ingredient": "Distilled water",
+        "old": null,
+        "new": null,
+        "status": "unsupported",
+        "reference": "https://mediadive.dsmz.de/rest/medium/469",
+        "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 980,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[6]",
+        "explanation": "Source row has no established direct-medium match. Stock, omitted solvent, optional, and missing ingredients require explicit follow-up; not silently endorsed or discarded."
+      },
+      {
+        "pointer": null,
+        "field": "source.data.solutions[0].steps[0]",
+        "ingredient": "preparation context",
+        "old": null,
+        "new": null,
+        "status": "unsupported",
+        "reference": "https://mediadive.dsmz.de/rest/medium/469",
+        "snippet": "{\n                        \"step\": \"Adjust pH to 7.0. Add catalase and MgSO4 to 10 ml of distilled water each, and sterilize separately by filtration. Cool down autoclaved main solution to 50\\u00b0C, and aseptically add catalase and MgSO4 solution.\"\n                    }",
+        "locator": "$.data.solutions[0].steps[0]",
+        "explanation": "Preparation context retained for source-specific follow-up, including supplements and downstream dilutions; no additional amount inferred from prose."
+      }
+    ]
+  },
+  {
+    "path": "data/normalized_yaml/bacterial/KOMODO_472_PITYROSPORUM_medium.yaml",
+    "medium_id": "472",
+    "before_sha256": "0798c38c97f3a0ba910cd8540a73285f3df5614ffc263baf325a4e0c015d66a5",
+    "local": {
+      "id": "CultureMech:005586",
+      "name": "pityrosporum_medium",
+      "original_name": "PITYROSPORUM medium",
+      "category": "bacterial",
+      "medium_type": "COMPLEX",
+      "composition_type": "UNDEFINED",
+      "physical_state": "SOLID_AGAR",
+      "media_term": {
+        "preferred_term": "KOMODO Medium 472",
+        "term": {
+          "id": "komodo.medium:472",
+          "label": "PITYROSPORUM medium"
+        }
+      },
+      "notes": "Source: KOMODO ModelSEED | ID: 472 | DSMZ Medium: 472 (mediadive.medium:472) | Aerobic: No",
+      "ingredients": [
+        {
+          "preferred_term": "Malt extract",
+          "concentration": {
+            "value": "40",
+            "unit": "G_PER_L"
+          }
+        },
+        {
+          "preferred_term": "Ox-bile",
+          "concentration": {
+            "value": "20",
+            "unit": "G_PER_L"
+          }
+        },
+        {
+          "preferred_term": "Tween 40",
+          "term": {
+            "id": "CHEBI:53423",
+            "label": "polysorbate 40"
+          },
+          "concentration": {
+            "value": "10",
+            "unit": "G_PER_L"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:53423",
+            "label": "polysorbate 40"
+          }
+        },
+        {
+          "preferred_term": "Glycerol mono-oleate",
+          "term": {
+            "id": "CHEBI:75937",
+            "label": "monooleoylglycerol"
+          },
+          "concentration": {
+            "value": "2.5",
+            "unit": "G_PER_L"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:75937",
+            "label": "monooleoylglycerol"
+          }
+        },
+        {
+          "preferred_term": "Agar",
+          "term": {
+            "id": "CHEBI:2509",
+            "label": "agar"
+          },
+          "concentration": {
+            "value": "15",
+            "unit": "G_PER_L"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:2509",
+            "label": "agar"
+          }
+        }
+      ],
+      "applications": [
+        "Microbial cultivation"
+      ],
+      "curation_history": [
+        {
+          "timestamp": "2026-01-27T01:15:02.fZ",
+          "curator": "komodo-web-import",
+          "action": "Imported from KOMODO web table",
+          "notes": "Source: KOMODO, ID: 472"
+        },
+        {
+          "timestamp": "2026-02-03T11:19:00.381853",
+          "curator": "dsmz-resolver-v1.0",
+          "action": "Enriched with DSMZ composition",
+          "notes": "Copied ingredients from DSMZ Medium 472"
+        },
+        {
+          "timestamp": "2026-03-13T06:19:34.314923Z",
+          "curator": "culturemech-id-assigner-v1.0",
+          "action": "Assigned CultureMech ID",
+          "notes": "Assigned stable identifier: CultureMech:005586"
+        },
+        {
+          "timestamp": "2026-03-17T06:29:56.000000Z",
+          "curator": "mediaingredientmech-enrichment-v1.0",
+          "action": "Added MediaIngredientMech links",
+          "notes": "Linked ingredients to MediaIngredientMech identifiers"
+        },
+        {
+          "timestamp": "2026-03-17T19:45:50.532871+00:00",
+          "curator": "normalize_media_names_to_snake_case.py",
+          "action": "NAME_NORMALIZED",
+          "notes": "Normalized name from \"PITYROSPORUM medium\" to \"pityrosporum_medium\" for consistent matching"
+        },
+        {
+          "timestamp": "2026-06-05T07:40:23.894771+00:00",
+          "curator": "mim-legacy-to-chebi-migration-v1.0",
+          "action": "Refreshed legacy MediaIngredientMech links to CHEBI keying",
+          "notes": "Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term (id-safe: ingredient's own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN id scheme."
+        }
+      ],
+      "parent_media": {
+        "path": "data/normalized_yaml/bacterial/pityrosporum_medium.yaml",
+        "relationship": "SOURCE_DUPLICATE",
+        "id": "CultureMech:001601",
+        "name": "pityrosporum_medium",
+        "notes": "KOMODO record states DSMZ Medium 472 provenance and exactly matches the single same-category DSMZ parent signature."
+      },
+      "variant_relationship": "SOURCE_DUPLICATE",
+      "variant_modifications": [
+        "Same ingredient and concentration signature; KOMODO record copied from the matching DSMZ medium source."
+      ]
+    },
+    "source": {
+      "medium": {
+        "id": 472,
+        "name": "PITYROSPORUM MEDIUM",
+        "complex_medium": "yes",
+        "source": "DSMZ",
+        "link": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium472.pdf"
+      },
+      "solutions": [
+        {
+          "id": 971,
+          "name": "Main sol. 472",
+          "volume": 1000,
+          "recipe": [
+            {
+              "recipe_order": 1,
+              "compound": "Malt extract",
+              "compound_id": 116,
+              "amount": 40,
+              "unit": "g",
+              "g_l": 40,
+              "optional": 0
+            },
+            {
+              "recipe_order": 2,
+              "compound": "Ox-bile",
+              "compound_id": 502,
+              "attribute": "desiccated",
+              "amount": 20,
+              "unit": "g",
+              "g_l": 20,
+              "optional": 0
+            },
+            {
+              "recipe_order": 3,
+              "compound": "Tween 40",
+              "compound_id": 503,
+              "amount": 10,
+              "unit": "g",
+              "g_l": 10,
+              "mmol_l": 7.79533,
+              "optional": 0
+            },
+            {
+              "recipe_order": 4,
+              "compound": "Glycerol mono-oleate",
+              "compound_id": 504,
+              "attribute": "techn.",
+              "amount": 2.5,
+              "unit": "g",
+              "g_l": 2.5,
+              "mmol_l": 7.0167,
+              "optional": 0
+            },
+            {
+              "recipe_order": 5,
+              "compound": "Agar",
+              "compound_id": 3,
+              "amount": 15,
+              "unit": "g",
+              "g_l": 15,
+              "mmol_l": 44.5991,
+              "optional": 0
+            },
+            {
+              "recipe_order": 6,
+              "compound": "Distilled water",
+              "compound_id": 4,
+              "amount": 1000,
+              "unit": "ml",
+              "optional": 0
+            }
+          ],
+          "steps": [
+            {
+              "step": "Adjust pH to 5.6. Sterilize at 121\u00b0C for 15 min."
+            }
+          ]
+        }
+      ]
+    },
+    "source_metadata": {
+      "url": "https://mediadive.dsmz.de/rest/medium/472",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/472",
+      "http_status": 200,
+      "sha256": "f89b54a3b378dae05f2b33b81a6eb44bbadbc9a5cfaaef5eace2017096c4268f",
+      "accessed_at": "2026-10-07T12:14:17.221208+00:00"
+    },
+    "mapping": {
+      "cells": [
+        "472",
+        "PITYROSPORUM medium",
+        "null",
+        "true",
+        "false",
+        "false",
+        "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium472.pdf"
+      ],
+      "links": [
+        {
+          "href": "/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=472"
+        },
+        {
+          "href": "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium472.pdf"
+        }
+      ],
+      "snippet": "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=472' >472</a></TD>\n\t\t\t\t\t<TD>PITYROSPORUM medium</TD>\n\t\t\t\t\t<TD>null</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium472.pdf' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium472.pdf</a></TD>\n\t\t\t\t</TR>",
+      "medium_id": "472",
+      "original_recipe": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium472.pdf"
+    },
+    "claims": [
+      {
+        "pointer": [
+          "ingredients",
+          0
+        ],
+        "field": "ingredients[0].concentration",
+        "ingredient": "Malt extract",
+        "old": {
+          "value": "40",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "40",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/472",
+        "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Malt extract\",\n                        \"compound_id\": 116,\n                        \"amount\": 40,\n                        \"unit\": \"g\",\n                        \"g_l\": 40,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[0]",
+        "explanation": "Provider explicitly reports g_l=40; check: 40 g * 1 g/g / (1000 ml / 1000 ml per L) = 40 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 472 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          1
+        ],
+        "field": "ingredients[1].concentration",
+        "ingredient": "Ox-bile",
+        "old": {
+          "value": "20",
+          "unit": "G_PER_L"
+        },
+        "new": null,
+        "status": "unsupported",
+        "reference": "https://mediadive.dsmz.de/rest/medium/472",
+        "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Ox-bile\",\n                        \"compound_id\": 502,\n                        \"attribute\": \"desiccated\",\n                        \"amount\": 20,\n                        \"unit\": \"g\",\n                        \"g_l\": 20,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[1]",
+        "explanation": "Optional addition or source attribute needs separate formulation/stock-strength review."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          2
+        ],
+        "field": "ingredients[2].concentration",
+        "ingredient": "Tween 40",
+        "old": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/472",
+        "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Tween 40\",\n                        \"compound_id\": 503,\n                        \"amount\": 10,\n                        \"unit\": \"g\",\n                        \"g_l\": 10,\n                        \"mmol_l\": 7.79533,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[2]",
+        "explanation": "Provider explicitly reports g_l=10; check: 10 g * 1 g/g / (1000 ml / 1000 ml per L) = 10 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 472 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          3
+        ],
+        "field": "ingredients[3].concentration",
+        "ingredient": "Glycerol mono-oleate",
+        "old": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "new": null,
+        "status": "unsupported",
+        "reference": "https://mediadive.dsmz.de/rest/medium/472",
+        "snippet": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Glycerol mono-oleate\",\n                        \"compound_id\": 504,\n                        \"attribute\": \"techn.\",\n                        \"amount\": 2.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.5,\n                        \"mmol_l\": 7.0167,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[3]",
+        "explanation": "Optional addition or source attribute needs separate formulation/stock-strength review."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          4
+        ],
+        "field": "ingredients[4].concentration",
+        "ingredient": "Agar",
+        "old": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/472",
+        "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Agar\",\n                        \"compound_id\": 3,\n                        \"amount\": 15,\n                        \"unit\": \"g\",\n                        \"g_l\": 15,\n                        \"mmol_l\": 44.5991,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[4]",
+        "explanation": "Provider explicitly reports g_l=15; check: 15 g * 1 g/g / (1000 ml / 1000 ml per L) = 15 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 472 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": null,
+        "field": "parent_media",
+        "ingredient": "pityrosporum_medium",
+        "old": {
+          "path": "data/normalized_yaml/bacterial/pityrosporum_medium.yaml",
+          "relationship": "SOURCE_DUPLICATE",
+          "id": "CultureMech:001601",
+          "name": "pityrosporum_medium",
+          "notes": "KOMODO record states DSMZ Medium 472 provenance and exactly matches the single same-category DSMZ parent signature."
+        },
+        "new": null,
+        "status": "unsupported",
+        "reference": null,
+        "snippet": null,
+        "locator": null,
+        "explanation": "Variant formulation/relationship requires its own exact source; parent evidence is not propagated."
+      },
+      {
+        "pointer": null,
+        "field": "source.data.solutions[0].recipe[5]",
+        "ingredient": "Distilled water",
+        "old": null,
+        "new": null,
+        "status": "unsupported",
+        "reference": "https://mediadive.dsmz.de/rest/medium/472",
+        "snippet": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[5]",
+        "explanation": "Source row has no established direct-medium match. Stock, omitted solvent, optional, and missing ingredients require explicit follow-up; not silently endorsed or discarded."
+      },
+      {
+        "pointer": null,
+        "field": "source.data.solutions[0].steps[0]",
+        "ingredient": "preparation context",
+        "old": null,
+        "new": null,
+        "status": "unsupported",
+        "reference": "https://mediadive.dsmz.de/rest/medium/472",
+        "snippet": "{\n                        \"step\": \"Adjust pH to 5.6. Sterilize at 121\\u00b0C for 15 min.\"\n                    }",
+        "locator": "$.data.solutions[0].steps[0]",
+        "explanation": "Preparation context retained for source-specific follow-up, including supplements and downstream dilutions; no additional amount inferred from prose."
+      }
+    ]
+  },
+  {
+    "path": "data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml",
+    "medium_id": "489",
+    "before_sha256": "8143ecd9d9c6551c5b0612f80ad7340a478acca6472d07b3998db27ed0ada0b6",
+    "local": {
+      "id": "CultureMech:005614",
+      "name": "clostridium_aerotolerans_medium",
+      "original_name": "CLOSTRIDIUM AEROTOLERANS medium",
+      "category": "bacterial",
+      "medium_type": "COMPLEX",
+      "composition_type": "UNDEFINED",
+      "physical_state": "LIQUID",
+      "ph_value": 7.0,
+      "media_term": {
+        "preferred_term": "KOMODO Medium 489",
+        "term": {
+          "id": "komodo.medium:489",
+          "label": "CLOSTRIDIUM AEROTOLERANS medium"
+        }
+      },
+      "notes": "Source: KOMODO ModelSEED | ID: 489 | DSMZ Medium: 489 (mediadive.medium:489) | Aerobic: Yes",
+      "ingredients": [
+        {
+          "preferred_term": "K2HPO4",
+          "term": {
+            "id": "CHEBI:131527",
+            "label": "dipotassium hydrogen phosphate"
+          },
+          "concentration": {
+            "value": "0.22",
+            "unit": "G_PER_L"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:131527",
+            "label": "dipotassium hydrogen phosphate"
+          }
+        },
+        {
+          "preferred_term": "KH2PO4",
+          "term": {
+            "id": "CHEBI:63036",
+            "label": "potassium dihydrogen phosphate"
+          },
+          "concentration": {
+            "value": "0.22",
+            "unit": "G_PER_L"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:63036",
+            "label": "potassium dihydrogen phosphate"
+          }
+        },
+        {
+          "preferred_term": "NaCl",
+          "term": {
+            "id": "CHEBI:26710",
+            "label": "sodium chloride"
+          },
+          "concentration": {
+            "value": "0.45",
+            "unit": "G_PER_L"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:26710",
+            "label": "sodium chloride"
+          }
+        },
+        {
+          "preferred_term": "(NH4)2SO4",
+          "term": {
+            "id": "CHEBI:62946",
+            "label": "ammonium sulfate"
+          },
+          "concentration": {
+            "value": "0.45",
+            "unit": "G_PER_L"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:62946",
+            "label": "ammonium sulfate"
+          }
+        },
+        {
+          "preferred_term": "CaCl2 x 2 H2O",
+          "term": {
+            "id": "CHEBI:86158",
+            "label": "calcium chloride dihydrate"
+          },
+          "concentration": {
+            "value": "0.06",
+            "unit": "G_PER_L"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:86158",
+            "label": "calcium chloride dihydrate"
+          }
+        },
+        {
+          "preferred_term": "MgSO4 x 7 H2O",
+          "term": {
+            "id": "CHEBI:31795",
+            "label": "magnesium sulfate heptahydrate"
+          },
+          "concentration": {
+            "value": "0.09",
+            "unit": "G_PER_L"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:31795",
+            "label": "magnesium sulfate heptahydrate"
+          }
+        },
+        {
+          "preferred_term": "Yeast extract",
+          "concentration": {
+            "value": "5",
+            "unit": "G_PER_L"
+          }
+        },
+        {
+          "preferred_term": "Xylan",
+          "term": {
+            "id": "CHEBI:37166",
+            "label": "xylan"
+          },
+          "concentration": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:37166",
+            "label": "xylan"
+          }
+        },
+        {
+          "preferred_term": "Sodium resazurin",
+          "concentration": {
+            "value": "0.0005",
+            "unit": "G_PER_L"
+          },
+          "term": {
+            "id": "CHEBI:8806",
+            "label": "Resazurin"
+          }
+        },
+        {
+          "preferred_term": "L-Cysteine HCl x H2O",
+          "term": {
+            "id": "CHEBI:91248",
+            "label": "L-cysteine hydrochloride hydrate"
+          },
+          "concentration": {
+            "value": "0.15",
+            "unit": "G_PER_L"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:91248",
+            "label": "L-cysteine hydrochloride hydrate"
+          }
+        },
+        {
+          "preferred_term": "Na2S x 9 H2O",
+          "term": {
+            "id": "CHEBI:76209",
+            "label": "sodium sulfide nonahydrate"
+          },
+          "concentration": {
+            "value": "0.15",
+            "unit": "G_PER_L"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:76209",
+            "label": "sodium sulfide nonahydrate"
+          }
+        }
+      ],
+      "applications": [
+        "Microbial cultivation"
+      ],
+      "curation_history": [
+        {
+          "timestamp": "2026-01-27T01:15:02.fZ",
+          "curator": "komodo-web-import",
+          "action": "Imported from KOMODO web table",
+          "notes": "Source: KOMODO, ID: 489"
+        },
+        {
+          "timestamp": "2026-02-03T11:18:58.550985",
+          "curator": "dsmz-resolver-v1.0",
+          "action": "Enriched with DSMZ composition",
+          "notes": "Copied ingredients from DSMZ Medium 489"
+        },
+        {
+          "timestamp": "2026-03-13T06:19:34.592448Z",
+          "curator": "culturemech-id-assigner-v1.0",
+          "action": "Assigned CultureMech ID",
+          "notes": "Assigned stable identifier: CultureMech:005614"
+        },
+        {
+          "timestamp": "2026-03-17T06:29:51.000000Z",
+          "curator": "mediaingredientmech-enrichment-v1.0",
+          "action": "Added MediaIngredientMech links",
+          "notes": "Linked ingredients to MediaIngredientMech identifiers"
+        },
+        {
+          "timestamp": "2026-03-17T19:45:50.856972+00:00",
+          "curator": "normalize_media_names_to_snake_case.py",
+          "action": "NAME_NORMALIZED",
+          "notes": "Normalized name from \"CLOSTRIDIUM AEROTOLERANS medium\" to \"clostridium_aerotolerans_medium\" for consistent matching"
+        },
+        {
+          "timestamp": "2026-06-05T07:40:24.053348+00:00",
+          "curator": "mim-legacy-to-chebi-migration-v1.0",
+          "action": "Refreshed legacy MediaIngredientMech links to CHEBI keying",
+          "notes": "Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term (id-safe: ingredient's own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN id scheme."
+        },
+        {
+          "timestamp": "2026-06-10T07:46:45.134042+00:00",
+          "curator": "primary-term-label-canonicalization-v1.0",
+          "action": "Canonicalized primary term label to OBO canonical (OAK)",
+          "notes": "3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi."
+        }
+      ],
+      "variant_children": [
+        {
+          "path": "data/normalized_yaml/bacterial/lacrimispora_medium.yaml",
+          "relationship": "SOURCE_DUPLICATE",
+          "id": "CultureMech:001616",
+          "name": "lacrimispora_medium",
+          "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+        }
+      ]
+    },
+    "source": {
+      "medium": {
+        "id": 489,
+        "name": "LACRIMISPORA MEDIUM",
+        "complex_medium": "yes",
+        "min_pH": 7,
+        "max_pH": 7,
+        "source": "DSMZ",
+        "link": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf"
+      },
+      "solutions": [
+        {
+          "id": 995,
+          "name": "Main sol. 489",
+          "volume": 1000,
+          "recipe": [
+            {
+              "recipe_order": 1,
+              "compound": "K2HPO4",
+              "compound_id": 10,
+              "amount": 0.22,
+              "unit": "g",
+              "g_l": 0.22,
+              "mmol_l": 1.26309,
+              "optional": 0
+            },
+            {
+              "recipe_order": 2,
+              "compound": "KH2PO4",
+              "compound_id": 11,
+              "amount": 0.22,
+              "unit": "g",
+              "g_l": 0.22,
+              "mmol_l": 1.61664,
+              "optional": 0
+            },
+            {
+              "recipe_order": 3,
+              "compound": "NaCl",
+              "compound_id": 43,
+              "amount": 0.45,
+              "unit": "g",
+              "g_l": 0.45,
+              "mmol_l": 7.70021,
+              "optional": 0
+            },
+            {
+              "recipe_order": 4,
+              "compound": "(NH4)2SO4",
+              "compound_id": 27,
+              "amount": 0.45,
+              "unit": "g",
+              "g_l": 0.45,
+              "mmol_l": 3.40548,
+              "optional": 0
+            },
+            {
+              "recipe_order": 5,
+              "compound": "CaCl2 x 2 H2O",
+              "compound_id": 7,
+              "amount": 0.06,
+              "unit": "g",
+              "g_l": 0.06,
+              "mmol_l": 0.408122,
+              "optional": 0
+            },
+            {
+              "recipe_order": 6,
+              "compound": "MgSO4 x 7 H2O",
+              "compound_id": 8,
+              "amount": 0.09,
+              "unit": "g",
+              "g_l": 0.09,
+              "mmol_l": 0.365147,
+              "optional": 0
+            },
+            {
+              "recipe_order": 7,
+              "compound": "Yeast extract",
+              "compound_id": 16,
+              "amount": 5,
+              "unit": "g",
+              "g_l": 5,
+              "optional": 0
+            },
+            {
+              "recipe_order": 8,
+              "compound": "Xylan",
+              "compound_id": 508,
+              "amount": 5,
+              "unit": "g",
+              "g_l": 5,
+              "optional": 0
+            },
+            {
+              "recipe_order": 9,
+              "compound": "Sodium resazurin",
+              "compound_id": 1852,
+              "attribute": "0.1% w/v",
+              "amount": 0.5,
+              "unit": "ml",
+              "g_l": 0.0005,
+              "optional": 0
+            },
+            {
+              "recipe_order": 10,
+              "compound": "L-Cysteine HCl x H2O",
+              "compound_id": 770,
+              "amount": 0.15,
+              "unit": "g",
+              "g_l": 0.15,
+              "mmol_l": 0.854039,
+              "optional": 0
+            },
+            {
+              "recipe_order": 11,
+              "compound": "Na2S x 9 H2O",
+              "compound_id": 54,
+              "amount": 0.15,
+              "unit": "g",
+              "g_l": 0.15,
+              "mmol_l": 0.624526,
+              "optional": 0
+            },
+            {
+              "recipe_order": 12,
+              "compound": "Distilled water",
+              "compound_id": 4,
+              "amount": 1000,
+              "unit": "ml",
+              "optional": 0
+            }
+          ],
+          "steps": [
+            {
+              "step": "Dissolve ingredients (except cysteine and sulfide), adjust pH to 7.0, bring medium to the boil, then cool to room temperature under 100% N2 gas. Dispense under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After sterilization add cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas."
+            }
+          ],
+          "equipment": {
+            "1313": "Autoclave",
+            "2120": "Hungate tubes",
+            "4315": "Gassing station"
+          }
+        }
+      ]
+    },
+    "source_metadata": {
+      "url": "https://mediadive.dsmz.de/rest/medium/489",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/489",
+      "http_status": 200,
+      "sha256": "5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3",
+      "accessed_at": "2026-10-07T12:14:32.355571+00:00"
+    },
+    "mapping": {
+      "cells": [
+        "489",
+        "CLOSTRIDIUM AEROTOLERANS medium",
+        "7.0",
+        "true",
+        "true",
+        "false",
+        "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf"
+      ],
+      "links": [
+        {
+          "href": "/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=489"
+        },
+        {
+          "href": "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf"
+        }
+      ],
+      "snippet": "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=489' >489</a></TD>\n\t\t\t\t\t<TD>CLOSTRIDIUM AEROTOLERANS medium</TD>\n\t\t\t\t\t<TD> 7.0</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf</a></TD>\n\t\t\t\t</TR>",
+      "medium_id": "489",
+      "original_recipe": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf"
+    },
+    "claims": [
+      {
+        "pointer": [
+          "ingredients",
+          0
+        ],
+        "field": "ingredients[0].concentration",
+        "ingredient": "K2HPO4",
+        "old": {
+          "value": "0.22",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "0.22",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/489",
+        "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 0.22,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.22,\n                        \"mmol_l\": 1.26309,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[0]",
+        "explanation": "Provider explicitly reports g_l=0.22; check: 0.22 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.22 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 489 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          1
+        ],
+        "field": "ingredients[1].concentration",
+        "ingredient": "KH2PO4",
+        "old": {
+          "value": "0.22",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "0.22",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/489",
+        "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.22,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.22,\n                        \"mmol_l\": 1.61664,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[1]",
+        "explanation": "Provider explicitly reports g_l=0.22; check: 0.22 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.22 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 489 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          2
+        ],
+        "field": "ingredients[2].concentration",
+        "ingredient": "NaCl",
+        "old": {
+          "value": "0.45",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "0.45",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/489",
+        "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 0.45,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.45,\n                        \"mmol_l\": 7.70021,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[2]",
+        "explanation": "Provider explicitly reports g_l=0.45; check: 0.45 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.45 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 489 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          3
+        ],
+        "field": "ingredients[3].concentration",
+        "ingredient": "(NH4)2SO4",
+        "old": {
+          "value": "0.45",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "0.45",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/489",
+        "snippet": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n                        \"amount\": 0.45,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.45,\n                        \"mmol_l\": 3.40548,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[3]",
+        "explanation": "Provider explicitly reports g_l=0.45; check: 0.45 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.45 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 489 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          4
+        ],
+        "field": "ingredients[4].concentration",
+        "ingredient": "CaCl2 x 2 H2O",
+        "old": {
+          "value": "0.06",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "0.06",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/489",
+        "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.06,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.06,\n                        \"mmol_l\": 0.408122,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[4]",
+        "explanation": "Provider explicitly reports g_l=0.06; check: 0.06 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.06 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 489 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          5
+        ],
+        "field": "ingredients[5].concentration",
+        "ingredient": "MgSO4 x 7 H2O",
+        "old": {
+          "value": "0.09",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "0.09",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/489",
+        "snippet": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 0.09,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.09,\n                        \"mmol_l\": 0.365147,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[5]",
+        "explanation": "Provider explicitly reports g_l=0.09; check: 0.09 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.09 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 489 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          6
+        ],
+        "field": "ingredients[6].concentration",
+        "ingredient": "Yeast extract",
+        "old": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/489",
+        "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[6]",
+        "explanation": "Provider explicitly reports g_l=5; check: 5 g * 1 g/g / (1000 ml / 1000 ml per L) = 5 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 489 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          7
+        ],
+        "field": "ingredients[7].concentration",
+        "ingredient": "Xylan",
+        "old": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/489",
+        "snippet": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Xylan\",\n                        \"compound_id\": 508,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[7]",
+        "explanation": "Provider explicitly reports g_l=5; check: 5 g * 1 g/g / (1000 ml / 1000 ml per L) = 5 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 489 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          8
+        ],
+        "field": "ingredients[8].concentration",
+        "ingredient": "Sodium resazurin",
+        "old": {
+          "value": "0.0005",
+          "unit": "G_PER_L"
+        },
+        "new": null,
+        "status": "unsupported",
+        "reference": "https://mediadive.dsmz.de/rest/medium/489",
+        "snippet": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.0005,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[8]",
+        "explanation": "Optional addition or source attribute needs separate formulation/stock-strength review."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          9
+        ],
+        "field": "ingredients[9].concentration",
+        "ingredient": "L-Cysteine HCl x H2O",
+        "old": {
+          "value": "0.15",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "0.15",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/489",
+        "snippet": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"L-Cysteine HCl x H2O\",\n                        \"compound_id\": 770,\n                        \"amount\": 0.15,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.15,\n                        \"mmol_l\": 0.854039,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[9]",
+        "explanation": "Provider explicitly reports g_l=0.15; check: 0.15 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.15 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 489 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          10
+        ],
+        "field": "ingredients[10].concentration",
+        "ingredient": "Na2S x 9 H2O",
+        "old": {
+          "value": "0.15",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "0.15",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/489",
+        "snippet": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"amount\": 0.15,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.15,\n                        \"mmol_l\": 0.624526,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[10]",
+        "explanation": "Provider explicitly reports g_l=0.15; check: 0.15 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.15 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 489 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": null,
+        "field": "variant_children[0]",
+        "ingredient": "lacrimispora_medium",
+        "old": {
+          "path": "data/normalized_yaml/bacterial/lacrimispora_medium.yaml",
+          "relationship": "SOURCE_DUPLICATE",
+          "id": "CultureMech:001616",
+          "name": "lacrimispora_medium",
+          "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+        },
+        "new": null,
+        "status": "unsupported",
+        "reference": null,
+        "snippet": null,
+        "locator": null,
+        "explanation": "Variant formulation/relationship requires its own exact source; parent evidence is not propagated."
+      },
+      {
+        "pointer": null,
+        "field": "source.data.solutions[0].recipe[11]",
+        "ingredient": "Distilled water",
+        "old": null,
+        "new": null,
+        "status": "unsupported",
+        "reference": "https://mediadive.dsmz.de/rest/medium/489",
+        "snippet": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[11]",
+        "explanation": "Source row has no established direct-medium match. Stock, omitted solvent, optional, and missing ingredients require explicit follow-up; not silently endorsed or discarded."
+      },
+      {
+        "pointer": null,
+        "field": "source.data.solutions[0].steps[0]",
+        "ingredient": "preparation context",
+        "old": null,
+        "new": null,
+        "status": "unsupported",
+        "reference": "https://mediadive.dsmz.de/rest/medium/489",
+        "snippet": "{\n                        \"step\": \"Dissolve ingredients (except cysteine and sulfide), adjust pH to 7.0, bring medium to the boil, then cool to room temperature under 100% N2 gas. Dispense under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After sterilization add cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas.\"\n                    }",
+        "locator": "$.data.solutions[0].steps[0]",
+        "explanation": "Preparation context retained for source-specific follow-up, including supplements and downstream dilutions; no additional amount inferred from prose."
+      }
+    ]
+  },
+  {
+    "path": "data/normalized_yaml/bacterial/KOMODO_513_PP-MEDIUM.yaml",
+    "medium_id": "513",
+    "before_sha256": "5159898983210348782bd59719c24950d564e2d2ca25a9adced7558c5cb70b72",
+    "local": {
+      "id": "CultureMech:005714",
+      "name": "pp_medium",
+      "original_name": "PP-MEDIUM",
+      "category": "bacterial",
+      "medium_type": "COMPLEX",
+      "composition_type": "UNDEFINED",
+      "physical_state": "SOLID_AGAR",
+      "ph_value": 7.0,
+      "media_term": {
+        "preferred_term": "KOMODO Medium 513",
+        "term": {
+          "id": "komodo.medium:513",
+          "label": "PP-MEDIUM"
+        }
+      },
+      "notes": "Source: KOMODO ModelSEED | ID: 513 | DSMZ Medium: 513 (mediadive.medium:513) | Aerobic: No",
+      "ingredients": [
+        {
+          "preferred_term": "Polypeptone",
+          "concentration": {
+            "value": "10",
+            "unit": "G_PER_L"
+          }
+        },
+        {
+          "preferred_term": "Yeast extract",
+          "concentration": {
+            "value": "2",
+            "unit": "G_PER_L"
+          }
+        },
+        {
+          "preferred_term": "MgSO4 x 7 H2O",
+          "term": {
+            "id": "CHEBI:31795",
+            "label": "magnesium sulfate heptahydrate"
+          },
+          "concentration": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:31795",
+            "label": "magnesium sulfate heptahydrate"
+          }
+        },
+        {
+          "preferred_term": "Agar",
+          "term": {
+            "id": "CHEBI:2509",
+            "label": "agar"
+          },
+          "concentration": {
+            "value": "15",
+            "unit": "G_PER_L"
+          },
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:2509",
+            "label": "agar"
+          }
+        }
+      ],
+      "applications": [
+        "Microbial cultivation"
+      ],
+      "curation_history": [
+        {
+          "timestamp": "2026-01-27T01:15:02.fZ",
+          "curator": "komodo-web-import",
+          "action": "Imported from KOMODO web table",
+          "notes": "Source: KOMODO, ID: 513"
+        },
+        {
+          "timestamp": "2026-02-03T11:19:01.875953",
+          "curator": "dsmz-resolver-v1.0",
+          "action": "Enriched with DSMZ composition",
+          "notes": "Copied ingredients from DSMZ Medium 513"
+        },
+        {
+          "timestamp": "2026-03-13T06:19:35.683310Z",
+          "curator": "culturemech-id-assigner-v1.0",
+          "action": "Assigned CultureMech ID",
+          "notes": "Assigned stable identifier: CultureMech:005714"
+        },
+        {
+          "timestamp": "2026-03-17T06:30:01.000000Z",
+          "curator": "mediaingredientmech-enrichment-v1.0",
+          "action": "Added MediaIngredientMech links",
+          "notes": "Linked ingredients to MediaIngredientMech identifiers"
+        },
+        {
+          "timestamp": "2026-03-17T19:45:52.126793+00:00",
+          "curator": "normalize_media_names_to_snake_case.py",
+          "action": "NAME_NORMALIZED",
+          "notes": "Normalized name from \"PP-MEDIUM\" to \"pp_medium\" for consistent matching"
+        },
+        {
+          "timestamp": "2026-06-05T07:40:24.280514+00:00",
+          "curator": "mim-legacy-to-chebi-migration-v1.0",
+          "action": "Refreshed legacy MediaIngredientMech links to CHEBI keying",
+          "notes": "Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term (id-safe: ingredient's own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN id scheme."
+        }
+      ],
+      "variant_children": [
+        {
+          "path": "data/normalized_yaml/bacterial/jcm_medium_no_323.yaml",
+          "relationship": "SOURCE_DUPLICATE",
+          "id": "CultureMech:002681",
+          "name": "jcm_medium_no_323",
+          "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+        },
+        {
+          "path": "data/normalized_yaml/bacterial/nbrc702_medium.yaml",
+          "relationship": "SOURCE_DUPLICATE",
+          "id": "CultureMech:000932",
+          "name": "nbrc702_medium",
+          "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+        }
+      ],
+      "parent_media": {
+        "path": "data/normalized_yaml/bacterial/pp_medium.yaml",
+        "relationship": "SOURCE_DUPLICATE",
+        "id": "CultureMech:001645",
+        "name": "pp_medium",
+        "notes": "KOMODO record states DSMZ Medium 513 provenance and exactly matches the single same-category DSMZ parent signature."
+      },
+      "variant_relationship": "SOURCE_DUPLICATE",
+      "variant_modifications": [
+        "Same ingredient and concentration signature; KOMODO record copied from the matching DSMZ medium source."
+      ]
+    },
+    "source": {
+      "medium": {
+        "id": 513,
+        "name": "PP-MEDIUM",
+        "complex_medium": "yes",
+        "min_pH": 7,
+        "max_pH": 7,
+        "source": "DSMZ",
+        "link": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium513.pdf"
+      },
+      "solutions": [
+        {
+          "id": 1133,
+          "name": "Main sol. 513",
+          "volume": 1000,
+          "recipe": [
+            {
+              "recipe_order": 1,
+              "compound": "Polypeptone",
+              "compound_id": 442,
+              "amount": 10,
+              "unit": "g",
+              "g_l": 10,
+              "optional": 0
+            },
+            {
+              "recipe_order": 2,
+              "compound": "Yeast extract",
+              "compound_id": 16,
+              "amount": 2,
+              "unit": "g",
+              "g_l": 2,
+              "optional": 0
+            },
+            {
+              "recipe_order": 3,
+              "compound": "MgSO4 x 7 H2O",
+              "compound_id": 8,
+              "amount": 1,
+              "unit": "g",
+              "g_l": 1,
+              "mmol_l": 4.05719,
+              "optional": 0
+            },
+            {
+              "recipe_order": 4,
+              "compound": "Agar",
+              "compound_id": 3,
+              "amount": 15,
+              "unit": "g",
+              "g_l": 15,
+              "mmol_l": 44.5991,
+              "optional": 0
+            },
+            {
+              "recipe_order": 5,
+              "compound": "Distilled water",
+              "compound_id": 4,
+              "amount": 1000,
+              "unit": "ml",
+              "optional": 0
+            }
+          ],
+          "steps": [
+            {
+              "step": "pH of medium should be 7.0."
+            }
+          ],
+          "equipment": {
+            "4554": "Autoclave"
+          }
+        }
+      ]
+    },
+    "source_metadata": {
+      "url": "https://mediadive.dsmz.de/rest/medium/513",
+      "response_url": "https://mediadive.dsmz.de/rest/medium/513",
+      "http_status": 200,
+      "sha256": "be379af1cfbefe18c8f457fd29557d6a04d316dd446f5a2aee3a1fefdea43f25",
+      "accessed_at": "2026-10-07T12:15:00.943959+00:00"
+    },
+    "mapping": {
+      "cells": [
+        "513",
+        "PP-MEDIUM",
+        "7",
+        "true",
+        "false",
+        "false",
+        "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium513.pdf"
+      ],
+      "links": [
+        {
+          "href": "/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=513"
+        },
+        {
+          "href": "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium513.pdf"
+        }
+      ],
+      "snippet": "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=513' >513</a></TD>\n\t\t\t\t\t<TD>PP-MEDIUM</TD>\n\t\t\t\t\t<TD> 7</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium513.pdf' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium513.pdf</a></TD>\n\t\t\t\t</TR>",
+      "medium_id": "513",
+      "original_recipe": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium513.pdf"
+    },
+    "claims": [
+      {
+        "pointer": [
+          "ingredients",
+          0
+        ],
+        "field": "ingredients[0].concentration",
+        "ingredient": "Polypeptone",
+        "old": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/513",
+        "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Polypeptone\",\n                        \"compound_id\": 442,\n                        \"amount\": 10,\n                        \"unit\": \"g\",\n                        \"g_l\": 10,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[0]",
+        "explanation": "Provider explicitly reports g_l=10; check: 10 g * 1 g/g / (1000 ml / 1000 ml per L) = 10 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 513 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          1
+        ],
+        "field": "ingredients[1].concentration",
+        "ingredient": "Yeast extract",
+        "old": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/513",
+        "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 2,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[1]",
+        "explanation": "Provider explicitly reports g_l=2; check: 2 g * 1 g/g / (1000 ml / 1000 ml per L) = 2 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 513 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          2
+        ],
+        "field": "ingredients[2].concentration",
+        "ingredient": "MgSO4 x 7 H2O",
+        "old": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/513",
+        "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\": 4.05719,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[2]",
+        "explanation": "Provider explicitly reports g_l=1; check: 1 g * 1 g/g / (1000 ml / 1000 ml per L) = 1 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 513 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": [
+          "ingredients",
+          3
+        ],
+        "field": "ingredients[3].concentration",
+        "ingredient": "Agar",
+        "old": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "new": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "status": "evidence_only",
+        "reference": "https://mediadive.dsmz.de/rest/medium/513",
+        "snippet": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Agar\",\n                        \"compound_id\": 3,\n                        \"amount\": 15,\n                        \"unit\": \"g\",\n                        \"g_l\": 15,\n                        \"mmol_l\": 44.5991,\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[3]",
+        "explanation": "Provider explicitly reports g_l=15; check: 15 g * 1 g/g / (1000 ml / 1000 ml per L) = 15 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. KOMODO accession 513 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+      },
+      {
+        "pointer": null,
+        "field": "variant_children[0]",
+        "ingredient": "jcm_medium_no_323",
+        "old": {
+          "path": "data/normalized_yaml/bacterial/jcm_medium_no_323.yaml",
+          "relationship": "SOURCE_DUPLICATE",
+          "id": "CultureMech:002681",
+          "name": "jcm_medium_no_323",
+          "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+        },
+        "new": null,
+        "status": "unsupported",
+        "reference": null,
+        "snippet": null,
+        "locator": null,
+        "explanation": "Variant formulation/relationship requires its own exact source; parent evidence is not propagated."
+      },
+      {
+        "pointer": null,
+        "field": "variant_children[1]",
+        "ingredient": "nbrc702_medium",
+        "old": {
+          "path": "data/normalized_yaml/bacterial/nbrc702_medium.yaml",
+          "relationship": "SOURCE_DUPLICATE",
+          "id": "CultureMech:000932",
+          "name": "nbrc702_medium",
+          "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+        },
+        "new": null,
+        "status": "unsupported",
+        "reference": null,
+        "snippet": null,
+        "locator": null,
+        "explanation": "Variant formulation/relationship requires its own exact source; parent evidence is not propagated."
+      },
+      {
+        "pointer": null,
+        "field": "parent_media",
+        "ingredient": "pp_medium",
+        "old": {
+          "path": "data/normalized_yaml/bacterial/pp_medium.yaml",
+          "relationship": "SOURCE_DUPLICATE",
+          "id": "CultureMech:001645",
+          "name": "pp_medium",
+          "notes": "KOMODO record states DSMZ Medium 513 provenance and exactly matches the single same-category DSMZ parent signature."
+        },
+        "new": null,
+        "status": "unsupported",
+        "reference": null,
+        "snippet": null,
+        "locator": null,
+        "explanation": "Variant formulation/relationship requires its own exact source; parent evidence is not propagated."
+      },
+      {
+        "pointer": null,
+        "field": "source.data.solutions[0].recipe[4]",
+        "ingredient": "Distilled water",
+        "old": null,
+        "new": null,
+        "status": "unsupported",
+        "reference": "https://mediadive.dsmz.de/rest/medium/513",
+        "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[4]",
+        "explanation": "Source row has no established direct-medium match. Stock, omitted solvent, optional, and missing ingredients require explicit follow-up; not silently endorsed or discarded."
+      },
+      {
+        "pointer": null,
+        "field": "source.data.solutions[0].steps[0]",
+        "ingredient": "preparation context",
+        "old": null,
+        "new": null,
+        "status": "unsupported",
+        "reference": "https://mediadive.dsmz.de/rest/medium/513",
+        "snippet": "{\n                        \"step\": \"pH of medium should be 7.0.\"\n                    }",
+        "locator": "$.data.solutions[0].steps[0]",
+        "explanation": "Preparation context retained for source-specific follow-up, including supplements and downstream dilutions; no additional amount inferred from prose."
+      }
+    ]
+  }
+]

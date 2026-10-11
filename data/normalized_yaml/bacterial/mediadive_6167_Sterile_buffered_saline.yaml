@@ -16,6 +16,33 @@ composition:
     label: disodium hydrogenphosphate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/6167
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Na2HPO4 x 12 H2O",
+                      "compound_id": 95,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2.65,
+                      "unit": "g",
+                      "g_l": 2.65,
+                      "mmol_l": 18.6674,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Na2HPO4
+      x 12 H2O) in MediaDive solution 6167; locator=$.data.recipe[0] (compound_id=95).
+      Provider explicitly reports g_l=2.65. Arithmetic check: 2.65 g * 1 g/g / (1000
+      ml / 1000 ml per L) = 2.65 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T10:00:52.188944+00:00;
+      response SHA256=6deeaaf15d703d49d02dd86f8beba8d9daa05ffc0f509c67f0b482aa7d0c5410.'
 - preferred_term: KH2PO4
   concentration:
     value: '0.41'
@@ -28,6 +55,32 @@ composition:
     label: potassium dihydrogen phosphate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/6167
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "KH2PO4",
+                      "compound_id": 11,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.41,
+                      "unit": "g",
+                      "g_l": 0.41,
+                      "mmol_l": 3.01282,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (KH2PO4)
+      in MediaDive solution 6167; locator=$.data.recipe[1] (compound_id=11). Provider
+      explicitly reports g_l=0.41. Arithmetic check: 0.41 g * 1 g/g / (1000 ml / 1000
+      ml per L) = 0.41 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T10:00:52.188944+00:00; response SHA256=6deeaaf15d703d49d02dd86f8beba8d9daa05ffc0f509c67f0b482aa7d0c5410.'
 - preferred_term: NaCl
   concentration:
     value: '7.36'
@@ -40,6 +93,32 @@ composition:
     label: sodium chloride
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/6167
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "NaCl",
+                      "compound_id": 43,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 7.36,
+                      "unit": "g",
+                      "g_l": 7.36,
+                      "mmol_l": 125.941,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[2].concentration (NaCl) in
+      MediaDive solution 6167; locator=$.data.recipe[2] (compound_id=43). Provider
+      explicitly reports g_l=7.36. Arithmetic check: 7.36 g * 1 g/g / (1000 ml / 1000
+      ml per L) = 7.36 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T10:00:52.188944+00:00; response SHA256=6deeaaf15d703d49d02dd86f8beba8d9daa05ffc0f509c67f0b482aa7d0c5410.'
 preparation_notes: "Dispense 8.5 ml aliquots into test tubes.  Cap and autoclave at\
   \ 15 psi\r\nfor 15 minutes."
 curation_history:
@@ -70,6 +149,18 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-10-07T10:04:07.640757+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/6167
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "2.65"} ->
+    {"unit": "G_PER_L", "value": "2.65"} (evidence_only); composition[1].concentration:
+    {"unit": "G_PER_L", "value": "0.41"} -> {"unit": "G_PER_L", "value": "0.41"} (evidence_only);
+    composition[2].concentration: {"unit": "G_PER_L", "value": "7.36"} -> {"unit":
+    "G_PER_L", "value": "7.36"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -78,3 +169,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/6167
+  title: 'MediaDive solution 6167: Sterile buffered saline'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=6deeaaf15d703d49d02dd86f8beba8d9daa05ffc0f509c67f0b482aa7d0c5410;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

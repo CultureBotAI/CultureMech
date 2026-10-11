@@ -10,10 +10,36 @@ composition:
     value: '50.0'
     unit: G_PER_L
   term:
-    id: CHEBI:42191
-    label: EDTA(4-)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001115
+    id: CHEBI:4735
+    label: ethylenediaminetetraacetic acid
+  evidence:
+  - reference: https://utex.org/products/bbm-edta-stock-solution
+    supports: SUPPORT
+    snippet: 50 grams of EDTA, acid form
+    explanation: 'Supports composition[0].concentration for the supplied ingredient
+      in this stock preparation only. Component: ''EDTA, acid form''. Locator: Directions;
+      ingredient item 1 and final-volume instruction. Separate volume-basis excerpt:
+      ''Bring the total volume to 1 Liter''. Direct g/L source amount, or grams per
+      explicit one-liter total; no molecular-weight or working-dilution calculation.
+      Supplier and ontology evidence, when attached, establish the supplied form separately;
+      no replacement molarity or receiving-medium dose is inferred.'
+  - reference: https://www.ebi.ac.uk/chebi/CHEBI:4735
+    supports: SUPPORT
+    snippet: C10H16N2O8
+    explanation: 'Supports composition[0].term and supplied-form label/MIM-link correction
+      from CHEBI:42191 to CHEBI:4735. chemical identity only; not a recipe amount
+      Locator: Formula field. The g/L amount is unchanged and sourced separately to
+      UTEX.'
+  - reference: https://www.ebi.ac.uk/chebi/CHEBI:42191
+    supports: SUPPORT
+    snippet: C10H12N2O8
+    explanation: 'Supports composition[0].term and supplied-form label/MIM-link correction
+      from CHEBI:42191 to CHEBI:4735. chemical identity only; not a recipe amount
+      Locator: Formula field. The g/L amount is unchanged and sourced separately to
+      UTEX.'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:4735
+    label: ethylenediaminetetraacetic acid
 - preferred_term: Potassium hydroxide
   concentration:
     value: '31.0'
@@ -21,34 +47,27 @@ composition:
   term:
     id: CHEBI:32035
     label: potassium hydroxide
-notes: 'EDTA stock solution for Bold Basal Medium (BBM) and related algae culture
-  media.
-
+  evidence:
+  - reference: https://utex.org/products/bbm-edta-stock-solution
+    supports: SUPPORT
+    snippet: 31 grams of KOH
+    explanation: 'Supports composition[1].concentration for the supplied ingredient
+      in this stock preparation only. Component: ''KOH''. Locator: Directions; ingredient
+      item 2 and final-volume instruction. Separate volume-basis excerpt: ''Bring
+      the total volume to 1 Liter''. Direct g/L source amount, or grams per explicit
+      one-liter total; no molecular-weight or working-dilution calculation. Supplier
+      and ontology evidence, when attached, establish the supplied form separately;
+      no replacement molarity or receiving-medium dose is inferred.'
+notes: |
+  EDTA stock solution for Bold Basal Medium (BBM) and related algae culture media.
   Provides chelating agent for metal micronutrients, improving metal bioavailability
-
   and preventing precipitation.
 
+  Preparation: Add 50 g EDTA free acid, then 31 g KOH, to approximately 900 mL deionized water with continuous stirring; make up to 1 L.
 
-  Preparation: Add components to approximately 900 mL deionized water in the order
-  listed
+  Storage: In darkness at room temperature.
 
-  while stirring continuously. The KOH helps dissolve the EDTA acid form by neutralizing
-  it.
-
-  Bring to 1 L total volume.
-
-
-  Storage: Room temperature in darkness.
-
-
-  Final stock concentration: EDTA (~8.5 µM)
-
-
-  Note: KOH is used to dissolve EDTA (free acid form). The resulting solution contains
-
-  primarily disodium EDTA salt.
-
-  '
+  Source discrepancy: the preparation amount is 50 g EDTA acid per final liter, but the source also prints an approximate 8.5 uM annotation. That annotation is not accepted as a verified stock molarity and no replacement molarity is asserted. The supplied EDTA is the free acid; its subsequent solution speciation is not established here. The earlier assertion of primarily disodium EDTA is unsupported by this acid-plus-KOH preparation and is removed.
 source_data:
   origin: MediaIngredientMech
   mediaingredientmech_id: UNMAPPED_0062
@@ -69,8 +88,65 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: references.reference_id->reference=3
+- timestamp: '2026-10-10T07:40:20.478855+00:00'
+  curator: codex
+  action: CURATED_UTEX_SEVEN_STOCK_AMOUNTS_FORMS_AND_BOUNDARIES
+  notes: Source-backed amount, supplied-form and preparation-stage review. Numerical
+    mass concentrations retained; unresolved source conflicts explicitly recorded.
+    No taxa-media association added.
+  source: https://utex.org/products/bbm-edta-stock-solution
+  changes: '{"claims": [{"action_taken": "Added scoped SUPPORT amount evidence; numeric
+    value unchanged", "basis_snippet": "Bring the total volume to 1 Liter", "calculation":
+    "Direct g/L source amount, or grams per explicit one-liter total; no molecular-weight
+    or working-dilution calculation.", "field": "composition[0].concentration", "ingredient":
+    "EDTA (acid form)", "locator": "Directions; ingredient item 1 and final-volume
+    instruction", "old": {"unit": "G_PER_L", "value": "50.0"}, "proposed": {"unit":
+    "G_PER_L", "value": "50.0"}, "reason": "Exact UTEX amount and volume basis retained;
+    any identity correction is separately evidenced.", "reference": "https://utex.org/products/bbm-edta-stock-solution",
+    "snippet": "50 grams of EDTA, acid form", "source_component": "EDTA, acid form",
+    "status": "evidence_only"}, {"action_taken": "Added scoped SUPPORT amount evidence;
+    numeric value unchanged", "basis_snippet": "Bring the total volume to 1 Liter",
+    "calculation": "Direct g/L source amount, or grams per explicit one-liter total;
+    no molecular-weight or working-dilution calculation.", "field": "composition[1].concentration",
+    "ingredient": "Potassium hydroxide", "locator": "Directions; ingredient item 2
+    and final-volume instruction", "old": {"unit": "G_PER_L", "value": "31.0"}, "proposed":
+    {"unit": "G_PER_L", "value": "31.0"}, "reason": "Exact UTEX amount and volume
+    basis retained; any identity correction is separately evidenced.", "reference":
+    "https://utex.org/products/bbm-edta-stock-solution", "snippet": "31 grams of KOH",
+    "source_component": "KOH", "status": "evidence_only"}], "context_notes": "Corrected
+    preparation, storage and stock/receiving concentration wording using root evidence;
+    retained unresolved source discrepancies.", "counts": {"bibliographic_entries_enriched":
+    1, "ingredient_identities_corrected": 1, "ingredient_mim_links_corrected": 1,
+    "new_curation_history": 1, "new_evidence": 5, "new_references": 2, "recipe_context_notes_corrected":
+    1}, "identity_changes": [{"field": "composition[0]", "matching_mim_link_corrected":
+    true, "new_label": "EDTA (acid form)", "new_term_id": "CHEBI:4735", "old_label":
+    "EDTA (acid form)", "old_term": {"id": "CHEBI:42191", "label": "EDTA(4-)"}, "sources":
+    [{"locator": "Formula field", "reference": "https://www.ebi.ac.uk/chebi/CHEBI:4735",
+    "snippet": "C10H16N2O8"}, {"locator": "Formula field", "reference": "https://www.ebi.ac.uk/chebi/CHEBI:42191",
+    "snippet": "C10H12N2O8"}]}], "stock_boundary": "unchanged"}'
 references:
 - reference: https://utex.org/products/bbm-edta-stock-solution
+  title: BBM EDTA Stock Solution Recipe | UTEX Culture Collection of Algae
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10; institution=UTEX Culture Collection of Algae; named authors,
+    publication year and DOI not stated.
 - reference: UTEX:bbm-edta-stock-solution
 - reference: MediaIngredientMech:UNMAPPED_0062
+- reference: https://www.ebi.ac.uk/chebi/CHEBI:4735
+  title: ethylenediaminetetraacetic acid (CHEBI:4735)
+  notes: 'source_type=web_page; discovery_mode=cross_reference; accessed_on=2026-10-10;
+    Chemical identity evidence only; no recipe amount is inferred. Formula field. '
+- reference: https://www.ebi.ac.uk/chebi/CHEBI:42191
+  title: EDTA(4-) (CHEBI:42191)
+  notes: 'source_type=web_page; discovery_mode=cross_reference; accessed_on=2026-10-10;
+    Chemical identity evidence only; no recipe amount is inferred. Formula field. '
 category: bacterial
+evidence:
+- reference: https://utex.org/products/bbm-edta-stock-solution
+  supports: SUPPORT
+  snippet: approximately 900 mL
+  explanation: 'Supports notes: free-acid input and KOH preparation, final-volume
+    basis, storage and explicit molarity/speciation hold. Separate source excerpts
+    (Directions/table headings/footnote): ''approximately 900 mL''; ''50 grams of
+    EDTA, acid form''; ''31 grams of KOH''; ''Bring the total volume to 1 Liter'';
+    ''~ 8.5 µM''; ''darkness at room temperature'''

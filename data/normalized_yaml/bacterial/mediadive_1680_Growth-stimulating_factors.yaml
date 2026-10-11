@@ -16,6 +16,33 @@ composition:
     label: isobutyric acid
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1680
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "Isobutyric acid",
+                      "compound_id": 222,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "g",
+                      "g_l": 5,
+                      "mmol_l": 56.7472,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Isobutyric
+      acid) in MediaDive solution 1680; locator=$.data.recipe[0] (compound_id=222).
+      Provider explicitly reports g_l=5. Arithmetic check: 5 g * 1 g/g / (1000 ml
+      / 1000 ml per L) = 5 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T08:55:26.471893+00:00;
+      response SHA256=3ad4d06c54d3e76b86999efa93e83fa5750a12e9b026d645609a60adce2c85ea.'
 - preferred_term: Valeric acid
   concentration:
     value: '5'
@@ -28,6 +55,33 @@ composition:
     label: valeric acid
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1680
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Valeric acid",
+                      "compound_id": 224,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "g",
+                      "g_l": 5,
+                      "mmol_l": 48.9572,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Valeric
+      acid) in MediaDive solution 1680; locator=$.data.recipe[1] (compound_id=224).
+      Provider explicitly reports g_l=5. Arithmetic check: 5 g * 1 g/g / (1000 ml
+      / 1000 ml per L) = 5 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T08:55:26.471893+00:00;
+      response SHA256=3ad4d06c54d3e76b86999efa93e83fa5750a12e9b026d645609a60adce2c85ea.'
 - preferred_term: 2-Methylbutyric acid
   concentration:
     value: '5'
@@ -40,6 +94,33 @@ composition:
     label: 2-methylbutyric acid
     confidence: 0.9
     match_type: manual_curated
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1680
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "2-Methylbutyric acid",
+                      "compound_id": 480,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "g",
+                      "g_l": 5,
+                      "mmol_l": 48.9572,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[2].concentration (2-Methylbutyric
+      acid) in MediaDive solution 1680; locator=$.data.recipe[2] (compound_id=480).
+      Provider explicitly reports g_l=5. Arithmetic check: 5 g * 1 g/g / (1000 ml
+      / 1000 ml per L) = 5 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T08:55:26.471893+00:00;
+      response SHA256=3ad4d06c54d3e76b86999efa93e83fa5750a12e9b026d645609a60adce2c85ea.'
 - preferred_term: 3-Methylbutyric acid
   concentration:
     value: '5'
@@ -52,6 +133,33 @@ composition:
     label: isovaleric acid
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1680
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "3-Methylbutyric acid",
+                      "compound_id": 768,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "g",
+                      "g_l": 5,
+                      "mmol_l": 48.9563,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[3].concentration (3-Methylbutyric
+      acid) in MediaDive solution 1680; locator=$.data.recipe[3] (compound_id=768).
+      Provider explicitly reports g_l=5. Arithmetic check: 5 g * 1 g/g / (1000 ml
+      / 1000 ml per L) = 5 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T08:55:26.471893+00:00;
+      response SHA256=3ad4d06c54d3e76b86999efa93e83fa5750a12e9b026d645609a60adce2c85ea.'
 - preferred_term: Caproic acid
   concentration:
     value: '2'
@@ -64,6 +172,33 @@ composition:
     label: hexanoic acid
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1680
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 5,
+                      "compound": "Caproic acid",
+                      "compound_id": 430,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "g",
+                      "g_l": 2,
+                      "mmol_l": 17.2176,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[4].concentration (Caproic
+      acid) in MediaDive solution 1680; locator=$.data.recipe[4] (compound_id=430).
+      Provider explicitly reports g_l=2. Arithmetic check: 2 g * 1 g/g / (1000 ml
+      / 1000 ml per L) = 2 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T08:55:26.471893+00:00;
+      response SHA256=3ad4d06c54d3e76b86999efa93e83fa5750a12e9b026d645609a60adce2c85ea.'
 - preferred_term: Succinic acid
   concentration:
     value: '6'
@@ -76,10 +211,37 @@ composition:
     label: succinic acid
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1680
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 6,
+                      "compound": "Succinic acid",
+                      "compound_id": 83,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 6,
+                      "unit": "g",
+                      "g_l": 6,
+                      "mmol_l": 50.8087,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[5].concentration (Succinic
+      acid) in MediaDive solution 1680; locator=$.data.recipe[5] (compound_id=83).
+      Provider explicitly reports g_l=6. Arithmetic check: 6 g * 1 g/g / (1000 ml
+      / 1000 ml per L) = 6 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T08:55:26.471893+00:00;
+      response SHA256=3ad4d06c54d3e76b86999efa93e83fa5750a12e9b026d645609a60adce2c85ea.'
 - preferred_term: Distilled water
   concentration:
-    value: '1000'
-    unit: PERCENT_V_V
+    value: '1'
+    unit: L
   term:
     id: mediadive.compound:4
     label: Distilled water
@@ -88,6 +250,491 @@ composition:
     label: water
     confidence: 0.7
     match_type: corpus_consensus
+  notes: 'Correct the importer unit error: 1000 ml / 1000 = 1 L water input per stock
+    preparation, not 1000% v/v, a measured final volume or a receiving-medium concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1680
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 7,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1000,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[6].preferred_term: Correct the importer unit error: 1000 ml / 1000 = 1 L water input per stock preparation, not 1000% v/v, a measured final volume or a receiving-medium concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[6]; accessed=2026-10-09T04:05:07.338122+00:00; capture SHA256=3ad4d06c54d3e76b86999efa93e83fa5750a12e9b026d645609a60adce2c85ea.
+
+      Additional exact excerpt: {
+                      "recipe_order": 7,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1000,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[6].concentration: Correct the importer unit error: 1000 ml / 1000 = 1 L water input per stock preparation, not 1000% v/v, a measured final volume or a receiving-medium concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[6]; accessed=2026-10-09T04:05:07.338122+00:00; capture SHA256=3ad4d06c54d3e76b86999efa93e83fa5750a12e9b026d645609a60adce2c85ea.
+
+      Additional exact excerpt: {
+                      "recipe_order": 7,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1000,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[6].notes: Correct the importer unit error: 1000 ml / 1000 = 1 L water input per stock preparation, not 1000% v/v, a measured final volume or a receiving-medium concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[6]; accessed=2026-10-09T04:05:07.338122+00:00; capture SHA256=3ad4d06c54d3e76b86999efa93e83fa5750a12e9b026d645609a60adce2c85ea.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "Isobutyric acid",
+                      "compound_id": 222,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "g",
+                      "g_l": 5,
+                      "mmol_l": 56.7472,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "Valeric acid",
+                      "compound_id": 224,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "g",
+                      "g_l": 5,
+                      "mmol_l": 48.9572,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 3,
+                      "compound": "2-Methylbutyric acid",
+                      "compound_id": 480,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "g",
+                      "g_l": 5,
+                      "mmol_l": 48.9572,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 4,
+                      "compound": "3-Methylbutyric acid",
+                      "compound_id": 768,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "g",
+                      "g_l": 5,
+                      "mmol_l": 48.9563,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 5,
+                      "compound": "Caproic acid",
+                      "compound_id": 430,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "g",
+                      "g_l": 2,
+                      "mmol_l": 17.2176,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 6,
+                      "compound": "Succinic acid",
+                      "compound_id": 83,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 6,
+                      "unit": "g",
+                      "g_l": 6,
+                      "mmol_l": 50.8087,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 7,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1000,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+              ]
+      ingredients: The exact source enumerates seven composition rows, which are represented in composition, with its unquantified NaOH preparation separately preserved. Remove the legacy stub and only its placeholder-related incomplete_composition flag, not a real ingredient or evidence claim. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe; accessed=2026-10-09T04:05:07.338122+00:00; capture SHA256=3ad4d06c54d3e76b86999efa93e83fa5750a12e9b026d645609a60adce2c85ea.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "Isobutyric acid",
+                      "compound_id": 222,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "g",
+                      "g_l": 5,
+                      "mmol_l": 56.7472,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "Valeric acid",
+                      "compound_id": 224,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "g",
+                      "g_l": 5,
+                      "mmol_l": 48.9572,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 3,
+                      "compound": "2-Methylbutyric acid",
+                      "compound_id": 480,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "g",
+                      "g_l": 5,
+                      "mmol_l": 48.9572,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 4,
+                      "compound": "3-Methylbutyric acid",
+                      "compound_id": 768,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "g",
+                      "g_l": 5,
+                      "mmol_l": 48.9563,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 5,
+                      "compound": "Caproic acid",
+                      "compound_id": 430,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "g",
+                      "g_l": 2,
+                      "mmol_l": 17.2176,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 6,
+                      "compound": "Succinic acid",
+                      "compound_id": 83,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 6,
+                      "unit": "g",
+                      "g_l": 6,
+                      "mmol_l": 50.8087,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 7,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1000,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+              ]
+      data_quality_flags: The exact source enumerates seven composition rows, which are represented in composition, with its unquantified NaOH preparation separately preserved. Remove the legacy stub and only its placeholder-related incomplete_composition flag, not a real ingredient or evidence claim. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe; accessed=2026-10-09T04:05:07.338122+00:00; capture SHA256=3ad4d06c54d3e76b86999efa93e83fa5750a12e9b026d645609a60adce2c85ea.
+
+      Additional exact excerpt: "Growth-stimulating factors"
+      references[0].title: Use the captured official source title. The prior MediaDive solution 1680 prefix is an accession label, not part of that title; the accession and earlier evidence remain unchanged. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.name; accessed=2026-10-09T04:05:07.338122+00:00; capture SHA256=3ad4d06c54d3e76b86999efa93e83fa5750a12e9b026d645609a60adce2c85ea.
+
+      Additional exact excerpt: Growth-stimulating factors
+      notes: Preserve six existing API-declared stock rates and their prior evidence unchanged. They are not independently measured final volumes or receiving-medium concentrations. Water is an explicit preparation input, and NaOH is unquantified stock titration; no universal working dose is inferred. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T04:05:07.338122+00:00; capture SHA256=3ad4d06c54d3e76b86999efa93e83fa5750a12e9b026d645609a60adce2c85ea.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "Isobutyric acid",
+                      "compound_id": 222,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "g",
+                      "g_l": 5,
+                      "mmol_l": 56.7472,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "Valeric acid",
+                      "compound_id": 224,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "g",
+                      "g_l": 5,
+                      "mmol_l": 48.9572,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 3,
+                      "compound": "2-Methylbutyric acid",
+                      "compound_id": 480,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "g",
+                      "g_l": 5,
+                      "mmol_l": 48.9572,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 4,
+                      "compound": "3-Methylbutyric acid",
+                      "compound_id": 768,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "g",
+                      "g_l": 5,
+                      "mmol_l": 48.9563,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 5,
+                      "compound": "Caproic acid",
+                      "compound_id": 430,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "g",
+                      "g_l": 2,
+                      "mmol_l": 17.2176,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 6,
+                      "compound": "Succinic acid",
+                      "compound_id": 83,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 6,
+                      "unit": "g",
+                      "g_l": 6,
+                      "mmol_l": 50.8087,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 7,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1000,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+              ]
+      notes: Full exact-source recipe and stock/preparation tables were inspected. Reconstructed nodes retain explicit source scope; complete prior ingredient/stock assertions, including copied LB mappings and stage conflations, are archived in append-only history. A title alone is not the basis for removal. Unchanged annotations are preserved, not recertified; no new organism-growth association is added. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T04:05:07.338122+00:00; capture SHA256=3ad4d06c54d3e76b86999efa93e83fa5750a12e9b026d645609a60adce2c85ea.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "Isobutyric acid",
+                      "compound_id": 222,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "g",
+                      "g_l": 5,
+                      "mmol_l": 56.7472,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "Valeric acid",
+                      "compound_id": 224,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "g",
+                      "g_l": 5,
+                      "mmol_l": 48.9572,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 3,
+                      "compound": "2-Methylbutyric acid",
+                      "compound_id": 480,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "g",
+                      "g_l": 5,
+                      "mmol_l": 48.9572,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 4,
+                      "compound": "3-Methylbutyric acid",
+                      "compound_id": 768,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "g",
+                      "g_l": 5,
+                      "mmol_l": 48.9563,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 5,
+                      "compound": "Caproic acid",
+                      "compound_id": 430,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "g",
+                      "g_l": 2,
+                      "mmol_l": 17.2176,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 6,
+                      "compound": "Succinic acid",
+                      "compound_id": 83,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 6,
+                      "unit": "g",
+                      "g_l": 6,
+                      "mmol_l": 50.8087,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 7,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1000,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+              ]
+      notes: The old quantity is absent or relocated in the complete source reconstruction. Preserve its exact old node in history rather than retaining an unsupported copied concentration or counting a stock component twice. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T04:05:07.338122+00:00; capture SHA256=3ad4d06c54d3e76b86999efa93e83fa5750a12e9b026d645609a60adce2c85ea.
+- preferred_term: NaOH
+  notes: Source preparation adds NaOH to stock pH 9.0 without a fixed amount or carrier
+    strength. Keep this titration separate from the provider-declared acid rates and
+    water input.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1680
+    supports: SUPPORT
+    snippet: '"Dissolve ingredients, adjust pH to 9.0 with NaOH, then autoclave under
+      100% N2 gas."'
+    explanation: |-
+      composition[7].preferred_term: Source preparation adds NaOH to stock pH 9.0 without a fixed amount or carrier strength. Keep this titration separate from the provider-declared acid rates and water input. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.steps[0].step; accessed=2026-10-09T04:05:07.338122+00:00; capture SHA256=3ad4d06c54d3e76b86999efa93e83fa5750a12e9b026d645609a60adce2c85ea.
+
+      Additional exact excerpt: "Dissolve ingredients, adjust pH to 9.0 with NaOH, then autoclave under 100% N2 gas."
+      composition[7].concentration: Source preparation adds NaOH to stock pH 9.0 without a fixed amount or carrier strength. Keep this titration separate from the provider-declared acid rates and water input. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.steps[0].step; accessed=2026-10-09T04:05:07.338122+00:00; capture SHA256=3ad4d06c54d3e76b86999efa93e83fa5750a12e9b026d645609a60adce2c85ea.
+
+      Additional exact excerpt: "Dissolve ingredients, adjust pH to 9.0 with NaOH, then autoclave under 100% N2 gas."
+      composition[7].notes: Source preparation adds NaOH to stock pH 9.0 without a fixed amount or carrier strength. Keep this titration separate from the provider-declared acid rates and water input. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.steps[0].step; accessed=2026-10-09T04:05:07.338122+00:00; capture SHA256=3ad4d06c54d3e76b86999efa93e83fa5750a12e9b026d645609a60adce2c85ea.
 preparation_notes: Dissolve ingredients, adjust pH to 9.0 with NaOH, then autoclave
   under 100% N2 gas.
 curation_history:
@@ -123,11 +770,305 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
-ingredients:
-- preferred_term: See source for composition
-  concentration:
-    value: variable
-    unit: VARIABLE
-data_quality_flags:
-- incomplete_composition
+- timestamp: '2026-10-07T09:01:17.963098+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/1680
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "5"} -> {"unit":
+    "G_PER_L", "value": "5"} (evidence_only); composition[1].concentration: {"unit":
+    "G_PER_L", "value": "5"} -> {"unit": "G_PER_L", "value": "5"} (evidence_only);
+    composition[2].concentration: {"unit": "G_PER_L", "value": "5"} -> {"unit": "G_PER_L",
+    "value": "5"} (evidence_only); composition[3].concentration: {"unit": "G_PER_L",
+    "value": "5"} -> {"unit": "G_PER_L", "value": "5"} (evidence_only); composition[4].concentration:
+    {"unit": "G_PER_L", "value": "2"} -> {"unit": "G_PER_L", "value": "2"} (evidence_only);
+    composition[5].concentration: {"unit": "G_PER_L", "value": "6"} -> {"unit": "G_PER_L",
+    "value": "6"} (evidence_only)'
+- timestamp: '2026-10-09T04:52:49.323535+00:00'
+  curator: codex
+  action: RESTORED_MEDIUM_829_SOURCE_FORMULATIONS_AND_STOCK_SCOPES_WITH_EVIDENCE
+  notes: Restore exact-source medium-829 formulations and stock boundaries, preserve
+    provider rates/nulls and source conflicts, repair quantity units and family scope,
+    and retain prior evidence/history. Each scientific change is linked to an inspected
+    source excerpt; no growth association inferred.
+  source: https://mediadive.dsmz.de/rest/solution/1680
+  changes: '[{"old_field": "composition[0].concentration", "field": "composition[0].concentration",
+    "old": {"value": "5", "unit": "G_PER_L"}, "new": {"value": "5", "unit": "G_PER_L"},
+    "status": "verified", "reference": "https://mediadive.dsmz.de/rest/solution/1680",
+    "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\":
+    \"Isobutyric acid\",\n                \"compound_id\": 222,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": 56.7472,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[1].concentration", "field": "composition[1].concentration",
+    "old": {"value": "5", "unit": "G_PER_L"}, "new": {"value": "5", "unit": "G_PER_L"},
+    "status": "verified", "reference": "https://mediadive.dsmz.de/rest/solution/1680",
+    "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Valeric acid\",\n                \"compound_id\": 224,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": 48.9572,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[2].concentration", "field": "composition[2].concentration",
+    "old": {"value": "5", "unit": "G_PER_L"}, "new": {"value": "5", "unit": "G_PER_L"},
+    "status": "verified", "reference": "https://mediadive.dsmz.de/rest/solution/1680",
+    "snippet": "{\n                \"recipe_order\": 3,\n                \"compound\":
+    \"2-Methylbutyric acid\",\n                \"compound_id\": 480,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": 48.9572,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[3].concentration", "field": "composition[3].concentration",
+    "old": {"value": "5", "unit": "G_PER_L"}, "new": {"value": "5", "unit": "G_PER_L"},
+    "status": "verified", "reference": "https://mediadive.dsmz.de/rest/solution/1680",
+    "snippet": "{\n                \"recipe_order\": 4,\n                \"compound\":
+    \"3-Methylbutyric acid\",\n                \"compound_id\": 768,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": 48.9563,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[4].concentration", "field": "composition[4].concentration",
+    "old": {"value": "2", "unit": "G_PER_L"}, "new": {"value": "2", "unit": "G_PER_L"},
+    "status": "verified", "reference": "https://mediadive.dsmz.de/rest/solution/1680",
+    "snippet": "{\n                \"recipe_order\": 5,\n                \"compound\":
+    \"Caproic acid\",\n                \"compound_id\": 430,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\":
+    \"g\",\n                \"g_l\": 2,\n                \"mmol_l\": 17.2176,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[5].concentration", "field": "composition[5].concentration",
+    "old": {"value": "6", "unit": "G_PER_L"}, "new": {"value": "6", "unit": "G_PER_L"},
+    "status": "verified", "reference": "https://mediadive.dsmz.de/rest/solution/1680",
+    "snippet": "{\n                \"recipe_order\": 6,\n                \"compound\":
+    \"Succinic acid\",\n                \"compound_id\": 83,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 6,\n                \"unit\":
+    \"g\",\n                \"g_l\": 6,\n                \"mmol_l\": 50.8087,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[6].preferred_term", "field": "composition[6].preferred_term",
+    "old": "Distilled water", "new": "Distilled water", "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/solution/1680", "snippet": "{\n                \"recipe_order\":
+    7,\n                \"compound\": \"Distilled water\",\n                \"compound_id\":
+    4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1000,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[6].concentration", "field": "composition[6].concentration",
+    "old": {"value": "1000", "unit": "PERCENT_V_V"}, "new": {"value": "1", "unit":
+    "L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/1680",
+    "snippet": "{\n                \"recipe_order\": 7,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1000,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[6].notes", "field": "composition[6].notes",
+    "old": null, "new": "Correct the importer unit error: 1000 ml / 1000 = 1 L water
+    input per stock preparation, not 1000% v/v, a measured final volume or a receiving-medium
+    concentration.", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/1680",
+    "snippet": "{\n                \"recipe_order\": 7,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1000,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": null, "field": "composition[7].preferred_term",
+    "old": null, "new": "NaOH", "status": "add", "reference": "https://mediadive.dsmz.de/rest/solution/1680",
+    "snippet": "\"Dissolve ingredients, adjust pH to 9.0 with NaOH, then autoclave
+    under 100% N2 gas.\""}, {"old_field": null, "field": "composition[7].concentration",
+    "old": null, "new": null, "status": "add", "reference": "https://mediadive.dsmz.de/rest/solution/1680",
+    "snippet": "\"Dissolve ingredients, adjust pH to 9.0 with NaOH, then autoclave
+    under 100% N2 gas.\""}, {"old_field": null, "field": "composition[7].notes", "old":
+    null, "new": "Source preparation adds NaOH to stock pH 9.0 without a fixed amount
+    or carrier strength. Keep this titration separate from the provider-declared acid
+    rates and water input.", "status": "add", "reference": "https://mediadive.dsmz.de/rest/solution/1680",
+    "snippet": "\"Dissolve ingredients, adjust pH to 9.0 with NaOH, then autoclave
+    under 100% N2 gas.\""}, {"old_field": "ingredients", "field": "ingredients", "old":
+    [{"preferred_term": "See source for composition", "concentration": {"value": "variable",
+    "unit": "VARIABLE"}}], "new": null, "status": "remove_unsupported", "reference":
+    "https://mediadive.dsmz.de/rest/solution/1680", "snippet": "[\n            {\n                \"recipe_order\":
+    1,\n                \"compound\": \"Isobutyric acid\",\n                \"compound_id\":
+    222,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": 56.7472,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Valeric acid\",\n                \"compound_id\": 224,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": 48.9572,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 3,\n                \"compound\":
+    \"2-Methylbutyric acid\",\n                \"compound_id\": 480,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": 48.9572,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 4,\n                \"compound\":
+    \"3-Methylbutyric acid\",\n                \"compound_id\": 768,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": 48.9563,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 5,\n                \"compound\":
+    \"Caproic acid\",\n                \"compound_id\": 430,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\":
+    \"g\",\n                \"g_l\": 2,\n                \"mmol_l\": 17.2176,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 6,\n                \"compound\":
+    \"Succinic acid\",\n                \"compound_id\": 83,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 6,\n                \"unit\":
+    \"g\",\n                \"g_l\": 6,\n                \"mmol_l\": 50.8087,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 7,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1000,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }\n        ]"}, {"old_field": "data_quality_flags", "field": "data_quality_flags",
+    "old": ["incomplete_composition"], "new": null, "status": "remove_unsupported",
+    "reference": "https://mediadive.dsmz.de/rest/solution/1680", "snippet": "[\n            {\n                \"recipe_order\":
+    1,\n                \"compound\": \"Isobutyric acid\",\n                \"compound_id\":
+    222,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": 56.7472,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Valeric acid\",\n                \"compound_id\": 224,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": 48.9572,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 3,\n                \"compound\":
+    \"2-Methylbutyric acid\",\n                \"compound_id\": 480,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": 48.9572,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 4,\n                \"compound\":
+    \"3-Methylbutyric acid\",\n                \"compound_id\": 768,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": 48.9563,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 5,\n                \"compound\":
+    \"Caproic acid\",\n                \"compound_id\": 430,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\":
+    \"g\",\n                \"g_l\": 2,\n                \"mmol_l\": 17.2176,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 6,\n                \"compound\":
+    \"Succinic acid\",\n                \"compound_id\": 83,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 6,\n                \"unit\":
+    \"g\",\n                \"g_l\": 6,\n                \"mmol_l\": 50.8087,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 7,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1000,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }\n        ]"}, {"old_field": "references[0].title", "field": "references[0].title",
+    "old": "MediaDive solution 1680: Growth-stimulating factors", "new": "Growth-stimulating
+    factors", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/1680",
+    "snippet": "\"Growth-stimulating factors\""}, {"old_field": null, "field": "notes",
+    "old": null, "new": "Preserve six existing API-declared stock rates and their
+    prior evidence unchanged. They are not independently measured final volumes or
+    receiving-medium concentrations. Water is an explicit preparation input, and NaOH
+    is unquantified stock titration; no universal working dose is inferred.\n\nFull
+    exact-source recipe and stock/preparation tables were inspected. Reconstructed
+    nodes retain explicit source scope; complete prior ingredient/stock assertions,
+    including copied LB mappings and stage conflations, are archived in append-only
+    history. A title alone is not the basis for removal. Unchanged annotations are
+    preserved, not recertified; no new organism-growth association is added.", "status":
+    "evidence_only", "reference": "https://mediadive.dsmz.de/rest/solution/1680",
+    "snippet": "Growth-stimulating factors"}, {"old_field": "ingredients", "field":
+    "notes", "old": [{"preferred_term": "See source for composition", "concentration":
+    {"value": "variable", "unit": "VARIABLE"}}], "new": "Preserve six existing API-declared
+    stock rates and their prior evidence unchanged. They are not independently measured
+    final volumes or receiving-medium concentrations. Water is an explicit preparation
+    input, and NaOH is unquantified stock titration; no universal working dose is
+    inferred.\n\nFull exact-source recipe and stock/preparation tables were inspected.
+    Reconstructed nodes retain explicit source scope; complete prior ingredient/stock
+    assertions, including copied LB mappings and stage conflations, are archived in
+    append-only history. A title alone is not the basis for removal. Unchanged annotations
+    are preserved, not recertified; no new organism-growth association is added.",
+    "status": "evidence_only", "reference": "https://mediadive.dsmz.de/rest/solution/1680",
+    "snippet": "[\n            {\n                \"recipe_order\": 1,\n                \"compound\":
+    \"Isobutyric acid\",\n                \"compound_id\": 222,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": 56.7472,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Valeric acid\",\n                \"compound_id\": 224,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": 48.9572,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 3,\n                \"compound\":
+    \"2-Methylbutyric acid\",\n                \"compound_id\": 480,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": 48.9572,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 4,\n                \"compound\":
+    \"3-Methylbutyric acid\",\n                \"compound_id\": 768,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": 48.9563,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 5,\n                \"compound\":
+    \"Caproic acid\",\n                \"compound_id\": 430,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\":
+    \"g\",\n                \"g_l\": 2,\n                \"mmol_l\": 17.2176,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 6,\n                \"compound\":
+    \"Succinic acid\",\n                \"compound_id\": 83,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 6,\n                \"unit\":
+    \"g\",\n                \"g_l\": 6,\n                \"mmol_l\": 50.8087,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 7,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1000,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }\n        ]"}, {"old_field": "ingredients[0].concentration", "field":
+    "notes", "old": {"value": "variable", "unit": "VARIABLE"}, "new": "Preserve six
+    existing API-declared stock rates and their prior evidence unchanged. They are
+    not independently measured final volumes or receiving-medium concentrations. Water
+    is an explicit preparation input, and NaOH is unquantified stock titration; no
+    universal working dose is inferred.\n\nFull exact-source recipe and stock/preparation
+    tables were inspected. Reconstructed nodes retain explicit source scope; complete
+    prior ingredient/stock assertions, including copied LB mappings and stage conflations,
+    are archived in append-only history. A title alone is not the basis for removal.
+    Unchanged annotations are preserved, not recertified; no new organism-growth association
+    is added.", "status": "remove_unsupported", "reference": "https://mediadive.dsmz.de/rest/solution/1680",
+    "snippet": "[\n            {\n                \"recipe_order\": 1,\n                \"compound\":
+    \"Isobutyric acid\",\n                \"compound_id\": 222,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": 56.7472,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Valeric acid\",\n                \"compound_id\": 224,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": 48.9572,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 3,\n                \"compound\":
+    \"2-Methylbutyric acid\",\n                \"compound_id\": 480,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": 48.9572,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 4,\n                \"compound\":
+    \"3-Methylbutyric acid\",\n                \"compound_id\": 768,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": 48.9563,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 5,\n                \"compound\":
+    \"Caproic acid\",\n                \"compound_id\": 430,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\":
+    \"g\",\n                \"g_l\": 2,\n                \"mmol_l\": 17.2176,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 6,\n                \"compound\":
+    \"Succinic acid\",\n                \"compound_id\": 83,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 6,\n                \"unit\":
+    \"g\",\n                \"g_l\": 6,\n                \"mmol_l\": 50.8087,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 7,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1000,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }\n        ]"}]'
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/1680
+  title: Growth-stimulating factors
+  notes: |-
+    source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07; source_organization=DSMZ; locator=$.data; response_sha256=3ad4d06c54d3e76b86999efa93e83fa5750a12e9b026d645609a60adce2c85ea; individual authors and publication year not supplied. Provider-declared solution amounts, not receiving-medium concentrations.
+
+    source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-09; capture_sha256=3ad4d06c54d3e76b86999efa93e83fa5750a12e9b026d645609a60adce2c85ea. Individual authors and publication year not supplied; copyright/access year is not publication year. Source-scoped recipe evidence, not growth evidence.
+notes: |-
+  Preserve six existing API-declared stock rates and their prior evidence unchanged. They are not independently measured final volumes or receiving-medium concentrations. Water is an explicit preparation input, and NaOH is unquantified stock titration; no universal working dose is inferred.
+
+  Full exact-source recipe and stock/preparation tables were inspected. Reconstructed nodes retain explicit source scope; complete prior ingredient/stock assertions, including copied LB mappings and stage conflations, are archived in append-only history. A title alone is not the basis for removal. Unchanged annotations are preserved, not recertified; no new organism-growth association is added.

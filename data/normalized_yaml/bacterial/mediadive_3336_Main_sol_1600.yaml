@@ -23,6 +23,33 @@ composition:
     label: aspartic acid
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3336
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "DL-aspartic acid",
+                      "compound_id": 1445,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.299,
+                      "unit": "g",
+                      "g_l": 0.835196,
+                      "mmol_l": 6.27481,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (DL-aspartic
+      acid) in MediaDive solution 3336; locator=$.data.recipe[1] (compound_id=1445).
+      Provider explicitly reports g_l=0.835196. Arithmetic check: 0.299 g * 1 g/g
+      / (358 ml / 1000 ml per L) = 0.8351955307262569832402234637 g/L, consistent
+      with the reported value at its precision. Evidence supports the provider-declared
+      concentration within this solution, not a concentration in a receiving medium
+      or an independently measured final volume. Water addition alone is not used
+      to infer a final volume. Additional exact excerpt at $.data.volume: "volume":
+      358. Retrieved 2026-10-07T09:20:31.225408+00:00; response SHA256=739efdb3bfc1d279c9c50365b5013943700b1e999d5cdc58b6a85060b51f9a2d.'
 - preferred_term: L-Glutamic acid
   concentration:
     value: '1.39665'
@@ -35,6 +62,33 @@ composition:
     label: L-glutamic acid
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3336
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "L-Glutamic acid",
+                      "compound_id": 374,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.5,
+                      "unit": "g",
+                      "g_l": 1.39665,
+                      "mmol_l": 9.49261,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[2].concentration (L-Glutamic
+      acid) in MediaDive solution 3336; locator=$.data.recipe[2] (compound_id=374).
+      Provider explicitly reports g_l=1.39665. Arithmetic check: 0.5 g * 1 g/g / (358
+      ml / 1000 ml per L) = 1.396648044692737430167597765 g/L, consistent with the
+      reported value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 358. Retrieved 2026-10-07T09:20:31.225408+00:00;
+      response SHA256=739efdb3bfc1d279c9c50365b5013943700b1e999d5cdc58b6a85060b51f9a2d.'
 - preferred_term: L-Glutamine
   concentration:
     value: '0.29228'
@@ -59,6 +113,33 @@ composition:
     label: L-proline
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3336
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 5,
+                      "compound": "L-Proline",
+                      "compound_id": 1130,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.3,
+                      "unit": "g",
+                      "g_l": 0.837989,
+                      "mmol_l": 7.27863,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[4].concentration (L-Proline)
+      in MediaDive solution 3336; locator=$.data.recipe[4] (compound_id=1130). Provider
+      explicitly reports g_l=0.837989. Arithmetic check: 0.3 g * 1 g/g / (358 ml /
+      1000 ml per L) = 0.8379888268156424581005586592 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 358. Retrieved 2026-10-07T09:20:31.225408+00:00;
+      response SHA256=739efdb3bfc1d279c9c50365b5013943700b1e999d5cdc58b6a85060b51f9a2d.'
 - preferred_term: alpha-ketoglutaric acid
   concentration:
     value: '0.835196'
@@ -71,6 +152,33 @@ composition:
     label: 2-oxoglutaric acid
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3336
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 6,
+                      "compound": "alpha-ketoglutaric acid",
+                      "compound_id": 1408,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.299,
+                      "unit": "g",
+                      "g_l": 0.835196,
+                      "mmol_l": 5.7166,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[5].concentration (alpha-ketoglutaric
+      acid) in MediaDive solution 3336; locator=$.data.recipe[5] (compound_id=1408).
+      Provider explicitly reports g_l=0.835196. Arithmetic check: 0.299 g * 1 g/g
+      / (358 ml / 1000 ml per L) = 0.8351955307262569832402234637 g/L, consistent
+      with the reported value at its precision. Evidence supports the provider-declared
+      concentration within this solution, not a concentration in a receiving medium
+      or an independently measured final volume. Water addition alone is not used
+      to infer a final volume. Additional exact excerpt at $.data.volume: "volume":
+      358. Retrieved 2026-10-07T09:20:31.225408+00:00; response SHA256=739efdb3bfc1d279c9c50365b5013943700b1e999d5cdc58b6a85060b51f9a2d.'
 - preferred_term: D-Glucose
   concentration:
     value: '6.25419'
@@ -83,6 +191,33 @@ composition:
     label: glucose
     confidence: 0.9
     match_type: manual_curated
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3336
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 7,
+                      "compound": "D-Glucose",
+                      "compound_id": 211,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2.239,
+                      "unit": "g",
+                      "g_l": 6.25419,
+                      "mmol_l": 34.7146,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[6].concentration (D-Glucose)
+      in MediaDive solution 3336; locator=$.data.recipe[6] (compound_id=211). Provider
+      explicitly reports g_l=6.25419. Arithmetic check: 2.239 g * 1 g/g / (358 ml
+      / 1000 ml per L) = 6.254189944134078212290502793 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 358. Retrieved 2026-10-07T09:20:31.225408+00:00;
+      response SHA256=739efdb3bfc1d279c9c50365b5013943700b1e999d5cdc58b6a85060b51f9a2d.'
 - preferred_term: Demineralized water
   concentration:
     value: '966.4804469273743'
@@ -165,6 +300,21 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '3 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T09:21:52.094915+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/3336
+  changes: 'composition[1].concentration: {"unit": "G_PER_L", "value": "0.835196"}
+    -> {"unit": "G_PER_L", "value": "0.835196"} (evidence_only); composition[2].concentration:
+    {"unit": "G_PER_L", "value": "1.39665"} -> {"unit": "G_PER_L", "value": "1.39665"}
+    (evidence_only); composition[4].concentration: {"unit": "G_PER_L", "value": "0.837989"}
+    -> {"unit": "G_PER_L", "value": "0.837989"} (evidence_only); composition[5].concentration:
+    {"unit": "G_PER_L", "value": "0.835196"} -> {"unit": "G_PER_L", "value": "0.835196"}
+    (evidence_only); composition[6].concentration: {"unit": "G_PER_L", "value": "6.25419"}
+    -> {"unit": "G_PER_L", "value": "6.25419"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -173,3 +323,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/3336
+  title: 'MediaDive solution 3336: Main sol. 1600'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=739efdb3bfc1d279c9c50365b5013943700b1e999d5cdc58b6a85060b51f9a2d;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

@@ -11,202 +11,748 @@ ingredients:
     id: CHEBI:4735
     label: ethylenediaminetetraacetic acid
   concentration:
-    value: '0.05133'
-    unit: MILLIMOLAR
+    value: '15'
+    unit: MG_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:4735
     label: ethylenediaminetetraacetic acid
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/398/
+    supports: SUPPORT
+    snippet: '0.05133'
+    explanation: 'Historical database provenance for ingredients[0].concentration
+      (EDTA): this accession''s table labels the amount in mM and reports 0.05133
+      mM. This supports what MediaDB asserted, not independent confirmation of the
+      current concentration; primary-source disposition follows separately.'
+  - reference: doi:10.1002/yea.320080703
+    supports: SUPPORT
+    snippet: EDTA, 15 mg
+    explanation: 'Supports ingredients[0].concentration for the supplied ingredient
+      in this exact formulation: 15 MG_PER_L. Restore the directly reported source
+      mass concentration; no molecular-weight conversion or claim that every historic
+      conversion was wrong. Basis excerpt: ''on a mineral medium containing per litre:''.
+      printed page 502, PDF page 2; Methods / Microorganisms and growth conditions,
+      right column. none; direct source units, no mass/molar or assumed-volume conversion.
+      PDF capture and transcription conventions are identified in the bibliography.'
+  notes: 'Ingredient source review: Restore the directly reported source mass concentration;
+    no molecular-weight conversion or claim that every historic conversion was wrong.
+    Source amount: 15 mg; per liter of mineral medium.'
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
     label: biotin
   concentration:
-    value: '0.0002047'
-    unit: MILLIMOLAR
-  notes: 'Cross-references: KEGG:btn'
+    value: '0.05'
+    unit: MG_PER_L
+  notes: 'Cross-references: KEGG:btn Imported cross-reference annotation retained
+    as database provenance, not new supplied-form evidence. Ingredient source review:
+    Restore the directly reported source mass concentration; no molecular-weight conversion
+    or claim that every historic conversion was wrong. Source amount: 0.05 mg; final
+    vitamin concentration per liter.'
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
     label: biotin
-- preferred_term: Nicotinate
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/398/
+    supports: SUPPORT
+    snippet: '0.0002047'
+    explanation: 'Historical database provenance for ingredients[1].concentration
+      (Biotin): this accession''s table labels the amount in mM and reports 0.0002047
+      mM. This supports what MediaDB asserted, not independent confirmation of the
+      current concentration; primary-source disposition follows separately.'
+  - reference: doi:10.1002/yea.320080703
+    supports: SUPPORT
+    snippet: biotin, 0·05 mg
+    explanation: 'Supports ingredients[1].concentration for the supplied ingredient
+      in this exact formulation: 0.05 MG_PER_L. Restore the directly reported source
+      mass concentration; no molecular-weight conversion or claim that every historic
+      conversion was wrong. Basis excerpt: ''Final vitamin concentrations per litre
+      were:''. printed page 502, PDF page 2; Methods / Microorganisms and growth conditions,
+      right column. none; direct source units, no mass/molar or assumed-volume conversion.
+      PDF capture and transcription conventions are identified in the bibliography.'
+- preferred_term: nicotinic acid
   concentration:
-    value: '0.008123'
-    unit: MILLIMOLAR
-  notes: 'Cross-references: KEGG:nac'
+    value: '1'
+    unit: MG_PER_L
+  notes: 'Cross-references: KEGG:nac Imported cross-reference annotation retained
+    as database provenance, not new supplied-form evidence. Ingredient source review:
+    Restore the directly reported source mass concentration; no molecular-weight conversion
+    or claim that every historic conversion was wrong. Source amount: 1 mg; final
+    vitamin concentration per liter.'
   term:
     id: CHEBI:15940
     label: nicotinic acid
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/398/
+    supports: SUPPORT
+    snippet: '0.008123'
+    explanation: 'Historical database provenance for ingredients[2].concentration
+      (Nicotinate): this accession''s table labels the amount in mM and reports 0.008123
+      mM. This supports what MediaDB asserted, not independent confirmation of the
+      current concentration; primary-source disposition follows separately.'
+  - reference: doi:10.1002/yea.320080703
+    supports: SUPPORT
+    snippet: nicotinic acid, 1 mg
+    explanation: 'Supports ingredients[2].concentration for the supplied ingredient
+      in this exact formulation: 1 MG_PER_L. Restore the directly reported source
+      mass concentration; no molecular-weight conversion or claim that every historic
+      conversion was wrong. Basis excerpt: ''Final vitamin concentrations per litre
+      were:''. printed page 502, PDF page 2; Methods / Microorganisms and growth conditions,
+      right column. none; direct source units, no mass/molar or assumed-volume conversion.
+      PDF capture and transcription conventions are identified in the bibliography.'
+  - reference: https://www.ebi.ac.uk/chebi/CHEBI:15940
+    supports: SUPPORT
+    snippet: C6H5NO2
+    explanation: 'Identity review for ingredients[2] (Nicotinate): Supplied-form identity
+      only: the primary article names this acid or hydrate and the official ChEBI
+      formula identifies its candidate. This is not an amount source or molecular-weight
+      calculation.'
 - preferred_term: Potassium iodide
   term:
     id: CHEBI:8346
     label: potassium iodide
   concentration:
-    value: '0.0006024'
-    unit: MILLIMOLAR
+    value: '0.1'
+    unit: MG_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:8346
     label: potassium iodide
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/398/
+    supports: SUPPORT
+    snippet: '0.0006024'
+    explanation: 'Historical database provenance for ingredients[3].concentration
+      (Potassium iodide): this accession''s table labels the amount in mM and reports
+      0.0006024 mM. This supports what MediaDB asserted, not independent confirmation
+      of the current concentration; primary-source disposition follows separately.'
+  - reference: doi:10.1002/yea.320080703
+    supports: SUPPORT
+    snippet: KI, 0·1 mg
+    explanation: 'Supports ingredients[3].concentration for the supplied ingredient
+      in this exact formulation: 0.1 MG_PER_L. Restore the directly reported source
+      mass concentration; no molecular-weight conversion or claim that every historic
+      conversion was wrong. Basis excerpt: ''on a mineral medium containing per litre:''.
+      printed page 502, PDF page 2; Methods / Microorganisms and growth conditions,
+      right column. none; direct source units, no mass/molar or assumed-volume conversion.
+      PDF capture and transcription conventions are identified in the bibliography.'
+  notes: 'Ingredient source review: Restore the directly reported source mass concentration;
+    no molecular-weight conversion or claim that every historic conversion was wrong.
+    Source amount: 0.1 mg; per liter of mineral medium.'
 - preferred_term: Ethanol
   term:
     id: CHEBI:16236
     label: ethanol
   concentration:
-    value: '162.8'
-    unit: MILLIMOLAR
-  notes: 'Cross-references: KEGG:etoh'
+    value: '7.5'
+    unit: G_PER_L
+  notes: 'Cross-references: KEGG:etoh Imported cross-reference annotation retained
+    as database provenance, not new supplied-form evidence. Ingredient source review:
+    Restore the directly reported source mass concentration; no molecular-weight conversion
+    or claim that every historic conversion was wrong. Source amount: 7.5 g; carbon
+    source supplied to chemostat medium; not residual culture concentration.'
   mediaingredientmech_chebi_term:
     id: CHEBI:16236
     label: ethanol
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/398/
+    supports: SUPPORT
+    snippet: '162.8'
+    explanation: 'Historical database provenance for ingredients[4].concentration
+      (Ethanol): this accession''s table labels the amount in mM and reports 162.8
+      mM. This supports what MediaDB asserted, not independent confirmation of the
+      current concentration; primary-source disposition follows separately.'
+  - reference: doi:10.1002/yea.320080703
+    supports: SUPPORT
+    snippet: 7·5 g l-1 ethanol
+    explanation: 'Supports ingredients[4].concentration for the supplied ingredient
+      in this exact formulation: 7.5 G_PER_L. Restore the directly reported source
+      mass concentration; no molecular-weight conversion or claim that every historic
+      conversion was wrong. Basis excerpt: ''7·5 g l-1 ethanol''. printed page 502,
+      PDF page 2; Methods / Microorganisms and growth conditions, right column. none;
+      direct source units, no mass/molar or assumed-volume conversion. PDF capture
+      and transcription conventions are identified in the bibliography.'
 - preferred_term: myo-Inositol
   term:
     id: CHEBI:17268
     label: myo-inositol
   concentration:
-    value: '0.1388'
-    unit: MILLIMOLAR
-  notes: 'Cross-references: KEGG:inost'
+    value: '25'
+    unit: MG_PER_L
+  notes: 'Cross-references: KEGG:inost Imported cross-reference annotation retained
+    as database provenance, not new supplied-form evidence. Ingredient source review:
+    Restore the directly reported source mass concentration; no molecular-weight conversion
+    or claim that every historic conversion was wrong. Article says inositol; myo
+    specificity remains database-derived rather than independently established by
+    this paper. Source amount: 25 mg; final vitamin concentration per liter.'
   mediaingredientmech_chebi_term:
     id: CHEBI:17268
     label: myo-inositol
-- preferred_term: Calcium chloride anhydrous
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/398/
+    supports: SUPPORT
+    snippet: '0.1388'
+    explanation: 'Historical database provenance for ingredients[5].concentration
+      (myo-Inositol): this accession''s table labels the amount in mM and reports
+      0.1388 mM. This supports what MediaDB asserted, not independent confirmation
+      of the current concentration; primary-source disposition follows separately.'
+  - reference: doi:10.1002/yea.320080703
+    supports: SUPPORT
+    snippet: inositol, 25 mg
+    explanation: 'Supports ingredients[5].concentration for the supplied ingredient
+      in this exact formulation: 25 MG_PER_L. Restore the directly reported source
+      mass concentration; no molecular-weight conversion or claim that every historic
+      conversion was wrong. Article says inositol; myo specificity remains database-derived
+      rather than independently established by this paper. Basis excerpt: ''Final
+      vitamin concentrations per litre were:''. printed page 502, PDF page 2; Methods
+      / Microorganisms and growth conditions, right column. none; direct source units,
+      no mass/molar or assumed-volume conversion. PDF capture and transcription conventions
+      are identified in the bibliography.'
+- preferred_term: calcium chloride dihydrate
   concentration:
-    value: '0.03061'
-    unit: MILLIMOLAR
+    value: '4.5'
+    unit: MG_PER_L
   term:
-    id: CHEBI:3312
-    label: calcium dichloride
-- preferred_term: 4-Aminobenzoate
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/398/
+    supports: SUPPORT
+    snippet: '0.03061'
+    explanation: 'Historical database provenance for ingredients[6].concentration
+      (Calcium chloride anhydrous): this accession''s table labels the amount in mM
+      and reports 0.03061 mM. This supports what MediaDB asserted, not independent
+      confirmation of the current concentration; primary-source disposition follows
+      separately.'
+  - reference: doi:10.1002/yea.320080703
+    supports: SUPPORT
+    snippet: CaCl2.2H2O, 4·5 mg
+    explanation: 'Supports ingredients[6].concentration for the supplied ingredient
+      in this exact formulation: 4.5 MG_PER_L. Restore the directly reported source
+      mass concentration; no molecular-weight conversion or claim that every historic
+      conversion was wrong. Basis excerpt: ''on a mineral medium containing per litre:''.
+      printed page 502, PDF page 2; Methods / Microorganisms and growth conditions,
+      right column. none; direct source units, no mass/molar or assumed-volume conversion.
+      PDF capture and transcription conventions are identified in the bibliography.'
+  - reference: https://www.ebi.ac.uk/chebi/CHEBI:86158
+    supports: SUPPORT
+    snippet: Ca.2Cl.2H2O
+    explanation: 'Identity review for ingredients[6] (Calcium chloride anhydrous):
+      Supplied-form identity only: the primary article names this acid or hydrate
+      and the official ChEBI formula identifies its candidate. This is not an amount
+      source or molecular-weight calculation.'
+  notes: 'Ingredient source review: Restore the directly reported source mass concentration;
+    no molecular-weight conversion or claim that every historic conversion was wrong.
+    Source amount: 4.5 mg; per liter of mineral medium.'
+- preferred_term: 4-aminobenzoic acid
   term:
-    id: CHEBI:17836
-    label: 4-aminobenzoate
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
   concentration:
-    value: '0.1458'
-    unit: MILLIMOLAR
-  notes: 'Cross-references: KEGG:4abz'
+    value: '0.2'
+    unit: MG_PER_L
+  notes: 'Cross-references: KEGG:4abz Imported cross-reference annotation retained
+    as database provenance, not new supplied-form evidence. Ingredient source review:
+    Restore the directly reported source mass concentration; no molecular-weight conversion
+    or claim that every historic conversion was wrong. Replace the conjugate-base
+    identity with the source-supplied acid at 0.2 mg/L; do not label this only a unit
+    restatement. Source amount: 0.2 mg; final vitamin concentration per liter.'
   mediaingredientmech_chebi_term:
-    id: CHEBI:17836
-    label: 4-aminobenzoate
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/398/
+    supports: SUPPORT
+    snippet: '0.1458'
+    explanation: 'Historical database provenance for ingredients[7].concentration
+      (4-Aminobenzoate): this accession''s table labels the amount in mM and reports
+      0.1458 mM. This supports what MediaDB asserted, not independent confirmation
+      of the current concentration; primary-source disposition follows separately.'
+  - reference: doi:10.1002/yea.320080703
+    supports: SUPPORT
+    snippet: para-aminobenzoic acid, 0·2 mg
+    explanation: 'Supports ingredients[7].concentration for the supplied ingredient
+      in this exact formulation: 0.2 MG_PER_L. Restore the directly reported source
+      mass concentration; no molecular-weight conversion or claim that every historic
+      conversion was wrong. Replace the conjugate-base identity with the source-supplied
+      acid at 0.2 mg/L; do not label this only a unit restatement. Basis excerpt:
+      ''Final vitamin concentrations per litre were:''. printed page 502, PDF page
+      2; Methods / Microorganisms and growth conditions, right column. none; direct
+      source units, no mass/molar or assumed-volume conversion. PDF capture and transcription
+      conventions are identified in the bibliography.'
+  - reference: https://www.ebi.ac.uk/chebi/CHEBI:30753
+    supports: SUPPORT
+    snippet: C7H7NO2
+    explanation: 'Identity review for ingredients[7] (4-Aminobenzoate): Supplied-form
+      identity only: the primary article names this acid or hydrate and the official
+      ChEBI formula identifies its candidate. This is not an amount source or molecular-weight
+      calculation.'
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
     label: boric acid
   concentration:
-    value: '0.01617'
-    unit: MILLIMOLAR
+    value: '1'
+    unit: MG_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
     label: boric acid
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/398/
+    supports: SUPPORT
+    snippet: '0.01617'
+    explanation: 'Historical database provenance for ingredients[8].concentration
+      (Boric acid): this accession''s table labels the amount in mM and reports 0.01617
+      mM. This supports what MediaDB asserted, not independent confirmation of the
+      current concentration; primary-source disposition follows separately.'
+  - reference: doi:10.1002/yea.320080703
+    supports: SUPPORT
+    snippet: H3BO3, 1 mg
+    explanation: 'Supports ingredients[8].concentration for the supplied ingredient
+      in this exact formulation: 1 MG_PER_L. Restore the directly reported source
+      mass concentration; no molecular-weight conversion or claim that every historic
+      conversion was wrong. Basis excerpt: ''on a mineral medium containing per litre:''.
+      printed page 502, PDF page 2; Methods / Microorganisms and growth conditions,
+      right column. none; direct source units, no mass/molar or assumed-volume conversion.
+      PDF capture and transcription conventions are identified in the bibliography.'
+  notes: 'Ingredient source review: Restore the directly reported source mass concentration;
+    no molecular-weight conversion or claim that every historic conversion was wrong.
+    Source amount: 1 mg; per liter of mineral medium.'
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
     label: Calcium pantothenate
   concentration:
-    value: '0.002099'
-    unit: MILLIMOLAR
+    value: '1'
+    unit: MG_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31345
     label: Calcium pantothenate
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/398/
+    supports: SUPPORT
+    snippet: '0.002099'
+    explanation: 'Historical database provenance for ingredients[9].concentration
+      (Calcium pantothenate): this accession''s table labels the amount in mM and
+      reports 0.002099 mM. This supports what MediaDB asserted, not independent confirmation
+      of the current concentration; primary-source disposition follows separately.'
+  - reference: doi:10.1002/yea.320080703
+    supports: SUPPORT
+    snippet: calcium pantothenate, 1 mg
+    explanation: 'Supports ingredients[9].concentration for the supplied ingredient
+      in this exact formulation: 1 MG_PER_L. Restore the directly reported source
+      mass concentration; no molecular-weight conversion or claim that every historic
+      conversion was wrong. Basis excerpt: ''Final vitamin concentrations per litre
+      were:''. printed page 502, PDF page 2; Methods / Microorganisms and growth conditions,
+      right column. none; direct source units, no mass/molar or assumed-volume conversion.
+      PDF capture and transcription conventions are identified in the bibliography.'
+  notes: 'Ingredient source review: Restore the directly reported source mass concentration;
+    no molecular-weight conversion or claim that every historic conversion was wrong.
+    Source amount: 1 mg; final vitamin concentration per liter.'
 - preferred_term: Pyridoxine HCl
   concentration:
-    value: '0.004863'
-    unit: MILLIMOLAR
+    value: '1'
+    unit: MG_PER_L
   term:
     id: CHEBI:30961
     label: pyridoxine hydrochloride
   mediaingredientmech_chebi_term:
     id: CHEBI:30961
     label: pyridoxine hydrochloride
-- preferred_term: Manganese chloride
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/398/
+    supports: SUPPORT
+    snippet: '0.004863'
+    explanation: 'Historical database provenance for ingredients[10].concentration
+      (Pyridoxine HCl): this accession''s table labels the amount in mM and reports
+      0.004863 mM. This supports what MediaDB asserted, not independent confirmation
+      of the current concentration; primary-source disposition follows separately.'
+  - reference: doi:10.1002/yea.320080703
+    supports: SUPPORT
+    snippet: pyridoxine HCl, 1 mg
+    explanation: 'Supports ingredients[10].concentration for the supplied ingredient
+      in this exact formulation: 1 MG_PER_L. Restore the directly reported source
+      mass concentration; no molecular-weight conversion or claim that every historic
+      conversion was wrong. Basis excerpt: ''Final vitamin concentrations per litre
+      were:''. printed page 502, PDF page 2; Methods / Microorganisms and growth conditions,
+      right column. none; direct source units, no mass/molar or assumed-volume conversion.
+      PDF capture and transcription conventions are identified in the bibliography.'
+  notes: 'Ingredient source review: Restore the directly reported source mass concentration;
+    no molecular-weight conversion or claim that every historic conversion was wrong.
+    Source amount: 1 mg; final vitamin concentration per liter.'
+- preferred_term: manganese(II) chloride tetrahydrate
   concentration:
-    value: '0.005053'
-    unit: MILLIMOLAR
+    value: '1'
+    unit: MG_PER_L
   term:
-    id: CHEBI:63041
-    label: manganese(II) chloride
+    id: CHEBI:86368
+    label: manganese(II) chloride tetrahydrate
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/398/
+    supports: SUPPORT
+    snippet: '0.005053'
+    explanation: 'Historical database provenance for ingredients[11].concentration
+      (Manganese chloride): this accession''s table labels the amount in mM and reports
+      0.005053 mM. This supports what MediaDB asserted, not independent confirmation
+      of the current concentration; primary-source disposition follows separately.'
+  - reference: doi:10.1002/yea.320080703
+    supports: SUPPORT
+    snippet: MnCl2.4H2O, 1 mg
+    explanation: 'Supports ingredients[11].concentration for the supplied ingredient
+      in this exact formulation: 1 MG_PER_L. Restore the directly reported source
+      mass concentration; no molecular-weight conversion or claim that every historic
+      conversion was wrong. Basis excerpt: ''on a mineral medium containing per litre:''.
+      printed page 502, PDF page 2; Methods / Microorganisms and growth conditions,
+      right column. none; direct source units, no mass/molar or assumed-volume conversion.
+      PDF capture and transcription conventions are identified in the bibliography.'
+  - reference: https://www.ebi.ac.uk/chebi/CHEBI:86368
+    supports: SUPPORT
+    snippet: Cl2Mn.4H2O
+    explanation: 'Identity review for ingredients[11] (Manganese chloride): Supplied-form
+      identity only: the primary article names this acid or hydrate and the official
+      ChEBI formula identifies its candidate. This is not an amount source or molecular-weight
+      calculation.'
+  notes: 'Ingredient source review: Restore the directly reported source mass concentration;
+    no molecular-weight conversion or claim that every historic conversion was wrong.
+    Source amount: 1 mg; per liter of mineral medium.'
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
     label: ammonium sulfate
   concentration:
-    value: '37.84'
-    unit: MILLIMOLAR
+    value: '5'
+    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
     label: ammonium sulfate
-- preferred_term: Cobalt chloride
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/398/
+    supports: SUPPORT
+    snippet: '37.84'
+    explanation: 'Historical database provenance for ingredients[12].concentration
+      (Ammonium sulfate): this accession''s table labels the amount in mM and reports
+      37.84 mM. This supports what MediaDB asserted, not independent confirmation
+      of the current concentration; primary-source disposition follows separately.'
+  - reference: doi:10.1002/yea.320080703
+    supports: SUPPORT
+    snippet: (NH4)2SO4, 5 g
+    explanation: 'Supports ingredients[12].concentration for the supplied ingredient
+      in this exact formulation: 5 G_PER_L. Restore the directly reported source mass
+      concentration; no molecular-weight conversion or claim that every historic conversion
+      was wrong. Basis excerpt: ''on a mineral medium containing per litre:''. printed
+      page 502, PDF page 2; Methods / Microorganisms and growth conditions, right
+      column. none; direct source units, no mass/molar or assumed-volume conversion.
+      PDF capture and transcription conventions are identified in the bibliography.'
+  notes: 'Ingredient source review: Restore the directly reported source mass concentration;
+    no molecular-weight conversion or claim that every historic conversion was wrong.
+    Source amount: 5 g; per liter of mineral medium.'
+- preferred_term: cobalt chloride hexahydrate
   concentration:
-    value: '0.001261'
-    unit: MILLIMOLAR
+    value: '0.3'
+    unit: MG_PER_L
   term:
-    id: CHEBI:35696
-    label: cobalt dichloride
-- preferred_term: Zinc sulfate
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/398/
+    supports: SUPPORT
+    snippet: '0.001261'
+    explanation: 'Historical database provenance for ingredients[13].concentration
+      (Cobalt chloride): this accession''s table labels the amount in mM and reports
+      0.001261 mM. This supports what MediaDB asserted, not independent confirmation
+      of the current concentration; primary-source disposition follows separately.'
+  - reference: doi:10.1002/yea.320080703
+    supports: SUPPORT
+    snippet: CoCl2.6H2O, 0·3 mg
+    explanation: 'Supports ingredients[13].concentration for the supplied ingredient
+      in this exact formulation: 0.3 MG_PER_L. Restore the directly reported source
+      mass concentration; no molecular-weight conversion or claim that every historic
+      conversion was wrong. Basis excerpt: ''on a mineral medium containing per litre:''.
+      printed page 502, PDF page 2; Methods / Microorganisms and growth conditions,
+      right column. none; direct source units, no mass/molar or assumed-volume conversion.
+      PDF capture and transcription conventions are identified in the bibliography.'
+  - reference: https://www.ebi.ac.uk/chebi/CHEBI:53503
+    supports: SUPPORT
+    snippet: 2Cl.Co.6H2O
+    explanation: 'Identity review for ingredients[13] (Cobalt chloride): Supplied-form
+      identity only: the primary article names this acid or hydrate and the official
+      ChEBI formula identifies its candidate. This is not an amount source or molecular-weight
+      calculation.'
+  notes: 'Ingredient source review: Restore the directly reported source mass concentration;
+    no molecular-weight conversion or claim that every historic conversion was wrong.
+    Source amount: 0.3 mg; per liter of mineral medium.'
+- preferred_term: zinc sulfate heptahydrate
   term:
-    id: CHEBI:35176
-    label: zinc sulfate
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
   concentration:
-    value: '0.01565'
-    unit: MILLIMOLAR
+    value: '4.5'
+    unit: MG_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:35176
-    label: zinc sulfate
-- preferred_term: Sodium molybdate
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/398/
+    supports: SUPPORT
+    snippet: '0.01565'
+    explanation: 'Historical database provenance for ingredients[14].concentration
+      (Zinc sulfate): this accession''s table labels the amount in mM and reports
+      0.01565 mM. This supports what MediaDB asserted, not independent confirmation
+      of the current concentration; primary-source disposition follows separately.'
+  - reference: doi:10.1002/yea.320080703
+    supports: SUPPORT
+    snippet: ZnSO4.7H2O, 4·5 mg
+    explanation: 'Supports ingredients[14].concentration for the supplied ingredient
+      in this exact formulation: 4.5 MG_PER_L. Restore the directly reported source
+      mass concentration; no molecular-weight conversion or claim that every historic
+      conversion was wrong. Basis excerpt: ''on a mineral medium containing per litre:''.
+      printed page 502, PDF page 2; Methods / Microorganisms and growth conditions,
+      right column. none; direct source units, no mass/molar or assumed-volume conversion.
+      PDF capture and transcription conventions are identified in the bibliography.'
+  - reference: https://www.ebi.ac.uk/chebi/CHEBI:32312
+    supports: SUPPORT
+    snippet: 7H2O.O4S.Zn
+    explanation: 'Identity review for ingredients[14] (Zinc sulfate): Supplied-form
+      identity only: the primary article names this acid or hydrate and the official
+      ChEBI formula identifies its candidate. This is not an amount source or molecular-weight
+      calculation.'
+  notes: 'Ingredient source review: Restore the directly reported source mass concentration;
+    no molecular-weight conversion or claim that every historic conversion was wrong.
+    Source amount: 4.5 mg; per liter of mineral medium.'
+- preferred_term: Sodium molybdate hydrate (source formula unresolved)
   concentration:
     value: '0.001653'
     unit: MILLIMOLAR
-  term:
-    id: CHEBI:75215
-    label: sodium molybdate (anhydrous)
-- preferred_term: Cupric sulfate
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/398/
+    supports: SUPPORT
+    snippet: '0.001653'
+    explanation: 'Historical database provenance for ingredients[15].concentration
+      (Sodium molybdate): this accession''s table labels the amount in mM and reports
+      0.001653 mM. This supports what MediaDB asserted, not independent confirmation
+      of the current concentration; primary-source disposition follows separately.'
+  - reference: doi:10.1002/yea.320080703
+    supports: PARTIAL
+    snippet: NaMoO4.2H2O, 0·4 mg
+    explanation: 'Context only for ingredients[15].concentration; retained 0.001653
+      mM is an unverified database assertion. The page image prints NaMoO4.2H2O, unlike
+      Na2MoO4.2H2O in 1996. Do not silently repair the sodium count or borrow the
+      later paper; preserve the amount/form conflict. Basis excerpt: ''on a mineral
+      medium containing per litre:''. printed page 502, PDF page 2; Methods / Microorganisms
+      and growth conditions, right column. none; direct source units, no mass/molar
+      or assumed-volume conversion. PDF capture and transcription conventions are
+      identified in the bibliography.'
+  - reference: https://www.ebi.ac.uk/chebi/CHEBI:75213
+    supports: SUPPORT
+    snippet: 2H2O.MoO4.2Na
+    explanation: 'Identity review for ingredients[15] (Sodium molybdate): The source
+      prints NaMoO4.2H2O. Remove the unsupported anhydrous grounding, but do not assign
+      CHEBI:75213: its two-sodium formula is not the printed 1992 formula. Exact supplied
+      salt remains unresolved.'
+  notes: 'Ingredient source review: The page image prints NaMoO4.2H2O, unlike Na2MoO4.2H2O
+    in 1996. Do not silently repair the sodium count or borrow the later paper; preserve
+    the amount/form conflict. Source amount: 0.4 mg; per liter of mineral medium.
+    Retained 0.001653 mM is a database assertion, not independently verified final
+    concentration.'
+- preferred_term: copper(II) sulfate pentahydrate
   concentration:
-    value: '0.001201'
-    unit: MILLIMOLAR
+    value: '0.3'
+    unit: MG_PER_L
   term:
-    id: CHEBI:23414
-    label: copper(II) sulfate
-- preferred_term: Magnesium sulfate
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/398/
+    supports: SUPPORT
+    snippet: '0.001201'
+    explanation: 'Historical database provenance for ingredients[16].concentration
+      (Cupric sulfate): this accession''s table labels the amount in mM and reports
+      0.001201 mM. This supports what MediaDB asserted, not independent confirmation
+      of the current concentration; primary-source disposition follows separately.'
+  - reference: doi:10.1002/yea.320080703
+    supports: SUPPORT
+    snippet: CuSO4.5H2O, 0·3 mg
+    explanation: 'Supports ingredients[16].concentration for the supplied ingredient
+      in this exact formulation: 0.3 MG_PER_L. Restore the directly reported source
+      mass concentration; no molecular-weight conversion or claim that every historic
+      conversion was wrong. Basis excerpt: ''on a mineral medium containing per litre:''.
+      printed page 502, PDF page 2; Methods / Microorganisms and growth conditions,
+      right column. none; direct source units, no mass/molar or assumed-volume conversion.
+      PDF capture and transcription conventions are identified in the bibliography.'
+  - reference: https://www.ebi.ac.uk/chebi/CHEBI:31440
+    supports: SUPPORT
+    snippet: Cu.5H2O.O4S
+    explanation: 'Identity review for ingredients[16] (Cupric sulfate): Supplied-form
+      identity only: the primary article names this acid or hydrate and the official
+      ChEBI formula identifies its candidate. This is not an amount source or molecular-weight
+      calculation.'
+  notes: 'Ingredient source review: Restore the directly reported source mass concentration;
+    no molecular-weight conversion or claim that every historic conversion was wrong.
+    Source amount: 0.3 mg; per liter of mineral medium.'
+- preferred_term: magnesium sulfate heptahydrate
   term:
-    id: CHEBI:32599
-    label: magnesium sulfate
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
   concentration:
-    value: '2.029'
-    unit: MILLIMOLAR
+    value: '0.5'
+    unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-- preferred_term: Ferrous sulfate
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/398/
+    supports: SUPPORT
+    snippet: '2.029'
+    explanation: 'Historical database provenance for ingredients[17].concentration
+      (Magnesium sulfate): this accession''s table labels the amount in mM and reports
+      2.029 mM. This supports what MediaDB asserted, not independent confirmation
+      of the current concentration; primary-source disposition follows separately.'
+  - reference: doi:10.1002/yea.320080703
+    supports: SUPPORT
+    snippet: MgSO4.7H2O, 0·5 g
+    explanation: 'Supports ingredients[17].concentration for the supplied ingredient
+      in this exact formulation: 0.5 G_PER_L. Restore the directly reported source
+      mass concentration; no molecular-weight conversion or claim that every historic
+      conversion was wrong. Basis excerpt: ''on a mineral medium containing per litre:''.
+      printed page 502, PDF page 2; Methods / Microorganisms and growth conditions,
+      right column. none; direct source units, no mass/molar or assumed-volume conversion.
+      PDF capture and transcription conventions are identified in the bibliography.'
+  - reference: https://www.ebi.ac.uk/chebi/CHEBI:31795
+    supports: SUPPORT
+    snippet: 7H2O.Mg.O4S
+    explanation: 'Identity review for ingredients[17] (Magnesium sulfate): Supplied-form
+      identity only: the primary article names this acid or hydrate and the official
+      ChEBI formula identifies its candidate. This is not an amount source or molecular-weight
+      calculation.'
+  notes: 'Ingredient source review: Restore the directly reported source mass concentration;
+    no molecular-weight conversion or claim that every historic conversion was wrong.
+    Source amount: 0.5 g; per liter of mineral medium.'
+- preferred_term: iron(2+) sulfate heptahydrate
   concentration:
-    value: '0.01079'
-    unit: MILLIMOLAR
+    value: '3'
+    unit: MG_PER_L
   term:
-    id: CHEBI:75832
-    label: iron(2+) sulfate (anhydrous)
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/398/
+    supports: SUPPORT
+    snippet: '0.01079'
+    explanation: 'Historical database provenance for ingredients[18].concentration
+      (Ferrous sulfate): this accession''s table labels the amount in mM and reports
+      0.01079 mM. This supports what MediaDB asserted, not independent confirmation
+      of the current concentration; primary-source disposition follows separately.'
+  - reference: doi:10.1002/yea.320080703
+    supports: SUPPORT
+    snippet: FeSO4.7H2O, 3 mg
+    explanation: 'Supports ingredients[18].concentration for the supplied ingredient
+      in this exact formulation: 3 MG_PER_L. Restore the directly reported source
+      mass concentration; no molecular-weight conversion or claim that every historic
+      conversion was wrong. Basis excerpt: ''on a mineral medium containing per litre:''.
+      printed page 502, PDF page 2; Methods / Microorganisms and growth conditions,
+      right column. none; direct source units, no mass/molar or assumed-volume conversion.
+      PDF capture and transcription conventions are identified in the bibliography.'
+  - reference: https://www.ebi.ac.uk/chebi/CHEBI:75836
+    supports: SUPPORT
+    snippet: Fe.7H2O.O4S
+    explanation: 'Identity review for ingredients[18] (Ferrous sulfate): Supplied-form
+      identity only: the primary article names this acid or hydrate and the official
+      ChEBI formula identifies its candidate. This is not an amount source or molecular-weight
+      calculation.'
+  notes: 'Ingredient source review: Restore the directly reported source mass concentration;
+    no molecular-weight conversion or claim that every historic conversion was wrong.
+    Source amount: 3 mg; per liter of mineral medium.'
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
     label: thiamine hydrochloride
   concentration:
-    value: '0.002965'
-    unit: MILLIMOLAR
+    value: '1'
+    unit: MG_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:49105
     label: thiamine hydrochloride
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/398/
+    supports: SUPPORT
+    snippet: '0.002965'
+    explanation: 'Historical database provenance for ingredients[19].concentration
+      (Thiamine HCl): this accession''s table labels the amount in mM and reports
+      0.002965 mM. This supports what MediaDB asserted, not independent confirmation
+      of the current concentration; primary-source disposition follows separately.'
+  - reference: doi:10.1002/yea.320080703
+    supports: SUPPORT
+    snippet: thiamine HCl, 1 mg
+    explanation: 'Supports ingredients[19].concentration for the supplied ingredient
+      in this exact formulation: 1 MG_PER_L. Restore the directly reported source
+      mass concentration; no molecular-weight conversion or claim that every historic
+      conversion was wrong. Basis excerpt: ''Final vitamin concentrations per litre
+      were:''. printed page 502, PDF page 2; Methods / Microorganisms and growth conditions,
+      right column. none; direct source units, no mass/molar or assumed-volume conversion.
+      PDF capture and transcription conventions are identified in the bibliography.'
+  notes: 'Ingredient source review: Restore the directly reported source mass concentration;
+    no molecular-weight conversion or claim that every historic conversion was wrong.
+    Source amount: 1 mg; final vitamin concentration per liter.'
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
-    value: '22.04'
-    unit: MILLIMOLAR
+    value: '3'
+    unit: G_PER_L
   term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/398/
+    supports: SUPPORT
+    snippet: '22.04'
+    explanation: 'Historical database provenance for ingredients[20].concentration
+      (Potassium dihydrogen phosphate): this accession''s table labels the amount
+      in mM and reports 22.04 mM. This supports what MediaDB asserted, not independent
+      confirmation of the current concentration; primary-source disposition follows
+      separately.'
+  - reference: doi:10.1002/yea.320080703
+    supports: SUPPORT
+    snippet: KH2PO4, 3 g
+    explanation: 'Supports ingredients[20].concentration for the supplied ingredient
+      in this exact formulation: 3 G_PER_L. Restore the directly reported source mass
+      concentration; no molecular-weight conversion or claim that every historic conversion
+      was wrong. Basis excerpt: ''on a mineral medium containing per litre:''. printed
+      page 502, PDF page 2; Methods / Microorganisms and growth conditions, right
+      column. none; direct source units, no mass/molar or assumed-volume conversion.
+      PDF capture and transcription conventions are identified in the bibliography.'
+  notes: 'Ingredient source review: Restore the directly reported source mass concentration;
+    no molecular-weight conversion or claim that every historic conversion was wrong.
+    Source amount: 3 g; per liter of mineral medium.'
+- preferred_term: Silicone antifoam (BDH)
+  concentration:
+    value: '0.025'
+    unit: ML_PER_L
+  notes: Source-specific silicone antifoam preparation; no single compound identity,
+    density or generic stock strength inferred. Source reports 0.025 mL per liter
+    of medium.
+  evidence:
+  - reference: doi:10.1002/yea.320080703
+    supports: SUPPORT
+    snippet: 0·025 ml silicone antifoam (BDH)
+    explanation: 'Supports the omitted basal-medium antifoam ingredient and the source-specific
+      dose basis for ingredients[21]. add explicit concentration. Basis excerpt: ''on
+      a mineral medium containing per litre:''. Printed page 502; https://repository.tudelft.nl/file/File_025a63db-3c03-4a9d-b18c-d37a795e6cad.
+      No density or final-volume conversion.'
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve all ingredients in distilled water to specified concentrations
+  description: Prepare the mineral-medium base with the source-specific mineral inputs;
+    add the vitamins separately after heat sterilization.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH if specified in original formulation
 - step_number: 3
-  action: FILTER_STERILIZE
-  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+  action: HEAT
+  description: Heat-sterilize the mineral medium at 120 C before adding the filter-sterilized
+    vitamins. The inspected source passage does not specify hold time or pressure.
+- step_number: 4
+  action: MIX
+  description: Add the filter-sterilized vitamins after heat sterilization, at the
+    source-stated final vitamin concentrations. Filtration pore size and addition
+    temperature are not specified.
 curation_history:
 - timestamp: '2026-01-27T07:21:46.235325Z'
   curator: mediadb-import
@@ -253,6 +799,219 @@ curation_history:
   notes: Restored the medium's own name in media_term.term.label, original_name. The
     MediaDB SQL parser truncated every value containing a parenthesis at that parenthesis;
     recovered from media_database.07Oct2015.sql.
+- timestamp: '2026-10-10T05:48:57.196164+00:00'
+  curator: codex
+  action: CURATED_YEAST_MINERAL_SOURCED_INGREDIENTS
+  notes: Reviewed source-specific ingredient changes. Two papers, four formulations;
+    carbon source dose and batch/chemostat stage must not be conflated. Twenty-six
+    mineral amounts have an explicit water-input/final-volume boundary; two molybdate
+    claims have a printed formula conflict. Seven vitamin amounts per record are final
+    concentrations; both papers directly report para-aminobenzoic acid 0.2 mg/L, not
+    the database 0.1458 mM assertion. The omitted silicone antifoam is 0.025 mL per
+    liter of medium in 1992; 0.05 mL per liter water input in 1996. No density or
+    final-volume conversion is inferred. Existing ethanol parent/child notes saying
+    only ethanol differs must be qualified when source antifoam and experimental-stage
+    evidence is applied. Paper-specific benzoate treatments are not a fixed universal
+    basal ingredient dose. DOI identity checked against PubMed; DOI resolver web attempts
+    failed. Downloaded repository PDFs and page images provide the inspected concentration
+    evidence. No automatic reference-validator pass, numeric equivalence of old conversions,
+    exhaustive growth review, or new organism association is asserted.
+  source: doi:10.1002/yea.320080703; https://mediadb.systemsbiology.net/defined_media/media/398/;
+    https://www.ebi.ac.uk/chebi/CHEBI%3A15940; https://www.ebi.ac.uk/chebi/CHEBI%3A86158;
+    https://www.ebi.ac.uk/chebi/CHEBI%3A30753; https://www.ebi.ac.uk/chebi/CHEBI%3A86368;
+    https://www.ebi.ac.uk/chebi/CHEBI%3A53503; https://www.ebi.ac.uk/chebi/CHEBI%3A32312;
+    https://www.ebi.ac.uk/chebi/CHEBI%3A75213; https://www.ebi.ac.uk/chebi/CHEBI%3A31440;
+    https://www.ebi.ac.uk/chebi/CHEBI%3A31795; https://www.ebi.ac.uk/chebi/CHEBI%3A75836;
+    doi:10.1002/(SICI)1097-0061(19960315)12:3<247::AID-YEA911>3.0.CO;2-I
+  changes: '{"added_ingredient": {"concentration": {"unit": "ML_PER_L", "value": "0.025"},
+    "field": "ingredients[21]", "preferred_term": "Silicone antifoam (BDH)"}, "evidence_entries_added":
+    55, "ingredient_field_changes": [{"field": "ingredients[0].concentration", "new":
+    {"unit": "MG_PER_L", "value": "15"}, "old": {"unit": "MILLIMOLAR", "value": "0.05133"}},
+    {"field": "ingredients[1].concentration", "new": {"unit": "MG_PER_L", "value":
+    "0.05"}, "old": {"unit": "MILLIMOLAR", "value": "0.0002047"}}, {"field": "ingredients[2].preferred_term",
+    "new": "nicotinic acid", "old": "Nicotinate"}, {"field": "ingredients[2].concentration",
+    "new": {"unit": "MG_PER_L", "value": "1"}, "old": {"unit": "MILLIMOLAR", "value":
+    "0.008123"}}, {"field": "ingredients[3].concentration", "new": {"unit": "MG_PER_L",
+    "value": "0.1"}, "old": {"unit": "MILLIMOLAR", "value": "0.0006024"}}, {"field":
+    "ingredients[4].concentration", "new": {"unit": "G_PER_L", "value": "7.5"}, "old":
+    {"unit": "MILLIMOLAR", "value": "162.8"}}, {"field": "ingredients[5].concentration",
+    "new": {"unit": "MG_PER_L", "value": "25"}, "old": {"unit": "MILLIMOLAR", "value":
+    "0.1388"}}, {"field": "ingredients[6].preferred_term", "new": "calcium chloride
+    dihydrate", "old": "Calcium chloride anhydrous"}, {"field": "ingredients[6].concentration",
+    "new": {"unit": "MG_PER_L", "value": "4.5"}, "old": {"unit": "MILLIMOLAR", "value":
+    "0.03061"}}, {"field": "ingredients[6].term", "new": {"id": "CHEBI:86158", "label":
+    "calcium chloride dihydrate"}, "old": {"id": "CHEBI:3312", "label": "calcium dichloride"}},
+    {"field": "ingredients[7].preferred_term", "new": "4-aminobenzoic acid", "old":
+    "4-Aminobenzoate"}, {"field": "ingredients[7].concentration", "new": {"unit":
+    "MG_PER_L", "value": "0.2"}, "old": {"unit": "MILLIMOLAR", "value": "0.1458"}},
+    {"field": "ingredients[7].term", "new": {"id": "CHEBI:30753", "label": "4-aminobenzoic
+    acid"}, "old": {"id": "CHEBI:17836", "label": "4-aminobenzoate"}}, {"field": "ingredients[7].mediaingredientmech_chebi_term",
+    "new": {"id": "CHEBI:30753", "label": "4-aminobenzoic acid"}, "old": {"id": "CHEBI:17836",
+    "label": "4-aminobenzoate"}}, {"field": "ingredients[8].concentration", "new":
+    {"unit": "MG_PER_L", "value": "1"}, "old": {"unit": "MILLIMOLAR", "value": "0.01617"}},
+    {"field": "ingredients[9].concentration", "new": {"unit": "MG_PER_L", "value":
+    "1"}, "old": {"unit": "MILLIMOLAR", "value": "0.002099"}}, {"field": "ingredients[10].concentration",
+    "new": {"unit": "MG_PER_L", "value": "1"}, "old": {"unit": "MILLIMOLAR", "value":
+    "0.004863"}}, {"field": "ingredients[11].preferred_term", "new": "manganese(II)
+    chloride tetrahydrate", "old": "Manganese chloride"}, {"field": "ingredients[11].concentration",
+    "new": {"unit": "MG_PER_L", "value": "1"}, "old": {"unit": "MILLIMOLAR", "value":
+    "0.005053"}}, {"field": "ingredients[11].term", "new": {"id": "CHEBI:86368", "label":
+    "manganese(II) chloride tetrahydrate"}, "old": {"id": "CHEBI:63041", "label":
+    "manganese(II) chloride"}}, {"field": "ingredients[12].concentration", "new":
+    {"unit": "G_PER_L", "value": "5"}, "old": {"unit": "MILLIMOLAR", "value": "37.84"}},
+    {"field": "ingredients[13].preferred_term", "new": "cobalt chloride hexahydrate",
+    "old": "Cobalt chloride"}, {"field": "ingredients[13].concentration", "new": {"unit":
+    "MG_PER_L", "value": "0.3"}, "old": {"unit": "MILLIMOLAR", "value": "0.001261"}},
+    {"field": "ingredients[13].term", "new": {"id": "CHEBI:53503", "label": "cobalt
+    chloride hexahydrate"}, "old": {"id": "CHEBI:35696", "label": "cobalt dichloride"}},
+    {"field": "ingredients[14].preferred_term", "new": "zinc sulfate heptahydrate",
+    "old": "Zinc sulfate"}, {"field": "ingredients[14].concentration", "new": {"unit":
+    "MG_PER_L", "value": "4.5"}, "old": {"unit": "MILLIMOLAR", "value": "0.01565"}},
+    {"field": "ingredients[14].term", "new": {"id": "CHEBI:32312", "label": "zinc
+    sulfate heptahydrate"}, "old": {"id": "CHEBI:35176", "label": "zinc sulfate"}},
+    {"field": "ingredients[14].mediaingredientmech_chebi_term", "new": {"id": "CHEBI:32312",
+    "label": "zinc sulfate heptahydrate"}, "old": {"id": "CHEBI:35176", "label": "zinc
+    sulfate"}}, {"field": "ingredients[15].preferred_term", "new": "Sodium molybdate
+    hydrate (source formula unresolved)", "old": "Sodium molybdate"}, {"field": "ingredients[15].term",
+    "new": null, "old": {"id": "CHEBI:75215", "label": "sodium molybdate (anhydrous)"}},
+    {"field": "ingredients[16].preferred_term", "new": "copper(II) sulfate pentahydrate",
+    "old": "Cupric sulfate"}, {"field": "ingredients[16].concentration", "new": {"unit":
+    "MG_PER_L", "value": "0.3"}, "old": {"unit": "MILLIMOLAR", "value": "0.001201"}},
+    {"field": "ingredients[16].term", "new": {"id": "CHEBI:31440", "label": "copper(II)
+    sulfate pentahydrate"}, "old": {"id": "CHEBI:23414", "label": "copper(II) sulfate"}},
+    {"field": "ingredients[17].preferred_term", "new": "magnesium sulfate heptahydrate",
+    "old": "Magnesium sulfate"}, {"field": "ingredients[17].concentration", "new":
+    {"unit": "G_PER_L", "value": "0.5"}, "old": {"unit": "MILLIMOLAR", "value": "2.029"}},
+    {"field": "ingredients[17].term", "new": {"id": "CHEBI:31795", "label": "magnesium
+    sulfate heptahydrate"}, "old": {"id": "CHEBI:32599", "label": "magnesium sulfate"}},
+    {"field": "ingredients[17].mediaingredientmech_chebi_term", "new": {"id": "CHEBI:31795",
+    "label": "magnesium sulfate heptahydrate"}, "old": {"id": "CHEBI:32599", "label":
+    "magnesium sulfate"}}, {"field": "ingredients[18].preferred_term", "new": "iron(2+)
+    sulfate heptahydrate", "old": "Ferrous sulfate"}, {"field": "ingredients[18].concentration",
+    "new": {"unit": "MG_PER_L", "value": "3"}, "old": {"unit": "MILLIMOLAR", "value":
+    "0.01079"}}, {"field": "ingredients[18].term", "new": {"id": "CHEBI:75836", "label":
+    "iron(2+) sulfate heptahydrate"}, "old": {"id": "CHEBI:75832", "label": "iron(2+)
+    sulfate (anhydrous)"}}, {"field": "ingredients[19].concentration", "new": {"unit":
+    "MG_PER_L", "value": "1"}, "old": {"unit": "MILLIMOLAR", "value": "0.002965"}},
+    {"field": "ingredients[20].concentration", "new": {"unit": "G_PER_L", "value":
+    "3"}, "old": {"unit": "MILLIMOLAR", "value": "22.04"}}], "ingredient_notes": "Qualify
+    each original ingredient amount and source basis; preserve imported cross-references
+    as historical database annotations.", "preparation_steps": {"after": [{"action":
+    "DISSOLVE", "description": "Prepare the mineral-medium base with the source-specific
+    mineral inputs; add the vitamins separately after heat sterilization.", "step_number":
+    1}, {"action": "ADJUST_PH", "description": "Adjust pH if specified in original
+    formulation", "step_number": 2}, {"action": "HEAT", "description": "Heat-sterilize
+    the mineral medium at 120 C before adding the filter-sterilized vitamins. The
+    inspected source passage does not specify hold time or pressure.", "step_number":
+    3}, {"action": "MIX", "description": "Add the filter-sterilized vitamins after
+    heat sterilization, at the source-stated final vitamin concentrations. Filtration
+    pore size and addition temperature are not specified.", "step_number": 4}], "before":
+    [{"action": "DISSOLVE", "description": "Dissolve all ingredients in distilled
+    water to specified concentrations", "step_number": 1}, {"action": "ADJUST_PH",
+    "description": "Adjust pH if specified in original formulation", "step_number":
+    2}, {"action": "FILTER_STERILIZE", "description": "Sterilize by filtration (0.22
+    \u03bcm) to preserve heat-sensitive components", "step_number": 3}]}, "references_added":
+    ["doi:10.1002/yea.320080703", "https://mediadb.systemsbiology.net/defined_media/media/398/",
+    "https://www.ebi.ac.uk/chebi/CHEBI%3A15940", "https://www.ebi.ac.uk/chebi/CHEBI%3A86158",
+    "https://www.ebi.ac.uk/chebi/CHEBI%3A30753", "https://www.ebi.ac.uk/chebi/CHEBI%3A86368",
+    "https://www.ebi.ac.uk/chebi/CHEBI%3A53503", "https://www.ebi.ac.uk/chebi/CHEBI%3A32312",
+    "https://www.ebi.ac.uk/chebi/CHEBI%3A75213", "https://www.ebi.ac.uk/chebi/CHEBI%3A31440",
+    "https://www.ebi.ac.uk/chebi/CHEBI%3A31795", "https://www.ebi.ac.uk/chebi/CHEBI%3A75836",
+    "doi:10.1002/(SICI)1097-0061(19960315)12:3<247::AID-YEA911>3.0.CO;2-I"], "relationship_descriptions":
+    {"variant_children": {"after": [{"id": "CultureMech:010558", "name": "yeast_mineral_medium_7_9_g_l_ethanol",
+    "notes": "Related mineral-media formulations from different primary studies: Verduyn
+    1992 uses 7.5 g/L ethanol in chemostat medium and reports 0.025 mL antifoam per
+    liter medium; Flikweert 1996 uses 7.9 g/L initial ethanol in batch culture and
+    reports 0.05 mL antifoam per liter demineralized-water input. They are not asserted
+    identical except for ethanol; no conversion between water-input and final-medium
+    doses is inferred.", "path": "data/normalized_yaml/fungal/yeast_mineral_medium_7_9_g_l_ethanol.yaml",
+    "relationship": "CONCENTRATION_VARIANT"}], "before": [{"id": "CultureMech:010558",
+    "name": "yeast_mineral_medium_7_9_g_l_ethanol", "notes": "Ethanol increased from
+    162.8 mM to 171.5 mM while the yeast mineral medium formulation remains unchanged.",
+    "path": "data/normalized_yaml/fungal/yeast_mineral_medium_7_9_g_l_ethanol.yaml",
+    "relationship": "CONCENTRATION_VARIANT"}]}}}'
+- timestamp: '2026-10-10T06:24:13+00:00'
+  curator: codex
+  action: CORRECTED_CHEBI_REFERENCE_URL_ENCODING
+  notes: Encoded-colon paths returned HTTP 404; canonical colon paths returned HTTP
+    200. Official page titles and molecular-formula snippets match the cited identities.
+    Only live reference URLs change; prior history, amounts, identities, snippets
+    and claim wording are unchanged. ChEBI is identity evidence, not an amount source.
+  source: https://www.ebi.ac.uk/chebi/CHEBI:15940; https://www.ebi.ac.uk/chebi/CHEBI:30753;
+    https://www.ebi.ac.uk/chebi/CHEBI:31440; https://www.ebi.ac.uk/chebi/CHEBI:31795;
+    https://www.ebi.ac.uk/chebi/CHEBI:32312; https://www.ebi.ac.uk/chebi/CHEBI:53503;
+    https://www.ebi.ac.uk/chebi/CHEBI:75213; https://www.ebi.ac.uk/chebi/CHEBI:75836;
+    https://www.ebi.ac.uk/chebi/CHEBI:86158; https://www.ebi.ac.uk/chebi/CHEBI:86368
+  changes: '[{"kind": "evidence_reference_urls_corrected", "locator": "Official ChEBI
+    entry; molecular formula field; matching page title", "new": "https://www.ebi.ac.uk/chebi/CHEBI:15940",
+    "old": "https://www.ebi.ac.uk/chebi/CHEBI%3A15940", "pointer": ["ingredients",
+    2, "evidence", 2, "reference"], "snippet": "C6H5NO2"}, {"kind": "evidence_reference_urls_corrected",
+    "locator": "Official ChEBI entry; molecular formula field; matching page title",
+    "new": "https://www.ebi.ac.uk/chebi/CHEBI:86158", "old": "https://www.ebi.ac.uk/chebi/CHEBI%3A86158",
+    "pointer": ["ingredients", 6, "evidence", 2, "reference"], "snippet": "Ca.2Cl.2H2O"},
+    {"kind": "evidence_reference_urls_corrected", "locator": "Official ChEBI entry;
+    molecular formula field; matching page title", "new": "https://www.ebi.ac.uk/chebi/CHEBI:30753",
+    "old": "https://www.ebi.ac.uk/chebi/CHEBI%3A30753", "pointer": ["ingredients",
+    7, "evidence", 2, "reference"], "snippet": "C7H7NO2"}, {"kind": "evidence_reference_urls_corrected",
+    "locator": "Official ChEBI entry; molecular formula field; matching page title",
+    "new": "https://www.ebi.ac.uk/chebi/CHEBI:86368", "old": "https://www.ebi.ac.uk/chebi/CHEBI%3A86368",
+    "pointer": ["ingredients", 11, "evidence", 2, "reference"], "snippet": "Cl2Mn.4H2O"},
+    {"kind": "evidence_reference_urls_corrected", "locator": "Official ChEBI entry;
+    molecular formula field; matching page title", "new": "https://www.ebi.ac.uk/chebi/CHEBI:53503",
+    "old": "https://www.ebi.ac.uk/chebi/CHEBI%3A53503", "pointer": ["ingredients",
+    13, "evidence", 2, "reference"], "snippet": "2Cl.Co.6H2O"}, {"kind": "evidence_reference_urls_corrected",
+    "locator": "Official ChEBI entry; molecular formula field; matching page title",
+    "new": "https://www.ebi.ac.uk/chebi/CHEBI:32312", "old": "https://www.ebi.ac.uk/chebi/CHEBI%3A32312",
+    "pointer": ["ingredients", 14, "evidence", 2, "reference"], "snippet": "7H2O.O4S.Zn"},
+    {"kind": "evidence_reference_urls_corrected", "locator": "Official ChEBI entry;
+    molecular formula field; matching page title", "new": "https://www.ebi.ac.uk/chebi/CHEBI:75213",
+    "old": "https://www.ebi.ac.uk/chebi/CHEBI%3A75213", "pointer": ["ingredients",
+    15, "evidence", 2, "reference"], "snippet": "2H2O.MoO4.2Na"}, {"kind": "evidence_reference_urls_corrected",
+    "locator": "Official ChEBI entry; molecular formula field; matching page title",
+    "new": "https://www.ebi.ac.uk/chebi/CHEBI:31440", "old": "https://www.ebi.ac.uk/chebi/CHEBI%3A31440",
+    "pointer": ["ingredients", 16, "evidence", 2, "reference"], "snippet": "Cu.5H2O.O4S"},
+    {"kind": "evidence_reference_urls_corrected", "locator": "Official ChEBI entry;
+    molecular formula field; matching page title", "new": "https://www.ebi.ac.uk/chebi/CHEBI:31795",
+    "old": "https://www.ebi.ac.uk/chebi/CHEBI%3A31795", "pointer": ["ingredients",
+    17, "evidence", 2, "reference"], "snippet": "7H2O.Mg.O4S"}, {"kind": "evidence_reference_urls_corrected",
+    "locator": "Official ChEBI entry; molecular formula field; matching page title",
+    "new": "https://www.ebi.ac.uk/chebi/CHEBI:75836", "old": "https://www.ebi.ac.uk/chebi/CHEBI%3A75836",
+    "pointer": ["ingredients", 18, "evidence", 2, "reference"], "snippet": "Fe.7H2O.O4S"},
+    {"kind": "bibliography_reference_urls_corrected", "locator": "Official ChEBI entry;
+    molecular formula field; matching page title", "new": "https://www.ebi.ac.uk/chebi/CHEBI:15940",
+    "old": "https://www.ebi.ac.uk/chebi/CHEBI%3A15940", "pointer": ["references",
+    2, "reference"], "snippet": "C6H5NO2"}, {"kind": "bibliography_reference_urls_corrected",
+    "locator": "Official ChEBI entry; molecular formula field; matching page title",
+    "new": "https://www.ebi.ac.uk/chebi/CHEBI:86158", "old": "https://www.ebi.ac.uk/chebi/CHEBI%3A86158",
+    "pointer": ["references", 3, "reference"], "snippet": "Ca.2Cl.2H2O"}, {"kind":
+    "bibliography_reference_urls_corrected", "locator": "Official ChEBI entry; molecular
+    formula field; matching page title", "new": "https://www.ebi.ac.uk/chebi/CHEBI:30753",
+    "old": "https://www.ebi.ac.uk/chebi/CHEBI%3A30753", "pointer": ["references",
+    4, "reference"], "snippet": "C7H7NO2"}, {"kind": "bibliography_reference_urls_corrected",
+    "locator": "Official ChEBI entry; molecular formula field; matching page title",
+    "new": "https://www.ebi.ac.uk/chebi/CHEBI:86368", "old": "https://www.ebi.ac.uk/chebi/CHEBI%3A86368",
+    "pointer": ["references", 5, "reference"], "snippet": "Cl2Mn.4H2O"}, {"kind":
+    "bibliography_reference_urls_corrected", "locator": "Official ChEBI entry; molecular
+    formula field; matching page title", "new": "https://www.ebi.ac.uk/chebi/CHEBI:53503",
+    "old": "https://www.ebi.ac.uk/chebi/CHEBI%3A53503", "pointer": ["references",
+    6, "reference"], "snippet": "2Cl.Co.6H2O"}, {"kind": "bibliography_reference_urls_corrected",
+    "locator": "Official ChEBI entry; molecular formula field; matching page title",
+    "new": "https://www.ebi.ac.uk/chebi/CHEBI:32312", "old": "https://www.ebi.ac.uk/chebi/CHEBI%3A32312",
+    "pointer": ["references", 7, "reference"], "snippet": "7H2O.O4S.Zn"}, {"kind":
+    "bibliography_reference_urls_corrected", "locator": "Official ChEBI entry; molecular
+    formula field; matching page title", "new": "https://www.ebi.ac.uk/chebi/CHEBI:75213",
+    "old": "https://www.ebi.ac.uk/chebi/CHEBI%3A75213", "pointer": ["references",
+    8, "reference"], "snippet": "2H2O.MoO4.2Na"}, {"kind": "bibliography_reference_urls_corrected",
+    "locator": "Official ChEBI entry; molecular formula field; matching page title",
+    "new": "https://www.ebi.ac.uk/chebi/CHEBI:31440", "old": "https://www.ebi.ac.uk/chebi/CHEBI%3A31440",
+    "pointer": ["references", 9, "reference"], "snippet": "Cu.5H2O.O4S"}, {"kind":
+    "bibliography_reference_urls_corrected", "locator": "Official ChEBI entry; molecular
+    formula field; matching page title", "new": "https://www.ebi.ac.uk/chebi/CHEBI:31795",
+    "old": "https://www.ebi.ac.uk/chebi/CHEBI%3A31795", "pointer": ["references",
+    10, "reference"], "snippet": "7H2O.Mg.O4S"}, {"kind": "bibliography_reference_urls_corrected",
+    "locator": "Official ChEBI entry; molecular formula field; matching page title",
+    "new": "https://www.ebi.ac.uk/chebi/CHEBI:75836", "old": "https://www.ebi.ac.uk/chebi/CHEBI%3A75836",
+    "pointer": ["references", 11, "reference"], "snippet": "Fe.7H2O.O4S"}]'
 media_term:
   preferred_term: MediaDB Medium 398
   term:
@@ -269,5 +1028,123 @@ variant_children:
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:010558
   name: yeast_mineral_medium_7_9_g_l_ethanol
-  notes: Ethanol increased from 162.8 mM to 171.5 mM while the yeast mineral medium
-    formulation remains unchanged.
+  notes: 'Related mineral-media formulations from different primary studies: Verduyn
+    1992 uses 7.5 g/L ethanol in chemostat medium and reports 0.025 mL antifoam per
+    liter medium; Flikweert 1996 uses 7.9 g/L initial ethanol in batch culture and
+    reports 0.05 mL antifoam per liter demineralized-water input. They are not asserted
+    identical except for ethanol; no conversion between water-input and final-medium
+    doses is inferred.'
+references:
+- reference: doi:10.1002/yea.320080703
+  title: 'Effect of Benzoic Acid on Metabolic Fluxes in Yeasts: A Continuous-Culture
+    Study on the Regulation of Respiration and Alcoholic Fermentation'
+  notes: 'source_type=journal_article; discovery_mode=existing_database_source_link_then_manual_web_search;
+    accessed_on=2026-10-10; Inspected repository PDF: https://repository.tudelft.nl/file/File_025a63db-3c03-4a9d-b18c-d37a795e6cad;
+    printed page 502; DOI identity verified in PubMed; DOI resolver fetch failed;
+    page image inspected manually. Manual page-image transcription; line-wrap hyphenation
+    joined, chemical subscripts and unit superscripts flattened to ASCII; centered
+    decimal points preserved. OCR is not accepted as a faithful formula transcript.'
+  authors: Cornelis Verduyn; Erik Postma; W. Alexander Scheffers; Johannes P. van
+    Dijken
+  year: 1992
+- reference: https://mediadb.systemsbiology.net/defined_media/media/398/
+  title: 'Media: Yeast mineral medium (7.5 g/l ethanol)'
+  notes: source_type=web_page; discovery_mode=existing_source_capture; accessed_on=2026-10-10;
+    Accession-specific MediaDB HTML table, corroborated against dated 2015-10-07 SQL
+    export; database assertions are not independent primary concentration verification.
+    Publication year and named authors not established.
+- reference: https://www.ebi.ac.uk/chebi/CHEBI:15940
+  title: nicotinic acid (CHEBI:15940)
+  notes: source_type=web_page; discovery_mode=pinned_mim_cross_reference_then_official_ontology;
+    accessed_on=2026-10-10; Official ChEBI formula manually inspected; pinned MIM
+    lookup checked separately. Identity evidence only, not a concentration source.
+    No publication year inferred.
+- reference: https://www.ebi.ac.uk/chebi/CHEBI:86158
+  title: calcium chloride dihydrate (CHEBI:86158)
+  notes: source_type=web_page; discovery_mode=pinned_mim_cross_reference_then_official_ontology;
+    accessed_on=2026-10-10; Official ChEBI formula manually inspected; pinned MIM
+    lookup checked separately. Identity evidence only, not a concentration source.
+    No publication year inferred.
+- reference: https://www.ebi.ac.uk/chebi/CHEBI:30753
+  title: 4-aminobenzoic acid (CHEBI:30753)
+  notes: source_type=web_page; discovery_mode=pinned_mim_cross_reference_then_official_ontology;
+    accessed_on=2026-10-10; Official ChEBI formula manually inspected; pinned MIM
+    lookup checked separately. Identity evidence only, not a concentration source.
+    No publication year inferred.
+- reference: https://www.ebi.ac.uk/chebi/CHEBI:86368
+  title: manganese(II) chloride tetrahydrate (CHEBI:86368)
+  notes: source_type=web_page; discovery_mode=pinned_mim_cross_reference_then_official_ontology;
+    accessed_on=2026-10-10; Official ChEBI formula manually inspected; pinned MIM
+    lookup checked separately. Identity evidence only, not a concentration source.
+    No publication year inferred.
+- reference: https://www.ebi.ac.uk/chebi/CHEBI:53503
+  title: cobalt chloride hexahydrate (CHEBI:53503)
+  notes: source_type=web_page; discovery_mode=pinned_mim_cross_reference_then_official_ontology;
+    accessed_on=2026-10-10; Official ChEBI formula manually inspected; pinned MIM
+    lookup checked separately. Identity evidence only, not a concentration source.
+    No publication year inferred.
+- reference: https://www.ebi.ac.uk/chebi/CHEBI:32312
+  title: zinc sulfate heptahydrate (CHEBI:32312)
+  notes: source_type=web_page; discovery_mode=pinned_mim_cross_reference_then_official_ontology;
+    accessed_on=2026-10-10; Official ChEBI formula manually inspected; pinned MIM
+    lookup checked separately. Identity evidence only, not a concentration source.
+    No publication year inferred.
+- reference: https://www.ebi.ac.uk/chebi/CHEBI:75213
+  title: sodium molybdate dihydrate (CHEBI:75213)
+  notes: source_type=web_page; discovery_mode=pinned_mim_cross_reference_then_official_ontology;
+    accessed_on=2026-10-10; Official ChEBI formula manually inspected; pinned MIM
+    lookup checked separately. Identity evidence only, not a concentration source.
+    No publication year inferred.
+- reference: https://www.ebi.ac.uk/chebi/CHEBI:31440
+  title: copper(II) sulfate pentahydrate (CHEBI:31440)
+  notes: source_type=web_page; discovery_mode=pinned_mim_cross_reference_then_official_ontology;
+    accessed_on=2026-10-10; Official ChEBI formula manually inspected; pinned MIM
+    lookup checked separately. Identity evidence only, not a concentration source.
+    No publication year inferred.
+- reference: https://www.ebi.ac.uk/chebi/CHEBI:31795
+  title: magnesium sulfate heptahydrate (CHEBI:31795)
+  notes: source_type=web_page; discovery_mode=pinned_mim_cross_reference_then_official_ontology;
+    accessed_on=2026-10-10; Official ChEBI formula manually inspected; pinned MIM
+    lookup checked separately. Identity evidence only, not a concentration source.
+    No publication year inferred.
+- reference: https://www.ebi.ac.uk/chebi/CHEBI:75836
+  title: iron(2+) sulfate heptahydrate (CHEBI:75836)
+  notes: source_type=web_page; discovery_mode=pinned_mim_cross_reference_then_official_ontology;
+    accessed_on=2026-10-10; Official ChEBI formula manually inspected; pinned MIM
+    lookup checked separately. Identity evidence only, not a concentration source.
+    No publication year inferred.
+- reference: doi:10.1002/(SICI)1097-0061(19960315)12:3<247::AID-YEA911>3.0.CO;2-I
+  title: 'Pyruvate Decarboxylase: An Indispensable Enzyme for Growth of Saccharomyces
+    cerevisiae on Glucose'
+  notes: 'source_type=journal_article; discovery_mode=existing_database_source_link_then_manual_web_search;
+    accessed_on=2026-10-10; Inspected repository PDF: https://repository.tudelft.nl/file/File_980a303e-e5c4-40e9-ae2c-d1efee438339?preview=1;
+    printed page 250; DOI identity verified in PubMed; DOI resolver fetch failed;
+    page image inspected manually. Manual page-image transcription; line-wrap hyphenation
+    joined, chemical subscripts and unit superscripts flattened to ASCII; centered
+    decimal points preserved. OCR is not accepted as a faithful formula transcript.'
+  authors: Marcel T. Flikweert; Linda van der Zanden; Wouter M. Th. M. Janssen; H.
+    Yde Steensma; Johannes P. van Dijken; Jack T. Pronk
+  year: 1996
+evidence:
+- reference: doi:10.1002/yea.320080703
+  supports: SUPPORT
+  snippet: Filter-sterilized vitamins were added after heat sterilization (120°C)
+    of this medium.
+  explanation: 'Supports preparation_steps[0], preparation_steps[2] and preparation_steps[3]:
+    keep vitamin addition after heat sterilization at 120 C. HEAT and MIX do not assert
+    steam pressure, hold time or the FILTER_STERILIZE enum''s 0.22 micrometer pore
+    size. The generic pH-adjustment placeholder is retained, not newly certified.
+    Printed page 502; https://repository.tudelft.nl/file/File_025a63db-3c03-4a9d-b18c-d37a795e6cad
+    Additional exact excerpt: ''0·025 ml silicone antifoam (BDH)''. Supports the qualification
+    of ethanol parent/child formulation descriptions and the source-specific antifoam
+    difference, not an exact-equivalence or merge claim. Separate carbon-dose excerpt:
+    ''7·5 g l-1 ethanol''. Printed page 502; https://repository.tudelft.nl/file/File_025a63db-3c03-4a9d-b18c-d37a795e6cad.
+    carbon source supplied to chemostat medium; not residual culture concentration'
+- reference: doi:10.1002/(SICI)1097-0061(19960315)12:3<247::AID-YEA911>3.0.CO;2-I
+  supports: SUPPORT
+  snippet: silicone antifoam (BDH), 0·05 ml
+  explanation: 'Supports the qualification of ethanol parent/child formulation descriptions
+    and the source-specific antifoam difference, not an exact-equivalence or merge
+    claim. Separate carbon-dose excerpt: ''ethanol (7·9 g l-1 initial concentration)''.
+    Printed page 250; https://repository.tudelft.nl/file/File_980a303e-e5c4-40e9-ae2c-d1efee438339?preview=1.
+    initial batch concentration, not chemostat reservoir concentration'

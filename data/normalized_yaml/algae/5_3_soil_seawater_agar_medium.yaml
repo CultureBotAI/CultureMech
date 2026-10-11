@@ -21,35 +21,60 @@ ingredients:
   notes: UTEX lists 15 g/L natural sea-salt; retained as an ungrounded mixture.
   physicochemical_roles:
   - OSMOTIC_AGENT
+  evidence:
+  - reference: https://utex.org/products/five-thirds-soil-plus-seawater-agar-medium
+    supports: SUPPORT
+    snippet: 15 g/L
+    explanation: 'Supports ingredients[0].concentration and associated ingredient/preparation
+      notes. Original field: ingredients[0].concentration.  Retain the source-explicit
+      15 g/L sea-salt dose; scope to the stated recipe, without treating the input
+      liter as an independently measured final volume. Calculation: No numerical conversion
+      applied. Separate basis excerpt: ''For 1 L Total''. Locator: Formulation table
+      row position 2; Directions total-volume heading.'
 - preferred_term: Agar
   concentration:
     value: '15'
     unit: G_PER_L
+    per_volume: per liter of prepared Soil+Seawater Medium before salt and agar additions
   term:
     id: CHEBI:2509
     label: agar
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+  notes: 15 g agar / 1 L prepared input medium = 15 g per liter of input medium, not
+    a newly measured final-volume concentration. This input-volume ratio is not asserted
+    as a measured final-medium concentration.
+  evidence:
+  - reference: https://utex.org/products/five-thirds-soil-plus-seawater-agar-medium
+    supports: SUPPORT
+    snippet: Add 15 g of agar into the flask; do not mix.
+    explanation: 'Supports ingredients[1].concentration and associated ingredient/preparation
+      notes. Original field: ingredients[1].concentration.  Keep the 15 g per liter-of-prepared-medium
+      dose with an explicit input-volume basis. Preserve the do-not-mix instruction
+      before autoclaving. Calculation: 15 g agar / 1 L prepared input medium = 15
+      g per liter of input medium, not a newly measured final-volume concentration..
+      Separate basis excerpt: ''Filter 1 L of Soil+Seawater Medium to remove soil
+      particles.''. Locator: Directions step 3 (agar addition); step 1 (prepared-medium
+      input volume).'
 solutions:
 - preferred_term: Soil+Seawater Medium
-  concentration:
-    value: '1000'
-    unit: ML_PER_L
   culturemech_term:
     id: CultureMech:000221
     label: Soil+Seawater Medium
-  notes: UTEX lists 1 L prepared Soil+Seawater Medium per 1 L final medium.
+  notes: Filter 1 L prepared Soil+Seawater Medium before adding sea-salt and agar.
+    The source does not measure a final carrier fraction after those additions.
 preparation_steps:
 - step_number: 1
   action: FILTER
   description: Filter 1 L of Soil+Seawater Medium to remove soil particles.
 - step_number: 2
   action: DISSOLVE
-  description: Add 15 g/L natural sea-salt and wait until fully dissolved.
+  description: Add 15 g natural sea-salt to the filtered 1 L prepared medium and wait
+    until fully dissolved.
 - step_number: 3
   action: AUTOCLAVE
-  description: Add 15 g/L agar, cover, and autoclave the medium.
+  description: Add 15 g agar to the flask; do not mix. Cover and autoclave the medium.
 - step_number: 4
   action: STORE
   description: Store at refrigerator temperature.
@@ -99,9 +124,54 @@ curation_history:
   source: https://utex.org/products/five-thirds-soil-plus-seawater-agar-medium
   notes: UTEX prepares this 48 ppt agar variant by filtering prepared Soil+Seawater
     Medium, adding 15 g/L natural sea-salt, and solidifying with 15 g/L agar.
+- timestamp: '2026-10-10T08:24:09.034201+00:00'
+  curator: codex
+  action: CURATED_UTEX_SOIL_SEAWATER_INPUT_AMOUNTS_AND_OPTIONAL_CARBONATE
+  notes: Source-backed input amounts, optional carbonate and preparation details.
+    No taxa-media association added; no fixed teaspoon conversion or inferred final
+    volume.
+  source: https://utex.org/products/five-thirds-soil-plus-seawater-agar-medium
+  changes: '{"additional_findings": [], "claims": [{"action_taken": "Attach source
+    evidence; numerical concentration unchanged.", "basis_snippet": "For 1 L Total",
+    "calculation": "No numerical conversion applied", "decision": "Retain the source-explicit
+    15 g/L sea-salt dose; scope to the stated recipe, without treating the input liter
+    as an independently measured final volume.", "field": "ingredients[0].concentration",
+    "ingredient": "Natural sea-salt", "locator": "Formulation table row position 2;
+    Directions total-volume heading", "old": {"unit": "G_PER_L", "value": "15"}, "old_term":
+    null, "proposed": {"unit": "G_PER_L", "value": "15"}, "reference": "https://utex.org/products/five-thirds-soil-plus-seawater-agar-medium",
+    "snippet": "15 g/L", "status": "evidence_only"}, {"action_taken": "Add the explicit
+    source-input volume basis; numerical amount unchanged.", "basis_snippet": "Filter
+    1 L of Soil+Seawater Medium to remove soil particles.", "calculation": "15 g agar
+    / 1 L prepared input medium = 15 g per liter of input medium, not a newly measured
+    final-volume concentration.", "decision": "Keep the 15 g per liter-of-prepared-medium
+    dose with an explicit input-volume basis. Preserve the do-not-mix instruction
+    before autoclaving.", "field": "ingredients[1].concentration", "ingredient": "Agar",
+    "locator": "Directions step 3 (agar addition); step 1 (prepared-medium input volume)",
+    "old": {"unit": "G_PER_L", "value": "15"}, "old_term": {"id": "CHEBI:2509", "label":
+    "agar"}, "proposed": {"per_volume": "per liter of prepared Soil+Seawater Medium
+    before salt and agar additions", "unit": "G_PER_L", "value": "15"}, "reference":
+    "https://utex.org/products/five-thirds-soil-plus-seawater-agar-medium", "snippet":
+    "Add 15 g of agar into the flask; do not mix.", "status": "correct"}, {"action_taken":
+    "Remove the unsupported structured concentration; preserve the literal input in
+    notes and evidence.", "basis_snippet": "Filter 1 L of Soil+Seawater Medium to
+    remove soil particles.", "calculation": "No numerical conversion applied", "decision":
+    "Remove the unsupported 1000 mL/L final-medium fraction while preserving the literal
+    1 L carrier input and internal medium reference.", "field": "solutions[0].concentration",
+    "ingredient": "Soil+Seawater Medium", "locator": "Formulation table row position
+    1; Directions total-volume heading", "old": {"unit": "ML_PER_L", "value": "1000"},
+    "old_term": null, "proposed": null, "proposed_field": "solutions[0].notes", "reference":
+    "https://utex.org/products/five-thirds-soil-plus-seawater-agar-medium", "snippet":
+    "1 L", "status": "unsupported"}], "counts": {"bibliographic_entries_enriched":
+    1, "ingredient_context_notes_added": 1, "ingredient_dose_basis_corrections": 1,
+    "new_curation_history": 1, "new_evidence": 3, "preparation_descriptions_corrected":
+    2, "stock_context_notes_corrected": 1, "unsupported_quantity_slots_removed": 1},
+    "removed_optional_ingredient": null}'
 references:
 - reference: UTEX:five-thirds-soil-plus-seawater-agar-medium
 - reference: https://utex.org/products/five-thirds-soil-plus-seawater-agar-medium
+  title: 5/3 Soil+Seawater Agar Medium | UTEX Culture Collection of Algae
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10; Named authors, publication year and DOI not established.
 original_name: 5/3 Soil + Seawater Agar Medium
 parent_media:
   path: data/normalized_yaml/algae/soil_seawater_medium.yaml
@@ -115,3 +185,24 @@ variant_modifications:
 data_quality_flags:
 - has_ontology_mappings
 - ingredients_curated
+evidence:
+- reference: https://utex.org/products/five-thirds-soil-plus-seawater-agar-medium
+  supports: SUPPORT
+  snippet: 1 L
+  explanation: 'Supports solutions[0].notes and associated ingredient/preparation
+    notes. Original field: solutions[0].concentration.  Remove the unsupported 1000
+    mL/L final-medium fraction while preserving the literal 1 L carrier input and
+    internal medium reference. Calculation: No numerical conversion applied. Separate
+    basis excerpt: ''Filter 1 L of Soil+Seawater Medium to remove soil particles.''.
+    Locator: Formulation table row position 1; Directions total-volume heading. Separate
+    exact excerpt: ''Filter 1 L of Soil+Seawater Medium to remove soil particles.''.
+    Supports preparation_steps[0:3] as the source sequence for this 1 L input-medium
+    batch; no final-volume change is calculated. Separate exact excerpt: ''Add 15
+    g of natural sea-salt in a stirring beaker wait until fully dissolved.''. Supports
+    preparation_steps[0:3] as the source sequence for this 1 L input-medium batch;
+    no final-volume change is calculated. Separate exact excerpt: ''Add 15 g of agar
+    into the flask; do not mix.''. Supports preparation_steps[0:3] as the source sequence
+    for this 1 L input-medium batch; no final-volume change is calculated. Separate
+    exact excerpt: ''Cover and autoclave medium.''. Supports preparation_steps[0:3]
+    as the source sequence for this 1 L input-medium batch; no final-volume change
+    is calculated.'

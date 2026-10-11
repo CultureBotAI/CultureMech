@@ -1,0 +1,338 @@
+{
+  "terminal": true,
+  "phase": "post",
+  "runtime": "Partial locked Python 3.13; not full CI",
+  "checks": [
+    {
+      "name": "apply",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/repair_komodo670_source_versions.py",
+        "--apply",
+        "--reports"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo670-versions-post-apply.log"
+    },
+    {
+      "name": "readback",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/repair_komodo670_source_versions.py",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo670-versions-post-readback.log"
+    },
+    {
+      "name": "noop",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/repair_komodo670_source_versions.py",
+        "--apply"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo670-versions-post-noop.log"
+    },
+    {
+      "name": "independent-audit",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-komodo670-source-versions/audit.py",
+        "--applied",
+        "--out",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-komodo670-source-versions/diff-audit.json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo670-versions-post-independent-audit.log"
+    },
+    {
+      "name": "schema-9463",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/for_dsm_9463.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo670-versions-post-schema-9463.log"
+    },
+    {
+      "name": "schema-9466",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/for_dsm_9466.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo670-versions-post-schema-9466.log"
+    },
+    {
+      "name": "schema-9467",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/for_dsm_9467.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo670-versions-post-schema-9467.log"
+    },
+    {
+      "name": "schema-9468",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/for_dsm_9468.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo670-versions-post-schema-9468.log"
+    },
+    {
+      "name": "schema-parent",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/KOMODO_670_MS-MEDIUM.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo670-versions-post-schema-parent.log"
+    },
+    {
+      "name": "strict",
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo670-versions-post-strict.log"
+    },
+    {
+      "name": "ids",
+      "command": [
+        "just",
+        "assign-ids-check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo670-versions-post-ids.log"
+    },
+    {
+      "name": "prior-komodo-2000-2500",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/review_komodo_concentration_evidence.py",
+        "--inventory",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-komodo-source-inventory.json",
+        "--mapping",
+        "/tmp/ingredient-media-20261007/komodo-media-list-20261007-recheck.html",
+        "--cache",
+        "/tmp/ingredient-media-20261007/sources",
+        "--plan",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/plan.json",
+        "--verify",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz2-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-medium-stock-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz13-stock-only/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-extraction-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-komodo12-extraction/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-jcm896-final-volume/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-jcm1105-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-percent-supplements/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-public-direct/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-public-stocks/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-public-input-basis/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-rs-stock-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz111-preparation/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz125-alternatives/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz265-preparations/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz467-469-inputs/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz489-stocks/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-solutions-water-ph7/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-solutions-water-ph-adjustments/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-komodo650-752-762-preparations/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz650-752-762-preparations/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz546-659-670-stocks/plan.json",
+        "--followup-plan",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-komodo670-source-versions/plan.json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo670-versions-post-prior-komodo-2000-2500.log"
+    },
+    {
+      "name": "cumulative-diff",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo670-versions-post-cumulative-diff.log"
+    },
+    {
+      "name": "coverage",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/summarize_followup_coverage.py",
+        "--out",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-followup-coverage-after-komodo670-versions.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz2-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-medium-stock-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz13-stock-only/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-extraction-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-komodo12-extraction/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-jcm896-final-volume/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-jcm1105-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-percent-supplements/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-public-direct/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-public-stocks/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-public-input-basis/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-rs-stock-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz111-preparation/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz125-alternatives/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz265-preparations/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz467-469-inputs/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz489-stocks/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-solutions-water-ph7/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-solutions-water-ph-adjustments/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-komodo650-752-762-preparations/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz650-752-762-preparations/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz546-659-670-stocks/plan.json",
+        "--followup-plan",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-komodo670-source-versions/plan.json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo670-versions-post-coverage.log"
+    },
+    {
+      "name": "tests",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_komodo670_source_versions.py",
+        "tests/test_dsmz546_659_670_stocks.py",
+        "tests/test_repair_komodo_670_ms_ph_score10.py",
+        "tests/test_medium_concentration_review.py",
+        "tests/test_solution_concentration_review.py",
+        "tests/test_record_io.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo670-versions-post-tests.log"
+    },
+    {
+      "name": "variant-links",
+      "command": [
+        "just",
+        "validate-media-variant-links",
+        "--reports-dir",
+        "/tmp/ingredient-media-20261007/komodo670-versions-variant-links"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo670-versions-post-variant-links.log"
+    },
+    {
+      "name": "retention",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-komodo670-source-versions/retention.py"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/komodo670-versions-post-retention.log"
+    },
+    {
+      "name": "fast",
+      "command": [
+        "just",
+        "test-fast"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo670-versions-post-fast.log"
+    },
+    {
+      "name": "products",
+      "command": [
+        "just",
+        "validate-products"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo670-versions-post-products.log"
+    },
+    {
+      "name": "verify-merges",
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/komodo670-versions-post-verify-merges.log"
+    },
+    {
+      "name": "freshness",
+      "command": [
+        "just",
+        "audit-merge-freshness",
+        "--json"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/komodo670-versions-post-freshness.log"
+    },
+    {
+      "name": "diff-check",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo670-versions-post-diff-check.log"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "terminal": true,
+  "runtime": "Partial locked Python 3.13; not full CI",
+  "checks": [
+    {
+      "name": "schema",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/mediadive_3846_FeCl2_solution.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/fecl2-baseline-schema.log"
+    },
+    {
+      "name": "strict-record",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/mediadive_3846_FeCl2_solution.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/fecl2-baseline-strict-record.log"
+    }
+  ]
+}

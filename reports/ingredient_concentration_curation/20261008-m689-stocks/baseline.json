@@ -1,0 +1,32 @@
+{
+  "terminal": true,
+  "phase": "baseline",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/TOGO_M689_Spirochaeta_Caldaria_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/m689-baseline-0.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/TOGO_M689_Spirochaeta_Caldaria_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/m689-baseline-1.log"
+    }
+  ],
+  "inventory_before": [
+    15910,
+    "20a465aaa26a04df33252f3174924bc43dffd7758acc691cdaf8c13e85aa03bd"
+  ],
+  "inventory_after": [
+    15910,
+    "20a465aaa26a04df33252f3174924bc43dffd7758acc691cdaf8c13e85aa03bd"
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "terminal": true,
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "state": "Ten-record preview with terminal focused, source, schema and presentation gates; application disabled and broader gates pending",
+  "records_proposed": 10,
+  "records_applied": 0,
+  "cohort_records": 13,
+  "unchanged_dispositions": [
+    {
+      "key": "DJ675",
+      "path": "data/normalized_yaml/bacterial/JCM_J675_RUMINOCOCCUS_ALBUS_MEDIUM.yaml",
+      "status": "Already curated comparison, unchanged; do not count historical evidence again.",
+      "claim_rows": 23,
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/records/DJ675.md",
+      "report_sha256": "c8987cf6b007874b80957c86abf988d3581877694f9df5e0a5ae819b50f907b6"
+    },
+    {
+      "key": "S4674",
+      "path": "data/normalized_yaml/bacterial/mediadive_4674_Mineral_solution_2.yaml",
+      "status": "Six supported amounts unchanged; placeholder/title corrections remain queued.",
+      "claim_rows": 7,
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/records/S4674.md",
+      "report_sha256": "5f5122469a01c2b60242104c37e06f610a1aae1317f236424a710aba7d9e0f4f"
+    },
+    {
+      "key": "K3037",
+      "path": "data/normalized_yaml/bacterial/mineral_solution_2_medium_436.yaml",
+      "status": "Blocked source access; unchanged and unresolved, not reviewed-complete.",
+      "claim_rows": 1,
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/records/K3037.md",
+      "report_sha256": "dd10afde0c71a8899ace86b0ca9023accf718d9865f1b37a9f8cb6ffff6b6c1c"
+    }
+  ],
+  "proposed_additions_not_applied": {
+    "source_nodes": 138,
+    "old_quantity_slots": 126,
+    "claims": 507,
+    "new_evidence": 155,
+    "new_references": 16,
+    "new_curation_history": 10
+  },
+  "focused_tests": "535 passed, 2 warnings in 114.61s (0:01:54)",
+  "reference_checks": {
+    "total": 179,
+    "passed": 179
+  },
+  "reference_mode": "Offline, fourteen hash-checked official captures; not a fresh live refresh",
+  "preview_schema_commands": 20,
+  "normalized_count": 15910,
+  "normalized_sha256": "b2fe53f9a5f5c2a28ce3af156e7c8d7c95e000e1f150df9ac3799f8a4e454cfe",
+  "normalized_unchanged": true,
+  "context_sha256": "45d48a0e66d0504c0bea2655ea38f2a88c4c3034f8f4bd520f6e6848e22d0b55",
+  "plan_sha256": "47771aa8b0a5d36a7ae339456df36304c2cdabd7508ec526f8f269106bb14332",
+  "receipt_sha256": {
+    "audit": "70164e2e791eb3b5a2ac116ff1030b34f3d64c2c9e6593add70ab89616e68ab0",
+    "references": "1d34c6db403bf5311473b3522a9e9bbfe31bcc4b33db172ecee482eeeef6566f",
+    "presentation": "17afa6e181a9b0341553729b0181978184d3563f814e70ef74acefba812277b1",
+    "focused": "97f1e2140a7905059fabce18913f285b8b32d9e9d28f080e53c6694c6289632e",
+    "schema": "b0dc7ea1ea6cb684d9f1e62f1e79c13aa6cf5b1a8e597b1959aae1e82d3b9acc",
+    "ledgers": "8861eb8fa21260e711ab121e28286dc4acd998384d47fa7dd5f4c6b695d2863b",
+    "preview-retry1": "0f15ef32b749da5a382a21234d86ee59bcdbf22457500f06469f22ff10bc9d3e"
+  },
+  "code_sha256": {
+    "scripts/repair_ruminococcus_albus_family.py": "bd50694b6d094e72ced5c9869da14b889485d99b92f8a826fddfbbe92af5abff",
+    "tests/test_ruminococcus_albus_family.py": "20603276de67540569eb13e065ec796a753b0e2a571a77f15f029914a84daaa0",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/audit.py": "9f73f42bb35238527ec827d020eb2438d0b6b2dbb9e1018c38025ee5f29e269b",
+    "scripts/repair_oteb_family.py": "90aa83324ff1b28708921a00c409f50b4c4bd12eb15f09ae8feb0e1010916795",
+    "scripts/repair_methanogen_stock_boundaries.py": "8d4d32c7dc3cb2586242a188f958087482df3aff553d1dbc468c422eddb037ba",
+    "scripts/repair_lactalbumin_formulations.py": "3c16a3f4a2e543d280d3ccbb20a63138f2b409602d8b168b7fc742abe63b1769",
+    "scripts/repair_jcm_stock_preparations.py": "7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a",
+    "scripts/repair_mediadive_stock_concentration_evidence.py": "1badfa99205690cf6082d95db7dafbd6d4927b617027bc61fbaaf9dbd597c974",
+    "scripts/review_medium_concentration_evidence.py": "ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a",
+    "src/culturemech/validation/recipe_references.py": "1ef57389727347c242f45a85a9ed8908803423bc10307f53a888dac67ce06b67",
+    "src/culturemech/validation/write_validated.py": "8e1e2185231caecbe3dc99908c783cd83340b1e93fa9115ff1445d4b3820897e",
+    "src/culturemech/schema/culturemech.yaml": "461478d900fdee29a52c3d14656bcf369443bfdd0f4a534aa9d385f25df1cf8a"
+  },
+  "documents": {
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/README.md": "c9941a610608c38d327ac90e4dd781144f416c3c6a0cdd5c954540e68b3a3a3f",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/adversarial-review.md": "67f01738c973c1544c95edfa091e2ab9c5a869a95828fa20d6722f83ff162347",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/issue-source-conflicts.md": "c967b4fd4b38b584bc0f13fd87a766c1b0e0c957fafc2f471e64f6fd6fa79b67",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/next-work.md": "81e9ca481cb12c3de2c8fce4661c342083da8085fc1b532b45cb784a36e79697",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/records/D436.md": "f8c2f4ba9de6a312febd5fd810884bdad925b95e9a5fa1a4e27c762d25d10971",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/records/DJ675.md": "c8987cf6b007874b80957c86abf988d3581877694f9df5e0a5ae819b50f907b6",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/records/K3017.md": "8f7c9864028c629328453a37aba29f05be701d2e26755495335d9f07385187fa",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/records/K3037.md": "dd10afde0c71a8899ace86b0ca9023accf718d9865f1b37a9f8cb6ffff6b6c1c",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/records/K436.md": "723d377e29adbfe75fbcc14a71ab6e0a70e79a8d4ac231976429e6086f6aaab4",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/records/K436_18848.md": "4ecbe0bf24f7d3ed45fc93242ee9515ba22231b21558256040fd0cb9a62f633e",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/records/M2636.md": "b8feebcf73d0ba13a0f81eeb2a383ab2f4b4042becbecbb8586b52811ccd3cd0",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/records/M694.md": "0036dff647cfc4fb927c43a7b94e76203854d68a26c92f730968773101eb0ea6",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/records/S4674.md": "5f5122469a01c2b60242104c37e06f610a1aae1317f236424a710aba7d9e0f4f",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/records/S882.md": "f8dd2abfc936ceaa60943e0f0181a54849867005eac54a5e18376953da8f16ee",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/records/S883.md": "6f1cb53a99bd2ed88fb5f96db17a736ebc52277b3f7871abe5a5c98e8da3dd77",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/records/S884.md": "6609449e76bf85759b24e7ac3b59f1b25c793cf8199e852d232745a9f8fab034",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/records/S885.md": "96780684e0b7b4de1cd57ad3c63258e6a92977e7d50dbbf7ee544b4e9392b8a5"
+  },
+  "prior_supported_evidence_unchanged": 13,
+  "unchanged_root_text_spans": 76,
+  "prior_history_text_spans": 77,
+  "full_fast_tier_rerun": false,
+  "taxa_media_associations_added": 0,
+  "remaining": "Full objective unchanged. Complete guarded-application testing and broader current-code tests, then apply, perform all post-edit gates and reconcile reports/accounting. S4674 metadata/placeholder and K3037 access remain unresolved. Global merge/freshness and publication remain open.",
+  "previous_turn": "Status-only no progress revalidated; this turn generated and independently checked ten exact-source proposals and corrected terminal OTEB documentation."
+}

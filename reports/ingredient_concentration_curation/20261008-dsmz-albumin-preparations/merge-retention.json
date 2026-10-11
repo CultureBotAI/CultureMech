@@ -1,0 +1,42 @@
+{
+  "terminal": true,
+  "source_sha256": "97b156240849be7bf096a61d00d7a683ff9c8de8922db8585e5e8128ba7eb36c",
+  "input_records": 15910,
+  "output_groups": 10777,
+  "targets": [
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_403_BSK-MEDIUM.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_403_BSK-MEDIUM.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_751_SC_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_751_SC_medium.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/bsk_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/bsk_medium.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/sc_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/sc_medium.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    }
+  ],
+  "derived_yaml_written": false,
+  "scope": "Full corpus routing; only the four repaired outputs recertified."
+}

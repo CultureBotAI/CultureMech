@@ -1,0 +1,262 @@
+{
+  "source_sha256": "0cf3a08ff882d4bb2fd8d46b4cd3f376d1ad17939ccb9640ad402b1edd086b5b",
+  "records": [
+    {
+      "path": "data/normalized_yaml/bacterial/Beijerinck_Solution.yaml",
+      "id": "CultureMech:015440",
+      "before_text": "id: CultureMech:015440\nid_lineage_token: legacy:04e21222523119a75742fe68145559d3007497e7a7cdcbefc971109f4b383d94\npreferred_term: Beijerinck's Solution\nterm:\n  id: MediaIngredientMech:UNMAPPED_0074\n  label: Beijerinck's Solution\ncomposition:\n- preferred_term: Ammonium chloride\n  concentration:\n    value: '8.0'\n    unit: G_PER_L\n  mediaingredientmech_chebi_term:\n    id: CHEBI:31206\n    label: ammonium chloride\n  term:\n    id: CHEBI:31206\n    label: ammonium chloride\n- preferred_term: Calcium chloride dihydrate\n  concentration:\n    value: '1.0'\n    unit: G_PER_L\n  mediaingredientmech_chebi_term:\n    id: CHEBI:86158\n    label: calcium chloride dihydrate\n  term:\n    id: CHEBI:86158\n    label: calcium chloride dihydrate\n- preferred_term: Magnesium sulfate heptahydrate\n  concentration:\n    value: '2.0'\n    unit: G_PER_L\n  term:\n    id: CHEBI:31795\n    label: magnesium sulfate heptahydrate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:31795\n    label: magnesium sulfate heptahydrate\nnotes: 'Stock solution for TAP Medium (Tris-Acetate-Phosphate) and related algae culture\n  media.\n\n  Provides macrominerals (N, Ca, Mg, S) for freshwater algae.\n\n  Standard formulation used in Chlamydomonas reinhardtii culture.\n\n\n  Preparation: Add components to approximately 900 mL distilled water, dissolve completely,\n\n  then bring to 1 L total volume. Store at room temperature.\n\n\n  Final stock concentrations: NH4Cl (7.5 mM), CaCl2\u00b72H2O (0.35 mM), MgSO4\u00b77H2O (0.4\n  mM)\n\n  '\nsource_data:\n  origin: MediaIngredientMech\n  mediaingredientmech_id: UNMAPPED_0074\n  import_date: '2026-03-15'\n  notes: Migrated from MediaIngredientMech complex media list\ncuration_history:\n- timestamp: '2026-03-15T00:00:00Z'\n  curator: mediaingredientmech-migrator-v1.0\n  action: Created from MediaIngredientMech migration\n  notes: Composition extracted from UTEX Culture Collection protocols\n- timestamp: '2026-04-04T17:49:50.350339'\n  curator: categorize_unknown_media\n  action: CATEGORIZED\n  changes: 'Set category to ''bacterial'' (was: MISSING)'\n  notes: 'Automated categorization (confidence: 0.11). Weak match (score: 0.13), defaulting\n    to bacterial'\n- timestamp: '2026-05-16T09:02:58.396968+00:00'\n  curator: migrate_legacy_fields.py\n  action: MIGRATED_LEGACY_FIELDS\n  notes: references.reference_id->reference=3\n- timestamp: '2026-06-08T23:17:55.772491+00:00'\n  curator: mim-legacy-to-chebi-migration-v1.0\n  action: Refreshed legacy MediaIngredientMech links to CHEBI keying\n  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term\n    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN\n    id scheme.'\nreferences:\n- reference: https://utex.org/products/beijerincks-solution\n- reference: UTEX:beijerincks-solution\n- reference: MediaIngredientMech:UNMAPPED_0074\ncategory: bacterial\n",
+      "before_sha256": "29fd4eed1cdb8bc47bc528dc997039f10827fb4ddb54d6a5defd8a139ef78ffd",
+      "after_text": "id: CultureMech:015440\nid_lineage_token: legacy:04e21222523119a75742fe68145559d3007497e7a7cdcbefc971109f4b383d94\npreferred_term: Beijerinck's Solution\nterm:\n  id: MediaIngredientMech:UNMAPPED_0074\n  label: Beijerinck's Solution\ncomposition:\n- preferred_term: Ammonium chloride\n  concentration:\n    value: '8.0'\n    unit: G_PER_L\n  mediaingredientmech_chebi_term:\n    id: CHEBI:31206\n    label: ammonium chloride\n  term:\n    id: CHEBI:31206\n    label: ammonium chloride\n  evidence:\n  - reference: https://utex.org/products/beijerincks-solution\n    supports: SUPPORT\n    snippet: 8 g/L\n    explanation: 'Supports composition[0].concentration only as this standalone stock''s\n      mass or supplied-liquid volume per liter. Directions; table row 1; component\n      printed as ''NH4Cl(CAS: 12125-02-9)''; Amount excerpt: ''8 g/L''. Final-volume\n      excerpt: ''bring total volume to 1.0 Liters''. Existing value and precision\n      retained; no molecular-weight, density, receiving-medium or working-dose conversion. '\n- preferred_term: Calcium chloride dihydrate\n  concentration:\n    value: '1.0'\n    unit: G_PER_L\n  mediaingredientmech_chebi_term:\n    id: CHEBI:86158\n    label: calcium chloride dihydrate\n  term:\n    id: CHEBI:86158\n    label: calcium chloride dihydrate\n  evidence:\n  - reference: https://utex.org/products/beijerincks-solution\n    supports: SUPPORT\n    snippet: 1 g/L\n    explanation: 'Supports composition[1].concentration only as this standalone stock''s\n      mass or supplied-liquid volume per liter. Directions; table row 2; component\n      printed as ''CaCl2\u20222H2O(CAS: 10035-04-8)''; Amount excerpt: ''1 g/L''. Final-volume\n      excerpt: ''bring total volume to 1.0 Liters''. Existing value and precision\n      retained; no molecular-weight, density, receiving-medium or working-dose conversion. '\n- preferred_term: Magnesium sulfate heptahydrate\n  concentration:\n    value: '2.0'\n    unit: G_PER_L\n  term:\n    id: CHEBI:31795\n    label: magnesium sulfate heptahydrate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:31795\n    label: magnesium sulfate heptahydrate\n  evidence:\n  - reference: https://utex.org/products/beijerincks-solution\n    supports: SUPPORT\n    snippet: 2 g/L\n    explanation: 'Supports composition[2].concentration only as this standalone stock''s\n      mass or supplied-liquid volume per liter. Directions; table row 3; component\n      printed as ''MgSO4\u20227H2O(CAS: 10034-99-8)''; Amount excerpt: ''2 g/L''. Final-volume\n      excerpt: ''bring total volume to 1.0 Liters''. Existing value and precision\n      retained; no molecular-weight, density, receiving-medium or working-dose conversion. '\nnotes: |\n  Stock solution for TAP Medium (Tris-Acetate-Phosphate) and related algae culture media.\n  Provides macrominerals (N, Ca, Mg, S) for freshwater algae.\n  Standard formulation used in Chlamydomonas reinhardtii culture.\n\n  Preparation: Add components to approximately 800 mL distilled water, dissolve completely,\n  then bring to 1 L total volume. Store at room temperature.\n\n  Stock amounts are NH4Cl 8 g/L, CaCl2.2H2O 1 g/L and MgSO4.7H2O 2 g/L. The source table's millimolar column is explicitly for TAP medium, not the stock. No universal stock addition dose or replacement molarity is inferred.\nsource_data:\n  origin: MediaIngredientMech\n  mediaingredientmech_id: UNMAPPED_0074\n  import_date: '2026-03-15'\n  notes: Migrated from MediaIngredientMech complex media list\ncuration_history:\n- timestamp: '2026-03-15T00:00:00Z'\n  curator: mediaingredientmech-migrator-v1.0\n  action: Created from MediaIngredientMech migration\n  notes: Composition extracted from UTEX Culture Collection protocols\n- timestamp: '2026-04-04T17:49:50.350339'\n  curator: categorize_unknown_media\n  action: CATEGORIZED\n  changes: 'Set category to ''bacterial'' (was: MISSING)'\n  notes: 'Automated categorization (confidence: 0.11). Weak match (score: 0.13), defaulting\n    to bacterial'\n- timestamp: '2026-05-16T09:02:58.396968+00:00'\n  curator: migrate_legacy_fields.py\n  action: MIGRATED_LEGACY_FIELDS\n  notes: references.reference_id->reference=3\n- timestamp: '2026-06-08T23:17:55.772491+00:00'\n  curator: mim-legacy-to-chebi-migration-v1.0\n  action: Refreshed legacy MediaIngredientMech links to CHEBI keying\n  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term\n    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN\n    id scheme.'\n- timestamp: '2026-10-10T06:43:40+00:00'\n  curator: codex\n  action: CURATED_UTEX_MIGRATED_STOCK_CONCENTRATION_EVIDENCE\n  notes: Source-backed evidence and stock-context review. No structured concentrations\n    or identities changed; conflicts stay explicit.\n  source: https://utex.org/products/beijerincks-solution\n  changes: '{\"claims\": [{\"action_taken\": \"Added scoped SUPPORT evidence; numeric value\n    retained\", \"basis_snippet\": \"bring total volume to 1.0 Liters\", \"calculation\":\n    \"No numeric change proposed; preparation amount per explicitly stated one-liter\n    total stock volume.\", \"field\": \"composition[0].concentration\", \"ingredient\": \"Ammonium\n    chloride\", \"locator\": \"Directions; table row 1\", \"old\": {\"unit\": \"G_PER_L\", \"value\":\n    \"8.0\"}, \"proposed\": {\"unit\": \"G_PER_L\", \"value\": \"8.0\"}, \"reference\": \"https://utex.org/products/beijerincks-solution\",\n    \"snippet\": \"8 g/L\", \"source_component\": \"NH4Cl(CAS: 12125-02-9)\", \"status\": \"evidence_only\"},\n    {\"action_taken\": \"Added scoped SUPPORT evidence; numeric value retained\", \"basis_snippet\":\n    \"bring total volume to 1.0 Liters\", \"calculation\": \"No numeric change proposed;\n    preparation amount per explicitly stated one-liter total stock volume.\", \"field\":\n    \"composition[1].concentration\", \"ingredient\": \"Calcium chloride dihydrate\", \"locator\":\n    \"Directions; table row 2\", \"old\": {\"unit\": \"G_PER_L\", \"value\": \"1.0\"}, \"proposed\":\n    {\"unit\": \"G_PER_L\", \"value\": \"1.0\"}, \"reference\": \"https://utex.org/products/beijerincks-solution\",\n    \"snippet\": \"1 g/L\", \"source_component\": \"CaCl2\\u20222H2O(CAS: 10035-04-8)\", \"status\":\n    \"evidence_only\"}, {\"action_taken\": \"Added scoped SUPPORT evidence; numeric value\n    retained\", \"basis_snippet\": \"bring total volume to 1.0 Liters\", \"calculation\":\n    \"No numeric change proposed; preparation amount per explicitly stated one-liter\n    total stock volume.\", \"field\": \"composition[2].concentration\", \"ingredient\": \"Magnesium\n    sulfate heptahydrate\", \"locator\": \"Directions; table row 3\", \"old\": {\"unit\": \"G_PER_L\",\n    \"value\": \"2.0\"}, \"proposed\": {\"unit\": \"G_PER_L\", \"value\": \"2.0\"}, \"reference\":\n    \"https://utex.org/products/beijerincks-solution\", \"snippet\": \"2 g/L\", \"source_component\":\n    \"MgSO4\\u20227H2O(CAS: 10034-99-8)\", \"status\": \"evidence_only\"}], \"notes\": {\"new\":\n    \"Stock solution for TAP Medium (Tris-Acetate-Phosphate) and related algae culture\n    media.\\nProvides macrominerals (N, Ca, Mg, S) for freshwater algae.\\nStandard\n    formulation used in Chlamydomonas reinhardtii culture.\\n\\nPreparation: Add components\n    to approximately 800 mL distilled water, dissolve completely,\\nthen bring to 1\n    L total volume. Store at room temperature.\\n\\nStock amounts are NH4Cl 8 g/L, CaCl2.2H2O\n    1 g/L and MgSO4.7H2O 2 g/L. The source table''s millimolar column is explicitly\n    for TAP medium, not the stock. No universal stock addition dose or replacement\n    molarity is inferred.\\n\", \"old\": \"Stock solution for TAP Medium (Tris-Acetate-Phosphate)\n    and related algae culture media.\\nProvides macrominerals (N, Ca, Mg, S) for freshwater\n    algae.\\nStandard formulation used in Chlamydomonas reinhardtii culture.\\n\\nPreparation:\n    Add components to approximately 900 mL distilled water, dissolve completely,\\nthen\n    bring to 1 L total volume. Store at room temperature.\\n\\nFinal stock concentrations:\n    NH4Cl (7.5 mM), CaCl2\\u00b72H2O (0.35 mM), MgSO4\\u00b77H2O (0.4 mM)\\n\", \"snippet\":\n    \"Final Concentration in TAP Medium\"}, \"references\": {\"added_fields\": [\"title\",\n    \"notes\"], \"reference\": \"https://utex.org/products/beijerincks-solution\"}}'\nreferences:\n- reference: https://utex.org/products/beijerincks-solution\n  title: Beijerinck's Solution Recipe\n  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;\n    accessed_on=2026-10-10; publisher=UTEX Culture Collection of Algae; locator=Directions\n    and formulation table where present. No named author, publication year or DOI\n    established. Amount and final-volume statements are reviewed separately from conflicting\n    concentration annotations; see scoped evidence.\n- reference: UTEX:beijerincks-solution\n- reference: MediaIngredientMech:UNMAPPED_0074\ncategory: bacterial\nevidence:\n- reference: https://utex.org/products/beijerincks-solution\n  supports: SUPPORT\n  snippet: Final Concentration in TAP Medium\n  explanation: Supports correcting the final-stock/receiving-medium distinction in\n    notes. The separate table heading is 'Stock Solution Concentration'; the quoted\n    heading labels a different column. Directions specify 'approximately 800 mL' starting\n    water and 'bring total volume to 1.0 Liters'; the preparation narrative is corrected\n    from 900 to 800 mL starting water. No working dose is inferred.\n",
+      "after_sha256": "864038943b93045b96eeb919bbfc351bae50a094105c98a1c12a6df36c329429",
+      "claims": [
+        {
+          "field": "composition[0].concentration",
+          "ingredient": "Ammonium chloride",
+          "old": {
+            "value": "8.0",
+            "unit": "G_PER_L"
+          },
+          "proposed": {
+            "value": "8.0",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/beijerincks-solution",
+          "snippet": "8 g/L",
+          "basis_snippet": "bring total volume to 1.0 Liters",
+          "locator": "Directions; table row 1",
+          "calculation": "No numeric change proposed; preparation amount per explicitly stated one-liter total stock volume.",
+          "action_taken": "Added scoped SUPPORT evidence; numeric value retained",
+          "source_component": "NH4Cl(CAS: 12125-02-9)"
+        },
+        {
+          "field": "composition[1].concentration",
+          "ingredient": "Calcium chloride dihydrate",
+          "old": {
+            "value": "1.0",
+            "unit": "G_PER_L"
+          },
+          "proposed": {
+            "value": "1.0",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/beijerincks-solution",
+          "snippet": "1 g/L",
+          "basis_snippet": "bring total volume to 1.0 Liters",
+          "locator": "Directions; table row 2",
+          "calculation": "No numeric change proposed; preparation amount per explicitly stated one-liter total stock volume.",
+          "action_taken": "Added scoped SUPPORT evidence; numeric value retained",
+          "source_component": "CaCl2\u20222H2O(CAS: 10035-04-8)"
+        },
+        {
+          "field": "composition[2].concentration",
+          "ingredient": "Magnesium sulfate heptahydrate",
+          "old": {
+            "value": "2.0",
+            "unit": "G_PER_L"
+          },
+          "proposed": {
+            "value": "2.0",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/beijerincks-solution",
+          "snippet": "2 g/L",
+          "basis_snippet": "bring total volume to 1.0 Liters",
+          "locator": "Directions; table row 3",
+          "calculation": "No numeric change proposed; preparation amount per explicitly stated one-liter total stock volume.",
+          "action_taken": "Added scoped SUPPORT evidence; numeric value retained",
+          "source_component": "MgSO4\u20227H2O(CAS: 10034-99-8)"
+        }
+      ],
+      "counts": {
+        "new_evidence": 4,
+        "bibliographic_entries_enriched": 1,
+        "recipe_context_notes_corrected": 1,
+        "new_curation_history": 1
+      },
+      "action": "CURATED_UTEX_MIGRATED_STOCK_CONCENTRATION_EVIDENCE",
+      "reference": "https://utex.org/products/beijerincks-solution",
+      "source_capture_sha256": "3e76e8157ea31cd07b8840acde2f38afde19df63c0a5dfa49facf82bacb5caab"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Bold_Trace_Stock.yaml",
+      "id": "CultureMech:015441",
+      "before_text": "id: CultureMech:015441\nid_lineage_token: legacy:77967559e8e4b2f438705306f6903e4e1737ca819760c2dcd235d09fcd9c78d0\npreferred_term: Bold Trace Stock\nterm:\n  id: MediaIngredientMech:UNMAPPED_0065\n  label: Bold Trace Stock\ncomposition:\n- preferred_term: Sulfuric acid (concentrated)\n  concentration:\n    value: '10'\n    unit: ML_PER_L\n  term:\n    id: CHEBI:26836\n    label: sulfuric acid\n  mediaingredientmech_chebi_term:\n    id: CHEBI:26836\n    label: sulfuric acid\n- preferred_term: Zinc sulfate heptahydrate\n  concentration:\n    value: '8.82'\n    unit: G_PER_L\n  term:\n    id: CHEBI:32312\n    label: zinc sulfate heptahydrate\n- preferred_term: Manganese chloride tetrahydrate\n  concentration:\n    value: '1.44'\n    unit: G_PER_L\n  term:\n    id: CHEBI:86368\n    label: manganese(II) chloride tetrahydrate\n  mediaingredientmech_term:\n    id: MediaIngredientMech:001117\n- preferred_term: Molybdenum trioxide\n  concentration:\n    value: '0.71'\n    unit: G_PER_L\n  term:\n    id: CHEBI:30627\n    label: molybdenum trioxide\n  mediaingredientmech_chebi_term:\n    id: CHEBI:30627\n    label: molybdenum trioxide\n- preferred_term: Copper sulfate pentahydrate\n  concentration:\n    value: '1.57'\n    unit: G_PER_L\n  term:\n    id: CHEBI:31440\n    label: copper(II) sulfate pentahydrate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:31440\n    label: copper(II) sulfate pentahydrate\n- preferred_term: Cobalt nitrate hexahydrate\n  concentration:\n    value: '0.49'\n    unit: G_PER_L\n  term:\n    id: CHEBI:86214\n    label: cobalt dinitrate hexahydrate\n  mediaingredientmech_term:\n    id: MediaIngredientMech:001111\nnotes: 'Trace metal stock solution for Bold Basal Medium (BBM) and related algae culture\n  media.\n\n  Provides essential micronutrients (Zn, Mn, Mo, Cu, Co) for freshwater algae.\n\n\n  Preparation: Add components to approximately 900 mL deionized water in the order\n  specified\n\n  while stirring continuously. Add H2SO4 FIRST to acidify the solution before adding\n  metals.\n\n  This prevents precipitation. Bring to 1 L total volume.\n\n\n  Storage: Room temperature in darkness. The acidic pH keeps metals in solution.\n\n\n  Final stock concentrations: ZnSO4\u00b77H2O (1.50 \u00b5M), MnCl2\u00b74H2O (0.36 \u00b5M),\n\n  MoO3 (0.26 \u00b5M), CuSO4\u00b75H2O (0.31 \u00b5M), Co(NO3)2\u00b76H2O (0.084 \u00b5M)\n\n  '\nsource_data:\n  origin: MediaIngredientMech\n  mediaingredientmech_id: UNMAPPED_0065\n  import_date: '2026-03-15'\n  notes: Migrated from MediaIngredientMech complex media list\ncuration_history:\n- timestamp: '2026-03-15T00:00:00Z'\n  curator: mediaingredientmech-migrator-v1.0\n  action: Created from MediaIngredientMech migration\n  notes: Composition extracted from UTEX Culture Collection protocols\n- timestamp: '2026-04-04T17:49:50.322458'\n  curator: categorize_unknown_media\n  action: CATEGORIZED\n  changes: 'Set category to ''bacterial'' (was: MISSING)'\n  notes: 'Automated categorization (confidence: 0.11). Weak match (score: 0.13), defaulting\n    to bacterial'\n- timestamp: '2026-05-16T09:02:58.401625+00:00'\n  curator: migrate_legacy_fields.py\n  action: MIGRATED_LEGACY_FIELDS\n  notes: references.reference_id->reference=4\n- timestamp: '2026-06-08T23:17:55.778773+00:00'\n  curator: mim-legacy-to-chebi-migration-v1.0\n  action: Refreshed legacy MediaIngredientMech links to CHEBI keying\n  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term\n    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN\n    id scheme.'\nreferences:\n- reference: https://utex.org/products/bbm-bold-trace-stock-solution\n- reference: UTEX:bbm-bold-trace-stock-solution\n- reference: MediaIngredientMech:UNMAPPED_0065\n- reference: https://cccryo.fraunhofer.de/sources/files/medien/BBM.pdf\ncategory: bacterial\n",
+      "before_sha256": "8050c406026827ab030a5b37729397d0f99fe958afbae35c0a2f13d69b6938e7",
+      "after_text": "id: CultureMech:015441\nid_lineage_token: legacy:77967559e8e4b2f438705306f6903e4e1737ca819760c2dcd235d09fcd9c78d0\npreferred_term: Bold Trace Stock\nterm:\n  id: MediaIngredientMech:UNMAPPED_0065\n  label: Bold Trace Stock\ncomposition:\n- preferred_term: Sulfuric acid (concentrated)\n  concentration:\n    value: '10'\n    unit: ML_PER_L\n  term:\n    id: CHEBI:26836\n    label: sulfuric acid\n  mediaingredientmech_chebi_term:\n    id: CHEBI:26836\n    label: sulfuric acid\n  evidence:\n  - reference: https://utex.org/products/bbm-bold-trace-stock-solution\n    supports: SUPPORT\n    snippet: 10-mL\n    explanation: 'Supports composition[0].concentration only as this standalone stock''s\n      mass or supplied-liquid volume per liter. Directions; table row 1; component\n      printed as ''H2SO4 conc.''; Amount excerpt: ''10-mL''. Final-volume excerpt:\n      ''Bring total volume to 1 L''. Existing value and precision retained; no molecular-weight,\n      density, receiving-medium or working-dose conversion. '\n- preferred_term: Zinc sulfate heptahydrate\n  concentration:\n    value: '8.82'\n    unit: G_PER_L\n  term:\n    id: CHEBI:32312\n    label: zinc sulfate heptahydrate\n  evidence:\n  - reference: https://utex.org/products/bbm-bold-trace-stock-solution\n    supports: SUPPORT\n    snippet: 8.82 g\n    explanation: 'Supports composition[1].concentration only as this standalone stock''s\n      mass or supplied-liquid volume per liter. Directions; table row 2; component\n      printed as ''ZnSO4\u20227H2O''; Amount excerpt: ''8.82 g''. Final-volume excerpt:\n      ''Bring total volume to 1 L''. Existing value and precision retained; no molecular-weight,\n      density, receiving-medium or working-dose conversion. '\n- preferred_term: Manganese chloride tetrahydrate\n  concentration:\n    value: '1.44'\n    unit: G_PER_L\n  term:\n    id: CHEBI:86368\n    label: manganese(II) chloride tetrahydrate\n  mediaingredientmech_term:\n    id: MediaIngredientMech:001117\n  evidence:\n  - reference: https://utex.org/products/bbm-bold-trace-stock-solution\n    supports: PARTIAL\n    snippet: 1.44 g\n    explanation: Unresolved supplied-form claim at composition[2].concentration. Directions;\n      table row 3 prints 'MnCl\u20224H2O' with Amount excerpt '1.44 g' and volume excerpt\n      'Bring total volume to 1 L'. The record assigns manganese(II) chloride tetrahydrate\n      (MnCl2.4H2O), but the page omits the second chlorine. The database value and\n      identity are retained, not independently verified or silently repaired. No molarity\n      or working dilution is inferred.\n- preferred_term: Molybdenum trioxide\n  concentration:\n    value: '0.71'\n    unit: G_PER_L\n  term:\n    id: CHEBI:30627\n    label: molybdenum trioxide\n  mediaingredientmech_chebi_term:\n    id: CHEBI:30627\n    label: molybdenum trioxide\n  evidence:\n  - reference: https://utex.org/products/bbm-bold-trace-stock-solution\n    supports: SUPPORT\n    snippet: 0.71 g\n    explanation: 'Supports composition[3].concentration only as this standalone stock''s\n      mass or supplied-liquid volume per liter. Directions; table row 4; component\n      printed as ''MoO3''; Amount excerpt: ''0.71 g''. Final-volume excerpt: ''Bring\n      total volume to 1 L''. Existing value and precision retained; no molecular-weight,\n      density, receiving-medium or working-dose conversion. '\n- preferred_term: Copper sulfate pentahydrate\n  concentration:\n    value: '1.57'\n    unit: G_PER_L\n  term:\n    id: CHEBI:31440\n    label: copper(II) sulfate pentahydrate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:31440\n    label: copper(II) sulfate pentahydrate\n  evidence:\n  - reference: https://utex.org/products/bbm-bold-trace-stock-solution\n    supports: SUPPORT\n    snippet: 1.57 g\n    explanation: 'Supports composition[4].concentration only as this standalone stock''s\n      mass or supplied-liquid volume per liter. Directions; table row 5; component\n      printed as ''CuSO4\u20225H2O''; Amount excerpt: ''1.57 g''. Final-volume excerpt:\n      ''Bring total volume to 1 L''. Existing value and precision retained; no molecular-weight,\n      density, receiving-medium or working-dose conversion. '\n- preferred_term: Cobalt nitrate hexahydrate\n  concentration:\n    value: '0.49'\n    unit: G_PER_L\n  term:\n    id: CHEBI:86214\n    label: cobalt dinitrate hexahydrate\n  mediaingredientmech_term:\n    id: MediaIngredientMech:001111\n  evidence:\n  - reference: https://utex.org/products/bbm-bold-trace-stock-solution\n    supports: SUPPORT\n    snippet: 0.49 g\n    explanation: 'Supports composition[5].concentration only as this standalone stock''s\n      mass or supplied-liquid volume per liter. Directions; table row 6; component\n      printed as ''Co(NO3)2\u20226H2O''; Amount excerpt: ''0.49 g''. Final-volume excerpt:\n      ''Bring total volume to 1 L''. Existing value and precision retained; no molecular-weight,\n      density, receiving-medium or working-dose conversion. '\nnotes: |\n  Trace metal stock solution for Bold Basal Medium (BBM) and related algae culture media.\n  Provides essential micronutrients (Zn, Mn, Mo, Cu, Co) for freshwater algae.\n\n  Preparation: Add components to approximately 900 mL deionized water in the order specified\n  while stirring continuously. Add H2SO4 FIRST to acidify the solution before adding metals.\n  This prevents precipitation. Bring to 1 L total volume.\n\n  Storage: Room temperature in darkness. The acidic pH keeps metals in solution.\n\n  Source discrepancy: the table's separately labeled concentration columns and its stock-solution footnote do not provide a consistent basis for the former micromolar stock summary. The structured amounts retain the explicit preparation amounts per final 1 L; no replacement molarity or working dilution is asserted. The manganese row prints MnCl.4H2O rather than the assigned MnCl2.4H2O; its supplied-form claim remains unresolved.\nsource_data:\n  origin: MediaIngredientMech\n  mediaingredientmech_id: UNMAPPED_0065\n  import_date: '2026-03-15'\n  notes: Migrated from MediaIngredientMech complex media list\ncuration_history:\n- timestamp: '2026-03-15T00:00:00Z'\n  curator: mediaingredientmech-migrator-v1.0\n  action: Created from MediaIngredientMech migration\n  notes: Composition extracted from UTEX Culture Collection protocols\n- timestamp: '2026-04-04T17:49:50.322458'\n  curator: categorize_unknown_media\n  action: CATEGORIZED\n  changes: 'Set category to ''bacterial'' (was: MISSING)'\n  notes: 'Automated categorization (confidence: 0.11). Weak match (score: 0.13), defaulting\n    to bacterial'\n- timestamp: '2026-05-16T09:02:58.401625+00:00'\n  curator: migrate_legacy_fields.py\n  action: MIGRATED_LEGACY_FIELDS\n  notes: references.reference_id->reference=4\n- timestamp: '2026-06-08T23:17:55.778773+00:00'\n  curator: mim-legacy-to-chebi-migration-v1.0\n  action: Refreshed legacy MediaIngredientMech links to CHEBI keying\n  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term\n    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN\n    id scheme.'\n- timestamp: '2026-10-10T06:43:40+00:00'\n  curator: codex\n  action: CURATED_UTEX_MIGRATED_STOCK_CONCENTRATION_EVIDENCE\n  notes: Source-backed evidence and stock-context review. No structured concentrations\n    or identities changed; conflicts stay explicit.\n  source: https://utex.org/products/bbm-bold-trace-stock-solution\n  changes: '{\"claims\": [{\"action_taken\": \"Added scoped SUPPORT evidence; numeric value\n    retained\", \"basis_snippet\": \"Bring total volume to 1 L\", \"calculation\": \"No numeric\n    change proposed; preparation amount per explicitly stated one-liter total stock\n    volume.\", \"field\": \"composition[0].concentration\", \"ingredient\": \"Sulfuric acid\n    (concentrated)\", \"locator\": \"Directions; table row 1\", \"old\": {\"unit\": \"ML_PER_L\",\n    \"value\": \"10\"}, \"proposed\": {\"unit\": \"ML_PER_L\", \"value\": \"10\"}, \"reference\":\n    \"https://utex.org/products/bbm-bold-trace-stock-solution\", \"snippet\": \"10-mL\",\n    \"source_component\": \"H2SO4 conc.\", \"status\": \"evidence_only\"}, {\"action_taken\":\n    \"Added scoped SUPPORT evidence; numeric value retained\", \"basis_snippet\": \"Bring\n    total volume to 1 L\", \"calculation\": \"No numeric change proposed; preparation\n    amount per explicitly stated one-liter total stock volume.\", \"field\": \"composition[1].concentration\",\n    \"ingredient\": \"Zinc sulfate heptahydrate\", \"locator\": \"Directions; table row 2\",\n    \"old\": {\"unit\": \"G_PER_L\", \"value\": \"8.82\"}, \"proposed\": {\"unit\": \"G_PER_L\", \"value\":\n    \"8.82\"}, \"reference\": \"https://utex.org/products/bbm-bold-trace-stock-solution\",\n    \"snippet\": \"8.82 g\", \"source_component\": \"ZnSO4\\u20227H2O\", \"status\": \"evidence_only\"},\n    {\"action_taken\": \"Added scoped PARTIAL evidence; existing amount and identity\n    remain unresolved\", \"basis_snippet\": \"Bring total volume to 1 L\", \"calculation\":\n    \"No numeric change proposed; preparation amount per explicitly stated one-liter\n    total stock volume.\", \"field\": \"composition[2].concentration\", \"ingredient\": \"Manganese\n    chloride tetrahydrate\", \"locator\": \"Directions; table row 3\", \"old\": {\"unit\":\n    \"G_PER_L\", \"value\": \"1.44\"}, \"proposed\": {\"unit\": \"G_PER_L\", \"value\": \"1.44\"},\n    \"reference\": \"https://utex.org/products/bbm-bold-trace-stock-solution\", \"snippet\":\n    \"1.44 g\", \"source_component\": \"MnCl\\u20224H2O\", \"status\": \"conflict\"}, {\"action_taken\":\n    \"Added scoped SUPPORT evidence; numeric value retained\", \"basis_snippet\": \"Bring\n    total volume to 1 L\", \"calculation\": \"No numeric change proposed; preparation\n    amount per explicitly stated one-liter total stock volume.\", \"field\": \"composition[3].concentration\",\n    \"ingredient\": \"Molybdenum trioxide\", \"locator\": \"Directions; table row 4\", \"old\":\n    {\"unit\": \"G_PER_L\", \"value\": \"0.71\"}, \"proposed\": {\"unit\": \"G_PER_L\", \"value\":\n    \"0.71\"}, \"reference\": \"https://utex.org/products/bbm-bold-trace-stock-solution\",\n    \"snippet\": \"0.71 g\", \"source_component\": \"MoO3\", \"status\": \"evidence_only\"}, {\"action_taken\":\n    \"Added scoped SUPPORT evidence; numeric value retained\", \"basis_snippet\": \"Bring\n    total volume to 1 L\", \"calculation\": \"No numeric change proposed; preparation\n    amount per explicitly stated one-liter total stock volume.\", \"field\": \"composition[4].concentration\",\n    \"ingredient\": \"Copper sulfate pentahydrate\", \"locator\": \"Directions; table row\n    5\", \"old\": {\"unit\": \"G_PER_L\", \"value\": \"1.57\"}, \"proposed\": {\"unit\": \"G_PER_L\",\n    \"value\": \"1.57\"}, \"reference\": \"https://utex.org/products/bbm-bold-trace-stock-solution\",\n    \"snippet\": \"1.57 g\", \"source_component\": \"CuSO4\\u20225H2O\", \"status\": \"evidence_only\"},\n    {\"action_taken\": \"Added scoped SUPPORT evidence; numeric value retained\", \"basis_snippet\":\n    \"Bring total volume to 1 L\", \"calculation\": \"No numeric change proposed; preparation\n    amount per explicitly stated one-liter total stock volume.\", \"field\": \"composition[5].concentration\",\n    \"ingredient\": \"Cobalt nitrate hexahydrate\", \"locator\": \"Directions; table row\n    6\", \"old\": {\"unit\": \"G_PER_L\", \"value\": \"0.49\"}, \"proposed\": {\"unit\": \"G_PER_L\",\n    \"value\": \"0.49\"}, \"reference\": \"https://utex.org/products/bbm-bold-trace-stock-solution\",\n    \"snippet\": \"0.49 g\", \"source_component\": \"Co(NO3)2\\u20226H2O\", \"status\": \"evidence_only\"}],\n    \"notes\": {\"new\": \"Trace metal stock solution for Bold Basal Medium (BBM) and related\n    algae culture media.\\nProvides essential micronutrients (Zn, Mn, Mo, Cu, Co) for\n    freshwater algae.\\n\\nPreparation: Add components to approximately 900 mL deionized\n    water in the order specified\\nwhile stirring continuously. Add H2SO4 FIRST to\n    acidify the solution before adding metals.\\nThis prevents precipitation. Bring\n    to 1 L total volume.\\n\\nStorage: Room temperature in darkness. The acidic pH keeps\n    metals in solution.\\n\\nSource discrepancy: the table''s separately labeled concentration\n    columns and its stock-solution footnote do not provide a consistent basis for\n    the former micromolar stock summary. The structured amounts retain the explicit\n    preparation amounts per final 1 L; no replacement molarity or working dilution\n    is asserted. The manganese row prints MnCl.4H2O rather than the assigned MnCl2.4H2O;\n    its supplied-form claim remains unresolved.\\n\", \"old\": \"Trace metal stock solution\n    for Bold Basal Medium (BBM) and related algae culture media.\\nProvides essential\n    micronutrients (Zn, Mn, Mo, Cu, Co) for freshwater algae.\\n\\nPreparation: Add\n    components to approximately 900 mL deionized water in the order specified\\nwhile\n    stirring continuously. Add H2SO4 FIRST to acidify the solution before adding metals.\\nThis\n    prevents precipitation. Bring to 1 L total volume.\\n\\nStorage: Room temperature\n    in darkness. The acidic pH keeps metals in solution.\\n\\nFinal stock concentrations:\n    ZnSO4\\u00b77H2O (1.50 \\u00b5M), MnCl2\\u00b74H2O (0.36 \\u00b5M),\\nMoO3 (0.26 \\u00b5M),\n    CuSO4\\u00b75H2O (0.31 \\u00b5M), Co(NO3)2\\u00b76H2O (0.084 \\u00b5M)\\n\", \"snippet\":\n    \"Final concentration listed is for the stock solution.\"}, \"references\": {\"added_fields\":\n    [\"title\", \"notes\"], \"reference\": \"https://utex.org/products/bbm-bold-trace-stock-solution\"}}'\nreferences:\n- reference: https://utex.org/products/bbm-bold-trace-stock-solution\n  title: BBM Bold Trace Stock Solution Recipe\n  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;\n    accessed_on=2026-10-10; publisher=UTEX Culture Collection of Algae; locator=Directions\n    and formulation table where present. No named author, publication year or DOI\n    established. Amount and final-volume statements are reviewed separately from conflicting\n    concentration annotations; see scoped evidence.\n- reference: UTEX:bbm-bold-trace-stock-solution\n- reference: MediaIngredientMech:UNMAPPED_0065\n- reference: https://cccryo.fraunhofer.de/sources/files/medien/BBM.pdf\ncategory: bacterial\nevidence:\n- reference: https://utex.org/products/bbm-bold-trace-stock-solution\n  supports: SUPPORT\n  snippet: Final concentration listed is for the stock solution.\n  explanation: Supports the source-discrepancy disposition in notes, not the numeric\n    concentration columns. Directions state 'Bring total volume to 1 L'. For example,\n    the zinc Amount cell is '8.82 g' but its Stock Solution Concentration cell is\n    '0.44 mg/L'; these are not equivalent for that volume. The unverified micromolar\n    summary is replaced by this explicit conflict; no replacement molarity, density\n    calculation or receiving-medium dose is inferred.\n",
+      "after_sha256": "42ab49e7089a42ded0459d9934173827676715feb486f1d18d9da73e3db08e83",
+      "claims": [
+        {
+          "field": "composition[0].concentration",
+          "ingredient": "Sulfuric acid (concentrated)",
+          "old": {
+            "value": "10",
+            "unit": "ML_PER_L"
+          },
+          "proposed": {
+            "value": "10",
+            "unit": "ML_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/bbm-bold-trace-stock-solution",
+          "snippet": "10-mL",
+          "basis_snippet": "Bring total volume to 1 L",
+          "locator": "Directions; table row 1",
+          "calculation": "No numeric change proposed; preparation amount per explicitly stated one-liter total stock volume.",
+          "action_taken": "Added scoped SUPPORT evidence; numeric value retained",
+          "source_component": "H2SO4 conc."
+        },
+        {
+          "field": "composition[1].concentration",
+          "ingredient": "Zinc sulfate heptahydrate",
+          "old": {
+            "value": "8.82",
+            "unit": "G_PER_L"
+          },
+          "proposed": {
+            "value": "8.82",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/bbm-bold-trace-stock-solution",
+          "snippet": "8.82 g",
+          "basis_snippet": "Bring total volume to 1 L",
+          "locator": "Directions; table row 2",
+          "calculation": "No numeric change proposed; preparation amount per explicitly stated one-liter total stock volume.",
+          "action_taken": "Added scoped SUPPORT evidence; numeric value retained",
+          "source_component": "ZnSO4\u20227H2O"
+        },
+        {
+          "field": "composition[2].concentration",
+          "ingredient": "Manganese chloride tetrahydrate",
+          "old": {
+            "value": "1.44",
+            "unit": "G_PER_L"
+          },
+          "proposed": {
+            "value": "1.44",
+            "unit": "G_PER_L"
+          },
+          "status": "conflict",
+          "reference": "https://utex.org/products/bbm-bold-trace-stock-solution",
+          "snippet": "1.44 g",
+          "basis_snippet": "Bring total volume to 1 L",
+          "locator": "Directions; table row 3",
+          "calculation": "No numeric change proposed; preparation amount per explicitly stated one-liter total stock volume.",
+          "action_taken": "Added scoped PARTIAL evidence; existing amount and identity remain unresolved",
+          "source_component": "MnCl\u20224H2O"
+        },
+        {
+          "field": "composition[3].concentration",
+          "ingredient": "Molybdenum trioxide",
+          "old": {
+            "value": "0.71",
+            "unit": "G_PER_L"
+          },
+          "proposed": {
+            "value": "0.71",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/bbm-bold-trace-stock-solution",
+          "snippet": "0.71 g",
+          "basis_snippet": "Bring total volume to 1 L",
+          "locator": "Directions; table row 4",
+          "calculation": "No numeric change proposed; preparation amount per explicitly stated one-liter total stock volume.",
+          "action_taken": "Added scoped SUPPORT evidence; numeric value retained",
+          "source_component": "MoO3"
+        },
+        {
+          "field": "composition[4].concentration",
+          "ingredient": "Copper sulfate pentahydrate",
+          "old": {
+            "value": "1.57",
+            "unit": "G_PER_L"
+          },
+          "proposed": {
+            "value": "1.57",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/bbm-bold-trace-stock-solution",
+          "snippet": "1.57 g",
+          "basis_snippet": "Bring total volume to 1 L",
+          "locator": "Directions; table row 5",
+          "calculation": "No numeric change proposed; preparation amount per explicitly stated one-liter total stock volume.",
+          "action_taken": "Added scoped SUPPORT evidence; numeric value retained",
+          "source_component": "CuSO4\u20225H2O"
+        },
+        {
+          "field": "composition[5].concentration",
+          "ingredient": "Cobalt nitrate hexahydrate",
+          "old": {
+            "value": "0.49",
+            "unit": "G_PER_L"
+          },
+          "proposed": {
+            "value": "0.49",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/bbm-bold-trace-stock-solution",
+          "snippet": "0.49 g",
+          "basis_snippet": "Bring total volume to 1 L",
+          "locator": "Directions; table row 6",
+          "calculation": "No numeric change proposed; preparation amount per explicitly stated one-liter total stock volume.",
+          "action_taken": "Added scoped SUPPORT evidence; numeric value retained",
+          "source_component": "Co(NO3)2\u20226H2O"
+        }
+      ],
+      "counts": {
+        "new_evidence": 7,
+        "bibliographic_entries_enriched": 1,
+        "recipe_context_notes_corrected": 1,
+        "new_curation_history": 1
+      },
+      "action": "CURATED_UTEX_MIGRATED_STOCK_CONCENTRATION_EVIDENCE",
+      "reference": "https://utex.org/products/bbm-bold-trace-stock-solution",
+      "source_capture_sha256": "21688e594240b16724b04cd77fdb2899551d3753e35e28129f57f57fd2035f6b"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Boron_Stock.yaml",
+      "id": "CultureMech:015442",
+      "before_text": "id: CultureMech:015442\nid_lineage_token: legacy:5aeef52ccf22cd8efbe337b584ef8d80293c0eb9d08d185666ab6ec75d37f520\npreferred_term: Boron Stock\nterm:\n  id: MediaIngredientMech:UNMAPPED_0064\n  label: Boron Stock\ncomposition:\n- preferred_term: Boric acid\n  concentration:\n    value: '11.0'\n    unit: G_PER_L\n  term:\n    id: CHEBI:33118\n    label: boric acid\n  mediaingredientmech_chebi_term:\n    id: CHEBI:33118\n    label: boric acid\nnotes: 'Boron stock solution for Bold Basal Medium (BBM) and related algae culture\n  media.\n\n  Provides boron as an essential micronutrient for algae growth.\n\n\n  Preparation: Dissolve 11 g boric acid in approximately 900 mL distilled water,\n\n  then bring to 1 L total volume.\n\n\n  Storage: Room temperature in darkness.\n\n\n  Final stock concentration: H3BO3 (~9 \u00b5M)\n\n  '\nsource_data:\n  origin: MediaIngredientMech\n  mediaingredientmech_id: UNMAPPED_0064\n  import_date: '2026-03-15'\n  notes: Migrated from MediaIngredientMech complex media list\ncuration_history:\n- timestamp: '2026-03-15T00:00:00Z'\n  curator: mediaingredientmech-migrator-v1.0\n  action: Created from MediaIngredientMech migration\n  notes: Composition extracted from UTEX Culture Collection protocols\n- timestamp: '2026-04-04T17:49:50.327381'\n  curator: categorize_unknown_media\n  action: CATEGORIZED\n  changes: 'Set category to ''bacterial'' (was: MISSING)'\n  notes: 'Automated categorization (confidence: 0.11). Weak match (score: 0.13), defaulting\n    to bacterial'\n- timestamp: '2026-05-16T09:02:58.405064+00:00'\n  curator: migrate_legacy_fields.py\n  action: MIGRATED_LEGACY_FIELDS\n  notes: references.reference_id->reference=3\n- timestamp: '2026-06-08T23:17:55.782622+00:00'\n  curator: mim-legacy-to-chebi-migration-v1.0\n  action: Refreshed legacy MediaIngredientMech links to CHEBI keying\n  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term\n    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN\n    id scheme.'\nreferences:\n- reference: https://utex.org/products/bbm-boron-stock-solution\n- reference: UTEX:bbm-boron-stock-solution\n- reference: MediaIngredientMech:UNMAPPED_0064\ncategory: bacterial\n",
+      "before_sha256": "95a4a27a93e886f3cf6b83369044354b827d7e451ed81033d3bd7fb6d31939e7",
+      "after_text": "id: CultureMech:015442\nid_lineage_token: legacy:5aeef52ccf22cd8efbe337b584ef8d80293c0eb9d08d185666ab6ec75d37f520\npreferred_term: Boron Stock\nterm:\n  id: MediaIngredientMech:UNMAPPED_0064\n  label: Boron Stock\ncomposition:\n- preferred_term: Boric acid\n  concentration:\n    value: '11.0'\n    unit: G_PER_L\n  term:\n    id: CHEBI:33118\n    label: boric acid\n  mediaingredientmech_chebi_term:\n    id: CHEBI:33118\n    label: boric acid\n  evidence:\n  - reference: https://utex.org/products/bbm-boron-stock-solution\n    supports: SUPPORT\n    snippet: 11 g\n    explanation: 'Supports composition[0].concentration only as this standalone stock''s\n      mass or supplied-liquid volume per liter. Directions items 1 and 2; component\n      printed as ''H3BO3''; Amount excerpt: ''11 g''. Final-volume excerpt: ''Bring\n      the total volume to 1 Liter''. Existing value and precision retained; no molecular-weight,\n      density, receiving-medium or working-dose conversion. '\nnotes: |\n  Boron stock solution for Bold Basal Medium (BBM) and related algae culture media.\n  Provides boron as an essential micronutrient for algae growth.\n\n  Preparation: Dissolve 11 g boric acid in approximately 900 mL distilled water,\n  then bring to 1 L total volume.\n\n  Storage: Room temperature in darkness.\n\n  Source discrepancy: the preparation specifies 11 g H3BO3 per final 1 L, but the same page also prints approximately 9 micromolar as a final solution concentration. That parenthetical is not treated as verified stock molarity. The mass concentration is retained; no replacement molarity or receiving-medium interpretation is inferred.\nsource_data:\n  origin: MediaIngredientMech\n  mediaingredientmech_id: UNMAPPED_0064\n  import_date: '2026-03-15'\n  notes: Migrated from MediaIngredientMech complex media list\ncuration_history:\n- timestamp: '2026-03-15T00:00:00Z'\n  curator: mediaingredientmech-migrator-v1.0\n  action: Created from MediaIngredientMech migration\n  notes: Composition extracted from UTEX Culture Collection protocols\n- timestamp: '2026-04-04T17:49:50.327381'\n  curator: categorize_unknown_media\n  action: CATEGORIZED\n  changes: 'Set category to ''bacterial'' (was: MISSING)'\n  notes: 'Automated categorization (confidence: 0.11). Weak match (score: 0.13), defaulting\n    to bacterial'\n- timestamp: '2026-05-16T09:02:58.405064+00:00'\n  curator: migrate_legacy_fields.py\n  action: MIGRATED_LEGACY_FIELDS\n  notes: references.reference_id->reference=3\n- timestamp: '2026-06-08T23:17:55.782622+00:00'\n  curator: mim-legacy-to-chebi-migration-v1.0\n  action: Refreshed legacy MediaIngredientMech links to CHEBI keying\n  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term\n    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN\n    id scheme.'\n- timestamp: '2026-10-10T06:43:40+00:00'\n  curator: codex\n  action: CURATED_UTEX_MIGRATED_STOCK_CONCENTRATION_EVIDENCE\n  notes: Source-backed evidence and stock-context review. No structured concentrations\n    or identities changed; conflicts stay explicit.\n  source: https://utex.org/products/bbm-boron-stock-solution\n  changes: '{\"claims\": [{\"action_taken\": \"Added scoped SUPPORT evidence; numeric value\n    retained\", \"basis_snippet\": \"Bring the total volume to 1 Liter\", \"calculation\":\n    \"No numeric change proposed; preparation amount per explicitly stated one-liter\n    total stock volume.\", \"field\": \"composition[0].concentration\", \"ingredient\": \"Boric\n    acid\", \"locator\": \"Directions items 1 and 2\", \"old\": {\"unit\": \"G_PER_L\", \"value\":\n    \"11.0\"}, \"proposed\": {\"unit\": \"G_PER_L\", \"value\": \"11.0\"}, \"reference\": \"https://utex.org/products/bbm-boron-stock-solution\",\n    \"snippet\": \"11 g\", \"source_component\": \"H3BO3\", \"status\": \"evidence_only\"}], \"notes\":\n    {\"new\": \"Boron stock solution for Bold Basal Medium (BBM) and related algae culture\n    media.\\nProvides boron as an essential micronutrient for algae growth.\\n\\nPreparation:\n    Dissolve 11 g boric acid in approximately 900 mL distilled water,\\nthen bring\n    to 1 L total volume.\\n\\nStorage: Room temperature in darkness.\\n\\nSource discrepancy:\n    the preparation specifies 11 g H3BO3 per final 1 L, but the same page also prints\n    approximately 9 micromolar as a final solution concentration. That parenthetical\n    is not treated as verified stock molarity. The mass concentration is retained;\n    no replacement molarity or receiving-medium interpretation is inferred.\\n\", \"old\":\n    \"Boron stock solution for Bold Basal Medium (BBM) and related algae culture media.\\nProvides\n    boron as an essential micronutrient for algae growth.\\n\\nPreparation: Dissolve\n    11 g boric acid in approximately 900 mL distilled water,\\nthen bring to 1 L total\n    volume.\\n\\nStorage: Room temperature in darkness.\\n\\nFinal stock concentration:\n    H3BO3 (~9 \\u00b5M)\\n\", \"snippet\": \"final solution concentration: ~ 9\"}, \"references\":\n    {\"added_fields\": [\"title\", \"notes\"], \"reference\": \"https://utex.org/products/bbm-boron-stock-solution\"}}'\nreferences:\n- reference: https://utex.org/products/bbm-boron-stock-solution\n  title: BBM Boron Stock Solution Recipe\n  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;\n    accessed_on=2026-10-10; publisher=UTEX Culture Collection of Algae; locator=Directions\n    and formulation table where present. No named author, publication year or DOI\n    established. Amount and final-volume statements are reviewed separately from conflicting\n    concentration annotations; see scoped evidence.\n- reference: UTEX:bbm-boron-stock-solution\n- reference: MediaIngredientMech:UNMAPPED_0064\ncategory: bacterial\nevidence:\n- reference: https://utex.org/products/bbm-boron-stock-solution\n  supports: SUPPORT\n  snippet: 'final solution concentration: ~ 9'\n  explanation: Supports documenting the source discrepancy in notes, not approving\n    that molarity. Directions separately say 'dissolve 11 g of H3BO3' and 'Bring the\n    total volume to 1 Liter'. The structured 11.0 g/L amount retains its precision\n    and explicit final-volume basis; the inconsistent parenthetical is identified\n    as unverified without an invented replacement.\n",
+      "after_sha256": "ae39d6f354d2122d6e3d4a1984170933f2f37ba598926c9e872c236116971a05",
+      "claims": [
+        {
+          "field": "composition[0].concentration",
+          "ingredient": "Boric acid",
+          "old": {
+            "value": "11.0",
+            "unit": "G_PER_L"
+          },
+          "proposed": {
+            "value": "11.0",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/bbm-boron-stock-solution",
+          "snippet": "11 g",
+          "basis_snippet": "Bring the total volume to 1 Liter",
+          "locator": "Directions items 1 and 2",
+          "calculation": "No numeric change proposed; preparation amount per explicitly stated one-liter total stock volume.",
+          "action_taken": "Added scoped SUPPORT evidence; numeric value retained",
+          "source_component": "H3BO3"
+        }
+      ],
+      "counts": {
+        "new_evidence": 2,
+        "bibliographic_entries_enriched": 1,
+        "recipe_context_notes_corrected": 1,
+        "new_curation_history": 1
+      },
+      "action": "CURATED_UTEX_MIGRATED_STOCK_CONCENTRATION_EVIDENCE",
+      "reference": "https://utex.org/products/bbm-boron-stock-solution",
+      "source_capture_sha256": "4d63765d3321938fc4f6cb56aa8614e05f56bf7c2d8a96c84626da3ea8ccdbd3"
+    }
+  ]
+}

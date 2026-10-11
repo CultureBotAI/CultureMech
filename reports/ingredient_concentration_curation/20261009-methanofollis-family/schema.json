@@ -1,0 +1,171 @@
+{
+  "terminal": true,
+  "phase": "schema",
+  "records_applied": 0,
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/161-preview-yaml/K161.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanofollis-family/schema-0.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/161-preview-yaml/K161.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanofollis-family/schema-1.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/161-preview-yaml/D161.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanofollis-family/schema-2.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/161-preview-yaml/D161.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanofollis-family/schema-3.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/161-preview-yaml/S209.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanofollis-family/schema-4.log",
+      "log_sha256": "ab8f4f36a4dbbc200d03d225ed9af2b0e7056b0fd224253188cad9054bc0abf2"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/161-preview-yaml/S209.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanofollis-family/schema-5.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/161-preview-yaml/S241.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanofollis-family/schema-6.log",
+      "log_sha256": "ab8f4f36a4dbbc200d03d225ed9af2b0e7056b0fd224253188cad9054bc0abf2"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/161-preview-yaml/S241.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanofollis-family/schema-7.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/161-preview-yaml/S277.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanofollis-family/schema-8.log",
+      "log_sha256": "ab8f4f36a4dbbc200d03d225ed9af2b0e7056b0fd224253188cad9054bc0abf2"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/161-preview-yaml/S277.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanofollis-family/schema-9.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/161-preview-yaml/S5980.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanofollis-family/schema-10.log",
+      "log_sha256": "ab8f4f36a4dbbc200d03d225ed9af2b0e7056b0fd224253188cad9054bc0abf2"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/161-preview-yaml/S5980.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanofollis-family/schema-11.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    }
+  ],
+  "code_sha256": {
+    "scripts/repair_methanofollis_family.py": "5c9a586eb9bb6bae87c35729026cab89623d1059e034e1c48fd2bf4038919b6e",
+    "tests/test_methanofollis_family.py": "bcc83c55d3511bfb36dc849c5caef8926034d2947c9370455566a44cb59cfbf7",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanofollis-family/audit.py": "8d75f631a9d4d12b7cf8f932e70834817c6bb7efc7e077f092b78d3a460fa82e",
+    "scripts/repair_rumen_bacteria_family.py": "d3c23bf4b7141ffcc038f596fc7cad69c19372a5ecedaee21dbf6d99950fdf36",
+    "scripts/repair_oteb_family.py": "90aa83324ff1b28708921a00c409f50b4c4bd12eb15f09ae8feb0e1010916795",
+    "scripts/repair_methanogen_stock_boundaries.py": "8d4d32c7dc3cb2586242a188f958087482df3aff553d1dbc468c422eddb037ba",
+    "scripts/repair_lactalbumin_formulations.py": "3c16a3f4a2e543d280d3ccbb20a63138f2b409602d8b168b7fc742abe63b1769",
+    "scripts/repair_jcm_stock_preparations.py": "7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a",
+    "scripts/repair_mediadive_stock_concentration_evidence.py": "1badfa99205690cf6082d95db7dafbd6d4927b617027bc61fbaaf9dbd597c974",
+    "scripts/review_medium_concentration_evidence.py": "ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a",
+    "src/culturemech/validation/recipe_references.py": "1ef57389727347c242f45a85a9ed8908803423bc10307f53a888dac67ce06b67",
+    "src/culturemech/validation/write_validated.py": "8e1e2185231caecbe3dc99908c783cd83340b1e93fa9115ff1445d4b3820897e",
+    "src/culturemech/schema/culturemech.yaml": "461478d900fdee29a52c3d14656bcf369443bfdd0f4a534aa9d385f25df1cf8a"
+  },
+  "plan_sha256": "dc2a0e96231feac52125245dc55f41d3deb937970a06d151fba10d2fd63d7a4a",
+  "context_sha256": "7c14648ed630e165a4ebc834b0ff55f560e11cfc50f1507a6776b90c99b413b0",
+  "inventory_before": "746bda4b9dd276ab1077245cf751a5c652fd697e6f355cb7183b49f7f93edd71",
+  "files": [
+    {
+      "path": "/tmp/ingredient-media-20261007/161-preview-yaml/K161.yaml",
+      "sha256": "17690510cc1d91151b68f7cf5b79158b3ef07b5ff8389c7c07e393e979db70f7"
+    },
+    {
+      "path": "/tmp/ingredient-media-20261007/161-preview-yaml/D161.yaml",
+      "sha256": "e4930e4ceaf68ffbea48767e64811a882c358cb77fb8c5d2dbd866568e23179f"
+    },
+    {
+      "path": "/tmp/ingredient-media-20261007/161-preview-yaml/S209.yaml",
+      "sha256": "54b71f4e04abc9a9f0f95c37b0172b65e614e2bfbd8362dc73905c5f1c2684c2"
+    },
+    {
+      "path": "/tmp/ingredient-media-20261007/161-preview-yaml/S241.yaml",
+      "sha256": "3ad6e16dcff1f675260d599c644e49992fa8d76623e0889caaba21fd1e22bfab"
+    },
+    {
+      "path": "/tmp/ingredient-media-20261007/161-preview-yaml/S277.yaml",
+      "sha256": "e86734d13af7f6d5c3892fa7b27b69558a366aadf2fd0de2b570d67d74309c2d"
+    },
+    {
+      "path": "/tmp/ingredient-media-20261007/161-preview-yaml/S5980.yaml",
+      "sha256": "b8b5efd085ffa7d0f4e3da6ccf82c0de49b364082867d531beefa757fa3c5950"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "terminal": true,
+  "passed": true,
+  "created_at": "2026-10-10T20:48:48.823907+00:00",
+  "state": "uninstalled guard preview; application exercised only in temporary fixture repositories",
+  "plan_sha256": "02e2766eff09cf1aa9ec5f235f7ea660f5f52f1fddbeca535dc5bbf125218899",
+  "source_sha256": {
+    "scripts/review_utex_soil_seawater.py": "b31a3b36b4d680b66e9009ad9c89ae57a370ff0671cc9a3fc88e0fdfd64142b4",
+    "tests/test_utex_soil_seawater.py": "371628e21ca8a510495c102fb8f0429fa0b66db8029c6117bf70203adc25cbc1"
+  },
+  "patch_sha256": "2c805b0237393aa4a0c5ec00fbce1f6ba908a6f9ee1f34d6473daba9a88cfec0",
+  "checks": [
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "--no-cov",
+        "-o",
+        "addopts=",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/guard-preview/test_utex_soil_seawater.py"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/guard-preview/check-00.log",
+      "log_sha256": "220acdb12afb26be8859a20ef987c165715ea796d5a3800e65cdd88f17254550"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "--config",
+        "pyproject.toml",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/guard-preview/review_utex_soil_seawater.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/guard-preview/test_utex_soil_seawater.py"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/guard-preview/check-01.log",
+      "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--config",
+        "pyproject.toml",
+        "--check",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/guard-preview/review_utex_soil_seawater.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/guard-preview/test_utex_soil_seawater.py"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v1/guard-preview/check-02.log",
+      "log_sha256": "b9cf511501d306d2bd8355ccb165c8ddc0a6fdd62d7c72c4a7b1795cf8934c8c"
+    }
+  ],
+  "authoritative_records_edited": 0,
+  "limitation": "The cumulative audit registry, actual application and post-edit/publication checks remain outstanding."
+}

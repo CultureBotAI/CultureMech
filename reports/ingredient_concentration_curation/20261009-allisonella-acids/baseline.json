@@ -1,0 +1,60 @@
+{
+  "terminal": true,
+  "phase": "baseline",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/allisonella_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-allisonella-acids/baseline-0.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/allisonella_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-allisonella-acids/baseline-1.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/KOMODO_1006_ALLISONELLA_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-allisonella-acids/baseline-2.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/KOMODO_1006_ALLISONELLA_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-allisonella-acids/baseline-3.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    }
+  ],
+  "code_sha256": {
+    "scripts/repair_allisonella_acids.py": "afc95c9898218db0962b967e8a3189663e1a15ae393e9ef09faa87fbc145f390",
+    "tests/test_allisonella_acids.py": "e8ff482a4a799b5d7bde7bbdf1a7b0bc26e48b761e5f4c35377f00033bb1d5d4",
+    "reports/ingredient_concentration_curation/20261009-allisonella-acids/audit.py": "3d9dd9ae97cf62179e59e1f08506889747b22ce24c30d8336f5cf74596557f80"
+  },
+  "plan_sha256": "c42cb613f1e5e24c2383349e4869862808f7aebce7ab75463be77af2f0d3af18",
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "586888cea49e962e3fe4ccbe021599c5c21ee5f15e4aae265f5bdfe305ce8bb0"
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "586888cea49e962e3fe4ccbe021599c5c21ee5f15e4aae265f5bdfe305ce8bb0"
+  }
+}

@@ -11,21 +11,19 @@ media_term:
   term:
     id: mediadive.medium:1829
     label: BSKII medium (Borrelia)
-notes: 'Source: DSMZ
+notes: |-
+  Source: DSMZ
 
-
+  Superseded historical provenance (not a current formulation claim):
   Commercial Product: LB Medium (Luria-Bertani, Miller formulation)
-
   Supplier: Multiple suppliers (Difco, Sigma, etc.)
-
   Catalog: Multiple (L3522 Sigma, 244520 BD)
-
   Source: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-
   Accessed: 2026-03-28
 
+  Constituent composition researched from product specification.
 
-  Constituent composition researched from product specification.'
+  The false LB constituent expansion is withdrawn in favor of this source's bovine serum albumin input. Existing unrelated chemical annotations are preserved, not recertified. This repair does not assert equivalence with other BSK formulations or add organism-growth evidence.
 ingredients:
 - preferred_term: HEPES
   term:
@@ -37,6 +35,33 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:46756
     label: HEPES
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1829
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 2,
+                              "compound": "HEPES",
+                              "compound_id": 371,
+                              "amount": 0.51,
+                              "unit": "g",
+                              "g_l": 5.1,
+                              "mmol_l": 21.4016,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[0].concentration: Original final volume is 100 ml =
+      0.1 L: 0.51 g / 0.1 L = 5.1 G_PER_L. This is the receiving-medium rate, not
+      a mass interpretation of a liquid input. No final-medium volume, percentage
+      basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[0];
+      accessed=2026-10-08T22:21:55.994207+00:00; capture SHA256=697c769d31d726f5b7e965402b9291bbb8b288f67daad777509eef51a2b25116.'
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf
+    supports: SUPPORT
+    snippet: HEPES                                                              0.51          g
+    explanation: |-
+      ingredients[0].concentration: Original recipe row corroborates the source-specific ingredient, batch amount and unit; preparation scope is retained. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T22:23:34.264038+00:00; capture SHA256=315505d8d0ff7d6eb251e2f07754db41cb014aca014de719da507e45e1aa2ab2.
+
+      Additional exact excerpt: Final volume: 100 ml
+      ingredients[0].concentration: Original final volume is 100 ml = 0.1 L: 0.51 g / 0.1 L = 5.1 G_PER_L. This is the receiving-medium rate, not a mass interpretation of a liquid input. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T22:23:34.264038+00:00; capture SHA256=315505d8d0ff7d6eb251e2f07754db41cb014aca014de719da507e45e1aa2ab2.
 - preferred_term: Trisodium citrate x 2 H2O
   concentration:
     value: '0.5'
@@ -47,6 +72,33 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:53258
     label: sodium citrate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1829
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 3,
+                              "compound": "Trisodium citrate x 2 H2O",
+                              "compound_id": 1249,
+                              "amount": 0.05,
+                              "unit": "g",
+                              "g_l": 0.5,
+                              "mmol_l": 1.7001,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[1].concentration: Original final volume is 100 ml =
+      0.1 L: 0.05 g / 0.1 L = 0.5 G_PER_L. This is the receiving-medium rate, not
+      a mass interpretation of a liquid input. No final-medium volume, percentage
+      basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[1];
+      accessed=2026-10-08T22:21:55.994207+00:00; capture SHA256=697c769d31d726f5b7e965402b9291bbb8b288f67daad777509eef51a2b25116.'
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf
+    supports: SUPPORT
+    snippet: Trisodium citrate x 2 H2O                                          0.05          g
+    explanation: |-
+      ingredients[1].concentration: Original recipe row corroborates the source-specific ingredient, batch amount and unit; preparation scope is retained. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T22:23:34.264038+00:00; capture SHA256=315505d8d0ff7d6eb251e2f07754db41cb014aca014de719da507e45e1aa2ab2.
+
+      Additional exact excerpt: Final volume: 100 ml
+      ingredients[1].concentration: Original final volume is 100 ml = 0.1 L: 0.05 g / 0.1 L = 0.5 G_PER_L. This is the receiving-medium rate, not a mass interpretation of a liquid input. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T22:23:34.264038+00:00; capture SHA256=315505d8d0ff7d6eb251e2f07754db41cb014aca014de719da507e45e1aa2ab2.
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -57,6 +109,33 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1829
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 4,
+                              "compound": "Glucose",
+                              "compound_id": 5,
+                              "amount": 0.42,
+                              "unit": "g",
+                              "g_l": 4.2,
+                              "mmol_l": 23.3126,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[2].concentration: Original final volume is 100 ml =
+      0.1 L: 0.42 g / 0.1 L = 4.2 G_PER_L. This is the receiving-medium rate, not
+      a mass interpretation of a liquid input. No final-medium volume, percentage
+      basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[2];
+      accessed=2026-10-08T22:21:55.994207+00:00; capture SHA256=697c769d31d726f5b7e965402b9291bbb8b288f67daad777509eef51a2b25116.'
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf
+    supports: SUPPORT
+    snippet: Glucose                                                            0.42          g
+    explanation: |-
+      ingredients[2].concentration: Original recipe row corroborates the source-specific ingredient, batch amount and unit; preparation scope is retained. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T22:23:34.264038+00:00; capture SHA256=315505d8d0ff7d6eb251e2f07754db41cb014aca014de719da507e45e1aa2ab2.
+
+      Additional exact excerpt: Final volume: 100 ml
+      ingredients[2].concentration: Original final volume is 100 ml = 0.1 L: 0.42 g / 0.1 L = 4.2 G_PER_L. This is the receiving-medium rate, not a mass interpretation of a liquid input. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T22:23:34.264038+00:00; capture SHA256=315505d8d0ff7d6eb251e2f07754db41cb014aca014de719da507e45e1aa2ab2.
 - preferred_term: Pyruvate
   term:
     id: CHEBI:15361
@@ -67,6 +146,33 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:15361
     label: pyruvate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1829
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 5,
+                              "compound": "Pyruvate",
+                              "compound_id": 1386,
+                              "amount": 0.06,
+                              "unit": "g",
+                              "g_l": 0.6,
+                              "mmol_l": 6.89259,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[3].concentration: Original final volume is 100 ml =
+      0.1 L: 0.06 g / 0.1 L = 0.6 G_PER_L. This is the receiving-medium rate, not
+      a mass interpretation of a liquid input. No final-medium volume, percentage
+      basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[3];
+      accessed=2026-10-08T22:21:55.994207+00:00; capture SHA256=697c769d31d726f5b7e965402b9291bbb8b288f67daad777509eef51a2b25116.'
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf
+    supports: SUPPORT
+    snippet: Pyruvate                                                           0.06          g
+    explanation: |-
+      ingredients[3].concentration: Original recipe row corroborates the source-specific ingredient, batch amount and unit; preparation scope is retained. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T22:23:34.264038+00:00; capture SHA256=315505d8d0ff7d6eb251e2f07754db41cb014aca014de719da507e45e1aa2ab2.
+
+      Additional exact excerpt: Final volume: 100 ml
+      ingredients[3].concentration: Original final volume is 100 ml = 0.1 L: 0.06 g / 0.1 L = 0.6 G_PER_L. This is the receiving-medium rate, not a mass interpretation of a liquid input. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T22:23:34.264038+00:00; capture SHA256=315505d8d0ff7d6eb251e2f07754db41cb014aca014de719da507e45e1aa2ab2.
 - preferred_term: N-Acetylglucosamine
   term:
     id: CHEBI:59640
@@ -77,6 +183,33 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:59640
     label: N-acetylglucosamine
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1829
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 6,
+                              "compound": "N-Acetylglucosamine",
+                              "compound_id": 462,
+                              "amount": 0.03,
+                              "unit": "g",
+                              "g_l": 0.3,
+                              "mmol_l": 1.35618,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[4].concentration: Original final volume is 100 ml =
+      0.1 L: 0.03 g / 0.1 L = 0.3 G_PER_L. This is the receiving-medium rate, not
+      a mass interpretation of a liquid input. No final-medium volume, percentage
+      basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[4];
+      accessed=2026-10-08T22:21:55.994207+00:00; capture SHA256=697c769d31d726f5b7e965402b9291bbb8b288f67daad777509eef51a2b25116.'
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf
+    supports: SUPPORT
+    snippet: N-Acetylglucosamine                                                0.03          g
+    explanation: |-
+      ingredients[4].concentration: Original recipe row corroborates the source-specific ingredient, batch amount and unit; preparation scope is retained. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T22:23:34.264038+00:00; capture SHA256=315505d8d0ff7d6eb251e2f07754db41cb014aca014de719da507e45e1aa2ab2.
+
+      Additional exact excerpt: Final volume: 100 ml
+      ingredients[4].concentration: Original final volume is 100 ml = 0.1 L: 0.03 g / 0.1 L = 0.3 G_PER_L. This is the receiving-medium rate, not a mass interpretation of a liquid input. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T22:23:34.264038+00:00; capture SHA256=315505d8d0ff7d6eb251e2f07754db41cb014aca014de719da507e45e1aa2ab2.
 - preferred_term: Sodium bicarbonate
   concentration:
     value: '1.8'
@@ -87,79 +220,252 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1829
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 7,
+                              "compound": "Sodium bicarbonate",
+                              "compound_id": 2149,
+                              "amount": 0.18,
+                              "unit": "g",
+                              "g_l": 1.8,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[5].concentration: Original final volume is 100 ml =
+      0.1 L: 0.18 g / 0.1 L = 1.8 G_PER_L. This is the receiving-medium rate, not
+      a mass interpretation of a liquid input. No final-medium volume, percentage
+      basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[5];
+      accessed=2026-10-08T22:21:55.994207+00:00; capture SHA256=697c769d31d726f5b7e965402b9291bbb8b288f67daad777509eef51a2b25116.'
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf
+    supports: SUPPORT
+    snippet: Sodium bicarbonate                                                 0.18          g
+    explanation: |-
+      ingredients[5].concentration: Original recipe row corroborates the source-specific ingredient, batch amount and unit; preparation scope is retained. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T22:23:34.264038+00:00; capture SHA256=315505d8d0ff7d6eb251e2f07754db41cb014aca014de719da507e45e1aa2ab2.
+
+      Additional exact excerpt: Final volume: 100 ml
+      ingredients[5].concentration: Original final volume is 100 ml = 0.1 L: 0.18 g / 0.1 L = 1.8 G_PER_L. This is the receiving-medium rate, not a mass interpretation of a liquid input. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T22:23:34.264038+00:00; capture SHA256=315505d8d0ff7d6eb251e2f07754db41cb014aca014de719da507e45e1aa2ab2.
 - preferred_term: Yeast extract
   concentration:
     value: '1.7'
     unit: G_PER_L
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1829
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 8,
+                              "compound": "Yeast extract",
+                              "compound_id": 16,
+                              "amount": 0.17,
+                              "unit": "g",
+                              "g_l": 1.7,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[6].concentration: Original final volume is 100 ml =
+      0.1 L: 0.17 g / 0.1 L = 1.7 G_PER_L. This is the receiving-medium rate, not
+      a mass interpretation of a liquid input. No final-medium volume, percentage
+      basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[6];
+      accessed=2026-10-08T22:21:55.994207+00:00; capture SHA256=697c769d31d726f5b7e965402b9291bbb8b288f67daad777509eef51a2b25116.'
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf
+    supports: SUPPORT
+    snippet: Yeast extract                                                      0.17          g
+    explanation: |-
+      ingredients[6].concentration: Original recipe row corroborates the source-specific ingredient, batch amount and unit; preparation scope is retained. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T22:23:34.264038+00:00; capture SHA256=315505d8d0ff7d6eb251e2f07754db41cb014aca014de719da507e45e1aa2ab2.
+
+      Additional exact excerpt: Final volume: 100 ml
+      ingredients[6].concentration: Original final volume is 100 ml = 0.1 L: 0.17 g / 0.1 L = 1.7 G_PER_L. This is the receiving-medium rate, not a mass interpretation of a liquid input. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T22:23:34.264038+00:00; capture SHA256=315505d8d0ff7d6eb251e2f07754db41cb014aca014de719da507e45e1aa2ab2.
 - preferred_term: Bacto peptone
   concentration:
     value: '4.2'
     unit: G_PER_L
-- preferred_term: Tryptone
-  term:
-    id: MICRO:0000182
-    label: tryptone
+  notes: 'Original source component specification: Becton Dickinson.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1829
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 9,
+                              "compound": "Bacto peptone",
+                              "compound_id": 19,
+                              "attribute": "Becton Dickinson",
+                              "amount": 0.42,
+                              "unit": "g",
+                              "g_l": 4.2,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[7].concentration: Original final volume is 100 ml = 0.1 L: 0.42 g / 0.1 L = 4.2 G_PER_L. This is the receiving-medium rate, not a mass interpretation of a liquid input. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[7]; accessed=2026-10-08T22:21:55.994207+00:00; capture SHA256=697c769d31d726f5b7e965402b9291bbb8b288f67daad777509eef51a2b25116.
+
+      Additional exact excerpt: {
+                              "recipe_order": 9,
+                              "compound": "Bacto peptone",
+                              "compound_id": 19,
+                              "attribute": "Becton Dickinson",
+                              "amount": 0.42,
+                              "unit": "g",
+                              "g_l": 4.2,
+                              "optional": 0
+                          }
+      ingredients[7].notes: Preserve the exact product/fraction qualifier. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[7]; accessed=2026-10-08T22:21:55.994207+00:00; capture SHA256=697c769d31d726f5b7e965402b9291bbb8b288f67daad777509eef51a2b25116.
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf
+    supports: SUPPORT
+    snippet: Bacto peptone (Becton Dickinson)                                   0.42          g
+    explanation: |-
+      ingredients[7].concentration: Original recipe row corroborates the source-specific ingredient, batch amount and unit; preparation scope is retained. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T22:23:34.264038+00:00; capture SHA256=315505d8d0ff7d6eb251e2f07754db41cb014aca014de719da507e45e1aa2ab2.
+
+      Additional exact excerpt: Final volume: 100 ml
+      ingredients[7].concentration: Original final volume is 100 ml = 0.1 L: 0.42 g / 0.1 L = 4.2 G_PER_L. This is the receiving-medium rate, not a mass interpretation of a liquid input. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T22:23:34.264038+00:00; capture SHA256=315505d8d0ff7d6eb251e2f07754db41cb014aca014de719da507e45e1aa2ab2.
+- preferred_term: Bovine serum albumin
   concentration:
-    value: '10.0'
+    value: '8.5'
     unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
-    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
-  synonyms:
-  - synonym_text: pancreatic digest of casein
-    synonym_type: EXACT
-  - synonym_text: casein peptone
-    synonym_type: EXACT
-- preferred_term: Yeast extract
-  term:
-    id: FOODON:03315426
-    label: yeast extract
-  concentration:
-    value: '5.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
-    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
-    product
-- preferred_term: Sodium chloride
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  concentration:
-    value: '10.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
-    (Luria-Bertani, Miller formulation) commercial product
-  synonyms:
-  - synonym_text: NaCl
-    synonym_type: EXACT
-  - synonym_text: table salt
-    synonym_type: EXACT
+  notes: 'Original source component specification: Fraction V.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1829
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 10,
+                              "compound": "Bovine serum albumin",
+                              "compound_id": 705,
+                              "attribute": "Fraction V",
+                              "amount": 0.85,
+                              "unit": "g",
+                              "g_l": 8.5,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[8].concentration: Original final volume is 100 ml = 0.1 L: 0.85 g / 0.1 L = 8.5 G_PER_L. This is the receiving-medium rate, not a mass interpretation of a liquid input. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[8]; accessed=2026-10-08T22:21:55.994207+00:00; capture SHA256=697c769d31d726f5b7e965402b9291bbb8b288f67daad777509eef51a2b25116.
+
+      Additional exact excerpt: {
+                              "recipe_order": 10,
+                              "compound": "Bovine serum albumin",
+                              "compound_id": 705,
+                              "attribute": "Fraction V",
+                              "amount": 0.85,
+                              "unit": "g",
+                              "g_l": 8.5,
+                              "optional": 0
+                          }
+      ingredients[8].notes: Preserve the exact product/fraction qualifier. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[8]; accessed=2026-10-08T22:21:55.994207+00:00; capture SHA256=697c769d31d726f5b7e965402b9291bbb8b288f67daad777509eef51a2b25116.
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf
+    supports: SUPPORT
+    snippet: Bovine serum albumin (Fraction V)                                  0.85          g
+    explanation: |-
+      ingredients[8].concentration: Original recipe row corroborates the source-specific ingredient, batch amount and unit; preparation scope is retained. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T22:23:34.264038+00:00; capture SHA256=315505d8d0ff7d6eb251e2f07754db41cb014aca014de719da507e45e1aa2ab2.
+
+      Additional exact excerpt: Final volume: 100 ml
+      ingredients[8].concentration: Original final volume is 100 ml = 0.1 L: 0.85 g / 0.1 L = 8.5 G_PER_L. This is the receiving-medium rate, not a mass interpretation of a liquid input. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T22:23:34.264038+00:00; capture SHA256=315505d8d0ff7d6eb251e2f07754db41cb014aca014de719da507e45e1aa2ab2.
 - preferred_term: Rabbit serum
   concentration:
-    value: '8.56'
-    unit: G_PER_L
+    value: '85.6'
+    unit: ML_PER_L
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1829
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 11,
+                              "compound": "Rabbit serum",
+                              "compound_id": 464,
+                              "amount": 8.56,
+                              "unit": "ml",
+                              "optional": 0
+                          }
+    explanation: 'ingredients[9].concentration: Original final volume is 100 ml =
+      0.1 L: 8.56 ml / 0.1 L = 85.6 ML_PER_L. This is the receiving-medium rate, not
+      a mass interpretation of a liquid input. No final-medium volume, percentage
+      basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[9];
+      accessed=2026-10-08T22:21:55.994207+00:00; capture SHA256=697c769d31d726f5b7e965402b9291bbb8b288f67daad777509eef51a2b25116.'
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf
+    supports: SUPPORT
+    snippet: Rabbit serum                                                       8.56        ml
+    explanation: |-
+      ingredients[9].concentration: Original recipe row corroborates the source-specific ingredient, batch amount and unit; preparation scope is retained. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T22:23:34.264038+00:00; capture SHA256=315505d8d0ff7d6eb251e2f07754db41cb014aca014de719da507e45e1aa2ab2.
+
+      Additional exact excerpt: Final volume: 100 ml
+      ingredients[9].concentration: Original final volume is 100 ml = 0.1 L: 8.56 ml / 0.1 L = 85.6 ML_PER_L. This is the receiving-medium rate, not a mass interpretation of a liquid input. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T22:23:34.264038+00:00; capture SHA256=315505d8d0ff7d6eb251e2f07754db41cb014aca014de719da507e45e1aa2ab2.
 - preferred_term: MEM alpha Modification
   concentration:
     value: '8.9'
     unit: G_PER_L
+  notes: 'Original source component specification: BioWest Cat No. P0440.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1829
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 12,
+                              "compound": "MEM alpha Modification",
+                              "compound_id": 1923,
+                              "attribute": "BioWest Cat No. P0440",
+                              "amount": 0.89,
+                              "unit": "g",
+                              "g_l": 8.9,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[10].concentration: Original final volume is 100 ml = 0.1 L: 0.89 g / 0.1 L = 8.9 G_PER_L. This is the receiving-medium rate, not a mass interpretation of a liquid input. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[10]; accessed=2026-10-08T22:21:55.994207+00:00; capture SHA256=697c769d31d726f5b7e965402b9291bbb8b288f67daad777509eef51a2b25116.
+
+      Additional exact excerpt: {
+                              "recipe_order": 12,
+                              "compound": "MEM alpha Modification",
+                              "compound_id": 1923,
+                              "attribute": "BioWest Cat No. P0440",
+                              "amount": 0.89,
+                              "unit": "g",
+                              "g_l": 8.9,
+                              "optional": 0
+                          }
+      ingredients[10].notes: Preserve the exact product/fraction qualifier. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[10]; accessed=2026-10-08T22:21:55.994207+00:00; capture SHA256=697c769d31d726f5b7e965402b9291bbb8b288f67daad777509eef51a2b25116.
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf
+    supports: SUPPORT
+    snippet: MEM alpha Modification (BioWest Cat No. P0440)                     0.89          g
+    explanation: |-
+      ingredients[10].concentration: Original recipe row corroborates the source-specific ingredient, batch amount and unit; preparation scope is retained. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T22:23:34.264038+00:00; capture SHA256=315505d8d0ff7d6eb251e2f07754db41cb014aca014de719da507e45e1aa2ab2.
+
+      Additional exact excerpt: Final volume: 100 ml
+      ingredients[10].concentration: Original final volume is 100 ml = 0.1 L: 0.89 g / 0.1 L = 8.9 G_PER_L. This is the receiving-medium rate, not a mass interpretation of a liquid input. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T22:23:34.264038+00:00; capture SHA256=315505d8d0ff7d6eb251e2f07754db41cb014aca014de719da507e45e1aa2ab2.
+- preferred_term: Deionized water
+  notes: 'Deionized water: make up the complete medium to a final volume of 100 ml;
+    this is not a fixed 100 ml water addition.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1829
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 13,
+                              "compound": "Deionized water",
+                              "compound_id": 418,
+                              "unit": "ml",
+                              "optional": 0
+                          }
+    explanation: 'ingredients[11].notes: The original specifies water fill up to 100
+      ml, not a fixed carrier input. No numeric water dose is asserted. No final-medium
+      volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[11];
+      accessed=2026-10-08T22:21:55.994207+00:00; capture SHA256=697c769d31d726f5b7e965402b9291bbb8b288f67daad777509eef51a2b25116.'
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf
+    supports: SUPPORT
+    snippet: Deionized water                                           fill up to
+      100       ml
+    explanation: 'ingredients[11].notes: Original recipe row corroborates the source-specific
+      ingredient, batch amount and unit; preparation scope is retained. No final-medium
+      volume, percentage basis, density or chemical grounding is inferred. Locator=original
+      recipe text; accessed=2026-10-08T22:23:34.264038+00:00; capture SHA256=315505d8d0ff7d6eb251e2f07754db41cb014aca014de719da507e45e1aa2ab2.'
 preparation_steps:
 - step_number: 1
-  action: FILTER_STERILIZE
-  description: Combine all ingredients, adjust pH to 7.3 with 1 M NaOH and filter-sterilize
+  action: MIX
+  description: Combine the recipe ingredients. The source specifies a final medium
+    volume of 100 ml, using deionized water as makeup; no separate makeup-versus-titration
+    order is asserted.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust to pH 7.3 with 1 M NaOH.
+- step_number: 3
+  action: FILTER
+  description: Filter-sterilize; the source specifies no filter pore size.
 applications:
 - Microbial cultivation
 curation_history:
@@ -190,3 +496,343 @@ curation_history:
   notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-08T23:24:53.639909+00:00'
+  curator: codex
+  action: RESTORED_SOURCE_SPECIFIC_BSK_FORMULATIONS_WITH_INGREDIENT_EVIDENCE
+  notes: Restore source-specific albumin, quantity scopes, missing inputs and preparation
+    boundaries. Preserve ID, prior history and unrelated groundings. Unknown doses,
+    percentage bases and final volumes stay unknown; distinct formulations are not
+    blended.
+  source: https://mediadive.dsmz.de/rest/medium/1829
+  changes: '[{"old_field": "ingredients[0].concentration", "field": "ingredients[0].concentration",
+    "old": {"value": "5.1", "unit": "G_PER_L"}, "new": {"value": "5.1", "unit": "G_PER_L"},
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1829",
+    "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"HEPES\",\n                        \"compound_id\": 371,\n                        \"amount\":
+    0.51,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    5.1,\n                        \"mmol_l\": 21.4016,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[0].concentration",
+    "old": null, "new": {"value": "5.1", "unit": "G_PER_L"}, "status": "evidence_only",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+    "snippet": "HEPES                                                              0.51          g"},
+    {"old_field": null, "field": "ingredients[0].concentration", "old": null, "new":
+    {"value": "5.1", "unit": "G_PER_L"}, "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+    "snippet": "Final volume: 100 ml"}, {"old_field": "ingredients[1].concentration",
+    "field": "ingredients[1].concentration", "old": {"value": "0.5", "unit": "G_PER_L"},
+    "new": {"value": "0.5", "unit": "G_PER_L"}, "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1829", "snippet": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Trisodium citrate x 2 H2O\",\n                        \"compound_id\":
+    1249,\n                        \"amount\": 0.05,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\":
+    1.7001,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "ingredients[1].concentration", "old": null, "new": {"value": "0.5",
+    "unit": "G_PER_L"}, "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+    "snippet": "Trisodium citrate x 2 H2O                                          0.05          g"},
+    {"old_field": null, "field": "ingredients[1].concentration", "old": null, "new":
+    {"value": "0.5", "unit": "G_PER_L"}, "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+    "snippet": "Final volume: 100 ml"}, {"old_field": "ingredients[2].concentration",
+    "field": "ingredients[2].concentration", "old": {"value": "4.2", "unit": "G_PER_L"},
+    "new": {"value": "4.2", "unit": "G_PER_L"}, "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1829", "snippet": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\":
+    5,\n                        \"amount\": 0.42,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 4.2,\n                        \"mmol_l\":
+    23.3126,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "ingredients[2].concentration", "old": null, "new": {"value": "4.2",
+    "unit": "G_PER_L"}, "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+    "snippet": "Glucose                                                            0.42          g"},
+    {"old_field": null, "field": "ingredients[2].concentration", "old": null, "new":
+    {"value": "4.2", "unit": "G_PER_L"}, "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+    "snippet": "Final volume: 100 ml"}, {"old_field": "ingredients[3].concentration",
+    "field": "ingredients[3].concentration", "old": {"value": "0.6", "unit": "G_PER_L"},
+    "new": {"value": "0.6", "unit": "G_PER_L"}, "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1829", "snippet": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"Pyruvate\",\n                        \"compound_id\":
+    1386,\n                        \"amount\": 0.06,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.6,\n                        \"mmol_l\":
+    6.89259,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "ingredients[3].concentration", "old": null, "new": {"value": "0.6",
+    "unit": "G_PER_L"}, "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+    "snippet": "Pyruvate                                                           0.06          g"},
+    {"old_field": null, "field": "ingredients[3].concentration", "old": null, "new":
+    {"value": "0.6", "unit": "G_PER_L"}, "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+    "snippet": "Final volume: 100 ml"}, {"old_field": "ingredients[4].concentration",
+    "field": "ingredients[4].concentration", "old": {"value": "0.3", "unit": "G_PER_L"},
+    "new": {"value": "0.3", "unit": "G_PER_L"}, "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1829", "snippet": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"N-Acetylglucosamine\",\n                        \"compound_id\":
+    462,\n                        \"amount\": 0.03,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.3,\n                        \"mmol_l\":
+    1.35618,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "ingredients[4].concentration", "old": null, "new": {"value": "0.3",
+    "unit": "G_PER_L"}, "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+    "snippet": "N-Acetylglucosamine                                                0.03          g"},
+    {"old_field": null, "field": "ingredients[4].concentration", "old": null, "new":
+    {"value": "0.3", "unit": "G_PER_L"}, "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+    "snippet": "Final volume: 100 ml"}, {"old_field": "ingredients[5].concentration",
+    "field": "ingredients[5].concentration", "old": {"value": "1.8", "unit": "G_PER_L"},
+    "new": {"value": "1.8", "unit": "G_PER_L"}, "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1829", "snippet": "{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"Sodium bicarbonate\",\n                        \"compound_id\":
+    2149,\n                        \"amount\": 0.18,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.8,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[5].concentration",
+    "old": null, "new": {"value": "1.8", "unit": "G_PER_L"}, "status": "evidence_only",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+    "snippet": "Sodium bicarbonate                                                 0.18          g"},
+    {"old_field": null, "field": "ingredients[5].concentration", "old": null, "new":
+    {"value": "1.8", "unit": "G_PER_L"}, "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+    "snippet": "Final volume: 100 ml"}, {"old_field": "ingredients[6].concentration",
+    "field": "ingredients[6].concentration", "old": {"value": "1.7", "unit": "G_PER_L"},
+    "new": {"value": "1.7", "unit": "G_PER_L"}, "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1829", "snippet": "{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\":
+    16,\n                        \"amount\": 0.17,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.7,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[6].concentration",
+    "old": null, "new": {"value": "1.7", "unit": "G_PER_L"}, "status": "evidence_only",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+    "snippet": "Yeast extract                                                      0.17          g"},
+    {"old_field": null, "field": "ingredients[6].concentration", "old": null, "new":
+    {"value": "1.7", "unit": "G_PER_L"}, "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+    "snippet": "Final volume: 100 ml"}, {"old_field": "ingredients[7].concentration",
+    "field": "ingredients[7].concentration", "old": {"value": "4.2", "unit": "G_PER_L"},
+    "new": {"value": "4.2", "unit": "G_PER_L"}, "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1829", "snippet": "{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Bacto peptone\",\n                        \"compound_id\":
+    19,\n                        \"attribute\": \"Becton Dickinson\",\n                        \"amount\":
+    0.42,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    4.2,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "ingredients[7].concentration", "old": null, "new": {"value": "4.2",
+    "unit": "G_PER_L"}, "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+    "snippet": "Bacto peptone (Becton Dickinson)                                   0.42          g"},
+    {"old_field": null, "field": "ingredients[7].concentration", "old": null, "new":
+    {"value": "4.2", "unit": "G_PER_L"}, "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+    "snippet": "Final volume: 100 ml"}, {"old_field": "ingredients[7].notes", "field":
+    "ingredients[7].notes", "old": null, "new": "Original source component specification:
+    Becton Dickinson.", "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/1829",
+    "snippet": "{\n                        \"recipe_order\": 9,\n                        \"compound\":
+    \"Bacto peptone\",\n                        \"compound_id\": 19,\n                        \"attribute\":
+    \"Becton Dickinson\",\n                        \"amount\": 0.42,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 4.2,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[8].concentration",
+    "old": null, "new": {"value": "8.5", "unit": "G_PER_L"}, "status": "add", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1829", "snippet": "{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"Bovine serum albumin\",\n                        \"compound_id\":
+    705,\n                        \"attribute\": \"Fraction V\",\n                        \"amount\":
+    0.85,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    8.5,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "ingredients[8].concentration", "old": null, "new": {"value": "8.5",
+    "unit": "G_PER_L"}, "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+    "snippet": "Bovine serum albumin (Fraction V)                                  0.85          g"},
+    {"old_field": null, "field": "ingredients[8].concentration", "old": null, "new":
+    {"value": "8.5", "unit": "G_PER_L"}, "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+    "snippet": "Final volume: 100 ml"}, {"old_field": null, "field": "ingredients[8].notes",
+    "old": null, "new": "Original source component specification: Fraction V.", "status":
+    "add", "reference": "https://mediadive.dsmz.de/rest/medium/1829", "snippet": "{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"Bovine serum albumin\",\n                        \"compound_id\":
+    705,\n                        \"attribute\": \"Fraction V\",\n                        \"amount\":
+    0.85,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    8.5,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[11].concentration", "field": "ingredients[9].concentration", "old":
+    {"value": "8.56", "unit": "G_PER_L"}, "new": {"value": "85.6", "unit": "ML_PER_L"},
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1829",
+    "snippet": "{\n                        \"recipe_order\": 11,\n                        \"compound\":
+    \"Rabbit serum\",\n                        \"compound_id\": 464,\n                        \"amount\":
+    8.56,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[9].concentration",
+    "old": null, "new": {"value": "85.6", "unit": "ML_PER_L"}, "status": "evidence_only",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+    "snippet": "Rabbit serum                                                       8.56        ml"},
+    {"old_field": null, "field": "ingredients[9].concentration", "old": null, "new":
+    {"value": "85.6", "unit": "ML_PER_L"}, "status": "evidence_only", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf", "snippet":
+    "Final volume: 100 ml"}, {"old_field": "ingredients[12].concentration", "field":
+    "ingredients[10].concentration", "old": {"value": "8.9", "unit": "G_PER_L"}, "new":
+    {"value": "8.9", "unit": "G_PER_L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1829",
+    "snippet": "{\n                        \"recipe_order\": 12,\n                        \"compound\":
+    \"MEM alpha Modification\",\n                        \"compound_id\": 1923,\n                        \"attribute\":
+    \"BioWest Cat No. P0440\",\n                        \"amount\": 0.89,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 8.9,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[10].concentration",
+    "old": null, "new": {"value": "8.9", "unit": "G_PER_L"}, "status": "evidence_only",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+    "snippet": "MEM alpha Modification (BioWest Cat No. P0440)                     0.89          g"},
+    {"old_field": null, "field": "ingredients[10].concentration", "old": null, "new":
+    {"value": "8.9", "unit": "G_PER_L"}, "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+    "snippet": "Final volume: 100 ml"}, {"old_field": "ingredients[12].notes", "field":
+    "ingredients[10].notes", "old": null, "new": "Original source component specification:
+    BioWest Cat No. P0440.", "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/1829",
+    "snippet": "{\n                        \"recipe_order\": 12,\n                        \"compound\":
+    \"MEM alpha Modification\",\n                        \"compound_id\": 1923,\n                        \"attribute\":
+    \"BioWest Cat No. P0440\",\n                        \"amount\": 0.89,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 8.9,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[11].notes",
+    "old": null, "new": "Deionized water: make up the complete medium to a final volume
+    of 100 ml; this is not a fixed 100 ml water addition.", "status": "add", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1829", "snippet": "{\n                        \"recipe_order\":
+    13,\n                        \"compound\": \"Deionized water\",\n                        \"compound_id\":
+    418,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[11].notes",
+    "old": null, "new": "Deionized water: make up the complete medium to a final volume
+    of 100 ml; this is not a fixed 100 ml water addition.", "status": "evidence_only",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+    "snippet": "Deionized water                                           fill up
+    to 100       ml"}, {"old_field": null, "field": "solutions[0].notes", "old": null,
+    "new": "Titrate to final pH 7.3. The 1 M value is titrant stock strength; no fixed
+    dose or final-medium NaOH concentration is specified.", "status": "add", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf", "snippet":
+    "Combine all ingredients, adjust pH to 7.3 with 1 M NaOH and filter-sterilize"},
+    {"old_field": null, "field": "solutions[0].composition[0].concentration", "old":
+    null, "new": {"value": "1", "unit": "MOLAR"}, "status": "add", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+    "snippet": "Combine all ingredients, adjust pH to 7.3 with 1 M NaOH and filter-sterilize"},
+    {"old_field": "ph_value", "field": "ph_value", "old": 7.3, "new": 7.3, "status":
+    "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+    "snippet": "Final pH: 7.3"}, {"old_field": "preparation_steps", "field": "preparation_steps",
+    "old": [{"step_number": 1, "action": "FILTER_STERILIZE", "description": "Combine
+    all ingredients, adjust pH to 7.3 with 1 M NaOH and filter-sterilize"}], "new":
+    [{"step_number": 1, "action": "MIX", "description": "Combine the recipe ingredients.
+    The source specifies a final medium volume of 100 ml, using deionized water as
+    makeup; no separate makeup-versus-titration order is asserted."}, {"step_number":
+    2, "action": "ADJUST_PH", "description": "Adjust to pH 7.3 with 1 M NaOH."}, {"step_number":
+    3, "action": "FILTER", "description": "Filter-sterilize; the source specifies
+    no filter pore size."}], "status": "correct", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+    "snippet": "Combine all ingredients, adjust pH to 7.3 with 1 M NaOH and filter-sterilize"},
+    {"old_field": null, "field": "preparation_steps", "old": null, "new": [{"step_number":
+    1, "action": "MIX", "description": "Combine the recipe ingredients. The source
+    specifies a final medium volume of 100 ml, using deionized water as makeup; no
+    separate makeup-versus-titration order is asserted."}, {"step_number": 2, "action":
+    "ADJUST_PH", "description": "Adjust to pH 7.3 with 1 M NaOH."}, {"step_number":
+    3, "action": "FILTER", "description": "Filter-sterilize; the source specifies
+    no filter pore size."}], "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf",
+    "snippet": "Deionized water                                           fill up
+    to 100       ml"}, {"old_field": "ingredients[8].concentration", "field": "notes",
+    "old": {"value": "10.0", "unit": "G_PER_L"}, "new": "Source: DSMZ\n\nSuperseded
+    historical provenance (not a current formulation claim):\nCommercial Product:
+    LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThe
+    false LB constituent expansion is withdrawn in favor of this source''s bovine
+    serum albumin input. Existing unrelated chemical annotations are preserved, not
+    recertified. This repair does not assert equivalence with other BSK formulations
+    or add organism-growth evidence.", "status": "remove_unsupported", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1829", "snippet": "{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"Bovine serum albumin\",\n                        \"compound_id\":
+    705,\n                        \"attribute\": \"Fraction V\",\n                        \"amount\":
+    0.85,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    8.5,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[9].concentration", "field": "notes", "old": {"value": "5.0", "unit":
+    "G_PER_L"}, "new": "Source: DSMZ\n\nSuperseded historical provenance (not a current
+    formulation claim):\nCommercial Product: LB Medium (Luria-Bertani, Miller formulation)\nSupplier:
+    Multiple suppliers (Difco, Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520
+    BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThe
+    false LB constituent expansion is withdrawn in favor of this source''s bovine
+    serum albumin input. Existing unrelated chemical annotations are preserved, not
+    recertified. This repair does not assert equivalence with other BSK formulations
+    or add organism-growth evidence.", "status": "remove_unsupported", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1829", "snippet": "{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"Bovine serum albumin\",\n                        \"compound_id\":
+    705,\n                        \"attribute\": \"Fraction V\",\n                        \"amount\":
+    0.85,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    8.5,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[10].concentration", "field": "notes", "old": {"value": "10.0", "unit":
+    "G_PER_L"}, "new": "Source: DSMZ\n\nSuperseded historical provenance (not a current
+    formulation claim):\nCommercial Product: LB Medium (Luria-Bertani, Miller formulation)\nSupplier:
+    Multiple suppliers (Difco, Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520
+    BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThe
+    false LB constituent expansion is withdrawn in favor of this source''s bovine
+    serum albumin input. Existing unrelated chemical annotations are preserved, not
+    recertified. This repair does not assert equivalence with other BSK formulations
+    or add organism-growth evidence.", "status": "remove_unsupported", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1829", "snippet": "{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"Bovine serum albumin\",\n                        \"compound_id\":
+    705,\n                        \"attribute\": \"Fraction V\",\n                        \"amount\":
+    0.85,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    8.5,\n                        \"optional\": 0\n                    }"}]'
+solutions:
+- preferred_term: NaOH solution (1 M)
+  composition:
+  - preferred_term: NaOH
+    concentration:
+      value: '1'
+      unit: MOLAR
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf
+      supports: SUPPORT
+      snippet: Combine all ingredients, adjust pH to 7.3 with 1 M NaOH and filter-sterilize
+      explanation: 'solutions[0].composition[0].concentration: Titrate to final pH
+        7.3. The 1 M value is titrant stock strength; no fixed dose or final-medium
+        NaOH concentration is specified. No final-medium volume, percentage basis,
+        density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T22:23:34.264038+00:00;
+        capture SHA256=315505d8d0ff7d6eb251e2f07754db41cb014aca014de719da507e45e1aa2ab2.'
+  notes: Titrate to final pH 7.3. The 1 M value is titrant stock strength; no fixed
+    dose or final-medium NaOH concentration is specified.
+evidence:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf
+  supports: SUPPORT
+  snippet: Combine all ingredients, adjust pH to 7.3 with 1 M NaOH and filter-sterilize
+  explanation: |-
+    solutions[0].notes: Titrate to final pH 7.3. The 1 M value is titrant stock strength; no fixed dose or final-medium NaOH concentration is specified. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T22:23:34.264038+00:00; capture SHA256=315505d8d0ff7d6eb251e2f07754db41cb014aca014de719da507e45e1aa2ab2.
+
+    Additional exact excerpt: Final pH: 7.3
+    ph_value: Retain the explicitly stated final pH. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T22:23:34.264038+00:00; capture SHA256=315505d8d0ff7d6eb251e2f07754db41cb014aca014de719da507e45e1aa2ab2.
+
+    Additional exact excerpt: Combine all ingredients, adjust pH to 7.3 with 1 M NaOH and filter-sterilize
+    preparation_steps: Separate mixing, pH adjustment and filtration. FILTER_STERILIZE would imply an unsupported 0.22 micrometer pore size. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T22:23:34.264038+00:00; capture SHA256=315505d8d0ff7d6eb251e2f07754db41cb014aca014de719da507e45e1aa2ab2.
+
+    Additional exact excerpt: Deionized water                                           fill up to 100       ml
+    preparation_steps: Water is makeup, not a fixed addition. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T22:23:34.264038+00:00; capture SHA256=315505d8d0ff7d6eb251e2f07754db41cb014aca014de719da507e45e1aa2ab2.
+- reference: https://mediadive.dsmz.de/rest/medium/1829
+  supports: SUPPORT
+  snippet: |-
+    {
+                            "recipe_order": 10,
+                            "compound": "Bovine serum albumin",
+                            "compound_id": 705,
+                            "attribute": "Fraction V",
+                            "amount": 0.85,
+                            "unit": "g",
+                            "g_l": 8.5,
+                            "optional": 0
+                        }
+  explanation: |-
+    notes: Remove the unsupported LB ingredient and its dose; the exact source specifies bovine serum albumin instead. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[8]; accessed=2026-10-08T22:21:55.994207+00:00; capture SHA256=697c769d31d726f5b7e965402b9291bbb8b288f67daad777509eef51a2b25116.
+
+    Additional exact excerpt: {
+                            "recipe_order": 10,
+                            "compound": "Bovine serum albumin",
+                            "compound_id": 705,
+                            "attribute": "Fraction V",
+                            "amount": 0.85,
+                            "unit": "g",
+                            "g_l": 8.5,
+                            "optional": 0
+                        }
+    notes: Remove the unsupported LB ingredient and its dose; the exact source specifies bovine serum albumin instead. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[8]; accessed=2026-10-08T22:21:55.994207+00:00; capture SHA256=697c769d31d726f5b7e965402b9291bbb8b288f67daad777509eef51a2b25116.
+
+    Additional exact excerpt: {
+                            "recipe_order": 10,
+                            "compound": "Bovine serum albumin",
+                            "compound_id": 705,
+                            "attribute": "Fraction V",
+                            "amount": 0.85,
+                            "unit": "g",
+                            "g_l": 8.5,
+                            "optional": 0
+                        }
+    notes: Remove the unsupported LB ingredient and its dose; the exact source specifies bovine serum albumin instead. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[8]; accessed=2026-10-08T22:21:55.994207+00:00; capture SHA256=697c769d31d726f5b7e965402b9291bbb8b288f67daad777509eef51a2b25116.
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/1829
+  title: BSKII medium (Borrelia)
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-08;
+    capture_sha256=697c769d31d726f5b7e965402b9291bbb8b288f67daad777509eef51a2b25116.
+    Authors and publication year are not supplied; copyright year is not publication
+    year. Source-specific formulation evidence, not growth evidence.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1829.pdf
+  title: '1829: BSKII medium (Borrelia)'
+  notes: source_type=culture_collection_page; discovery_mode=cross_reference; accessed_on=2026-10-08;
+    capture_sha256=315505d8d0ff7d6eb251e2f07754db41cb014aca014de719da507e45e1aa2ab2.
+    Authors and publication year are not supplied; copyright year is not publication
+    year. Source-specific formulation evidence, not growth evidence.

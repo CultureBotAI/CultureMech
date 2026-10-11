@@ -1,0 +1,571 @@
+{
+  "checked_records": 37,
+  "unique_groups": 36,
+  "accepted_claims": 192,
+  "retained_claims": 187,
+  "records_with_evidence_loss": 3,
+  "records_with_missing_reference": 7,
+  "matcher_statistics": {
+    "total_processed": 15910,
+    "skipped_no_fingerprint": 4758,
+    "skipped_error": 369,
+    "successfully_fingerprinted": 6491,
+    "reasons": {
+      "other_error": 340,
+      "no_valid_ingredients": 4758,
+      "no_ingredients_field": 29
+    }
+  },
+  "records": [
+    {
+      "path": "data/normalized_yaml/bacterial/lb_luria_bertani_medium_lennox.yaml",
+      "id": "CultureMech:002403",
+      "fingerprint": "8bf16da58ad59480ed584a18bb7af1dc39a37e65773c066ab7633eaa69002f3d",
+      "group_paths": [
+        "data/normalized_yaml/algae/lb.yaml",
+        "data/normalized_yaml/bacterial/2_x_yt_medium.yaml",
+        "data/normalized_yaml/bacterial/TOGO_M2314_LB_medium.yaml",
+        "data/normalized_yaml/bacterial/TOGO_M3196_LB_medium.yaml",
+        "data/normalized_yaml/bacterial/TOGO_M3227_LB_broth.yaml",
+        "data/normalized_yaml/bacterial/lb.yaml",
+        "data/normalized_yaml/bacterial/lb_0_1x.yaml",
+        "data/normalized_yaml/bacterial/lb_agar.yaml",
+        "data/normalized_yaml/bacterial/lb_broth.yaml",
+        "data/normalized_yaml/bacterial/lb_broth_medium.yaml",
+        "data/normalized_yaml/bacterial/lb_highsalt.yaml",
+        "data/normalized_yaml/bacterial/lb_luria_bertani_medium_lennox.yaml",
+        "data/normalized_yaml/bacterial/lb_medium_difco.yaml",
+        "data/normalized_yaml/bacterial/lb_medium_lennox.yaml",
+        "data/normalized_yaml/bacterial/lb_miller.yaml",
+        "data/normalized_yaml/bacterial/lb_with_addition_of_1_wt_vol_nacl.yaml",
+        "data/normalized_yaml/fungal/tryptone_yeast_extract_medium.yaml",
+        "data/normalized_yaml/fungal/tryptone_yeast_extract_medium_modified.yaml"
+      ],
+      "merged_id": "CultureMech:008901",
+      "accepted_claims": 1,
+      "retained_claims": 0,
+      "reference_retained": false,
+      "failures": [
+        {
+          "field": "ingredients[2].concentration",
+          "ingredient": "NaCl",
+          "reference": "https://mediadive.dsmz.de/rest/medium/J1236",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/lb_luria_bertani_agar_with_5_nacl.yaml",
+      "id": "CultureMech:002407",
+      "fingerprint": "3cb7028f083ead8f828a09615b3852eeb6d919453659873c5dde37bff08442b5",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/2yt_medium.yaml",
+        "data/normalized_yaml/bacterial/half_concentrated_lb_luria_bertani_medium.yaml",
+        "data/normalized_yaml/bacterial/lb_agar_medium.yaml",
+        "data/normalized_yaml/bacterial/lb_luria_bertani_agar.yaml",
+        "data/normalized_yaml/bacterial/lb_luria_bertani_agar_with_5_nacl.yaml",
+        "data/normalized_yaml/bacterial/lb_luria_bertani_agar_with_5_nacl_ph_9_0.yaml",
+        "data/normalized_yaml/bacterial/lb_luria_bertani_medium.yaml"
+      ],
+      "merged_id": "CultureMech:009664",
+      "accepted_claims": 2,
+      "retained_claims": 0,
+      "reference_retained": false,
+      "failures": [
+        {
+          "field": "ingredients[2].concentration",
+          "ingredient": "NaCl",
+          "reference": "https://mediadive.dsmz.de/rest/medium/J1240",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[3].concentration",
+          "ingredient": "Agar",
+          "reference": "https://mediadive.dsmz.de/rest/medium/J1240",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/lb_luria_bertani_agar_with_5_nacl_ph_9_0.yaml",
+      "id": "CultureMech:002356",
+      "fingerprint": "3cb7028f083ead8f828a09615b3852eeb6d919453659873c5dde37bff08442b5",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/2yt_medium.yaml",
+        "data/normalized_yaml/bacterial/half_concentrated_lb_luria_bertani_medium.yaml",
+        "data/normalized_yaml/bacterial/lb_agar_medium.yaml",
+        "data/normalized_yaml/bacterial/lb_luria_bertani_agar.yaml",
+        "data/normalized_yaml/bacterial/lb_luria_bertani_agar_with_5_nacl.yaml",
+        "data/normalized_yaml/bacterial/lb_luria_bertani_agar_with_5_nacl_ph_9_0.yaml",
+        "data/normalized_yaml/bacterial/lb_luria_bertani_medium.yaml"
+      ],
+      "merged_id": "CultureMech:009664",
+      "accepted_claims": 2,
+      "retained_claims": 0,
+      "reference_retained": false,
+      "failures": [
+        {
+          "field": "ingredients[2].concentration",
+          "ingredient": "NaCl",
+          "reference": "https://mediadive.dsmz.de/rest/medium/J1185",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[3].concentration",
+          "ingredient": "Agar",
+          "reference": "https://mediadive.dsmz.de/rest/medium/J1185",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/573c_medium.yaml",
+      "id": "CultureMech:002235",
+      "fingerprint": "7cfec1a8c5650fb80fa2a17181071866f63e721f1c038fa03491762857077e0d",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/573c_medium.yaml",
+        "data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml"
+      ],
+      "merged_id": "CultureMech:001166",
+      "accepted_claims": 3,
+      "retained_claims": 3,
+      "reference_retained": false,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/9k_with_sulfur_medium.yaml",
+      "id": "CultureMech:002485",
+      "fingerprint": "9284e6c5a5781e63f68dd6172d9ba6ebfd4dfe083a05410c4e82906bffc67c68",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/9k_with_sulfur_medium.yaml"
+      ],
+      "merged_id": "CultureMech:002485",
+      "accepted_claims": 5,
+      "retained_claims": 5,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/JCM_J1047_MARINITOGA_MEDIUM.yaml",
+      "id": "CultureMech:002231",
+      "fingerprint": "5eedfc6b7ce38e433820456246dbcd3d2b7a0813d8668d580ad7557a488b576c",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/JCM_J1047_MARINITOGA_MEDIUM.yaml",
+        "data/normalized_yaml/bacterial/JCM_J997_MARINITOGA_MEDIUM.yaml"
+      ],
+      "merged_id": "CultureMech:002231",
+      "accepted_claims": 3,
+      "retained_claims": 3,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/JCM_J1060_NY_AGAR.yaml",
+      "id": "CultureMech:002241",
+      "fingerprint": "84371bf83ef8608970a1d68512adec7d3a7b71386c10ccec5f7c829e607974c1",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/JCM_J1060_NY_AGAR.yaml"
+      ],
+      "merged_id": "CultureMech:002241",
+      "accepted_claims": 3,
+      "retained_claims": 3,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/JCM_J1154_K_MEDIUM.yaml",
+      "id": "CultureMech:002326",
+      "fingerprint": "5439dae5c22c98ae937a624225da98a99a473b24e51b0f0fdbf74a1f16c5886c",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/JCM_J1154_K_MEDIUM.yaml",
+        "data/normalized_yaml/bacterial/medium_k.yaml"
+      ],
+      "merged_id": "CultureMech:000559",
+      "accepted_claims": 6,
+      "retained_claims": 6,
+      "reference_retained": false,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/JCM_J1178_BTT_MEDIUM.yaml",
+      "id": "CultureMech:002349",
+      "fingerprint": "94077f9d01d78a8d4a752eebff3f2c1b237bd3516e66fe1548a546c5278b5af4",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/JCM_J1178_BTT_MEDIUM.yaml",
+        "data/normalized_yaml/bacterial/KOMODO_1109_BTT_medium.yaml",
+        "data/normalized_yaml/bacterial/btt_medium.yaml"
+      ],
+      "merged_id": "CultureMech:002349",
+      "accepted_claims": 5,
+      "retained_claims": 5,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/JCM_J1210_MARINITOGA_HYDROGENITOLERANS_MEDIUM.yaml",
+      "id": "CultureMech:002379",
+      "fingerprint": "a14c015c00dc52f89abc49a2f474b1c593fb3a001fc1bdc928db1d69559ce442",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/JCM_J1210_MARINITOGA_HYDROGENITOLERANS_MEDIUM.yaml"
+      ],
+      "merged_id": "CultureMech:002379",
+      "accepted_claims": 2,
+      "retained_claims": 2,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml",
+      "id": "CultureMech:002487",
+      "fingerprint": "0eed86a9fb470742a852981b5bf78a40a231c5ba425f1a7f087320bbfd002928",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml"
+      ],
+      "merged_id": "CultureMech:002487",
+      "accepted_claims": 9,
+      "retained_claims": 9,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/bsw3_agar.yaml",
+      "id": "CultureMech:002385",
+      "fingerprint": "60b617d536e39d224becc6a2d3b151d41a5250b55c33a88de0b4d358036ad2e0",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/bsw3_agar.yaml"
+      ],
+      "merged_id": "CultureMech:002385",
+      "accepted_claims": 2,
+      "retained_claims": 2,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/caproiciproducens_medium.yaml",
+      "id": "CultureMech:002434",
+      "fingerprint": "bc08ba4f5575be6f0270635fa246e80226747e51e332a4fb9feedcc847d2f089",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/caproiciproducens_medium.yaml"
+      ],
+      "merged_id": "CultureMech:002434",
+      "accepted_claims": 9,
+      "retained_claims": 9,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/clostridum_g4_medium.yaml",
+      "id": "CultureMech:002341",
+      "fingerprint": "2a278907ba8081b7171028a885e39b9422ef6832d918fd69e928942590faf52b",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/clostridum_g4_medium.yaml"
+      ],
+      "merged_id": "CultureMech:002341",
+      "accepted_claims": 7,
+      "retained_claims": 7,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/fastidious_anaerobe_broth_medium.yaml",
+      "id": "CultureMech:002229",
+      "fingerprint": "334c6ed711ea2c1c5fcf56d385ad6ce560ba6d2e15a7ad23b687bb74b8b8b505",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/fastidious_anaerobe_broth_medium.yaml"
+      ],
+      "merged_id": "CultureMech:002229",
+      "accepted_claims": 8,
+      "retained_claims": 8,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/gab_medium_for_strain_egb.yaml",
+      "id": "CultureMech:002300",
+      "fingerprint": "0f264cf8155885a414d5a15ecaeb87e8ffc132db406dfa61720ea720834a8ee9",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/gab_medium_for_strain_egb.yaml"
+      ],
+      "merged_id": "CultureMech:002300",
+      "accepted_claims": 6,
+      "retained_claims": 6,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/gam_agar_with_1_succinate.yaml",
+      "id": "CultureMech:002401",
+      "fingerprint": "1a6ea9091564ff51194a2b6420d830a3a00baeb632951da039d1bbb556f5dca3",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/gam_agar_with_1_succinate.yaml"
+      ],
+      "merged_id": "CultureMech:002401",
+      "accepted_claims": 2,
+      "retained_claims": 2,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/halomonas_cug_medium.yaml",
+      "id": "CultureMech:002233",
+      "fingerprint": "cd51e0815d9d6be7ded50ebcefff1499f32c6ebecea895931cc52c8d7fda24d2",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/halomonas_cug_medium.yaml"
+      ],
+      "merged_id": "CultureMech:002233",
+      "accepted_claims": 12,
+      "retained_claims": 12,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/hylemonella_gracilis_medium.yaml",
+      "id": "CultureMech:002458",
+      "fingerprint": "4b68fc6ce67f57d2d452f47cca6742141fe34d54fa5f42c7343fc06c832b7a67",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/hylemonella_gracilis_medium.yaml"
+      ],
+      "merged_id": "CultureMech:002458",
+      "accepted_claims": 3,
+      "retained_claims": 3,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/jcm_medium_no_1022.yaml",
+      "id": "CultureMech:002206",
+      "fingerprint": "a7af0995d74275ceb89bbf7272642249a2efa6e1c2c44161adb30742ec36a309",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/jcm_medium_no_1022.yaml"
+      ],
+      "merged_id": "CultureMech:002206",
+      "accepted_claims": 5,
+      "retained_claims": 5,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/jcm_medium_no_1226.yaml",
+      "id": "CultureMech:002393",
+      "fingerprint": "85beb5510e54ea9b34626d47955a9ae6760318586311823b088d54236d99a0db",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/jcm_medium_no_1226.yaml"
+      ],
+      "merged_id": "CultureMech:002393",
+      "accepted_claims": 6,
+      "retained_claims": 6,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/jcm_medium_no_1262.yaml",
+      "id": "CultureMech:002428",
+      "fingerprint": "2446e817cd67d9cb2712e1fec00d6a96151abca7b01c50583b250fe977aab889",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/jcm_medium_no_1262.yaml"
+      ],
+      "merged_id": "CultureMech:002428",
+      "accepted_claims": 8,
+      "retained_claims": 8,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/jcm_medium_no_1263.yaml",
+      "id": "CultureMech:002429",
+      "fingerprint": "ab92351ed9ae18761bf5cc9a9f46efbb16b803091adedf1e48d82fa0768e79be",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/jcm_medium_no_1263.yaml"
+      ],
+      "merged_id": "CultureMech:002429",
+      "accepted_claims": 9,
+      "retained_claims": 9,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/lb_agar_with_mnso_sub_4_sub.yaml",
+      "id": "CultureMech:002225",
+      "fingerprint": "b4daf4c5b70cc3bf760c76f8bf034e2ac46ac6ab01e1590f129be817996aa121",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/lb_agar_with_mnso_sub_4_sub.yaml"
+      ],
+      "merged_id": "CultureMech:002225",
+      "accepted_claims": 3,
+      "retained_claims": 3,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/m_medium.yaml",
+      "id": "CultureMech:002350",
+      "fingerprint": "8c67219d452db893b0629592847694eab5d68a1e16bc1d87e76a426aaa57b696",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/m_medium.yaml"
+      ],
+      "merged_id": "CultureMech:002350",
+      "accepted_claims": 4,
+      "retained_claims": 4,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/ml_15_medium.yaml",
+      "id": "CultureMech:002228",
+      "fingerprint": "d60b38771c2183b63ad8869af64d06d62b8a104ff8f5aedf697f173db6590c3d",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/ml_15_medium.yaml",
+        "data/normalized_yaml/bacterial/ml_medium.yaml"
+      ],
+      "merged_id": "CultureMech:003210",
+      "accepted_claims": 4,
+      "retained_claims": 4,
+      "reference_retained": false,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/modified_baars_medium.yaml",
+      "id": "CultureMech:002336",
+      "fingerprint": "11a133e047d88c00136f04a7f6b6a6ac070686556b1d9aff70fae089c5a1f01c",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/modified_baars_medium.yaml"
+      ],
+      "merged_id": "CultureMech:002336",
+      "accepted_claims": 6,
+      "retained_claims": 6,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/modified_reinforced_clostridial_medium.yaml",
+      "id": "CultureMech:002386",
+      "fingerprint": "d0480c3166977c732ef03db630ac15949f480fd415975d577f32d06977e5de53",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/modified_reinforced_clostridial_medium.yaml",
+        "data/normalized_yaml/bacterial/modified_reinforced_clostridial_medium_at_ph_8_0.yaml"
+      ],
+      "merged_id": "CultureMech:002442",
+      "accepted_claims": 7,
+      "retained_claims": 7,
+      "reference_retained": false,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/pyg_medium_i.yaml",
+      "id": "CultureMech:002306",
+      "fingerprint": "8850a9b4060e84743fff5a77a9dac812b9819e5db027bc0a1cd1e8fc4901a3d6",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/pyg_medium_i.yaml"
+      ],
+      "merged_id": "CultureMech:002306",
+      "accepted_claims": 7,
+      "retained_claims": 7,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/fungal/aerobic_marine_tryptone_yeast_extract_medium.yaml",
+      "id": "CultureMech:010497",
+      "fingerprint": "2f4ff61bb10ecfbe43988dac684711fe33e685a70f0b932ca38a8fe4421c1715",
+      "group_paths": [
+        "data/normalized_yaml/fungal/aerobic_marine_tryptone_yeast_extract_medium.yaml"
+      ],
+      "merged_id": "CultureMech:010497",
+      "accepted_claims": 8,
+      "retained_claims": 8,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/fungal/marine_tryptone_yeast_extract_medium.yaml",
+      "id": "CultureMech:010496",
+      "fingerprint": "796621c813b1ca2959947ad6146b69cdff4e0872758337e22a929433d1d32e93",
+      "group_paths": [
+        "data/normalized_yaml/fungal/marine_tryptone_yeast_extract_medium.yaml"
+      ],
+      "merged_id": "CultureMech:010496",
+      "accepted_claims": 9,
+      "retained_claims": 9,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/fungal/sea_salts_yeast_extract_glucose_medium.yaml",
+      "id": "CultureMech:010485",
+      "fingerprint": "8c73375045ad6864eab8d15cb1120a2c2b1f1e5c9288fa77709ce056957b37b5",
+      "group_paths": [
+        "data/normalized_yaml/fungal/sea_salts_yeast_extract_glucose_medium.yaml"
+      ],
+      "merged_id": "CultureMech:010485",
+      "accepted_claims": 8,
+      "retained_claims": 8,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/fungal/sea_salts_yeast_extract_peptone_medium.yaml",
+      "id": "CultureMech:010492",
+      "fingerprint": "3154bd30e8433c800eed7157e71fe784a9d010c405a82cea7ed79b48780da358",
+      "group_paths": [
+        "data/normalized_yaml/fungal/sea_salts_yeast_extract_peptone_medium.yaml"
+      ],
+      "merged_id": "CultureMech:010492",
+      "accepted_claims": 4,
+      "retained_claims": 4,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/fungal/van_niels_yeast_agar.yaml",
+      "id": "CultureMech:010488",
+      "fingerprint": "2f136b0b7d88633ca35aa5af6af2e789263ecf640c7258ec0d427a9b70297d2b",
+      "group_paths": [
+        "data/normalized_yaml/fungal/van_niels_yeast_agar.yaml"
+      ],
+      "merged_id": "CultureMech:010488",
+      "accepted_claims": 4,
+      "retained_claims": 4,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml",
+      "id": "CultureMech:015381",
+      "fingerprint": "1e17c5d4c2861f78c5f839a2abc0683c3ad1f1367e9906d305e9a3f4fb8b9224",
+      "group_paths": [
+        "data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml"
+      ],
+      "merged_id": "CultureMech:015381",
+      "accepted_claims": 2,
+      "retained_claims": 2,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/specialized/anaerobic_double_strength_r2a_medium.yaml",
+      "id": "CultureMech:015397",
+      "fingerprint": "8a93e50c452e3a728ad240ac130d5c44d413c5a07ef8e88b076c00fab3b77f9d",
+      "group_paths": [
+        "data/normalized_yaml/specialized/anaerobic_double_strength_r2a_medium.yaml"
+      ],
+      "merged_id": "CultureMech:015397",
+      "accepted_claims": 5,
+      "retained_claims": 5,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/specialized/anaerobic_natural_seawater_medium.yaml",
+      "id": "CultureMech:015380",
+      "fingerprint": "4fecf7170eccd9ecf59e0ae0ce0292c1a3ed84ab72cf908cf7813dd0306fea25",
+      "group_paths": [
+        "data/normalized_yaml/specialized/anaerobic_natural_seawater_medium.yaml"
+      ],
+      "merged_id": "CultureMech:015380",
+      "accepted_claims": 3,
+      "retained_claims": 3,
+      "reference_retained": true,
+      "failures": []
+    }
+  ]
+}

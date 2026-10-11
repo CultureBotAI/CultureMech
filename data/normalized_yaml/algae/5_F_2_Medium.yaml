@@ -16,15 +16,24 @@ notes: UTEX prepares 5% F/2 Medium for marine algae requiring 48 ppt salinity by
   trace-metal, and vitamin stocks.
 ingredients:
 - preferred_term: Seawater(non-sterilized)
-  concentration:
-    value: '1000'
-    unit: ML_PER_L
   term:
     id: ENVO:00002149
     label: sea water
-  notes: UTEX lists 1 L non-pasteurized seawater for this 48 ppt recipe.
+  notes: Seawater is used to bring the recipe to its stated 1 L total volume. Its
+    total input volume is not independently quantified; no fixed solvent concentration
+    is asserted.
   physicochemical_roles:
   - OSMOTIC_AGENT
+  evidence:
+  - reference: https://utex.org/products/5-percent-f-2-medium
+    supports: SUPPORT
+    snippet: Bring total volume to 1 L with non-pasturized seawater.
+    explanation: 'Claim: ingredients[0].concentration. The one-liter figure is the
+      receiving recipe total, not a measured solvent input or 1000 mL/L solvent concentration.
+      Remove the unsupported quantity; no subtraction or volume-additivity assumption
+      is made. Locator: Directions makeup step; source version is the hash-pinned
+      HTML capture. Evidence supports removing the numeric/pseudo-concentration and
+      retaining the preparation note, not a replacement numeric amount. '
 - preferred_term: Natural sea-salt
   concentration:
     value: '15'
@@ -32,6 +41,14 @@ ingredients:
   notes: UTEX lists 15 g/L natural sea-salt; retained as an ungrounded mixture.
   physicochemical_roles:
   - OSMOTIC_AGENT
+  evidence:
+  - reference: https://utex.org/products/5-percent-f-2-medium
+    supports: SUPPORT
+    snippet: 15 g/L
+    explanation: 'Claim: ingredients[1].concentration. Directly reported mass per
+      liter for this higher-salinity variant; not inherited from the F/2 parent. Locator:
+      recipe table component 2, Amount column; source version is the hash-pinned HTML
+      capture. '
 - preferred_term: NaNO3
   concentration:
     value: '880'
@@ -48,16 +65,25 @@ ingredients:
   notes: UTEX adds 1 mL per liter of a 7.5 g/100 mL dH2O stock.
   nutritional_roles:
   - NITROGEN_SOURCE
-- preferred_term: NaH2PO4•H2O
+  evidence:
+  - reference: https://utex.org/products/5-percent-f-2-medium
+    supports: SUPPORT
+    snippet: 880 µM
+    explanation: 'Claim: ingredients[2].concentration. Directly reported final molarity,
+      retained without molecular-weight conversion. Exact component cell: "NaNO 3
+      (Fisher BP360-500)"; the Stock Solution Concentration cell is "7.5 g/100 mL
+      dH20" and is not substituted for the final amount. Locator: recipe table component
+      3, Final Concentration column; source version is the hash-pinned HTML capture. '
+- preferred_term: Sodium dihydrogenphosphate monohydrate
   concentration:
     value: '36'
     unit: MICROMOLAR
   term:
-    id: CHEBI:37585
-    label: sodium dihydrogenphosphate
+    id: CHEBI:114249
+    label: sodium dihydrogenphosphate monohydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:37585
-    label: sodium dihydrogenphosphate
+    id: CHEBI:114249
+    label: Sodium phosphate monobasic monohydrate
   supplier_catalog:
     supplier_name: MCIB
     catalog_number: '742'
@@ -66,6 +92,23 @@ ingredients:
   - PHOSPHATE_SOURCE
   physicochemical_roles:
   - BUFFER
+  evidence:
+  - reference: https://utex.org/products/5-percent-f-2-medium
+    supports: SUPPORT
+    snippet: 36 µM
+    explanation: 'Claim: ingredients[3].concentration. Directly reported final molarity,
+      retained without molecular-weight conversion. Exact component cell: "NaH 2 PO
+      4 • H 2 O (MCIB 742)"; the Stock Solution Concentration cell is "0.5 g/100 mL
+      dH20" and is not substituted for the final amount. Locator: recipe table component
+      4, Final Concentration column; source version is the hash-pinned HTML capture. '
+  - reference: https://www.ebi.ac.uk/chebi/CHEBI:114249
+    supports: SUPPORT
+    snippet: A hydrate that is the monohydrate form of sodium dihydrogenphosphate.
+    explanation: 'Identity only for ingredients[3]. ChEBI identifies CHEBI:114249
+      as sodium dihydrogenphosphate monohydrate; the exact UTEX recipe/stock component
+      establishes the supplied chemical form. This ontology source does not support
+      the amount. Locator: ChEBI name/definition or INN. Packaged MIM resolver also
+      resolves the supplied label to this identifier.'
 - preferred_term: Na2SiO3•9H2O
   concentration:
     value: '70'
@@ -82,6 +125,16 @@ ingredients:
   notes: UTEX adds 1 mL per liter of a 2 g/100 mL dH2O stock, for 70 uM final.
   nutritional_roles:
   - TRACE_ELEMENT
+  evidence:
+  - reference: https://utex.org/products/5-percent-f-2-medium
+    supports: SUPPORT
+    snippet: 70 µM
+    explanation: 'Claim: ingredients[4].concentration. Directly reported final molarity,
+      retained without molecular-weight conversion. Exact component cell: "Na 2 SiO
+      3 • 9H 2 O (Sigma 307815)"; the Stock Solution Concentration cell is "2 g/100
+      mL dH20" and is not substituted for the final amount. Locator: recipe table
+      component 5, Final Concentration column; source version is the hash-pinned HTML
+      capture. '
 solutions:
 - preferred_term: Trace Metals Solution
   concentration:
@@ -89,16 +142,24 @@ solutions:
     unit: ML_PER_L
   composition:
   - preferred_term: dH2O
-    concentration:
-      value: '1000'
-      unit: ML_PER_L
     term:
       id: CHEBI:15377
       label: water
     mediaingredientmech_chebi_term:
       id: CHEBI:15377
       label: water
-    notes: UTEX brings Trace Metals Solution to 1 L with dH2O.
+    notes: Water is used to bring Trace Metals Solution to 1 L total; its input amount
+      is not separately quantified.
+    evidence:
+    - reference: https://utex.org/products/trace-metals-solution
+      supports: SUPPORT
+      snippet: Bring the volume to 1 L with dH 2 O
+      explanation: 'Claim: solutions[0].composition[0].concentration. The stock total
+        or buffered carrier volume is not a measured pure-water amount. Remove the
+        copied 1000 mL/L water concentration; no concentration is inferred for this
+        solvent. Locator: stock Directions, makeup step; source version is the hash-pinned
+        HTML capture. Evidence supports removing the numeric/pseudo-concentration
+        and retaining the preparation note, not a replacement numeric amount. '
   - preferred_term: ZnSO4 x 7 H2O
     concentration:
       value: '0.023'
@@ -112,9 +173,21 @@ solutions:
     supplier_catalog:
       supplier_name: Sigma
       catalog_number: Z 0251
-    notes: Converted from 23 mg/L in the UTEX Trace Metals Solution recipe.
+    notes: Converted from 23 mg/L in the UTEX Trace Metals Solution recipe. Evidence
+      supports the stock mass column only; the source molarity column is discrepant
+      and is not used to infer a corrected molarity or receiving-medium concentration.
     nutritional_roles:
     - TRACE_ELEMENT
+    evidence:
+    - reference: https://utex.org/products/trace-metals-solution
+      supports: SUPPORT
+      snippet: 23 mg/L
+      explanation: 'Claim: solutions[0].composition[1].concentration. Stock mass concentration
+        from the Amount column: 23 mg/L; mg is divided by 1000 where needed, giving
+        0.023 g/L. The source says "For 1 L Total". Its separate molarity cell "0.08
+        µM" and stock-concentration footnote remain unreconciled; no molar value or
+        final-medium amount is asserted here. Locator: trace-metals-solution table
+        component 1, Amount column; source version is the hash-pinned HTML capture. '
   - preferred_term: MnSO4 x H2O
     concentration:
       value: '0.152'
@@ -128,9 +201,21 @@ solutions:
     supplier_catalog:
       supplier_name: Sigma
       catalog_number: M8179
-    notes: Converted from 152 mg/L in the UTEX Trace Metals Solution recipe.
+    notes: Converted from 152 mg/L in the UTEX Trace Metals Solution recipe. Evidence
+      supports the stock mass column only; the source molarity column is discrepant
+      and is not used to infer a corrected molarity or receiving-medium concentration.
     nutritional_roles:
     - TRACE_ELEMENT
+    evidence:
+    - reference: https://utex.org/products/trace-metals-solution
+      supports: SUPPORT
+      snippet: 152 mg/L
+      explanation: 'Claim: solutions[0].composition[2].concentration. Stock mass concentration
+        from the Amount column: 152 mg/L; mg is divided by 1000 where needed, giving
+        0.152 g/L. The source says "For 1 L Total". Its separate molarity cell "0.9
+        µM" and stock-concentration footnote remain unreconciled; no molar value or
+        final-medium amount is asserted here. Locator: trace-metals-solution table
+        component 2, Amount column; source version is the hash-pinned HTML capture. '
   - preferred_term: Na2MoO4 x 2 H2O
     concentration:
       value: '0.0073'
@@ -144,9 +229,21 @@ solutions:
     supplier_catalog:
       supplier_name: J.T. Baker
       catalog_number: '3764'
-    notes: Converted from 7.3 mg/L in the UTEX Trace Metals Solution recipe.
+    notes: Converted from 7.3 mg/L in the UTEX Trace Metals Solution recipe. Evidence
+      supports the stock mass column only; the source molarity column is discrepant
+      and is not used to infer a corrected molarity or receiving-medium concentration.
     nutritional_roles:
     - TRACE_ELEMENT
+    evidence:
+    - reference: https://utex.org/products/trace-metals-solution
+      supports: SUPPORT
+      snippet: 7.3 mg/L
+      explanation: 'Claim: solutions[0].composition[3].concentration. Stock mass concentration
+        from the Amount column: 7.3 mg/L; mg is divided by 1000 where needed, giving
+        0.0073 g/L. The source says "For 1 L Total". Its separate molarity cell "0.03
+        µM" and stock-concentration footnote remain unreconciled; no molar value or
+        final-medium amount is asserted here. Locator: trace-metals-solution table
+        component 3, Amount column; source version is the hash-pinned HTML capture. '
   - preferred_term: CoSO4 x 7 H2O
     concentration:
       value: '0.014'
@@ -160,9 +257,21 @@ solutions:
     supplier_catalog:
       supplier_name: Baker
       catalog_number: '1696'
-    notes: Converted from 14 mg/L in the UTEX Trace Metals Solution recipe.
+    notes: Converted from 14 mg/L in the UTEX Trace Metals Solution recipe. Evidence
+      supports the stock mass column only; the source molarity column is discrepant
+      and is not used to infer a corrected molarity or receiving-medium concentration.
     nutritional_roles:
     - TRACE_ELEMENT
+    evidence:
+    - reference: https://utex.org/products/trace-metals-solution
+      supports: SUPPORT
+      snippet: 14 mg/L
+      explanation: 'Claim: solutions[0].composition[4].concentration. Stock mass concentration
+        from the Amount column: 14 mg/L; mg is divided by 1000 where needed, giving
+        0.014 g/L. The source says "For 1 L Total". Its separate molarity cell "0.05
+        µM" and stock-concentration footnote remain unreconciled; no molar value or
+        final-medium amount is asserted here. Locator: trace-metals-solution table
+        component 4, Amount column; source version is the hash-pinned HTML capture. '
   - preferred_term: CuCl2 x 2 H2O
     concentration:
       value: '0.0068'
@@ -176,9 +285,21 @@ solutions:
     supplier_catalog:
       supplier_name: Fisher
       catalog_number: C-455
-    notes: Converted from 6.8 mg/L in the UTEX Trace Metals Solution recipe.
+    notes: Converted from 6.8 mg/L in the UTEX Trace Metals Solution recipe. Evidence
+      supports the stock mass column only; the source molarity column is discrepant
+      and is not used to infer a corrected molarity or receiving-medium concentration.
     nutritional_roles:
     - TRACE_ELEMENT
+    evidence:
+    - reference: https://utex.org/products/trace-metals-solution
+      supports: SUPPORT
+      snippet: 6.8 mg/L
+      explanation: 'Claim: solutions[0].composition[5].concentration. Stock mass concentration
+        from the Amount column: 6.8 mg/L; mg is divided by 1000 where needed, giving
+        0.0068 g/L. The source says "For 1 L Total". Its separate molarity cell "0.04
+        µM" and stock-concentration footnote remain unreconciled; no molar value or
+        final-medium amount is asserted here. Locator: trace-metals-solution table
+        component 5, Amount column; source version is the hash-pinned HTML capture. '
   - preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
     concentration:
       value: '4.6'
@@ -192,10 +313,22 @@ solutions:
     supplier_catalog:
       supplier_name: Sigma
       catalog_number: F-1513
-    notes: UTEX lists 4.6 g/L in the Trace Metals Solution recipe.
+    notes: UTEX lists 4.6 g/L in the Trace Metals Solution recipe. Evidence supports
+      the stock mass column only; the source molarity column is discrepant and is
+      not used to infer a corrected molarity or receiving-medium concentration.
     nutritional_roles:
     - IRON_SOURCE
     - TRACE_ELEMENT
+    evidence:
+    - reference: https://utex.org/products/trace-metals-solution
+      supports: SUPPORT
+      snippet: 4.6 g/L
+      explanation: 'Claim: solutions[0].composition[6].concentration. Stock mass concentration
+        from the Amount column: 4.6 g/L; mg is divided by 1000 where needed, giving
+        4.6 g/L. The source says "For 1 L Total". Its separate molarity cell "11.7
+        µM" and stock-concentration footnote remain unreconciled; no molar value or
+        final-medium amount is asserted here. Locator: trace-metals-solution table
+        component 6, Amount column; source version is the hash-pinned HTML capture. '
   - preferred_term: Na2EDTA x 2 H2O
     concentration:
       value: '4.4'
@@ -209,26 +342,49 @@ solutions:
     supplier_catalog:
       supplier_name: Sigma
       catalog_number: ED255
-    notes: UTEX lists 4.4 g/L in the Trace Metals Solution recipe.
+    notes: UTEX lists 4.4 g/L in the Trace Metals Solution recipe. Evidence supports
+      the stock mass column only; the source molarity column is discrepant and is
+      not used to infer a corrected molarity or receiving-medium concentration.
     physicochemical_roles:
     - CHELATOR
-  notes: UTEX adds 1 mL Trace Metals Solution per liter of F/2-family medium.
+    evidence:
+    - reference: https://utex.org/products/trace-metals-solution
+      supports: SUPPORT
+      snippet: 4.4 g/L
+      explanation: 'Claim: solutions[0].composition[7].concentration. Stock mass concentration
+        from the Amount column: 4.4 g/L; mg is divided by 1000 where needed, giving
+        4.4 g/L. The source says "For 1 L Total". Its separate molarity cell "11.7
+        µM" and stock-concentration footnote remain unreconciled; no molar value or
+        final-medium amount is asserted here. Locator: trace-metals-solution table
+        component 7, Amount column; source version is the hash-pinned HTML capture. '
+  notes: UTEX adds 1 mL of this prepared stock per liter of 5% F/2 Medium; composition
+    values describe the stock, not final-medium concentrations. The linked stock table
+    has an unresolved mass/molarity discrepancy; its mass column is preserved and
+    no molarity is inferred.
 - preferred_term: Vitamin B12
   concentration:
     value: '1'
     unit: ML_PER_L
   composition:
   - preferred_term: dH2O
-    concentration:
-      value: '1000'
-      unit: ML_PER_L
     term:
       id: CHEBI:15377
       label: water
     mediaingredientmech_chebi_term:
       id: CHEBI:15377
       label: water
-    notes: UTEX prepares the Vitamin B12 stock in 200 mL HEPES buffer.
+    notes: The source prepares 200 mL HEPES buffer before adding the vitamin. It does
+      not separately quantify pure-water input; no fixed water concentration is asserted.
+    evidence:
+    - reference: https://utex.org/products/vitamin-b-12
+      supports: SUPPORT
+      snippet: Prepare 200 mL of HEPES buffer
+      explanation: 'Claim: solutions[1].composition[0].concentration. The stock total
+        or buffered carrier volume is not a measured pure-water amount. Remove the
+        copied 1000 mL/L water concentration; no concentration is inferred for this
+        solvent. Locator: stock Directions, initial buffer preparation; source version
+        is the hash-pinned HTML capture. Evidence supports removing the numeric/pseudo-concentration
+        and retaining the preparation note, not a replacement numeric amount. '
   - preferred_term: HEPES buffer pH 7.8
     concentration:
       value: '12'
@@ -242,36 +398,73 @@ solutions:
     notes: Converted from 2.4 g/200 mL in the UTEX Vitamin B12 stock.
     physicochemical_roles:
     - BUFFER
-  - preferred_term: Vitamin B12
+    evidence:
+    - reference: https://utex.org/products/vitamin-b-12
+      supports: SUPPORT
+      snippet: 2.4 g/200 mL dH 2 O
+      explanation: 'Claim: solutions[1].composition[1].concentration. Stock mass concentration
+        using the source heading "For 200 mL Total": 2.4 g / 0.2 L = 12 g/L. The source
+        Stock Solution Concentration cell is "50 mM"; its approximation qualifier,
+        where printed, is not discarded or used to recalculate the mass. Locator:
+        vitamin-b-12 table component 1, Amount column; source version is the hash-pinned
+        HTML capture. '
+  - preferred_term: Cyanocobalamin
     concentration:
       value: '0.135'
       unit: G_PER_L
     term:
-      id: CHEBI:176843
-      label: vitamin B12
+      id: CHEBI:17439
+      label: cyanocob(III)alamin
     mediaingredientmech_chebi_term:
-      id: CHEBI:176843
-      label: vitamin B12
+      id: CHEBI:17439
+      label: Cyanocobalamin
     notes: Converted from 0.027 g/200 mL in the UTEX Vitamin B12 stock.
     nutritional_roles:
     - VITAMIN_SOURCE
-  notes: UTEX adds 1 mL Vitamin B12 stock per liter of F/2-family medium.
+    evidence:
+    - reference: https://utex.org/products/vitamin-b-12
+      supports: SUPPORT
+      snippet: 0.027 g/200 mL dH 2 O
+      explanation: 'Claim: solutions[1].composition[2].concentration. Stock mass concentration
+        using the source heading "For 200 mL Total": 0.027 g / 0.2 L = 0.135 g/L.
+        The source Stock Solution Concentration cell is "0.1 mM"; its approximation
+        qualifier, where printed, is not discarded or used to recalculate the mass.
+        Locator: vitamin-b-12 table component 2, Amount column; source version is
+        the hash-pinned HTML capture. '
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:17439
+      supports: SUPPORT
+      snippet: cyanocobalamin
+      explanation: 'Identity only for solutions[1].composition[2]. ChEBI identifies
+        CHEBI:17439 as cyanocob(III)alamin; the exact UTEX recipe/stock component
+        establishes the supplied chemical form. This ontology source does not support
+        the amount. Locator: ChEBI name/definition or INN. Packaged MIM resolver also
+        resolves the supplied label to this identifier.'
+  notes: UTEX adds 1 mL of this prepared stock per liter of 5% F/2 Medium; composition
+    values describe the stock, not final-medium concentrations.
 - preferred_term: Biotin Vitamin Solution
   concentration:
     value: '1'
     unit: ML_PER_L
   composition:
   - preferred_term: dH2O
-    concentration:
-      value: '1000'
-      unit: ML_PER_L
     term:
       id: CHEBI:15377
       label: water
     mediaingredientmech_chebi_term:
       id: CHEBI:15377
       label: water
-    notes: UTEX prepares the biotin stock in 200 mL HEPES buffer.
+    notes: The source prepares 200 mL HEPES buffer before adding the vitamin. It does
+      not separately quantify pure-water input; no fixed water concentration is asserted.
+    evidence:
+    - reference: https://utex.org/products/biotin-vitamin-solution
+      supports: SUPPORT
+      snippet: Prepare 200 mL of HEPES buffer
+      explanation: 'Claim: solutions[2].composition[0].concentration. The stock total
+        or buffered carrier volume is not a measured pure-water amount. Remove the
+        copied 1000 mL/L water concentration; no concentration is inferred for this
+        solvent. Locator: stock Directions, initial buffer preparation; source version
+        is the hash-pinned HTML capture. Evidence supports removing the numeric/pseudo-concentration
+        and retaining the preparation note, not a replacement numeric amount. '
   - preferred_term: HEPES buffer pH 7.8
     concentration:
       value: '12'
@@ -285,6 +478,16 @@ solutions:
     notes: Converted from 2.4 g/200 mL in the UTEX biotin stock.
     physicochemical_roles:
     - BUFFER
+    evidence:
+    - reference: https://utex.org/products/biotin-vitamin-solution
+      supports: SUPPORT
+      snippet: 2.4 g/200 mL dH 2 O
+      explanation: 'Claim: solutions[2].composition[1].concentration. Stock mass concentration
+        using the source heading "For 200 mL Total": 2.4 g / 0.2 L = 12 g/L. The source
+        Stock Solution Concentration cell is "50 mM"; its approximation qualifier,
+        where printed, is not discarded or used to recalculate the mass. Locator:
+        biotin-vitamin-solution table component 1, Amount column; source version is
+        the hash-pinned HTML capture. '
   - preferred_term: Biotin
     concentration:
       value: '0.025'
@@ -298,23 +501,42 @@ solutions:
     notes: Converted from 0.005 g/200 mL in the UTEX biotin stock.
     nutritional_roles:
     - VITAMIN_SOURCE
-  notes: UTEX adds 1 mL biotin stock per liter of F/2-family medium.
+    evidence:
+    - reference: https://utex.org/products/biotin-vitamin-solution
+      supports: SUPPORT
+      snippet: 0.005 g/200 mL dH 2 O
+      explanation: 'Claim: solutions[2].composition[2].concentration. Stock mass concentration
+        using the source heading "For 200 mL Total": 0.005 g / 0.2 L = 0.025 g/L.
+        The source Stock Solution Concentration cell is "~ 0.1 mM"; its approximation
+        qualifier, where printed, is not discarded or used to recalculate the mass.
+        Locator: biotin-vitamin-solution table component 2, Amount column; source
+        version is the hash-pinned HTML capture. '
+  notes: UTEX adds 1 mL of this prepared stock per liter of 5% F/2 Medium; composition
+    values describe the stock, not final-medium concentrations.
 - preferred_term: Thiamine Vitamin Solution
   concentration:
     value: '1'
     unit: ML_PER_L
   composition:
   - preferred_term: dH2O
-    concentration:
-      value: '1000'
-      unit: ML_PER_L
     term:
       id: CHEBI:15377
       label: water
     mediaingredientmech_chebi_term:
       id: CHEBI:15377
       label: water
-    notes: UTEX prepares the thiamine stock in 200 mL HEPES buffer.
+    notes: The source prepares 200 mL HEPES buffer before adding the vitamin. It does
+      not separately quantify pure-water input; no fixed water concentration is asserted.
+    evidence:
+    - reference: https://utex.org/products/thiamine-vitamin-solution
+      supports: SUPPORT
+      snippet: Prepare 200 mL of HEPES buffer
+      explanation: 'Claim: solutions[3].composition[0].concentration. The stock total
+        or buffered carrier volume is not a measured pure-water amount. Remove the
+        copied 1000 mL/L water concentration; no concentration is inferred for this
+        solvent. Locator: stock Directions, initial buffer preparation; source version
+        is the hash-pinned HTML capture. Evidence supports removing the numeric/pseudo-concentration
+        and retaining the preparation note, not a replacement numeric amount. '
   - preferred_term: HEPES buffer pH 7.8
     concentration:
       value: '12'
@@ -328,20 +550,58 @@ solutions:
     notes: Converted from 2.4 g/200 mL in the UTEX thiamine stock.
     physicochemical_roles:
     - BUFFER
-  - preferred_term: Thiamine
+    evidence:
+    - reference: https://utex.org/products/thiamine-vitamin-solution
+      supports: SUPPORT
+      snippet: 2.4 g/200 mL dH 2 O
+      explanation: 'Claim: solutions[3].composition[1].concentration. Stock mass concentration
+        using the source heading "For 200 mL Total": 2.4 g / 0.2 L = 12 g/L. The source
+        Stock Solution Concentration cell is "50 mM"; its approximation qualifier,
+        where printed, is not discarded or used to recalculate the mass. Locator:
+        thiamine-vitamin-solution table component 1, Amount column; source version
+        is the hash-pinned HTML capture. '
+  - preferred_term: Thiamine hydrochloride
     concentration:
       value: '0.335'
       unit: G_PER_L
     term:
-      id: CHEBI:18385
-      label: thiamine(1+)
+      id: CHEBI:49105
+      label: thiamine hydrochloride
     mediaingredientmech_chebi_term:
-      id: CHEBI:18385
-      label: thiamine(1+)
+      id: CHEBI:49105
+      label: Thiamine HCl
     notes: Converted from 0.067 g/200 mL in the UTEX thiamine stock.
     nutritional_roles:
     - VITAMIN_SOURCE
-  notes: UTEX adds 1 mL thiamine stock per liter of F/2-family medium.
+    evidence:
+    - reference: https://utex.org/products/thiamine-vitamin-solution
+      supports: SUPPORT
+      snippet: 0.067 g/200 mL dH 2 O
+      explanation: 'Claim: solutions[3].composition[2].concentration. Stock mass concentration
+        using the source heading "For 200 mL Total": 0.067 g / 0.2 L = 0.335 g/L.
+        The source Stock Solution Concentration cell is "~ 1 mM"; its approximation
+        qualifier, where printed, is not discarded or used to recalculate the mass.
+        Locator: thiamine-vitamin-solution table component 2, Amount column; source
+        version is the hash-pinned HTML capture. '
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:49105
+      supports: SUPPORT
+      snippet: A hydrochloride obtained by combining thiamine chloride with one molar
+        equivalent of hydrochloric acid.
+      explanation: 'Identity only for solutions[3].composition[2]. ChEBI identifies
+        CHEBI:49105 as thiamine hydrochloride; the exact UTEX recipe/stock component
+        establishes the supplied chemical form. This ontology source does not support
+        the amount. Locator: ChEBI name/definition or INN. Packaged MIM resolver also
+        resolves the supplied label to this identifier.'
+    - reference: https://www.sigmaaldrich.com/US/en/product/sigma/t1270
+      supports: SUPPORT
+      snippet: Thiamine hydrochloride
+      explanation: 'Identity only for solutions[3].composition[2]: UTEX specifies
+        Sigma T-1270; this exact supplier catalogue page names the hydrochloride,
+        CAS 67-03-8, not the isolated thiamine cation. Locator: product title, product
+        number and CAS fields. No mass/molar conversion or historical-lot certification
+        is asserted.'
+  notes: UTEX adds 1 mL of this prepared stock per liter of 5% F/2 Medium; composition
+    values describe the stock, not final-medium concentrations.
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -405,13 +665,169 @@ curation_history:
   notes: UTEX prepares 5% F/2 Medium for marine algae requiring 48 ppt salinity by
     dissolving 15 g/L natural sea-salt in non-pasteurized seawater and adding the
     F/2 nutrient, trace-metal, and vitamin stocks.
+- timestamp: '2026-10-10T00:39:00.252028+00:00'
+  curator: codex
+  action: CURATED_UTEX_F2_INGREDIENT_AND_STOCK_STAGE_EVIDENCE
+  notes: Trace-metal source mass/molarity discrepancy remains unresolved; only mass-column
+    stock amounts are supported. The parent and 1% HTML/PDF seawater salinity versions
+    differ; neither is silently substituted for the other. The 5% source lists vitamin
+    doses but omits a later vitamin-addition step; no missing procedure is invented.
+    Narrative literature variants and existing organism/growth claims are unchanged
+    and not certified by UTEX sources. No numeric amount is invented for makeup/carrier
+    water, seawater or the NH4MgPO4 pinch.
+  source: https://utex.org/products/5-percent-f-2-medium
+  changes: '[{"new": null, "old": {"unit": "ML_PER_L", "value": "1000"}, "pointer":
+    ["ingredients", 0, "concentration"], "remove": true}, {"new": "Seawater is used
+    to bring the recipe to its stated 1 L total volume. Its total input volume is
+    not independently quantified; no fixed solvent concentration is asserted.", "old":
+    "UTEX lists 1 L non-pasteurized seawater for this 48 ppt recipe.", "pointer":
+    ["ingredients", 0, "notes"], "remove": false}, {"new": "Sodium dihydrogenphosphate
+    monohydrate", "old": "NaH2PO4\u2022H2O", "pointer": ["ingredients", 3, "preferred_term"],
+    "remove": false}, {"new": {"id": "CHEBI:114249", "label": "sodium dihydrogenphosphate
+    monohydrate"}, "old": {"id": "CHEBI:37585", "label": "sodium dihydrogenphosphate"},
+    "pointer": ["ingredients", 3, "term"], "remove": false}, {"new": {"id": "CHEBI:114249",
+    "label": "Sodium phosphate monobasic monohydrate"}, "old": {"id": "CHEBI:37585",
+    "label": "sodium dihydrogenphosphate"}, "pointer": ["ingredients", 3, "mediaingredientmech_chebi_term"],
+    "remove": false}, {"new": "UTEX adds 1 mL of this prepared stock per liter of
+    5% F/2 Medium; composition values describe the stock, not final-medium concentrations.
+    The linked stock table has an unresolved mass/molarity discrepancy; its mass column
+    is preserved and no molarity is inferred.", "old": "UTEX adds 1 mL Trace Metals
+    Solution per liter of F/2-family medium.", "pointer": ["solutions", 0, "notes"],
+    "remove": false}, {"new": null, "old": {"unit": "ML_PER_L", "value": "1000"},
+    "pointer": ["solutions", 0, "composition", 0, "concentration"], "remove": true},
+    {"new": "Water is used to bring Trace Metals Solution to 1 L total; its input
+    amount is not separately quantified.", "old": "UTEX brings Trace Metals Solution
+    to 1 L with dH2O.", "pointer": ["solutions", 0, "composition", 0, "notes"], "remove":
+    false}, {"new": "Converted from 23 mg/L in the UTEX Trace Metals Solution recipe.
+    Evidence supports the stock mass column only; the source molarity column is discrepant
+    and is not used to infer a corrected molarity or receiving-medium concentration.",
+    "old": "Converted from 23 mg/L in the UTEX Trace Metals Solution recipe.", "pointer":
+    ["solutions", 0, "composition", 1, "notes"], "remove": false}, {"new": "Converted
+    from 152 mg/L in the UTEX Trace Metals Solution recipe. Evidence supports the
+    stock mass column only; the source molarity column is discrepant and is not used
+    to infer a corrected molarity or receiving-medium concentration.", "old": "Converted
+    from 152 mg/L in the UTEX Trace Metals Solution recipe.", "pointer": ["solutions",
+    0, "composition", 2, "notes"], "remove": false}, {"new": "Converted from 7.3 mg/L
+    in the UTEX Trace Metals Solution recipe. Evidence supports the stock mass column
+    only; the source molarity column is discrepant and is not used to infer a corrected
+    molarity or receiving-medium concentration.", "old": "Converted from 7.3 mg/L
+    in the UTEX Trace Metals Solution recipe.", "pointer": ["solutions", 0, "composition",
+    3, "notes"], "remove": false}, {"new": "Converted from 14 mg/L in the UTEX Trace
+    Metals Solution recipe. Evidence supports the stock mass column only; the source
+    molarity column is discrepant and is not used to infer a corrected molarity or
+    receiving-medium concentration.", "old": "Converted from 14 mg/L in the UTEX Trace
+    Metals Solution recipe.", "pointer": ["solutions", 0, "composition", 4, "notes"],
+    "remove": false}, {"new": "Converted from 6.8 mg/L in the UTEX Trace Metals Solution
+    recipe. Evidence supports the stock mass column only; the source molarity column
+    is discrepant and is not used to infer a corrected molarity or receiving-medium
+    concentration.", "old": "Converted from 6.8 mg/L in the UTEX Trace Metals Solution
+    recipe.", "pointer": ["solutions", 0, "composition", 5, "notes"], "remove": false},
+    {"new": "UTEX lists 4.6 g/L in the Trace Metals Solution recipe. Evidence supports
+    the stock mass column only; the source molarity column is discrepant and is not
+    used to infer a corrected molarity or receiving-medium concentration.", "old":
+    "UTEX lists 4.6 g/L in the Trace Metals Solution recipe.", "pointer": ["solutions",
+    0, "composition", 6, "notes"], "remove": false}, {"new": "UTEX lists 4.4 g/L in
+    the Trace Metals Solution recipe. Evidence supports the stock mass column only;
+    the source molarity column is discrepant and is not used to infer a corrected
+    molarity or receiving-medium concentration.", "old": "UTEX lists 4.4 g/L in the
+    Trace Metals Solution recipe.", "pointer": ["solutions", 0, "composition", 7,
+    "notes"], "remove": false}, {"new": "UTEX adds 1 mL of this prepared stock per
+    liter of 5% F/2 Medium; composition values describe the stock, not final-medium
+    concentrations.", "old": "UTEX adds 1 mL Vitamin B12 stock per liter of F/2-family
+    medium.", "pointer": ["solutions", 1, "notes"], "remove": false}, {"new": null,
+    "old": {"unit": "ML_PER_L", "value": "1000"}, "pointer": ["solutions", 1, "composition",
+    0, "concentration"], "remove": true}, {"new": "The source prepares 200 mL HEPES
+    buffer before adding the vitamin. It does not separately quantify pure-water input;
+    no fixed water concentration is asserted.", "old": "UTEX prepares the Vitamin
+    B12 stock in 200 mL HEPES buffer.", "pointer": ["solutions", 1, "composition",
+    0, "notes"], "remove": false}, {"new": "Cyanocobalamin", "old": "Vitamin B12",
+    "pointer": ["solutions", 1, "composition", 2, "preferred_term"], "remove": false},
+    {"new": {"id": "CHEBI:17439", "label": "cyanocob(III)alamin"}, "old": {"id": "CHEBI:176843",
+    "label": "vitamin B12"}, "pointer": ["solutions", 1, "composition", 2, "term"],
+    "remove": false}, {"new": {"id": "CHEBI:17439", "label": "Cyanocobalamin"}, "old":
+    {"id": "CHEBI:176843", "label": "vitamin B12"}, "pointer": ["solutions", 1, "composition",
+    2, "mediaingredientmech_chebi_term"], "remove": false}, {"new": "UTEX adds 1 mL
+    of this prepared stock per liter of 5% F/2 Medium; composition values describe
+    the stock, not final-medium concentrations.", "old": "UTEX adds 1 mL biotin stock
+    per liter of F/2-family medium.", "pointer": ["solutions", 2, "notes"], "remove":
+    false}, {"new": null, "old": {"unit": "ML_PER_L", "value": "1000"}, "pointer":
+    ["solutions", 2, "composition", 0, "concentration"], "remove": true}, {"new":
+    "The source prepares 200 mL HEPES buffer before adding the vitamin. It does not
+    separately quantify pure-water input; no fixed water concentration is asserted.",
+    "old": "UTEX prepares the biotin stock in 200 mL HEPES buffer.", "pointer": ["solutions",
+    2, "composition", 0, "notes"], "remove": false}, {"new": "UTEX adds 1 mL of this
+    prepared stock per liter of 5% F/2 Medium; composition values describe the stock,
+    not final-medium concentrations.", "old": "UTEX adds 1 mL thiamine stock per liter
+    of F/2-family medium.", "pointer": ["solutions", 3, "notes"], "remove": false},
+    {"new": null, "old": {"unit": "ML_PER_L", "value": "1000"}, "pointer": ["solutions",
+    3, "composition", 0, "concentration"], "remove": true}, {"new": "The source prepares
+    200 mL HEPES buffer before adding the vitamin. It does not separately quantify
+    pure-water input; no fixed water concentration is asserted.", "old": "UTEX prepares
+    the thiamine stock in 200 mL HEPES buffer.", "pointer": ["solutions", 3, "composition",
+    0, "notes"], "remove": false}, {"new": "Thiamine hydrochloride", "old": "Thiamine",
+    "pointer": ["solutions", 3, "composition", 2, "preferred_term"], "remove": false},
+    {"new": {"id": "CHEBI:49105", "label": "thiamine hydrochloride"}, "old": {"id":
+    "CHEBI:18385", "label": "thiamine(1+)"}, "pointer": ["solutions", 3, "composition",
+    2, "term"], "remove": false}, {"new": {"id": "CHEBI:49105", "label": "Thiamine
+    HCl"}, "old": {"id": "CHEBI:18385", "label": "thiamine(1+)"}, "pointer": ["solutions",
+    3, "composition", 2, "mediaingredientmech_chebi_term"], "remove": false}]'
 references:
 - reference: UTEX:5-percent-f-2-medium
 - reference: https://utex.org/products/5-percent-f-2-medium
+  title: 5% F/2 Medium | UTEX Culture Collection of Algae
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10; named authors and publication year not established; capture_sha256=e14a78260e229efc2873f2b523c959e17fe82b85136bf1780de5eedb852d7a09;
+    UTEX pages support only their own formulation/stage; chemical pages support identity
+    only.
 - reference: https://utex.org/products/trace-metals-solution
+  title: Trace Metals Solution Recipe | UTEX Culture Collection of Algae
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-09; named authors and publication year not established; capture_sha256=d6dde8dd4fa4f6baa791be46dff3f3ebb78bef2c9f11b6842ed149005a786c23;
+    UTEX pages support only their own formulation/stage; chemical pages support identity
+    only.
 - reference: https://utex.org/products/vitamin-b-12
+  title: Vitamin B12 Solution Component Recipe | UTEX Culture Collection of Algae
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-09; named authors and publication year not established; capture_sha256=dd441334a05ebe1820df21b8c0070dbbc5986338097c2e5c5f472e06c4c002d6;
+    UTEX pages support only their own formulation/stage; chemical pages support identity
+    only.
 - reference: https://utex.org/products/biotin-vitamin-solution
+  title: Biotin Vitamin Solution Component Recipe | UTEX Culture Collection of Algae
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-09; named authors and publication year not established; capture_sha256=70cad6f6f8a4df48b118281799f639464a1de32fb3a49578ecc8a3633a2df73c;
+    UTEX pages support only their own formulation/stage; chemical pages support identity
+    only.
 - reference: https://utex.org/products/thiamine-vitamin-solution
+  title: Thiamine Vitamin Component Recipe | UTEX Culture Collection of Algae
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-09; named authors and publication year not established; capture_sha256=251577d233a6b2b3d1cae058112778869d3b48752f66605093ac0749dc513b83;
+    UTEX pages support only their own formulation/stage; chemical pages support identity
+    only.
+- reference: https://www.ebi.ac.uk/chebi/CHEBI:114249
+  title: sodium dihydrogenphosphate monohydrate (CHEBI:114249)
+  notes: source_type=chemical_database; discovery_mode=cross_reference; accessed_on=2026-10-10;
+    named authors and publication year not established; capture_sha256=31774a93b84a6cb59c61f61e79d6d53dcd2dbf4f664fc2a74a38c7e92f0621ea;
+    UTEX pages support only their own formulation/stage; chemical pages support identity
+    only.
+- reference: https://www.ebi.ac.uk/chebi/CHEBI:17439
+  title: cyanocob(III)alamin (CHEBI:17439)
+  notes: source_type=chemical_database; discovery_mode=cross_reference; accessed_on=2026-10-10;
+    named authors and publication year not established; capture_sha256=4928a4d1a0b242cd7ed030e3350d0af9d2a0bfa30d351de1eb54c940947e654b;
+    UTEX pages support only their own formulation/stage; chemical pages support identity
+    only.
+- reference: https://www.ebi.ac.uk/chebi/CHEBI:49105
+  title: thiamine hydrochloride (CHEBI:49105)
+  notes: source_type=chemical_database; discovery_mode=cross_reference; accessed_on=2026-10-10;
+    named authors and publication year not established; capture_sha256=da616824db09b75107e7545fe59b40516cebc69d4e31edf06f54e71a2e85e689;
+    UTEX pages support only their own formulation/stage; chemical pages support identity
+    only.
+- reference: https://www.sigmaaldrich.com/US/en/product/sigma/t1270
+  title: Thiamine BioReagent, cell culture mammalian, cell culture insect, cell culture
+    plant 67-03-8
+  notes: source_type=supplier_product_page; discovery_mode=cross_reference; accessed_on=2026-10-10;
+    named authors and publication year not established; capture_sha256=not available;
+    inspected through web tool; UTEX pages support only their own formulation/stage;
+    chemical pages support identity only.
 original_name: 5% F/2 Medium
 parent_media:
   path: data/normalized_yaml/algae/F_2_Medium.yaml
@@ -427,3 +843,21 @@ variant_modifications:
 data_quality_flags:
 - has_ontology_mappings
 - ingredients_curated
+evidence:
+- reference: https://utex.org/products/5-percent-f-2-medium
+  supports: SUPPORT
+  snippet: 1 mL/L
+  explanation: 'Claim: solutions[0].concentration. Prepared stock "Trace Metals Solution"
+    is added at 1 mL/L in this exact formulation. This is a stock addition, not any
+    constituent final concentration. Locator: recipe table component 6, Amount column;
+    source version is the hash-pinned HTML capture.  Claim: solutions[1].concentration.
+    Prepared stock "Vitamin B 12" is added at 1 mL/L in this exact formulation. This
+    is a stock addition, not any constituent final concentration. Locator: recipe
+    table component 7, Amount column; source version is the hash-pinned HTML capture.  Claim:
+    solutions[2].concentration. Prepared stock "Biotin Vitamin Solution" is added
+    at 1 mL/L in this exact formulation. This is a stock addition, not any constituent
+    final concentration. Locator: recipe table component 8, Amount column; source
+    version is the hash-pinned HTML capture.  Claim: solutions[3].concentration. Prepared
+    stock "Thiamine Vitamin Solution" is added at 1 mL/L in this exact formulation.
+    This is a stock addition, not any constituent final concentration. Locator: recipe
+    table component 9, Amount column; source version is the hash-pinned HTML capture. '

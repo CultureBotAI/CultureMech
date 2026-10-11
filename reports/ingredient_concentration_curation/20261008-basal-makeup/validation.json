@@ -1,0 +1,157 @@
+{
+  "terminal": true,
+  "publication_ready": false,
+  "applied_records": 4,
+  "source_responses_refreshed": 12,
+  "normalized_count": 15910,
+  "normalized_sha256": "b8f024d6b5c7faa334609caa01c6ce2e2ffd395e322d6459da1b6865597d46dc",
+  "records": {
+    "data/normalized_yaml/bacterial/TOGO_M809_Modified_Haloanaerobium_Medium.yaml": "7dcc54d4c9b049f677f2880ff0794160b04f352d79be5cfd92f367ab80bde060",
+    "data/normalized_yaml/bacterial/TOGO_M823_S200_Medium.yaml": "bc2916e06ec80253de188065b473ff918e9f5c0fa01252484b02a0f605df75e1",
+    "data/normalized_yaml/bacterial/TOGO_M853_Halanaerobacter_Jeridensis_Medium.yaml": "bef338e2db9fa9984d32e66b63b07f4a90151aee8b79b0f8dd122a31d64fad4a",
+    "data/normalized_yaml/bacterial/TOGO_M975_Halanaerobium_Sehlinense_Medium.yaml": "aee54fb8235a265263c3d18830ce9d87b2313fa2d15e8731dd87e8c32338d677"
+  },
+  "reference_checks": {
+    "M809": {
+      "checks": 54,
+      "all_valid": true,
+      "issues": []
+    },
+    "M823": {
+      "checks": 50,
+      "all_valid": true,
+      "issues": []
+    },
+    "M853": {
+      "checks": 52,
+      "all_valid": true,
+      "issues": []
+    },
+    "M975": {
+      "checks": 46,
+      "all_valid": true,
+      "issues": []
+    }
+  },
+  "tests_passed": {
+    "fast": "8371 passed, 16 skipped, 1945 deselected, 2 warnings in 562.85s (0:09:22)",
+    "final": "416 passed, 2 warnings in 129.32s (0:02:09)"
+  },
+  "failed_global_gates": [
+    {
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/basal-post-12.log"
+    },
+    {
+      "command": [
+        "just",
+        "audit-merge-freshness",
+        "--json"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/basal-post-13.log"
+    }
+  ],
+  "merge_verification": {
+    "name_conflicts": 1247,
+    "fingerprint_issues": 3287
+  },
+  "freshness": {
+    "tracked_total": 6320,
+    "fresh_total": 10777,
+    "only_in_tracked": 4275,
+    "only_in_fresh": 8732,
+    "changed": 2045,
+    "unchanged": 0
+  },
+  "cumulative_audit": {
+    "stock_nodes_relocated": 616,
+    "new_quantity_slots": 262,
+    "unsupported_quantity_slots_removed": 441,
+    "new_evidence": 31400,
+    "new_curation_history": 5343,
+    "new_references": 5524,
+    "stock_stage_concentrations_rebased": 137,
+    "stock_descriptors_added": 181,
+    "quantity_corrections": 1408,
+    "copied_ingredient_nodes_replaced_by_reference": 37,
+    "ingredient_context_notes_added": 264,
+    "water_input_nodes_added": 27,
+    "recipe_context_notes_corrected": 26,
+    "parent_links_corrected": 5,
+    "source_amount_conflicts_repaired": 3,
+    "unquantified_carrier_nodes_added": 77,
+    "evidence_scopes_corrected": 172,
+    "ingredient_context_notes_corrected": 9,
+    "preparation_actions_corrected": 7,
+    "preparation_descriptions_corrected": 4,
+    "preparation_steps_added": 14,
+    "batch_mass_notes_unverified_concentrations": 48,
+    "stock_dose_basis_corrections": 76,
+    "child_links_corrected": 5,
+    "preparation_steps_relocated": 9,
+    "water_input_notes_added": 9,
+    "inline_variant_options_added": 8,
+    "extraction_preparations_added": 1,
+    "base_preparations_added": 9,
+    "preparation_records_restored": 3,
+    "supplement_nodes_moved_to_variants": 4,
+    "corrected_evidence_snippets": 2,
+    "variant_links_added": 4,
+    "stock_context_notes_corrected": 8,
+    "extraction_preparations_restructured": 2,
+    "source_version_alternatives_added": 4,
+    "copied_ingredient_nodes_removed": 3,
+    "composition_classifications_corrected": 2,
+    "final_quantity_slots_added": 1,
+    "explicitly_omitted_ingredient_nodes": 1,
+    "ingredient_source_attributions_corrected": 1,
+    "bibliographic_entries_enriched": 1,
+    "excluded_alternative_nodes_removed": 1,
+    "ingredient_labels_corrected": 1,
+    "preparation_text_encodings_corrected": 1,
+    "unquantified_solvent_nodes_added": 1,
+    "ingredient_doses_relocated_to_stock": 1,
+    "identity_conflicts_retained_unquantified": 2,
+    "unquantified_makeup_nodes_added": 1,
+    "stock_preparation_notes_added": 1,
+    "edited_records": 5139
+  },
+  "followup_unique_records": 11766,
+  "outside_this_followup": 4144,
+  "remaining_M142_queue": 86,
+  "reports": {
+    "baseline.json": "394bccc6979ceec2caf13c793edb902aa092e32253549053628329029fb4ad47",
+    "live.json": "a99a11f3b5e1ce0374bc24816aa8d58ce1daa64ea6f200e982deede3e4b4f3e0",
+    "application.json": "2c0433a835dc6bbf299a18ed58c1d8462bf4c268e2f328057e5a1f9b9d93d88e",
+    "fast.json": "52498e50c5d8b07256e6de436a25e60262665bacceedd5911f3aefd2a6706c3a",
+    "post.json": "34b9495b2028862b84363818cac9bfda5a379f3ce1579a669652d7da98355edb",
+    "final.json": "bd5cad89c563fbe88546d75fe2a38eb82c926aba4740f89dff0904c09f1a89ec",
+    "corpus.json": "33068b5fb0766f3fe04fce374b9886d19b270fbc4a37bc856aa4c84a54dbda80",
+    "strict-full.json": "6afaef24db89327763f6922b625fdae3e46fcc836d34221a7c135bcd36ab489c",
+    "reconciliation.json": "ba4ba845bd1589aec69e559c4b3379035f7382dcfb01527c767caa5aef30a81e",
+    "merge-retention.json": "e2e15c7ec4aa0dda490f8117981e0e96b845688471e2e96b7eca553d2aad399d",
+    "index-refresh-application.json": "f607a0949cee6e91ce754cce19d0e653103c4541039183ac84c831dc2d0a4530"
+  },
+  "code_sha256": {
+    "scripts/repair_basal_makeup_stages.py": "c86e9ec9156ceb3c01e2e5f10bd1d3a1036d889d78593731c8d7c1b5afa71e48",
+    "tests/test_basal_makeup_stages.py": "740d704ded6c309138c57adab8271db468d3dfae5dd14bb9fa5ab5a4ae94208a",
+    "reports/ingredient_concentration_curation/20261008-basal-makeup/audit.py": "ca3bb3868074d0cca8332edcbce62be8d871ebc553d7828dd3d2ee0f26f0bda6",
+    "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "96a35c0e9ec5a4d50d4d9b59b6c58b701c160fb338362b6a9d07b7e7c23570c2"
+  },
+  "commit_push_PR_merge_branch_cleanup": "Not performed; requested publication workflow remains incomplete.",
+  "runtime": "Existing partial locked Python 3.13 environment; not clean CI. Full test suite not rerun for this localized data repair.",
+  "corpus_checks": {
+    "strict_initial_scanned": 15909,
+    "strict_explicit_root_scanned": 15910,
+    "strict_scope_note": "Initial default-root success did not certify all 15910 paths; repeated after fast-suite completion against explicit normalized root and required exact count equality. Initial omission cause not established.",
+    "ids_scanned": 15910,
+    "product_warnings": 91,
+    "product_skipped_no_adapter": 96083,
+    "ingredient_groundings_recertified": false
+  }
+}

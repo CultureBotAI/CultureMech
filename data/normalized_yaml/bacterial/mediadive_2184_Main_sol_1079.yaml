@@ -11,6 +11,32 @@ composition:
   term:
     id: mediadive.compound:953
     label: PPLO broth
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/2184
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "PPLO broth",
+                      "compound_id": 953,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 17,
+                      "unit": "g",
+                      "g_l": 17,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (PPLO broth)
+      in MediaDive solution 2184; locator=$.data.recipe[0] (compound_id=953). Provider
+      explicitly reports g_l=17. Arithmetic check: 17 g * 1 g/g / (1000 ml / 1000
+      ml per L) = 17 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T09:09:51.863743+00:00; response SHA256=07844d903231642ee271154d38461f146a57117bc690c06ae434e60f1b230d07.'
 - preferred_term: Yeast extract
   concentration:
     value: '25'
@@ -82,6 +108,15 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T09:15:06.636792+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/2184
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "17"} -> {"unit":
+    "G_PER_L", "value": "17"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -90,3 +125,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/2184
+  title: 'MediaDive solution 2184: Main sol. 1079'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=07844d903231642ee271154d38461f146a57117bc690c06ae434e60f1b230d07;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

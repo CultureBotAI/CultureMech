@@ -16,6 +16,32 @@ composition:
     label: glucose
     confidence: 0.9
     match_type: manual_curated
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3125
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "Glucose",
+                      "compound_id": 5,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2.5,
+                      "unit": "g",
+                      "g_l": 50,
+                      "mmol_l": 277.531,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Glucose)
+      in MediaDive solution 3125; locator=$.data.recipe[0] (compound_id=5). Provider
+      explicitly reports g_l=50. Arithmetic check: 2.5 g * 1 g/g / (50 ml / 1000 ml
+      per L) = 5E+1 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 50. Retrieved 2026-10-07T09:18:44.750956+00:00; response SHA256=a450c9c577e2d109092606ecc25dae34cc092ab378c37e8bc9dfaad15af1a422.'
 - preferred_term: KH2PO4
   concentration:
     value: '16'
@@ -28,6 +54,32 @@ composition:
     label: potassium dihydrogen phosphate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3125
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "KH2PO4",
+                      "compound_id": 11,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.8,
+                      "unit": "g",
+                      "g_l": 16,
+                      "mmol_l": 117.574,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (KH2PO4)
+      in MediaDive solution 3125; locator=$.data.recipe[1] (compound_id=11). Provider
+      explicitly reports g_l=16. Arithmetic check: 0.8 g * 1 g/g / (50 ml / 1000 ml
+      per L) = 16 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 50. Retrieved 2026-10-07T09:18:44.750956+00:00; response SHA256=a450c9c577e2d109092606ecc25dae34cc092ab378c37e8bc9dfaad15af1a422.'
 - preferred_term: Distilled water
   concentration:
     value: '1000.0'
@@ -77,6 +129,16 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T09:21:52.094915+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/3125
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "50"} -> {"unit":
+    "G_PER_L", "value": "50"} (evidence_only); composition[1].concentration: {"unit":
+    "G_PER_L", "value": "16"} -> {"unit": "G_PER_L", "value": "16"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -85,3 +147,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/3125
+  title: 'MediaDive solution 3125: Solution B'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=a450c9c577e2d109092606ecc25dae34cc092ab378c37e8bc9dfaad15af1a422;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

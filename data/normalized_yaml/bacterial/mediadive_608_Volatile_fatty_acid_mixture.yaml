@@ -6,8 +6,8 @@ term:
 composition:
 - preferred_term: Acetic acid
   concentration:
-    value: '573.182'
-    unit: G_PER_L
+    value: '0.5485'
+    unit: L
   term:
     id: mediadive.compound:380
     label: Acetic acid
@@ -16,10 +16,574 @@ composition:
     label: acetic acid
     confidence: 0.9
     match_type: corpus_consensus
+  notes: 'Source input only; not final volume or volume percentage Source input: 548.5
+    ml; stage=Volatile fatty acid mixture.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/608
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "Acetic acid",
+                      "compound_id": 380,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 548.5,
+                      "unit": "ml",
+                      "g_l": 573.182,
+                      "mmol_l": 9545.09,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[0].preferred_term: Source input only; not final volume or volume percentage Source input: 548.5 ml; stage=Volatile fatty acid mixture. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[0]; accessed=2026-10-09T08:03:02.601733+00:00; capture SHA256=c82c2f685260a674c13acb93c21e12eebc4e31b713fc952da3fa85c37d1ebcca.
+
+      Additional exact excerpt: {
+                      "recipe_order": 1,
+                      "compound": "Acetic acid",
+                      "compound_id": 380,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 548.5,
+                      "unit": "ml",
+                      "g_l": 573.182,
+                      "mmol_l": 9545.09,
+                      "optional": 0
+                  }
+      composition[0].concentration: Source input only; not final volume or volume percentage Source input: 548.5 ml; stage=Volatile fatty acid mixture. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[0]; accessed=2026-10-09T08:03:02.601733+00:00; capture SHA256=c82c2f685260a674c13acb93c21e12eebc4e31b713fc952da3fa85c37d1ebcca.
+
+      Additional exact excerpt: {
+                      "recipe_order": 1,
+                      "compound": "Acetic acid",
+                      "compound_id": 380,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 548.5,
+                      "unit": "ml",
+                      "g_l": 573.182,
+                      "mmol_l": 9545.09,
+                      "optional": 0
+                  }
+      composition[0].notes: Source input only; not final volume or volume percentage Source input: 548.5 ml; stage=Volatile fatty acid mixture. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[0]; accessed=2026-10-09T08:03:02.601733+00:00; capture SHA256=c82c2f685260a674c13acb93c21e12eebc4e31b713fc952da3fa85c37d1ebcca.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "Acetic acid",
+                      "compound_id": 380,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 548.5,
+                      "unit": "ml",
+                      "g_l": 573.182,
+                      "mmol_l": 9545.09,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "Propionic acid",
+                      "compound_id": 381,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 193.5,
+                      "unit": "ml",
+                      "g_l": 192.145,
+                      "mmol_l": 2593.76,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 3,
+                      "compound": "Butyric acid",
+                      "compound_id": 314,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 129,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 4,
+                      "compound": "n-Valeric acid",
+                      "compound_id": 288,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 32.25,
+                      "unit": "ml",
+                      "g_l": 30.2827,
+                      "mmol_l": 296.512,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 5,
+                      "compound": "iso-Butyric acid",
+                      "compound_id": 377,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 32.25,
+                      "unit": "ml",
+                      "g_l": 30.6375,
+                      "mmol_l": 347.719,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 6,
+                      "compound": "DL-2-Methylbutyric acid",
+                      "compound_id": 223,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 32.25,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 7,
+                      "compound": "iso-Valeric acid",
+                      "compound_id": 378,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 32.25,
+                      "unit": "ml",
+                      "g_l": 30.0247,
+                      "mmol_l": 293.986,
+                      "optional": 0
+                  }
+              ]
+      ingredients: All exact source rows are represented in composition. Remove the false placeholder and only its incomplete-composition flag, not supported quantities or remaining scientific uncertainties. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe; accessed=2026-10-09T08:03:02.601733+00:00; capture SHA256=c82c2f685260a674c13acb93c21e12eebc4e31b713fc952da3fa85c37d1ebcca.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "Acetic acid",
+                      "compound_id": 380,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 548.5,
+                      "unit": "ml",
+                      "g_l": 573.182,
+                      "mmol_l": 9545.09,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "Propionic acid",
+                      "compound_id": 381,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 193.5,
+                      "unit": "ml",
+                      "g_l": 192.145,
+                      "mmol_l": 2593.76,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 3,
+                      "compound": "Butyric acid",
+                      "compound_id": 314,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 129,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 4,
+                      "compound": "n-Valeric acid",
+                      "compound_id": 288,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 32.25,
+                      "unit": "ml",
+                      "g_l": 30.2827,
+                      "mmol_l": 296.512,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 5,
+                      "compound": "iso-Butyric acid",
+                      "compound_id": 377,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 32.25,
+                      "unit": "ml",
+                      "g_l": 30.6375,
+                      "mmol_l": 347.719,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 6,
+                      "compound": "DL-2-Methylbutyric acid",
+                      "compound_id": 223,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 32.25,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 7,
+                      "compound": "iso-Valeric acid",
+                      "compound_id": 378,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 32.25,
+                      "unit": "ml",
+                      "g_l": 30.0247,
+                      "mmol_l": 293.986,
+                      "optional": 0
+                  }
+              ]
+      data_quality_flags: All exact source rows are represented in composition. Remove the false placeholder and only its incomplete-composition flag, not supported quantities or remaining scientific uncertainties. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe; accessed=2026-10-09T08:03:02.601733+00:00; capture SHA256=c82c2f685260a674c13acb93c21e12eebc4e31b713fc952da3fa85c37d1ebcca.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "Acetic acid",
+                      "compound_id": 380,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 548.5,
+                      "unit": "ml",
+                      "g_l": 573.182,
+                      "mmol_l": 9545.09,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "Propionic acid",
+                      "compound_id": 381,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 193.5,
+                      "unit": "ml",
+                      "g_l": 192.145,
+                      "mmol_l": 2593.76,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 3,
+                      "compound": "Butyric acid",
+                      "compound_id": 314,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 129,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 4,
+                      "compound": "n-Valeric acid",
+                      "compound_id": 288,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 32.25,
+                      "unit": "ml",
+                      "g_l": 30.2827,
+                      "mmol_l": 296.512,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 5,
+                      "compound": "iso-Butyric acid",
+                      "compound_id": 377,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 32.25,
+                      "unit": "ml",
+                      "g_l": 30.6375,
+                      "mmol_l": 347.719,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 6,
+                      "compound": "DL-2-Methylbutyric acid",
+                      "compound_id": 223,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 32.25,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 7,
+                      "compound": "iso-Valeric acid",
+                      "compound_id": 378,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 32.25,
+                      "unit": "ml",
+                      "g_l": 30.0247,
+                      "mmol_l": 293.986,
+                      "optional": 0
+                  }
+              ]
+      notes: Complete inspected source rows define this reconstruction. Archive old flattened quantities, false LB expansions, placeholders and copied stock-solvent claims in append-only history. Unrelated annotations remain preserved, not recertified. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T08:03:02.601733+00:00; capture SHA256=c82c2f685260a674c13acb93c21e12eebc4e31b713fc952da3fa85c37d1ebcca.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "Acetic acid",
+                      "compound_id": 380,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 548.5,
+                      "unit": "ml",
+                      "g_l": 573.182,
+                      "mmol_l": 9545.09,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "Propionic acid",
+                      "compound_id": 381,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 193.5,
+                      "unit": "ml",
+                      "g_l": 192.145,
+                      "mmol_l": 2593.76,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 3,
+                      "compound": "Butyric acid",
+                      "compound_id": 314,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 129,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 4,
+                      "compound": "n-Valeric acid",
+                      "compound_id": 288,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 32.25,
+                      "unit": "ml",
+                      "g_l": 30.2827,
+                      "mmol_l": 296.512,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 5,
+                      "compound": "iso-Butyric acid",
+                      "compound_id": 377,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 32.25,
+                      "unit": "ml",
+                      "g_l": 30.6375,
+                      "mmol_l": 347.719,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 6,
+                      "compound": "DL-2-Methylbutyric acid",
+                      "compound_id": 223,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 32.25,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 7,
+                      "compound": "iso-Valeric acid",
+                      "compound_id": 378,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 32.25,
+                      "unit": "ml",
+                      "g_l": 30.0247,
+                      "mmol_l": 293.986,
+                      "optional": 0
+                  }
+              ]
+      notes: Complete inspected source rows define this reconstruction. Archive old flattened quantities, false LB expansions, placeholders and copied stock-solvent claims in append-only history. Unrelated annotations remain preserved, not recertified. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T08:03:02.601733+00:00; capture SHA256=c82c2f685260a674c13acb93c21e12eebc4e31b713fc952da3fa85c37d1ebcca.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "Acetic acid",
+                      "compound_id": 380,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 548.5,
+                      "unit": "ml",
+                      "g_l": 573.182,
+                      "mmol_l": 9545.09,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "Propionic acid",
+                      "compound_id": 381,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 193.5,
+                      "unit": "ml",
+                      "g_l": 192.145,
+                      "mmol_l": 2593.76,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 3,
+                      "compound": "Butyric acid",
+                      "compound_id": 314,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 129,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 4,
+                      "compound": "n-Valeric acid",
+                      "compound_id": 288,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 32.25,
+                      "unit": "ml",
+                      "g_l": 30.2827,
+                      "mmol_l": 296.512,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 5,
+                      "compound": "iso-Butyric acid",
+                      "compound_id": 377,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 32.25,
+                      "unit": "ml",
+                      "g_l": 30.6375,
+                      "mmol_l": 347.719,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 6,
+                      "compound": "DL-2-Methylbutyric acid",
+                      "compound_id": 223,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 32.25,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 7,
+                      "compound": "iso-Valeric acid",
+                      "compound_id": 378,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 32.25,
+                      "unit": "ml",
+                      "g_l": 30.0247,
+                      "mmol_l": 293.986,
+                      "optional": 0
+                  }
+              ]
+      notes: The old quantity is a false LB/placeholder/copied stock-solvent claim or a relocated stage. Preserve its old value in history, not as an unsupported concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe; accessed=2026-10-09T08:03:02.601733+00:00; capture SHA256=c82c2f685260a674c13acb93c21e12eebc4e31b713fc952da3fa85c37d1ebcca.
 - preferred_term: Propionic acid
   concentration:
-    value: '192.145'
-    unit: G_PER_L
+    value: '0.1935'
+    unit: L
   term:
     id: mediadive.compound:381
     label: Propionic acid
@@ -28,10 +592,64 @@ composition:
     label: propionic acid
     confidence: 0.9
     match_type: corpus_consensus
+  notes: 'Source input only; not final volume or volume percentage Source input: 193.5
+    ml; stage=Volatile fatty acid mixture.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/608
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Propionic acid",
+                      "compound_id": 381,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 193.5,
+                      "unit": "ml",
+                      "g_l": 192.145,
+                      "mmol_l": 2593.76,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[1].preferred_term: Source input only; not final volume or volume percentage Source input: 193.5 ml; stage=Volatile fatty acid mixture. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[1]; accessed=2026-10-09T08:03:02.601733+00:00; capture SHA256=c82c2f685260a674c13acb93c21e12eebc4e31b713fc952da3fa85c37d1ebcca.
+
+      Additional exact excerpt: {
+                      "recipe_order": 2,
+                      "compound": "Propionic acid",
+                      "compound_id": 381,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 193.5,
+                      "unit": "ml",
+                      "g_l": 192.145,
+                      "mmol_l": 2593.76,
+                      "optional": 0
+                  }
+      composition[1].concentration: Source input only; not final volume or volume percentage Source input: 193.5 ml; stage=Volatile fatty acid mixture. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[1]; accessed=2026-10-09T08:03:02.601733+00:00; capture SHA256=c82c2f685260a674c13acb93c21e12eebc4e31b713fc952da3fa85c37d1ebcca.
+
+      Additional exact excerpt: {
+                      "recipe_order": 2,
+                      "compound": "Propionic acid",
+                      "compound_id": 381,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 193.5,
+                      "unit": "ml",
+                      "g_l": 192.145,
+                      "mmol_l": 2593.76,
+                      "optional": 0
+                  }
+      composition[1].notes: Source input only; not final volume or volume percentage Source input: 193.5 ml; stage=Volatile fatty acid mixture. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[1]; accessed=2026-10-09T08:03:02.601733+00:00; capture SHA256=c82c2f685260a674c13acb93c21e12eebc4e31b713fc952da3fa85c37d1ebcca.
 - preferred_term: Butyric acid
   concentration:
-    value: '129'
-    unit: PERCENT_V_V
+    value: '0.129'
+    unit: L
   term:
     id: mediadive.compound:314
     label: Butyric acid
@@ -40,10 +658,64 @@ composition:
     label: butyric acid
     confidence: 1.0
     match_type: exact_match
+  notes: 'Source input only; not final volume or volume percentage Source input: 129
+    ml; stage=Volatile fatty acid mixture.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/608
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "Butyric acid",
+                      "compound_id": 314,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 129,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[2].preferred_term: Source input only; not final volume or volume percentage Source input: 129 ml; stage=Volatile fatty acid mixture. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[2]; accessed=2026-10-09T08:03:02.601733+00:00; capture SHA256=c82c2f685260a674c13acb93c21e12eebc4e31b713fc952da3fa85c37d1ebcca.
+
+      Additional exact excerpt: {
+                      "recipe_order": 3,
+                      "compound": "Butyric acid",
+                      "compound_id": 314,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 129,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[2].concentration: Source input only; not final volume or volume percentage Source input: 129 ml; stage=Volatile fatty acid mixture. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[2]; accessed=2026-10-09T08:03:02.601733+00:00; capture SHA256=c82c2f685260a674c13acb93c21e12eebc4e31b713fc952da3fa85c37d1ebcca.
+
+      Additional exact excerpt: {
+                      "recipe_order": 3,
+                      "compound": "Butyric acid",
+                      "compound_id": 314,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 129,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[2].notes: Source input only; not final volume or volume percentage Source input: 129 ml; stage=Volatile fatty acid mixture. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[2]; accessed=2026-10-09T08:03:02.601733+00:00; capture SHA256=c82c2f685260a674c13acb93c21e12eebc4e31b713fc952da3fa85c37d1ebcca.
 - preferred_term: n-Valeric acid
   concentration:
-    value: '30.2827'
-    unit: G_PER_L
+    value: '0.03225'
+    unit: L
   term:
     id: mediadive.compound:288
     label: n-Valeric acid
@@ -52,10 +724,64 @@ composition:
     label: valeric acid
     confidence: 1.0
     match_type: exact_match
+  notes: 'Source input only; not final volume or volume percentage Source input: 32.25
+    ml; stage=Volatile fatty acid mixture.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/608
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "n-Valeric acid",
+                      "compound_id": 288,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 32.25,
+                      "unit": "ml",
+                      "g_l": 30.2827,
+                      "mmol_l": 296.512,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[3].preferred_term: Source input only; not final volume or volume percentage Source input: 32.25 ml; stage=Volatile fatty acid mixture. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[3]; accessed=2026-10-09T08:03:02.601733+00:00; capture SHA256=c82c2f685260a674c13acb93c21e12eebc4e31b713fc952da3fa85c37d1ebcca.
+
+      Additional exact excerpt: {
+                      "recipe_order": 4,
+                      "compound": "n-Valeric acid",
+                      "compound_id": 288,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 32.25,
+                      "unit": "ml",
+                      "g_l": 30.2827,
+                      "mmol_l": 296.512,
+                      "optional": 0
+                  }
+      composition[3].concentration: Source input only; not final volume or volume percentage Source input: 32.25 ml; stage=Volatile fatty acid mixture. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[3]; accessed=2026-10-09T08:03:02.601733+00:00; capture SHA256=c82c2f685260a674c13acb93c21e12eebc4e31b713fc952da3fa85c37d1ebcca.
+
+      Additional exact excerpt: {
+                      "recipe_order": 4,
+                      "compound": "n-Valeric acid",
+                      "compound_id": 288,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 32.25,
+                      "unit": "ml",
+                      "g_l": 30.2827,
+                      "mmol_l": 296.512,
+                      "optional": 0
+                  }
+      composition[3].notes: Source input only; not final volume or volume percentage Source input: 32.25 ml; stage=Volatile fatty acid mixture. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[3]; accessed=2026-10-09T08:03:02.601733+00:00; capture SHA256=c82c2f685260a674c13acb93c21e12eebc4e31b713fc952da3fa85c37d1ebcca.
 - preferred_term: iso-Butyric acid
   concentration:
-    value: '30.6375'
-    unit: G_PER_L
+    value: '0.03225'
+    unit: L
   term:
     id: mediadive.compound:377
     label: iso-Butyric acid
@@ -64,10 +790,64 @@ composition:
     label: isobutyric acid
     confidence: 1.0
     match_type: exact_match
+  notes: 'Source input only; not final volume or volume percentage Source input: 32.25
+    ml; stage=Volatile fatty acid mixture.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/608
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 5,
+                      "compound": "iso-Butyric acid",
+                      "compound_id": 377,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 32.25,
+                      "unit": "ml",
+                      "g_l": 30.6375,
+                      "mmol_l": 347.719,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[4].preferred_term: Source input only; not final volume or volume percentage Source input: 32.25 ml; stage=Volatile fatty acid mixture. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[4]; accessed=2026-10-09T08:03:02.601733+00:00; capture SHA256=c82c2f685260a674c13acb93c21e12eebc4e31b713fc952da3fa85c37d1ebcca.
+
+      Additional exact excerpt: {
+                      "recipe_order": 5,
+                      "compound": "iso-Butyric acid",
+                      "compound_id": 377,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 32.25,
+                      "unit": "ml",
+                      "g_l": 30.6375,
+                      "mmol_l": 347.719,
+                      "optional": 0
+                  }
+      composition[4].concentration: Source input only; not final volume or volume percentage Source input: 32.25 ml; stage=Volatile fatty acid mixture. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[4]; accessed=2026-10-09T08:03:02.601733+00:00; capture SHA256=c82c2f685260a674c13acb93c21e12eebc4e31b713fc952da3fa85c37d1ebcca.
+
+      Additional exact excerpt: {
+                      "recipe_order": 5,
+                      "compound": "iso-Butyric acid",
+                      "compound_id": 377,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 32.25,
+                      "unit": "ml",
+                      "g_l": 30.6375,
+                      "mmol_l": 347.719,
+                      "optional": 0
+                  }
+      composition[4].notes: Source input only; not final volume or volume percentage Source input: 32.25 ml; stage=Volatile fatty acid mixture. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[4]; accessed=2026-10-09T08:03:02.601733+00:00; capture SHA256=c82c2f685260a674c13acb93c21e12eebc4e31b713fc952da3fa85c37d1ebcca.
 - preferred_term: DL-2-Methylbutyric acid
   concentration:
-    value: '32.25'
-    unit: PERCENT_V_V
+    value: '0.03225'
+    unit: L
   term:
     id: mediadive.compound:223
     label: DL-2-Methylbutyric acid
@@ -76,10 +856,64 @@ composition:
     label: 2-methylbutyric acid
     confidence: 0.9
     match_type: manual_curated
+  notes: 'Source input only; not final volume or volume percentage Source input: 32.25
+    ml; stage=Volatile fatty acid mixture.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/608
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 6,
+                      "compound": "DL-2-Methylbutyric acid",
+                      "compound_id": 223,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 32.25,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[5].preferred_term: Source input only; not final volume or volume percentage Source input: 32.25 ml; stage=Volatile fatty acid mixture. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[5]; accessed=2026-10-09T08:03:02.601733+00:00; capture SHA256=c82c2f685260a674c13acb93c21e12eebc4e31b713fc952da3fa85c37d1ebcca.
+
+      Additional exact excerpt: {
+                      "recipe_order": 6,
+                      "compound": "DL-2-Methylbutyric acid",
+                      "compound_id": 223,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 32.25,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[5].concentration: Source input only; not final volume or volume percentage Source input: 32.25 ml; stage=Volatile fatty acid mixture. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[5]; accessed=2026-10-09T08:03:02.601733+00:00; capture SHA256=c82c2f685260a674c13acb93c21e12eebc4e31b713fc952da3fa85c37d1ebcca.
+
+      Additional exact excerpt: {
+                      "recipe_order": 6,
+                      "compound": "DL-2-Methylbutyric acid",
+                      "compound_id": 223,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 32.25,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[5].notes: Source input only; not final volume or volume percentage Source input: 32.25 ml; stage=Volatile fatty acid mixture. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[5]; accessed=2026-10-09T08:03:02.601733+00:00; capture SHA256=c82c2f685260a674c13acb93c21e12eebc4e31b713fc952da3fa85c37d1ebcca.
 - preferred_term: iso-Valeric acid
   concentration:
-    value: '30.0247'
-    unit: G_PER_L
+    value: '0.03225'
+    unit: L
   term:
     id: mediadive.compound:378
     label: iso-Valeric acid
@@ -88,6 +922,60 @@ composition:
     label: isovaleric acid
     confidence: 1.0
     match_type: exact_match
+  notes: 'Source input only; not final volume or volume percentage Source input: 32.25
+    ml; stage=Volatile fatty acid mixture.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/608
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 7,
+                      "compound": "iso-Valeric acid",
+                      "compound_id": 378,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 32.25,
+                      "unit": "ml",
+                      "g_l": 30.0247,
+                      "mmol_l": 293.986,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[6].preferred_term: Source input only; not final volume or volume percentage Source input: 32.25 ml; stage=Volatile fatty acid mixture. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[6]; accessed=2026-10-09T08:03:02.601733+00:00; capture SHA256=c82c2f685260a674c13acb93c21e12eebc4e31b713fc952da3fa85c37d1ebcca.
+
+      Additional exact excerpt: {
+                      "recipe_order": 7,
+                      "compound": "iso-Valeric acid",
+                      "compound_id": 378,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 32.25,
+                      "unit": "ml",
+                      "g_l": 30.0247,
+                      "mmol_l": 293.986,
+                      "optional": 0
+                  }
+      composition[6].concentration: Source input only; not final volume or volume percentage Source input: 32.25 ml; stage=Volatile fatty acid mixture. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[6]; accessed=2026-10-09T08:03:02.601733+00:00; capture SHA256=c82c2f685260a674c13acb93c21e12eebc4e31b713fc952da3fa85c37d1ebcca.
+
+      Additional exact excerpt: {
+                      "recipe_order": 7,
+                      "compound": "iso-Valeric acid",
+                      "compound_id": 378,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 32.25,
+                      "unit": "ml",
+                      "g_l": 30.0247,
+                      "mmol_l": 293.986,
+                      "optional": 0
+                  }
+      composition[6].notes: Source input only; not final volume or volume percentage Source input: 32.25 ml; stage=Volatile fatty acid mixture. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[6]; accessed=2026-10-09T08:03:02.601733+00:00; capture SHA256=c82c2f685260a674c13acb93c21e12eebc4e31b713fc952da3fa85c37d1ebcca.
 curation_history:
 - timestamp: '2026-03-13T06:20:39.571548Z'
   curator: culturemech-id-assigner-v1.0
@@ -121,11 +1009,414 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
-ingredients:
-- preferred_term: See source for composition
-  concentration:
-    value: variable
-    unit: VARIABLE
-data_quality_flags:
-- incomplete_composition
+- timestamp: '2026-10-09T08:40:02.418657+00:00'
+  curator: codex
+  action: RESTORED_RUMEN_BACTERIA_SOURCE_FORMULATIONS_WITH_EVIDENCE
+  notes: Restore source-specific medium330 ingredients, stock scopes and input units
+    with literal evidence. Preserve prior supported entries, provider nulls, unknown
+    original bases and the JCM1029 access gap. No growth association added.
+  source: https://mediadive.dsmz.de/rest/solution/608
+  changes: '[{"old_field": "composition[0].preferred_term", "field": "composition[0].preferred_term",
+    "old": "Acetic acid", "new": "Acetic acid", "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/solution/608", "snippet": "{\n                \"recipe_order\":
+    1,\n                \"compound\": \"Acetic acid\",\n                \"compound_id\":
+    380,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 548.5,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 573.182,\n                \"mmol_l\": 9545.09,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[0].concentration", "field": "composition[0].concentration",
+    "old": {"value": "573.182", "unit": "G_PER_L"}, "new": {"value": "0.5485", "unit":
+    "L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/608",
+    "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\":
+    \"Acetic acid\",\n                \"compound_id\": 380,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 548.5,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 573.182,\n                \"mmol_l\": 9545.09,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[0].notes", "field": "composition[0].notes",
+    "old": null, "new": "Source input only; not final volume or volume percentage
+    Source input: 548.5 ml; stage=Volatile fatty acid mixture.", "status": "correct",
+    "reference": "https://mediadive.dsmz.de/rest/solution/608", "snippet": "{\n                \"recipe_order\":
+    1,\n                \"compound\": \"Acetic acid\",\n                \"compound_id\":
+    380,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 548.5,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 573.182,\n                \"mmol_l\": 9545.09,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[1].preferred_term", "field": "composition[1].preferred_term",
+    "old": "Propionic acid", "new": "Propionic acid", "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/solution/608", "snippet": "{\n                \"recipe_order\":
+    2,\n                \"compound\": \"Propionic acid\",\n                \"compound_id\":
+    381,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 193.5,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 192.145,\n                \"mmol_l\": 2593.76,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[1].concentration", "field": "composition[1].concentration",
+    "old": {"value": "192.145", "unit": "G_PER_L"}, "new": {"value": "0.1935", "unit":
+    "L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/608",
+    "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Propionic acid\",\n                \"compound_id\": 381,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 193.5,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 192.145,\n                \"mmol_l\": 2593.76,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[1].notes", "field": "composition[1].notes",
+    "old": null, "new": "Source input only; not final volume or volume percentage
+    Source input: 193.5 ml; stage=Volatile fatty acid mixture.", "status": "correct",
+    "reference": "https://mediadive.dsmz.de/rest/solution/608", "snippet": "{\n                \"recipe_order\":
+    2,\n                \"compound\": \"Propionic acid\",\n                \"compound_id\":
+    381,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 193.5,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 192.145,\n                \"mmol_l\": 2593.76,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[2].preferred_term", "field": "composition[2].preferred_term",
+    "old": "Butyric acid", "new": "Butyric acid", "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/solution/608", "snippet": "{\n                \"recipe_order\":
+    3,\n                \"compound\": \"Butyric acid\",\n                \"compound_id\":
+    314,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 129,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[2].concentration", "field": "composition[2].concentration",
+    "old": {"value": "129", "unit": "PERCENT_V_V"}, "new": {"value": "0.129", "unit":
+    "L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/608",
+    "snippet": "{\n                \"recipe_order\": 3,\n                \"compound\":
+    \"Butyric acid\",\n                \"compound_id\": 314,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 129,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[2].notes", "field": "composition[2].notes",
+    "old": null, "new": "Source input only; not final volume or volume percentage
+    Source input: 129 ml; stage=Volatile fatty acid mixture.", "status": "correct",
+    "reference": "https://mediadive.dsmz.de/rest/solution/608", "snippet": "{\n                \"recipe_order\":
+    3,\n                \"compound\": \"Butyric acid\",\n                \"compound_id\":
+    314,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 129,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[3].preferred_term", "field": "composition[3].preferred_term",
+    "old": "n-Valeric acid", "new": "n-Valeric acid", "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/solution/608", "snippet": "{\n                \"recipe_order\":
+    4,\n                \"compound\": \"n-Valeric acid\",\n                \"compound_id\":
+    288,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 32.25,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 30.2827,\n                \"mmol_l\": 296.512,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[3].concentration", "field": "composition[3].concentration",
+    "old": {"value": "30.2827", "unit": "G_PER_L"}, "new": {"value": "0.03225", "unit":
+    "L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/608",
+    "snippet": "{\n                \"recipe_order\": 4,\n                \"compound\":
+    \"n-Valeric acid\",\n                \"compound_id\": 288,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 32.25,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 30.2827,\n                \"mmol_l\": 296.512,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[3].notes", "field": "composition[3].notes",
+    "old": null, "new": "Source input only; not final volume or volume percentage
+    Source input: 32.25 ml; stage=Volatile fatty acid mixture.", "status": "correct",
+    "reference": "https://mediadive.dsmz.de/rest/solution/608", "snippet": "{\n                \"recipe_order\":
+    4,\n                \"compound\": \"n-Valeric acid\",\n                \"compound_id\":
+    288,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 32.25,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 30.2827,\n                \"mmol_l\": 296.512,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[4].preferred_term", "field": "composition[4].preferred_term",
+    "old": "iso-Butyric acid", "new": "iso-Butyric acid", "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/solution/608", "snippet": "{\n                \"recipe_order\":
+    5,\n                \"compound\": \"iso-Butyric acid\",\n                \"compound_id\":
+    377,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 32.25,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 30.6375,\n                \"mmol_l\": 347.719,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[4].concentration", "field": "composition[4].concentration",
+    "old": {"value": "30.6375", "unit": "G_PER_L"}, "new": {"value": "0.03225", "unit":
+    "L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/608",
+    "snippet": "{\n                \"recipe_order\": 5,\n                \"compound\":
+    \"iso-Butyric acid\",\n                \"compound_id\": 377,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 32.25,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 30.6375,\n                \"mmol_l\": 347.719,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[4].notes", "field": "composition[4].notes",
+    "old": null, "new": "Source input only; not final volume or volume percentage
+    Source input: 32.25 ml; stage=Volatile fatty acid mixture.", "status": "correct",
+    "reference": "https://mediadive.dsmz.de/rest/solution/608", "snippet": "{\n                \"recipe_order\":
+    5,\n                \"compound\": \"iso-Butyric acid\",\n                \"compound_id\":
+    377,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 32.25,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 30.6375,\n                \"mmol_l\": 347.719,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[5].preferred_term", "field": "composition[5].preferred_term",
+    "old": "DL-2-Methylbutyric acid", "new": "DL-2-Methylbutyric acid", "status":
+    "correct", "reference": "https://mediadive.dsmz.de/rest/solution/608", "snippet":
+    "{\n                \"recipe_order\": 6,\n                \"compound\": \"DL-2-Methylbutyric
+    acid\",\n                \"compound_id\": 223,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 32.25,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[5].concentration", "field": "composition[5].concentration",
+    "old": {"value": "32.25", "unit": "PERCENT_V_V"}, "new": {"value": "0.03225",
+    "unit": "L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/608",
+    "snippet": "{\n                \"recipe_order\": 6,\n                \"compound\":
+    \"DL-2-Methylbutyric acid\",\n                \"compound_id\": 223,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 32.25,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[5].notes", "field": "composition[5].notes",
+    "old": null, "new": "Source input only; not final volume or volume percentage
+    Source input: 32.25 ml; stage=Volatile fatty acid mixture.", "status": "correct",
+    "reference": "https://mediadive.dsmz.de/rest/solution/608", "snippet": "{\n                \"recipe_order\":
+    6,\n                \"compound\": \"DL-2-Methylbutyric acid\",\n                \"compound_id\":
+    223,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 32.25,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[6].preferred_term", "field": "composition[6].preferred_term",
+    "old": "iso-Valeric acid", "new": "iso-Valeric acid", "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/solution/608", "snippet": "{\n                \"recipe_order\":
+    7,\n                \"compound\": \"iso-Valeric acid\",\n                \"compound_id\":
+    378,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 32.25,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 30.0247,\n                \"mmol_l\": 293.986,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[6].concentration", "field": "composition[6].concentration",
+    "old": {"value": "30.0247", "unit": "G_PER_L"}, "new": {"value": "0.03225", "unit":
+    "L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/608",
+    "snippet": "{\n                \"recipe_order\": 7,\n                \"compound\":
+    \"iso-Valeric acid\",\n                \"compound_id\": 378,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 32.25,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 30.0247,\n                \"mmol_l\": 293.986,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[6].notes", "field": "composition[6].notes",
+    "old": null, "new": "Source input only; not final volume or volume percentage
+    Source input: 32.25 ml; stage=Volatile fatty acid mixture.", "status": "correct",
+    "reference": "https://mediadive.dsmz.de/rest/solution/608", "snippet": "{\n                \"recipe_order\":
+    7,\n                \"compound\": \"iso-Valeric acid\",\n                \"compound_id\":
+    378,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 32.25,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 30.0247,\n                \"mmol_l\": 293.986,\n                \"optional\":
+    0\n            }"}, {"old_field": "ingredients", "field": "ingredients", "old":
+    [{"preferred_term": "See source for composition", "concentration": {"value": "variable",
+    "unit": "VARIABLE"}}], "new": null, "status": "remove_unsupported", "reference":
+    "https://mediadive.dsmz.de/rest/solution/608", "snippet": "[\n            {\n                \"recipe_order\":
+    1,\n                \"compound\": \"Acetic acid\",\n                \"compound_id\":
+    380,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 548.5,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 573.182,\n                \"mmol_l\": 9545.09,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Propionic acid\",\n                \"compound_id\": 381,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 193.5,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 192.145,\n                \"mmol_l\": 2593.76,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 3,\n                \"compound\":
+    \"Butyric acid\",\n                \"compound_id\": 314,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 129,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 4,\n                \"compound\":
+    \"n-Valeric acid\",\n                \"compound_id\": 288,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 32.25,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 30.2827,\n                \"mmol_l\": 296.512,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 5,\n                \"compound\":
+    \"iso-Butyric acid\",\n                \"compound_id\": 377,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 32.25,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 30.6375,\n                \"mmol_l\": 347.719,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 6,\n                \"compound\":
+    \"DL-2-Methylbutyric acid\",\n                \"compound_id\": 223,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 32.25,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 7,\n                \"compound\":
+    \"iso-Valeric acid\",\n                \"compound_id\": 378,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 32.25,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 30.0247,\n                \"mmol_l\": 293.986,\n                \"optional\":
+    0\n            }\n        ]"}, {"old_field": "data_quality_flags", "field": "data_quality_flags",
+    "old": ["incomplete_composition"], "new": null, "status": "remove_unsupported",
+    "reference": "https://mediadive.dsmz.de/rest/solution/608", "snippet": "[\n            {\n                \"recipe_order\":
+    1,\n                \"compound\": \"Acetic acid\",\n                \"compound_id\":
+    380,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 548.5,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 573.182,\n                \"mmol_l\": 9545.09,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Propionic acid\",\n                \"compound_id\": 381,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 193.5,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 192.145,\n                \"mmol_l\": 2593.76,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 3,\n                \"compound\":
+    \"Butyric acid\",\n                \"compound_id\": 314,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 129,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 4,\n                \"compound\":
+    \"n-Valeric acid\",\n                \"compound_id\": 288,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 32.25,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 30.2827,\n                \"mmol_l\": 296.512,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 5,\n                \"compound\":
+    \"iso-Butyric acid\",\n                \"compound_id\": 377,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 32.25,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 30.6375,\n                \"mmol_l\": 347.719,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 6,\n                \"compound\":
+    \"DL-2-Methylbutyric acid\",\n                \"compound_id\": 223,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 32.25,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 7,\n                \"compound\":
+    \"iso-Valeric acid\",\n                \"compound_id\": 378,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 32.25,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 30.0247,\n                \"mmol_l\": 293.986,\n                \"optional\":
+    0\n            }\n        ]"}, {"old_field": "ingredients", "field": "notes",
+    "old": [{"preferred_term": "See source for composition", "concentration": {"value":
+    "variable", "unit": "VARIABLE"}}], "new": "Complete inspected source rows define
+    this reconstruction. Archive old flattened quantities, false LB expansions, placeholders
+    and copied stock-solvent claims in append-only history. Unrelated annotations
+    remain preserved, not recertified.\n\nComplete inspected source rows define this
+    reconstruction. Archive old flattened quantities, false LB expansions, placeholders
+    and copied stock-solvent claims in append-only history. Unrelated annotations
+    remain preserved, not recertified.", "status": "evidence_only", "reference": "https://mediadive.dsmz.de/rest/solution/608",
+    "snippet": "[\n            {\n                \"recipe_order\": 1,\n                \"compound\":
+    \"Acetic acid\",\n                \"compound_id\": 380,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 548.5,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 573.182,\n                \"mmol_l\": 9545.09,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Propionic acid\",\n                \"compound_id\": 381,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 193.5,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 192.145,\n                \"mmol_l\": 2593.76,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 3,\n                \"compound\":
+    \"Butyric acid\",\n                \"compound_id\": 314,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 129,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 4,\n                \"compound\":
+    \"n-Valeric acid\",\n                \"compound_id\": 288,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 32.25,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 30.2827,\n                \"mmol_l\": 296.512,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 5,\n                \"compound\":
+    \"iso-Butyric acid\",\n                \"compound_id\": 377,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 32.25,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 30.6375,\n                \"mmol_l\": 347.719,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 6,\n                \"compound\":
+    \"DL-2-Methylbutyric acid\",\n                \"compound_id\": 223,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 32.25,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 7,\n                \"compound\":
+    \"iso-Valeric acid\",\n                \"compound_id\": 378,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 32.25,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 30.0247,\n                \"mmol_l\": 293.986,\n                \"optional\":
+    0\n            }\n        ]"}, {"old_field": "composition", "field": "notes",
+    "old": [{"preferred_term": "Acetic acid", "concentration": {"value": "573.182",
+    "unit": "G_PER_L"}, "term": {"id": "mediadive.compound:380", "label": "Acetic
+    acid"}, "chebi_term": {"id": "CHEBI:15366", "label": "acetic acid", "confidence":
+    0.9, "match_type": "corpus_consensus"}}, {"preferred_term": "Propionic acid",
+    "concentration": {"value": "192.145", "unit": "G_PER_L"}, "term": {"id": "mediadive.compound:381",
+    "label": "Propionic acid"}, "chebi_term": {"id": "CHEBI:30768", "label": "propionic
+    acid", "confidence": 0.9, "match_type": "corpus_consensus"}}, {"preferred_term":
+    "Butyric acid", "concentration": {"value": "129", "unit": "PERCENT_V_V"}, "term":
+    {"id": "mediadive.compound:314", "label": "Butyric acid"}, "chebi_term": {"id":
+    "CHEBI:30772", "label": "butyric acid", "confidence": 1.0, "match_type": "exact_match"}},
+    {"preferred_term": "n-Valeric acid", "concentration": {"value": "30.2827", "unit":
+    "G_PER_L"}, "term": {"id": "mediadive.compound:288", "label": "n-Valeric acid"},
+    "chebi_term": {"id": "CHEBI:17418", "label": "valeric acid", "confidence": 1.0,
+    "match_type": "exact_match"}}, {"preferred_term": "iso-Butyric acid", "concentration":
+    {"value": "30.6375", "unit": "G_PER_L"}, "term": {"id": "mediadive.compound:377",
+    "label": "iso-Butyric acid"}, "chebi_term": {"id": "CHEBI:16135", "label": "isobutyric
+    acid", "confidence": 1.0, "match_type": "exact_match"}}, {"preferred_term": "DL-2-Methylbutyric
+    acid", "concentration": {"value": "32.25", "unit": "PERCENT_V_V"}, "term": {"id":
+    "mediadive.compound:223", "label": "DL-2-Methylbutyric acid"}, "chebi_term": {"id":
+    "CHEBI:37070", "label": "2-methylbutyric acid", "confidence": 0.9, "match_type":
+    "manual_curated"}}, {"preferred_term": "iso-Valeric acid", "concentration": {"value":
+    "30.0247", "unit": "G_PER_L"}, "term": {"id": "mediadive.compound:378", "label":
+    "iso-Valeric acid"}, "chebi_term": {"id": "CHEBI:28484", "label": "isovaleric
+    acid", "confidence": 1.0, "match_type": "exact_match"}}], "new": "Complete inspected
+    source rows define this reconstruction. Archive old flattened quantities, false
+    LB expansions, placeholders and copied stock-solvent claims in append-only history.
+    Unrelated annotations remain preserved, not recertified.\n\nComplete inspected
+    source rows define this reconstruction. Archive old flattened quantities, false
+    LB expansions, placeholders and copied stock-solvent claims in append-only history.
+    Unrelated annotations remain preserved, not recertified.", "status": "evidence_only",
+    "reference": "https://mediadive.dsmz.de/rest/solution/608", "snippet": "[\n            {\n                \"recipe_order\":
+    1,\n                \"compound\": \"Acetic acid\",\n                \"compound_id\":
+    380,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 548.5,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 573.182,\n                \"mmol_l\": 9545.09,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Propionic acid\",\n                \"compound_id\": 381,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 193.5,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 192.145,\n                \"mmol_l\": 2593.76,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 3,\n                \"compound\":
+    \"Butyric acid\",\n                \"compound_id\": 314,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 129,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 4,\n                \"compound\":
+    \"n-Valeric acid\",\n                \"compound_id\": 288,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 32.25,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 30.2827,\n                \"mmol_l\": 296.512,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 5,\n                \"compound\":
+    \"iso-Butyric acid\",\n                \"compound_id\": 377,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 32.25,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 30.6375,\n                \"mmol_l\": 347.719,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 6,\n                \"compound\":
+    \"DL-2-Methylbutyric acid\",\n                \"compound_id\": 223,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 32.25,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 7,\n                \"compound\":
+    \"iso-Valeric acid\",\n                \"compound_id\": 378,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 32.25,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 30.0247,\n                \"mmol_l\": 293.986,\n                \"optional\":
+    0\n            }\n        ]"}, {"old_field": "ingredients[0].concentration", "field":
+    "notes", "old": {"value": "variable", "unit": "VARIABLE"}, "new": "Complete inspected
+    source rows define this reconstruction. Archive old flattened quantities, false
+    LB expansions, placeholders and copied stock-solvent claims in append-only history.
+    Unrelated annotations remain preserved, not recertified.\n\nComplete inspected
+    source rows define this reconstruction. Archive old flattened quantities, false
+    LB expansions, placeholders and copied stock-solvent claims in append-only history.
+    Unrelated annotations remain preserved, not recertified.", "status": "remove_unsupported",
+    "reference": "https://mediadive.dsmz.de/rest/solution/608", "snippet": "[\n            {\n                \"recipe_order\":
+    1,\n                \"compound\": \"Acetic acid\",\n                \"compound_id\":
+    380,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 548.5,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 573.182,\n                \"mmol_l\": 9545.09,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Propionic acid\",\n                \"compound_id\": 381,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 193.5,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 192.145,\n                \"mmol_l\": 2593.76,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 3,\n                \"compound\":
+    \"Butyric acid\",\n                \"compound_id\": 314,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 129,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 4,\n                \"compound\":
+    \"n-Valeric acid\",\n                \"compound_id\": 288,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 32.25,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 30.2827,\n                \"mmol_l\": 296.512,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 5,\n                \"compound\":
+    \"iso-Butyric acid\",\n                \"compound_id\": 377,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 32.25,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 30.6375,\n                \"mmol_l\": 347.719,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 6,\n                \"compound\":
+    \"DL-2-Methylbutyric acid\",\n                \"compound_id\": 223,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 32.25,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 7,\n                \"compound\":
+    \"iso-Valeric acid\",\n                \"compound_id\": 378,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 32.25,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 30.0247,\n                \"mmol_l\": 293.986,\n                \"optional\":
+    0\n            }\n        ]"}]'
 category: bacterial
+notes: |-
+  Complete inspected source rows define this reconstruction. Archive old flattened quantities, false LB expansions, placeholders and copied stock-solvent claims in append-only history. Unrelated annotations remain preserved, not recertified.
+
+  Complete inspected source rows define this reconstruction. Archive old flattened quantities, false LB expansions, placeholders and copied stock-solvent claims in append-only history. Unrelated annotations remain preserved, not recertified.
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/608
+  title: Volatile fatty acid mixture
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-09;
+    capture_sha256=c82c2f685260a674c13acb93c21e12eebc4e31b713fc952da3fa85c37d1ebcca.
+    Individual authors and publication year not supplied; copyright/access years are
+    not publication years. Source-scoped formulation evidence, not organism-growth
+    evidence.

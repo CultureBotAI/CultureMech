@@ -16,6 +16,33 @@ composition:
     label: sodium thiosulfate pentahydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5357
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Na2S2O3 x 5 H2O",
+                      "compound_id": 65,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "g",
+                      "g_l": 0.995025,
+                      "mmol_l": 4.00919,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Na2S2O3
+      x 5 H2O) in MediaDive solution 5357; locator=$.data.recipe[1] (compound_id=65).
+      Provider explicitly reports g_l=0.995025. Arithmetic check: 2 g * 1 g/g / (2010
+      ml / 1000 ml per L) = 0.9950248756218905472636815920 g/L, consistent with the
+      reported value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 2010. Retrieved 2026-10-07T09:53:59.949820+00:00;
+      response SHA256=d82cbd4f9764898ea073cb1d78d3b2d2ead57bdc9e63edccfd80a8c551a172fd.'
 - preferred_term: NaOH
   concentration:
     value: '0.079602'
@@ -28,6 +55,33 @@ composition:
     label: sodium hydroxide
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5357
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "NaOH",
+                      "compound_id": 256,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.16,
+                      "unit": "g",
+                      "g_l": 0.079602,
+                      "mmol_l": 1.9902,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (NaOH) in
+      MediaDive solution 5357; locator=$.data.recipe[2] (compound_id=256). Provider
+      explicitly reports g_l=0.079602. Arithmetic check: 0.16 g * 1 g/g / (2010 ml
+      / 1000 ml per L) = 0.07960199004975124378109452736 g/L, consistent with the
+      reported value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 2010. Retrieved 2026-10-07T09:53:59.949820+00:00;
+      response SHA256=d82cbd4f9764898ea073cb1d78d3b2d2ead57bdc9e63edccfd80a8c551a172fd.'
 - preferred_term: Resazurin
   concentration:
     value: '0.000497512'
@@ -40,6 +94,33 @@ composition:
     label: Resazurin
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5357
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "Resazurin",
+                      "compound_id": 25,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "mg",
+                      "g_l": 0.000497512,
+                      "mmol_l": 0.00217074,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[2].concentration (Resazurin)
+      in MediaDive solution 5357; locator=$.data.recipe[3] (compound_id=25). Provider
+      explicitly reports g_l=0.000497512. Arithmetic check: 1 mg * 0.001 g/mg / (2010
+      ml / 1000 ml per L) = 0.0004975124378109452736318407960 g/L, consistent with
+      the reported value at its precision. Evidence supports the provider-declared
+      concentration within this solution, not a concentration in a receiving medium
+      or an independently measured final volume. Water addition alone is not used
+      to infer a final volume. Additional exact excerpt at $.data.volume: "volume":
+      2010. Retrieved 2026-10-07T09:53:59.949820+00:00; response SHA256=d82cbd4f9764898ea073cb1d78d3b2d2ead57bdc9e63edccfd80a8c551a172fd.'
 - preferred_term: Distilled water
   concentration:
     value: '497.5124378109453'
@@ -66,6 +147,33 @@ composition:
   term:
     id: mediadive.compound:71
     label: Tryptone
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5357
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 8,
+                      "compound": "Tryptone",
+                      "compound_id": 71,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "g",
+                      "g_l": 0.497512,
+                      "mmol_l": 6.99933,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[5].concentration (Tryptone)
+      in MediaDive solution 5357; locator=$.data.recipe[7] (compound_id=71). Provider
+      explicitly reports g_l=0.497512. Arithmetic check: 1 g * 1 g/g / (2010 ml /
+      1000 ml per L) = 0.4975124378109452736318407960 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 2010. Retrieved 2026-10-07T09:53:59.949820+00:00;
+      response SHA256=d82cbd4f9764898ea073cb1d78d3b2d2ead57bdc9e63edccfd80a8c551a172fd.'
 - preferred_term: Casamino acids
   concentration:
     value: '0.248756'
@@ -85,6 +193,33 @@ composition:
     label: L-cysteine hydrochloride hydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5357
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 10,
+                      "compound": "L-Cysteine HCl x H2O",
+                      "compound_id": 770,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.0625,
+                      "unit": "g",
+                      "g_l": 0.0310945,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[7].concentration (L-Cysteine
+      HCl x H2O) in MediaDive solution 5357; locator=$.data.recipe[9] (compound_id=770).
+      Provider explicitly reports g_l=0.0310945. Arithmetic check: 0.0625 g * 1 g/g
+      / (2010 ml / 1000 ml per L) = 0.03109452736318407960199004975 g/L, consistent
+      with the reported value at its precision. Evidence supports the provider-declared
+      concentration within this solution, not a concentration in a receiving medium
+      or an independently measured final volume. Water addition alone is not used
+      to infer a final volume. Additional exact excerpt at $.data.volume: "volume":
+      2010. Retrieved 2026-10-07T09:53:59.949820+00:00; response SHA256=d82cbd4f9764898ea073cb1d78d3b2d2ead57bdc9e63edccfd80a8c551a172fd.'
 preparation_notes: "Heat the medium to boiling while bubbling with a N2-CO2 (4:1,\
   \ v/v) gas mixture. After boiling, cool the medium in a water bath. Continue bubbling\
   \ with the same gas mixture. While the medium is still warm, add the following:\
@@ -130,6 +265,21 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T09:59:54.456952+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/5357
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "0.995025"}
+    -> {"unit": "G_PER_L", "value": "0.995025"} (evidence_only); composition[1].concentration:
+    {"unit": "G_PER_L", "value": "0.079602"} -> {"unit": "G_PER_L", "value": "0.079602"}
+    (evidence_only); composition[2].concentration: {"unit": "G_PER_L", "value": "0.000497512"}
+    -> {"unit": "G_PER_L", "value": "0.000497512"} (evidence_only); composition[5].concentration:
+    {"unit": "G_PER_L", "value": "0.497512"} -> {"unit": "G_PER_L", "value": "0.497512"}
+    (evidence_only); composition[7].concentration: {"unit": "G_PER_L", "value": "0.0310945"}
+    -> {"unit": "G_PER_L", "value": "0.0310945"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -138,3 +288,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/5357
+  title: 'MediaDive solution 5357: Main sol. J1227'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=d82cbd4f9764898ea073cb1d78d3b2d2ead57bdc9e63edccfd80a8c551a172fd;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

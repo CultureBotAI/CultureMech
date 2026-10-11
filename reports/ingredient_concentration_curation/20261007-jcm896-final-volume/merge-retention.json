@@ -1,0 +1,21 @@
+{
+  "path": "data/normalized_yaml/bacterial/modified_bsk_medium.yaml",
+  "id": "CultureMech:003244",
+  "fingerprint": "da7cff9e8ee70ce8c0f41945d4af020cb07f4f045afdb1ee323cc23936093b9d",
+  "group_paths": [
+    "data/normalized_yaml/bacterial/modified_bsk_medium.yaml"
+  ],
+  "merged_id": "CultureMech:003244",
+  "field_retention": {
+    "ingredients": true,
+    "solutions": true,
+    "preparation_steps": true,
+    "physical_state": true,
+    "ph_range": true,
+    "ph_value": true,
+    "evidence": true,
+    "references": true
+  },
+  "all_checked_fields_retained": true,
+  "scope": "Complete ingredient/evidence, stock, preparation, physical-state and pH equality; all original root evidence and bibliography retained, allowing additional unique sources. This one group's result does not resolve the global merger defects."
+}

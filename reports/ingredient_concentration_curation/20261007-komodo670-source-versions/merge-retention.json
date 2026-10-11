@@ -1,0 +1,137 @@
+{
+  "records": 5,
+  "passed": 3,
+  "details": [
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_670_MS-MEDIUM.yaml",
+      "fingerprint": "c55ea50e3802b4b4a560bddc553566f77d7d890fb57533880daaa7aa654e46b0",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_670_MS-MEDIUM.yaml",
+        "data/normalized_yaml/bacterial/acidiferrobacter_ms_medium.yaml",
+        "data/normalized_yaml/bacterial/for_dsm_9468.yaml"
+      ],
+      "checks": {
+        "ingredients": true,
+        "solutions": true,
+        "preparation_steps": true,
+        "ph_value": true,
+        "variants": true,
+        "parent_media": false,
+        "variant_relationship": false,
+        "variant_modifications": false,
+        "variant_children": false,
+        "notes": false,
+        "evidence": false,
+        "references": false,
+        "event": false
+      },
+      "passed": false
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_9468.yaml",
+      "fingerprint": "c55ea50e3802b4b4a560bddc553566f77d7d890fb57533880daaa7aa654e46b0",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_670_MS-MEDIUM.yaml",
+        "data/normalized_yaml/bacterial/acidiferrobacter_ms_medium.yaml",
+        "data/normalized_yaml/bacterial/for_dsm_9468.yaml"
+      ],
+      "checks": {
+        "ingredients": false,
+        "solutions": false,
+        "preparation_steps": false,
+        "ph_value": false,
+        "variants": false,
+        "parent_media": false,
+        "variant_relationship": false,
+        "variant_modifications": false,
+        "variant_children": true,
+        "notes": false,
+        "evidence": false,
+        "references": false,
+        "event": false
+      },
+      "passed": false
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_9463.yaml",
+      "fingerprint": "f7f8ae57a658dece423dc16daf037ff99dace9547662a4e177e68788c15728cf",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/for_dsm_9463.yaml"
+      ],
+      "checks": {
+        "ingredients": true,
+        "solutions": true,
+        "preparation_steps": true,
+        "ph_value": true,
+        "variants": true,
+        "parent_media": true,
+        "variant_relationship": true,
+        "variant_modifications": true,
+        "variant_children": true,
+        "notes": true,
+        "evidence": true,
+        "references": true,
+        "event": true
+      },
+      "passed": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_9466.yaml",
+      "fingerprint": "306818ace31bb00b396fb773a62eb3f09885fbd2ab7f3a8bbe2b379b165483e1",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/for_dsm_9466.yaml"
+      ],
+      "checks": {
+        "ingredients": true,
+        "solutions": true,
+        "preparation_steps": true,
+        "ph_value": true,
+        "variants": true,
+        "parent_media": true,
+        "variant_relationship": true,
+        "variant_modifications": true,
+        "variant_children": true,
+        "notes": true,
+        "evidence": true,
+        "references": true,
+        "event": true
+      },
+      "passed": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_9467.yaml",
+      "fingerprint": "4586b6933df3828d02e978e90c0b7b19f99fdd05220ceabbdd55e6d03008326f",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/for_dsm_9467.yaml"
+      ],
+      "checks": {
+        "ingredients": true,
+        "solutions": true,
+        "preparation_steps": true,
+        "ph_value": true,
+        "variants": true,
+        "parent_media": true,
+        "variant_relationship": true,
+        "variant_modifications": true,
+        "variant_children": true,
+        "notes": true,
+        "evidence": true,
+        "references": true,
+        "event": true
+      },
+      "passed": true
+    }
+  ],
+  "routing_stats": {
+    "total_processed": 15910,
+    "excluded_solutions": 4785,
+    "skipped_no_fingerprint": 2,
+    "skipped_error": 340,
+    "successfully_fingerprinted": 10783,
+    "reasons": {
+      "other_error": 340,
+      "no_valid_ingredients": 2
+    }
+  },
+  "scope": "Actual current grouping, exact source-version/formulation/link/provenance retention. Concentration-independent fingerprints do not establish identical formulations."
+}

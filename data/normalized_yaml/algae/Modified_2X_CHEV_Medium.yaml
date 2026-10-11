@@ -25,6 +25,17 @@ ingredients:
     id: CHEBI:15377
     label: water
   notes: UTEX lists 800 mL sterile dH2O per 1 L final medium.
+  evidence:
+  - reference: https://utex.org/products/modified-2x-chev-medium
+    supports: SUPPORT
+    snippet: 800 mL
+    explanation: 'Supports ingredients[0].concentration and notes (dH2O) in UTEX:modified-2x-chev-medium.
+      Locator: recipe table, row 3, Component=Sterile dH 2 O, Amount column; Directions
+      specify the preparation basis. The Directions heading explicitly defines a 1
+      L total preparation; 800 mL / 1 L = 800 mL/L. This verifies a volume of prepared
+      input medium or water, not the F/2 formulation or organism growth. HTML table
+      and linked PDF page 1 inspected 2026-10-09. Existing chemical mappings and growth
+      conditions are not newly verified.'
 solutions:
 - preferred_term: F/2 Medium
   concentration:
@@ -86,9 +97,36 @@ curation_history:
   source: https://utex.org/products/modified-2x-chev-medium
   notes: UTEX prepares Modified 2X CHEV Medium by aseptically combining 200 mL prepared
     F/2 Medium with 800 mL sterile dH2O.
+- timestamp: '2026-10-09T23:38:36.585055+00:00'
+  curator: codex
+  action: CURATED_UTEX_CHEV_BATCH_INPUTS_AND_SCOPED_EVIDENCE
+  notes: L quantities are absolute input volumes per single-tube preparation, not
+    final concentrations. Vessel capacity and summed liquid inputs do not establish
+    final volume. The three fixed drop counts retain unresolved legacy VARIABLE encodings;
+    their new evidence supports notes only. No drop-volume estimate is introduced.
+    Modified CHEV's 1 mg/12 mL versus 0.5 mM source discrepancy remains unresolved.
+    Its new evidence supports the discrepancy note, not the retained molarity. Referenced
+    F/2 composition, chemical mappings, preparation, growth conditions and relationships
+    are preserved, not newly certified. No new taxa-media associations.
+  source: https://utex.org/products/modified-2x-chev-medium
+  changes: '[{"evidence_scope": "concentration and notes", "ingredient": "dH2O", "new":
+    {"unit": "ML_PER_L", "value": "800"}, "old": {"unit": "ML_PER_L", "value": "800"},
+    "pointer": ["ingredients", 0], "status": "evidence_only"}, {"evidence_scope":
+    "concentration and notes", "ingredient": "F/2 Medium", "new": {"unit": "ML_PER_L",
+    "value": "200"}, "old": {"unit": "ML_PER_L", "value": "200"}, "pointer": ["solutions",
+    0], "status": "evidence_only"}]'
 references:
 - reference: UTEX:modified-2x-chev-medium
 - reference: https://utex.org/products/modified-2x-chev-medium
+  title: Modified 2X CHEV Medium
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-09; named authors and web-page publication year not stated;
+    publisher=UTEX Culture Collection of Algae; locator=recipe table and Directions;
+    html_sha256=dcb70eade6199673085be0e0e321f74036ce5a6881d3a6654174f85ca14be73d;
+    corroborating PDF=https://web.biosci.utexas.edu/utex/Media%20PDF/modified-2x-chev-medium.pdf;
+    pdf_sha256=79036dace87ee7da9a71f463ac6ce3a4fa87b19c0605fb6956166fd1bc1c0df1; PDF
+    page 1 visually inspected. Evidence is claim-specific; unresolved drop encodings
+    and the Modified CHEV magnesium-carbonate discrepancy are not certified.
 original_name: Modified 2X CHEV Medium
 salinity: saltwater
 parent_media:
@@ -103,3 +141,14 @@ variant_modifications:
 data_quality_flags:
 - has_ontology_mappings
 - ingredients_curated
+evidence:
+- reference: https://utex.org/products/modified-2x-chev-medium
+  supports: SUPPORT
+  snippet: 200 mL
+  explanation: 'Supports solutions[0].concentration and notes (F/2 Medium) in UTEX:modified-2x-chev-medium.
+    Locator: recipe table, row 1, Component=F/2 Medium, Amount column; Directions
+    specify the preparation basis. The Directions heading explicitly defines a 1 L
+    total preparation; 200 mL / 1 L = 200 mL/L. This verifies a volume of prepared
+    input medium or water, not the F/2 formulation or organism growth. HTML table
+    and linked PDF page 1 inspected 2026-10-09. Existing chemical mappings and growth
+    conditions are not newly verified.'

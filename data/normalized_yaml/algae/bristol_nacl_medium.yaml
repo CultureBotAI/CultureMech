@@ -11,8 +11,8 @@ media_term:
     label: Bristol-NaCl Medium
 description: Algae culture medium from UTEX Culture Collection. Suitable for saltwater
   algae cultivation.
-notes: UTEX prepares Bristol-NaCl Medium by adding 3.6 g/L NaCl to prepared Bristol
-  Medium and bringing the total volume to 1 L.
+notes: UTEX adds 3.6 g NaCl to the Bristol mineral preparation before final volume
+  adjustment to 1 L, rather than to a one-litre aliquot of finished Bristol Medium.
 ingredients:
 - preferred_term: NaCl
   concentration:
@@ -30,15 +30,23 @@ ingredients:
   notes: UTEX lists 3.6 g/L NaCl, equivalent to 0.062 M.
   physicochemical_roles:
   - OSMOTIC_AGENT
+  evidence:
+  - reference: https://utex.org/products/bristol-nacl-medium
+    supports: SUPPORT
+    snippet: 0.062 M
+    explanation: 'ingredients[0].concentration: source-reported concentration for
+      the added NaCl row, separately listed as 3.6 g/L. Do not represent this as total
+      NaCl including the Bristol base or independently re-convert rounded molarity.
+      This evidence also supports root notes about adding salt before final make-up.
+      Locator: Directions 1-2 and recipe table.'
 solutions:
-- preferred_term: Bristol Medium
-  concentration:
-    value: '1000'
-    unit: ML_PER_L
+- preferred_term: Bristol mineral base (before volume adjustment)
   culturemech_term:
     id: CultureMech:000037
     label: Bristol Medium
-  notes: UTEX lists 1 L prepared Bristol Medium per 1 L final medium.
+  notes: Use Bristol mineral preparation through step one at the one-litre recipe
+    scale; add 3.6 g NaCl before making the child up to 1 L. This is not a one-litre
+    aliquot of completed Bristol Medium.
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -98,19 +106,171 @@ curation_history:
   source: https://utex.org/products/bristol-nacl-medium
   notes: UTEX prepares Bristol-NaCl Medium by adding 3.6 g/L NaCl to prepared Bristol
     Medium and bringing the total volume to 1 L.
+- timestamp: '2026-10-10T03:53:28.828041+00:00'
+  curator: codex
+  action: CURATED_UTEX_BRISTOL_BBM_INGREDIENT_AND_PREPARATION_EVIDENCE
+  notes: The BBM trace source prints MnCl with tetrahydrate; its intended chemical
+    identity and the existing MnCl2 amount remain unverified. Added node evidence
+    supports only that source-spelling conflict. BBM trace concentration columns and
+    stock-page parenthetical micromolar values conflict with explicit stock preparation
+    amounts. Preserve inspected Amount-per-litre stock recipes, not those incompatible
+    columns; no new final-medium conversions. The BBM iron stock does not specify
+    acid strength. No density, purity or molarity is assumed. The BBM study cites
+    Stein 1973; exact equivalence with the current UTEX parent is unverified. NH4Cl
+    ppm basis and culture working volume remain unspecified; no numerical conversion
+    or aliquot inference. Bristol-NaCl uses an unfinished parent preparation; its
+    table one-litre row is not certified as a working dose of completed Bristol. The
+    reference and explicit stage notes are retained without a fabricated dose. Optional
+    agar formulations are not silently added to these liquid records. No new taxa-media
+    associations, IDs or growth/role assertions are curated. Supplier-catalog identities,
+    generic incubation/light claims and unrelated preexisting organism evidence are
+    not blanket-certified by this ingredient review.
+  source: https://utex.org/products/bristol-nacl-medium
+  changes: '[{"counts": {"unsupported_quantity_slots_removed": 1}, "kind": "remove",
+    "locator": "Directions 1-2 and recipe table", "new": null, "old": {"unit": "ML_PER_L",
+    "value": "1000"}, "old_present": true, "pointer": ["solutions", 0, "concentration"],
+    "reason": "solutions[0].concentration: Directions stop Bristol preparation before
+    its final volume adjustment, add NaCl, then make the child up to one litre. The
+    table one-litre Bristol row defines recipe scale, not an aliquot of completed
+    parent medium. Remove the unsupported working-dose assertion; retain the parent
+    reference with explicit preparation-stage notes. This is not a replacement numeric
+    amount. The same evidence supports solution label/notes and parent/variant descriptions.",
+    "reference": "https://utex.org/products/bristol-nacl-medium", "snippet": "Prepare
+    Bristol Medium through step one."}, {"counts": {"stock_labels_corrected": 1},
+    "kind": "set", "locator": "Directions 1-2; table NaCl amount", "new": "Bristol
+    mineral base (before volume adjustment)", "old": "Bristol Medium", "old_present":
+    true, "pointer": ["solutions", 0, "preferred_term"], "reason": "Preserve the unfinished
+    Bristol preparation stage and final child volume.", "reference": "https://utex.org/products/bristol-nacl-medium",
+    "snippet": "Prepare Bristol Medium through step one."}, {"counts": {"stock_context_notes_corrected":
+    1}, "kind": "set", "locator": "Directions 1-2; table NaCl amount", "new": "Use
+    Bristol mineral preparation through step one at the one-litre recipe scale; add
+    3.6 g NaCl before making the child up to 1 L. This is not a one-litre aliquot
+    of completed Bristol Medium.", "old": "UTEX lists 1 L prepared Bristol Medium
+    per 1 L final medium.", "old_present": true, "pointer": ["solutions", 0, "notes"],
+    "reason": "Preserve the unfinished Bristol preparation stage and final child volume.",
+    "reference": "https://utex.org/products/bristol-nacl-medium", "snippet": "Prepare
+    Bristol Medium through step one."}, {"counts": {"recipe_context_notes_corrected":
+    1}, "kind": "set", "locator": "Directions 1-2; table NaCl amount", "new": "UTEX
+    adds 3.6 g NaCl to the Bristol mineral preparation before final volume adjustment
+    to 1 L, rather than to a one-litre aliquot of finished Bristol Medium.", "old":
+    "UTEX prepares Bristol-NaCl Medium by adding 3.6 g/L NaCl to prepared Bristol
+    Medium and bringing the total volume to 1 L.", "old_present": true, "pointer":
+    ["notes"], "reason": "Preserve the unfinished Bristol preparation stage and final
+    child volume.", "reference": "https://utex.org/products/bristol-nacl-medium",
+    "snippet": "Prepare Bristol Medium through step one."}, {"counts": {"relationship_dose_descriptions_corrected":
+    1}, "kind": "set", "locator": "Directions 1-2; table NaCl amount", "new": "Use
+    Bristol mineral preparation through step one at the one-litre recipe scale; add
+    3.6 g NaCl before making the child up to 1 L. This is not a one-litre aliquot
+    of completed Bristol Medium.", "old": "Adds 3.6 g/L NaCl to prepared Bristol Medium.",
+    "old_present": true, "pointer": ["parent_media", "notes"], "reason": "Preserve
+    the unfinished Bristol preparation stage and final child volume.", "reference":
+    "https://utex.org/products/bristol-nacl-medium", "snippet": "Prepare Bristol Medium
+    through step one."}, {"counts": {"relationship_dose_descriptions_corrected": 1},
+    "kind": "set", "locator": "Directions 1-2; table NaCl amount", "new": "Use Bristol
+    mineral preparation through step one at the one-litre recipe scale; add 3.6 g
+    NaCl before making the child up to 1 L. This is not a one-litre aliquot of completed
+    Bristol Medium.", "old": "Adds 3.6 g/L NaCl to prepared Bristol Medium.", "old_present":
+    true, "pointer": ["variant_modifications", 0], "reason": "Preserve the unfinished
+    Bristol preparation stage and final child volume.", "reference": "https://utex.org/products/bristol-nacl-medium",
+    "snippet": "Prepare Bristol Medium through step one."}, {"counts": {"new_evidence":
+    1}, "kind": "set", "locator": "ingredients[0].concentration: source-reported concentration
+    for the added NaCl row, separately listed as 3.6 g/L. Do not represent this as
+    total NaCl including the Bristol base or independently re-convert rounded molarity.
+    This evidence also supports root notes about adding salt before final make-up.
+    Locator: Directions 1-2 and recipe table.", "new": [{"explanation": "ingredients[0].concentration:
+    source-reported concentration for the added NaCl row, separately listed as 3.6
+    g/L. Do not represent this as total NaCl including the Bristol base or independently
+    re-convert rounded molarity. This evidence also supports root notes about adding
+    salt before final make-up. Locator: Directions 1-2 and recipe table.", "reference":
+    "https://utex.org/products/bristol-nacl-medium", "snippet": "0.062 M", "supports":
+    "SUPPORT"}], "old": null, "old_present": false, "pointer": ["ingredients", 0,
+    "evidence"], "reason": "Attach the scoped, inspected support without altering
+    existing evidence.", "reference": "https://utex.org/products/bristol-nacl-medium",
+    "snippet": "0.062 M"}, {"counts": {"new_evidence": 1}, "kind": "set", "locator":
+    "solutions[0].concentration: Directions stop Bristol preparation before its final
+    volume adjustment, add NaCl, then make the child up to one litre. The table one-litre
+    Bristol row defines recipe scale, not an aliquot of completed parent medium. Remove
+    the unsupported working-dose assertion; retain the parent reference with explicit
+    preparation-stage notes. This is not a replacement numeric amount. The same evidence
+    supports solution label/notes and parent/variant descriptions. Locator: Directions
+    1-2 and recipe table.", "new": [{"explanation": "solutions[0].concentration: Directions
+    stop Bristol preparation before its final volume adjustment, add NaCl, then make
+    the child up to one litre. The table one-litre Bristol row defines recipe scale,
+    not an aliquot of completed parent medium. Remove the unsupported working-dose
+    assertion; retain the parent reference with explicit preparation-stage notes.
+    This is not a replacement numeric amount. The same evidence supports solution
+    label/notes and parent/variant descriptions. Locator: Directions 1-2 and recipe
+    table.", "reference": "https://utex.org/products/bristol-nacl-medium", "snippet":
+    "Prepare Bristol Medium through step one.", "supports": "SUPPORT"}], "old": null,
+    "old_present": false, "pointer": ["evidence"], "reason": "Attach the scoped, inspected
+    support without altering existing evidence.", "reference": "https://utex.org/products/bristol-nacl-medium",
+    "snippet": "Prepare Bristol Medium through step one."}, {"counts": {"new_evidence":
+    1}, "kind": "set", "locator": "parent_media.notes and variant_modifications[0]:
+    Bristol is used only through its first preparation step; NaCl is added before
+    final make-up to one litre. The parent ID/path identifies that source preparation,
+    not an added litre of completed medium. Locator: Directions 1-2 and recipe table.",
+    "new": [{"explanation": "parent_media.notes and variant_modifications[0]: Bristol
+    is used only through its first preparation step; NaCl is added before final make-up
+    to one litre. The parent ID/path identifies that source preparation, not an added
+    litre of completed medium. Locator: Directions 1-2 and recipe table.", "reference":
+    "https://utex.org/products/bristol-nacl-medium", "snippet": "Prepare Bristol Medium
+    through step one.", "supports": "SUPPORT"}], "old": null, "old_present": false,
+    "pointer": ["parent_media", "evidence"], "reason": "Attach the scoped, inspected
+    support without altering existing evidence.", "reference": "https://utex.org/products/bristol-nacl-medium",
+    "snippet": "Prepare Bristol Medium through step one."}, {"counts": {"bibliographic_entries_enriched":
+    1}, "kind": "set", "locator": "source title/author context and inspected recipe
+    or methods", "new": {"authors": "UTEX Culture Collection of Algae", "notes": "source_type=culture_collection_page;
+    discovery_mode=existing_record_reference; accessed_on=2026-10-10. Exact recipe
+    or study formulation and preparation stage are retained; source conflicts are
+    not silently repaired. Recipe publication year is unknown; website/PDF copyright
+    is not used as publication year.", "reference": "https://utex.org/products/bristol-nacl-medium",
+    "title": "Bristol-NaCl Medium | UTEX Culture Collection of Algae"}, "old": {"reference":
+    "https://utex.org/products/bristol-nacl-medium"}, "old_present": true, "pointer":
+    ["references", 1], "reason": "Enrich the existing reference with verified provenance.",
+    "reference": "https://utex.org/products/bristol-nacl-medium", "snippet": "Prepare
+    Bristol Medium through step one."}]'
 references:
 - reference: UTEX:bristol-nacl-medium
 - reference: https://utex.org/products/bristol-nacl-medium
+  title: Bristol-NaCl Medium | UTEX Culture Collection of Algae
+  authors: UTEX Culture Collection of Algae
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10. Exact recipe or study formulation and preparation stage
+    are retained; source conflicts are not silently repaired. Recipe publication year
+    is unknown; website/PDF copyright is not used as publication year.
 original_name: Bristol-NaCl Medium
 parent_media:
   path: data/normalized_yaml/algae/Bristol_Medium.yaml
   relationship: SUPPLEMENTED_VARIANT
   id: CultureMech:000037
   name: bristol_medium
-  notes: Adds 3.6 g/L NaCl to prepared Bristol Medium.
+  notes: Use Bristol mineral preparation through step one at the one-litre recipe
+    scale; add 3.6 g NaCl before making the child up to 1 L. This is not a one-litre
+    aliquot of completed Bristol Medium.
+  evidence:
+  - reference: https://utex.org/products/bristol-nacl-medium
+    supports: SUPPORT
+    snippet: Prepare Bristol Medium through step one.
+    explanation: 'parent_media.notes and variant_modifications[0]: Bristol is used
+      only through its first preparation step; NaCl is added before final make-up
+      to one litre. The parent ID/path identifies that source preparation, not an
+      added litre of completed medium. Locator: Directions 1-2 and recipe table.'
 variant_relationship: SUPPLEMENTED_VARIANT
 variant_modifications:
-- Adds 3.6 g/L NaCl to prepared Bristol Medium.
+- Use Bristol mineral preparation through step one at the one-litre recipe scale;
+  add 3.6 g NaCl before making the child up to 1 L. This is not a one-litre aliquot
+  of completed Bristol Medium.
 data_quality_flags:
 - has_ontology_mappings
 - ingredients_curated
+evidence:
+- reference: https://utex.org/products/bristol-nacl-medium
+  supports: SUPPORT
+  snippet: Prepare Bristol Medium through step one.
+  explanation: 'solutions[0].concentration: Directions stop Bristol preparation before
+    its final volume adjustment, add NaCl, then make the child up to one litre. The
+    table one-litre Bristol row defines recipe scale, not an aliquot of completed
+    parent medium. Remove the unsupported working-dose assertion; retain the parent
+    reference with explicit preparation-stage notes. This is not a replacement numeric
+    amount. The same evidence supports solution label/notes and parent/variant descriptions.
+    Locator: Directions 1-2 and recipe table.'

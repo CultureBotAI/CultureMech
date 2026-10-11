@@ -1,0 +1,157 @@
+{
+  "terminal": true,
+  "publication_ready": false,
+  "all_record_goal_complete": false,
+  "applied_records": 2,
+  "source_responses_refreshed": 8,
+  "normalized_count": 15910,
+  "normalized_sha256": "080aa90bdd97929b8a85e7ea3580ffaad4260d05d203723ca31bebfeef838433",
+  "records": {
+    "data/normalized_yaml/archaea/TOGO_M208_Pyrobaculum_Aerophilum_Medium.yaml": "5a1d545b692701815beb289dbb9b4e02d8da78a247aa2faf96974a9565570256",
+    "data/normalized_yaml/bacterial/togo_medium_m209.yaml": "bbf846b962026d5b7aefe4fa3db6c5deaa5c1190b4fcadeb99c8a505f166bfcd"
+  },
+  "reference_checks": {
+    "M208": {
+      "checks": 92,
+      "all_valid": true,
+      "issues": []
+    },
+    "M209": {
+      "checks": 117,
+      "all_valid": true,
+      "issues": []
+    }
+  },
+  "tests_passed": {
+    "fast": "8626 passed, 16 skipped, 1945 deselected, 2 warnings in 722.98s (0:12:02)",
+    "final": "668 passed, 2 warnings in 211.22s (0:03:31)"
+  },
+  "failed_global_gates": [
+    {
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/marine-post-6.log"
+    },
+    {
+      "command": [
+        "just",
+        "audit-merge-freshness",
+        "--json"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/marine-post-7.log"
+    }
+  ],
+  "merge_verification": {
+    "name_conflicts": 1247,
+    "fingerprint_issues": 3287
+  },
+  "freshness": {
+    "tracked_total": 6320,
+    "fresh_total": 10777,
+    "only_in_tracked": 4275,
+    "only_in_fresh": 8732,
+    "changed": 2045,
+    "unchanged": 0
+  },
+  "cumulative_audit": {
+    "stock_nodes_relocated": 654,
+    "new_quantity_slots": 276,
+    "unsupported_quantity_slots_removed": 568,
+    "new_evidence": 31937,
+    "new_curation_history": 5351,
+    "new_references": 5562,
+    "stock_stage_concentrations_rebased": 139,
+    "stock_descriptors_added": 185,
+    "quantity_corrections": 1415,
+    "copied_ingredient_nodes_replaced_by_reference": 37,
+    "ingredient_context_notes_added": 264,
+    "water_input_nodes_added": 27,
+    "recipe_context_notes_corrected": 26,
+    "parent_links_corrected": 5,
+    "source_amount_conflicts_repaired": 3,
+    "unquantified_carrier_nodes_added": 77,
+    "evidence_scopes_corrected": 172,
+    "ingredient_context_notes_corrected": 9,
+    "preparation_actions_corrected": 7,
+    "preparation_descriptions_corrected": 4,
+    "preparation_steps_added": 14,
+    "batch_mass_notes_unverified_concentrations": 48,
+    "stock_dose_basis_corrections": 94,
+    "duplicate_stock_nodes_removed": 1,
+    "variant_links_added": 8,
+    "explicit_medium_rates_verified": 3,
+    "child_links_corrected": 5,
+    "preparation_steps_relocated": 9,
+    "water_input_notes_added": 9,
+    "inline_variant_options_added": 8,
+    "extraction_preparations_added": 1,
+    "base_preparations_added": 9,
+    "preparation_records_restored": 3,
+    "supplement_nodes_moved_to_variants": 4,
+    "corrected_evidence_snippets": 2,
+    "stock_context_notes_corrected": 8,
+    "extraction_preparations_restructured": 2,
+    "source_version_alternatives_added": 4,
+    "copied_ingredient_nodes_removed": 3,
+    "composition_classifications_corrected": 2,
+    "final_quantity_slots_added": 1,
+    "explicitly_omitted_ingredient_nodes": 1,
+    "ingredient_source_attributions_corrected": 1,
+    "bibliographic_entries_enriched": 1,
+    "excluded_alternative_nodes_removed": 1,
+    "ingredient_labels_corrected": 1,
+    "preparation_text_encodings_corrected": 1,
+    "unquantified_solvent_nodes_added": 1,
+    "ingredient_doses_relocated_to_stock": 1,
+    "identity_conflicts_retained_unquantified": 2,
+    "unquantified_makeup_nodes_added": 1,
+    "stock_preparation_notes_added": 1,
+    "edited_records": 5147
+  },
+  "followup_unique_records": 11774,
+  "outside_this_followup": 4136,
+  "remaining_M142_queue": 78,
+  "reports": {
+    "application.json": "1812088acb0a5b316dbe9f6b6b49902c95d66070ea65124aeb4d6137fafdb59c",
+    "applied-audit.json": "65c87dffb1a033a2531b53a9945ab44f2b9e286b46692f7f073abc5326e0dcbe",
+    "baseline.json": "49cacc8f6086a43ffe7c860bdda7467d286224f875c7b64ff6642d4c9d034106",
+    "corpus.json": "fd6d3be3a7107691f2d15d4e449707fa012dd73dee540bc081a0a3088cb6b0ba",
+    "cumulative-audit.json": "a503fa3c5ad3c2a36fcaf8d69cb863a3512eb0a220b2fa1406a18cb651bb9142",
+    "fast.json": "0604c1b1be85b6a5b0c05bc5e5921aa7e00f1ba82378195cfdf30cb84a39b249",
+    "final.json": "1d5e7d7b93beba589f0ac1bcda983f7d2095e4764ca6617f1d59433edee2242c",
+    "followup-coverage.json": "d40d5b47944f5de354ab779b020733999bfd7c89083969ae8e6d78bb223db311",
+    "index-refresh-application.json": "584db81d28fbdd724740aa7248c05afa9096d85143db6cd74d77ce24920d484b",
+    "index-refresh-plan.json": "08999db3af9c6e10b66786ca80794a9dc36931badf3021c825d7dfe571a92f1b",
+    "live.json": "6b0f262eed71009d8deb5e2c5a719f3523f79bec110ebae130a054978febb1e4",
+    "merge-retention.json": "bf7684d8108cdec0f7b70e297eb6a0575b812369d717a1963b2cc236ebfe565c",
+    "next-reducing-stages-context.json": "d533397760814f2f6a25f877d6d4331041e7f2b6449c590c9528063ef27b96a0",
+    "plan.json": "8ca065f1a336324d2fb330f221bffbe643435dcd2b4fa2132f5b0559ed185114",
+    "post.json": "af57ef6c567481d6f23c991202d7a7f79c30a6cdf94075f03e47c27bbbdd8589",
+    "preview-audit.json": "65c87dffb1a033a2531b53a9945ab44f2b9e286b46692f7f073abc5326e0dcbe",
+    "reconciliation.json": "38e431f7c8f93302c4526e11b0fda8f18abcea64ddf817e12f7e74e36ecf8405",
+    "remaining-queue.json": "41f1ac2815bdda934794e3d7b624b1f6dbca84bf7e56be51b1469be595ad0256"
+  },
+  "context": {
+    "path": "reports/ingredient_concentration_curation/20261008-filtered-sulfide-media/next-marine-pair-context.json",
+    "sha256": "03204b85c0510e83182322363d7722b7a492f333ed3d3f1e13b8c3f9d6c034c1"
+  },
+  "code_sha256": {
+    "scripts/repair_marine_stock_pair.py": "d1546fb1bb3a2f445c0bd2b0f0b7795cca64d2e5588c4e07c42130322fa482a7",
+    "tests/test_marine_stock_pair.py": "6b436b86d3906fed553f09bc640fe9583679beb8849b5ea6e9a558a6d3b4589e",
+    "reports/ingredient_concentration_curation/20261008-marine-stock-pair/audit.py": "d3f4c6903b9be0df0186435818fbeedca2891fb83086c69adbea150b021d7092",
+    "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "46f17aa18057c7018fc515695197498f8f286a1346add2cfb0a76964c558e1ac"
+  },
+  "commit_push_PR_merge_branch_cleanup": "Not performed; requested publication workflow remains incomplete.",
+  "runtime": "Existing partial locked Python 3.13 environment; not clean CI. Full test suite not rerun for this localized data repair.",
+  "corpus_checks": {
+    "strict_explicit_root_scanned": 15910,
+    "ids_scanned": 15910,
+    "product_warnings": 91,
+    "product_skipped_no_adapter": 96087,
+    "ingredient_groundings_recertified": false
+  }
+}

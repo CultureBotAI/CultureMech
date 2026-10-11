@@ -10,29 +10,62 @@ ingredients:
   term:
     id: CHEBI:16643
     label: L-methionine
-  notes: 'Cross-references: KEGG:met-L'
-  concentration:
-    value: variable
-    unit: VARIABLE
+  notes: 'Cross-references: KEGG:met-L MediaDB reports this ingredient with an unavailable
+    amount (None in the live table; NULL in the 2015-10-07 export). This is not evidence
+    of zero or of a variable dose. The schema-defaulted VARIABLE concentration has
+    been withdrawn; the original article''s quantity remains unresolved.'
   mediaingredientmech_chebi_term:
     id: CHEBI:16643
     label: L-methionine
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/288/
+    supports: SUPPORT
+    snippet: L-Methionine None
+    explanation: 'ingredients[0] (L-Methionine), concentration in MEDIADB:288. Locator:
+      compound table, column header ''Amount (mM)''. The source amount is unavailable,
+      not zero and not a specified variable dose. Only ingredient membership is supported;
+      the former VARIABLE default is withdrawn. Corroborating 2015-10-07 export media_compounds
+      row (medcompID, medID, compID, Amount_mM): (3854,288,71,NULL). Evidence concerns
+      the database compound label, not independent validation of existing ontology
+      mappings, supplied hydrate form, or original-article quantities. Accessed 2026-10-09.'
 - preferred_term: L-Cysteine
   term:
     id: CHEBI:17561
     label: L-cysteine
-  notes: 'Cross-references: KEGG:cys-L'
-  concentration:
-    value: variable
-    unit: VARIABLE
+  notes: 'Cross-references: KEGG:cys-L MediaDB reports this ingredient with an unavailable
+    amount (None in the live table; NULL in the 2015-10-07 export). This is not evidence
+    of zero or of a variable dose. The schema-defaulted VARIABLE concentration has
+    been withdrawn; the original article''s quantity remains unresolved.'
   mediaingredientmech_chebi_term:
     id: CHEBI:17561
     label: L-cysteine
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/288/
+    supports: SUPPORT
+    snippet: L-Cysteine None
+    explanation: 'ingredients[1] (L-Cysteine), concentration in MEDIADB:288. Locator:
+      compound table, column header ''Amount (mM)''. The source amount is unavailable,
+      not zero and not a specified variable dose. Only ingredient membership is supported;
+      the former VARIABLE default is withdrawn. Corroborating 2015-10-07 export media_compounds
+      row (medcompID, medID, compID, Amount_mM): (3855,288,95,NULL). Evidence concerns
+      the database compound label, not independent validation of existing ontology
+      mappings, supplied hydrate form, or original-article quantities. Accessed 2026-10-09.'
 - preferred_term: dTMP
-  notes: 'Cross-references: KEGG:dtmp'
-  concentration:
-    value: variable
-    unit: VARIABLE
+  notes: 'Cross-references: KEGG:dtmp MediaDB reports this ingredient with an unavailable
+    amount (None in the live table; NULL in the 2015-10-07 export). This is not evidence
+    of zero or of a variable dose. The schema-defaulted VARIABLE concentration has
+    been withdrawn; the original article''s quantity remains unresolved.'
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/288/
+    supports: SUPPORT
+    snippet: dTMP None
+    explanation: 'ingredients[2] (dTMP), concentration in MEDIADB:288. Locator: compound
+      table, column header ''Amount (mM)''. The source amount is unavailable, not
+      zero and not a specified variable dose. Only ingredient membership is supported;
+      the former VARIABLE default is withdrawn. Corroborating 2015-10-07 export media_compounds
+      row (medcompID, medID, compID, Amount_mM): (3856,288,348,NULL). Evidence concerns
+      the database compound label, not independent validation of existing ontology
+      mappings, supplied hydrate form, or original-article quantities. Accessed 2026-10-09.'
 - preferred_term: Magnesium chloride
   concentration:
     value: '0.984'
@@ -43,6 +76,17 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/288/
+    supports: SUPPORT
+    snippet: Magnesium chloride 0.984
+    explanation: 'ingredients[3] (Magnesium chloride), concentration in MEDIADB:288.
+      Locator: compound table, column header ''Amount (mM)''. The database directly
+      reports 0.984 mM for this compound label; no conversion. Corroborating 2015-10-07
+      export media_compounds row (medcompID, medID, compID, Amount_mM): (3857,288,6286,0.984).
+      Evidence concerns the database compound label, not independent validation of
+      existing ontology mappings, supplied hydrate form, or original-article quantities.
+      Accessed 2026-10-09.'
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.205'
@@ -50,6 +94,17 @@ ingredients:
   term:
     id: CHEBI:3312
     label: calcium dichloride
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/288/
+    supports: SUPPORT
+    snippet: Calcium chloride anhydrous 0.205
+    explanation: 'ingredients[4] (Calcium chloride anhydrous), concentration in MEDIADB:288.
+      Locator: compound table, column header ''Amount (mM)''. The database directly
+      reports 0.205 mM for this compound label; no conversion. Corroborating 2015-10-07
+      export media_compounds row (medcompID, medID, compID, Amount_mM): (3858,288,6656,0.205).
+      Evidence concerns the database compound label, not independent validation of
+      existing ontology mappings, supplied hydrate form, or original-article quantities.
+      Accessed 2026-10-09.'
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '55.7'
@@ -57,6 +112,17 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/288/
+    supports: SUPPORT
+    snippet: Potassium dibasic phosphate 55.7
+    explanation: 'ingredients[5] (Potassium dibasic phosphate), concentration in MEDIADB:288.
+      Locator: compound table, column header ''Amount (mM)''. The database directly
+      reports 55.7 mM for this compound label; no conversion. Corroborating 2015-10-07
+      export media_compounds row (medcompID, medID, compID, Amount_mM): (3859,288,11628,55.7).
+      Evidence concerns the database compound label, not independent validation of
+      existing ontology mappings, supplied hydrate form, or original-article quantities.
+      Accessed 2026-10-09.'
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -67,36 +133,84 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/288/
+    supports: SUPPORT
+    snippet: Sodium chloride 17.1
+    explanation: 'ingredients[6] (Sodium chloride), concentration in MEDIADB:288.
+      Locator: compound table, column header ''Amount (mM)''. The database directly
+      reports 17.1 mM for this compound label; no conversion. Corroborating 2015-10-07
+      export media_compounds row (medcompID, medID, compID, Amount_mM): (3860,288,16384,17.1).
+      Evidence concerns the database compound label, not independent validation of
+      existing ontology mappings, supplied hydrate form, or original-article quantities.
+      Accessed 2026-10-09.'
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
     label: Calcium pantothenate
-  concentration:
-    value: variable
-    unit: VARIABLE
   mediaingredientmech_chebi_term:
     id: CHEBI:31345
     label: Calcium pantothenate
+  notes: MediaDB reports this ingredient with an unavailable amount (None in the live
+    table; NULL in the 2015-10-07 export). This is not evidence of zero or of a variable
+    dose. The schema-defaulted VARIABLE concentration has been withdrawn; the original
+    article's quantity remains unresolved.
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/288/
+    supports: SUPPORT
+    snippet: Calcium pantothenate None
+    explanation: 'ingredients[7] (Calcium pantothenate), concentration in MEDIADB:288.
+      Locator: compound table, column header ''Amount (mM)''. The source amount is
+      unavailable, not zero and not a specified variable dose. Only ingredient membership
+      is supported; the former VARIABLE default is withdrawn. Corroborating 2015-10-07
+      export media_compounds row (medcompID, medID, compID, Amount_mM): (3861,288,16386,NULL).
+      Evidence concerns the database compound label, not independent validation of
+      existing ontology mappings, supplied hydrate form, or original-article quantities.
+      Accessed 2026-10-09.'
 - preferred_term: Pyridoxine HCl
   term:
     id: CHEBI:30961
     label: pyridoxine hydrochloride
-  concentration:
-    value: variable
-    unit: VARIABLE
   mediaingredientmech_chebi_term:
     id: CHEBI:30961
     label: pyridoxine hydrochloride
+  notes: MediaDB reports this ingredient with an unavailable amount (None in the live
+    table; NULL in the 2015-10-07 export). This is not evidence of zero or of a variable
+    dose. The schema-defaulted VARIABLE concentration has been withdrawn; the original
+    article's quantity remains unresolved.
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/288/
+    supports: SUPPORT
+    snippet: Pyridoxine HCl None
+    explanation: 'ingredients[8] (Pyridoxine HCl), concentration in MEDIADB:288. Locator:
+      compound table, column header ''Amount (mM)''. The source amount is unavailable,
+      not zero and not a specified variable dose. Only ingredient membership is supported;
+      the former VARIABLE default is withdrawn. Corroborating 2015-10-07 export media_compounds
+      row (medcompID, medID, compID, Amount_mM): (3862,288,16388,NULL). Evidence concerns
+      the database compound label, not independent validation of existing ontology
+      mappings, supplied hydrate form, or original-article quantities. Accessed 2026-10-09.'
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
     label: thiamine hydrochloride
-  concentration:
-    value: variable
-    unit: VARIABLE
   mediaingredientmech_chebi_term:
     id: CHEBI:49105
     label: thiamine hydrochloride
+  notes: MediaDB reports this ingredient with an unavailable amount (None in the live
+    table; NULL in the 2015-10-07 export). This is not evidence of zero or of a variable
+    dose. The schema-defaulted VARIABLE concentration has been withdrawn; the original
+    article's quantity remains unresolved.
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/288/
+    supports: SUPPORT
+    snippet: Thiamine HCl None
+    explanation: 'ingredients[9] (Thiamine HCl), concentration in MEDIADB:288. Locator:
+      compound table, column header ''Amount (mM)''. The source amount is unavailable,
+      not zero and not a specified variable dose. Only ingredient membership is supported;
+      the former VARIABLE default is withdrawn. Corroborating 2015-10-07 export media_compounds
+      row (medcompID, medID, compID, Amount_mM): (3863,288,16389,NULL). Evidence concerns
+      the database compound label, not independent validation of existing ontology
+      mappings, supplied hydrate form, or original-article quantities. Accessed 2026-10-09.'
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
@@ -107,6 +221,17 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:86364
     label: manganese(II) sulfate monohydrate
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/288/
+    supports: SUPPORT
+    snippet: Manganese sulfate 0.0112
+    explanation: 'ingredients[10] (Manganese sulfate), concentration in MEDIADB:288.
+      Locator: compound table, column header ''Amount (mM)''. The database directly
+      reports 0.0112 mM for this compound label; no conversion. Corroborating 2015-10-07
+      export media_compounds row (medcompID, medID, compID, Amount_mM): (3864,288,16395,0.0112).
+      Evidence concerns the database compound label, not independent validation of
+      existing ontology mappings, supplied hydrate form, or original-article quantities.
+      Accessed 2026-10-09.'
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.329'
@@ -114,6 +239,17 @@ ingredients:
   term:
     id: CHEBI:75832
     label: iron(2+) sulfate (anhydrous)
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/288/
+    supports: SUPPORT
+    snippet: Ferrous sulfate 0.329
+    explanation: 'ingredients[11] (Ferrous sulfate), concentration in MEDIADB:288.
+      Locator: compound table, column header ''Amount (mM)''. The database directly
+      reports 0.329 mM for this compound label; no conversion. Corroborating 2015-10-07
+      export media_compounds row (medcompID, medID, compID, Amount_mM): (3865,288,16397,0.329).
+      Evidence concerns the database compound label, not independent validation of
+      existing ontology mappings, supplied hydrate form, or original-article quantities.
+      Accessed 2026-10-09.'
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -124,6 +260,17 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:35176
     label: zinc sulfate
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/288/
+    supports: SUPPORT
+    snippet: Zinc sulfate 0.0383
+    explanation: 'ingredients[12] (Zinc sulfate), concentration in MEDIADB:288. Locator:
+      compound table, column header ''Amount (mM)''. The database directly reports
+      0.0383 mM for this compound label; no conversion. Corroborating 2015-10-07 export
+      media_compounds row (medcompID, medID, compID, Amount_mM): (3866,288,16399,0.0383).
+      Evidence concerns the database compound label, not independent validation of
+      existing ontology mappings, supplied hydrate form, or original-article quantities.
+      Accessed 2026-10-09.'
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
@@ -134,6 +281,17 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
     label: ammonium sulfate
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/288/
+    supports: SUPPORT
+    snippet: Ammonium sulfate 15.1
+    explanation: 'ingredients[13] (Ammonium sulfate), concentration in MEDIADB:288.
+      Locator: compound table, column header ''Amount (mM)''. The database directly
+      reports 15.1 mM for this compound label; no conversion. Corroborating 2015-10-07
+      export media_compounds row (medcompID, medID, compID, Amount_mM): (3867,288,16401,15.1).
+      Evidence concerns the database compound label, not independent validation of
+      existing ontology mappings, supplied hydrate form, or original-article quantities.
+      Accessed 2026-10-09.'
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.02'
@@ -141,10 +299,32 @@ ingredients:
   term:
     id: CHEBI:23414
     label: copper(II) sulfate
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/288/
+    supports: SUPPORT
+    snippet: Cupric sulfate 0.02
+    explanation: 'ingredients[14] (Cupric sulfate), concentration in MEDIADB:288.
+      Locator: compound table, column header ''Amount (mM)''. The database directly
+      reports 0.02 mM for this compound label; no conversion. Corroborating 2015-10-07
+      export media_compounds row (medcompID, medID, compID, Amount_mM): (3868,288,16405,0.02).
+      Evidence concerns the database compound label, not independent validation of
+      existing ontology mappings, supplied hydrate form, or original-article quantities.
+      Accessed 2026-10-09.'
 - preferred_term: Sodium borate
   concentration:
     value: '0.000262'
     unit: MILLIMOLAR
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/288/
+    supports: SUPPORT
+    snippet: Sodium borate 0.000262
+    explanation: 'ingredients[15] (Sodium borate), concentration in MEDIADB:288. Locator:
+      compound table, column header ''Amount (mM)''. The database directly reports
+      0.000262 mM for this compound label; no conversion. Corroborating 2015-10-07
+      export media_compounds row (medcompID, medID, compID, Amount_mM): (3869,288,16417,0.000262).
+      Evidence concerns the database compound label, not independent validation of
+      existing ontology mappings, supplied hydrate form, or original-article quantities.
+      Accessed 2026-10-09.'
 - preferred_term: Molybdic acid ammonium salt tetrahydrate
   concentration:
     value: '0.000405'
@@ -152,6 +332,17 @@ ingredients:
   term:
     id: CHEBI:91249
     label: ammonium molybdate
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/288/
+    supports: SUPPORT
+    snippet: Molybdic acid ammonium salt tetrahydrate 0.000405
+    explanation: 'ingredients[16] (Molybdic acid ammonium salt tetrahydrate), concentration
+      in MEDIADB:288. Locator: compound table, column header ''Amount (mM)''. The
+      database directly reports 0.000405 mM for this compound label; no conversion.
+      Corroborating 2015-10-07 export media_compounds row (medcompID, medID, compID,
+      Amount_mM): (3870,288,16418,0.000405). Evidence concerns the database compound
+      label, not independent validation of existing ontology mappings, supplied hydrate
+      form, or original-article quantities. Accessed 2026-10-09.'
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -204,6 +395,20 @@ curation_history:
   notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-10-09T18:40:40.422932+00:00'
+  curator: codex
+  action: RESTORED_MEDIADB_INGREDIENT_MEMBERSHIP_AND_UNKNOWN_AMOUNTS
+  notes: Restored the exact MediaDB formulation and distinguished missing from variable
+    amounts. Every current ingredient has a source-table snippet. Evidence establishes
+    MediaDB's reported amounts for its own compound labels, not an independent verification
+    of the original articles or existing chemical-form mappings. Existing preparation,
+    classification, physical-state and organism claims are unchanged and are not certified
+    by the concentration table. No mass conversion, final-volume assumption, exact-variant
+    merge or taxa-media association.
+  source: https://mediadb.systemsbiology.net/defined_media/media/288/
+  changes: '{"concentration_evidence_added": 17, "removed_lb_nodes": [], "restored_ingredients":
+    [], "withdrawn_variable_defaults": ["L-Methionine", "L-Cysteine", "dTMP", "Calcium
+    pantothenate", "Pyridoxine HCl", "Thiamine HCl"]}'
 media_term:
   preferred_term: MediaDB Medium 288
   term:
@@ -215,3 +420,17 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: https://mediadb.systemsbiology.net/defined_media/media/288/
+  title: 'Media: Song cdm'
+  notes: source_type=database_recipe_web_page; discovery_mode=source_accession; accessed_on=2026-10-09;
+    publisher=Institute for Systems Biology; raw_html_sha256=0016a6f7227bd0f715bf117646399d69dd65f9904464403cef3ccf5b848e0747;
+    locator=Compound / Amount (mM) table; article DOI, individual authors and page
+    publication year not established for this recipe page.
+- reference: https://mediadb.systemsbiology.net/static/defined_media/downloads/media_database.07Oct2015.sql.gz
+  title: MediaDB SQL database export, 7 October 2015
+  year: 2015
+  notes: source_type=versioned_database_export; discovery_mode=official_download_page;
+    accessed_on=2026-10-09; publisher=Institute for Systems Biology; uncompressed_sha256=e2c60258e2389d4ad383695eb3e01429a67eac90807fe14d02a6728777d35b5c;
+    locator=media_names, media_compounds and compounds tables; the database paper's
+    DOI is not treated as evidence for individual amounts.

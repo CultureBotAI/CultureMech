@@ -18,7 +18,19 @@ ingredients:
   concentration:
     value: '25'
     unit: ML_PER_L
-  notes: Converted from 5 mL Green House Soil per 200 mL Supplemented Seawater.
+    per_volume: per liter of Supplemented Seawater before soil addition
+  notes: 5 mL soil / 0.2 L Supplemented Seawater = 25 mL per liter of carrier. This
+    input-volume ratio is not asserted as a measured final-medium concentration.
+  evidence:
+  - reference: https://utex.org/products/2x-soil-plus-seawater-medium
+    supports: SUPPORT
+    snippet: 5 mL/200 mL of Supplemented Seawater
+    explanation: 'Supports ingredients[0].concentration and associated ingredient/preparation
+      notes. Original field: ingredients[0].concentration.  Retain the soil input-volume
+      ratio with an explicit Supplemented Seawater basis; do not infer the final volume
+      after soil addition. Calculation: 5 mL soil / 0.2 L Supplemented Seawater =
+      25 mL per liter of carrier.. Separate basis excerpt: ''For 200 mL Total''. Locator:
+      Formulation table row position 1; Directions total-volume heading.'
 - preferred_term: CaCO3
   concentration:
     value: '0.05'
@@ -32,29 +44,47 @@ ingredients:
   supplier_catalog:
     supplier_name: Fisher
     catalog_number: C 64
-  notes: UTEX lists 1 mg CaCO3 per 200 mL Supplemented Seawater, for 0.05 mM final.
+  notes: The source gives 1 mg calcium carbonate per 200 mL Supplemented Seawater
+    and prints 0.05 mM in its final-concentration column. The rounded molarity is
+    retained as a source assertion, not an independently calculated final concentration.
   physicochemical_roles:
   - BUFFER
+  evidence:
+  - reference: https://utex.org/products/2x-soil-plus-seawater-medium
+    supports: SUPPORT
+    snippet: 0.05 mM
+    explanation: 'Supports ingredients[1].concentration and associated ingredient/preparation
+      notes. Original field: ingredients[1].concentration.  Retain the directly printed
+      rounded 0.05 mM, explicitly as a source assertion. The exact source mass dose
+      is 1 mg/200 mL carrier; no independent mass-to-molar or measured-final-volume
+      conversion is certified. Calculation: No numerical conversion applied. Separate
+      basis excerpt: ''For 200 mL Total''. Locator: Formulation table row position
+      2; Directions total-volume heading.'
 solutions:
 - preferred_term: Supplemented Seawater
-  concentration:
-    value: '1000'
-    unit: ML_PER_L
   term:
     id: kgmicrobe.ingredient:supplemented_seawater
     label: Supplemented Seawater
   composition:
   - preferred_term: Pasteurized Seawater
-    concentration:
-      value: '1000'
-      unit: ML_PER_L
     term:
       id: ENVO:00002149
       label: sea water
-    notes: UTEX starts the 1 L Supplemented Seawater stock with approximately 900
-      mL Pasteurized Seawater and brings the final volume to 1 L.
+    notes: Start with approximately 900 mL Pasteurized Seawater; add the stock components,
+      then bring total volume to 1 L with Pasteurized Seawater. The exact combined
+      starting and makeup seawater volume is unspecified.
     physicochemical_roles:
     - OSMOTIC_AGENT
+    evidence:
+    - reference: https://utex.org/products/supplemented-seawater
+      supports: SUPPORT
+      snippet: 900 mL
+      explanation: 'Supports solutions[0].composition[0].notes and associated ingredient/preparation
+        notes. Original field: solutions[0].composition[0].concentration.  Retain
+        approximate 900 mL initial seawater and makeup to 1 L stock. The exact total
+        seawater volume is not specified. Calculation: No numerical conversion applied.
+        Separate basis excerpt: ''Bring total volume to 1 L with Pasteurized Seawater.''.
+        Locator: Formulation table row position 1; Directions total-volume heading.'
   - preferred_term: NaCl
     concentration:
       value: '23'
@@ -71,6 +101,16 @@ solutions:
     notes: UTEX lists 23 g/L NaCl, for 393.8 mM final in the stock.
     physicochemical_roles:
     - OSMOTIC_AGENT
+    evidence:
+    - reference: https://utex.org/products/supplemented-seawater
+      supports: SUPPORT
+      snippet: 23 g/L
+      explanation: 'Supports solutions[0].composition[1].concentration and associated
+        ingredient/preparation notes. Original field: solutions[0].composition[1].concentration.  Retain
+        the explicit stock g/L amount. The source footnote scopes printed molarity
+        to this stock; no receiving-medium molarity is calculated. Calculation: No
+        numerical conversion applied. Separate basis excerpt: ''For 1 L Total''. Locator:
+        Formulation table row position 2; Directions total-volume heading.'
   - preferred_term: MgCl2 x 6 H2O
     concentration:
       value: '5'
@@ -89,6 +129,16 @@ solutions:
     - TRACE_ELEMENT
     physicochemical_roles:
     - OSMOTIC_AGENT
+    evidence:
+    - reference: https://utex.org/products/supplemented-seawater
+      supports: SUPPORT
+      snippet: 5 g/L
+      explanation: 'Supports solutions[0].composition[2].concentration and associated
+        ingredient/preparation notes. Original field: solutions[0].composition[2].concentration.  Retain
+        the explicit stock g/L amount. The source footnote scopes printed molarity
+        to this stock; no receiving-medium molarity is calculated. Calculation: No
+        numerical conversion applied. Separate basis excerpt: ''For 1 L Total''. Locator:
+        Formulation table row position 3; Directions total-volume heading.'
   - preferred_term: Na2SO4
     concentration:
       value: '4'
@@ -105,14 +155,27 @@ solutions:
     notes: UTEX lists 4 g/L Na2SO4, for 28.2 mM final in the stock.
     nutritional_roles:
     - SULFUR_SOURCE
-  notes: UTEX lists 200 mL Supplemented Seawater per 200 mL 2X recipe.
+    evidence:
+    - reference: https://utex.org/products/supplemented-seawater
+      supports: SUPPORT
+      snippet: 4 g/L
+      explanation: 'Supports solutions[0].composition[3].concentration and associated
+        ingredient/preparation notes. Original field: solutions[0].composition[3].concentration.  Retain
+        the explicit stock g/L amount. The source footnote scopes printed molarity
+        to this stock; no receiving-medium molarity is calculated. Calculation: No
+        numerical conversion applied. Separate basis excerpt: ''For 1 L Total''. Locator:
+        Formulation table row position 4; Directions total-volume heading.'
+  notes: Use 200 mL Supplemented Seawater before adding 5 mL soil and 1 mg calcium
+    carbonate. No measured final-medium volume is asserted.
 preparation_steps:
 - step_number: 1
   action: MIX
   description: Combine Green House Soil, CaCO3, and Supplemented Seawater.
 - step_number: 2
   action: HEAT
-  description: Steam the covered medium for 2 consecutive days, 3 hours on each day.
+  description: Cover the medium container and steam for two consecutive days, three
+    hours on each day. Raise temperature gradually to approximately 95 C in 15 minutes,
+    then just over 98 C for the three-hour duration. Cool gradually at room temperature.
 - step_number: 3
   action: STORE
   description: Refrigerate for at least 24 hours, then bring to room temperature before
@@ -163,11 +226,126 @@ curation_history:
   source: https://utex.org/products/2x-soil-plus-seawater-medium
   notes: UTEX prepares 2X Soil+Seawater Medium for 60 ppt marine cultures by combining
     Green House Soil, CaCO3, and Supplemented Seawater before steam pasteurization.
+- timestamp: '2026-10-10T08:24:09.034201+00:00'
+  curator: codex
+  action: CURATED_UTEX_SOIL_SEAWATER_INPUT_AMOUNTS_AND_OPTIONAL_CARBONATE
+  notes: Source-backed input amounts, optional carbonate and preparation details.
+    No taxa-media association added; no fixed teaspoon conversion or inferred final
+    volume.
+  source: https://utex.org/products/2x-soil-plus-seawater-medium
+  changes: '{"additional_findings": [{"decision": "Preserve the source heat ramp and
+    gradual cooling when completing the abbreviated preparation instructions; do not
+    invent pressure/autoclave temperature.", "field": "preparation_steps", "reference":
+    "https://utex.org/products/2x-soil-plus-seawater-medium", "snippets": ["Cover
+    the medium container and steam for 2 consecutive days, 3 hours on each day.",
+    "Pasteurization is a gradual rising of temperature to approximately 95 \u00b0C
+    in 15 minutes.", "Then increased just over 98 \u00b0C for the 3 hour duration.",
+    "Cooling occurs gradually at room temperature."]}], "claims": [{"action_taken":
+    "Add the explicit source-input volume basis; numerical amount unchanged.", "basis_snippet":
+    "For 200 mL Total", "calculation": "5 mL soil / 0.2 L Supplemented Seawater =
+    25 mL per liter of carrier.", "decision": "Retain the soil input-volume ratio
+    with an explicit Supplemented Seawater basis; do not infer the final volume after
+    soil addition.", "field": "ingredients[0].concentration", "ingredient": "Green
+    House Soil", "locator": "Formulation table row position 1; Directions total-volume
+    heading", "old": {"unit": "ML_PER_L", "value": "25"}, "old_term": null, "proposed":
+    {"per_volume": "per liter of Supplemented Seawater before soil addition", "unit":
+    "ML_PER_L", "value": "25"}, "reference": "https://utex.org/products/2x-soil-plus-seawater-medium",
+    "snippet": "5 mL/200 mL of Supplemented Seawater", "status": "correct"}, {"action_taken":
+    "Attach source evidence; numerical concentration unchanged.", "basis_snippet":
+    "For 200 mL Total", "calculation": "No numerical conversion applied", "decision":
+    "Retain the directly printed rounded 0.05 mM, explicitly as a source assertion.
+    The exact source mass dose is 1 mg/200 mL carrier; no independent mass-to-molar
+    or measured-final-volume conversion is certified.", "field": "ingredients[1].concentration",
+    "ingredient": "CaCO3", "locator": "Formulation table row position 2; Directions
+    total-volume heading", "old": {"unit": "MILLIMOLAR", "value": "0.05"}, "old_term":
+    {"id": "CHEBI:3311", "label": "calcium carbonate"}, "proposed": {"unit": "MILLIMOLAR",
+    "value": "0.05"}, "reference": "https://utex.org/products/2x-soil-plus-seawater-medium",
+    "snippet": "0.05 mM", "status": "evidence_only"}, {"action_taken": "Remove the
+    unsupported structured concentration; preserve the literal input in notes and
+    evidence.", "basis_snippet": "For 200 mL Total", "calculation": "No numerical
+    conversion applied", "decision": "The source supplies 200 mL carrier before soil
+    addition. Remove the unsupported per-final-liter fraction and retain the literal
+    batch input.", "field": "solutions[0].concentration", "ingredient": "Supplemented
+    Seawater", "locator": "Formulation table row position 3; Directions total-volume
+    heading", "old": {"unit": "ML_PER_L", "value": "1000"}, "old_term": {"id": "kgmicrobe.ingredient:supplemented_seawater",
+    "label": "Supplemented Seawater"}, "proposed": null, "proposed_field": "solutions[0].notes",
+    "reference": "https://utex.org/products/2x-soil-plus-seawater-medium", "snippet":
+    "200 mL", "status": "unsupported"}, {"action_taken": "Remove the unsupported structured
+    concentration; preserve the literal input in notes and evidence.", "basis_snippet":
+    "Bring total volume to 1 L with Pasteurized Seawater.", "calculation": "No numerical
+    conversion applied", "decision": "Retain approximate 900 mL initial seawater and
+    makeup to 1 L stock. The exact total seawater volume is not specified.", "field":
+    "solutions[0].composition[0].concentration", "ingredient": "Pasteurized Seawater",
+    "locator": "Formulation table row position 1; Directions total-volume heading",
+    "old": {"unit": "ML_PER_L", "value": "1000"}, "old_term": {"id": "ENVO:00002149",
+    "label": "sea water"}, "proposed": null, "proposed_field": "solutions[0].composition[0].notes",
+    "reference": "https://utex.org/products/supplemented-seawater", "snippet": "900
+    mL", "status": "unsupported"}, {"action_taken": "Attach source evidence; numerical
+    concentration unchanged.", "basis_snippet": "For 1 L Total", "calculation": "No
+    numerical conversion applied", "decision": "Retain the explicit stock g/L amount.
+    The source footnote scopes printed molarity to this stock; no receiving-medium
+    molarity is calculated.", "field": "solutions[0].composition[1].concentration",
+    "ingredient": "NaCl", "locator": "Formulation table row position 2; Directions
+    total-volume heading", "old": {"unit": "G_PER_L", "value": "23"}, "old_term":
+    {"id": "CHEBI:26710", "label": "sodium chloride"}, "proposed": {"unit": "G_PER_L",
+    "value": "23"}, "reference": "https://utex.org/products/supplemented-seawater",
+    "snippet": "23 g/L", "status": "evidence_only"}, {"action_taken": "Attach source
+    evidence; numerical concentration unchanged.", "basis_snippet": "For 1 L Total",
+    "calculation": "No numerical conversion applied", "decision": "Retain the explicit
+    stock g/L amount. The source footnote scopes printed molarity to this stock; no
+    receiving-medium molarity is calculated.", "field": "solutions[0].composition[2].concentration",
+    "ingredient": "MgCl2 x 6 H2O", "locator": "Formulation table row position 3; Directions
+    total-volume heading", "old": {"unit": "G_PER_L", "value": "5"}, "old_term": {"id":
+    "CHEBI:86345", "label": "MgCl2 x 6 H2O"}, "proposed": {"unit": "G_PER_L", "value":
+    "5"}, "reference": "https://utex.org/products/supplemented-seawater", "snippet":
+    "5 g/L", "status": "evidence_only"}, {"action_taken": "Attach source evidence;
+    numerical concentration unchanged.", "basis_snippet": "For 1 L Total", "calculation":
+    "No numerical conversion applied", "decision": "Retain the explicit stock g/L
+    amount. The source footnote scopes printed molarity to this stock; no receiving-medium
+    molarity is calculated.", "field": "solutions[0].composition[3].concentration",
+    "ingredient": "Na2SO4", "locator": "Formulation table row position 4; Directions
+    total-volume heading", "old": {"unit": "G_PER_L", "value": "4"}, "old_term": {"id":
+    "CHEBI:32149", "label": "Na2SO4"}, "proposed": {"unit": "G_PER_L", "value": "4"},
+    "reference": "https://utex.org/products/supplemented-seawater", "snippet": "4
+    g/L", "status": "evidence_only"}], "counts": {"bibliographic_entries_enriched":
+    2, "ingredient_context_notes_corrected": 3, "ingredient_dose_basis_corrections":
+    1, "new_curation_history": 1, "new_evidence": 7, "preparation_descriptions_corrected":
+    1, "stock_context_notes_corrected": 1, "unsupported_quantity_slots_removed": 2},
+    "removed_optional_ingredient": null}'
 references:
 - reference: UTEX:2x-soil-plus-seawater-medium
 - reference: https://utex.org/products/2x-soil-plus-seawater-medium
+  title: 2X Soil+Seawater Medium | UTEX Culture Collection of Algae
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10; Named authors, publication year and DOI not established.
 - reference: https://utex.org/products/supplemented-seawater
+  title: Supplemented Seawater Component Recipe | UTEX Culture Collection of Algae
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10; Named authors, publication year and DOI not established.
 original_name: 2X Soil + Seawater Medium
 data_quality_flags:
 - has_ontology_mappings
 - ingredients_curated
+evidence:
+- reference: https://utex.org/products/2x-soil-plus-seawater-medium
+  supports: SUPPORT
+  snippet: 200 mL
+  explanation: 'Supports solutions[0].notes and associated ingredient/preparation
+    notes. Original field: solutions[0].concentration.  The source supplies 200 mL
+    carrier before soil addition. Remove the unsupported per-final-liter fraction
+    and retain the literal batch input. Calculation: No numerical conversion applied.
+    Separate basis excerpt: ''For 200 mL Total''. Locator: Formulation table row position
+    3; Directions total-volume heading. Separate exact excerpt: ''Cover the medium
+    container and steam for 2 consecutive days, 3 hours on each day.''. Supports preparation_steps:
+    Preserve the source heat ramp and gradual cooling when completing the abbreviated
+    preparation instructions; do not invent pressure/autoclave temperature. Separate
+    exact excerpt: ''Pasteurization is a gradual rising of temperature to approximately
+    95 °C in 15 minutes.''. Supports preparation_steps: Preserve the source heat ramp
+    and gradual cooling when completing the abbreviated preparation instructions;
+    do not invent pressure/autoclave temperature. Separate exact excerpt: ''Then increased
+    just over 98 °C for the 3 hour duration.''. Supports preparation_steps: Preserve
+    the source heat ramp and gradual cooling when completing the abbreviated preparation
+    instructions; do not invent pressure/autoclave temperature. Separate exact excerpt:
+    ''Cooling occurs gradually at room temperature.''. Supports preparation_steps:
+    Preserve the source heat ramp and gradual cooling when completing the abbreviated
+    preparation instructions; do not invent pressure/autoclave temperature.'

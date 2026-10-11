@@ -22,40 +22,35 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:16199
     label: urea
-- preferred_term: Peptone
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: Meat extract
-  concentration:
-    value: '3'
-    unit: G_PER_L
-- preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: ' (for solid medium)'
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/2
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 2,
+                              "compound": "Urea",
+                              "compound_id": 339,
+                              "amount": 20,
+                              "unit": "g/l",
+                              "g_l": 20,
+                              "mmol_l": 333.023,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[0].concentration (evidence_only), locator=$.data.solutions[0].recipe[1]:
+      The source explicitly states 20 g/l urea; no additional volume division is performed.
+      Source retrieved 2026-10-07T10:40:50.493838+00:00; response SHA256=e0812b7c4942b14a6de12c5d21195eb8cadbcad1965e5364657a61291f0f61ea.
+      Exact base source independently cross-checked at https://mediadive.dsmz.de/rest/medium/1
+      (SHA256=96b8496db5025086f2407d1e2e2738ad74250909ec172a4a76c42ca22a96e319). Original
+      DSMZ 1 and 2 PDFs visually checked. Secondary chemical mappings were preserved,
+      not revalidated.'
 preparation_steps:
 - step_number: 1
-  action: ADJUST_PH
+  action: MIX
   description: To medium 1 add 20 g/l urea before autoclaving. Do not adjust pH; pH
     raises to about 8 due to heat degraded urea.
 - step_number: 2
   action: MIX
   description: For sporulation enhancement add 10 mg/l MnSO4 x H2O.
-- step_number: 3
-  action: ADJUST_PH
-  description: Adjust pH to 7.0.
-- step_number: 4
-  action: MIX
-  description: For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended
-    for sporulation.
 applications:
 - Microbial cultivation
 curation_history:
@@ -82,3 +77,197 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-07T11:13:51.120398+00:00'
+  curator: codex
+  action: RESTORED_DSMZ2_BASE_MEDIUM_AND_PREPARATION_STAGE
+  notes: Exact source identity, base recipe, original PDFs, and preparation-stage
+    instructions verified. Three ingredients relocated with their identifiers and
+    amounts preserved; two explicit batch-volume slots added. Conditional sporulation
+    supplement not promoted to a mandatory ingredient.
+  source: https://mediadive.dsmz.de/rest/medium/2; https://mediadive.dsmz.de/rest/medium/1;
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium2.pdf
+  changes: |-
+    ['ingredients', 0, 'concentration'] -> ingredients[0].concentration: {'value': '20', 'unit': 'G_PER_L'} -> {'value': '20', 'unit': 'G_PER_L'} (evidence_only); ['ingredients', 1, 'concentration'] -> solutions[0].composition[0].concentration: {'value': '5', 'unit': 'G_PER_L'} -> {'value': '5', 'unit': 'G_PER_L'} (relocate); ['ingredients', 2, 'concentration'] -> solutions[0].composition[1].concentration: {'value': '3', 'unit': 'G_PER_L'} -> {'value': '3', 'unit': 'G_PER_L'} (relocate); ['ingredients', 3, 'concentration'] -> solutions[0].composition[2].concentration: {'value': '15', 'unit': 'G_PER_L'} -> {'value': '15', 'unit': 'G_PER_L'} (relocate); None -> solutions[0].composition[3].concentration: None -> {'value': '1', 'unit': 'L'} (add); None -> solutions[0].concentration: None -> {'value': '1', 'unit': 'L'} (add); ['preparation_steps', 0, 'action'] -> preparation_steps[0].action: ADJUST_PH -> MIX (correct_stage); preparation_steps[2:4] -> solutions[0].preparation_notes: [{'step_number': 3, 'action': 'ADJUST_PH', 'description': 'Adjust pH to 7.0.'}, {'step_number': 4, 'action': 'MIX', 'description': 'For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended for sporulation.'}] -> Adjust pH to 7.0.
+
+    For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended for sporulation. (correct_stage)
+solutions:
+- preferred_term: Main sol. 1
+  term:
+    id: mediadive.solution:1
+    label: Main sol. 1
+  composition:
+  - preferred_term: Peptone
+    concentration:
+      value: '5'
+      unit: G_PER_L
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/2
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 1,
+                                "compound": "Peptone",
+                                "compound_id": 1,
+                                "amount": 5,
+                                "unit": "g",
+                                "g_l": 5,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[0].concentration (relocate), locator=$.data.solutions[1].recipe[0]:
+        Relocated from ingredients[1] into the explicitly linked DSMZ 1 base (solution
+        1), not inferred from a shared name. The unchanged 5 g/L is the provider-declared
+        base concentration: 5 g / (1000 ml / 1000 ml per L). Additional exact value
+        at $.data.solutions[1].volume (ml): 1000. No independently measured receiving-medium
+        final volume or dilution is asserted. Source retrieved 2026-10-07T10:40:50.493838+00:00;
+        response SHA256=e0812b7c4942b14a6de12c5d21195eb8cadbcad1965e5364657a61291f0f61ea.
+        Exact base source independently cross-checked at https://mediadive.dsmz.de/rest/medium/1
+        (SHA256=96b8496db5025086f2407d1e2e2738ad74250909ec172a4a76c42ca22a96e319).
+        Original DSMZ 1 and 2 PDFs visually checked. Secondary chemical mappings were
+        preserved, not revalidated.'
+  - preferred_term: Meat extract
+    concentration:
+      value: '3'
+      unit: G_PER_L
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/2
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 2,
+                                "compound": "Meat extract",
+                                "compound_id": 2,
+                                "amount": 3,
+                                "unit": "g",
+                                "g_l": 3,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[1].concentration (relocate), locator=$.data.solutions[1].recipe[1]:
+        Relocated from ingredients[2] into the explicitly linked DSMZ 1 base (solution
+        1), not inferred from a shared name. The unchanged 3 g/L is the provider-declared
+        base concentration: 3 g / (1000 ml / 1000 ml per L). Additional exact value
+        at $.data.solutions[1].volume (ml): 1000. No independently measured receiving-medium
+        final volume or dilution is asserted. Source retrieved 2026-10-07T10:40:50.493838+00:00;
+        response SHA256=e0812b7c4942b14a6de12c5d21195eb8cadbcad1965e5364657a61291f0f61ea.
+        Exact base source independently cross-checked at https://mediadive.dsmz.de/rest/medium/1
+        (SHA256=96b8496db5025086f2407d1e2e2738ad74250909ec172a4a76c42ca22a96e319).
+        Original DSMZ 1 and 2 PDFs visually checked. Secondary chemical mappings were
+        preserved, not revalidated.'
+  - preferred_term: Agar
+    term:
+      id: CHEBI:2509
+      label: agar
+    concentration:
+      value: '15'
+      unit: G_PER_L
+    notes: ' (for solid medium)'
+    mediaingredientmech_chebi_term:
+      id: CHEBI:2509
+      label: agar
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/2
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 3,
+                                "compound": "Agar",
+                                "compound_id": 3,
+                                "condition": "for solid medium",
+                                "amount": 15,
+                                "unit": "g",
+                                "g_l": 15,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[2].concentration (relocate), locator=$.data.solutions[1].recipe[2]:
+        Relocated from ingredients[3] into the explicitly linked DSMZ 1 base (solution
+        1), not inferred from a shared name. The unchanged 15 g/L is the provider-declared
+        base concentration: 15 g / (1000 ml / 1000 ml per L). Additional exact value
+        at $.data.solutions[1].volume (ml): 1000. No independently measured receiving-medium
+        final volume or dilution is asserted. Source condition ''for solid medium''
+        applies to this record''s SOLID_AGAR state; the original note is preserved.
+        Source retrieved 2026-10-07T10:40:50.493838+00:00; response SHA256=e0812b7c4942b14a6de12c5d21195eb8cadbcad1965e5364657a61291f0f61ea.
+        Exact base source independently cross-checked at https://mediadive.dsmz.de/rest/medium/1
+        (SHA256=96b8496db5025086f2407d1e2e2738ad74250909ec172a4a76c42ca22a96e319).
+        Original DSMZ 1 and 2 PDFs visually checked. Secondary chemical mappings were
+        preserved, not revalidated.'
+  - preferred_term: Distilled water
+    term:
+      id: mediadive.compound:4
+      label: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/2
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 4,
+                                "compound": "Distilled water",
+                                "compound_id": 4,
+                                "amount": 1000,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[3].concentration (add), locator=$.data.solutions[1].recipe[3]:
+        Explicit 1000 ml water / 1000 ml per L = 1 L per prepared base batch. This
+        is a batch addition, not an inferred final volume or percentage. Source retrieved
+        2026-10-07T10:40:50.493838+00:00; response SHA256=e0812b7c4942b14a6de12c5d21195eb8cadbcad1965e5364657a61291f0f61ea.
+        Exact base source independently cross-checked at https://mediadive.dsmz.de/rest/medium/1
+        (SHA256=96b8496db5025086f2407d1e2e2738ad74250909ec172a4a76c42ca22a96e319).
+        Original DSMZ 1 and 2 PDFs visually checked. Secondary chemical mappings were
+        preserved, not revalidated.'
+  concentration:
+    value: '1'
+    unit: L
+  preparation_notes: |-
+    Adjust pH to 7.0.
+
+    For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended for sporulation.
+evidence:
+- reference: https://mediadive.dsmz.de/rest/medium/2
+  supports: SUPPORT
+  snippet: |-
+    {
+                            "recipe_order": 1,
+                            "solution": "Main sol. 1",
+                            "solution_id": 1,
+                            "amount": 1000,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+  explanation: |-
+    solutions[0].concentration (add), locator=$.data.solutions[0].recipe[0]: Explicit 1000 ml of Main sol. 1 / 1000 ml per L = 1 L per receiving batch. This source link establishes the base boundary and its three relocated ingredients; it is not a stock dose inferred from another medium. preparation_steps[0].action (correct_stage), locator=$.data.solutions[0].steps[0]: The operation adds urea and explicitly prohibits pH adjustment at this stage. MIX replaces the misleading ADJUST_PH action; the original description and conditional sporulation instruction remain unchanged. Additional exact excerpt: {
+                            "step": "To medium 1 add 20 g/l urea before autoclaving. Do not adjust pH; pH raises to about 8 due to heat degraded urea."
+                        } solutions[0].preparation_notes (correct_stage), locator=$.data.solutions[1].steps: The exact texts formerly at preparation_steps[2:4] belong to preparation of base solution 1. They are moved verbatim into this stock's preparation_notes and removed from the main procedure, so base pH adjustment is not applied after the urea instruction. The conditional Bacillus supplement remains conditional prose, not a mandatory ingredient. Additional exact excerpt: [
+                        {
+                            "step": "Adjust pH to 7.0."
+                        },
+                        {
+                            "step": "For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended for sporulation."
+                        }
+                    ] Source retrieved 2026-10-07T10:40:50.493838+00:00; response SHA256=e0812b7c4942b14a6de12c5d21195eb8cadbcad1965e5364657a61291f0f61ea. Exact base source independently cross-checked at https://mediadive.dsmz.de/rest/medium/1 (SHA256=96b8496db5025086f2407d1e2e2738ad74250909ec172a4a76c42ca22a96e319). Original DSMZ 1 and 2 PDFs visually checked. Secondary chemical mappings were preserved, not revalidated.
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/2
+  title: 'MediaDive medium 2: BACILLUS PASTEURII MEDIUM'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; source_organization=DSMZ;
+    accessed_on=2026-10-07; response_sha256=e0812b7c4942b14a6de12c5d21195eb8cadbcad1965e5364657a61291f0f61ea;
+    individual authors and publication year not established; PDF copyright year is
+    not a publication date.
+- reference: https://mediadive.dsmz.de/rest/medium/1
+  title: 'MediaDive medium 1: NUTRIENT AGAR'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; source_organization=DSMZ;
+    accessed_on=2026-10-07; response_sha256=96b8496db5025086f2407d1e2e2738ad74250909ec172a4a76c42ca22a96e319;
+    individual authors and publication year not established; PDF copyright year is
+    not a publication date.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium2.pdf
+  title: DSMZ 2. BACILLUS PASTEURII MEDIUM
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    source_organization=DSMZ; accessed_on=2026-10-07; response_sha256=2216960d2564bff726b3b45c9f4a3e5d84d5a549cff3bb548c74a118de1e56c9;
+    individual authors and publication year not established; PDF copyright year is
+    not a publication date.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf
+  title: DSMZ 1. NUTRIENT AGAR
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    source_organization=DSMZ; accessed_on=2026-10-07; response_sha256=95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f;
+    individual authors and publication year not established; PDF copyright year is
+    not a publication date.

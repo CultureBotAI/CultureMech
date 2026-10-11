@@ -38,6 +38,32 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/656
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 3,
+                              "compound": "K2HPO4",
+                              "compound_id": 10,
+                              "amount": 0.5,
+                              "unit": "g",
+                              "g_l": 0.5,
+                              "mmol_l": 2.87066,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[2].concentration (K2HPO4)
+      in MediaDive medium 656; locator=$.data.solutions[0].recipe[2]. Provider explicitly
+      reports g_l=0.5; check: 0.5 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.5 g/L.
+      This supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T12:17:05.636097+00:00;
+      response SHA256=b1620e38a84bc69feb51738ebaa6da9c5dd402abb26faa96842e2999d8e0f5fe.
+      KOMODO accession 656 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;
+      mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.
+      The mapping supports identity only, not ingredient quantities or variants.'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -48,6 +74,32 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/656
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 4,
+                              "compound": "MgSO4 x 7 H2O",
+                              "compound_id": 8,
+                              "amount": 0.5,
+                              "unit": "g",
+                              "g_l": 0.5,
+                              "mmol_l": 2.02859,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[3].concentration (MgSO4 x
+      7 H2O) in MediaDive medium 656; locator=$.data.solutions[0].recipe[3]. Provider
+      explicitly reports g_l=0.5; check: 0.5 g * 1 g/g / (1000 ml / 1000 ml per L)
+      = 0.5 g/L. This supports the provider-declared main-recipe concentration, not
+      an independently measured final volume, a stock composition, or a downstream
+      assay dilution. Water alone does not establish final volume. Exact source ingredient
+      labels/forms are matched; secondary ontology mappings are not validated by this
+      evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved
+      2026-10-07T12:17:05.636097+00:00; response SHA256=b1620e38a84bc69feb51738ebaa6da9c5dd402abb26faa96842e2999d8e0f5fe.
+      KOMODO accession 656 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;
+      mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.
+      The mapping supports identity only, not ingredient quantities or variants.'
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -92,3 +144,45 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-10-08T03:14:00.696534+00:00'
+  curator: codex
+  action: CURATED_KOMODO_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Exact medium/source membership, ingredient inventory/forms, physical-state
+    conditions, literal snippets, and arithmetic checked. Stock boundaries, source-only
+    rows, preparation context, and variants remain explicit follow-up tasks; secondary
+    chemical mappings unchanged. KOMODO accession 656 is mapped to the same DSMZ accession
+    by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;
+    mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.
+    The mapping supports identity only, not ingredient quantities or variants.
+  source: https://mediadive.dsmz.de/rest/medium/656
+  changes: 'ingredients[2].concentration: {"unit": "G_PER_L", "value": "0.5"} -> {"unit":
+    "G_PER_L", "value": "0.5"} (evidence_only); ingredients[3].concentration: {"unit":
+    "G_PER_L", "value": "0.5"} -> {"unit": "G_PER_L", "value": "0.5"} (evidence_only)'
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/656
+  title: 'MediaDive medium 656: YEAST-STARCH-AGAR(B)'
+  notes: source_type=dataset; discovery_mode=cross_reference; source_organization=DSMZ;
+    accessed_on=2026-10-07; locator=$.data.solutions[0]; response_sha256=b1620e38a84bc69feb51738ebaa6da9c5dd402abb26faa96842e2999d8e0f5fe;
+    original_recipe=https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium656.pdf;
+    individual authors and publication year not supplied. Provider-declared main-recipe
+    amounts only. Discovered through the verified KOMODO original-recipe mapping.
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  title: 'KOMODO media list: original-recipe mappings'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; source_organization=KOMODO;
+    accessed_on=2026-10-07; response_sha256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a;
+    individual authors and publication year not supplied. Identity mapping only, not
+    concentration evidence.
+evidence:
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  supports: SUPPORT
+  snippet: "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=656'\
+    \ >656</a></TD>\n\t\t\t\t\t<TD>YEAST-STARCH-AGAR(B)</TD>\n\t\t\t\t\t<TD> 7.4</TD>\n\
+    \t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n\
+    <TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium656.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium656.pdf</a></TD>\n\t\
+    \t\t\t</TR>"
+  explanation: 'Source identity only: KOMODO accession 656 maps to https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium656.pdf;
+    locator=MediaList table row with ID=656. This row supplies no ingredient amounts
+    and does not establish equivalence of variants. Concentrations are supported separately
+    by exact ingredient excerpts from the linked DSMZ dataset recipe. Retrieved 2026-10-07T13:01:23.350274+00:00;
+    response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.'

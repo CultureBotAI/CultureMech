@@ -47,6 +47,33 @@ composition:
     label: sodium sulfide nonahydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3871
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 6,
+                      "compound": "Na2S x 9 H2O",
+                      "compound_id": 54,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.5,
+                      "unit": "g",
+                      "g_l": 0.49505,
+                      "mmol_l": 2.06114,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[3].concentration (Na2S x
+      9 H2O) in MediaDive solution 3871; locator=$.data.recipe[5] (compound_id=54).
+      Provider explicitly reports g_l=0.49505. Arithmetic check: 0.5 g * 1 g/g / (1010
+      ml / 1000 ml per L) = 0.4950495049504950495049504950 g/L, consistent with the
+      reported value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1010. Retrieved 2026-10-07T09:25:58.092525+00:00;
+      response SHA256=9d442c1eed04aafc1dcf418d5678800c53d1aadd96b919ed624b2cfe46c058cf.'
 - preferred_term: Resazurin
   concentration:
     value: '0.000990099'
@@ -59,6 +86,33 @@ composition:
     label: Resazurin
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3871
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 7,
+                      "compound": "Resazurin",
+                      "compound_id": 25,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "mg",
+                      "g_l": 0.000990099,
+                      "mmol_l": 0.00431999,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[4].concentration (Resazurin)
+      in MediaDive solution 3871; locator=$.data.recipe[6] (compound_id=25). Provider
+      explicitly reports g_l=0.000990099. Arithmetic check: 1 mg * 0.001 g/mg / (1010
+      ml / 1000 ml per L) = 0.0009900990099009900990099009901 g/L, consistent with
+      the reported value at its precision. Evidence supports the provider-declared
+      concentration within this solution, not a concentration in a receiving medium
+      or an independently measured final volume. Water addition alone is not used
+      to infer a final volume. Additional exact excerpt at $.data.volume: "volume":
+      1010. Retrieved 2026-10-07T09:25:58.092525+00:00; response SHA256=9d442c1eed04aafc1dcf418d5678800c53d1aadd96b919ed624b2cfe46c058cf.'
 preparation_notes: 'Mix ingredients, except sulfur and Na2S x 9H2O, and adjust pH
   to 6.5 with H2SO4. Sterilize by filtration while gassing with H2-CO2 (80:20) gas
   mixture. Steam sulfur for 3 hr on each of 3 successive days. Neutralize Na2S x 9H2O
@@ -107,6 +161,17 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T09:30:59.704035+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/3871
+  changes: 'composition[3].concentration: {"unit": "G_PER_L", "value": "0.49505"}
+    -> {"unit": "G_PER_L", "value": "0.49505"} (evidence_only); composition[4].concentration:
+    {"unit": "G_PER_L", "value": "0.000990099"} -> {"unit": "G_PER_L", "value": "0.000990099"}
+    (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -115,3 +180,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/3871
+  title: 'MediaDive solution 3871: Main sol. J206'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=9d442c1eed04aafc1dcf418d5678800c53d1aadd96b919ed624b2cfe46c058cf;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

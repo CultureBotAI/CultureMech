@@ -1,0 +1,34 @@
+{
+  "terminal": true,
+  "runtime": "isolated Python 3.11; not full project or CI",
+  "checks": [
+    {
+      "name": "independent-preview",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "reports/ingredient_concentration_curation/20261007-komodo-media-0000-0500/audit.py",
+        "--folder",
+        "reports/ingredient_concentration_curation/20261007-komodo-media-1000-1500",
+        "--cache",
+        "/tmp/ingredient-media-20261007/sources",
+        "--mapping",
+        "/tmp/ingredient-media-20261007/komodo-media-list-20261007-recheck.html",
+        "--out",
+        "reports/ingredient_concentration_curation/20261007-komodo-media-1000-1500/preflight.json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo-1500-baseline-independent-preview.log"
+    },
+    {
+      "name": "schema",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/KOMODO_222_SP_medium.yaml"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/komodo-1500-baseline-schema.log"
+    }
+  ],
+  "stopped_at": "schema"
+}

@@ -16,6 +16,33 @@ composition:
     label: glucose
     confidence: 0.9
     match_type: manual_curated
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/910
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "Glucose",
+                      "compound_id": 5,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 10,
+                      "unit": "g",
+                      "g_l": 8.76424,
+                      "mmol_l": 48.647,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Glucose)
+      in MediaDive solution 910; locator=$.data.recipe[2] (compound_id=5). Provider
+      explicitly reports g_l=8.76424. Arithmetic check: 10 g * 1 g/g / (1141 ml /
+      1000 ml per L) = 8.764241893076248904469763365 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1141. Retrieved 2026-10-07T08:47:43.540004+00:00;
+      response SHA256=f7abe9bbc887fe7552bd60e617b6a277ed348ab1e048811bc316c5663be855c7.'
 - preferred_term: Galactose
   concentration:
     value: '8.76424'
@@ -28,6 +55,33 @@ composition:
     label: galactose
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/910
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "Galactose",
+                      "compound_id": 321,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 10,
+                      "unit": "g",
+                      "g_l": 8.76424,
+                      "mmol_l": 48.647,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Galactose)
+      in MediaDive solution 910; locator=$.data.recipe[3] (compound_id=321). Provider
+      explicitly reports g_l=8.76424. Arithmetic check: 10 g * 1 g/g / (1141 ml /
+      1000 ml per L) = 8.764241893076248904469763365 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1141. Retrieved 2026-10-07T08:47:43.540004+00:00;
+      response SHA256=f7abe9bbc887fe7552bd60e617b6a277ed348ab1e048811bc316c5663be855c7.'
 - preferred_term: Tween 80
   concentration:
     value: '0.8764241893076249'
@@ -52,6 +106,33 @@ composition:
     label: agar
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/910
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 6,
+                      "compound": "Agar",
+                      "compound_id": 3,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 15,
+                      "unit": "g",
+                      "g_l": 13.1464,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[3].concentration (Agar) in
+      MediaDive solution 910; locator=$.data.recipe[5] (compound_id=3). Provider explicitly
+      reports g_l=13.1464. Arithmetic check: 15 g * 1 g/g / (1141 ml / 1000 ml per
+      L) = 13.14636283961437335670464505 g/L, consistent with the reported value at
+      its precision. Evidence supports the provider-declared concentration within
+      this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1141. Retrieved 2026-10-07T08:47:43.540004+00:00;
+      response SHA256=f7abe9bbc887fe7552bd60e617b6a277ed348ab1e048811bc316c5663be855c7.'
 preparation_notes: 'Combine components, except white table wine. Adjust pH to 5.5.
   Autoclave for 15 min at 121°C, Cool to 45-50°C. Aseptically add filter sterilized
   white table wine. Mix thoroughly. Pour into sterile Petri dishes.
@@ -91,6 +172,18 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T08:52:28.993811+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/910
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "8.76424"}
+    -> {"unit": "G_PER_L", "value": "8.76424"} (evidence_only); composition[1].concentration:
+    {"unit": "G_PER_L", "value": "8.76424"} -> {"unit": "G_PER_L", "value": "8.76424"}
+    (evidence_only); composition[3].concentration: {"unit": "G_PER_L", "value": "13.1464"}
+    -> {"unit": "G_PER_L", "value": "13.1464"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -99,3 +192,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/910
+  title: 'MediaDive solution 910: Main sol. 456'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=f7abe9bbc887fe7552bd60e617b6a277ed348ab1e048811bc316c5663be855c7;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

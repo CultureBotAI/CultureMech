@@ -16,6 +16,33 @@ composition:
     label: ferrihydrite
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5443
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Ferrihydrite",
+                      "compound_id": 2057,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "g",
+                      "g_l": 1.97628,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Ferrihydrite)
+      in MediaDive solution 5443; locator=$.data.recipe[1] (compound_id=2057). Provider
+      explicitly reports g_l=1.97628. Arithmetic check: 2 g * 1 g/g / (1012 ml / 1000
+      ml per L) = 1.976284584980237154150197628 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1012. Retrieved 2026-10-07T09:55:00.959635+00:00;
+      response SHA256=963d6bdcdaefedb23e6002a84302747dfcd8c5d02dafabc53c4f191899c11cc6.'
 - preferred_term: NaHCO3
   concentration:
     value: '12.351778656126482'
@@ -56,6 +83,15 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-10-07T09:59:54.456952+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/5443
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "1.97628"}
+    -> {"unit": "G_PER_L", "value": "1.97628"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -64,3 +100,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/5443
+  title: 'MediaDive solution 5443: Main sol. J1293'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=963d6bdcdaefedb23e6002a84302747dfcd8c5d02dafabc53c4f191899c11cc6;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

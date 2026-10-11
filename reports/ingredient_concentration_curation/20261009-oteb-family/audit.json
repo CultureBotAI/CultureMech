@@ -1,0 +1,93 @@
+{
+  "terminal": true,
+  "phase": "audit",
+  "state": "Preview only; no normalized YAML changed",
+  "checks": [],
+  "code_sha256": {
+    "scripts/repair_oteb_family.py": "90aa83324ff1b28708921a00c409f50b4c4bd12eb15f09ae8feb0e1010916795",
+    "tests/test_oteb_family.py": "2a4fbe1915636b839c6614a2dd0ebce789d58bdc4afbad294256e883db6abf6a",
+    "reports/ingredient_concentration_curation/20261009-oteb-family/audit.py": "72d7eabc0cc2905965cd413ef250a97b379e3e487c4aaaeb7277f83458d639f8",
+    "scripts/repair_methanogen_stock_boundaries.py": "8d4d32c7dc3cb2586242a188f958087482df3aff553d1dbc468c422eddb037ba",
+    "scripts/repair_lactalbumin_formulations.py": "3c16a3f4a2e543d280d3ccbb20a63138f2b409602d8b168b7fc742abe63b1769",
+    "scripts/repair_jcm_stock_preparations.py": "7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a",
+    "scripts/review_solution_concentration_evidence.py": "40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a",
+    "scripts/review_medium_concentration_evidence.py": "ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a",
+    "scripts/validate_recipe_references.py": "087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b",
+    "src/culturemech/validation/write_validated.py": "8e1e2185231caecbe3dc99908c783cd83340b1e93fa9115ff1445d4b3820897e",
+    "src/culturemech/validation/recipe_references.py": "1ef57389727347c242f45a85a9ed8908803423bc10307f53a888dac67ce06b67",
+    "src/culturemech/curate/curation_event.py": "e8aa053ba6dd06485b29ca5da640f91ef96513feff18492a72adc12f40130024",
+    "src/culturemech/schema/culturemech.yaml": "461478d900fdee29a52c3d14656bcf369443bfdd0f4a534aa9d385f25df1cf8a",
+    "src/culturemech/merge/formulation.py": "985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab",
+    "src/culturemech/merge/merger.py": "b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6",
+    "src/culturemech/merge/matcher.py": "5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885",
+    "src/culturemech/merge/fingerprint.py": "9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e"
+  },
+  "plan_sha256": "d5e5b76a6b77434f3c0b79cf2502b3de47ad5eb70305e57430348154c83c4d8e",
+  "context_sha256": "8f4e87e29247c1a0dfea3ce78ff0283c3456f1fbf7fd5b3bd3343eff06b0b52c",
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "48c3b9d310293ee12ee7655e555076f7787b0d9f52a88ff0a2f9d27ab98710b9"
+  },
+  "records": {
+    "K1245": {
+      "source_nodes": 27,
+      "old_quantity_slots": 28,
+      "claims": 95,
+      "new_evidence": 30,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "S2474": {
+      "source_nodes": 18,
+      "old_quantity_slots": 18,
+      "claims": 54,
+      "new_evidence": 14,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "K1245_18691": {
+      "source_nodes": 28,
+      "old_quantity_slots": 28,
+      "claims": 96,
+      "new_evidence": 30,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "D1245": {
+      "source_nodes": 31,
+      "old_quantity_slots": 28,
+      "claims": 139,
+      "new_evidence": 61,
+      "new_references": 3,
+      "new_curation_history": 1
+    },
+    "K6000": {
+      "source_nodes": 11,
+      "old_quantity_slots": 0,
+      "claims": 36,
+      "new_evidence": 12,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "S5688": {
+      "source_nodes": 12,
+      "old_quantity_slots": 13,
+      "claims": 29,
+      "new_evidence": 7,
+      "new_references": 1,
+      "new_curation_history": 1
+    }
+  },
+  "totals": {
+    "source_nodes": 127,
+    "old_quantity_slots": 115,
+    "claims": 449,
+    "new_evidence": 154,
+    "new_references": 9,
+    "new_curation_history": 6
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "48c3b9d310293ee12ee7655e555076f7787b0d9f52a88ff0a2f9d27ab98710b9"
+  }
+}

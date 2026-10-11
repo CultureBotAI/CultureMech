@@ -1,0 +1,253 @@
+{
+  "terminal": true,
+  "phase": "apply",
+  "checks": [],
+  "code_sha256": {
+    "scripts/repair_middlebrook_stages.py": "94b5bb1954773797fe64799a35e9fb08bc2250d9a081df80b7267a4ad0df7c0f",
+    "tests/test_middlebrook_stages.py": "921f96ffafce8f58bca6c6665ef068bb36caa93583c97617bd3ac5efd7af7d10",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-middlebrook-stages/audit.py": "e50c1f643faf65c1d7f95a6c5eb50b1b65da02d9bccafbdf2ebed083dc14fd2b"
+  },
+  "plan_sha256": "28032eb3f5837886b5e1d1b0b972bad659942781d4ca76950e2ee774df680e13",
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "d99a375e68d2bef008b27eae1eaa6da6fc414a7d67046a15a5d32a2661f813d2"
+  },
+  "manual_reference_exception": "Exactly one automated failure: NBRC1219 snippet matches the inspected original and independent captured-text audit. No automated pass is claimed.",
+  "preview_audit": {
+    "D857": {
+      "source_nodes": 19,
+      "old_quantity_slots": 17,
+      "claims": 47,
+      "new_evidence": 20,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "M2403": {
+      "source_nodes": 21,
+      "old_quantity_slots": 22,
+      "claims": 50,
+      "new_evidence": 20,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "M2328": {
+      "source_nodes": 10,
+      "old_quantity_slots": 11,
+      "claims": 25,
+      "new_evidence": 10,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "M2879": {
+      "source_nodes": 8,
+      "old_quantity_slots": 8,
+      "claims": 21,
+      "new_evidence": 8,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "M2399": {
+      "source_nodes": 10,
+      "old_quantity_slots": 10,
+      "claims": 27,
+      "new_evidence": 10,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "M1946": {
+      "source_nodes": 24,
+      "old_quantity_slots": 25,
+      "claims": 54,
+      "new_evidence": 25,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "M2407": {
+      "source_nodes": 24,
+      "old_quantity_slots": 25,
+      "claims": 52,
+      "new_evidence": 24,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "M2401": {
+      "source_nodes": 20,
+      "old_quantity_slots": 21,
+      "claims": 48,
+      "new_evidence": 19,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "M2402": {
+      "source_nodes": 22,
+      "old_quantity_slots": 22,
+      "claims": 52,
+      "new_evidence": 21,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "M2397": {
+      "source_nodes": 20,
+      "old_quantity_slots": 21,
+      "claims": 49,
+      "new_evidence": 19,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "M2880": {
+      "source_nodes": 8,
+      "old_quantity_slots": 8,
+      "claims": 21,
+      "new_evidence": 8,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "M2400": {
+      "source_nodes": 20,
+      "old_quantity_slots": 21,
+      "claims": 48,
+      "new_evidence": 19,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "M2404": {
+      "source_nodes": 23,
+      "old_quantity_slots": 23,
+      "claims": 54,
+      "new_evidence": 22,
+      "new_references": 1,
+      "new_curation_history": 1
+    }
+  },
+  "application": {
+    "mode": "apply",
+    "records": 13,
+    "changed": 13,
+    "already_applied": 0,
+    "claims": 548
+  },
+  "readback": {
+    "mode": "verify",
+    "records": 13,
+    "changed": 0,
+    "already_applied": 13,
+    "claims": 548
+  },
+  "noop": {
+    "mode": "apply",
+    "records": 13,
+    "changed": 0,
+    "already_applied": 13,
+    "claims": 548
+  },
+  "applied_audit": {
+    "D857": {
+      "source_nodes": 19,
+      "old_quantity_slots": 17,
+      "claims": 47,
+      "new_evidence": 20,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "M2403": {
+      "source_nodes": 21,
+      "old_quantity_slots": 22,
+      "claims": 50,
+      "new_evidence": 20,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "M2328": {
+      "source_nodes": 10,
+      "old_quantity_slots": 11,
+      "claims": 25,
+      "new_evidence": 10,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "M2879": {
+      "source_nodes": 8,
+      "old_quantity_slots": 8,
+      "claims": 21,
+      "new_evidence": 8,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "M2399": {
+      "source_nodes": 10,
+      "old_quantity_slots": 10,
+      "claims": 27,
+      "new_evidence": 10,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "M1946": {
+      "source_nodes": 24,
+      "old_quantity_slots": 25,
+      "claims": 54,
+      "new_evidence": 25,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "M2407": {
+      "source_nodes": 24,
+      "old_quantity_slots": 25,
+      "claims": 52,
+      "new_evidence": 24,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "M2401": {
+      "source_nodes": 20,
+      "old_quantity_slots": 21,
+      "claims": 48,
+      "new_evidence": 19,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "M2402": {
+      "source_nodes": 22,
+      "old_quantity_slots": 22,
+      "claims": 52,
+      "new_evidence": 21,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "M2397": {
+      "source_nodes": 20,
+      "old_quantity_slots": 21,
+      "claims": 49,
+      "new_evidence": 19,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "M2880": {
+      "source_nodes": 8,
+      "old_quantity_slots": 8,
+      "claims": 21,
+      "new_evidence": 8,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "M2400": {
+      "source_nodes": 20,
+      "old_quantity_slots": 21,
+      "claims": 48,
+      "new_evidence": 19,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "M2404": {
+      "source_nodes": 23,
+      "old_quantity_slots": 23,
+      "claims": 54,
+      "new_evidence": 22,
+      "new_references": 1,
+      "new_curation_history": 1
+    }
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "d0d0451157b8ed78867e41503fd02bc9afa0f80d11758d67a3f60e9daee6b138"
+  }
+}

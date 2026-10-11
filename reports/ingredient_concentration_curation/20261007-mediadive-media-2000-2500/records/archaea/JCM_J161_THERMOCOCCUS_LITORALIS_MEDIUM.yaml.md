@@ -1,0 +1,39 @@
+# Medium Concentration Review: THERMOCOCCUS LITORALIS MEDIUM
+
+- Record: data/normalized_yaml/archaea/JCM_J161_THERMOCOCCUS_LITORALIS_MEDIUM.yaml
+- ID: CultureMech:002520
+- Reviewed commit: `f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f`
+- Before SHA256: `105207ffe987e93be69913829e1522d995488b9dbb428e46e2a570f035d0fea6`
+- Proposed/result SHA256: `105207ffe987e93be69913829e1522d995488b9dbb428e46e2a570f035d0fea6`
+- Source: https://mediadive.dsmz.de/rest/medium/J161
+- Source SHA256: 802cf75fb398addfa34bdb95b0192c285decb0742675a4134beedbb4eaf5faa3
+- Retrieved: 2026-10-07T14:02:48.944531+00:00
+- Source type: official DSMZ dataset; discovery: existing record source ID; authors/year not supplied.
+- State: reviewed; unchanged; unresolved claims remain unchanged.
+- Baseline schema errors: 0; proposed schema errors: 0.
+- Operational failure: none
+
+Source response, exact IDs/labels, arithmetic, and literal snippets were checked by the maintained guarded reviewer. This is not a claim of manual inspection of every source sentence or automated reference-validator success. Preparation-dependent quantities and unrepresented stocks remain open. Schema validity is not scientific proof.
+
+| Field | Ingredient | Old | Proposed | Status | DOI/PURL | Exact snippet | Locator | Calculation / decision | Action |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `ingredients[0].concentration` | NaCl | {"unit": "G_PER_L", "value": "25"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J161 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `ingredients[1].concentration` | Yeast extract | {"unit": "G_PER_L", "value": "3"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J161 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `ingredients[2].concentration` | Bacto peptone | {"unit": "G_PER_L", "value": "0.5"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J161 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `ingredients[3].concentration` | Sulfur | {"unit": "G_PER_L", "value": "10"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J161 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `ingredients[4].concentration` | Resazurin | {"unit": "G_PER_L", "value": "0.001"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J161 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `ingredients[5].concentration` | (NH4)2SO4 | {"unit": "G_PER_L", "value": "1.3"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J161 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `ingredients[6].concentration` | KH2PO4 | {"unit": "G_PER_L", "value": "0.28"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J161 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `ingredients[7].concentration` | MgSO4 x 7 H2O | {"unit": "G_PER_L", "value": "0.25"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J161 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `ingredients[8].concentration` | CaCl2 x 2 H2O | {"unit": "G_PER_L", "value": "0.07"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J161 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `ingredients[9].concentration` | FeCl3 x 6 H2O | {"unit": "G_PER_L", "value": "0.002"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J161 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `ingredients[10].concentration` | MnCl2 x 4 H2O | {"unit": "G_PER_L", "value": "0.0018"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J161 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `ingredients[11].concentration` | Na2B4O7 x 10 H2O | {"unit": "G_PER_L", "value": "0.0045"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J161 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `ingredients[12].concentration` | ZnSO4 x 7 H2O | {"unit": "G_PER_L", "value": "0.00022"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J161 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `ingredients[13].concentration` | CuCl2 x 2 H2O | {"unit": "G_PER_L", "value": "5e-05"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J161 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `ingredients[14].concentration` | Na2MoO4 x 2 H2O | {"unit": "G_PER_L", "value": "3e-05"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J161 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `ingredients[15].concentration` | VOSO4 x n H2O | {"unit": "G_PER_L", "value": "3e-05"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J161 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `ingredients[16].concentration` | CoSO4 x 7 H2O | {"unit": "G_PER_L", "value": "1e-05"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J161 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `variant_children[0]` | thermococcus_fumicolans_medium | {"id": "CultureMech:002602", "name": "thermococcus_fumicolans_medium", "notes": "Same ingredient and concentration signature; review as possible duplicate source record.", "path": "data/normalized_yaml/bacterial/thermococcus_fumicolans_medium.yaml", "relationship": "SOURCE_DUPLICATE"} | unknown / not asserted | unsupported | unknown / not asserted | unknown / not asserted | unknown / not asserted | Variant formulation/relationship requires its own exact source; parent evidence is not propagated. | unchanged |
+| `variant_children[1]` | thermococcus_stetteri_medium | {"id": "CultureMech:002519", "name": "thermococcus_stetteri_medium", "notes": "Same ingredient and concentration signature; review as possible duplicate source record.", "path": "data/normalized_yaml/bacterial/thermococcus_stetteri_medium.yaml", "relationship": "SOURCE_DUPLICATE"} | unknown / not asserted | unsupported | unknown / not asserted | unknown / not asserted | unknown / not asserted | Variant formulation/relationship requires its own exact source; parent evidence is not propagated. | unchanged |
+| `source.data.solutions[0].steps[0]` | preparation context | unknown / not asserted | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/medium/J161 | {<br>                        "step": "Use Medium No. 160 with 1.0 g/L (final) yeast extract and 5.0 g/L (final) peptone, pH 7.2."<br>                    } | $.data.solutions[0].steps[0] | Preparation context retained for source-specific follow-up, including supplements and downstream dilutions; no additional amount inferred from prose. | unchanged |

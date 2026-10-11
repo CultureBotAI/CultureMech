@@ -1,0 +1,326 @@
+{
+  "terminal": true,
+  "media_records_checked": 4,
+  "standalone_solutions_excluded_as_expected": 2,
+  "failed_records": 2,
+  "details": [
+    {
+      "path": "data/normalized_yaml/archaea/KOMODO_1164_HALOMICROBIUM_KATESII_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/archaea/KOMODO_1164_HALOMICROBIUM_KATESII_medium.yaml",
+        "data/normalized_yaml/archaea/halomicrobium_katesii_medium.yaml"
+      ],
+      "fingerprint": "021369a72c6284ff6cb9bc602a77dc5d84bbf573b0fefacbaa09ac1c8b7b46e0",
+      "nodes": [
+        {
+          "field": "ingredients",
+          "name": "NaHCO3",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "NaBr",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "CaCl2 x 2 H2O",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "KCl",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "MgSO4 x 7 H2O",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "NaCl",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "Glucose",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "Proteose peptone",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "Yeast extract",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "Distilled water",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "solutions",
+          "name": "FeCl3 x 6 H2O stock",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        }
+      ],
+      "root_evidence_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/archaea/halomicrobium_katesii_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/archaea/KOMODO_1164_HALOMICROBIUM_KATESII_medium.yaml",
+        "data/normalized_yaml/archaea/halomicrobium_katesii_medium.yaml"
+      ],
+      "fingerprint": "021369a72c6284ff6cb9bc602a77dc5d84bbf573b0fefacbaa09ac1c8b7b46e0",
+      "nodes": [
+        {
+          "field": "ingredients",
+          "name": "NaHCO3",
+          "exact_entry_retained": false,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "NaBr",
+          "exact_entry_retained": false,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "CaCl2 x 2 H2O",
+          "exact_entry_retained": false,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "KCl",
+          "exact_entry_retained": false,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "MgSO4 x 7 H2O",
+          "exact_entry_retained": false,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "NaCl",
+          "exact_entry_retained": false,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "Glucose",
+          "exact_entry_retained": false,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "Proteose peptone",
+          "exact_entry_retained": false,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "Yeast extract",
+          "exact_entry_retained": false,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "Distilled water",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "solutions",
+          "name": "FeCl3 x 6 H2O stock",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        }
+      ],
+      "root_evidence_retained": false,
+      "references_retained": false,
+      "event_retained": false
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_1157_PYEM_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_1157_PYEM_medium.yaml",
+        "data/normalized_yaml/bacterial/pyem_medium.yaml"
+      ],
+      "fingerprint": "0d23292c14af5ba2bbf596be31b5b13738830c454c2094f076614e2cda82a303",
+      "nodes": [
+        {
+          "field": "ingredients",
+          "name": "Peptone",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "Yeast extract",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "NH4Cl",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "Distilled water",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "solutions",
+          "name": "Riboflavin stock",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "solutions",
+          "name": "Glucose stock",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "solutions",
+          "name": "MgSO4 stock",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "solutions",
+          "name": "CaCl2 stock",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        }
+      ],
+      "root_evidence_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/pyem_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_1157_PYEM_medium.yaml",
+        "data/normalized_yaml/bacterial/pyem_medium.yaml"
+      ],
+      "fingerprint": "0d23292c14af5ba2bbf596be31b5b13738830c454c2094f076614e2cda82a303",
+      "nodes": [
+        {
+          "field": "ingredients",
+          "name": "Peptone",
+          "exact_entry_retained": false,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "Yeast extract",
+          "exact_entry_retained": false,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "NH4Cl",
+          "exact_entry_retained": false,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "Distilled water",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "solutions",
+          "name": "Riboflavin stock",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "solutions",
+          "name": "Glucose stock",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "solutions",
+          "name": "MgSO4 stock",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "solutions",
+          "name": "CaCl2 stock",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        }
+      ],
+      "root_evidence_retained": true,
+      "references_retained": false,
+      "event_retained": false
+    }
+  ]
+}

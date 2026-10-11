@@ -26,6 +26,30 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/129
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 2,
+                              "compound": "Glucose",
+                              "compound_id": 5,
+                              "amount": 20,
+                              "unit": "g",
+                              "g_l": 20,
+                              "mmol_l": 111.012,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[0].concentration (evidence_only), locator=$.data.solutions[0].recipe[1]:
+      Source solution 226 (Main sol. 129) explicitly reports g_l=20. Arithmetic check:
+      20 g; provider volume 1000 ml; computed 20 g/L. Additional exact value at $.data.solutions[0].volume
+      (ml): 1000. The numeric value and chemical mappings are preserved. This supports
+      the provider-declared preparation concentration, not an independently measured
+      final volume or downstream dilution. Source retrieved 2026-10-07T10:42:36.852628+00:00;
+      response SHA256=5d1f36a91fce216d63d1d3447509fd753a402f48fad4a8b0e5d34db9415f31f1.
+      Original DSMZ PDF recipe chain visually cross-checked: 129. Secondary ontology
+      mappings and parent/variant relationships were preserved, not validated by this
+      amount evidence.'
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -36,18 +60,34 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
-- preferred_term: Potato
-  concentration:
-    value: '200'
-    unit: G_PER_L
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/129
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 3,
+                              "compound": "Agar",
+                              "compound_id": 3,
+                              "amount": 15,
+                              "unit": "g",
+                              "g_l": 15,
+                              "mmol_l": 44.5991,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[1].concentration (evidence_only), locator=$.data.solutions[0].recipe[2]:
+      Source solution 226 (Main sol. 129) explicitly reports g_l=15. Arithmetic check:
+      15 g; provider volume 1000 ml; computed 15 g/L. Additional exact value at $.data.solutions[0].volume
+      (ml): 1000. The numeric value and chemical mappings are preserved. This supports
+      the provider-declared preparation concentration, not an independently measured
+      final volume or downstream dilution. Source retrieved 2026-10-07T10:42:36.852628+00:00;
+      response SHA256=5d1f36a91fce216d63d1d3447509fd753a402f48fad4a8b0e5d34db9415f31f1.
+      Original DSMZ PDF recipe chain visually cross-checked: 129. Secondary ontology
+      mappings and parent/variant relationships were preserved, not validated by this
+      amount evidence.'
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
   description: Adjust pH to 5.6. Sterilize at 121°C for 15 min
-- step_number: 2
-  action: HEAT
-  description: Boil 200 g scrubbed and sliced potatoes in 1000 ml water for 1 hour.
-    Pass through fine sieve. Avoid new potatoes.
 applications:
 - Microbial cultivation
 curation_history:
@@ -78,6 +118,28 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-07T11:35:03.558874+00:00'
+  curator: codex
+  action: RESTORED_REVIEWED_MEDIUM_STOCK_BOUNDARIES
+  notes: Exact source graph, complete ingredient inventory, amounts, and original
+    PDF recipe chain checked. Numeric concentrations and chemical mappings preserved;
+    stock doses and water are explicit batch amounts. No final-medium stock dilution
+    inferred. Parent/variant relationships remain separately unreviewed.
+  source: https://mediadive.dsmz.de/rest/medium/129; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium129.pdf
+  changes: '[''ingredients'', 0, ''concentration''] -> ingredients[0].concentration:
+    {''value'': ''20'', ''unit'': ''G_PER_L''} -> {''value'': ''20'', ''unit'': ''G_PER_L''}
+    (evidence_only); [''ingredients'', 1, ''concentration''] -> ingredients[1].concentration:
+    {''value'': ''15'', ''unit'': ''G_PER_L''} -> {''value'': ''15'', ''unit'': ''G_PER_L''}
+    (evidence_only); None -> solutions[0].concentration: None -> {''value'': ''1'',
+    ''unit'': ''L''} (add); None -> solutions[0].composition[0].concentration: None
+    -> {''value'': ''1'', ''unit'': ''L''} (add); [''ingredients'', 2, ''concentration'']
+    -> solutions[0].composition[1].concentration: {''value'': ''200'', ''unit'': ''G_PER_L''}
+    -> {''value'': ''200'', ''unit'': ''G_PER_L''} (relocate); preparation_steps[1:2]
+    -> solutions[0].preparation_notes: [{''step_number'': 2, ''action'': ''HEAT'',
+    ''description'': ''Boil 200 g scrubbed and sliced potatoes in 1000 ml water for
+    1 hour. Pass through fine sieve. Avoid new potatoes.''}] -> Boil 200 g scrubbed
+    and sliced potatoes in 1000 ml water for 1 hour. Pass through fine sieve. Avoid
+    new potatoes. (correct_stage)'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_129_POTATO_DEXTROSE_AGAR.yaml
   relationship: SOURCE_DUPLICATE
@@ -86,3 +148,103 @@ variant_children:
   notes: Same ingredient and concentration signature; KOMODO record copied from the
     matching DSMZ medium source. Category differs between source records and should
     be treated as source metadata, not a formulation difference.
+solutions:
+- preferred_term: Potato infusion
+  term:
+    id: mediadive.solution:227
+    label: Potato infusion
+  concentration:
+    value: '1'
+    unit: L
+  composition:
+  - preferred_term: Water
+    term:
+      id: mediadive.compound:754
+      label: Water
+    concentration:
+      value: '1'
+      unit: L
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/129
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 1,
+                                "compound": "Water",
+                                "compound_id": 754,
+                                "amount": 1000,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[0].concentration (add), locator=$.data.solutions[1].recipe[0]:
+        Explicit 1000 ml water / 1000 ml per L = 1 L in this preparation batch. This
+        is an addition amount, not a claim of final volume, stock strength, or percent
+        basis. Source retrieved 2026-10-07T10:42:36.852628+00:00; response SHA256=5d1f36a91fce216d63d1d3447509fd753a402f48fad4a8b0e5d34db9415f31f1.
+        Original DSMZ PDF recipe chain visually cross-checked: 129. Secondary ontology
+        mappings and parent/variant relationships were preserved, not validated by
+        this amount evidence.'
+  - preferred_term: Potato
+    concentration:
+      value: '200'
+      unit: G_PER_L
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/129
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 2,
+                                "compound": "Potato",
+                                "compound_id": 1606,
+                                "amount": 200,
+                                "unit": "g",
+                                "g_l": 200,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[1].concentration (relocate), locator=$.data.solutions[1].recipe[1]:
+        Source solution 227 (Potato infusion) explicitly reports g_l=200. Arithmetic
+        check: 200 g; provider volume 1000 ml; computed 200 g/L. Additional exact
+        value at $.data.solutions[1].volume (ml): 1000. The numeric value and chemical
+        mappings are preserved. This supports the provider-declared preparation concentration,
+        not an independently measured final volume or downstream dilution. Relocated
+        from ingredients[2] into the explicitly linked stock; it is not a direct receiving-medium
+        concentration. This is the input loading for extract preparation, not a measured
+        dissolved concentration after sieving/settling/centrifugation; the exact extraction
+        instructions are preserved in preparation_notes. Source retrieved 2026-10-07T10:42:36.852628+00:00;
+        response SHA256=5d1f36a91fce216d63d1d3447509fd753a402f48fad4a8b0e5d34db9415f31f1.
+        Original DSMZ PDF recipe chain visually cross-checked: 129. Secondary ontology
+        mappings and parent/variant relationships were preserved, not validated by
+        this amount evidence.'
+  preparation_notes: Boil 200 g scrubbed and sliced potatoes in 1000 ml water for
+    1 hour. Pass through fine sieve. Avoid new potatoes.
+evidence:
+- reference: https://mediadive.dsmz.de/rest/medium/129
+  supports: SUPPORT
+  snippet: |-
+    {
+                            "recipe_order": 1,
+                            "solution": "Potato infusion",
+                            "solution_id": 227,
+                            "attribute": "",
+                            "amount": 1000,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+  explanation: |-
+    solutions[0].concentration (add), locator=$.data.solutions[0].recipe[0]: Explicit 1000 ml / 1000 ml per L = 1 L per receiving batch. The exact solution_id establishes this stock boundary; no final-volume dilution or dose from another medium is inferred. solutions[0].preparation_notes (correct_stage), locator=$.data.solutions[1].steps: Move the exact texts from preparation_steps[1:2] into this stock's preparation stage. The receiving recipe's own remaining steps are unchanged; no new procedure is inferred. Additional exact excerpt: [
+                        {
+                            "step": "Boil 200 g scrubbed and sliced potatoes in 1000 ml water for 1 hour. Pass through fine sieve. Avoid new potatoes."
+                        }
+                    ] Source retrieved 2026-10-07T10:42:36.852628+00:00; response SHA256=5d1f36a91fce216d63d1d3447509fd753a402f48fad4a8b0e5d34db9415f31f1. Original DSMZ PDF recipe chain visually cross-checked: 129. Secondary ontology mappings and parent/variant relationships were preserved, not validated by this amount evidence.
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/129
+  title: 'MediaDive medium 129: POTATO DEXTROSE AGAR'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; source_organization=DSMZ;
+    accessed_on=2026-10-07; response_sha256=5d1f36a91fce216d63d1d3447509fd753a402f48fad4a8b0e5d34db9415f31f1;
+    individual authors and publication year not established. PDF copyright is not
+    a publication date.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium129.pdf
+  title: 'DSMZ medium 129: official recipe'
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    source_organization=DSMZ; accessed_on=2026-10-07; response_sha256=0cc96a482ddf12da286edde02e76d510b4d92ff9e9e42eb3133a6f440b442fff;
+    individual authors and publication year not established. PDF copyright is not
+    a publication date.

@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-07",
+  "runtime": "isolated Python 3.11; not maintained Python 3.13/CI",
+  "apply": {"changed": 1, "already_applied": 0, "scoped_claims": 8, "new_evidence_entries": 6},
+  "verify": {"changed": 0, "already_applied": 1, "scoped_claims": 8, "new_evidence_entries": 6},
+  "rerun": {"changed": 0, "already_applied": 1},
+  "baseline_open_schema": {"command": "just validate-schema data/normalized_yaml/bacterial/bacillus_pasteurii_medium.yaml", "exit_code": 0},
+  "baseline_strict": {"command": "just validate-strict data/normalized_yaml/bacterial/bacillus_pasteurii_medium.yaml", "exit_code": 0, "files": 1, "errors": 0},
+  "post_open_schema": {"command": "just validate-schema data/normalized_yaml/bacterial/bacillus_pasteurii_medium.yaml", "exit_code": 0},
+  "post_strict": {"command": "just validate-strict", "exit_code": 0, "files": 15910, "errors": 0},
+  "ids": {"command": "just assign-ids-check", "exit_code": 0, "files": 15910, "highest_id": "CultureMech:015915"},
+  "regressions": {
+    "exit_code": 0,
+    "passed": 283,
+    "command": "python -m pytest -o addopts='' tests/test_dsmz2_stock_boundary.py tests/test_medium_concentration_review.py tests/test_medium_concentration_batch.py tests/test_solution_concentration_review.py tests/test_solution_concentration_batch.py tests/test_mediadive_stock_concentration_evidence.py tests/test_jcm_concentration_evidence.py tests/test_jcm_m1308_stock_evidence.py tests/test_dsmz1399_stock_boundary.py tests/test_concentration_review_reports.py tests/test_concentration_plausibility.py tests/test_record_io.py tests/test_merger.py tests/test_merge_yaml_freshness.py -q"
+  },
+  "medium_batch_readback": {"exit_code": 0, "checked_record_hashes": 500, "verified_new_snippets": 907, "superseded_record_hashes": 1, "followup_plan": "plan.json"},
+  "actual_merge_group": {"exit_code": 0, "all_checked_fields_retained": true, "snapshot": "merge-retention.json"},
+  "prior_medium_batch_merge_retention": {"exit_code": 1, "checked_records": 160, "accepted_claims": 907, "retained_claims": 230, "records_with_evidence_loss": 119, "records_with_missing_reference": 112, "snapshot": "../20261007-mediadive-media-0000-0500/merge-retention-after-dsmz2.json"},
+  "lint": {"ruff_exit_code": 0, "black_check_exit_code": 0, "files": 7},
+  "git_diff_check": {"exit_code": 0},
+  "verify_merges": {"command": "just verify-merges", "exit_code": 1, "name_conflicts": 1247, "fingerprint_issues": 3286},
+  "merge_freshness": {"command": "just audit-merge-freshness --json", "exit_code": 1, "tracked_total": 6320, "fresh_total": 6462, "only_in_tracked": 3723, "only_in_fresh": 3865, "changed": 1487, "unchanged": 1110},
+  "products": {"command": "just validate-products", "exit_code": 2, "unavailable": "oaklib could not be loaded"},
+  "references": {"command": "just validate-references data/normalized_yaml/bacterial/bacillus_pasteurii_medium.yaml", "exit_code": 2, "unavailable": "linkml-reference-validator executable could not be spawned"},
+  "independent_diff": "../20261007-diff-audit-after-dsmz2.json",
+  "coverage": "../20261007-followup-coverage-after-dsmz2.json"
+}

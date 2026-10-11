@@ -6,8 +6,8 @@ term:
 composition:
 - preferred_term: n-Butyric acid
   concentration:
-    value: '290.0'
-    unit: PERCENT_V_V
+    value: '0.0058'
+    unit: L
   term:
     id: mediadive.compound:376
     label: n-Butyric acid
@@ -16,6 +16,40 @@ composition:
     label: butyric acid
     confidence: 1.0
     match_type: exact_match
+  notes: Exact stock batch input 5.8 ml / 1000 ml per L = 0.0058 L. Replaces the unsupported
+    percent assertion with a batch dose, not a final volume fraction or receiving-medium
+    concentration. No density or final-volume assumption.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/6552
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "n-Butyric acid",
+                      "compound_id": 376,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5.8,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'composition[0].concentration: Exact stock batch input 5.8 ml / 1000
+      ml per L = 0.0058 L. Replaces the unsupported percent assertion with a batch
+      dose, not a final volume fraction or receiving-medium concentration. No density
+      or final-volume assumption. Locator=[''data'', ''recipe'', 0]; accessed=2026-10-09T11:32:27.282134+00:00;
+      source SHA256=16e43ae978af63fcb268a259960d5ddf66fc9643929ee8ccf33952b0a6c0392e.'
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf
+    supports: SUPPORT
+    snippet: n-Butyric acid                                                     5.80        ml
+    explanation: 'composition[0].concentration: Exact stock batch input 5.8 ml / 1000
+      ml per L = 0.0058 L. Replaces the unsupported percent assertion with a batch
+      dose, not a final volume fraction or receiving-medium concentration. No density
+      or final-volume assumption. Locator=page 1, Fatty acid mixture table; accessed=2026-10-09T11:32:24.475381+00:00;
+      source SHA256=cc4ffe328060eadf4a992f8024f1beb6b1f6238f7d836c7552783b0f9b29fdca.'
 - preferred_term: iso-Butyric acid
   concentration:
     value: '275.5'
@@ -28,10 +62,35 @@ composition:
     label: isobutyric acid
     confidence: 1.0
     match_type: exact_match
+  notes: Retain source-reported g_l=275.5 within this specific stock preparation.
+    This is not a universal working dose or a concentration in a receiving medium;
+    no new mass-from-liquid conversion is inferred.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/6552
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "iso-Butyric acid",
+                      "compound_id": 377,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5.8,
+                      "unit": "ml",
+                      "g_l": 275.5,
+                      "mmol_l": 3126.77,
+                      "optional": 0
+                  }
+    explanation: 'composition[1].concentration: Retain source-reported g_l=275.5 within
+      this specific stock preparation. This is not a universal working dose or a concentration
+      in a receiving medium; no new mass-from-liquid conversion is inferred. Locator=[''data'',
+      ''recipe'', 1]; accessed=2026-10-09T11:32:27.282134+00:00; source SHA256=16e43ae978af63fcb268a259960d5ddf66fc9643929ee8ccf33952b0a6c0392e.'
 - preferred_term: DL-2-Methylbutyric acid
   concentration:
-    value: '140.0'
-    unit: PERCENT_V_V
+    value: '0.0028'
+    unit: L
   term:
     id: mediadive.compound:223
     label: DL-2-Methylbutyric acid
@@ -40,6 +99,40 @@ composition:
     label: 2-methylbutyric acid
     confidence: 0.9
     match_type: manual_curated
+  notes: Exact stock batch input 2.8 ml / 1000 ml per L = 0.0028 L. Replaces the unsupported
+    percent assertion with a batch dose, not a final volume fraction or receiving-medium
+    concentration. No density or final-volume assumption.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/6552
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "DL-2-Methylbutyric acid",
+                      "compound_id": 223,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2.8,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'composition[2].concentration: Exact stock batch input 2.8 ml / 1000
+      ml per L = 0.0028 L. Replaces the unsupported percent assertion with a batch
+      dose, not a final volume fraction or receiving-medium concentration. No density
+      or final-volume assumption. Locator=[''data'', ''recipe'', 2]; accessed=2026-10-09T11:32:27.282134+00:00;
+      source SHA256=16e43ae978af63fcb268a259960d5ddf66fc9643929ee8ccf33952b0a6c0392e.'
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf
+    supports: SUPPORT
+    snippet: DL-2-Methylbutyric acid                                            2.80        ml
+    explanation: 'composition[2].concentration: Exact stock batch input 2.8 ml / 1000
+      ml per L = 0.0028 L. Replaces the unsupported percent assertion with a batch
+      dose, not a final volume fraction or receiving-medium concentration. No density
+      or final-volume assumption. Locator=page 1, Fatty acid mixture table; accessed=2026-10-09T11:32:24.475381+00:00;
+      source SHA256=cc4ffe328060eadf4a992f8024f1beb6b1f6238f7d836c7552783b0f9b29fdca.'
 - preferred_term: n-Valeric acid
   concentration:
     value: '131.46'
@@ -52,6 +145,32 @@ composition:
     label: valeric acid
     confidence: 1.0
     match_type: exact_match
+  notes: Retain source-reported g_l=131.46 within this specific stock preparation.
+    This is not a universal working dose or a concentration in a receiving medium;
+    no new mass-from-liquid conversion is inferred.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/6552
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 5,
+                      "compound": "n-Valeric acid",
+                      "compound_id": 288,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2.8,
+                      "unit": "ml",
+                      "g_l": 131.46,
+                      "mmol_l": 1287.18,
+                      "optional": 0
+                  }
+    explanation: 'composition[3].concentration: Retain source-reported g_l=131.46
+      within this specific stock preparation. This is not a universal working dose
+      or a concentration in a receiving medium; no new mass-from-liquid conversion
+      is inferred. Locator=[''data'', ''recipe'', 3]; accessed=2026-10-09T11:32:27.282134+00:00;
+      source SHA256=16e43ae978af63fcb268a259960d5ddf66fc9643929ee8ccf33952b0a6c0392e.'
 - preferred_term: iso-Valeric acid
   concentration:
     value: '130.34'
@@ -64,6 +183,32 @@ composition:
     label: isovaleric acid
     confidence: 1.0
     match_type: exact_match
+  notes: Retain source-reported g_l=130.34 within this specific stock preparation.
+    This is not a universal working dose or a concentration in a receiving medium;
+    no new mass-from-liquid conversion is inferred.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/6552
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 6,
+                      "compound": "iso-Valeric acid",
+                      "compound_id": 378,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2.8,
+                      "unit": "ml",
+                      "g_l": 130.34,
+                      "mmol_l": 1276.22,
+                      "optional": 0
+                  }
+    explanation: 'composition[4].concentration: Retain source-reported g_l=130.34
+      within this specific stock preparation. This is not a universal working dose
+      or a concentration in a receiving medium; no new mass-from-liquid conversion
+      is inferred. Locator=[''data'', ''recipe'', 4]; accessed=2026-10-09T11:32:27.282134+00:00;
+      source SHA256=16e43ae978af63fcb268a259960d5ddf66fc9643929ee8ccf33952b0a6c0392e.'
 preparation_notes: 'Store fatty acid mixture at -20°C.
 
 
@@ -96,11 +241,137 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
-ingredients:
-- preferred_term: See source for composition
-  concentration:
-    value: variable
-    unit: VARIABLE
-data_quality_flags:
-- incomplete_composition
+- timestamp: '2026-10-09T17:38:33.880426+00:00'
+  curator: codex
+  action: RESTORED_MEDIUM323_SOURCE_SPECIFIC_INGREDIENTS
+  notes: 'Source-specific ingredient quantities, stock stages, identities and preparation
+    were reviewed against pinned official captures. Each changed formulation claim
+    has a persistent source URL and exact evidence snippet. Earlier evidence, IDs
+    and history are preserved. The source-linked medium relationship is uncertain,
+    not an exact duplicate or proven direction of derivation. Remaining limitations: '
+  source: https://mediadive.dsmz.de/rest/solution/6552
+  changes: '{"field_changes": [{"field": "composition[0].concentration.unit", "old":
+    "PERCENT_V_V", "new": "L"}, {"field": "composition[0].concentration.value", "old":
+    "290.0", "new": "0.0058"}, {"field": "composition[0].notes", "old": null, "new":
+    "Exact stock batch input 5.8 ml / 1000 ml per L = 0.0058 L. Replaces the unsupported
+    percent assertion with a batch dose, not a final volume fraction or receiving-medium
+    concentration. No density or final-volume assumption."}, {"field": "composition[1].notes",
+    "old": null, "new": "Retain source-reported g_l=275.5 within this specific stock
+    preparation. This is not a universal working dose or a concentration in a receiving
+    medium; no new mass-from-liquid conversion is inferred."}, {"field": "composition[2].concentration.unit",
+    "old": "PERCENT_V_V", "new": "L"}, {"field": "composition[2].concentration.value",
+    "old": "140.0", "new": "0.0028"}, {"field": "composition[2].notes", "old": null,
+    "new": "Exact stock batch input 2.8 ml / 1000 ml per L = 0.0028 L. Replaces the
+    unsupported percent assertion with a batch dose, not a final volume fraction or
+    receiving-medium concentration. No density or final-volume assumption."}, {"field":
+    "composition[3].notes", "old": null, "new": "Retain source-reported g_l=131.46
+    within this specific stock preparation. This is not a universal working dose or
+    a concentration in a receiving medium; no new mass-from-liquid conversion is inferred."},
+    {"field": "composition[4].notes", "old": null, "new": "Retain source-reported
+    g_l=130.34 within this specific stock preparation. This is not a universal working
+    dose or a concentration in a receiving medium; no new mass-from-liquid conversion
+    is inferred."}, {"field": "data_quality_flags", "old": ["incomplete_composition"],
+    "new": null}, {"field": "ingredients", "old": [{"preferred_term": "See source
+    for composition", "concentration": {"value": "variable", "unit": "VARIABLE"}}],
+    "new": null}], "evidence_and_bibliography_changes": ["composition[0].evidence",
+    "composition[1].evidence", "composition[2].evidence", "composition[3].evidence",
+    "composition[4].evidence", "evidence", "references"], "full_semantic_delta_sha256":
+    "c1e0be6f25d874bce40b07a4734c1783bf90fb3110cba9d23607df4a60281c68", "source_capture_sha256":
+    "8c802303cf38982bebc07777a71a7d2dab5d4c01d44c0cc1d1c8136d866a39a4", "old_evidence_preserved":
+    true}'
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/6552
+  title: Fatty acid mixture
+  notes: source_type=dataset; discovery_mode=cross_reference; accessed_on=2026-10-09;
+    capture_sha256=16e43ae978af63fcb268a259960d5ddf66fc9643929ee8ccf33952b0a6c0392e.
+    Individual authors and publication year unknown; copyright/access years are not
+    publication years.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf
+  title: '323: TREPONEMA SACCHAROPHILUM MEDIUM'
+  notes: source_type=culture_collection_page; discovery_mode=cross_reference; accessed_on=2026-10-09;
+    capture_sha256=cc4ffe328060eadf4a992f8024f1beb6b1f6238f7d836c7552783b0f9b29fdca.
+    Individual authors and publication year unknown; copyright/access years are not
+    publication years.
+evidence:
+- reference: https://mediadive.dsmz.de/rest/solution/6552
+  supports: SUPPORT
+  snippet: |-
+    [
+                {
+                    "recipe_order": 2,
+                    "compound": "n-Butyric acid",
+                    "compound_id": 376,
+                    "solution": null,
+                    "solution_id": null,
+                    "condition": null,
+                    "attribute": null,
+                    "amount": 5.8,
+                    "unit": "ml",
+                    "g_l": null,
+                    "mmol_l": null,
+                    "optional": 0
+                },
+                {
+                    "recipe_order": 3,
+                    "compound": "iso-Butyric acid",
+                    "compound_id": 377,
+                    "solution": null,
+                    "solution_id": null,
+                    "condition": null,
+                    "attribute": null,
+                    "amount": 5.8,
+                    "unit": "ml",
+                    "g_l": 275.5,
+                    "mmol_l": 3126.77,
+                    "optional": 0
+                },
+                {
+                    "recipe_order": 4,
+                    "compound": "DL-2-Methylbutyric acid",
+                    "compound_id": 223,
+                    "solution": null,
+                    "solution_id": null,
+                    "condition": null,
+                    "attribute": null,
+                    "amount": 2.8,
+                    "unit": "ml",
+                    "g_l": null,
+                    "mmol_l": null,
+                    "optional": 0
+                },
+                {
+                    "recipe_order": 5,
+                    "compound": "n-Valeric acid",
+                    "compound_id": 288,
+                    "solution": null,
+                    "solution_id": null,
+                    "condition": null,
+                    "attribute": null,
+                    "amount": 2.8,
+                    "unit": "ml",
+                    "g_l": 131.46,
+                    "mmol_l": 1287.18,
+                    "optional": 0
+                },
+                {
+                    "recipe_order": 6,
+                    "compound": "iso-Valeric acid",
+                    "compound_id": 378,
+                    "solution": null,
+                    "solution_id": null,
+                    "condition": null,
+                    "attribute": null,
+                    "amount": 2.8,
+                    "unit": "ml",
+                    "g_l": 130.34,
+                    "mmol_l": 1276.22,
+                    "optional": 0
+                }
+            ]
+  explanation: 'ingredients; data_quality_flags: The exact source supplies a concrete
+    composition. Remove this importer-created placeholder, not any source ingredient.
+    For S599 the missing solution6552 addition must also be restored before removing
+    the incomplete-composition flag. Root formulation evidence and independent full-node
+    accounting are required. Locator=[''data'', ''recipe'']; accessed=2026-10-09T11:32:27.282134+00:00;
+    source SHA256=16e43ae978af63fcb268a259960d5ddf66fc9643929ee8ccf33952b0a6c0392e.'

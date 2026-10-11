@@ -23,6 +23,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J1094
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 1,
+                              "compound": "K2HPO4",
+                              "compound_id": 10,
+                              "amount": 1,
+                              "unit": "g",
+                              "g_l": 1,
+                              "mmol_l": 5.74132,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[0].concentration (K2HPO4)
+      in MediaDive medium J1094; locator=$.data.solutions[0].recipe[0]. Provider explicitly
+      reports g_l=1; check: 1 g * 1 g/g / (1000 ml / 1000 ml per L) = 1 g/L. This
+      supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T15:19:14.044359+00:00;
+      response SHA256=ab6195a6ef8e4951a40ea0e7ce35f078d548502b47a0988c0fb7dc399c31fb53.'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -33,10 +56,55 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J1094
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 2,
+                              "compound": "MgSO4 x 7 H2O",
+                              "compound_id": 8,
+                              "amount": 0.5,
+                              "unit": "g",
+                              "g_l": 0.5,
+                              "mmol_l": 2.02859,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[1].concentration (MgSO4 x
+      7 H2O) in MediaDive medium J1094; locator=$.data.solutions[0].recipe[1]. Provider
+      explicitly reports g_l=0.5; check: 0.5 g * 1 g/g / (1000 ml / 1000 ml per L)
+      = 0.5 g/L. This supports the provider-declared main-recipe concentration, not
+      an independently measured final volume, a stock composition, or a downstream
+      assay dilution. Water alone does not establish final volume. Exact source ingredient
+      labels/forms are matched; secondary ontology mappings are not validated by this
+      evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved
+      2026-10-07T15:19:14.044359+00:00; response SHA256=ab6195a6ef8e4951a40ea0e7ce35f078d548502b47a0988c0fb7dc399c31fb53.'
 - preferred_term: Yeast extract
   concentration:
     value: '10'
     unit: G_PER_L
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J1094
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 3,
+                              "compound": "Yeast extract",
+                              "compound_id": 16,
+                              "amount": 10,
+                              "unit": "g",
+                              "g_l": 10,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[2].concentration (Yeast extract)
+      in MediaDive medium J1094; locator=$.data.solutions[0].recipe[2]. Provider explicitly
+      reports g_l=10; check: 10 g * 1 g/g / (1000 ml / 1000 ml per L) = 10 g/L. This
+      supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T15:19:14.044359+00:00;
+      response SHA256=ab6195a6ef8e4951a40ea0e7ce35f078d548502b47a0988c0fb7dc399c31fb53.'
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -47,6 +115,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J1094
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 4,
+                              "compound": "Agar",
+                              "compound_id": 3,
+                              "amount": 20,
+                              "unit": "g",
+                              "g_l": 20,
+                              "mmol_l": 59.4654,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[3].concentration (Agar) in
+      MediaDive medium J1094; locator=$.data.solutions[0].recipe[3]. Provider explicitly
+      reports g_l=20; check: 20 g * 1 g/g / (1000 ml / 1000 ml per L) = 20 g/L. This
+      supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T15:19:14.044359+00:00;
+      response SHA256=ab6195a6ef8e4951a40ea0e7ce35f078d548502b47a0988c0fb7dc399c31fb53.'
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -81,3 +172,26 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-10-07T15:40:13.763859+00:00'
+  curator: codex
+  action: CURATED_MEDIUM_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Exact medium/source membership, ingredient inventory/forms, physical-state
+    conditions, literal snippets, and arithmetic checked. Stock boundaries, source-only
+    rows, preparation context, and variants remain explicit follow-up tasks; secondary
+    chemical mappings unchanged.
+  source: https://mediadive.dsmz.de/rest/medium/J1094
+  changes: 'ingredients[0].concentration: {"unit": "G_PER_L", "value": "1"} -> {"unit":
+    "G_PER_L", "value": "1"} (evidence_only); ingredients[1].concentration: {"unit":
+    "G_PER_L", "value": "0.5"} -> {"unit": "G_PER_L", "value": "0.5"} (evidence_only);
+    ingredients[2].concentration: {"unit": "G_PER_L", "value": "10"} -> {"unit": "G_PER_L",
+    "value": "10"} (evidence_only); ingredients[3].concentration: {"unit": "G_PER_L",
+    "value": "20"} -> {"unit": "G_PER_L", "value": "20"} (evidence_only)'
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/J1094
+  title: 'MediaDive medium J1094: VAN NIEL''S YEAST AGAR'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; source_organization=DSMZ;
+    accessed_on=2026-10-07; locator=$.data.solutions[0]; response_sha256=ab6195a6ef8e4951a40ea0e7ce35f078d548502b47a0988c0fb7dc399c31fb53;
+    original_recipe=https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1094; individual
+    authors and publication year not supplied. Provider-declared main-recipe amounts
+    only. Original recipe collection=JCM; GRMD accession=1094; DSMZ is the MediaDive
+    dataset provider, not the original recipe collection.

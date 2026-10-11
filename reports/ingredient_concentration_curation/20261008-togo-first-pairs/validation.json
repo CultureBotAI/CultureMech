@@ -1,0 +1,246 @@
+{
+  "terminal": true,
+  "phase": "post",
+  "runtime": "Partial locked Python 3.13; not full CI",
+  "checks": [
+    {
+      "name": "readback",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/repair_togo_first_pair_concentrations.py",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/togo-first-pairs-post-readback.log",
+      "artifact": null
+    },
+    {
+      "name": "noop",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/repair_togo_first_pair_concentrations.py",
+        "--apply"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/togo-first-pairs-post-noop.log",
+      "artifact": null
+    },
+    {
+      "name": "independent-diff",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "reports/ingredient_concentration_curation/20261008-togo-first-pairs/audit.py",
+        "--applied",
+        "--out",
+        "reports/ingredient_concentration_curation/20261008-togo-first-pairs/diff-audit.json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/togo-first-pairs-post-independent-diff.log",
+      "artifact": null
+    },
+    {
+      "name": "schema",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/linkml-validate",
+        "--schema",
+        "src/culturemech/schema/culturemech.yaml",
+        "--target-class",
+        "MediaRecipe",
+        "data/normalized_yaml/archaea/TOGO_M1001_Neutral_Oligotrophic_Haloarchaeal_Medium_NO.3.yaml",
+        "data/normalized_yaml/archaea/TOGO_M1002_Neutral_Oligotrophic_Haloarchaeal_Medium_NO.3.yaml",
+        "data/normalized_yaml/archaea/TOGO_M1023_Halorhabdus_Segorensis_Medium.yaml",
+        "data/normalized_yaml/archaea/TOGO_M1024_Halorhabdus_Segorensis_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/togo-first-pairs-post-schema.log",
+      "artifact": null
+    },
+    {
+      "name": "strict",
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/togo-first-pairs-post-strict.log",
+      "artifact": null
+    },
+    {
+      "name": "tests",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_togo_first_pair_concentrations.py",
+        "tests/test_record_io.py",
+        "tests/test_concentration_plausibility.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/togo-first-pairs-post-tests.log",
+      "artifact": null
+    },
+    {
+      "name": "ids",
+      "command": [
+        "just",
+        "assign-ids-check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/togo-first-pairs-post-ids.log",
+      "artifact": null
+    },
+    {
+      "name": "variant-links",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_media_variant_links.py",
+        "--reports-dir",
+        "reports/ingredient_concentration_curation/20261008-togo-first-pairs/variant-links"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/togo-first-pairs-post-variant-links.log",
+      "artifact": null
+    },
+    {
+      "name": "cumulative-diff",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/togo-first-pairs-post-cumulative-diff.log",
+      "artifact": "reports/ingredient_concentration_curation/20261008-diff-audit-after-togo-pairs.json"
+    },
+    {
+      "name": "coverage",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "reports/ingredient_concentration_curation/summarize_followup_coverage.py",
+        "--out",
+        "reports/ingredient_concentration_curation/20261008-followup-coverage-after-togo-pairs.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz2-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-medium-stock-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz13-stock-only/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-extraction-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-komodo12-extraction/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-jcm896-final-volume/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-jcm1105-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-percent-supplements/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-public-direct/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-public-stocks/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-public-input-basis/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-rs-stock-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz111-preparation/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz125-alternatives/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz265-preparations/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz467-469-inputs/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz489-stocks/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-solutions-water-ph7/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-solutions-water-ph-adjustments/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-komodo650-752-762-preparations/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz650-752-762-preparations/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz546-659-670-stocks/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-komodo670-source-versions/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261008-dsmz803-1046-1065-water/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261008-dsmz1157-1164-stocks/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261008-togo-first-pairs/applied-plan.json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/togo-first-pairs-post-coverage.log",
+      "artifact": null
+    },
+    {
+      "name": "retention",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "reports/ingredient_concentration_curation/20261008-togo-first-pairs/retention.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/togo-first-pairs-post-retention.log",
+      "artifact": null
+    },
+    {
+      "name": "fast",
+      "command": [
+        "just",
+        "test-fast"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/togo-first-pairs-post-fast.log",
+      "artifact": null
+    },
+    {
+      "name": "products",
+      "command": [
+        "just",
+        "validate-products"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/togo-first-pairs-post-products.log",
+      "artifact": null
+    },
+    {
+      "name": "verify-merges",
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/togo-first-pairs-post-verify-merges.log",
+      "artifact": null
+    },
+    {
+      "name": "freshness",
+      "command": [
+        "just",
+        "audit-merge-freshness",
+        "--json"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/togo-first-pairs-post-freshness.log",
+      "artifact": "reports/ingredient_concentration_curation/20261008-togo-first-pairs/merge-freshness.json"
+    },
+    {
+      "name": "diff-check",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/togo-first-pairs-post-diff-check.log",
+      "artifact": null
+    }
+  ]
+}

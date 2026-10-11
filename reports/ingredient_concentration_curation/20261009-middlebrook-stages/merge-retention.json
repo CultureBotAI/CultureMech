@@ -1,0 +1,113 @@
+{
+  "terminal": true,
+  "source_sha256": "d0d0451157b8ed78867e41503fd02bc9afa0f80d11758d67a3f60e9daee6b138",
+  "input_records": 15910,
+  "output_groups": 10777,
+  "targets": [
+    {
+      "path": "data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/madctw_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/madctw_medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/middle_brook_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/middle_brook_medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/middlebrook_7h10_plates_difco_supplemented_with_middlebrook_albumin_dextrose_catalase_and_tween_80.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/middlebrook_7h10_plates_difco_supplemented_with_middlebrook_albumin_dextrose_catalase_and_tween_80.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/middlebrook_7h10_with_oadc.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/middlebrook_7h10_with_oadc.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/middlebrook_7h11_agar.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/middlebrook_7h11_agar.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/middlebrook_7h11_agar_difco.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/middlebrook_7h11_agar_difco.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/middlebrook_7h11_solid_medium_supplemented_with_10_albumin_dextrose_and_catalase.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/middlebrook_7h11_solid_medium_supplemented_with_10_albumin_dextrose_and_catalase.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/middlebrook_7h9_broth_supplemented_with_oleic_acid_albumin_dextrose_catalase_difco.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/middlebrook_7h9_broth_supplemented_with_oleic_acid_albumin_dextrose_catalase_difco.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/middlebrook_7h9_broth_w_adc_enrichment.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/middlebrook_7h9_broth_w_adc_enrichment.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/middlebrook_7h9_difco_liquid_medium_supplemented_with_middlebrook_albumin_dextrose_catalase_and_tween_80.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/middlebrook_7h9_difco_liquid_medium_supplemented_with_middlebrook_albumin_dextrose_catalase_and_tween_80.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/middlebrook_7h9_liquid_medium_supplemented_with_10_albumin_dextrose_and_catalase.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/middlebrook_7h9_liquid_medium_supplemented_with_10_albumin_dextrose_and_catalase.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/supplemented_middlebrook.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/supplemented_middlebrook.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    }
+  ],
+  "derived_yaml_written": false
+}

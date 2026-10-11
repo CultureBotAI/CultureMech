@@ -1,0 +1,26 @@
+{
+  "terminal": true,
+  "source_sha256": "cc01a6b89ff98426f13409c5d4a6114691a9a12094c0230b6ed7057aae17f842",
+  "input_records": 15910,
+  "output_groups": 10777,
+  "targets": [
+    {
+      "path": "data/normalized_yaml/bacterial/JCM_J201_BSK_MEDIUM.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/JCM_J201_BSK_MEDIUM.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/JCM_J220_SC_MEDIUM.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/JCM_J220_SC_MEDIUM.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    }
+  ],
+  "derived_yaml_written": false,
+  "scope": "Full corpus routing; only the two repaired outputs recertified."
+}

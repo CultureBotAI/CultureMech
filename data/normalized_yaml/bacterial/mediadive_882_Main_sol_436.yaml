@@ -11,6 +11,32 @@ composition:
   term:
     id: mediadive.compound:71
     label: Tryptone
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/882
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "Tryptone",
+                      "compound_id": 71,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "g",
+                      "g_l": 5,
+                      "mmol_l": 70.3433,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Tryptone)
+      in MediaDive solution 882; locator=$.data.recipe[0] (compound_id=71). Provider
+      explicitly reports g_l=5. Arithmetic check: 5 g * 1 g/g / (1000 ml / 1000 ml
+      per L) = 5 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T08:47:26.997033+00:00; response SHA256=80c28f54488ef57fe90f78e80f82c8fd468e8fed7308c34291eccdf13756fb97.'
 - preferred_term: Yeast extract
   concentration:
     value: '2'
@@ -18,6 +44,32 @@ composition:
   term:
     id: mediadive.compound:16
     label: Yeast extract
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/882
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Yeast extract",
+                      "compound_id": 16,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "g",
+                      "g_l": 2,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Yeast extract)
+      in MediaDive solution 882; locator=$.data.recipe[1] (compound_id=16). Provider
+      explicitly reports g_l=2. Arithmetic check: 2 g * 1 g/g / (1000 ml / 1000 ml
+      per L) = 2 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T08:47:26.997033+00:00; response SHA256=80c28f54488ef57fe90f78e80f82c8fd468e8fed7308c34291eccdf13756fb97.'
 - preferred_term: Glucose
   concentration:
     value: '3'
@@ -30,6 +82,32 @@ composition:
     label: glucose
     confidence: 0.9
     match_type: manual_curated
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/882
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "Glucose",
+                      "compound_id": 5,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 3,
+                      "unit": "g",
+                      "g_l": 3,
+                      "mmol_l": 16.6519,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[2].concentration (Glucose)
+      in MediaDive solution 882; locator=$.data.recipe[2] (compound_id=5). Provider
+      explicitly reports g_l=3. Arithmetic check: 3 g * 1 g/g / (1000 ml / 1000 ml
+      per L) = 3 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T08:47:26.997033+00:00; response SHA256=80c28f54488ef57fe90f78e80f82c8fd468e8fed7308c34291eccdf13756fb97.'
 - preferred_term: Cellobiose
   concentration:
     value: '2'
@@ -42,6 +120,32 @@ composition:
     label: cellobiose
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/882
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "Cellobiose",
+                      "compound_id": 214,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "g",
+                      "g_l": 2,
+                      "mmol_l": 5.84283,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[3].concentration (Cellobiose)
+      in MediaDive solution 882; locator=$.data.recipe[3] (compound_id=214). Provider
+      explicitly reports g_l=2. Arithmetic check: 2 g * 1 g/g / (1000 ml / 1000 ml
+      per L) = 2 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T08:47:26.997033+00:00; response SHA256=80c28f54488ef57fe90f78e80f82c8fd468e8fed7308c34291eccdf13756fb97.'
 - preferred_term: Resazurin
   concentration:
     value: '0.001'
@@ -54,10 +158,37 @@ composition:
     label: Resazurin
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/882
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 7,
+                      "compound": "Resazurin",
+                      "compound_id": 25,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "mg",
+                      "g_l": 0.001,
+                      "mmol_l": 0.00436319,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[4].concentration (Resazurin)
+      in MediaDive solution 882; locator=$.data.recipe[6] (compound_id=25). Provider
+      explicitly reports g_l=0.001. Arithmetic check: 1 mg * 0.001 g/mg / (1000 ml
+      / 1000 ml per L) = 0.001 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T08:47:26.997033+00:00;
+      response SHA256=80c28f54488ef57fe90f78e80f82c8fd468e8fed7308c34291eccdf13756fb97.'
 - preferred_term: Distilled water
   concentration:
-    value: '920'
-    unit: PERCENT_V_V
+    value: '0.92'
+    unit: L
   term:
     id: mediadive.compound:4
     label: Distilled water
@@ -66,6 +197,853 @@ composition:
     label: water
     confidence: 0.7
     match_type: corpus_consensus
+  notes: 'Source input only; not final volume or percentage Source input: 920 ml at
+    data.recipe[7].'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/882
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 8,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 920,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[5].preferred_term: Source input only; not final volume or percentage Source input: 920 ml at data.recipe[7]. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[7]; accessed=2026-10-09T06:57:15.964762+00:00; capture SHA256=80c28f54488ef57fe90f78e80f82c8fd468e8fed7308c34291eccdf13756fb97.
+
+      Additional exact excerpt: {
+                      "recipe_order": 8,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 920,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[5].concentration: Source input only; not final volume or percentage Source input: 920 ml at data.recipe[7]. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[7]; accessed=2026-10-09T06:57:15.964762+00:00; capture SHA256=80c28f54488ef57fe90f78e80f82c8fd468e8fed7308c34291eccdf13756fb97.
+
+      Additional exact excerpt: {
+                      "recipe_order": 8,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 920,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[5].notes: Source input only; not final volume or percentage Source input: 920 ml at data.recipe[7]. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[7]; accessed=2026-10-09T06:57:15.964762+00:00; capture SHA256=80c28f54488ef57fe90f78e80f82c8fd468e8fed7308c34291eccdf13756fb97.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "Tryptone",
+                      "compound_id": 71,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "g",
+                      "g_l": 5,
+                      "mmol_l": 70.3433,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "Yeast extract",
+                      "compound_id": 16,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "g",
+                      "g_l": 2,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 3,
+                      "compound": "Glucose",
+                      "compound_id": 5,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 3,
+                      "unit": "g",
+                      "g_l": 3,
+                      "mmol_l": 16.6519,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 4,
+                      "compound": "Cellobiose",
+                      "compound_id": 214,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "g",
+                      "g_l": 2,
+                      "mmol_l": 5.84283,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 5,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Mineral solution 1",
+                      "solution_id": 883,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 40,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 6,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Mineral solution 2",
+                      "solution_id": 884,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 40,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 7,
+                      "compound": "Resazurin",
+                      "compound_id": 25,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "mg",
+                      "g_l": 0.001,
+                      "mmol_l": 0.00436319,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 8,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 920,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 9,
+                      "compound": "Na2CO3",
+                      "compound_id": 32,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 4,
+                      "unit": "g",
+                      "g_l": 4,
+                      "mmol_l": 37.7401,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 10,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Fatty acid mixture",
+                      "solution_id": 885,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 11,
+                      "compound": "L-Cysteine HCl x H2O",
+                      "compound_id": 770,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 500,
+                      "unit": "mg",
+                      "g_l": 0.5,
+                      "mmol_l": 2.8468,
+                      "optional": 0
+                  }
+              ]
+      ingredients: Every exact recipe row is represented in composition. Remove the false placeholder and only its incomplete-composition flag; unresolved scientific bases remain explicit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe; accessed=2026-10-09T06:57:15.964762+00:00; capture SHA256=80c28f54488ef57fe90f78e80f82c8fd468e8fed7308c34291eccdf13756fb97.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "Tryptone",
+                      "compound_id": 71,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "g",
+                      "g_l": 5,
+                      "mmol_l": 70.3433,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "Yeast extract",
+                      "compound_id": 16,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "g",
+                      "g_l": 2,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 3,
+                      "compound": "Glucose",
+                      "compound_id": 5,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 3,
+                      "unit": "g",
+                      "g_l": 3,
+                      "mmol_l": 16.6519,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 4,
+                      "compound": "Cellobiose",
+                      "compound_id": 214,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "g",
+                      "g_l": 2,
+                      "mmol_l": 5.84283,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 5,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Mineral solution 1",
+                      "solution_id": 883,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 40,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 6,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Mineral solution 2",
+                      "solution_id": 884,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 40,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 7,
+                      "compound": "Resazurin",
+                      "compound_id": 25,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "mg",
+                      "g_l": 0.001,
+                      "mmol_l": 0.00436319,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 8,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 920,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 9,
+                      "compound": "Na2CO3",
+                      "compound_id": 32,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 4,
+                      "unit": "g",
+                      "g_l": 4,
+                      "mmol_l": 37.7401,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 10,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Fatty acid mixture",
+                      "solution_id": 885,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 11,
+                      "compound": "L-Cysteine HCl x H2O",
+                      "compound_id": 770,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 500,
+                      "unit": "mg",
+                      "g_l": 0.5,
+                      "mmol_l": 2.8468,
+                      "optional": 0
+                  }
+              ]
+      data_quality_flags: Every exact recipe row is represented in composition. Remove the false placeholder and only its incomplete-composition flag; unresolved scientific bases remain explicit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe; accessed=2026-10-09T06:57:15.964762+00:00; capture SHA256=80c28f54488ef57fe90f78e80f82c8fd468e8fed7308c34291eccdf13756fb97.
+
+      Additional exact excerpt: "Main sol. 436"
+      references[0].title: Use the actual source title, with accession and discovery metadata in notes. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.name; accessed=2026-10-09T06:57:15.964762+00:00; capture SHA256=80c28f54488ef57fe90f78e80f82c8fd468e8fed7308c34291eccdf13756fb97.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "Tryptone",
+                      "compound_id": 71,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "g",
+                      "g_l": 5,
+                      "mmol_l": 70.3433,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "Yeast extract",
+                      "compound_id": 16,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "g",
+                      "g_l": 2,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 3,
+                      "compound": "Glucose",
+                      "compound_id": 5,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 3,
+                      "unit": "g",
+                      "g_l": 3,
+                      "mmol_l": 16.6519,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 4,
+                      "compound": "Cellobiose",
+                      "compound_id": 214,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "g",
+                      "g_l": 2,
+                      "mmol_l": 5.84283,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 5,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Mineral solution 1",
+                      "solution_id": 883,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 40,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 6,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Mineral solution 2",
+                      "solution_id": 884,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 40,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 7,
+                      "compound": "Resazurin",
+                      "compound_id": 25,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "mg",
+                      "g_l": 0.001,
+                      "mmol_l": 0.00436319,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 8,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 920,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 9,
+                      "compound": "Na2CO3",
+                      "compound_id": 32,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 4,
+                      "unit": "g",
+                      "g_l": 4,
+                      "mmol_l": 37.7401,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 10,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Fatty acid mixture",
+                      "solution_id": 885,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 11,
+                      "compound": "L-Cysteine HCl x H2O",
+                      "compound_id": 770,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 500,
+                      "unit": "mg",
+                      "g_l": 0.5,
+                      "mmol_l": 2.8468,
+                      "optional": 0
+                  }
+              ]
+      notes: Complete source rows determine the reconstructed formulation. Archive the prior flattened nodes, unsupported LB additions and stock links in append-only history. Unrelated annotations are preserved, not recertified. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T06:57:15.964762+00:00; capture SHA256=80c28f54488ef57fe90f78e80f82c8fd468e8fed7308c34291eccdf13756fb97.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "Tryptone",
+                      "compound_id": 71,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "g",
+                      "g_l": 5,
+                      "mmol_l": 70.3433,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "Yeast extract",
+                      "compound_id": 16,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "g",
+                      "g_l": 2,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 3,
+                      "compound": "Glucose",
+                      "compound_id": 5,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 3,
+                      "unit": "g",
+                      "g_l": 3,
+                      "mmol_l": 16.6519,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 4,
+                      "compound": "Cellobiose",
+                      "compound_id": 214,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "g",
+                      "g_l": 2,
+                      "mmol_l": 5.84283,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 5,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Mineral solution 1",
+                      "solution_id": 883,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 40,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 6,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Mineral solution 2",
+                      "solution_id": 884,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 40,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 7,
+                      "compound": "Resazurin",
+                      "compound_id": 25,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "mg",
+                      "g_l": 0.001,
+                      "mmol_l": 0.00436319,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 8,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 920,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 9,
+                      "compound": "Na2CO3",
+                      "compound_id": 32,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 4,
+                      "unit": "g",
+                      "g_l": 4,
+                      "mmol_l": 37.7401,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 10,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Fatty acid mixture",
+                      "solution_id": 885,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 11,
+                      "compound": "L-Cysteine HCl x H2O",
+                      "compound_id": 770,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 500,
+                      "unit": "mg",
+                      "g_l": 0.5,
+                      "mmol_l": 2.8468,
+                      "optional": 0
+                  }
+              ]
+      notes: Complete source rows determine the reconstructed formulation. Archive the prior flattened nodes, unsupported LB additions and stock links in append-only history. Unrelated annotations are preserved, not recertified. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T06:57:15.964762+00:00; capture SHA256=80c28f54488ef57fe90f78e80f82c8fd468e8fed7308c34291eccdf13756fb97.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "Tryptone",
+                      "compound_id": 71,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "g",
+                      "g_l": 5,
+                      "mmol_l": 70.3433,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "Yeast extract",
+                      "compound_id": 16,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "g",
+                      "g_l": 2,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 3,
+                      "compound": "Glucose",
+                      "compound_id": 5,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 3,
+                      "unit": "g",
+                      "g_l": 3,
+                      "mmol_l": 16.6519,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 4,
+                      "compound": "Cellobiose",
+                      "compound_id": 214,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "g",
+                      "g_l": 2,
+                      "mmol_l": 5.84283,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 5,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Mineral solution 1",
+                      "solution_id": 883,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 40,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 6,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Mineral solution 2",
+                      "solution_id": 884,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 40,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 7,
+                      "compound": "Resazurin",
+                      "compound_id": 25,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "mg",
+                      "g_l": 0.001,
+                      "mmol_l": 0.00436319,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 8,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 920,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 9,
+                      "compound": "Na2CO3",
+                      "compound_id": 32,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 4,
+                      "unit": "g",
+                      "g_l": 4,
+                      "mmol_l": 37.7401,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 10,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Fatty acid mixture",
+                      "solution_id": 885,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 11,
+                      "compound": "L-Cysteine HCl x H2O",
+                      "compound_id": 770,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 500,
+                      "unit": "mg",
+                      "g_l": 0.5,
+                      "mmol_l": 2.8468,
+                      "optional": 0
+                  }
+              ]
+      notes: This old amount belongs to an unsupported LB addition, placeholder, or relocated source stage. Archive it without retaining a false concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T06:57:15.964762+00:00; capture SHA256=80c28f54488ef57fe90f78e80f82c8fd468e8fed7308c34291eccdf13756fb97.
 - preferred_term: Na2CO3
   concentration:
     value: '4'
@@ -78,6 +1056,32 @@ composition:
     label: sodium carbonate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/882
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 9,
+                      "compound": "Na2CO3",
+                      "compound_id": 32,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 4,
+                      "unit": "g",
+                      "g_l": 4,
+                      "mmol_l": 37.7401,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[6].concentration (Na2CO3)
+      in MediaDive solution 882; locator=$.data.recipe[8] (compound_id=32). Provider
+      explicitly reports g_l=4. Arithmetic check: 4 g * 1 g/g / (1000 ml / 1000 ml
+      per L) = 4 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T08:47:26.997033+00:00; response SHA256=80c28f54488ef57fe90f78e80f82c8fd468e8fed7308c34291eccdf13756fb97.'
 - preferred_term: L-Cysteine HCl x H2O
   concentration:
     value: '0.5'
@@ -90,6 +1094,264 @@ composition:
     label: L-cysteine hydrochloride hydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/882
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 11,
+                      "compound": "L-Cysteine HCl x H2O",
+                      "compound_id": 770,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 500,
+                      "unit": "mg",
+                      "g_l": 0.5,
+                      "mmol_l": 2.8468,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[7].concentration (L-Cysteine
+      HCl x H2O) in MediaDive solution 882; locator=$.data.recipe[10] (compound_id=770).
+      Provider explicitly reports g_l=0.5. Arithmetic check: 500 mg * 0.001 g/mg /
+      (1000 ml / 1000 ml per L) = 0.500 g/L, consistent with the reported value at
+      its precision. Evidence supports the provider-declared concentration within
+      this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T08:47:26.997033+00:00;
+      response SHA256=80c28f54488ef57fe90f78e80f82c8fd468e8fed7308c34291eccdf13756fb97.'
+- preferred_term: Mineral solution 1
+  concentration:
+    value: '0.04'
+    unit: L
+  notes: 'Source input only; not final volume or percentage Source input: 40 ml at
+    data.recipe[4].'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/882
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 5,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Mineral solution 1",
+                      "solution_id": 883,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 40,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[8].preferred_term: Source input only; not final volume or percentage Source input: 40 ml at data.recipe[4]. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[4]; accessed=2026-10-09T06:57:15.964762+00:00; capture SHA256=80c28f54488ef57fe90f78e80f82c8fd468e8fed7308c34291eccdf13756fb97.
+
+      Additional exact excerpt: {
+                      "recipe_order": 5,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Mineral solution 1",
+                      "solution_id": 883,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 40,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[8].concentration: Source input only; not final volume or percentage Source input: 40 ml at data.recipe[4]. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[4]; accessed=2026-10-09T06:57:15.964762+00:00; capture SHA256=80c28f54488ef57fe90f78e80f82c8fd468e8fed7308c34291eccdf13756fb97.
+
+      Additional exact excerpt: {
+                      "recipe_order": 5,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Mineral solution 1",
+                      "solution_id": 883,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 40,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[8].notes: Source input only; not final volume or percentage Source input: 40 ml at data.recipe[4]. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[4]; accessed=2026-10-09T06:57:15.964762+00:00; capture SHA256=80c28f54488ef57fe90f78e80f82c8fd468e8fed7308c34291eccdf13756fb97.
+
+      Additional exact excerpt: {
+                      "recipe_order": 5,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Mineral solution 1",
+                      "solution_id": 883,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 40,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[8].culturemech_term: The source explicitly names this solution_id. This is a batch input, not a universal stock working concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[4]; accessed=2026-10-09T06:57:15.964762+00:00; capture SHA256=80c28f54488ef57fe90f78e80f82c8fd468e8fed7308c34291eccdf13756fb97.
+  culturemech_term:
+    id: CultureMech:015243
+    label: Mineral solution 1
+- preferred_term: Mineral solution 2
+  concentration:
+    value: '0.04'
+    unit: L
+  notes: 'Source input only; not final volume or percentage Source input: 40 ml at
+    data.recipe[5].'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/882
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 6,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Mineral solution 2",
+                      "solution_id": 884,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 40,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[9].preferred_term: Source input only; not final volume or percentage Source input: 40 ml at data.recipe[5]. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[5]; accessed=2026-10-09T06:57:15.964762+00:00; capture SHA256=80c28f54488ef57fe90f78e80f82c8fd468e8fed7308c34291eccdf13756fb97.
+
+      Additional exact excerpt: {
+                      "recipe_order": 6,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Mineral solution 2",
+                      "solution_id": 884,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 40,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[9].concentration: Source input only; not final volume or percentage Source input: 40 ml at data.recipe[5]. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[5]; accessed=2026-10-09T06:57:15.964762+00:00; capture SHA256=80c28f54488ef57fe90f78e80f82c8fd468e8fed7308c34291eccdf13756fb97.
+
+      Additional exact excerpt: {
+                      "recipe_order": 6,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Mineral solution 2",
+                      "solution_id": 884,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 40,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[9].notes: Source input only; not final volume or percentage Source input: 40 ml at data.recipe[5]. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[5]; accessed=2026-10-09T06:57:15.964762+00:00; capture SHA256=80c28f54488ef57fe90f78e80f82c8fd468e8fed7308c34291eccdf13756fb97.
+
+      Additional exact excerpt: {
+                      "recipe_order": 6,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Mineral solution 2",
+                      "solution_id": 884,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 40,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[9].culturemech_term: The source explicitly names this solution_id. This is a batch input, not a universal stock working concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[5]; accessed=2026-10-09T06:57:15.964762+00:00; capture SHA256=80c28f54488ef57fe90f78e80f82c8fd468e8fed7308c34291eccdf13756fb97.
+  culturemech_term:
+    id: CultureMech:015244
+    label: Mineral solution 2
+- preferred_term: Fatty acid mixture
+  concentration:
+    value: '0.001'
+    unit: L
+  notes: 'Source input only; not final volume or percentage Source input: 1 ml at
+    data.recipe[9].'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/882
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 10,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Fatty acid mixture",
+                      "solution_id": 885,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[10].preferred_term: Source input only; not final volume or percentage Source input: 1 ml at data.recipe[9]. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[9]; accessed=2026-10-09T06:57:15.964762+00:00; capture SHA256=80c28f54488ef57fe90f78e80f82c8fd468e8fed7308c34291eccdf13756fb97.
+
+      Additional exact excerpt: {
+                      "recipe_order": 10,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Fatty acid mixture",
+                      "solution_id": 885,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[10].concentration: Source input only; not final volume or percentage Source input: 1 ml at data.recipe[9]. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[9]; accessed=2026-10-09T06:57:15.964762+00:00; capture SHA256=80c28f54488ef57fe90f78e80f82c8fd468e8fed7308c34291eccdf13756fb97.
+
+      Additional exact excerpt: {
+                      "recipe_order": 10,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Fatty acid mixture",
+                      "solution_id": 885,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[10].notes: Source input only; not final volume or percentage Source input: 1 ml at data.recipe[9]. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[9]; accessed=2026-10-09T06:57:15.964762+00:00; capture SHA256=80c28f54488ef57fe90f78e80f82c8fd468e8fed7308c34291eccdf13756fb97.
+
+      Additional exact excerpt: {
+                      "recipe_order": 10,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Fatty acid mixture",
+                      "solution_id": 885,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[10].culturemech_term: The source explicitly names this solution_id. This is a batch input, not a universal stock working concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[9]; accessed=2026-10-09T06:57:15.964762+00:00; capture SHA256=80c28f54488ef57fe90f78e80f82c8fd468e8fed7308c34291eccdf13756fb97.
+  culturemech_term:
+    id: CultureMech:015245
+    label: Fatty acid mixture
 preparation_notes: "Boil and cool under CO2. Under a gentle stream of CO2 add: \n\
   Adjust pH to 7.0, distribute under N2 into appropriate vessels and sterilize."
 curation_history:
@@ -130,11 +1392,638 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '2 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
-ingredients:
-- preferred_term: See source for composition
-  concentration:
-    value: variable
-    unit: VARIABLE
-data_quality_flags:
-- incomplete_composition
+- timestamp: '2026-10-07T08:52:28.993811+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/882
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "5"} -> {"unit":
+    "G_PER_L", "value": "5"} (evidence_only); composition[1].concentration: {"unit":
+    "G_PER_L", "value": "2"} -> {"unit": "G_PER_L", "value": "2"} (evidence_only);
+    composition[2].concentration: {"unit": "G_PER_L", "value": "3"} -> {"unit": "G_PER_L",
+    "value": "3"} (evidence_only); composition[3].concentration: {"unit": "G_PER_L",
+    "value": "2"} -> {"unit": "G_PER_L", "value": "2"} (evidence_only); composition[4].concentration:
+    {"unit": "G_PER_L", "value": "0.001"} -> {"unit": "G_PER_L", "value": "0.001"}
+    (evidence_only); composition[6].concentration: {"unit": "G_PER_L", "value": "4"}
+    -> {"unit": "G_PER_L", "value": "4"} (evidence_only); composition[7].concentration:
+    {"unit": "G_PER_L", "value": "0.5"} -> {"unit": "G_PER_L", "value": "0.5"} (evidence_only)'
+- timestamp: '2026-10-09T07:30:35.561516+00:00'
+  curator: codex
+  action: RESTORED_RUMINOCOCCUS_ALBUS_SOURCE_FORMULATIONS_WITH_EVIDENCE
+  notes: Restore exact-source medium436 formulation, preparation stages and input
+    units. Preserve qualified prior rates, source-specific nulls and unresolved original
+    bases. No growth association added.
+  source: https://mediadive.dsmz.de/rest/solution/882
+  changes: '[{"old_field": "composition[0].concentration", "field": "composition[0].concentration",
+    "old": {"value": "5", "unit": "G_PER_L"}, "new": {"value": "5", "unit": "G_PER_L"},
+    "status": "verified", "reference": "https://mediadive.dsmz.de/rest/solution/882",
+    "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\":
+    \"Tryptone\",\n                \"compound_id\": 71,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": 70.3433,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[1].concentration", "field": "composition[1].concentration",
+    "old": {"value": "2", "unit": "G_PER_L"}, "new": {"value": "2", "unit": "G_PER_L"},
+    "status": "verified", "reference": "https://mediadive.dsmz.de/rest/solution/882",
+    "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Yeast extract\",\n                \"compound_id\": 16,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\":
+    \"g\",\n                \"g_l\": 2,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[2].concentration", "field": "composition[2].concentration",
+    "old": {"value": "3", "unit": "G_PER_L"}, "new": {"value": "3", "unit": "G_PER_L"},
+    "status": "verified", "reference": "https://mediadive.dsmz.de/rest/solution/882",
+    "snippet": "{\n                \"recipe_order\": 3,\n                \"compound\":
+    \"Glucose\",\n                \"compound_id\": 5,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 3,\n                \"unit\":
+    \"g\",\n                \"g_l\": 3,\n                \"mmol_l\": 16.6519,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[3].concentration", "field": "composition[3].concentration",
+    "old": {"value": "2", "unit": "G_PER_L"}, "new": {"value": "2", "unit": "G_PER_L"},
+    "status": "verified", "reference": "https://mediadive.dsmz.de/rest/solution/882",
+    "snippet": "{\n                \"recipe_order\": 4,\n                \"compound\":
+    \"Cellobiose\",\n                \"compound_id\": 214,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\":
+    \"g\",\n                \"g_l\": 2,\n                \"mmol_l\": 5.84283,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[4].concentration", "field": "composition[4].concentration",
+    "old": {"value": "0.001", "unit": "G_PER_L"}, "new": {"value": "0.001", "unit":
+    "G_PER_L"}, "status": "verified", "reference": "https://mediadive.dsmz.de/rest/solution/882",
+    "snippet": "{\n                \"recipe_order\": 7,\n                \"compound\":
+    \"Resazurin\",\n                \"compound_id\": 25,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.001,\n                \"mmol_l\": 0.00436319,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[5].preferred_term", "field": "composition[5].preferred_term",
+    "old": "Distilled water", "new": "Distilled water", "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/solution/882", "snippet": "{\n                \"recipe_order\":
+    8,\n                \"compound\": \"Distilled water\",\n                \"compound_id\":
+    4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 920,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[5].concentration", "field": "composition[5].concentration",
+    "old": {"value": "920", "unit": "PERCENT_V_V"}, "new": {"value": "0.92", "unit":
+    "L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/882",
+    "snippet": "{\n                \"recipe_order\": 8,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 920,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[5].notes", "field": "composition[5].notes",
+    "old": null, "new": "Source input only; not final volume or percentage Source
+    input: 920 ml at data.recipe[7].", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/882",
+    "snippet": "{\n                \"recipe_order\": 8,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 920,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[6].concentration", "field": "composition[6].concentration",
+    "old": {"value": "4", "unit": "G_PER_L"}, "new": {"value": "4", "unit": "G_PER_L"},
+    "status": "verified", "reference": "https://mediadive.dsmz.de/rest/solution/882",
+    "snippet": "{\n                \"recipe_order\": 9,\n                \"compound\":
+    \"Na2CO3\",\n                \"compound_id\": 32,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 4,\n                \"unit\":
+    \"g\",\n                \"g_l\": 4,\n                \"mmol_l\": 37.7401,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[7].concentration", "field": "composition[7].concentration",
+    "old": {"value": "0.5", "unit": "G_PER_L"}, "new": {"value": "0.5", "unit": "G_PER_L"},
+    "status": "verified", "reference": "https://mediadive.dsmz.de/rest/solution/882",
+    "snippet": "{\n                \"recipe_order\": 11,\n                \"compound\":
+    \"L-Cysteine HCl x H2O\",\n                \"compound_id\": 770,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 500,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.5,\n                \"mmol_l\": 2.8468,\n                \"optional\":
+    0\n            }"}, {"old_field": null, "field": "composition[8].preferred_term",
+    "old": null, "new": "Mineral solution 1", "status": "add", "reference": "https://mediadive.dsmz.de/rest/solution/882",
+    "snippet": "{\n                \"recipe_order\": 5,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Mineral
+    solution 1\",\n                \"solution_id\": 883,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 40,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": null, "field": "composition[8].concentration",
+    "old": null, "new": {"value": "0.04", "unit": "L"}, "status": "add", "reference":
+    "https://mediadive.dsmz.de/rest/solution/882", "snippet": "{\n                \"recipe_order\":
+    5,\n                \"compound\": null,\n                \"compound_id\": null,\n                \"solution\":
+    \"Mineral solution 1\",\n                \"solution_id\": 883,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 40,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": null, "field": "composition[8].notes", "old":
+    null, "new": "Source input only; not final volume or percentage Source input:
+    40 ml at data.recipe[4].", "status": "add", "reference": "https://mediadive.dsmz.de/rest/solution/882",
+    "snippet": "{\n                \"recipe_order\": 5,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Mineral
+    solution 1\",\n                \"solution_id\": 883,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 40,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": null, "field": "composition[8].culturemech_term",
+    "old": null, "new": {"id": "CultureMech:015243", "label": "Mineral solution 1"},
+    "status": "add", "reference": "https://mediadive.dsmz.de/rest/solution/882", "snippet":
+    "{\n                \"recipe_order\": 5,\n                \"compound\": null,\n                \"compound_id\":
+    null,\n                \"solution\": \"Mineral solution 1\",\n                \"solution_id\":
+    883,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\":
+    40,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\":
+    null,\n                \"optional\": 0\n            }"}, {"old_field": null, "field":
+    "composition[9].preferred_term", "old": null, "new": "Mineral solution 2", "status":
+    "add", "reference": "https://mediadive.dsmz.de/rest/solution/882", "snippet":
+    "{\n                \"recipe_order\": 6,\n                \"compound\": null,\n                \"compound_id\":
+    null,\n                \"solution\": \"Mineral solution 2\",\n                \"solution_id\":
+    884,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\":
+    40,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\":
+    null,\n                \"optional\": 0\n            }"}, {"old_field": null, "field":
+    "composition[9].concentration", "old": null, "new": {"value": "0.04", "unit":
+    "L"}, "status": "add", "reference": "https://mediadive.dsmz.de/rest/solution/882",
+    "snippet": "{\n                \"recipe_order\": 6,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Mineral
+    solution 2\",\n                \"solution_id\": 884,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 40,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": null, "field": "composition[9].notes", "old":
+    null, "new": "Source input only; not final volume or percentage Source input:
+    40 ml at data.recipe[5].", "status": "add", "reference": "https://mediadive.dsmz.de/rest/solution/882",
+    "snippet": "{\n                \"recipe_order\": 6,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Mineral
+    solution 2\",\n                \"solution_id\": 884,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 40,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": null, "field": "composition[9].culturemech_term",
+    "old": null, "new": {"id": "CultureMech:015244", "label": "Mineral solution 2"},
+    "status": "add", "reference": "https://mediadive.dsmz.de/rest/solution/882", "snippet":
+    "{\n                \"recipe_order\": 6,\n                \"compound\": null,\n                \"compound_id\":
+    null,\n                \"solution\": \"Mineral solution 2\",\n                \"solution_id\":
+    884,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\":
+    40,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\":
+    null,\n                \"optional\": 0\n            }"}, {"old_field": null, "field":
+    "composition[10].preferred_term", "old": null, "new": "Fatty acid mixture", "status":
+    "add", "reference": "https://mediadive.dsmz.de/rest/solution/882", "snippet":
+    "{\n                \"recipe_order\": 10,\n                \"compound\": null,\n                \"compound_id\":
+    null,\n                \"solution\": \"Fatty acid mixture\",\n                \"solution_id\":
+    885,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\":
+    1,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\":
+    null,\n                \"optional\": 0\n            }"}, {"old_field": null, "field":
+    "composition[10].concentration", "old": null, "new": {"value": "0.001", "unit":
+    "L"}, "status": "add", "reference": "https://mediadive.dsmz.de/rest/solution/882",
+    "snippet": "{\n                \"recipe_order\": 10,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Fatty
+    acid mixture\",\n                \"solution_id\": 885,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": null, "field": "composition[10].notes", "old":
+    null, "new": "Source input only; not final volume or percentage Source input:
+    1 ml at data.recipe[9].", "status": "add", "reference": "https://mediadive.dsmz.de/rest/solution/882",
+    "snippet": "{\n                \"recipe_order\": 10,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Fatty
+    acid mixture\",\n                \"solution_id\": 885,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": null, "field": "composition[10].culturemech_term",
+    "old": null, "new": {"id": "CultureMech:015245", "label": "Fatty acid mixture"},
+    "status": "add", "reference": "https://mediadive.dsmz.de/rest/solution/882", "snippet":
+    "{\n                \"recipe_order\": 10,\n                \"compound\": null,\n                \"compound_id\":
+    null,\n                \"solution\": \"Fatty acid mixture\",\n                \"solution_id\":
+    885,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\":
+    1,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\":
+    null,\n                \"optional\": 0\n            }"}, {"old_field": "ingredients",
+    "field": "ingredients", "old": [{"preferred_term": "See source for composition",
+    "concentration": {"value": "variable", "unit": "VARIABLE"}}], "new": null, "status":
+    "remove_unsupported", "reference": "https://mediadive.dsmz.de/rest/solution/882",
+    "snippet": "[\n            {\n                \"recipe_order\": 1,\n                \"compound\":
+    \"Tryptone\",\n                \"compound_id\": 71,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": 70.3433,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Yeast extract\",\n                \"compound_id\": 16,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\":
+    \"g\",\n                \"g_l\": 2,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 3,\n                \"compound\":
+    \"Glucose\",\n                \"compound_id\": 5,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 3,\n                \"unit\":
+    \"g\",\n                \"g_l\": 3,\n                \"mmol_l\": 16.6519,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 4,\n                \"compound\":
+    \"Cellobiose\",\n                \"compound_id\": 214,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\":
+    \"g\",\n                \"g_l\": 2,\n                \"mmol_l\": 5.84283,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 5,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Mineral
+    solution 1\",\n                \"solution_id\": 883,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 40,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 6,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Mineral
+    solution 2\",\n                \"solution_id\": 884,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 40,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 7,\n                \"compound\":
+    \"Resazurin\",\n                \"compound_id\": 25,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.001,\n                \"mmol_l\": 0.00436319,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 8,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 920,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 9,\n                \"compound\":
+    \"Na2CO3\",\n                \"compound_id\": 32,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 4,\n                \"unit\":
+    \"g\",\n                \"g_l\": 4,\n                \"mmol_l\": 37.7401,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 10,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Fatty
+    acid mixture\",\n                \"solution_id\": 885,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 11,\n                \"compound\":
+    \"L-Cysteine HCl x H2O\",\n                \"compound_id\": 770,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 500,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.5,\n                \"mmol_l\": 2.8468,\n                \"optional\":
+    0\n            }\n        ]"}, {"old_field": "data_quality_flags", "field": "data_quality_flags",
+    "old": ["incomplete_composition"], "new": null, "status": "remove_unsupported",
+    "reference": "https://mediadive.dsmz.de/rest/solution/882", "snippet": "[\n            {\n                \"recipe_order\":
+    1,\n                \"compound\": \"Tryptone\",\n                \"compound_id\":
+    71,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": 70.3433,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Yeast extract\",\n                \"compound_id\": 16,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\":
+    \"g\",\n                \"g_l\": 2,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 3,\n                \"compound\":
+    \"Glucose\",\n                \"compound_id\": 5,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 3,\n                \"unit\":
+    \"g\",\n                \"g_l\": 3,\n                \"mmol_l\": 16.6519,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 4,\n                \"compound\":
+    \"Cellobiose\",\n                \"compound_id\": 214,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\":
+    \"g\",\n                \"g_l\": 2,\n                \"mmol_l\": 5.84283,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 5,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Mineral
+    solution 1\",\n                \"solution_id\": 883,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 40,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 6,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Mineral
+    solution 2\",\n                \"solution_id\": 884,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 40,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 7,\n                \"compound\":
+    \"Resazurin\",\n                \"compound_id\": 25,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.001,\n                \"mmol_l\": 0.00436319,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 8,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 920,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 9,\n                \"compound\":
+    \"Na2CO3\",\n                \"compound_id\": 32,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 4,\n                \"unit\":
+    \"g\",\n                \"g_l\": 4,\n                \"mmol_l\": 37.7401,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 10,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Fatty
+    acid mixture\",\n                \"solution_id\": 885,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 11,\n                \"compound\":
+    \"L-Cysteine HCl x H2O\",\n                \"compound_id\": 770,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 500,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.5,\n                \"mmol_l\": 2.8468,\n                \"optional\":
+    0\n            }\n        ]"}, {"old_field": "references[0].title", "field": "references[0].title",
+    "old": "MediaDive solution 882: Main sol. 436", "new": "Main sol. 436", "status":
+    "correct", "reference": "https://mediadive.dsmz.de/rest/solution/882", "snippet":
+    "\"Main sol. 436\""}, {"old_field": "ingredients", "field": "notes", "old": [{"preferred_term":
+    "See source for composition", "concentration": {"value": "variable", "unit": "VARIABLE"}}],
+    "new": "Complete source rows determine the reconstructed formulation. Archive
+    the prior flattened nodes, unsupported LB additions and stock links in append-only
+    history. Unrelated annotations are preserved, not recertified.\n\nComplete source
+    rows determine the reconstructed formulation. Archive the prior flattened nodes,
+    unsupported LB additions and stock links in append-only history. Unrelated annotations
+    are preserved, not recertified.", "status": "evidence_only", "reference": "https://mediadive.dsmz.de/rest/solution/882",
+    "snippet": "[\n            {\n                \"recipe_order\": 1,\n                \"compound\":
+    \"Tryptone\",\n                \"compound_id\": 71,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": 70.3433,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Yeast extract\",\n                \"compound_id\": 16,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\":
+    \"g\",\n                \"g_l\": 2,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 3,\n                \"compound\":
+    \"Glucose\",\n                \"compound_id\": 5,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 3,\n                \"unit\":
+    \"g\",\n                \"g_l\": 3,\n                \"mmol_l\": 16.6519,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 4,\n                \"compound\":
+    \"Cellobiose\",\n                \"compound_id\": 214,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\":
+    \"g\",\n                \"g_l\": 2,\n                \"mmol_l\": 5.84283,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 5,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Mineral
+    solution 1\",\n                \"solution_id\": 883,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 40,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 6,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Mineral
+    solution 2\",\n                \"solution_id\": 884,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 40,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 7,\n                \"compound\":
+    \"Resazurin\",\n                \"compound_id\": 25,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.001,\n                \"mmol_l\": 0.00436319,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 8,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 920,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 9,\n                \"compound\":
+    \"Na2CO3\",\n                \"compound_id\": 32,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 4,\n                \"unit\":
+    \"g\",\n                \"g_l\": 4,\n                \"mmol_l\": 37.7401,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 10,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Fatty
+    acid mixture\",\n                \"solution_id\": 885,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 11,\n                \"compound\":
+    \"L-Cysteine HCl x H2O\",\n                \"compound_id\": 770,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 500,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.5,\n                \"mmol_l\": 2.8468,\n                \"optional\":
+    0\n            }\n        ]"}, {"old_field": "composition", "field": "notes",
+    "old": [{"preferred_term": "Tryptone", "concentration": {"value": "5", "unit":
+    "G_PER_L"}, "term": {"id": "mediadive.compound:71", "label": "Tryptone"}, "evidence":
+    [{"reference": "https://mediadive.dsmz.de/rest/solution/882", "supports": "SUPPORT",
+    "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\":
+    \"Tryptone\",\n                \"compound_id\": 71,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": 70.3433,\n                \"optional\":
+    0\n            }", "explanation": "Concentration evidence for composition[0].concentration
+    (Tryptone) in MediaDive solution 882; locator=$.data.recipe[0] (compound_id=71).
+    Provider explicitly reports g_l=5. Arithmetic check: 5 g * 1 g/g / (1000 ml /
+    1000 ml per L) = 5 g/L, consistent with the reported value at its precision. Evidence
+    supports the provider-declared concentration within this solution, not a concentration
+    in a receiving medium or an independently measured final volume. Water addition
+    alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+    \"volume\": 1000. Retrieved 2026-10-07T08:47:26.997033+00:00; response SHA256=80c28f54488ef57fe90f78e80f82c8fd468e8fed7308c34291eccdf13756fb97."}]},
+    {"preferred_term": "Yeast extract", "concentration": {"value": "2", "unit": "G_PER_L"},
+    "term": {"id": "mediadive.compound:16", "label": "Yeast extract"}, "evidence":
+    [{"reference": "https://mediadive.dsmz.de/rest/solution/882", "supports": "SUPPORT",
+    "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Yeast extract\",\n                \"compound_id\": 16,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\":
+    \"g\",\n                \"g_l\": 2,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }", "explanation": "Concentration evidence for composition[1].concentration
+    (Yeast extract) in MediaDive solution 882; locator=$.data.recipe[1] (compound_id=16).
+    Provider explicitly reports g_l=2. Arithmetic check: 2 g * 1 g/g / (1000 ml /
+    1000 ml per L) = 2 g/L, consistent with the reported value at its precision. Evidence
+    supports the provider-declared concentration within this solution, not a concentration
+    in a receiving medium or an independently measured final volume. Water addition
+    alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+    \"volume\": 1000. Retrieved 2026-10-07T08:47:26.997033+00:00; response SHA256=80c28f54488ef57fe90f78e80f82c8fd468e8fed7308c34291eccdf13756fb97."}]},
+    {"preferred_term": "Glucose", "concentration": {"value": "3", "unit": "G_PER_L"},
+    "term": {"id": "mediadive.compound:5", "label": "Glucose"}, "chebi_term": {"id":
+    "CHEBI:17234", "label": "glucose", "confidence": 0.9, "match_type": "manual_curated"},
+    "evidence": [{"reference": "https://mediadive.dsmz.de/rest/solution/882", "supports":
+    "SUPPORT", "snippet": "{\n                \"recipe_order\": 3,\n                \"compound\":
+    \"Glucose\",\n                \"compound_id\": 5,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 3,\n                \"unit\":
+    \"g\",\n                \"g_l\": 3,\n                \"mmol_l\": 16.6519,\n                \"optional\":
+    0\n            }", "explanation": "Concentration evidence for composition[2].concentration
+    (Glucose) in MediaDive solution 882; locator=$.data.recipe[2] (compound_id=5).
+    Provider explicitly reports g_l=3. Arithmetic check: 3 g * 1 g/g / (1000 ml /
+    1000 ml per L) = 3 g/L, consistent with the reported value at its precision. Evidence
+    supports the provider-declared concentration within this solution, not a concentration
+    in a receiving medium or an independently measured final volume. Water addition
+    alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+    \"volume\": 1000. Retrieved 2026-10-07T08:47:26.997033+00:00; response SHA256=80c28f54488ef57fe90f78e80f82c8fd468e8fed7308c34291eccdf13756fb97."}]},
+    {"preferred_term": "Cellobiose", "concentration": {"value": "2", "unit": "G_PER_L"},
+    "term": {"id": "mediadive.compound:214", "label": "Cellobiose"}, "chebi_term":
+    {"id": "CHEBI:17057", "label": "cellobiose", "confidence": 0.9, "match_type":
+    "corpus_consensus"}, "evidence": [{"reference": "https://mediadive.dsmz.de/rest/solution/882",
+    "supports": "SUPPORT", "snippet": "{\n                \"recipe_order\": 4,\n                \"compound\":
+    \"Cellobiose\",\n                \"compound_id\": 214,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\":
+    \"g\",\n                \"g_l\": 2,\n                \"mmol_l\": 5.84283,\n                \"optional\":
+    0\n            }", "explanation": "Concentration evidence for composition[3].concentration
+    (Cellobiose) in MediaDive solution 882; locator=$.data.recipe[3] (compound_id=214).
+    Provider explicitly reports g_l=2. Arithmetic check: 2 g * 1 g/g / (1000 ml /
+    1000 ml per L) = 2 g/L, consistent with the reported value at its precision. Evidence
+    supports the provider-declared concentration within this solution, not a concentration
+    in a receiving medium or an independently measured final volume. Water addition
+    alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+    \"volume\": 1000. Retrieved 2026-10-07T08:47:26.997033+00:00; response SHA256=80c28f54488ef57fe90f78e80f82c8fd468e8fed7308c34291eccdf13756fb97."}]},
+    {"preferred_term": "Resazurin", "concentration": {"value": "0.001", "unit": "G_PER_L"},
+    "term": {"id": "mediadive.compound:25", "label": "Resazurin"}, "chebi_term": {"id":
+    "CHEBI:8806", "label": "Resazurin", "confidence": 1.0, "match_type": "exact_match"},
+    "evidence": [{"reference": "https://mediadive.dsmz.de/rest/solution/882", "supports":
+    "SUPPORT", "snippet": "{\n                \"recipe_order\": 7,\n                \"compound\":
+    \"Resazurin\",\n                \"compound_id\": 25,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.001,\n                \"mmol_l\": 0.00436319,\n                \"optional\":
+    0\n            }", "explanation": "Concentration evidence for composition[4].concentration
+    (Resazurin) in MediaDive solution 882; locator=$.data.recipe[6] (compound_id=25).
+    Provider explicitly reports g_l=0.001. Arithmetic check: 1 mg * 0.001 g/mg / (1000
+    ml / 1000 ml per L) = 0.001 g/L, consistent with the reported value at its precision.
+    Evidence supports the provider-declared concentration within this solution, not
+    a concentration in a receiving medium or an independently measured final volume.
+    Water addition alone is not used to infer a final volume. Additional exact excerpt
+    at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T08:47:26.997033+00:00;
+    response SHA256=80c28f54488ef57fe90f78e80f82c8fd468e8fed7308c34291eccdf13756fb97."}]},
+    {"preferred_term": "Distilled water", "concentration": {"value": "920", "unit":
+    "PERCENT_V_V"}, "term": {"id": "mediadive.compound:4", "label": "Distilled water"},
+    "chebi_term": {"id": "CHEBI:15377", "label": "water", "confidence": 0.7, "match_type":
+    "corpus_consensus"}}, {"preferred_term": "Na2CO3", "concentration": {"value":
+    "4", "unit": "G_PER_L"}, "term": {"id": "mediadive.compound:32", "label": "Na2CO3"},
+    "chebi_term": {"id": "CHEBI:29377", "label": "sodium carbonate", "confidence":
+    1.0, "match_type": "exact_match"}, "evidence": [{"reference": "https://mediadive.dsmz.de/rest/solution/882",
+    "supports": "SUPPORT", "snippet": "{\n                \"recipe_order\": 9,\n                \"compound\":
+    \"Na2CO3\",\n                \"compound_id\": 32,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 4,\n                \"unit\":
+    \"g\",\n                \"g_l\": 4,\n                \"mmol_l\": 37.7401,\n                \"optional\":
+    0\n            }", "explanation": "Concentration evidence for composition[6].concentration
+    (Na2CO3) in MediaDive solution 882; locator=$.data.recipe[8] (compound_id=32).
+    Provider explicitly reports g_l=4. Arithmetic check: 4 g * 1 g/g / (1000 ml /
+    1000 ml per L) = 4 g/L, consistent with the reported value at its precision. Evidence
+    supports the provider-declared concentration within this solution, not a concentration
+    in a receiving medium or an independently measured final volume. Water addition
+    alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+    \"volume\": 1000. Retrieved 2026-10-07T08:47:26.997033+00:00; response SHA256=80c28f54488ef57fe90f78e80f82c8fd468e8fed7308c34291eccdf13756fb97."}]},
+    {"preferred_term": "L-Cysteine HCl x H2O", "concentration": {"value": "0.5", "unit":
+    "G_PER_L"}, "term": {"id": "mediadive.compound:770", "label": "L-Cysteine HCl
+    x H2O"}, "chebi_term": {"id": "CHEBI:91248", "label": "L-cysteine hydrochloride
+    hydrate", "confidence": 0.7, "match_type": "corpus_consensus"}, "evidence": [{"reference":
+    "https://mediadive.dsmz.de/rest/solution/882", "supports": "SUPPORT", "snippet":
+    "{\n                \"recipe_order\": 11,\n                \"compound\": \"L-Cysteine
+    HCl x H2O\",\n                \"compound_id\": 770,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 500,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.5,\n                \"mmol_l\": 2.8468,\n                \"optional\":
+    0\n            }", "explanation": "Concentration evidence for composition[7].concentration
+    (L-Cysteine HCl x H2O) in MediaDive solution 882; locator=$.data.recipe[10] (compound_id=770).
+    Provider explicitly reports g_l=0.5. Arithmetic check: 500 mg * 0.001 g/mg / (1000
+    ml / 1000 ml per L) = 0.500 g/L, consistent with the reported value at its precision.
+    Evidence supports the provider-declared concentration within this solution, not
+    a concentration in a receiving medium or an independently measured final volume.
+    Water addition alone is not used to infer a final volume. Additional exact excerpt
+    at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T08:47:26.997033+00:00;
+    response SHA256=80c28f54488ef57fe90f78e80f82c8fd468e8fed7308c34291eccdf13756fb97."}]}],
+    "new": "Complete source rows determine the reconstructed formulation. Archive
+    the prior flattened nodes, unsupported LB additions and stock links in append-only
+    history. Unrelated annotations are preserved, not recertified.\n\nComplete source
+    rows determine the reconstructed formulation. Archive the prior flattened nodes,
+    unsupported LB additions and stock links in append-only history. Unrelated annotations
+    are preserved, not recertified.", "status": "evidence_only", "reference": "https://mediadive.dsmz.de/rest/solution/882",
+    "snippet": "[\n            {\n                \"recipe_order\": 1,\n                \"compound\":
+    \"Tryptone\",\n                \"compound_id\": 71,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": 70.3433,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Yeast extract\",\n                \"compound_id\": 16,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\":
+    \"g\",\n                \"g_l\": 2,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 3,\n                \"compound\":
+    \"Glucose\",\n                \"compound_id\": 5,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 3,\n                \"unit\":
+    \"g\",\n                \"g_l\": 3,\n                \"mmol_l\": 16.6519,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 4,\n                \"compound\":
+    \"Cellobiose\",\n                \"compound_id\": 214,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\":
+    \"g\",\n                \"g_l\": 2,\n                \"mmol_l\": 5.84283,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 5,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Mineral
+    solution 1\",\n                \"solution_id\": 883,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 40,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 6,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Mineral
+    solution 2\",\n                \"solution_id\": 884,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 40,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 7,\n                \"compound\":
+    \"Resazurin\",\n                \"compound_id\": 25,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.001,\n                \"mmol_l\": 0.00436319,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 8,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 920,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 9,\n                \"compound\":
+    \"Na2CO3\",\n                \"compound_id\": 32,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 4,\n                \"unit\":
+    \"g\",\n                \"g_l\": 4,\n                \"mmol_l\": 37.7401,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 10,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Fatty
+    acid mixture\",\n                \"solution_id\": 885,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 11,\n                \"compound\":
+    \"L-Cysteine HCl x H2O\",\n                \"compound_id\": 770,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 500,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.5,\n                \"mmol_l\": 2.8468,\n                \"optional\":
+    0\n            }\n        ]"}, {"old_field": "ingredients[0].concentration", "field":
+    "notes", "old": {"value": "variable", "unit": "VARIABLE"}, "new": "Complete source
+    rows determine the reconstructed formulation. Archive the prior flattened nodes,
+    unsupported LB additions and stock links in append-only history. Unrelated annotations
+    are preserved, not recertified.\n\nComplete source rows determine the reconstructed
+    formulation. Archive the prior flattened nodes, unsupported LB additions and stock
+    links in append-only history. Unrelated annotations are preserved, not recertified.",
+    "status": "remove_unsupported", "reference": "https://mediadive.dsmz.de/rest/solution/882",
+    "snippet": "[\n            {\n                \"recipe_order\": 1,\n                \"compound\":
+    \"Tryptone\",\n                \"compound_id\": 71,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": 70.3433,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Yeast extract\",\n                \"compound_id\": 16,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\":
+    \"g\",\n                \"g_l\": 2,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 3,\n                \"compound\":
+    \"Glucose\",\n                \"compound_id\": 5,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 3,\n                \"unit\":
+    \"g\",\n                \"g_l\": 3,\n                \"mmol_l\": 16.6519,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 4,\n                \"compound\":
+    \"Cellobiose\",\n                \"compound_id\": 214,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\":
+    \"g\",\n                \"g_l\": 2,\n                \"mmol_l\": 5.84283,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 5,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Mineral
+    solution 1\",\n                \"solution_id\": 883,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 40,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 6,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Mineral
+    solution 2\",\n                \"solution_id\": 884,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 40,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 7,\n                \"compound\":
+    \"Resazurin\",\n                \"compound_id\": 25,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.001,\n                \"mmol_l\": 0.00436319,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 8,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 920,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 9,\n                \"compound\":
+    \"Na2CO3\",\n                \"compound_id\": 32,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 4,\n                \"unit\":
+    \"g\",\n                \"g_l\": 4,\n                \"mmol_l\": 37.7401,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 10,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Fatty
+    acid mixture\",\n                \"solution_id\": 885,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 11,\n                \"compound\":
+    \"L-Cysteine HCl x H2O\",\n                \"compound_id\": 770,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 500,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.5,\n                \"mmol_l\": 2.8468,\n                \"optional\":
+    0\n            }\n        ]"}]'
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/882
+  title: Main sol. 436
+  notes: |-
+    source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07; source_organization=DSMZ; locator=$.data; response_sha256=80c28f54488ef57fe90f78e80f82c8fd468e8fed7308c34291eccdf13756fb97; individual authors and publication year not supplied. Provider-declared solution amounts, not receiving-medium concentrations.
+
+    source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-09; capture_sha256=80c28f54488ef57fe90f78e80f82c8fd468e8fed7308c34291eccdf13756fb97. Individual authors and publication year not supplied. Copyright/access years are not publication years. Source-scoped ingredient evidence, not organism-growth evidence.
+notes: |-
+  Complete source rows determine the reconstructed formulation. Archive the prior flattened nodes, unsupported LB additions and stock links in append-only history. Unrelated annotations are preserved, not recertified.
+
+  Complete source rows determine the reconstructed formulation. Archive the prior flattened nodes, unsupported LB additions and stock links in append-only history. Unrelated annotations are preserved, not recertified.

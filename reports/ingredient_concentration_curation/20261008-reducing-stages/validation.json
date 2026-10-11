@@ -1,0 +1,175 @@
+{
+  "terminal": true,
+  "publication_ready": false,
+  "all_record_goal_complete": false,
+  "applied_records": 5,
+  "source_responses_refreshed": 14,
+  "normalized_count": 15910,
+  "normalized_sha256": "e02f89a4cd3c75ada002f31929e0943db79a84c319048feac12d2811e50c93dd",
+  "records": {
+    "data/normalized_yaml/archaea/TOGO_M225_Methanocaldococcus_Jannaschii_Medium.yaml": "9d5ecc1f4a6d96776b251710e0ce4d8f40a772ece80b1df418b9a4ff1ea7c4de",
+    "data/normalized_yaml/bacterial/TOGO_M229_Thermotoga_Medium.yaml": "cfbb6e8a5f5d85ef1533749b2be70319c8602354a3bf787c88c9e46832b0c7c6",
+    "data/normalized_yaml/bacterial/togo_medium_m234.yaml": "2c0fd1b3c535f1711eea7476c36e85d01cd531e9ae9bd3895d62960a48a31e01",
+    "data/normalized_yaml/archaea/TOGO_M236_Stetteria_Medium.yaml": "896b03b57a4d9f36bab8fb2e36f7daf634aea74dfeb264676540f08f1d7e712f",
+    "data/normalized_yaml/archaea/TOGO_M243_Methanothermus_Fervidus_Medium.yaml": "baa556bafd7ada56a64cf9185469f6395ae81a074497a5539636c93e34dee87a"
+  },
+  "reference_checks": {
+    "M225": {
+      "checks": 95,
+      "all_valid": true,
+      "issues": []
+    },
+    "M229": {
+      "checks": 74,
+      "all_valid": true,
+      "issues": []
+    },
+    "M234": {
+      "checks": 97,
+      "all_valid": true,
+      "issues": []
+    },
+    "M236": {
+      "checks": 90,
+      "all_valid": true,
+      "issues": []
+    },
+    "M243": {
+      "checks": 101,
+      "all_valid": true,
+      "issues": []
+    }
+  },
+  "tests_passed": {
+    "fast": "8776 passed, 16 skipped, 1945 deselected, 2 warnings in 793.82s (0:13:13)",
+    "final": "817 passed, 2 warnings in 272.88s (0:04:32)"
+  },
+  "failed_global_gates": [
+    {
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/reducing-post-15.log"
+    },
+    {
+      "command": [
+        "just",
+        "audit-merge-freshness",
+        "--json"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/reducing-post-16.log"
+    }
+  ],
+  "merge_verification": {
+    "name_conflicts": 1247,
+    "fingerprint_issues": 3287
+  },
+  "freshness": {
+    "tracked_total": 6320,
+    "fresh_total": 10777,
+    "only_in_tracked": 4275,
+    "only_in_fresh": 8732,
+    "changed": 2045,
+    "unchanged": 0
+  },
+  "cumulative_audit": {
+    "stock_nodes_relocated": 693,
+    "new_quantity_slots": 289,
+    "unsupported_quantity_slots_removed": 663,
+    "new_evidence": 32368,
+    "new_curation_history": 5356,
+    "new_references": 5588,
+    "stock_stage_concentrations_rebased": 139,
+    "stock_descriptors_added": 193,
+    "quantity_corrections": 1420,
+    "copied_ingredient_nodes_replaced_by_reference": 37,
+    "ingredient_context_notes_added": 264,
+    "water_input_nodes_added": 27,
+    "recipe_context_notes_corrected": 26,
+    "parent_links_corrected": 5,
+    "source_amount_conflicts_repaired": 3,
+    "unquantified_carrier_nodes_added": 77,
+    "evidence_scopes_corrected": 172,
+    "ingredient_context_notes_corrected": 9,
+    "preparation_actions_corrected": 7,
+    "preparation_descriptions_corrected": 4,
+    "preparation_steps_added": 14,
+    "batch_mass_notes_unverified_concentrations": 48,
+    "stock_dose_basis_corrections": 107,
+    "duplicate_stock_nodes_removed": 1,
+    "variant_links_added": 8,
+    "explicit_medium_rates_verified": 3,
+    "child_links_corrected": 5,
+    "preparation_steps_relocated": 9,
+    "water_input_notes_added": 9,
+    "inline_variant_options_added": 8,
+    "extraction_preparations_added": 1,
+    "base_preparations_added": 9,
+    "preparation_records_restored": 3,
+    "supplement_nodes_moved_to_variants": 4,
+    "corrected_evidence_snippets": 2,
+    "stock_context_notes_corrected": 8,
+    "extraction_preparations_restructured": 2,
+    "source_version_alternatives_added": 4,
+    "copied_ingredient_nodes_removed": 3,
+    "composition_classifications_corrected": 2,
+    "final_quantity_slots_added": 1,
+    "explicitly_omitted_ingredient_nodes": 1,
+    "ingredient_source_attributions_corrected": 1,
+    "bibliographic_entries_enriched": 1,
+    "excluded_alternative_nodes_removed": 1,
+    "ingredient_labels_corrected": 1,
+    "preparation_text_encodings_corrected": 1,
+    "unquantified_solvent_nodes_added": 1,
+    "ingredient_doses_relocated_to_stock": 1,
+    "identity_conflicts_retained_unquantified": 2,
+    "unquantified_makeup_nodes_added": 1,
+    "stock_preparation_notes_added": 1,
+    "edited_records": 5152
+  },
+  "followup_unique_records": 11779,
+  "outside_this_followup": 4131,
+  "remaining_M142_queue": 73,
+  "reports": {
+    "application.json": "aa418d5da0f9d355fceaad9245a277b9ff552d1fee1287e1cb43ad7c9f48d8b3",
+    "applied-audit.json": "a9783dae5a462b240861e6eaa3987af52afbb9703b3a1cb1934a143aa97a4174",
+    "baseline.json": "e0725912b14d37e7b0006d4e4c93e7d2666fff4d6874b19a6fc1e41bda1c5c26",
+    "corpus.json": "9577646ee9213081230e363bb9da1479deb577717dc16d2fe5fab042f3ef0386",
+    "cumulative-audit.json": "b09eefa8b9bdfbd0e9777ba7a2a6e07ad2b55cbfe8544087174985b5194b8b45",
+    "fast.json": "e812750648ab11cbfd4762bfb3768ee46eb6417ec717882b0a81dfeaa3fa87a3",
+    "final.json": "d9ba50415877c5d22be786f0d8896535c00f4eaf31148103d7bc73a12b20ac1b",
+    "followup-coverage.json": "fb33ba661bf715738e7e32a17b2f7162d83f631669ae9cd266142140522b2691",
+    "index-refresh-application.json": "5d0f24cb697ab43dc45d2388d951569fcf8738c4085b5ae2909c0deb70bdd987",
+    "index-refresh-plan.json": "1d0d4feba9ae54ac89584f90f90c8d9c5b4e666cc0ec3133cc11853df192bd08",
+    "live.json": "a070630ed7087ed2e9b13c189577190656d4f4b1bc6039e4db0a349a2f9c0063",
+    "merge-retention.json": "81d74aca6cdaf53ca487688cc1bc3d2f199adc6672d4dd9db3977469fd2d4232",
+    "next-six-context.json": "f04c81701b42a8961942d5f954d454e494edcd16c82be6424cb3c10b0af659dd",
+    "plan.json": "7262df2869246a849e11ab6eca57475a6163a346abd31e5c50a0ed8865fc0edf",
+    "post.json": "e706c97ade6cff3d9621a06b61041e553a28ec85dbaad6770a788a1d594c5e91",
+    "preview-audit.json": "a9783dae5a462b240861e6eaa3987af52afbb9703b3a1cb1934a143aa97a4174",
+    "reconciliation.json": "45e6b9dbc2541baf9a84c7ce2d70c489fc5b20dfc17db6bc476e229d533c536c",
+    "remaining-queue.json": "71a88830ddb279d8442f88aa7d863f24517c717eee1fc672530005bf5609da3b"
+  },
+  "context": {
+    "path": "reports/ingredient_concentration_curation/20261008-reducing-stages/context.json",
+    "sha256": "dea2ad0d74d2e1b5a2d5f333ce3ebc0fd368f4181aad51fbd7aaca180795ef67"
+  },
+  "code_sha256": {
+    "scripts/repair_reducing_stages.py": "8fd71c0218edcf91dc6dba0804cc703d4a21141c258a46f7f4aa27460eccfc49",
+    "tests/test_reducing_stages.py": "95f0cab0a78dd757be2bc143704d10f73a955d269985029c76acf1610a423ed7",
+    "reports/ingredient_concentration_curation/20261008-reducing-stages/audit.py": "3b75267f95f1da74e13e43bddbc33be1c7d96c8ba8206e07e39ddb233b2abbe7",
+    "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "d7e58f2db4929524a75c25983be65adaa8614c55e0137826ad983d4b62249771"
+  },
+  "commit_push_PR_merge_branch_cleanup": "Not performed; requested publication workflow remains incomplete.",
+  "runtime": "Existing partial locked Python 3.13 environment; not clean CI. Full test suite not rerun for this localized data repair.",
+  "corpus_checks": {
+    "strict_explicit_root_scanned": 15910,
+    "ids_scanned": 15910,
+    "product_warnings": 91,
+    "product_skipped_no_adapter": 96087,
+    "ingredient_groundings_recertified": false
+  }
+}

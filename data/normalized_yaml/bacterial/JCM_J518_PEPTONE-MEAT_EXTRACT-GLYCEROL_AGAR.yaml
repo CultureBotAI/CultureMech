@@ -41,6 +41,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J518
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 4,
+                              "compound": "Agar",
+                              "compound_id": 3,
+                              "amount": 15,
+                              "unit": "g",
+                              "g_l": 14.7059,
+                              "mmol_l": 43.7246,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[3].concentration (Agar) in
+      MediaDive medium J518; locator=$.data.solutions[0].recipe[3]. Provider explicitly
+      reports g_l=14.7059; check: 15 g * 1 g/g / (1020 ml / 1000 ml per L) = 14.70588235294117647058823529
+      g/L. This supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1020. Retrieved 2026-10-07T14:35:56.182077+00:00;
+      response SHA256=6c7b86616d18ebd8c6f7ce98975e2187ff112a196f28551dc30323d87137218a.'
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -71,3 +94,22 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-07T14:52:40.011908+00:00'
+  curator: codex
+  action: CURATED_MEDIUM_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Exact medium/source membership, ingredient inventory/forms, physical-state
+    conditions, literal snippets, and arithmetic checked. Stock boundaries, source-only
+    rows, preparation context, and variants remain explicit follow-up tasks; secondary
+    chemical mappings unchanged.
+  source: https://mediadive.dsmz.de/rest/medium/J518
+  changes: 'ingredients[3].concentration: {"unit": "G_PER_L", "value": "14.7059"}
+    -> {"unit": "G_PER_L", "value": "14.7059"} (evidence_only)'
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/J518
+  title: 'MediaDive medium J518: PEPTONE-MEAT EXTRACT-GLYCEROL AGAR'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; source_organization=DSMZ;
+    accessed_on=2026-10-07; locator=$.data.solutions[0]; response_sha256=6c7b86616d18ebd8c6f7ce98975e2187ff112a196f28551dc30323d87137218a;
+    original_recipe=https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=518; individual
+    authors and publication year not supplied. Provider-declared main-recipe amounts
+    only. Original recipe collection=JCM; GRMD accession=518; DSMZ is the MediaDive
+    dataset provider, not the original recipe collection.

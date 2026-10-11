@@ -16,6 +16,33 @@ composition:
     label: sodium chloride
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5339
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "NaCl",
+                      "compound_id": 43,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 10,
+                      "unit": "g",
+                      "g_l": 9.90099,
+                      "mmol_l": 169.421,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (NaCl) in
+      MediaDive solution 5339; locator=$.data.recipe[1] (compound_id=43). Provider
+      explicitly reports g_l=9.90099. Arithmetic check: 10 g * 1 g/g / (1010 ml /
+      1000 ml per L) = 9.900990099009900990099009901 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1010. Retrieved 2026-10-07T09:53:48.071296+00:00;
+      response SHA256=3fb60df21e6a4d51c9caca07996921475034143bae35e0e06f00025fa85f6538.'
 - preferred_term: Peptone
   concentration:
     value: '0.990099'
@@ -23,6 +50,33 @@ composition:
   term:
     id: mediadive.compound:1
     label: Peptone
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5339
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "Peptone",
+                      "compound_id": 1,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "g",
+                      "g_l": 0.990099,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Peptone)
+      in MediaDive solution 5339; locator=$.data.recipe[2] (compound_id=1). Provider
+      explicitly reports g_l=0.990099. Arithmetic check: 1 g * 1 g/g / (1010 ml /
+      1000 ml per L) = 0.9900990099009900990099009901 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1010. Retrieved 2026-10-07T09:53:48.071296+00:00;
+      response SHA256=3fb60df21e6a4d51c9caca07996921475034143bae35e0e06f00025fa85f6538.'
 - preferred_term: Yeast extract
   concentration:
     value: '0.990099'
@@ -30,6 +84,33 @@ composition:
   term:
     id: mediadive.compound:16
     label: Yeast extract
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5339
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "Yeast extract",
+                      "compound_id": 16,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "g",
+                      "g_l": 0.990099,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[2].concentration (Yeast extract)
+      in MediaDive solution 5339; locator=$.data.recipe[3] (compound_id=16). Provider
+      explicitly reports g_l=0.990099. Arithmetic check: 1 g * 1 g/g / (1010 ml /
+      1000 ml per L) = 0.9900990099009900990099009901 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1010. Retrieved 2026-10-07T09:53:48.071296+00:00;
+      response SHA256=3fb60df21e6a4d51c9caca07996921475034143bae35e0e06f00025fa85f6538.'
 - preferred_term: HEPES
   concentration:
     value: '0.990099'
@@ -42,6 +123,33 @@ composition:
     label: 2-[4-(2-hydroxyethyl)piperazin-1-yl]ethanesulfonic acid
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5339
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 5,
+                      "compound": "HEPES",
+                      "compound_id": 371,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "g",
+                      "g_l": 0.990099,
+                      "mmol_l": 4.15467,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[3].concentration (HEPES)
+      in MediaDive solution 5339; locator=$.data.recipe[4] (compound_id=371). Provider
+      explicitly reports g_l=0.990099. Arithmetic check: 1 g * 1 g/g / (1010 ml /
+      1000 ml per L) = 0.9900990099009900990099009901 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1010. Retrieved 2026-10-07T09:53:48.071296+00:00;
+      response SHA256=3fb60df21e6a4d51c9caca07996921475034143bae35e0e06f00025fa85f6538.'
 - preferred_term: Distilled water
   concentration:
     value: '851.4851485148515'
@@ -108,6 +216,20 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T09:59:54.456952+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/5339
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "9.90099"}
+    -> {"unit": "G_PER_L", "value": "9.90099"} (evidence_only); composition[1].concentration:
+    {"unit": "G_PER_L", "value": "0.990099"} -> {"unit": "G_PER_L", "value": "0.990099"}
+    (evidence_only); composition[2].concentration: {"unit": "G_PER_L", "value": "0.990099"}
+    -> {"unit": "G_PER_L", "value": "0.990099"} (evidence_only); composition[3].concentration:
+    {"unit": "G_PER_L", "value": "0.990099"} -> {"unit": "G_PER_L", "value": "0.990099"}
+    (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -116,3 +238,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/5339
+  title: 'MediaDive solution 5339: Main sol. J1214'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=3fb60df21e6a4d51c9caca07996921475034143bae35e0e06f00025fa85f6538;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

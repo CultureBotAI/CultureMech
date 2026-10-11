@@ -23,6 +23,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J1178
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 1,
+                              "compound": "Glucose",
+                              "compound_id": 5,
+                              "amount": 10,
+                              "unit": "g",
+                              "g_l": 10,
+                              "mmol_l": 55.5062,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[0].concentration (Glucose)
+      in MediaDive medium J1178; locator=$.data.solutions[0].recipe[0]. Provider explicitly
+      reports g_l=10; check: 10 g * 1 g/g / (1000 ml / 1000 ml per L) = 10 g/L. This
+      supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T15:20:26.935613+00:00;
+      response SHA256=0564a0abb9fdf6a1befe43b258bf686aadc01e30f16211e44a4fe08880789523.'
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -30,14 +53,80 @@ ingredients:
   term:
     id: FOODON:03315426
     label: Yeast extract
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J1178
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 2,
+                              "compound": "Yeast extract",
+                              "compound_id": 16,
+                              "amount": 1,
+                              "unit": "g",
+                              "g_l": 1,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[1].concentration (Yeast extract)
+      in MediaDive medium J1178; locator=$.data.solutions[0].recipe[1]. Provider explicitly
+      reports g_l=1; check: 1 g * 1 g/g / (1000 ml / 1000 ml per L) = 1 g/L. This
+      supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T15:20:26.935613+00:00;
+      response SHA256=0564a0abb9fdf6a1befe43b258bf686aadc01e30f16211e44a4fe08880789523.'
 - preferred_term: Meat extract
   concentration:
     value: '1'
     unit: G_PER_L
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J1178
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 3,
+                              "compound": "Meat extract",
+                              "compound_id": 2,
+                              "amount": 1,
+                              "unit": "g",
+                              "g_l": 1,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[2].concentration (Meat extract)
+      in MediaDive medium J1178; locator=$.data.solutions[0].recipe[2]. Provider explicitly
+      reports g_l=1; check: 1 g * 1 g/g / (1000 ml / 1000 ml per L) = 1 g/L. This
+      supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T15:20:26.935613+00:00;
+      response SHA256=0564a0abb9fdf6a1befe43b258bf686aadc01e30f16211e44a4fe08880789523.'
 - preferred_term: Casitone
   concentration:
     value: '2'
     unit: G_PER_L
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J1178
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 4,
+                              "compound": "Casitone",
+                              "compound_id": 84,
+                              "amount": 2,
+                              "unit": "g",
+                              "g_l": 2,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[3].concentration (Casitone)
+      in MediaDive medium J1178; locator=$.data.solutions[0].recipe[3]. Provider explicitly
+      reports g_l=2; check: 2 g * 1 g/g / (1000 ml / 1000 ml per L) = 2 g/L. This
+      supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T15:20:26.935613+00:00;
+      response SHA256=0564a0abb9fdf6a1befe43b258bf686aadc01e30f16211e44a4fe08880789523.'
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -48,6 +137,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J1178
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 5,
+                              "compound": "Agar",
+                              "compound_id": 3,
+                              "amount": 15,
+                              "unit": "g",
+                              "g_l": 15,
+                              "mmol_l": 44.5991,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[4].concentration (Agar) in
+      MediaDive medium J1178; locator=$.data.solutions[0].recipe[4]. Provider explicitly
+      reports g_l=15; check: 15 g * 1 g/g / (1000 ml / 1000 ml per L) = 15 g/L. This
+      supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T15:20:26.935613+00:00;
+      response SHA256=0564a0abb9fdf6a1befe43b258bf686aadc01e30f16211e44a4fe08880789523.'
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -83,6 +195,21 @@ curation_history:
   changes: Grounded exact bacterial extract mappings
   source: src/culturemech/data/mediaingredientmech/label_index.csv
   notes: Applied exact MediaIngredientMech mappings for Yeast extract.
+- timestamp: '2026-10-07T15:40:13.763859+00:00'
+  curator: codex
+  action: CURATED_MEDIUM_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Exact medium/source membership, ingredient inventory/forms, physical-state
+    conditions, literal snippets, and arithmetic checked. Stock boundaries, source-only
+    rows, preparation context, and variants remain explicit follow-up tasks; secondary
+    chemical mappings unchanged.
+  source: https://mediadive.dsmz.de/rest/medium/J1178
+  changes: 'ingredients[0].concentration: {"unit": "G_PER_L", "value": "10"} -> {"unit":
+    "G_PER_L", "value": "10"} (evidence_only); ingredients[1].concentration: {"unit":
+    "G_PER_L", "value": "1"} -> {"unit": "G_PER_L", "value": "1"} (evidence_only);
+    ingredients[2].concentration: {"unit": "G_PER_L", "value": "1"} -> {"unit": "G_PER_L",
+    "value": "1"} (evidence_only); ingredients[3].concentration: {"unit": "G_PER_L",
+    "value": "2"} -> {"unit": "G_PER_L", "value": "2"} (evidence_only); ingredients[4].concentration:
+    {"unit": "G_PER_L", "value": "15"} -> {"unit": "G_PER_L", "value": "15"} (evidence_only)'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_1109_BTT_medium.yaml
   relationship: CONCENTRATION_VARIANT
@@ -96,3 +223,12 @@ variant_children:
   name: btt_medium
   notes: Same ingredient identity signature but concentration signature differs from
     parent.
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/J1178
+  title: 'MediaDive medium J1178: BTT MEDIUM'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; source_organization=DSMZ;
+    accessed_on=2026-10-07; locator=$.data.solutions[0]; response_sha256=0564a0abb9fdf6a1befe43b258bf686aadc01e30f16211e44a4fe08880789523;
+    original_recipe=https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1178; individual
+    authors and publication year not supplied. Provider-declared main-recipe amounts
+    only. Original recipe collection=JCM; GRMD accession=1178; DSMZ is the MediaDive
+    dataset provider, not the original recipe collection.

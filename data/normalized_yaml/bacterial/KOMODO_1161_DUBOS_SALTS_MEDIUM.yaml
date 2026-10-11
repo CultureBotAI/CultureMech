@@ -24,6 +24,32 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000171
     label: NaNO3
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1161
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 1,
+                              "compound": "NaNO3",
+                              "compound_id": 187,
+                              "amount": 0.5,
+                              "unit": "g",
+                              "g_l": 0.5,
+                              "mmol_l": 5.8827,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[0].concentration (NaNO3)
+      in MediaDive medium 1161; locator=$.data.solutions[0].recipe[0]. Provider explicitly
+      reports g_l=0.5; check: 0.5 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.5 g/L.
+      This supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:18:08.370535+00:00;
+      response SHA256=4df18f42f277365fb88e2ec7dcb80498900b7333b64a9aaf522094a5ff157ea6.
+      KOMODO accession 1161 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;
+      mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.
+      The mapping supports identity only, not ingredient quantities or variants.'
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -34,6 +60,32 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1161
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 2,
+                              "compound": "K2HPO4",
+                              "compound_id": 10,
+                              "amount": 1,
+                              "unit": "g",
+                              "g_l": 1,
+                              "mmol_l": 5.74132,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[1].concentration (K2HPO4)
+      in MediaDive medium 1161; locator=$.data.solutions[0].recipe[1]. Provider explicitly
+      reports g_l=1; check: 1 g * 1 g/g / (1000 ml / 1000 ml per L) = 1 g/L. This
+      supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:18:08.370535+00:00;
+      response SHA256=4df18f42f277365fb88e2ec7dcb80498900b7333b64a9aaf522094a5ff157ea6.
+      KOMODO accession 1161 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;
+      mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.
+      The mapping supports identity only, not ingredient quantities or variants.'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -44,6 +96,32 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1161
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 3,
+                              "compound": "MgSO4 x 7 H2O",
+                              "compound_id": 8,
+                              "amount": 0.5,
+                              "unit": "g",
+                              "g_l": 0.5,
+                              "mmol_l": 2.02859,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[2].concentration (MgSO4 x
+      7 H2O) in MediaDive medium 1161; locator=$.data.solutions[0].recipe[2]. Provider
+      explicitly reports g_l=0.5; check: 0.5 g * 1 g/g / (1000 ml / 1000 ml per L)
+      = 0.5 g/L. This supports the provider-declared main-recipe concentration, not
+      an independently measured final volume, a stock composition, or a downstream
+      assay dilution. Water alone does not establish final volume. Exact source ingredient
+      labels/forms are matched; secondary ontology mappings are not validated by this
+      evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved
+      2026-10-07T13:18:08.370535+00:00; response SHA256=4df18f42f277365fb88e2ec7dcb80498900b7333b64a9aaf522094a5ff157ea6.
+      KOMODO accession 1161 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;
+      mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.
+      The mapping supports identity only, not ingredient quantities or variants.'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -54,6 +132,32 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
     label: potassium chloride
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1161
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 4,
+                              "compound": "KCl",
+                              "compound_id": 61,
+                              "amount": 0.5,
+                              "unit": "g",
+                              "g_l": 0.5,
+                              "mmol_l": 6.70691,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[3].concentration (KCl) in
+      MediaDive medium 1161; locator=$.data.solutions[0].recipe[3]. Provider explicitly
+      reports g_l=0.5; check: 0.5 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.5 g/L.
+      This supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:18:08.370535+00:00;
+      response SHA256=4df18f42f277365fb88e2ec7dcb80498900b7333b64a9aaf522094a5ff157ea6.
+      KOMODO accession 1161 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;
+      mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.
+      The mapping supports identity only, not ingredient quantities or variants.'
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -64,6 +168,32 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
     label: iron(2+) sulfate heptahydrate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1161
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 5,
+                              "compound": "FeSO4 x 7 H2O",
+                              "compound_id": 12,
+                              "amount": 10,
+                              "unit": "mg",
+                              "g_l": 0.01,
+                              "mmol_l": 0.0359693,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[4].concentration (FeSO4 x
+      7 H2O) in MediaDive medium 1161; locator=$.data.solutions[0].recipe[4]. Provider
+      explicitly reports g_l=0.01; check: 10 mg * 0.001 g/mg / (1000 ml / 1000 ml
+      per L) = 0.010 g/L. This supports the provider-declared main-recipe concentration,
+      not an independently measured final volume, a stock composition, or a downstream
+      assay dilution. Water alone does not establish final volume. Exact source ingredient
+      labels/forms are matched; secondary ontology mappings are not validated by this
+      evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved
+      2026-10-07T13:18:08.370535+00:00; response SHA256=4df18f42f277365fb88e2ec7dcb80498900b7333b64a9aaf522094a5ff157ea6.
+      KOMODO accession 1161 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;
+      mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.
+      The mapping supports identity only, not ingredient quantities or variants.'
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -74,6 +204,32 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1161
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 6,
+                              "compound": "Agar",
+                              "compound_id": 3,
+                              "amount": 15,
+                              "unit": "g",
+                              "g_l": 15,
+                              "mmol_l": 44.5991,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[5].concentration (Agar) in
+      MediaDive medium 1161; locator=$.data.solutions[0].recipe[5]. Provider explicitly
+      reports g_l=15; check: 15 g * 1 g/g / (1000 ml / 1000 ml per L) = 15 g/L. This
+      supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:18:08.370535+00:00;
+      response SHA256=4df18f42f277365fb88e2ec7dcb80498900b7333b64a9aaf522094a5ff157ea6.
+      KOMODO accession 1161 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;
+      mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.
+      The mapping supports identity only, not ingredient quantities or variants.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -108,6 +264,26 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-10-08T08:10:31.707883+00:00'
+  curator: codex
+  action: CURATED_KOMODO_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Exact medium/source membership, ingredient inventory/forms, physical-state
+    conditions, literal snippets, and arithmetic checked. Stock boundaries, source-only
+    rows, preparation context, and variants remain explicit follow-up tasks; secondary
+    chemical mappings unchanged. KOMODO accession 1161 is mapped to the same DSMZ
+    accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;
+    mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.
+    The mapping supports identity only, not ingredient quantities or variants.
+  source: https://mediadive.dsmz.de/rest/medium/1161
+  changes: 'ingredients[0].concentration: {"unit": "G_PER_L", "value": "0.5"} -> {"unit":
+    "G_PER_L", "value": "0.5"} (evidence_only); ingredients[1].concentration: {"unit":
+    "G_PER_L", "value": "1"} -> {"unit": "G_PER_L", "value": "1"} (evidence_only);
+    ingredients[2].concentration: {"unit": "G_PER_L", "value": "0.5"} -> {"unit":
+    "G_PER_L", "value": "0.5"} (evidence_only); ingredients[3].concentration: {"unit":
+    "G_PER_L", "value": "0.5"} -> {"unit": "G_PER_L", "value": "0.5"} (evidence_only);
+    ingredients[4].concentration: {"unit": "G_PER_L", "value": "0.01"} -> {"unit":
+    "G_PER_L", "value": "0.01"} (evidence_only); ingredients[5].concentration: {"unit":
+    "G_PER_L", "value": "15"} -> {"unit": "G_PER_L", "value": "15"} (evidence_only)'
 parent_media:
   path: data/normalized_yaml/bacterial/dubos_salts_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -120,3 +296,31 @@ variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
 - KOMODO record is an exact source duplicate of DSMZ Medium 1161; local ingredient
   and concentration signatures match.
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/1161
+  title: 'MediaDive medium 1161: DUBOS SALTS MEDIUM'
+  notes: source_type=dataset; discovery_mode=cross_reference; source_organization=DSMZ;
+    accessed_on=2026-10-07; locator=$.data.solutions[0]; response_sha256=4df18f42f277365fb88e2ec7dcb80498900b7333b64a9aaf522094a5ff157ea6;
+    original_recipe=https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1161.pdf;
+    individual authors and publication year not supplied. Provider-declared main-recipe
+    amounts only. Discovered through the verified KOMODO original-recipe mapping.
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  title: KOMODO - the Known Media Database
+  notes: source_type=dataset; discovery_mode=existing_record_reference; source_organization=KOMODO;
+    accessed_on=2026-10-07; response_sha256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a;
+    individual authors and publication year not supplied. Identity mapping only, not
+    concentration evidence.
+evidence:
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  supports: SUPPORT
+  snippet: "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1161'\
+    \ >1161</a></TD>\n\t\t\t\t\t<TD>DUBOS SALTS MEDIUM</TD>\n\t\t\t\t\t<TD> 7.2</TD>\n\
+    \t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n\
+    <TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1161.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1161.pdf</a></TD>\n\
+    \t\t\t\t</TR>"
+  explanation: 'Source identity only: KOMODO accession 1161 maps to https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1161.pdf;
+    locator=MediaList table row with ID=1161. This row supplies no ingredient amounts
+    and does not establish equivalence of variants. Concentrations are supported separately
+    by exact ingredient excerpts from the linked DSMZ dataset recipe. Retrieved 2026-10-07T13:01:23.350274+00:00;
+    response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.'

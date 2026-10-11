@@ -1,0 +1,275 @@
+{
+  "terminal": true,
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "normalized_count": 15910,
+  "normalized_sha256": "48c3b9d310293ee12ee7655e555076f7787b0d9f52a88ff0a2f9d27ab98710b9",
+  "only_reviewed_records_changed": true,
+  "applied_records": 14,
+  "independent_audit_totals": {
+    "source_nodes": 447,
+    "old_quantity_slots": 416,
+    "claims": 2067,
+    "new_evidence": 621,
+    "new_references": 32,
+    "new_curation_history": 14,
+    "old_candidate_slots": 8
+  },
+  "tests_passed": {
+    "focused-v2": "930 passed, 2 warnings in 206.95s (0:03:26)",
+    "fast-v2": "11748 passed, 16 skipped, 1965 deselected, 2 warnings in 1633.48s (0:27:13)",
+    "qa-v2": "75 passed in 94.24s (0:01:34)",
+    "legacy-corpus": "15 passed in 7.75s"
+  },
+  "fast_tier_scope": "The medium-829 run collected tests before the new OTEB preview test module was introduced. OTEB is separately covered by its 495 passing focused tests and preview gates, not claimed to have run in this fast-tier checkpoint.",
+  "reference_checks": {
+    "passed": 661,
+    "failed": 0,
+    "mode": "offline hash-checked official captures",
+    "fresh_refresh_passed": false
+  },
+  "remaining_failed_gates": [
+    {
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "exit_code": 1,
+      "log": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/post-42.log",
+      "log_sha256": "b86f4b504ce5b27572941cfd465011a1fded4268af0e587ab151ca450136211c"
+    },
+    {
+      "command": [
+        "just",
+        "audit-merge-freshness",
+        "--json"
+      ],
+      "exit_code": 1,
+      "log": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/post-43.log",
+      "log_sha256": "e3ec8ec089caa837cae2401ec473f63d19bb1218b63c90bf8b861b7833035385"
+    }
+  ],
+  "merge_verification": {
+    "name_conflicts": 1247,
+    "fingerprint_issues": 3287
+  },
+  "freshness": {
+    "tracked_total": 6320,
+    "fresh_total": 10777,
+    "only_in_tracked": 4275,
+    "only_in_fresh": 8732,
+    "changed": 2045,
+    "unchanged": 0
+  },
+  "superseded_fast_failure": {
+    "receipt": "fast.json",
+    "sha256": "99c6b8a6ed9eb26987df715f89d9787acd2461de99cf7a935a5bc3049abb7b46",
+    "failed_tests": 1,
+    "passed_tests": 11758,
+    "issue": "issue-legacy-submedia-contract.md",
+    "recipe_changes_to_fix_test": 0
+  },
+  "legacy_test_tier": {
+    "tier": "corpus",
+    "tests_collected": 15,
+    "tests_passed": 15,
+    "classification_explanation": "Existing pytest_collection_modifyitems classifies the whole module as corpus because its source now contains an explicit data/normalized_yaml path. The classifier was not modified. All fifteen legacy-module tests are additionally executed explicitly; the fast-tier pass is not used as proof of that regression fix.",
+    "fast_tier_does_not_prove_legacy_regression_fix": true
+  },
+  "corpus_checks": {
+    "strict_scanned": 15910,
+    "ids_passed": true,
+    "product_warnings": 91,
+    "product_skipped_no_adapter": 96008,
+    "cohort_variant_findings": 0,
+    "global_variant_findings": 0,
+    "chemical_groundings_recertified": false
+  },
+  "runtime_merge_retention": {
+    "cohort_medium_shaped_records": 13,
+    "standalone_solutions_excluded": 1,
+    "routing": {
+      "total_processed": 15910,
+      "excluded_solutions": 4785,
+      "skipped_no_fingerprint": 2,
+      "skipped_error": 340,
+      "successfully_fingerprinted": 10783,
+      "reasons": {
+        "other_error": 340,
+        "no_valid_ingredients": 2
+      }
+    },
+    "routing_matches_predecessor": true
+  },
+  "cumulative_audit": {
+    "stock_nodes_relocated": 825,
+    "new_quantity_slots": 364,
+    "unsupported_quantity_slots_removed": 869,
+    "new_evidence": 35128,
+    "new_curation_history": 5437,
+    "new_references": 5770,
+    "stock_stage_concentrations_rebased": 199,
+    "stock_descriptors_added": 241,
+    "quantity_corrections": 1455,
+    "stock_dose_basis_corrections": 128,
+    "copied_ingredient_nodes_replaced_by_reference": 37,
+    "ingredient_context_notes_added": 268,
+    "water_input_nodes_added": 27,
+    "recipe_context_notes_corrected": 26,
+    "parent_links_corrected": 7,
+    "source_amount_conflicts_repaired": 3,
+    "unquantified_carrier_nodes_added": 88,
+    "evidence_scopes_corrected": 172,
+    "ingredient_context_notes_corrected": 9,
+    "preparation_actions_corrected": 8,
+    "preparation_descriptions_corrected": 4,
+    "preparation_steps_added": 69,
+    "batch_mass_notes_unverified_concentrations": 48,
+    "duplicate_stock_nodes_removed": 1,
+    "variant_links_added": 8,
+    "explicit_medium_rates_verified": 3,
+    "unsupported_flags_removed": 1,
+    "child_links_corrected": 7,
+    "preparation_steps_relocated": 18,
+    "inline_variant_options_added": 14,
+    "water_input_notes_added": 9,
+    "extraction_preparations_added": 1,
+    "base_preparations_added": 9,
+    "preparation_records_restored": 3,
+    "supplement_nodes_moved_to_variants": 4,
+    "corrected_evidence_snippets": 2,
+    "stock_context_notes_corrected": 8,
+    "extraction_preparations_restructured": 2,
+    "source_version_alternatives_added": 4,
+    "copied_ingredient_nodes_removed": 3,
+    "composition_classifications_corrected": 2,
+    "final_quantity_slots_added": 1,
+    "explicitly_omitted_ingredient_nodes": 1,
+    "ingredient_source_attributions_corrected": 1,
+    "bibliographic_entries_enriched": 1,
+    "excluded_alternative_nodes_removed": 1,
+    "ingredient_labels_corrected": 1,
+    "preparation_text_encodings_corrected": 1,
+    "unquantified_solvent_nodes_added": 1,
+    "ingredient_doses_relocated_to_stock": 1,
+    "identity_conflicts_retained_unquantified": 2,
+    "unquantified_makeup_nodes_added": 1,
+    "stock_preparation_notes_added": 1,
+    "edited_records": 5232
+  },
+  "followup_unique_records": 11799,
+  "outside_this_followup": 4111,
+  "remaining_queues": {
+    "identity": 46,
+    "M142_separate": 71
+  },
+  "remaining_family_preflight": {
+    "candidate_count": 46,
+    "family_count": 34,
+    "external_neighbor_count": 1,
+    "identity_error_count": 4
+  },
+  "title_followup": {
+    "unique_candidate_paths": 4866,
+    "structured_root_entry_count": 4868,
+    "structured_root_unique_paths": 4866
+  },
+  "next_1245_preparation": {
+    "identified_candidates": 6,
+    "source_captures": 7,
+    "source_rows_inventoried": 126,
+    "old_quantity_fields_inventoried": 115,
+    "unrepresented_source_rows": 21,
+    "old_fields_without_recipe_rows": 11,
+    "original_pdf_pages_visually_inspected": 2,
+    "baseline_commands_passed": 12,
+    "records_edited": false,
+    "source_claim_review_complete": false,
+    "guarded_proposal_complete": false
+  },
+  "next_1245_successor_preview": {
+    "supersedes_preparation_stage_only": true,
+    "receipt": "reports/ingredient_concentration_curation/20261009-oteb-family/validation-preview.json",
+    "sha256": "d187efd7ab3ff383b1f4ba9fd1ddaa3982254a7ff5a257285190c5870f0abe20",
+    "source_claim_review_complete": true,
+    "guarded_proposal_complete": true,
+    "records_applied": 0,
+    "proposal_audit": {
+      "source_nodes": 127,
+      "old_quantity_slots": 115,
+      "claims": 449,
+      "new_evidence": 154,
+      "new_references": 9,
+      "new_curation_history": 6
+    },
+    "focused_tests": "495 passed, 2 warnings in 97.62s (0:01:37)",
+    "reference_checks": {
+      "total": 180,
+      "passed": 180
+    }
+  },
+  "reports_sha256": {
+    "apply.json": "b5187d51ede3a5b19e0ad6e3576c16ca99cac56cdfed595aa4a242e7cb6b0b72",
+    "audit.json": "03ad3771a28aca6eb42d19240a15a5ea045b291a0bab698f1dc1dbfba0e7a952",
+    "cached.json": "ff0fa54038b658cd8d0819332deafc555437924f2dc2f0e15045a6133079d068",
+    "cached-v2.json": "2045235de7530c461bea5bf657960d06c9b16b6bff9f4c760b54c4c65d47808c",
+    "context.json": "ef9c0aa87ab3f6b939c9b088337f801601151ba34e0797406b69bb038a29a0be",
+    "corpus.json": "c762f7c036f3520401619f28989788146fd77660ac5008a8b7c60942811a9e1f",
+    "cumulative-audit.json": "8093a71d03946e2afec2b5291bfd49fffedd2da14c8408d82e71deedf842dac5",
+    "fast.json": "99c6b8a6ed9eb26987df715f89d9787acd2461de99cf7a935a5bc3049abb7b46",
+    "fast-v2.json": "d7957366a11d68cfe619141eaeb2a62fed4ed038459ce80102b1217e20d2ee7a",
+    "focused-v2.json": "897356df5dcff13f6011202525af9fed82d0112e0fb17bb2a1feab81ff7fc811",
+    "followup-coverage.json": "871e276901c623bab98b153c0f2dc0854a19964af11d6d3c38e051e1261a3ca1",
+    "index-refresh-plan.json": "6841283b6ebc482ea120be0b6701dcde44ef3c08fe52f3f2f23910e92af2219c",
+    "ledgers.json": "25df64f01ed523975f46eed6585f400b60daf6789055bc0c279cc9a98b655a69",
+    "legacy-corpus.json": "48798cee0554f63b50f044cbedb3dbcb125df2960c16e21991a085dcfe9e1000",
+    "next-1245-baseline.json": "7ff56549e1c31b897b0af7cde5b6d34d0903a59704de0c1dc99f9d98e16b0b59",
+    "next-1245-context-approved.json": "4b6c500b9872dedc88784fba12b77151e59ac7c902bf63376e1b7ac7ea764bcc",
+    "next-1245-context-extended.json": "6d9d7e2c9207c8f8cc0b00f4c8d629b164496165784d024e684bcae20e80ebeb",
+    "next-1245-context-initial.json": "bb8d3cb9c711e93bc23c8b6a41b64a4153535995282ae9687b62a895f2605aa4",
+    "next-1245-coverage.json": "a5e28617d7dddea61af3ce4f4b330ad2fe5b9e08c62d3508c2ce2be5a532d4b2",
+    "next-1245-inspection.json": "a9061f0c1610393c9a78338952fb31acac5f16d0c769cfd37fea010007d8ab29",
+    "next-1245-old-slot-inventory.json": "3d6cea9470d6ed92fffbf910f43967d305549755b01c0cbed10cec5947361e23",
+    "next-acid-family-inventory.json": "1c574a172fd16e0765daa11d7a42f3c3cf241bb655650993ad0a1cb3d55b7040",
+    "next-lb-identity-context.json": "abe5b88655d25bbbe63a3ca78f6b15610c5a8e56351288a909680b4d6b86360d",
+    "next-title-prefix-candidates-applied.json": "eb800f72ef2123a7e0f4bf9ba11193e36e1547dd4a13cc6b7079efdd8d997896",
+    "plan.json": "c7c09669520bf85485f7424800f8c02c40535d1024ef8e66ac93f98e67324f07",
+    "plan-v2.json": "8452f7a0ffa1de24471cac81be183e7eb5deddfa26c4b03578ada91040181a1f",
+    "post.json": "20638f3da71eb3dfd0f812d86a7de90352065e6285baf5adb56c18da71a88ba8",
+    "presentation.json": "933564d49d12f3a990e456410c2610609969860ea33b57158a18a2ac1e83516d",
+    "presentation-preview.json": "4254b997a96256bc6e9ae83d9f3965a958b05f0e91194386f31d6e0080c7d50b",
+    "qa.json": "cf0652f35caee63c74a76d5ff1dc43ee0a834a591ac165e474a5fccf77c85be5",
+    "qa-v2.json": "9a0ce23c099dd9cda66fcc06cc9d8b52628d7ee239b26e469d23eef8ba45dedd",
+    "reconcile-indexes.json": "a210825427f963b729e0b9ff2448d8b50607f63311b9bf6562587d088f6b7b5c",
+    "reconcile-reports.json": "a22d671dae214f7bbf1d356f40bfd7940f76e32057d213378420318d15d34c16",
+    "reconcile-retention.json": "aa95889808f1eb3227bd9b50e050efbe319d30b79985f2aedf6e85da47b95f50",
+    "remaining-queue.json": "6a1832e0120b13eae7c35e102f87d9372026e53c73e92a17f9af93ddb14f7250",
+    "validation-preview.json": "bd1ee8184a2a7ca1e062e2be98c8d43fcb54208fa730830c9f07c9b1d3d85405"
+  },
+  "applied_ledger_sha256": {
+    "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/applied-records/D829.md": "285ff6b158ef5060bc6a9cb18edfdcd1c0a0430bfeeaf2c830df1f46597300c7",
+    "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/applied-records/D829a.md": "6fd208ed627500e93012fff5dbc041e70918c68a96cf300a65ab6b3c7d494f0a",
+    "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/applied-records/D829b.md": "8194c01b046155699db9ffd28c95c53f52b35153918e42da317b9f232cf9118c",
+    "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/applied-records/D829c.md": "39f9bf057b738411a98ec90a047d3ae16c0714a8d9e49965b742299897eb80ec",
+    "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/applied-records/D829d.md": "e9d02d8f66b162d39a0f980bec1e89a8777933ad77543e47f52e38502fdbbc92",
+    "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/applied-records/K2027.md": "6c7eb65594c9b8d4684d847716b54a5b324eade6dd2a6535bc1b57fea282663a",
+    "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/applied-records/K829.1.md": "c6427958dbb7a6d5e9bea3b0a6040681f5c000488ffef16e516a647ca47e9ce9",
+    "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/applied-records/K829.2.md": "4159ca2dcfe45e91516a8d9d8f83acc1d1ea0b35abfb49f5acb216dff64deaf2",
+    "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/applied-records/K829.3.md": "6e01993140faa7deb7ec3d9eb6d1ae80b487fdb932e948a22b3e6e573a238208",
+    "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/applied-records/K829.md": "18bb54ffee74dc6ea7f5207daa398cf7faa54fa80d4c3a0064087c711149c8dd",
+    "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/applied-records/K829_16661.md": "826312645208634056682b25ad592a9f058684fc7c48fb8024e9aac7a9db7c73",
+    "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/applied-records/K829a.md": "9e2bccc4ee1115340d1585c09b704ab55fab92db718b56e249ed04991ab74a47",
+    "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/applied-records/M2587.md": "66a976d3891f9d188735fdff0e99eaf2a4dc511a63fdfb7d4117e2f4d9cabccd",
+    "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/applied-records/S1680.md": "34a2e68449f87d1f7f095b0083532fad53a765d3f6d29e3189097dc1c43f0fa9"
+  },
+  "code_sha256": {
+    "scripts/repair_desulfurobacterium_family.py": "9701fcf22247d766000992718d3c553430a851d1031f80db0a30d6b3aee345cc",
+    "tests/test_desulfurobacterium_family.py": "358fbcf8308047c1c628ff651587c393c21dc242e5cdf1a189caa8749b38f900",
+    "tests/test_medium_concentration_batch.py": "a357bd8d8ab049119079d0997092656d7d8cca8c52dd52d6e6a11cc714a2e9d9",
+    "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/audit.py": "f4abf7280174baaf9a1e967a99f1dd1fdbdb11aec4f35da2e750dfd856b73eb8",
+    "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "6df4a23c475c0c5b472a6d18da6e4ea65722f61a4261fa65000cd67504fafec9",
+    "tests/test_repair_komodo_dsmz_submedia_score15.py": "2c50a61595adc051b6858349561af2ceac49bace378193acf2e755de5248888d"
+  },
+  "runtime": "Existing partial locked Python 3.13 environment; not clean CI or complete-suite validation.",
+  "publication": "No commit, push, public issue, PR, merge or branch cleanup in this batch. Earlier outbound-payload approval remains unresolved."
+}

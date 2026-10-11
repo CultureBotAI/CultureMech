@@ -1,0 +1,46 @@
+{
+  "M2410": {
+    "quantity_corrections": 2,
+    "unsupported_quantity_slots_removed": 12,
+    "stock_nodes_relocated": 2,
+    "stock_descriptors_added": 3,
+    "new_quantity_slots": 1,
+    "preparation_steps_added": 8,
+    "preparation_steps_relocated": 0,
+    "new_evidence": 13,
+    "new_references": 1,
+    "new_curation_history": 1,
+    "old_quantity_slots": 14,
+    "claims": 43,
+    "source_rows": 12
+  },
+  "D1829": {
+    "new_quantity_slots": 2,
+    "quantity_corrections": 1,
+    "stock_descriptors_added": 1,
+    "unsupported_quantity_slots_removed": 3,
+    "preparation_steps_added": 3,
+    "preparation_steps_relocated": 1,
+    "new_evidence": 27,
+    "new_references": 2,
+    "new_curation_history": 1,
+    "old_quantity_slots": 13,
+    "claims": 46,
+    "source_rows": 12
+  },
+  "J173": {
+    "stock_descriptors_added": 4,
+    "stock_nodes_relocated": 10,
+    "stock_stage_concentrations_rebased": 10,
+    "new_quantity_slots": 4,
+    "unsupported_quantity_slots_removed": 3,
+    "preparation_steps_added": 4,
+    "preparation_steps_relocated": 1,
+    "new_evidence": 29,
+    "new_references": 2,
+    "new_curation_history": 1,
+    "old_quantity_slots": 13,
+    "claims": 50,
+    "source_rows": 13
+  }
+}

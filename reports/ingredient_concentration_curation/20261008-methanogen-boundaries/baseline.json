@@ -1,0 +1,66 @@
+{
+  "terminal": true,
+  "runtime": "Partial locked Python 3.13; not full CI",
+  "checks": [
+    {
+      "name": "schema-J985",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/archaea/methanomethylovorans_uponensis_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/methanogen-boundaries-baseline-schema-J985.log"
+    },
+    {
+      "name": "strict-J985",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/archaea/methanomethylovorans_uponensis_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/methanogen-boundaries-baseline-strict-J985.log"
+    },
+    {
+      "name": "schema-J265",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/archaea/methanogenium_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/methanogen-boundaries-baseline-schema-J265.log"
+    },
+    {
+      "name": "strict-J265",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/archaea/methanogenium_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/methanogen-boundaries-baseline-strict-J265.log"
+    },
+    {
+      "name": "schema-M257",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/archaea/TOGO_M257_Methanogenium_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/methanogen-boundaries-baseline-schema-M257.log"
+    },
+    {
+      "name": "strict-M257",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/archaea/TOGO_M257_Methanogenium_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/methanogen-boundaries-baseline-strict-M257.log"
+    }
+  ]
+}

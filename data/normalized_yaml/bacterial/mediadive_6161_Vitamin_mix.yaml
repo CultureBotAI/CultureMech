@@ -40,6 +40,33 @@ composition:
     label: thiamine hydrochloride
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/6161
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 5,
+                      "compound": "Thiamine HCl",
+                      "compound_id": 1207,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.02,
+                      "unit": "g",
+                      "g_l": 0.1,
+                      "mmol_l": 0.296472,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[2].concentration (Thiamine
+      HCl) in MediaDive solution 6161; locator=$.data.recipe[2] (compound_id=1207).
+      Provider explicitly reports g_l=0.1. Arithmetic check: 0.02 g * 1 g/g / (200
+      ml / 1000 ml per L) = 0.1 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 200. Retrieved 2026-10-07T10:00:47.462692+00:00;
+      response SHA256=3ea40a7d3668509092270ea5887f936c1d553e9aeb0091238f75d3762761add2.'
 preparation_notes: 'First make primary stocks of Cyanocobalamin and Biotin.
 
   Dispense any excess primary stocks into 1 ml aliquots and freeze.
@@ -74,6 +101,15 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-10-07T10:04:07.640757+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/6161
+  changes: 'composition[2].concentration: {"unit": "G_PER_L", "value": "0.1"} -> {"unit":
+    "G_PER_L", "value": "0.1"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -82,3 +118,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/6161
+  title: 'MediaDive solution 6161: Vitamin mix'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=3ea40a7d3668509092270ea5887f936c1d553e9aeb0091238f75d3762761add2;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

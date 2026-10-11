@@ -267,9 +267,8 @@ def validate_references(path: Path, target_class: str) -> list[dict]:
         [
             "uv",
             "run",
-            "linkml-reference-validator",
-            "validate",
-            "data",
+            "python",
+            str(_REPO_ROOT / "scripts" / "validate_recipe_references.py"),
             str(path),
             "--schema",
             str(SCHEMA_PATH),

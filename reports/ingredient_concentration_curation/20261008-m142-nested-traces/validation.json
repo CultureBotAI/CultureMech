@@ -1,0 +1,303 @@
+{
+  "terminal": true,
+  "runtime": "Partial locked Python 3.13; not full CI",
+  "checks": [
+    {
+      "name": "preview",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/repair_m142_nested_traces.py",
+        "--dry-run",
+        "--reports"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/nested-post-preview.log"
+    },
+    {
+      "name": "preview-audit",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "reports/ingredient_concentration_curation/20261008-m142-nested-traces/audit.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/nested-post-preview-audit.log"
+    },
+    {
+      "name": "pre-apply-tests",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_m142_nested_traces.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/nested-post-pre-apply-tests.log"
+    },
+    {
+      "name": "apply",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/repair_m142_nested_traces.py",
+        "--apply",
+        "--reports"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/nested-post-apply.log"
+    },
+    {
+      "name": "validate-schema-M933",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/TOGO_M933_MMJYP2_For_AC55.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/nested-post-validate-schema-M933.log"
+    },
+    {
+      "name": "validate-strict-M933",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/TOGO_M933_MMJYP2_For_AC55.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/nested-post-validate-strict-M933.log"
+    },
+    {
+      "name": "validate-schema-M1106",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/TOGO_M1106_Thiobacillus_Prosperus_FO1_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/nested-post-validate-schema-M1106.log"
+    },
+    {
+      "name": "validate-strict-M1106",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/TOGO_M1106_Thiobacillus_Prosperus_FO1_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/nested-post-validate-strict-M1106.log"
+    },
+    {
+      "name": "validate-schema-M1124",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/TOGO_M1124_Acetomicrobium_Faecale_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/nested-post-validate-schema-M1124.log"
+    },
+    {
+      "name": "validate-strict-M1124",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/TOGO_M1124_Acetomicrobium_Faecale_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/nested-post-validate-strict-M1124.log"
+    },
+    {
+      "name": "validate-schema-M1153",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/TOGO_M1153_Thiobacillus_Prosperus_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/nested-post-validate-schema-M1153.log"
+    },
+    {
+      "name": "validate-strict-M1153",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/TOGO_M1153_Thiobacillus_Prosperus_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/nested-post-validate-strict-M1153.log"
+    },
+    {
+      "name": "validate-schema-M1378",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/TOGO_M1378_HNN_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/nested-post-validate-schema-M1378.log"
+    },
+    {
+      "name": "validate-strict-M1378",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/TOGO_M1378_HNN_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/nested-post-validate-strict-M1378.log"
+    },
+    {
+      "name": "validate-schema-M1389",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/TOGO_M1389_MMJF_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/nested-post-validate-schema-M1389.log"
+    },
+    {
+      "name": "validate-strict-M1389",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/TOGO_M1389_MMJF_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/nested-post-validate-strict-M1389.log"
+    },
+    {
+      "name": "validate-schema-M1390",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/TOGO_M1390_MMJ_KT2_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/nested-post-validate-schema-M1390.log"
+    },
+    {
+      "name": "validate-strict-M1390",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/TOGO_M1390_MMJ_KT2_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/nested-post-validate-strict-M1390.log"
+    },
+    {
+      "name": "applied-audit",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "reports/ingredient_concentration_curation/20261008-m142-nested-traces/audit.py",
+        "--applied"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/nested-post-applied-audit.log"
+    },
+    {
+      "name": "verify",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/repair_m142_nested_traces.py",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/nested-post-verify.log"
+    },
+    {
+      "name": "noop",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/repair_m142_nested_traces.py",
+        "--apply"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/nested-post-noop.log"
+    },
+    {
+      "name": "tests",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_m142_nested_traces.py",
+        "tests/test_jcm_stock_preparations.py",
+        "tests/test_methanogen_stock_boundaries.py",
+        "tests/test_record_io.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/nested-post-tests.log"
+    },
+    {
+      "name": "strict-corpus",
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/nested-post-strict-corpus.log"
+    },
+    {
+      "name": "ids",
+      "command": [
+        "just",
+        "assign-ids-check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/nested-post-ids.log"
+    },
+    {
+      "name": "fast",
+      "command": [
+        "just",
+        "test-fast"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/nested-post-fast.log"
+    },
+    {
+      "name": "products",
+      "command": [
+        "just",
+        "validate-products"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/nested-post-products.log"
+    },
+    {
+      "name": "verify-merges",
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/nested-post-verify-merges.log"
+    },
+    {
+      "name": "freshness",
+      "command": [
+        "just",
+        "audit-merge-freshness",
+        "--json"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/nested-post-freshness.log"
+    },
+    {
+      "name": "diff-check",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/nested-post-diff-check.log"
+    }
+  ]
+}

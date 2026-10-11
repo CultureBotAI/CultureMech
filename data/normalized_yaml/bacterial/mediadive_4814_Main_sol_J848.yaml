@@ -11,6 +11,33 @@ composition:
   term:
     id: mediadive.compound:124
     label: Trypticase peptone
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/4814
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "Trypticase peptone",
+                      "compound_id": 124,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "g",
+                      "g_l": 0.86881,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Trypticase
+      peptone) in MediaDive solution 4814; locator=$.data.recipe[2] (compound_id=124).
+      Provider explicitly reports g_l=0.86881. Arithmetic check: 1 g * 1 g/g / (1151
+      ml / 1000 ml per L) = 0.8688097306689834926151172893 g/L, consistent with the
+      reported value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1151. Retrieved 2026-10-07T09:47:49.138353+00:00;
+      response SHA256=a77a5594d80da8eae742c194fd0d5acd88f208c18cd4d28b47fdad66bbf4dbb7.'
 - preferred_term: Yeast extract
   concentration:
     value: '0.434405'
@@ -18,6 +45,33 @@ composition:
   term:
     id: mediadive.compound:16
     label: Yeast extract
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/4814
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "Yeast extract",
+                      "compound_id": 16,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.5,
+                      "unit": "g",
+                      "g_l": 0.434405,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Yeast extract)
+      in MediaDive solution 4814; locator=$.data.recipe[3] (compound_id=16). Provider
+      explicitly reports g_l=0.434405. Arithmetic check: 0.5 g * 1 g/g / (1151 ml
+      / 1000 ml per L) = 0.4344048653344917463075586447 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1151. Retrieved 2026-10-07T09:47:49.138353+00:00;
+      response SHA256=a77a5594d80da8eae742c194fd0d5acd88f208c18cd4d28b47fdad66bbf4dbb7.'
 - preferred_term: Glucose
   concentration:
     value: '8.6881'
@@ -30,6 +84,33 @@ composition:
     label: glucose
     confidence: 0.9
     match_type: manual_curated
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/4814
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 5,
+                      "compound": "Glucose",
+                      "compound_id": 5,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 10,
+                      "unit": "g",
+                      "g_l": 8.6881,
+                      "mmol_l": 48.2243,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[2].concentration (Glucose)
+      in MediaDive solution 4814; locator=$.data.recipe[4] (compound_id=5). Provider
+      explicitly reports g_l=8.6881. Arithmetic check: 10 g * 1 g/g / (1151 ml / 1000
+      ml per L) = 8.688097306689834926151172893 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1151. Retrieved 2026-10-07T09:47:49.138353+00:00;
+      response SHA256=a77a5594d80da8eae742c194fd0d5acd88f208c18cd4d28b47fdad66bbf4dbb7.'
 - preferred_term: Distilled water
   concentration:
     value: '868.8097306689834'
@@ -84,6 +165,18 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '2 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T09:53:16.572361+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/4814
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "0.86881"}
+    -> {"unit": "G_PER_L", "value": "0.86881"} (evidence_only); composition[1].concentration:
+    {"unit": "G_PER_L", "value": "0.434405"} -> {"unit": "G_PER_L", "value": "0.434405"}
+    (evidence_only); composition[2].concentration: {"unit": "G_PER_L", "value": "8.6881"}
+    -> {"unit": "G_PER_L", "value": "8.6881"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -92,3 +185,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/4814
+  title: 'MediaDive solution 4814: Main sol. J848'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=a77a5594d80da8eae742c194fd0d5acd88f208c18cd4d28b47fdad66bbf4dbb7;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

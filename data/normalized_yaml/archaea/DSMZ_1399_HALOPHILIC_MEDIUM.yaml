@@ -17,10 +17,53 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  notes: 'Source material: Proteose peptone no. 3 (Difco).'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1399
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 1,
+                              "compound": "Proteose peptone no. 3",
+                              "compound_id": 316,
+                              "attribute": "Difco",
+                              "amount": 5,
+                              "unit": "g",
+                              "g_l": 5,
+                              "optional": 0
+                          }
+    explanation: 'Concentration/formulation evidence for ingredients[0].concentration
+      (Proteose peptone no. 3); locator=$.data.solutions[0].recipe[0]. The source
+      manufacturer/grade attribute Difco is retained in notes. Existing 5 g/L is explicitly
+      reported. 5 g / (1000 ml / 1000 ml per L) = 5 g/L. Exact final-volume instruction
+      in $.data.solutions[0].steps[0].step: Make up to 1000.0 ml. Retrieved 2026-10-07;
+      response SHA256=692c728d98d3ba582110c22429da51aaa29ff7d6ea11d9fd8fe8a42c2a978e85.
+      Original DSMZ 1399 PDF was visually checked: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf;
+      the PDF copyright year is not asserted as publication year.'
 - preferred_term: Yeast extract
   concentration:
     value: '5'
     unit: G_PER_L
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1399
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 2,
+                              "compound": "Yeast extract",
+                              "compound_id": 16,
+                              "amount": 5,
+                              "unit": "g",
+                              "g_l": 5,
+                              "optional": 0
+                          }
+    explanation: 'Concentration/formulation evidence for ingredients[1].concentration
+      (Yeast extract); locator=$.data.solutions[0].recipe[1]. Existing 5 g/L is explicitly
+      reported. 5 g / (1000 ml / 1000 ml per L) = 5 g/L. Exact final-volume instruction
+      in $.data.solutions[0].steps[0].step: Make up to 1000.0 ml. Retrieved 2026-10-07;
+      response SHA256=692c728d98d3ba582110c22429da51aaa29ff7d6ea11d9fd8fe8a42c2a978e85.
+      Original DSMZ 1399 PDF was visually checked: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf;
+      the PDF copyright year is not asserted as publication year.'
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -31,6 +74,27 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1399
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 3,
+                              "compound": "Glucose",
+                              "compound_id": 5,
+                              "amount": 1,
+                              "unit": "g",
+                              "g_l": 1,
+                              "mmol_l": 5.55062,
+                              "optional": 0
+                          }
+    explanation: 'Concentration/formulation evidence for ingredients[2].concentration
+      (Glucose); locator=$.data.solutions[0].recipe[2]. Existing 1 g/L is explicitly
+      reported. 1 g / (1000 ml / 1000 ml per L) = 1 g/L. Exact final-volume instruction
+      in $.data.solutions[0].steps[0].step: Make up to 1000.0 ml. Retrieved 2026-10-07;
+      response SHA256=692c728d98d3ba582110c22429da51aaa29ff7d6ea11d9fd8fe8a42c2a978e85.
+      Original DSMZ 1399 PDF was visually checked: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf;
+      the PDF copyright year is not asserted as publication year.'
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -42,86 +106,55 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
-- preferred_term: NaCl
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1399
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 6,
+                              "compound": "Agar",
+                              "compound_id": 3,
+                              "condition": "for solid medium",
+                              "amount": 20,
+                              "unit": "g",
+                              "g_l": 20,
+                              "mmol_l": 59.4654,
+                              "optional": 0
+                          }
+    explanation: 'Concentration/formulation evidence for ingredients[3].concentration
+      (Agar); locator=$.data.solutions[0].recipe[5]. Applies to this record''s SOLID_AGAR
+      formulation; optional solidification is not asserted for liquid medium. Existing
+      20 g/L is explicitly reported. 20 g / (1000 ml / 1000 ml per L) = 20 g/L. Exact
+      final-volume instruction in $.data.solutions[0].steps[0].step: Make up to 1000.0
+      ml. Retrieved 2026-10-07; response SHA256=692c728d98d3ba582110c22429da51aaa29ff7d6ea11d9fd8fe8a42c2a978e85.
+      Original DSMZ 1399 PDF was visually checked: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf;
+      the PDF copyright year is not asserted as publication year.'
+- preferred_term: Distilled water
   term:
-    id: CHEBI:26710
-    label: sodium chloride
+    id: mediadive.compound:4
+    label: Distilled water
   concentration:
-    value: '234'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: MgCl2 x 6 H2O
-  term:
-    id: CHEBI:86345
-    label: magnesium dichloride hexahydrate
-  concentration:
-    value: '42'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86345
-    label: magnesium dichloride hexahydrate
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
-  concentration:
-    value: '60'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-- preferred_term: KCl
-  term:
-    id: CHEBI:32588
-    label: potassium chloride
-  concentration:
-    value: '6'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32588
-    label: potassium chloride
-- preferred_term: NaBr
-  term:
-    id: CHEBI:63004
-    label: sodium bromide
-  concentration:
-    value: '0.7'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:63004
-    label: sodium bromide
-- preferred_term: NaHCO3
-  term:
-    id: CHEBI:32139
-    label: sodium hydrogencarbonate
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32139
-    label: sodium hydrogencarbonate
-- preferred_term: FeCl3 x 6 H2O
-  term:
-    id: CHEBI:86254
-    label: iron trichloride hexahydrate
-  concentration:
-    value: '9'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86254
-    label: iron trichloride hexahydrate
+    value: '0.333'
+    unit: L
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1399
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 5,
+                              "compound": "Distilled water",
+                              "compound_id": 4,
+                              "amount": 333,
+                              "unit": "ml",
+                              "optional": 0
+                          }
+    explanation: 'Concentration/formulation evidence for ingredients[4].concentration
+      (Distilled water); locator=$.data.solutions[0].recipe[4]. Explicit 333 ml water
+      addition / 1000 = 0.333 L per batch at this preparation stage. Not a percentage
+      or receiving-medium concentration; the main recipe''s separate make-up instruction
+      is retained. Retrieved 2026-10-07; response SHA256=692c728d98d3ba582110c22429da51aaa29ff7d6ea11d9fd8fe8a42c2a978e85.
+      Original DSMZ 1399 PDF was visually checked: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf;
+      the PDF copyright year is not asserted as publication year.'
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -161,4 +194,370 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-10-07T10:22:32.742479+00:00'
+  curator: codex
+  action: RESTORED_DSMZ1399_STOCK_BOUNDARY_AND_DROP_DOSE
+  notes: Exact medium/stock source identity and original PDF checked. Iron drop dose/percent
+    attribute retained without conversion; percentage basis and drop volume remain
+    unknown.
+  source: https://mediadive.dsmz.de/rest/medium/1399; https://mediadive.dsmz.de/rest/solution/2838;
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf
+  changes: '[''ingredients'', 0] -> ingredients[0].concentration: {''value'': ''5'',
+    ''unit'': ''G_PER_L''} -> {''value'': ''5'', ''unit'': ''G_PER_L''} (evidence_only);
+    [''ingredients'', 1] -> ingredients[1].concentration: {''value'': ''5'', ''unit'':
+    ''G_PER_L''} -> {''value'': ''5'', ''unit'': ''G_PER_L''} (evidence_only); [''ingredients'',
+    2] -> ingredients[2].concentration: {''value'': ''1'', ''unit'': ''G_PER_L''}
+    -> {''value'': ''1'', ''unit'': ''G_PER_L''} (evidence_only); [''ingredients'',
+    3] -> ingredients[3].concentration: {''value'': ''20'', ''unit'': ''G_PER_L''}
+    -> {''value'': ''20'', ''unit'': ''G_PER_L''} (evidence_only); [''ingredients'',
+    4] -> solutions[0].composition[0].concentration: {''value'': ''234'', ''unit'':
+    ''G_PER_L''} -> {''value'': ''234'', ''unit'': ''G_PER_L''} (correct); [''ingredients'',
+    5] -> solutions[0].composition[1].concentration: {''value'': ''42'', ''unit'':
+    ''G_PER_L''} -> {''value'': ''42'', ''unit'': ''G_PER_L''} (correct); [''ingredients'',
+    6] -> solutions[0].composition[2].concentration: {''value'': ''60'', ''unit'':
+    ''G_PER_L''} -> {''value'': ''60'', ''unit'': ''G_PER_L''} (correct); [''ingredients'',
+    7] -> solutions[0].composition[3].concentration: {''value'': ''1'', ''unit'':
+    ''G_PER_L''} -> {''value'': ''1'', ''unit'': ''G_PER_L''} (correct); [''ingredients'',
+    8] -> solutions[0].composition[4].concentration: {''value'': ''6'', ''unit'':
+    ''G_PER_L''} -> {''value'': ''6'', ''unit'': ''G_PER_L''} (correct); [''ingredients'',
+    9] -> solutions[0].composition[5].concentration: {''value'': ''0.7'', ''unit'':
+    ''G_PER_L''} -> {''value'': ''0.7'', ''unit'': ''G_PER_L''} (correct); [''ingredients'',
+    10] -> solutions[0].composition[6].concentration: {''value'': ''0.2'', ''unit'':
+    ''G_PER_L''} -> {''value'': ''0.2'', ''unit'': ''G_PER_L''} (correct); [''ingredients'',
+    11] -> solutions[0].composition[7].concentration: {''value'': ''9'', ''unit'':
+    ''G_PER_L''} -> None (correct); None -> ingredients[4].concentration: None ->
+    {''value'': ''0.333'', ''unit'': ''L''} (add); None -> solutions[0].composition[8].concentration:
+    None -> {''value'': ''1'', ''unit'': ''L''} (add); None -> solutions[0].concentration:
+    None -> {''value'': ''0.666'', ''unit'': ''L''} (add)'
 high_metal: true
+solutions:
+- preferred_term: Total Salts
+  term:
+    id: mediadive.solution:2838
+    label: Total Salts
+  concentration:
+    value: '0.666'
+    unit: L
+  composition:
+  - preferred_term: NaCl
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    concentration:
+      value: '234'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/1399
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 1,
+                                "compound": "NaCl",
+                                "compound_id": 43,
+                                "amount": 234,
+                                "unit": "g",
+                                "g_l": 234,
+                                "mmol_l": 4004.11,
+                                "optional": 0
+                            }
+      explanation: 'Concentration/formulation evidence for solutions[0].composition[0].concentration
+        (NaCl); locator=$.data.solutions[1].recipe[0]. Moved from ingredients[4] into
+        stock 2838, explicitly linked in the receiving recipe. The unchanged 234 g/L
+        value is the provider-declared stock concentration: 234 g / (1000 ml / 1000
+        ml per L) = 234 g/L. Additional exact stock excerpt at $.data.solutions[1].volume:
+        "volume": 1000. This is not the concentration after adding 666 ml stock to
+        the medium; no dilution is asserted. Retrieved 2026-10-07; response SHA256=692c728d98d3ba582110c22429da51aaa29ff7d6ea11d9fd8fe8a42c2a978e85.
+        Original DSMZ 1399 PDF was visually checked: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf;
+        the PDF copyright year is not asserted as publication year.'
+  - preferred_term: MgCl2 x 6 H2O
+    term:
+      id: CHEBI:86345
+      label: magnesium dichloride hexahydrate
+    concentration:
+      value: '42'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86345
+      label: magnesium dichloride hexahydrate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/1399
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 2,
+                                "compound": "MgCl2 x 6 H2O",
+                                "compound_id": 79,
+                                "amount": 42,
+                                "unit": "g",
+                                "g_l": 42,
+                                "mmol_l": 206.588,
+                                "optional": 0
+                            }
+      explanation: 'Concentration/formulation evidence for solutions[0].composition[1].concentration
+        (MgCl2 x 6 H2O); locator=$.data.solutions[1].recipe[1]. Moved from ingredients[5]
+        into stock 2838, explicitly linked in the receiving recipe. The unchanged
+        42 g/L value is the provider-declared stock concentration: 42 g / (1000 ml
+        / 1000 ml per L) = 42 g/L. Additional exact stock excerpt at $.data.solutions[1].volume:
+        "volume": 1000. This is not the concentration after adding 666 ml stock to
+        the medium; no dilution is asserted. Retrieved 2026-10-07; response SHA256=692c728d98d3ba582110c22429da51aaa29ff7d6ea11d9fd8fe8a42c2a978e85.
+        Original DSMZ 1399 PDF was visually checked: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf;
+        the PDF copyright year is not asserted as publication year.'
+  - preferred_term: MgSO4 x 7 H2O
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    concentration:
+      value: '60'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/1399
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 3,
+                                "compound": "MgSO4 x 7 H2O",
+                                "compound_id": 8,
+                                "amount": 60,
+                                "unit": "g",
+                                "g_l": 60,
+                                "mmol_l": 243.431,
+                                "optional": 0
+                            }
+      explanation: 'Concentration/formulation evidence for solutions[0].composition[2].concentration
+        (MgSO4 x 7 H2O); locator=$.data.solutions[1].recipe[2]. Moved from ingredients[6]
+        into stock 2838, explicitly linked in the receiving recipe. The unchanged
+        60 g/L value is the provider-declared stock concentration: 60 g / (1000 ml
+        / 1000 ml per L) = 60 g/L. Additional exact stock excerpt at $.data.solutions[1].volume:
+        "volume": 1000. This is not the concentration after adding 666 ml stock to
+        the medium; no dilution is asserted. Retrieved 2026-10-07; response SHA256=692c728d98d3ba582110c22429da51aaa29ff7d6ea11d9fd8fe8a42c2a978e85.
+        Original DSMZ 1399 PDF was visually checked: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf;
+        the PDF copyright year is not asserted as publication year.'
+  - preferred_term: CaCl2 x 2 H2O
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/1399
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 4,
+                                "compound": "CaCl2 x 2 H2O",
+                                "compound_id": 7,
+                                "amount": 1,
+                                "unit": "g",
+                                "g_l": 1,
+                                "mmol_l": 6.80203,
+                                "optional": 0
+                            }
+      explanation: 'Concentration/formulation evidence for solutions[0].composition[3].concentration
+        (CaCl2 x 2 H2O); locator=$.data.solutions[1].recipe[3]. Moved from ingredients[7]
+        into stock 2838, explicitly linked in the receiving recipe. The unchanged
+        1 g/L value is the provider-declared stock concentration: 1 g / (1000 ml /
+        1000 ml per L) = 1 g/L. Additional exact stock excerpt at $.data.solutions[1].volume:
+        "volume": 1000. This is not the concentration after adding 666 ml stock to
+        the medium; no dilution is asserted. Retrieved 2026-10-07; response SHA256=692c728d98d3ba582110c22429da51aaa29ff7d6ea11d9fd8fe8a42c2a978e85.
+        Original DSMZ 1399 PDF was visually checked: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf;
+        the PDF copyright year is not asserted as publication year.'
+  - preferred_term: KCl
+    term:
+      id: CHEBI:32588
+      label: potassium chloride
+    concentration:
+      value: '6'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32588
+      label: potassium chloride
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/1399
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 5,
+                                "compound": "KCl",
+                                "compound_id": 61,
+                                "amount": 6,
+                                "unit": "g",
+                                "g_l": 6,
+                                "mmol_l": 80.4829,
+                                "optional": 0
+                            }
+      explanation: 'Concentration/formulation evidence for solutions[0].composition[4].concentration
+        (KCl); locator=$.data.solutions[1].recipe[4]. Moved from ingredients[8] into
+        stock 2838, explicitly linked in the receiving recipe. The unchanged 6 g/L
+        value is the provider-declared stock concentration: 6 g / (1000 ml / 1000
+        ml per L) = 6 g/L. Additional exact stock excerpt at $.data.solutions[1].volume:
+        "volume": 1000. This is not the concentration after adding 666 ml stock to
+        the medium; no dilution is asserted. Retrieved 2026-10-07; response SHA256=692c728d98d3ba582110c22429da51aaa29ff7d6ea11d9fd8fe8a42c2a978e85.
+        Original DSMZ 1399 PDF was visually checked: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf;
+        the PDF copyright year is not asserted as publication year.'
+  - preferred_term: NaBr
+    term:
+      id: CHEBI:63004
+      label: sodium bromide
+    concentration:
+      value: '0.7'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63004
+      label: sodium bromide
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/1399
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 6,
+                                "compound": "NaBr",
+                                "compound_id": 353,
+                                "amount": 0.7,
+                                "unit": "g",
+                                "g_l": 0.7,
+                                "mmol_l": 6.80338,
+                                "optional": 0
+                            }
+      explanation: 'Concentration/formulation evidence for solutions[0].composition[5].concentration
+        (NaBr); locator=$.data.solutions[1].recipe[5]. Moved from ingredients[9] into
+        stock 2838, explicitly linked in the receiving recipe. The unchanged 0.7 g/L
+        value is the provider-declared stock concentration: 0.7 g / (1000 ml / 1000
+        ml per L) = 0.7 g/L. Additional exact stock excerpt at $.data.solutions[1].volume:
+        "volume": 1000. This is not the concentration after adding 666 ml stock to
+        the medium; no dilution is asserted. Retrieved 2026-10-07; response SHA256=692c728d98d3ba582110c22429da51aaa29ff7d6ea11d9fd8fe8a42c2a978e85.
+        Original DSMZ 1399 PDF was visually checked: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf;
+        the PDF copyright year is not asserted as publication year.'
+  - preferred_term: NaHCO3
+    term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+    concentration:
+      value: '0.2'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/1399
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 7,
+                                "compound": "NaHCO3",
+                                "compound_id": 55,
+                                "amount": 0.2,
+                                "unit": "g",
+                                "g_l": 0.2,
+                                "mmol_l": 2.38075,
+                                "optional": 0
+                            }
+      explanation: 'Concentration/formulation evidence for solutions[0].composition[6].concentration
+        (NaHCO3); locator=$.data.solutions[1].recipe[6]. Moved from ingredients[10]
+        into stock 2838, explicitly linked in the receiving recipe. The unchanged
+        0.2 g/L value is the provider-declared stock concentration: 0.2 g / (1000
+        ml / 1000 ml per L) = 0.2 g/L. Additional exact stock excerpt at $.data.solutions[1].volume:
+        "volume": 1000. This is not the concentration after adding 666 ml stock to
+        the medium; no dilution is asserted. Retrieved 2026-10-07; response SHA256=692c728d98d3ba582110c22429da51aaa29ff7d6ea11d9fd8fe8a42c2a978e85.
+        Original DSMZ 1399 PDF was visually checked: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf;
+        the PDF copyright year is not asserted as publication year.'
+  - preferred_term: FeCl3 x 6 H2O
+    term:
+      id: CHEBI:86254
+      label: iron trichloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86254
+      label: iron trichloride hexahydrate
+    notes: 'Source dose: 9 drops of FeCl3 x 6 H2O solution (source attribute: 0,5
+      %) per prepared Total Salts stock batch. Percentage basis and drop volume are
+      unspecified; no g/L, molarity, or mL conversion is asserted.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/1399
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 8,
+                                "compound": "FeCl3 x 6 H2O",
+                                "compound_id": 82,
+                                "attribute": "0,5 %",
+                                "amount": 9,
+                                "unit": "drops",
+                                "optional": 0
+                            }
+      explanation: 'Concentration/formulation evidence for solutions[0].composition[7].concentration
+        (FeCl3 x 6 H2O); locator=$.data.solutions[1].recipe[7]. Moved into the exact
+        stock and removed unsupported 9 g/L. The source dose is retained in notes,
+        not VARIABLE or a guessed conversion. Source dose: 9 drops of FeCl3 x 6 H2O
+        solution (source attribute: 0,5 %) per prepared Total Salts stock batch. Percentage
+        basis and drop volume are unspecified; no g/L, molarity, or mL conversion
+        is asserted. Retrieved 2026-10-07; response SHA256=692c728d98d3ba582110c22429da51aaa29ff7d6ea11d9fd8fe8a42c2a978e85.
+        Original DSMZ 1399 PDF was visually checked: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf;
+        the PDF copyright year is not asserted as publication year.'
+  - preferred_term: Distilled water
+    term:
+      id: mediadive.compound:4
+      label: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/1399
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 9,
+                                "compound": "Distilled water",
+                                "compound_id": 4,
+                                "amount": 1000,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+      explanation: 'Concentration/formulation evidence for solutions[0].composition[8].concentration
+        (Distilled water); locator=$.data.solutions[1].recipe[8]. Explicit 1000 ml
+        water addition / 1000 = 1 L per batch at this preparation stage. Not a percentage
+        or receiving-medium concentration; the main recipe''s separate make-up instruction
+        is retained. Retrieved 2026-10-07; response SHA256=692c728d98d3ba582110c22429da51aaa29ff7d6ea11d9fd8fe8a42c2a978e85.
+        Original DSMZ 1399 PDF was visually checked: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf;
+        the PDF copyright year is not asserted as publication year.'
+evidence:
+- reference: https://mediadive.dsmz.de/rest/medium/1399
+  supports: SUPPORT
+  snippet: |-
+    {
+                            "recipe_order": 4,
+                            "solution": "Total Salts",
+                            "solution_id": 2838,
+                            "amount": 666,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+  explanation: 'Concentration/formulation evidence for solutions[0].concentration
+    (Total Salts); locator=$.data.solutions[0].recipe[3]. 666 ml / 1000 = 0.666 L
+    of stock 2838 per receiving batch. This dose establishes the stock boundary; salt
+    entries in solutions[0].composition belong to this stock, not direct ingredients.
+    The separate main-medium make-up instruction is retained; this is not an assumed
+    per-liter dose. Retrieved 2026-10-07; response SHA256=692c728d98d3ba582110c22429da51aaa29ff7d6ea11d9fd8fe8a42c2a978e85.
+    Original DSMZ 1399 PDF was visually checked: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf;
+    the PDF copyright year is not asserted as publication year.'
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/1399
+  title: 'MediaDive 1399: HALOPHILIC MEDIUM'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; response_sha256=692c728d98d3ba582110c22429da51aaa29ff7d6ea11d9fd8fe8a42c2a978e85;
+    individual authors and publication year not established; PDF copyright date is
+    not publication date.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf
+  title: DSMZ 1399. HALOPHILIC MEDIUM
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-07; source_organization=DSMZ; response_sha256=c76a8a1d8c4e5da897b13caa810918454efc9258b0b78a433aa14032c3ed8d3e;
+    individual authors and publication year not established; PDF copyright date is
+    not publication date.

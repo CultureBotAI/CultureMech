@@ -86,9 +86,37 @@ curation_history:
   source: https://utex.org/products/bold-1nv-erdschreibers-four-to-one-medium
   notes: UTEX prepares this blend by mixing prepared Bold 1NV Medium and Erdschreiber's
     Medium in a 4:1 ratio.
+- timestamp: '2026-10-10T21:33:31.850583+00:00'
+  curator: codex
+  action: CURATED_UTEX_PREPARED_BLEND_CONCENTRATION_EVIDENCE
+  notes: Retain prepared-medium addition amounts with exact source-URL/snippet evidence.
+    No numeric changes, ontology repairs, linked-recipe certification, or taxa-media
+    associations. Preserve the quarter-strength source ratio conflict explicitly.
+  source: https://utex.org/products/bold-1nv-erdschreibers-four-to-one-medium
+  changes: '{"claims": [{"basis_snippet": "For 1 L Total", "calculation": "800 mL
+    / 1 L total = 800 mL/L; the 1 L basis is explicitly stated by the recipe, not
+    assumed.", "component_snippet": "Bold 1NV Medium", "decision": "Retain quantity
+    and attach exact source evidence.", "field": "solutions[0].concentration", "ingredient":
+    "Bold 1NV Medium", "locator": "#recipe, composition table, Amount column", "old":
+    {"unit": "ML_PER_L", "value": "800"}, "proposed": {"unit": "ML_PER_L", "value":
+    "800"}, "reference": "https://utex.org/products/bold-1nv-erdschreibers-four-to-one-medium",
+    "snippet": "800 mL/L", "source_table_row": 1, "status": "evidence_only", "unresolved":
+    "None for this input amount and volume basis."}, {"basis_snippet": "For 1 L Total",
+    "calculation": "200 mL / 1 L total = 200 mL/L; the 1 L basis is explicitly stated
+    by the recipe, not assumed.", "component_snippet": "Erdschreiber''s Medium", "decision":
+    "Retain quantity and attach exact source evidence.", "field": "solutions[1].concentration",
+    "ingredient": "Erdschreiber''s Medium", "locator": "#recipe, composition table,
+    Amount column", "old": {"unit": "ML_PER_L", "value": "200"}, "proposed": {"unit":
+    "ML_PER_L", "value": "200"}, "reference": "https://utex.org/products/bold-1nv-erdschreibers-four-to-one-medium",
+    "snippet": "200 mL/L", "source_table_row": 2, "status": "evidence_only", "unresolved":
+    "None for this input amount and volume basis."}], "counts": {"bibliographic_entries_enriched":
+    1, "new_curation_history": 1, "new_evidence": 1}}'
 references:
 - reference: UTEX:bold-1nv-erdschreibers-four-to-one-medium
 - reference: https://utex.org/products/bold-1nv-erdschreibers-four-to-one-medium
+  title: Bold 1NV:Erdschreiber's (4:1) Medium | UTEX Culture Collection of Algae
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10; Named authors, publication year and DOI not established.
 original_name: Bold 1NV:Erdshreiber (4:1) Medium
 parent_media:
   path: data/normalized_yaml/algae/Bold_1NV_Medium.yaml
@@ -102,3 +130,19 @@ variant_modifications:
 data_quality_flags:
 - has_ontology_mappings
 - ingredients_curated
+evidence:
+- reference: https://utex.org/products/bold-1nv-erdschreibers-four-to-one-medium
+  supports: SUPPORT
+  snippet: 800 mL/L
+  explanation: 'Supports solutions[0].concentration for Bold 1NV Medium. Exact component
+    cell: ''Bold 1NV Medium''; amount cell: ''800 mL/L''; exact basis heading: "For
+    1 L Total". 800 mL / 1 L total = 800 mL/L; the 1 L basis is explicitly stated
+    by the recipe, not assumed. Locator: #recipe, composition table row 1. This supports
+    the prepared-medium input dose only, not its constituent concentrations, chemical
+    identities, salinity, or organism growth claims. Separate exact amount excerpt:
+    ''200 mL/L''. Supports solutions[1].concentration for Erdschreiber''s Medium.
+    Exact component cell: "Erdschreiber''s Medium"; amount cell: ''200 mL/L''; exact
+    basis heading: "For 1 L Total". 200 mL / 1 L total = 200 mL/L; the 1 L basis is
+    explicitly stated by the recipe, not assumed. Locator: #recipe, composition table
+    row 2. This supports the prepared-medium input dose only, not its constituent
+    concentrations, chemical identities, salinity, or organism growth claims.'

@@ -16,6 +16,33 @@ composition:
     label: ammonium acetate
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3625
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "Ammonium acetate",
+                      "compound_id": 58,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2.5,
+                      "unit": "g",
+                      "g_l": 25,
+                      "mmol_l": 324.338,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Ammonium
+      acetate) in MediaDive solution 3625; locator=$.data.recipe[0] (compound_id=58).
+      Provider explicitly reports g_l=25. Arithmetic check: 2.5 g * 1 g/g / (100 ml
+      / 1000 ml per L) = 25 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 100. Retrieved 2026-10-07T09:23:06.081694+00:00;
+      response SHA256=fd5881758e3a081908281b650288f17380b36b9a485348f5190e5c29cbe2df05.'
 - preferred_term: Magnesium acetate
   concentration:
     value: '25'
@@ -28,6 +55,33 @@ composition:
     label: magnesium acetate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3625
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Magnesium acetate",
+                      "compound_id": 1598,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2.5,
+                      "unit": "g",
+                      "g_l": 25,
+                      "mmol_l": 175.57,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Magnesium
+      acetate) in MediaDive solution 3625; locator=$.data.recipe[1] (compound_id=1598).
+      Provider explicitly reports g_l=25. Arithmetic check: 2.5 g * 1 g/g / (100 ml
+      / 1000 ml per L) = 25 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 100. Retrieved 2026-10-07T09:23:06.081694+00:00;
+      response SHA256=fd5881758e3a081908281b650288f17380b36b9a485348f5190e5c29cbe2df05.'
 - preferred_term: Distilled water
   concentration:
     value: '1000.0'
@@ -72,6 +126,16 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-10-07T09:30:59.704035+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/3625
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "25"} -> {"unit":
+    "G_PER_L", "value": "25"} (evidence_only); composition[1].concentration: {"unit":
+    "G_PER_L", "value": "25"} -> {"unit": "G_PER_L", "value": "25"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -80,3 +144,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/3625
+  title: 'MediaDive solution 3625: Solution G'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=fd5881758e3a081908281b650288f17380b36b9a485348f5190e5c29cbe2df05;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

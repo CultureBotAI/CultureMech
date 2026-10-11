@@ -1,0 +1,40 @@
+{
+  "terminal": true,
+  "phase": "apply",
+  "checks": [],
+  "records_edited": 6,
+  "plan_sha256": "d7d3a7135aad5daf78ba2f3e82dfb73a0f3f185e1b7036457abd111da0892b9e",
+  "code_sha256": {
+    "scripts/repair_mediadb_ingredient_exceptions.py": "b27949707826eff4b229a612875452098d7cb5f6b3c62c81d0997958a1886f59",
+    "tests/test_mediadb_ingredient_exceptions.py": "9f96c7b25d1c5a1ef525d89328d7e594f73a55fed234dc3d795084bc00d51bc9"
+  },
+  "normalized_count": 15910,
+  "inventory_before_sha256": "5c924e8930a76b2a7b18cfda27ab52e14b5fda2cbbcb56ecaf4c78ff9f4ba4a1",
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "captured_source_snippet_checks": 156,
+  "source_check_scope": "Literal official MediaDB table snippets, raw capture hashes, medium identity and SQL/live amount agreement; not primary article verification.",
+  "application": {
+    "changed": 6,
+    "already_applied": 0
+  },
+  "readback": {
+    "changed": 0,
+    "already_applied": 6
+  },
+  "repeat_noop": {
+    "changed": 0,
+    "already_applied": 6
+  },
+  "passed": true,
+  "inventory_after_sha256": "83b9583a31a82ab2db7403fa21d8dc1fd30928d289bb7598a043348f4d82be2c",
+  "changed_paths": [
+    "data/normalized_yaml/bacterial/MEDIADB_430_Defined_freshwater_medium_CoSO4.yaml",
+    "data/normalized_yaml/bacterial/MEDIADB_460_Defined_freshwater_medium_CoCl2.yaml",
+    "data/normalized_yaml/bacterial/mcn_medium_whitman.yaml",
+    "data/normalized_yaml/bacterial/mcna_medium_lupa.yaml",
+    "data/normalized_yaml/bacterial/song_cdm.yaml",
+    "data/normalized_yaml/bacterial/song_optimal_cdm.yaml"
+  ],
+  "only_intended_records_changed": true
+}

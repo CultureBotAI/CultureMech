@@ -1,0 +1,37 @@
+{
+  "terminal": true,
+  "records": 3,
+  "sources": 15,
+  "additional_triage_sources": 3,
+  "unchanged_dependencies": 3,
+  "report_rows": 79,
+  "literal_snippets_verified": 19,
+  "commands": [
+    [
+      "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+      "--check",
+      "scripts/repair_togo_methanogen_concentrations.py",
+      "tests/test_togo_methanogen_concentrations.py",
+      "tests/test_medium_concentration_batch.py",
+      "reports/ingredient_concentration_curation/20261008-togo-methanogens/audit.py",
+      "reports/ingredient_concentration_curation/20261008-togo-methanogens/retention.py",
+      "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+    ],
+    [
+      "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+      "check",
+      "scripts/repair_togo_methanogen_concentrations.py",
+      "tests/test_togo_methanogen_concentrations.py",
+      "tests/test_medium_concentration_batch.py",
+      "reports/ingredient_concentration_curation/20261008-togo-methanogens/audit.py",
+      "reports/ingredient_concentration_curation/20261008-togo-methanogens/retention.py",
+      "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+    ],
+    [
+      "git",
+      "diff",
+      "--check"
+    ]
+  ],
+  "publication_ready": false
+}

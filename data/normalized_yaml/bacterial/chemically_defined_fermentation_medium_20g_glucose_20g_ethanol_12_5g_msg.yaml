@@ -17,6 +17,18 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
     label: boric acid
+  notes: This amount is the MediaDB assertion; its page and dated export have no linked
+    primary article. The Hajjaj paired-carbon formulation is a source lead, not established
+    provenance.
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/331/
+    supports: SUPPORT
+    snippet: '0.1779'
+    explanation: 'MediaDB 331, Compound table, Boric acid row, Amount (mM) column:
+      supports only the upstream database assertion at ingredients[0].concentration,
+      0.1779 mM. The numeric cell and its own row/column were inspected together and
+      agree with the dated SQL export. This is not independent article verification
+      of final-medium molarity or the old chemical grounding.'
 - preferred_term: Ethanol
   term:
     id: CHEBI:16236
@@ -24,10 +36,21 @@ ingredients:
   concentration:
     value: '434.12'
     unit: MILLIMOLAR
-  notes: 'Cross-references: KEGG:etoh'
+  notes: 'Cross-references: KEGG:etoh This amount is the MediaDB assertion; its page
+    and dated export have no linked primary article. The Hajjaj paired-carbon formulation
+    is a source lead, not established provenance.'
   mediaingredientmech_chebi_term:
     id: CHEBI:16236
     label: ethanol
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/331/
+    supports: SUPPORT
+    snippet: '434.12'
+    explanation: 'MediaDB 331, Compound table, Ethanol row, Amount (mM) column: supports
+      only the upstream database assertion at ingredients[1].concentration, 434.12
+      mM. The numeric cell and its own row/column were inspected together and agree
+      with the dated SQL export. This is not independent article verification of final-medium
+      molarity or the old chemical grounding.'
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.136'
@@ -35,6 +58,18 @@ ingredients:
   term:
     id: CHEBI:3312
     label: calcium dichloride
+  notes: This amount is the MediaDB assertion; its page and dated export have no linked
+    primary article. The Hajjaj paired-carbon formulation is a source lead, not established
+    provenance.
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/331/
+    supports: SUPPORT
+    snippet: '0.136'
+    explanation: 'MediaDB 331, Compound table, Calcium chloride anhydrous row, Amount
+      (mM) column: supports only the upstream database assertion at ingredients[2].concentration,
+      0.136 mM. The numeric cell and its own row/column were inspected together and
+      agree with the dated SQL export. This is not independent article verification
+      of final-medium molarity or the old chemical grounding.'
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
@@ -45,6 +80,18 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:86364
     label: manganese(II) sulfate monohydrate
+  notes: This amount is the MediaDB assertion; its page and dated export have no linked
+    primary article. The Hajjaj paired-carbon formulation is a source lead, not established
+    provenance.
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/331/
+    supports: SUPPORT
+    snippet: '0.4483'
+    explanation: 'MediaDB 331, Compound table, Manganese sulfate row, Amount (mM)
+      column: supports only the upstream database assertion at ingredients[3].concentration,
+      0.4483 mM. The numeric cell and its own row/column were inspected together and
+      agree with the dated SQL export. This is not independent article verification
+      of final-medium molarity or the old chemical grounding.'
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '28.71'
@@ -52,6 +99,18 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  notes: This amount is the MediaDB assertion; its page and dated export have no linked
+    primary article. The Hajjaj paired-carbon formulation is a source lead, not established
+    provenance.
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/331/
+    supports: SUPPORT
+    snippet: '28.71'
+    explanation: 'MediaDB 331, Compound table, Potassium dibasic phosphate row, Amount
+      (mM) column: supports only the upstream database assertion at ingredients[4].concentration,
+      28.71 mM. The numeric cell and its own row/column were inspected together and
+      agree with the dated SQL export. This is not independent article verification
+      of final-medium molarity or the old chemical grounding.'
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -62,6 +121,18 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
+  notes: This amount is the MediaDB assertion; its page and dated export have no linked
+    primary article. The Hajjaj paired-carbon formulation is a source lead, not established
+    provenance.
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/331/
+    supports: SUPPORT
+    snippet: '111.01'
+    explanation: 'MediaDB 331, Compound table, Glucose row, Amount (mM) column: supports
+      only the upstream database assertion at ingredients[5].concentration, 111.01
+      mM. The numeric cell and its own row/column were inspected together and agree
+      with the dated SQL export. This is not independent article verification of final-medium
+      molarity or the old chemical grounding.'
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -72,6 +143,18 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
     label: magnesium sulfate
+  notes: This amount is the MediaDB assertion; its page and dated export have no linked
+    primary article. The Hajjaj paired-carbon formulation is a source lead, not established
+    provenance.
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/331/
+    supports: SUPPORT
+    snippet: '0.4057'
+    explanation: 'MediaDB 331, Compound table, Magnesium sulfate row, Amount (mM)
+      column: supports only the upstream database assertion at ingredients[6].concentration,
+      0.4057 mM. The numeric cell and its own row/column were inspected together and
+      agree with the dated SQL export. This is not independent article verification
+      of final-medium molarity or the old chemical grounding.'
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '36.74'
@@ -79,6 +162,18 @@ ingredients:
   term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
+  notes: This amount is the MediaDB assertion; its page and dated export have no linked
+    primary article. The Hajjaj paired-carbon formulation is a source lead, not established
+    provenance.
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/331/
+    supports: SUPPORT
+    snippet: '36.74'
+    explanation: 'MediaDB 331, Compound table, Potassium dihydrogen phosphate row,
+      Amount (mM) column: supports only the upstream database assertion at ingredients[7].concentration,
+      36.74 mM. The numeric cell and its own row/column were inspected together and
+      agree with the dated SQL export. This is not independent article verification
+      of final-medium molarity or the old chemical grounding.'
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.7194'
@@ -86,6 +181,18 @@ ingredients:
   term:
     id: CHEBI:75832
     label: iron(2+) sulfate (anhydrous)
+  notes: This amount is the MediaDB assertion; its page and dated export have no linked
+    primary article. The Hajjaj paired-carbon formulation is a source lead, not established
+    provenance.
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/331/
+    supports: SUPPORT
+    snippet: '0.7194'
+    explanation: 'MediaDB 331, Compound table, Ferrous sulfate row, Amount (mM) column:
+      supports only the upstream database assertion at ingredients[8].concentration,
+      0.7194 mM. The numeric cell and its own row/column were inspected together and
+      agree with the dated SQL export. This is not independent article verification
+      of final-medium molarity or the old chemical grounding.'
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -96,6 +203,18 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:35176
     label: zinc sulfate
+  notes: This amount is the MediaDB assertion; its page and dated export have no linked
+    primary article. The Hajjaj paired-carbon formulation is a source lead, not established
+    provenance.
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/331/
+    supports: SUPPORT
+    snippet: '0.6955'
+    explanation: 'MediaDB 331, Compound table, Zinc sulfate row, Amount (mM) column:
+      supports only the upstream database assertion at ingredients[9].concentration,
+      0.6955 mM. The numeric cell and its own row/column were inspected together and
+      agree with the dated SQL export. This is not independent article verification
+      of final-medium molarity or the old chemical grounding.'
 - preferred_term: Cupric chloride
   concentration:
     value: '0.02933'
@@ -103,13 +222,50 @@ ingredients:
   term:
     id: CHEBI:49553
     label: copper(II) chloride
-- preferred_term: Molybdic acid ammonium salt tetrahydrate
+  notes: This amount is the MediaDB assertion; its page and dated export have no linked
+    primary article. The Hajjaj paired-carbon formulation is a source lead, not established
+    provenance.
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/331/
+    supports: SUPPORT
+    snippet: '0.02933'
+    explanation: 'MediaDB 331, Compound table, Cupric chloride row, Amount (mM) column:
+      supports only the upstream database assertion at ingredients[10].concentration,
+      0.02933 mM. The numeric cell and its own row/column were inspected together
+      and agree with the dated SQL export. This is not independent article verification
+      of final-medium molarity or the old chemical grounding.'
+- preferred_term: Ammonium heptamolybdate tetrahydrate
   concentration:
     value: '0.004045'
     unit: MILLIMOLAR
-  term:
-    id: CHEBI:91249
-    label: ammonium molybdate
+  notes: This amount is the MediaDB assertion; its page and dated export have no linked
+    primary article. The Hajjaj paired-carbon formulation is a source lead, not established
+    provenance. CHEBI:91249 identifies orthomolybdate, not the source heptamolybdate
+    tetrahydrate. The conflicting mapping is withdrawn; no replacement is assigned
+    and the MIM snapshot is unchanged.
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/331/
+    supports: SUPPORT
+    snippet: '0.004045'
+    explanation: 'MediaDB 331, Compound table, Molybdic acid ammonium salt tetrahydrate
+      row, Amount (mM) column: supports only the upstream database assertion at ingredients[11].concentration,
+      0.004045 mM. The numeric cell and its own row/column were inspected together
+      and agree with the dated SQL export. This is not independent article verification
+      of final-medium molarity or the old chemical grounding.'
+  - reference: https://mediadb.systemsbiology.net/static/defined_media/downloads/media_database.07Oct2015.sql.gz
+    supports: SUPPORT
+    snippet: (NH4)6Mo7O24
+    explanation: The compounds table's compID 16418 formula, together with its tetrahydrate
+      name, supports the supplied heptamolybdate identity at ingredients[11], not
+      orthomolybdate. The medium's own media_compounds row links to this compound;
+      no article association is invented.
+  - reference: https://www.ebi.ac.uk/chebi/CHEBI:91249
+    supports: SUPPORT
+    snippet: 2H4N.MoO4
+    explanation: The official Formula field shows why CHEBI:91249 is not the supplied
+      heptamolybdate tetrahydrate at ingredients[11]. Supports withdrawing that mapping,
+      not the concentration. The misleading MIM synonym is not used to reassign it;
+      no replacement identifier is invented.
 - preferred_term: Sodium Glutamate
   concentration:
     value: '66.8'
@@ -120,6 +276,18 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:64220
     label: monosodium glutamate
+  notes: This amount is the MediaDB assertion; its page and dated export have no linked
+    primary article. The Hajjaj paired-carbon formulation is a source lead, not established
+    provenance.
+  evidence:
+  - reference: https://mediadb.systemsbiology.net/defined_media/media/331/
+    supports: SUPPORT
+    snippet: '66.8'
+    explanation: 'MediaDB 331, Compound table, Sodium Glutamate row, Amount (mM) column:
+      supports only the upstream database assertion at ingredients[12].concentration,
+      66.8 mM. The numeric cell and its own row/column were inspected together and
+      agree with the dated SQL export. This is not independent article verification
+      of final-medium molarity or the old chemical grounding.'
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -166,6 +334,287 @@ curation_history:
   notes: Restored the medium's own name in media_term.term.label, original_name. The
     MediaDB SQL parser truncated every value containing a parenthesis at that parenthesis;
     recovered from media_database.07Oct2015.sql.
+- timestamp: '2026-10-10T05:02:53.552216+00:00'
+  curator: codex
+  action: CURATED_HAJJAJ_SOURCED_INGREDIENT_AMOUNTS_AND_FORMS
+  notes: The 180 retained mineral molarities in article-linked records remain upstream
+    database assertions; water-input basis is not assumed to be final solution volume.
+    The two unlinked sibling records retain all 26 database molarities. Their primary-paper
+    association and remaining chemical forms are unresolved, not borrowed from the
+    linked family. Copper and sodium-glutamate hydrate identifiers remain unassigned
+    after withdrawal of unverified non-hydrate grounding. Isoleucine stereochemistry
+    is unspecified, not inferred. Heptamolybdate has no replacement identifier; the
+    conflicting packaged MIM synonym is not used and the immutable index is unchanged.
+    The source's Table 2 glutamic-acid equivalents are not the weighed sodium-glutamate
+    hydrate; record 318 retains the batch-text/Figure 3 glucose discrepancy in evidence.
+    Paper and ontology verification is manual; no raw primary-article capture or successful
+    automated DOI full-text verification is asserted. Existing preparation, classification,
+    application and organism/role claims are preserved and not certified by this ingredient
+    curation. No IDs, category paths, growth claims or taxa-media associations are
+    added.
+  source: https://mediadb.systemsbiology.net/defined_media/media/331/; https://mediadb.systemsbiology.net/static/defined_media/downloads/media_database.07Oct2015.sql.gz;
+    https://www.ebi.ac.uk/chebi/CHEBI:91249
+  changes: '[{"counts": {"ingredient_context_notes_corrected": 1}, "kind": "set",
+    "locator": "Compound table / Boric acid / Amount (mM)", "new": "This amount is
+    the MediaDB assertion; its page and dated export have no linked primary article.
+    The Hajjaj paired-carbon formulation is a source lead, not established provenance.",
+    "old": null, "old_present": false, "pointer": ["ingredients", 0, "notes"], "reason":
+    "Keep source units, provenance and unresolved identity/volume limits explicit.",
+    "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/", "snippet":
+    "0.1779"}, {"counts": {"new_evidence": 1}, "kind": "set", "locator": "Compound
+    table / Boric acid / Amount (mM)", "new": [{"explanation": "MediaDB 331, Compound
+    table, Boric acid row, Amount (mM) column: supports only the upstream database
+    assertion at ingredients[0].concentration, 0.1779 mM. The numeric cell and its
+    own row/column were inspected together and agree with the dated SQL export. This
+    is not independent article verification of final-medium molarity or the old chemical
+    grounding.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+    "snippet": "0.1779", "supports": "SUPPORT"}], "old": null, "old_present": false,
+    "pointer": ["ingredients", 0, "evidence"], "reason": "Attach evidence to its exact
+    amount, source-input note or identity claim.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+    "snippet": "0.1779"}, {"counts": {"ingredient_context_notes_corrected": 1}, "kind":
+    "set", "locator": "Compound table / Ethanol / Amount (mM)", "new": "Cross-references:
+    KEGG:etoh This amount is the MediaDB assertion; its page and dated export have
+    no linked primary article. The Hajjaj paired-carbon formulation is a source lead,
+    not established provenance.", "old": "Cross-references: KEGG:etoh", "old_present":
+    true, "pointer": ["ingredients", 1, "notes"], "reason": "Keep source units, provenance
+    and unresolved identity/volume limits explicit.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+    "snippet": "434.12"}, {"counts": {"new_evidence": 1}, "kind": "set", "locator":
+    "Compound table / Ethanol / Amount (mM)", "new": [{"explanation": "MediaDB 331,
+    Compound table, Ethanol row, Amount (mM) column: supports only the upstream database
+    assertion at ingredients[1].concentration, 434.12 mM. The numeric cell and its
+    own row/column were inspected together and agree with the dated SQL export. This
+    is not independent article verification of final-medium molarity or the old chemical
+    grounding.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+    "snippet": "434.12", "supports": "SUPPORT"}], "old": null, "old_present": false,
+    "pointer": ["ingredients", 1, "evidence"], "reason": "Attach evidence to its exact
+    amount, source-input note or identity claim.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+    "snippet": "434.12"}, {"counts": {"ingredient_context_notes_corrected": 1}, "kind":
+    "set", "locator": "Compound table / Calcium chloride anhydrous / Amount (mM)",
+    "new": "This amount is the MediaDB assertion; its page and dated export have no
+    linked primary article. The Hajjaj paired-carbon formulation is a source lead,
+    not established provenance.", "old": null, "old_present": false, "pointer": ["ingredients",
+    2, "notes"], "reason": "Keep source units, provenance and unresolved identity/volume
+    limits explicit.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+    "snippet": "0.136"}, {"counts": {"new_evidence": 1}, "kind": "set", "locator":
+    "Compound table / Calcium chloride anhydrous / Amount (mM)", "new": [{"explanation":
+    "MediaDB 331, Compound table, Calcium chloride anhydrous row, Amount (mM) column:
+    supports only the upstream database assertion at ingredients[2].concentration,
+    0.136 mM. The numeric cell and its own row/column were inspected together and
+    agree with the dated SQL export. This is not independent article verification
+    of final-medium molarity or the old chemical grounding.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+    "snippet": "0.136", "supports": "SUPPORT"}], "old": null, "old_present": false,
+    "pointer": ["ingredients", 2, "evidence"], "reason": "Attach evidence to its exact
+    amount, source-input note or identity claim.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+    "snippet": "0.136"}, {"counts": {"ingredient_context_notes_corrected": 1}, "kind":
+    "set", "locator": "Compound table / Manganese sulfate / Amount (mM)", "new": "This
+    amount is the MediaDB assertion; its page and dated export have no linked primary
+    article. The Hajjaj paired-carbon formulation is a source lead, not established
+    provenance.", "old": null, "old_present": false, "pointer": ["ingredients", 3,
+    "notes"], "reason": "Keep source units, provenance and unresolved identity/volume
+    limits explicit.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+    "snippet": "0.4483"}, {"counts": {"new_evidence": 1}, "kind": "set", "locator":
+    "Compound table / Manganese sulfate / Amount (mM)", "new": [{"explanation": "MediaDB
+    331, Compound table, Manganese sulfate row, Amount (mM) column: supports only
+    the upstream database assertion at ingredients[3].concentration, 0.4483 mM. The
+    numeric cell and its own row/column were inspected together and agree with the
+    dated SQL export. This is not independent article verification of final-medium
+    molarity or the old chemical grounding.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+    "snippet": "0.4483", "supports": "SUPPORT"}], "old": null, "old_present": false,
+    "pointer": ["ingredients", 3, "evidence"], "reason": "Attach evidence to its exact
+    amount, source-input note or identity claim.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+    "snippet": "0.4483"}, {"counts": {"ingredient_context_notes_corrected": 1}, "kind":
+    "set", "locator": "Compound table / Potassium dibasic phosphate / Amount (mM)",
+    "new": "This amount is the MediaDB assertion; its page and dated export have no
+    linked primary article. The Hajjaj paired-carbon formulation is a source lead,
+    not established provenance.", "old": null, "old_present": false, "pointer": ["ingredients",
+    4, "notes"], "reason": "Keep source units, provenance and unresolved identity/volume
+    limits explicit.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+    "snippet": "28.71"}, {"counts": {"new_evidence": 1}, "kind": "set", "locator":
+    "Compound table / Potassium dibasic phosphate / Amount (mM)", "new": [{"explanation":
+    "MediaDB 331, Compound table, Potassium dibasic phosphate row, Amount (mM) column:
+    supports only the upstream database assertion at ingredients[4].concentration,
+    28.71 mM. The numeric cell and its own row/column were inspected together and
+    agree with the dated SQL export. This is not independent article verification
+    of final-medium molarity or the old chemical grounding.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+    "snippet": "28.71", "supports": "SUPPORT"}], "old": null, "old_present": false,
+    "pointer": ["ingredients", 4, "evidence"], "reason": "Attach evidence to its exact
+    amount, source-input note or identity claim.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+    "snippet": "28.71"}, {"counts": {"ingredient_context_notes_corrected": 1}, "kind":
+    "set", "locator": "Compound table / Glucose / Amount (mM)", "new": "This amount
+    is the MediaDB assertion; its page and dated export have no linked primary article.
+    The Hajjaj paired-carbon formulation is a source lead, not established provenance.",
+    "old": null, "old_present": false, "pointer": ["ingredients", 5, "notes"], "reason":
+    "Keep source units, provenance and unresolved identity/volume limits explicit.",
+    "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/", "snippet":
+    "111.01"}, {"counts": {"new_evidence": 1}, "kind": "set", "locator": "Compound
+    table / Glucose / Amount (mM)", "new": [{"explanation": "MediaDB 331, Compound
+    table, Glucose row, Amount (mM) column: supports only the upstream database assertion
+    at ingredients[5].concentration, 111.01 mM. The numeric cell and its own row/column
+    were inspected together and agree with the dated SQL export. This is not independent
+    article verification of final-medium molarity or the old chemical grounding.",
+    "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/", "snippet":
+    "111.01", "supports": "SUPPORT"}], "old": null, "old_present": false, "pointer":
+    ["ingredients", 5, "evidence"], "reason": "Attach evidence to its exact amount,
+    source-input note or identity claim.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+    "snippet": "111.01"}, {"counts": {"ingredient_context_notes_corrected": 1}, "kind":
+    "set", "locator": "Compound table / Magnesium sulfate / Amount (mM)", "new": "This
+    amount is the MediaDB assertion; its page and dated export have no linked primary
+    article. The Hajjaj paired-carbon formulation is a source lead, not established
+    provenance.", "old": null, "old_present": false, "pointer": ["ingredients", 6,
+    "notes"], "reason": "Keep source units, provenance and unresolved identity/volume
+    limits explicit.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+    "snippet": "0.4057"}, {"counts": {"new_evidence": 1}, "kind": "set", "locator":
+    "Compound table / Magnesium sulfate / Amount (mM)", "new": [{"explanation": "MediaDB
+    331, Compound table, Magnesium sulfate row, Amount (mM) column: supports only
+    the upstream database assertion at ingredients[6].concentration, 0.4057 mM. The
+    numeric cell and its own row/column were inspected together and agree with the
+    dated SQL export. This is not independent article verification of final-medium
+    molarity or the old chemical grounding.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+    "snippet": "0.4057", "supports": "SUPPORT"}], "old": null, "old_present": false,
+    "pointer": ["ingredients", 6, "evidence"], "reason": "Attach evidence to its exact
+    amount, source-input note or identity claim.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+    "snippet": "0.4057"}, {"counts": {"ingredient_context_notes_corrected": 1}, "kind":
+    "set", "locator": "Compound table / Potassium dihydrogen phosphate / Amount (mM)",
+    "new": "This amount is the MediaDB assertion; its page and dated export have no
+    linked primary article. The Hajjaj paired-carbon formulation is a source lead,
+    not established provenance.", "old": null, "old_present": false, "pointer": ["ingredients",
+    7, "notes"], "reason": "Keep source units, provenance and unresolved identity/volume
+    limits explicit.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+    "snippet": "36.74"}, {"counts": {"new_evidence": 1}, "kind": "set", "locator":
+    "Compound table / Potassium dihydrogen phosphate / Amount (mM)", "new": [{"explanation":
+    "MediaDB 331, Compound table, Potassium dihydrogen phosphate row, Amount (mM)
+    column: supports only the upstream database assertion at ingredients[7].concentration,
+    36.74 mM. The numeric cell and its own row/column were inspected together and
+    agree with the dated SQL export. This is not independent article verification
+    of final-medium molarity or the old chemical grounding.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+    "snippet": "36.74", "supports": "SUPPORT"}], "old": null, "old_present": false,
+    "pointer": ["ingredients", 7, "evidence"], "reason": "Attach evidence to its exact
+    amount, source-input note or identity claim.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+    "snippet": "36.74"}, {"counts": {"ingredient_context_notes_corrected": 1}, "kind":
+    "set", "locator": "Compound table / Ferrous sulfate / Amount (mM)", "new": "This
+    amount is the MediaDB assertion; its page and dated export have no linked primary
+    article. The Hajjaj paired-carbon formulation is a source lead, not established
+    provenance.", "old": null, "old_present": false, "pointer": ["ingredients", 8,
+    "notes"], "reason": "Keep source units, provenance and unresolved identity/volume
+    limits explicit.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+    "snippet": "0.7194"}, {"counts": {"new_evidence": 1}, "kind": "set", "locator":
+    "Compound table / Ferrous sulfate / Amount (mM)", "new": [{"explanation": "MediaDB
+    331, Compound table, Ferrous sulfate row, Amount (mM) column: supports only the
+    upstream database assertion at ingredients[8].concentration, 0.7194 mM. The numeric
+    cell and its own row/column were inspected together and agree with the dated SQL
+    export. This is not independent article verification of final-medium molarity
+    or the old chemical grounding.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+    "snippet": "0.7194", "supports": "SUPPORT"}], "old": null, "old_present": false,
+    "pointer": ["ingredients", 8, "evidence"], "reason": "Attach evidence to its exact
+    amount, source-input note or identity claim.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+    "snippet": "0.7194"}, {"counts": {"ingredient_context_notes_corrected": 1}, "kind":
+    "set", "locator": "Compound table / Zinc sulfate / Amount (mM)", "new": "This
+    amount is the MediaDB assertion; its page and dated export have no linked primary
+    article. The Hajjaj paired-carbon formulation is a source lead, not established
+    provenance.", "old": null, "old_present": false, "pointer": ["ingredients", 9,
+    "notes"], "reason": "Keep source units, provenance and unresolved identity/volume
+    limits explicit.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+    "snippet": "0.6955"}, {"counts": {"new_evidence": 1}, "kind": "set", "locator":
+    "Compound table / Zinc sulfate / Amount (mM)", "new": [{"explanation": "MediaDB
+    331, Compound table, Zinc sulfate row, Amount (mM) column: supports only the upstream
+    database assertion at ingredients[9].concentration, 0.6955 mM. The numeric cell
+    and its own row/column were inspected together and agree with the dated SQL export.
+    This is not independent article verification of final-medium molarity or the old
+    chemical grounding.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+    "snippet": "0.6955", "supports": "SUPPORT"}], "old": null, "old_present": false,
+    "pointer": ["ingredients", 9, "evidence"], "reason": "Attach evidence to its exact
+    amount, source-input note or identity claim.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+    "snippet": "0.6955"}, {"counts": {"ingredient_context_notes_corrected": 1}, "kind":
+    "set", "locator": "Compound table / Cupric chloride / Amount (mM)", "new": "This
+    amount is the MediaDB assertion; its page and dated export have no linked primary
+    article. The Hajjaj paired-carbon formulation is a source lead, not established
+    provenance.", "old": null, "old_present": false, "pointer": ["ingredients", 10,
+    "notes"], "reason": "Keep source units, provenance and unresolved identity/volume
+    limits explicit.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+    "snippet": "0.02933"}, {"counts": {"new_evidence": 1}, "kind": "set", "locator":
+    "Compound table / Cupric chloride / Amount (mM)", "new": [{"explanation": "MediaDB
+    331, Compound table, Cupric chloride row, Amount (mM) column: supports only the
+    upstream database assertion at ingredients[10].concentration, 0.02933 mM. The
+    numeric cell and its own row/column were inspected together and agree with the
+    dated SQL export. This is not independent article verification of final-medium
+    molarity or the old chemical grounding.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+    "snippet": "0.02933", "supports": "SUPPORT"}], "old": null, "old_present": false,
+    "pointer": ["ingredients", 10, "evidence"], "reason": "Attach evidence to its
+    exact amount, source-input note or identity claim.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+    "snippet": "0.02933"}, {"counts": {"ingredient_labels_corrected": 1}, "kind":
+    "set", "locator": "compounds table, compID 16418, formula and name columns", "new":
+    "Ammonium heptamolybdate tetrahydrate", "old": "Molybdic acid ammonium salt tetrahydrate",
+    "old_present": true, "pointer": ["ingredients", 11, "preferred_term"], "reason":
+    "Name the source heptamolybdate tetrahydrate.", "reference": "https://mediadb.systemsbiology.net/static/defined_media/downloads/media_database.07Oct2015.sql.gz",
+    "snippet": "(NH4)6Mo7O24"}, {"counts": {"unsupported_ingredient_identity_slots_removed":
+    1}, "kind": "remove", "locator": "Formula", "new": null, "old": {"id": "CHEBI:91249",
+    "label": "ammonium molybdate"}, "old_present": true, "pointer": ["ingredients",
+    11, "term"], "reason": "Remove orthomolybdate grounding from source heptamolybdate
+    tetrahydrate.", "reference": "https://www.ebi.ac.uk/chebi/CHEBI:91249", "snippet":
+    "2H4N.MoO4"}, {"counts": {"ingredient_context_notes_corrected": 1}, "kind": "set",
+    "locator": "Compound table / Molybdic acid ammonium salt tetrahydrate / Amount
+    (mM)", "new": "This amount is the MediaDB assertion; its page and dated export
+    have no linked primary article. The Hajjaj paired-carbon formulation is a source
+    lead, not established provenance. CHEBI:91249 identifies orthomolybdate, not the
+    source heptamolybdate tetrahydrate. The conflicting mapping is withdrawn; no replacement
+    is assigned and the MIM snapshot is unchanged.", "old": null, "old_present": false,
+    "pointer": ["ingredients", 11, "notes"], "reason": "Keep source units, provenance
+    and unresolved identity/volume limits explicit.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+    "snippet": "0.004045"}, {"counts": {"new_evidence": 3}, "kind": "set", "locator":
+    "Compound table / Molybdic acid ammonium salt tetrahydrate / Amount (mM)", "new":
+    [{"explanation": "MediaDB 331, Compound table, Molybdic acid ammonium salt tetrahydrate
+    row, Amount (mM) column: supports only the upstream database assertion at ingredients[11].concentration,
+    0.004045 mM. The numeric cell and its own row/column were inspected together and
+    agree with the dated SQL export. This is not independent article verification
+    of final-medium molarity or the old chemical grounding.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+    "snippet": "0.004045", "supports": "SUPPORT"}, {"explanation": "The compounds
+    table''s compID 16418 formula, together with its tetrahydrate name, supports the
+    supplied heptamolybdate identity at ingredients[11], not orthomolybdate. The medium''s
+    own media_compounds row links to this compound; no article association is invented.",
+    "reference": "https://mediadb.systemsbiology.net/static/defined_media/downloads/media_database.07Oct2015.sql.gz",
+    "snippet": "(NH4)6Mo7O24", "supports": "SUPPORT"}, {"explanation": "The official
+    Formula field shows why CHEBI:91249 is not the supplied heptamolybdate tetrahydrate
+    at ingredients[11]. Supports withdrawing that mapping, not the concentration.
+    The misleading MIM synonym is not used to reassign it; no replacement identifier
+    is invented.", "reference": "https://www.ebi.ac.uk/chebi/CHEBI:91249", "snippet":
+    "2H4N.MoO4", "supports": "SUPPORT"}], "old": null, "old_present": false, "pointer":
+    ["ingredients", 11, "evidence"], "reason": "Attach evidence to its exact amount,
+    source-input note or identity claim.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+    "snippet": "0.004045"}, {"counts": {"ingredient_context_notes_corrected": 1},
+    "kind": "set", "locator": "Compound table / Sodium Glutamate / Amount (mM)", "new":
+    "This amount is the MediaDB assertion; its page and dated export have no linked
+    primary article. The Hajjaj paired-carbon formulation is a source lead, not established
+    provenance.", "old": null, "old_present": false, "pointer": ["ingredients", 12,
+    "notes"], "reason": "Keep source units, provenance and unresolved identity/volume
+    limits explicit.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+    "snippet": "66.8"}, {"counts": {"new_evidence": 1}, "kind": "set", "locator":
+    "Compound table / Sodium Glutamate / Amount (mM)", "new": [{"explanation": "MediaDB
+    331, Compound table, Sodium Glutamate row, Amount (mM) column: supports only the
+    upstream database assertion at ingredients[12].concentration, 66.8 mM. The numeric
+    cell and its own row/column were inspected together and agree with the dated SQL
+    export. This is not independent article verification of final-medium molarity
+    or the old chemical grounding.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+    "snippet": "66.8", "supports": "SUPPORT"}], "old": null, "old_present": false,
+    "pointer": ["ingredients", 12, "evidence"], "reason": "Attach evidence to its
+    exact amount, source-input note or identity claim.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+    "snippet": "66.8"}, {"counts": {"new_references": 3}, "kind": "set", "locator":
+    "Compound table; associated article and ontology sources", "new": [{"authors":
+    "Institute for Systems Biology", "notes": "source_type=dataset; discovery_mode=existing
+    MEDIADB accession; accessed_on=2026-10-09; hash-pinned official recipe HTML table.
+    Publication year unknown; no copyright or last-modified year substituted. ", "reference":
+    "https://mediadb.systemsbiology.net/defined_media/media/331/", "title": "Media:
+    Chemically defined fermentation medium (20g glucose + 20g ethanol +12.5g msg)"},
+    {"authors": "Institute for Systems Biology", "notes": "source_type=dataset; discovery_mode=official_download_page;
+    accessed_on=2026-10-09; hash-pinned official SQL export. Year describes the dated
+    export version, not a recipe''s publication year.", "reference": "https://mediadb.systemsbiology.net/static/defined_media/downloads/media_database.07Oct2015.sql.gz",
+    "title": "media_database.07Oct2015.sql", "year": 2015}, {"authors": "ChEBI, EMBL-EBI",
+    "notes": "source_type=ontology_record; discovery_mode=inspection of conflicting
+    MIM exact-label answer; accessed_on=2026-10-10; manual official ChEBI page reading;
+    no raw capture. Publication year unknown; no copyright or last-modified year substituted.
+    ", "reference": "https://www.ebi.ac.uk/chebi/CHEBI:91249", "title": "ammonium
+    molybdate (CHEBI:91249)"}], "old": null, "old_present": false, "pointer": ["references"],
+    "reason": "Add bibliography and source-discovery provenance.", "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+    "snippet": "0.1779"}]'
 media_term:
   preferred_term: MediaDB Medium 331
   term:
@@ -178,3 +627,24 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: https://mediadb.systemsbiology.net/defined_media/media/331/
+  title: 'Media: Chemically defined fermentation medium (20g glucose + 20g ethanol
+    +12.5g msg)'
+  authors: Institute for Systems Biology
+  notes: 'source_type=dataset; discovery_mode=existing MEDIADB accession; accessed_on=2026-10-09;
+    hash-pinned official recipe HTML table. Publication year unknown; no copyright
+    or last-modified year substituted. '
+- reference: https://mediadb.systemsbiology.net/static/defined_media/downloads/media_database.07Oct2015.sql.gz
+  title: media_database.07Oct2015.sql
+  authors: Institute for Systems Biology
+  year: 2015
+  notes: source_type=dataset; discovery_mode=official_download_page; accessed_on=2026-10-09;
+    hash-pinned official SQL export. Year describes the dated export version, not
+    a recipe's publication year.
+- reference: https://www.ebi.ac.uk/chebi/CHEBI:91249
+  title: ammonium molybdate (CHEBI:91249)
+  authors: ChEBI, EMBL-EBI
+  notes: 'source_type=ontology_record; discovery_mode=inspection of conflicting MIM
+    exact-label answer; accessed_on=2026-10-10; manual official ChEBI page reading;
+    no raw capture. Publication year unknown; no copyright or last-modified year substituted. '

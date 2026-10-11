@@ -1,0 +1,38 @@
+# UTEX Ingredient Concentration Preview
+
+- Record: data/normalized_yaml/algae/Ochromonas_Medium.yaml
+- ID: CultureMech:000184
+- Reviewed commit: f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f
+- Baseline SHA256: f3c8faa3384ce5e50bcdc4e6d96313c2b4139dee81c3be528d418bea9b893697
+- Proposed SHA256: be52120a45af151bfd370232fcd320ec00df15b396a3a5186564057a615a19f9
+- State: Preview only; authoritative YAML unchanged.
+
+| Field / ingredient | Old value / unit / basis | Proposed value / unit / basis | Status | Source, snippet, locator and arithmetic | Action |
+| --- | --- | --- | --- | --- | --- |
+| ingredients[0].concentration / dH2O | {"value": "1000", "unit": "ML_PER_L"} | null | unsupported | {"reference": "https://utex.org/products/ochromonas-medium", "snippet": "Bring total volume to 1 L with dH 2 O.", "basis_snippet": "For 1 L Total", "component_snippet": null, "source_amount": null, "locator": "#recipe, composition table and Directions", "calculation": "No final water/carrier fraction can be calculated from an initial portion and unspecified makeup dose."} | Remove the unsupported final-fraction slot while retaining the source preparation input in notes. Preview only; authoritative YAML unchanged. |
+| ingredients[1].concentration / Glucose | {"value": "5.6", "unit": "MILLIMOLAR"} | {"value": "5.6", "unit": "MILLIMOLAR"} | evidence_only | {"reference": "https://utex.org/products/ochromonas-medium", "snippet": "5.6 mM", "basis_snippet": "For 1 L Total", "component_snippet": "Glucose(BACTO-dextrose or Sigma D 9634)", "source_amount": "1 g/L", "locator": "#recipe, composition table and Directions", "calculation": "Directly retain the source table value and unit; no mass/molar conversion is performed. The printed rounded molarity is a source assertion, not an independent certification of molecular weight or supplied chemical identity."} | Retain the numeric value with exact source evidence and any explicitly stated preparation basis. Preview only; authoritative YAML unchanged. |
+| ingredients[2].concentration / Tryptone | {"value": "1", "unit": "G_PER_L"} | {"value": "1", "unit": "G_PER_L"} | evidence_only | {"reference": "https://utex.org/products/ochromonas-medium", "snippet": "1 g/L", "basis_snippet": "For 1 L Total", "component_snippet": "Tryptone (Sigma T 9410)", "source_amount": "1 g/L", "locator": "#recipe, composition table and Directions", "calculation": "Directly retain the source table value and unit; no mass/molar conversion is performed."} | Retain the numeric value with exact source evidence and any explicitly stated preparation basis. Preview only; authoritative YAML unchanged. |
+| ingredients[3].concentration / Yeast extract | {"value": "1", "unit": "G_PER_L"} | {"value": "1", "unit": "G_PER_L"} | evidence_only | {"reference": "https://utex.org/products/ochromonas-medium", "snippet": "1 g/L", "basis_snippet": "For 1 L Total", "component_snippet": "Yeast extract(Bacto, Difco)", "source_amount": "1 g/L", "locator": "#recipe, composition table and Directions", "calculation": "Directly retain the source table value and unit; no mass/molar conversion is performed."} | Retain the numeric value with exact source evidence and any explicitly stated preparation basis. Preview only; authoritative YAML unchanged. |
+| solutions[0].concentration / Liver extract infusion | {"value": "40", "unit": "ML_PER_L"} | {"value": "40", "unit": "ML_PER_L"} | evidence_only | {"reference": "https://utex.org/products/ochromonas-medium", "snippet": "40 mL/L", "basis_snippet": "For 1 L Total", "component_snippet": "Liver extract infusion", "source_amount": "40 mL/L", "locator": "#recipe, composition table and Directions", "calculation": "Directly retain the source table value and unit; no mass/molar conversion is performed."} | Retain the numeric value with exact source evidence and any explicitly stated preparation basis. Preview only; authoritative YAML unchanged. |
+| solutions[0].composition[0].concentration / dH2O | {"value": "1000", "unit": "ML_PER_L"} | null | unsupported | {"reference": "https://utex.org/products/liver-extract-infusion", "snippet": "Bring the total volume to 50 mL with dH 2 O .", "basis_snippet": "For 50 mL Total", "component_snippet": null, "source_amount": null, "locator": "#recipe, composition table and Directions", "calculation": "No final water/carrier fraction can be calculated from an initial portion and unspecified makeup dose."} | Remove the unsupported final-fraction slot while retaining the source preparation input in notes. Preview only; authoritative YAML unchanged. |
+| solutions[0].composition[1].concentration / Liver extract | {"value": "50", "unit": "G_PER_L"} | {"value": "50", "unit": "G_PER_L", "per_volume": "per liter of prepared stock before heating and filtration"} | correct | {"reference": "https://utex.org/products/liver-extract-infusion", "snippet": "2.5 g/50 mL", "basis_snippet": "For 50 mL Total", "component_snippet": "Liver extract(Difco Bacto 0133)", "source_amount": "2.5 g/50 mL", "locator": "#recipe, composition table and Directions", "calculation": "2.5 g / 0.050 L prepared stock = 50 g/L before heating and filtration. No recovery or filtrate concentration is inferred."} | Retain the numeric value with exact source evidence and any explicitly stated preparation basis. Preview only; authoritative YAML unchanged. |
+
+## Provenance
+
+The proposal links every changed concentration or preparation-dose assertion to the inspected UTEX source URL and a literal excerpt. Titles, source_type=culture_collection_page, discovery_mode=existing_record_reference and access date 2026-10-10 are preserved in proposed bibliography entries. Named authors, publication year and DOI are unknown; no substitutes are fabricated.
+
+Exact source tables, capture hashes, original and proposed YAML, and calculations are pinned by the batch plan. HTML was inspected; linked PDFs are not claimed to have been checked.
+
+## Verification
+
+Both baseline and proposed schema/strict CLI checks pass for this record. Across five records, all twenty commands pass, seventeen retained numeric fields match the source projection and 82 altered amount/unit/basis, unsupported-slot, agar, snippet, identity, history or unrelated-claim mutants are rejected.
+
+The inverse comparison preserves all prior identifiers, descriptors, culture conditions, preparation steps and history except the explicitly proposed notes, bibliography, evidence, quantity slots and optional variants. No guarded application, installed-code regression or post-edit validation is claimed.
+
+## Unresolved Scope
+
+Malt final volume remains unresolved. Liver-extract strength is an input before heating and filtration, not a measured filtrate strength. Trebouxia total Bristol Medium input and water makeup volumes remain unspecified. These limitations apply only to the relevant record.
+
+Printed molarities are retained as source assertions, not independently recalculated from certified supplier forms. Existing ontology mappings, ingredient roles, growth conditions and linked-medium compositions are unchanged and not newly certified. No taxa-media associations are added. This preview adds zero canonical coverage and zero authoritative edits.
+
+This v2 proposal changes only the prospective curation-history claim metadata: preview-only state remains in reports, not in future applied history. Scientific content is identical to v1. The v2 guard passes 78 tests and a real-schema dry run with zero changed and five pending records. All five proposal pages retain seventeen quantities, two bases and four optional variants in HTML content checks, without browser visual verification.

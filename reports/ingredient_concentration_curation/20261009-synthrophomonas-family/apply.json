@@ -1,0 +1,469 @@
+{
+  "terminal": true,
+  "phase": "apply",
+  "checks": [],
+  "errors": [],
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "3e69263bb0c82e782c51c5a994945630fbf3a3b9f685248e16d7daf3367f05fc"
+  },
+  "plan_sha256": "496c0f734f231756ee97a80021429802c1af9136472b77798c9f2162ad4b2d4c",
+  "context_sha256": "1d9b09a2915e57c4f212f1de08bb1a5ada6b2a4b8a47b6b6c5d528d00250e84a",
+  "preview_validation_sha256": "e0f27faf288e9d48aa44560169c45b46beae1856782c9a5aca7f3af77ee36eb8",
+  "code_sha256": {
+    "scripts/repair_synthrophomonas_family.py": "ef0dbeed08dfe0177b59bd628aa6b5ab5f828a1f3f2ea70e7298088831a61838",
+    "tests/test_synthrophomonas_family.py": "fc68e870d8cb3a56e73d29e2d6797f7fac8a241f33bdfb117ecf5bbe5f591a2e",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/audit.py": "e21d75bf5b782c9eba2df6e30ced68989d9bfcc2000bf1b9066cdf04e2a47458"
+  },
+  "focused_application_sha256": "d4e3746f6a9aee747fe3795603e79d9c8025d608352ca36ebad2805fdaee62f8",
+  "ignored_files_included": true,
+  "reviewed_code_successors": [
+    "scripts/repair_synthrophomonas_family.py",
+    "tests/test_synthrophomonas_family.py"
+  ],
+  "preview_document_archive": [
+    {
+      "source": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/README.md",
+      "archive": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/preview-documents/README.md",
+      "sha256": "85e3f9a416f6d4c7791704eac915214ee22182c657adfa2271c019a2b757ce45"
+    },
+    {
+      "source": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/adversarial-review.md",
+      "archive": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/preview-documents/adversarial-review.md",
+      "sha256": "1b628d85885cfbbc2536263b7a8c05cba13ba2488dbf50cd121e7819072a385d"
+    },
+    {
+      "source": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/next-work.md",
+      "archive": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/preview-documents/next-work.md",
+      "sha256": "6522060cdbb3a03e8ef31d249b0f6dce394cb1bd91f5e72b364351e1f4002345"
+    }
+  ],
+  "preview_audit": {
+    "K212": {
+      "key": "K212",
+      "source_nodes": 32,
+      "old_quantity_slots": 51,
+      "claims": 136,
+      "prior_evidence_content_preserved": 0,
+      "prior_evidence_explanations_extended": 0,
+      "changed": true
+    },
+    "B2805": {
+      "key": "B2805",
+      "source_nodes": 33,
+      "old_quantity_slots": 32,
+      "claims": 104,
+      "prior_evidence_content_preserved": 2,
+      "prior_evidence_explanations_extended": 0,
+      "changed": true
+    },
+    "S1038": {
+      "key": "S1038",
+      "source_nodes": 8,
+      "old_quantity_slots": 9,
+      "claims": 14,
+      "prior_evidence_content_preserved": 8,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    "S125": {
+      "key": "S125",
+      "source_nodes": 2,
+      "old_quantity_slots": 3,
+      "claims": 11,
+      "prior_evidence_content_preserved": 0,
+      "prior_evidence_explanations_extended": 0,
+      "changed": true
+    },
+    "S1728": {
+      "key": "S1728",
+      "source_nodes": 6,
+      "old_quantity_slots": 7,
+      "claims": 12,
+      "prior_evidence_content_preserved": 6,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    "S446": {
+      "key": "S446",
+      "source_nodes": 12,
+      "old_quantity_slots": 10,
+      "claims": 30,
+      "prior_evidence_content_preserved": 7,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    "S447": {
+      "key": "S447",
+      "source_nodes": 2,
+      "old_quantity_slots": 3,
+      "claims": 8,
+      "prior_evidence_content_preserved": 2,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    "S448": {
+      "key": "S448",
+      "source_nodes": 2,
+      "old_quantity_slots": 3,
+      "claims": 8,
+      "prior_evidence_content_preserved": 2,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    "S450": {
+      "key": "S450",
+      "source_nodes": 2,
+      "old_quantity_slots": 3,
+      "claims": 8,
+      "prior_evidence_content_preserved": 2,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    "S451": {
+      "key": "S451",
+      "source_nodes": 2,
+      "old_quantity_slots": 3,
+      "claims": 8,
+      "prior_evidence_content_preserved": 2,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    "S453": {
+      "key": "S453",
+      "source_nodes": 14,
+      "old_quantity_slots": 10,
+      "claims": 38,
+      "prior_evidence_content_preserved": 7,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    "S454": {
+      "key": "S454",
+      "source_nodes": 2,
+      "old_quantity_slots": 3,
+      "claims": 8,
+      "prior_evidence_content_preserved": 2,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    "S455": {
+      "key": "S455",
+      "source_nodes": 2,
+      "old_quantity_slots": 3,
+      "claims": 10,
+      "prior_evidence_content_preserved": 1,
+      "prior_evidence_explanations_extended": 0,
+      "changed": true
+    },
+    "S456": {
+      "key": "S456",
+      "source_nodes": 2,
+      "old_quantity_slots": 3,
+      "claims": 8,
+      "prior_evidence_content_preserved": 2,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    "S459": {
+      "key": "S459",
+      "source_nodes": 2,
+      "old_quantity_slots": 3,
+      "claims": 8,
+      "prior_evidence_content_preserved": 2,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    "S460": {
+      "key": "S460",
+      "source_nodes": 2,
+      "old_quantity_slots": 3,
+      "claims": 8,
+      "prior_evidence_content_preserved": 2,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    "S461": {
+      "key": "S461",
+      "source_nodes": 2,
+      "old_quantity_slots": 3,
+      "claims": 10,
+      "prior_evidence_content_preserved": 1,
+      "prior_evidence_explanations_extended": 0,
+      "changed": true
+    },
+    "S595": {
+      "key": "S595",
+      "source_nodes": 10,
+      "old_quantity_slots": 11,
+      "claims": 20,
+      "prior_evidence_content_preserved": 9,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    "S608": {
+      "key": "S608",
+      "source_nodes": 7,
+      "old_quantity_slots": 7,
+      "claims": 7,
+      "prior_evidence_content_preserved": 7,
+      "prior_evidence_explanations_extended": 0,
+      "changed": false
+    },
+    "S777": {
+      "key": "S777",
+      "source_nodes": 4,
+      "old_quantity_slots": 5,
+      "claims": 10,
+      "prior_evidence_content_preserved": 4,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    "D212": {
+      "key": "D212",
+      "source_nodes": 49,
+      "old_quantity_slots": 33,
+      "claims": 167,
+      "prior_evidence_content_preserved": 1,
+      "prior_evidence_explanations_extended": 0,
+      "changed": true
+    },
+    "D212a": {
+      "key": "D212a",
+      "source_nodes": 74,
+      "old_quantity_slots": 51,
+      "claims": 254,
+      "prior_evidence_content_preserved": 0,
+      "prior_evidence_explanations_extended": 0,
+      "changed": true
+    }
+  },
+  "application": {
+    "mode": "apply",
+    "records": 22,
+    "changed": 21,
+    "already_applied": 1,
+    "claims": 887
+  },
+  "readback": {
+    "mode": "verify",
+    "records": 22,
+    "changed": 0,
+    "already_applied": 22,
+    "claims": 887
+  },
+  "noop": {
+    "mode": "apply",
+    "records": 22,
+    "changed": 0,
+    "already_applied": 22,
+    "claims": 887
+  },
+  "applied_audit": {
+    "K212": {
+      "key": "K212",
+      "source_nodes": 32,
+      "old_quantity_slots": 51,
+      "claims": 136,
+      "prior_evidence_content_preserved": 0,
+      "prior_evidence_explanations_extended": 0,
+      "changed": true
+    },
+    "B2805": {
+      "key": "B2805",
+      "source_nodes": 33,
+      "old_quantity_slots": 32,
+      "claims": 104,
+      "prior_evidence_content_preserved": 2,
+      "prior_evidence_explanations_extended": 0,
+      "changed": true
+    },
+    "S1038": {
+      "key": "S1038",
+      "source_nodes": 8,
+      "old_quantity_slots": 9,
+      "claims": 14,
+      "prior_evidence_content_preserved": 8,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    "S125": {
+      "key": "S125",
+      "source_nodes": 2,
+      "old_quantity_slots": 3,
+      "claims": 11,
+      "prior_evidence_content_preserved": 0,
+      "prior_evidence_explanations_extended": 0,
+      "changed": true
+    },
+    "S1728": {
+      "key": "S1728",
+      "source_nodes": 6,
+      "old_quantity_slots": 7,
+      "claims": 12,
+      "prior_evidence_content_preserved": 6,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    "S446": {
+      "key": "S446",
+      "source_nodes": 12,
+      "old_quantity_slots": 10,
+      "claims": 30,
+      "prior_evidence_content_preserved": 7,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    "S447": {
+      "key": "S447",
+      "source_nodes": 2,
+      "old_quantity_slots": 3,
+      "claims": 8,
+      "prior_evidence_content_preserved": 2,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    "S448": {
+      "key": "S448",
+      "source_nodes": 2,
+      "old_quantity_slots": 3,
+      "claims": 8,
+      "prior_evidence_content_preserved": 2,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    "S450": {
+      "key": "S450",
+      "source_nodes": 2,
+      "old_quantity_slots": 3,
+      "claims": 8,
+      "prior_evidence_content_preserved": 2,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    "S451": {
+      "key": "S451",
+      "source_nodes": 2,
+      "old_quantity_slots": 3,
+      "claims": 8,
+      "prior_evidence_content_preserved": 2,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    "S453": {
+      "key": "S453",
+      "source_nodes": 14,
+      "old_quantity_slots": 10,
+      "claims": 38,
+      "prior_evidence_content_preserved": 7,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    "S454": {
+      "key": "S454",
+      "source_nodes": 2,
+      "old_quantity_slots": 3,
+      "claims": 8,
+      "prior_evidence_content_preserved": 2,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    "S455": {
+      "key": "S455",
+      "source_nodes": 2,
+      "old_quantity_slots": 3,
+      "claims": 10,
+      "prior_evidence_content_preserved": 1,
+      "prior_evidence_explanations_extended": 0,
+      "changed": true
+    },
+    "S456": {
+      "key": "S456",
+      "source_nodes": 2,
+      "old_quantity_slots": 3,
+      "claims": 8,
+      "prior_evidence_content_preserved": 2,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    "S459": {
+      "key": "S459",
+      "source_nodes": 2,
+      "old_quantity_slots": 3,
+      "claims": 8,
+      "prior_evidence_content_preserved": 2,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    "S460": {
+      "key": "S460",
+      "source_nodes": 2,
+      "old_quantity_slots": 3,
+      "claims": 8,
+      "prior_evidence_content_preserved": 2,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    "S461": {
+      "key": "S461",
+      "source_nodes": 2,
+      "old_quantity_slots": 3,
+      "claims": 10,
+      "prior_evidence_content_preserved": 1,
+      "prior_evidence_explanations_extended": 0,
+      "changed": true
+    },
+    "S595": {
+      "key": "S595",
+      "source_nodes": 10,
+      "old_quantity_slots": 11,
+      "claims": 20,
+      "prior_evidence_content_preserved": 9,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    "S608": {
+      "key": "S608",
+      "source_nodes": 7,
+      "old_quantity_slots": 7,
+      "claims": 7,
+      "prior_evidence_content_preserved": 7,
+      "prior_evidence_explanations_extended": 0,
+      "changed": false
+    },
+    "S777": {
+      "key": "S777",
+      "source_nodes": 4,
+      "old_quantity_slots": 5,
+      "claims": 10,
+      "prior_evidence_content_preserved": 4,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    "D212": {
+      "key": "D212",
+      "source_nodes": 49,
+      "old_quantity_slots": 33,
+      "claims": 167,
+      "prior_evidence_content_preserved": 1,
+      "prior_evidence_explanations_extended": 0,
+      "changed": true
+    },
+    "D212a": {
+      "key": "D212a",
+      "source_nodes": 74,
+      "old_quantity_slots": 51,
+      "claims": 254,
+      "prior_evidence_content_preserved": 0,
+      "prior_evidence_explanations_extended": 0,
+      "changed": true
+    }
+  },
+  "applied_plan_sha256": "7d208f749fbf0172c3682994dc256ac7bdc3383852e373682c1b7a344e84f30e",
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "a55dbe72d9740772e93f5dbb870bc17709d68b4b494cd12f69e5bb02b7c41f23"
+  },
+  "only_reviewed_records_changed": true,
+  "all_command_checks_passed": true
+}

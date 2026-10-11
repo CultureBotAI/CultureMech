@@ -1,0 +1,25 @@
+{
+  "terminal": true,
+  "source_sha256": "27d92206953ca936698bfef2073b2c6ca5564b860007d866d29e6f941c3d1419",
+  "input_records": 15910,
+  "output_groups": 10777,
+  "targets": [
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_1006_ALLISONELLA_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_1006_ALLISONELLA_medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/allisonella_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/allisonella_medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    }
+  ],
+  "derived_yaml_written": false
+}

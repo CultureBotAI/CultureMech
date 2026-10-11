@@ -37,6 +37,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:17634
     label: D-glucose
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/869
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 3,
+                              "compound": "D-Glucose",
+                              "compound_id": 211,
+                              "amount": 2,
+                              "unit": "g",
+                              "g_l": 2,
+                              "mmol_l": 11.1012,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[2].concentration (D-Glucose)
+      in MediaDive medium 869; locator=$.data.solutions[0].recipe[2]. Provider explicitly
+      reports g_l=2; check: 2 g * 1 g/g / (1000 ml / 1000 ml per L) = 2 g/L. This
+      supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T12:20:15.232396+00:00;
+      response SHA256=ef09b3b7dde98fdcf6bfc93663b656aa58b449af4ac1649464bc8c42d6ea2b1b.'
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -70,3 +93,21 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-07T12:21:30.028294+00:00'
+  curator: codex
+  action: CURATED_MEDIUM_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Exact medium/source membership, ingredient inventory/forms, physical-state
+    conditions, literal snippets, and arithmetic checked. Stock boundaries, source-only
+    rows, preparation context, and variants remain explicit follow-up tasks; secondary
+    chemical mappings unchanged.
+  source: https://mediadive.dsmz.de/rest/medium/869
+  changes: 'ingredients[2].concentration: {"unit": "G_PER_L", "value": "2"} -> {"unit":
+    "G_PER_L", "value": "2"} (evidence_only)'
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/869
+  title: 'MediaDive medium 869: ANAEROBIC TRYPTIC SOY BROTH MEDIUM'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; source_organization=DSMZ;
+    accessed_on=2026-10-07; locator=$.data.solutions[0]; response_sha256=ef09b3b7dde98fdcf6bfc93663b656aa58b449af4ac1649464bc8c42d6ea2b1b;
+    original_recipe=https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium869.pdf;
+    individual authors and publication year not supplied. Provider-declared main-recipe
+    amounts only.

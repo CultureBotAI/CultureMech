@@ -17,130 +17,30 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  concentration:
-    value: '24'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: MgCl2 x 6 H2O
-  term:
-    id: CHEBI:86345
-    label: magnesium dichloride hexahydrate
-  concentration:
-    value: '11'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86345
-    label: magnesium dichloride hexahydrate
-- preferred_term: Na2SO4
-  term:
-    id: CHEBI:32149
-    label: sodium sulfate
-  concentration:
-    value: '4'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32149
-    label: sodium sulfate
-- preferred_term: CaCl2 x 6 H2O
-  term:
-    id: CHEBI:91243
-    label: calcium chloride hexahydrate
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:91243
-    label: calcium chloride hexahydrate
-- preferred_term: KCl
-  term:
-    id: CHEBI:32588
-    label: potassium chloride
-  concentration:
-    value: '0.7'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32588
-    label: potassium chloride
-- preferred_term: KBr
-  term:
-    id: CHEBI:32030
-    label: potassium bromide
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32030
-    label: potassium bromide
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: boric acid
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:33118
-    label: boric acid
-- preferred_term: NaSiO3 x 9 H2O
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  term:
-    id: CHEBI:132108
-    label: sodium silicate nonahydrate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:132108
-    label: sodium silicate nonahydrate
-- preferred_term: SrCl2 x 6 H2O
-  term:
-    id: CHEBI:36385
-    label: strontium dichloride hexahydrate
-  concentration:
-    value: '0.04'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:36385
-    label: strontium dichloride hexahydrate
-- preferred_term: NaF
-  term:
-    id: CHEBI:28741
-    label: sodium fluoride
-  concentration:
-    value: '0.003'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:28741
-    label: sodium fluoride
-- preferred_term: NH4NO3
-  concentration:
-    value: '0.002'
-    unit: G_PER_L
-  term:
-    id: CHEBI:63038
-    label: ammonium nitrate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:63038
-    label: ammonium nitrate
-- preferred_term: Fe(III)PO4 x 4 H2O
-  term:
-    id: CHEBI:131372
-    label: iron(3+) phosphate tetrahydrate
-  concentration:
-    value: '0.001'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:131372
-    label: iron(3+) phosphate tetrahydrate
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 7.8.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/79
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 1,
+                              "compound": "Tryptone",
+                              "compound_id": 71,
+                              "amount": 10,
+                              "unit": "g",
+                              "g_l": 10,
+                              "mmol_l": 140.687,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[0].concentration (evidence_only), locator=$.data.solutions[0].recipe[0]:
+      Source solution 135 (Main sol. 79) explicitly reports g_l=10. Arithmetic check:
+      10 g; provider volume 1000 ml; computed 10 g/L. Additional exact value at $.data.solutions[0].volume
+      (ml): 1000. The numeric value and chemical mappings are preserved. This supports
+      the provider-declared preparation concentration, not an independently measured
+      final volume or downstream dilution. Source retrieved 2026-10-07T10:41:48.732307+00:00;
+      response SHA256=10494f754fba2abe48672831ce69b45e93c1b2090bfc62932b38c23779dc0263.
+      Original DSMZ PDF recipe chain visually cross-checked: 79. Secondary ontology
+      mappings and parent/variant relationships were preserved, not validated by this
+      amount evidence.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -175,6 +75,45 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-10-07T11:35:03.558874+00:00'
+  curator: codex
+  action: RESTORED_REVIEWED_MEDIUM_STOCK_BOUNDARIES
+  notes: Exact source graph, complete ingredient inventory, amounts, and original
+    PDF recipe chain checked. Numeric concentrations and chemical mappings preserved;
+    stock doses and water are explicit batch amounts. No final-medium stock dilution
+    inferred. Parent/variant relationships remain separately unreviewed.
+  source: https://mediadive.dsmz.de/rest/medium/79; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium79.pdf
+  changes: '[''ingredients'', 0, ''concentration''] -> ingredients[0].concentration:
+    {''value'': ''10'', ''unit'': ''G_PER_L''} -> {''value'': ''10'', ''unit'': ''G_PER_L''}
+    (evidence_only); None -> solutions[0].concentration: None -> {''value'': ''1'',
+    ''unit'': ''L''} (add); [''ingredients'', 1, ''concentration''] -> solutions[0].composition[0].concentration:
+    {''value'': ''24'', ''unit'': ''G_PER_L''} -> {''value'': ''24'', ''unit'': ''G_PER_L''}
+    (relocate); [''ingredients'', 2, ''concentration''] -> solutions[0].composition[1].concentration:
+    {''value'': ''11'', ''unit'': ''G_PER_L''} -> {''value'': ''11'', ''unit'': ''G_PER_L''}
+    (relocate); [''ingredients'', 3, ''concentration''] -> solutions[0].composition[2].concentration:
+    {''value'': ''4'', ''unit'': ''G_PER_L''} -> {''value'': ''4'', ''unit'': ''G_PER_L''}
+    (relocate); [''ingredients'', 4, ''concentration''] -> solutions[0].composition[3].concentration:
+    {''value'': ''2'', ''unit'': ''G_PER_L''} -> {''value'': ''2'', ''unit'': ''G_PER_L''}
+    (relocate); [''ingredients'', 5, ''concentration''] -> solutions[0].composition[4].concentration:
+    {''value'': ''0.7'', ''unit'': ''G_PER_L''} -> {''value'': ''0.7'', ''unit'':
+    ''G_PER_L''} (relocate); [''ingredients'', 6, ''concentration''] -> solutions[0].composition[5].concentration:
+    {''value'': ''0.1'', ''unit'': ''G_PER_L''} -> {''value'': ''0.1'', ''unit'':
+    ''G_PER_L''} (relocate); [''ingredients'', 7, ''concentration''] -> solutions[0].composition[6].concentration:
+    {''value'': ''0.03'', ''unit'': ''G_PER_L''} -> {''value'': ''0.03'', ''unit'':
+    ''G_PER_L''} (relocate); [''ingredients'', 8, ''concentration''] -> solutions[0].composition[7].concentration:
+    {''value'': ''0.005'', ''unit'': ''G_PER_L''} -> {''value'': ''0.005'', ''unit'':
+    ''G_PER_L''} (relocate); [''ingredients'', 9, ''concentration''] -> solutions[0].composition[8].concentration:
+    {''value'': ''0.04'', ''unit'': ''G_PER_L''} -> {''value'': ''0.04'', ''unit'':
+    ''G_PER_L''} (relocate); [''ingredients'', 10, ''concentration''] -> solutions[0].composition[9].concentration:
+    {''value'': ''0.003'', ''unit'': ''G_PER_L''} -> {''value'': ''0.003'', ''unit'':
+    ''G_PER_L''} (relocate); [''ingredients'', 11, ''concentration''] -> solutions[0].composition[10].concentration:
+    {''value'': ''0.002'', ''unit'': ''G_PER_L''} -> {''value'': ''0.002'', ''unit'':
+    ''G_PER_L''} (relocate); [''ingredients'', 12, ''concentration''] -> solutions[0].composition[11].concentration:
+    {''value'': ''0.001'', ''unit'': ''G_PER_L''} -> {''value'': ''0.001'', ''unit'':
+    ''G_PER_L''} (relocate); None -> solutions[0].composition[12].concentration: None
+    -> {''value'': ''1'', ''unit'': ''L''} (add); preparation_steps[0:1] -> solutions[0].preparation_notes:
+    [{''step_number'': 1, ''action'': ''ADJUST_PH'', ''description'': ''Adjust pH
+    to 7.8.''}] -> Adjust pH to 7.8. (correct_stage)'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_79_LEUCOTHRIX_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -182,3 +121,500 @@ variant_children:
   name: leucothrix_medium
   notes: Same ingredient and concentration signature; KOMODO record copied from the
     matching DSMZ medium source.
+solutions:
+- preferred_term: Synthetic sea water
+  term:
+    id: mediadive.solution:5554
+    label: Synthetic sea water
+  concentration:
+    value: '1'
+    unit: L
+  composition:
+  - preferred_term: NaCl
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    concentration:
+      value: '24'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/79
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 1,
+                                "compound": "NaCl",
+                                "compound_id": 43,
+                                "amount": 24,
+                                "unit": "g",
+                                "g_l": 24,
+                                "mmol_l": 410.678,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[0].concentration (relocate), locator=$.data.solutions[1].recipe[0]:
+        Source solution 5554 (Synthetic sea water) explicitly reports g_l=24. Arithmetic
+        check: 24 g; provider volume 1000 ml; computed 24 g/L. Additional exact value
+        at $.data.solutions[1].volume (ml): 1000. The numeric value and chemical mappings
+        are preserved. This supports the provider-declared preparation concentration,
+        not an independently measured final volume or downstream dilution. Relocated
+        from ingredients[1] into the explicitly linked stock; it is not a direct receiving-medium
+        concentration. Source retrieved 2026-10-07T10:41:48.732307+00:00; response
+        SHA256=10494f754fba2abe48672831ce69b45e93c1b2090bfc62932b38c23779dc0263. Original
+        DSMZ PDF recipe chain visually cross-checked: 79. Secondary ontology mappings
+        and parent/variant relationships were preserved, not validated by this amount
+        evidence.'
+  - preferred_term: MgCl2 x 6 H2O
+    term:
+      id: CHEBI:86345
+      label: magnesium dichloride hexahydrate
+    concentration:
+      value: '11'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86345
+      label: magnesium dichloride hexahydrate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/79
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 2,
+                                "compound": "MgCl2 x 6 H2O",
+                                "compound_id": 79,
+                                "amount": 11,
+                                "unit": "g",
+                                "g_l": 11,
+                                "mmol_l": 54.1064,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[1].concentration (relocate), locator=$.data.solutions[1].recipe[1]:
+        Source solution 5554 (Synthetic sea water) explicitly reports g_l=11. Arithmetic
+        check: 11 g; provider volume 1000 ml; computed 11 g/L. Additional exact value
+        at $.data.solutions[1].volume (ml): 1000. The numeric value and chemical mappings
+        are preserved. This supports the provider-declared preparation concentration,
+        not an independently measured final volume or downstream dilution. Relocated
+        from ingredients[2] into the explicitly linked stock; it is not a direct receiving-medium
+        concentration. Source retrieved 2026-10-07T10:41:48.732307+00:00; response
+        SHA256=10494f754fba2abe48672831ce69b45e93c1b2090bfc62932b38c23779dc0263. Original
+        DSMZ PDF recipe chain visually cross-checked: 79. Secondary ontology mappings
+        and parent/variant relationships were preserved, not validated by this amount
+        evidence.'
+  - preferred_term: Na2SO4
+    term:
+      id: CHEBI:32149
+      label: sodium sulfate
+    concentration:
+      value: '4'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32149
+      label: sodium sulfate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/79
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 3,
+                                "compound": "Na2SO4",
+                                "compound_id": 110,
+                                "amount": 4,
+                                "unit": "g",
+                                "g_l": 4,
+                                "mmol_l": 28.1611,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[2].concentration (relocate), locator=$.data.solutions[1].recipe[2]:
+        Source solution 5554 (Synthetic sea water) explicitly reports g_l=4. Arithmetic
+        check: 4 g; provider volume 1000 ml; computed 4 g/L. Additional exact value
+        at $.data.solutions[1].volume (ml): 1000. The numeric value and chemical mappings
+        are preserved. This supports the provider-declared preparation concentration,
+        not an independently measured final volume or downstream dilution. Relocated
+        from ingredients[3] into the explicitly linked stock; it is not a direct receiving-medium
+        concentration. Source retrieved 2026-10-07T10:41:48.732307+00:00; response
+        SHA256=10494f754fba2abe48672831ce69b45e93c1b2090bfc62932b38c23779dc0263. Original
+        DSMZ PDF recipe chain visually cross-checked: 79. Secondary ontology mappings
+        and parent/variant relationships were preserved, not validated by this amount
+        evidence.'
+  - preferred_term: CaCl2 x 6 H2O
+    term:
+      id: CHEBI:91243
+      label: calcium chloride hexahydrate
+    concentration:
+      value: '2'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:91243
+      label: calcium chloride hexahydrate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/79
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 4,
+                                "compound": "CaCl2 x 6 H2O",
+                                "compound_id": 173,
+                                "amount": 2,
+                                "unit": "g",
+                                "g_l": 2,
+                                "mmol_l": 9.12925,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[3].concentration (relocate), locator=$.data.solutions[1].recipe[3]:
+        Source solution 5554 (Synthetic sea water) explicitly reports g_l=2. Arithmetic
+        check: 2 g; provider volume 1000 ml; computed 2 g/L. Additional exact value
+        at $.data.solutions[1].volume (ml): 1000. The numeric value and chemical mappings
+        are preserved. This supports the provider-declared preparation concentration,
+        not an independently measured final volume or downstream dilution. Relocated
+        from ingredients[4] into the explicitly linked stock; it is not a direct receiving-medium
+        concentration. Source retrieved 2026-10-07T10:41:48.732307+00:00; response
+        SHA256=10494f754fba2abe48672831ce69b45e93c1b2090bfc62932b38c23779dc0263. Original
+        DSMZ PDF recipe chain visually cross-checked: 79. Secondary ontology mappings
+        and parent/variant relationships were preserved, not validated by this amount
+        evidence.'
+  - preferred_term: KCl
+    term:
+      id: CHEBI:32588
+      label: potassium chloride
+    concentration:
+      value: '0.7'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32588
+      label: potassium chloride
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/79
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 5,
+                                "compound": "KCl",
+                                "compound_id": 61,
+                                "amount": 0.7,
+                                "unit": "g",
+                                "g_l": 0.7,
+                                "mmol_l": 9.38967,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[4].concentration (relocate), locator=$.data.solutions[1].recipe[4]:
+        Source solution 5554 (Synthetic sea water) explicitly reports g_l=0.7. Arithmetic
+        check: 0.7 g; provider volume 1000 ml; computed 0.7 g/L. Additional exact
+        value at $.data.solutions[1].volume (ml): 1000. The numeric value and chemical
+        mappings are preserved. This supports the provider-declared preparation concentration,
+        not an independently measured final volume or downstream dilution. Relocated
+        from ingredients[5] into the explicitly linked stock; it is not a direct receiving-medium
+        concentration. Source retrieved 2026-10-07T10:41:48.732307+00:00; response
+        SHA256=10494f754fba2abe48672831ce69b45e93c1b2090bfc62932b38c23779dc0263. Original
+        DSMZ PDF recipe chain visually cross-checked: 79. Secondary ontology mappings
+        and parent/variant relationships were preserved, not validated by this amount
+        evidence.'
+  - preferred_term: KBr
+    term:
+      id: CHEBI:32030
+      label: potassium bromide
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32030
+      label: potassium bromide
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/79
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 6,
+                                "compound": "KBr",
+                                "compound_id": 174,
+                                "amount": 0.1,
+                                "unit": "g",
+                                "g_l": 0.1,
+                                "mmol_l": 0.840336,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[5].concentration (relocate), locator=$.data.solutions[1].recipe[5]:
+        Source solution 5554 (Synthetic sea water) explicitly reports g_l=0.1. Arithmetic
+        check: 0.1 g; provider volume 1000 ml; computed 0.1 g/L. Additional exact
+        value at $.data.solutions[1].volume (ml): 1000. The numeric value and chemical
+        mappings are preserved. This supports the provider-declared preparation concentration,
+        not an independently measured final volume or downstream dilution. Relocated
+        from ingredients[6] into the explicitly linked stock; it is not a direct receiving-medium
+        concentration. Source retrieved 2026-10-07T10:41:48.732307+00:00; response
+        SHA256=10494f754fba2abe48672831ce69b45e93c1b2090bfc62932b38c23779dc0263. Original
+        DSMZ PDF recipe chain visually cross-checked: 79. Secondary ontology mappings
+        and parent/variant relationships were preserved, not validated by this amount
+        evidence.'
+  - preferred_term: H3BO3
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    concentration:
+      value: '0.03'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/79
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 7,
+                                "compound": "H3BO3",
+                                "compound_id": 37,
+                                "amount": 0.03,
+                                "unit": "g",
+                                "g_l": 0.03,
+                                "mmol_l": 0.485123,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[6].concentration (relocate), locator=$.data.solutions[1].recipe[6]:
+        Source solution 5554 (Synthetic sea water) explicitly reports g_l=0.03. Arithmetic
+        check: 0.03 g; provider volume 1000 ml; computed 0.03 g/L. Additional exact
+        value at $.data.solutions[1].volume (ml): 1000. The numeric value and chemical
+        mappings are preserved. This supports the provider-declared preparation concentration,
+        not an independently measured final volume or downstream dilution. Relocated
+        from ingredients[7] into the explicitly linked stock; it is not a direct receiving-medium
+        concentration. Source retrieved 2026-10-07T10:41:48.732307+00:00; response
+        SHA256=10494f754fba2abe48672831ce69b45e93c1b2090bfc62932b38c23779dc0263. Original
+        DSMZ PDF recipe chain visually cross-checked: 79. Secondary ontology mappings
+        and parent/variant relationships were preserved, not validated by this amount
+        evidence.'
+  - preferred_term: NaSiO3 x 9 H2O
+    concentration:
+      value: '0.005'
+      unit: G_PER_L
+    term:
+      id: CHEBI:132108
+      label: sodium silicate nonahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:132108
+      label: sodium silicate nonahydrate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/79
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 8,
+                                "compound": "NaSiO3 x 9 H2O",
+                                "compound_id": 175,
+                                "amount": 5,
+                                "unit": "mg",
+                                "g_l": 0.005,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[7].concentration (relocate), locator=$.data.solutions[1].recipe[7]:
+        Source solution 5554 (Synthetic sea water) explicitly reports g_l=0.005. Arithmetic
+        check: 5 mg; provider volume 1000 ml; computed 0.005 g/L. Additional exact
+        value at $.data.solutions[1].volume (ml): 1000. The numeric value and chemical
+        mappings are preserved. This supports the provider-declared preparation concentration,
+        not an independently measured final volume or downstream dilution. Relocated
+        from ingredients[8] into the explicitly linked stock; it is not a direct receiving-medium
+        concentration. Source retrieved 2026-10-07T10:41:48.732307+00:00; response
+        SHA256=10494f754fba2abe48672831ce69b45e93c1b2090bfc62932b38c23779dc0263. Original
+        DSMZ PDF recipe chain visually cross-checked: 79. Secondary ontology mappings
+        and parent/variant relationships were preserved, not validated by this amount
+        evidence.'
+  - preferred_term: SrCl2 x 6 H2O
+    term:
+      id: CHEBI:36385
+      label: strontium dichloride hexahydrate
+    concentration:
+      value: '0.04'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:36385
+      label: strontium dichloride hexahydrate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/79
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 9,
+                                "compound": "SrCl2 x 6 H2O",
+                                "compound_id": 176,
+                                "amount": 0.04,
+                                "unit": "g",
+                                "g_l": 0.04,
+                                "mmol_l": 0.150028,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[8].concentration (relocate), locator=$.data.solutions[1].recipe[8]:
+        Source solution 5554 (Synthetic sea water) explicitly reports g_l=0.04. Arithmetic
+        check: 0.04 g; provider volume 1000 ml; computed 0.04 g/L. Additional exact
+        value at $.data.solutions[1].volume (ml): 1000. The numeric value and chemical
+        mappings are preserved. This supports the provider-declared preparation concentration,
+        not an independently measured final volume or downstream dilution. Relocated
+        from ingredients[9] into the explicitly linked stock; it is not a direct receiving-medium
+        concentration. Source retrieved 2026-10-07T10:41:48.732307+00:00; response
+        SHA256=10494f754fba2abe48672831ce69b45e93c1b2090bfc62932b38c23779dc0263. Original
+        DSMZ PDF recipe chain visually cross-checked: 79. Secondary ontology mappings
+        and parent/variant relationships were preserved, not validated by this amount
+        evidence.'
+  - preferred_term: NaF
+    term:
+      id: CHEBI:28741
+      label: sodium fluoride
+    concentration:
+      value: '0.003'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:28741
+      label: sodium fluoride
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/79
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 10,
+                                "compound": "NaF",
+                                "compound_id": 177,
+                                "amount": 3,
+                                "unit": "mg",
+                                "g_l": 0.003,
+                                "mmol_l": 0.0714486,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[9].concentration (relocate), locator=$.data.solutions[1].recipe[9]:
+        Source solution 5554 (Synthetic sea water) explicitly reports g_l=0.003. Arithmetic
+        check: 3 mg; provider volume 1000 ml; computed 0.003 g/L. Additional exact
+        value at $.data.solutions[1].volume (ml): 1000. The numeric value and chemical
+        mappings are preserved. This supports the provider-declared preparation concentration,
+        not an independently measured final volume or downstream dilution. Relocated
+        from ingredients[10] into the explicitly linked stock; it is not a direct
+        receiving-medium concentration. Source retrieved 2026-10-07T10:41:48.732307+00:00;
+        response SHA256=10494f754fba2abe48672831ce69b45e93c1b2090bfc62932b38c23779dc0263.
+        Original DSMZ PDF recipe chain visually cross-checked: 79. Secondary ontology
+        mappings and parent/variant relationships were preserved, not validated by
+        this amount evidence.'
+  - preferred_term: NH4NO3
+    concentration:
+      value: '0.002'
+      unit: G_PER_L
+    term:
+      id: CHEBI:63038
+      label: ammonium nitrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63038
+      label: ammonium nitrate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/79
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 11,
+                                "compound": "NH4NO3",
+                                "compound_id": 178,
+                                "amount": 2,
+                                "unit": "mg",
+                                "g_l": 0.002,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[10].concentration (relocate), locator=$.data.solutions[1].recipe[10]:
+        Source solution 5554 (Synthetic sea water) explicitly reports g_l=0.002. Arithmetic
+        check: 2 mg; provider volume 1000 ml; computed 0.002 g/L. Additional exact
+        value at $.data.solutions[1].volume (ml): 1000. The numeric value and chemical
+        mappings are preserved. This supports the provider-declared preparation concentration,
+        not an independently measured final volume or downstream dilution. Relocated
+        from ingredients[11] into the explicitly linked stock; it is not a direct
+        receiving-medium concentration. Source retrieved 2026-10-07T10:41:48.732307+00:00;
+        response SHA256=10494f754fba2abe48672831ce69b45e93c1b2090bfc62932b38c23779dc0263.
+        Original DSMZ PDF recipe chain visually cross-checked: 79. Secondary ontology
+        mappings and parent/variant relationships were preserved, not validated by
+        this amount evidence.'
+  - preferred_term: Fe(III)PO4 x 4 H2O
+    term:
+      id: CHEBI:131372
+      label: iron(3+) phosphate tetrahydrate
+    concentration:
+      value: '0.001'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:131372
+      label: iron(3+) phosphate tetrahydrate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/79
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 12,
+                                "compound": "Fe(III)PO4 x 4 H2O",
+                                "compound_id": 179,
+                                "amount": 1,
+                                "unit": "mg",
+                                "g_l": 0.001,
+                                "mmol_l": 0.00448672,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[11].concentration (relocate), locator=$.data.solutions[1].recipe[11]:
+        Source solution 5554 (Synthetic sea water) explicitly reports g_l=0.001. Arithmetic
+        check: 1 mg; provider volume 1000 ml; computed 0.001 g/L. Additional exact
+        value at $.data.solutions[1].volume (ml): 1000. The numeric value and chemical
+        mappings are preserved. This supports the provider-declared preparation concentration,
+        not an independently measured final volume or downstream dilution. Relocated
+        from ingredients[12] into the explicitly linked stock; it is not a direct
+        receiving-medium concentration. Source retrieved 2026-10-07T10:41:48.732307+00:00;
+        response SHA256=10494f754fba2abe48672831ce69b45e93c1b2090bfc62932b38c23779dc0263.
+        Original DSMZ PDF recipe chain visually cross-checked: 79. Secondary ontology
+        mappings and parent/variant relationships were preserved, not validated by
+        this amount evidence.'
+  - preferred_term: Distilled water
+    term:
+      id: mediadive.compound:4
+      label: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/79
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 13,
+                                "compound": "Distilled water",
+                                "compound_id": 4,
+                                "amount": 1000,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[12].concentration (add), locator=$.data.solutions[1].recipe[12]:
+        Explicit 1000 ml water / 1000 ml per L = 1 L in this preparation batch. This
+        is an addition amount, not a claim of final volume, stock strength, or percent
+        basis. Source retrieved 2026-10-07T10:41:48.732307+00:00; response SHA256=10494f754fba2abe48672831ce69b45e93c1b2090bfc62932b38c23779dc0263.
+        Original DSMZ PDF recipe chain visually cross-checked: 79. Secondary ontology
+        mappings and parent/variant relationships were preserved, not validated by
+        this amount evidence.'
+  preparation_notes: Adjust pH to 7.8.
+evidence:
+- reference: https://mediadive.dsmz.de/rest/medium/79
+  supports: SUPPORT
+  snippet: |-
+    {
+                            "recipe_order": 2,
+                            "solution": "Synthetic sea water",
+                            "solution_id": 5554,
+                            "amount": 1000,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+  explanation: |-
+    solutions[0].concentration (add), locator=$.data.solutions[0].recipe[1]: Explicit 1000 ml / 1000 ml per L = 1 L per receiving batch. The exact solution_id establishes this stock boundary; no final-volume dilution or dose from another medium is inferred. solutions[0].preparation_notes (correct_stage), locator=$.data.solutions[1].steps: Move the exact texts from preparation_steps[0:1] into this stock's preparation stage. The receiving recipe's own remaining steps are unchanged; no new procedure is inferred. Additional exact excerpt: [
+                        {
+                            "step": "Adjust pH to 7.8."
+                        }
+                    ] Source retrieved 2026-10-07T10:41:48.732307+00:00; response SHA256=10494f754fba2abe48672831ce69b45e93c1b2090bfc62932b38c23779dc0263. Original DSMZ PDF recipe chain visually cross-checked: 79. Secondary ontology mappings and parent/variant relationships were preserved, not validated by this amount evidence.
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/79
+  title: 'MediaDive medium 79: LEUCOTHRIX MEDIUM'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; source_organization=DSMZ;
+    accessed_on=2026-10-07; response_sha256=10494f754fba2abe48672831ce69b45e93c1b2090bfc62932b38c23779dc0263;
+    individual authors and publication year not established. PDF copyright is not
+    a publication date.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium79.pdf
+  title: 'DSMZ medium 79: official recipe'
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    source_organization=DSMZ; accessed_on=2026-10-07; response_sha256=fa30638235b7c7bbe3ebf995ae0ad6cff524802e887d2750d5ce520a41f13984;
+    individual authors and publication year not established. PDF copyright is not
+    a publication date.

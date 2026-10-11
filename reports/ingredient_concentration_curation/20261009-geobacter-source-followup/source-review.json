@@ -1,0 +1,2114 @@
+{
+  "state": "read_only_source_followup_not_canonical_record_review",
+  "commit": "f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f",
+  "url": "https://davidcwhite.org/fulltext/304.pdf",
+  "doi": "doi:10.1007/BF00290916",
+  "pmid": "8387263",
+  "title": "Geobacter metallireducens gen. nov. sp. nov., a microorganism capable of coupling the complete oxidation of organic compounds to the reduction of iron and other metals",
+  "authors": "D. R. Lovley; S. J. Giovannoni; D. C. White; J. E. Champine; E. J. P. Phillips; Y. A. Gorby; S. Goodwin",
+  "year": 1993,
+  "source_type": "journal_article",
+  "discovery_mode": "cross_reference_and_author_archive_search",
+  "accessed_on": "2026-10-09",
+  "pdf_sha256": "9f13f636d439e2abe2a247212ad2edabf842e347ebd584be1c2b8f4d35a6223c",
+  "visually_inspected_printed_pages": [
+    336,
+    337,
+    338,
+    339,
+    343
+  ],
+  "doi_resolution": "Direct DOI fetch unavailable; DOI/title corroborated by USGS search metadata. Actual author-hosted primary scan inspected.",
+  "conditional_excerpts": [
+    "For growth with Fe(III)-citrate (50 mM) or nitrate (5-20 mM)",
+    "the CaCl2 \u00b7 2H2O and the Fe(III) oxide were omitted."
+  ],
+  "locator": "Printed page 337, left column, Source of organism and culturing procedures",
+  "transcription": "Short separate excerpts from the same sentence; subscripts flattened and line breaks normalized. Not spliced into one quote.",
+  "findings": [
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_418_Defined_freshwater_medium_CoSO4.yaml",
+      "source_term": "MEDIADB:418",
+      "acceptors": [
+        "Fe(III)dicitrate"
+      ],
+      "calcium_chloride_present": true,
+      "ferric_oxide_present": true,
+      "status": "candidate_conflict_not_applied",
+      "limit": "Resolve the precise acceptor condition and source version before removal. Methods explicitly names 50 mM citrate; Table 1 also includes 20 mM. The nitrate condition is stated as a range. No blanket edit to all variants."
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_419_Defined_freshwater_medium_CoSO4.yaml",
+      "source_term": "MEDIADB:419",
+      "acceptors": [
+        "Nitrate"
+      ],
+      "calcium_chloride_present": true,
+      "ferric_oxide_present": false,
+      "status": "candidate_conflict_not_applied",
+      "limit": "Resolve the precise acceptor condition and source version before removal. Methods explicitly names 50 mM citrate; Table 1 also includes 20 mM. The nitrate condition is stated as a range. No blanket edit to all variants."
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_420_Defined_freshwater_medium_CoSO4.yaml",
+      "source_term": "MEDIADB:420",
+      "acceptors": [
+        "Fe(III)dicitrate"
+      ],
+      "calcium_chloride_present": true,
+      "ferric_oxide_present": false,
+      "status": "candidate_conflict_not_applied",
+      "limit": "Resolve the precise acceptor condition and source version before removal. Methods explicitly names 50 mM citrate; Table 1 also includes 20 mM. The nitrate condition is stated as a range. No blanket edit to all variants."
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_421_Defined_freshwater_medium_CoSO4.yaml",
+      "source_term": "MEDIADB:421",
+      "acceptors": [
+        "Nitrate"
+      ],
+      "calcium_chloride_present": true,
+      "ferric_oxide_present": false,
+      "status": "candidate_conflict_not_applied",
+      "limit": "Resolve the precise acceptor condition and source version before removal. Methods explicitly names 50 mM citrate; Table 1 also includes 20 mM. The nitrate condition is stated as a range. No blanket edit to all variants."
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_445_Defined_freshwater_medium_CoCl2.yaml",
+      "source_term": "MEDIADB:445",
+      "acceptors": [
+        "Fe(III)dicitrate"
+      ],
+      "calcium_chloride_present": true,
+      "ferric_oxide_present": false,
+      "status": "candidate_conflict_not_applied",
+      "limit": "Resolve the precise acceptor condition and source version before removal. Methods explicitly names 50 mM citrate; Table 1 also includes 20 mM. The nitrate condition is stated as a range. No blanket edit to all variants."
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_446_Defined_freshwater_medium_CoCl2.yaml",
+      "source_term": "MEDIADB:446",
+      "acceptors": [
+        "Nitrate"
+      ],
+      "calcium_chloride_present": true,
+      "ferric_oxide_present": false,
+      "status": "candidate_conflict_not_applied",
+      "limit": "Resolve the precise acceptor condition and source version before removal. Methods explicitly names 50 mM citrate; Table 1 also includes 20 mM. The nitrate condition is stated as a range. No blanket edit to all variants."
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_448_Defined_freshwater_medium_CoCl2.yaml",
+      "source_term": "MEDIADB:448",
+      "acceptors": [
+        "Nitrate"
+      ],
+      "calcium_chloride_present": true,
+      "ferric_oxide_present": false,
+      "status": "candidate_conflict_not_applied",
+      "limit": "Resolve the precise acceptor condition and source version before removal. Methods explicitly names 50 mM citrate; Table 1 also includes 20 mM. The nitrate condition is stated as a range. No blanket edit to all variants."
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_449_Defined_freshwater_medium_CoCl2.yaml",
+      "source_term": "MEDIADB:449",
+      "acceptors": [
+        "Fe(III)dicitrate"
+      ],
+      "calcium_chloride_present": true,
+      "ferric_oxide_present": true,
+      "status": "candidate_conflict_not_applied",
+      "limit": "Resolve the precise acceptor condition and source version before removal. Methods explicitly names 50 mM citrate; Table 1 also includes 20 mM. The nitrate condition is stated as a range. No blanket edit to all variants."
+    }
+  ],
+  "remaining": [
+    "The 1988b methods, its 1984 stock cross-reference and Balch 1979 Table 1 have now been visually inspected; see source-chain.md. Establish which stock version and dose applies to each target before mutation.",
+    "Resolve the supplied acetate chemical form before accepting the database molarity derived from a mass amount.",
+    "Check iron-atom versus oxide-formula-unit basis rather than assuming they are interchangeable.",
+    "Table 2 on page 339 has now been inspected. Map its donor conditions and read every target ingredient before approving a cohort mutation.",
+    "Do not transfer cell-suspension cytochrome-assay concentrations or non-utilized conditions into positive growth assertions."
+  ],
+  "cohort_assessment_sha256": "bfd6b6a15fe29cd8c3024c568952407ba92ccd27576a1603cb80c3ef4284b78d",
+  "records": [
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_416_Defined_freshwater_medium_CoSO4.yaml",
+      "id": "CultureMech:007317",
+      "source_term": "MEDIADB:416",
+      "sha256": "005d17427a4ee15935b5a32b119c3ae7f5b62d82819e60b267615f2117c2bd72",
+      "name": "Defined freshwater medium (CoSO4) + 100 mM Fe2O3 + 113.2 mM Acetate",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Acetate": {
+          "preferred_term": "Acetate",
+          "term": {
+            "id": "CHEBI:30089",
+            "label": "acetate"
+          },
+          "concentration": {
+            "value": "113.2",
+            "unit": "MILLIMOLAR"
+          },
+          "notes": "Cross-references: KEGG:ac",
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:30089",
+            "label": "acetate"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_417_Defined_freshwater_medium_CoSO4.yaml",
+      "id": "CultureMech:007318",
+      "source_term": "MEDIADB:417",
+      "sha256": "f52525c6d20a8fb7ff32a1f5b475b968e5faafe895a811d1df17cb44025918c5",
+      "name": "Defined freshwater medium (CoSO4) + 250 mM Fe2O3 + 113.2 mM Acetate",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Acetate": {
+          "preferred_term": "Acetate",
+          "term": {
+            "id": "CHEBI:30089",
+            "label": "acetate"
+          },
+          "concentration": {
+            "value": "113.2",
+            "unit": "MILLIMOLAR"
+          },
+          "notes": "Cross-references: KEGG:ac",
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:30089",
+            "label": "acetate"
+          }
+        },
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "250.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_418_Defined_freshwater_medium_CoSO4.yaml",
+      "id": "CultureMech:007319",
+      "source_term": "MEDIADB:418",
+      "sha256": "2f700f1af206b147d0b37a1c76c811b81025d1c9751ba06100d2e60867c63b0c",
+      "name": "Defined freshwater medium (CoSO4) + 20 mM Iron citrate + 113.2 mM Acetate",
+      "ingredient_count": 30,
+      "selected_nodes": {
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        },
+        "Acetate": {
+          "preferred_term": "Acetate",
+          "term": {
+            "id": "CHEBI:30089",
+            "label": "acetate"
+          },
+          "concentration": {
+            "value": "113.2",
+            "unit": "MILLIMOLAR"
+          },
+          "notes": "Cross-references: KEGG:ac",
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:30089",
+            "label": "acetate"
+          }
+        },
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Fe(III)dicitrate": {
+          "preferred_term": "Fe(III)dicitrate",
+          "concentration": {
+            "value": "20.0",
+            "unit": "MILLIMOLAR"
+          },
+          "notes": "Cross-references: KEGG:fe3dcit"
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_419_Defined_freshwater_medium_CoSO4.yaml",
+      "id": "CultureMech:007320",
+      "source_term": "MEDIADB:419",
+      "sha256": "6fcd007165c59395932089b5704c6be2ba129698016c2be89bd2c5ed4022f768",
+      "name": "Defined freshwater medium (CoSO4) + 5 mM nitrate + 113.2 mM Acetate",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Acetate": {
+          "preferred_term": "Acetate",
+          "term": {
+            "id": "CHEBI:30089",
+            "label": "acetate"
+          },
+          "concentration": {
+            "value": "113.2",
+            "unit": "MILLIMOLAR"
+          },
+          "notes": "Cross-references: KEGG:ac",
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:30089",
+            "label": "acetate"
+          }
+        },
+        "Nitrate": {
+          "preferred_term": "Nitrate",
+          "concentration": {
+            "value": "5.0",
+            "unit": "MILLIMOLAR"
+          },
+          "notes": "Cross-references: KEGG:no3",
+          "term": {
+            "id": "CHEBI:17632",
+            "label": "nitrate"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_420_Defined_freshwater_medium_CoSO4.yaml",
+      "id": "CultureMech:007322",
+      "source_term": "MEDIADB:420",
+      "sha256": "dbcdf9f64032cc4b215c2c10e5164ba7c7e67c6e258e22609ff7504449c14687",
+      "name": "Defined freshwater medium (CoSO4) + 50 mM Iron citrate + 113.2 mM Acetate",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Acetate": {
+          "preferred_term": "Acetate",
+          "term": {
+            "id": "CHEBI:30089",
+            "label": "acetate"
+          },
+          "concentration": {
+            "value": "113.2",
+            "unit": "MILLIMOLAR"
+          },
+          "notes": "Cross-references: KEGG:ac",
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:30089",
+            "label": "acetate"
+          }
+        },
+        "Fe(III)dicitrate": {
+          "preferred_term": "Fe(III)dicitrate",
+          "concentration": {
+            "value": "50.0",
+            "unit": "MILLIMOLAR"
+          },
+          "notes": "Cross-references: KEGG:fe3dcit"
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_421_Defined_freshwater_medium_CoSO4.yaml",
+      "id": "CultureMech:007323",
+      "source_term": "MEDIADB:421",
+      "sha256": "14372f08ae78aaf0dfaa151460b7ce8db7615b601692d0041bfcbb395d06ccde",
+      "name": "Defined freshwater medium (CoSO4) + 20 mM nitrate + 113.2 mM Acetate",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Acetate": {
+          "preferred_term": "Acetate",
+          "term": {
+            "id": "CHEBI:30089",
+            "label": "acetate"
+          },
+          "concentration": {
+            "value": "113.2",
+            "unit": "MILLIMOLAR"
+          },
+          "notes": "Cross-references: KEGG:ac",
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:30089",
+            "label": "acetate"
+          }
+        },
+        "Nitrate": {
+          "preferred_term": "Nitrate",
+          "concentration": {
+            "value": "20.0",
+            "unit": "MILLIMOLAR"
+          },
+          "notes": "Cross-references: KEGG:no3",
+          "term": {
+            "id": "CHEBI:17632",
+            "label": "nitrate"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_422_Defined_freshwater_medium_CoSO4.yaml",
+      "id": "CultureMech:007324",
+      "source_term": "MEDIADB:422",
+      "sha256": "dcd52d276806a25a0e07f056ab0281caf64f6edec6ceed34447009fcc1636170",
+      "name": "Defined freshwater medium (CoSO4) + 15 mM MnO2 + 113.2 mM Acetate",
+      "ingredient_count": 30,
+      "selected_nodes": {
+        "Acetate": {
+          "preferred_term": "Acetate",
+          "term": {
+            "id": "CHEBI:30089",
+            "label": "acetate"
+          },
+          "concentration": {
+            "value": "113.2",
+            "unit": "MILLIMOLAR"
+          },
+          "notes": "Cross-references: KEGG:ac",
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:30089",
+            "label": "acetate"
+          }
+        },
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_423_Defined_freshwater_medium_CoSO4.yaml",
+      "id": "CultureMech:007325",
+      "source_term": "MEDIADB:423",
+      "sha256": "b5938de237100c77144c9cfa09e6310aab77fb5b886c38230ee416d944cf729f",
+      "name": "Defined freshwater medium (CoSO4) + 100 mM Fe2O3 + 10 mM Acetate",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Acetate": {
+          "preferred_term": "Acetate",
+          "term": {
+            "id": "CHEBI:30089",
+            "label": "acetate"
+          },
+          "concentration": {
+            "value": "10.0",
+            "unit": "MILLIMOLAR"
+          },
+          "notes": "Cross-references: KEGG:ac",
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:30089",
+            "label": "acetate"
+          }
+        },
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_424_Defined_freshwater_medium_CoSO4.yaml",
+      "id": "CultureMech:007326",
+      "source_term": "MEDIADB:424",
+      "sha256": "e2ba6bdc8416c11064c1fa8831ac16542a64b59cdf91adbbd3087f5ddb935ca3",
+      "name": "Defined freshwater medium (CoSO4) + 100 mM Fe2O3 + 50 mM Acetate",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Acetate": {
+          "preferred_term": "Acetate",
+          "term": {
+            "id": "CHEBI:30089",
+            "label": "acetate"
+          },
+          "concentration": {
+            "value": "50.0",
+            "unit": "MILLIMOLAR"
+          },
+          "notes": "Cross-references: KEGG:ac",
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:30089",
+            "label": "acetate"
+          }
+        },
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_425_Defined_freshwater_medium_CoSO4.yaml",
+      "id": "CultureMech:007327",
+      "source_term": "MEDIADB:425",
+      "sha256": "6bf1b478e2cddad1b3e87f34eb500bd06058c2c116af97ab96ca46b0d82fe4d5",
+      "name": "Defined freshwater medium (CoSO4) + 100 mM Fe2O3 + 20 mM Ethanol",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_426_Defined_freshwater_medium_CoSO4.yaml",
+      "id": "CultureMech:007328",
+      "source_term": "MEDIADB:426",
+      "sha256": "d6b01c87cd5b803b5d3390ced1f716b60ac6189641454e501a941c9b1c97a9f6",
+      "name": "Defined freshwater medium (CoSO4) + 100 mM Fe2O3 + 20 mM Propionate",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_427_Defined_freshwater_medium_CoSO4.yaml",
+      "id": "CultureMech:007329",
+      "source_term": "MEDIADB:427",
+      "sha256": "86d1b724854df4de946ab0214dce1ab2bc4e91a22cdc6481351173e9a3337e90",
+      "name": "Defined freshwater medium (CoSO4) + 100 mM Fe2O3 + 20 mM Butyrate",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_428_Defined_freshwater_medium_CoSO4.yaml",
+      "id": "CultureMech:007330",
+      "source_term": "MEDIADB:428",
+      "sha256": "832a24b95498dfa70f23fc3bd560d869334b5b2799068c9d6cd90db36ae26ceb",
+      "name": "Defined freshwater medium (CoSO4) + 100 mM Fe2O3 + 10 mM Isobutyrate",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_429_Defined_freshwater_medium_CoSO4.yaml",
+      "id": "CultureMech:007331",
+      "source_term": "MEDIADB:429",
+      "sha256": "14f871510ededf7f075a4c0dcc87f1d07a1f1593266ca10acd47230eea48a8cc",
+      "name": "Defined freshwater medium (CoSO4) + 100 mM Fe2O3 + 10 mM Valerate",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_430_Defined_freshwater_medium_CoSO4.yaml",
+      "id": "CultureMech:007333",
+      "source_term": "MEDIADB:430",
+      "sha256": "7c4595c64c6a2d8eff997578584b50d4b8a3a0f4c27f5afd43aa28a32b9dbf58",
+      "name": "Defined freshwater medium (CoSO4) + 100 mM Fe2O3 + 10 mM Isovalerate",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          },
+          "evidence": [
+            {
+              "reference": "https://mediadb.systemsbiology.net/defined_media/media/430/",
+              "supports": "SUPPORT",
+              "snippet": "Calcium chloride anhydrous 0.687",
+              "explanation": "ingredients[8] (Calcium chloride anhydrous), concentration in MEDIADB:430. Locator: compound table, column header 'Amount (mM)'. The database directly reports 0.687 mM for this compound label; no conversion. Corroborating 2015-10-07 export media_compounds row (medcompID, medID, compID, Amount_mM): (8595,430,6656,0.687). Evidence concerns the database compound label, not independent validation of existing ontology mappings, supplied hydrate form, or original-article quantities. Accessed 2026-10-09."
+            }
+          ]
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          },
+          "evidence": [
+            {
+              "reference": "https://mediadb.systemsbiology.net/defined_media/media/430/",
+              "supports": "SUPPORT",
+              "snippet": "Ferric oxide 100.0",
+              "explanation": "ingredients[9] (Ferric oxide), concentration in MEDIADB:430. Locator: compound table, column header 'Amount (mM)'. The database directly reports 100.0 mM for this compound label; no conversion. Corroborating 2015-10-07 export media_compounds row (medcompID, medID, compID, Amount_mM): (8596,430,16490,100). Evidence concerns the database compound label, not independent validation of existing ontology mappings, supplied hydrate form, or original-article quantities. Accessed 2026-10-09."
+            }
+          ]
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_431_Defined_freshwater_medium_CoSO4.yaml",
+      "id": "CultureMech:007334",
+      "source_term": "MEDIADB:431",
+      "sha256": "1bc947aed3929090ff57e2f6c7bf72f594ffa470af8393c2a4b09beee2079271",
+      "name": "Defined freshwater medium (CoSO4) + 100 mM Fe2O3 + 10 mM Pyruvate",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_432_Defined_freshwater_medium_CoSO4.yaml",
+      "id": "CultureMech:007335",
+      "source_term": "MEDIADB:432",
+      "sha256": "ba4a9c67c11e4d062286f5fb2262925fb90e4a694955d2ec8bfa49d054cbf9c3",
+      "name": "Defined freshwater medium (CoSO4) + 100 mM Fe2O3 + 10 mM Propanol",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_433_Defined_freshwater_medium_CoSO4.yaml",
+      "id": "CultureMech:007336",
+      "source_term": "MEDIADB:433",
+      "sha256": "2c9d430cfe28e74175591559526b5076b4812be54fd08e092446537668a8d2a0",
+      "name": "Defined freshwater medium (CoSO4) + 100 mM Fe2O3 + 10 mM Butanol",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_434_Defined_freshwater_medium_CoSO4.yaml",
+      "id": "CultureMech:007337",
+      "source_term": "MEDIADB:434",
+      "sha256": "06f054fbd9a4f0d66850961f230558b3447c1cf33a4785cd3ea1955009a86463",
+      "name": "Defined freshwater medium (CoSO4) + 100 mM Fe2O3 + 10 mM Toluene",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_435_Defined_freshwater_medium_CoSO4.yaml",
+      "id": "CultureMech:007338",
+      "source_term": "MEDIADB:435",
+      "sha256": "448787f96efd5863cd926a9e9ff961d6ffc5a06b40c6ca31d63ba0150a9b2e11",
+      "name": "Defined freshwater medium (CoSO4) + 100 mM Fe2O3 + 1 mM Toluene",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_436_Defined_freshwater_medium_CoSO4.yaml",
+      "id": "CultureMech:007339",
+      "source_term": "MEDIADB:436",
+      "sha256": "7aedcaf722fc429f7178a7ad719d6a1d0e3e420fa265c6a24d6131532c44b2fe",
+      "name": "Defined freshwater medium (CoSO4) + 100 mM Fe2O3 + 1 mM Benzoate",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_437_Defined_freshwater_medium_CoSO4.yaml",
+      "id": "CultureMech:007340",
+      "source_term": "MEDIADB:437",
+      "sha256": "b00589b260974ad3b5be847a5ea1a29850ded5228859c3a5f3d4a6301283d9cf",
+      "name": "Defined freshwater medium (CoSO4) + 100 mM Fe2O3 + 0.5 mM Benzaldehyde",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_438_Defined_freshwater_medium_CoSO4.yaml",
+      "id": "CultureMech:007341",
+      "source_term": "MEDIADB:438",
+      "sha256": "1d6e886a1501ca8b7b908b6e8ce3e0e375f889fb10ea816cfd075e21193b328f",
+      "name": "Defined freshwater medium (CoSO4) + 100 mM Fe2O3 + 0.5 mM Benzyl alcohol",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_439_Defined_freshwater_medium_CoSO4.yaml",
+      "id": "CultureMech:007342",
+      "source_term": "MEDIADB:439",
+      "sha256": "42dbe90281687eb24c7be6a6d97552e710cd964c21cdda5679f6e65de878df87",
+      "name": "Defined freshwater medium (CoSO4) + 100 mM Fe2O3 + 0.5 mM p-Hydroxybenzoate",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_440_Defined_freshwater_medium_CoSO4.yaml",
+      "id": "CultureMech:007344",
+      "source_term": "MEDIADB:440",
+      "sha256": "c3d6f6124cb15f946f2427163188ce4e120f869bcbec80e665aafac3f58e1d49",
+      "name": "Defined freshwater medium (CoSO4) + 100 mM Fe2O3 + 0.5 mM p-Hydroxybenzaldehyde",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_441_Defined_freshwater_medium_CoSO4.yaml",
+      "id": "CultureMech:007345",
+      "source_term": "MEDIADB:441",
+      "sha256": "77261de8cce1e568232c25c7747d85cf57ad99fce388c7813762edd81eeb5c52",
+      "name": "Defined freshwater medium (CoSO4) + 100 mM Fe2O3 + 0.5 mM p-Hydroxybenzyl alcohol",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_442_Defined_freshwater_medium_CoSO4.yaml",
+      "id": "CultureMech:007346",
+      "source_term": "MEDIADB:442",
+      "sha256": "68d5d6b297fa07d0ef242c79c769a0aacffeb8f45545cd2e2daef033ec15b07e",
+      "name": "Defined freshwater medium (CoSO4) + 100 mM Fe2O3 + 0.5 mM Phenol",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_443_Defined_freshwater_medium_CoSO4.yaml",
+      "id": "CultureMech:007347",
+      "source_term": "MEDIADB:443",
+      "sha256": "fe3e6b6ab2959ce5d153315c64c2058e79140d256fbab8e2d41165cb84616169",
+      "name": "Defined freshwater medium (CoSO4) + 100 mM Fe2O3 + 0.5 mM p-Cresol",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_444_Defined_freshwater_medium_CoCl2.yaml",
+      "id": "CultureMech:007348",
+      "source_term": "MEDIADB:444",
+      "sha256": "51c177cd35e9f7113b35d237bc77607bddcccb62e8e8803ecfea88058f0a9d96",
+      "name": "Defined freshwater medium (CoCl2) + 100 mM Fe2O3 + 113.2 mM Acetate",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Acetate": {
+          "preferred_term": "Acetate",
+          "term": {
+            "id": "CHEBI:30089",
+            "label": "acetate"
+          },
+          "concentration": {
+            "value": "113.2",
+            "unit": "MILLIMOLAR"
+          },
+          "notes": "Cross-references: KEGG:ac",
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:30089",
+            "label": "acetate"
+          }
+        },
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_445_Defined_freshwater_medium_CoCl2.yaml",
+      "id": "CultureMech:007349",
+      "source_term": "MEDIADB:445",
+      "sha256": "9f2e968024fd4299e1e8bc3c543c8fbc0f3c15537d17fc8d6ea51f1ae441b7b9",
+      "name": "Defined freshwater medium (CoCl2) + 50 mM Iron citrate + 113.2 mM Acetate",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Acetate": {
+          "preferred_term": "Acetate",
+          "term": {
+            "id": "CHEBI:30089",
+            "label": "acetate"
+          },
+          "concentration": {
+            "value": "113.2",
+            "unit": "MILLIMOLAR"
+          },
+          "notes": "Cross-references: KEGG:ac",
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:30089",
+            "label": "acetate"
+          }
+        },
+        "Fe(III)dicitrate": {
+          "preferred_term": "Fe(III)dicitrate",
+          "concentration": {
+            "value": "50.0",
+            "unit": "MILLIMOLAR"
+          },
+          "notes": "Cross-references: KEGG:fe3dcit"
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_446_Defined_freshwater_medium_CoCl2.yaml",
+      "id": "CultureMech:007350",
+      "source_term": "MEDIADB:446",
+      "sha256": "3503b5efd08b10fad0833987b613dbbb47d1bf74bad3f305d48e8a2c0e4067b8",
+      "name": "Defined freshwater medium (CoCl2) + 5 mM nitrate + 113.2 mM Acetate",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Acetate": {
+          "preferred_term": "Acetate",
+          "term": {
+            "id": "CHEBI:30089",
+            "label": "acetate"
+          },
+          "concentration": {
+            "value": "113.2",
+            "unit": "MILLIMOLAR"
+          },
+          "notes": "Cross-references: KEGG:ac",
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:30089",
+            "label": "acetate"
+          }
+        },
+        "Nitrate": {
+          "preferred_term": "Nitrate",
+          "concentration": {
+            "value": "5.0",
+            "unit": "MILLIMOLAR"
+          },
+          "notes": "Cross-references: KEGG:no3",
+          "term": {
+            "id": "CHEBI:17632",
+            "label": "nitrate"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_447_Defined_freshwater_medium_CoCl2.yaml",
+      "id": "CultureMech:007351",
+      "source_term": "MEDIADB:447",
+      "sha256": "8eba6f0195be3c7ba9d04e0d11f49eeae5f1d645ee8f3cd0951ee77e6793581d",
+      "name": "Defined freshwater medium (CoCl2) + 250 mM Fe2O3 + 113.2 mM Acetate",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Acetate": {
+          "preferred_term": "Acetate",
+          "term": {
+            "id": "CHEBI:30089",
+            "label": "acetate"
+          },
+          "concentration": {
+            "value": "113.2",
+            "unit": "MILLIMOLAR"
+          },
+          "notes": "Cross-references: KEGG:ac",
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:30089",
+            "label": "acetate"
+          }
+        },
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "250.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_448_Defined_freshwater_medium_CoCl2.yaml",
+      "id": "CultureMech:007352",
+      "source_term": "MEDIADB:448",
+      "sha256": "bc641f23850cde234f301d5f0ed11fcb907e97b3a5b7268c465cf69fddcfcc75",
+      "name": "Defined freshwater medium (CoCl2) + 20 mM nitrate + 113.2 mM Acetate",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Acetate": {
+          "preferred_term": "Acetate",
+          "term": {
+            "id": "CHEBI:30089",
+            "label": "acetate"
+          },
+          "concentration": {
+            "value": "113.2",
+            "unit": "MILLIMOLAR"
+          },
+          "notes": "Cross-references: KEGG:ac",
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:30089",
+            "label": "acetate"
+          }
+        },
+        "Nitrate": {
+          "preferred_term": "Nitrate",
+          "concentration": {
+            "value": "20.0",
+            "unit": "MILLIMOLAR"
+          },
+          "notes": "Cross-references: KEGG:no3",
+          "term": {
+            "id": "CHEBI:17632",
+            "label": "nitrate"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_449_Defined_freshwater_medium_CoCl2.yaml",
+      "id": "CultureMech:007353",
+      "source_term": "MEDIADB:449",
+      "sha256": "b6587fe4d010e88cd95773af5f0df3e7c83165b37c293b49e8b2a9ab61775fd5",
+      "name": "Defined freshwater medium (CoCl2) + 20 mM Iron citrate + 113.2 mM Acetate",
+      "ingredient_count": 30,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Acetate": {
+          "preferred_term": "Acetate",
+          "term": {
+            "id": "CHEBI:30089",
+            "label": "acetate"
+          },
+          "concentration": {
+            "value": "113.2",
+            "unit": "MILLIMOLAR"
+          },
+          "notes": "Cross-references: KEGG:ac",
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:30089",
+            "label": "acetate"
+          }
+        },
+        "Fe(III)dicitrate": {
+          "preferred_term": "Fe(III)dicitrate",
+          "concentration": {
+            "value": "20.0",
+            "unit": "MILLIMOLAR"
+          },
+          "notes": "Cross-references: KEGG:fe3dcit"
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_450_Defined_freshwater_medium_CoCl2.yaml",
+      "id": "CultureMech:007355",
+      "source_term": "MEDIADB:450",
+      "sha256": "4dbde80709ebfe124c8096089018a29b872e70cdbd62670d4b550d2df8fd9400",
+      "name": "Defined freshwater medium (CoCl2) + 15 mM MnO2 + 113.2 mM Acetate",
+      "ingredient_count": 30,
+      "selected_nodes": {
+        "Acetate": {
+          "preferred_term": "Acetate",
+          "term": {
+            "id": "CHEBI:30089",
+            "label": "acetate"
+          },
+          "concentration": {
+            "value": "113.2",
+            "unit": "MILLIMOLAR"
+          },
+          "notes": "Cross-references: KEGG:ac",
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:30089",
+            "label": "acetate"
+          }
+        },
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_451_Defined_freshwater_medium_CoCl2.yaml",
+      "id": "CultureMech:007356",
+      "source_term": "MEDIADB:451",
+      "sha256": "143196d34deb2b17bd1ae0b525aa128093478da66b527baaf48a6f9ce36871dc",
+      "name": "Defined freshwater medium (CoCl2) + 100 mM Fe2O3 + 50 mM Acetate",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Acetate": {
+          "preferred_term": "Acetate",
+          "term": {
+            "id": "CHEBI:30089",
+            "label": "acetate"
+          },
+          "concentration": {
+            "value": "50.0",
+            "unit": "MILLIMOLAR"
+          },
+          "notes": "Cross-references: KEGG:ac",
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:30089",
+            "label": "acetate"
+          }
+        },
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_452_Defined_freshwater_medium_CoCl2.yaml",
+      "id": "CultureMech:007357",
+      "source_term": "MEDIADB:452",
+      "sha256": "d2a43ff83470b46efe6f5d4b5056844136af1f2ce0e60be12d6e4555a1ee7c9d",
+      "name": "Defined freshwater medium (CoCl2) + 100 mM Fe2O3 + 20 mM Propionate",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_453_Defined_freshwater_medium_CoCl2.yaml",
+      "id": "CultureMech:007358",
+      "source_term": "MEDIADB:453",
+      "sha256": "4dad8a99c829afdf1e8559ebf5b5b5ec5e6234e2c473286161fd54f0ce814d47",
+      "name": "Defined freshwater medium (CoCl2) + 100 mM Fe2O3 + 20 mM Ethanol",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_454_Defined_freshwater_medium_CoCl2.yaml",
+      "id": "CultureMech:007359",
+      "source_term": "MEDIADB:454",
+      "sha256": "f56f6c593be27108027b7cf6c0c05452c54b9d1267a11960cd1c167a873b73b9",
+      "name": "Defined freshwater medium (CoCl2) + 100 mM Fe2O3 + 20 mM Butyrate",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_455_Defined_freshwater_medium_CoCl2.yaml",
+      "id": "CultureMech:007360",
+      "source_term": "MEDIADB:455",
+      "sha256": "b2705e9bd77c7d3e05190b9ca1f2b70be20bd224f35db671f54767f25f93ff1a",
+      "name": "Defined freshwater medium (CoCl2) + 100 mM Fe2O3 + 10 mM Acetate",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Acetate": {
+          "preferred_term": "Acetate",
+          "term": {
+            "id": "CHEBI:30089",
+            "label": "acetate"
+          },
+          "concentration": {
+            "value": "10.0",
+            "unit": "MILLIMOLAR"
+          },
+          "notes": "Cross-references: KEGG:ac",
+          "mediaingredientmech_chebi_term": {
+            "id": "CHEBI:30089",
+            "label": "acetate"
+          }
+        },
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_456_Defined_freshwater_medium_CoCl2.yaml",
+      "id": "CultureMech:007361",
+      "source_term": "MEDIADB:456",
+      "sha256": "4474d9ebfbb16374783bf5d330e061b785e12c27d07576e49bbee69f314dd136",
+      "name": "Defined freshwater medium (CoCl2) + 100 mM Fe2O3 + 10 mM Valerate",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_457_Defined_freshwater_medium_CoCl2.yaml",
+      "id": "CultureMech:007362",
+      "source_term": "MEDIADB:457",
+      "sha256": "d3dfcff19632cc891789af8419243408bc683bd9794a7de4d649e8382ccbd9d5",
+      "name": "Defined freshwater medium (CoCl2) + 100 mM Fe2O3 + 10 mM Toluene",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_458_Defined_freshwater_medium_CoCl2.yaml",
+      "id": "CultureMech:007363",
+      "source_term": "MEDIADB:458",
+      "sha256": "d0dc5c9cd2a81aae325fc5cb4afc6a81128d053e5ec6d3de15f352060777d1d1",
+      "name": "Defined freshwater medium (CoCl2) + 100 mM Fe2O3 + 10 mM Pyruvate",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_459_Defined_freshwater_medium_CoCl2.yaml",
+      "id": "CultureMech:007364",
+      "source_term": "MEDIADB:459",
+      "sha256": "06450cfe8247ddab5ad11460c662afd7c8ad12b438b4a390ec2eaac54755bcb5",
+      "name": "Defined freshwater medium (CoCl2) + 100 mM Fe2O3 + 10 mM Propanol",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_460_Defined_freshwater_medium_CoCl2.yaml",
+      "id": "CultureMech:007366",
+      "source_term": "MEDIADB:460",
+      "sha256": "5aad348ce284d9f506b4171727eae164d3c5a3676720ce2b843df071b9b98e45",
+      "name": "Defined freshwater medium (CoCl2) + 100 mM Fe2O3 + 10 mM Isovalerate",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          },
+          "evidence": [
+            {
+              "reference": "https://mediadb.systemsbiology.net/defined_media/media/460/",
+              "supports": "SUPPORT",
+              "snippet": "Calcium chloride anhydrous 0.687",
+              "explanation": "ingredients[4] (Calcium chloride anhydrous), concentration in MEDIADB:460. Locator: compound table, column header 'Amount (mM)'. The database directly reports 0.687 mM for this compound label; no conversion. Corroborating 2015-10-07 export media_compounds row (medcompID, medID, compID, Amount_mM): (10392,460,6656,0.687). Evidence concerns the database compound label, not independent validation of existing ontology mappings, supplied hydrate form, or original-article quantities. Accessed 2026-10-09."
+            }
+          ]
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          },
+          "evidence": [
+            {
+              "reference": "https://mediadb.systemsbiology.net/defined_media/media/460/",
+              "supports": "SUPPORT",
+              "snippet": "Ferric oxide 100.0",
+              "explanation": "ingredients[9] (Ferric oxide), concentration in MEDIADB:460. Locator: compound table, column header 'Amount (mM)'. The database directly reports 100.0 mM for this compound label; no conversion. Corroborating 2015-10-07 export media_compounds row (medcompID, medID, compID, Amount_mM): (10398,460,16490,100). Evidence concerns the database compound label, not independent validation of existing ontology mappings, supplied hydrate form, or original-article quantities. Accessed 2026-10-09."
+            }
+          ]
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_461_Defined_freshwater_medium_CoCl2.yaml",
+      "id": "CultureMech:007367",
+      "source_term": "MEDIADB:461",
+      "sha256": "a7c61e2d6e7d596b9c674fd59b2e1dc67ca794e9f4f79038d8167e5ae69986b7",
+      "name": "Defined freshwater medium (CoCl2) + 100 mM Fe2O3 + 10 mM Isobutyrate",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_462_Defined_freshwater_medium_CoCl2.yaml",
+      "id": "CultureMech:007368",
+      "source_term": "MEDIADB:462",
+      "sha256": "a3315ddc4c8da9ca0240776e40b580436c61c073fae802385cec9ea3fa620d9a",
+      "name": "Defined freshwater medium (CoCl2) + 100 mM Fe2O3 + 10 mM Butanol",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_463_Defined_freshwater_medium_CoCl2.yaml",
+      "id": "CultureMech:007369",
+      "source_term": "MEDIADB:463",
+      "sha256": "502b21b2a6eb0dd389f767ced0d0a8a9ab310b1ed4534817965ee34aaad69dc9",
+      "name": "Defined freshwater medium (CoCl2) + 100 mM Fe2O3 + 1 mM Toluene",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_464_Defined_freshwater_medium_CoCl2.yaml",
+      "id": "CultureMech:007370",
+      "source_term": "MEDIADB:464",
+      "sha256": "7ab828e08c33fffe1b73ab579ed54a911fcc3f4f1751cef927f6062c80d08ab8",
+      "name": "Defined freshwater medium (CoCl2) + 100 mM Fe2O3 + 1 mM Benzoate",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_465_Defined_freshwater_medium_CoCl2.yaml",
+      "id": "CultureMech:007371",
+      "source_term": "MEDIADB:465",
+      "sha256": "2af7e4b20d0ae2654ffbba9d31c4b69b513a012193b3fb2cdb4305388d563e4f",
+      "name": "Defined freshwater medium (CoCl2) + 100 mM Fe2O3 + 0.5 mM Phenol",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_466_Defined_freshwater_medium_CoCl2.yaml",
+      "id": "CultureMech:007372",
+      "source_term": "MEDIADB:466",
+      "sha256": "d616596338a67c1a4eeb037a972afc1e575a496897465aa9ebb7aeab9a47a314",
+      "name": "Defined freshwater medium (CoCl2) + 100 mM Fe2O3 + 0.5 mM p-Hydroxybenzyl alcohol",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_467_Defined_freshwater_medium_CoCl2.yaml",
+      "id": "CultureMech:007373",
+      "source_term": "MEDIADB:467",
+      "sha256": "751385fc337a246b89aba68c2ae1c4c81a01d64465582bc98a3f02c09463cb4d",
+      "name": "Defined freshwater medium (CoCl2) + 100 mM Fe2O3 + 0.5 mM p-Hydroxybenzoate",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_468_Defined_freshwater_medium_CoCl2.yaml",
+      "id": "CultureMech:007374",
+      "source_term": "MEDIADB:468",
+      "sha256": "be05a8ff5e20ce6ba306014d400dc2af516694c40276a10091943e06a38b09af",
+      "name": "Defined freshwater medium (CoCl2) + 100 mM Fe2O3 + 0.5 mM p-Hydroxybenzaldehyde",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_469_Defined_freshwater_medium_CoCl2.yaml",
+      "id": "CultureMech:007375",
+      "source_term": "MEDIADB:469",
+      "sha256": "af78e362990dd5c97cfd83edc2424bd26629305f4bc5a42089619409a0f4ca27",
+      "name": "Defined freshwater medium (CoCl2) + 100 mM Fe2O3 + 0.5 mM p-Cresol",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_470_Defined_freshwater_medium_CoCl2.yaml",
+      "id": "CultureMech:007377",
+      "source_term": "MEDIADB:470",
+      "sha256": "66d024536215c313361013de25677dadc78d07e46f4fc3bb97d0c3272b8c805a",
+      "name": "Defined freshwater medium (CoCl2) + 100 mM Fe2O3 + 0.5 mM Benzyl alcohol",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_471_Defined_freshwater_medium_CoCl2.yaml",
+      "id": "CultureMech:007378",
+      "source_term": "MEDIADB:471",
+      "sha256": "cda0e3a136de815d804c576488681a2f6602cd77601fefa53489c53e0fad7cdd",
+      "name": "Defined freshwater medium (CoCl2) + 100 mM Fe2O3 + 0.5 mM Benzaldehyde",
+      "ingredient_count": 29,
+      "selected_nodes": {
+        "Calcium chloride anhydrous": {
+          "preferred_term": "Calcium chloride anhydrous",
+          "concentration": {
+            "value": "0.687",
+            "unit": "MILLIMOLAR"
+          },
+          "term": {
+            "id": "CHEBI:3312",
+            "label": "calcium dichloride"
+          }
+        },
+        "Ferric oxide": {
+          "preferred_term": "Ferric oxide",
+          "concentration": {
+            "value": "100.0",
+            "unit": "MILLIMOLAR"
+          }
+        }
+      },
+      "review_scope": "Targeted source/acceptor omission triage only, not every ingredient claim"
+    }
+  ],
+  "records_edited": 0,
+  "new_evidence_entries": 0,
+  "new_taxa_media_associations": 0,
+  "followup_coverage_increment": 0
+}

@@ -1,0 +1,103 @@
+{
+  "terminal": true,
+  "passed": true,
+  "created_at": "2026-10-10T22:04:21.230886+00:00",
+  "state": "uninstalled code and unapplied records; full-suite inputs unchanged",
+  "records": 18,
+  "claim_rows": 67,
+  "counts": {
+    "unsupported_quantity_slots_removed": 14,
+    "supplement_nodes_moved_to_variants": 5,
+    "inline_variant_options_added": 9,
+    "preparation_descriptions_corrected": 14,
+    "child_link_notes_corrected": 1,
+    "ingredient_context_notes_corrected": 23,
+    "new_evidence": 69,
+    "new_references": 1,
+    "bibliographic_entries_enriched": 20,
+    "new_curation_history": 18,
+    "ingredient_dose_basis_corrections": 12,
+    "recipe_context_notes_corrected": 1,
+    "parent_links_corrected": 1,
+    "variant_quantity_texts_corrected": 1,
+    "stock_context_notes_corrected": 4,
+    "ingredient_context_notes_added": 1,
+    "source_conflict_notes_added": 1
+  },
+  "authoritative_records_edited": 0,
+  "canonical_coverage_increment": 0,
+  "audit_dispatches_checked": 3,
+  "code_files": 11,
+  "audit_module_location_simulated": "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py",
+  "actual_schema_dry_runs": {
+    "utex_soil_seawater": {
+      "changed": 0,
+      "pending": 7,
+      "already_applied": 0
+    },
+    "utex_organic_five": {
+      "changed": 0,
+      "pending": 5,
+      "already_applied": 0
+    },
+    "utex_six_blends": {
+      "changed": 0,
+      "pending": 6,
+      "already_applied": 0
+    }
+  },
+  "before_sha256": {
+    "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "6a8ec833aa650e2fed909f0c0a8296ebb13fb59ab20daa463a7893df8ba96653",
+    "scripts/review_utex_soil_seawater.py": null,
+    "tests/test_utex_soil_seawater.py": null,
+    "scripts/review_utex_organic_five.py": null,
+    "tests/test_utex_organic_five.py": null,
+    "scripts/review_utex_six_blends.py": null,
+    "tests/test_utex_six_blends.py": null,
+    "src/culturemech/export/kgx_export.py": "1ca00e48621068494343ebcaa3410a22985d8a78250f937a37c5c56a9d78c1a0",
+    "tests/test_kgx_nested_stocks.py": null,
+    "src/culturemech/validation/recipe_references.py": "79923b9ef4c9662b67d907fccb9fa24aeab1a9e805face7d3e1e86132a9860a0",
+    "tests/test_recipe_utex_references.py": null
+  },
+  "proposed_sha256": {
+    "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "4ccf128d4eed1664974b49d5706d7017d6873eca07b92b6257366cb395fd3040",
+    "scripts/review_utex_soil_seawater.py": "a3f3eb25142d4033ee9879c47bbf78b905b1a192d19e35fc956cc4d6ed55ee7c",
+    "tests/test_utex_soil_seawater.py": "371628e21ca8a510495c102fb8f0429fa0b66db8029c6117bf70203adc25cbc1",
+    "scripts/review_utex_organic_five.py": "5c2854b51ba1556205771ac1f1f8c567184d9b829db67d24e13903bd09eaf378",
+    "tests/test_utex_organic_five.py": "a6e7f3e3fa32377183a9f38fdf0c3fae7316d9c55e98b53a10ad641649c67aca",
+    "scripts/review_utex_six_blends.py": "e25ea38d771a89942452b7a1228c58cd0464d580c9fb9a03e575760fbba58436",
+    "tests/test_utex_six_blends.py": "008e7d2a8eb94f1ab25649799e12b336e3adb02bc8afa20b928e7f56b0f72243",
+    "src/culturemech/export/kgx_export.py": "eacbc2e7b363488cc1ed96e91737f54244dc1a2425dfa05c77ba89d0a5cd10e0",
+    "tests/test_kgx_nested_stocks.py": "f5f02d923202fffe7420e93711b74415bb5dce34231ed20b5e21441526892cda",
+    "src/culturemech/validation/recipe_references.py": "e80389b175578ba7355bd482b89b016dea13d4268f85a27582c445bfcdfa561e",
+    "tests/test_recipe_utex_references.py": "37944475e1bb99b1dbb1001330516945465c037a237a37d6ac787d169ab414f7"
+  },
+  "code_sources": {
+    "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "reports/ingredient_concentration_curation/20261010-next-utex-integration-preview/v2/audit_diff.py",
+    "scripts/review_utex_soil_seawater.py": "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v2/guard-preview/review_utex_soil_seawater.py",
+    "tests/test_utex_soil_seawater.py": "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v2/guard-preview/test_utex_soil_seawater.py",
+    "scripts/review_utex_organic_five.py": "reports/ingredient_concentration_curation/20261010-utex-organic-five-preview/mutation-preview-v3/guard-preview/review_utex_organic_five.py",
+    "tests/test_utex_organic_five.py": "reports/ingredient_concentration_curation/20261010-utex-organic-five-preview/mutation-preview-v3/guard-preview/test_utex_organic_five.py",
+    "scripts/review_utex_six_blends.py": "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/guard-preview/review_utex_six_blends.py",
+    "tests/test_utex_six_blends.py": "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/guard-preview/test_utex_six_blends.py",
+    "src/culturemech/export/kgx_export.py": "reports/ingredient_concentration_curation/20261010-kgx-nested-stock-review/validation-v3/kgx_export.py",
+    "tests/test_kgx_nested_stocks.py": "reports/ingredient_concentration_curation/20261010-kgx-nested-stock-review/validation-v3/test_kgx_nested_stocks.py",
+    "src/culturemech/validation/recipe_references.py": "reports/ingredient_concentration_curation/20261010-utex-reference-parser-preview/v3/recipe_references.py",
+    "tests/test_recipe_utex_references.py": "reports/ingredient_concentration_curation/20261010-utex-reference-parser-preview/v3/test_recipe_utex_references.py"
+  },
+  "receipts_sha256": {
+    "reports/ingredient_concentration_curation/20261010-utex-soil-seawater-preview/mutation-preview-v2/guard-preview/validation.json": "a98ccf1f1d280d1c6458a41634ceb518127ea73ebd20b4e440db2a9846abb33a",
+    "reports/ingredient_concentration_curation/20261010-utex-organic-five-preview/mutation-preview-v3/guard-preview/validation.json": "e874e0010d5557c88ee8a07a8495baa6b0325ac7965f8efcf2478a189f406258",
+    "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/guard-preview/validation.json": "b51c69baca37437545b25a83bbcf68609d0846d38c8f4bfa33070c8a87b4ec77",
+    "reports/ingredient_concentration_curation/20261010-kgx-nested-stock-review/validation-v3/preview-validation.json": "07e9b0f436a19100520193174fb4067a869939492a3f01d484f1961c88b3537d",
+    "reports/ingredient_concentration_curation/20261010-utex-reference-parser-preview/v3/validation.json": "2d4f360e315afcce8b7273518a7064becd80a30eb7d49aeaa54d161cb34aa2cc",
+    "reports/ingredient_concentration_curation/20261010-utex-reference-parser-preview/v3/capture-validation.json": "7466ec6404f6f37ed007b0dd70b04313e49ea4880db7ea2d936ee0e885d56fc5"
+  },
+  "git_patch_sha256": "c6efc22c6de0cfce055d9deb3c077ae993eca978c9bb399831b6e49a3b05c2d9",
+  "manual_patch_sha256": "ce0be6549c91df1efa43229c9ffa09eeb78eb26d65936c29726a4bda8c493249",
+  "future_plans_sha256": "43bc27210b64d9e6194c6354fbf8cfd8b9776999b1c74b52d02d4756d706d107",
+  "patch_check_returncode": 0,
+  "patch_check_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "requires_before_install": "Terminal, sealed J/DAS full-suite checkpoint. Recheck all code/record/source hashes.",
+  "requires_after_install": "Apply each approved guard, save exact wrappers, verify readback/noop, validate records, run installed regressions, cumulative audit, source/corpus/derived-output checks and write canonical reports. Not publication-ready."
+}

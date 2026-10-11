@@ -1,0 +1,50 @@
+{
+  "terminal": true,
+  "phase": "baseline",
+  "runtime": "Partial locked Python 3.13; not full CI",
+  "checks": [
+    {
+      "name": "schema",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/linkml-validate",
+        "--schema",
+        "src/culturemech/schema/culturemech.yaml",
+        "--target-class",
+        "MediaRecipe",
+        "data/normalized_yaml/archaea/TOGO_M1038_Methanomethylovorans_Uponensis_Medium.yaml",
+        "data/normalized_yaml/archaea/TOGO_M1039_Methanococcoides_Medium.yaml",
+        "data/normalized_yaml/archaea/JCM_J986_METHANOCOCCOIDES_MEDIUM.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/methanogens-baseline-schema.log",
+      "artifact": null
+    },
+    {
+      "name": "strict",
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/methanogens-baseline-strict.log",
+      "artifact": null
+    },
+    {
+      "name": "tests",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_togo_methanogen_concentrations.py",
+        "tests/test_record_io.py",
+        "tests/test_concentration_plausibility.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/methanogens-baseline-tests.log",
+      "artifact": null
+    }
+  ]
+}

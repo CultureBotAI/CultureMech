@@ -19,6 +19,28 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/92
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 1,
+                              "compound": "Trypticase soy broth",
+                              "compound_id": 99,
+                              "amount": 30,
+                              "unit": "g",
+                              "g_l": 30,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[0].concentration (Trypticase
+      soy broth) in MediaDive medium 92; locator=$.data.solutions[0].recipe[0]. Provider
+      explicitly reports g_l=30; check: 30 g * 1 g/g / (1000 ml / 1000 ml per L) =
+      30 g/L. This supports the provider-declared main-recipe concentration, not an
+      independently measured final volume, a stock composition, or a downstream assay
+      dilution. Water alone does not establish final volume. Exact source ingredient
+      labels/forms are matched; secondary ontology mappings are not validated by this
+      evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved
+      2026-10-07T10:42:02.867667+00:00; response SHA256=90b9abcaa8f06270200eb16a7d78e2113a9c0c6d93152bf430d865619f962a7f.'
 - preferred_term: Yeast extract
   concentration:
     value: '3'
@@ -26,6 +48,28 @@ ingredients:
   term:
     id: FOODON:03315426
     label: Yeast extract
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/92
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 2,
+                              "compound": "Yeast extract",
+                              "compound_id": 16,
+                              "amount": 3,
+                              "unit": "g",
+                              "g_l": 3,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[1].concentration (Yeast extract)
+      in MediaDive medium 92; locator=$.data.solutions[0].recipe[1]. Provider explicitly
+      reports g_l=3; check: 3 g * 1 g/g / (1000 ml / 1000 ml per L) = 3 g/L. This
+      supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:42:02.867667+00:00;
+      response SHA256=90b9abcaa8f06270200eb16a7d78e2113a9c0c6d93152bf430d865619f962a7f.'
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -77,4 +121,23 @@ curation_history:
   changes: Grounded exact score-10 ingredients
   source: src/culturemech/data/mediaingredientmech/label_index.csv
   notes: Applied local mappings for Yeast extract.
+- timestamp: '2026-10-07T10:55:41.454416+00:00'
+  curator: codex
+  action: CURATED_MEDIUM_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Exact medium/source membership, ingredient inventory/forms, physical-state
+    conditions, literal snippets, and arithmetic checked. Stock boundaries, source-only
+    rows, preparation context, and variants remain explicit follow-up tasks; secondary
+    chemical mappings unchanged.
+  source: https://mediadive.dsmz.de/rest/medium/92
+  changes: 'ingredients[0].concentration: {"unit": "G_PER_L", "value": "30"} -> {"unit":
+    "G_PER_L", "value": "30"} (evidence_only); ingredients[1].concentration: {"unit":
+    "G_PER_L", "value": "3"} -> {"unit": "G_PER_L", "value": "3"} (evidence_only)'
 kg_microbe_match: mediadive.medium:12
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/92
+  title: 'MediaDive medium 92: TRYPTICASE SOY YEAST EXTRACT MEDIUM'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; source_organization=DSMZ;
+    accessed_on=2026-10-07; locator=$.data.solutions[0]; response_sha256=90b9abcaa8f06270200eb16a7d78e2113a9c0c6d93152bf430d865619f962a7f;
+    original_recipe=https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium92.pdf;
+    individual authors and publication year not supplied. Provider-declared main-recipe
+    amounts only.

@@ -20,10 +20,60 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/425
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 1,
+                              "compound": "Oat flakes",
+                              "compound_id": 292,
+                              "amount": 10,
+                              "unit": "g",
+                              "g_l": 10,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[0].concentration (Oat flakes)
+      in MediaDive medium 425; locator=$.data.solutions[0].recipe[0]. Provider explicitly
+      reports g_l=10; check: 10 g * 1 g/g / (1000 ml / 1000 ml per L) = 10 g/L. This
+      supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:50.158356+00:00;
+      response SHA256=806e9ad048857ac0c17457c07503c83f1ed58b0264f31f2d896c4e9ccb9d1b9a.
+      KOMODO accession 425 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;
+      mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.
+      The mapping supports identity only, not ingredient quantities or variants.'
 - preferred_term: Oatmeal
   concentration:
     value: '10'
     unit: G_PER_L
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/425
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 2,
+                              "compound": "Oatmeal",
+                              "compound_id": 471,
+                              "amount": 10,
+                              "unit": "g",
+                              "g_l": 10,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[1].concentration (Oatmeal)
+      in MediaDive medium 425; locator=$.data.solutions[0].recipe[1]. Provider explicitly
+      reports g_l=10; check: 10 g * 1 g/g / (1000 ml / 1000 ml per L) = 10 g/L. This
+      supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:50.158356+00:00;
+      response SHA256=806e9ad048857ac0c17457c07503c83f1ed58b0264f31f2d896c4e9ccb9d1b9a.
+      KOMODO accession 425 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;
+      mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.
+      The mapping supports identity only, not ingredient quantities or variants.'
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -73,6 +123,20 @@ curation_history:
   changes: marked reviewed opaque ingredients
   source: official catalogue recipe and local exact label index
   notes: 'Reviewed remaining score-10 grounding rows: Oat flakes, Oatmeal.'
+- timestamp: '2026-10-07T22:47:39.592416+00:00'
+  curator: codex
+  action: CURATED_KOMODO_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Exact medium/source membership, ingredient inventory/forms, physical-state
+    conditions, literal snippets, and arithmetic checked. Stock boundaries, source-only
+    rows, preparation context, and variants remain explicit follow-up tasks; secondary
+    chemical mappings unchanged. KOMODO accession 425 is mapped to the same DSMZ accession
+    by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;
+    mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.
+    The mapping supports identity only, not ingredient quantities or variants.
+  source: https://mediadive.dsmz.de/rest/medium/425
+  changes: 'ingredients[0].concentration: {"unit": "G_PER_L", "value": "10"} -> {"unit":
+    "G_PER_L", "value": "10"} (evidence_only); ingredients[1].concentration: {"unit":
+    "G_PER_L", "value": "10"} -> {"unit": "G_PER_L", "value": "10"} (evidence_only)'
 kg_microbe_match: mediadive.medium:12
 parent_media:
   path: data/normalized_yaml/bacterial/oatmeal_agar.yaml
@@ -88,3 +152,31 @@ variant_modifications:
 data_quality_flags:
 - ingredients_curated
 - has_unmapped_ingredients
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/425
+  title: 'MediaDive medium 425: OATMEAL AGAR'
+  notes: source_type=dataset; discovery_mode=cross_reference; source_organization=DSMZ;
+    accessed_on=2026-10-07; locator=$.data.solutions[0]; response_sha256=806e9ad048857ac0c17457c07503c83f1ed58b0264f31f2d896c4e9ccb9d1b9a;
+    original_recipe=https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium425.pdf;
+    individual authors and publication year not supplied. Provider-declared main-recipe
+    amounts only. Discovered through the verified KOMODO original-recipe mapping.
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  title: 'KOMODO media list: original-recipe mappings'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; source_organization=KOMODO;
+    accessed_on=2026-10-07; response_sha256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a;
+    individual authors and publication year not supplied. Identity mapping only, not
+    concentration evidence.
+evidence:
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  supports: SUPPORT
+  snippet: "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=425'\
+    \ >425</a></TD>\n\t\t\t\t\t<TD>OATMEAL AGAR</TD>\n\t\t\t\t\t<TD> 7.0 - 7.2</TD>\n\
+    \t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n\
+    <TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium425.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium425.pdf</a></TD>\n\t\
+    \t\t\t</TR>"
+  explanation: 'Source identity only: KOMODO accession 425 maps to https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium425.pdf;
+    locator=MediaList table row with ID=425. This row supplies no ingredient amounts
+    and does not establish equivalence of variants. Concentrations are supported separately
+    by exact ingredient excerpts from the linked DSMZ dataset recipe. Retrieved 2026-10-07T13:01:23.350274+00:00;
+    response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.'

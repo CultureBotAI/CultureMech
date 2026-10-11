@@ -25,6 +25,14 @@ ingredients:
     id: CHEBI:15377
     label: water
   notes: UTEX lists 335 mL sterile dH2O per 1 L final medium.
+  evidence:
+  - reference: https://utex.org/products/two-thirds-enriched-seawater-medium
+    supports: SUPPORT
+    snippet: 335 mL
+    explanation: 'Claim: ingredients[0].concentration. The table gives this aliquot
+      in mL under For 1 L Total; retain the source values, without replacing 665/335
+      by exact thirds. Exact component cell: "sterile dH 2 O". Locator: Ingredient
+      table row 2, Amount column; component cell quoted separately. '
 solutions:
 - preferred_term: Enriched Seawater Medium
   concentration:
@@ -87,9 +95,39 @@ curation_history:
   source: https://utex.org/products/two-thirds-enriched-seawater-medium
   notes: UTEX prepares this dilution by mixing 665 mL prepared Enriched Seawater Medium
     with 335 mL sterile distilled water for 20 ppt salinity.
+- timestamp: '2026-10-10T01:47:47.012900+00:00'
+  curator: codex
+  action: CURATED_UTEX_ES_NESTED_STOCKS_AND_INGREDIENT_EVIDENCE
+  notes: 'Added 2 claim-linked evidence entries and added or enriched 1 bibliography
+    entry in this record. Related formulation/stock limitations for this review batch:
+    The parent HTML total-volume heading conflicts with the per-liter-of-seawater
+    procedure/PDF. Expanded recipes retain absolute liquid inputs; no measured final
+    volume or final constituent concentrations are inferred. The enrichment source
+    lists vitamin doses but omits a later vitamin-addition instruction; no missing
+    step is invented. ES Fe formula and Sigma F1513 catalog identity remain unreconciled.
+    Only the source-named ferrous-ammonium-sulfate stock mass is supported; no catalog-based
+    replacement or molar conversion is made. The P-II source permits a cobalt sulfate
+    alternative without an exact replacement mass/hydrate. Only the listed cobalt
+    chloride hexahydrate amount is supported. No exact glycerophosphate-pentahydrate
+    ontology identifier was established. Unsupported sn-glycerol-3-phosphate assertions
+    are removed; the immutable MIM index remains unchanged. Generic lighting, temperature,
+    application and growth claims remain outside this ingredient review; no taxa-media
+    associations are added. The 2/3 PDF copyright notice does not establish a publication
+    year for the live HTML. Supplier pages inspected by the web tool are not full
+    downloaded captures.'
+  source: https://utex.org/products/two-thirds-enriched-seawater-medium
+  changes: '{"bibliography": ["https://utex.org/products/two-thirds-enriched-seawater-medium"],
+    "evidence_claims": [{"pointer": ["ingredients", 0], "reference": "https://utex.org/products/two-thirds-enriched-seawater-medium"},
+    {"pointer": [], "reference": "https://utex.org/products/two-thirds-enriched-seawater-medium"}],
+    "fields": [], "stock_relocations": []}'
 references:
 - reference: UTEX:two-thirds-enriched-seawater-medium
 - reference: https://utex.org/products/two-thirds-enriched-seawater-medium
+  title: 2/3 Enriched Seawater Medium | UTEX Culture Collection of Algae
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10; named authors and publication year not established; capture_sha256=2013aef6f23f1d399615fa4c1d6d8a30d49d6c0eb06c86b0607337d89285ddfa;
+    recipe pages support only their own formulation/stage; chemical pages support
+    identity only.
 original_name: 2/3 Enriched Seawater
 parent_media:
   path: data/normalized_yaml/algae/Enriched_Seawater_Medium.yaml
@@ -103,3 +141,11 @@ variant_modifications:
 data_quality_flags:
 - has_ontology_mappings
 - ingredients_curated
+evidence:
+- reference: https://utex.org/products/two-thirds-enriched-seawater-medium
+  supports: SUPPORT
+  snippet: 665 mL
+  explanation: 'Claim: solutions[0].concentration. The table gives this aliquot in
+    mL under For 1 L Total; retain the source values, without replacing 665/335 by
+    exact thirds. Exact component cell: "Enriched Seawater Medium". Locator: Ingredient
+    table row 1, Amount column; component cell quoted separately. '

@@ -1,0 +1,175 @@
+{
+  "terminal": true,
+  "publication_ready": false,
+  "all_record_goal_complete": false,
+  "applied_records": 3,
+  "source_responses_refreshed": 5,
+  "normalized_count": 15910,
+  "normalized_sha256": "781b097801c78303aae8b10e0b792993c35bd4c6eb10772559bc804536113b5a",
+  "only_reviewed_records_changed": true,
+  "records": {
+    "data/normalized_yaml/bacterial/bsk_ii_medium.yaml": "fbc31cce26edd871b7d4f5a74cf1621f9ce1041b35eb0f0a0e17388298e96f05",
+    "data/normalized_yaml/bacterial/bskii_medium_borrelia.yaml": "379780575d32d323e45ba7dbc18c182c7342cc5bb5704c82b30a5120b4c7ad13",
+    "data/normalized_yaml/bacterial/barbour_sfoenner_kelly_bsk_ii_medium.yaml": "dec6f2c0f86cd6b0e26aa7ca3b29bec87ad2afd84cd00c45f2430e745c456d4c"
+  },
+  "tests_passed": {
+    "fast": "9443 passed, 16 skipped, 1945 deselected, 2 warnings in 868.99s (0:14:28)",
+    "focused": "373 passed, 2 warnings in 74.92s (0:01:14)",
+    "preapply-focused": "373 passed, 2 warnings in 39.92s"
+  },
+  "reference_checks_passed": {
+    "M2410": 14,
+    "D1829": 29,
+    "J173": 31
+  },
+  "reference_validation_passed": true,
+  "independent_audit_totals": {
+    "new_evidence": 69,
+    "new_references": 5,
+    "new_curation_history": 3,
+    "old_quantity_slots": 40,
+    "claims": 139,
+    "source_rows": 37
+  },
+  "manual_reference_verification": "All 139 claim excerpts literally match pinned captures; the DSMZ 1829 PDF page image was inspected. The reference CLI checks 74 primary snippets and titles.",
+  "failed_gates": [
+    {
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/bsk-formulations-post-10.log"
+    },
+    {
+      "command": [
+        "just",
+        "audit-merge-freshness",
+        "--json"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/bsk-formulations-post-11.log"
+    }
+  ],
+  "merge_verification": {
+    "name_conflicts": 1247,
+    "fingerprint_issues": 3287
+  },
+  "freshness": {
+    "tracked_total": 6320,
+    "fresh_total": 10777,
+    "only_in_tracked": 4275,
+    "only_in_fresh": 8732,
+    "changed": 2045,
+    "unchanged": 0
+  },
+  "cumulative_audit": {
+    "stock_nodes_relocated": 807,
+    "new_quantity_slots": 356,
+    "unsupported_quantity_slots_removed": 856,
+    "new_evidence": 33017,
+    "new_curation_history": 5374,
+    "new_references": 5629,
+    "stock_stage_concentrations_rebased": 199,
+    "stock_descriptors_added": 236,
+    "quantity_corrections": 1436,
+    "stock_dose_basis_corrections": 128,
+    "copied_ingredient_nodes_replaced_by_reference": 37,
+    "ingredient_context_notes_added": 268,
+    "water_input_nodes_added": 27,
+    "recipe_context_notes_corrected": 26,
+    "parent_links_corrected": 5,
+    "source_amount_conflicts_repaired": 3,
+    "unquantified_carrier_nodes_added": 88,
+    "evidence_scopes_corrected": 172,
+    "ingredient_context_notes_corrected": 9,
+    "preparation_actions_corrected": 8,
+    "preparation_descriptions_corrected": 4,
+    "preparation_steps_added": 57,
+    "batch_mass_notes_unverified_concentrations": 48,
+    "duplicate_stock_nodes_removed": 1,
+    "variant_links_added": 8,
+    "explicit_medium_rates_verified": 3,
+    "unsupported_flags_removed": 1,
+    "child_links_corrected": 5,
+    "preparation_steps_relocated": 18,
+    "water_input_notes_added": 9,
+    "inline_variant_options_added": 10,
+    "extraction_preparations_added": 1,
+    "base_preparations_added": 9,
+    "preparation_records_restored": 3,
+    "supplement_nodes_moved_to_variants": 4,
+    "corrected_evidence_snippets": 2,
+    "stock_context_notes_corrected": 8,
+    "extraction_preparations_restructured": 2,
+    "source_version_alternatives_added": 4,
+    "copied_ingredient_nodes_removed": 3,
+    "composition_classifications_corrected": 2,
+    "final_quantity_slots_added": 1,
+    "explicitly_omitted_ingredient_nodes": 1,
+    "ingredient_source_attributions_corrected": 1,
+    "bibliographic_entries_enriched": 1,
+    "excluded_alternative_nodes_removed": 1,
+    "ingredient_labels_corrected": 1,
+    "preparation_text_encodings_corrected": 1,
+    "unquantified_solvent_nodes_added": 1,
+    "ingredient_doses_relocated_to_stock": 1,
+    "identity_conflicts_retained_unquantified": 2,
+    "unquantified_makeup_nodes_added": 1,
+    "stock_preparation_notes_added": 1,
+    "edited_records": 5170
+  },
+  "followup_unique_records": 11785,
+  "outside_this_followup": 4125,
+  "corpus_checks": {
+    "strict_scanned": 15910,
+    "ids_scanned": 15910,
+    "product_warnings": 91,
+    "product_skipped_no_adapter": 96070,
+    "chemical_groundings_recertified": false
+  },
+  "remaining_queues": {
+    "M142": 71,
+    "identity": 104,
+    "acid_name": 76,
+    "albumin_name": 28
+  },
+  "next_prepared_records": {
+    "records": 4,
+    "source_captures": 5,
+    "state": "Unchanged candidates; sources inspected, not applied edits or completed record reviews.",
+    "source_scope_notes": "DSMZ 1021 allows lactalbumin OR casein hydrolysate. KOMODO pages select casein and show final-medium amounts, unlike copied local stock values; the DSM 16929 page also lists unquantified gases. M2287 is distinct and has an unspecified serum percentage basis."
+  },
+  "preapplication_refinement": "Preserved initial-preview receipts. Manual reading identified a possible implied makeup-before-titration order; wording and a regression test were corrected before YAML application.",
+  "reports_sha256": {
+    "application.json": "9680e00a05fa4640772ac81b18a16128f2718b9a86d5afaec97219532ddfd620",
+    "applied-audit.json": "250aa314f73fec29fc14c784bb62cfe694e8b4378c80aa2e0f549f76fe0779da",
+    "baseline.json": "5de6862f83b2ac9659ce5d8331bb577207e0bf67e8b0bb49bcac1036ebbf291e",
+    "context.json": "afef4e855d33495a1e7f54c7e6b809fe345c26533ad19f00a626328bc60136c3",
+    "corpus.json": "6c5f3c6aa0d00ae7afa361e8ef454d0a5c1d3ad3a297ab2073c3a1bc0c043872",
+    "cumulative-audit.json": "a50550361cc6f7ea4cf7d1f7780727574210e7bfd63c9ae9b70e0717f39fa502",
+    "fast.json": "7285119f1dd0fea8a37fcf7831ab237f45fd61eb2d4873e93895a71f25446d92",
+    "focused.json": "9a95817f292ec694f8d13c1cbe2e60c98b74f51fbcb5f8348d07882eeb13b7e7",
+    "followup-coverage.json": "6ce26bf1e25d38f41f4bb3e3521256c218d1e91c29ffb04057dace05698badf9",
+    "index-refresh-application.json": "ec22f89fe4142582199a26f6e1a4b4730b5b1c89ea665f06acd411576af4407f",
+    "index-refresh-plan.json": "4f41447aaecaf9acbb549f8ccf75788d6cc3c5ad683b24b3876a6cd9fbbf29b0",
+    "live.json": "f232ee1680e9dd2edf78cc04ecc0b57aa58b15a219a1d9c21e53a5ac6ed84178",
+    "merge-retention.json": "d169932c72ffb0cf980f632e237505199512012a49860d1a8ec927c9e7991d68",
+    "next-lactalbumin-context.json": "b9afaadd95d0d21b285ebbde79b8a685f6fc18f6ecfb51b9cd2e86b2dcf8d8f2",
+    "next-lb-identity-context.json": "1287a077483a3739fee1ea0d83572dd354ac6db0703c67e260f8bc7e9710d4d2",
+    "plan.json": "01658024744056084d0019e1e82c8f8cc8982ea4a42240a7b1a54f6300af70fa",
+    "post.json": "5a9d42cd1b8ac30eacc636ef5d3ed39a34e2a904c7e3b854bd14fc5eb21a43b4",
+    "preapply-focused.json": "38d4ee4e66550028bc1b937775258db7df096890be01625196b355b99d96f949",
+    "preview-audit.json": "250aa314f73fec29fc14c784bb62cfe694e8b4378c80aa2e0f549f76fe0779da",
+    "reconciliation.json": "01740161219f9b6a4fd43c0a4820fb46b6f8d28602b4b0e52908606d64c9589d",
+    "remaining-queue.json": "6a1832e0120b13eae7c35e102f87d9372026e53c73e92a17f9af93ddb14f7250"
+  },
+  "code_sha256": {
+    "scripts/repair_bsk_formulations.py": "a0df723b84ed8dfa33b06023b540af8d67af79d33b375f643741d81f7f4cef2c",
+    "tests/test_bsk_formulations.py": "ed3727886d91fef83518c68c9be4b393d31fd358974c940d9ffefc63ac27ab47",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261008-bsk-formulations/audit.py": "8b97e7ff8b3a5acd9766ed02d2aa70a62308fd5a7e9f1ba48c6afdfa50e425af",
+    "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "f50309edc21ebcd71cc5882b2f5bf33d5efabe7d9b44e2117dd0f5e457fa2290"
+  },
+  "commit_push_PR_merge_branch_cleanup": "Not performed; publication workflow remains incomplete.",
+  "runtime": "Existing partial locked Python 3.13 environment, not clean CI. Fast tier and explicit corpus gates, not the complete suite."
+}

@@ -11,6 +11,33 @@ composition:
   term:
     id: mediadive.compound:21
     label: Casein peptone
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5675
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "Casein peptone",
+                      "compound_id": 21,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 3,
+                      "unit": "g",
+                      "g_l": 3,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Casein
+      peptone) in MediaDive solution 5675; locator=$.data.recipe[0] (compound_id=21).
+      Provider explicitly reports g_l=3. Arithmetic check: 3 g * 1 g/g / (1000 ml
+      / 1000 ml per L) = 3 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T09:57:12.605330+00:00;
+      response SHA256=85a1fc1a0b07d990cf1713f4e468755db50b6db9ed9208a13432b4397613fb7f.'
 - preferred_term: Yeast extract
   concentration:
     value: '3'
@@ -18,6 +45,32 @@ composition:
   term:
     id: mediadive.compound:16
     label: Yeast extract
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5675
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Yeast extract",
+                      "compound_id": 16,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 3,
+                      "unit": "g",
+                      "g_l": 3,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Yeast extract)
+      in MediaDive solution 5675; locator=$.data.recipe[1] (compound_id=16). Provider
+      explicitly reports g_l=3. Arithmetic check: 3 g * 1 g/g / (1000 ml / 1000 ml
+      per L) = 3 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T09:57:12.605330+00:00; response SHA256=85a1fc1a0b07d990cf1713f4e468755db50b6db9ed9208a13432b4397613fb7f.'
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -82,6 +135,16 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T09:59:54.456952+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/5675
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "3"} -> {"unit":
+    "G_PER_L", "value": "3"} (evidence_only); composition[1].concentration: {"unit":
+    "G_PER_L", "value": "3"} -> {"unit": "G_PER_L", "value": "3"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -90,3 +153,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/5675
+  title: 'MediaDive solution 5675: Main sol. 937a'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=85a1fc1a0b07d990cf1713f4e468755db50b6db9ed9208a13432b4397613fb7f;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

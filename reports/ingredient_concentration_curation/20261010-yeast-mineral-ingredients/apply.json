@@ -1,0 +1,56 @@
+{
+  "terminal": true,
+  "passed": true,
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "source_sha256": "f8fc139c6c37261eed3e543224ea652ac81bc4701374b3c872bd119970d2a1b9",
+  "reviewed_preview_plan_sha256": "413ab653a133f8b37d2d89b1f2f39fff23baab998bbdf05f78ae0c80fab06560",
+  "applied_plan_sha256": "d142838fb68ac69ed7ff6ecb7f3e414a38c7571d83a979bf11b00c76d192e69f",
+  "code_sha256": {
+    "scripts/review_yeast_mineral_ingredients.py": "bf84d352506b2382f35c8c14475a82251325a930ce12286a5ab44a7432eeace8",
+    "tests/test_yeast_mineral_ingredients.py": "03097d7e9f9f9aee1cf0986c18febef441c39f6dac1d0a39b92b848883d0b978"
+  },
+  "inventory_before_sha256": "ebf8b59e00cc0cb250352e5c1e69f87288d18bc942db165c2d5673c1b33656f5",
+  "counts": {
+    "new_curation_history": 4,
+    "quantity_corrections": 56,
+    "ingredient_context_notes_corrected": 84,
+    "ingredient_identities_corrected": 34,
+    "ingredient_mim_links_corrected": 12,
+    "ingredient_labels_corrected": 40,
+    "unsupported_ingredient_identity_slots_removed": 2,
+    "new_quantity_slots": 2,
+    "preparation_descriptions_corrected": 8,
+    "preparation_actions_corrected": 4,
+    "preparation_steps_added": 4,
+    "new_evidence": 218,
+    "new_references": 50,
+    "child_link_notes_corrected": 1,
+    "unquantified_ingredient_nodes_added": 2,
+    "relationship_dose_descriptions_corrected": 2
+  },
+  "previous_checkpoint_sha256": "36f9399ee38a5dcfefe520564a09ddd90db5be1ca8762e2eca605f240c02ad1f",
+  "application": {
+    "changed": 4,
+    "pending": 0,
+    "already_applied": 0
+  },
+  "readback": {
+    "changed": 0,
+    "pending": 0,
+    "already_applied": 4
+  },
+  "repeat_noop": {
+    "changed": 0,
+    "pending": 0,
+    "already_applied": 4
+  },
+  "changed_paths": [
+    "data/normalized_yaml/fungal/yeast_mineral_medium_10_g_l_glucose.yaml",
+    "data/normalized_yaml/fungal/yeast_mineral_medium_25_g_l_glucose.yaml",
+    "data/normalized_yaml/fungal/yeast_mineral_medium_7_5_g_l_ethanol.yaml",
+    "data/normalized_yaml/fungal/yeast_mineral_medium_7_9_g_l_ethanol.yaml"
+  ],
+  "only_intended_records_changed": true,
+  "inventory_after_sha256": "80e46610470e342131e2ebcdfc6770a67e351713dafbb30c29b78e4b86d596df"
+}

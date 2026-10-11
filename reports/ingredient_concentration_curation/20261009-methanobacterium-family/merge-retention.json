@@ -1,0 +1,173 @@
+{
+  "terminal": true,
+  "source_sha256": "db8f5426f9aade2d77f947de6f5c4a756f3ed214bede448fbb31d273085da30f",
+  "input_records": 15910,
+  "grouped_records": 10783,
+  "output_groups": 10777,
+  "routing": {
+    "total_processed": 15910,
+    "excluded_solutions": 4785,
+    "skipped_no_fingerprint": 2,
+    "skipped_error": 340,
+    "successfully_fingerprinted": 10783,
+    "reasons": {
+      "other_error": 340,
+      "no_valid_ingredients": 2
+    }
+  },
+  "targets": [
+    {
+      "path": "data/normalized_yaml/archaea/KOMODO_119_METHANOBACTERIUM_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/archaea/KOMODO_119_METHANOBACTERIUM_medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/archaea/methanobacterium_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/archaea/methanobacterium_medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/archaea/methanobrevibacter_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/archaea/methanobrevibacter_medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/archaea/methanomassiliicoccus_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/archaea/methanomassiliicoccus_medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_16632_and_dsm_16643.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/for_dsm_16632_and_dsm_16643.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/gudongella_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/gudongella_medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_11975.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_11975.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_11977.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_11977.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_11978.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_11978.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_11979.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_11979.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_11995.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_11995.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_1224.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_1224.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_15163.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_15163.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_3468.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_3468.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_4855.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_4855.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_6216.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_6216.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_7057.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_7057.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_7256.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_7256.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_9575.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_9575.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    }
+  ],
+  "derived_yaml_written": false
+}

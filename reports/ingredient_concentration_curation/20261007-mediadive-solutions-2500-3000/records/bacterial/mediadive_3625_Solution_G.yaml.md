@@ -1,0 +1,23 @@
+# Solution Concentration Review: Solution G
+
+- Record: data/normalized_yaml/bacterial/mediadive_3625_Solution_G.yaml
+- ID: CultureMech:012705
+- Reviewed commit: `f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f`
+- Before SHA256: `1786624b551e21d264b017325d422811f9dc1072101ddbaf1b7987f2b1f0f733`
+- Proposed/result SHA256: `bfab314abda9262dd8ae917997c2ff5121c1d96530397352d803f7f26a3c4ca1`
+- Source: https://mediadive.dsmz.de/rest/solution/3625
+- Source SHA256: fd5881758e3a081908281b650288f17380b36b9a485348f5190e5c29cbe2df05
+- Retrieved: 2026-10-07T09:23:06.081694+00:00
+- Source type: official DSMZ dataset; discovery: existing record source ID; authors/year not supplied.
+- State: changed locally; unresolved claims remain unchanged.
+- Baseline schema errors: 0; proposed schema errors: 0.
+- Operational failure: none
+
+Source response, exact IDs/labels, arithmetic, and literal snippets were checked by the maintained guarded reviewer. This is not a claim of manual inspection of every source sentence or automated reference-validator success. Preparation-dependent quantities and unrepresented stocks remain open. Schema validity is not scientific proof.
+
+| Field | Ingredient | Old | Proposed | Status | DOI/PURL | Exact snippet | Locator | Calculation / decision | Action |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `composition[0].concentration` | Ammonium acetate | {"unit": "G_PER_L", "value": "25"} | {"unit": "G_PER_L", "value": "25"} | evidence_only | https://mediadive.dsmz.de/rest/solution/3625 | {<br>                "recipe_order": 1,<br>                "compound": "Ammonium acetate",<br>                "compound_id": 58,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 2.5,<br>                "unit": "g",<br>                "g_l": 25,<br>                "mmol_l": 324.338,<br>                "optional": 0<br>            } | $.data.recipe[0] (compound_id=58) | Provider explicitly reports g_l=25. Arithmetic check: 2.5 g * 1 g/g / (100 ml / 1000 ml per L) = 25 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: "volume": 100. | applied |
+| `composition[1].concentration` | Magnesium acetate | {"unit": "G_PER_L", "value": "25"} | {"unit": "G_PER_L", "value": "25"} | evidence_only | https://mediadive.dsmz.de/rest/solution/3625 | {<br>                "recipe_order": 2,<br>                "compound": "Magnesium acetate",<br>                "compound_id": 1598,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 2.5,<br>                "unit": "g",<br>                "g_l": 25,<br>                "mmol_l": 175.57,<br>                "optional": 0<br>            } | $.data.recipe[1] (compound_id=1598) | Provider explicitly reports g_l=25. Arithmetic check: 2.5 g * 1 g/g / (100 ml / 1000 ml per L) = 25 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: "volume": 100. | applied |
+| `composition[2].concentration` | Distilled water | {"unit": "PERCENT_V_V", "value": "1000.0"} | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/solution/3625 | {<br>                "recipe_order": 3,<br>                "compound": "Distilled water",<br>                "compound_id": 4,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 100,<br>                "unit": "ml",<br>                "g_l": null,<br>                "mmol_l": null,<br>                "optional": 0<br>            } | $.data.recipe[2] (compound_id=4) | Preparation steps may specify make-up volume; manual water review required | unchanged |
+| `ingredients[0].concentration` | See source for composition | {"unit": "VARIABLE", "value": "variable"} | unknown / not asserted | unsupported | unknown / not asserted | unknown / not asserted | unknown / not asserted | Outside direct composition matching; unchanged. | unchanged |

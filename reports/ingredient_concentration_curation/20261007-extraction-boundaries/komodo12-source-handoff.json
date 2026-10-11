@@ -1,0 +1,31 @@
+{
+  "reference": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+  "http_status": 200,
+  "accessed_at": "2026-10-07T13:01:23.350274+00:00",
+  "sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a",
+  "source_type": "dataset",
+  "discovery_mode": "existing_record_reference",
+  "locator": "HTML table row whose first cell is exactly 12",
+  "record": "data/normalized_yaml/bacterial/KOMODO_12_SOIL_EXTRACT_medium.yaml",
+  "source_row": {
+    "cells": [
+      "12",
+      "SOIL EXTRACT medium",
+      "6.8 - 7.0",
+      "true",
+      "false",
+      "false",
+      "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium12.pdf"
+    ],
+    "links": [
+      {
+        "href": "/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=12"
+      },
+      {
+        "href": "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium12.pdf"
+      }
+    ],
+    "snippet": "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=12' >12</a></TD>\n\t\t\t\t\t<TD>SOIL EXTRACT medium</TD>\n\t\t\t\t\t<TD> 6.8 - 7.0</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium12.pdf' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium12.pdf</a></TD>\n\t\t\t\t</TR>"
+  },
+  "scope": "Source mapping only, not ingredient concentration evidence. Verify the linked original DSMZ recipe for each quantity/preparation edit. No authoritative edit to this KOMODO record has been applied by this handoff."
+}

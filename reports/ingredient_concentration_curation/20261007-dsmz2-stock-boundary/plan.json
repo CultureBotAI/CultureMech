@@ -1,0 +1,307 @@
+{
+  "version": 1,
+  "action": "RESTORED_DSMZ2_BASE_MEDIUM_AND_PREPARATION_STAGE",
+  "commit": "f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f",
+  "source_hashes": {
+    "https://mediadive.dsmz.de/rest/medium/2": "e0812b7c4942b14a6de12c5d21195eb8cadbcad1965e5364657a61291f0f61ea",
+    "https://mediadive.dsmz.de/rest/medium/1": "96b8496db5025086f2407d1e2e2738ad74250909ec172a4a76c42ca22a96e319",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf": "95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium2.pdf": "2216960d2564bff726b3b45c9f4a3e5d84d5a549cff3bb548c74a118de1e56c9"
+  },
+  "created_at": "2026-10-07T11:13:51.120398+00:00",
+  "records": [
+    {
+      "path": "data/normalized_yaml/bacterial/bacillus_pasteurii_medium.yaml",
+      "id": "CultureMech:001399",
+      "before_text": "id: CultureMech:001399\nname: bacillus_pasteurii_medium\noriginal_name: BACILLUS PASTEURII MEDIUM\ncategory: bacterial\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: SOLID_AGAR\nmedia_term:\n  preferred_term: DSMZ Medium 2\n  term:\n    id: mediadive.medium:2\n    label: BACILLUS PASTEURII MEDIUM\nnotes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium2.pdf'\ningredients:\n- preferred_term: Urea\n  term:\n    id: CHEBI:16199\n    label: urea\n  concentration:\n    value: '20'\n    unit: G_PER_L\n  mediaingredientmech_chebi_term:\n    id: CHEBI:16199\n    label: urea\n- preferred_term: Peptone\n  concentration:\n    value: '5'\n    unit: G_PER_L\n- preferred_term: Meat extract\n  concentration:\n    value: '3'\n    unit: G_PER_L\n- preferred_term: Agar\n  term:\n    id: CHEBI:2509\n    label: agar\n  concentration:\n    value: '15'\n    unit: G_PER_L\n  notes: ' (for solid medium)'\n  mediaingredientmech_chebi_term:\n    id: CHEBI:2509\n    label: agar\npreparation_steps:\n- step_number: 1\n  action: ADJUST_PH\n  description: To medium 1 add 20 g/l urea before autoclaving. Do not adjust pH; pH\n    raises to about 8 due to heat degraded urea.\n- step_number: 2\n  action: MIX\n  description: For sporulation enhancement add 10 mg/l MnSO4 x H2O.\n- step_number: 3\n  action: ADJUST_PH\n  description: Adjust pH to 7.0.\n- step_number: 4\n  action: MIX\n  description: For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended\n    for sporulation.\napplications:\n- Microbial cultivation\ncuration_history:\n- timestamp: '2026-01-26T17:53:09.960353Z'\n  curator: mediadive-import\n  action: Imported from MediaDive\n  notes: 'Source: DSMZ, ID: 2'\n- timestamp: '2026-03-13T06:19:03.783028Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:001399'\n- timestamp: '2026-03-17T06:30:06.000000Z'\n  curator: mediaingredientmech-enrichment-v1.0\n  action: Added MediaIngredientMech links\n  notes: Linked ingredients to MediaIngredientMech identifiers\n- timestamp: '2026-03-17T19:45:15.752163+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"BACILLUS PASTEURII MEDIUM\" to \"bacillus_pasteurii_medium\"\n    for consistent matching\n- timestamp: '2026-06-05T07:40:50.308108+00:00'\n  curator: mim-legacy-to-chebi-migration-v1.0\n  action: Refreshed legacy MediaIngredientMech links to CHEBI keying\n  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term\n    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN\n    id scheme.'\n",
+      "before_sha256": "5012a43264d5ada50e60cd988cb7deac3c0830e88d1ce1a6b32c8307b6deaa6a",
+      "after_sha256": "ab92b341bd473a3ed09c7a28b5c244dd977dc22783f299b728673842c22c36c6",
+      "claims": [
+        {
+          "pointer": [
+            "ingredients",
+            0,
+            "concentration"
+          ],
+          "old_pointer": [
+            "ingredients",
+            0,
+            "concentration"
+          ],
+          "field": "ingredients[0].concentration",
+          "status": "evidence_only",
+          "old": {
+            "value": "20",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "20",
+            "unit": "G_PER_L"
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/2",
+          "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Urea\",\n                        \"compound_id\": 339,\n                        \"amount\": 20,\n                        \"unit\": \"g/l\",\n                        \"g_l\": 20,\n                        \"mmol_l\": 333.023,\n                        \"optional\": 0\n                    }",
+          "locator": "$.data.solutions[0].recipe[1]",
+          "source_pointer": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            1
+          ],
+          "evidence_pointer": [
+            "ingredients",
+            0
+          ],
+          "explanation": "The source explicitly states 20 g/l urea; no additional volume division is performed."
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            0,
+            "concentration"
+          ],
+          "old_pointer": [
+            "ingredients",
+            1,
+            "concentration"
+          ],
+          "field": "solutions[0].composition[0].concentration",
+          "status": "relocate",
+          "old": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/2",
+          "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Peptone\",\n                        \"compound_id\": 1,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"optional\": 0\n                    }",
+          "locator": "$.data.solutions[1].recipe[0]",
+          "source_pointer": [
+            "data",
+            "solutions",
+            1,
+            "recipe",
+            0
+          ],
+          "evidence_pointer": [
+            "solutions",
+            0,
+            "composition",
+            0
+          ],
+          "explanation": "Relocated from ingredients[1] into the explicitly linked DSMZ 1 base (solution 1), not inferred from a shared name. The unchanged 5 g/L is the provider-declared base concentration: 5 g / (1000 ml / 1000 ml per L). Additional exact value at $.data.solutions[1].volume (ml): 1000. No independently measured receiving-medium final volume or dilution is asserted."
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            1,
+            "concentration"
+          ],
+          "old_pointer": [
+            "ingredients",
+            2,
+            "concentration"
+          ],
+          "field": "solutions[0].composition[1].concentration",
+          "status": "relocate",
+          "old": {
+            "value": "3",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "3",
+            "unit": "G_PER_L"
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/2",
+          "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Meat extract\",\n                        \"compound_id\": 2,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 3,\n                        \"optional\": 0\n                    }",
+          "locator": "$.data.solutions[1].recipe[1]",
+          "source_pointer": [
+            "data",
+            "solutions",
+            1,
+            "recipe",
+            1
+          ],
+          "evidence_pointer": [
+            "solutions",
+            0,
+            "composition",
+            1
+          ],
+          "explanation": "Relocated from ingredients[2] into the explicitly linked DSMZ 1 base (solution 1), not inferred from a shared name. The unchanged 3 g/L is the provider-declared base concentration: 3 g / (1000 ml / 1000 ml per L). Additional exact value at $.data.solutions[1].volume (ml): 1000. No independently measured receiving-medium final volume or dilution is asserted."
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            2,
+            "concentration"
+          ],
+          "old_pointer": [
+            "ingredients",
+            3,
+            "concentration"
+          ],
+          "field": "solutions[0].composition[2].concentration",
+          "status": "relocate",
+          "old": {
+            "value": "15",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "15",
+            "unit": "G_PER_L"
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/2",
+          "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Agar\",\n                        \"compound_id\": 3,\n                        \"condition\": \"for solid medium\",\n                        \"amount\": 15,\n                        \"unit\": \"g\",\n                        \"g_l\": 15,\n                        \"optional\": 0\n                    }",
+          "locator": "$.data.solutions[1].recipe[2]",
+          "source_pointer": [
+            "data",
+            "solutions",
+            1,
+            "recipe",
+            2
+          ],
+          "evidence_pointer": [
+            "solutions",
+            0,
+            "composition",
+            2
+          ],
+          "explanation": "Relocated from ingredients[3] into the explicitly linked DSMZ 1 base (solution 1), not inferred from a shared name. The unchanged 15 g/L is the provider-declared base concentration: 15 g / (1000 ml / 1000 ml per L). Additional exact value at $.data.solutions[1].volume (ml): 1000. No independently measured receiving-medium final volume or dilution is asserted. Source condition 'for solid medium' applies to this record's SOLID_AGAR state; the original note is preserved."
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            3,
+            "concentration"
+          ],
+          "old_pointer": null,
+          "field": "solutions[0].composition[3].concentration",
+          "status": "add",
+          "old": null,
+          "new": {
+            "value": "1",
+            "unit": "L"
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/2",
+          "snippet": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "locator": "$.data.solutions[1].recipe[3]",
+          "source_pointer": [
+            "data",
+            "solutions",
+            1,
+            "recipe",
+            3
+          ],
+          "evidence_pointer": [
+            "solutions",
+            0,
+            "composition",
+            3
+          ],
+          "explanation": "Explicit 1000 ml water / 1000 ml per L = 1 L per prepared base batch. This is a batch addition, not an inferred final volume or percentage."
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "concentration"
+          ],
+          "old_pointer": null,
+          "field": "solutions[0].concentration",
+          "status": "add",
+          "old": null,
+          "new": {
+            "value": "1",
+            "unit": "L"
+          },
+          "reference": "https://mediadive.dsmz.de/rest/medium/2",
+          "snippet": "{\n                        \"recipe_order\": 1,\n                        \"solution\": \"Main sol. 1\",\n                        \"solution_id\": 1,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "locator": "$.data.solutions[0].recipe[0]",
+          "source_pointer": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            0
+          ],
+          "evidence_pointer": [],
+          "explanation": "Explicit 1000 ml of Main sol. 1 / 1000 ml per L = 1 L per receiving batch. This source link establishes the base boundary and its three relocated ingredients; it is not a stock dose inferred from another medium."
+        },
+        {
+          "pointer": [
+            "preparation_steps",
+            0,
+            "action"
+          ],
+          "old_pointer": [
+            "preparation_steps",
+            0,
+            "action"
+          ],
+          "field": "preparation_steps[0].action",
+          "status": "correct_stage",
+          "old": "ADJUST_PH",
+          "new": "MIX",
+          "reference": "https://mediadive.dsmz.de/rest/medium/2",
+          "snippet": "{\n                        \"step\": \"To medium 1 add 20 g/l urea before autoclaving. Do not adjust pH; pH raises to about 8 due to heat degraded urea.\"\n                    }",
+          "locator": "$.data.solutions[0].steps[0]",
+          "source_pointer": [
+            "data",
+            "solutions",
+            0,
+            "steps",
+            0
+          ],
+          "evidence_pointer": [],
+          "explanation": "The operation adds urea and explicitly prohibits pH adjustment at this stage. MIX replaces the misleading ADJUST_PH action; the original description and conditional sporulation instruction remain unchanged."
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "preparation_notes"
+          ],
+          "old_pointer": null,
+          "field": "solutions[0].preparation_notes",
+          "status": "correct_stage",
+          "old": [
+            {
+              "step_number": 3,
+              "action": "ADJUST_PH",
+              "description": "Adjust pH to 7.0."
+            },
+            {
+              "step_number": 4,
+              "action": "MIX",
+              "description": "For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended for sporulation."
+            }
+          ],
+          "new": "Adjust pH to 7.0.\n\nFor Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended for sporulation.",
+          "reference": "https://mediadive.dsmz.de/rest/medium/2",
+          "snippet": "[\n                    {\n                        \"step\": \"Adjust pH to 7.0.\"\n                    },\n                    {\n                        \"step\": \"For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended for sporulation.\"\n                    }\n                ]",
+          "locator": "$.data.solutions[1].steps",
+          "source_pointer": [
+            "data",
+            "solutions",
+            1,
+            "steps"
+          ],
+          "evidence_pointer": [],
+          "explanation": "The exact texts formerly at preparation_steps[2:4] belong to preparation of base solution 1. They are moved verbatim into this stock's preparation_notes and removed from the main procedure, so base pH adjustment is not applied after the urea instruction. The conditional Bacillus supplement remains conditional prose, not a mandatory ingredient.",
+          "old_field": "preparation_steps[2:4]"
+        }
+      ]
+    }
+  ]
+}

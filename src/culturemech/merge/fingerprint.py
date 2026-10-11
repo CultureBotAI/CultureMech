@@ -18,9 +18,18 @@ import hashlib
 import re
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Dict, List, Optional, Set
 
 import yaml
+
+from culturemech.validation.write_validated import infer_target_class
+
+
+class StandaloneSolutionError(ValueError):
+    """A standalone SolutionRecipe is outside medium fingerprinting/merging."""
+
+
+class UnfingerprintableMediumError(ValueError):
+    """A medium has no direct or inline stock composition to identify it."""
 
 
 @dataclass
@@ -31,6 +40,7 @@ class IngredientSignature:
         identifier: CHEBI ID (preferred) or normalized name
         source: 'chebi' or 'name'
     """
+
     identifier: str
     source: str
 
@@ -56,22 +66,22 @@ class RecipeFingerprinter:
 
     # Patterns that indicate placeholder/invalid ingredients
     PLACEHOLDER_PATTERNS = [
-        r'see\s+source',
-        r'refer\s+to',
-        r'available\s+at',
-        r'contact\s+source',
-        r'not\s+specified',
-        r'unknown',
-        r'medium\s+no\.',
-        r'composition\s+not\s+available',
-        r'proprietary',
+        r"see\s+source",
+        r"refer\s+to",
+        r"available\s+at",
+        r"contact\s+source",
+        r"not\s+specified",
+        r"unknown",
+        r"medium\s+no\.",
+        r"composition\s+not\s+available",
+        r"proprietary",
     ]
 
     def __init__(self):
         """Initialize the fingerprinter."""
         pass
 
-    def fingerprint(self, recipe: Dict) -> Optional[str]:
+    def fingerprint(self, recipe: dict) -> str | None:
         """Generate SHA256 fingerprint from recipe ingredient set.
 
         Args:
@@ -81,20 +91,29 @@ class RecipeFingerprinter:
             SHA256 hex digest of sorted ingredient identifiers, or None if no valid ingredients
 
         Raises:
-            ValueError: If recipe has no ingredients list
+            StandaloneSolutionError: If the root is a SolutionRecipe, not a medium
+            ValueError: If the ingredients list is missing/invalid, an empty list
+                has no fingerprintable stock composition, or stocks are cyclic
         """
-        if 'ingredients' not in recipe:
+        if infer_target_class(recipe) == "SolutionRecipe":
+            raise StandaloneSolutionError("Standalone SolutionRecipe is not a medium")
+        if "ingredients" not in recipe:
             raise ValueError("Recipe has no ingredients list")
 
-        ingredients = recipe.get('ingredients', [])
+        ingredients = recipe.get("ingredients", [])
 
-        # Check for empty ingredients list
-        if not ingredients or len(ingredients) == 0:
+        if ingredients is None:
             raise ValueError("Recipe has empty ingredients list")
+        if not isinstance(ingredients, list):
+            raise ValueError("Recipe ingredients must be a list")
 
         signatures = self._extract_signatures(recipe)
 
         if not signatures:
+            if not ingredients:
+                raise UnfingerprintableMediumError(
+                    "Recipe has empty ingredients list and no valid stock composition"
+                )
             # Recipe has ingredients but none are valid (e.g., malformed data, placeholders)
             return None
 
@@ -102,12 +121,12 @@ class RecipeFingerprinter:
         sorted_ids = sorted([str(sig) for sig in signatures])
 
         # Generate hash
-        combined = '|'.join(sorted_ids)
-        fingerprint = hashlib.sha256(combined.encode('utf-8')).hexdigest()
+        combined = "|".join(sorted_ids)
+        fingerprint = hashlib.sha256(combined.encode("utf-8")).hexdigest()
 
         return fingerprint
 
-    def _extract_signatures(self, recipe: Dict) -> Set[IngredientSignature]:
+    def _extract_signatures(self, recipe: dict) -> set[IngredientSignature]:
         """Extract ingredient signatures from recipe.
 
         Processes:
@@ -123,21 +142,35 @@ class RecipeFingerprinter:
         signatures = set()
 
         # Process direct ingredients
-        for ingredient in recipe.get('ingredients', []):
+        for ingredient in recipe.get("ingredients", []):
             sig = self._extract_identifier(ingredient)
             if sig:
                 signatures.add(sig)
 
-        # Process solutions (recursive)
-        for solution in recipe.get('solutions', []):
-            for ingredient in solution.get('composition', []):
-                sig = self._extract_identifier(ingredient)
-                if sig:
-                    signatures.add(sig)
+        # Track only ancestors: shared YAML aliases are not themselves cycles.
+        def visit_solutions(solutions, ancestors):
+            if not isinstance(solutions, list):
+                raise ValueError("Recipe solutions must be a list")
+            for solution in solutions:
+                if not isinstance(solution, dict):
+                    raise ValueError("Recipe solution must be a mapping")
+                marker = id(solution)
+                if marker in ancestors:
+                    raise ValueError("Recipe has cyclic stock solutions")
+                composition = solution.get("composition", [])
+                if not isinstance(composition, list):
+                    raise ValueError("Stock composition must be a list")
+                yield from composition
+                yield from visit_solutions(solution.get("solutions", []), ancestors | {marker})
+
+        for ingredient in visit_solutions(recipe.get("solutions", []), set()):
+            sig = self._extract_identifier(ingredient)
+            if sig:
+                signatures.add(sig)
 
         return signatures
 
-    def _extract_identifier(self, ingredient: Dict) -> Optional[IngredientSignature]:
+    def _extract_identifier(self, ingredient: dict) -> IngredientSignature | None:
         """Extract CHEBI ID or normalized name from ingredient.
 
         Priority:
@@ -151,17 +184,14 @@ class RecipeFingerprinter:
             IngredientSignature or None if ingredient is invalid or placeholder
         """
         # Priority 1: CHEBI ID
-        term = ingredient.get('term')
+        term = ingredient.get("term")
         if term and isinstance(term, dict):
-            chebi_id = term.get('id')
-            if chebi_id and chebi_id.startswith('CHEBI:'):
-                return IngredientSignature(
-                    identifier=chebi_id,
-                    source='chebi'
-                )
+            chebi_id = term.get("id")
+            if chebi_id and chebi_id.startswith("CHEBI:"):
+                return IngredientSignature(identifier=chebi_id, source="chebi")
 
         # Priority 2: Normalized name (if not placeholder)
-        preferred_term = ingredient.get('preferred_term')
+        preferred_term = ingredient.get("preferred_term")
         if preferred_term:
             # Check if this is a placeholder ingredient
             if self._is_placeholder(preferred_term):
@@ -169,10 +199,7 @@ class RecipeFingerprinter:
 
             normalized = self._normalize_name(preferred_term)
             if normalized:
-                return IngredientSignature(
-                    identifier=normalized,
-                    source='name'
-                )
+                return IngredientSignature(identifier=normalized, source="name")
 
         return None
 
@@ -214,16 +241,16 @@ class RecipeFingerprinter:
         # Remove hydration patterns
         # Matches: ·7H2O, .7H2O, x7H2O, x 7 H2O, (7H2O), etc.
         hydration_patterns = [
-            r'[·\.x]?\s*\d+\s*h2o',    # ·7H2O, .7H2O, x7H2O, 7H2O
-            r'\(\s*\d+\s*h2o\s*\)',    # (7H2O)
-            r'x\s+\d+\s+h\s*2\s*o',    # x 7 H2O
+            r"[·\.x]?\s*\d+\s*h2o",  # ·7H2O, .7H2O, x7H2O, 7H2O
+            r"\(\s*\d+\s*h2o\s*\)",  # (7H2O)
+            r"x\s+\d+\s+h\s*2\s*o",  # x 7 H2O
         ]
 
         for pattern in hydration_patterns:
-            normalized = re.sub(pattern, '', normalized, flags=re.IGNORECASE)
+            normalized = re.sub(pattern, "", normalized, flags=re.IGNORECASE)
 
         # Remove extra whitespace
-        normalized = re.sub(r'\s+', ' ', normalized)
+        normalized = re.sub(r"\s+", " ", normalized)
 
         # Trim
         normalized = normalized.strip()
@@ -247,17 +274,17 @@ class RecipeFingerprinter:
             raise FileNotFoundError(f"Recipe file not found: {recipe_path}")
 
         try:
-            with open(recipe_path, 'r', encoding='utf-8', errors='replace') as f:
+            with open(recipe_path, encoding="utf-8", errors="replace") as f:
                 content = f.read()
 
             # Fix common YAML escape sequence issues
             # These are from malformed string escapes in the source data
             # Replace any \xNN sequences with degree symbol as placeholder
-            content = re.sub(r'\\x[0-9A-Fa-f]{2}', '°', content)
+            content = re.sub(r"\\x[0-9A-Fa-f]{2}", "°", content)
 
             recipe = yaml.safe_load(content)
         except (yaml.YAMLError, yaml.scanner.ScannerError) as e:
-            raise ValueError(f"Invalid YAML in {recipe_path}: {e}")
+            raise ValueError(f"Invalid YAML in {recipe_path}: {e}") from e
 
         if not isinstance(recipe, dict):
             raise ValueError(f"Recipe is not a dictionary: {recipe_path}")

@@ -11,224 +11,320 @@ media_term:
   term:
     id: mediadive.medium:436
     label: RUMINOCOCCUS ALBUS MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf
+notes: |-
+  Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf
 
-
+  Superseded historical provenance, not a current formulation claim:
   Commercial Product: LB Medium (Luria-Bertani, Miller formulation)
-
   Supplier: Multiple suppliers (Difco, Sigma, etc.)
-
   Catalog: Multiple (L3522 Sigma, 244520 BD)
-
   Source: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-
   Accessed: 2026-03-28
 
+  Constituent composition researched from product specification.
 
-  Constituent composition researched from product specification.'
+  Preserve original preparation descriptions, but withdraw the incorrect HEAT encoding of incubation: Boil and cool under CO2. Under a gentle stream of CO2 add:
+  Adjust pH to 7.0, distribute under N2 into appropriate vessels and sterilize.
+  Inoculate under CO2 and incubate at 37°C.
+
+  The original supplies 920 ml water, two 40 ml mineral inputs and a separate 1 ml acid input. Their sum is not an explicit final volume. Literal mineral percentages have no declared basis; no g/L or molarity is inferred.
+
+  Complete source rows determine the reconstructed formulation. Archive the prior flattened nodes, unsupported LB additions and stock links in append-only history. Unrelated annotations are preserved, not recertified.
 ingredients:
 - preferred_term: Tryptone
-  concentration:
-    value: '5'
-    unit: G_PER_L
+  notes: 'Original main formulation input: 5.0 g per preparation. Keep source mass
+    and preparation stage in evidenced notes, not g/L'
+  evidence:
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf
+    supports: SUPPORT
+    snippet: Tryptone                                                                       5.0         g
+    explanation: |-
+      ingredients[0].preferred_term: Original main formulation input: 5.0 g per preparation. Keep source mass and preparation stage in evidenced notes, not g/L No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.main formulation[0]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+      Additional exact excerpt: Tryptone                                                                       5.0         g
+      ingredients[0].concentration: Original main formulation input: 5.0 g per preparation. Keep source mass and preparation stage in evidenced notes, not g/L No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.main formulation[0]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+      Additional exact excerpt: Tryptone                                                                       5.0         g
+      ingredients[0].notes: Original main formulation input: 5.0 g per preparation. Keep source mass and preparation stage in evidenced notes, not g/L No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.main formulation[0]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+  - reference: https://mediadive.dsmz.de/rest/medium/436
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 1,
+                              "compound": "Tryptone",
+                              "compound_id": 71,
+                              "amount": 5,
+                              "unit": "g",
+                              "g_l": 5,
+                              "mmol_l": 70.3433,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[0].notes: The API row corroborates identity and input.
+      Its g_l and mmol_l values do not resolve the original''s final-volume or percent
+      basis. No unstated density, final volume, percent basis or chemical identifier
+      is inferred. Locator=data.solutions[0].recipe[0]; accessed=2026-10-09T06:57:20.707314+00:00;
+      capture SHA256=c78f5981062452cb25100b039398b9080295a047cd9106548ba48c4d82e2f4d2.'
 - preferred_term: Yeast extract
-  concentration:
-    value: '2'
-    unit: G_PER_L
+  notes: 'Original main formulation input: 2.0 g per preparation. Keep source mass
+    and preparation stage in evidenced notes, not g/L'
+  evidence:
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf
+    supports: SUPPORT
+    snippet: Yeast extract                                                                  2.0         g
+    explanation: |-
+      ingredients[1].preferred_term: Original main formulation input: 2.0 g per preparation. Keep source mass and preparation stage in evidenced notes, not g/L No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.main formulation[1]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+      Additional exact excerpt: Yeast extract                                                                  2.0         g
+      ingredients[1].concentration: Original main formulation input: 2.0 g per preparation. Keep source mass and preparation stage in evidenced notes, not g/L No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.main formulation[1]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+      Additional exact excerpt: Yeast extract                                                                  2.0         g
+      ingredients[1].notes: Original main formulation input: 2.0 g per preparation. Keep source mass and preparation stage in evidenced notes, not g/L No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.main formulation[1]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+  - reference: https://mediadive.dsmz.de/rest/medium/436
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 2,
+                              "compound": "Yeast extract",
+                              "compound_id": 16,
+                              "amount": 2,
+                              "unit": "g",
+                              "g_l": 2,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[1].notes: The API row corroborates identity and input.
+      Its g_l and mmol_l values do not resolve the original''s final-volume or percent
+      basis. No unstated density, final volume, percent basis or chemical identifier
+      is inferred. Locator=data.solutions[0].recipe[1]; accessed=2026-10-09T06:57:20.707314+00:00;
+      capture SHA256=c78f5981062452cb25100b039398b9080295a047cd9106548ba48c4d82e2f4d2.'
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
     label: glucose
-  concentration:
-    value: '3'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
+  notes: 'Original main formulation input: 3.0 g per preparation. Keep source mass
+    and preparation stage in evidenced notes, not g/L'
+  evidence:
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf
+    supports: SUPPORT
+    snippet: Glucose                                                                        3.0         g
+    explanation: |-
+      ingredients[2].preferred_term: Original main formulation input: 3.0 g per preparation. Keep source mass and preparation stage in evidenced notes, not g/L No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.main formulation[2]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+      Additional exact excerpt: Glucose                                                                        3.0         g
+      ingredients[2].concentration: Original main formulation input: 3.0 g per preparation. Keep source mass and preparation stage in evidenced notes, not g/L No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.main formulation[2]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+      Additional exact excerpt: Glucose                                                                        3.0         g
+      ingredients[2].notes: Original main formulation input: 3.0 g per preparation. Keep source mass and preparation stage in evidenced notes, not g/L No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.main formulation[2]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+  - reference: https://mediadive.dsmz.de/rest/medium/436
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 3,
+                              "compound": "Glucose",
+                              "compound_id": 5,
+                              "amount": 3,
+                              "unit": "g",
+                              "g_l": 3,
+                              "mmol_l": 16.6519,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[2].notes: The API row corroborates identity and input.
+      Its g_l and mmol_l values do not resolve the original''s final-volume or percent
+      basis. No unstated density, final volume, percent basis or chemical identifier
+      is inferred. Locator=data.solutions[0].recipe[2]; accessed=2026-10-09T06:57:20.707314+00:00;
+      capture SHA256=c78f5981062452cb25100b039398b9080295a047cd9106548ba48c4d82e2f4d2.'
 - preferred_term: Cellobiose
   term:
     id: CHEBI:17057
     label: cellobiose
-  concentration:
-    value: '2'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17057
     label: cellobiose
+  notes: 'Original main formulation input: 2.0 g per preparation. Keep source mass
+    and preparation stage in evidenced notes, not g/L'
+  evidence:
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf
+    supports: SUPPORT
+    snippet: Cellobiose                                                                     2.0         g
+    explanation: |-
+      ingredients[3].preferred_term: Original main formulation input: 2.0 g per preparation. Keep source mass and preparation stage in evidenced notes, not g/L No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.main formulation[3]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+      Additional exact excerpt: Cellobiose                                                                     2.0         g
+      ingredients[3].concentration: Original main formulation input: 2.0 g per preparation. Keep source mass and preparation stage in evidenced notes, not g/L No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.main formulation[3]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+      Additional exact excerpt: Cellobiose                                                                     2.0         g
+      ingredients[3].notes: Original main formulation input: 2.0 g per preparation. Keep source mass and preparation stage in evidenced notes, not g/L No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.main formulation[3]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+  - reference: https://mediadive.dsmz.de/rest/medium/436
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 4,
+                              "compound": "Cellobiose",
+                              "compound_id": 214,
+                              "amount": 2,
+                              "unit": "g",
+                              "g_l": 2,
+                              "mmol_l": 5.84283,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[3].notes: The API row corroborates identity and input.
+      Its g_l and mmol_l values do not resolve the original''s final-volume or percent
+      basis. No unstated density, final volume, percent basis or chemical identifier
+      is inferred. Locator=data.solutions[0].recipe[3]; accessed=2026-10-09T06:57:20.707314+00:00;
+      capture SHA256=c78f5981062452cb25100b039398b9080295a047cd9106548ba48c4d82e2f4d2.'
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
     label: Resazurin
-  concentration:
-    value: '0.001'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:8806
     label: Resazurin
+  notes: 'Original main formulation input: 1.0 mg per preparation. Keep source mass
+    and preparation stage in evidenced notes, not g/L'
+  evidence:
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf
+    supports: SUPPORT
+    snippet: Resazurin                                                                      1.0       mg
+    explanation: |-
+      ingredients[4].preferred_term: Original main formulation input: 1.0 mg per preparation. Keep source mass and preparation stage in evidenced notes, not g/L No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.main formulation[6]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+      Additional exact excerpt: Resazurin                                                                      1.0       mg
+      ingredients[4].concentration: Original main formulation input: 1.0 mg per preparation. Keep source mass and preparation stage in evidenced notes, not g/L No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.main formulation[6]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+      Additional exact excerpt: Resazurin                                                                      1.0       mg
+      ingredients[4].notes: Original main formulation input: 1.0 mg per preparation. Keep source mass and preparation stage in evidenced notes, not g/L No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.main formulation[6]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+  - reference: https://mediadive.dsmz.de/rest/medium/436
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 7,
+                              "compound": "Resazurin",
+                              "compound_id": 25,
+                              "amount": 1,
+                              "unit": "mg",
+                              "g_l": 0.001,
+                              "mmol_l": 0.00436319,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[4].notes: The API row corroborates identity and input.
+      Its g_l and mmol_l values do not resolve the original''s final-volume or percent
+      basis. No unstated density, final volume, percent basis or chemical identifier
+      is inferred. Locator=data.solutions[0].recipe[6]; accessed=2026-10-09T06:57:20.707314+00:00;
+      capture SHA256=c78f5981062452cb25100b039398b9080295a047cd9106548ba48c4d82e2f4d2.'
+- preferred_term: Distilled water
+  concentration:
+    value: '0.92'
+    unit: L
+  notes: 'Original main formulation input: 920.0 ml per preparation. Source input
+    only; not final volume or percentage'
+  evidence:
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf
+    supports: SUPPORT
+    snippet: Distilled water                                                             920.0        ml
+    explanation: |-
+      ingredients[5].preferred_term: Original main formulation input: 920.0 ml per preparation. Source input only; not final volume or percentage No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.main formulation[7]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+      Additional exact excerpt: Distilled water                                                             920.0        ml
+      ingredients[5].concentration: Original main formulation input: 920.0 ml per preparation. Source input only; not final volume or percentage No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.main formulation[7]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+      Additional exact excerpt: Distilled water                                                             920.0        ml
+      ingredients[5].notes: Original main formulation input: 920.0 ml per preparation. Source input only; not final volume or percentage No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.main formulation[7]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+  - reference: https://mediadive.dsmz.de/rest/medium/436
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 8,
+                              "compound": "Distilled water",
+                              "compound_id": 4,
+                              "amount": 920,
+                              "unit": "ml",
+                              "optional": 0
+                          }
+    explanation: 'ingredients[5].notes: The API row corroborates identity and input.
+      Its g_l and mmol_l values do not resolve the original''s final-volume or percent
+      basis. No unstated density, final volume, percent basis or chemical identifier
+      is inferred. Locator=data.solutions[0].recipe[7]; accessed=2026-10-09T06:57:20.707314+00:00;
+      capture SHA256=c78f5981062452cb25100b039398b9080295a047cd9106548ba48c4d82e2f4d2.'
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
     label: sodium carbonate
-  concentration:
-    value: '4'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:29377
     label: sodium carbonate
-- preferred_term: L-Cysteine HCl x H2O
+  notes: 'Original main formulation input: 4.0 g per preparation. Keep source mass
+    and preparation stage in evidenced notes, not g/L'
+  evidence:
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf
+    supports: SUPPORT
+    snippet: Na2CO3                                                                         4.0         g
+    explanation: |-
+      ingredients[6].preferred_term: Original main formulation input: 4.0 g per preparation. Keep source mass and preparation stage in evidenced notes, not g/L No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.main formulation[8]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+      Additional exact excerpt: Na2CO3                                                                         4.0         g
+      ingredients[6].concentration: Original main formulation input: 4.0 g per preparation. Keep source mass and preparation stage in evidenced notes, not g/L No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.main formulation[8]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+      Additional exact excerpt: Na2CO3                                                                         4.0         g
+      ingredients[6].notes: Original main formulation input: 4.0 g per preparation. Keep source mass and preparation stage in evidenced notes, not g/L No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.main formulation[8]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+  - reference: https://mediadive.dsmz.de/rest/medium/436
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 9,
+                              "compound": "Na2CO3",
+                              "compound_id": 32,
+                              "amount": 4,
+                              "unit": "g",
+                              "g_l": 4,
+                              "mmol_l": 37.7401,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[6].notes: The API row corroborates identity and input.
+      Its g_l and mmol_l values do not resolve the original''s final-volume or percent
+      basis. No unstated density, final volume, percent basis or chemical identifier
+      is inferred. Locator=data.solutions[0].recipe[8]; accessed=2026-10-09T06:57:20.707314+00:00;
+      capture SHA256=c78f5981062452cb25100b039398b9080295a047cd9106548ba48c4d82e2f4d2.'
+- preferred_term: Cysteine-HCl x H2O
   term:
     id: CHEBI:91248
     label: L-cysteine hydrochloride hydrate
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:91248
     label: L-cysteine hydrochloride hydrate
-- preferred_term: K2HPO4
-  term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-  concentration:
-    value: '6'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-- preferred_term: KH2PO4
-  term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
-  concentration:
-    value: '6'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
-- preferred_term: (NH4)2SO4
-  term:
-    id: CHEBI:62946
-    label: ammonium sulfate
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:62946
-    label: ammonium sulfate
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  concentration:
-    value: '12'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
-  concentration:
-    value: '2.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
-- preferred_term: CaCl2 x 7 H2O
-  term:
-    id: CHEBI:3312
-    label: calcium dichloride
-  concentration:
-    value: '1.6'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:3312
-    label: calcium dichloride
-- preferred_term: Isobutyric acid
-  term:
-    id: CHEBI:16135
-    label: isobutyric acid
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:16135
-    label: isobutyric acid
-- preferred_term: Isovaleric acid
-  term:
-    id: CHEBI:28484
-    label: isovaleric acid
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:28484
-    label: isovaleric acid
-- preferred_term: Tryptone
-  term:
-    id: MICRO:0000182
-    label: tryptone
-  concentration:
-    value: '10.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
-    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
-  synonyms:
-  - synonym_text: pancreatic digest of casein
-    synonym_type: EXACT
-  - synonym_text: casein peptone
-    synonym_type: EXACT
-- preferred_term: Yeast extract
-  term:
-    id: FOODON:03315426
-    label: yeast extract
-  concentration:
-    value: '5.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
-    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
-    product
-- preferred_term: Sodium chloride
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  concentration:
-    value: '10.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
-    (Luria-Bertani, Miller formulation) commercial product
-  synonyms:
-  - synonym_text: NaCl
-    synonym_type: EXACT
-  - synonym_text: table salt
-    synonym_type: EXACT
-preparation_steps:
-- step_number: 1
-  action: HEAT
-  description: 'Boil and cool under CO2. Under a gentle stream of CO2 add:'
-- step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH to 7.0, distribute under N2 into appropriate vessels and
-    sterilize.
-- step_number: 3
-  action: HEAT
-  description: Inoculate under CO2 and incubate at 37°C.
+  notes: 'Original main formulation input: 500.0 mg per preparation. Keep source mass
+    and preparation stage in evidenced notes, not g/L'
+  evidence:
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf
+    supports: SUPPORT
+    snippet: Cysteine-HCl x H2O                                                          500.0        mg
+    explanation: |-
+      ingredients[7].preferred_term: Original main formulation input: 500.0 mg per preparation. Keep source mass and preparation stage in evidenced notes, not g/L No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.main formulation[10]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+      Additional exact excerpt: Cysteine-HCl x H2O                                                          500.0        mg
+      ingredients[7].concentration: Original main formulation input: 500.0 mg per preparation. Keep source mass and preparation stage in evidenced notes, not g/L No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.main formulation[10]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+      Additional exact excerpt: Cysteine-HCl x H2O                                                          500.0        mg
+      ingredients[7].notes: Original main formulation input: 500.0 mg per preparation. Keep source mass and preparation stage in evidenced notes, not g/L No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.main formulation[10]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+  - reference: https://mediadive.dsmz.de/rest/medium/436
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 11,
+                              "compound": "L-Cysteine HCl x H2O",
+                              "compound_id": 770,
+                              "amount": 500,
+                              "unit": "mg",
+                              "g_l": 0.5,
+                              "mmol_l": 2.8468,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[7].notes: The API row corroborates identity and input.
+      Its g_l and mmol_l values do not resolve the original''s final-volume or percent
+      basis. No unstated density, final volume, percent basis or chemical identifier
+      is inferred. Locator=data.solutions[0].recipe[10]; accessed=2026-10-09T06:57:20.707314+00:00;
+      capture SHA256=c78f5981062452cb25100b039398b9080295a047cd9106548ba48c4d82e2f4d2.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -259,10 +355,2160 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-10-09T07:30:35.561516+00:00'
+  curator: codex
+  action: RESTORED_RUMINOCOCCUS_ALBUS_SOURCE_FORMULATIONS_WITH_EVIDENCE
+  notes: Restore exact-source medium436 formulation, preparation stages and input
+    units. Preserve qualified prior rates, source-specific nulls and unresolved original
+    bases. No growth association added.
+  source: https://mediadive.dsmz.de/rest/medium/436
+  changes: '[{"old_field": "ingredients[0].preferred_term", "field": "ingredients[0].preferred_term",
+    "old": "Tryptone", "new": "Tryptone", "status": "correct", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "Tryptone                                                                       5.0         g"},
+    {"old_field": "ingredients[0].concentration", "field": "ingredients[0].concentration",
+    "old": {"value": "5", "unit": "G_PER_L"}, "new": null, "status": "correct", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf", "snippet":
+    "Tryptone                                                                       5.0         g"},
+    {"old_field": "ingredients[0].notes", "field": "ingredients[0].notes", "old":
+    null, "new": "Original main formulation input: 5.0 g per preparation. Keep source
+    mass and preparation stage in evidenced notes, not g/L", "status": "correct",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "Tryptone                                                                       5.0         g"},
+    {"old_field": null, "field": "ingredients[0].notes", "old": null, "new": "Original
+    main formulation input: 5.0 g per preparation. Keep source mass and preparation
+    stage in evidenced notes, not g/L", "status": "evidence_only", "reference": "https://mediadive.dsmz.de/rest/medium/436",
+    "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"Tryptone\",\n                        \"compound_id\": 71,\n                        \"amount\":
+    5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    5,\n                        \"mmol_l\": 70.3433,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[1].preferred_term", "field":
+    "ingredients[1].preferred_term", "old": "Yeast extract", "new": "Yeast extract",
+    "status": "correct", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "Yeast extract                                                                  2.0         g"},
+    {"old_field": "ingredients[1].concentration", "field": "ingredients[1].concentration",
+    "old": {"value": "2", "unit": "G_PER_L"}, "new": null, "status": "correct", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf", "snippet":
+    "Yeast extract                                                                  2.0         g"},
+    {"old_field": "ingredients[1].notes", "field": "ingredients[1].notes", "old":
+    null, "new": "Original main formulation input: 2.0 g per preparation. Keep source
+    mass and preparation stage in evidenced notes, not g/L", "status": "correct",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "Yeast extract                                                                  2.0         g"},
+    {"old_field": null, "field": "ingredients[1].notes", "old": null, "new": "Original
+    main formulation input: 2.0 g per preparation. Keep source mass and preparation
+    stage in evidenced notes, not g/L", "status": "evidence_only", "reference": "https://mediadive.dsmz.de/rest/medium/436",
+    "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\":
+    2,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    2,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[2].preferred_term", "field": "ingredients[2].preferred_term", "old":
+    "Glucose", "new": "Glucose", "status": "correct", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "Glucose                                                                        3.0         g"},
+    {"old_field": "ingredients[2].concentration", "field": "ingredients[2].concentration",
+    "old": {"value": "3", "unit": "G_PER_L"}, "new": null, "status": "correct", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf", "snippet":
+    "Glucose                                                                        3.0         g"},
+    {"old_field": "ingredients[2].notes", "field": "ingredients[2].notes", "old":
+    null, "new": "Original main formulation input: 3.0 g per preparation. Keep source
+    mass and preparation stage in evidenced notes, not g/L", "status": "correct",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "Glucose                                                                        3.0         g"},
+    {"old_field": null, "field": "ingredients[2].notes", "old": null, "new": "Original
+    main formulation input: 3.0 g per preparation. Keep source mass and preparation
+    stage in evidenced notes, not g/L", "status": "evidence_only", "reference": "https://mediadive.dsmz.de/rest/medium/436",
+    "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"Glucose\",\n                        \"compound_id\": 5,\n                        \"amount\":
+    3,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    3,\n                        \"mmol_l\": 16.6519,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[3].preferred_term", "field":
+    "ingredients[3].preferred_term", "old": "Cellobiose", "new": "Cellobiose", "status":
+    "correct", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "Cellobiose                                                                     2.0         g"},
+    {"old_field": "ingredients[3].concentration", "field": "ingredients[3].concentration",
+    "old": {"value": "2", "unit": "G_PER_L"}, "new": null, "status": "correct", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf", "snippet":
+    "Cellobiose                                                                     2.0         g"},
+    {"old_field": "ingredients[3].notes", "field": "ingredients[3].notes", "old":
+    null, "new": "Original main formulation input: 2.0 g per preparation. Keep source
+    mass and preparation stage in evidenced notes, not g/L", "status": "correct",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "Cellobiose                                                                     2.0         g"},
+    {"old_field": null, "field": "ingredients[3].notes", "old": null, "new": "Original
+    main formulation input: 2.0 g per preparation. Keep source mass and preparation
+    stage in evidenced notes, not g/L", "status": "evidence_only", "reference": "https://mediadive.dsmz.de/rest/medium/436",
+    "snippet": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"Cellobiose\",\n                        \"compound_id\": 214,\n                        \"amount\":
+    2,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    2,\n                        \"mmol_l\": 5.84283,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[0].preferred_term",
+    "old": null, "new": "Mineral solution 1", "status": "add", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "Mineral solution 1                                                           40.0        ml"},
+    {"old_field": null, "field": "solutions[0].concentration", "old": null, "new":
+    {"value": "0.04", "unit": "L"}, "status": "add", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "Mineral solution 1                                                           40.0        ml"},
+    {"old_field": null, "field": "solutions[0].notes", "old": null, "new": "Original
+    main formulation input: 40.0 ml per preparation. Source input only; not final
+    volume or percentage", "status": "add", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "Mineral solution 1                                                           40.0        ml"},
+    {"old_field": null, "field": "solutions[0].name", "old": null, "new": "Mineral
+    solution 1", "status": "add", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "Mineral solution 1                                                           40.0        ml"},
+    {"old_field": null, "field": "solutions[0].notes", "old": null, "new": "Original
+    main formulation input: 40.0 ml per preparation. Source input only; not final
+    volume or percentage", "status": "evidence_only", "reference": "https://mediadive.dsmz.de/rest/medium/436",
+    "snippet": "{\n                        \"recipe_order\": 5,\n                        \"solution\":
+    \"Mineral solution 1\",\n                        \"solution_id\": 883,\n                        \"amount\":
+    40,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[1].preferred_term",
+    "old": null, "new": "Mineral solution 2", "status": "add", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "Mineral solution 2                                                           40.0        ml"},
+    {"old_field": null, "field": "solutions[1].concentration", "old": null, "new":
+    {"value": "0.04", "unit": "L"}, "status": "add", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "Mineral solution 2                                                           40.0        ml"},
+    {"old_field": null, "field": "solutions[1].notes", "old": null, "new": "Original
+    main formulation input: 40.0 ml per preparation. Source input only; not final
+    volume or percentage", "status": "add", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "Mineral solution 2                                                           40.0        ml"},
+    {"old_field": null, "field": "solutions[1].name", "old": null, "new": "Mineral
+    solution 2", "status": "add", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "Mineral solution 2                                                           40.0        ml"},
+    {"old_field": null, "field": "solutions[1].notes", "old": null, "new": "Original
+    main formulation input: 40.0 ml per preparation. Source input only; not final
+    volume or percentage", "status": "evidence_only", "reference": "https://mediadive.dsmz.de/rest/medium/436",
+    "snippet": "{\n                        \"recipe_order\": 6,\n                        \"solution\":
+    \"Mineral solution 2\",\n                        \"solution_id\": 884,\n                        \"amount\":
+    40,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[4].preferred_term", "field":
+    "ingredients[4].preferred_term", "old": "Resazurin", "new": "Resazurin", "status":
+    "correct", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "Resazurin                                                                      1.0       mg"},
+    {"old_field": "ingredients[4].concentration", "field": "ingredients[4].concentration",
+    "old": {"value": "0.001", "unit": "G_PER_L"}, "new": null, "status": "correct",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "Resazurin                                                                      1.0       mg"},
+    {"old_field": "ingredients[4].notes", "field": "ingredients[4].notes", "old":
+    null, "new": "Original main formulation input: 1.0 mg per preparation. Keep source
+    mass and preparation stage in evidenced notes, not g/L", "status": "correct",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "Resazurin                                                                      1.0       mg"},
+    {"old_field": null, "field": "ingredients[4].notes", "old": null, "new": "Original
+    main formulation input: 1.0 mg per preparation. Keep source mass and preparation
+    stage in evidenced notes, not g/L", "status": "evidence_only", "reference": "https://mediadive.dsmz.de/rest/medium/436",
+    "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\":
+    \"Resazurin\",\n                        \"compound_id\": 25,\n                        \"amount\":
+    1,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.001,\n                        \"mmol_l\": 0.00436319,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[5].preferred_term",
+    "old": null, "new": "Distilled water", "status": "add", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "Distilled water                                                             920.0        ml"},
+    {"old_field": null, "field": "ingredients[5].concentration", "old": null, "new":
+    {"value": "0.92", "unit": "L"}, "status": "add", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "Distilled water                                                             920.0        ml"},
+    {"old_field": null, "field": "ingredients[5].notes", "old": null, "new": "Original
+    main formulation input: 920.0 ml per preparation. Source input only; not final
+    volume or percentage", "status": "add", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "Distilled water                                                             920.0        ml"},
+    {"old_field": null, "field": "ingredients[5].notes", "old": null, "new": "Original
+    main formulation input: 920.0 ml per preparation. Source input only; not final
+    volume or percentage", "status": "evidence_only", "reference": "https://mediadive.dsmz.de/rest/medium/436",
+    "snippet": "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    920,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[5].preferred_term", "field":
+    "ingredients[6].preferred_term", "old": "Na2CO3", "new": "Na2CO3", "status": "correct",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "Na2CO3                                                                         4.0         g"},
+    {"old_field": "ingredients[5].concentration", "field": "ingredients[6].concentration",
+    "old": {"value": "4", "unit": "G_PER_L"}, "new": null, "status": "correct", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf", "snippet":
+    "Na2CO3                                                                         4.0         g"},
+    {"old_field": "ingredients[5].notes", "field": "ingredients[6].notes", "old":
+    null, "new": "Original main formulation input: 4.0 g per preparation. Keep source
+    mass and preparation stage in evidenced notes, not g/L", "status": "correct",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "Na2CO3                                                                         4.0         g"},
+    {"old_field": null, "field": "ingredients[6].notes", "old": null, "new": "Original
+    main formulation input: 4.0 g per preparation. Keep source mass and preparation
+    stage in evidenced notes, not g/L", "status": "evidence_only", "reference": "https://mediadive.dsmz.de/rest/medium/436",
+    "snippet": "{\n                        \"recipe_order\": 9,\n                        \"compound\":
+    \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"amount\":
+    4,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    4,\n                        \"mmol_l\": 37.7401,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[2].preferred_term",
+    "old": null, "new": "Fatty acid mixture", "status": "add", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "Fatty acid mixture                                                             1.0       ml"},
+    {"old_field": null, "field": "solutions[2].concentration", "old": null, "new":
+    {"value": "0.001", "unit": "L"}, "status": "add", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "Fatty acid mixture                                                             1.0       ml"},
+    {"old_field": null, "field": "solutions[2].notes", "old": null, "new": "Original
+    main formulation input: 1.0 ml per preparation. Source input only; not final volume
+    or percentage", "status": "add", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "Fatty acid mixture                                                             1.0       ml"},
+    {"old_field": null, "field": "solutions[2].name", "old": null, "new": "Fatty acid
+    mixture", "status": "add", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "Fatty acid mixture                                                             1.0       ml"},
+    {"old_field": null, "field": "solutions[2].notes", "old": null, "new": "Original
+    main formulation input: 1.0 ml per preparation. Source input only; not final volume
+    or percentage", "status": "evidence_only", "reference": "https://mediadive.dsmz.de/rest/medium/436",
+    "snippet": "{\n                        \"recipe_order\": 10,\n                        \"solution\":
+    \"Fatty acid mixture\",\n                        \"solution_id\": 885,\n                        \"amount\":
+    1,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[6].preferred_term", "field":
+    "ingredients[7].preferred_term", "old": "L-Cysteine HCl x H2O", "new": "Cysteine-HCl
+    x H2O", "status": "correct", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "Cysteine-HCl x H2O                                                          500.0        mg"},
+    {"old_field": "ingredients[6].concentration", "field": "ingredients[7].concentration",
+    "old": {"value": "0.5", "unit": "G_PER_L"}, "new": null, "status": "correct",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "Cysteine-HCl x H2O                                                          500.0        mg"},
+    {"old_field": "ingredients[6].notes", "field": "ingredients[7].notes", "old":
+    null, "new": "Original main formulation input: 500.0 mg per preparation. Keep
+    source mass and preparation stage in evidenced notes, not g/L", "status": "correct",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "Cysteine-HCl x H2O                                                          500.0        mg"},
+    {"old_field": null, "field": "ingredients[7].notes", "old": null, "new": "Original
+    main formulation input: 500.0 mg per preparation. Keep source mass and preparation
+    stage in evidenced notes, not g/L", "status": "evidence_only", "reference": "https://mediadive.dsmz.de/rest/medium/436",
+    "snippet": "{\n                        \"recipe_order\": 11,\n                        \"compound\":
+    \"L-Cysteine HCl x H2O\",\n                        \"compound_id\": 770,\n                        \"amount\":
+    500,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.5,\n                        \"mmol_l\": 2.8468,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[7].preferred_term", "field":
+    "solutions[0].composition[0].preferred_term", "old": "K2HPO4", "new": "K2HPO4",
+    "status": "correct", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "K2HPO4                                                                         0.6        %"},
+    {"old_field": "ingredients[7].concentration", "field": "solutions[0].composition[0].concentration",
+    "old": {"value": "6", "unit": "G_PER_L"}, "new": null, "status": "correct", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf", "snippet":
+    "K2HPO4                                                                         0.6        %"},
+    {"old_field": "ingredients[7].notes", "field": "solutions[0].composition[0].notes",
+    "old": null, "new": "Original Mineral solution 1 input: 0.6 % per preparation.
+    Keep literal percentage in source-backed notes; no w/v, w/w or v/v assignment",
+    "status": "correct", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "K2HPO4                                                                         0.6        %"},
+    {"old_field": null, "field": "solutions[0].composition[0].notes", "old": null,
+    "new": "Original Mineral solution 1 input: 0.6 % per preparation. Keep literal
+    percentage in source-backed notes; no w/v, w/w or v/v assignment", "status": "evidence_only",
+    "reference": "https://mediadive.dsmz.de/rest/medium/436", "snippet": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\":
+    10,\n                        \"amount\": 0.6,\n                        \"unit\":
+    \"%\",\n                        \"g_l\": 6,\n                        \"mmol_l\":
+    34.4479,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[8].preferred_term", "field": "solutions[1].composition[0].preferred_term",
+    "old": "KH2PO4", "new": "KH2PO4", "status": "correct", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "KH2PO4                                                                         0.6        %"},
+    {"old_field": "ingredients[8].concentration", "field": "solutions[1].composition[0].concentration",
+    "old": {"value": "6", "unit": "G_PER_L"}, "new": null, "status": "correct", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf", "snippet":
+    "KH2PO4                                                                         0.6        %"},
+    {"old_field": "ingredients[8].notes", "field": "solutions[1].composition[0].notes",
+    "old": null, "new": "Original Mineral solution 2 input: 0.6 % per preparation.
+    Keep literal percentage in source-backed notes; no w/v, w/w or v/v assignment",
+    "status": "correct", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "KH2PO4                                                                         0.6        %"},
+    {"old_field": null, "field": "solutions[1].composition[0].notes", "old": null,
+    "new": "Original Mineral solution 2 input: 0.6 % per preparation. Keep literal
+    percentage in source-backed notes; no w/v, w/w or v/v assignment", "status": "evidence_only",
+    "reference": "https://mediadive.dsmz.de/rest/medium/436", "snippet": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 0.6,\n                        \"unit\":
+    \"%\",\n                        \"g_l\": 6,\n                        \"mmol_l\":
+    44.0901,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[9].preferred_term", "field": "solutions[1].composition[1].preferred_term",
+    "old": "(NH4)2SO4", "new": "(NH4)2SO4", "status": "correct", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "(NH4)2SO4                                                                      2.0        %"},
+    {"old_field": "ingredients[9].concentration", "field": "solutions[1].composition[1].concentration",
+    "old": {"value": "20", "unit": "G_PER_L"}, "new": null, "status": "correct", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf", "snippet":
+    "(NH4)2SO4                                                                      2.0        %"},
+    {"old_field": "ingredients[9].notes", "field": "solutions[1].composition[1].notes",
+    "old": null, "new": "Original Mineral solution 2 input: 2.0 % per preparation.
+    Keep literal percentage in source-backed notes; no w/v, w/w or v/v assignment",
+    "status": "correct", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "(NH4)2SO4                                                                      2.0        %"},
+    {"old_field": null, "field": "solutions[1].composition[1].notes", "old": null,
+    "new": "Original Mineral solution 2 input: 2.0 % per preparation. Keep literal
+    percentage in source-backed notes; no w/v, w/w or v/v assignment", "status": "evidence_only",
+    "reference": "https://mediadive.dsmz.de/rest/medium/436", "snippet": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\":
+    27,\n                        \"amount\": 2,\n                        \"unit\":
+    \"%\",\n                        \"g_l\": 20,\n                        \"mmol_l\":
+    151.355,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[10].preferred_term", "field": "solutions[1].composition[2].preferred_term",
+    "old": "NaCl", "new": "NaCl", "status": "correct", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "NaCl                                                                           1.2        %"},
+    {"old_field": "ingredients[10].concentration", "field": "solutions[1].composition[2].concentration",
+    "old": {"value": "12", "unit": "G_PER_L"}, "new": null, "status": "correct", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf", "snippet":
+    "NaCl                                                                           1.2        %"},
+    {"old_field": "ingredients[10].notes", "field": "solutions[1].composition[2].notes",
+    "old": null, "new": "Original Mineral solution 2 input: 1.2 % per preparation.
+    Keep literal percentage in source-backed notes; no w/v, w/w or v/v assignment",
+    "status": "correct", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "NaCl                                                                           1.2        %"},
+    {"old_field": null, "field": "solutions[1].composition[2].notes", "old": null,
+    "new": "Original Mineral solution 2 input: 1.2 % per preparation. Keep literal
+    percentage in source-backed notes; no w/v, w/w or v/v assignment", "status": "evidence_only",
+    "reference": "https://mediadive.dsmz.de/rest/medium/436", "snippet": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\":
+    43,\n                        \"amount\": 1.2,\n                        \"unit\":
+    \"%\",\n                        \"g_l\": 12,\n                        \"mmol_l\":
+    205.339,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[11].preferred_term", "field": "solutions[1].composition[3].preferred_term",
+    "old": "MgSO4 x 7 H2O", "new": "MgSO4 x 7 H2O", "status": "correct", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf", "snippet":
+    "MgSO4 x 7 H2O                                                                0.25         %"},
+    {"old_field": "ingredients[11].concentration", "field": "solutions[1].composition[3].concentration",
+    "old": {"value": "2.5", "unit": "G_PER_L"}, "new": null, "status": "correct",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "MgSO4 x 7 H2O                                                                0.25         %"},
+    {"old_field": "ingredients[11].notes", "field": "solutions[1].composition[3].notes",
+    "old": null, "new": "Original Mineral solution 2 input: 0.25 % per preparation.
+    Keep literal percentage in source-backed notes; no w/v, w/w or v/v assignment",
+    "status": "correct", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "MgSO4 x 7 H2O                                                                0.25         %"},
+    {"old_field": null, "field": "solutions[1].composition[3].notes", "old": null,
+    "new": "Original Mineral solution 2 input: 0.25 % per preparation. Keep literal
+    percentage in source-backed notes; no w/v, w/w or v/v assignment", "status": "evidence_only",
+    "reference": "https://mediadive.dsmz.de/rest/medium/436", "snippet": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\":
+    8,\n                        \"amount\": 0.25,\n                        \"unit\":
+    \"%\",\n                        \"g_l\": 2.5,\n                        \"mmol_l\":
+    10.143,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[12].preferred_term", "field": "solutions[1].composition[4].preferred_term",
+    "old": "CaCl2 x 7 H2O", "new": "CaCl2 x 7 H2O", "status": "correct", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf", "snippet":
+    "CaCl2 x 7 H2O                                                                0.16         %"},
+    {"old_field": "ingredients[12].concentration", "field": "solutions[1].composition[4].concentration",
+    "old": {"value": "1.6", "unit": "G_PER_L"}, "new": null, "status": "correct",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "CaCl2 x 7 H2O                                                                0.16         %"},
+    {"old_field": "ingredients[12].notes", "field": "solutions[1].composition[4].notes",
+    "old": null, "new": "Original Mineral solution 2 input: 0.16 % per preparation.
+    Keep literal percentage in source-backed notes; no w/v, w/w or v/v assignment",
+    "status": "correct", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "CaCl2 x 7 H2O                                                                0.16         %"},
+    {"old_field": null, "field": "solutions[1].composition[4].notes", "old": null,
+    "new": "Original Mineral solution 2 input: 0.16 % per preparation. Keep literal
+    percentage in source-backed notes; no w/v, w/w or v/v assignment", "status": "evidence_only",
+    "reference": "https://mediadive.dsmz.de/rest/medium/436", "snippet": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"CaCl2 x 7 H2O\",\n                        \"compound_id\":
+    479,\n                        \"amount\": 0.16,\n                        \"unit\":
+    \"%\",\n                        \"g_l\": 1.6,\n                        \"mmol_l\":
+    14.4166,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[13].preferred_term", "field": "solutions[2].composition[0].preferred_term",
+    "old": "Isobutyric acid", "new": "Isobutyric acid", "status": "correct", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf", "snippet":
+    "Isobutyric acid                                                              10.0        ml"},
+    {"old_field": "ingredients[13].concentration", "field": "solutions[2].composition[0].concentration",
+    "old": {"value": "10", "unit": "G_PER_L"}, "new": {"value": "0.01", "unit": "L"},
+    "status": "correct", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "Isobutyric acid                                                              10.0        ml"},
+    {"old_field": "ingredients[13].notes", "field": "solutions[2].composition[0].notes",
+    "old": null, "new": "Original Fatty acid mixture input: 10.0 ml per preparation.
+    Source input only; not final volume or percentage", "status": "correct", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf", "snippet":
+    "Isobutyric acid                                                              10.0        ml"},
+    {"old_field": null, "field": "solutions[2].composition[0].notes", "old": null,
+    "new": "Original Fatty acid mixture input: 10.0 ml per preparation. Source input
+    only; not final volume or percentage", "status": "evidence_only", "reference":
+    "https://mediadive.dsmz.de/rest/medium/436", "snippet": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Isobutyric acid\",\n                        \"compound_id\":
+    222,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[14].preferred_term", "field": "solutions[2].composition[1].preferred_term",
+    "old": "Isovaleric acid", "new": "Isovaleric acid", "status": "correct", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf", "snippet":
+    "Isovaleric acid                                                              10.0        ml"},
+    {"old_field": "ingredients[14].concentration", "field": "solutions[2].composition[1].concentration",
+    "old": {"value": "10", "unit": "G_PER_L"}, "new": {"value": "0.01", "unit": "L"},
+    "status": "correct", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "Isovaleric acid                                                              10.0        ml"},
+    {"old_field": "ingredients[14].notes", "field": "solutions[2].composition[1].notes",
+    "old": null, "new": "Original Fatty acid mixture input: 10.0 ml per preparation.
+    Source input only; not final volume or percentage", "status": "correct", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf", "snippet":
+    "Isovaleric acid                                                              10.0        ml"},
+    {"old_field": null, "field": "solutions[2].composition[1].notes", "old": null,
+    "new": "Original Fatty acid mixture input: 10.0 ml per preparation. Source input
+    only; not final volume or percentage", "status": "evidence_only", "reference":
+    "https://mediadive.dsmz.de/rest/medium/436", "snippet": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Isovaleric acid\",\n                        \"compound_id\":
+    225,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[2].composition[2].preferred_term", "old": null, "new":
+    "2-Methylbutyric acid", "status": "add", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "2-Methylbutyric acid                                                         10.0        ml"},
+    {"old_field": null, "field": "solutions[2].composition[2].concentration", "old":
+    null, "new": {"value": "0.01", "unit": "L"}, "status": "add", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "2-Methylbutyric acid                                                         10.0        ml"},
+    {"old_field": null, "field": "solutions[2].composition[2].notes", "old": null,
+    "new": "Original Fatty acid mixture input: 10.0 ml per preparation. Source input
+    only; not final volume or percentage", "status": "add", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "2-Methylbutyric acid                                                         10.0        ml"},
+    {"old_field": null, "field": "solutions[2].composition[2].notes", "old": null,
+    "new": "Original Fatty acid mixture input: 10.0 ml per preparation. Source input
+    only; not final volume or percentage", "status": "evidence_only", "reference":
+    "https://mediadive.dsmz.de/rest/medium/436", "snippet": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"2-Methylbutyric acid\",\n                        \"compound_id\":
+    480,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[2].composition[3].preferred_term", "old": null, "new":
+    "Distilled water", "status": "add", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "Distilled water                                                              70.0        ml"},
+    {"old_field": null, "field": "solutions[2].composition[3].concentration", "old":
+    null, "new": {"value": "0.07", "unit": "L"}, "status": "add", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "Distilled water                                                              70.0        ml"},
+    {"old_field": null, "field": "solutions[2].composition[3].notes", "old": null,
+    "new": "Original Fatty acid mixture input: 70.0 ml per preparation. Source input
+    only; not final volume or percentage", "status": "add", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "Distilled water                                                              70.0        ml"},
+    {"old_field": null, "field": "solutions[2].composition[3].notes", "old": null,
+    "new": "Original Fatty acid mixture input: 70.0 ml per preparation. Source input
+    only; not final volume or percentage", "status": "evidence_only", "reference":
+    "https://mediadive.dsmz.de/rest/medium/436", "snippet": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 70,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "preparation_steps", "field": "notes", "old": [{"step_number": 1, "action": "HEAT",
+    "description": "Boil and cool under CO2. Under a gentle stream of CO2 add:"},
+    {"step_number": 2, "action": "ADJUST_PH", "description": "Adjust pH to 7.0, distribute
+    under N2 into appropriate vessels and sterilize."}, {"step_number": 3, "action":
+    "HEAT", "description": "Inoculate under CO2 and incubate at 37\u00b0C."}], "new":
+    "Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf\n\nSuperseded
+    historical provenance, not a current formulation claim:\nCommercial Product: LB
+    Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nPreserve
+    original preparation descriptions, but withdraw the incorrect HEAT encoding of
+    incubation: Boil and cool under CO2. Under a gentle stream of CO2 add:\nAdjust
+    pH to 7.0, distribute under N2 into appropriate vessels and sterilize.\nInoculate
+    under CO2 and incubate at 37\u00b0C.\n\nThe original supplies 920 ml water, two
+    40 ml mineral inputs and a separate 1 ml acid input. Their sum is not an explicit
+    final volume. Literal mineral percentages have no declared basis; no g/L or molarity
+    is inferred.\n\nComplete source rows determine the reconstructed formulation.
+    Archive the prior flattened nodes, unsupported LB additions and stock links in
+    append-only history. Unrelated annotations are preserved, not recertified.", "status":
+    "evidence_only", "reference": "https://mediadive.dsmz.de/rest/medium/436", "snippet":
+    "[\n            {\n                \"id\": 882,\n                \"name\": \"Main
+    sol. 436\",\n                \"volume\": 1000,\n                \"recipe\": [\n                    {\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Tryptone\",\n                        \"compound_id\":
+    71,\n                        \"amount\": 5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\":
+    70.3433,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\":
+    16,\n                        \"amount\": 2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2,\n                        \"optional\":
+    0\n                    },\n                    {\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\":
+    5,\n                        \"amount\": 3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 3,\n                        \"mmol_l\":
+    16.6519,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Cellobiose\",\n                        \"compound_id\":
+    214,\n                        \"amount\": 2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2,\n                        \"mmol_l\":
+    5.84283,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    5,\n                        \"solution\": \"Mineral solution 1\",\n                        \"solution_id\":
+    883,\n                        \"amount\": 40,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    6,\n                        \"solution\": \"Mineral solution 2\",\n                        \"solution_id\":
+    884,\n                        \"amount\": 40,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"Resazurin\",\n                        \"compound_id\":
+    25,\n                        \"amount\": 1,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\":
+    0.00436319,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 920,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\":
+    32,\n                        \"amount\": 4,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 4,\n                        \"mmol_l\":
+    37.7401,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    10,\n                        \"solution\": \"Fatty acid mixture\",\n                        \"solution_id\":
+    885,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"L-Cysteine HCl x H2O\",\n                        \"compound_id\":
+    770,\n                        \"amount\": 500,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\":
+    2.8468,\n                        \"optional\": 0\n                    }\n                ],\n                \"steps\":
+    [\n                    {\n                        \"recipe_order\": 9,\n                        \"step\":
+    \"Boil and cool under CO2. Under a gentle stream of CO2 add: \"\n                    },\n                    {\n                        \"step\":
+    \"Adjust pH to 7.0, distribute under N2 into appropriate vessels and sterilize.\"\n                    }\n                ],\n                \"equipment\":
+    {\n                    \"5069\": \"Autoclave\",\n                    \"5070\":
+    \"Hungate tubes\",\n                    \"5071\": \"Gassing station\"\n                }\n            },\n            {\n                \"id\":
+    883,\n                \"name\": \"Mineral solution 1\",\n                \"volume\":
+    100,\n                \"recipe\": [\n                    {\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\":
+    10,\n                        \"amount\": 0.6,\n                        \"unit\":
+    \"%\",\n                        \"g_l\": 6,\n                        \"mmol_l\":
+    34.4479,\n                        \"optional\": 0\n                    }\n                ]\n            },\n            {\n                \"id\":
+    884,\n                \"name\": \"Mineral solution 2\",\n                \"volume\":
+    100,\n                \"recipe\": [\n                    {\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 0.6,\n                        \"unit\":
+    \"%\",\n                        \"g_l\": 6,\n                        \"mmol_l\":
+    44.0901,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\":
+    27,\n                        \"amount\": 2,\n                        \"unit\":
+    \"%\",\n                        \"g_l\": 20,\n                        \"mmol_l\":
+    151.355,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\":
+    43,\n                        \"amount\": 1.2,\n                        \"unit\":
+    \"%\",\n                        \"g_l\": 12,\n                        \"mmol_l\":
+    205.339,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\":
+    8,\n                        \"amount\": 0.25,\n                        \"unit\":
+    \"%\",\n                        \"g_l\": 2.5,\n                        \"mmol_l\":
+    10.143,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"CaCl2 x 7 H2O\",\n                        \"compound_id\":
+    479,\n                        \"amount\": 0.16,\n                        \"unit\":
+    \"%\",\n                        \"g_l\": 1.6,\n                        \"mmol_l\":
+    14.4166,\n                        \"optional\": 0\n                    }\n                ]\n            },\n            {\n                \"id\":
+    885,\n                \"name\": \"Fatty acid mixture\",\n                \"volume\":
+    100,\n                \"recipe\": [\n                    {\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Isobutyric acid\",\n                        \"compound_id\":
+    222,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Isovaleric acid\",\n                        \"compound_id\":
+    225,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"2-Methylbutyric acid\",\n                        \"compound_id\":
+    480,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 70,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }\n                ],\n                \"steps\":
+    [\n                    {\n                        \"step\": \"Inoculate under
+    CO2 and incubate at 37\\u00b0C.\"\n                    }\n                ]\n            }\n        ]"},
+    {"old_field": "preparation_steps", "field": "preparation_steps", "old": [{"step_number":
+    1, "action": "HEAT", "description": "Boil and cool under CO2. Under a gentle stream
+    of CO2 add:"}, {"step_number": 2, "action": "ADJUST_PH", "description": "Adjust
+    pH to 7.0, distribute under N2 into appropriate vessels and sterilize."}, {"step_number":
+    3, "action": "HEAT", "description": "Inoculate under CO2 and incubate at 37\u00b0C."}],
+    "new": null, "status": "remove_unsupported", "reference": "https://mediadive.dsmz.de/rest/medium/436",
+    "snippet": "[\n            {\n                \"id\": 882,\n                \"name\":
+    \"Main sol. 436\",\n                \"volume\": 1000,\n                \"recipe\":
+    [\n                    {\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"Tryptone\",\n                        \"compound_id\": 71,\n                        \"amount\":
+    5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    5,\n                        \"mmol_l\": 70.3433,\n                        \"optional\":
+    0\n                    },\n                    {\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\":
+    16,\n                        \"amount\": 2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2,\n                        \"optional\":
+    0\n                    },\n                    {\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\":
+    5,\n                        \"amount\": 3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 3,\n                        \"mmol_l\":
+    16.6519,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Cellobiose\",\n                        \"compound_id\":
+    214,\n                        \"amount\": 2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2,\n                        \"mmol_l\":
+    5.84283,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    5,\n                        \"solution\": \"Mineral solution 1\",\n                        \"solution_id\":
+    883,\n                        \"amount\": 40,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    6,\n                        \"solution\": \"Mineral solution 2\",\n                        \"solution_id\":
+    884,\n                        \"amount\": 40,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"Resazurin\",\n                        \"compound_id\":
+    25,\n                        \"amount\": 1,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\":
+    0.00436319,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 920,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\":
+    32,\n                        \"amount\": 4,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 4,\n                        \"mmol_l\":
+    37.7401,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    10,\n                        \"solution\": \"Fatty acid mixture\",\n                        \"solution_id\":
+    885,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"L-Cysteine HCl x H2O\",\n                        \"compound_id\":
+    770,\n                        \"amount\": 500,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\":
+    2.8468,\n                        \"optional\": 0\n                    }\n                ],\n                \"steps\":
+    [\n                    {\n                        \"recipe_order\": 9,\n                        \"step\":
+    \"Boil and cool under CO2. Under a gentle stream of CO2 add: \"\n                    },\n                    {\n                        \"step\":
+    \"Adjust pH to 7.0, distribute under N2 into appropriate vessels and sterilize.\"\n                    }\n                ],\n                \"equipment\":
+    {\n                    \"5069\": \"Autoclave\",\n                    \"5070\":
+    \"Hungate tubes\",\n                    \"5071\": \"Gassing station\"\n                }\n            },\n            {\n                \"id\":
+    883,\n                \"name\": \"Mineral solution 1\",\n                \"volume\":
+    100,\n                \"recipe\": [\n                    {\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\":
+    10,\n                        \"amount\": 0.6,\n                        \"unit\":
+    \"%\",\n                        \"g_l\": 6,\n                        \"mmol_l\":
+    34.4479,\n                        \"optional\": 0\n                    }\n                ]\n            },\n            {\n                \"id\":
+    884,\n                \"name\": \"Mineral solution 2\",\n                \"volume\":
+    100,\n                \"recipe\": [\n                    {\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 0.6,\n                        \"unit\":
+    \"%\",\n                        \"g_l\": 6,\n                        \"mmol_l\":
+    44.0901,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\":
+    27,\n                        \"amount\": 2,\n                        \"unit\":
+    \"%\",\n                        \"g_l\": 20,\n                        \"mmol_l\":
+    151.355,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\":
+    43,\n                        \"amount\": 1.2,\n                        \"unit\":
+    \"%\",\n                        \"g_l\": 12,\n                        \"mmol_l\":
+    205.339,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\":
+    8,\n                        \"amount\": 0.25,\n                        \"unit\":
+    \"%\",\n                        \"g_l\": 2.5,\n                        \"mmol_l\":
+    10.143,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"CaCl2 x 7 H2O\",\n                        \"compound_id\":
+    479,\n                        \"amount\": 0.16,\n                        \"unit\":
+    \"%\",\n                        \"g_l\": 1.6,\n                        \"mmol_l\":
+    14.4166,\n                        \"optional\": 0\n                    }\n                ]\n            },\n            {\n                \"id\":
+    885,\n                \"name\": \"Fatty acid mixture\",\n                \"volume\":
+    100,\n                \"recipe\": [\n                    {\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Isobutyric acid\",\n                        \"compound_id\":
+    222,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Isovaleric acid\",\n                        \"compound_id\":
+    225,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"2-Methylbutyric acid\",\n                        \"compound_id\":
+    480,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 70,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }\n                ],\n                \"steps\":
+    [\n                    {\n                        \"step\": \"Inoculate under
+    CO2 and incubate at 37\\u00b0C.\"\n                    }\n                ]\n            }\n        ]"},
+    {"old_field": null, "field": "notes", "old": null, "new": "Source: DSMZ | Link:
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf\n\nSuperseded
+    historical provenance, not a current formulation claim:\nCommercial Product: LB
+    Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nPreserve
+    original preparation descriptions, but withdraw the incorrect HEAT encoding of
+    incubation: Boil and cool under CO2. Under a gentle stream of CO2 add:\nAdjust
+    pH to 7.0, distribute under N2 into appropriate vessels and sterilize.\nInoculate
+    under CO2 and incubate at 37\u00b0C.\n\nThe original supplies 920 ml water, two
+    40 ml mineral inputs and a separate 1 ml acid input. Their sum is not an explicit
+    final volume. Literal mineral percentages have no declared basis; no g/L or molarity
+    is inferred.\n\nComplete source rows determine the reconstructed formulation.
+    Archive the prior flattened nodes, unsupported LB additions and stock links in
+    append-only history. Unrelated annotations are preserved, not recertified.", "status":
+    "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "436. RUMINOCOCCUS ALBUS MEDIUM\n\n\n Tryptone                                                                       5.0         g\n
+    Yeast extract                                                                  2.0         g\n
+    Glucose                                                                        3.0         g\n
+    Cellobiose                                                                     2.0         g\n
+    Mineral solution 1                                                           40.0        ml\n
+    Mineral solution 2                                                           40.0        ml\n
+    Resazurin                                                                      1.0       mg\n
+    Distilled water                                                             920.0        ml\n\nBoil
+    and cool under CO2. Under a gentle stream of CO2 add:\n Na2CO3                                                                         4.0         g\n
+    Fatty acid mixture                                                             1.0       ml\n
+    Cysteine-HCl x H2O                                                          500.0        mg\n\nAdjust
+    pH to 7.0, distribute under N2 into appropriate vessels and sterilize.\n\nMineral
+    solution 1:\n K2HPO4                                                                         0.6        %\n\nMineral
+    solution 2:\n KH2PO4                                                                         0.6        %\n
+    (NH4)2SO4                                                                      2.0        %\n
+    NaCl                                                                           1.2        %\n
+    MgSO4 x 7 H2O                                                                0.25         %\n
+    CaCl2 x 7 H2O                                                                0.16         %\n\nFatty
+    acid mixture:\n Isobutyric acid                                                              10.0        ml\n
+    Isovaleric acid                                                              10.0        ml\n
+    2-Methylbutyric acid                                                         10.0        ml\n
+    Distilled water                                                              70.0        ml"},
+    {"old_field": "variant_children", "field": "variant_children", "old": [{"path":
+    "data/normalized_yaml/bacterial/KOMODO_436_RUMINOCOCCUS_ALBUS_medium.yaml", "relationship":
+    "SOURCE_DUPLICATE", "id": "CultureMech:005284", "name": "ruminococcus_albus_medium",
+    "notes": "Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source."}], "new": [{"id": "CultureMech:005284", "path":
+    "data/normalized_yaml/bacterial/KOMODO_436_RUMINOCOCCUS_ALBUS_medium.yaml", "name":
+    "ruminococcus_albus_medium", "relationship": "DERIVED_FROM", "notes": "KOMODO
+    explicitly derives from DSMZ436 but has different displayed rates, nulls and stock
+    scopes. DERIVED_FROM does not assert exact composition or biological equivalence.",
+    "evidence": [{"reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=436",
+    "supports": "SUPPORT", "snippet": "Instructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "explanation": "variant_children: KOMODO explicitly derives from DSMZ436 but has
+    different displayed rates, nulls and stock scopes. DERIVED_FROM does not assert
+    exact composition or biological equivalence. No unstated density, final volume,
+    percent basis or chemical identifier is inferred. Locator=original recipe table/text;
+    accessed=2026-10-09T06:57:11.957119+00:00; capture SHA256=28d9fc341b831df7b9779a1e04177acbf00e1c003998c16783a16c5af0cd269c."}]}],
+    "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=436",
+    "snippet": "Instructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf"},
+    {"old_field": "ingredients", "field": "notes", "old": [{"preferred_term": "Tryptone",
+    "concentration": {"value": "5", "unit": "G_PER_L"}}, {"preferred_term": "Yeast
+    extract", "concentration": {"value": "2", "unit": "G_PER_L"}}, {"preferred_term":
+    "Glucose", "term": {"id": "CHEBI:17234", "label": "glucose"}, "concentration":
+    {"value": "3", "unit": "G_PER_L"}, "mediaingredientmech_chebi_term": {"id": "CHEBI:17234",
+    "label": "glucose"}}, {"preferred_term": "Cellobiose", "term": {"id": "CHEBI:17057",
+    "label": "cellobiose"}, "concentration": {"value": "2", "unit": "G_PER_L"}, "mediaingredientmech_chebi_term":
+    {"id": "CHEBI:17057", "label": "cellobiose"}}, {"preferred_term": "Resazurin",
+    "term": {"id": "CHEBI:8806", "label": "Resazurin"}, "concentration": {"value":
+    "0.001", "unit": "G_PER_L"}, "mediaingredientmech_chebi_term": {"id": "CHEBI:8806",
+    "label": "Resazurin"}}, {"preferred_term": "Na2CO3", "term": {"id": "CHEBI:29377",
+    "label": "sodium carbonate"}, "concentration": {"value": "4", "unit": "G_PER_L"},
+    "mediaingredientmech_chebi_term": {"id": "CHEBI:29377", "label": "sodium carbonate"}},
+    {"preferred_term": "L-Cysteine HCl x H2O", "term": {"id": "CHEBI:91248", "label":
+    "L-cysteine hydrochloride hydrate"}, "concentration": {"value": "0.5", "unit":
+    "G_PER_L"}, "mediaingredientmech_chebi_term": {"id": "CHEBI:91248", "label": "L-cysteine
+    hydrochloride hydrate"}}, {"preferred_term": "K2HPO4", "term": {"id": "CHEBI:131527",
+    "label": "dipotassium hydrogen phosphate"}, "concentration": {"value": "6", "unit":
+    "G_PER_L"}, "mediaingredientmech_chebi_term": {"id": "CHEBI:131527", "label":
+    "dipotassium hydrogen phosphate"}}, {"preferred_term": "KH2PO4", "term": {"id":
+    "CHEBI:63036", "label": "potassium dihydrogen phosphate"}, "concentration": {"value":
+    "6", "unit": "G_PER_L"}, "mediaingredientmech_chebi_term": {"id": "CHEBI:63036",
+    "label": "potassium dihydrogen phosphate"}}, {"preferred_term": "(NH4)2SO4", "term":
+    {"id": "CHEBI:62946", "label": "ammonium sulfate"}, "concentration": {"value":
+    "20", "unit": "G_PER_L"}, "mediaingredientmech_chebi_term": {"id": "CHEBI:62946",
+    "label": "ammonium sulfate"}}, {"preferred_term": "NaCl", "term": {"id": "CHEBI:26710",
+    "label": "sodium chloride"}, "concentration": {"value": "12", "unit": "G_PER_L"},
+    "mediaingredientmech_chebi_term": {"id": "CHEBI:26710", "label": "sodium chloride"}},
+    {"preferred_term": "MgSO4 x 7 H2O", "term": {"id": "CHEBI:31795", "label": "magnesium
+    sulfate heptahydrate"}, "concentration": {"value": "2.5", "unit": "G_PER_L"},
+    "mediaingredientmech_chebi_term": {"id": "CHEBI:31795", "label": "magnesium sulfate
+    heptahydrate"}}, {"preferred_term": "CaCl2 x 7 H2O", "term": {"id": "CHEBI:3312",
+    "label": "calcium dichloride"}, "concentration": {"value": "1.6", "unit": "G_PER_L"},
+    "mediaingredientmech_chebi_term": {"id": "CHEBI:3312", "label": "calcium dichloride"}},
+    {"preferred_term": "Isobutyric acid", "term": {"id": "CHEBI:16135", "label": "isobutyric
+    acid"}, "concentration": {"value": "10", "unit": "G_PER_L"}, "mediaingredientmech_chebi_term":
+    {"id": "CHEBI:16135", "label": "isobutyric acid"}}, {"preferred_term": "Isovaleric
+    acid", "term": {"id": "CHEBI:28484", "label": "isovaleric acid"}, "concentration":
+    {"value": "10", "unit": "G_PER_L"}, "mediaingredientmech_chebi_term": {"id": "CHEBI:28484",
+    "label": "isovaleric acid"}}, {"preferred_term": "Tryptone", "term": {"id": "MICRO:0000182",
+    "label": "tryptone"}, "concentration": {"value": "10.0", "unit": "G_PER_L"}, "supplier_catalog":
+    {"supplier_name": "Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+    Miller formulation)", "catalog_number": "Multiple (L3522 Sigma, 244520 BD)", "product_url":
+    "https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/"},
+    "notes": "Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
+    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product",
+    "synonyms": [{"synonym_text": "pancreatic digest of casein", "synonym_type": "EXACT"},
+    {"synonym_text": "casein peptone", "synonym_type": "EXACT"}]}, {"preferred_term":
+    "Yeast extract", "term": {"id": "FOODON:03315426", "label": "yeast extract"},
+    "concentration": {"value": "5.0", "unit": "G_PER_L"}, "supplier_catalog": {"supplier_name":
+    "Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani, Miller formulation)",
+    "catalog_number": "Multiple (L3522 Sigma, 244520 BD)", "product_url": "https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/"},
+    "notes": "Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids,
+    and trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation)
+    commercial product"}, {"preferred_term": "Sodium chloride", "term": {"id": "CHEBI:26710",
+    "label": "sodium chloride"}, "concentration": {"value": "10.0", "unit": "G_PER_L"},
+    "supplier_catalog": {"supplier_name": "Multiple suppliers (Difco, Sigma, etc.)
+    LB Medium (Luria-Bertani, Miller formulation)", "catalog_number": "Multiple (L3522
+    Sigma, 244520 BD)", "product_url": "https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/"},
+    "notes": "Maintains osmotic equilibrium (Miller formulation); Constituent of LB
+    Medium (Luria-Bertani, Miller formulation) commercial product", "synonyms": [{"synonym_text":
+    "NaCl", "synonym_type": "EXACT"}, {"synonym_text": "table salt", "synonym_type":
+    "EXACT"}]}], "new": "Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf\n\nSuperseded
+    historical provenance, not a current formulation claim:\nCommercial Product: LB
+    Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nPreserve
+    original preparation descriptions, but withdraw the incorrect HEAT encoding of
+    incubation: Boil and cool under CO2. Under a gentle stream of CO2 add:\nAdjust
+    pH to 7.0, distribute under N2 into appropriate vessels and sterilize.\nInoculate
+    under CO2 and incubate at 37\u00b0C.\n\nThe original supplies 920 ml water, two
+    40 ml mineral inputs and a separate 1 ml acid input. Their sum is not an explicit
+    final volume. Literal mineral percentages have no declared basis; no g/L or molarity
+    is inferred.\n\nComplete source rows determine the reconstructed formulation.
+    Archive the prior flattened nodes, unsupported LB additions and stock links in
+    append-only history. Unrelated annotations are preserved, not recertified.", "status":
+    "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "436. RUMINOCOCCUS ALBUS MEDIUM\n\n\n Tryptone                                                                       5.0         g\n
+    Yeast extract                                                                  2.0         g\n
+    Glucose                                                                        3.0         g\n
+    Cellobiose                                                                     2.0         g\n
+    Mineral solution 1                                                           40.0        ml\n
+    Mineral solution 2                                                           40.0        ml\n
+    Resazurin                                                                      1.0       mg\n
+    Distilled water                                                             920.0        ml\n\nBoil
+    and cool under CO2. Under a gentle stream of CO2 add:\n Na2CO3                                                                         4.0         g\n
+    Fatty acid mixture                                                             1.0       ml\n
+    Cysteine-HCl x H2O                                                          500.0        mg\n\nAdjust
+    pH to 7.0, distribute under N2 into appropriate vessels and sterilize.\n\nMineral
+    solution 1:\n K2HPO4                                                                         0.6        %\n\nMineral
+    solution 2:\n KH2PO4                                                                         0.6        %\n
+    (NH4)2SO4                                                                      2.0        %\n
+    NaCl                                                                           1.2        %\n
+    MgSO4 x 7 H2O                                                                0.25         %\n
+    CaCl2 x 7 H2O                                                                0.16         %\n\nFatty
+    acid mixture:\n Isobutyric acid                                                              10.0        ml\n
+    Isovaleric acid                                                              10.0        ml\n
+    2-Methylbutyric acid                                                         10.0        ml\n
+    Distilled water                                                              70.0        ml\n\nInoculate
+    under CO2 and incubate at 37\uf0b0C.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\u00a9 2007
+    DSMZ GmbH - All rights reserved"}, {"old_field": "ingredients[15].concentration",
+    "field": "notes", "old": {"value": "10.0", "unit": "G_PER_L"}, "new": "Source:
+    DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf\n\nSuperseded
+    historical provenance, not a current formulation claim:\nCommercial Product: LB
+    Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nPreserve
+    original preparation descriptions, but withdraw the incorrect HEAT encoding of
+    incubation: Boil and cool under CO2. Under a gentle stream of CO2 add:\nAdjust
+    pH to 7.0, distribute under N2 into appropriate vessels and sterilize.\nInoculate
+    under CO2 and incubate at 37\u00b0C.\n\nThe original supplies 920 ml water, two
+    40 ml mineral inputs and a separate 1 ml acid input. Their sum is not an explicit
+    final volume. Literal mineral percentages have no declared basis; no g/L or molarity
+    is inferred.\n\nComplete source rows determine the reconstructed formulation.
+    Archive the prior flattened nodes, unsupported LB additions and stock links in
+    append-only history. Unrelated annotations are preserved, not recertified.", "status":
+    "remove_unsupported", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "436. RUMINOCOCCUS ALBUS MEDIUM\n\n\n Tryptone                                                                       5.0         g\n
+    Yeast extract                                                                  2.0         g\n
+    Glucose                                                                        3.0         g\n
+    Cellobiose                                                                     2.0         g\n
+    Mineral solution 1                                                           40.0        ml\n
+    Mineral solution 2                                                           40.0        ml\n
+    Resazurin                                                                      1.0       mg\n
+    Distilled water                                                             920.0        ml\n\nBoil
+    and cool under CO2. Under a gentle stream of CO2 add:\n Na2CO3                                                                         4.0         g\n
+    Fatty acid mixture                                                             1.0       ml\n
+    Cysteine-HCl x H2O                                                          500.0        mg\n\nAdjust
+    pH to 7.0, distribute under N2 into appropriate vessels and sterilize.\n\nMineral
+    solution 1:\n K2HPO4                                                                         0.6        %\n\nMineral
+    solution 2:\n KH2PO4                                                                         0.6        %\n
+    (NH4)2SO4                                                                      2.0        %\n
+    NaCl                                                                           1.2        %\n
+    MgSO4 x 7 H2O                                                                0.25         %\n
+    CaCl2 x 7 H2O                                                                0.16         %\n\nFatty
+    acid mixture:\n Isobutyric acid                                                              10.0        ml\n
+    Isovaleric acid                                                              10.0        ml\n
+    2-Methylbutyric acid                                                         10.0        ml\n
+    Distilled water                                                              70.0        ml\n\nInoculate
+    under CO2 and incubate at 37\uf0b0C.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\u00a9 2007
+    DSMZ GmbH - All rights reserved"}, {"old_field": "ingredients[16].concentration",
+    "field": "notes", "old": {"value": "5.0", "unit": "G_PER_L"}, "new": "Source:
+    DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf\n\nSuperseded
+    historical provenance, not a current formulation claim:\nCommercial Product: LB
+    Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nPreserve
+    original preparation descriptions, but withdraw the incorrect HEAT encoding of
+    incubation: Boil and cool under CO2. Under a gentle stream of CO2 add:\nAdjust
+    pH to 7.0, distribute under N2 into appropriate vessels and sterilize.\nInoculate
+    under CO2 and incubate at 37\u00b0C.\n\nThe original supplies 920 ml water, two
+    40 ml mineral inputs and a separate 1 ml acid input. Their sum is not an explicit
+    final volume. Literal mineral percentages have no declared basis; no g/L or molarity
+    is inferred.\n\nComplete source rows determine the reconstructed formulation.
+    Archive the prior flattened nodes, unsupported LB additions and stock links in
+    append-only history. Unrelated annotations are preserved, not recertified.", "status":
+    "remove_unsupported", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "436. RUMINOCOCCUS ALBUS MEDIUM\n\n\n Tryptone                                                                       5.0         g\n
+    Yeast extract                                                                  2.0         g\n
+    Glucose                                                                        3.0         g\n
+    Cellobiose                                                                     2.0         g\n
+    Mineral solution 1                                                           40.0        ml\n
+    Mineral solution 2                                                           40.0        ml\n
+    Resazurin                                                                      1.0       mg\n
+    Distilled water                                                             920.0        ml\n\nBoil
+    and cool under CO2. Under a gentle stream of CO2 add:\n Na2CO3                                                                         4.0         g\n
+    Fatty acid mixture                                                             1.0       ml\n
+    Cysteine-HCl x H2O                                                          500.0        mg\n\nAdjust
+    pH to 7.0, distribute under N2 into appropriate vessels and sterilize.\n\nMineral
+    solution 1:\n K2HPO4                                                                         0.6        %\n\nMineral
+    solution 2:\n KH2PO4                                                                         0.6        %\n
+    (NH4)2SO4                                                                      2.0        %\n
+    NaCl                                                                           1.2        %\n
+    MgSO4 x 7 H2O                                                                0.25         %\n
+    CaCl2 x 7 H2O                                                                0.16         %\n\nFatty
+    acid mixture:\n Isobutyric acid                                                              10.0        ml\n
+    Isovaleric acid                                                              10.0        ml\n
+    2-Methylbutyric acid                                                         10.0        ml\n
+    Distilled water                                                              70.0        ml\n\nInoculate
+    under CO2 and incubate at 37\uf0b0C.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\u00a9 2007
+    DSMZ GmbH - All rights reserved"}, {"old_field": "ingredients[17].concentration",
+    "field": "notes", "old": {"value": "10.0", "unit": "G_PER_L"}, "new": "Source:
+    DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf\n\nSuperseded
+    historical provenance, not a current formulation claim:\nCommercial Product: LB
+    Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nPreserve
+    original preparation descriptions, but withdraw the incorrect HEAT encoding of
+    incubation: Boil and cool under CO2. Under a gentle stream of CO2 add:\nAdjust
+    pH to 7.0, distribute under N2 into appropriate vessels and sterilize.\nInoculate
+    under CO2 and incubate at 37\u00b0C.\n\nThe original supplies 920 ml water, two
+    40 ml mineral inputs and a separate 1 ml acid input. Their sum is not an explicit
+    final volume. Literal mineral percentages have no declared basis; no g/L or molarity
+    is inferred.\n\nComplete source rows determine the reconstructed formulation.
+    Archive the prior flattened nodes, unsupported LB additions and stock links in
+    append-only history. Unrelated annotations are preserved, not recertified.", "status":
+    "remove_unsupported", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf",
+    "snippet": "436. RUMINOCOCCUS ALBUS MEDIUM\n\n\n Tryptone                                                                       5.0         g\n
+    Yeast extract                                                                  2.0         g\n
+    Glucose                                                                        3.0         g\n
+    Cellobiose                                                                     2.0         g\n
+    Mineral solution 1                                                           40.0        ml\n
+    Mineral solution 2                                                           40.0        ml\n
+    Resazurin                                                                      1.0       mg\n
+    Distilled water                                                             920.0        ml\n\nBoil
+    and cool under CO2. Under a gentle stream of CO2 add:\n Na2CO3                                                                         4.0         g\n
+    Fatty acid mixture                                                             1.0       ml\n
+    Cysteine-HCl x H2O                                                          500.0        mg\n\nAdjust
+    pH to 7.0, distribute under N2 into appropriate vessels and sterilize.\n\nMineral
+    solution 1:\n K2HPO4                                                                         0.6        %\n\nMineral
+    solution 2:\n KH2PO4                                                                         0.6        %\n
+    (NH4)2SO4                                                                      2.0        %\n
+    NaCl                                                                           1.2        %\n
+    MgSO4 x 7 H2O                                                                0.25         %\n
+    CaCl2 x 7 H2O                                                                0.16         %\n\nFatty
+    acid mixture:\n Isobutyric acid                                                              10.0        ml\n
+    Isovaleric acid                                                              10.0        ml\n
+    2-Methylbutyric acid                                                         10.0        ml\n
+    Distilled water                                                              70.0        ml\n\nInoculate
+    under CO2 and incubate at 37\uf0b0C.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\u00a9 2007
+    DSMZ GmbH - All rights reserved"}]'
 variant_children:
-- path: data/normalized_yaml/bacterial/KOMODO_436_RUMINOCOCCUS_ALBUS_medium.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:005284
+- id: CultureMech:005284
+  path: data/normalized_yaml/bacterial/KOMODO_436_RUMINOCOCCUS_ALBUS_medium.yaml
   name: ruminococcus_albus_medium
-  notes: Same ingredient and concentration signature; KOMODO record copied from the
-    matching DSMZ medium source.
+  relationship: DERIVED_FROM
+  notes: KOMODO explicitly derives from DSMZ436 but has different displayed rates,
+    nulls and stock scopes. DERIVED_FROM does not assert exact composition or biological
+    equivalence.
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=436
+    supports: SUPPORT
+    snippet: 'Instructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf'
+    explanation: 'variant_children: KOMODO explicitly derives from DSMZ436 but has
+      different displayed rates, nulls and stock scopes. DERIVED_FROM does not assert
+      exact composition or biological equivalence. No unstated density, final volume,
+      percent basis or chemical identifier is inferred. Locator=original recipe table/text;
+      accessed=2026-10-09T06:57:11.957119+00:00; capture SHA256=28d9fc341b831df7b9779a1e04177acbf00e1c003998c16783a16c5af0cd269c.'
+solutions:
+- preferred_term: Mineral solution 1
+  name: Mineral solution 1
+  composition:
+  - preferred_term: K2HPO4
+    term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+    notes: 'Original Mineral solution 1 input: 0.6 % per preparation. Keep literal
+      percentage in source-backed notes; no w/v, w/w or v/v assignment'
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf
+      supports: SUPPORT
+      snippet: K2HPO4                                                                         0.6        %
+      explanation: |-
+        solutions[0].composition[0].preferred_term: Original Mineral solution 1 input: 0.6 % per preparation. Keep literal percentage in source-backed notes; no w/v, w/w or v/v assignment No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.Mineral solution 1[0]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+        Additional exact excerpt: K2HPO4                                                                         0.6        %
+        solutions[0].composition[0].concentration: Original Mineral solution 1 input: 0.6 % per preparation. Keep literal percentage in source-backed notes; no w/v, w/w or v/v assignment No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.Mineral solution 1[0]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+        Additional exact excerpt: K2HPO4                                                                         0.6        %
+        solutions[0].composition[0].notes: Original Mineral solution 1 input: 0.6 % per preparation. Keep literal percentage in source-backed notes; no w/v, w/w or v/v assignment No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.Mineral solution 1[0]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+    - reference: https://mediadive.dsmz.de/rest/medium/436
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 1,
+                                "compound": "K2HPO4",
+                                "compound_id": 10,
+                                "amount": 0.6,
+                                "unit": "%",
+                                "g_l": 6,
+                                "mmol_l": 34.4479,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[0].notes: The API row corroborates identity
+        and input. Its g_l and mmol_l values do not resolve the original''s final-volume
+        or percent basis. No unstated density, final volume, percent basis or chemical
+        identifier is inferred. Locator=data.solutions[1].recipe[0]; accessed=2026-10-09T06:57:20.707314+00:00;
+        capture SHA256=c78f5981062452cb25100b039398b9080295a047cd9106548ba48c4d82e2f4d2.'
+  concentration:
+    value: '0.04'
+    unit: L
+  notes: 'Original main formulation input: 40.0 ml per preparation. Source input only;
+    not final volume or percentage'
+- preferred_term: Mineral solution 2
+  name: Mineral solution 2
+  composition:
+  - preferred_term: KH2PO4
+    term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+    notes: 'Original Mineral solution 2 input: 0.6 % per preparation. Keep literal
+      percentage in source-backed notes; no w/v, w/w or v/v assignment'
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf
+      supports: SUPPORT
+      snippet: KH2PO4                                                                         0.6        %
+      explanation: |-
+        solutions[1].composition[0].preferred_term: Original Mineral solution 2 input: 0.6 % per preparation. Keep literal percentage in source-backed notes; no w/v, w/w or v/v assignment No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.Mineral solution 2[0]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+        Additional exact excerpt: KH2PO4                                                                         0.6        %
+        solutions[1].composition[0].concentration: Original Mineral solution 2 input: 0.6 % per preparation. Keep literal percentage in source-backed notes; no w/v, w/w or v/v assignment No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.Mineral solution 2[0]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+        Additional exact excerpt: KH2PO4                                                                         0.6        %
+        solutions[1].composition[0].notes: Original Mineral solution 2 input: 0.6 % per preparation. Keep literal percentage in source-backed notes; no w/v, w/w or v/v assignment No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.Mineral solution 2[0]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+    - reference: https://mediadive.dsmz.de/rest/medium/436
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 1,
+                                "compound": "KH2PO4",
+                                "compound_id": 11,
+                                "amount": 0.6,
+                                "unit": "%",
+                                "g_l": 6,
+                                "mmol_l": 44.0901,
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[0].notes: The API row corroborates identity
+        and input. Its g_l and mmol_l values do not resolve the original''s final-volume
+        or percent basis. No unstated density, final volume, percent basis or chemical
+        identifier is inferred. Locator=data.solutions[2].recipe[0]; accessed=2026-10-09T06:57:20.707314+00:00;
+        capture SHA256=c78f5981062452cb25100b039398b9080295a047cd9106548ba48c4d82e2f4d2.'
+  - preferred_term: (NH4)2SO4
+    term:
+      id: CHEBI:62946
+      label: ammonium sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:62946
+      label: ammonium sulfate
+    notes: 'Original Mineral solution 2 input: 2.0 % per preparation. Keep literal
+      percentage in source-backed notes; no w/v, w/w or v/v assignment'
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf
+      supports: SUPPORT
+      snippet: (NH4)2SO4                                                                      2.0        %
+      explanation: |-
+        solutions[1].composition[1].preferred_term: Original Mineral solution 2 input: 2.0 % per preparation. Keep literal percentage in source-backed notes; no w/v, w/w or v/v assignment No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.Mineral solution 2[1]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+        Additional exact excerpt: (NH4)2SO4                                                                      2.0        %
+        solutions[1].composition[1].concentration: Original Mineral solution 2 input: 2.0 % per preparation. Keep literal percentage in source-backed notes; no w/v, w/w or v/v assignment No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.Mineral solution 2[1]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+        Additional exact excerpt: (NH4)2SO4                                                                      2.0        %
+        solutions[1].composition[1].notes: Original Mineral solution 2 input: 2.0 % per preparation. Keep literal percentage in source-backed notes; no w/v, w/w or v/v assignment No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.Mineral solution 2[1]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+    - reference: https://mediadive.dsmz.de/rest/medium/436
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 2,
+                                "compound": "(NH4)2SO4",
+                                "compound_id": 27,
+                                "amount": 2,
+                                "unit": "%",
+                                "g_l": 20,
+                                "mmol_l": 151.355,
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[1].notes: The API row corroborates identity
+        and input. Its g_l and mmol_l values do not resolve the original''s final-volume
+        or percent basis. No unstated density, final volume, percent basis or chemical
+        identifier is inferred. Locator=data.solutions[2].recipe[1]; accessed=2026-10-09T06:57:20.707314+00:00;
+        capture SHA256=c78f5981062452cb25100b039398b9080295a047cd9106548ba48c4d82e2f4d2.'
+  - preferred_term: NaCl
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+    notes: 'Original Mineral solution 2 input: 1.2 % per preparation. Keep literal
+      percentage in source-backed notes; no w/v, w/w or v/v assignment'
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf
+      supports: SUPPORT
+      snippet: NaCl                                                                           1.2        %
+      explanation: |-
+        solutions[1].composition[2].preferred_term: Original Mineral solution 2 input: 1.2 % per preparation. Keep literal percentage in source-backed notes; no w/v, w/w or v/v assignment No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.Mineral solution 2[2]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+        Additional exact excerpt: NaCl                                                                           1.2        %
+        solutions[1].composition[2].concentration: Original Mineral solution 2 input: 1.2 % per preparation. Keep literal percentage in source-backed notes; no w/v, w/w or v/v assignment No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.Mineral solution 2[2]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+        Additional exact excerpt: NaCl                                                                           1.2        %
+        solutions[1].composition[2].notes: Original Mineral solution 2 input: 1.2 % per preparation. Keep literal percentage in source-backed notes; no w/v, w/w or v/v assignment No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.Mineral solution 2[2]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+    - reference: https://mediadive.dsmz.de/rest/medium/436
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 3,
+                                "compound": "NaCl",
+                                "compound_id": 43,
+                                "amount": 1.2,
+                                "unit": "%",
+                                "g_l": 12,
+                                "mmol_l": 205.339,
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[2].notes: The API row corroborates identity
+        and input. Its g_l and mmol_l values do not resolve the original''s final-volume
+        or percent basis. No unstated density, final volume, percent basis or chemical
+        identifier is inferred. Locator=data.solutions[2].recipe[2]; accessed=2026-10-09T06:57:20.707314+00:00;
+        capture SHA256=c78f5981062452cb25100b039398b9080295a047cd9106548ba48c4d82e2f4d2.'
+  - preferred_term: MgSO4 x 7 H2O
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    notes: 'Original Mineral solution 2 input: 0.25 % per preparation. Keep literal
+      percentage in source-backed notes; no w/v, w/w or v/v assignment'
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf
+      supports: SUPPORT
+      snippet: MgSO4 x 7 H2O                                                                0.25         %
+      explanation: |-
+        solutions[1].composition[3].preferred_term: Original Mineral solution 2 input: 0.25 % per preparation. Keep literal percentage in source-backed notes; no w/v, w/w or v/v assignment No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.Mineral solution 2[3]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+        Additional exact excerpt: MgSO4 x 7 H2O                                                                0.25         %
+        solutions[1].composition[3].concentration: Original Mineral solution 2 input: 0.25 % per preparation. Keep literal percentage in source-backed notes; no w/v, w/w or v/v assignment No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.Mineral solution 2[3]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+        Additional exact excerpt: MgSO4 x 7 H2O                                                                0.25         %
+        solutions[1].composition[3].notes: Original Mineral solution 2 input: 0.25 % per preparation. Keep literal percentage in source-backed notes; no w/v, w/w or v/v assignment No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.Mineral solution 2[3]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+    - reference: https://mediadive.dsmz.de/rest/medium/436
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 4,
+                                "compound": "MgSO4 x 7 H2O",
+                                "compound_id": 8,
+                                "amount": 0.25,
+                                "unit": "%",
+                                "g_l": 2.5,
+                                "mmol_l": 10.143,
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[3].notes: The API row corroborates identity
+        and input. Its g_l and mmol_l values do not resolve the original''s final-volume
+        or percent basis. No unstated density, final volume, percent basis or chemical
+        identifier is inferred. Locator=data.solutions[2].recipe[3]; accessed=2026-10-09T06:57:20.707314+00:00;
+        capture SHA256=c78f5981062452cb25100b039398b9080295a047cd9106548ba48c4d82e2f4d2.'
+  - preferred_term: CaCl2 x 7 H2O
+    term:
+      id: CHEBI:3312
+      label: calcium dichloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:3312
+      label: calcium dichloride
+    notes: 'Original Mineral solution 2 input: 0.16 % per preparation. Keep literal
+      percentage in source-backed notes; no w/v, w/w or v/v assignment'
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf
+      supports: SUPPORT
+      snippet: CaCl2 x 7 H2O                                                                0.16         %
+      explanation: |-
+        solutions[1].composition[4].preferred_term: Original Mineral solution 2 input: 0.16 % per preparation. Keep literal percentage in source-backed notes; no w/v, w/w or v/v assignment No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.Mineral solution 2[4]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+        Additional exact excerpt: CaCl2 x 7 H2O                                                                0.16         %
+        solutions[1].composition[4].concentration: Original Mineral solution 2 input: 0.16 % per preparation. Keep literal percentage in source-backed notes; no w/v, w/w or v/v assignment No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.Mineral solution 2[4]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+        Additional exact excerpt: CaCl2 x 7 H2O                                                                0.16         %
+        solutions[1].composition[4].notes: Original Mineral solution 2 input: 0.16 % per preparation. Keep literal percentage in source-backed notes; no w/v, w/w or v/v assignment No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.Mineral solution 2[4]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+    - reference: https://mediadive.dsmz.de/rest/medium/436
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 5,
+                                "compound": "CaCl2 x 7 H2O",
+                                "compound_id": 479,
+                                "amount": 0.16,
+                                "unit": "%",
+                                "g_l": 1.6,
+                                "mmol_l": 14.4166,
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[4].notes: The API row corroborates identity
+        and input. Its g_l and mmol_l values do not resolve the original''s final-volume
+        or percent basis. No unstated density, final volume, percent basis or chemical
+        identifier is inferred. Locator=data.solutions[2].recipe[4]; accessed=2026-10-09T06:57:20.707314+00:00;
+        capture SHA256=c78f5981062452cb25100b039398b9080295a047cd9106548ba48c4d82e2f4d2.'
+  concentration:
+    value: '0.04'
+    unit: L
+  notes: 'Original main formulation input: 40.0 ml per preparation. Source input only;
+    not final volume or percentage'
+- preferred_term: Fatty acid mixture
+  name: Fatty acid mixture
+  composition:
+  - preferred_term: Isobutyric acid
+    term:
+      id: CHEBI:16135
+      label: isobutyric acid
+    concentration:
+      value: '0.01'
+      unit: L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:16135
+      label: isobutyric acid
+    notes: 'Original Fatty acid mixture input: 10.0 ml per preparation. Source input
+      only; not final volume or percentage'
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf
+      supports: SUPPORT
+      snippet: Isobutyric acid                                                              10.0        ml
+      explanation: |-
+        solutions[2].composition[0].preferred_term: Original Fatty acid mixture input: 10.0 ml per preparation. Source input only; not final volume or percentage No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.Fatty acid mixture[0]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+        Additional exact excerpt: Isobutyric acid                                                              10.0        ml
+        solutions[2].composition[0].concentration: Original Fatty acid mixture input: 10.0 ml per preparation. Source input only; not final volume or percentage No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.Fatty acid mixture[0]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+        Additional exact excerpt: Isobutyric acid                                                              10.0        ml
+        solutions[2].composition[0].notes: Original Fatty acid mixture input: 10.0 ml per preparation. Source input only; not final volume or percentage No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.Fatty acid mixture[0]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+    - reference: https://mediadive.dsmz.de/rest/medium/436
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 1,
+                                "compound": "Isobutyric acid",
+                                "compound_id": 222,
+                                "amount": 10,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+      explanation: 'solutions[2].composition[0].notes: The API row corroborates identity
+        and input. Its g_l and mmol_l values do not resolve the original''s final-volume
+        or percent basis. No unstated density, final volume, percent basis or chemical
+        identifier is inferred. Locator=data.solutions[3].recipe[0]; accessed=2026-10-09T06:57:20.707314+00:00;
+        capture SHA256=c78f5981062452cb25100b039398b9080295a047cd9106548ba48c4d82e2f4d2.'
+  - preferred_term: Isovaleric acid
+    term:
+      id: CHEBI:28484
+      label: isovaleric acid
+    concentration:
+      value: '0.01'
+      unit: L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:28484
+      label: isovaleric acid
+    notes: 'Original Fatty acid mixture input: 10.0 ml per preparation. Source input
+      only; not final volume or percentage'
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf
+      supports: SUPPORT
+      snippet: Isovaleric acid                                                              10.0        ml
+      explanation: |-
+        solutions[2].composition[1].preferred_term: Original Fatty acid mixture input: 10.0 ml per preparation. Source input only; not final volume or percentage No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.Fatty acid mixture[1]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+        Additional exact excerpt: Isovaleric acid                                                              10.0        ml
+        solutions[2].composition[1].concentration: Original Fatty acid mixture input: 10.0 ml per preparation. Source input only; not final volume or percentage No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.Fatty acid mixture[1]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+        Additional exact excerpt: Isovaleric acid                                                              10.0        ml
+        solutions[2].composition[1].notes: Original Fatty acid mixture input: 10.0 ml per preparation. Source input only; not final volume or percentage No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.Fatty acid mixture[1]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+    - reference: https://mediadive.dsmz.de/rest/medium/436
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 2,
+                                "compound": "Isovaleric acid",
+                                "compound_id": 225,
+                                "amount": 10,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+      explanation: 'solutions[2].composition[1].notes: The API row corroborates identity
+        and input. Its g_l and mmol_l values do not resolve the original''s final-volume
+        or percent basis. No unstated density, final volume, percent basis or chemical
+        identifier is inferred. Locator=data.solutions[3].recipe[1]; accessed=2026-10-09T06:57:20.707314+00:00;
+        capture SHA256=c78f5981062452cb25100b039398b9080295a047cd9106548ba48c4d82e2f4d2.'
+  - preferred_term: 2-Methylbutyric acid
+    concentration:
+      value: '0.01'
+      unit: L
+    notes: 'Original Fatty acid mixture input: 10.0 ml per preparation. Source input
+      only; not final volume or percentage'
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf
+      supports: SUPPORT
+      snippet: 2-Methylbutyric acid                                                         10.0        ml
+      explanation: |-
+        solutions[2].composition[2].preferred_term: Original Fatty acid mixture input: 10.0 ml per preparation. Source input only; not final volume or percentage No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.Fatty acid mixture[2]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+        Additional exact excerpt: 2-Methylbutyric acid                                                         10.0        ml
+        solutions[2].composition[2].concentration: Original Fatty acid mixture input: 10.0 ml per preparation. Source input only; not final volume or percentage No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.Fatty acid mixture[2]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+        Additional exact excerpt: 2-Methylbutyric acid                                                         10.0        ml
+        solutions[2].composition[2].notes: Original Fatty acid mixture input: 10.0 ml per preparation. Source input only; not final volume or percentage No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.Fatty acid mixture[2]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+    - reference: https://mediadive.dsmz.de/rest/medium/436
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 3,
+                                "compound": "2-Methylbutyric acid",
+                                "compound_id": 480,
+                                "amount": 10,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+      explanation: 'solutions[2].composition[2].notes: The API row corroborates identity
+        and input. Its g_l and mmol_l values do not resolve the original''s final-volume
+        or percent basis. No unstated density, final volume, percent basis or chemical
+        identifier is inferred. Locator=data.solutions[3].recipe[2]; accessed=2026-10-09T06:57:20.707314+00:00;
+        capture SHA256=c78f5981062452cb25100b039398b9080295a047cd9106548ba48c4d82e2f4d2.'
+  - preferred_term: Distilled water
+    concentration:
+      value: '0.07'
+      unit: L
+    notes: 'Original Fatty acid mixture input: 70.0 ml per preparation. Source input
+      only; not final volume or percentage'
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf
+      supports: SUPPORT
+      snippet: Distilled water                                                              70.0        ml
+      explanation: |-
+        solutions[2].composition[3].preferred_term: Original Fatty acid mixture input: 70.0 ml per preparation. Source input only; not final volume or percentage No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.Fatty acid mixture[3]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+        Additional exact excerpt: Distilled water                                                              70.0        ml
+        solutions[2].composition[3].concentration: Original Fatty acid mixture input: 70.0 ml per preparation. Source input only; not final volume or percentage No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.Fatty acid mixture[3]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+        Additional exact excerpt: Distilled water                                                              70.0        ml
+        solutions[2].composition[3].notes: Original Fatty acid mixture input: 70.0 ml per preparation. Source input only; not final volume or percentage No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.Fatty acid mixture[3]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+    - reference: https://mediadive.dsmz.de/rest/medium/436
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 4,
+                                "compound": "Distilled water",
+                                "compound_id": 4,
+                                "amount": 70,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+      explanation: 'solutions[2].composition[3].notes: The API row corroborates identity
+        and input. Its g_l and mmol_l values do not resolve the original''s final-volume
+        or percent basis. No unstated density, final volume, percent basis or chemical
+        identifier is inferred. Locator=data.solutions[3].recipe[3]; accessed=2026-10-09T06:57:20.707314+00:00;
+        capture SHA256=c78f5981062452cb25100b039398b9080295a047cd9106548ba48c4d82e2f4d2.'
+  concentration:
+    value: '0.001'
+    unit: L
+  notes: 'Original main formulation input: 1.0 ml per preparation. Source input only;
+    not final volume or percentage'
+evidence:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf
+  supports: SUPPORT
+  snippet: Mineral solution 1                                                           40.0        ml
+  explanation: |-
+    solutions[0].preferred_term: Original main formulation input: 40.0 ml per preparation. Source input only; not final volume or percentage No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.main formulation[4]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+    Additional exact excerpt: Mineral solution 1                                                           40.0        ml
+    solutions[0].concentration: Original main formulation input: 40.0 ml per preparation. Source input only; not final volume or percentage No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.main formulation[4]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+    Additional exact excerpt: Mineral solution 1                                                           40.0        ml
+    solutions[0].notes: Original main formulation input: 40.0 ml per preparation. Source input only; not final volume or percentage No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.main formulation[4]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+    Additional exact excerpt: Mineral solution 1                                                           40.0        ml
+    solutions[0].name: Original main formulation input: 40.0 ml per preparation. Source input only; not final volume or percentage No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.main formulation[4]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+    Additional exact excerpt: Mineral solution 2                                                           40.0        ml
+    solutions[1].preferred_term: Original main formulation input: 40.0 ml per preparation. Source input only; not final volume or percentage No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.main formulation[5]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+    Additional exact excerpt: Mineral solution 2                                                           40.0        ml
+    solutions[1].concentration: Original main formulation input: 40.0 ml per preparation. Source input only; not final volume or percentage No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.main formulation[5]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+    Additional exact excerpt: Mineral solution 2                                                           40.0        ml
+    solutions[1].notes: Original main formulation input: 40.0 ml per preparation. Source input only; not final volume or percentage No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.main formulation[5]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+    Additional exact excerpt: Mineral solution 2                                                           40.0        ml
+    solutions[1].name: Original main formulation input: 40.0 ml per preparation. Source input only; not final volume or percentage No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.main formulation[5]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+    Additional exact excerpt: Fatty acid mixture                                                             1.0       ml
+    solutions[2].preferred_term: Original main formulation input: 1.0 ml per preparation. Source input only; not final volume or percentage No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.main formulation[9]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+    Additional exact excerpt: Fatty acid mixture                                                             1.0       ml
+    solutions[2].concentration: Original main formulation input: 1.0 ml per preparation. Source input only; not final volume or percentage No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.main formulation[9]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+    Additional exact excerpt: Fatty acid mixture                                                             1.0       ml
+    solutions[2].notes: Original main formulation input: 1.0 ml per preparation. Source input only; not final volume or percentage No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.main formulation[9]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+    Additional exact excerpt: Fatty acid mixture                                                             1.0       ml
+    solutions[2].name: Original main formulation input: 1.0 ml per preparation. Source input only; not final volume or percentage No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=page 1.main formulation[9]; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+    Additional exact excerpt: 436. RUMINOCOCCUS ALBUS MEDIUM
+
+
+     Tryptone                                                                       5.0         g
+     Yeast extract                                                                  2.0         g
+     Glucose                                                                        3.0         g
+     Cellobiose                                                                     2.0         g
+     Mineral solution 1                                                           40.0        ml
+     Mineral solution 2                                                           40.0        ml
+     Resazurin                                                                      1.0       mg
+     Distilled water                                                             920.0        ml
+
+    Boil and cool under CO2. Under a gentle stream of CO2 add:
+     Na2CO3                                                                         4.0         g
+     Fatty acid mixture                                                             1.0       ml
+     Cysteine-HCl x H2O                                                          500.0        mg
+
+    Adjust pH to 7.0, distribute under N2 into appropriate vessels and sterilize.
+
+    Mineral solution 1:
+     K2HPO4                                                                         0.6        %
+
+    Mineral solution 2:
+     KH2PO4                                                                         0.6        %
+     (NH4)2SO4                                                                      2.0        %
+     NaCl                                                                           1.2        %
+     MgSO4 x 7 H2O                                                                0.25         %
+     CaCl2 x 7 H2O                                                                0.16         %
+
+    Fatty acid mixture:
+     Isobutyric acid                                                              10.0        ml
+     Isovaleric acid                                                              10.0        ml
+     2-Methylbutyric acid                                                         10.0        ml
+     Distilled water                                                              70.0        ml
+    notes: The original supplies 920 ml water, two 40 ml mineral inputs and a separate 1 ml acid input. Their sum is not an explicit final volume. Literal mineral percentages have no declared basis; no g/L or molarity is inferred. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+    Additional exact excerpt: 436. RUMINOCOCCUS ALBUS MEDIUM
+
+
+     Tryptone                                                                       5.0         g
+     Yeast extract                                                                  2.0         g
+     Glucose                                                                        3.0         g
+     Cellobiose                                                                     2.0         g
+     Mineral solution 1                                                           40.0        ml
+     Mineral solution 2                                                           40.0        ml
+     Resazurin                                                                      1.0       mg
+     Distilled water                                                             920.0        ml
+
+    Boil and cool under CO2. Under a gentle stream of CO2 add:
+     Na2CO3                                                                         4.0         g
+     Fatty acid mixture                                                             1.0       ml
+     Cysteine-HCl x H2O                                                          500.0        mg
+
+    Adjust pH to 7.0, distribute under N2 into appropriate vessels and sterilize.
+
+    Mineral solution 1:
+     K2HPO4                                                                         0.6        %
+
+    Mineral solution 2:
+     KH2PO4                                                                         0.6        %
+     (NH4)2SO4                                                                      2.0        %
+     NaCl                                                                           1.2        %
+     MgSO4 x 7 H2O                                                                0.25         %
+     CaCl2 x 7 H2O                                                                0.16         %
+
+    Fatty acid mixture:
+     Isobutyric acid                                                              10.0        ml
+     Isovaleric acid                                                              10.0        ml
+     2-Methylbutyric acid                                                         10.0        ml
+     Distilled water                                                              70.0        ml
+
+    Inoculate under CO2 and incubate at 37C.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    © 2007 DSMZ GmbH - All rights reserved
+    notes: Complete source rows determine the reconstructed formulation. Archive the prior flattened nodes, unsupported LB additions and stock links in append-only history. Unrelated annotations are preserved, not recertified. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+    Additional exact excerpt: 436. RUMINOCOCCUS ALBUS MEDIUM
+
+
+     Tryptone                                                                       5.0         g
+     Yeast extract                                                                  2.0         g
+     Glucose                                                                        3.0         g
+     Cellobiose                                                                     2.0         g
+     Mineral solution 1                                                           40.0        ml
+     Mineral solution 2                                                           40.0        ml
+     Resazurin                                                                      1.0       mg
+     Distilled water                                                             920.0        ml
+
+    Boil and cool under CO2. Under a gentle stream of CO2 add:
+     Na2CO3                                                                         4.0         g
+     Fatty acid mixture                                                             1.0       ml
+     Cysteine-HCl x H2O                                                          500.0        mg
+
+    Adjust pH to 7.0, distribute under N2 into appropriate vessels and sterilize.
+
+    Mineral solution 1:
+     K2HPO4                                                                         0.6        %
+
+    Mineral solution 2:
+     KH2PO4                                                                         0.6        %
+     (NH4)2SO4                                                                      2.0        %
+     NaCl                                                                           1.2        %
+     MgSO4 x 7 H2O                                                                0.25         %
+     CaCl2 x 7 H2O                                                                0.16         %
+
+    Fatty acid mixture:
+     Isobutyric acid                                                              10.0        ml
+     Isovaleric acid                                                              10.0        ml
+     2-Methylbutyric acid                                                         10.0        ml
+     Distilled water                                                              70.0        ml
+
+    Inoculate under CO2 and incubate at 37C.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    © 2007 DSMZ GmbH - All rights reserved
+    notes: This old amount belongs to an unsupported LB addition, placeholder, or relocated source stage. Archive it without retaining a false concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+    Additional exact excerpt: 436. RUMINOCOCCUS ALBUS MEDIUM
+
+
+     Tryptone                                                                       5.0         g
+     Yeast extract                                                                  2.0         g
+     Glucose                                                                        3.0         g
+     Cellobiose                                                                     2.0         g
+     Mineral solution 1                                                           40.0        ml
+     Mineral solution 2                                                           40.0        ml
+     Resazurin                                                                      1.0       mg
+     Distilled water                                                             920.0        ml
+
+    Boil and cool under CO2. Under a gentle stream of CO2 add:
+     Na2CO3                                                                         4.0         g
+     Fatty acid mixture                                                             1.0       ml
+     Cysteine-HCl x H2O                                                          500.0        mg
+
+    Adjust pH to 7.0, distribute under N2 into appropriate vessels and sterilize.
+
+    Mineral solution 1:
+     K2HPO4                                                                         0.6        %
+
+    Mineral solution 2:
+     KH2PO4                                                                         0.6        %
+     (NH4)2SO4                                                                      2.0        %
+     NaCl                                                                           1.2        %
+     MgSO4 x 7 H2O                                                                0.25         %
+     CaCl2 x 7 H2O                                                                0.16         %
+
+    Fatty acid mixture:
+     Isobutyric acid                                                              10.0        ml
+     Isovaleric acid                                                              10.0        ml
+     2-Methylbutyric acid                                                         10.0        ml
+     Distilled water                                                              70.0        ml
+
+    Inoculate under CO2 and incubate at 37C.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    © 2007 DSMZ GmbH - All rights reserved
+    notes: This old amount belongs to an unsupported LB addition, placeholder, or relocated source stage. Archive it without retaining a false concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+
+    Additional exact excerpt: 436. RUMINOCOCCUS ALBUS MEDIUM
+
+
+     Tryptone                                                                       5.0         g
+     Yeast extract                                                                  2.0         g
+     Glucose                                                                        3.0         g
+     Cellobiose                                                                     2.0         g
+     Mineral solution 1                                                           40.0        ml
+     Mineral solution 2                                                           40.0        ml
+     Resazurin                                                                      1.0       mg
+     Distilled water                                                             920.0        ml
+
+    Boil and cool under CO2. Under a gentle stream of CO2 add:
+     Na2CO3                                                                         4.0         g
+     Fatty acid mixture                                                             1.0       ml
+     Cysteine-HCl x H2O                                                          500.0        mg
+
+    Adjust pH to 7.0, distribute under N2 into appropriate vessels and sterilize.
+
+    Mineral solution 1:
+     K2HPO4                                                                         0.6        %
+
+    Mineral solution 2:
+     KH2PO4                                                                         0.6        %
+     (NH4)2SO4                                                                      2.0        %
+     NaCl                                                                           1.2        %
+     MgSO4 x 7 H2O                                                                0.25         %
+     CaCl2 x 7 H2O                                                                0.16         %
+
+    Fatty acid mixture:
+     Isobutyric acid                                                              10.0        ml
+     Isovaleric acid                                                              10.0        ml
+     2-Methylbutyric acid                                                         10.0        ml
+     Distilled water                                                              70.0        ml
+
+    Inoculate under CO2 and incubate at 37C.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    © 2007 DSMZ GmbH - All rights reserved
+    notes: This old amount belongs to an unsupported LB addition, placeholder, or relocated source stage. Archive it without retaining a false concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T06:57:08.331410+00:00; capture SHA256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+- reference: https://mediadive.dsmz.de/rest/medium/436
+  supports: SUPPORT
+  snippet: |-
+    {
+                            "recipe_order": 5,
+                            "solution": "Mineral solution 1",
+                            "solution_id": 883,
+                            "amount": 40,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+  explanation: |-
+    solutions[0].notes: The API row corroborates identity and input. Its g_l and mmol_l values do not resolve the original's final-volume or percent basis. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[4]; accessed=2026-10-09T06:57:20.707314+00:00; capture SHA256=c78f5981062452cb25100b039398b9080295a047cd9106548ba48c4d82e2f4d2.
+
+    Additional exact excerpt: {
+                            "recipe_order": 6,
+                            "solution": "Mineral solution 2",
+                            "solution_id": 884,
+                            "amount": 40,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+    solutions[1].notes: The API row corroborates identity and input. Its g_l and mmol_l values do not resolve the original's final-volume or percent basis. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[5]; accessed=2026-10-09T06:57:20.707314+00:00; capture SHA256=c78f5981062452cb25100b039398b9080295a047cd9106548ba48c4d82e2f4d2.
+
+    Additional exact excerpt: {
+                            "recipe_order": 10,
+                            "solution": "Fatty acid mixture",
+                            "solution_id": 885,
+                            "amount": 1,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+    solutions[2].notes: The API row corroborates identity and input. Its g_l and mmol_l values do not resolve the original's final-volume or percent basis. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[9]; accessed=2026-10-09T06:57:20.707314+00:00; capture SHA256=c78f5981062452cb25100b039398b9080295a047cd9106548ba48c4d82e2f4d2.
+
+    Additional exact excerpt: [
+                {
+                    "id": 882,
+                    "name": "Main sol. 436",
+                    "volume": 1000,
+                    "recipe": [
+                        {
+                            "recipe_order": 1,
+                            "compound": "Tryptone",
+                            "compound_id": 71,
+                            "amount": 5,
+                            "unit": "g",
+                            "g_l": 5,
+                            "mmol_l": 70.3433,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 2,
+                            "compound": "Yeast extract",
+                            "compound_id": 16,
+                            "amount": 2,
+                            "unit": "g",
+                            "g_l": 2,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 3,
+                            "compound": "Glucose",
+                            "compound_id": 5,
+                            "amount": 3,
+                            "unit": "g",
+                            "g_l": 3,
+                            "mmol_l": 16.6519,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 4,
+                            "compound": "Cellobiose",
+                            "compound_id": 214,
+                            "amount": 2,
+                            "unit": "g",
+                            "g_l": 2,
+                            "mmol_l": 5.84283,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 5,
+                            "solution": "Mineral solution 1",
+                            "solution_id": 883,
+                            "amount": 40,
+                            "unit": "ml",
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 6,
+                            "solution": "Mineral solution 2",
+                            "solution_id": 884,
+                            "amount": 40,
+                            "unit": "ml",
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 7,
+                            "compound": "Resazurin",
+                            "compound_id": 25,
+                            "amount": 1,
+                            "unit": "mg",
+                            "g_l": 0.001,
+                            "mmol_l": 0.00436319,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 8,
+                            "compound": "Distilled water",
+                            "compound_id": 4,
+                            "amount": 920,
+                            "unit": "ml",
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 9,
+                            "compound": "Na2CO3",
+                            "compound_id": 32,
+                            "amount": 4,
+                            "unit": "g",
+                            "g_l": 4,
+                            "mmol_l": 37.7401,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 10,
+                            "solution": "Fatty acid mixture",
+                            "solution_id": 885,
+                            "amount": 1,
+                            "unit": "ml",
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 11,
+                            "compound": "L-Cysteine HCl x H2O",
+                            "compound_id": 770,
+                            "amount": 500,
+                            "unit": "mg",
+                            "g_l": 0.5,
+                            "mmol_l": 2.8468,
+                            "optional": 0
+                        }
+                    ],
+                    "steps": [
+                        {
+                            "recipe_order": 9,
+                            "step": "Boil and cool under CO2. Under a gentle stream of CO2 add: "
+                        },
+                        {
+                            "step": "Adjust pH to 7.0, distribute under N2 into appropriate vessels and sterilize."
+                        }
+                    ],
+                    "equipment": {
+                        "5069": "Autoclave",
+                        "5070": "Hungate tubes",
+                        "5071": "Gassing station"
+                    }
+                },
+                {
+                    "id": 883,
+                    "name": "Mineral solution 1",
+                    "volume": 100,
+                    "recipe": [
+                        {
+                            "recipe_order": 1,
+                            "compound": "K2HPO4",
+                            "compound_id": 10,
+                            "amount": 0.6,
+                            "unit": "%",
+                            "g_l": 6,
+                            "mmol_l": 34.4479,
+                            "optional": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 884,
+                    "name": "Mineral solution 2",
+                    "volume": 100,
+                    "recipe": [
+                        {
+                            "recipe_order": 1,
+                            "compound": "KH2PO4",
+                            "compound_id": 11,
+                            "amount": 0.6,
+                            "unit": "%",
+                            "g_l": 6,
+                            "mmol_l": 44.0901,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 2,
+                            "compound": "(NH4)2SO4",
+                            "compound_id": 27,
+                            "amount": 2,
+                            "unit": "%",
+                            "g_l": 20,
+                            "mmol_l": 151.355,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 3,
+                            "compound": "NaCl",
+                            "compound_id": 43,
+                            "amount": 1.2,
+                            "unit": "%",
+                            "g_l": 12,
+                            "mmol_l": 205.339,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 4,
+                            "compound": "MgSO4 x 7 H2O",
+                            "compound_id": 8,
+                            "amount": 0.25,
+                            "unit": "%",
+                            "g_l": 2.5,
+                            "mmol_l": 10.143,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 5,
+                            "compound": "CaCl2 x 7 H2O",
+                            "compound_id": 479,
+                            "amount": 0.16,
+                            "unit": "%",
+                            "g_l": 1.6,
+                            "mmol_l": 14.4166,
+                            "optional": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 885,
+                    "name": "Fatty acid mixture",
+                    "volume": 100,
+                    "recipe": [
+                        {
+                            "recipe_order": 1,
+                            "compound": "Isobutyric acid",
+                            "compound_id": 222,
+                            "amount": 10,
+                            "unit": "ml",
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 2,
+                            "compound": "Isovaleric acid",
+                            "compound_id": 225,
+                            "amount": 10,
+                            "unit": "ml",
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 3,
+                            "compound": "2-Methylbutyric acid",
+                            "compound_id": 480,
+                            "amount": 10,
+                            "unit": "ml",
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 4,
+                            "compound": "Distilled water",
+                            "compound_id": 4,
+                            "amount": 70,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+                    ],
+                    "steps": [
+                        {
+                            "step": "Inoculate under CO2 and incubate at 37\u00b0C."
+                        }
+                    ]
+                }
+            ]
+    notes: Preserve original preparation descriptions, but withdraw the incorrect HEAT encoding of incubation: Boil and cool under CO2. Under a gentle stream of CO2 add:
+    Adjust pH to 7.0, distribute under N2 into appropriate vessels and sterilize.
+    Inoculate under CO2 and incubate at 37°C. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T06:57:20.707314+00:00; capture SHA256=c78f5981062452cb25100b039398b9080295a047cd9106548ba48c4d82e2f4d2.
+
+    Additional exact excerpt: [
+                {
+                    "id": 882,
+                    "name": "Main sol. 436",
+                    "volume": 1000,
+                    "recipe": [
+                        {
+                            "recipe_order": 1,
+                            "compound": "Tryptone",
+                            "compound_id": 71,
+                            "amount": 5,
+                            "unit": "g",
+                            "g_l": 5,
+                            "mmol_l": 70.3433,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 2,
+                            "compound": "Yeast extract",
+                            "compound_id": 16,
+                            "amount": 2,
+                            "unit": "g",
+                            "g_l": 2,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 3,
+                            "compound": "Glucose",
+                            "compound_id": 5,
+                            "amount": 3,
+                            "unit": "g",
+                            "g_l": 3,
+                            "mmol_l": 16.6519,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 4,
+                            "compound": "Cellobiose",
+                            "compound_id": 214,
+                            "amount": 2,
+                            "unit": "g",
+                            "g_l": 2,
+                            "mmol_l": 5.84283,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 5,
+                            "solution": "Mineral solution 1",
+                            "solution_id": 883,
+                            "amount": 40,
+                            "unit": "ml",
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 6,
+                            "solution": "Mineral solution 2",
+                            "solution_id": 884,
+                            "amount": 40,
+                            "unit": "ml",
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 7,
+                            "compound": "Resazurin",
+                            "compound_id": 25,
+                            "amount": 1,
+                            "unit": "mg",
+                            "g_l": 0.001,
+                            "mmol_l": 0.00436319,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 8,
+                            "compound": "Distilled water",
+                            "compound_id": 4,
+                            "amount": 920,
+                            "unit": "ml",
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 9,
+                            "compound": "Na2CO3",
+                            "compound_id": 32,
+                            "amount": 4,
+                            "unit": "g",
+                            "g_l": 4,
+                            "mmol_l": 37.7401,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 10,
+                            "solution": "Fatty acid mixture",
+                            "solution_id": 885,
+                            "amount": 1,
+                            "unit": "ml",
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 11,
+                            "compound": "L-Cysteine HCl x H2O",
+                            "compound_id": 770,
+                            "amount": 500,
+                            "unit": "mg",
+                            "g_l": 0.5,
+                            "mmol_l": 2.8468,
+                            "optional": 0
+                        }
+                    ],
+                    "steps": [
+                        {
+                            "recipe_order": 9,
+                            "step": "Boil and cool under CO2. Under a gentle stream of CO2 add: "
+                        },
+                        {
+                            "step": "Adjust pH to 7.0, distribute under N2 into appropriate vessels and sterilize."
+                        }
+                    ],
+                    "equipment": {
+                        "5069": "Autoclave",
+                        "5070": "Hungate tubes",
+                        "5071": "Gassing station"
+                    }
+                },
+                {
+                    "id": 883,
+                    "name": "Mineral solution 1",
+                    "volume": 100,
+                    "recipe": [
+                        {
+                            "recipe_order": 1,
+                            "compound": "K2HPO4",
+                            "compound_id": 10,
+                            "amount": 0.6,
+                            "unit": "%",
+                            "g_l": 6,
+                            "mmol_l": 34.4479,
+                            "optional": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 884,
+                    "name": "Mineral solution 2",
+                    "volume": 100,
+                    "recipe": [
+                        {
+                            "recipe_order": 1,
+                            "compound": "KH2PO4",
+                            "compound_id": 11,
+                            "amount": 0.6,
+                            "unit": "%",
+                            "g_l": 6,
+                            "mmol_l": 44.0901,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 2,
+                            "compound": "(NH4)2SO4",
+                            "compound_id": 27,
+                            "amount": 2,
+                            "unit": "%",
+                            "g_l": 20,
+                            "mmol_l": 151.355,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 3,
+                            "compound": "NaCl",
+                            "compound_id": 43,
+                            "amount": 1.2,
+                            "unit": "%",
+                            "g_l": 12,
+                            "mmol_l": 205.339,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 4,
+                            "compound": "MgSO4 x 7 H2O",
+                            "compound_id": 8,
+                            "amount": 0.25,
+                            "unit": "%",
+                            "g_l": 2.5,
+                            "mmol_l": 10.143,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 5,
+                            "compound": "CaCl2 x 7 H2O",
+                            "compound_id": 479,
+                            "amount": 0.16,
+                            "unit": "%",
+                            "g_l": 1.6,
+                            "mmol_l": 14.4166,
+                            "optional": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 885,
+                    "name": "Fatty acid mixture",
+                    "volume": 100,
+                    "recipe": [
+                        {
+                            "recipe_order": 1,
+                            "compound": "Isobutyric acid",
+                            "compound_id": 222,
+                            "amount": 10,
+                            "unit": "ml",
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 2,
+                            "compound": "Isovaleric acid",
+                            "compound_id": 225,
+                            "amount": 10,
+                            "unit": "ml",
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 3,
+                            "compound": "2-Methylbutyric acid",
+                            "compound_id": 480,
+                            "amount": 10,
+                            "unit": "ml",
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 4,
+                            "compound": "Distilled water",
+                            "compound_id": 4,
+                            "amount": 70,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+                    ],
+                    "steps": [
+                        {
+                            "step": "Inoculate under CO2 and incubate at 37\u00b0C."
+                        }
+                    ]
+                }
+            ]
+    preparation_steps: Retain all descriptions in notes. Incubation at 37 C belongs to inoculated medium, not heating the fatty-acid stock. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions; accessed=2026-10-09T06:57:20.707314+00:00; capture SHA256=c78f5981062452cb25100b039398b9080295a047cd9106548ba48c4d82e2f4d2.
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf
+  title: 436. RUMINOCOCCUS ALBUS MEDIUM
+  notes: source_type=culture_collection_page; discovery_mode=cross_reference; accessed_on=2026-10-09;
+    capture_sha256=c4c584daa44653f0ff643e5de098612d509eba0dff0b92e23c0d4b0fadb8fc7d.
+    Individual authors and publication year not supplied. Copyright/access years are
+    not publication years. Source-scoped ingredient evidence, not organism-growth
+    evidence.
+- reference: https://mediadive.dsmz.de/rest/medium/436
+  title: RUMINOCOCCUS ALBUS MEDIUM
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-09;
+    capture_sha256=c78f5981062452cb25100b039398b9080295a047cd9106548ba48c4d82e2f4d2.
+    Individual authors and publication year not supplied. Copyright/access years are
+    not publication years. Source-scoped ingredient evidence, not organism-growth
+    evidence.
+- reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=436
+  title: KOMODO - the Known Media Database
+  notes: source_type=web_page; discovery_mode=cross_reference; accessed_on=2026-10-09;
+    capture_sha256=28d9fc341b831df7b9779a1e04177acbf00e1c003998c16783a16c5af0cd269c.
+    Individual authors and publication year not supplied. Copyright/access years are
+    not publication years. Source-scoped ingredient evidence, not organism-growth
+    evidence.

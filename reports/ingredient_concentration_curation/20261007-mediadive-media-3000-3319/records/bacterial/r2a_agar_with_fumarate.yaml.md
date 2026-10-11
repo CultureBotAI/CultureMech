@@ -1,0 +1,26 @@
+# Medium Concentration Review: R2A AGAR WITH FUMARATE
+
+- Record: data/normalized_yaml/bacterial/r2a_agar_with_fumarate.yaml
+- ID: CultureMech:002402
+- Reviewed commit: `f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f`
+- Before SHA256: `06a3ce15cb4e8cd6da4d87ba34d4578cd5b6d678f7915a2a36d91845da06b11a`
+- Proposed/result SHA256: `06a3ce15cb4e8cd6da4d87ba34d4578cd5b6d678f7915a2a36d91845da06b11a`
+- Source: https://mediadive.dsmz.de/rest/medium/J1235
+- Source SHA256: 5481586b87561cbd22e700863f18dc95ec6c09c5619d8419763ab41833317746
+- Retrieved: 2026-10-07T15:21:13.981416+00:00
+- Source type: official DSMZ dataset; discovery: existing record source ID; authors/year not supplied.
+- State: reviewed; unchanged; unresolved claims remain unchanged.
+- Baseline schema errors: 0; proposed schema errors: 0.
+- Operational failure: none
+
+Source response, exact IDs/labels, arithmetic, and literal snippets were checked by the maintained guarded reviewer. This is not a claim of manual inspection of every source sentence or automated reference-validator success. Preparation-dependent quantities and unrepresented stocks remain open. Schema validity is not scientific proof.
+
+| Field | Ingredient | Old | Proposed | Status | DOI/PURL | Exact snippet | Locator | Calculation / decision | Action |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `ingredients[0].concentration` | Disodium fumarate | {"unit": "G_PER_L", "value": "3.2"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J1235 | unknown / not asserted | unknown / not asserted | Stock topology requires source-specific review; flattened stock concentrations are not endorsed as main-medium values. | unchanged |
+| `solutions[0].concentration` | R2A Agar | {"unit": "ML_PER_L", "value": "1000"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J1235 | unknown / not asserted | unknown / not asserted | Stock topology requires source-specific review; flattened stock concentrations are not endorsed as main-medium values. | unchanged |
+| `parent_media` | r2a_agar | {"id": "CultureMech:002706", "name": "r2a_agar", "notes": "Adds 3.2 g/L disodium fumarate to R2A Agar.", "path": "data/normalized_yaml/bacterial/r2a_agar.yaml", "relationship": "SUPPLEMENTED_VARIANT"} | unknown / not asserted | unsupported | unknown / not asserted | unknown / not asserted | unknown / not asserted | Variant formulation/relationship requires its own exact source; parent evidence is not propagated. | unchanged |
+| `source.data.solutions[0].recipe[0]` | R2A agar | unknown / not asserted | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/medium/J1235 | {<br>                        "recipe_order": 1,<br>                        "compound": "R2A agar",<br>                        "compound_id": 1844,<br>                        "attribute": "BD-Difco",<br>                        "amount": 18.2,<br>                        "unit": "g",<br>                        "g_l": 18.2,<br>                        "optional": 0<br>                    } | $.data.solutions[0].recipe[0] | Source row has no established direct-medium match. Stock, omitted solvent, optional, and missing ingredients require explicit follow-up; not silently endorsed or discarded. | unchanged |
+| `source.data.solutions[0].recipe[1]` | Disodium fumarate | unknown / not asserted | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/medium/J1235 | {<br>                        "recipe_order": 2,<br>                        "compound": "Disodium fumarate",<br>                        "compound_id": 1076,<br>                        "amount": 3.2,<br>                        "unit": "g",<br>                        "g_l": 3.2,<br>                        "mmol_l": 19.995,<br>                        "optional": 0<br>                    } | $.data.solutions[0].recipe[1] | Source row has no established direct-medium match. Stock, omitted solvent, optional, and missing ingredients require explicit follow-up; not silently endorsed or discarded. | unchanged |
+| `source.data.solutions[0].recipe[2]` | Distilled water | unknown / not asserted | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/medium/J1235 | {<br>                        "recipe_order": 3,<br>                        "compound": "Distilled water",<br>                        "compound_id": 4,<br>                        "amount": 1000,<br>                        "unit": "ml",<br>                        "optional": 0<br>                    } | $.data.solutions[0].recipe[2] | Source row has no established direct-medium match. Stock, omitted solvent, optional, and missing ingredients require explicit follow-up; not silently endorsed or discarded. | unchanged |
+| `source.data.solutions[1].steps[0]` | preparation context | unknown / not asserted | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/medium/J1235 | {<br>                        "step": "When cultivate anaerobically, replace the gas phase with N2. An anaerobic gas generating system, such as AnaeroPackTM, is also available."<br>                    } | $.data.solutions[1].steps[0] | Preparation context retained for source-specific follow-up, including supplements and downstream dilutions; no additional amount inferred from prose. | unchanged |

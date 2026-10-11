@@ -16,6 +16,32 @@ composition:
     label: sodium carbonate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5188
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "Na2CO3",
+                      "compound_id": 32,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2.76,
+                      "unit": "g",
+                      "g_l": 9.2,
+                      "mmol_l": 86.8023,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Na2CO3)
+      in MediaDive solution 5188; locator=$.data.recipe[0] (compound_id=32). Provider
+      explicitly reports g_l=9.2. Arithmetic check: 2.76 g * 1 g/g / (300 ml / 1000
+      ml per L) = 9.2 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 300. Retrieved 2026-10-07T09:51:58.344539+00:00; response SHA256=339cfa8ac35dad08f9a4abff6a695d79b7b5c2552fb5a6ea1b831447bd8a0834.'
 - preferred_term: NaHCO3
   concentration:
     value: '80'
@@ -28,6 +54,32 @@ composition:
     label: sodium hydrogencarbonate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5188
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "NaHCO3",
+                      "compound_id": 55,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 24,
+                      "unit": "g",
+                      "g_l": 80,
+                      "mmol_l": 952.302,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (NaHCO3)
+      in MediaDive solution 5188; locator=$.data.recipe[1] (compound_id=55). Provider
+      explicitly reports g_l=80. Arithmetic check: 24 g * 1 g/g / (300 ml / 1000 ml
+      per L) = 8E+1 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 300. Retrieved 2026-10-07T09:51:58.344539+00:00; response SHA256=339cfa8ac35dad08f9a4abff6a695d79b7b5c2552fb5a6ea1b831447bd8a0834.'
 - preferred_term: Distilled water
   concentration:
     value: '1000.0'
@@ -72,6 +124,16 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 1 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-10-07T09:53:16.572361+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/5188
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "9.2"} -> {"unit":
+    "G_PER_L", "value": "9.2"} (evidence_only); composition[1].concentration: {"unit":
+    "G_PER_L", "value": "80"} -> {"unit": "G_PER_L", "value": "80"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -80,3 +142,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/5188
+  title: 'MediaDive solution 5188: Alkaline solution'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=339cfa8ac35dad08f9a4abff6a695d79b7b5c2552fb5a6ea1b831447bd8a0834;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

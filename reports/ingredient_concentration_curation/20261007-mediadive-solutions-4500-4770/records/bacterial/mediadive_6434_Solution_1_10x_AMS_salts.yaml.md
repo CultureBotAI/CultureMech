@@ -1,0 +1,24 @@
+# Solution Concentration Review: Solution 1 (10x AMS salts)
+
+- Record: data/normalized_yaml/bacterial/mediadive_6434_Solution_1_10x_AMS_salts.yaml
+- ID: CultureMech:015031
+- Reviewed commit: `f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f`
+- Before SHA256: `ecd8430e7f9f53a8a4c7c2324b310a91704f01da8d2fd0a6b70f4407b934f972`
+- Proposed/result SHA256: `98c167fd993f61c425061bf178cf54e53423c6a3a9c24cdb97017083087befe2`
+- Source: https://mediadive.dsmz.de/rest/solution/6434
+- Source SHA256: 458e45325f2a0ac3f12efa1c43f366af92fbb5c10dcda81fc876a2edc2d48171
+- Retrieved: 2026-10-07T10:02:42.071178+00:00
+- Source type: official DSMZ dataset; discovery: existing record source ID; authors/year not supplied.
+- State: changed locally; unresolved claims remain unchanged.
+- Baseline schema errors: 0; proposed schema errors: 0.
+- Operational failure: none
+
+Source response, exact IDs/labels, arithmetic, and literal snippets were checked by the maintained guarded reviewer. This is not a claim of manual inspection of every source sentence or automated reference-validator success. Preparation-dependent quantities and unrepresented stocks remain open. Schema validity is not scientific proof.
+
+| Field | Ingredient | Old | Proposed | Status | DOI/PURL | Exact snippet | Locator | Calculation / decision | Action |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `composition[0].concentration` | NH4Cl | {"unit": "G_PER_L", "value": "0.53"} | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/solution/6434 | {<br>                "recipe_order": 2,<br>                "compound": "NH4Cl",<br>                "compound_id": 42,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 0.53,<br>                "unit": "g/L",<br>                "g_l": 0.53,<br>                "mmol_l": 9.90839,<br>                "optional": 0<br>            } | $.data.recipe[0] (compound_id=42) | Unit or liquid/stock context requires source-specific review; no conversion guessed. | unchanged |
+| `composition[1].concentration` | MgSO4 x 7 H2O | {"unit": "G_PER_L", "value": "1"} | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/solution/6434 | {<br>                "recipe_order": 3,<br>                "compound": "MgSO4 x 7 H2O",<br>                "compound_id": 8,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 1,<br>                "unit": "g/l",<br>                "g_l": 1,<br>                "mmol_l": 4.05719,<br>                "optional": 0<br>            } | $.data.recipe[1] (compound_id=8) | Unit or liquid/stock context requires source-specific review; no conversion guessed. | unchanged |
+| `composition[2].concentration` | CaCl2 x 2 H2O | {"unit": "G_PER_L", "value": "0.2"} | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/solution/6434 | {<br>                "recipe_order": 4,<br>                "compound": "CaCl2 x 2 H2O",<br>                "compound_id": 7,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 0.2,<br>                "unit": "g/l",<br>                "g_l": 0.2,<br>                "mmol_l": 1.36041,<br>                "optional": 0<br>            } | $.data.recipe[2] (compound_id=7) | Unit or liquid/stock context requires source-specific review; no conversion guessed. | unchanged |
+| `composition[3].concentration` | Distilled water | {"unit": "PERCENT_V_V", "value": "1000"} | {"unit": "L", "value": "1"} | correct | https://mediadive.dsmz.de/rest/solution/6434 | {<br>                "recipe_order": 5,<br>                "compound": "Distilled water",<br>                "compound_id": 4,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 1000,<br>                "unit": "ml",<br>                "g_l": null,<br>                "mmol_l": null,<br>                "optional": 0<br>            } | $.data.recipe[3] (compound_id=4) | Source water addition is 1000 ml per prepared batch: 1000 / 1000 = 1 L. No source preparation step gives a competing make-up instruction. This is a batch dose, not a volume percentage; no final-volume or solvent-density assumption is made. Additional exact excerpt at $.data.volume: "volume": 1000. | applied |
+| `ingredients[0].concentration` | See source for composition | {"unit": "VARIABLE", "value": "variable"} | unknown / not asserted | unsupported | unknown / not asserted | unknown / not asserted | unknown / not asserted | Outside direct composition matching; unchanged. | unchanged |

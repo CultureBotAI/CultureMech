@@ -5,79 +5,7 @@ category: archaea
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: NaCl
-  concentration:
-    value: '40.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: CaCl2・2H2O
-  concentration:
-    value: '29.4'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-- preferred_term: MgCl2・6H2O
-  concentration:
-    value: '203'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:86345
-    label: magnesium dichloride hexahydrate
-- preferred_term: KCl
-  concentration:
-    value: '7.5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
-    compound'
-  term:
-    id: CHEBI:32588
-    label: potassium chloride
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32588
-    label: potassium chloride
-- preferred_term: Soluble starch
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Undefined component'
-  term:
-    id: CHEBI:28017
-    label: starch
-- preferred_term: Yeast extract (BD-Difco)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Casamino acids (BD-Difco)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
+ingredients: []
 media_term:
   preferred_term: TOGO Medium M1023
   term:
@@ -118,3 +46,360 @@ curation_history:
   notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-08T10:03:37.542180+00:00'
+  curator: codex
+  action: RESTORED_JCM973_PREPARATION_STAGES_WITH_DATASET_EVIDENCE
+  notes: Restored two separately prepared JCM973 components from inspected dataset
+    instructions. Rebased magnesium to its explicit 500 ml stock; withdrew unsupported
+    mass-per-liter encodings while preserving exact batch masses. Kept makeup water
+    unquantified and 500 ml base water separate. No final-medium volume, ontology
+    IDs, physical-state changes or organism claims inferred. Historical provenance
+    unchanged.
+  source: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1023
+  changes: 'ingredients[0].concentration -> solutions[1].composition[0].concentration:
+    {''value'': ''1000'', ''unit'': ''G_PER_L''} -> {''value'': ''0.5'', ''unit'':
+    ''L''} (correct); ingredients[1].concentration -> solutions[1].composition[1].concentration:
+    {''value'': ''40.1'', ''unit'': ''G_PER_L''} -> None (remove_unsupported); ingredients[2].concentration
+    -> solutions[1].composition[2].concentration: {''value'': ''29.4'', ''unit'':
+    ''G_PER_L''} -> None (remove_unsupported); ingredients[3].concentration -> solutions[0].composition[0].concentration:
+    {''value'': ''203'', ''unit'': ''G_PER_L''} -> {''value'': ''406'', ''unit'':
+    ''G_PER_L''} (correct); ingredients[4].concentration -> solutions[1].composition[3].concentration:
+    {''value'': ''7.5'', ''unit'': ''G_PER_L''} -> None (remove_unsupported); ingredients[5].concentration
+    -> solutions[1].composition[4].concentration: {''value'': ''2'', ''unit'': ''G_PER_L''}
+    -> None (remove_unsupported); ingredients[6].concentration -> solutions[1].composition[5].concentration:
+    {''value'': ''1'', ''unit'': ''G_PER_L''} -> None (remove_unsupported); ingredients[7].concentration
+    -> solutions[1].composition[6].concentration: {''value'': ''1'', ''unit'': ''G_PER_L''}
+    -> None (remove_unsupported); None -> solutions[0].composition[1].concentration:
+    None -> None (not_quantified); None -> solutions[0].concentration: None -> None
+    (not_quantified); None -> solutions[1].concentration: None -> None (not_quantified);
+    None -> preparation_steps[0].description: None -> Dissolve MgCl2・6H2O in distilled
+    water and bring volume to 500.0 ml. Separately dissolve the remaining components
+    in 500 ml distilled water and adjust pH to 7.0. For preparation of solid medium,
+    add 20.0 g agar to the latter solution. Autoclave the two solutions separately
+    and combine them after autoclaving. (add_stage)'
+solutions:
+- preferred_term: JCM973 magnesium chloride preparation
+  composition:
+  - preferred_term: MgCl2・6H2O
+    concentration:
+      value: '406'
+      unit: G_PER_L
+    notes: |-
+      Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component
+
+      Separate magnesium chloride hexahydrate stock before autoclaving: 203 g / (500.0 ml / 1000 ml per L) = 406 g/L. The former flattened 203 g/L was not a verified final-medium concentration. No final-medium concentration is calculated.
+    term:
+      id: CHEBI:86345
+      label: magnesium dichloride hexahydrate
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1023
+      supports: SUPPORT
+      snippet: |2-
+                  "component_name": "MgCl2・6H2O",
+                  "volume": 203,
+                  "unit": "g",
+      explanation: 'solutions[0].composition[0].concentration: Separate magnesium
+        chloride hexahydrate stock before autoclaving: 203 g / (500.0 ml / 1000 ml
+        per L) = 406 g/L. The former flattened 203 g/L was not a verified final-medium
+        concentration. No final-medium concentration is calculated. Additional exact
+        preparation excerpt: "Dissolve MgCl2・6H2O in distilled water and bring volume
+        to 500.0 ml. Separately dissolve the remaining components in 500 ml distilled
+        water and adjust pH to 7.0. For preparation of solid medium, add 20.0 g agar
+        to the latter solution. Autoclave the two solutions separately and combine
+        them after autoclaving."; locator=$.comments[0].comment. Source scope: the
+        captured TOGO/MediaDive transcription of JCM973. The original JCM page returned
+        ''Nothing found.'' These datasets preserve the same recipe instructions; they
+        are not independent experimental confirmations. No final-medium volume, density,
+        post-autoclave volume, or DSMZ1468 equivalence is inferred. Locator=$.components[0].items[3];
+        accessed=2026-10-08T09:55:37.003078+00:00; capture SHA256=b4b512ce6147082f44f7b4abbd57d58a489c80bc10eeff0e7cbe5c869b100b16.'
+  - preferred_term: Distilled water
+    notes: Distilled water is added as needed to make the magnesium stock up to 500.0
+      ml. This is a stock final-volume instruction, not 500 ml of water input. Its
+      water amount remains unquantified.
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1023
+      supports: SUPPORT
+      snippet: Dissolve MgCl2・6H2O in distilled water and bring volume to 500.0 ml.
+        Separately dissolve the remaining components in 500 ml distilled water and
+        adjust pH to 7.0. For preparation of solid medium, add 20.0 g agar to the
+        latter solution. Autoclave the two solutions separately and combine them after
+        autoclaving.
+      explanation: 'solutions[0].composition[1].concentration: Distilled water is
+        added as needed to make the magnesium stock up to 500.0 ml. This is a stock
+        final-volume instruction, not 500 ml of water input. Its water amount remains
+        unquantified. Source scope: the captured TOGO/MediaDive transcription of JCM973.
+        The original JCM page returned ''Nothing found.'' These datasets preserve
+        the same recipe instructions; they are not independent experimental confirmations.
+        No final-medium volume, density, post-autoclave volume, or DSMZ1468 equivalence
+        is inferred. Locator=$.comments[0].comment; accessed=2026-10-08T09:55:37.003078+00:00;
+        capture SHA256=b4b512ce6147082f44f7b4abbd57d58a489c80bc10eeff0e7cbe5c869b100b16.'
+  notes: Use the complete magnesium stock batch prepared to 0.5 L before autoclaving.
+    This is its prepared batch volume, not a measured post-autoclave volume, working
+    dose per liter, or final-medium volume. The actual volume added after autoclaving
+    is unreported; no numeric working dose is asserted.
+  preparation_notes: Dissolve MgCl2・6H2O in distilled water and bring volume to 500.0
+    ml.
+- preferred_term: JCM973 remaining-components preparation
+  composition:
+  - preferred_term: Distilled water
+    concentration:
+      value: '0.5'
+      unit: L
+    notes: |-
+      Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component
+
+      Source input for the remaining-components preparation: 500 ml distilled water / 1000 ml per L = 0.5 L. This is not its final solution volume or the final-medium volume.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1023
+      supports: SUPPORT
+      snippet: Dissolve MgCl2・6H2O in distilled water and bring volume to 500.0 ml.
+        Separately dissolve the remaining components in 500 ml distilled water and
+        adjust pH to 7.0. For preparation of solid medium, add 20.0 g agar to the
+        latter solution. Autoclave the two solutions separately and combine them after
+        autoclaving.
+      explanation: 'solutions[1].composition[0].concentration: Source input for the
+        remaining-components preparation: 500 ml distilled water / 1000 ml per L =
+        0.5 L. This is not its final solution volume or the final-medium volume. The
+        imported 1000 g/L water encoding conflates both preparation stages and is
+        withdrawn. Source scope: the captured TOGO/MediaDive transcription of JCM973.
+        The original JCM page returned ''Nothing found.'' These datasets preserve
+        the same recipe instructions; they are not independent experimental confirmations.
+        No final-medium volume, density, post-autoclave volume, or DSMZ1468 equivalence
+        is inferred. Locator=$.comments[0].comment; accessed=2026-10-08T09:55:37.003078+00:00;
+        capture SHA256=b4b512ce6147082f44f7b4abbd57d58a489c80bc10eeff0e7cbe5c869b100b16.'
+  - preferred_term: NaCl
+    notes: |-
+      Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component
+
+      Source amount: 40.1 g per remaining-components recipe batch, not per liter. The 500 ml quantity is water input, not final stock volume; the final mixed-medium volume is unreported. The former G_PER_L encoding is withdrawn.
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1023
+      supports: SUPPORT
+      snippet: |2-
+                  "component_name": "NaCl",
+                  "volume": 40.1,
+                  "unit": "g",
+      explanation: 'solutions[1].composition[1].concentration: Source amount: 40.1
+        g per remaining-components recipe batch, not per liter. The 500 ml quantity
+        is water input, not final stock volume; the final mixed-medium volume is unreported.
+        The former G_PER_L encoding is withdrawn. Additional exact preparation excerpt:
+        "Dissolve MgCl2・6H2O in distilled water and bring volume to 500.0 ml. Separately
+        dissolve the remaining components in 500 ml distilled water and adjust pH
+        to 7.0. For preparation of solid medium, add 20.0 g agar to the latter solution.
+        Autoclave the two solutions separately and combine them after autoclaving.";
+        locator=$.comments[0].comment. Source scope: the captured TOGO/MediaDive transcription
+        of JCM973. The original JCM page returned ''Nothing found.'' These datasets
+        preserve the same recipe instructions; they are not independent experimental
+        confirmations. No final-medium volume, density, post-autoclave volume, or
+        DSMZ1468 equivalence is inferred. Locator=$.components[0].items[1]; accessed=2026-10-08T09:55:37.003078+00:00;
+        capture SHA256=b4b512ce6147082f44f7b4abbd57d58a489c80bc10eeff0e7cbe5c869b100b16.'
+  - preferred_term: CaCl2・2H2O
+    notes: |-
+      Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component
+
+      Source amount: 29.4 g per remaining-components recipe batch, not per liter. The 500 ml quantity is water input, not final stock volume; the final mixed-medium volume is unreported. The former G_PER_L encoding is withdrawn.
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1023
+      supports: SUPPORT
+      snippet: |2-
+                  "component_name": "CaCl2・2H2O",
+                  "volume": 29.4,
+                  "unit": "g",
+      explanation: 'solutions[1].composition[2].concentration: Source amount: 29.4
+        g per remaining-components recipe batch, not per liter. The 500 ml quantity
+        is water input, not final stock volume; the final mixed-medium volume is unreported.
+        The former G_PER_L encoding is withdrawn. Additional exact preparation excerpt:
+        "Dissolve MgCl2・6H2O in distilled water and bring volume to 500.0 ml. Separately
+        dissolve the remaining components in 500 ml distilled water and adjust pH
+        to 7.0. For preparation of solid medium, add 20.0 g agar to the latter solution.
+        Autoclave the two solutions separately and combine them after autoclaving.";
+        locator=$.comments[0].comment. Source scope: the captured TOGO/MediaDive transcription
+        of JCM973. The original JCM page returned ''Nothing found.'' These datasets
+        preserve the same recipe instructions; they are not independent experimental
+        confirmations. No final-medium volume, density, post-autoclave volume, or
+        DSMZ1468 equivalence is inferred. Locator=$.components[0].items[2]; accessed=2026-10-08T09:55:37.003078+00:00;
+        capture SHA256=b4b512ce6147082f44f7b4abbd57d58a489c80bc10eeff0e7cbe5c869b100b16.'
+  - preferred_term: KCl
+    notes: |-
+      Role: Mineral source; Properties: Simple component, Defined component, Inorganic compound
+
+      Source amount: 7.5 g per remaining-components recipe batch, not per liter. The 500 ml quantity is water input, not final stock volume; the final mixed-medium volume is unreported. The former G_PER_L encoding is withdrawn.
+    term:
+      id: CHEBI:32588
+      label: potassium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32588
+      label: potassium chloride
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1023
+      supports: SUPPORT
+      snippet: |2-
+                  "component_name": "KCl",
+                  "volume": 7.5,
+                  "unit": "g",
+      explanation: 'solutions[1].composition[3].concentration: Source amount: 7.5
+        g per remaining-components recipe batch, not per liter. The 500 ml quantity
+        is water input, not final stock volume; the final mixed-medium volume is unreported.
+        The former G_PER_L encoding is withdrawn. Additional exact preparation excerpt:
+        "Dissolve MgCl2・6H2O in distilled water and bring volume to 500.0 ml. Separately
+        dissolve the remaining components in 500 ml distilled water and adjust pH
+        to 7.0. For preparation of solid medium, add 20.0 g agar to the latter solution.
+        Autoclave the two solutions separately and combine them after autoclaving.";
+        locator=$.comments[0].comment. Source scope: the captured TOGO/MediaDive transcription
+        of JCM973. The original JCM page returned ''Nothing found.'' These datasets
+        preserve the same recipe instructions; they are not independent experimental
+        confirmations. No final-medium volume, density, post-autoclave volume, or
+        DSMZ1468 equivalence is inferred. Locator=$.components[0].items[4]; accessed=2026-10-08T09:55:37.003078+00:00;
+        capture SHA256=b4b512ce6147082f44f7b4abbd57d58a489c80bc10eeff0e7cbe5c869b100b16.'
+  - preferred_term: Soluble starch
+    notes: |-
+      Role: Carbon source; Properties: Undefined component
+
+      Source amount: 2 g per remaining-components recipe batch, not per liter. The 500 ml quantity is water input, not final stock volume; the final mixed-medium volume is unreported. The former G_PER_L encoding is withdrawn.
+    term:
+      id: CHEBI:28017
+      label: starch
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1023
+      supports: SUPPORT
+      snippet: |2-
+                  "component_name": "Soluble starch",
+                  "volume": 2,
+                  "unit": "g",
+      explanation: 'solutions[1].composition[4].concentration: Source amount: 2 g
+        per remaining-components recipe batch, not per liter. The 500 ml quantity
+        is water input, not final stock volume; the final mixed-medium volume is unreported.
+        The former G_PER_L encoding is withdrawn. Additional exact preparation excerpt:
+        "Dissolve MgCl2・6H2O in distilled water and bring volume to 500.0 ml. Separately
+        dissolve the remaining components in 500 ml distilled water and adjust pH
+        to 7.0. For preparation of solid medium, add 20.0 g agar to the latter solution.
+        Autoclave the two solutions separately and combine them after autoclaving.";
+        locator=$.comments[0].comment. Source scope: the captured TOGO/MediaDive transcription
+        of JCM973. The original JCM page returned ''Nothing found.'' These datasets
+        preserve the same recipe instructions; they are not independent experimental
+        confirmations. No final-medium volume, density, post-autoclave volume, or
+        DSMZ1468 equivalence is inferred. Locator=$.components[0].items[5]; accessed=2026-10-08T09:55:37.003078+00:00;
+        capture SHA256=b4b512ce6147082f44f7b4abbd57d58a489c80bc10eeff0e7cbe5c869b100b16.'
+  - preferred_term: Yeast extract (BD-Difco)
+    notes: |-
+      Properties: Undefined component
+
+      Source amount: 1 g per remaining-components recipe batch, not per liter. The 500 ml quantity is water input, not final stock volume; the final mixed-medium volume is unreported. The former G_PER_L encoding is withdrawn.
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1023
+      supports: SUPPORT
+      snippet: |2-
+                  "component_name": "Yeast extract (BD-Difco)",
+                  "volume": 1,
+                  "unit": "g",
+      explanation: 'solutions[1].composition[5].concentration: Source amount: 1 g
+        per remaining-components recipe batch, not per liter. The 500 ml quantity
+        is water input, not final stock volume; the final mixed-medium volume is unreported.
+        The former G_PER_L encoding is withdrawn. Additional exact preparation excerpt:
+        "Dissolve MgCl2・6H2O in distilled water and bring volume to 500.0 ml. Separately
+        dissolve the remaining components in 500 ml distilled water and adjust pH
+        to 7.0. For preparation of solid medium, add 20.0 g agar to the latter solution.
+        Autoclave the two solutions separately and combine them after autoclaving.";
+        locator=$.comments[0].comment. Source scope: the captured TOGO/MediaDive transcription
+        of JCM973. The original JCM page returned ''Nothing found.'' These datasets
+        preserve the same recipe instructions; they are not independent experimental
+        confirmations. No final-medium volume, density, post-autoclave volume, or
+        DSMZ1468 equivalence is inferred. Locator=$.components[0].items[6]; accessed=2026-10-08T09:55:37.003078+00:00;
+        capture SHA256=b4b512ce6147082f44f7b4abbd57d58a489c80bc10eeff0e7cbe5c869b100b16.'
+  - preferred_term: Casamino acids (BD-Difco)
+    notes: |-
+      Properties: Undefined component
+
+      Source amount: 1 g per remaining-components recipe batch, not per liter. The 500 ml quantity is water input, not final stock volume; the final mixed-medium volume is unreported. The former G_PER_L encoding is withdrawn.
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1023
+      supports: SUPPORT
+      snippet: |2-
+                  "component_name": "Casamino acids (BD-Difco)",
+                  "volume": 1,
+                  "unit": "g",
+      explanation: 'solutions[1].composition[6].concentration: Source amount: 1 g
+        per remaining-components recipe batch, not per liter. The 500 ml quantity
+        is water input, not final stock volume; the final mixed-medium volume is unreported.
+        The former G_PER_L encoding is withdrawn. Additional exact preparation excerpt:
+        "Dissolve MgCl2・6H2O in distilled water and bring volume to 500.0 ml. Separately
+        dissolve the remaining components in 500 ml distilled water and adjust pH
+        to 7.0. For preparation of solid medium, add 20.0 g agar to the latter solution.
+        Autoclave the two solutions separately and combine them after autoclaving.";
+        locator=$.comments[0].comment. Source scope: the captured TOGO/MediaDive transcription
+        of JCM973. The original JCM page returned ''Nothing found.'' These datasets
+        preserve the same recipe instructions; they are not independent experimental
+        confirmations. No final-medium volume, density, post-autoclave volume, or
+        DSMZ1468 equivalence is inferred. Locator=$.components[0].items[7]; accessed=2026-10-08T09:55:37.003078+00:00;
+        capture SHA256=b4b512ce6147082f44f7b4abbd57d58a489c80bc10eeff0e7cbe5c869b100b16.'
+  notes: Use the complete separately prepared remaining-components batch. The source
+    specifies 500 ml water input, not a 500 ml final solution volume; no numeric stock
+    working dose or final-medium concentration is inferred.
+  preparation_notes: Separately dissolve the remaining components in 500 ml distilled
+    water and adjust pH to 7.0. For preparation of solid medium, add 20.0 g agar to
+    the latter solution.
+evidence:
+- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1023
+  supports: SUPPORT
+  snippet: Dissolve MgCl2・6H2O in distilled water and bring volume to 500.0 ml. Separately
+    dissolve the remaining components in 500 ml distilled water and adjust pH to 7.0.
+    For preparation of solid medium, add 20.0 g agar to the latter solution. Autoclave
+    the two solutions separately and combine them after autoclaving.
+  explanation: |-
+    solutions[0].concentration: Use the complete magnesium stock batch prepared to 0.5 L before autoclaving. This is its prepared batch volume, not a measured post-autoclave volume, working dose per liter, or final-medium volume. The actual volume added after autoclaving is unreported; no numeric working dose is asserted. Dissolve MgCl2・6H2O in distilled water and bring volume to 500.0 ml. Source scope: the captured TOGO/MediaDive transcription of JCM973. The original JCM page returned 'Nothing found.' These datasets preserve the same recipe instructions; they are not independent experimental confirmations. No final-medium volume, density, post-autoclave volume, or DSMZ1468 equivalence is inferred. Locator=$.comments[0].comment; accessed=2026-10-08T09:55:37.003078+00:00; capture SHA256=b4b512ce6147082f44f7b4abbd57d58a489c80bc10eeff0e7cbe5c869b100b16.
+
+    Additional exact excerpt: Dissolve MgCl2・6H2O in distilled water and bring volume to 500.0 ml. Separately dissolve the remaining components in 500 ml distilled water and adjust pH to 7.0. For preparation of solid medium, add 20.0 g agar to the latter solution. Autoclave the two solutions separately and combine them after autoclaving.
+    solutions[1].concentration: Use the complete separately prepared remaining-components batch. The source specifies 500 ml water input, not a 500 ml final solution volume; no numeric stock working dose or final-medium concentration is inferred. Separately dissolve the remaining components in 500 ml distilled water and adjust pH to 7.0. For preparation of solid medium, add 20.0 g agar to the latter solution. Source scope: the captured TOGO/MediaDive transcription of JCM973. The original JCM page returned 'Nothing found.' These datasets preserve the same recipe instructions; they are not independent experimental confirmations. No final-medium volume, density, post-autoclave volume, or DSMZ1468 equivalence is inferred. Locator=$.comments[0].comment; accessed=2026-10-08T09:55:37.003078+00:00; capture SHA256=b4b512ce6147082f44f7b4abbd57d58a489c80bc10eeff0e7cbe5c869b100b16.
+
+    Additional exact excerpt: Dissolve MgCl2・6H2O in distilled water and bring volume to 500.0 ml. Separately dissolve the remaining components in 500 ml distilled water and adjust pH to 7.0. For preparation of solid medium, add 20.0 g agar to the latter solution. Autoclave the two solutions separately and combine them after autoclaving.
+    preparation_steps[0].description: Restore the source's separate preparations, conditional agar instruction and separate autoclaving followed by combination. The existing liquid/solid state is preserved. Source scope: the captured TOGO/MediaDive transcription of JCM973. The original JCM page returned 'Nothing found.' These datasets preserve the same recipe instructions; they are not independent experimental confirmations. No final-medium volume, density, post-autoclave volume, or DSMZ1468 equivalence is inferred. Locator=$.comments[0].comment; accessed=2026-10-08T09:55:37.003078+00:00; capture SHA256=b4b512ce6147082f44f7b4abbd57d58a489c80bc10eeff0e7cbe5c869b100b16.
+- reference: https://mediadive.dsmz.de/rest/medium/J973
+  supports: SUPPORT
+  snippet: Dissolve MgCl2 x 6H2O in distilled water and bring volume to 500.0 ml.
+    Separately dissolve the remaining components in 500 ml distilled water and adjust
+    pH to 7.0. For preparation of solid medium, add 20.0 g agar to the latter solution.
+    Autoclave the two solutions separately and combine them after autoclaving.
+  explanation: 'Corroborates solutions[0] and solutions[1] preparation stages only.
+    The same JCM973 transcription is preserved by another dataset; this does not independently
+    establish the final-medium volume or validate a different formulation. Locator=$.data.solutions[0].steps[0].step.
+    Source scope: the captured TOGO/MediaDive transcription of JCM973. The original
+    JCM page returned ''Nothing found.'' These datasets preserve the same recipe instructions;
+    they are not independent experimental confirmations. No final-medium volume, density,
+    post-autoclave volume, or DSMZ1468 equivalence is inferred.'
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve MgCl2・6H2O in distilled water and bring volume to 500.0 ml.
+    Separately dissolve the remaining components in 500 ml distilled water and adjust
+    pH to 7.0. For preparation of solid medium, add 20.0 g agar to the latter solution.
+    Autoclave the two solutions separately and combine them after autoclaving.
+references:
+- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1023
+  title: Halorhabdus Segorensis Medium
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-08;
+    capture_sha256=b4b512ce6147082f44f7b4abbd57d58a489c80bc10eeff0e7cbe5c869b100b16;
+    original_recipe=https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=973. Original
+    recipe page currently returns 'Nothing found.' Authors and publication year not
+    supplied. Dataset-specific transcription, not a claim of original-page verification.
+- reference: https://mediadive.dsmz.de/rest/medium/J973
+  title: HALORHABDUS SEGORENSIS MEDIUM
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-08;
+    capture_sha256=0655bd6c5be8a6b63d3fed7f6fd88ad7cca2072732c6ff9d2675619217bc5a32;
+    original_recipe=https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=973. Original
+    recipe page currently returns 'Nothing found.' Authors and publication year not
+    supplied. Dataset-specific transcription, not a claim of original-page verification.

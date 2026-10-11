@@ -16,6 +16,42 @@ composition:
     label: dipotassium hydrogen phosphate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1378
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "K2HPO4",
+                      "compound_id": 10,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "g",
+                      "g_l": 1,
+                      "mmol_l": 5.74132,
+                      "optional": 0
+                  }
+    explanation: 'composition[0].notes (clarify_scope), locator=$.data.recipe[0]:
+      Source input: 1 g. Retained g/L is the provider-declared nominal main-recipe
+      rate (volume field 1000 ml), not a concentration in a separately prepared base,
+      a separate stock, or a measured final-medium volume. Additional exact excerpt
+      at $.data.volume: 1000 Retrieved 2026-10-07T08:52:08.321951+00:00; response
+      SHA256=440e82a9b042769abca3a3e06802183d0d0b7e02eee4c7b091bfe7ac8f473909. Historical
+      explanation (superseded where preparation scope differs): Concentration evidence
+      for composition[0].concentration (K2HPO4) in MediaDive solution 1378; locator=$.data.recipe[0]
+      (compound_id=10). Provider explicitly reports g_l=1. Arithmetic check: 1 g *
+      1 g/g / (1000 ml / 1000 ml per L) = 1 g/L, consistent with the reported value
+      at its precision. Evidence supports the provider-declared concentration within
+      this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T08:52:08.321951+00:00;
+      response SHA256=440e82a9b042769abca3a3e06802183d0d0b7e02eee4c7b091bfe7ac8f473909.'
+  notes: 'Source input: 1 g. Retained g/L is the provider-declared nominal main-recipe
+    rate (volume field 1000 ml), not a concentration in a separately prepared base,
+    a separate stock, or a measured final-medium volume.'
 - preferred_term: MgSO4
   concentration:
     value: '0.5'
@@ -28,6 +64,42 @@ composition:
     label: magnesium sulfate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1378
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "MgSO4",
+                      "compound_id": 325,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.5,
+                      "unit": "g",
+                      "g_l": 0.5,
+                      "mmol_l": 4.15386,
+                      "optional": 0
+                  }
+    explanation: 'composition[1].notes (clarify_scope), locator=$.data.recipe[1]:
+      Source input: 0.5 g. Retained g/L is the provider-declared nominal main-recipe
+      rate (volume field 1000 ml), not a concentration in a separately prepared base,
+      a separate stock, or a measured final-medium volume. Additional exact excerpt
+      at $.data.volume: 1000 Retrieved 2026-10-07T08:52:08.321951+00:00; response
+      SHA256=440e82a9b042769abca3a3e06802183d0d0b7e02eee4c7b091bfe7ac8f473909. Historical
+      explanation (superseded where preparation scope differs): Concentration evidence
+      for composition[1].concentration (MgSO4) in MediaDive solution 1378; locator=$.data.recipe[1]
+      (compound_id=325). Provider explicitly reports g_l=0.5. Arithmetic check: 0.5
+      g * 1 g/g / (1000 ml / 1000 ml per L) = 0.5 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T08:52:08.321951+00:00;
+      response SHA256=440e82a9b042769abca3a3e06802183d0d0b7e02eee4c7b091bfe7ac8f473909.'
+  notes: 'Source input: 0.5 g. Retained g/L is the provider-declared nominal main-recipe
+    rate (volume field 1000 ml), not a concentration in a separately prepared base,
+    a separate stock, or a measured final-medium volume.'
 - preferred_term: Yeast extract
   concentration:
     value: '10'
@@ -35,6 +107,42 @@ composition:
   term:
     id: mediadive.compound:16
     label: Yeast extract
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1378
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "Yeast extract",
+                      "compound_id": 16,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 10,
+                      "unit": "g",
+                      "g_l": 10,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'composition[2].notes (clarify_scope), locator=$.data.recipe[2]:
+      Source input: 10 g. Retained g/L is the provider-declared nominal main-recipe
+      rate (volume field 1000 ml), not a concentration in a separately prepared base,
+      a separate stock, or a measured final-medium volume. Additional exact excerpt
+      at $.data.volume: 1000 Retrieved 2026-10-07T08:52:08.321951+00:00; response
+      SHA256=440e82a9b042769abca3a3e06802183d0d0b7e02eee4c7b091bfe7ac8f473909. Historical
+      explanation (superseded where preparation scope differs): Concentration evidence
+      for composition[2].concentration (Yeast extract) in MediaDive solution 1378;
+      locator=$.data.recipe[2] (compound_id=16). Provider explicitly reports g_l=10.
+      Arithmetic check: 10 g * 1 g/g / (1000 ml / 1000 ml per L) = 10 g/L, consistent
+      with the reported value at its precision. Evidence supports the provider-declared
+      concentration within this solution, not a concentration in a receiving medium
+      or an independently measured final volume. Water addition alone is not used
+      to infer a final volume. Additional exact excerpt at $.data.volume: "volume":
+      1000. Retrieved 2026-10-07T08:52:08.321951+00:00; response SHA256=440e82a9b042769abca3a3e06802183d0d0b7e02eee4c7b091bfe7ac8f473909.'
+  notes: 'Source input: 10 g. Retained g/L is the provider-declared nominal main-recipe
+    rate (volume field 1000 ml), not a concentration in a separately prepared base,
+    a separate stock, or a measured final-medium volume.'
 - preferred_term: Vitamin B12
   concentration:
     value: 2e-05
@@ -47,10 +155,46 @@ composition:
     label: vitamin B12
     confidence: 0.9
     match_type: manual_curated
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1378
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "Vitamin B12",
+                      "compound_id": 18,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 20,
+                      "unit": "\u00b5g",
+                      "g_l": 2.0e-5,
+                      "mmol_l": 1.47558e-5,
+                      "optional": 0
+                  }
+    explanation: 'composition[3].notes (clarify_scope), locator=$.data.recipe[3]:
+      Source input: 20 µg. Retained g/L is the provider-declared nominal main-recipe
+      rate (volume field 1000 ml), not a concentration in a separately prepared base,
+      a separate stock, or a measured final-medium volume. Additional exact excerpt
+      at $.data.volume: 1000 Retrieved 2026-10-07T08:52:08.321951+00:00; response
+      SHA256=440e82a9b042769abca3a3e06802183d0d0b7e02eee4c7b091bfe7ac8f473909. Historical
+      explanation (superseded where preparation scope differs): Concentration evidence
+      for composition[3].concentration (Vitamin B12) in MediaDive solution 1378; locator=$.data.recipe[3]
+      (compound_id=18). Provider explicitly reports g_l=2e-05. Arithmetic check: 20
+      µg * 0.000001 g/µg / (1000 ml / 1000 ml per L) = 0.000020 g/L, consistent with
+      the reported value at its precision. Evidence supports the provider-declared
+      concentration within this solution, not a concentration in a receiving medium
+      or an independently measured final volume. Water addition alone is not used
+      to infer a final volume. Additional exact excerpt at $.data.volume: "volume":
+      1000. Retrieved 2026-10-07T08:52:08.321951+00:00; response SHA256=440e82a9b042769abca3a3e06802183d0d0b7e02eee4c7b091bfe7ac8f473909.'
+  notes: 'Source input: 20 µg. Retained g/L is the provider-declared nominal main-recipe
+    rate (volume field 1000 ml), not a concentration in a separately prepared base,
+    a separate stock, or a measured final-medium volume.'
 - preferred_term: Tap water
   concentration:
-    value: '1000'
-    unit: PERCENT_V_V
+    value: '1'
+    unit: L
   term:
     id: mediadive.compound:322
     label: Tap water
@@ -59,10 +203,35 @@ composition:
     label: water
     confidence: 0.7
     match_type: corpus_consensus
+  notes: 1000 ml / 1000 = 1 L tap-water input per batch, not a mass concentration,
+    percentage or measured final volume.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1378
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 5,
+                      "compound": "Tap water",
+                      "compound_id": 322,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1000,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[4].concentration (correct), locator=$.data.recipe[4]: 1000 ml / 1000 = 1 L tap-water input per batch, not a mass concentration, percentage or measured final volume. Additional exact excerpt at $.data.steps[1]: {
+                      "recipe_order": null,
+                      "step": "Boil under nitrogen gas and autoclave at 121\u00b0C for 15 min. Add 20 mM pyruvate after autoclaving."
+                  } Retrieved 2026-10-07T08:52:08.321951+00:00; response SHA256=440e82a9b042769abca3a3e06802183d0d0b7e02eee4c7b091bfe7ac8f473909.
 - preferred_term: Pyruvate
   concentration:
-    value: '1.741'
-    unit: G_PER_L
+    value: '20'
+    unit: MILLIMOLAR
   term:
     id: mediadive.compound:1386
     label: Pyruvate
@@ -71,6 +240,31 @@ composition:
     label: pyruvate
     confidence: 0.9
     match_type: corpus_consensus
+  notes: Source-explicit 20 mM pyruvate added after autoclaving; no molecular-weight
+    conversion or unspecified stock dose inferred.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1378
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 6,
+                      "compound": "Pyruvate",
+                      "compound_id": 1386,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 20,
+                      "unit": "mM",
+                      "g_l": 1.741,
+                      "mmol_l": 20,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[5].concentration (correct), locator=$.data.recipe[5]: Source-explicit 20 mM pyruvate added after autoclaving; no molecular-weight conversion or unspecified stock dose inferred. Additional exact excerpt at $.data.steps[1]: {
+                      "recipe_order": null,
+                      "step": "Boil under nitrogen gas and autoclave at 121\u00b0C for 15 min. Add 20 mM pyruvate after autoclaving."
+                  } Retrieved 2026-10-07T08:52:08.321951+00:00; response SHA256=440e82a9b042769abca3a3e06802183d0d0b7e02eee4c7b091bfe7ac8f473909.
 preparation_notes: 'Adjust pH to 7.0.
 
   Boil under nitrogen gas and autoclave at 121°C for 15 min. Add 20 mM pyruvate after
@@ -108,6 +302,46 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '2 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T08:52:28.993811+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/1378
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "1"} -> {"unit":
+    "G_PER_L", "value": "1"} (evidence_only); composition[1].concentration: {"unit":
+    "G_PER_L", "value": "0.5"} -> {"unit": "G_PER_L", "value": "0.5"} (evidence_only);
+    composition[2].concentration: {"unit": "G_PER_L", "value": "10"} -> {"unit": "G_PER_L",
+    "value": "10"} (evidence_only); composition[3].concentration: {"unit": "G_PER_L",
+    "value": "2e-05"} -> {"unit": "G_PER_L", "value": "2e-05"} (evidence_only)'
+- timestamp: '2026-10-08T04:23:42.348042+00:00'
+  curator: codex
+  action: CORRECTED_DSMZ650_752_762_MEDIUM_AND_SOLUTION_PREPARATIONS
+  notes: Corrected source-explicit amounts and preparation stages; original excerpts
+    and history retained. Earlier carbonate concentration claims explicitly withdrawn
+    and replaced by scoped input-mass evidence. No new growth claim or chemical grounding.
+  source: https://mediadive.dsmz.de/rest/solution/1378
+  changes: 'composition[0].notes: null -> "Source input: 1 g. Retained g/L is the
+    provider-declared nominal main-recipe rate (volume field 1000 ml), not a concentration
+    in a separately prepared base, a separate stock, or a measured final-medium volume."
+    (clarify_scope); composition[1].notes: null -> "Source input: 0.5 g. Retained
+    g/L is the provider-declared nominal main-recipe rate (volume field 1000 ml),
+    not a concentration in a separately prepared base, a separate stock, or a measured
+    final-medium volume." (clarify_scope); composition[2].notes: null -> "Source input:
+    10 g. Retained g/L is the provider-declared nominal main-recipe rate (volume field
+    1000 ml), not a concentration in a separately prepared base, a separate stock,
+    or a measured final-medium volume." (clarify_scope); composition[3].notes: null
+    -> "Source input: 20 \u00b5g. Retained g/L is the provider-declared nominal main-recipe
+    rate (volume field 1000 ml), not a concentration in a separately prepared base,
+    a separate stock, or a measured final-medium volume." (clarify_scope); composition[4].concentration:
+    {"value": "1000", "unit": "PERCENT_V_V"} -> {"value": "1", "unit": "L"} (correct);
+    composition[5].concentration: {"value": "1.741", "unit": "G_PER_L"} -> {"value":
+    "20", "unit": "MILLIMOLAR"} (correct); notes: null -> "Preparation follow-up:
+    water volumes are batch inputs, not measured final volumes. Original chemical
+    mappings, history and source links are retained, not independently revalidated.
+    Preparation follows the cited source; no dose into another receiving medium is
+    inferred." (clarify_scope)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -116,3 +350,34 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/1378
+  title: 'MediaDive solution 1378: Main sol. 650'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=440e82a9b042769abca3a3e06802183d0d0b7e02eee4c7b091bfe7ac8f473909;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.
+source_data:
+  origin: MediaDive
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1378
+    supports: SUPPORT
+    snippet: |-
+      [
+                  {
+                      "recipe_order": null,
+                      "step": "Adjust pH to 7.0."
+                  },
+                  {
+                      "recipe_order": null,
+                      "step": "Boil under nitrogen gas and autoclave at 121\u00b0C for 15 min. Add 20 mM pyruvate after autoclaving."
+                  }
+              ]
+    explanation: 'notes (clarify_scope), locator=$.data.steps: Document preparation
+      scope, retained conditional instructions, and input-versus-final-volume limitation.
+      No growth or chemical remapping claim is added. Retrieved 2026-10-07T08:52:08.321951+00:00;
+      response SHA256=440e82a9b042769abca3a3e06802183d0d0b7e02eee4c7b091bfe7ac8f473909.'
+notes: 'Preparation follow-up: water volumes are batch inputs, not measured final
+  volumes. Original chemical mappings, history and source links are retained, not
+  independently revalidated. Preparation follows the cited source; no dose into another
+  receiving medium is inferred.'

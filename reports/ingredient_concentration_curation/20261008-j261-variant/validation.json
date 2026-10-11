@@ -1,0 +1,198 @@
+{
+  "terminal": true,
+  "runtime": "Partial locked Python 3.13; not full CI",
+  "checks": [
+    {
+      "name": "schema-J261",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/jcm_medium_no_261.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/j261-post-schema-J261.log"
+    },
+    {
+      "name": "strict-J261",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/jcm_medium_no_261.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/j261-post-strict-J261.log"
+    },
+    {
+      "name": "schema-M253",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/togo_medium_m253.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/j261-post-schema-M253.log"
+    },
+    {
+      "name": "strict-M253",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/togo_medium_m253.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/j261-post-strict-M253.log"
+    },
+    {
+      "name": "schema-J151",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/archaea/JCM_J151_PYROCOCCUS_MEDIUM.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/j261-post-schema-J151.log"
+    },
+    {
+      "name": "strict-J151",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/archaea/JCM_J151_PYROCOCCUS_MEDIUM.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/j261-post-strict-J151.log"
+    },
+    {
+      "name": "schema-M142",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/j261-post-schema-M142.log"
+    },
+    {
+      "name": "strict-M142",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/j261-post-strict-M142.log"
+    },
+    {
+      "name": "readback",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/repair_j261_variant.py",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/j261-post-readback.log"
+    },
+    {
+      "name": "noop",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/repair_j261_variant.py",
+        "--apply"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/j261-post-noop.log"
+    },
+    {
+      "name": "tests",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_j261_variant.py",
+        "tests/test_jcm_stock_preparations.py",
+        "tests/test_methanogen_stock_boundaries.py",
+        "tests/test_media_variant_links.py",
+        "tests/test_record_io.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/j261-post-tests.log"
+    },
+    {
+      "name": "strict-corpus",
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/j261-post-strict-corpus.log"
+    },
+    {
+      "name": "ids",
+      "command": [
+        "just",
+        "assign-ids-check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/j261-post-ids.log"
+    },
+    {
+      "name": "variants",
+      "command": [
+        "just",
+        "validate-media-variant-links"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/j261-post-variants.log"
+    },
+    {
+      "name": "fast",
+      "command": [
+        "just",
+        "test-fast"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/j261-post-fast.log"
+    },
+    {
+      "name": "products",
+      "command": [
+        "just",
+        "validate-products"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/j261-post-products.log"
+    },
+    {
+      "name": "verify-merges",
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/j261-post-verify-merges.log"
+    },
+    {
+      "name": "freshness",
+      "command": [
+        "just",
+        "audit-merge-freshness",
+        "--json"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/j261-post-freshness.log"
+    },
+    {
+      "name": "diff-check",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/j261-post-diff-check.log"
+    }
+  ]
+}

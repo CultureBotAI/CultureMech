@@ -1,0 +1,133 @@
+{
+  "created_at": "2026-10-10T00:52:37.433562+00:00",
+  "terminal": true,
+  "passed": true,
+  "authoritative_records_edited": 0,
+  "normalized_inventory_sha256": "5fb7aa3854ad7d9a61f4d5b02b53487df4503f3cdcf137eaa516d7d74b5d2f75",
+  "canonical_report_coverage": 11899,
+  "cohort_previously_outside_followup": 6,
+  "report_search_includes_ignored_and_hidden": true,
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/Enriched_Seawater_Medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es-source-review/baseline-000.log",
+      "sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/Enriched_Seawater_Medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es-source-review/baseline-001.log",
+      "sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/ES_10_Enriched_Seawater_Medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es-source-review/baseline-002.log",
+      "sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/ES_10_Enriched_Seawater_Medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es-source-review/baseline-003.log",
+      "sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/ES_2_Enriched_Seawater_Medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es-source-review/baseline-004.log",
+      "sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/ES_2_Enriched_Seawater_Medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es-source-review/baseline-005.log",
+      "sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/ES_4_Enriched_Seawater_Medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es-source-review/baseline-006.log",
+      "sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/ES_4_Enriched_Seawater_Medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es-source-review/baseline-007.log",
+      "sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/1_2_Enriched_Seawater.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es-source-review/baseline-008.log",
+      "sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/1_2_Enriched_Seawater.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es-source-review/baseline-009.log",
+      "sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/2_3_Enriched_Seawater.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es-source-review/baseline-010.log",
+      "sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/2_3_Enriched_Seawater.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es-source-review/baseline-011.log",
+      "sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    }
+  ],
+  "all_normalized_unchanged": true
+}

@@ -1,0 +1,9 @@
+{
+  "fingerprint": "d684eaa5e6ea2a2293c4799fa513109d847ca39c4530c1fd9db183dba8bfb44a",
+  "group_paths": [
+    "data/normalized_yaml/bacterial/TOGO_M1308_Methylotroph_Medium.yaml"
+  ],
+  "id": "CultureMech:007843",
+  "solutions_and_references_preserved": true,
+  "nested_stock_snippets": 12
+}

@@ -1,0 +1,82 @@
+{
+  "terminal": true,
+  "media_records_checked": 6,
+  "standalone_solutions_excluded_as_expected": 3,
+  "failed_records": 0,
+  "details": [
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_1046_ANOXYBACILLUS_AMYLOLYTICUS_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_1046_ANOXYBACILLUS_AMYLOLYTICUS_medium.yaml",
+        "data/normalized_yaml/bacterial/anoxybacillus_amylolyticus_medium.yaml"
+      ],
+      "fingerprint": "5f6c94b0cb7598535069f3f9b52cf3612723d60c8e6d79d4956414eb0d80020f",
+      "amount_and_both_exact_evidence_entries_retained": true,
+      "input_note_retained": true,
+      "pdf_reference_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/anoxybacillus_amylolyticus_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_1046_ANOXYBACILLUS_AMYLOLYTICUS_medium.yaml",
+        "data/normalized_yaml/bacterial/anoxybacillus_amylolyticus_medium.yaml"
+      ],
+      "fingerprint": "5f6c94b0cb7598535069f3f9b52cf3612723d60c8e6d79d4956414eb0d80020f",
+      "amount_and_both_exact_evidence_entries_retained": true,
+      "input_note_retained": true,
+      "pdf_reference_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_1065_M1-NOCARDIOPSIS_ARABIA_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_1065_M1-NOCARDIOPSIS_ARABIA_medium.yaml",
+        "data/normalized_yaml/bacterial/m1_nocardiopsis_arabia_medium.yaml"
+      ],
+      "fingerprint": "569d53df5fea0b83540df3cdbb4f1f49ca90c3411f9abf622e1be5f6d797a20d",
+      "amount_and_both_exact_evidence_entries_retained": true,
+      "input_note_retained": true,
+      "pdf_reference_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/m1_nocardiopsis_arabia_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_1065_M1-NOCARDIOPSIS_ARABIA_medium.yaml",
+        "data/normalized_yaml/bacterial/m1_nocardiopsis_arabia_medium.yaml"
+      ],
+      "fingerprint": "569d53df5fea0b83540df3cdbb4f1f49ca90c3411f9abf622e1be5f6d797a20d",
+      "amount_and_both_exact_evidence_entries_retained": true,
+      "input_note_retained": true,
+      "pdf_reference_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_803_SPHAEROTILUS-LEPTOTHRIX_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_803_SPHAEROTILUS-LEPTOTHRIX_medium.yaml",
+        "data/normalized_yaml/bacterial/TOGO_M1923_Sphaerotilus-Leptothrix_Medium.yaml",
+        "data/normalized_yaml/bacterial/sphaerotilus_leptothrix_medium.yaml"
+      ],
+      "fingerprint": "d039f0d5eb886406ced92df4c2d3da493bf265447d034325e7cb091f61a49040",
+      "amount_and_both_exact_evidence_entries_retained": true,
+      "input_note_retained": true,
+      "pdf_reference_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/sphaerotilus_leptothrix_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_803_SPHAEROTILUS-LEPTOTHRIX_medium.yaml",
+        "data/normalized_yaml/bacterial/TOGO_M1923_Sphaerotilus-Leptothrix_Medium.yaml",
+        "data/normalized_yaml/bacterial/sphaerotilus_leptothrix_medium.yaml"
+      ],
+      "fingerprint": "d039f0d5eb886406ced92df4c2d3da493bf265447d034325e7cb091f61a49040",
+      "amount_and_both_exact_evidence_entries_retained": true,
+      "input_note_retained": true,
+      "pdf_reference_retained": true,
+      "event_retained": true
+    }
+  ]
+}

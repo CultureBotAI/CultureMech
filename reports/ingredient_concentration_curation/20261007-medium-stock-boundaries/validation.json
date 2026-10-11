@@ -1,0 +1,385 @@
+{
+  "baseline": [
+    {
+      "medium_id": "79",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/leucothrix_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stock-baseline-79-validate-schema.log"
+    },
+    {
+      "medium_id": "79",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/leucothrix_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stock-baseline-79-validate-strict.log"
+    },
+    {
+      "medium_id": "98",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/rhizobium_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stock-baseline-98-validate-schema.log"
+    },
+    {
+      "medium_id": "98",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/rhizobium_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stock-baseline-98-validate-strict.log"
+    },
+    {
+      "medium_id": "129",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/fungal/potato_dextrose_agar.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stock-baseline-129-validate-schema.log"
+    },
+    {
+      "medium_id": "129",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/fungal/potato_dextrose_agar.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stock-baseline-129-validate-strict.log"
+    },
+    {
+      "medium_id": "260",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/bacillus_schlegelii_heterotrophic_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stock-baseline-260-validate-schema.log"
+    },
+    {
+      "medium_id": "260",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/bacillus_schlegelii_heterotrophic_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stock-baseline-260-validate-strict.log"
+    },
+    {
+      "medium_id": "261",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/medium_for_chemolithotrophic_growth_of_bacillus_schlegelii.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stock-baseline-261-validate-schema.log"
+    },
+    {
+      "medium_id": "261",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/medium_for_chemolithotrophic_growth_of_bacillus_schlegelii.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stock-baseline-261-validate-strict.log"
+    },
+    {
+      "medium_id": "369",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/bacillus_tusciae_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stock-baseline-369-validate-schema.log"
+    },
+    {
+      "medium_id": "369",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/bacillus_tusciae_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stock-baseline-369-validate-strict.log"
+    },
+    {
+      "medium_id": "452",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/glucose_medium_nakayama.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stock-baseline-452-validate-schema.log"
+    },
+    {
+      "medium_id": "452",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/glucose_medium_nakayama.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stock-baseline-452-validate-strict.log"
+    }
+  ],
+  "post": [
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/leucothrix_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stock-post-79-validate-schema.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/leucothrix_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stock-post-79-validate-strict.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/rhizobium_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stock-post-98-validate-schema.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/rhizobium_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stock-post-98-validate-strict.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/fungal/potato_dextrose_agar.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stock-post-129-validate-schema.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/fungal/potato_dextrose_agar.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stock-post-129-validate-strict.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/bacillus_schlegelii_heterotrophic_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stock-post-260-validate-schema.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/bacillus_schlegelii_heterotrophic_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stock-post-260-validate-strict.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/medium_for_chemolithotrophic_growth_of_bacillus_schlegelii.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stock-post-261-validate-schema.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/medium_for_chemolithotrophic_growth_of_bacillus_schlegelii.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stock-post-261-validate-strict.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/bacillus_tusciae_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stock-post-369-validate-schema.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/bacillus_tusciae_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stock-post-369-validate-strict.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/glucose_medium_nakayama.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stock-post-452-validate-schema.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/glucose_medium_nakayama.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stock-post-452-validate-strict.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stock-post-strict-full.log"
+    },
+    {
+      "command": [
+        "just",
+        "assign-ids-check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stock-post-ids.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-products"
+      ],
+      "exit_code": 2,
+      "log": "/tmp/ingredient-media-20261007/stock-post-products.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-references",
+        "data/normalized_yaml/bacterial/leucothrix_medium.yaml"
+      ],
+      "exit_code": 2,
+      "log": "/tmp/ingredient-media-20261007/stock-post-references.log"
+    },
+    {
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/stock-post-verify-merges.log"
+    },
+    {
+      "command": [
+        "just",
+        "audit-merge-freshness",
+        "--json"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/stock-post-freshness.log"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "scripts/repair_reviewed_medium_stock_boundaries.py",
+        "--source-dir",
+        "/tmp/ingredient-media-20261007",
+        "--plan",
+        "reports/ingredient_concentration_curation/20261007-medium-stock-boundaries/plan.json",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stock-post-readback.log"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "scripts/repair_reviewed_medium_stock_boundaries.py",
+        "--source-dir",
+        "/tmp/ingredient-media-20261007",
+        "--plan",
+        "reports/ingredient_concentration_curation/20261007-medium-stock-boundaries/plan.json",
+        "--apply"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stock-post-noop.log"
+    }
+  ],
+  "summary": {
+    "selected_regression_tests_passed": 327,
+    "regression_log": "/tmp/ingredient-media-20261007/stock-boundaries-regressions-final.log",
+    "batch_guard_and_independent_inversion_tests": 44,
+    "strict_corpus_records": 15910,
+    "strict_corpus_errors": 0,
+    "unique_id_gate": "passed",
+    "readback_records": 7,
+    "readback_scoped_claims": 105,
+    "new_evidence_entries": 100,
+    "reapply_changed": 0,
+    "original_medium_batch_hashes_verified": 500,
+    "original_medium_batch_snippets_verified": 907,
+    "original_medium_batch_explicit_successors": 8,
+    "actual_merge_group_records_fully_retained": 5,
+    "actual_merge_group_records_checked": 7,
+    "merge_name_conflicts": 1247,
+    "merge_fingerprint_issues": 3286,
+    "freshness": {
+      "tracked_total": 6320,
+      "fresh_total": 6468,
+      "only_in_tracked": 3723,
+      "only_in_fresh": 3871,
+      "changed": 1488,
+      "unchanged": 1109
+    },
+    "unavailable_checks": {
+      "validate-products": "oaklib adapters unavailable; exit 2, not a pass",
+      "validate-references": "linkml-reference-validator unavailable; exit 2, not a pass"
+    },
+    "ruff": "passed for five edited Python files",
+    "black": "passed for five edited Python files",
+    "git_diff_check": "passed",
+    "publication": "local uncommitted changes; no generated merge products copied"
+  },
+  "runtime": "isolated Python 3.11; maintained 3.13 environment unavailable in earlier work",
+  "source_verification": "Seven official MediaDive API captures pinned to the historical first-500 plan; eight pinned official PDF recipe-chain documents read, relevant recipe pages visually inspected. Exact snippets verified in persisted YAML by guarded read-back."
+}

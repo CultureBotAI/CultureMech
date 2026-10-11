@@ -11,6 +11,33 @@ composition:
   term:
     id: mediadive.compound:2083
     label: air-dried garden soil
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/15
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "air-dried garden soil",
+                      "compound_id": 2083,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 400,
+                      "unit": "g",
+                      "g_l": 400,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (air-dried
+      garden soil) in MediaDive solution 15; locator=$.data.recipe[0] (compound_id=2083).
+      Provider explicitly reports g_l=400. Arithmetic check: 400 g * 1 g/g / (1000
+      ml / 1000 ml per L) = 400 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T08:19:20.505235+00:00;
+      response SHA256=502cb871ee580677a1e5c7c51dcc01f478f40a84fb6849f6e866303d68e570bd.'
 - preferred_term: Tap water
   concentration:
     value: '1000'
@@ -35,6 +62,32 @@ composition:
     label: agar
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/15
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "Agar",
+                      "compound_id": 3,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 15,
+                      "unit": "g",
+                      "g_l": 15,
+                      "mmol_l": 44.5991,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[2].concentration (Agar) in
+      MediaDive solution 15; locator=$.data.recipe[2] (compound_id=3). Provider explicitly
+      reports g_l=15. Arithmetic check: 15 g * 1 g/g / (1000 ml / 1000 ml per L) =
+      15 g/L, consistent with the reported value at its precision. Evidence supports
+      the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T08:19:20.505235+00:00; response SHA256=502cb871ee580677a1e5c7c51dcc01f478f40a84fb6849f6e866303d68e570bd.'
 preparation_notes: Sterilize 400.0 g of air-dried garden soil (with high content of
   organic matter) in 1000 ml tap water for one hour at 121°C. Allow it to sediment
   for a few hours at room temperature. Centrifuge the supernatant. Add 15.0 g agar
@@ -73,6 +126,16 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T08:27:51.574555+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/15
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "400"} -> {"unit":
+    "G_PER_L", "value": "400"} (evidence_only); composition[2].concentration: {"unit":
+    "G_PER_L", "value": "15"} -> {"unit": "G_PER_L", "value": "15"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -81,3 +144,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/15
+  title: 'MediaDive solution 15: Main sol. 12'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=502cb871ee580677a1e5c7c51dcc01f478f40a84fb6849f6e866303d68e570bd;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

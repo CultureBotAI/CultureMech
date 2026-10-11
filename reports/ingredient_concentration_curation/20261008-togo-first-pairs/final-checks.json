@@ -1,0 +1,128 @@
+{
+  "terminal": true,
+  "records_checked": 4,
+  "source_captures_checked": 6,
+  "report_rows": 40,
+  "statuses": {
+    "correct": 8,
+    "unsupported": 29,
+    "add": 2,
+    "evidence_only": 1
+  },
+  "counts": {
+    "new_evidence": 38,
+    "new_references": 4,
+    "new_curation_history": 2,
+    "quantity_corrections": 8,
+    "batch_mass_notes_unverified_concentrations": 12,
+    "new_quantity_slots": 2
+  },
+  "coverage": {
+    "created_at": "2026-10-08T09:34:32.438439+00:00",
+    "commit": "f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f",
+    "scope_note": "Exact tracked normalized paths outside reports/ingredient_concentration_curation; not a claim that those records have never been reviewed. Follow-up report presence does not mean all claims are verified. Evidence-state counts are structural candidates, not source checks. Source prefixes are literal identifiers, not inferred collection equivalences.",
+    "tracked_normalized_records": 15910,
+    "followup_unique_records": 11747,
+    "outside_this_followup": 4163,
+    "pending_source_prefixes": {
+      "UTEX": 98,
+      "UNSPECIFIED": 538,
+      "jcm.grmd": 60,
+      "TOGO": 2911,
+      "nbrc.medium": 75,
+      "MediaIngredientMech": 10,
+      "MEDIADB": 469,
+      "mediadive.medium": 2
+    },
+    "pending_claim_kinds": {
+      "ingredient": 59065,
+      "stock_addition": 5732,
+      "variant_text": 35
+    }
+  },
+  "cumulative_audit": {
+    "stock_nodes_relocated": 281,
+    "new_quantity_slots": 195,
+    "unsupported_quantity_slots_removed": 109,
+    "new_evidence": 30382,
+    "new_curation_history": 5308,
+    "new_references": 5434,
+    "quantity_corrections": 1375,
+    "ingredient_context_notes_added": 264,
+    "stock_descriptors_added": 132,
+    "water_input_nodes_added": 19,
+    "recipe_context_notes_corrected": 26,
+    "parent_links_corrected": 5,
+    "stock_stage_concentrations_rebased": 110,
+    "source_amount_conflicts_repaired": 3,
+    "unquantified_carrier_nodes_added": 76,
+    "evidence_scopes_corrected": 170,
+    "ingredient_context_notes_corrected": 9,
+    "preparation_actions_corrected": 6,
+    "preparation_descriptions_corrected": 4,
+    "preparation_steps_added": 13,
+    "batch_mass_notes_unverified_concentrations": 12,
+    "child_links_corrected": 5,
+    "water_input_notes_added": 9,
+    "inline_variant_options_added": 8,
+    "extraction_preparations_added": 1,
+    "base_preparations_added": 5,
+    "preparation_records_restored": 3,
+    "supplement_nodes_moved_to_variants": 4,
+    "preparation_steps_relocated": 8,
+    "stock_context_notes_corrected": 8,
+    "extraction_preparations_restructured": 2,
+    "source_version_alternatives_added": 4,
+    "copied_ingredient_nodes_removed": 3,
+    "composition_classifications_corrected": 2,
+    "stock_dose_basis_corrections": 12,
+    "ingredient_source_attributions_corrected": 1,
+    "bibliographic_entries_enriched": 1,
+    "variant_links_added": 2,
+    "excluded_alternative_nodes_removed": 1,
+    "ingredient_labels_corrected": 1,
+    "preparation_text_encodings_corrected": 1,
+    "unquantified_solvent_nodes_added": 1,
+    "ingredient_doses_relocated_to_stock": 1,
+    "identity_conflicts_retained_unquantified": 2,
+    "unquantified_makeup_nodes_added": 1,
+    "stock_preparation_notes_added": 1,
+    "edited_records": 5109
+  },
+  "failed_post_checks": [
+    "verify-merges",
+    "freshness"
+  ],
+  "reference_exit_code": 1,
+  "snippets_passed": 18,
+  "snippets_failed": 20,
+  "lint": [
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "scripts/repair_togo_first_pair_concentrations.py",
+        "tests/test_togo_first_pair_concentrations.py",
+        "reports/ingredient_concentration_curation/20261008-togo-first-pairs/audit.py",
+        "reports/ingredient_concentration_curation/20261008-togo-first-pairs/retention.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "output": "All checks passed!\n"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "scripts/repair_togo_first_pair_concentrations.py",
+        "tests/test_togo_first_pair_concentrations.py",
+        "reports/ingredient_concentration_curation/20261008-togo-first-pairs/audit.py",
+        "reports/ingredient_concentration_curation/20261008-togo-first-pairs/retention.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "output": "All done! \u2728 \ud83c\udf70 \u2728\n5 files would be left unchanged.\n"
+    }
+  ],
+  "scope": "Local source/hash/report verification; not scientific completion, publication success or full CI."
+}

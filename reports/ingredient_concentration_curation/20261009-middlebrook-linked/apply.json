@@ -1,0 +1,221 @@
+{
+  "terminal": true,
+  "phase": "apply",
+  "checks": [],
+  "code_sha256": {
+    "scripts/repair_linked_middlebrook.py": "b6571c6b97979de2b2ee7b16b4c3bc071d17467ef57fa104e5902d8e1a6658f1",
+    "tests/test_linked_middlebrook.py": "e95182859d2d576c3266645dd2abbbfa34314c4ed9d20de0f4c3ea019a2f6034",
+    "reports/ingredient_concentration_curation/20261009-middlebrook-linked/audit.py": "807c71a2ea7076245bb0ee989868f81ce24a673e53f6c7462daaf2f47396a73b"
+  },
+  "plan_sha256": "8d9b1352d5227111048a31411104b8a6c255819111fd4e1153917b29ea74074a",
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "d0d0451157b8ed78867e41503fd02bc9afa0f80d11758d67a3f60e9daee6b138"
+  },
+  "evidence_receipt": "cached.json",
+  "preview_audit": {
+    "K645a": {
+      "source_nodes": 22,
+      "old_quantity_slots": 23,
+      "claims": 80,
+      "new_evidence": 26,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K911": {
+      "source_nodes": 19,
+      "old_quantity_slots": 20,
+      "claims": 67,
+      "new_evidence": 22,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K645_44338": {
+      "source_nodes": 21,
+      "old_quantity_slots": 23,
+      "claims": 72,
+      "new_evidence": 23,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "K645_44339": {
+      "source_nodes": 21,
+      "old_quantity_slots": 23,
+      "claims": 72,
+      "new_evidence": 23,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "K645_44482": {
+      "source_nodes": 21,
+      "old_quantity_slots": 23,
+      "claims": 72,
+      "new_evidence": 23,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "K645_44483": {
+      "source_nodes": 21,
+      "old_quantity_slots": 23,
+      "claims": 72,
+      "new_evidence": 23,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "K645_44680": {
+      "source_nodes": 21,
+      "old_quantity_slots": 23,
+      "claims": 72,
+      "new_evidence": 23,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "K911_44536": {
+      "source_nodes": 19,
+      "old_quantity_slots": 20,
+      "claims": 65,
+      "new_evidence": 21,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "K645": {
+      "source_nodes": 21,
+      "old_quantity_slots": 23,
+      "claims": 78,
+      "new_evidence": 28,
+      "new_references": 6,
+      "new_curation_history": 1
+    },
+    "D911": {
+      "source_nodes": 23,
+      "old_quantity_slots": 20,
+      "claims": 74,
+      "new_evidence": 41,
+      "new_references": 3,
+      "new_curation_history": 1
+    },
+    "D645": {
+      "source_nodes": 25,
+      "old_quantity_slots": 23,
+      "claims": 57,
+      "new_evidence": 21,
+      "new_references": 4,
+      "new_curation_history": 1
+    }
+  },
+  "application": {
+    "mode": "apply",
+    "records": 11,
+    "changed": 11,
+    "already_applied": 0,
+    "claims": 781
+  },
+  "readback": {
+    "mode": "verify",
+    "records": 11,
+    "changed": 0,
+    "already_applied": 11,
+    "claims": 781
+  },
+  "noop": {
+    "mode": "apply",
+    "records": 11,
+    "changed": 0,
+    "already_applied": 11,
+    "claims": 781
+  },
+  "applied_audit": {
+    "K645a": {
+      "source_nodes": 22,
+      "old_quantity_slots": 23,
+      "claims": 80,
+      "new_evidence": 26,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K911": {
+      "source_nodes": 19,
+      "old_quantity_slots": 20,
+      "claims": 67,
+      "new_evidence": 22,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K645_44338": {
+      "source_nodes": 21,
+      "old_quantity_slots": 23,
+      "claims": 72,
+      "new_evidence": 23,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "K645_44339": {
+      "source_nodes": 21,
+      "old_quantity_slots": 23,
+      "claims": 72,
+      "new_evidence": 23,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "K645_44482": {
+      "source_nodes": 21,
+      "old_quantity_slots": 23,
+      "claims": 72,
+      "new_evidence": 23,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "K645_44483": {
+      "source_nodes": 21,
+      "old_quantity_slots": 23,
+      "claims": 72,
+      "new_evidence": 23,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "K645_44680": {
+      "source_nodes": 21,
+      "old_quantity_slots": 23,
+      "claims": 72,
+      "new_evidence": 23,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "K911_44536": {
+      "source_nodes": 19,
+      "old_quantity_slots": 20,
+      "claims": 65,
+      "new_evidence": 21,
+      "new_references": 1,
+      "new_curation_history": 1
+    },
+    "K645": {
+      "source_nodes": 21,
+      "old_quantity_slots": 23,
+      "claims": 78,
+      "new_evidence": 28,
+      "new_references": 6,
+      "new_curation_history": 1
+    },
+    "D911": {
+      "source_nodes": 23,
+      "old_quantity_slots": 20,
+      "claims": 74,
+      "new_evidence": 41,
+      "new_references": 3,
+      "new_curation_history": 1
+    },
+    "D645": {
+      "source_nodes": 25,
+      "old_quantity_slots": 23,
+      "claims": 57,
+      "new_evidence": 21,
+      "new_references": 4,
+      "new_curation_history": 1
+    }
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "586888cea49e962e3fe4ccbe021599c5c21ee5f15e4aae265f5bdfe305ce8bb0"
+  }
+}

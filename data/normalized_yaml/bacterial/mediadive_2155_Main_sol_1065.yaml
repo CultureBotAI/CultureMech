@@ -16,6 +16,32 @@ composition:
     label: starch
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/2155
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "Starch",
+                      "compound_id": 199,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 10,
+                      "unit": "g",
+                      "g_l": 10,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Starch)
+      in MediaDive solution 2155; locator=$.data.recipe[0] (compound_id=199). Provider
+      explicitly reports g_l=10. Arithmetic check: 10 g * 1 g/g / (1000 ml / 1000
+      ml per L) = 10 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T09:09:34.965979+00:00; response SHA256=6a312fb5cc290cb99a9e6be5164e58547fef02fddb37d5af53bf35563ba94e76.'
 - preferred_term: Yeast extract
   concentration:
     value: '4'
@@ -23,6 +49,32 @@ composition:
   term:
     id: mediadive.compound:16
     label: Yeast extract
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/2155
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Yeast extract",
+                      "compound_id": 16,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 4,
+                      "unit": "g",
+                      "g_l": 4,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Yeast extract)
+      in MediaDive solution 2155; locator=$.data.recipe[1] (compound_id=16). Provider
+      explicitly reports g_l=4. Arithmetic check: 4 g * 1 g/g / (1000 ml / 1000 ml
+      per L) = 4 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T09:09:34.965979+00:00; response SHA256=6a312fb5cc290cb99a9e6be5164e58547fef02fddb37d5af53bf35563ba94e76.'
 - preferred_term: Peptone
   concentration:
     value: '2'
@@ -30,6 +82,32 @@ composition:
   term:
     id: mediadive.compound:1
     label: Peptone
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/2155
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "Peptone",
+                      "compound_id": 1,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "g",
+                      "g_l": 2,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[2].concentration (Peptone)
+      in MediaDive solution 2155; locator=$.data.recipe[2] (compound_id=1). Provider
+      explicitly reports g_l=2. Arithmetic check: 2 g * 1 g/g / (1000 ml / 1000 ml
+      per L) = 2 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T09:09:34.965979+00:00; response SHA256=6a312fb5cc290cb99a9e6be5164e58547fef02fddb37d5af53bf35563ba94e76.'
 - preferred_term: NaCl
   concentration:
     value: '20'
@@ -42,6 +120,32 @@ composition:
     label: sodium chloride
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/2155
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "NaCl",
+                      "compound_id": 43,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 20,
+                      "unit": "g",
+                      "g_l": 20,
+                      "mmol_l": 342.231,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[3].concentration (NaCl) in
+      MediaDive solution 2155; locator=$.data.recipe[3] (compound_id=43). Provider
+      explicitly reports g_l=20. Arithmetic check: 20 g * 1 g/g / (1000 ml / 1000
+      ml per L) = 20 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T09:09:34.965979+00:00; response SHA256=6a312fb5cc290cb99a9e6be5164e58547fef02fddb37d5af53bf35563ba94e76.'
 - preferred_term: Agar
   concentration:
     value: '18'
@@ -54,13 +158,77 @@ composition:
     label: agar
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/2155
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 5,
+                      "compound": "Agar",
+                      "compound_id": 3,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 18,
+                      "unit": "g",
+                      "g_l": 18,
+                      "mmol_l": 53.5189,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[4].concentration (Agar) in
+      MediaDive solution 2155; locator=$.data.recipe[4] (compound_id=3). Provider
+      explicitly reports g_l=18. Arithmetic check: 18 g * 1 g/g / (1000 ml / 1000
+      ml per L) = 18 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T09:09:34.965979+00:00; response SHA256=6a312fb5cc290cb99a9e6be5164e58547fef02fddb37d5af53bf35563ba94e76.'
 - preferred_term: Sea water
   concentration:
-    value: '1000'
-    unit: PERCENT_V_V
+    value: '1'
+    unit: L
   term:
     id: mediadive.compound:286
     label: Sea water
+  notes: 'Source batch input: 1000 ml sea water = 1 L. This is an input volume, not
+    a mass concentration, volume percentage or measured final-medium volume. No density
+    or final-volume assumption is made.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/2155
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 6,
+                      "compound": "Sea water",
+                      "compound_id": 286,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1000,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'composition[5].concentration (Sea water): Source batch input: 1000
+      ml sea water = 1 L. This is an input volume, not a mass concentration, volume
+      percentage or measured final-medium volume. No density or final-volume assumption
+      is made. Calculation: 1000 ml / 1000 ml per L = 1 L. Locator=$.data.recipe[5].
+      Preparation context: Adjust pH to 7.2 Existing non-water amounts and chemical
+      mappings are preserved, not newly validated by this water evidence. Retrieved
+      2026-10-07T09:09:34.965979+00:00; response SHA256=6a312fb5cc290cb99a9e6be5164e58547fef02fddb37d5af53bf35563ba94e76.'
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1065.pdf
+    supports: SUPPORT
+    snippet: Sea water 1000.0 ml
+    explanation: 'composition[5].concentration (Sea water): original DSMZ recipe 1065,
+      page 1, water row. Source batch input: 1000 ml sea water = 1 L. This is an input
+      volume, not a mass concentration, volume percentage or measured final-medium
+      volume. No density or final-volume assumption is made. Calculation: 1000 ml
+      / 1000 ml per L = 1 L. The medium API explicitly links this recipe and solution
+      2155; this is not an inference from a similar medium name. Retrieved 2026-10-08T06:46:09.409456+00:00;
+      PDF SHA256=d927ffe37287e5d88f2baedc5df27a83ca0ef55e4209acf40aff0ff92b8c81e5.'
 preparation_notes: Adjust pH to 7.2
 curation_history:
 - timestamp: '2026-03-13T06:20:20.407900Z'
@@ -100,6 +268,31 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T09:15:06.636792+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/2155
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "10"} -> {"unit":
+    "G_PER_L", "value": "10"} (evidence_only); composition[1].concentration: {"unit":
+    "G_PER_L", "value": "4"} -> {"unit": "G_PER_L", "value": "4"} (evidence_only);
+    composition[2].concentration: {"unit": "G_PER_L", "value": "2"} -> {"unit": "G_PER_L",
+    "value": "2"} (evidence_only); composition[3].concentration: {"unit": "G_PER_L",
+    "value": "20"} -> {"unit": "G_PER_L", "value": "20"} (evidence_only); composition[4].concentration:
+    {"unit": "G_PER_L", "value": "18"} -> {"unit": "G_PER_L", "value": "18"} (evidence_only)'
+- timestamp: '2026-10-08T07:20:58.579071+00:00'
+  curator: codex
+  action: CORRECTED_DSMZ803_1046_1065_WATER_INPUT_UNITS
+  notes: Original DSMZ PDF and exact linked API recipe independently inspected. Preserved
+    prior evidence/history, identifiers, non-water amounts, preparation, chemical
+    mappings and parent/variant links. No final-volume, density, stock dilution or
+    growth inference.
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1065.pdf
+  changes: 'composition[5].concentration: 1000 PERCENT_V_V -> 1 L source batch input
+    (1000 ml / 1000); added water-input note, two source snippets and original-recipe
+    reference.'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -108,3 +301,18 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/2155
+  title: 'MediaDive solution 2155: Main sol. 1065'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=6a312fb5cc290cb99a9e6be5164e58547fef02fddb37d5af53bf35563ba94e76;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1065.pdf
+  title: 1065. M1-NOCARDIOPSIS ARABIA MEDIUM
+  notes: source_type=culture_collection_protocol; discovery_mode=cross_reference;
+    source_organization=DSMZ; accessed_on=2026-10-08; locator=page 1, water row; PDF
+    SHA256=d927ffe37287e5d88f2baedc5df27a83ca0ef55e4209acf40aff0ff92b8c81e5. Linked
+    by the exact MediaDive medium record and verified KOMODO original-recipe mapping.
+    Individual authors and publication year are not specified; the 2007 copyright
+    notice is not treated as publication year.

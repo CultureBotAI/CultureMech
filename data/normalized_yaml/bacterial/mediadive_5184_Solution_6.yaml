@@ -16,6 +16,33 @@ composition:
     label: L-alanine
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5184
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "L-Alanine",
+                      "compound_id": 274,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 100,
+                      "unit": "mg",
+                      "g_l": 0.25,
+                      "mmol_l": 2.80615,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (L-Alanine)
+      in MediaDive solution 5184; locator=$.data.recipe[0] (compound_id=274). Provider
+      explicitly reports g_l=0.25. Arithmetic check: 100 mg * 0.001 g/mg / (400 ml
+      / 1000 ml per L) = 0.25 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 400. Retrieved 2026-10-07T09:51:55.190770+00:00;
+      response SHA256=221fa0d81a4d55d6fcc7f83feab7ebd7a6e1a165cc3eba0193857b7b24141b4d.'
 - preferred_term: L-Arginine
   concentration:
     value: '0.25'
@@ -28,6 +55,33 @@ composition:
     label: L-arginine
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5184
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "L-Arginine",
+                      "compound_id": 1327,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 100,
+                      "unit": "mg",
+                      "g_l": 0.25,
+                      "mmol_l": 1.43513,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (L-Arginine)
+      in MediaDive solution 5184; locator=$.data.recipe[1] (compound_id=1327). Provider
+      explicitly reports g_l=0.25. Arithmetic check: 100 mg * 0.001 g/mg / (400 ml
+      / 1000 ml per L) = 0.25 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 400. Retrieved 2026-10-07T09:51:55.190770+00:00;
+      response SHA256=221fa0d81a4d55d6fcc7f83feab7ebd7a6e1a165cc3eba0193857b7b24141b4d.'
 - preferred_term: L-Asparagine
   concentration:
     value: '0.25'
@@ -40,6 +94,33 @@ composition:
     label: L-asparagine
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5184
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "L-Asparagine",
+                      "compound_id": 829,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 100,
+                      "unit": "mg",
+                      "g_l": 0.25,
+                      "mmol_l": 1.89222,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[2].concentration (L-Asparagine)
+      in MediaDive solution 5184; locator=$.data.recipe[2] (compound_id=829). Provider
+      explicitly reports g_l=0.25. Arithmetic check: 100 mg * 0.001 g/mg / (400 ml
+      / 1000 ml per L) = 0.25 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 400. Retrieved 2026-10-07T09:51:55.190770+00:00;
+      response SHA256=221fa0d81a4d55d6fcc7f83feab7ebd7a6e1a165cc3eba0193857b7b24141b4d.'
 - preferred_term: L-Aspartic acid
   concentration:
     value: '0.25'
@@ -52,6 +133,33 @@ composition:
     label: L-aspartic acid
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5184
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "L-Aspartic acid",
+                      "compound_id": 1328,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 100,
+                      "unit": "mg",
+                      "g_l": 0.25,
+                      "mmol_l": 1.87829,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[3].concentration (L-Aspartic
+      acid) in MediaDive solution 5184; locator=$.data.recipe[3] (compound_id=1328).
+      Provider explicitly reports g_l=0.25. Arithmetic check: 100 mg * 0.001 g/mg
+      / (400 ml / 1000 ml per L) = 0.25 g/L, consistent with the reported value at
+      its precision. Evidence supports the provider-declared concentration within
+      this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 400. Retrieved 2026-10-07T09:51:55.190770+00:00;
+      response SHA256=221fa0d81a4d55d6fcc7f83feab7ebd7a6e1a165cc3eba0193857b7b24141b4d.'
 - preferred_term: L-Cysteine
   concentration:
     value: '0.25'
@@ -64,6 +172,33 @@ composition:
     label: L-cysteine
     confidence: 0.9
     match_type: manual_curated
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5184
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 5,
+                      "compound": "L-Cysteine",
+                      "compound_id": 671,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 100,
+                      "unit": "mg",
+                      "g_l": 0.25,
+                      "mmol_l": 2.06339,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[4].concentration (L-Cysteine)
+      in MediaDive solution 5184; locator=$.data.recipe[4] (compound_id=671). Provider
+      explicitly reports g_l=0.25. Arithmetic check: 100 mg * 0.001 g/mg / (400 ml
+      / 1000 ml per L) = 0.25 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 400. Retrieved 2026-10-07T09:51:55.190770+00:00;
+      response SHA256=221fa0d81a4d55d6fcc7f83feab7ebd7a6e1a165cc3eba0193857b7b24141b4d.'
 - preferred_term: L-Glutamic acid
   concentration:
     value: '0.25'
@@ -76,6 +211,33 @@ composition:
     label: L-glutamic acid
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5184
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 6,
+                      "compound": "L-Glutamic acid",
+                      "compound_id": 374,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 100,
+                      "unit": "mg",
+                      "g_l": 0.25,
+                      "mmol_l": 1.69918,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[5].concentration (L-Glutamic
+      acid) in MediaDive solution 5184; locator=$.data.recipe[5] (compound_id=374).
+      Provider explicitly reports g_l=0.25. Arithmetic check: 100 mg * 0.001 g/mg
+      / (400 ml / 1000 ml per L) = 0.25 g/L, consistent with the reported value at
+      its precision. Evidence supports the provider-declared concentration within
+      this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 400. Retrieved 2026-10-07T09:51:55.190770+00:00;
+      response SHA256=221fa0d81a4d55d6fcc7f83feab7ebd7a6e1a165cc3eba0193857b7b24141b4d.'
 - preferred_term: L-Glutamine
   concentration:
     value: '0.25'
@@ -88,6 +250,33 @@ composition:
     label: L-glutamine
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5184
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 7,
+                      "compound": "L-Glutamine",
+                      "compound_id": 134,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 100,
+                      "unit": "mg",
+                      "g_l": 0.25,
+                      "mmol_l": 1.71069,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[6].concentration (L-Glutamine)
+      in MediaDive solution 5184; locator=$.data.recipe[6] (compound_id=134). Provider
+      explicitly reports g_l=0.25. Arithmetic check: 100 mg * 0.001 g/mg / (400 ml
+      / 1000 ml per L) = 0.25 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 400. Retrieved 2026-10-07T09:51:55.190770+00:00;
+      response SHA256=221fa0d81a4d55d6fcc7f83feab7ebd7a6e1a165cc3eba0193857b7b24141b4d.'
 - preferred_term: Glycine
   concentration:
     value: '0.25'
@@ -100,6 +289,33 @@ composition:
     label: glycine
     confidence: 0.9
     match_type: manual_curated
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5184
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 8,
+                      "compound": "Glycine",
+                      "compound_id": 358,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 100,
+                      "unit": "mg",
+                      "g_l": 0.25,
+                      "mmol_l": 3.33023,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[7].concentration (Glycine)
+      in MediaDive solution 5184; locator=$.data.recipe[7] (compound_id=358). Provider
+      explicitly reports g_l=0.25. Arithmetic check: 100 mg * 0.001 g/mg / (400 ml
+      / 1000 ml per L) = 0.25 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 400. Retrieved 2026-10-07T09:51:55.190770+00:00;
+      response SHA256=221fa0d81a4d55d6fcc7f83feab7ebd7a6e1a165cc3eba0193857b7b24141b4d.'
 - preferred_term: L-Histidine
   concentration:
     value: '0.25'
@@ -112,6 +328,33 @@ composition:
     label: L-histidine
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5184
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 9,
+                      "compound": "L-Histidine",
+                      "compound_id": 132,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 100,
+                      "unit": "mg",
+                      "g_l": 0.25,
+                      "mmol_l": 1.61134,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[8].concentration (L-Histidine)
+      in MediaDive solution 5184; locator=$.data.recipe[8] (compound_id=132). Provider
+      explicitly reports g_l=0.25. Arithmetic check: 100 mg * 0.001 g/mg / (400 ml
+      / 1000 ml per L) = 0.25 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 400. Retrieved 2026-10-07T09:51:55.190770+00:00;
+      response SHA256=221fa0d81a4d55d6fcc7f83feab7ebd7a6e1a165cc3eba0193857b7b24141b4d.'
 - preferred_term: L-Isoleucine
   concentration:
     value: '0.25'
@@ -124,6 +367,33 @@ composition:
     label: L-isoleucine
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5184
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 10,
+                      "compound": "L-Isoleucine",
+                      "compound_id": 447,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 100,
+                      "unit": "mg",
+                      "g_l": 0.25,
+                      "mmol_l": 1.90592,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[9].concentration (L-Isoleucine)
+      in MediaDive solution 5184; locator=$.data.recipe[9] (compound_id=447). Provider
+      explicitly reports g_l=0.25. Arithmetic check: 100 mg * 0.001 g/mg / (400 ml
+      / 1000 ml per L) = 0.25 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 400. Retrieved 2026-10-07T09:51:55.190770+00:00;
+      response SHA256=221fa0d81a4d55d6fcc7f83feab7ebd7a6e1a165cc3eba0193857b7b24141b4d.'
 - preferred_term: L-Leucine
   concentration:
     value: '0.25'
@@ -136,6 +406,33 @@ composition:
     label: L-leucine
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5184
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 11,
+                      "compound": "L-Leucine",
+                      "compound_id": 446,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 100,
+                      "unit": "mg",
+                      "g_l": 0.25,
+                      "mmol_l": 1.90592,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[10].concentration (L-Leucine)
+      in MediaDive solution 5184; locator=$.data.recipe[10] (compound_id=446). Provider
+      explicitly reports g_l=0.25. Arithmetic check: 100 mg * 0.001 g/mg / (400 ml
+      / 1000 ml per L) = 0.25 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 400. Retrieved 2026-10-07T09:51:55.190770+00:00;
+      response SHA256=221fa0d81a4d55d6fcc7f83feab7ebd7a6e1a165cc3eba0193857b7b24141b4d.'
 - preferred_term: L-Lysine
   concentration:
     value: '0.25'
@@ -148,6 +445,33 @@ composition:
     label: L-lysine
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5184
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 12,
+                      "compound": "L-Lysine",
+                      "compound_id": 1973,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 100,
+                      "unit": "mg",
+                      "g_l": 0.25,
+                      "mmol_l": 1.7101,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[11].concentration (L-Lysine)
+      in MediaDive solution 5184; locator=$.data.recipe[11] (compound_id=1973). Provider
+      explicitly reports g_l=0.25. Arithmetic check: 100 mg * 0.001 g/mg / (400 ml
+      / 1000 ml per L) = 0.25 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 400. Retrieved 2026-10-07T09:51:55.190770+00:00;
+      response SHA256=221fa0d81a4d55d6fcc7f83feab7ebd7a6e1a165cc3eba0193857b7b24141b4d.'
 - preferred_term: L-Methionine
   concentration:
     value: '0.25'
@@ -160,6 +484,33 @@ composition:
     label: L-methionine
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5184
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 13,
+                      "compound": "L-Methionine",
+                      "compound_id": 1330,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 100,
+                      "unit": "mg",
+                      "g_l": 0.25,
+                      "mmol_l": 1.67549,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[12].concentration (L-Methionine)
+      in MediaDive solution 5184; locator=$.data.recipe[12] (compound_id=1330). Provider
+      explicitly reports g_l=0.25. Arithmetic check: 100 mg * 0.001 g/mg / (400 ml
+      / 1000 ml per L) = 0.25 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 400. Retrieved 2026-10-07T09:51:55.190770+00:00;
+      response SHA256=221fa0d81a4d55d6fcc7f83feab7ebd7a6e1a165cc3eba0193857b7b24141b4d.'
 - preferred_term: L-Phenylalanine
   concentration:
     value: '0.25'
@@ -172,6 +523,33 @@ composition:
     label: L-phenylalanine
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5184
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 14,
+                      "compound": "L-Phenylalanine",
+                      "compound_id": 1332,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 100,
+                      "unit": "mg",
+                      "g_l": 0.25,
+                      "mmol_l": 1.51341,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[13].concentration (L-Phenylalanine)
+      in MediaDive solution 5184; locator=$.data.recipe[13] (compound_id=1332). Provider
+      explicitly reports g_l=0.25. Arithmetic check: 100 mg * 0.001 g/mg / (400 ml
+      / 1000 ml per L) = 0.25 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 400. Retrieved 2026-10-07T09:51:55.190770+00:00;
+      response SHA256=221fa0d81a4d55d6fcc7f83feab7ebd7a6e1a165cc3eba0193857b7b24141b4d.'
 - preferred_term: L-Proline
   concentration:
     value: '0.25'
@@ -184,6 +562,33 @@ composition:
     label: L-proline
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5184
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 15,
+                      "compound": "L-Proline",
+                      "compound_id": 1130,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 100,
+                      "unit": "mg",
+                      "g_l": 0.25,
+                      "mmol_l": 2.17146,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[14].concentration (L-Proline)
+      in MediaDive solution 5184; locator=$.data.recipe[14] (compound_id=1130). Provider
+      explicitly reports g_l=0.25. Arithmetic check: 100 mg * 0.001 g/mg / (400 ml
+      / 1000 ml per L) = 0.25 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 400. Retrieved 2026-10-07T09:51:55.190770+00:00;
+      response SHA256=221fa0d81a4d55d6fcc7f83feab7ebd7a6e1a165cc3eba0193857b7b24141b4d.'
 - preferred_term: L-Serine
   concentration:
     value: '0.25'
@@ -196,6 +601,33 @@ composition:
     label: L-serine
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5184
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 16,
+                      "compound": "L-Serine",
+                      "compound_id": 133,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 100,
+                      "unit": "mg",
+                      "g_l": 0.25,
+                      "mmol_l": 2.37891,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[15].concentration (L-Serine)
+      in MediaDive solution 5184; locator=$.data.recipe[15] (compound_id=133). Provider
+      explicitly reports g_l=0.25. Arithmetic check: 100 mg * 0.001 g/mg / (400 ml
+      / 1000 ml per L) = 0.25 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 400. Retrieved 2026-10-07T09:51:55.190770+00:00;
+      response SHA256=221fa0d81a4d55d6fcc7f83feab7ebd7a6e1a165cc3eba0193857b7b24141b4d.'
 - preferred_term: L-Threonine
   concentration:
     value: '0.25'
@@ -208,6 +640,33 @@ composition:
     label: L-threonine
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5184
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 17,
+                      "compound": "L-Threonine",
+                      "compound_id": 658,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 100,
+                      "unit": "mg",
+                      "g_l": 0.25,
+                      "mmol_l": 2.09872,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[16].concentration (L-Threonine)
+      in MediaDive solution 5184; locator=$.data.recipe[16] (compound_id=658). Provider
+      explicitly reports g_l=0.25. Arithmetic check: 100 mg * 0.001 g/mg / (400 ml
+      / 1000 ml per L) = 0.25 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 400. Retrieved 2026-10-07T09:51:55.190770+00:00;
+      response SHA256=221fa0d81a4d55d6fcc7f83feab7ebd7a6e1a165cc3eba0193857b7b24141b4d.'
 - preferred_term: L-Tryptophan
   concentration:
     value: '0.25'
@@ -220,6 +679,33 @@ composition:
     label: L-tryptophan
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5184
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 18,
+                      "compound": "L-Tryptophan",
+                      "compound_id": 449,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 100,
+                      "unit": "mg",
+                      "g_l": 0.25,
+                      "mmol_l": 1.22417,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[17].concentration (L-Tryptophan)
+      in MediaDive solution 5184; locator=$.data.recipe[17] (compound_id=449). Provider
+      explicitly reports g_l=0.25. Arithmetic check: 100 mg * 0.001 g/mg / (400 ml
+      / 1000 ml per L) = 0.25 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 400. Retrieved 2026-10-07T09:51:55.190770+00:00;
+      response SHA256=221fa0d81a4d55d6fcc7f83feab7ebd7a6e1a165cc3eba0193857b7b24141b4d.'
 - preferred_term: L-Tyrosine
   concentration:
     value: '0.25'
@@ -232,6 +718,33 @@ composition:
     label: L-tyrosine
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5184
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 19,
+                      "compound": "L-Tyrosine",
+                      "compound_id": 1333,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 100,
+                      "unit": "mg",
+                      "g_l": 0.25,
+                      "mmol_l": 1.37977,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[18].concentration (L-Tyrosine)
+      in MediaDive solution 5184; locator=$.data.recipe[18] (compound_id=1333). Provider
+      explicitly reports g_l=0.25. Arithmetic check: 100 mg * 0.001 g/mg / (400 ml
+      / 1000 ml per L) = 0.25 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 400. Retrieved 2026-10-07T09:51:55.190770+00:00;
+      response SHA256=221fa0d81a4d55d6fcc7f83feab7ebd7a6e1a165cc3eba0193857b7b24141b4d.'
 - preferred_term: L-Valine
   concentration:
     value: '0.25'
@@ -244,10 +757,37 @@ composition:
     label: L-valine
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5184
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 20,
+                      "compound": "L-Valine",
+                      "compound_id": 1334,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 100,
+                      "unit": "mg",
+                      "g_l": 0.25,
+                      "mmol_l": 2.13402,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[19].concentration (L-Valine)
+      in MediaDive solution 5184; locator=$.data.recipe[19] (compound_id=1334). Provider
+      explicitly reports g_l=0.25. Arithmetic check: 100 mg * 0.001 g/mg / (400 ml
+      / 1000 ml per L) = 0.25 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 400. Retrieved 2026-10-07T09:51:55.190770+00:00;
+      response SHA256=221fa0d81a4d55d6fcc7f83feab7ebd7a6e1a165cc3eba0193857b7b24141b4d.'
 - preferred_term: Distilled water
   concentration:
-    value: '1000.0'
-    unit: PERCENT_V_V
+    value: '0.4'
+    unit: L
   term:
     id: mediadive.compound:4
     label: Distilled water
@@ -256,6 +796,31 @@ composition:
     label: water
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5184
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 21,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 400,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[20].concentration (Distilled
+      water) in MediaDive solution 5184; locator=$.data.recipe[20] (compound_id=4).
+      Source water addition is 400 ml per prepared batch: 400 / 1000 = 0.4 L. No source
+      preparation step gives a competing make-up instruction. This is a batch dose,
+      not a volume percentage; no final-volume or solvent-density assumption is made.
+      Additional exact excerpt at $.data.volume: "volume": 400. Retrieved 2026-10-07T09:51:55.190770+00:00;
+      response SHA256=221fa0d81a4d55d6fcc7f83feab7ebd7a6e1a165cc3eba0193857b7b24141b4d.'
 preparation_notes: 'Original volume: 400 mL'
 curation_history:
 - timestamp: '2026-03-13T06:20:35.542175Z'
@@ -290,6 +855,45 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '2 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T09:53:16.572361+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/5184
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "0.25"} ->
+    {"unit": "G_PER_L", "value": "0.25"} (evidence_only); composition[1].concentration:
+    {"unit": "G_PER_L", "value": "0.25"} -> {"unit": "G_PER_L", "value": "0.25"} (evidence_only);
+    composition[2].concentration: {"unit": "G_PER_L", "value": "0.25"} -> {"unit":
+    "G_PER_L", "value": "0.25"} (evidence_only); composition[3].concentration: {"unit":
+    "G_PER_L", "value": "0.25"} -> {"unit": "G_PER_L", "value": "0.25"} (evidence_only);
+    composition[4].concentration: {"unit": "G_PER_L", "value": "0.25"} -> {"unit":
+    "G_PER_L", "value": "0.25"} (evidence_only); composition[5].concentration: {"unit":
+    "G_PER_L", "value": "0.25"} -> {"unit": "G_PER_L", "value": "0.25"} (evidence_only);
+    composition[6].concentration: {"unit": "G_PER_L", "value": "0.25"} -> {"unit":
+    "G_PER_L", "value": "0.25"} (evidence_only); composition[7].concentration: {"unit":
+    "G_PER_L", "value": "0.25"} -> {"unit": "G_PER_L", "value": "0.25"} (evidence_only);
+    composition[8].concentration: {"unit": "G_PER_L", "value": "0.25"} -> {"unit":
+    "G_PER_L", "value": "0.25"} (evidence_only); composition[9].concentration: {"unit":
+    "G_PER_L", "value": "0.25"} -> {"unit": "G_PER_L", "value": "0.25"} (evidence_only);
+    composition[10].concentration: {"unit": "G_PER_L", "value": "0.25"} -> {"unit":
+    "G_PER_L", "value": "0.25"} (evidence_only); composition[11].concentration: {"unit":
+    "G_PER_L", "value": "0.25"} -> {"unit": "G_PER_L", "value": "0.25"} (evidence_only);
+    composition[12].concentration: {"unit": "G_PER_L", "value": "0.25"} -> {"unit":
+    "G_PER_L", "value": "0.25"} (evidence_only); composition[13].concentration: {"unit":
+    "G_PER_L", "value": "0.25"} -> {"unit": "G_PER_L", "value": "0.25"} (evidence_only);
+    composition[14].concentration: {"unit": "G_PER_L", "value": "0.25"} -> {"unit":
+    "G_PER_L", "value": "0.25"} (evidence_only); composition[15].concentration: {"unit":
+    "G_PER_L", "value": "0.25"} -> {"unit": "G_PER_L", "value": "0.25"} (evidence_only);
+    composition[16].concentration: {"unit": "G_PER_L", "value": "0.25"} -> {"unit":
+    "G_PER_L", "value": "0.25"} (evidence_only); composition[17].concentration: {"unit":
+    "G_PER_L", "value": "0.25"} -> {"unit": "G_PER_L", "value": "0.25"} (evidence_only);
+    composition[18].concentration: {"unit": "G_PER_L", "value": "0.25"} -> {"unit":
+    "G_PER_L", "value": "0.25"} (evidence_only); composition[19].concentration: {"unit":
+    "G_PER_L", "value": "0.25"} -> {"unit": "G_PER_L", "value": "0.25"} (evidence_only);
+    composition[20].concentration: {"unit": "PERCENT_V_V", "value": "1000.0"} -> {"unit":
+    "L", "value": "0.4"} (correct)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -298,3 +902,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/5184
+  title: 'MediaDive solution 5184: Solution 6'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=221fa0d81a4d55d6fcc7f83feab7ebd7a6e1a165cc3eba0193857b7b24141b4d;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

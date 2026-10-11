@@ -23,6 +23,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/934
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 1,
+                              "compound": "NaCl",
+                              "compound_id": 43,
+                              "amount": 1.5,
+                              "unit": "g",
+                              "g_l": 1.5,
+                              "mmol_l": 25.6674,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[0].concentration (NaCl) in
+      MediaDive medium 934; locator=$.data.solutions[0].recipe[0]. Provider explicitly
+      reports g_l=1.5; check: 1.5 g * 1 g/g / (1000 ml / 1000 ml per L) = 1.5 g/L.
+      This supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:14:40.031403+00:00;
+      response SHA256=f98f9666b2a27c33447a631c7b79610917fbe1c991362a2226dd97d15d7b9c9b.'
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
@@ -33,6 +56,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:32149
     label: sodium sulfate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/934
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 2,
+                              "compound": "Na2SO4",
+                              "compound_id": 110,
+                              "amount": 4,
+                              "unit": "g",
+                              "g_l": 4,
+                              "mmol_l": 28.1611,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[1].concentration (Na2SO4)
+      in MediaDive medium 934; locator=$.data.solutions[0].recipe[1]. Provider explicitly
+      reports g_l=4; check: 4 g * 1 g/g / (1000 ml / 1000 ml per L) = 4 g/L. This
+      supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:14:40.031403+00:00;
+      response SHA256=f98f9666b2a27c33447a631c7b79610917fbe1c991362a2226dd97d15d7b9c9b.'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -43,6 +89,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
     label: potassium chloride
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/934
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 3,
+                              "compound": "KCl",
+                              "compound_id": 61,
+                              "amount": 0.7,
+                              "unit": "g",
+                              "g_l": 0.7,
+                              "mmol_l": 9.38967,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[2].concentration (KCl) in
+      MediaDive medium 934; locator=$.data.solutions[0].recipe[2]. Provider explicitly
+      reports g_l=0.7; check: 0.7 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.7 g/L.
+      This supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:14:40.031403+00:00;
+      response SHA256=f98f9666b2a27c33447a631c7b79610917fbe1c991362a2226dd97d15d7b9c9b.'
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -53,6 +122,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/934
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 4,
+                              "compound": "NaHCO3",
+                              "compound_id": 55,
+                              "amount": 0.2,
+                              "unit": "g",
+                              "g_l": 0.2,
+                              "mmol_l": 2.38075,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[3].concentration (NaHCO3)
+      in MediaDive medium 934; locator=$.data.solutions[0].recipe[3]. Provider explicitly
+      reports g_l=0.2; check: 0.2 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.2 g/L.
+      This supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:14:40.031403+00:00;
+      response SHA256=f98f9666b2a27c33447a631c7b79610917fbe1c991362a2226dd97d15d7b9c9b.'
 - preferred_term: KBr
   term:
     id: CHEBI:32030
@@ -63,6 +155,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:32030
     label: potassium bromide
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/934
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 5,
+                              "compound": "KBr",
+                              "compound_id": 174,
+                              "amount": 0.1,
+                              "unit": "g",
+                              "g_l": 0.1,
+                              "mmol_l": 0.840336,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[4].concentration (KBr) in
+      MediaDive medium 934; locator=$.data.solutions[0].recipe[4]. Provider explicitly
+      reports g_l=0.1; check: 0.1 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.1 g/L.
+      This supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:14:40.031403+00:00;
+      response SHA256=f98f9666b2a27c33447a631c7b79610917fbe1c991362a2226dd97d15d7b9c9b.'
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -73,6 +188,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
     label: boric acid
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/934
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 6,
+                              "compound": "H3BO3",
+                              "compound_id": 37,
+                              "amount": 0.03,
+                              "unit": "g",
+                              "g_l": 0.03,
+                              "mmol_l": 0.485123,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[5].concentration (H3BO3)
+      in MediaDive medium 934; locator=$.data.solutions[0].recipe[5]. Provider explicitly
+      reports g_l=0.03; check: 0.03 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.03 g/L.
+      This supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:14:40.031403+00:00;
+      response SHA256=f98f9666b2a27c33447a631c7b79610917fbe1c991362a2226dd97d15d7b9c9b.'
 - preferred_term: MgCl2
   term:
     id: CHEBI:6636
@@ -83,6 +221,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:6636
     label: magnesium dichloride
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/934
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 7,
+                              "compound": "MgCl2",
+                              "compound_id": 453,
+                              "amount": 5.8,
+                              "unit": "g",
+                              "g_l": 5.8,
+                              "mmol_l": 60.918,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[6].concentration (MgCl2)
+      in MediaDive medium 934; locator=$.data.solutions[0].recipe[6]. Provider explicitly
+      reports g_l=5.8; check: 5.8 g * 1 g/g / (1000 ml / 1000 ml per L) = 5.8 g/L.
+      This supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:14:40.031403+00:00;
+      response SHA256=f98f9666b2a27c33447a631c7b79610917fbe1c991362a2226dd97d15d7b9c9b.'
 - preferred_term: CaCl2
   term:
     id: CHEBI:3312
@@ -93,6 +254,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:3312
     label: calcium dichloride
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/934
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 8,
+                              "compound": "CaCl2",
+                              "compound_id": 81,
+                              "amount": 1.5,
+                              "unit": "g",
+                              "g_l": 1.5,
+                              "mmol_l": 13.5159,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[7].concentration (CaCl2)
+      in MediaDive medium 934; locator=$.data.solutions[0].recipe[7]. Provider explicitly
+      reports g_l=1.5; check: 1.5 g * 1 g/g / (1000 ml / 1000 ml per L) = 1.5 g/L.
+      This supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:14:40.031403+00:00;
+      response SHA256=f98f9666b2a27c33447a631c7b79610917fbe1c991362a2226dd97d15d7b9c9b.'
 - preferred_term: SrCl2
   term:
     id: CHEBI:36383
@@ -103,14 +287,82 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:36383
     label: strontium dichloride
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/934
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 9,
+                              "compound": "SrCl2",
+                              "compound_id": 527,
+                              "amount": 0.025,
+                              "unit": "g",
+                              "g_l": 0.025,
+                              "mmol_l": 0.157709,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[8].concentration (SrCl2)
+      in MediaDive medium 934; locator=$.data.solutions[0].recipe[8]. Provider explicitly
+      reports g_l=0.025; check: 0.025 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.025
+      g/L. This supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:14:40.031403+00:00;
+      response SHA256=f98f9666b2a27c33447a631c7b79610917fbe1c991362a2226dd97d15d7b9c9b.'
 - preferred_term: Tryptone
   concentration:
     value: '5'
     unit: G_PER_L
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/934
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 10,
+                              "compound": "Tryptone",
+                              "compound_id": 71,
+                              "amount": 5,
+                              "unit": "g",
+                              "g_l": 5,
+                              "mmol_l": 70.3433,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[9].concentration (Tryptone)
+      in MediaDive medium 934; locator=$.data.solutions[0].recipe[9]. Provider explicitly
+      reports g_l=5; check: 5 g * 1 g/g / (1000 ml / 1000 ml per L) = 5 g/L. This
+      supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:14:40.031403+00:00;
+      response SHA256=f98f9666b2a27c33447a631c7b79610917fbe1c991362a2226dd97d15d7b9c9b.'
 - preferred_term: Yeast extract
   concentration:
     value: '1'
     unit: G_PER_L
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/934
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 11,
+                              "compound": "Yeast extract",
+                              "compound_id": 16,
+                              "amount": 1,
+                              "unit": "g",
+                              "g_l": 1,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[10].concentration (Yeast
+      extract) in MediaDive medium 934; locator=$.data.solutions[0].recipe[10]. Provider
+      explicitly reports g_l=1; check: 1 g * 1 g/g / (1000 ml / 1000 ml per L) = 1
+      g/L. This supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:14:40.031403+00:00;
+      response SHA256=f98f9666b2a27c33447a631c7b79610917fbe1c991362a2226dd97d15d7b9c9b.'
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -121,6 +373,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:76209
     label: sodium sulfide nonahydrate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/934
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 12,
+                              "compound": "Na2S x 9 H2O",
+                              "compound_id": 54,
+                              "amount": 0.75,
+                              "unit": "g",
+                              "g_l": 0.75,
+                              "mmol_l": 3.12263,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[11].concentration (Na2S x
+      9 H2O) in MediaDive medium 934; locator=$.data.solutions[0].recipe[11]. Provider
+      explicitly reports g_l=0.75; check: 0.75 g * 1 g/g / (1000 ml / 1000 ml per
+      L) = 0.75 g/L. This supports the provider-declared main-recipe concentration,
+      not an independently measured final volume, a stock composition, or a downstream
+      assay dilution. Water alone does not establish final volume. Exact source ingredient
+      labels/forms are matched; secondary ontology mappings are not validated by this
+      evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved
+      2026-10-07T13:14:40.031403+00:00; response SHA256=f98f9666b2a27c33447a631c7b79610917fbe1c991362a2226dd97d15d7b9c9b.'
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -131,6 +406,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:8806
     label: Resazurin
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/934
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 13,
+                              "compound": "Resazurin",
+                              "compound_id": 25,
+                              "amount": 2,
+                              "unit": "mg",
+                              "g_l": 0.002,
+                              "mmol_l": 0.00872638,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[12].concentration (Resazurin)
+      in MediaDive medium 934; locator=$.data.solutions[0].recipe[12]. Provider explicitly
+      reports g_l=0.002; check: 2 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.002
+      g/L. This supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:14:40.031403+00:00;
+      response SHA256=f98f9666b2a27c33447a631c7b79610917fbe1c991362a2226dd97d15d7b9c9b.'
 - preferred_term: Sulphur
   term:
     id: CHEBI:17909
@@ -141,6 +439,28 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:17909
     label: polysulfur
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/934
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 14,
+                              "compound": "Sulphur",
+                              "compound_id": 750,
+                              "amount": 10,
+                              "unit": "g",
+                              "g_l": 10,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[13].concentration (Sulphur)
+      in MediaDive medium 934; locator=$.data.solutions[0].recipe[13]. Provider explicitly
+      reports g_l=10; check: 10 g * 1 g/g / (1000 ml / 1000 ml per L) = 10 g/L. This
+      supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:14:40.031403+00:00;
+      response SHA256=f98f9666b2a27c33447a631c7b79610917fbe1c991362a2226dd97d15d7b9c9b.'
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -180,6 +500,35 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-10-07T13:32:40.086487+00:00'
+  curator: codex
+  action: CURATED_MEDIUM_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Exact medium/source membership, ingredient inventory/forms, physical-state
+    conditions, literal snippets, and arithmetic checked. Stock boundaries, source-only
+    rows, preparation context, and variants remain explicit follow-up tasks; secondary
+    chemical mappings unchanged.
+  source: https://mediadive.dsmz.de/rest/medium/934
+  changes: 'ingredients[0].concentration: {"unit": "G_PER_L", "value": "1.5"} -> {"unit":
+    "G_PER_L", "value": "1.5"} (evidence_only); ingredients[1].concentration: {"unit":
+    "G_PER_L", "value": "4"} -> {"unit": "G_PER_L", "value": "4"} (evidence_only);
+    ingredients[2].concentration: {"unit": "G_PER_L", "value": "0.7"} -> {"unit":
+    "G_PER_L", "value": "0.7"} (evidence_only); ingredients[3].concentration: {"unit":
+    "G_PER_L", "value": "0.2"} -> {"unit": "G_PER_L", "value": "0.2"} (evidence_only);
+    ingredients[4].concentration: {"unit": "G_PER_L", "value": "0.1"} -> {"unit":
+    "G_PER_L", "value": "0.1"} (evidence_only); ingredients[5].concentration: {"unit":
+    "G_PER_L", "value": "0.03"} -> {"unit": "G_PER_L", "value": "0.03"} (evidence_only);
+    ingredients[6].concentration: {"unit": "G_PER_L", "value": "5.8"} -> {"unit":
+    "G_PER_L", "value": "5.8"} (evidence_only); ingredients[7].concentration: {"unit":
+    "G_PER_L", "value": "1.5"} -> {"unit": "G_PER_L", "value": "1.5"} (evidence_only);
+    ingredients[8].concentration: {"unit": "G_PER_L", "value": "0.025"} -> {"unit":
+    "G_PER_L", "value": "0.025"} (evidence_only); ingredients[9].concentration: {"unit":
+    "G_PER_L", "value": "5"} -> {"unit": "G_PER_L", "value": "5"} (evidence_only);
+    ingredients[10].concentration: {"unit": "G_PER_L", "value": "1"} -> {"unit": "G_PER_L",
+    "value": "1"} (evidence_only); ingredients[11].concentration: {"unit": "G_PER_L",
+    "value": "0.75"} -> {"unit": "G_PER_L", "value": "0.75"} (evidence_only); ingredients[12].concentration:
+    {"unit": "G_PER_L", "value": "0.002"} -> {"unit": "G_PER_L", "value": "0.002"}
+    (evidence_only); ingredients[13].concentration: {"unit": "G_PER_L", "value": "10"}
+    -> {"unit": "G_PER_L", "value": "10"} (evidence_only)'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_934_THERMOCOCCUS_WAIOTAPUENSE_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -187,3 +536,11 @@ variant_children:
   name: thermococcus_waiotapuense_medium
   notes: Same ingredient and concentration signature; KOMODO record copied from the
     matching DSMZ medium source.
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/934
+  title: 'MediaDive medium 934: THERMOCOCCUS WAIOTAPUENSE MEDIUM'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; source_organization=DSMZ;
+    accessed_on=2026-10-07; locator=$.data.solutions[0]; response_sha256=f98f9666b2a27c33447a631c7b79610917fbe1c991362a2226dd97d15d7b9c9b;
+    original_recipe=https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium934.pdf;
+    individual authors and publication year not supplied. Provider-declared main-recipe
+    amounts only.

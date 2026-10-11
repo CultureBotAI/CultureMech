@@ -11,6 +11,32 @@ composition:
   term:
     id: mediadive.compound:1465
     label: Plain flour
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3358
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "Plain flour",
+                      "compound_id": 1465,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 4,
+                      "unit": "g",
+                      "g_l": 4,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Plain flour)
+      in MediaDive solution 3358; locator=$.data.recipe[0] (compound_id=1465). Provider
+      explicitly reports g_l=4. Arithmetic check: 4 g * 1 g/g / (1000 ml / 1000 ml
+      per L) = 4 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T09:20:44.599639+00:00; response SHA256=f30217966f347c4c2a6ac9dbd8ac9ecad1d1b7a9cb9a775a5460e5cdb403ef7f.'
 - preferred_term: CaCO3
   concentration:
     value: '0.4'
@@ -23,6 +49,32 @@ composition:
     label: calcium carbonate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3358
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "CaCO3",
+                      "compound_id": 13,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.4,
+                      "unit": "g",
+                      "g_l": 0.4,
+                      "mmol_l": 3.9964,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (CaCO3)
+      in MediaDive solution 3358; locator=$.data.recipe[1] (compound_id=13). Provider
+      explicitly reports g_l=0.4. Arithmetic check: 0.4 g * 1 g/g / (1000 ml / 1000
+      ml per L) = 0.4 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T09:20:44.599639+00:00; response SHA256=f30217966f347c4c2a6ac9dbd8ac9ecad1d1b7a9cb9a775a5460e5cdb403ef7f.'
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -83,6 +135,16 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-10-07T09:21:52.094915+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/3358
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "4"} -> {"unit":
+    "G_PER_L", "value": "4"} (evidence_only); composition[1].concentration: {"unit":
+    "G_PER_L", "value": "0.4"} -> {"unit": "G_PER_L", "value": "0.4"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -91,3 +153,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/3358
+  title: 'MediaDive solution 3358: Main sol. 1613'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=f30217966f347c4c2a6ac9dbd8ac9ecad1d1b7a9cb9a775a5460e5cdb403ef7f;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

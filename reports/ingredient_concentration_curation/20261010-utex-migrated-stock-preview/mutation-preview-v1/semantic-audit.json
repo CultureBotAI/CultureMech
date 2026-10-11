@@ -1,0 +1,125 @@
+{
+  "terminal": true,
+  "passed": true,
+  "plan_sha256": "0cf3a08ff882d4bb2fd8d46b4cd3f376d1ad17939ccb9640ad402b1edd086b5b",
+  "source_captures_reparsed": 3,
+  "concentration_claims_checked": 10,
+  "counts_proposed_only": {
+    "new_evidence": 13,
+    "recipe_context_notes_corrected": 3,
+    "bibliographic_entries_enriched": 3,
+    "new_curation_history": 3
+  },
+  "rejected_faults": [
+    {
+      "path": "data/normalized_yaml/bacterial/Beijerinck_Solution.yaml",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Beijerinck_Solution.yaml",
+      "fault": "unit"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Beijerinck_Solution.yaml",
+      "fault": "snippet"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Beijerinck_Solution.yaml",
+      "fault": "support"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Beijerinck_Solution.yaml",
+      "fault": "identity"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Beijerinck_Solution.yaml",
+      "fault": "notes"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Beijerinck_Solution.yaml",
+      "fault": "history"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Beijerinck_Solution.yaml",
+      "fault": "reference"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Beijerinck_Solution.yaml",
+      "fault": "year"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Bold_Trace_Stock.yaml",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Bold_Trace_Stock.yaml",
+      "fault": "unit"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Bold_Trace_Stock.yaml",
+      "fault": "snippet"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Bold_Trace_Stock.yaml",
+      "fault": "support"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Bold_Trace_Stock.yaml",
+      "fault": "identity"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Bold_Trace_Stock.yaml",
+      "fault": "notes"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Bold_Trace_Stock.yaml",
+      "fault": "history"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Bold_Trace_Stock.yaml",
+      "fault": "reference"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Bold_Trace_Stock.yaml",
+      "fault": "year"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Boron_Stock.yaml",
+      "fault": "amount"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Boron_Stock.yaml",
+      "fault": "unit"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Boron_Stock.yaml",
+      "fault": "snippet"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Boron_Stock.yaml",
+      "fault": "support"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Boron_Stock.yaml",
+      "fault": "identity"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Boron_Stock.yaml",
+      "fault": "notes"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Boron_Stock.yaml",
+      "fault": "history"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Boron_Stock.yaml",
+      "fault": "reference"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/Boron_Stock.yaml",
+      "fault": "year"
+    }
+  ],
+  "records_edited": 0,
+  "all_record_goal_complete": false
+}

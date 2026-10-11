@@ -11,149 +11,230 @@ media_term:
   term:
     id: mediadive.medium:J220
     label: SC MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220
+notes: |-
+  Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220
 
-
+  Superseded historical provenance (not a current formulation claim):
   Commercial Product: LB Medium (Luria-Bertani, Miller formulation)
-
   Supplier: Multiple suppliers (Difco, Sigma, etc.)
-
   Catalog: Multiple (L3522 Sigma, 244520 BD)
-
   Source: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-
   Accessed: 2026-03-28
 
+  Constituent composition researched from product specification.
 
-  Constituent composition researched from product specification.'
+  The exact source specifies albumin fraction V, not LB broth. Remove only the reviewed LB supplier nodes and restore the source material at its preparation stage without inventing chemical grounding.
 ingredients:
 - preferred_term: Corn meal agar
   term:
     id: CHEBI:2509
     label: agar
-  concentration:
-    value: '16.4093'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+  notes: 'Source batch input: 17 g. Final preparation volume is not independently
+    established; the unsupported g/L assertion is withdrawn, not replaced by an assumed
+    one-liter concentration. Source qualifier: BD-Difco.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J220
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 1,
+                              "compound": "Corn meal agar",
+                              "compound_id": 702,
+                              "attribute": "BD-Difco",
+                              "amount": 17,
+                              "unit": "g",
+                              "g_l": 16.4093,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[0].concentration: Source batch input: 17 g. Final preparation
+      volume is not independently established; the unsupported g/L assertion is withdrawn,
+      not replaced by an assumed one-liter concentration. Source qualifier: BD-Difco.
+      No final-medium volume, percentage basis, density or chemical grounding is inferred.
+      Locator=data.solutions[0].recipe[0]; accessed=2026-10-08T20:53:36.019647+00:00;
+      capture SHA256=60124421b4435a039b1f18c6585fc351e9e7c19c20721819b19dfc98fe2db993.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220
+    supports: SUPPORT
+    snippet: Corn meal agar (BD-Difco) 17.0 g
+    explanation: 'ingredients[0].notes: Original JCM220 row corroborates the exact
+      material, batch amount and preparation label; not a measured final volume or
+      specified percentage basis. No final-medium volume, percentage basis, density
+      or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T20:55:15.169447+00:00;
+      capture SHA256=1769837f02e8fbc89f06a76ffe989d7bc5957ce332af2d027246a5971007b24a.'
 - preferred_term: Phytone peptone
-  concentration:
-    value: '7.72201'
-    unit: G_PER_L
+  notes: 'Source batch input: 8 g. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration. Source qualifier: BD-BBL.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J220
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 2,
+                              "compound": "Phytone peptone",
+                              "compound_id": 125,
+                              "attribute": "BD-BBL",
+                              "amount": 8,
+                              "unit": "g",
+                              "g_l": 7.72201,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[1].concentration: Source batch input: 8 g. Final preparation
+      volume is not independently established; the unsupported g/L assertion is withdrawn,
+      not replaced by an assumed one-liter concentration. Source qualifier: BD-BBL.
+      No final-medium volume, percentage basis, density or chemical grounding is inferred.
+      Locator=data.solutions[0].recipe[1]; accessed=2026-10-08T20:53:36.019647+00:00;
+      capture SHA256=60124421b4435a039b1f18c6585fc351e9e7c19c20721819b19dfc98fe2db993.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220
+    supports: SUPPORT
+    snippet: Phytone peptone (BD-BBL) 8.0 g
+    explanation: 'ingredients[1].notes: Original JCM220 row corroborates the exact
+      material, batch amount and preparation label; not a measured final volume or
+      specified percentage basis. No final-medium volume, percentage basis, density
+      or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T20:55:15.169447+00:00;
+      capture SHA256=1769837f02e8fbc89f06a76ffe989d7bc5957ce332af2d027246a5971007b24a.'
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  concentration:
-    value: '0.965251'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  notes: 'Source batch input: 1 g. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J220
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 3,
+                              "compound": "K2HPO4",
+                              "compound_id": 10,
+                              "amount": 1,
+                              "unit": "g",
+                              "g_l": 0.965251,
+                              "mmol_l": 5.54181,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[2].concentration: Source batch input: 1 g. Final preparation
+      volume is not independently established; the unsupported g/L assertion is withdrawn,
+      not replaced by an assumed one-liter concentration. No final-medium volume,
+      percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[2];
+      accessed=2026-10-08T20:53:36.019647+00:00; capture SHA256=60124421b4435a039b1f18c6585fc351e9e7c19c20721819b19dfc98fe2db993.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220
+    supports: SUPPORT
+    snippet: K2HPO4 1.0 g
+    explanation: 'ingredients[2].notes: Original JCM220 row corroborates the exact
+      material, batch amount and preparation label; not a measured final volume or
+      specified percentage basis. No final-medium volume, percentage basis, density
+      or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T20:55:15.169447+00:00;
+      capture SHA256=1769837f02e8fbc89f06a76ffe989d7bc5957ce332af2d027246a5971007b24a.'
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
-  concentration:
-    value: '0.965251'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
+  notes: 'Source batch input: 1 g. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J220
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 4,
+                              "compound": "KH2PO4",
+                              "compound_id": 11,
+                              "amount": 1,
+                              "unit": "g",
+                              "g_l": 0.965251,
+                              "mmol_l": 7.09295,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[3].concentration: Source batch input: 1 g. Final preparation
+      volume is not independently established; the unsupported g/L assertion is withdrawn,
+      not replaced by an assumed one-liter concentration. No final-medium volume,
+      percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[3];
+      accessed=2026-10-08T20:53:36.019647+00:00; capture SHA256=60124421b4435a039b1f18c6585fc351e9e7c19c20721819b19dfc98fe2db993.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220
+    supports: SUPPORT
+    snippet: KH2PO4 1.0 g
+    explanation: 'ingredients[3].notes: Original JCM220 row corroborates the exact
+      material, batch amount and preparation label; not a measured final volume or
+      specified percentage basis. No final-medium volume, percentage basis, density
+      or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T20:55:15.169447+00:00;
+      capture SHA256=1769837f02e8fbc89f06a76ffe989d7bc5957ce332af2d027246a5971007b24a.'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
-  concentration:
-    value: '0.19305'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
-- preferred_term: Hemin
-  term:
-    id: CHEBI:50385
-    label: hemin
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:50385
-    label: hemin
-- preferred_term: Tryptone
-  term:
-    id: MICRO:0000182
-    label: tryptone
-  concentration:
-    value: '10.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
-    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
-  synonyms:
-  - synonym_text: pancreatic digest of casein
-    synonym_type: EXACT
-  - synonym_text: casein peptone
-    synonym_type: EXACT
-- preferred_term: Yeast extract
-  term:
-    id: FOODON:03315426
-    label: yeast extract
-  concentration:
-    value: '5.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
-    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
-    product
-- preferred_term: Sodium chloride
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  concentration:
-    value: '10.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
-    (Luria-Bertani, Miller formulation) commercial product
-  synonyms:
-  - synonym_text: NaCl
-    synonym_type: EXACT
-  - synonym_text: table salt
-    synonym_type: EXACT
-- preferred_term: Glucose
-  term:
-    id: CHEBI:17234
-    label: glucose
+  notes: 'Source batch input: 0.2 g. Final preparation volume is not independently
+    established; the unsupported g/L assertion is withdrawn, not replaced by an assumed
+    one-liter concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J220
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 5,
+                              "compound": "MgSO4 x 7 H2O",
+                              "compound_id": 8,
+                              "amount": 0.2,
+                              "unit": "g",
+                              "g_l": 0.19305,
+                              "mmol_l": 0.783241,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[4].concentration: Source batch input: 0.2 g. Final preparation
+      volume is not independently established; the unsupported g/L assertion is withdrawn,
+      not replaced by an assumed one-liter concentration. No final-medium volume,
+      percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[4];
+      accessed=2026-10-08T20:53:36.019647+00:00; capture SHA256=60124421b4435a039b1f18c6585fc351e9e7c19c20721819b19dfc98fe2db993.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220
+    supports: SUPPORT
+    snippet: MgSO4·7H2O 0.2 g
+    explanation: 'ingredients[4].notes: Original JCM220 row corroborates the exact
+      material, batch amount and preparation label; not a measured final volume or
+      specified percentage basis. No final-medium volume, percentage basis, density
+      or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T20:55:15.169447+00:00;
+      capture SHA256=1769837f02e8fbc89f06a76ffe989d7bc5957ce332af2d027246a5971007b24a.'
+- preferred_term: Distilled water
   concentration:
     value: '1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17234
-    label: glucose
-- preferred_term: Cysteine
-  term:
-    id: CHEBI:15356
-    label: cysteine
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15356
-    label: cysteine
+    unit: L
+  notes: 'Source water batch input: 1000 ml = 1 L. This is not a measured final volume.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J220
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 10,
+                              "compound": "Distilled water",
+                              "compound_id": 4,
+                              "amount": 1000,
+                              "unit": "ml",
+                              "optional": 0
+                          }
+    explanation: 'ingredients[5].concentration: Source water batch input: 1000 ml
+      = 1 L. This is not a measured final volume. No final-medium volume, percentage
+      basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[9];
+      accessed=2026-10-08T20:53:36.019647+00:00; capture SHA256=60124421b4435a039b1f18c6585fc351e9e7c19c20721819b19dfc98fe2db993.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220
+    supports: SUPPORT
+    snippet: Distilled water 1.0 L
+    explanation: 'ingredients[5].notes: Original JCM220 row corroborates the exact
+      material, batch amount and preparation label; not a measured final volume or
+      specified percentage basis. No final-medium volume, percentage basis, density
+      or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T20:55:15.169447+00:00;
+      capture SHA256=1769837f02e8fbc89f06a76ffe989d7bc5957ce332af2d027246a5971007b24a.'
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -191,3 +272,675 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-10-08T21:15:01.038694+00:00'
+  curator: codex
+  action: RESTORED_JCM_ALBUMIN_IDENTITIES_AND_REAGENT_INPUTS_WITH_EVIDENCE
+  notes: Removed false LB expansions and restored albumin fraction V, source batch
+    inputs, reagent doses and late preparations with exact evidence. Unknown percentage
+    bases, final volumes, stock strengths and chemical groundings remain unresolved.
+    The JCM201 original-source access gap is disclosed, not treated as corroboration.
+  source: https://mediadive.dsmz.de/rest/medium/J220
+  changes: '[{"old_field": "ingredients[6].concentration", "field": "notes", "old":
+    {"value": "10.0", "unit": "G_PER_L"}, "new": "Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220\n\nSuperseded
+    historical provenance (not a current formulation claim):\nCommercial Product:
+    LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThe
+    exact source specifies albumin fraction V, not LB broth. Remove only the reviewed
+    LB supplier nodes and restore the source material at its preparation stage without
+    inventing chemical grounding.", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/J220",
+    "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\":
+    \"Bovine serum albumin\",\n                        \"compound_id\": 705,\n                        \"condition\":
+    \" fraction V\",\n                        \"attribute\": \"20%\",\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[7].concentration", "field":
+    "notes", "old": {"value": "5.0", "unit": "G_PER_L"}, "new": "Source: JCM | Link:
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220\n\nSuperseded historical
+    provenance (not a current formulation claim):\nCommercial Product: LB Medium (Luria-Bertani,
+    Miller formulation)\nSupplier: Multiple suppliers (Difco, Sigma, etc.)\nCatalog:
+    Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThe
+    exact source specifies albumin fraction V, not LB broth. Remove only the reviewed
+    LB supplier nodes and restore the source material at its preparation stage without
+    inventing chemical grounding.", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/J220",
+    "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\":
+    \"Bovine serum albumin\",\n                        \"compound_id\": 705,\n                        \"condition\":
+    \" fraction V\",\n                        \"attribute\": \"20%\",\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[8].concentration", "field":
+    "notes", "old": {"value": "10.0", "unit": "G_PER_L"}, "new": "Source: JCM | Link:
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220\n\nSuperseded historical
+    provenance (not a current formulation claim):\nCommercial Product: LB Medium (Luria-Bertani,
+    Miller formulation)\nSupplier: Multiple suppliers (Difco, Sigma, etc.)\nCatalog:
+    Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThe
+    exact source specifies albumin fraction V, not LB broth. Remove only the reviewed
+    LB supplier nodes and restore the source material at its preparation stage without
+    inventing chemical grounding.", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/J220",
+    "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\":
+    \"Bovine serum albumin\",\n                        \"compound_id\": 705,\n                        \"condition\":
+    \" fraction V\",\n                        \"attribute\": \"20%\",\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[0].concentration", "field":
+    "ingredients[0].concentration", "old": {"value": "16.4093", "unit": "G_PER_L"},
+    "new": null, "status": "remove_unsupported", "reference": "https://mediadive.dsmz.de/rest/medium/J220",
+    "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"Corn meal agar\",\n                        \"compound_id\": 702,\n                        \"attribute\":
+    \"BD-Difco\",\n                        \"amount\": 17,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 16.4093,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[0].notes",
+    "old": null, "new": "Source batch input: 17 g. Final preparation volume is not
+    independently established; the unsupported g/L assertion is withdrawn, not replaced
+    by an assumed one-liter concentration. Source qualifier: BD-Difco.", "status":
+    "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+    "snippet": "Corn meal agar (BD-Difco) 17.0 g"}, {"old_field": "ingredients[1].concentration",
+    "field": "ingredients[1].concentration", "old": {"value": "7.72201", "unit": "G_PER_L"},
+    "new": null, "status": "remove_unsupported", "reference": "https://mediadive.dsmz.de/rest/medium/J220",
+    "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Phytone peptone\",\n                        \"compound_id\": 125,\n                        \"attribute\":
+    \"BD-BBL\",\n                        \"amount\": 8,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 7.72201,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[1].notes",
+    "old": null, "new": "Source batch input: 8 g. Final preparation volume is not
+    independently established; the unsupported g/L assertion is withdrawn, not replaced
+    by an assumed one-liter concentration. Source qualifier: BD-BBL.", "status": "evidence_only",
+    "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220", "snippet":
+    "Phytone peptone (BD-BBL) 8.0 g"}, {"old_field": "ingredients[2].concentration",
+    "field": "ingredients[2].concentration", "old": {"value": "0.965251", "unit":
+    "G_PER_L"}, "new": null, "status": "remove_unsupported", "reference": "https://mediadive.dsmz.de/rest/medium/J220",
+    "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\":
+    1,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.965251,\n                        \"mmol_l\": 5.54181,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[2].notes",
+    "old": null, "new": "Source batch input: 1 g. Final preparation volume is not
+    independently established; the unsupported g/L assertion is withdrawn, not replaced
+    by an assumed one-liter concentration.", "status": "evidence_only", "reference":
+    "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220", "snippet": "K2HPO4 1.0
+    g"}, {"old_field": "ingredients[3].concentration", "field": "ingredients[3].concentration",
+    "old": {"value": "0.965251", "unit": "G_PER_L"}, "new": null, "status": "remove_unsupported",
+    "reference": "https://mediadive.dsmz.de/rest/medium/J220", "snippet": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.965251,\n                        \"mmol_l\":
+    7.09295,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "ingredients[3].notes", "old": null, "new": "Source batch input:
+    1 g. Final preparation volume is not independently established; the unsupported
+    g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+    "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+    "snippet": "KH2PO4 1.0 g"}, {"old_field": "ingredients[4].concentration", "field":
+    "ingredients[4].concentration", "old": {"value": "0.19305", "unit": "G_PER_L"},
+    "new": null, "status": "remove_unsupported", "reference": "https://mediadive.dsmz.de/rest/medium/J220",
+    "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\":
+    0.2,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.19305,\n                        \"mmol_l\": 0.783241,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[4].notes",
+    "old": null, "new": "Source batch input: 0.2 g. Final preparation volume is not
+    independently established; the unsupported g/L assertion is withdrawn, not replaced
+    by an assumed one-liter concentration.", "status": "evidence_only", "reference":
+    "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220", "snippet": "MgSO4\u00b77H2O
+    0.2 g"}, {"old_field": null, "field": "ingredients[5].concentration", "old": null,
+    "new": {"value": "1", "unit": "L"}, "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/J220",
+    "snippet": "{\n                        \"recipe_order\": 10,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    1000,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[5].notes",
+    "old": null, "new": "Source water batch input: 1000 ml = 1 L. This is not a measured
+    final volume.", "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+    "snippet": "Distilled water 1.0 L"}, {"old_field": "ingredients[5].concentration",
+    "field": "solutions[0].concentration", "old": {"value": "15", "unit": "G_PER_L"},
+    "new": {"value": "0.015", "unit": "L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/J220",
+    "snippet": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"Hemin\",\n                        \"compound_id\": 704,\n                        \"attribute\":
+    \"0.1% in 0.05 N NaOH\",\n                        \"amount\": 15,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[0].concentration", "old": null, "new": {"value": "0.015",
+    "unit": "L"}, "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+    "snippet": "Hemin (0.1% in 0.05 N NaOH) 15.0 ml"}, {"old_field": null, "field":
+    "solutions[0].composition[0].notes", "old": null, "new": "Source reagent label:
+    0.1% in 0.05 N NaOH. Percentage basis is unspecified; no numeric stock strength
+    or stock-batch mass is asserted. The enclosing descriptor holds the receiving-batch
+    volume.", "status": "evidence_only", "reference": "https://mediadive.dsmz.de/rest/medium/J220",
+    "snippet": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"Hemin\",\n                        \"compound_id\": 704,\n                        \"attribute\":
+    \"0.1% in 0.05 N NaOH\",\n                        \"amount\": 15,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[0].composition[0].notes", "old": null, "new": "Source
+    reagent label: 0.1% in 0.05 N NaOH. Percentage basis is unspecified; no numeric
+    stock strength or stock-batch mass is asserted. The enclosing descriptor holds
+    the receiving-batch volume.", "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+    "snippet": "Hemin (0.1% in 0.05 N NaOH) 15.0 ml"}, {"old_field": null, "field":
+    "solutions[0].solutions[0].notes", "old": null, "new": "Source hemin-stock solvent:
+    0.05 N NaOH. Its addition volume and stock preparation amounts are unspecified.
+    Normality is not converted to molarity and is not a final-medium concentration.",
+    "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/J220", "snippet":
+    "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"Hemin\",\n                        \"compound_id\": 704,\n                        \"attribute\":
+    \"0.1% in 0.05 N NaOH\",\n                        \"amount\": 15,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[0].solutions[0].notes", "old": null, "new": "Source
+    hemin-stock solvent: 0.05 N NaOH. Its addition volume and stock preparation amounts
+    are unspecified. Normality is not converted to molarity and is not a final-medium
+    concentration.", "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+    "snippet": "Hemin (0.1% in 0.05 N NaOH) 15.0 ml"}, {"old_field": null, "field":
+    "solutions[0].solutions[0].composition[0].notes", "old": null, "new": "Source
+    hemin-stock solvent: 0.05 N NaOH. Its addition volume and stock preparation amounts
+    are unspecified. Normality is not converted to molarity and is not a final-medium
+    concentration.", "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/J220",
+    "snippet": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"Hemin\",\n                        \"compound_id\": 704,\n                        \"attribute\":
+    \"0.1% in 0.05 N NaOH\",\n                        \"amount\": 15,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[0].solutions[0].composition[0].notes", "old": null,
+    "new": "Source hemin-stock solvent: 0.05 N NaOH. Its addition volume and stock
+    preparation amounts are unspecified. Normality is not converted to molarity and
+    is not a final-medium concentration.", "status": "evidence_only", "reference":
+    "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220", "snippet": "Hemin (0.1%
+    in 0.05 N NaOH) 15.0 ml"}, {"old_field": null, "field": "solutions[1].concentration",
+    "old": null, "new": {"value": "0.01", "unit": "L"}, "status": "add", "reference":
+    "https://mediadive.dsmz.de/rest/medium/J220", "snippet": "{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"Bovine serum albumin\",\n                        \"compound_id\":
+    705,\n                        \"condition\": \" fraction V\",\n                        \"attribute\":
+    \"20%\",\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[1].concentration", "old": null, "new": {"value": "0.01",
+    "unit": "L"}, "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+    "snippet": "20% Bovine serum albumin, fraction V 10.0 ml"}, {"old_field": null,
+    "field": "solutions[1].composition[0].notes", "old": null, "new": "Source reagent
+    label: 20%. Percentage basis is unspecified; no numeric stock strength or stock-batch
+    mass is asserted. The enclosing descriptor holds the receiving-batch volume. Source
+    material qualifier: fraction V.", "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/J220",
+    "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\":
+    \"Bovine serum albumin\",\n                        \"compound_id\": 705,\n                        \"condition\":
+    \" fraction V\",\n                        \"attribute\": \"20%\",\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[1].composition[0].notes",
+    "old": null, "new": "Source reagent label: 20%. Percentage basis is unspecified;
+    no numeric stock strength or stock-batch mass is asserted. The enclosing descriptor
+    holds the receiving-batch volume. Source material qualifier: fraction V.", "status":
+    "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+    "snippet": "20% Bovine serum albumin, fraction V 10.0 ml"}, {"old_field": null,
+    "field": "solutions[1].preparation_notes", "old": null, "new": "Separately sterilize
+    bovine serum albumin, glucose and cysteine solutions by filtration, and aseptically
+    add to the medium.", "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/J220",
+    "snippet": "Separately sterilize bovine serum albumin, glucose and cysteine solutions
+    by filtration, and aseptically add to the medium."}, {"old_field": null, "field":
+    "solutions[1].preparation_notes", "old": null, "new": "Separately sterilize bovine
+    serum albumin, glucose and cysteine solutions by filtration, and aseptically add
+    to the medium.", "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+    "snippet": "Separately sterilize bovine serum albumin, glucose and cysteine solutions
+    by filtration, and aseptically add to the medium."}, {"old_field": "ingredients[9].concentration",
+    "field": "solutions[2].concentration", "old": {"value": "1", "unit": "G_PER_L"},
+    "new": {"value": "0.001", "unit": "L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/J220",
+    "snippet": "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"Glucose\",\n                        \"compound_id\": 5,\n                        \"attribute\":
+    \"50%\",\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[2].concentration", "old": null, "new": {"value": "0.001",
+    "unit": "L"}, "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+    "snippet": "50% Glucose 1.0 ml"}, {"old_field": null, "field": "solutions[2].composition[0].notes",
+    "old": null, "new": "Source reagent label: 50%. Percentage basis is unspecified;
+    no numeric stock strength or stock-batch mass is asserted. The enclosing descriptor
+    holds the receiving-batch volume.", "status": "evidence_only", "reference": "https://mediadive.dsmz.de/rest/medium/J220",
+    "snippet": "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"Glucose\",\n                        \"compound_id\": 5,\n                        \"attribute\":
+    \"50%\",\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[2].composition[0].notes", "old": null, "new": "Source
+    reagent label: 50%. Percentage basis is unspecified; no numeric stock strength
+    or stock-batch mass is asserted. The enclosing descriptor holds the receiving-batch
+    volume.", "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+    "snippet": "50% Glucose 1.0 ml"}, {"old_field": null, "field": "solutions[2].preparation_notes",
+    "old": null, "new": "Separately sterilize bovine serum albumin, glucose and cysteine
+    solutions by filtration, and aseptically add to the medium.", "status": "add",
+    "reference": "https://mediadive.dsmz.de/rest/medium/J220", "snippet": "Separately
+    sterilize bovine serum albumin, glucose and cysteine solutions by filtration,
+    and aseptically add to the medium."}, {"old_field": null, "field": "solutions[2].preparation_notes",
+    "old": null, "new": "Separately sterilize bovine serum albumin, glucose and cysteine
+    solutions by filtration, and aseptically add to the medium.", "status": "evidence_only",
+    "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220", "snippet":
+    "Separately sterilize bovine serum albumin, glucose and cysteine solutions by
+    filtration, and aseptically add to the medium."}, {"old_field": "ingredients[10].concentration",
+    "field": "solutions[3].concentration", "old": {"value": "10", "unit": "G_PER_L"},
+    "new": {"value": "0.01", "unit": "L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/J220",
+    "snippet": "{\n                        \"recipe_order\": 9,\n                        \"compound\":
+    \"Cysteine\",\n                        \"compound_id\": 492,\n                        \"attribute\":
+    \"10%\",\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[3].concentration", "old": null, "new": {"value": "0.01",
+    "unit": "L"}, "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+    "snippet": "10% Cysteine 10.0 ml"}, {"old_field": null, "field": "solutions[3].composition[0].notes",
+    "old": null, "new": "Source reagent label: 10%. Percentage basis is unspecified;
+    no numeric stock strength or stock-batch mass is asserted. The enclosing descriptor
+    holds the receiving-batch volume.", "status": "evidence_only", "reference": "https://mediadive.dsmz.de/rest/medium/J220",
+    "snippet": "{\n                        \"recipe_order\": 9,\n                        \"compound\":
+    \"Cysteine\",\n                        \"compound_id\": 492,\n                        \"attribute\":
+    \"10%\",\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[3].composition[0].notes", "old": null, "new": "Source
+    reagent label: 10%. Percentage basis is unspecified; no numeric stock strength
+    or stock-batch mass is asserted. The enclosing descriptor holds the receiving-batch
+    volume.", "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+    "snippet": "10% Cysteine 10.0 ml"}, {"old_field": null, "field": "solutions[3].preparation_notes",
+    "old": null, "new": "Separately sterilize bovine serum albumin, glucose and cysteine
+    solutions by filtration, and aseptically add to the medium.", "status": "add",
+    "reference": "https://mediadive.dsmz.de/rest/medium/J220", "snippet": "Separately
+    sterilize bovine serum albumin, glucose and cysteine solutions by filtration,
+    and aseptically add to the medium."}, {"old_field": null, "field": "solutions[3].preparation_notes",
+    "old": null, "new": "Separately sterilize bovine serum albumin, glucose and cysteine
+    solutions by filtration, and aseptically add to the medium.", "status": "evidence_only",
+    "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220", "snippet":
+    "Separately sterilize bovine serum albumin, glucose and cysteine solutions by
+    filtration, and aseptically add to the medium."}, {"old_field": "preparation_steps",
+    "field": "preparation_steps", "old": [{"step_number": 1, "action": "ADJUST_PH",
+    "description": "Adjust pH to 6.6."}, {"step_number": 2, "action": "MIX", "description":
+    "Separately sterilize bovine serum albumin, glucose and cysteine solutions by
+    filtration, and aseptically add to the medium."}], "new": [{"step_number": 1,
+    "action": "ADJUST_PH", "description": "Adjust pH to 6.6."}, {"step_number": 2,
+    "action": "MIX", "description": "Separately sterilize bovine serum albumin, glucose
+    and cysteine solutions by filtration, and aseptically add to the medium."}], "status":
+    "evidence_only", "reference": "https://mediadive.dsmz.de/rest/medium/J220", "snippet":
+    "[\n                    {\n                        \"step\": \"Adjust pH to 6.6.\"\n                    },\n                    {\n                        \"step\":
+    \"Separately sterilize bovine serum albumin, glucose and cysteine solutions by
+    filtration, and aseptically add to the medium.\"\n                    }\n                ]"},
+    {"old_field": "ph_value", "field": "ph_value", "old": 6.6, "new": 6.6, "status":
+    "evidence_only", "reference": "https://mediadive.dsmz.de/rest/medium/J220", "snippet":
+    "Adjust pH to 6.6."}, {"old_field": null, "field": "notes", "old": null, "new":
+    "Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220\n\nSuperseded
+    historical provenance (not a current formulation claim):\nCommercial Product:
+    LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThe
+    exact source specifies albumin fraction V, not LB broth. Remove only the reviewed
+    LB supplier nodes and restore the source material at its preparation stage without
+    inventing chemical grounding.", "status": "evidence_only", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+    "snippet": "20% Bovine serum albumin, fraction V 10.0 ml"}, {"old_field": null,
+    "field": "ph_value", "old": null, "new": 6.6, "status": "evidence_only", "reference":
+    "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220", "snippet": "Adjust pH
+    to 6.6."}]'
+solutions:
+- preferred_term: Hemin solution (0.1% in 0.05 N NaOH)
+  composition:
+  - preferred_term: Hemin
+    term:
+      id: CHEBI:50385
+      label: hemin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:50385
+      label: hemin
+    notes: 'Source reagent label: 0.1% in 0.05 N NaOH. Percentage basis is unspecified;
+      no numeric stock strength or stock-batch mass is asserted. The enclosing descriptor
+      holds the receiving-batch volume.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J220
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 6,
+                                "compound": "Hemin",
+                                "compound_id": 704,
+                                "attribute": "0.1% in 0.05 N NaOH",
+                                "amount": 15,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[0].notes: Source reagent label: 0.1%
+        in 0.05 N NaOH. Percentage basis is unspecified; no numeric stock strength
+        or stock-batch mass is asserted. The enclosing descriptor holds the receiving-batch
+        volume. No final-medium volume, percentage basis, density or chemical grounding
+        is inferred. Locator=data.solutions[0].recipe[5]; accessed=2026-10-08T20:53:36.019647+00:00;
+        capture SHA256=60124421b4435a039b1f18c6585fc351e9e7c19c20721819b19dfc98fe2db993.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220
+      supports: SUPPORT
+      snippet: Hemin (0.1% in 0.05 N NaOH) 15.0 ml
+      explanation: 'solutions[0].composition[0].notes: Original JCM220 row corroborates
+        the exact material, batch amount and preparation label; not a measured final
+        volume or specified percentage basis. No final-medium volume, percentage basis,
+        density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T20:55:15.169447+00:00;
+        capture SHA256=1769837f02e8fbc89f06a76ffe989d7bc5957ce332af2d027246a5971007b24a.'
+  concentration:
+    value: '0.015'
+    unit: L
+  notes: 'Source preparation input: 15 ml = 0.015 L per receiving batch, not grams
+    per liter or a dose per final liter. Source reagent label: 0.1% in 0.05 N NaOH;
+    percentage basis and stock preparation amounts are unspecified.'
+  solutions:
+  - preferred_term: NaOH solution (0.05 N)
+    composition:
+    - preferred_term: NaOH
+      notes: 'Source hemin-stock solvent: 0.05 N NaOH. Its addition volume and stock
+        preparation amounts are unspecified. Normality is not converted to molarity
+        and is not a final-medium concentration.'
+      evidence:
+      - reference: https://mediadive.dsmz.de/rest/medium/J220
+        supports: SUPPORT
+        snippet: |-
+          {
+                                  "recipe_order": 6,
+                                  "compound": "Hemin",
+                                  "compound_id": 704,
+                                  "attribute": "0.1% in 0.05 N NaOH",
+                                  "amount": 15,
+                                  "unit": "ml",
+                                  "optional": 0
+                              }
+        explanation: 'solutions[0].solutions[0].composition[0].notes: Source hemin-stock
+          solvent: 0.05 N NaOH. Its addition volume and stock preparation amounts
+          are unspecified. Normality is not converted to molarity and is not a final-medium
+          concentration. No final-medium volume, percentage basis, density or chemical
+          grounding is inferred. Locator=data.solutions[0].recipe[5]; accessed=2026-10-08T20:53:36.019647+00:00;
+          capture SHA256=60124421b4435a039b1f18c6585fc351e9e7c19c20721819b19dfc98fe2db993.'
+      - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220
+        supports: SUPPORT
+        snippet: Hemin (0.1% in 0.05 N NaOH) 15.0 ml
+        explanation: 'solutions[0].solutions[0].composition[0].notes: Original JCM220
+          row corroborates the exact material, batch amount and preparation label;
+          not a measured final volume or specified percentage basis. No final-medium
+          volume, percentage basis, density or chemical grounding is inferred. Locator=original
+          recipe text; accessed=2026-10-08T20:55:15.169447+00:00; capture SHA256=1769837f02e8fbc89f06a76ffe989d7bc5957ce332af2d027246a5971007b24a.'
+    notes: 'Source hemin-stock solvent: 0.05 N NaOH. Its addition volume and stock
+      preparation amounts are unspecified. Normality is not converted to molarity
+      and is not a final-medium concentration.'
+- preferred_term: 20% bovine serum albumin fraction V solution
+  composition:
+  - preferred_term: Bovine serum albumin
+    notes: 'Source reagent label: 20%. Percentage basis is unspecified; no numeric
+      stock strength or stock-batch mass is asserted. The enclosing descriptor holds
+      the receiving-batch volume. Source material qualifier: fraction V.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J220
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 7,
+                                "compound": "Bovine serum albumin",
+                                "compound_id": 705,
+                                "condition": " fraction V",
+                                "attribute": "20%",
+                                "amount": 10,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[0].notes: Source reagent label: 20%.
+        Percentage basis is unspecified; no numeric stock strength or stock-batch
+        mass is asserted. The enclosing descriptor holds the receiving-batch volume.
+        Source material qualifier: fraction V. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[6];
+        accessed=2026-10-08T20:53:36.019647+00:00; capture SHA256=60124421b4435a039b1f18c6585fc351e9e7c19c20721819b19dfc98fe2db993.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220
+      supports: SUPPORT
+      snippet: 20% Bovine serum albumin, fraction V 10.0 ml
+      explanation: 'solutions[1].composition[0].notes: Original JCM220 row corroborates
+        the exact material, batch amount and preparation label; not a measured final
+        volume or specified percentage basis. No final-medium volume, percentage basis,
+        density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T20:55:15.169447+00:00;
+        capture SHA256=1769837f02e8fbc89f06a76ffe989d7bc5957ce332af2d027246a5971007b24a.'
+  concentration:
+    value: '0.01'
+    unit: L
+  notes: 'Source preparation input: 10 ml = 0.01 L per receiving batch, not grams
+    per liter or a dose per final liter. Source reagent label: 20%; percentage basis
+    and stock preparation amounts are unspecified. Source material qualifier: fraction
+    V.'
+  preparation_notes: Separately sterilize bovine serum albumin, glucose and cysteine
+    solutions by filtration, and aseptically add to the medium.
+- preferred_term: 50% glucose solution
+  composition:
+  - preferred_term: Glucose
+    term:
+      id: CHEBI:17234
+      label: glucose
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17234
+      label: glucose
+    notes: 'Source reagent label: 50%. Percentage basis is unspecified; no numeric
+      stock strength or stock-batch mass is asserted. The enclosing descriptor holds
+      the receiving-batch volume.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J220
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 8,
+                                "compound": "Glucose",
+                                "compound_id": 5,
+                                "attribute": "50%",
+                                "amount": 1,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+      explanation: 'solutions[2].composition[0].notes: Source reagent label: 50%.
+        Percentage basis is unspecified; no numeric stock strength or stock-batch
+        mass is asserted. The enclosing descriptor holds the receiving-batch volume.
+        No final-medium volume, percentage basis, density or chemical grounding is
+        inferred. Locator=data.solutions[0].recipe[7]; accessed=2026-10-08T20:53:36.019647+00:00;
+        capture SHA256=60124421b4435a039b1f18c6585fc351e9e7c19c20721819b19dfc98fe2db993.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220
+      supports: SUPPORT
+      snippet: 50% Glucose 1.0 ml
+      explanation: 'solutions[2].composition[0].notes: Original JCM220 row corroborates
+        the exact material, batch amount and preparation label; not a measured final
+        volume or specified percentage basis. No final-medium volume, percentage basis,
+        density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T20:55:15.169447+00:00;
+        capture SHA256=1769837f02e8fbc89f06a76ffe989d7bc5957ce332af2d027246a5971007b24a.'
+  concentration:
+    value: '0.001'
+    unit: L
+  notes: 'Source preparation input: 1 ml = 0.001 L per receiving batch, not grams
+    per liter or a dose per final liter. Source reagent label: 50%; percentage basis
+    and stock preparation amounts are unspecified.'
+  preparation_notes: Separately sterilize bovine serum albumin, glucose and cysteine
+    solutions by filtration, and aseptically add to the medium.
+- preferred_term: 10% cysteine solution
+  composition:
+  - preferred_term: Cysteine
+    term:
+      id: CHEBI:15356
+      label: cysteine
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15356
+      label: cysteine
+    notes: 'Source reagent label: 10%. Percentage basis is unspecified; no numeric
+      stock strength or stock-batch mass is asserted. The enclosing descriptor holds
+      the receiving-batch volume.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J220
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 9,
+                                "compound": "Cysteine",
+                                "compound_id": 492,
+                                "attribute": "10%",
+                                "amount": 10,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+      explanation: 'solutions[3].composition[0].notes: Source reagent label: 10%.
+        Percentage basis is unspecified; no numeric stock strength or stock-batch
+        mass is asserted. The enclosing descriptor holds the receiving-batch volume.
+        No final-medium volume, percentage basis, density or chemical grounding is
+        inferred. Locator=data.solutions[0].recipe[8]; accessed=2026-10-08T20:53:36.019647+00:00;
+        capture SHA256=60124421b4435a039b1f18c6585fc351e9e7c19c20721819b19dfc98fe2db993.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220
+      supports: SUPPORT
+      snippet: 10% Cysteine 10.0 ml
+      explanation: 'solutions[3].composition[0].notes: Original JCM220 row corroborates
+        the exact material, batch amount and preparation label; not a measured final
+        volume or specified percentage basis. No final-medium volume, percentage basis,
+        density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T20:55:15.169447+00:00;
+        capture SHA256=1769837f02e8fbc89f06a76ffe989d7bc5957ce332af2d027246a5971007b24a.'
+  concentration:
+    value: '0.01'
+    unit: L
+  notes: 'Source preparation input: 10 ml = 0.01 L per receiving batch, not grams
+    per liter or a dose per final liter. Source reagent label: 10%; percentage basis
+    and stock preparation amounts are unspecified.'
+  preparation_notes: Separately sterilize bovine serum albumin, glucose and cysteine
+    solutions by filtration, and aseptically add to the medium.
+evidence:
+- reference: https://mediadive.dsmz.de/rest/medium/J220
+  supports: SUPPORT
+  snippet: |-
+    {
+                            "recipe_order": 7,
+                            "compound": "Bovine serum albumin",
+                            "compound_id": 705,
+                            "condition": " fraction V",
+                            "attribute": "20%",
+                            "amount": 10,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+  explanation: |-
+    notes: The exact source specifies albumin fraction V, not LB broth. Remove only the reviewed LB supplier nodes and restore the source material at its preparation stage without inventing chemical grounding. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[6]; accessed=2026-10-08T20:53:36.019647+00:00; capture SHA256=60124421b4435a039b1f18c6585fc351e9e7c19c20721819b19dfc98fe2db993.
+
+    Additional exact excerpt: {
+                            "recipe_order": 7,
+                            "compound": "Bovine serum albumin",
+                            "compound_id": 705,
+                            "condition": " fraction V",
+                            "attribute": "20%",
+                            "amount": 10,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+    notes: The exact source specifies albumin fraction V, not LB broth. Remove only the reviewed LB supplier nodes and restore the source material at its preparation stage without inventing chemical grounding. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[6]; accessed=2026-10-08T20:53:36.019647+00:00; capture SHA256=60124421b4435a039b1f18c6585fc351e9e7c19c20721819b19dfc98fe2db993.
+
+    Additional exact excerpt: {
+                            "recipe_order": 7,
+                            "compound": "Bovine serum albumin",
+                            "compound_id": 705,
+                            "condition": " fraction V",
+                            "attribute": "20%",
+                            "amount": 10,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+    notes: The exact source specifies albumin fraction V, not LB broth. Remove only the reviewed LB supplier nodes and restore the source material at its preparation stage without inventing chemical grounding. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[6]; accessed=2026-10-08T20:53:36.019647+00:00; capture SHA256=60124421b4435a039b1f18c6585fc351e9e7c19c20721819b19dfc98fe2db993.
+
+    Additional exact excerpt: {
+                            "recipe_order": 6,
+                            "compound": "Hemin",
+                            "compound_id": 704,
+                            "attribute": "0.1% in 0.05 N NaOH",
+                            "amount": 15,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+    solutions[0].concentration: Source preparation input: 15 ml = 0.015 L per receiving batch, not grams per liter or a dose per final liter. Source reagent label: 0.1% in 0.05 N NaOH; percentage basis and stock preparation amounts are unspecified. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[5]; accessed=2026-10-08T20:53:36.019647+00:00; capture SHA256=60124421b4435a039b1f18c6585fc351e9e7c19c20721819b19dfc98fe2db993.
+
+    Additional exact excerpt: {
+                            "recipe_order": 6,
+                            "compound": "Hemin",
+                            "compound_id": 704,
+                            "attribute": "0.1% in 0.05 N NaOH",
+                            "amount": 15,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+    solutions[0].solutions[0].notes: Source hemin-stock solvent: 0.05 N NaOH. Its addition volume and stock preparation amounts are unspecified. Normality is not converted to molarity and is not a final-medium concentration. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[5]; accessed=2026-10-08T20:53:36.019647+00:00; capture SHA256=60124421b4435a039b1f18c6585fc351e9e7c19c20721819b19dfc98fe2db993.
+
+    Additional exact excerpt: {
+                            "recipe_order": 7,
+                            "compound": "Bovine serum albumin",
+                            "compound_id": 705,
+                            "condition": " fraction V",
+                            "attribute": "20%",
+                            "amount": 10,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+    solutions[1].concentration: Source preparation input: 10 ml = 0.01 L per receiving batch, not grams per liter or a dose per final liter. Source reagent label: 20%; percentage basis and stock preparation amounts are unspecified. Source material qualifier: fraction V. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[6]; accessed=2026-10-08T20:53:36.019647+00:00; capture SHA256=60124421b4435a039b1f18c6585fc351e9e7c19c20721819b19dfc98fe2db993.
+
+    Additional exact excerpt: Separately sterilize bovine serum albumin, glucose and cysteine solutions by filtration, and aseptically add to the medium.
+    solutions[1].preparation_notes: Separate stock filtration and aseptic addition; no pore size or stock recipe is inferred. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[1].step; accessed=2026-10-08T20:53:36.019647+00:00; capture SHA256=60124421b4435a039b1f18c6585fc351e9e7c19c20721819b19dfc98fe2db993.
+
+    Additional exact excerpt: {
+                            "recipe_order": 8,
+                            "compound": "Glucose",
+                            "compound_id": 5,
+                            "attribute": "50%",
+                            "amount": 1,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+    solutions[2].concentration: Source preparation input: 1 ml = 0.001 L per receiving batch, not grams per liter or a dose per final liter. Source reagent label: 50%; percentage basis and stock preparation amounts are unspecified. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[7]; accessed=2026-10-08T20:53:36.019647+00:00; capture SHA256=60124421b4435a039b1f18c6585fc351e9e7c19c20721819b19dfc98fe2db993.
+
+    Additional exact excerpt: Separately sterilize bovine serum albumin, glucose and cysteine solutions by filtration, and aseptically add to the medium.
+    solutions[2].preparation_notes: Separate stock filtration and aseptic addition; no pore size or stock recipe is inferred. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[1].step; accessed=2026-10-08T20:53:36.019647+00:00; capture SHA256=60124421b4435a039b1f18c6585fc351e9e7c19c20721819b19dfc98fe2db993.
+
+    Additional exact excerpt: {
+                            "recipe_order": 9,
+                            "compound": "Cysteine",
+                            "compound_id": 492,
+                            "attribute": "10%",
+                            "amount": 10,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+    solutions[3].concentration: Source preparation input: 10 ml = 0.01 L per receiving batch, not grams per liter or a dose per final liter. Source reagent label: 10%; percentage basis and stock preparation amounts are unspecified. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[8]; accessed=2026-10-08T20:53:36.019647+00:00; capture SHA256=60124421b4435a039b1f18c6585fc351e9e7c19c20721819b19dfc98fe2db993.
+
+    Additional exact excerpt: Separately sterilize bovine serum albumin, glucose and cysteine solutions by filtration, and aseptically add to the medium.
+    solutions[3].preparation_notes: Separate stock filtration and aseptic addition; no pore size or stock recipe is inferred. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[1].step; accessed=2026-10-08T20:53:36.019647+00:00; capture SHA256=60124421b4435a039b1f18c6585fc351e9e7c19c20721819b19dfc98fe2db993.
+
+    Additional exact excerpt: [
+                        {
+                            "step": "Adjust pH to 6.6."
+                        },
+                        {
+                            "step": "Separately sterilize bovine serum albumin, glucose and cysteine solutions by filtration, and aseptically add to the medium."
+                        }
+                    ]
+    preparation_steps: Retain the source procedure and order. FILTER represents explicit filtration without asserting the 0.22 micrometer pore size encoded by FILTER_STERILIZE. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps; accessed=2026-10-08T20:53:36.019647+00:00; capture SHA256=60124421b4435a039b1f18c6585fc351e9e7c19c20721819b19dfc98fe2db993.
+
+    Additional exact excerpt: Adjust pH to 6.6.
+    ph_value: Receiving-medium pH is explicitly given by the preparation. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step; accessed=2026-10-08T20:53:36.019647+00:00; capture SHA256=60124421b4435a039b1f18c6585fc351e9e7c19c20721819b19dfc98fe2db993.
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220
+  supports: SUPPORT
+  snippet: Hemin (0.1% in 0.05 N NaOH) 15.0 ml
+  explanation: |-
+    solutions[0].concentration: Original JCM220 row corroborates the exact material, batch amount and preparation label; not a measured final volume or specified percentage basis. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T20:55:15.169447+00:00; capture SHA256=1769837f02e8fbc89f06a76ffe989d7bc5957ce332af2d027246a5971007b24a.
+
+    Additional exact excerpt: Hemin (0.1% in 0.05 N NaOH) 15.0 ml
+    solutions[0].solutions[0].notes: Original JCM220 row corroborates the exact material, batch amount and preparation label; not a measured final volume or specified percentage basis. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T20:55:15.169447+00:00; capture SHA256=1769837f02e8fbc89f06a76ffe989d7bc5957ce332af2d027246a5971007b24a.
+
+    Additional exact excerpt: 20% Bovine serum albumin, fraction V 10.0 ml
+    solutions[1].concentration: Original JCM220 row corroborates the exact material, batch amount and preparation label; not a measured final volume or specified percentage basis. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T20:55:15.169447+00:00; capture SHA256=1769837f02e8fbc89f06a76ffe989d7bc5957ce332af2d027246a5971007b24a.
+
+    Additional exact excerpt: Separately sterilize bovine serum albumin, glucose and cysteine solutions by filtration, and aseptically add to the medium.
+    solutions[1].preparation_notes: Original stock filtration instruction. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T20:55:15.169447+00:00; capture SHA256=1769837f02e8fbc89f06a76ffe989d7bc5957ce332af2d027246a5971007b24a.
+
+    Additional exact excerpt: 50% Glucose 1.0 ml
+    solutions[2].concentration: Original JCM220 row corroborates the exact material, batch amount and preparation label; not a measured final volume or specified percentage basis. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T20:55:15.169447+00:00; capture SHA256=1769837f02e8fbc89f06a76ffe989d7bc5957ce332af2d027246a5971007b24a.
+
+    Additional exact excerpt: Separately sterilize bovine serum albumin, glucose and cysteine solutions by filtration, and aseptically add to the medium.
+    solutions[2].preparation_notes: Original stock filtration instruction. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T20:55:15.169447+00:00; capture SHA256=1769837f02e8fbc89f06a76ffe989d7bc5957ce332af2d027246a5971007b24a.
+
+    Additional exact excerpt: 10% Cysteine 10.0 ml
+    solutions[3].concentration: Original JCM220 row corroborates the exact material, batch amount and preparation label; not a measured final volume or specified percentage basis. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T20:55:15.169447+00:00; capture SHA256=1769837f02e8fbc89f06a76ffe989d7bc5957ce332af2d027246a5971007b24a.
+
+    Additional exact excerpt: Separately sterilize bovine serum albumin, glucose and cysteine solutions by filtration, and aseptically add to the medium.
+    solutions[3].preparation_notes: Original stock filtration instruction. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T20:55:15.169447+00:00; capture SHA256=1769837f02e8fbc89f06a76ffe989d7bc5957ce332af2d027246a5971007b24a.
+
+    Additional exact excerpt: 20% Bovine serum albumin, fraction V 10.0 ml
+    notes: The exact source specifies albumin fraction V, not LB broth. Remove only the reviewed LB supplier nodes and restore the source material at its preparation stage without inventing chemical grounding. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T20:55:15.169447+00:00; capture SHA256=1769837f02e8fbc89f06a76ffe989d7bc5957ce332af2d027246a5971007b24a.
+
+    Additional exact excerpt: Adjust pH to 6.6.
+    ph_value: Original receiving-medium pH. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T20:55:15.169447+00:00; capture SHA256=1769837f02e8fbc89f06a76ffe989d7bc5957ce332af2d027246a5971007b24a.
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/J220
+  title: SC MEDIUM
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-08;
+    capture_sha256=60124421b4435a039b1f18c6585fc351e9e7c19c20721819b19dfc98fe2db993.
+    Authors and publication year not supplied. Batch inputs are not independently
+    verified final concentrations. Existing chemical groundings and organism-growth
+    claims are not recertified.
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220
+  title: Medium data
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-08; capture_sha256=1769837f02e8fbc89f06a76ffe989d7bc5957ce332af2d027246a5971007b24a.
+    Authors and publication year not supplied. Batch inputs are not independently
+    verified final concentrations. Existing chemical groundings and organism-growth
+    claims are not recertified.

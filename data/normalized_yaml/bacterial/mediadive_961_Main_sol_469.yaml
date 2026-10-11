@@ -11,6 +11,32 @@ composition:
   term:
     id: mediadive.compound:16
     label: Yeast extract
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/961
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "Yeast extract",
+                      "compound_id": 16,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "g",
+                      "g_l": 5,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[0].concentration (evidence_only), locator=$.data.recipe[0]: Retain the provider-reported nominal recipe rate, with explicit stage limitation and current field scope. Source input: 5 g. The retained 5 g/L is the provider-reported nominal main-recipe rate (volume field 1000 ml), not a concentration in the 980 ml basal preparation or a measured final-medium concentration. Additional exact preparation excerpt at $.data.steps[0]: {
+                      "recipe_order": null,
+                      "step": "Adjust pH to 7.0. Add catalase and MgSO4 to 10 ml of distilled water each, and sterilize separately by filtration. Cool down autoclaved main solution to 50\u00b0C, and aseptically add catalase and MgSO4 solution."
+                  } Retrieved 2026-10-07T08:48:06.465617+00:00; response SHA256=565cb49820743b205bf491e01a4f4c2dfdec8dfddf95ff5b873d6b07b0e47e3a. Existing chemical mappings unchanged, not independently validated. Historical explanation (superseded where stage/scope differs): Concentration evidence for composition[0].concentration (Yeast extract) in MediaDive solution 961; locator=$.data.recipe[0] (compound_id=16). Provider explicitly reports g_l=5. Arithmetic check: 5 g * 1 g/g / (1000 ml / 1000 ml per L) = 5 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T08:48:06.465617+00:00; response SHA256=565cb49820743b205bf491e01a4f4c2dfdec8dfddf95ff5b873d6b07b0e47e3a.
+  notes: 'Source input: 5 g. The retained 5 g/L is the provider-reported nominal main-recipe
+    rate (volume field 1000 ml), not a concentration in the 980 ml basal preparation
+    or a measured final-medium concentration.'
 - preferred_term: Malt extract
   concentration:
     value: '5'
@@ -18,6 +44,32 @@ composition:
   term:
     id: mediadive.compound:116
     label: Malt extract
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/961
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Malt extract",
+                      "compound_id": 116,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "g",
+                      "g_l": 5,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[1].concentration (evidence_only), locator=$.data.recipe[1]: Retain the provider-reported nominal recipe rate, with explicit stage limitation and current field scope. Source input: 5 g. The retained 5 g/L is the provider-reported nominal main-recipe rate (volume field 1000 ml), not a concentration in the 980 ml basal preparation or a measured final-medium concentration. Additional exact preparation excerpt at $.data.steps[0]: {
+                      "recipe_order": null,
+                      "step": "Adjust pH to 7.0. Add catalase and MgSO4 to 10 ml of distilled water each, and sterilize separately by filtration. Cool down autoclaved main solution to 50\u00b0C, and aseptically add catalase and MgSO4 solution."
+                  } Retrieved 2026-10-07T08:48:06.465617+00:00; response SHA256=565cb49820743b205bf491e01a4f4c2dfdec8dfddf95ff5b873d6b07b0e47e3a. Existing chemical mappings unchanged, not independently validated. Historical explanation (superseded where stage/scope differs): Concentration evidence for composition[1].concentration (Malt extract) in MediaDive solution 961; locator=$.data.recipe[1] (compound_id=116). Provider explicitly reports g_l=5. Arithmetic check: 5 g * 1 g/g / (1000 ml / 1000 ml per L) = 5 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T08:48:06.465617+00:00; response SHA256=565cb49820743b205bf491e01a4f4c2dfdec8dfddf95ff5b873d6b07b0e47e3a.
+  notes: 'Source input: 5 g. The retained 5 g/L is the provider-reported nominal main-recipe
+    rate (volume field 1000 ml), not a concentration in the 980 ml basal preparation
+    or a measured final-medium concentration.'
 - preferred_term: K2HPO4
   concentration:
     value: '5.7'
@@ -30,18 +82,32 @@ composition:
     label: dipotassium hydrogen phosphate
     confidence: 1.0
     match_type: exact_match
-- preferred_term: MgSO4 x 7 H2O
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  term:
-    id: mediadive.compound:8
-    label: MgSO4 x 7 H2O
-  chebi_term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
-    confidence: 0.7
-    match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/961
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "K2HPO4",
+                      "compound_id": 10,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5.7,
+                      "unit": "g",
+                      "g_l": 5.7,
+                      "mmol_l": 32.7255,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[2].concentration (evidence_only), locator=$.data.recipe[2]: Retain the provider-reported nominal recipe rate, with explicit stage limitation and current field scope. Source input: 5.7 g. The retained 5.7 g/L is the provider-reported nominal main-recipe rate (volume field 1000 ml), not a concentration in the 980 ml basal preparation or a measured final-medium concentration. Additional exact preparation excerpt at $.data.steps[0]: {
+                      "recipe_order": null,
+                      "step": "Adjust pH to 7.0. Add catalase and MgSO4 to 10 ml of distilled water each, and sterilize separately by filtration. Cool down autoclaved main solution to 50\u00b0C, and aseptically add catalase and MgSO4 solution."
+                  } Retrieved 2026-10-07T08:48:06.465617+00:00; response SHA256=565cb49820743b205bf491e01a4f4c2dfdec8dfddf95ff5b873d6b07b0e47e3a. Existing chemical mappings unchanged, not independently validated. Historical explanation (superseded where stage/scope differs): Concentration evidence for composition[2].concentration (K2HPO4) in MediaDive solution 961; locator=$.data.recipe[2] (compound_id=10). Provider explicitly reports g_l=5.7. Arithmetic check: 5.7 g * 1 g/g / (1000 ml / 1000 ml per L) = 5.7 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T08:48:06.465617+00:00; response SHA256=565cb49820743b205bf491e01a4f4c2dfdec8dfddf95ff5b873d6b07b0e47e3a.
+  notes: 'Source input: 5.7 g. The retained 5.7 g/L is the provider-reported nominal
+    main-recipe rate (volume field 1000 ml), not a concentration in the 980 ml basal
+    preparation or a measured final-medium concentration.'
 - preferred_term: NH4H2PO4
   concentration:
     value: '1.2'
@@ -54,17 +120,36 @@ composition:
     label: ammonium dihydrogen phosphate
     confidence: 0.7
     match_type: corpus_consensus
-- preferred_term: Catalase
-  concentration:
-    value: '0.06'
-    unit: G_PER_L
-  term:
-    id: mediadive.compound:270
-    label: Catalase
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/961
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 5,
+                      "compound": "NH4H2PO4",
+                      "compound_id": 413,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1.2,
+                      "unit": "g",
+                      "g_l": 1.2,
+                      "mmol_l": 10.4321,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[3].concentration (evidence_only), locator=$.data.recipe[4]: Retain the provider-reported nominal recipe rate, with explicit stage limitation and current field scope. Source input: 1.2 g. The retained 1.2 g/L is the provider-reported nominal main-recipe rate (volume field 1000 ml), not a concentration in the 980 ml basal preparation or a measured final-medium concentration. Additional exact preparation excerpt at $.data.steps[0]: {
+                      "recipe_order": null,
+                      "step": "Adjust pH to 7.0. Add catalase and MgSO4 to 10 ml of distilled water each, and sterilize separately by filtration. Cool down autoclaved main solution to 50\u00b0C, and aseptically add catalase and MgSO4 solution."
+                  } Retrieved 2026-10-07T08:48:06.465617+00:00; response SHA256=565cb49820743b205bf491e01a4f4c2dfdec8dfddf95ff5b873d6b07b0e47e3a. Existing chemical mappings unchanged, not independently validated. Historical explanation (superseded where stage/scope differs): Concentration evidence for composition[4].concentration (NH4H2PO4) in MediaDive solution 961; locator=$.data.recipe[4] (compound_id=413). Provider explicitly reports g_l=1.2. Arithmetic check: 1.2 g * 1 g/g / (1000 ml / 1000 ml per L) = 1.2 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T08:48:06.465617+00:00; response SHA256=565cb49820743b205bf491e01a4f4c2dfdec8dfddf95ff5b873d6b07b0e47e3a.
+  notes: 'Source input: 1.2 g. The retained 1.2 g/L is the provider-reported nominal
+    main-recipe rate (volume field 1000 ml), not a concentration in the 980 ml basal
+    preparation or a measured final-medium concentration.'
 - preferred_term: Distilled water
   concentration:
-    value: '980'
-    unit: PERCENT_V_V
+    value: '0.98'
+    unit: L
   term:
     id: mediadive.compound:4
     label: Distilled water
@@ -73,6 +158,32 @@ composition:
     label: water
     confidence: 0.7
     match_type: corpus_consensus
+  notes: 980 ml distilled-water input in the API main recipe, separate from 10 ml
+    in each filtered stock; not a measured final volume. The PDF lists 1000 ml without
+    this allocation.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/961
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 7,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 980,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'composition[4].concentration (correct), locator=$.data.recipe[6]:
+      980 ml / 1000 ml per L = 0.98 L water input per batch. Supports the water label
+      and input-basis note; no density, percentage or final-volume assumption. Retrieved
+      2026-10-07T08:48:06.465617+00:00; response SHA256=565cb49820743b205bf491e01a4f4c2dfdec8dfddf95ff5b873d6b07b0e47e3a.
+      Existing chemical mappings unchanged, not independently validated.'
 preparation_notes: Adjust pH to 7.0. Add catalase and MgSO4 to 10 ml of distilled
   water each, and sterilize separately by filtration. Cool down autoclaved main solution
   to 50°C, and aseptically add catalase and MgSO4 solution.
@@ -118,6 +229,71 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T08:52:28.993811+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/961
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "5"} -> {"unit":
+    "G_PER_L", "value": "5"} (evidence_only); composition[1].concentration: {"unit":
+    "G_PER_L", "value": "5"} -> {"unit": "G_PER_L", "value": "5"} (evidence_only);
+    composition[2].concentration: {"unit": "G_PER_L", "value": "5.7"} -> {"unit":
+    "G_PER_L", "value": "5.7"} (evidence_only); composition[3].concentration: {"unit":
+    "G_PER_L", "value": "0.2"} -> {"unit": "G_PER_L", "value": "0.2"} (evidence_only);
+    composition[4].concentration: {"unit": "G_PER_L", "value": "1.2"} -> {"unit":
+    "G_PER_L", "value": "1.2"} (evidence_only)'
+- timestamp: '2026-10-08T00:32:53.463093+00:00'
+  curator: codex
+  action: CORRECTED_DSMZ467_WATER_AND_DSMZ469_FILTERED_PREPARATIONS
+  notes: Corrected source water input units; for medium 469 restored separate filtered
+    preparations and withdrew unsupported stock-rate interpretations. Preserved earlier
+    history, snippets, mappings and variant links. API/PDF preparation-detail difference
+    remains explicit; no growth association added.
+  source: https://mediadive.dsmz.de/rest/solution/961; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf
+  changes: 'solutions[0].composition[1].concentration: null -> {"value": "0.01", "unit":
+    "L"} (add); solutions[0].preferred_term: null -> "Separately filtered magnesium
+    sulfate preparation" (restore_stock); solutions[0].preparation_notes: null ->
+    "Add catalase and MgSO4 to 10 ml of distilled water each, and sterilize separately
+    by filtration. Cool down autoclaved main solution to 50\u00b0C, and aseptically
+    add catalase and MgSO4 solution." (restore_stock); solutions[0].notes: null ->
+    "The 10 ml is distilled-water input for this preparation, not final stock volume
+    or a numeric addition dose. The two ingredients are filtered separately, not together.
+    No filter pore size is specified." (restore_stock); solutions[0].source: null
+    -> "https://mediadive.dsmz.de/rest/solution/961" (restore_stock); solutions[1].composition[1].concentration:
+    null -> {"value": "0.01", "unit": "L"} (add); solutions[1].preferred_term: null
+    -> "Separately filtered catalase preparation" (restore_stock); solutions[1].preparation_notes:
+    null -> "Add catalase and MgSO4 to 10 ml of distilled water each, and sterilize
+    separately by filtration. Cool down autoclaved main solution to 50\u00b0C, and
+    aseptically add catalase and MgSO4 solution." (restore_stock); solutions[1].notes:
+    null -> "The 10 ml is distilled-water input for this preparation, not final stock
+    volume or a numeric addition dose. The two ingredients are filtered separately,
+    not together. No filter pore size is specified." (restore_stock); solutions[1].source:
+    null -> "https://mediadive.dsmz.de/rest/solution/961" (restore_stock); composition[0].concentration:
+    {"value": "5", "unit": "G_PER_L"} -> {"value": "5", "unit": "G_PER_L"} (evidence_only);
+    composition[1].concentration: {"value": "5", "unit": "G_PER_L"} -> {"value": "5",
+    "unit": "G_PER_L"} (evidence_only); composition[2].concentration: {"value": "5.7",
+    "unit": "G_PER_L"} -> {"value": "5.7", "unit": "G_PER_L"} (evidence_only); solutions[0].composition[0].notes:
+    {"value": "0.2", "unit": "G_PER_L"} -> "Source batch input: 0.2 g MgSO4 x 7 H2O,
+    added to 10 ml distilled water and sterilized separately by filtration. The former
+    flattened g/L slot is withdrawn at this separate preparation stage. No stock strength
+    or final-medium concentration is asserted; final stock and medium volumes are
+    unspecified." (withdraw); composition[3].concentration: {"value": "1.2", "unit":
+    "G_PER_L"} -> {"value": "1.2", "unit": "G_PER_L"} (evidence_only); solutions[1].composition[0].notes:
+    {"value": "0.06", "unit": "G_PER_L"} -> "Source batch input: 60 mg catalase (source
+    attribute: Sigma C-10), added to 10 ml distilled water and sterilized separately
+    by filtration. The former flattened g/L slot is withdrawn at this separate preparation
+    stage. No stock strength or final-medium concentration is asserted; final stock
+    and medium volumes are unspecified." (withdraw); notes: null -> "Preparation scope:
+    this record follows the MediaDive API allocation of 980 ml distilled water in
+    the base and 10 ml for each separately filtered stock. The original DSMZ PDF lists
+    1000 ml distilled water without that allocation; it confirms separate filtration
+    but does not independently specify 980/10/10. The API''s nominal 1000 ml volume
+    field and water-input sum are not measured final volumes. Stock strengths and
+    numeric stock addition doses remain unasserted. Historical import annotations
+    and ontology mappings are retained, not revalidated." (correct_scope); composition[4].concentration:
+    {"value": "980", "unit": "PERCENT_V_V"} -> {"value": "0.98", "unit": "L"} (correct)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -126,3 +302,204 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/961
+  title: 'MediaDive solution 961: Main sol. 469'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=565cb49820743b205bf491e01a4f4c2dfdec8dfddf95ff5b873d6b07b0e47e3a;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf
+  title: DSMZ 469. YM-CATALASE MEDIUM
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-08; response_sha256=a7da4f0650bedfcb0c353fe9ae83fd885641a14ed6565b62a6655db099855531;
+    individual authors and publication year not established. PDF copyright year is
+    not a publication date. API-specific details are not silently attributed to the
+    PDF.
+solutions:
+- preferred_term: Separately filtered magnesium sulfate preparation
+  composition:
+  - preferred_term: MgSO4 x 7 H2O
+    term:
+      id: mediadive.compound:8
+      label: MgSO4 x 7 H2O
+    chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+      confidence: 0.7
+      match_type: corpus_consensus
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/solution/961
+      supports: SUPPORT
+      snippet: |-
+        {
+                        "recipe_order": 4,
+                        "compound": "MgSO4 x 7 H2O",
+                        "compound_id": 8,
+                        "solution": null,
+                        "solution_id": null,
+                        "condition": null,
+                        "attribute": null,
+                        "amount": 0.2,
+                        "unit": "g",
+                        "g_l": 0.2,
+                        "mmol_l": 0.811438,
+                        "optional": 0
+                    }
+      explanation: |-
+        solutions[0].composition[0].notes (withdraw), locator=$.data.recipe[3]: Withdraw the flattened rate and retain the mass input at its separate filtration stage. Source batch input: 0.2 g MgSO4 x 7 H2O, added to 10 ml distilled water and sterilized separately by filtration. The former flattened g/L slot is withdrawn at this separate preparation stage. No stock strength or final-medium concentration is asserted; final stock and medium volumes are unspecified. Additional exact preparation excerpt at $.data.steps[0]: {
+                        "recipe_order": null,
+                        "step": "Adjust pH to 7.0. Add catalase and MgSO4 to 10 ml of distilled water each, and sterilize separately by filtration. Cool down autoclaved main solution to 50\u00b0C, and aseptically add catalase and MgSO4 solution."
+                    } Retrieved 2026-10-07T08:48:06.465617+00:00; response SHA256=565cb49820743b205bf491e01a4f4c2dfdec8dfddf95ff5b873d6b07b0e47e3a. Existing chemical mappings unchanged, not independently validated. Historical explanation (superseded where stage/scope differs): Concentration evidence for composition[3].concentration (MgSO4 x 7 H2O) in MediaDive solution 961; locator=$.data.recipe[3] (compound_id=8). Provider explicitly reports g_l=0.2. Arithmetic check: 0.2 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.2 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T08:48:06.465617+00:00; response SHA256=565cb49820743b205bf491e01a4f4c2dfdec8dfddf95ff5b873d6b07b0e47e3a.
+    notes: 'Source batch input: 0.2 g MgSO4 x 7 H2O, added to 10 ml distilled water
+      and sterilized separately by filtration. The former flattened g/L slot is withdrawn
+      at this separate preparation stage. No stock strength or final-medium concentration
+      is asserted; final stock and medium volumes are unspecified.'
+  - preferred_term: Distilled water
+    term:
+      id: mediadive.compound:4
+      label: Distilled water
+    concentration:
+      value: '0.01'
+      unit: L
+    notes: 10 ml distilled-water input for this separately filtered preparation; not
+      a measured final stock volume.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/solution/961
+      supports: SUPPORT
+      snippet: |-
+        {
+                        "recipe_order": null,
+                        "step": "Adjust pH to 7.0. Add catalase and MgSO4 to 10 ml of distilled water each, and sterilize separately by filtration. Cool down autoclaved main solution to 50\u00b0C, and aseptically add catalase and MgSO4 solution."
+                    }
+      explanation: 'solutions[0].composition[1].concentration (add), locator=$.data.steps[0]:
+        10 ml / 1000 ml per L = 0.01 L water input. Supports the water label and input-basis
+        note; the source recipe identifies distilled water as compound 4. No density,
+        final volume or per-liter dose is inferred. Retrieved 2026-10-07T08:48:06.465617+00:00;
+        response SHA256=565cb49820743b205bf491e01a4f4c2dfdec8dfddf95ff5b873d6b07b0e47e3a.
+        Existing chemical mappings unchanged, not independently validated.'
+  preparation_notes: Add catalase and MgSO4 to 10 ml of distilled water each, and
+    sterilize separately by filtration. Cool down autoclaved main solution to 50°C,
+    and aseptically add catalase and MgSO4 solution.
+  notes: The 10 ml is distilled-water input for this preparation, not final stock
+    volume or a numeric addition dose. The two ingredients are filtered separately,
+    not together. No filter pore size is specified.
+  source: https://mediadive.dsmz.de/rest/solution/961
+- preferred_term: Separately filtered catalase preparation
+  composition:
+  - preferred_term: Catalase
+    term:
+      id: mediadive.compound:270
+      label: Catalase
+    notes: 'Source batch input: 60 mg catalase (source attribute: Sigma C-10), added
+      to 10 ml distilled water and sterilized separately by filtration. The former
+      flattened g/L slot is withdrawn at this separate preparation stage. No stock
+      strength or final-medium concentration is asserted; final stock and medium volumes
+      are unspecified.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/solution/961
+      supports: SUPPORT
+      snippet: |-
+        {
+                        "recipe_order": 6,
+                        "compound": "Catalase",
+                        "compound_id": 270,
+                        "solution": null,
+                        "solution_id": null,
+                        "condition": null,
+                        "attribute": "Sigma C-10",
+                        "amount": 60,
+                        "unit": "mg",
+                        "g_l": 0.06,
+                        "mmol_l": null,
+                        "optional": 0
+                    }
+      explanation: |-
+        solutions[1].composition[0].notes (withdraw), locator=$.data.recipe[5]: Withdraw the flattened rate and retain the mass input at its separate filtration stage. Source batch input: 60 mg catalase (source attribute: Sigma C-10), added to 10 ml distilled water and sterilized separately by filtration. The former flattened g/L slot is withdrawn at this separate preparation stage. No stock strength or final-medium concentration is asserted; final stock and medium volumes are unspecified. Additional exact preparation excerpt at $.data.steps[0]: {
+                        "recipe_order": null,
+                        "step": "Adjust pH to 7.0. Add catalase and MgSO4 to 10 ml of distilled water each, and sterilize separately by filtration. Cool down autoclaved main solution to 50\u00b0C, and aseptically add catalase and MgSO4 solution."
+                    } Retrieved 2026-10-07T08:48:06.465617+00:00; response SHA256=565cb49820743b205bf491e01a4f4c2dfdec8dfddf95ff5b873d6b07b0e47e3a. Existing chemical mappings unchanged, not independently validated.
+  - preferred_term: Distilled water
+    term:
+      id: mediadive.compound:4
+      label: Distilled water
+    concentration:
+      value: '0.01'
+      unit: L
+    notes: 10 ml distilled-water input for this separately filtered preparation; not
+      a measured final stock volume.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/solution/961
+      supports: SUPPORT
+      snippet: |-
+        {
+                        "recipe_order": null,
+                        "step": "Adjust pH to 7.0. Add catalase and MgSO4 to 10 ml of distilled water each, and sterilize separately by filtration. Cool down autoclaved main solution to 50\u00b0C, and aseptically add catalase and MgSO4 solution."
+                    }
+      explanation: 'solutions[1].composition[1].concentration (add), locator=$.data.steps[0]:
+        10 ml / 1000 ml per L = 0.01 L water input. Supports the water label and input-basis
+        note; the source recipe identifies distilled water as compound 4. No density,
+        final volume or per-liter dose is inferred. Retrieved 2026-10-07T08:48:06.465617+00:00;
+        response SHA256=565cb49820743b205bf491e01a4f4c2dfdec8dfddf95ff5b873d6b07b0e47e3a.
+        Existing chemical mappings unchanged, not independently validated.'
+  preparation_notes: Add catalase and MgSO4 to 10 ml of distilled water each, and
+    sterilize separately by filtration. Cool down autoclaved main solution to 50°C,
+    and aseptically add catalase and MgSO4 solution.
+  notes: The 10 ml is distilled-water input for this preparation, not final stock
+    volume or a numeric addition dose. The two ingredients are filtered separately,
+    not together. No filter pore size is specified.
+  source: https://mediadive.dsmz.de/rest/solution/961
+source_data:
+  origin: MediaDive
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/961
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": null,
+                      "step": "Adjust pH to 7.0. Add catalase and MgSO4 to 10 ml of distilled water each, and sterilize separately by filtration. Cool down autoclaved main solution to 50\u00b0C, and aseptically add catalase and MgSO4 solution."
+                  }
+    explanation: 'solutions[0].preferred_term (restore_stock), locator=$.data.steps[0]:
+      Separate filtered preparation; the descriptor name is a curator label, not a
+      new accession. The shared verbatim instruction distinguishes the two separately
+      prepared stocks. solutions[0].preparation_notes (restore_stock), locator=$.data.steps[0]:
+      Separate filtered preparation; the descriptor name is a curator label, not a
+      new accession. The shared verbatim instruction distinguishes the two separately
+      prepared stocks. solutions[0].notes (restore_stock), locator=$.data.steps[0]:
+      Separate filtered preparation; the descriptor name is a curator label, not a
+      new accession. The shared verbatim instruction distinguishes the two separately
+      prepared stocks. solutions[0].source (restore_stock), locator=$.data.steps[0]:
+      Separate filtered preparation; the descriptor name is a curator label, not a
+      new accession. The shared verbatim instruction distinguishes the two separately
+      prepared stocks. solutions[1].preferred_term (restore_stock), locator=$.data.steps[0]:
+      Separate filtered preparation; the descriptor name is a curator label, not a
+      new accession. The shared verbatim instruction distinguishes the two separately
+      prepared stocks. solutions[1].preparation_notes (restore_stock), locator=$.data.steps[0]:
+      Separate filtered preparation; the descriptor name is a curator label, not a
+      new accession. The shared verbatim instruction distinguishes the two separately
+      prepared stocks. solutions[1].notes (restore_stock), locator=$.data.steps[0]:
+      Separate filtered preparation; the descriptor name is a curator label, not a
+      new accession. The shared verbatim instruction distinguishes the two separately
+      prepared stocks. solutions[1].source (restore_stock), locator=$.data.steps[0]:
+      Separate filtered preparation; the descriptor name is a curator label, not a
+      new accession. The shared verbatim instruction distinguishes the two separately
+      prepared stocks. notes (correct_scope), locator=$.data.steps[0]: API-specific
+      preparation context; the water table is independently quoted on its node. Original-PDF
+      detail difference is documented by separate PDF evidence. Retrieved 2026-10-07T08:48:06.465617+00:00;
+      response SHA256=565cb49820743b205bf491e01a4f4c2dfdec8dfddf95ff5b873d6b07b0e47e3a.
+      Existing chemical mappings unchanged, not independently validated.'
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf
+    supports: SUPPORT
+    snippet: Catalase and MgSO4 are sterilized separately by filtration.
+    explanation: 'notes and solutions[0:2].preparation_notes: page 1 confirms separate
+      filtration. Additional exact page 1 water-row excerpt: Distilled water 1000.0
+      ml. Unlike the API, this PDF does not partition that water into base and stocks;
+      the API allocation is explicitly attributed, not inferred from this PDF. Retrieved
+      2026-10-08T00:04:09.122492+00:00; PDF SHA256=a7da4f0650bedfcb0c353fe9ae83fd885641a14ed6565b62a6655db099855531.'
+notes: 'Preparation scope: this record follows the MediaDive API allocation of 980
+  ml distilled water in the base and 10 ml for each separately filtered stock. The
+  original DSMZ PDF lists 1000 ml distilled water without that allocation; it confirms
+  separate filtration but does not independently specify 980/10/10. The API''s nominal
+  1000 ml volume field and water-input sum are not measured final volumes. Stock strengths
+  and numeric stock addition doses remain unasserted. Historical import annotations
+  and ontology mappings are retained, not revalidated.'

@@ -1,0 +1,23 @@
+# Solution Concentration Review: FeS solution
+
+- Record: data/normalized_yaml/bacterial/mediadive_4499_FeS_solution.yaml
+- ID: CultureMech:013473
+- Reviewed commit: `f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f`
+- Before SHA256: `970617fe60236cea5ed92b0b1c30912259ec04c9d6de61141d444f6d7161063b`
+- Proposed/result SHA256: `f815b47872a7b8696728e9c83df7563d14d3ae13a8181949b8a12b6930d6764d`
+- Source: https://mediadive.dsmz.de/rest/solution/4499
+- Source SHA256: b27d5b80a2b680336ce3dbde22094caa85b57dfb818bc8b70d44eaa4aea8934f
+- Retrieved: 2026-10-07T09:44:22.991276+00:00
+- Source type: official DSMZ dataset; discovery: existing record source ID; authors/year not supplied.
+- State: changed locally; unresolved claims remain unchanged.
+- Baseline schema errors: 0; proposed schema errors: 0.
+- Operational failure: none
+
+Source response, exact IDs/labels, arithmetic, and literal snippets were checked by the maintained guarded reviewer. This is not a claim of manual inspection of every source sentence or automated reference-validator success. Preparation-dependent quantities and unrepresented stocks remain open. Schema validity is not scientific proof.
+
+| Field | Ingredient | Old | Proposed | Status | DOI/PURL | Exact snippet | Locator | Calculation / decision | Action |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `composition[0].concentration` | FeSO4 x 7 H2O | {"unit": "G_PER_L", "value": "154"} | {"unit": "G_PER_L", "value": "154"} | evidence_only | https://mediadive.dsmz.de/rest/solution/4499 | {<br>                "recipe_order": 1,<br>                "compound": "FeSO4 x 7 H2O",<br>                "compound_id": 12,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 46.2,<br>                "unit": "g",<br>                "g_l": 154,<br>                "mmol_l": 553.927,<br>                "optional": 0<br>            } | $.data.recipe[0] (compound_id=12) | Provider explicitly reports g_l=154. Arithmetic check: 46.2 g * 1 g/g / (300 ml / 1000 ml per L) = 154 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: "volume": 300. | applied |
+| `composition[1].concentration` | Na2S x 9 H2O | {"unit": "G_PER_L", "value": "132"} | {"unit": "G_PER_L", "value": "132"} | evidence_only | https://mediadive.dsmz.de/rest/solution/4499 | {<br>                "recipe_order": 2,<br>                "compound": "Na2S x 9 H2O",<br>                "compound_id": 54,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 39.6,<br>                "unit": "g",<br>                "g_l": 132,<br>                "mmol_l": 549.583,<br>                "optional": 0<br>            } | $.data.recipe[1] (compound_id=54) | Provider explicitly reports g_l=132. Arithmetic check: 39.6 g * 1 g/g / (300 ml / 1000 ml per L) = 132 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: "volume": 300. | applied |
+| `composition[2].concentration` | Distilled water | {"unit": "PERCENT_V_V", "value": "1000.0"} | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/solution/4499 | {<br>                "recipe_order": 3,<br>                "compound": "Distilled water",<br>                "compound_id": 4,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 300,<br>                "unit": "ml",<br>                "g_l": null,<br>                "mmol_l": null,<br>                "optional": 0<br>            } | $.data.recipe[2] (compound_id=4) | Preparation steps may specify make-up volume; manual water review required | unchanged |
+| `ingredients[0].concentration` | See source for composition | {"unit": "VARIABLE", "value": "variable"} | unknown / not asserted | unsupported | unknown / not asserted | unknown / not asserted | unknown / not asserted | Outside direct composition matching; unchanged. | unchanged |

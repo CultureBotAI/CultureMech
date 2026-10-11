@@ -1,0 +1,49 @@
+{
+  "records": [
+    {
+      "path": "data/normalized_yaml/bacterial/n27_rhodospirillaceae_medium_modified.yaml",
+      "fingerprint": "57f0dd2ba2fd6a921e11c55674492be2cff1d2530c521a306b2c0c679409c7c1",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/n27_rhodospirillaceae_medium_modified.yaml"
+      ],
+      "merged_id": "CultureMech:010437",
+      "field_retention": {
+        "ingredients": true,
+        "solutions": true,
+        "preparation_steps": true,
+        "physical_state": true,
+        "ph_range": true,
+        "ph_value": true,
+        "evidence": true,
+        "references": true,
+        "notes": true,
+        "curation_history": true
+      },
+      "all_checked_fields_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/bekisolidmedium_hydrogenovibrio_crunogenus_quimiolitotrofo.yaml",
+      "fingerprint": "1339d324c80b91cbe72ed5c0fd873a1088f38351ce1bec194916fd3da6f217cb",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/bekisolidmedium_hydrogenovibrio_crunogenus_quimiolitotrofo.yaml"
+      ],
+      "merged_id": "CultureMech:010430",
+      "field_retention": {
+        "ingredients": true,
+        "solutions": true,
+        "preparation_steps": true,
+        "physical_state": true,
+        "ph_range": true,
+        "ph_value": true,
+        "evidence": true,
+        "references": true,
+        "notes": true,
+        "curation_history": true
+      },
+      "all_checked_fields_retained": true
+    }
+  ],
+  "retained": 2,
+  "all_retained": true,
+  "scope": "Actual complete corpus groups, including water membership changes. No generated merge published."
+}

@@ -1,0 +1,151 @@
+{
+  "terminal": true,
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "normalized_inventory": {
+    "count": 15910,
+    "sha256": "d99a375e68d2bef008b27eae1eaa6da6fc414a7d67046a15a5d32a2661f813d2"
+  },
+  "normalized_yaml_changed": false,
+  "new_evidence_entries": 0,
+  "new_taxa_media_associations": 0,
+  "reference_checks_passed": {
+    "K1021": 21,
+    "K1021_16929": 22,
+    "M2287": 13,
+    "D1021": 30
+  },
+  "prior_failed_checks_repaired": 31,
+  "unchanged_reference_identifiers_paths_and_snippets": true,
+  "tests_passed": {
+    "focused": "452 passed, 2 warnings in 46.37s",
+    "fast": "9644 passed, 16 skipped, 1945 deselected, 2 warnings in 799.19s (0:13:19)"
+  },
+  "reference_cli_passes": 4,
+  "fresh_source_responses": 5,
+  "requests_refresh_passed": false,
+  "requests_error": "RecipeReferenceError: source_access: unexpected HTTP 403 or redirect for https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+  "explicit_direct_capture_passed": true,
+  "transport_fallback_in_validator": false,
+  "cumulative_edited_records": 5174,
+  "cumulative_added_evidence": 33094,
+  "followup_unique_records": 11786,
+  "outside_this_followup": 4124,
+  "followup_report_inventory_sha256": "c740165de90d058956c0cb2879627b181ffd0c8d5c8280025917094b66625182",
+  "coverage_search_includes_ignored_files": true,
+  "remaining_failed_gates": [
+    {
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/lactalbumin-formulations-post-13.log"
+    },
+    {
+      "command": [
+        "just",
+        "audit-merge-freshness",
+        "--json"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/lactalbumin-formulations-post-14.log"
+    }
+  ],
+  "freshness": {
+    "tracked_total": 6320,
+    "fresh_total": 10777,
+    "only_in_tracked": 4275,
+    "only_in_fresh": 8732,
+    "changed": 2045,
+    "unchanged": 0
+  },
+  "next_source_preparation": {
+    "records": 24,
+    "captures": 28,
+    "komodo_tables_parsed": 9,
+    "pdf_pages_visually_inspected": {
+      "645": {
+        "pdf_sha256": "e97e19295e3f61a6bcfaae355a2df1e9a4eb444f4b68177ad3b48b351d92932a",
+        "rendered_image": "/tmp/ingredient-media-20261007/middlebrook-645.jpg",
+        "rendered_sha256": "9e380e3a8644a79e56c78b62c9fcdcbff8d9772463a6afdceae88626181ef07d",
+        "page": 1,
+        "inspected": true
+      },
+      "645a": {
+        "pdf_sha256": "3a37150a4a9f1c36727ac53c80fba75e6570653a97f27d243124bc87cb2ef417",
+        "rendered_image": "/tmp/ingredient-media-20261007/middlebrook-645a.jpg",
+        "rendered_sha256": "ecd699dd66abbfa91406bec7229483c3b1c8a75ce669a4cf5c9ac7ed98a6def7",
+        "page": 1,
+        "inspected": true
+      },
+      "857": {
+        "pdf_sha256": "5f78d2aeb0b12de7cef7d49c3e7096f78f784f70c8258ed93195728beba667eb",
+        "rendered_image": "/tmp/ingredient-media-20261007/middlebrook-857.jpg",
+        "rendered_sha256": "bbdb1f83c3ecce0e8aa1b504b04a96a194cc2b748c07e1452cb55206c24eb38f",
+        "page": 1,
+        "inspected": true
+      },
+      "911": {
+        "pdf_sha256": "37172359a5df31c53f2af8a9f2ec0889c166061663a0741e8f64f161502b6ed5",
+        "rendered_image": "/tmp/ingredient-media-20261007/middlebrook-911.jpg",
+        "rendered_sha256": "e4d0ab1af31ac58f71e100e71338b0f2e54db5b65525805fb85dde259456f4a0",
+        "page": 1,
+        "inspected": true
+      }
+    },
+    "completed_record_reviews": 0,
+    "records_edited": 0,
+    "finding_report": "reports/ingredient_concentration_curation/20261008-komodo-reference-validation/next-middlebrook-source-findings.md"
+  },
+  "files_sha256": {
+    "src/culturemech/validation/recipe_references.py": "496b60409c0f973063dbe2671785b2ebefbe810059cf988f99b5368cbe8f0f85",
+    "scripts/validate_recipe_references.py": "087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b",
+    "tests/test_recipe_komodo_references.py": "accc793474144d364a08ea91af82cf1b097e9b5e14091d84788f3edb31e69ce8",
+    "tests/test_recipe_references.py": "59d055b9239b03b3794ec5297f23c4b1ecb09e7984b252b4337755b86cf0f7ab",
+    "tests/test_recipe_pdf_references.py": "bd301e4d081a0ce7bd6d67e0a5fcc43406156eb27cc00ea7855c8d68a84d3166",
+    "tests/fixtures/recipe_references/DSMZ104a.json": "ec2600e109a962dd381c566c97c02d9b7873838de29593429c49e88065d7faa5",
+    "tests/fixtures/recipe_references/DSMZ1829.json": "e5746a0a85fbf74cd77490ebde4b427bf59579b622c54c1b113ead1b6ea1dda4",
+    "tests/fixtures/recipe_references/DSMZ261.json": "fd5b361d542572ce82b192e0f6ee26b6cb7a56639b6e48fbca28baea3a83974f",
+    "tests/fixtures/recipe_references/DSMZ403.json": "c8dfabc547468886a01ce5d5806ad87bd56b75cb313cd3d39e94b77f59673e1a",
+    "tests/fixtures/recipe_references/DSMZ605a.json": "a7888642201dd8a30dad78b0ec3af286a0981731ce15d993cca9facc0de5091d",
+    "tests/fixtures/recipe_references/DSMZ751.json": "a0f650c244d940185cc95bc884506ee2b589ac369b4bd29c9cd5797921a6b914",
+    "tests/fixtures/recipe_references/J151.json": "031437e5acf918fbe4a1f5284a30382521cf55fd4a87f5467eee250deef23852",
+    "tests/fixtures/recipe_references/JCM1084.json": "b36df18d9c126d4029cdc3b26e9d6d9ea46c15c03a1e09baf3db30d7d1f1a57a",
+    "tests/fixtures/recipe_references/JCM1282.json": "06b8a516026f912951ea5b857c982d5aa594de58ae5dd812f50dda4c23b2f01c",
+    "tests/fixtures/recipe_references/K1021.json": "2cdb9b77b35fb86fcd9870ae086a4e2a4a2bc5527f3a6be06a04ebeab2086144",
+    "tests/fixtures/recipe_references/K1021_16929.json": "be29bc90a30e1bce9d260b96febae642d97a27522ccbb18e242b93e26fdf8cb8",
+    "tests/fixtures/recipe_references/M1124.json": "4d9e7f49152b35ccce51ccceb43ad70530eb6caea989270d3f3541c5e9c69edf",
+    "tests/fixtures/recipe_references/README.md": "ee051cf42929f3e2cec04c99e8750db53c36b0fa2c3a7f90bcc4ce4519eef692",
+    "tests/fixtures/recipe_references/komodo_failed_excerpts.json": "6644fc181c01a66dce5136fd6456794f24d879daffbd6fcb1f5ae84c09c5ecdd",
+    "tests/fixtures/recipe_references/solution118.json": "a9116a6d5cb591e8ee66301fe1d56c32f68b96412bce2edb779b2d93f2306211"
+  },
+  "receipts_sha256": {
+    "focused.json": "5d5d82b984b775bf04287e12fb5f8b726edcaa451ea7c9bc090addf9092dea4f",
+    "fast.json": "d2572149570c690364ad57a697c57f3a354861f04b6faee33d33df7dd63cc5fe",
+    "live.json": "a2cfd34d345af43a17d8522adbd90dcf420739c2aa4690b568f9f5f5e49d84d3",
+    "direct-refresh.json": "b473723c4939ebe9c0dcb7dee2555f8fb732a5357784b59a6f35950300bd3eb9",
+    "direct-refresh-retry.json": "d955247a5a484f10756137f909145428593e7d0d118410d306ecf94189acb1e7",
+    "cached.json": "685b991429ce9e8bdfe24b63ce81a977647319f557d5d3b9adad639590fe9505"
+  },
+  "cohort_validation_sha256": "a81296cc5e883f26afdac45514a34f5059aee8c77d5898269a40d066038957a2",
+  "docs_sha256": {
+    "reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/KOMODO_1021_SODALIS_GLOSSINIDIUS_medium.yaml.md": "15f9503a70cc699c008137e0d9ef800658315edc7aa0431c2a7260bcffc3527e",
+    "reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/medium_1021_modified_for_dsm_16929.yaml.md": "8605b6a94b9e70811465ef2115d0a08de0c614ba958cce49c0123d9e3a31d5ac",
+    "reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/sodalis_glossinidius_medium.yaml.md": "4623e0916e13fea580093e994174811aafacb76446dc7c79092d4f4f53a1d4f8",
+    "reports/ingredient_concentration_curation/20261008-komodo-reference-validation/README.md": "cecc053f7b386f7a7f9100e93141835c3a120b8e90f9312e83fcf92c097ebd95",
+    "reports/ingredient_concentration_curation/20261008-komodo-reference-validation/adversarial-review.md": "39a035599c6b01fa7c6d000c00b4a0caf99a2d95d6aecde36f4b2c6f43bc9f0f",
+    "reports/ingredient_concentration_curation/20261008-komodo-reference-validation/next-middlebrook-source-findings.md": "604c7b2c8ab5ccaca818f6081d38181ee6f9b5bdcb7c17c41f3d20663dc58414",
+    "reports/ingredient_concentration_curation/20261008-lactalbumin-formulations/README.md": "e3b7f72950a3b2fa2661d66e1915012df078c2d57b833b2689f1eda3d6de00a6",
+    "reports/ingredient_concentration_curation/20261008-lactalbumin-formulations/adversarial-review.md": "7da2ac45653e840004586c133f65e75ad608478505320d85d342b0917ed38686",
+    "reports/ingredient_concentration_curation/20261008-lactalbumin-formulations/issue-komodo-reference-validation.md": "1869a9442f160d58ccd3931f8afb48ed815de295534412938d4677ea0a2d1cef",
+    "reports/ingredient_concentration_curation/20261008-lactalbumin-formulations/next-work.md": "f3e69dcfbb855f8861fa619af7994be03cc0f01983dc8d95adc185cef2367cf6",
+    "reports/ingredient_concentration_curation/20261008-lactalbumin-formulations/records/D1021.md": "3df646c1f2d9d1292ad6f9aede0430552707ba1ba8f5217091631bd07906feae",
+    "reports/ingredient_concentration_curation/20261008-lactalbumin-formulations/records/K1021.md": "3ac831251c3bbf79c240ee6bc14435798d51df3b155d2de4812737a3c0443063",
+    "reports/ingredient_concentration_curation/20261008-lactalbumin-formulations/records/K1021_16929.md": "c63ae334e9dd458c7ca8b155ad533394fa073342d7bcc11ac35e3a78e9bb643b",
+    "reports/ingredient_concentration_curation/20261008-lactalbumin-formulations/records/M2287.md": "275645be5c33d183ca56258f4038c13b9fc24f7704eb61bde6e13d25b59296e3",
+    "reports/ingredient_concentration_curation/README.md": "abffc5a569aad13acefe58ec276e5bb3060c1c86553a11fdc0493e507f3894df"
+  },
+  "runtime": "Existing partial locked Python 3.13 environment; fast tier plus explicit focused/reference checks, not clean CI or a complete suite.",
+  "publication": "No commit, push, GitHub mutation, PR, merge or branch deletion in this batch."
+}

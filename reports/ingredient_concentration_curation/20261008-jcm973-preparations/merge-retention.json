@@ -1,0 +1,80 @@
+{
+  "terminal": true,
+  "media_records_checked": 3,
+  "solutions_excluded": 1,
+  "failed_records": 0,
+  "details": [
+    {
+      "path": "data/normalized_yaml/archaea/TOGO_M1023_Halorhabdus_Segorensis_Medium.yaml",
+      "fingerprint": "9e68ae3977d169841b8c80f41246d52bf4c66734d84962c68fd811b0a4b2ee0f",
+      "group_paths": [
+        "data/normalized_yaml/archaea/TOGO_M1023_Halorhabdus_Segorensis_Medium.yaml"
+      ],
+      "nodes": [
+        {
+          "name": "JCM973 magnesium chloride preparation",
+          "exact_entry_retained": true,
+          "composition_retained": true,
+          "no_invented_working_dose": true
+        },
+        {
+          "name": "JCM973 remaining-components preparation",
+          "exact_entry_retained": true,
+          "composition_retained": true,
+          "no_invented_working_dose": true
+        }
+      ],
+      "root_evidence_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/archaea/TOGO_M1024_Halorhabdus_Segorensis_Medium.yaml",
+      "fingerprint": "f299a58b4db8414bf27fd6b6693846edce9b2061909c0d5a20ec0429522dfb08",
+      "group_paths": [
+        "data/normalized_yaml/archaea/TOGO_M1024_Halorhabdus_Segorensis_Medium.yaml"
+      ],
+      "nodes": [
+        {
+          "name": "JCM973 magnesium chloride preparation",
+          "exact_entry_retained": true,
+          "composition_retained": true,
+          "no_invented_working_dose": true
+        },
+        {
+          "name": "JCM973 remaining-components preparation",
+          "exact_entry_retained": true,
+          "composition_retained": true,
+          "no_invented_working_dose": true
+        }
+      ],
+      "root_evidence_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/archaea/halorhabdus_segorensis_medium.yaml",
+      "fingerprint": "4d84a60f6ef124da9481de3b584ef066186e2b0cb89914193613ff7479c452e0",
+      "group_paths": [
+        "data/normalized_yaml/archaea/halorhabdus_segorensis_medium.yaml"
+      ],
+      "nodes": [
+        {
+          "name": "JCM973 magnesium chloride preparation",
+          "exact_entry_retained": true,
+          "composition_retained": true,
+          "no_invented_working_dose": true
+        },
+        {
+          "name": "JCM973 remaining-components preparation",
+          "exact_entry_retained": true,
+          "composition_retained": true,
+          "no_invented_working_dose": true
+        }
+      ],
+      "root_evidence_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    }
+  ]
+}

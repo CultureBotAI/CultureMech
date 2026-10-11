@@ -1,32 +1,41 @@
-<section id="solutions">
-<h2>Solutions</h2>
-{% for sol in medium.solutions %}
+{% from "_partials/quantity.html.j2" import quantity %}
+{% macro solution(sol, index, level=3) -%}
 <div class="solution">
-  <h3>{{ sol.name or 'Solution ' ~ loop.index }}</h3>
+  <h{{ level }}>{{ sol.preferred_term or sol.name or 'Solution ' ~ index }}</h{{ level }}>
   {% if sol.solution_type %}
     <div class="muted small">{{ sol.solution_type }}</div>
   {% endif %}
-  {% if sol.ingredients %}
+  {% if sol.concentration %}<p>Dose: {{ quantity(sol.concentration) }}</p>{% endif %}
+  {% if sol.culturemech_term and sol.culturemech_term.id %}
+    <p>{{ sol.culturemech_term.id|identifier_link }}</p>
+  {% endif %}
+  {% set composition = sol.composition or sol.ingredients %}
+  {% if composition %}
   <table class="ingredients">
+    <caption>Stock composition</caption>
     <thead>
-      <tr><th>Ingredient</th><th class="right">Concentration</th></tr>
+      <tr><th>Ingredient</th><th class="right">Concentration</th><th>Notes</th></tr>
     </thead>
     <tbody>
-    {% for ing in sol.ingredients %}
+    {% for ing in composition %}
       <tr>
         <td>{{ ing.preferred_term or ing.name or '' }}</td>
-        <td class="right">
-          {% if ing.concentration %}
-            {{ ing.concentration.value }}
-            <span class="muted">{{ ing.concentration.unit }}</span>
-          {% endif %}
-        </td>
+        <td class="right">{{ quantity(ing.concentration) }}</td>
+        <td class="prewrap small">{{ ing.notes or '' }}</td>
       </tr>
     {% endfor %}
     </tbody>
   </table>
   {% endif %}
   {% if sol.notes %}<div class="prewrap small">{{ sol.notes }}</div>{% endif %}
+  {% for child in sol.solutions %}
+    {{ solution(child, loop.index, [level + 1, 6]|min) }}
+  {% endfor %}
 </div>
+{%- endmacro %}
+<section id="solutions">
+<h2>Solutions</h2>
+{% for sol in medium.solutions %}
+{{ solution(sol, loop.index) }}
 {% endfor %}
 </section>

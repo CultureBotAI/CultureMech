@@ -1,0 +1,391 @@
+{
+  "terminal": true,
+  "passed": true,
+  "records_edited": 0,
+  "scientific_verification_asserted": false,
+  "all_record_goal_complete": false,
+  "created_at": "2026-10-10T04:29:41.133839+00:00",
+  "source_triage_sha256": "6bf2884ea78ec424fbc0d0b557b97f45894fdf08b48ee5126a37cabd28cd9a81",
+  "record_sha256": {
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_20g_ethanol_12_5g_msg.yaml": "e91ab5cd21abf2dbefb893e75a4ed80dcee88694681597007723805fb0ccee99",
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_20g_glucose_12_5g_msg.yaml": "4870367d9858021a887641e635ad97bf7f020881e3ebdcb483a3333f0b2060ba",
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_20g_glucose_20g_lactose_12_5g_msg.yaml": "546bfa5847e713a8b1f3ac87e22bcec181a0110eb58f086dba3fded13d6c95f4",
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_20g_glycerol_12_5g_msg.yaml": "40fc15ae66c911342930923973bdc34acb81c91acee1fb6c09fda04948e38dff",
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_11g_ammonium_acetate.yaml": "174cbed29b5273c22984f004364d29e6dacd327cc3cd88914dd9e4211f398fa5",
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_12_5g_arginine.yaml": "670b79f44873b2ca6bd48454a2857207b5241378dbe3151e445c9d6a348ff630",
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_12_5g_glycine.yaml": "7cd3a705adfde35e3d8a1d15c21c5565108bc9a00e7126a70b180aaff690e6fd",
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_12_5g_histidine.yaml": "d6f9658d754fafc0cc3703a56443b15046592340e3159a77d0ac9225efd91a03",
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_12_5g_isoleucine.yaml": "ea01a17f159e06bad5e0eeb86cabbecefac01ae2f91cab5779e97388a97aafc7",
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_12_5g_msg.yaml": "d0b11d9924ab7c40d03a7a4eaa5257ecba33c56bdc31e0fafc0f64b8bb0c6c36",
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_13_7g_diammonium_tartrate.yaml": "8f85a0300965bb640753e84a2767b6c625a89828fce51e7d8a03bb8ffa96c66a",
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_18g_msg.yaml": "8f21f829916b8e8af47e4b5df123e7cf6748c063b655985b96ab11132d5d5ec6",
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_4_5g_urea.yaml": "b857c5a97e325e1e9d835692c6f708a1314ab648aae5857ca991b2287a610ea1",
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_4g_ammonium_nitrate.yaml": "fe18a29bef260f3e769d4593c40aaf2eae3aa1fed304847b81fc329ee2e9f212",
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_4g_sodium_nitrate.yaml": "f4045450264e2e27d7ed98f89d5e302862530e04cb354d48333ec71db3d3b04d",
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_7g_msg.yaml": "487d173c4a3155f43dccb595b4d051822594304e116be9b0b3be97c4da2f6364",
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_lactose_12_5g_msg.yaml": "af70dd9776c7c0eae591ac482275c4d507cf317a88c1d5b8922fb520ce136774",
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_70g_glucose_12_5g_msg.yaml": "3c5970859a0d211ec0a3d2ebdcdcdde88dca8afd91088f1780e1b0e0ff938177"
+  },
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_20g_ethanol_12_5g_msg.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-source-preview/baseline-000.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_20g_ethanol_12_5g_msg.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-source-preview/baseline-001.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_20g_glucose_12_5g_msg.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-source-preview/baseline-002.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_20g_glucose_12_5g_msg.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-source-preview/baseline-003.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_20g_glucose_20g_lactose_12_5g_msg.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-source-preview/baseline-004.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_20g_glucose_20g_lactose_12_5g_msg.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-source-preview/baseline-005.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_20g_glycerol_12_5g_msg.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-source-preview/baseline-006.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_20g_glycerol_12_5g_msg.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-source-preview/baseline-007.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_11g_ammonium_acetate.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-source-preview/baseline-008.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_11g_ammonium_acetate.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-source-preview/baseline-009.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_12_5g_arginine.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-source-preview/baseline-010.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_12_5g_arginine.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-source-preview/baseline-011.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_12_5g_glycine.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-source-preview/baseline-012.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_12_5g_glycine.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-source-preview/baseline-013.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_12_5g_histidine.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-source-preview/baseline-014.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_12_5g_histidine.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-source-preview/baseline-015.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_12_5g_isoleucine.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-source-preview/baseline-016.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_12_5g_isoleucine.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-source-preview/baseline-017.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_12_5g_msg.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-source-preview/baseline-018.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_12_5g_msg.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-source-preview/baseline-019.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_13_7g_diammonium_tartrate.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-source-preview/baseline-020.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_13_7g_diammonium_tartrate.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-source-preview/baseline-021.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_18g_msg.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-source-preview/baseline-022.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_18g_msg.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-source-preview/baseline-023.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_4_5g_urea.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-source-preview/baseline-024.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_4_5g_urea.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-source-preview/baseline-025.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_4g_ammonium_nitrate.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-source-preview/baseline-026.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_4g_ammonium_nitrate.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-source-preview/baseline-027.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_4g_sodium_nitrate.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-source-preview/baseline-028.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_4g_sodium_nitrate.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-source-preview/baseline-029.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_7g_msg.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-source-preview/baseline-030.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_7g_msg.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-source-preview/baseline-031.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_lactose_12_5g_msg.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-source-preview/baseline-032.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_lactose_12_5g_msg.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-source-preview/baseline-033.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_70g_glucose_12_5g_msg.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-source-preview/baseline-034.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_70g_glucose_12_5g_msg.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-hajjaj-source-preview/baseline-035.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    }
+  ]
+}

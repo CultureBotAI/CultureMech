@@ -12,7 +12,10 @@ media_term:
 description: Algae culture medium from UTEX Culture Collection. Suitable for saltwater
   algae cultivation.
 notes: UTEX prepares this dilution by mixing 250 mL prepared Erdschreiber's Medium
-  with 750 mL sterile distilled water for 7.5 ppt salinity.
+  with 750 mL sterile distilled water for 7.5 ppt salinity. The UTEX composition table
+  specifies 250 mL Erdschreiber's Medium and 750 mL sterile dH2O for 1 L total (1:3
+  by input volume), whereas its introductory prose says 1:4. Retained quantities follow
+  the explicit table; the source ratio conflict remains unresolved.
 ingredients:
 - preferred_term: dH2O
   concentration:
@@ -25,6 +28,20 @@ ingredients:
     id: CHEBI:15377
     label: water
   notes: UTEX lists 750 mL sterile dH2O per 1 L final medium.
+  evidence:
+  - reference: https://utex.org/products/one-fourth-erdschreibers-medium
+    supports: SUPPORT
+    snippet: 750 mL
+    explanation: 'Supports ingredients[0].concentration for dH2O. Exact component
+      cell: ''sterile dH2O''; amount cell: ''750 mL''; exact basis heading: "For 1
+      L Total". 750 mL / 1 L total = 750 mL/L; the 1 L basis is explicitly stated
+      by the recipe, not assumed. Locator: #recipe, composition table row 2. This
+      supports the prepared-medium input dose only, not its constituent concentrations,
+      chemical identities, salinity, or organism growth claims. The UTEX composition
+      table specifies 250 mL Erdschreiber''s Medium and 750 mL sterile dH2O for 1
+      L total (1:3 by input volume), whereas its introductory prose says 1:4. Retained
+      quantities follow the explicit table; the source ratio conflict remains unresolved.
+      Exact conflicting prose excerpt: "sterile distilled water 1:4".'
 solutions:
 - preferred_term: Erdschreiber's Medium
   concentration:
@@ -87,9 +104,43 @@ curation_history:
   source: https://utex.org/products/one-fourth-erdschreibers-medium
   notes: UTEX prepares this dilution by mixing 250 mL prepared Erdschreiber's Medium
     with 750 mL sterile distilled water for 7.5 ppt salinity.
+- timestamp: '2026-10-10T21:33:31.850583+00:00'
+  curator: codex
+  action: CURATED_UTEX_PREPARED_BLEND_CONCENTRATION_EVIDENCE
+  notes: Retain prepared-medium addition amounts with exact source-URL/snippet evidence.
+    No numeric changes, ontology repairs, linked-recipe certification, or taxa-media
+    associations. Preserve the quarter-strength source ratio conflict explicitly.
+  source: https://utex.org/products/one-fourth-erdschreibers-medium
+  changes: '{"claims": [{"basis_snippet": "For 1 L Total", "calculation": "250 mL
+    / 1 L total = 250 mL/L; the 1 L basis is explicitly stated by the recipe, not
+    assumed.", "component_snippet": "Erdschreiber''s Medium", "decision": "Retain
+    quantity and attach exact source evidence.", "field": "solutions[0].concentration",
+    "ingredient": "Erdschreiber''s Medium", "locator": "#recipe, composition table,
+    Amount column", "old": {"unit": "ML_PER_L", "value": "250"}, "proposed": {"unit":
+    "ML_PER_L", "value": "250"}, "reference": "https://utex.org/products/one-fourth-erdschreibers-medium",
+    "snippet": "250 mL", "source_table_row": 1, "status": "evidence_only", "unresolved":
+    "The UTEX composition table specifies 250 mL Erdschreiber''s Medium and 750 mL
+    sterile dH2O for 1 L total (1:3 by input volume), whereas its introductory prose
+    says 1:4. Retained quantities follow the explicit table; the source ratio conflict
+    remains unresolved."}, {"basis_snippet": "For 1 L Total", "calculation": "750
+    mL / 1 L total = 750 mL/L; the 1 L basis is explicitly stated by the recipe, not
+    assumed.", "component_snippet": "sterile dH2O", "decision": "Retain quantity and
+    attach exact source evidence.", "field": "ingredients[0].concentration", "ingredient":
+    "dH2O", "locator": "#recipe, composition table, Amount column", "old": {"unit":
+    "ML_PER_L", "value": "750"}, "proposed": {"unit": "ML_PER_L", "value": "750"},
+    "reference": "https://utex.org/products/one-fourth-erdschreibers-medium", "snippet":
+    "750 mL", "source_table_row": 2, "status": "evidence_only", "unresolved": "The
+    UTEX composition table specifies 250 mL Erdschreiber''s Medium and 750 mL sterile
+    dH2O for 1 L total (1:3 by input volume), whereas its introductory prose says
+    1:4. Retained quantities follow the explicit table; the source ratio conflict
+    remains unresolved."}], "counts": {"bibliographic_entries_enriched": 1, "new_curation_history":
+    1, "new_evidence": 2, "source_conflict_notes_added": 1}}'
 references:
 - reference: UTEX:one-fourth-erdschreibers-medium
 - reference: https://utex.org/products/one-fourth-erdschreibers-medium
+  title: 1/4 Erdschreiber's Medium | UTEX Culture Collection of Algae
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10; Named authors, publication year and DOI not established.
 original_name: 1/4 Erdschreiber's Medium
 parent_media:
   path: data/normalized_yaml/algae/erdschreibers_medium.yaml
@@ -103,3 +154,17 @@ variant_modifications:
 data_quality_flags:
 - has_ontology_mappings
 - ingredients_curated
+evidence:
+- reference: https://utex.org/products/one-fourth-erdschreibers-medium
+  supports: SUPPORT
+  snippet: 250 mL
+  explanation: 'Supports solutions[0].concentration for Erdschreiber''s Medium. Exact
+    component cell: "Erdschreiber''s Medium"; amount cell: ''250 mL''; exact basis
+    heading: "For 1 L Total". 250 mL / 1 L total = 250 mL/L; the 1 L basis is explicitly
+    stated by the recipe, not assumed. Locator: #recipe, composition table row 1.
+    This supports the prepared-medium input dose only, not its constituent concentrations,
+    chemical identities, salinity, or organism growth claims. The UTEX composition
+    table specifies 250 mL Erdschreiber''s Medium and 750 mL sterile dH2O for 1 L
+    total (1:3 by input volume), whereas its introductory prose says 1:4. Retained
+    quantities follow the explicit table; the source ratio conflict remains unresolved.
+    Exact conflicting prose excerpt: "sterile distilled water 1:4".'

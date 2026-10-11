@@ -1,0 +1,56 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "apply",
+  "checks": [],
+  "source_sha256": "9a74e5496124432d48df9f83e4d62b2a6646bae12a6082ebfa534740bcea2f94",
+  "code_sha256": {
+    "scripts/review_utex_seven_stocks.py": "cdcfdcd38113174e93cc177a1c07ed4b5d20d60f2c3751c9307d2c252f393870",
+    "tests/test_utex_seven_stocks.py": "7abf37a908beefee7f20f449ec81649efae7e5abbf406b9b4389f0fbdf15496a"
+  },
+  "inventory_before_sha256": "b586be89bc43723ac5658f38d627bd51d0a6aa42df52088943d2036147f26b6e",
+  "publication_ready": false,
+  "all_record_goal_complete": false,
+  "applied": {
+    "changed": 7,
+    "pending": 0,
+    "already_applied": 0
+  },
+  "readback": {
+    "changed": 0,
+    "pending": 0,
+    "already_applied": 7
+  },
+  "repeat": {
+    "changed": 0,
+    "pending": 0,
+    "already_applied": 7
+  },
+  "counts": {
+    "bibliographic_entries_enriched": 7,
+    "recipe_context_notes_corrected": 7,
+    "new_curation_history": 7,
+    "new_evidence": 57,
+    "stock_nodes_relocated": 2,
+    "stock_dose_basis_corrections": 2,
+    "new_quantity_slots": 2,
+    "unsupported_primary_identities_removed": 1,
+    "new_references": 16,
+    "ingredient_labels_corrected": 6,
+    "ingredient_identities_corrected": 7,
+    "ingredient_mim_links_corrected": 7,
+    "ingredient_context_notes_corrected": 1,
+    "ingredient_context_notes_added": 1
+  },
+  "changed_paths": [
+    "data/normalized_yaml/bacterial/DAS_Macro_Solution.yaml",
+    "data/normalized_yaml/bacterial/DAS_Vitamin_Cocktail.yaml",
+    "data/normalized_yaml/bacterial/EDTA_Stock.yaml",
+    "data/normalized_yaml/bacterial/G9_Trace_Metals_for_J_medium.yaml",
+    "data/normalized_yaml/bacterial/Macro_Component_1_for_J_Medium.yaml",
+    "data/normalized_yaml/bacterial/Macro_Component_2_for_J_medium.yaml",
+    "data/normalized_yaml/bacterial/Minor_Nutrients.yaml"
+  ],
+  "inventory_after_sha256": "74f8c648647a6a9e6f343f32a93f5ae96aafc1f2889ff43debf3971369a4efc8",
+  "normalized_inventory_unchanged": false
+}

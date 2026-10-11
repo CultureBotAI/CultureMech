@@ -5,7 +5,7 @@ category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 7.0
+ph_value: 6.8
 media_term:
   preferred_term: JCM Medium J197
   term:
@@ -17,300 +17,275 @@ ingredients:
   term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
-  concentration:
-    value: '0.75'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
+  notes: 'Source batch input: 0.75 g. Final preparation volume is not independently
+    established; the unsupported g/L assertion is withdrawn, not replaced by an assumed
+    one-liter concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J197
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 1,
+                              "compound": "KH2PO4",
+                              "compound_id": 11,
+                              "amount": 0.75,
+                              "unit": "g",
+                              "g_l": 0.75,
+                              "mmol_l": 5.51122,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[0].concentration: Source batch input: 0.75 g. Final
+      preparation volume is not independently established; the unsupported g/L assertion
+      is withdrawn, not replaced by an assumed one-liter concentration. No final-medium
+      volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[0];
+      accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.'
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  concentration:
-    value: '0.75'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  notes: 'Source batch input: 0.75 g. Final preparation volume is not independently
+    established; the unsupported g/L assertion is withdrawn, not replaced by an assumed
+    one-liter concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J197
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 2,
+                              "compound": "K2HPO4",
+                              "compound_id": 10,
+                              "amount": 0.75,
+                              "unit": "g",
+                              "g_l": 0.75,
+                              "mmol_l": 4.30599,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[1].concentration: Source batch input: 0.75 g. Final
+      preparation volume is not independently established; the unsupported g/L assertion
+      is withdrawn, not replaced by an assumed one-liter concentration. No final-medium
+      volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[1];
+      accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  concentration:
-    value: '0.36'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  notes: 'Source batch input: 0.36 g. Final preparation volume is not independently
+    established; the unsupported g/L assertion is withdrawn, not replaced by an assumed
+    one-liter concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J197
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 3,
+                              "compound": "MgCl2 x 6 H2O",
+                              "compound_id": 79,
+                              "amount": 0.36,
+                              "unit": "g",
+                              "g_l": 0.36,
+                              "mmol_l": 1.77076,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[2].concentration: Source batch input: 0.36 g. Final
+      preparation volume is not independently established; the unsupported g/L assertion
+      is withdrawn, not replaced by an assumed one-liter concentration. No final-medium
+      volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[2];
+      accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  concentration:
-    value: '1'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
     label: ammonium chloride
+  notes: 'Source batch input: 1 g. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J197
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 4,
+                              "compound": "NH4Cl",
+                              "compound_id": 42,
+                              "amount": 1,
+                              "unit": "g",
+                              "g_l": 1,
+                              "mmol_l": 18.6951,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[3].concentration: Source batch input: 1 g. Final preparation
+      volume is not independently established; the unsupported g/L assertion is withdrawn,
+      not replaced by an assumed one-liter concentration. No final-medium volume,
+      percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[3];
+      accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.'
 - preferred_term: Yeast extract
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
+  notes: 'Source batch input: 0.1 g. Final preparation volume is not independently
+    established; the unsupported g/L assertion is withdrawn, not replaced by an assumed
+    one-liter concentration. Source qualifier: BD-Difco.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J197
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 5,
+                              "compound": "Yeast extract",
+                              "compound_id": 16,
+                              "attribute": "BD-Difco",
+                              "amount": 0.1,
+                              "unit": "g",
+                              "g_l": 0.1,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[4].concentration: Source batch input: 0.1 g. Final preparation
+      volume is not independently established; the unsupported g/L assertion is withdrawn,
+      not replaced by an assumed one-liter concentration. Source qualifier: BD-Difco.
+      No final-medium volume, percentage basis, density or chemical grounding is inferred.
+      Locator=data.solutions[0].recipe[4]; accessed=2026-10-08T13:22:44.044825+00:00;
+      capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.'
 - preferred_term: Polypeptone
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
+  notes: 'Source batch input: 0.1 g. Final preparation volume is not independently
+    established; the unsupported g/L assertion is withdrawn, not replaced by an assumed
+    one-liter concentration. Source qualifier: Nihon Pharm. Co..'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J197
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 6,
+                              "compound": "Polypeptone",
+                              "compound_id": 442,
+                              "attribute": "Nihon Pharm. Co.",
+                              "amount": 0.1,
+                              "unit": "g",
+                              "g_l": 0.1,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[5].concentration: Source batch input: 0.1 g. Final preparation
+      volume is not independently established; the unsupported g/L assertion is withdrawn,
+      not replaced by an assumed one-liter concentration. Source qualifier: Nihon
+      Pharm. Co.. No final-medium volume, percentage basis, density or chemical grounding
+      is inferred. Locator=data.solutions[0].recipe[5]; accessed=2026-10-08T13:22:44.044825+00:00;
+      capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.'
 - preferred_term: Sodium acetate
   term:
     id: CHEBI:32954
     label: sodium acetate
-  concentration:
-    value: '2.5'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32954
     label: sodium acetate
+  notes: 'Source batch input: 2.5 g. Final preparation volume is not independently
+    established; the unsupported g/L assertion is withdrawn, not replaced by an assumed
+    one-liter concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J197
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 7,
+                              "compound": "Sodium acetate",
+                              "compound_id": 731,
+                              "amount": 2.5,
+                              "unit": "g",
+                              "g_l": 2.5,
+                              "mmol_l": 30.4767,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[6].concentration: Source batch input: 2.5 g. Final preparation
+      volume is not independently established; the unsupported g/L assertion is withdrawn,
+      not replaced by an assumed one-liter concentration. No final-medium volume,
+      percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[6];
+      accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.'
 - preferred_term: Trimethylamine-HCl
-  concentration:
-    value: '8'
-    unit: G_PER_L
   term:
     id: CHEBI:64700
     label: trimethylamine hydrochloride
   mediaingredientmech_chebi_term:
     id: CHEBI:64700
     label: trimethylamine hydrochloride
-- preferred_term: NaHCO3
-  term:
-    id: CHEBI:32139
-    label: sodium hydrogencarbonate
-  concentration:
-    value: '0.8'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32139
-    label: sodium hydrogencarbonate
-- preferred_term: Na2S x 9 H2O
-  term:
-    id: CHEBI:76209
-    label: sodium sulfide nonahydrate
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:76209
-    label: sodium sulfide nonahydrate
-- preferred_term: L-Cysteine HCl x H2O
-  term:
-    id: CHEBI:91248
-    label: L-cysteine hydrochloride hydrate
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:91248
-    label: L-cysteine hydrochloride hydrate
+  notes: 'Source batch input: 8 g. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J197
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 8,
+                              "compound": "Trimethylamine-HCl",
+                              "compound_id": 383,
+                              "amount": 8,
+                              "unit": "g",
+                              "g_l": 8,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[7].concentration: Source batch input: 8 g. Final preparation
+      volume is not independently established; the unsupported g/L assertion is withdrawn,
+      not replaced by an assumed one-liter concentration. No final-medium volume,
+      percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[7];
+      accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.'
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
     label: Resazurin
-  concentration:
-    value: '0.001'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:8806
     label: Resazurin
-- preferred_term: Biotin
-  term:
-    id: CHEBI:15956
-    label: biotin
+  notes: 'Source batch input: 1 mg. Final preparation volume is not independently
+    established; the unsupported g/L assertion is withdrawn, not replaced by an assumed
+    one-liter concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J197
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 14,
+                              "compound": "Resazurin",
+                              "compound_id": 25,
+                              "amount": 1,
+                              "unit": "mg",
+                              "g_l": 0.001,
+                              "mmol_l": 0.00436319,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[8].concentration: Source batch input: 1 mg. Final preparation
+      volume is not independently established; the unsupported g/L assertion is withdrawn,
+      not replaced by an assumed one-liter concentration. No final-medium volume,
+      percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[13];
+      accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.'
+- preferred_term: Distilled water
   concentration:
-    value: '0.002'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15956
-    label: biotin
-- preferred_term: Folic acid
-  term:
-    id: CHEBI:27470
-    label: folic acid
-  concentration:
-    value: '0.002'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:27470
-    label: folic acid
-- preferred_term: Pyridoxine hydrochloride
-  term:
-    id: CHEBI:30961
-    label: pyridoxine hydrochloride
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:30961
-    label: pyridoxine hydrochloride
-- preferred_term: Thiamine HCl
-  term:
-    id: CHEBI:49105
-    label: thiamine hydrochloride
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:49105
-    label: thiamine hydrochloride
-- preferred_term: Riboflavin
-  term:
-    id: CHEBI:17015
-    label: riboflavin
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17015
-    label: riboflavin
-- preferred_term: Nicotinic acid
-  term:
-    id: CHEBI:15940
-    label: nicotinic acid
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15940
-    label: nicotinic acid
-- preferred_term: Calcium pantothenate
-  term:
-    id: CHEBI:31345
-    label: Calcium pantothenate
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31345
-    label: Calcium pantothenate
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:176843
-    label: vitamin B12
-  concentration:
-    value: '0.0001'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:176843
-    label: vitamin B12
-- preferred_term: p-Aminobenzoic acid
-  term:
-    id: CHEBI:30753
-    label: 4-aminobenzoic acid
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:30753
-    label: 4-aminobenzoic acid
-- preferred_term: Lipoic acid
-  term:
-    id: CHEBI:16494
-    label: lipoic acid
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:16494
-    label: lipoic acid
-- preferred_term: Nitrilotriacetic acid
-  term:
-    id: CHEBI:44557
-    label: nitrilotriacetic acid
-  concentration:
-    value: '4.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:44557
-    label: nitrilotriacetic acid
-- preferred_term: FeCl2 x 4 H2O
-  term:
-    id: CHEBI:86249
-    label: iron dichloride tetrahydrate
-  concentration:
-    value: '0.4'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86249
-    label: iron dichloride tetrahydrate
-- preferred_term: MnCl2 x 4 H2O
-  term:
-    id: CHEBI:86368
-    label: manganese(II) chloride tetrahydrate
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86368
-    label: manganese(II) chloride tetrahydrate
-- preferred_term: CoCl2 x 6 H2O
-  term:
-    id: CHEBI:53503
-    label: cobalt chloride hexahydrate
-  concentration:
-    value: '0.17'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:53503
-    label: cobalt chloride hexahydrate
-- preferred_term: ZnCl2
-  term:
-    id: CHEBI:49976
-    label: zinc dichloride
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:49976
-    label: zinc dichloride
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-  concentration:
-    value: '0.02'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: boric acid
-  concentration:
-    value: '0.019'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:33118
-    label: boric acid
-- preferred_term: Na2MoO4 x 2 H2O
-  term:
-    id: CHEBI:75213
-    label: sodium molybdate dihydrate
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:75213
-    label: sodium molybdate dihydrate
-- preferred_term: NiCl2 x 6 H2O
-  term:
-    id: CHEBI:34887
-    label: nickel dichloride
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:34887
-    label: nickel dichloride
+    value: '0.981'
+    unit: L
+  notes: 'Source water batch input: 981 ml = 0.981 L. This is not a measured final
+    volume. Prior duplicate-collapse notes describe the superseded flattened record.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J197
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 15,
+                              "compound": "Distilled water",
+                              "compound_id": 4,
+                              "amount": 981,
+                              "unit": "ml",
+                              "optional": 0
+                          }
+    explanation: 'ingredients[9].concentration: Source water batch input: 981 ml =
+      0.981 L. This is not a measured final volume. Prior duplicate-collapse notes
+      describe the superseded flattened record. No final-medium volume, percentage
+      basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[14];
+      accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.'
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -321,9 +296,6 @@ preparation_steps:
     Aseptically and anaerobically add NaHCO3 and Trace vitamins to the medium under
     a N2-CO2 (80:20) atmosphere. Prior to inoculation, add the sterile Na2S x 9H2O
     and cysteine x HCl x H2O solutions, and adjust pH to 6.8.
-- step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH to 7.0 with 1 N KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -358,3 +330,1051 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-10-08T13:52:57.998884+00:00'
+  curator: codex
+  action: RESTORED_JCM_STOCK_PREPARATION_BOUNDARIES_WITH_EVIDENCE
+  notes: Restored preparation boundaries and explicit stock-dose bases. Preserved
+    source-specific conflicts, chemical annotations and earlier history. Batch-mass
+    notes do not assert final concentrations; provider-declared stock rates remain
+    qualified. No growth or identity equivalence claim inferred.
+  source: https://mediadive.dsmz.de/rest/medium/J197
+  changes: 'None -> solutions[0].concentration: None -> {''value'': ''0.009'', ''unit'':
+    ''L''} (add; https://mediadive.dsmz.de/rest/medium/J197); ingredients[22].concentration
+    -> solutions[0].composition[0].concentration: {''value'': ''4.5'', ''unit'': ''G_PER_L''}
+    -> {''value'': ''4.5'', ''unit'': ''G_PER_L''} (correct; https://mediadive.dsmz.de/rest/medium/J197);
+    ingredients[23].concentration -> solutions[0].composition[1].concentration: {''value'':
+    ''0.4'', ''unit'': ''G_PER_L''} -> {''value'': ''0.4'', ''unit'': ''G_PER_L''}
+    (correct; https://mediadive.dsmz.de/rest/medium/J197); ingredients[24].concentration
+    -> solutions[0].composition[2].concentration: {''value'': ''0.1'', ''unit'': ''G_PER_L''}
+    -> {''value'': ''0.1'', ''unit'': ''G_PER_L''} (correct; https://mediadive.dsmz.de/rest/medium/J197);
+    ingredients[25].concentration -> solutions[0].composition[3].concentration: {''value'':
+    ''0.17'', ''unit'': ''G_PER_L''} -> {''value'': ''0.17'', ''unit'': ''G_PER_L''}
+    (correct; https://mediadive.dsmz.de/rest/medium/J197); ingredients[26].concentration
+    -> solutions[0].composition[4].concentration: {''value'': ''0.1'', ''unit'': ''G_PER_L''}
+    -> {''value'': ''0.1'', ''unit'': ''G_PER_L''} (correct; https://mediadive.dsmz.de/rest/medium/J197);
+    ingredients[27].concentration -> solutions[0].composition[5].concentration: {''value'':
+    ''0.02'', ''unit'': ''G_PER_L''} -> {''value'': ''0.02'', ''unit'': ''G_PER_L''}
+    (correct; https://mediadive.dsmz.de/rest/medium/J197); ingredients[28].concentration
+    -> solutions[0].composition[6].concentration: {''value'': ''0.019'', ''unit'':
+    ''G_PER_L''} -> {''value'': ''0.019'', ''unit'': ''G_PER_L''} (correct; https://mediadive.dsmz.de/rest/medium/J197);
+    ingredients[29].concentration -> solutions[0].composition[7].concentration: {''value'':
+    ''0.01'', ''unit'': ''G_PER_L''} -> {''value'': ''0.01'', ''unit'': ''G_PER_L''}
+    (correct; https://mediadive.dsmz.de/rest/medium/J197); ingredients[30].concentration
+    -> solutions[0].composition[8].concentration: {''value'': ''0.03'', ''unit'':
+    ''G_PER_L''} -> {''value'': ''0.03'', ''unit'': ''G_PER_L''} (correct; https://mediadive.dsmz.de/rest/medium/J197);
+    None -> solutions[0].composition[9].concentration: None -> {''value'': ''1'',
+    ''unit'': ''L''} (add; https://mediadive.dsmz.de/rest/medium/J197); None -> solutions[1].concentration:
+    None -> {''value'': ''0.01'', ''unit'': ''L''} (add; https://mediadive.dsmz.de/rest/medium/J197);
+    ingredients[12].concentration -> solutions[1].composition[0].concentration: {''value'':
+    ''0.002'', ''unit'': ''G_PER_L''} -> {''value'': ''0.002'', ''unit'': ''G_PER_L''}
+    (correct; https://mediadive.dsmz.de/rest/medium/J197); ingredients[13].concentration
+    -> solutions[1].composition[1].concentration: {''value'': ''0.002'', ''unit'':
+    ''G_PER_L''} -> {''value'': ''0.002'', ''unit'': ''G_PER_L''} (correct; https://mediadive.dsmz.de/rest/medium/J197);
+    ingredients[14].concentration -> solutions[1].composition[2].concentration: {''value'':
+    ''0.01'', ''unit'': ''G_PER_L''} -> {''value'': ''0.01'', ''unit'': ''G_PER_L''}
+    (correct; https://mediadive.dsmz.de/rest/medium/J197); ingredients[15].concentration
+    -> solutions[1].composition[3].concentration: {''value'': ''0.005'', ''unit'':
+    ''G_PER_L''} -> {''value'': ''0.005'', ''unit'': ''G_PER_L''} (correct; https://mediadive.dsmz.de/rest/medium/J197);
+    ingredients[16].concentration -> solutions[1].composition[4].concentration: {''value'':
+    ''0.005'', ''unit'': ''G_PER_L''} -> {''value'': ''0.005'', ''unit'': ''G_PER_L''}
+    (correct; https://mediadive.dsmz.de/rest/medium/J197); ingredients[17].concentration
+    -> solutions[1].composition[5].concentration: {''value'': ''0.005'', ''unit'':
+    ''G_PER_L''} -> {''value'': ''0.005'', ''unit'': ''G_PER_L''} (correct; https://mediadive.dsmz.de/rest/medium/J197);
+    ingredients[18].concentration -> solutions[1].composition[6].concentration: {''value'':
+    ''0.005'', ''unit'': ''G_PER_L''} -> {''value'': ''0.005'', ''unit'': ''G_PER_L''}
+    (correct; https://mediadive.dsmz.de/rest/medium/J197); ingredients[19].concentration
+    -> solutions[1].composition[7].concentration: {''value'': ''0.0001'', ''unit'':
+    ''G_PER_L''} -> {''value'': ''0.0001'', ''unit'': ''G_PER_L''} (correct; https://mediadive.dsmz.de/rest/medium/J197);
+    ingredients[20].concentration -> solutions[1].composition[8].concentration: {''value'':
+    ''0.005'', ''unit'': ''G_PER_L''} -> {''value'': ''0.005'', ''unit'': ''G_PER_L''}
+    (correct; https://mediadive.dsmz.de/rest/medium/J197); ingredients[21].concentration
+    -> solutions[1].composition[9].concentration: {''value'': ''0.005'', ''unit'':
+    ''G_PER_L''} -> {''value'': ''0.005'', ''unit'': ''G_PER_L''} (correct; https://mediadive.dsmz.de/rest/medium/J197);
+    None -> solutions[1].composition[10].concentration: None -> {''value'': ''1'',
+    ''unit'': ''L''} (add; https://mediadive.dsmz.de/rest/medium/J197); ingredients[0].concentration
+    -> ingredients[0].concentration: {''value'': ''0.75'', ''unit'': ''G_PER_L''}
+    -> None (remove_unsupported; https://mediadive.dsmz.de/rest/medium/J197); ingredients[1].concentration
+    -> ingredients[1].concentration: {''value'': ''0.75'', ''unit'': ''G_PER_L''}
+    -> None (remove_unsupported; https://mediadive.dsmz.de/rest/medium/J197); ingredients[2].concentration
+    -> ingredients[2].concentration: {''value'': ''0.36'', ''unit'': ''G_PER_L''}
+    -> None (remove_unsupported; https://mediadive.dsmz.de/rest/medium/J197); ingredients[3].concentration
+    -> ingredients[3].concentration: {''value'': ''1'', ''unit'': ''G_PER_L''} ->
+    None (remove_unsupported; https://mediadive.dsmz.de/rest/medium/J197); ingredients[4].concentration
+    -> ingredients[4].concentration: {''value'': ''0.1'', ''unit'': ''G_PER_L''} ->
+    None (remove_unsupported; https://mediadive.dsmz.de/rest/medium/J197); ingredients[5].concentration
+    -> ingredients[5].concentration: {''value'': ''0.1'', ''unit'': ''G_PER_L''} ->
+    None (remove_unsupported; https://mediadive.dsmz.de/rest/medium/J197); ingredients[6].concentration
+    -> ingredients[6].concentration: {''value'': ''2.5'', ''unit'': ''G_PER_L''} ->
+    None (remove_unsupported; https://mediadive.dsmz.de/rest/medium/J197); ingredients[7].concentration
+    -> ingredients[7].concentration: {''value'': ''8'', ''unit'': ''G_PER_L''} ->
+    None (remove_unsupported; https://mediadive.dsmz.de/rest/medium/J197); None ->
+    solutions[2].preparation_notes: None -> Receiving-medium instructions (context
+    only; not a stock-batch recipe): Mix ingredients except NaHCO3, Trace vitamins,
+    Na2S x 9H2O and cysteine x HCl x H2O, and autoclave under a N2-CO2 (80:20) atmosphere.
+    Filter-sterilize NaHCO3 as an 8% solution and Trace vitamins while gassing with
+    N2. Separately autoclave Na2S x 9H2O and cysteine x HCl x H2O as 5% solutions
+    under a N2 atmosphere. Aseptically and anaerobically add NaHCO3 and Trace vitamins
+    to the medium under a N2-CO2 (80:20) atmosphere. Prior to inoculation, add the
+    sterile Na2S x 9H2O and cysteine x HCl x H2O solutions, and adjust pH to 6.8.
+    (add; https://mediadive.dsmz.de/rest/medium/J197); ingredients[8].concentration
+    -> solutions[2].composition[0].concentration: {''value'': ''0.8'', ''unit'': ''G_PER_L''}
+    -> None (remove_unsupported; https://mediadive.dsmz.de/rest/medium/J197); None
+    -> solutions[3].preparation_notes: None -> Receiving-medium instructions (context
+    only; not a stock-batch recipe): Mix ingredients except NaHCO3, Trace vitamins,
+    Na2S x 9H2O and cysteine x HCl x H2O, and autoclave under a N2-CO2 (80:20) atmosphere.
+    Filter-sterilize NaHCO3 as an 8% solution and Trace vitamins while gassing with
+    N2. Separately autoclave Na2S x 9H2O and cysteine x HCl x H2O as 5% solutions
+    under a N2 atmosphere. Aseptically and anaerobically add NaHCO3 and Trace vitamins
+    to the medium under a N2-CO2 (80:20) atmosphere. Prior to inoculation, add the
+    sterile Na2S x 9H2O and cysteine x HCl x H2O solutions, and adjust pH to 6.8.
+    (add; https://mediadive.dsmz.de/rest/medium/J197); ingredients[9].concentration
+    -> solutions[3].composition[0].concentration: {''value'': ''0.5'', ''unit'': ''G_PER_L''}
+    -> None (remove_unsupported; https://mediadive.dsmz.de/rest/medium/J197); None
+    -> solutions[4].preparation_notes: None -> Receiving-medium instructions (context
+    only; not a stock-batch recipe): Mix ingredients except NaHCO3, Trace vitamins,
+    Na2S x 9H2O and cysteine x HCl x H2O, and autoclave under a N2-CO2 (80:20) atmosphere.
+    Filter-sterilize NaHCO3 as an 8% solution and Trace vitamins while gassing with
+    N2. Separately autoclave Na2S x 9H2O and cysteine x HCl x H2O as 5% solutions
+    under a N2 atmosphere. Aseptically and anaerobically add NaHCO3 and Trace vitamins
+    to the medium under a N2-CO2 (80:20) atmosphere. Prior to inoculation, add the
+    sterile Na2S x 9H2O and cysteine x HCl x H2O solutions, and adjust pH to 6.8.
+    (add; https://mediadive.dsmz.de/rest/medium/J197); ingredients[10].concentration
+    -> solutions[4].composition[0].concentration: {''value'': ''0.5'', ''unit'': ''G_PER_L''}
+    -> None (remove_unsupported; https://mediadive.dsmz.de/rest/medium/J197); ingredients[11].concentration
+    -> ingredients[8].concentration: {''value'': ''0.001'', ''unit'': ''G_PER_L''}
+    -> None (remove_unsupported; https://mediadive.dsmz.de/rest/medium/J197); None
+    -> ingredients[9].concentration: None -> {''value'': ''0.981'', ''unit'': ''L''}
+    (add; https://mediadive.dsmz.de/rest/medium/J197); preparation_steps -> preparation_steps:
+    [{''step_number'': 1, ''action'': ''AUTOCLAVE'', ''description'': ''Mix ingredients
+    except NaHCO3, Trace vitamins, Na2S x 9H2O and cysteine x HCl x H2O, and autoclave
+    under a N2-CO2 (80:20) atmosphere. Filter-sterilize NaHCO3 as an 8% solution and
+    Trace vitamins while gassing with N2. Separately autoclave Na2S x 9H2O and cysteine
+    x HCl x H2O as 5% solutions under a N2 atmosphere. Aseptically and anaerobically
+    add NaHCO3 and Trace vitamins to the medium under a N2-CO2 (80:20) atmosphere.
+    Prior to inoculation, add the sterile Na2S x 9H2O and cysteine x HCl x H2O solutions,
+    and adjust pH to 6.8.''}, {''step_number'': 2, ''action'': ''ADJUST_PH'', ''description'':
+    ''Adjust pH to 7.0 with 1 N KOH.''}] -> [{''step_number'': 1, ''action'': ''AUTOCLAVE'',
+    ''description'': ''Mix ingredients except NaHCO3, Trace vitamins, Na2S x 9H2O
+    and cysteine x HCl x H2O, and autoclave under a N2-CO2 (80:20) atmosphere. Filter-sterilize
+    NaHCO3 as an 8% solution and Trace vitamins while gassing with N2. Separately
+    autoclave Na2S x 9H2O and cysteine x HCl x H2O as 5% solutions under a N2 atmosphere.
+    Aseptically and anaerobically add NaHCO3 and Trace vitamins to the medium under
+    a N2-CO2 (80:20) atmosphere. Prior to inoculation, add the sterile Na2S x 9H2O
+    and cysteine x HCl x H2O solutions, and adjust pH to 6.8.''}] (correct; https://mediadive.dsmz.de/rest/medium/J197);
+    preparation_steps[1].description -> solutions[0].preparation_notes: Adjust pH
+    to 7.0 with 1 N KOH. -> Adjust pH to 7.0 with 1 N KOH. (correct; https://mediadive.dsmz.de/rest/medium/J197);
+    None -> solutions[0].composition[10].notes: None -> Source-explicit pH adjustment
+    with no fixed dose. Strength, when stated as 1 N, is retained in preparation text;
+    no molarity is inferred. (add; https://mediadive.dsmz.de/rest/medium/J197); ph_value
+    -> ph_value: 7.0 -> 6.8 (correct; https://mediadive.dsmz.de/rest/medium/J197);
+    preparation stages and source-specific pH are supported separately; percentage
+    bases and sulfide spelling disagreement remain unresolved.'
+solutions:
+- preferred_term: Trace mineral solution
+  composition:
+  - preferred_term: Nitrilotriacetic acid
+    term:
+      id: CHEBI:44557
+      label: nitrilotriacetic acid
+    concentration:
+      value: '4.5'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:44557
+      label: nitrilotriacetic acid
+    notes: 'Source stock batch input: 4.5 g. Retain provider-declared stock g_l=4.5
+      only, not a final-medium concentration or an independently verified final stock
+      volume. Prior duplicate-merge notes describe the superseded flattened record.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J197
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 1,
+                                "compound": "Nitrilotriacetic acid",
+                                "compound_id": 189,
+                                "amount": 4.5,
+                                "unit": "g",
+                                "g_l": 4.5,
+                                "mmol_l": 23.543,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[0].concentration: Source stock batch
+        input: 4.5 g. Retain provider-declared stock g_l=4.5 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[2].recipe[0];
+        accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.'
+  - preferred_term: FeCl2 x 4 H2O
+    term:
+      id: CHEBI:86249
+      label: iron dichloride tetrahydrate
+    concentration:
+      value: '0.4'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86249
+      label: iron dichloride tetrahydrate
+    notes: 'Source stock batch input: 0.4 g. Retain provider-declared stock g_l=0.4
+      only, not a final-medium concentration or an independently verified final stock
+      volume. Prior duplicate-merge notes describe the superseded flattened record.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J197
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 2,
+                                "compound": "FeCl2 x 4 H2O",
+                                "compound_id": 260,
+                                "amount": 0.4,
+                                "unit": "g",
+                                "g_l": 0.4,
+                                "mmol_l": 2.01195,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[1].concentration: Source stock batch
+        input: 0.4 g. Retain provider-declared stock g_l=0.4 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[2].recipe[1];
+        accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.'
+  - preferred_term: MnCl2 x 4 H2O
+    term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    notes: 'Source stock batch input: 0.1 g. Retain provider-declared stock g_l=0.1
+      only, not a final-medium concentration or an independently verified final stock
+      volume. Prior duplicate-merge notes describe the superseded flattened record.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J197
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 3,
+                                "compound": "MnCl2 x 4 H2O",
+                                "compound_id": 36,
+                                "amount": 0.1,
+                                "unit": "g",
+                                "g_l": 0.1,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[2].concentration: Source stock batch
+        input: 0.1 g. Retain provider-declared stock g_l=0.1 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[2].recipe[2];
+        accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.'
+  - preferred_term: CoCl2 x 6 H2O
+    term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    concentration:
+      value: '0.17'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    notes: 'Source stock batch input: 0.17 g. Retain provider-declared stock g_l=0.17
+      only, not a final-medium concentration or an independently verified final stock
+      volume. Prior duplicate-merge notes describe the superseded flattened record.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J197
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 4,
+                                "compound": "CoCl2 x 6 H2O",
+                                "compound_id": 38,
+                                "amount": 0.17,
+                                "unit": "g",
+                                "g_l": 0.17,
+                                "mmol_l": 1.30931,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[3].concentration: Source stock batch
+        input: 0.17 g. Retain provider-declared stock g_l=0.17 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[2].recipe[3];
+        accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.'
+  - preferred_term: ZnCl2
+    term:
+      id: CHEBI:49976
+      label: zinc dichloride
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49976
+      label: zinc dichloride
+    notes: 'Source stock batch input: 0.1 g. Retain provider-declared stock g_l=0.1
+      only, not a final-medium concentration or an independently verified final stock
+      volume. Prior duplicate-merge notes describe the superseded flattened record.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J197
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 5,
+                                "compound": "ZnCl2",
+                                "compound_id": 64,
+                                "amount": 0.1,
+                                "unit": "g",
+                                "g_l": 0.1,
+                                "mmol_l": 0.733676,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[4].concentration: Source stock batch
+        input: 0.1 g. Retain provider-declared stock g_l=0.1 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[2].recipe[4];
+        accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.'
+  - preferred_term: CaCl2 x 2 H2O
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    concentration:
+      value: '0.02'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    notes: 'Source stock batch input: 0.02 g. Retain provider-declared stock g_l=0.02
+      only, not a final-medium concentration or an independently verified final stock
+      volume. Prior duplicate-merge notes describe the superseded flattened record.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J197
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 6,
+                                "compound": "CaCl2 x 2 H2O",
+                                "compound_id": 7,
+                                "amount": 0.02,
+                                "unit": "g",
+                                "g_l": 0.02,
+                                "mmol_l": 0.136041,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[5].concentration: Source stock batch
+        input: 0.02 g. Retain provider-declared stock g_l=0.02 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[2].recipe[5];
+        accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.'
+  - preferred_term: H3BO3
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    concentration:
+      value: '0.019'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+    notes: 'Source stock batch input: 0.019 g. Retain provider-declared stock g_l=0.019
+      only, not a final-medium concentration or an independently verified final stock
+      volume. Prior duplicate-merge notes describe the superseded flattened record.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J197
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 7,
+                                "compound": "H3BO3",
+                                "compound_id": 37,
+                                "amount": 0.019,
+                                "unit": "g",
+                                "g_l": 0.019,
+                                "mmol_l": 0.307245,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[6].concentration: Source stock batch
+        input: 0.019 g. Retain provider-declared stock g_l=0.019 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[2].recipe[6];
+        accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.'
+  - preferred_term: Na2MoO4 x 2 H2O
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    notes: 'Source stock batch input: 0.01 g. Retain provider-declared stock g_l=0.01
+      only, not a final-medium concentration or an independently verified final stock
+      volume. Prior duplicate-merge notes describe the superseded flattened record.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J197
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 8,
+                                "compound": "Na2MoO4 x 2 H2O",
+                                "compound_id": 9,
+                                "amount": 0.01,
+                                "unit": "g",
+                                "g_l": 0.01,
+                                "mmol_l": 0.0413309,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[7].concentration: Source stock batch
+        input: 0.01 g. Retain provider-declared stock g_l=0.01 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[2].recipe[7];
+        accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.'
+  - preferred_term: NiCl2 x 6 H2O
+    term:
+      id: CHEBI:34887
+      label: nickel dichloride
+    concentration:
+      value: '0.03'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:34887
+      label: nickel dichloride
+    notes: 'Source stock batch input: 0.03 g. Retain provider-declared stock g_l=0.03
+      only, not a final-medium concentration or an independently verified final stock
+      volume. Prior duplicate-merge notes describe the superseded flattened record.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J197
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 9,
+                                "compound": "NiCl2 x 6 H2O",
+                                "compound_id": 40,
+                                "amount": 0.03,
+                                "unit": "g",
+                                "g_l": 0.03,
+                                "mmol_l": 0.231483,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[8].concentration: Source stock batch
+        input: 0.03 g. Retain provider-declared stock g_l=0.03 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[2].recipe[8];
+        accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.'
+  - preferred_term: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+    notes: 'Source water batch input: 1000 ml = 1 L. This is not a measured final
+      volume. Prior duplicate-collapse notes describe the superseded flattened record.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J197
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 10,
+                                "compound": "Distilled water",
+                                "compound_id": 4,
+                                "amount": 1000,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[9].concentration: Source water batch
+        input: 1000 ml = 1 L. This is not a measured final volume. Prior duplicate-collapse
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[2].recipe[9];
+        accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.'
+  - preferred_term: KOH solution
+    notes: Source-explicit pH adjustment with no fixed dose. Strength, when stated
+      as 1 N, is retained in preparation text; no molarity is inferred.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J197
+      supports: SUPPORT
+      snippet: '"Adjust pH to 7.0 with 1 N KOH."'
+      explanation: 'solutions[0].composition[10].notes: Source-explicit pH adjustment
+        with no fixed dose. Strength, when stated as 1 N, is retained in preparation
+        text; no molarity is inferred. No final-medium volume, percentage basis, density
+        or chemical grounding is inferred. Locator=data.solutions[2].steps[0].step;
+        accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.'
+  concentration:
+    value: '0.009'
+    unit: L
+  term:
+    id: mediadive.solution:3862
+    label: Trace mineral solution
+  notes: 'Source stock addition: 9 ml = 0.009 L per receiving batch, not grams per
+    liter or a dose per final liter.'
+  preparation_notes: Adjust pH to 7.0 with 1 N KOH.
+- preferred_term: Trace vitamins
+  composition:
+  - preferred_term: Biotin
+    term:
+      id: CHEBI:15956
+      label: biotin
+    concentration:
+      value: '0.002'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15956
+      label: biotin
+    notes: 'Source stock batch input: 2 mg. Retain provider-declared stock g_l=0.002
+      only, not a final-medium concentration or an independently verified final stock
+      volume. Prior duplicate-merge notes describe the superseded flattened record.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J197
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 1,
+                                "compound": "Biotin",
+                                "compound_id": 46,
+                                "amount": 2,
+                                "unit": "mg",
+                                "g_l": 0.002,
+                                "mmol_l": 0.00818632,
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[0].concentration: Source stock batch
+        input: 2 mg. Retain provider-declared stock g_l=0.002 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[1].recipe[0];
+        accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.'
+  - preferred_term: Folic acid
+    term:
+      id: CHEBI:27470
+      label: folic acid
+    concentration:
+      value: '0.002'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:27470
+      label: folic acid
+    notes: 'Source stock batch input: 2 mg. Retain provider-declared stock g_l=0.002
+      only, not a final-medium concentration or an independently verified final stock
+      volume. Prior duplicate-merge notes describe the superseded flattened record.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J197
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 2,
+                                "compound": "Folic acid",
+                                "compound_id": 138,
+                                "amount": 2,
+                                "unit": "mg",
+                                "g_l": 0.002,
+                                "mmol_l": 0.00453104,
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[1].concentration: Source stock batch
+        input: 2 mg. Retain provider-declared stock g_l=0.002 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[1].recipe[1];
+        accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.'
+  - preferred_term: Pyridoxine hydrochloride
+    term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
+    notes: 'Source stock batch input: 10 mg. Retain provider-declared stock g_l=0.01
+      only, not a final-medium concentration or an independently verified final stock
+      volume. Prior duplicate-merge notes describe the superseded flattened record.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J197
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 3,
+                                "compound": "Pyridoxine hydrochloride",
+                                "compound_id": 519,
+                                "amount": 10,
+                                "unit": "mg",
+                                "g_l": 0.01,
+                                "mmol_l": 0.0486287,
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[2].concentration: Source stock batch
+        input: 10 mg. Retain provider-declared stock g_l=0.01 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[1].recipe[2];
+        accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.'
+  - preferred_term: Thiamine HCl
+    term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+    concentration:
+      value: '0.005'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+    notes: 'Source stock batch input: 5 mg. Retain provider-declared stock g_l=0.005
+      only, not a final-medium concentration or an independently verified final stock
+      volume. Prior duplicate-merge notes describe the superseded flattened record.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J197
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 4,
+                                "compound": "Thiamine HCl",
+                                "compound_id": 1207,
+                                "amount": 5,
+                                "unit": "mg",
+                                "g_l": 0.005,
+                                "mmol_l": 0.0148236,
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[3].concentration: Source stock batch
+        input: 5 mg. Retain provider-declared stock g_l=0.005 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[1].recipe[3];
+        accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.'
+  - preferred_term: Riboflavin
+    term:
+      id: CHEBI:17015
+      label: riboflavin
+    concentration:
+      value: '0.005'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17015
+      label: riboflavin
+    notes: 'Source stock batch input: 5 mg. Retain provider-declared stock g_l=0.005
+      only, not a final-medium concentration or an independently verified final stock
+      volume. Prior duplicate-merge notes describe the superseded flattened record.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J197
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 5,
+                                "compound": "Riboflavin",
+                                "compound_id": 136,
+                                "amount": 5,
+                                "unit": "mg",
+                                "g_l": 0.005,
+                                "mmol_l": 0.0132837,
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[4].concentration: Source stock batch
+        input: 5 mg. Retain provider-declared stock g_l=0.005 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[1].recipe[4];
+        accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.'
+  - preferred_term: Nicotinic acid
+    term:
+      id: CHEBI:15940
+      label: nicotinic acid
+    concentration:
+      value: '0.005'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15940
+      label: nicotinic acid
+    notes: 'Source stock batch input: 5 mg. Retain provider-declared stock g_l=0.005
+      only, not a final-medium concentration or an independently verified final stock
+      volume. Prior duplicate-merge notes describe the superseded flattened record.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J197
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 6,
+                                "compound": "Nicotinic acid",
+                                "compound_id": 139,
+                                "amount": 5,
+                                "unit": "mg",
+                                "g_l": 0.005,
+                                "mmol_l": 0.0406141,
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[5].concentration: Source stock batch
+        input: 5 mg. Retain provider-declared stock g_l=0.005 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[1].recipe[5];
+        accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.'
+  - preferred_term: Calcium pantothenate
+    term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+    concentration:
+      value: '0.005'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+    notes: 'Source stock batch input: 5 mg. Retain provider-declared stock g_l=0.005
+      only, not a final-medium concentration or an independently verified final stock
+      volume. Prior duplicate-merge notes describe the superseded flattened record.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J197
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 7,
+                                "compound": "Calcium pantothenate",
+                                "compound_id": 518,
+                                "amount": 5,
+                                "unit": "mg",
+                                "g_l": 0.005,
+                                "mmol_l": 0.0104925,
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[6].concentration: Source stock batch
+        input: 5 mg. Retain provider-declared stock g_l=0.005 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[1].recipe[6];
+        accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.'
+  - preferred_term: Vitamin B12
+    term:
+      id: CHEBI:176843
+      label: vitamin B12
+    concentration:
+      value: '0.0001'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:176843
+      label: vitamin B12
+    notes: 'Source stock batch input: 0.1 mg. Retain provider-declared stock g_l=0.0001
+      only, not a final-medium concentration or an independently verified final stock
+      volume. Prior duplicate-merge notes describe the superseded flattened record.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J197
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 8,
+                                "compound": "Vitamin B12",
+                                "compound_id": 18,
+                                "amount": 0.1,
+                                "unit": "mg",
+                                "g_l": 0.0001,
+                                "mmol_l": 7.3779e-5,
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[7].concentration: Source stock batch
+        input: 0.1 mg. Retain provider-declared stock g_l=0.0001 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[1].recipe[7];
+        accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.'
+  - preferred_term: p-Aminobenzoic acid
+    term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+    concentration:
+      value: '0.005'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+    notes: 'Source stock batch input: 5 mg. Retain provider-declared stock g_l=0.005
+      only, not a final-medium concentration or an independently verified final stock
+      volume. Prior duplicate-merge notes describe the superseded flattened record.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J197
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 9,
+                                "compound": "p-Aminobenzoic acid",
+                                "compound_id": 47,
+                                "amount": 5,
+                                "unit": "mg",
+                                "g_l": 0.005,
+                                "mmol_l": 0.0364591,
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[8].concentration: Source stock batch
+        input: 5 mg. Retain provider-declared stock g_l=0.005 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[1].recipe[8];
+        accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.'
+  - preferred_term: Lipoic acid
+    term:
+      id: CHEBI:16494
+      label: lipoic acid
+    concentration:
+      value: '0.005'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:16494
+      label: lipoic acid
+    notes: 'Source stock batch input: 5 mg. Retain provider-declared stock g_l=0.005
+      only, not a final-medium concentration or an independently verified final stock
+      volume. Prior duplicate-merge notes describe the superseded flattened record.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J197
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 10,
+                                "compound": "Lipoic acid",
+                                "compound_id": 368,
+                                "amount": 5,
+                                "unit": "mg",
+                                "g_l": 0.005,
+                                "mmol_l": 0.024233,
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[9].concentration: Source stock batch
+        input: 5 mg. Retain provider-declared stock g_l=0.005 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[1].recipe[9];
+        accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.'
+  - preferred_term: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+    notes: 'Source water batch input: 1000 ml = 1 L. This is not a measured final
+      volume. Prior duplicate-collapse notes describe the superseded flattened record.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J197
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 11,
+                                "compound": "Distilled water",
+                                "compound_id": 4,
+                                "amount": 1000,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[10].concentration: Source water batch
+        input: 1000 ml = 1 L. This is not a measured final volume. Prior duplicate-collapse
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[1].recipe[10];
+        accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.'
+  concentration:
+    value: '0.01'
+    unit: L
+  term:
+    id: mediadive.solution:3861
+    label: Trace vitamins
+  notes: 'Source stock addition: 10 ml = 0.01 L per receiving batch, not grams per
+    liter or a dose per final liter.'
+- preferred_term: NaHCO3 separately prepared solution
+  composition:
+  - preferred_term: NaHCO3
+    term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+    notes: 'Source batch input: 0.8 g. Final preparation volume is not independently
+      established; the unsupported g/L assertion is withdrawn, not replaced by an
+      assumed one-liter concentration. This is the contribution specified for the
+      receiving medium batch, not the mass for preparing an unspecified volume of
+      stock.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J197
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 11,
+                                "compound": "NaHCO3",
+                                "compound_id": 55,
+                                "amount": 0.8,
+                                "unit": "g",
+                                "g_l": 0.8,
+                                "mmol_l": 9.52302,
+                                "optional": 0
+                            }
+      explanation: 'solutions[2].composition[0].concentration: Source batch input:
+        0.8 g. Final preparation volume is not independently established; the unsupported
+        g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+        This is the contribution specified for the receiving medium batch, not the
+        mass for preparing an unspecified volume of stock. No final-medium volume,
+        percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[10];
+        accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.'
+  preparation_notes: 'Receiving-medium instructions (context only; not a stock-batch
+    recipe): Mix ingredients except NaHCO3, Trace vitamins, Na2S x 9H2O and cysteine
+    x HCl x H2O, and autoclave under a N2-CO2 (80:20) atmosphere. Filter-sterilize
+    NaHCO3 as an 8% solution and Trace vitamins while gassing with N2. Separately
+    autoclave Na2S x 9H2O and cysteine x HCl x H2O as 5% solutions under a N2 atmosphere.
+    Aseptically and anaerobically add NaHCO3 and Trace vitamins to the medium under
+    a N2-CO2 (80:20) atmosphere. Prior to inoculation, add the sterile Na2S x 9H2O
+    and cysteine x HCl x H2O solutions, and adjust pH to 6.8.'
+  notes: The source specifies a separate percentage-labelled preparation but does
+    not establish percentage basis or its addition volume. No numeric stock strength
+    or dose is asserted. Composition notes record the receiving-batch contribution
+    only.
+- preferred_term: Na2S x 9 H2O separately prepared solution
+  composition:
+  - preferred_term: Na2S x 9 H2O
+    term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
+    notes: |-
+      Source batch input: 0.5 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration. This is the contribution specified for the receiving medium batch, not the mass for preparing an unspecified volume of stock.
+
+      Unresolved source identity discrepancy: the original JCM197 table spells NaS2, while its preparation spells Na2S. MediaDive normalizes the table to Na2S; TOGO retains NaS2. The existing label/grounding is preserved, not recertified, and no numeric sulfide concentration is asserted.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J197
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 12,
+                                "compound": "Na2S x 9 H2O",
+                                "compound_id": 54,
+                                "amount": 0.5,
+                                "unit": "g",
+                                "g_l": 0.5,
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[3].composition[0].concentration: Source batch input: 0.5 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration. This is the contribution specified for the receiving medium batch, not the mass for preparing an unspecified volume of stock. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[11]; accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.
+
+        Additional exact excerpt: "Mix ingredients except NaHCO3, Trace vitamins, Na2S x 9H2O and cysteine x HCl x H2O, and autoclave under a N2-CO2 (80:20) atmosphere. Filter-sterilize NaHCO3 as an 8% solution and Trace vitamins while gassing with N2. Separately autoclave Na2S x 9H2O and cysteine x HCl x H2O as 5% solutions under a N2 atmosphere. Aseptically and anaerobically add NaHCO3 and Trace vitamins to the medium under a N2-CO2 (80:20) atmosphere. Prior to inoculation, add the sterile Na2S x 9H2O and cysteine x HCl x H2O solutions, and adjust pH to 6.8."
+        solutions[3].composition[0].notes: The preparation uses the different Na2S spelling; the discrepancy remains unresolved. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step; accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197
+      supports: SUPPORT
+      snippet: NaS2·9H2O 0.5 g
+      explanation: 'solutions[3].composition[0].notes: Unresolved source identity
+        discrepancy: the original JCM197 table spells NaS2, while its preparation
+        spells Na2S. MediaDive normalizes the table to Na2S; TOGO retains NaS2. The
+        existing label/grounding is preserved, not recertified, and no numeric sulfide
+        concentration is asserted. No final-medium volume, percentage basis, density
+        or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T13:22:48.135690+00:00;
+        capture SHA256=39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532.'
+  preparation_notes: 'Receiving-medium instructions (context only; not a stock-batch
+    recipe): Mix ingredients except NaHCO3, Trace vitamins, Na2S x 9H2O and cysteine
+    x HCl x H2O, and autoclave under a N2-CO2 (80:20) atmosphere. Filter-sterilize
+    NaHCO3 as an 8% solution and Trace vitamins while gassing with N2. Separately
+    autoclave Na2S x 9H2O and cysteine x HCl x H2O as 5% solutions under a N2 atmosphere.
+    Aseptically and anaerobically add NaHCO3 and Trace vitamins to the medium under
+    a N2-CO2 (80:20) atmosphere. Prior to inoculation, add the sterile Na2S x 9H2O
+    and cysteine x HCl x H2O solutions, and adjust pH to 6.8.'
+  notes: The source specifies a separate percentage-labelled preparation but does
+    not establish percentage basis or its addition volume. No numeric stock strength
+    or dose is asserted. Composition notes record the receiving-batch contribution
+    only.
+- preferred_term: L-Cysteine HCl x H2O separately prepared solution
+  composition:
+  - preferred_term: L-Cysteine HCl x H2O
+    term:
+      id: CHEBI:91248
+      label: L-cysteine hydrochloride hydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:91248
+      label: L-cysteine hydrochloride hydrate
+    notes: 'Source batch input: 0.5 g. Final preparation volume is not independently
+      established; the unsupported g/L assertion is withdrawn, not replaced by an
+      assumed one-liter concentration. This is the contribution specified for the
+      receiving medium batch, not the mass for preparing an unspecified volume of
+      stock.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J197
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 13,
+                                "compound": "L-Cysteine HCl x H2O",
+                                "compound_id": 770,
+                                "amount": 0.5,
+                                "unit": "g",
+                                "g_l": 0.5,
+                                "optional": 0
+                            }
+      explanation: 'solutions[4].composition[0].concentration: Source batch input:
+        0.5 g. Final preparation volume is not independently established; the unsupported
+        g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+        This is the contribution specified for the receiving medium batch, not the
+        mass for preparing an unspecified volume of stock. No final-medium volume,
+        percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[12];
+        accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.'
+  preparation_notes: 'Receiving-medium instructions (context only; not a stock-batch
+    recipe): Mix ingredients except NaHCO3, Trace vitamins, Na2S x 9H2O and cysteine
+    x HCl x H2O, and autoclave under a N2-CO2 (80:20) atmosphere. Filter-sterilize
+    NaHCO3 as an 8% solution and Trace vitamins while gassing with N2. Separately
+    autoclave Na2S x 9H2O and cysteine x HCl x H2O as 5% solutions under a N2 atmosphere.
+    Aseptically and anaerobically add NaHCO3 and Trace vitamins to the medium under
+    a N2-CO2 (80:20) atmosphere. Prior to inoculation, add the sterile Na2S x 9H2O
+    and cysteine x HCl x H2O solutions, and adjust pH to 6.8.'
+  notes: The source specifies a separate percentage-labelled preparation but does
+    not establish percentage basis or its addition volume. No numeric stock strength
+    or dose is asserted. Composition notes record the receiving-batch contribution
+    only.
+evidence:
+- reference: https://mediadive.dsmz.de/rest/medium/J197
+  supports: SUPPORT
+  snippet: |-
+    {
+                            "recipe_order": 9,
+                            "solution": "Trace mineral solution",
+                            "solution_id": 3862,
+                            "amount": 9,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+  explanation: |-
+    solutions[0].concentration: Source stock addition: 9 ml = 0.009 L per receiving batch, not grams per liter or a dose per final liter. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[8]; accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.
+
+    Additional exact excerpt: {
+                            "recipe_order": 10,
+                            "solution": "Trace vitamins",
+                            "solution_id": 3861,
+                            "amount": 10,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+    solutions[1].concentration: Source stock addition: 10 ml = 0.01 L per receiving batch, not grams per liter or a dose per final liter. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[9]; accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.
+
+    Additional exact excerpt: "Mix ingredients except NaHCO3, Trace vitamins, Na2S x 9H2O and cysteine x HCl x H2O, and autoclave under a N2-CO2 (80:20) atmosphere. Filter-sterilize NaHCO3 as an 8% solution and Trace vitamins while gassing with N2. Separately autoclave Na2S x 9H2O and cysteine x HCl x H2O as 5% solutions under a N2 atmosphere. Aseptically and anaerobically add NaHCO3 and Trace vitamins to the medium under a N2-CO2 (80:20) atmosphere. Prior to inoculation, add the sterile Na2S x 9H2O and cysteine x HCl x H2O solutions, and adjust pH to 6.8."
+    solutions[2].preparation_notes: The source specifies a separate percentage-labelled preparation but does not establish percentage basis or its addition volume. No numeric stock strength or dose is asserted. Composition notes record the receiving-batch contribution only. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step; accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.
+
+    Additional exact excerpt: "Mix ingredients except NaHCO3, Trace vitamins, Na2S x 9H2O and cysteine x HCl x H2O, and autoclave under a N2-CO2 (80:20) atmosphere. Filter-sterilize NaHCO3 as an 8% solution and Trace vitamins while gassing with N2. Separately autoclave Na2S x 9H2O and cysteine x HCl x H2O as 5% solutions under a N2 atmosphere. Aseptically and anaerobically add NaHCO3 and Trace vitamins to the medium under a N2-CO2 (80:20) atmosphere. Prior to inoculation, add the sterile Na2S x 9H2O and cysteine x HCl x H2O solutions, and adjust pH to 6.8."
+    solutions[3].preparation_notes: The source specifies a separate percentage-labelled preparation but does not establish percentage basis or its addition volume. No numeric stock strength or dose is asserted. Composition notes record the receiving-batch contribution only. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step; accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.
+
+    Additional exact excerpt: "Mix ingredients except NaHCO3, Trace vitamins, Na2S x 9H2O and cysteine x HCl x H2O, and autoclave under a N2-CO2 (80:20) atmosphere. Filter-sterilize NaHCO3 as an 8% solution and Trace vitamins while gassing with N2. Separately autoclave Na2S x 9H2O and cysteine x HCl x H2O as 5% solutions under a N2 atmosphere. Aseptically and anaerobically add NaHCO3 and Trace vitamins to the medium under a N2-CO2 (80:20) atmosphere. Prior to inoculation, add the sterile Na2S x 9H2O and cysteine x HCl x H2O solutions, and adjust pH to 6.8."
+    solutions[4].preparation_notes: The source specifies a separate percentage-labelled preparation but does not establish percentage basis or its addition volume. No numeric stock strength or dose is asserted. Composition notes record the receiving-batch contribution only. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step; accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.
+
+    Additional exact excerpt: "Mix ingredients except NaHCO3, Trace vitamins, Na2S x 9H2O and cysteine x HCl x H2O, and autoclave under a N2-CO2 (80:20) atmosphere. Filter-sterilize NaHCO3 as an 8% solution and Trace vitamins while gassing with N2. Separately autoclave Na2S x 9H2O and cysteine x HCl x H2O as 5% solutions under a N2 atmosphere. Aseptically and anaerobically add NaHCO3 and Trace vitamins to the medium under a N2-CO2 (80:20) atmosphere. Prior to inoculation, add the sterile Na2S x 9H2O and cysteine x HCl x H2O solutions, and adjust pH to 6.8."
+    preparation_steps: Restore the main-medium procedure and keep stock-only pH instructions out of the root sequence. FILTER denotes the explicit filtration; no pore size is inferred. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step; accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.
+
+    Additional exact excerpt: "Adjust pH to 7.0 with 1 N KOH."
+    solutions[0].preparation_notes: Trace-stock-only pH procedure, not receiving-medium pH. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[2].steps[0].step; accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.
+
+    Additional exact excerpt: "Mix ingredients except NaHCO3, Trace vitamins, Na2S x 9H2O and cysteine x HCl x H2O, and autoclave under a N2-CO2 (80:20) atmosphere. Filter-sterilize NaHCO3 as an 8% solution and Trace vitamins while gassing with N2. Separately autoclave Na2S x 9H2O and cysteine x HCl x H2O as 5% solutions under a N2 atmosphere. Aseptically and anaerobically add NaHCO3 and Trace vitamins to the medium under a N2-CO2 (80:20) atmosphere. Prior to inoculation, add the sterile Na2S x 9H2O and cysteine x HCl x H2O solutions, and adjust pH to 6.8."
+    ph_value: Final-medium pH from the preparation; stock pH 7.0 is not the medium pH. MediaDive J197 metadata pH 7 disagrees with its main preparation and is not selected. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step; accessed=2026-10-08T13:22:44.044825+00:00; capture SHA256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/J197
+  title: MediaDive medium J197
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-08;
+    capture_sha256=779da00f024a3dd2cf334054533a6126405cc0ec8afd169902d02e5e893f75fb.
+    Authors and publication year not supplied; source access/copyright year is not
+    publication year. Source-specific preparation and quantity evidence, not organism-growth
+    evidence.
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197
+  title: Medium data
+  notes: source_type=culture_collection_page; discovery_mode=cross_reference; accessed_on=2026-10-08;
+    capture_sha256=39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532.
+    Authors and publication year not supplied; source access/copyright year is not
+    publication year. Source-specific preparation and quantity evidence, not organism-growth
+    evidence.

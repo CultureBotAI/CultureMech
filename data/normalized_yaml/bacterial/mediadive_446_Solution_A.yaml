@@ -16,6 +16,889 @@ composition:
     label: potassium dihydrogen phosphate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/446
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "KH2PO4",
+                      "compound_id": 11,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.5,
+                      "unit": "g",
+                      "g_l": 0.530786,
+                      "mmol_l": 3.9004,
+                      "optional": 0
+                  }
+    explanation: |-
+      Concentration evidence for composition[0].concentration (KH2PO4) in MediaDive solution 446; locator=$.data.recipe[0] (compound_id=11). Provider explicitly reports g_l=0.530786. Arithmetic check: 0.5 g * 1 g/g / (942 ml / 1000 ml per L) = 0.5307855626326963906581740977 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: "volume": 942. Retrieved 2026-10-07T08:23:33.132413+00:00; response SHA256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "KH2PO4",
+                      "compound_id": 11,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.5,
+                      "unit": "g",
+                      "g_l": 0.530786,
+                      "mmol_l": 3.9004,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "MgCl2 x 6 H2O",
+                      "compound_id": 79,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.33,
+                      "unit": "g",
+                      "g_l": 0.350318,
+                      "mmol_l": 1.72313,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 3,
+                      "compound": "NaCl",
+                      "compound_id": 43,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.4,
+                      "unit": "g",
+                      "g_l": 0.424628,
+                      "mmol_l": 7.26606,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 4,
+                      "compound": "NH4Cl",
+                      "compound_id": 42,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.4,
+                      "unit": "g",
+                      "g_l": 0.424628,
+                      "mmol_l": 7.93846,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 5,
+                      "compound": "CaCl2 x 2 H2O",
+                      "compound_id": 7,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.05,
+                      "unit": "g",
+                      "g_l": 0.0530786,
+                      "mmol_l": 0.361042,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 6,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Trace element solution SL-10",
+                      "solution_id": 595,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 7,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Selenite-tungstate solution",
+                      "solution_id": 777,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 8,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Clarified rumen fluid",
+                      "solution_id": 2618,
+                      "condition": "",
+                      "attribute": null,
+                      "amount": 50,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 9,
+                      "compound": "Trypticase peptone",
+                      "compound_id": 124,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": "BD BBL",
+                      "amount": 1,
+                      "unit": "g",
+                      "g_l": 1.06157,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 10,
+                      "compound": "Na2SO4",
+                      "compound_id": 110,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2.8,
+                      "unit": "g",
+                      "g_l": 2.9724,
+                      "mmol_l": 20.9265,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 11,
+                      "compound": "Sodium resazurin",
+                      "compound_id": 1852,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": "0.1% w/v",
+                      "amount": 0.5,
+                      "unit": "ml",
+                      "g_l": 0.000530786,
+                      "mmol_l": 0.00211325,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 12,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 890,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+              ]
+      ingredients: Every exact source row is represented in composition. Remove only the false composition placeholder and its incomplete-composition flag; this is not chemical-identity or measured-volume certification. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe; accessed=2026-10-09T10:04:22.547959+00:00; capture SHA256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "KH2PO4",
+                      "compound_id": 11,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.5,
+                      "unit": "g",
+                      "g_l": 0.530786,
+                      "mmol_l": 3.9004,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "MgCl2 x 6 H2O",
+                      "compound_id": 79,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.33,
+                      "unit": "g",
+                      "g_l": 0.350318,
+                      "mmol_l": 1.72313,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 3,
+                      "compound": "NaCl",
+                      "compound_id": 43,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.4,
+                      "unit": "g",
+                      "g_l": 0.424628,
+                      "mmol_l": 7.26606,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 4,
+                      "compound": "NH4Cl",
+                      "compound_id": 42,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.4,
+                      "unit": "g",
+                      "g_l": 0.424628,
+                      "mmol_l": 7.93846,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 5,
+                      "compound": "CaCl2 x 2 H2O",
+                      "compound_id": 7,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.05,
+                      "unit": "g",
+                      "g_l": 0.0530786,
+                      "mmol_l": 0.361042,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 6,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Trace element solution SL-10",
+                      "solution_id": 595,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 7,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Selenite-tungstate solution",
+                      "solution_id": 777,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 8,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Clarified rumen fluid",
+                      "solution_id": 2618,
+                      "condition": "",
+                      "attribute": null,
+                      "amount": 50,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 9,
+                      "compound": "Trypticase peptone",
+                      "compound_id": 124,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": "BD BBL",
+                      "amount": 1,
+                      "unit": "g",
+                      "g_l": 1.06157,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 10,
+                      "compound": "Na2SO4",
+                      "compound_id": 110,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2.8,
+                      "unit": "g",
+                      "g_l": 2.9724,
+                      "mmol_l": 20.9265,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 11,
+                      "compound": "Sodium resazurin",
+                      "compound_id": 1852,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": "0.1% w/v",
+                      "amount": 0.5,
+                      "unit": "ml",
+                      "g_l": 0.000530786,
+                      "mmol_l": 0.00211325,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 12,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 890,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+              ]
+      data_quality_flags: Every exact source row is represented in composition. Remove only the false composition placeholder and its incomplete-composition flag; this is not chemical-identity or measured-volume certification. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe; accessed=2026-10-09T10:04:22.547959+00:00; capture SHA256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da.
+
+      Additional exact excerpt: "Solution A"
+      references[0].title: Use the exact source title; preserve accession and retrieval provenance in reference notes. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.name; accessed=2026-10-09T10:04:22.547959+00:00; capture SHA256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "KH2PO4",
+                      "compound_id": 11,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.5,
+                      "unit": "g",
+                      "g_l": 0.530786,
+                      "mmol_l": 3.9004,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "MgCl2 x 6 H2O",
+                      "compound_id": 79,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.33,
+                      "unit": "g",
+                      "g_l": 0.350318,
+                      "mmol_l": 1.72313,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 3,
+                      "compound": "NaCl",
+                      "compound_id": 43,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.4,
+                      "unit": "g",
+                      "g_l": 0.424628,
+                      "mmol_l": 7.26606,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 4,
+                      "compound": "NH4Cl",
+                      "compound_id": 42,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.4,
+                      "unit": "g",
+                      "g_l": 0.424628,
+                      "mmol_l": 7.93846,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 5,
+                      "compound": "CaCl2 x 2 H2O",
+                      "compound_id": 7,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.05,
+                      "unit": "g",
+                      "g_l": 0.0530786,
+                      "mmol_l": 0.361042,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 6,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Trace element solution SL-10",
+                      "solution_id": 595,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 7,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Selenite-tungstate solution",
+                      "solution_id": 777,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 8,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Clarified rumen fluid",
+                      "solution_id": 2618,
+                      "condition": "",
+                      "attribute": null,
+                      "amount": 50,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 9,
+                      "compound": "Trypticase peptone",
+                      "compound_id": 124,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": "BD BBL",
+                      "amount": 1,
+                      "unit": "g",
+                      "g_l": 1.06157,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 10,
+                      "compound": "Na2SO4",
+                      "compound_id": 110,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2.8,
+                      "unit": "g",
+                      "g_l": 2.9724,
+                      "mmol_l": 20.9265,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 11,
+                      "compound": "Sodium resazurin",
+                      "compound_id": 1852,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": "0.1% w/v",
+                      "amount": 0.5,
+                      "unit": "ml",
+                      "g_l": 0.000530786,
+                      "mmol_l": 0.00211325,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 12,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 890,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+              ]
+      notes: Archive the previous formulation nodes in append-only history. The inspected complete source defines this reconstruction, including removal of false LB expansion, placeholders and flattened stock quantities. Prior evidence content is preserved; same-reference explanations may be extended, never replaced. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T10:04:22.547959+00:00; capture SHA256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "KH2PO4",
+                      "compound_id": 11,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.5,
+                      "unit": "g",
+                      "g_l": 0.530786,
+                      "mmol_l": 3.9004,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "MgCl2 x 6 H2O",
+                      "compound_id": 79,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.33,
+                      "unit": "g",
+                      "g_l": 0.350318,
+                      "mmol_l": 1.72313,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 3,
+                      "compound": "NaCl",
+                      "compound_id": 43,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.4,
+                      "unit": "g",
+                      "g_l": 0.424628,
+                      "mmol_l": 7.26606,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 4,
+                      "compound": "NH4Cl",
+                      "compound_id": 42,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.4,
+                      "unit": "g",
+                      "g_l": 0.424628,
+                      "mmol_l": 7.93846,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 5,
+                      "compound": "CaCl2 x 2 H2O",
+                      "compound_id": 7,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.05,
+                      "unit": "g",
+                      "g_l": 0.0530786,
+                      "mmol_l": 0.361042,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 6,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Trace element solution SL-10",
+                      "solution_id": 595,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 7,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Selenite-tungstate solution",
+                      "solution_id": 777,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 8,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Clarified rumen fluid",
+                      "solution_id": 2618,
+                      "condition": "",
+                      "attribute": null,
+                      "amount": 50,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 9,
+                      "compound": "Trypticase peptone",
+                      "compound_id": 124,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": "BD BBL",
+                      "amount": 1,
+                      "unit": "g",
+                      "g_l": 1.06157,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 10,
+                      "compound": "Na2SO4",
+                      "compound_id": 110,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2.8,
+                      "unit": "g",
+                      "g_l": 2.9724,
+                      "mmol_l": 20.9265,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 11,
+                      "compound": "Sodium resazurin",
+                      "compound_id": 1852,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": "0.1% w/v",
+                      "amount": 0.5,
+                      "unit": "ml",
+                      "g_l": 0.000530786,
+                      "mmol_l": 0.00211325,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 12,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 890,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+              ]
+      notes: Archive the previous formulation nodes in append-only history. The inspected complete source defines this reconstruction, including removal of false LB expansion, placeholders and flattened stock quantities. Prior evidence content is preserved; same-reference explanations may be extended, never replaced. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T10:04:22.547959+00:00; capture SHA256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "KH2PO4",
+                      "compound_id": 11,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.5,
+                      "unit": "g",
+                      "g_l": 0.530786,
+                      "mmol_l": 3.9004,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "MgCl2 x 6 H2O",
+                      "compound_id": 79,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.33,
+                      "unit": "g",
+                      "g_l": 0.350318,
+                      "mmol_l": 1.72313,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 3,
+                      "compound": "NaCl",
+                      "compound_id": 43,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.4,
+                      "unit": "g",
+                      "g_l": 0.424628,
+                      "mmol_l": 7.26606,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 4,
+                      "compound": "NH4Cl",
+                      "compound_id": 42,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.4,
+                      "unit": "g",
+                      "g_l": 0.424628,
+                      "mmol_l": 7.93846,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 5,
+                      "compound": "CaCl2 x 2 H2O",
+                      "compound_id": 7,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.05,
+                      "unit": "g",
+                      "g_l": 0.0530786,
+                      "mmol_l": 0.361042,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 6,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Trace element solution SL-10",
+                      "solution_id": 595,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 7,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Selenite-tungstate solution",
+                      "solution_id": 777,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 8,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Clarified rumen fluid",
+                      "solution_id": 2618,
+                      "condition": "",
+                      "attribute": null,
+                      "amount": 50,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 9,
+                      "compound": "Trypticase peptone",
+                      "compound_id": 124,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": "BD BBL",
+                      "amount": 1,
+                      "unit": "g",
+                      "g_l": 1.06157,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 10,
+                      "compound": "Na2SO4",
+                      "compound_id": 110,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2.8,
+                      "unit": "g",
+                      "g_l": 2.9724,
+                      "mmol_l": 20.9265,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 11,
+                      "compound": "Sodium resazurin",
+                      "compound_id": 1852,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": "0.1% w/v",
+                      "amount": 0.5,
+                      "unit": "ml",
+                      "g_l": 0.000530786,
+                      "mmol_l": 0.00211325,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 12,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 890,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+              ]
+      notes: The complete source does not support this old copied ingredient, placeholder or flattened stock amount in the current formulation. Preserve its exact prior value in history. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T10:04:22.547959+00:00; capture SHA256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da.
 - preferred_term: MgCl2 x 6 H2O
   concentration:
     value: '0.350318'
@@ -27,6 +910,33 @@ composition:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/446
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "MgCl2 x 6 H2O",
+                      "compound_id": 79,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.33,
+                      "unit": "g",
+                      "g_l": 0.350318,
+                      "mmol_l": 1.72313,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (MgCl2 x
+      6 H2O) in MediaDive solution 446; locator=$.data.recipe[1] (compound_id=79).
+      Provider explicitly reports g_l=0.350318. Arithmetic check: 0.33 g * 1 g/g /
+      (942 ml / 1000 ml per L) = 0.3503184713375796178343949045 g/L, consistent with
+      the reported value at its precision. Evidence supports the provider-declared
+      concentration within this solution, not a concentration in a receiving medium
+      or an independently measured final volume. Water addition alone is not used
+      to infer a final volume. Additional exact excerpt at $.data.volume: "volume":
+      942. Retrieved 2026-10-07T08:23:33.132413+00:00; response SHA256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da.'
 - preferred_term: NaCl
   concentration:
     value: '0.424628'
@@ -39,6 +949,33 @@ composition:
     label: sodium chloride
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/446
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "NaCl",
+                      "compound_id": 43,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.4,
+                      "unit": "g",
+                      "g_l": 0.424628,
+                      "mmol_l": 7.26606,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[2].concentration (NaCl) in
+      MediaDive solution 446; locator=$.data.recipe[2] (compound_id=43). Provider
+      explicitly reports g_l=0.424628. Arithmetic check: 0.4 g * 1 g/g / (942 ml /
+      1000 ml per L) = 0.4246284501061571125265392781 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 942. Retrieved 2026-10-07T08:23:33.132413+00:00;
+      response SHA256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da.'
 - preferred_term: NH4Cl
   concentration:
     value: '0.424628'
@@ -51,6 +988,33 @@ composition:
     label: ammonium chloride
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/446
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "NH4Cl",
+                      "compound_id": 42,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.4,
+                      "unit": "g",
+                      "g_l": 0.424628,
+                      "mmol_l": 7.93846,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[3].concentration (NH4Cl)
+      in MediaDive solution 446; locator=$.data.recipe[3] (compound_id=42). Provider
+      explicitly reports g_l=0.424628. Arithmetic check: 0.4 g * 1 g/g / (942 ml /
+      1000 ml per L) = 0.4246284501061571125265392781 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 942. Retrieved 2026-10-07T08:23:33.132413+00:00;
+      response SHA256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da.'
 - preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '0.0530786'
@@ -63,6 +1027,33 @@ composition:
     label: calcium chloride dihydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/446
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 5,
+                      "compound": "CaCl2 x 2 H2O",
+                      "compound_id": 7,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.05,
+                      "unit": "g",
+                      "g_l": 0.0530786,
+                      "mmol_l": 0.361042,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[4].concentration (CaCl2 x
+      2 H2O) in MediaDive solution 446; locator=$.data.recipe[4] (compound_id=7).
+      Provider explicitly reports g_l=0.0530786. Arithmetic check: 0.05 g * 1 g/g
+      / (942 ml / 1000 ml per L) = 0.05307855626326963906581740977 g/L, consistent
+      with the reported value at its precision. Evidence supports the provider-declared
+      concentration within this solution, not a concentration in a receiving medium
+      or an independently measured final volume. Water addition alone is not used
+      to infer a final volume. Additional exact excerpt at $.data.volume: "volume":
+      942. Retrieved 2026-10-07T08:23:33.132413+00:00; response SHA256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da.'
 - preferred_term: Trypticase peptone
   concentration:
     value: '1.06157'
@@ -70,6 +1061,61 @@ composition:
   term:
     id: mediadive.compound:124
     label: Trypticase peptone
+  notes: 'Retain the explicitly reported stock g_l with its provider scope, not a
+    receiving-medium concentration or independently established final volume. Preserve
+    the source attribute separately: BD BBL. Source input: 1 g; stage=Solution A.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/446
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 9,
+                      "compound": "Trypticase peptone",
+                      "compound_id": 124,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": "BD BBL",
+                      "amount": 1,
+                      "unit": "g",
+                      "g_l": 1.06157,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[5].preferred_term: Retain the explicitly reported stock g_l with its provider scope, not a receiving-medium concentration or independently established final volume. Preserve the source attribute separately: BD BBL. Source input: 1 g; stage=Solution A. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[8]; accessed=2026-10-09T10:04:22.547959+00:00; capture SHA256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da.
+
+      Additional exact excerpt: {
+                      "recipe_order": 9,
+                      "compound": "Trypticase peptone",
+                      "compound_id": 124,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": "BD BBL",
+                      "amount": 1,
+                      "unit": "g",
+                      "g_l": 1.06157,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[5].concentration: Retain the explicitly reported stock g_l with its provider scope, not a receiving-medium concentration or independently established final volume. Preserve the source attribute separately: BD BBL. Source input: 1 g; stage=Solution A. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[8]; accessed=2026-10-09T10:04:22.547959+00:00; capture SHA256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da.
+
+      Additional exact excerpt: {
+                      "recipe_order": 9,
+                      "compound": "Trypticase peptone",
+                      "compound_id": 124,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": "BD BBL",
+                      "amount": 1,
+                      "unit": "g",
+                      "g_l": 1.06157,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[5].notes: Retain the explicitly reported stock g_l with its provider scope, not a receiving-medium concentration or independently established final volume. Preserve the source attribute separately: BD BBL. Source input: 1 g; stage=Solution A. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[8]; accessed=2026-10-09T10:04:22.547959+00:00; capture SHA256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da.
 - preferred_term: Na2SO4
   concentration:
     value: '2.9724'
@@ -82,10 +1128,37 @@ composition:
     label: sodium sulfate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/446
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 10,
+                      "compound": "Na2SO4",
+                      "compound_id": 110,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2.8,
+                      "unit": "g",
+                      "g_l": 2.9724,
+                      "mmol_l": 20.9265,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[6].concentration (Na2SO4)
+      in MediaDive solution 446; locator=$.data.recipe[9] (compound_id=110). Provider
+      explicitly reports g_l=2.9724. Arithmetic check: 2.8 g * 1 g/g / (942 ml / 1000
+      ml per L) = 2.972399150743099787685774947 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 942. Retrieved 2026-10-07T08:23:33.132413+00:00;
+      response SHA256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da.'
 - preferred_term: Sodium resazurin
   concentration:
-    value: '0.000530786'
-    unit: G_PER_L
+    value: '0.0005'
+    unit: L
   term:
     id: mediadive.compound:1852
     label: Sodium resazurin
@@ -94,10 +1167,65 @@ composition:
     label: Resazurin
     confidence: 0.7
     match_type: corpus_consensus
+  notes: 'Use the stated liquid input in liters. Do not infer density, percentage
+    basis, final volume, or pure-solute concentration from this dose. Preserve the
+    source attribute separately: 0.1% w/v. Source input: 0.5 ml; stage=Solution A.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/446
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 11,
+                      "compound": "Sodium resazurin",
+                      "compound_id": 1852,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": "0.1% w/v",
+                      "amount": 0.5,
+                      "unit": "ml",
+                      "g_l": 0.000530786,
+                      "mmol_l": 0.00211325,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[7].preferred_term: Use the stated liquid input in liters. Do not infer density, percentage basis, final volume, or pure-solute concentration from this dose. Preserve the source attribute separately: 0.1% w/v. Source input: 0.5 ml; stage=Solution A. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[10]; accessed=2026-10-09T10:04:22.547959+00:00; capture SHA256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da.
+
+      Additional exact excerpt: {
+                      "recipe_order": 11,
+                      "compound": "Sodium resazurin",
+                      "compound_id": 1852,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": "0.1% w/v",
+                      "amount": 0.5,
+                      "unit": "ml",
+                      "g_l": 0.000530786,
+                      "mmol_l": 0.00211325,
+                      "optional": 0
+                  }
+      composition[7].concentration: Use the stated liquid input in liters. Do not infer density, percentage basis, final volume, or pure-solute concentration from this dose. Preserve the source attribute separately: 0.1% w/v. Source input: 0.5 ml; stage=Solution A. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[10]; accessed=2026-10-09T10:04:22.547959+00:00; capture SHA256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da.
+
+      Additional exact excerpt: {
+                      "recipe_order": 11,
+                      "compound": "Sodium resazurin",
+                      "compound_id": 1852,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": "0.1% w/v",
+                      "amount": 0.5,
+                      "unit": "ml",
+                      "g_l": 0.000530786,
+                      "mmol_l": 0.00211325,
+                      "optional": 0
+                  }
+      composition[7].notes: Use the stated liquid input in liters. Do not infer density, percentage basis, final volume, or pure-solute concentration from this dose. Preserve the source attribute separately: 0.1% w/v. Source input: 0.5 ml; stage=Solution A. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[10]; accessed=2026-10-09T10:04:22.547959+00:00; capture SHA256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da.
 - preferred_term: Distilled water
   concentration:
-    value: '944.7983014861995'
-    unit: PERCENT_V_V
+    value: '0.89'
+    unit: L
   term:
     id: mediadive.compound:4
     label: Distilled water
@@ -106,6 +1234,247 @@ composition:
     label: water
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/446
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 12,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 890,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[8].concentration (Distilled
+      water) in MediaDive solution 446; locator=$.data.recipe[11] (compound_id=4).
+      Source water addition is 890 ml per prepared batch: 890 / 1000 = 0.89 L. No
+      source preparation step gives a competing make-up instruction. This is a batch
+      dose, not a volume percentage; no final-volume or solvent-density assumption
+      is made. Additional exact excerpt at $.data.volume: "volume": 942. Retrieved
+      2026-10-07T08:23:33.132413+00:00; response SHA256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da.'
+- preferred_term: Trace element solution SL-10
+  concentration:
+    value: '0.001'
+    unit: L
+  notes: 'Use the stated liquid input in liters. Do not infer density, percentage
+    basis, final volume, or pure-solute concentration from this dose. Source input:
+    1 ml; stage=Solution A.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/446
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 6,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Trace element solution SL-10",
+                      "solution_id": 595,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[9].preferred_term: Use the stated liquid input in liters. Do not infer density, percentage basis, final volume, or pure-solute concentration from this dose. Source input: 1 ml; stage=Solution A. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[5]; accessed=2026-10-09T10:04:22.547959+00:00; capture SHA256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da.
+
+      Additional exact excerpt: {
+                      "recipe_order": 6,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Trace element solution SL-10",
+                      "solution_id": 595,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[9].concentration: Use the stated liquid input in liters. Do not infer density, percentage basis, final volume, or pure-solute concentration from this dose. Source input: 1 ml; stage=Solution A. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[5]; accessed=2026-10-09T10:04:22.547959+00:00; capture SHA256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da.
+
+      Additional exact excerpt: {
+                      "recipe_order": 6,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Trace element solution SL-10",
+                      "solution_id": 595,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[9].notes: Use the stated liquid input in liters. Do not infer density, percentage basis, final volume, or pure-solute concentration from this dose. Source input: 1 ml; stage=Solution A. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[5]; accessed=2026-10-09T10:04:22.547959+00:00; capture SHA256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da.
+
+      Additional exact excerpt: {
+                      "recipe_order": 6,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Trace element solution SL-10",
+                      "solution_id": 595,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[9].culturemech_term: Exact upstream accession maps to this existing normalized stock record. This is a preparation input, not a universal working dose. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[5]; accessed=2026-10-09T10:04:22.547959+00:00; capture SHA256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da.
+  culturemech_term:
+    id: CultureMech:014713
+    label: Trace element solution SL-10
+- preferred_term: Selenite-tungstate solution
+  concentration:
+    value: '0.001'
+    unit: L
+  notes: 'Use the stated liquid input in liters. Do not infer density, percentage
+    basis, final volume, or pure-solute concentration from this dose. Source input:
+    1 ml; stage=Solution A.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/446
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 7,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Selenite-tungstate solution",
+                      "solution_id": 777,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[10].preferred_term: Use the stated liquid input in liters. Do not infer density, percentage basis, final volume, or pure-solute concentration from this dose. Source input: 1 ml; stage=Solution A. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[6]; accessed=2026-10-09T10:04:22.547959+00:00; capture SHA256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da.
+
+      Additional exact excerpt: {
+                      "recipe_order": 7,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Selenite-tungstate solution",
+                      "solution_id": 777,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[10].concentration: Use the stated liquid input in liters. Do not infer density, percentage basis, final volume, or pure-solute concentration from this dose. Source input: 1 ml; stage=Solution A. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[6]; accessed=2026-10-09T10:04:22.547959+00:00; capture SHA256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da.
+
+      Additional exact excerpt: {
+                      "recipe_order": 7,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Selenite-tungstate solution",
+                      "solution_id": 777,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[10].notes: Use the stated liquid input in liters. Do not infer density, percentage basis, final volume, or pure-solute concentration from this dose. Source input: 1 ml; stage=Solution A. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[6]; accessed=2026-10-09T10:04:22.547959+00:00; capture SHA256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da.
+
+      Additional exact excerpt: {
+                      "recipe_order": 7,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Selenite-tungstate solution",
+                      "solution_id": 777,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[10].culturemech_term: Exact upstream accession maps to this existing normalized stock record. This is a preparation input, not a universal working dose. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[6]; accessed=2026-10-09T10:04:22.547959+00:00; capture SHA256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da.
+  culturemech_term:
+    id: CultureMech:015156
+    label: Selenite-tungstate solution
+- preferred_term: Clarified rumen fluid
+  concentration:
+    value: '0.05'
+    unit: L
+  notes: 'Use the stated liquid input in liters. Do not infer density, percentage
+    basis, final volume, or pure-solute concentration from this dose. No standalone
+    normalized stock ID was found in the ignored-inclusive preparation inventory;
+    do not fabricate one. Source input: 50 ml; stage=Solution A.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/446
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 8,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Clarified rumen fluid",
+                      "solution_id": 2618,
+                      "condition": "",
+                      "attribute": null,
+                      "amount": 50,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[11].preferred_term: Use the stated liquid input in liters. Do not infer density, percentage basis, final volume, or pure-solute concentration from this dose. No standalone normalized stock ID was found in the ignored-inclusive preparation inventory; do not fabricate one. Source input: 50 ml; stage=Solution A. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[7]; accessed=2026-10-09T10:04:22.547959+00:00; capture SHA256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da.
+
+      Additional exact excerpt: {
+                      "recipe_order": 8,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Clarified rumen fluid",
+                      "solution_id": 2618,
+                      "condition": "",
+                      "attribute": null,
+                      "amount": 50,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[11].concentration: Use the stated liquid input in liters. Do not infer density, percentage basis, final volume, or pure-solute concentration from this dose. No standalone normalized stock ID was found in the ignored-inclusive preparation inventory; do not fabricate one. Source input: 50 ml; stage=Solution A. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[7]; accessed=2026-10-09T10:04:22.547959+00:00; capture SHA256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da.
+
+      Additional exact excerpt: {
+                      "recipe_order": 8,
+                      "compound": null,
+                      "compound_id": null,
+                      "solution": "Clarified rumen fluid",
+                      "solution_id": 2618,
+                      "condition": "",
+                      "attribute": null,
+                      "amount": 50,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[11].notes: Use the stated liquid input in liters. Do not infer density, percentage basis, final volume, or pure-solute concentration from this dose. No standalone normalized stock ID was found in the ignored-inclusive preparation inventory; do not fabricate one. Source input: 50 ml; stage=Solution A. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[7]; accessed=2026-10-09T10:04:22.547959+00:00; capture SHA256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da.
 preparation_notes: 'Original volume: 942 mL'
 curation_history:
 - timestamp: '2026-03-13T06:20:31.368026Z'
@@ -145,11 +1514,700 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
-ingredients:
-- preferred_term: See source for composition
-  concentration:
-    value: variable
-    unit: VARIABLE
-data_quality_flags:
-- incomplete_composition
+- timestamp: '2026-10-07T08:27:51.574555+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/446
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "0.530786"}
+    -> {"unit": "G_PER_L", "value": "0.530786"} (evidence_only); composition[1].concentration:
+    {"unit": "G_PER_L", "value": "0.350318"} -> {"unit": "G_PER_L", "value": "0.350318"}
+    (evidence_only); composition[2].concentration: {"unit": "G_PER_L", "value": "0.424628"}
+    -> {"unit": "G_PER_L", "value": "0.424628"} (evidence_only); composition[3].concentration:
+    {"unit": "G_PER_L", "value": "0.424628"} -> {"unit": "G_PER_L", "value": "0.424628"}
+    (evidence_only); composition[4].concentration: {"unit": "G_PER_L", "value": "0.0530786"}
+    -> {"unit": "G_PER_L", "value": "0.0530786"} (evidence_only); composition[6].concentration:
+    {"unit": "G_PER_L", "value": "2.9724"} -> {"unit": "G_PER_L", "value": "2.9724"}
+    (evidence_only); composition[8].concentration: {"unit": "PERCENT_V_V", "value":
+    "944.7983014861995"} -> {"unit": "L", "value": "0.89"} (correct)'
+- timestamp: '2026-10-09T11:24:57.076143+00:00'
+  curator: codex
+  action: RESTORED_SYNTHROPHOMONAS_SOURCE_FORMULATIONS_WITH_EVIDENCE
+  notes: Restore source-specific medium212 formulations, stock-stage inputs and literal
+    quantity evidence. Preserve old evidence content and history. Same-reference explanations
+    are append-only; no final-volume, density, percent-basis or growth assertion is
+    inferred.
+  source: https://mediadive.dsmz.de/rest/solution/446
+  changes: '[{"old_field": "composition[0].concentration", "field": "composition[0].concentration",
+    "old": {"value": "0.530786", "unit": "G_PER_L"}, "new": {"value": "0.530786",
+    "unit": "G_PER_L"}, "status": "verified", "reference": "https://mediadive.dsmz.de/rest/solution/446",
+    "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\":
+    \"KH2PO4\",\n                \"compound_id\": 11,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.530786,\n                \"mmol_l\": 3.9004,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[1].concentration", "field": "composition[1].concentration",
+    "old": {"value": "0.350318", "unit": "G_PER_L"}, "new": {"value": "0.350318",
+    "unit": "G_PER_L"}, "status": "verified", "reference": "https://mediadive.dsmz.de/rest/solution/446",
+    "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\":
+    \"MgCl2 x 6 H2O\",\n                \"compound_id\": 79,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.33,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.350318,\n                \"mmol_l\": 1.72313,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[2].concentration", "field": "composition[2].concentration",
+    "old": {"value": "0.424628", "unit": "G_PER_L"}, "new": {"value": "0.424628",
+    "unit": "G_PER_L"}, "status": "verified", "reference": "https://mediadive.dsmz.de/rest/solution/446",
+    "snippet": "{\n                \"recipe_order\": 3,\n                \"compound\":
+    \"NaCl\",\n                \"compound_id\": 43,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.4,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.424628,\n                \"mmol_l\": 7.26606,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[3].concentration", "field": "composition[3].concentration",
+    "old": {"value": "0.424628", "unit": "G_PER_L"}, "new": {"value": "0.424628",
+    "unit": "G_PER_L"}, "status": "verified", "reference": "https://mediadive.dsmz.de/rest/solution/446",
+    "snippet": "{\n                \"recipe_order\": 4,\n                \"compound\":
+    \"NH4Cl\",\n                \"compound_id\": 42,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.4,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.424628,\n                \"mmol_l\": 7.93846,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[4].concentration", "field": "composition[4].concentration",
+    "old": {"value": "0.0530786", "unit": "G_PER_L"}, "new": {"value": "0.0530786",
+    "unit": "G_PER_L"}, "status": "verified", "reference": "https://mediadive.dsmz.de/rest/solution/446",
+    "snippet": "{\n                \"recipe_order\": 5,\n                \"compound\":
+    \"CaCl2 x 2 H2O\",\n                \"compound_id\": 7,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.05,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.0530786,\n                \"mmol_l\": 0.361042,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[5].preferred_term", "field": "composition[5].preferred_term",
+    "old": "Trypticase peptone", "new": "Trypticase peptone", "status": "evidence_only",
+    "reference": "https://mediadive.dsmz.de/rest/solution/446", "snippet": "{\n                \"recipe_order\":
+    9,\n                \"compound\": \"Trypticase peptone\",\n                \"compound_id\":
+    124,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"BD BBL\",\n                \"amount\":
+    1,\n                \"unit\": \"g\",\n                \"g_l\": 1.06157,\n                \"mmol_l\":
+    null,\n                \"optional\": 0\n            }"}, {"old_field": "composition[5].concentration",
+    "field": "composition[5].concentration", "old": {"value": "1.06157", "unit": "G_PER_L"},
+    "new": {"value": "1.06157", "unit": "G_PER_L"}, "status": "evidence_only", "reference":
+    "https://mediadive.dsmz.de/rest/solution/446", "snippet": "{\n                \"recipe_order\":
+    9,\n                \"compound\": \"Trypticase peptone\",\n                \"compound_id\":
+    124,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"BD BBL\",\n                \"amount\":
+    1,\n                \"unit\": \"g\",\n                \"g_l\": 1.06157,\n                \"mmol_l\":
+    null,\n                \"optional\": 0\n            }"}, {"old_field": "composition[5].notes",
+    "field": "composition[5].notes", "old": null, "new": "Retain the explicitly reported
+    stock g_l with its provider scope, not a receiving-medium concentration or independently
+    established final volume. Preserve the source attribute separately: BD BBL. Source
+    input: 1 g; stage=Solution A.", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/446",
+    "snippet": "{\n                \"recipe_order\": 9,\n                \"compound\":
+    \"Trypticase peptone\",\n                \"compound_id\": 124,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"BD BBL\",\n                \"amount\":
+    1,\n                \"unit\": \"g\",\n                \"g_l\": 1.06157,\n                \"mmol_l\":
+    null,\n                \"optional\": 0\n            }"}, {"old_field": "composition[6].concentration",
+    "field": "composition[6].concentration", "old": {"value": "2.9724", "unit": "G_PER_L"},
+    "new": {"value": "2.9724", "unit": "G_PER_L"}, "status": "verified", "reference":
+    "https://mediadive.dsmz.de/rest/solution/446", "snippet": "{\n                \"recipe_order\":
+    10,\n                \"compound\": \"Na2SO4\",\n                \"compound_id\":
+    110,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 2.8,\n                \"unit\":
+    \"g\",\n                \"g_l\": 2.9724,\n                \"mmol_l\": 20.9265,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[7].preferred_term", "field": "composition[7].preferred_term",
+    "old": "Sodium resazurin", "new": "Sodium resazurin", "status": "evidence_only",
+    "reference": "https://mediadive.dsmz.de/rest/solution/446", "snippet": "{\n                \"recipe_order\":
+    11,\n                \"compound\": \"Sodium resazurin\",\n                \"compound_id\":
+    1852,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"0.1% w/v\",\n                \"amount\":
+    0.5,\n                \"unit\": \"ml\",\n                \"g_l\": 0.000530786,\n                \"mmol_l\":
+    0.00211325,\n                \"optional\": 0\n            }"}, {"old_field": "composition[7].concentration",
+    "field": "composition[7].concentration", "old": {"value": "0.000530786", "unit":
+    "G_PER_L"}, "new": {"value": "0.0005", "unit": "L"}, "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/solution/446", "snippet": "{\n                \"recipe_order\":
+    11,\n                \"compound\": \"Sodium resazurin\",\n                \"compound_id\":
+    1852,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"0.1% w/v\",\n                \"amount\":
+    0.5,\n                \"unit\": \"ml\",\n                \"g_l\": 0.000530786,\n                \"mmol_l\":
+    0.00211325,\n                \"optional\": 0\n            }"}, {"old_field": "composition[7].notes",
+    "field": "composition[7].notes", "old": null, "new": "Use the stated liquid input
+    in liters. Do not infer density, percentage basis, final volume, or pure-solute
+    concentration from this dose. Preserve the source attribute separately: 0.1% w/v.
+    Source input: 0.5 ml; stage=Solution A.", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/446",
+    "snippet": "{\n                \"recipe_order\": 11,\n                \"compound\":
+    \"Sodium resazurin\",\n                \"compound_id\": 1852,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"0.1% w/v\",\n                \"amount\":
+    0.5,\n                \"unit\": \"ml\",\n                \"g_l\": 0.000530786,\n                \"mmol_l\":
+    0.00211325,\n                \"optional\": 0\n            }"}, {"old_field": "composition[8].concentration",
+    "field": "composition[8].concentration", "old": {"value": "0.89", "unit": "L"},
+    "new": {"value": "0.89", "unit": "L"}, "status": "verified", "reference": "https://mediadive.dsmz.de/rest/solution/446",
+    "snippet": "{\n                \"recipe_order\": 12,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 890,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": null, "field": "composition[9].preferred_term",
+    "old": null, "new": "Trace element solution SL-10", "status": "add", "reference":
+    "https://mediadive.dsmz.de/rest/solution/446", "snippet": "{\n                \"recipe_order\":
+    6,\n                \"compound\": null,\n                \"compound_id\": null,\n                \"solution\":
+    \"Trace element solution SL-10\",\n                \"solution_id\": 595,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": null, "field": "composition[9].concentration",
+    "old": null, "new": {"value": "0.001", "unit": "L"}, "status": "add", "reference":
+    "https://mediadive.dsmz.de/rest/solution/446", "snippet": "{\n                \"recipe_order\":
+    6,\n                \"compound\": null,\n                \"compound_id\": null,\n                \"solution\":
+    \"Trace element solution SL-10\",\n                \"solution_id\": 595,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": null, "field": "composition[9].notes", "old":
+    null, "new": "Use the stated liquid input in liters. Do not infer density, percentage
+    basis, final volume, or pure-solute concentration from this dose. Source input:
+    1 ml; stage=Solution A.", "status": "add", "reference": "https://mediadive.dsmz.de/rest/solution/446",
+    "snippet": "{\n                \"recipe_order\": 6,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Trace
+    element solution SL-10\",\n                \"solution_id\": 595,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": null, "field": "composition[9].culturemech_term",
+    "old": null, "new": {"id": "CultureMech:014713", "label": "Trace element solution
+    SL-10"}, "status": "add", "reference": "https://mediadive.dsmz.de/rest/solution/446",
+    "snippet": "{\n                \"recipe_order\": 6,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Trace
+    element solution SL-10\",\n                \"solution_id\": 595,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": null, "field": "composition[10].preferred_term",
+    "old": null, "new": "Selenite-tungstate solution", "status": "add", "reference":
+    "https://mediadive.dsmz.de/rest/solution/446", "snippet": "{\n                \"recipe_order\":
+    7,\n                \"compound\": null,\n                \"compound_id\": null,\n                \"solution\":
+    \"Selenite-tungstate solution\",\n                \"solution_id\": 777,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": null, "field": "composition[10].concentration",
+    "old": null, "new": {"value": "0.001", "unit": "L"}, "status": "add", "reference":
+    "https://mediadive.dsmz.de/rest/solution/446", "snippet": "{\n                \"recipe_order\":
+    7,\n                \"compound\": null,\n                \"compound_id\": null,\n                \"solution\":
+    \"Selenite-tungstate solution\",\n                \"solution_id\": 777,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": null, "field": "composition[10].notes", "old":
+    null, "new": "Use the stated liquid input in liters. Do not infer density, percentage
+    basis, final volume, or pure-solute concentration from this dose. Source input:
+    1 ml; stage=Solution A.", "status": "add", "reference": "https://mediadive.dsmz.de/rest/solution/446",
+    "snippet": "{\n                \"recipe_order\": 7,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Selenite-tungstate
+    solution\",\n                \"solution_id\": 777,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": null, "field": "composition[10].culturemech_term",
+    "old": null, "new": {"id": "CultureMech:015156", "label": "Selenite-tungstate
+    solution"}, "status": "add", "reference": "https://mediadive.dsmz.de/rest/solution/446",
+    "snippet": "{\n                \"recipe_order\": 7,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Selenite-tungstate
+    solution\",\n                \"solution_id\": 777,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": null, "field": "composition[11].preferred_term",
+    "old": null, "new": "Clarified rumen fluid", "status": "add", "reference": "https://mediadive.dsmz.de/rest/solution/446",
+    "snippet": "{\n                \"recipe_order\": 8,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Clarified
+    rumen fluid\",\n                \"solution_id\": 2618,\n                \"condition\":
+    \"\",\n                \"attribute\": null,\n                \"amount\": 50,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": null, "field": "composition[11].concentration",
+    "old": null, "new": {"value": "0.05", "unit": "L"}, "status": "add", "reference":
+    "https://mediadive.dsmz.de/rest/solution/446", "snippet": "{\n                \"recipe_order\":
+    8,\n                \"compound\": null,\n                \"compound_id\": null,\n                \"solution\":
+    \"Clarified rumen fluid\",\n                \"solution_id\": 2618,\n                \"condition\":
+    \"\",\n                \"attribute\": null,\n                \"amount\": 50,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": null, "field": "composition[11].notes", "old":
+    null, "new": "Use the stated liquid input in liters. Do not infer density, percentage
+    basis, final volume, or pure-solute concentration from this dose. No standalone
+    normalized stock ID was found in the ignored-inclusive preparation inventory;
+    do not fabricate one. Source input: 50 ml; stage=Solution A.", "status": "add",
+    "reference": "https://mediadive.dsmz.de/rest/solution/446", "snippet": "{\n                \"recipe_order\":
+    8,\n                \"compound\": null,\n                \"compound_id\": null,\n                \"solution\":
+    \"Clarified rumen fluid\",\n                \"solution_id\": 2618,\n                \"condition\":
+    \"\",\n                \"attribute\": null,\n                \"amount\": 50,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": "ingredients", "field": "ingredients", "old":
+    [{"preferred_term": "See source for composition", "concentration": {"value": "variable",
+    "unit": "VARIABLE"}}], "new": null, "status": "remove_unsupported", "reference":
+    "https://mediadive.dsmz.de/rest/solution/446", "snippet": "[\n            {\n                \"recipe_order\":
+    1,\n                \"compound\": \"KH2PO4\",\n                \"compound_id\":
+    11,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.530786,\n                \"mmol_l\": 3.9004,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"MgCl2 x 6 H2O\",\n                \"compound_id\": 79,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.33,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.350318,\n                \"mmol_l\": 1.72313,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 3,\n                \"compound\":
+    \"NaCl\",\n                \"compound_id\": 43,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.4,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.424628,\n                \"mmol_l\": 7.26606,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 4,\n                \"compound\":
+    \"NH4Cl\",\n                \"compound_id\": 42,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.4,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.424628,\n                \"mmol_l\": 7.93846,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 5,\n                \"compound\":
+    \"CaCl2 x 2 H2O\",\n                \"compound_id\": 7,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.05,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.0530786,\n                \"mmol_l\": 0.361042,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 6,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Trace
+    element solution SL-10\",\n                \"solution_id\": 595,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 7,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Selenite-tungstate
+    solution\",\n                \"solution_id\": 777,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 8,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Clarified
+    rumen fluid\",\n                \"solution_id\": 2618,\n                \"condition\":
+    \"\",\n                \"attribute\": null,\n                \"amount\": 50,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 9,\n                \"compound\":
+    \"Trypticase peptone\",\n                \"compound_id\": 124,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"BD BBL\",\n                \"amount\":
+    1,\n                \"unit\": \"g\",\n                \"g_l\": 1.06157,\n                \"mmol_l\":
+    null,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\":
+    10,\n                \"compound\": \"Na2SO4\",\n                \"compound_id\":
+    110,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 2.8,\n                \"unit\":
+    \"g\",\n                \"g_l\": 2.9724,\n                \"mmol_l\": 20.9265,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 11,\n                \"compound\":
+    \"Sodium resazurin\",\n                \"compound_id\": 1852,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"0.1% w/v\",\n                \"amount\":
+    0.5,\n                \"unit\": \"ml\",\n                \"g_l\": 0.000530786,\n                \"mmol_l\":
+    0.00211325,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\":
+    12,\n                \"compound\": \"Distilled water\",\n                \"compound_id\":
+    4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 890,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }\n        ]"}, {"old_field": "data_quality_flags", "field": "data_quality_flags",
+    "old": ["incomplete_composition"], "new": null, "status": "remove_unsupported",
+    "reference": "https://mediadive.dsmz.de/rest/solution/446", "snippet": "[\n            {\n                \"recipe_order\":
+    1,\n                \"compound\": \"KH2PO4\",\n                \"compound_id\":
+    11,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.530786,\n                \"mmol_l\": 3.9004,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"MgCl2 x 6 H2O\",\n                \"compound_id\": 79,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.33,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.350318,\n                \"mmol_l\": 1.72313,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 3,\n                \"compound\":
+    \"NaCl\",\n                \"compound_id\": 43,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.4,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.424628,\n                \"mmol_l\": 7.26606,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 4,\n                \"compound\":
+    \"NH4Cl\",\n                \"compound_id\": 42,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.4,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.424628,\n                \"mmol_l\": 7.93846,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 5,\n                \"compound\":
+    \"CaCl2 x 2 H2O\",\n                \"compound_id\": 7,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.05,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.0530786,\n                \"mmol_l\": 0.361042,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 6,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Trace
+    element solution SL-10\",\n                \"solution_id\": 595,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 7,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Selenite-tungstate
+    solution\",\n                \"solution_id\": 777,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 8,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Clarified
+    rumen fluid\",\n                \"solution_id\": 2618,\n                \"condition\":
+    \"\",\n                \"attribute\": null,\n                \"amount\": 50,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 9,\n                \"compound\":
+    \"Trypticase peptone\",\n                \"compound_id\": 124,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"BD BBL\",\n                \"amount\":
+    1,\n                \"unit\": \"g\",\n                \"g_l\": 1.06157,\n                \"mmol_l\":
+    null,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\":
+    10,\n                \"compound\": \"Na2SO4\",\n                \"compound_id\":
+    110,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 2.8,\n                \"unit\":
+    \"g\",\n                \"g_l\": 2.9724,\n                \"mmol_l\": 20.9265,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 11,\n                \"compound\":
+    \"Sodium resazurin\",\n                \"compound_id\": 1852,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"0.1% w/v\",\n                \"amount\":
+    0.5,\n                \"unit\": \"ml\",\n                \"g_l\": 0.000530786,\n                \"mmol_l\":
+    0.00211325,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\":
+    12,\n                \"compound\": \"Distilled water\",\n                \"compound_id\":
+    4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 890,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }\n        ]"}, {"old_field": "references[0].title", "field": "references[0].title",
+    "old": "MediaDive solution 446: Solution A", "new": "Solution A", "status": "correct",
+    "reference": "https://mediadive.dsmz.de/rest/solution/446", "snippet": "\"Solution
+    A\""}, {"old_field": "ingredients", "field": "notes", "old": [{"preferred_term":
+    "See source for composition", "concentration": {"value": "variable", "unit": "VARIABLE"}}],
+    "new": "Archive the previous formulation nodes in append-only history. The inspected
+    complete source defines this reconstruction, including removal of false LB expansion,
+    placeholders and flattened stock quantities. Prior evidence content is preserved;
+    same-reference explanations may be extended, never replaced.\n\nArchive the previous
+    formulation nodes in append-only history. The inspected complete source defines
+    this reconstruction, including removal of false LB expansion, placeholders and
+    flattened stock quantities. Prior evidence content is preserved; same-reference
+    explanations may be extended, never replaced.", "status": "evidence_only", "reference":
+    "https://mediadive.dsmz.de/rest/solution/446", "snippet": "[\n            {\n                \"recipe_order\":
+    1,\n                \"compound\": \"KH2PO4\",\n                \"compound_id\":
+    11,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.530786,\n                \"mmol_l\": 3.9004,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"MgCl2 x 6 H2O\",\n                \"compound_id\": 79,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.33,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.350318,\n                \"mmol_l\": 1.72313,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 3,\n                \"compound\":
+    \"NaCl\",\n                \"compound_id\": 43,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.4,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.424628,\n                \"mmol_l\": 7.26606,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 4,\n                \"compound\":
+    \"NH4Cl\",\n                \"compound_id\": 42,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.4,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.424628,\n                \"mmol_l\": 7.93846,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 5,\n                \"compound\":
+    \"CaCl2 x 2 H2O\",\n                \"compound_id\": 7,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.05,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.0530786,\n                \"mmol_l\": 0.361042,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 6,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Trace
+    element solution SL-10\",\n                \"solution_id\": 595,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 7,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Selenite-tungstate
+    solution\",\n                \"solution_id\": 777,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 8,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Clarified
+    rumen fluid\",\n                \"solution_id\": 2618,\n                \"condition\":
+    \"\",\n                \"attribute\": null,\n                \"amount\": 50,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 9,\n                \"compound\":
+    \"Trypticase peptone\",\n                \"compound_id\": 124,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"BD BBL\",\n                \"amount\":
+    1,\n                \"unit\": \"g\",\n                \"g_l\": 1.06157,\n                \"mmol_l\":
+    null,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\":
+    10,\n                \"compound\": \"Na2SO4\",\n                \"compound_id\":
+    110,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 2.8,\n                \"unit\":
+    \"g\",\n                \"g_l\": 2.9724,\n                \"mmol_l\": 20.9265,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 11,\n                \"compound\":
+    \"Sodium resazurin\",\n                \"compound_id\": 1852,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"0.1% w/v\",\n                \"amount\":
+    0.5,\n                \"unit\": \"ml\",\n                \"g_l\": 0.000530786,\n                \"mmol_l\":
+    0.00211325,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\":
+    12,\n                \"compound\": \"Distilled water\",\n                \"compound_id\":
+    4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 890,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }\n        ]"}, {"old_field": "composition", "field": "notes",
+    "old": [{"preferred_term": "KH2PO4", "concentration": {"value": "0.530786", "unit":
+    "G_PER_L"}, "term": {"id": "mediadive.compound:11", "label": "KH2PO4"}, "chebi_term":
+    {"id": "CHEBI:63036", "label": "potassium dihydrogen phosphate", "confidence":
+    0.7, "match_type": "corpus_consensus"}, "evidence": [{"reference": "https://mediadive.dsmz.de/rest/solution/446",
+    "supports": "SUPPORT", "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\":
+    \"KH2PO4\",\n                \"compound_id\": 11,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.530786,\n                \"mmol_l\": 3.9004,\n                \"optional\":
+    0\n            }", "explanation": "Concentration evidence for composition[0].concentration
+    (KH2PO4) in MediaDive solution 446; locator=$.data.recipe[0] (compound_id=11).
+    Provider explicitly reports g_l=0.530786. Arithmetic check: 0.5 g * 1 g/g / (942
+    ml / 1000 ml per L) = 0.5307855626326963906581740977 g/L, consistent with the
+    reported value at its precision. Evidence supports the provider-declared concentration
+    within this solution, not a concentration in a receiving medium or an independently
+    measured final volume. Water addition alone is not used to infer a final volume.
+    Additional exact excerpt at $.data.volume: \"volume\": 942. Retrieved 2026-10-07T08:23:33.132413+00:00;
+    response SHA256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da."}]},
+    {"preferred_term": "MgCl2 x 6 H2O", "concentration": {"value": "0.350318", "unit":
+    "G_PER_L"}, "term": {"id": "mediadive.compound:79", "label": "MgCl2 x 6 H2O"},
+    "chebi_term": {"id": "CHEBI:86345", "label": "magnesium dichloride hexahydrate",
+    "match_type": "corpus_consensus"}, "evidence": [{"reference": "https://mediadive.dsmz.de/rest/solution/446",
+    "supports": "SUPPORT", "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\":
+    \"MgCl2 x 6 H2O\",\n                \"compound_id\": 79,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.33,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.350318,\n                \"mmol_l\": 1.72313,\n                \"optional\":
+    0\n            }", "explanation": "Concentration evidence for composition[1].concentration
+    (MgCl2 x 6 H2O) in MediaDive solution 446; locator=$.data.recipe[1] (compound_id=79).
+    Provider explicitly reports g_l=0.350318. Arithmetic check: 0.33 g * 1 g/g / (942
+    ml / 1000 ml per L) = 0.3503184713375796178343949045 g/L, consistent with the
+    reported value at its precision. Evidence supports the provider-declared concentration
+    within this solution, not a concentration in a receiving medium or an independently
+    measured final volume. Water addition alone is not used to infer a final volume.
+    Additional exact excerpt at $.data.volume: \"volume\": 942. Retrieved 2026-10-07T08:23:33.132413+00:00;
+    response SHA256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da."}]},
+    {"preferred_term": "NaCl", "concentration": {"value": "0.424628", "unit": "G_PER_L"},
+    "term": {"id": "mediadive.compound:43", "label": "NaCl"}, "chebi_term": {"id":
+    "CHEBI:26710", "label": "sodium chloride", "confidence": 1.0, "match_type": "exact_match"},
+    "evidence": [{"reference": "https://mediadive.dsmz.de/rest/solution/446", "supports":
+    "SUPPORT", "snippet": "{\n                \"recipe_order\": 3,\n                \"compound\":
+    \"NaCl\",\n                \"compound_id\": 43,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.4,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.424628,\n                \"mmol_l\": 7.26606,\n                \"optional\":
+    0\n            }", "explanation": "Concentration evidence for composition[2].concentration
+    (NaCl) in MediaDive solution 446; locator=$.data.recipe[2] (compound_id=43). Provider
+    explicitly reports g_l=0.424628. Arithmetic check: 0.4 g * 1 g/g / (942 ml / 1000
+    ml per L) = 0.4246284501061571125265392781 g/L, consistent with the reported value
+    at its precision. Evidence supports the provider-declared concentration within
+    this solution, not a concentration in a receiving medium or an independently measured
+    final volume. Water addition alone is not used to infer a final volume. Additional
+    exact excerpt at $.data.volume: \"volume\": 942. Retrieved 2026-10-07T08:23:33.132413+00:00;
+    response SHA256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da."}]},
+    {"preferred_term": "NH4Cl", "concentration": {"value": "0.424628", "unit": "G_PER_L"},
+    "term": {"id": "mediadive.compound:42", "label": "NH4Cl"}, "chebi_term": {"id":
+    "CHEBI:31206", "label": "ammonium chloride", "confidence": 1.0, "match_type":
+    "exact_match"}, "evidence": [{"reference": "https://mediadive.dsmz.de/rest/solution/446",
+    "supports": "SUPPORT", "snippet": "{\n                \"recipe_order\": 4,\n                \"compound\":
+    \"NH4Cl\",\n                \"compound_id\": 42,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.4,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.424628,\n                \"mmol_l\": 7.93846,\n                \"optional\":
+    0\n            }", "explanation": "Concentration evidence for composition[3].concentration
+    (NH4Cl) in MediaDive solution 446; locator=$.data.recipe[3] (compound_id=42).
+    Provider explicitly reports g_l=0.424628. Arithmetic check: 0.4 g * 1 g/g / (942
+    ml / 1000 ml per L) = 0.4246284501061571125265392781 g/L, consistent with the
+    reported value at its precision. Evidence supports the provider-declared concentration
+    within this solution, not a concentration in a receiving medium or an independently
+    measured final volume. Water addition alone is not used to infer a final volume.
+    Additional exact excerpt at $.data.volume: \"volume\": 942. Retrieved 2026-10-07T08:23:33.132413+00:00;
+    response SHA256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da."}]},
+    {"preferred_term": "CaCl2 x 2 H2O", "concentration": {"value": "0.0530786", "unit":
+    "G_PER_L"}, "term": {"id": "mediadive.compound:7", "label": "CaCl2 x 2 H2O"},
+    "chebi_term": {"id": "CHEBI:86158", "label": "calcium chloride dihydrate", "confidence":
+    0.7, "match_type": "corpus_consensus"}, "evidence": [{"reference": "https://mediadive.dsmz.de/rest/solution/446",
+    "supports": "SUPPORT", "snippet": "{\n                \"recipe_order\": 5,\n                \"compound\":
+    \"CaCl2 x 2 H2O\",\n                \"compound_id\": 7,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.05,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.0530786,\n                \"mmol_l\": 0.361042,\n                \"optional\":
+    0\n            }", "explanation": "Concentration evidence for composition[4].concentration
+    (CaCl2 x 2 H2O) in MediaDive solution 446; locator=$.data.recipe[4] (compound_id=7).
+    Provider explicitly reports g_l=0.0530786. Arithmetic check: 0.05 g * 1 g/g /
+    (942 ml / 1000 ml per L) = 0.05307855626326963906581740977 g/L, consistent with
+    the reported value at its precision. Evidence supports the provider-declared concentration
+    within this solution, not a concentration in a receiving medium or an independently
+    measured final volume. Water addition alone is not used to infer a final volume.
+    Additional exact excerpt at $.data.volume: \"volume\": 942. Retrieved 2026-10-07T08:23:33.132413+00:00;
+    response SHA256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da."}]},
+    {"preferred_term": "Trypticase peptone", "concentration": {"value": "1.06157",
+    "unit": "G_PER_L"}, "term": {"id": "mediadive.compound:124", "label": "Trypticase
+    peptone"}}, {"preferred_term": "Na2SO4", "concentration": {"value": "2.9724",
+    "unit": "G_PER_L"}, "term": {"id": "mediadive.compound:110", "label": "Na2SO4"},
+    "chebi_term": {"id": "CHEBI:32149", "label": "sodium sulfate", "confidence": 1.0,
+    "match_type": "exact_match"}, "evidence": [{"reference": "https://mediadive.dsmz.de/rest/solution/446",
+    "supports": "SUPPORT", "snippet": "{\n                \"recipe_order\": 10,\n                \"compound\":
+    \"Na2SO4\",\n                \"compound_id\": 110,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 2.8,\n                \"unit\":
+    \"g\",\n                \"g_l\": 2.9724,\n                \"mmol_l\": 20.9265,\n                \"optional\":
+    0\n            }", "explanation": "Concentration evidence for composition[6].concentration
+    (Na2SO4) in MediaDive solution 446; locator=$.data.recipe[9] (compound_id=110).
+    Provider explicitly reports g_l=2.9724. Arithmetic check: 2.8 g * 1 g/g / (942
+    ml / 1000 ml per L) = 2.972399150743099787685774947 g/L, consistent with the reported
+    value at its precision. Evidence supports the provider-declared concentration
+    within this solution, not a concentration in a receiving medium or an independently
+    measured final volume. Water addition alone is not used to infer a final volume.
+    Additional exact excerpt at $.data.volume: \"volume\": 942. Retrieved 2026-10-07T08:23:33.132413+00:00;
+    response SHA256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da."}]},
+    {"preferred_term": "Sodium resazurin", "concentration": {"value": "0.000530786",
+    "unit": "G_PER_L"}, "term": {"id": "mediadive.compound:1852", "label": "Sodium
+    resazurin"}, "chebi_term": {"id": "CHEBI:8806", "label": "Resazurin", "confidence":
+    0.7, "match_type": "corpus_consensus"}}, {"preferred_term": "Distilled water",
+    "concentration": {"value": "0.89", "unit": "L"}, "term": {"id": "mediadive.compound:4",
+    "label": "Distilled water"}, "chebi_term": {"id": "CHEBI:15377", "label": "water",
+    "confidence": 0.7, "match_type": "corpus_consensus"}, "evidence": [{"reference":
+    "https://mediadive.dsmz.de/rest/solution/446", "supports": "SUPPORT", "snippet":
+    "{\n                \"recipe_order\": 12,\n                \"compound\": \"Distilled
+    water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\":
+    null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\":
+    890,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\":
+    null,\n                \"optional\": 0\n            }", "explanation": "Concentration
+    evidence for composition[8].concentration (Distilled water) in MediaDive solution
+    446; locator=$.data.recipe[11] (compound_id=4). Source water addition is 890 ml
+    per prepared batch: 890 / 1000 = 0.89 L. No source preparation step gives a competing
+    make-up instruction. This is a batch dose, not a volume percentage; no final-volume
+    or solvent-density assumption is made. Additional exact excerpt at $.data.volume:
+    \"volume\": 942. Retrieved 2026-10-07T08:23:33.132413+00:00; response SHA256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da."}]}],
+    "new": "Archive the previous formulation nodes in append-only history. The inspected
+    complete source defines this reconstruction, including removal of false LB expansion,
+    placeholders and flattened stock quantities. Prior evidence content is preserved;
+    same-reference explanations may be extended, never replaced.\n\nArchive the previous
+    formulation nodes in append-only history. The inspected complete source defines
+    this reconstruction, including removal of false LB expansion, placeholders and
+    flattened stock quantities. Prior evidence content is preserved; same-reference
+    explanations may be extended, never replaced.", "status": "evidence_only", "reference":
+    "https://mediadive.dsmz.de/rest/solution/446", "snippet": "[\n            {\n                \"recipe_order\":
+    1,\n                \"compound\": \"KH2PO4\",\n                \"compound_id\":
+    11,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.530786,\n                \"mmol_l\": 3.9004,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"MgCl2 x 6 H2O\",\n                \"compound_id\": 79,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.33,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.350318,\n                \"mmol_l\": 1.72313,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 3,\n                \"compound\":
+    \"NaCl\",\n                \"compound_id\": 43,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.4,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.424628,\n                \"mmol_l\": 7.26606,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 4,\n                \"compound\":
+    \"NH4Cl\",\n                \"compound_id\": 42,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.4,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.424628,\n                \"mmol_l\": 7.93846,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 5,\n                \"compound\":
+    \"CaCl2 x 2 H2O\",\n                \"compound_id\": 7,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.05,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.0530786,\n                \"mmol_l\": 0.361042,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 6,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Trace
+    element solution SL-10\",\n                \"solution_id\": 595,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 7,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Selenite-tungstate
+    solution\",\n                \"solution_id\": 777,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 8,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Clarified
+    rumen fluid\",\n                \"solution_id\": 2618,\n                \"condition\":
+    \"\",\n                \"attribute\": null,\n                \"amount\": 50,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 9,\n                \"compound\":
+    \"Trypticase peptone\",\n                \"compound_id\": 124,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"BD BBL\",\n                \"amount\":
+    1,\n                \"unit\": \"g\",\n                \"g_l\": 1.06157,\n                \"mmol_l\":
+    null,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\":
+    10,\n                \"compound\": \"Na2SO4\",\n                \"compound_id\":
+    110,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 2.8,\n                \"unit\":
+    \"g\",\n                \"g_l\": 2.9724,\n                \"mmol_l\": 20.9265,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 11,\n                \"compound\":
+    \"Sodium resazurin\",\n                \"compound_id\": 1852,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"0.1% w/v\",\n                \"amount\":
+    0.5,\n                \"unit\": \"ml\",\n                \"g_l\": 0.000530786,\n                \"mmol_l\":
+    0.00211325,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\":
+    12,\n                \"compound\": \"Distilled water\",\n                \"compound_id\":
+    4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 890,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }\n        ]"}, {"old_field": "ingredients[0].concentration", "field":
+    "notes", "old": {"value": "variable", "unit": "VARIABLE"}, "new": "Archive the
+    previous formulation nodes in append-only history. The inspected complete source
+    defines this reconstruction, including removal of false LB expansion, placeholders
+    and flattened stock quantities. Prior evidence content is preserved; same-reference
+    explanations may be extended, never replaced.\n\nArchive the previous formulation
+    nodes in append-only history. The inspected complete source defines this reconstruction,
+    including removal of false LB expansion, placeholders and flattened stock quantities.
+    Prior evidence content is preserved; same-reference explanations may be extended,
+    never replaced.", "status": "remove_unsupported", "reference": "https://mediadive.dsmz.de/rest/solution/446",
+    "snippet": "[\n            {\n                \"recipe_order\": 1,\n                \"compound\":
+    \"KH2PO4\",\n                \"compound_id\": 11,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.530786,\n                \"mmol_l\": 3.9004,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"MgCl2 x 6 H2O\",\n                \"compound_id\": 79,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.33,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.350318,\n                \"mmol_l\": 1.72313,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 3,\n                \"compound\":
+    \"NaCl\",\n                \"compound_id\": 43,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.4,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.424628,\n                \"mmol_l\": 7.26606,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 4,\n                \"compound\":
+    \"NH4Cl\",\n                \"compound_id\": 42,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.4,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.424628,\n                \"mmol_l\": 7.93846,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 5,\n                \"compound\":
+    \"CaCl2 x 2 H2O\",\n                \"compound_id\": 7,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.05,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.0530786,\n                \"mmol_l\": 0.361042,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 6,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Trace
+    element solution SL-10\",\n                \"solution_id\": 595,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 7,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Selenite-tungstate
+    solution\",\n                \"solution_id\": 777,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 8,\n                \"compound\":
+    null,\n                \"compound_id\": null,\n                \"solution\": \"Clarified
+    rumen fluid\",\n                \"solution_id\": 2618,\n                \"condition\":
+    \"\",\n                \"attribute\": null,\n                \"amount\": 50,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 9,\n                \"compound\":
+    \"Trypticase peptone\",\n                \"compound_id\": 124,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"BD BBL\",\n                \"amount\":
+    1,\n                \"unit\": \"g\",\n                \"g_l\": 1.06157,\n                \"mmol_l\":
+    null,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\":
+    10,\n                \"compound\": \"Na2SO4\",\n                \"compound_id\":
+    110,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 2.8,\n                \"unit\":
+    \"g\",\n                \"g_l\": 2.9724,\n                \"mmol_l\": 20.9265,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 11,\n                \"compound\":
+    \"Sodium resazurin\",\n                \"compound_id\": 1852,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"0.1% w/v\",\n                \"amount\":
+    0.5,\n                \"unit\": \"ml\",\n                \"g_l\": 0.000530786,\n                \"mmol_l\":
+    0.00211325,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\":
+    12,\n                \"compound\": \"Distilled water\",\n                \"compound_id\":
+    4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 890,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }\n        ]"}]'
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/446
+  title: Solution A
+  notes: |-
+    source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07; source_organization=DSMZ; locator=$.data; response_sha256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da; individual authors and publication year not supplied. Provider-declared solution amounts, not receiving-medium concentrations.
+
+    source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-09; capture_sha256=c8c514db9135d3087fe94b6e45fdcaae491017547cc33a774bda93afa753f7da. Individual authors and publication year not supplied; copyright/access years are not publication years. Source-scoped formulation evidence, not organism-growth evidence.
+notes: |-
+  Archive the previous formulation nodes in append-only history. The inspected complete source defines this reconstruction, including removal of false LB expansion, placeholders and flattened stock quantities. Prior evidence content is preserved; same-reference explanations may be extended, never replaced.
+
+  Archive the previous formulation nodes in append-only history. The inspected complete source defines this reconstruction, including removal of false LB expansion, placeholders and flattened stock quantities. Prior evidence content is preserved; same-reference explanations may be extended, never replaced.

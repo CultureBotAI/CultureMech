@@ -11,6 +11,32 @@ composition:
   term:
     id: mediadive.compound:16
     label: Yeast extract
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/2114
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "Yeast extract",
+                      "compound_id": 16,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 6,
+                      "unit": "g",
+                      "g_l": 6,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Yeast extract)
+      in MediaDive solution 2114; locator=$.data.recipe[0] (compound_id=16). Provider
+      explicitly reports g_l=6. Arithmetic check: 6 g * 1 g/g / (1000 ml / 1000 ml
+      per L) = 6 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T09:09:09.259993+00:00; response SHA256=c1ea738fe783d7963260293d5fb71f1c5249007744f90beda491f0af4f3b13e3.'
 - preferred_term: NaCl
   concentration:
     value: '6'
@@ -23,10 +49,36 @@ composition:
     label: sodium chloride
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/2114
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "NaCl",
+                      "compound_id": 43,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 6,
+                      "unit": "g",
+                      "g_l": 6,
+                      "mmol_l": 102.669,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (NaCl) in
+      MediaDive solution 2114; locator=$.data.recipe[1] (compound_id=43). Provider
+      explicitly reports g_l=6. Arithmetic check: 6 g * 1 g/g / (1000 ml / 1000 ml
+      per L) = 6 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T09:09:09.259993+00:00; response SHA256=c1ea738fe783d7963260293d5fb71f1c5249007744f90beda491f0af4f3b13e3.'
 - preferred_term: Tap water
   concentration:
-    value: '1000'
-    unit: PERCENT_V_V
+    value: '1'
+    unit: L
   term:
     id: mediadive.compound:322
     label: Tap water
@@ -35,6 +87,44 @@ composition:
     label: water
     confidence: 0.7
     match_type: corpus_consensus
+  notes: 'Source batch input: 1000 ml tap water = 1 L. This is an input volume, not
+    a mass concentration, volume percentage or measured final-medium volume. No density
+    or final-volume assumption is made.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/2114
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "Tap water",
+                      "compound_id": 322,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1000,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'composition[2].concentration (Tap water): Source batch input: 1000
+      ml tap water = 1 L. This is an input volume, not a mass concentration, volume
+      percentage or measured final-medium volume. No density or final-volume assumption
+      is made. Calculation: 1000 ml / 1000 ml per L = 1 L. Locator=$.data.recipe[2].
+      Preparation context: adjust pH 5.6 Existing non-water amounts and chemical mappings
+      are preserved, not newly validated by this water evidence. Retrieved 2026-10-07T09:09:09.259993+00:00;
+      response SHA256=c1ea738fe783d7963260293d5fb71f1c5249007744f90beda491f0af4f3b13e3.'
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1046.pdf
+    supports: SUPPORT
+    snippet: Tap water 1000.0 ml
+    explanation: 'composition[2].concentration (Tap water): original DSMZ recipe 1046,
+      page 1, water row. Source batch input: 1000 ml tap water = 1 L. This is an input
+      volume, not a mass concentration, volume percentage or measured final-medium
+      volume. No density or final-volume assumption is made. Calculation: 1000 ml
+      / 1000 ml per L = 1 L. The medium API explicitly links this recipe and solution
+      2114; this is not an inference from a similar medium name. Retrieved 2026-10-08T06:46:08.242281+00:00;
+      PDF SHA256=1534392d6488ebf9c255814809118f31965cef3d2bfab1e2c7ca534350eef6fb.'
 preparation_notes: adjust pH 5.6
 curation_history:
 - timestamp: '2026-03-13T06:20:20.170420Z'
@@ -69,6 +159,27 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T09:15:06.636792+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/2114
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "6"} -> {"unit":
+    "G_PER_L", "value": "6"} (evidence_only); composition[1].concentration: {"unit":
+    "G_PER_L", "value": "6"} -> {"unit": "G_PER_L", "value": "6"} (evidence_only)'
+- timestamp: '2026-10-08T07:20:58.579071+00:00'
+  curator: codex
+  action: CORRECTED_DSMZ803_1046_1065_WATER_INPUT_UNITS
+  notes: Original DSMZ PDF and exact linked API recipe independently inspected. Preserved
+    prior evidence/history, identifiers, non-water amounts, preparation, chemical
+    mappings and parent/variant links. No final-volume, density, stock dilution or
+    growth inference.
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1046.pdf
+  changes: 'composition[2].concentration: 1000 PERCENT_V_V -> 1 L source batch input
+    (1000 ml / 1000); added water-input note, two source snippets and original-recipe
+    reference.'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -77,3 +188,18 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/2114
+  title: 'MediaDive solution 2114: Main sol. 1046'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=c1ea738fe783d7963260293d5fb71f1c5249007744f90beda491f0af4f3b13e3;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1046.pdf
+  title: 1046. ANOXYBACILLUS AMYLOLYTICUS MEDIUM
+  notes: source_type=culture_collection_protocol; discovery_mode=cross_reference;
+    source_organization=DSMZ; accessed_on=2026-10-08; locator=page 1, water row; PDF
+    SHA256=1534392d6488ebf9c255814809118f31965cef3d2bfab1e2c7ca534350eef6fb. Linked
+    by the exact MediaDive medium record and verified KOMODO original-recipe mapping.
+    Individual authors and publication year are not specified; the 2007 copyright
+    notice is not treated as publication year.

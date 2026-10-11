@@ -1,0 +1,23 @@
+# Solution Concentration Review: Main sol. J208
+
+- Record: data/normalized_yaml/bacterial/mediadive_3874_Main_sol_J208.yaml
+- ID: CultureMech:012943
+- Reviewed commit: `f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f`
+- Before SHA256: `c36b9a84b25082e9899aa3d3901c023dc9909a25dc92b66c2ed5ca2075be0dbf`
+- Proposed/result SHA256: `562ee14ebc99cfa6337c07af50ab93196649127c028ca44048f90d73ddeaae47`
+- Source: https://mediadive.dsmz.de/rest/solution/3874
+- Source SHA256: b653ce8d7aaa08d292e248d35b3d5285a820e5bb4c9264de19ab32e900222a73
+- Retrieved: 2026-10-07T09:25:59.650011+00:00
+- Source type: official DSMZ dataset; discovery: existing record source ID; authors/year not supplied.
+- State: changed locally; unresolved claims remain unchanged.
+- Baseline schema errors: 0; proposed schema errors: 0.
+- Operational failure: none
+
+Source response, exact IDs/labels, arithmetic, and literal snippets were checked by the maintained guarded reviewer. This is not a claim of manual inspection of every source sentence or automated reference-validator success. Preparation-dependent quantities and unrepresented stocks remain open. Schema validity is not scientific proof.
+
+| Field | Ingredient | Old | Proposed | Status | DOI/PURL | Exact snippet | Locator | Calculation / decision | Action |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `composition[0].concentration` | Glucose | {"unit": "G_PER_L", "value": "333.333"} | {"unit": "G_PER_L", "value": "333.333"} | evidence_only | https://mediadive.dsmz.de/rest/solution/3874 | {<br>                "recipe_order": 1,<br>                "compound": "Glucose",<br>                "compound_id": 5,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 25,<br>                "unit": "g",<br>                "g_l": 333.333,<br>                "mmol_l": 1850.21,<br>                "optional": 0<br>            } | $.data.recipe[0] (compound_id=5) | Provider explicitly reports g_l=333.333. Arithmetic check: 25 g * 1 g/g / (75 ml / 1000 ml per L) = 333.3333333333333333333333333 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: "volume": 75. | applied |
+| `composition[1].concentration` | YM broth | {"unit": "PERCENT_V_V", "value": "1000.0"} | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/solution/3874 | {<br>                "recipe_order": 2,<br>                "compound": "YM broth",<br>                "compound_id": 1683,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": "BD-Difco",<br>                "amount": 75,<br>                "unit": "ml",<br>                "g_l": null,<br>                "mmol_l": null,<br>                "optional": 0<br>            } | $.data.recipe[1] (compound_id=1683) | Source attribute may encode stock strength, material grade, or preparation context; not discarded. | unchanged |
+| `composition[2].concentration` | Agar | {"unit": "G_PER_L", "value": "26.6667"} | {"unit": "G_PER_L", "value": "26.6667"} | evidence_only | https://mediadive.dsmz.de/rest/solution/3874 | {<br>                "recipe_order": 3,<br>                "compound": "Agar",<br>                "compound_id": 3,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 2,<br>                "unit": "g",<br>                "g_l": 26.6667,<br>                "mmol_l": 79.2872,<br>                "optional": 0<br>            } | $.data.recipe[2] (compound_id=3) | Provider explicitly reports g_l=26.6667. Arithmetic check: 2 g * 1 g/g / (75 ml / 1000 ml per L) = 26.66666666666666666666666667 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: "volume": 75. | applied |
+| `ingredients[0].concentration` | See source for composition | {"unit": "VARIABLE", "value": "variable"} | unknown / not asserted | unsupported | unknown / not asserted | unknown / not asserted | unknown / not asserted | Outside direct composition matching; unchanged. | unchanged |

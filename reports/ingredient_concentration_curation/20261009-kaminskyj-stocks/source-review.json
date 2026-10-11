@@ -1,0 +1,326 @@
+{
+  "url": "https://www.fgsc.net/fgn48/Kaminskyj.htm",
+  "raw_html_sha256": "323fe17d640ab0e039a06b4e585d26cc48effda0c03fbe730ca7cfe94abc0eee",
+  "publisher_url": "https://journals.newprairiepress.org/fgr/article/id/1112/",
+  "publisher_sha256": "f6d7f0f5136d9d4ffcb0aa5fac52441ec769f339e989e9ebdb2ac287994a711a",
+  "publisher_metadata": {
+    "citation_publisher": "New Prairie Press",
+    "citation_journal_title": "Fungal Genetics Reports",
+    "citation_issn": "1941-4765",
+    "citation_author": "Susan G W Kaminskyj",
+    "citation_author_institution": "University of Saskatchewan",
+    "citation_title": "Fundamentals of growth, storage, genetics and microscopy of Aspergillus nidulans",
+    "citation_publication_date": "2001-09-01",
+    "citation_volume": "48",
+    "citation_issue": "1",
+    "citation_doi": "10.4148/1941-4765.1175",
+    "citation_abstract_html_url": "https://journals.newprairiepress.org/fgr/article/id/1112/",
+    "citation_pdf_url": "https://journals.newprairiepress.org/fgr/article/id/1112/download/pdf/"
+  },
+  "title": "Fundamentals of growth, storage, genetics and microscopy of Aspergillus nidulans",
+  "authors": "Susan G. W. Kaminskyj",
+  "year": 2001,
+  "doi": "doi:10.4148/1941-4765.1175",
+  "accessed_on": "2026-10-09",
+  "source_type": "journal_protocol_web_page",
+  "discovery_mode": "database_original_source_link",
+  "tables": {
+    "Minimal Medium (MM)": [
+      [
+        "D-glucose",
+        "10 g"
+      ],
+      [
+        "20X nitrate salts (see below)",
+        "50 ml"
+      ],
+      [
+        "Trace elements (see below)",
+        "1 ml"
+      ],
+      [
+        "1% thiamine",
+        "1 ml"
+      ]
+    ],
+    "20 X Nitrate salts": [
+      [
+        "NaNO 3",
+        "120 g"
+      ],
+      [
+        "KCl",
+        "10.4 g"
+      ],
+      [
+        "MgSO 4 \u00b77H 2 O",
+        "10.4 g (5.2 g if anhydrous)"
+      ],
+      [
+        "KH 2 PO 4",
+        "30.4 g"
+      ]
+    ],
+    "1000 X Trace elements": [
+      [
+        "distilled water",
+        "60 ml"
+      ],
+      [
+        "ZnSO 4 \u00b77 H 2 O",
+        "2.2 g"
+      ],
+      [
+        "H3BO 3",
+        "1.1 g"
+      ],
+      [
+        "MnCl 2 \u00b74 H 2 O",
+        "0.5 g"
+      ],
+      [
+        "FeSO 4 \u00b77 H 2 O",
+        "0.5 g"
+      ],
+      [
+        "CoCl 2 \u00b76 H 2 O",
+        "0.17 g"
+      ],
+      [
+        "CuSO 4 \u00b75 H 2 O",
+        "0.16 g"
+      ],
+      [
+        "Na 2 MoO 4 \u00b72 H 2 O",
+        "0.15 g"
+      ],
+      [
+        "Na 4 EDTA",
+        "5 g"
+      ]
+    ]
+  },
+  "contexts": {
+    "medium": "Add nutritional supplements if necessary. Adjust pH to 6.5 with 1M NaOH. Make to 1 liter with distilled water. For solid medium add 18 g agar. Autoclave.",
+    "nitrate": "Add distilled water to 1 liter. Autoclave. Store at 4oC.",
+    "trace": "Add the compounds in order. Boil. Cool to 60oC. Adjust pH to 6.5 with KOH. Cool to room temperature. Adjust volume to 100 ml with distilled water. With storage this forms a purple solution with a rusty brown precipitate that should be resuspended before use."
+  },
+  "grounding": {
+    "Magnesium sulfate heptahydrate": {
+      "resolution": {
+        "query_label": "Magnesium sulfate heptahydrate",
+        "identifier": "CHEBI:31795",
+        "ontology_id": "CHEBI:31795",
+        "mim_preferred_term": "MgSO4 x 7 H2O",
+        "matched_label": "Magnesium sulfate heptahydrate",
+        "match_type": "synonym",
+        "mapping_status": "MAPPED",
+        "ambiguity": "unique",
+        "resolution_source": "mim_exact",
+        "local_identifier": null,
+        "source_compound_id": null,
+        "reason": "trusted MIM label-index answer"
+      },
+      "term": {
+        "id": "CHEBI:31795",
+        "label": "magnesium sulfate heptahydrate"
+      }
+    },
+    "Cobalt chloride hexahydrate": {
+      "resolution": {
+        "query_label": "Cobalt chloride hexahydrate",
+        "identifier": "CHEBI:53503",
+        "ontology_id": "CHEBI:53503",
+        "mim_preferred_term": "Cobalt chloride hexahydrate",
+        "matched_label": "Cobalt chloride hexahydrate",
+        "match_type": "preferred_term",
+        "mapping_status": "MAPPED",
+        "ambiguity": "unique",
+        "resolution_source": "mim_exact",
+        "local_identifier": null,
+        "source_compound_id": null,
+        "reason": "trusted MIM label-index answer"
+      },
+      "term": {
+        "id": "CHEBI:53503",
+        "label": "cobalt chloride hexahydrate"
+      }
+    },
+    "Ferrous sulfate heptahydrate": {
+      "resolution": {
+        "query_label": "Ferrous sulfate heptahydrate",
+        "identifier": "CHEBI:75836",
+        "ontology_id": "CHEBI:75836",
+        "mim_preferred_term": "FeSO4 x 7 H2O",
+        "matched_label": "ferrous sulfate heptahydrate",
+        "match_type": "synonym",
+        "mapping_status": "MAPPED",
+        "ambiguity": "unique",
+        "resolution_source": "mim_exact",
+        "local_identifier": null,
+        "source_compound_id": null,
+        "reason": "trusted MIM label-index answer"
+      },
+      "term": {
+        "id": "CHEBI:75836",
+        "label": "iron(2+) sulfate heptahydrate"
+      }
+    },
+    "Sodium molybdate dihydrate": {
+      "resolution": {
+        "query_label": "Sodium molybdate dihydrate",
+        "identifier": "CHEBI:75213",
+        "ontology_id": "CHEBI:75213",
+        "mim_preferred_term": "Na2MoO4 x 2 H2O",
+        "matched_label": "Sodium Molybdate Dihydrate",
+        "match_type": "synonym",
+        "mapping_status": "MAPPED",
+        "ambiguity": "unique",
+        "resolution_source": "mim_exact",
+        "local_identifier": null,
+        "source_compound_id": null,
+        "reason": "trusted MIM label-index answer"
+      },
+      "term": {
+        "id": "CHEBI:75213",
+        "label": "sodium molybdate dihydrate"
+      }
+    },
+    "Cupric sulfate pentahydrate": {
+      "resolution": {
+        "query_label": "Cupric sulfate pentahydrate",
+        "identifier": "CHEBI:31440",
+        "ontology_id": "CHEBI:31440",
+        "mim_preferred_term": "CuSO4 x 5 H2O",
+        "matched_label": "cupric sulfate pentahydrate",
+        "match_type": "synonym",
+        "mapping_status": "MAPPED",
+        "ambiguity": "unique",
+        "resolution_source": "mim_exact",
+        "local_identifier": null,
+        "source_compound_id": null,
+        "reason": "trusted MIM label-index answer"
+      },
+      "term": {
+        "id": "CHEBI:31440",
+        "label": "copper(II) sulfate pentahydrate"
+      }
+    },
+    "Manganese chloride tetrahydrate": {
+      "resolution": {
+        "query_label": "Manganese chloride tetrahydrate",
+        "identifier": "CHEBI:86368",
+        "ontology_id": "CHEBI:86368",
+        "mim_preferred_term": "MnCl2 x 4 H2O",
+        "matched_label": "Manganese chloride tetrahydrate",
+        "match_type": "synonym",
+        "mapping_status": "MAPPED",
+        "ambiguity": "unique",
+        "resolution_source": "mim_exact",
+        "local_identifier": null,
+        "source_compound_id": null,
+        "reason": "trusted MIM label-index answer"
+      },
+      "term": {
+        "id": "CHEBI:86368",
+        "label": "manganese(II) chloride tetrahydrate"
+      }
+    },
+    "Zinc sulfate heptahydrate": {
+      "resolution": {
+        "query_label": "Zinc sulfate heptahydrate",
+        "identifier": "CHEBI:32312",
+        "ontology_id": "CHEBI:32312",
+        "mim_preferred_term": "ZnSO4 x 7 H2O",
+        "matched_label": "Zinc sulfate heptahydrate",
+        "match_type": "synonym",
+        "mapping_status": "MAPPED",
+        "ambiguity": "unique",
+        "resolution_source": "mim_exact",
+        "local_identifier": null,
+        "source_compound_id": null,
+        "reason": "trusted MIM label-index answer"
+      },
+      "term": {
+        "id": "CHEBI:32312",
+        "label": "zinc sulfate heptahydrate"
+      }
+    },
+    "Sodium hydroxide": {
+      "resolution": {
+        "query_label": "Sodium hydroxide",
+        "identifier": "CHEBI:32145",
+        "ontology_id": "CHEBI:32145",
+        "mim_preferred_term": "NaOH",
+        "matched_label": "Sodium Hydroxide",
+        "match_type": "synonym",
+        "mapping_status": "MAPPED",
+        "ambiguity": "unique",
+        "resolution_source": "mim_exact",
+        "local_identifier": null,
+        "source_compound_id": null,
+        "reason": "trusted MIM label-index answer"
+      },
+      "term": {
+        "id": "CHEBI:32145",
+        "label": "sodium hydroxide"
+      }
+    },
+    "Potassium hydroxide": {
+      "resolution": {
+        "query_label": "Potassium hydroxide",
+        "identifier": "CHEBI:32035",
+        "ontology_id": "CHEBI:32035",
+        "mim_preferred_term": "KOH",
+        "matched_label": "potassium hydroxide",
+        "match_type": "ontology_label",
+        "mapping_status": "MAPPED",
+        "ambiguity": "unique",
+        "resolution_source": "mim_exact",
+        "local_identifier": null,
+        "source_compound_id": null,
+        "reason": "trusted MIM label-index answer"
+      },
+      "term": {
+        "id": "CHEBI:32035",
+        "label": "potassium hydroxide"
+      }
+    },
+    "Water": {
+      "resolution": {
+        "query_label": "Water",
+        "identifier": "CHEBI:15377",
+        "ontology_id": "CHEBI:15377",
+        "mim_preferred_term": "Distilled water",
+        "matched_label": "WATER",
+        "match_type": "synonym",
+        "mapping_status": "MAPPED",
+        "ambiguity": "unique",
+        "resolution_source": "mim_exact",
+        "local_identifier": null,
+        "source_compound_id": null,
+        "reason": "trusted MIM label-index answer"
+      },
+      "term": {
+        "id": "CHEBI:15377",
+        "label": "water"
+      }
+    }
+  },
+  "unresolved_tetrasodium_edta": {
+    "query_label": "Tetrasodium EDTA",
+    "identifier": null,
+    "ontology_id": null,
+    "mim_preferred_term": null,
+    "matched_label": null,
+    "match_type": null,
+    "mapping_status": null,
+    "ambiguity": null,
+    "resolution_source": "not_found",
+    "local_identifier": null,
+    "source_compound_id": null,
+    "reason": "label not found in pinned MIM index and no usable local identity"
+  },
+  "mim_label_index_sha256": "a36cd4683feb89e2fc2a1721dc15008d1e10c12044e89a36c27b6621a8aaf262",
+  "extraction_note": "HTML text whitespace collapsed; subscript separators retained. MM trace cells explicitly checked despite missing opening tr. No whole article or HTML copied into the repository."
+}

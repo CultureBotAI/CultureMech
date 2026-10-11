@@ -11,6 +11,33 @@ composition:
   term:
     id: mediadive.compound:16
     label: Yeast extract
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/638
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "Yeast extract",
+                      "compound_id": 16,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "g",
+                      "g_l": 2.05761,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Yeast extract)
+      in MediaDive solution 638; locator=$.data.recipe[2] (compound_id=16). Provider
+      explicitly reports g_l=2.05761. Arithmetic check: 2 g * 1 g/g / (972 ml / 1000
+      ml per L) = 2.057613168724279835390946502 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 972. Retrieved 2026-10-07T08:25:29.121189+00:00;
+      response SHA256=8197093ecc53f7d02b6ed01d0943e7b8fabab879e239bd4c8db7f917e8bdd45b.'
 - preferred_term: Na-vanillate
   concentration:
     value: '2.05761'
@@ -21,6 +48,33 @@ composition:
   chebi_term:
     id: CHEBI:132748
     label: sodium vanillate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/638
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "Na-vanillate",
+                      "compound_id": 393,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "g",
+                      "g_l": 2.05761,
+                      "mmol_l": 10.8222,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Na-vanillate)
+      in MediaDive solution 638; locator=$.data.recipe[3] (compound_id=393). Provider
+      explicitly reports g_l=2.05761. Arithmetic check: 2 g * 1 g/g / (972 ml / 1000
+      ml per L) = 2.057613168724279835390946502 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 972. Retrieved 2026-10-07T08:25:29.121189+00:00;
+      response SHA256=8197093ecc53f7d02b6ed01d0943e7b8fabab879e239bd4c8db7f917e8bdd45b.'
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.0005'
@@ -87,6 +141,17 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-10-07T08:27:51.574555+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/638
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "2.05761"}
+    -> {"unit": "G_PER_L", "value": "2.05761"} (evidence_only); composition[1].concentration:
+    {"unit": "G_PER_L", "value": "2.05761"} -> {"unit": "G_PER_L", "value": "2.05761"}
+    (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -95,3 +160,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/638
+  title: 'MediaDive solution 638: Solution A'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=8197093ecc53f7d02b6ed01d0943e7b8fabab879e239bd4c8db7f917e8bdd45b;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

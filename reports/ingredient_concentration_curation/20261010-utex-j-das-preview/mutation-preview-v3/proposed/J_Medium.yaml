@@ -1,0 +1,931 @@
+id: CultureMech:000172
+name: j_medium
+category: algae
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+ph_range:
+  min: 8.3
+  max: 8.5
+media_term:
+  preferred_term: J Medium
+  term:
+    id: UTEX:j-medium
+    label: J Medium
+description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
+  algae cultivation.
+notes: UTEX prepares J Medium as an alkaline freshwater Microcystis recipe at pH 8.3-8.5
+  with two macro-component stocks, a calcium chloride stock, and G9 trace metals.
+  The water quantities at the parent and three stock levels are unquantified starting-water/makeup
+  inputs, not 1000 mL/L pure-water fractions. Printed stock-page molarity annotations
+  are not independently certified as receiving concentrations.
+ingredients:
+- preferred_term: dH2O
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+  notes: UTEX starts the 1 L J Medium recipe with approximately 950 mL dH2O and brings
+    the final volume to 1 L. The stated total is solution volume; the exact final
+    quantity of pure water is not specified.
+  evidence:
+  - reference: https://utex.org/products/j-medium
+    supports: SUPPORT
+    snippet: Bring total volume to 1 L with dH2O.
+    explanation: 'Supports removal of the unsupported final-volume assertion at ingredients[0].concentration
+      and the replacement notes. UTEX starts the 1 L J Medium recipe with approximately
+      950 mL dH2O and brings the final volume to 1 L. The stated total is solution
+      volume; the exact final quantity of pure water is not specified. Separate basis
+      excerpt: ''To approximately 950 mL of dH2O''. Locator: Directions / formulation
+      table.'
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.02'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  supplier_catalog:
+    supplier_name: Sigma
+    catalog_number: C-3881
+  notes: UTEX adds 1 mL/L of a 0.29 g/100 mL dH2O stock, for 0.02 mM final.
+  evidence:
+  - reference: https://utex.org/products/j-medium
+    supports: SUPPORT
+    snippet: 0.02 mM
+    explanation: 'Supports ingredients[1].concentration for this preparation stage.
+      Retain the directly printed rounded final concentration. Keep the separately
+      stated 1 mL/L stock delivery and 0.29 g/100 mL dH20 stock description explicit;
+      do not add a second calcium contribution. Separate basis excerpt: ''Final Concentration''.
+      Locator: Formulation table row 3, Final Concentration column. Calculation: No
+      conversion applied.'
+solutions:
+- preferred_term: Macro Component 1 for J Medium
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+  term:
+    id: kgmicrobe.ingredient:macro_component_1_for_j_medium
+    label: Macro Component 1 for J Medium
+  composition:
+  - preferred_term: dH2O
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX starts Macro Component 1 with approximately 900 mL dH2O and brings
+      the stock to 1 L. The stated total is solution volume; the exact final quantity
+      of pure water is not specified.
+    evidence:
+    - reference: https://utex.org/products/macro-component-1-for-j-medium
+      supports: SUPPORT
+      snippet: Bring the total volume to 1 Liter with dH2O.
+      explanation: 'Supports removal of the unsupported final-volume assertion at
+        solutions[0].composition[0].concentration and the replacement notes. UTEX
+        starts Macro Component 1 with approximately 900 mL dH2O and brings the stock
+        to 1 L. The stated total is solution volume; the exact final quantity of pure
+        water is not specified. Separate basis excerpt: ''For 1 L Total''. Locator:
+        Directions / formulation table.'
+  - preferred_term: NaNO3
+    concentration:
+      value: '67'
+      unit: G_PER_L
+    term:
+      id: CHEBI:63005
+      label: sodium nitrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63005
+      label: sodium nitrate
+    supplier_catalog:
+      supplier_name: Fisher
+      catalog_number: BP360
+    notes: The source amount is 67 g/L. Printed molarity annotations are retained
+      as source assertions only; no receiving-medium molarity is independently verified
+      from them in this review.
+    nutritional_roles:
+    - NITROGEN_SOURCE
+    evidence:
+    - reference: https://utex.org/products/macro-component-1-for-j-medium
+      supports: SUPPORT
+      snippet: 67 g/L
+      explanation: 'Supports solutions[0].composition[1].concentration for this preparation
+        stage. Retain the stock g/L amount; do not promote printed receiving-medium
+        molarities to independently verified calculations. Separate basis excerpt:
+        ''For 1 L Total''. Locator: Formulation table row 1, Amount column. Calculation:
+        No conversion applied. Also scopes solutions[0].composition[1].notes. Printed
+        concentration cells: [''7.9 mM'']. Separate footnote excerpt: "Note: Final
+        concentration listed is for the stock solution." This conflicts with treating
+        the printed annotations as independently established receiving-medium values.'
+  - preferred_term: Na2HPO4
+    concentration:
+      value: '0.67'
+      unit: G_PER_L
+    term:
+      id: CHEBI:34683
+      label: Na2HPO4
+    mediaingredientmech_chebi_term:
+      id: CHEBI:34683
+      label: Na2HPO4
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: S5136
+    notes: The source amount is 0.67 g/L. Printed molarity annotations are retained
+      as source assertions only; no receiving-medium molarity is independently verified
+      from them in this review.
+    nutritional_roles:
+    - PHOSPHATE_SOURCE
+    physicochemical_roles:
+    - BUFFER
+    evidence:
+    - reference: https://utex.org/products/macro-component-1-for-j-medium
+      supports: SUPPORT
+      snippet: 0.67 g/L
+      explanation: 'Supports solutions[0].composition[2].concentration for this preparation
+        stage. Retain the stock g/L amount; do not promote printed receiving-medium
+        molarities to independently verified calculations. Separate basis excerpt:
+        ''For 1 L Total''. Locator: Formulation table row 2, Amount column. Calculation:
+        No conversion applied. Also scopes solutions[0].composition[2].notes. Printed
+        concentration cells: [''0.05 mM'']. Separate footnote excerpt: "Note: Final
+        concentration listed is for the stock solution." This conflicts with treating
+        the printed annotations as independently established receiving-medium values.'
+  - preferred_term: K2HPO4
+    concentration:
+      value: '3.8'
+      unit: G_PER_L
+    term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: P 3786
+    notes: The source amount is 3.8 g/L. Printed molarity annotations are retained
+      as source assertions only; no receiving-medium molarity is independently verified
+      from them in this review.
+    nutritional_roles:
+    - PHOSPHATE_SOURCE
+    physicochemical_roles:
+    - BUFFER
+    evidence:
+    - reference: https://utex.org/products/macro-component-1-for-j-medium
+      supports: SUPPORT
+      snippet: 3.8 g/L
+      explanation: 'Supports solutions[0].composition[3].concentration for this preparation
+        stage. Retain the stock g/L amount; do not promote printed receiving-medium
+        molarities to independently verified calculations. Separate basis excerpt:
+        ''For 1 L Total''. Locator: Formulation table row 3, Amount column. Calculation:
+        No conversion applied. Also scopes solutions[0].composition[3].notes. Printed
+        concentration cells: [''0.22 mM'']. Separate footnote excerpt: "Note: Final
+        concentration listed is for the stock solution." This conflicts with treating
+        the printed annotations as independently established receiving-medium values.'
+  - preferred_term: Tricine
+    concentration:
+      value: '25'
+      unit: G_PER_L
+    term:
+      id: CHEBI:46760
+      label: Tricine
+    mediaingredientmech_chebi_term:
+      id: CHEBI:46760
+      label: Tricine
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: T-5816-256
+    notes: The source amount is 25 g/L. Printed molarity annotations are retained
+      as source assertions only; no receiving-medium molarity is independently verified
+      from them in this review.
+    physicochemical_roles:
+    - BUFFER
+    evidence:
+    - reference: https://utex.org/products/macro-component-1-for-j-medium
+      supports: SUPPORT
+      snippet: 25 g/L
+      explanation: 'Supports solutions[0].composition[4].concentration for this preparation
+        stage. Retain the stock g/L amount; do not promote printed receiving-medium
+        molarities to independently verified calculations. Separate basis excerpt:
+        ''For 1 L Total''. Locator: Formulation table row 4, Amount column. Calculation:
+        No conversion applied. Also scopes solutions[0].composition[4].notes. Printed
+        concentration cells: [''1.4 mM'']. Separate footnote excerpt: "Note: Final
+        concentration listed is for the stock solution." This conflicts with treating
+        the printed annotations as independently established receiving-medium values.'
+  notes: UTEX adds 10 mL Macro Component 1 for J Medium per liter; the stock is adjusted
+    to pH 8.5-8.8 before storage.
+- preferred_term: Macro Component 2 for J medium
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+  term:
+    id: kgmicrobe.ingredient:macro_component_2_for_j_medium
+    label: Macro Component 2 for J medium
+  composition:
+  - preferred_term: dH2O
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX starts Macro Component 2 with approximately 850 mL dH2O and brings
+      the stock to 1 L. The stated total is solution volume; the exact final quantity
+      of pure water is not specified.
+    evidence:
+    - reference: https://utex.org/products/macro-component-2-for-j-medium
+      supports: SUPPORT
+      snippet: Bring the total volume to 1 Liter with dH2O.
+      explanation: 'Supports removal of the unsupported final-volume assertion at
+        solutions[1].composition[0].concentration and the replacement notes. UTEX
+        starts Macro Component 2 with approximately 850 mL dH2O and brings the stock
+        to 1 L. The stated total is solution volume; the exact final quantity of pure
+        water is not specified. Separate basis excerpt: ''For 1 L Total''. Locator:
+        Directions / formulation table.'
+  - preferred_term: Na2EDTA x 2 H2O
+    concentration:
+      value: '4.4'
+      unit: G_PER_L
+    term:
+      id: CHEBI:64758
+      label: EDTA disodium salt dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:64758
+      label: EDTA disodium salt dihydrate
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: ED255
+    notes: The source amount is 4.4 g/L. Printed molarity annotations are retained
+      as source assertions only; no receiving-medium molarity is independently verified
+      from them in this review.
+    physicochemical_roles:
+    - CHELATOR
+    evidence:
+    - reference: https://utex.org/products/macro-component-2-for-j-medium
+      supports: SUPPORT
+      snippet: 4.4 g/L
+      explanation: 'Supports solutions[1].composition[1].concentration for this preparation
+        stage. Retain the stock g/L amount; do not promote printed receiving-medium
+        molarities to independently verified calculations. Separate basis excerpt:
+        ''For 1 L Total''. Locator: Formulation table row 1, Amount column. Calculation:
+        No conversion applied. Also scopes solutions[1].composition[1].notes. Printed
+        concentration cells: [''0.12 mM'']. Separate footnote excerpt: "Note: Final
+        concentration listed is for the stock solution." This conflicts with treating
+        the printed annotations as independently established receiving-medium values.'
+  - preferred_term: MgSO4 x 7 H2O
+    concentration:
+      value: '10'
+      unit: G_PER_L
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: '230391'
+    notes: The source amount is 10 g/L. Printed molarity annotations are retained
+      as source assertions only; no receiving-medium molarity is independently verified
+      from them in this review.
+    nutritional_roles:
+    - SULFUR_SOURCE
+    - TRACE_ELEMENT
+    evidence:
+    - reference: https://utex.org/products/macro-component-2-for-j-medium
+      supports: SUPPORT
+      snippet: 10 g/L
+      explanation: 'Supports solutions[1].composition[2].concentration for this preparation
+        stage. Retain the stock g/L amount; do not promote printed receiving-medium
+        molarities to independently verified calculations. Separate basis excerpt:
+        ''For 1 L Total''. Locator: Formulation table row 2, Amount column. Calculation:
+        No conversion applied. Also scopes solutions[1].composition[2].notes. Printed
+        concentration cells: [''0.41 mM'']. Separate footnote excerpt: "Note: Final
+        concentration listed is for the stock solution." This conflicts with treating
+        the printed annotations as independently established receiving-medium values.'
+  - preferred_term: MgCl2 x 6 H2O
+    concentration:
+      value: '5'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86345
+      label: MgCl2 x 6 H2O
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86345
+      label: MgCl2 x 6 H2O
+    supplier_catalog:
+      supplier_name: Fisher
+      catalog_number: M 33
+    notes: The source amount is 5 g/L. Printed molarity annotations are retained as
+      source assertions only; no receiving-medium molarity is independently verified
+      from them in this review.
+    nutritional_roles:
+    - TRACE_ELEMENT
+    evidence:
+    - reference: https://utex.org/products/macro-component-2-for-j-medium
+      supports: SUPPORT
+      snippet: 5 g/L
+      explanation: 'Supports solutions[1].composition[3].concentration for this preparation
+        stage. Retain the stock g/L amount; do not promote printed receiving-medium
+        molarities to independently verified calculations. Separate basis excerpt:
+        ''For 1 L Total''. Locator: Formulation table row 3, Amount column. Calculation:
+        No conversion applied. Also scopes solutions[1].composition[3].notes. Printed
+        concentration cells: [''0.24 mM'']. Separate footnote excerpt: "Note: Final
+        concentration listed is for the stock solution." This conflicts with treating
+        the printed annotations as independently established receiving-medium values.'
+  - preferred_term: FeCl3 x 6 H2O
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86254
+      label: iron trichloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86254
+      label: iron trichloride hexahydrate
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: F 1513
+    notes: The source amount is 0.5 g/L. Printed molarity annotations are retained
+      as source assertions only; no receiving-medium molarity is independently verified
+      from them in this review.
+    nutritional_roles:
+    - IRON_SOURCE
+    - TRACE_ELEMENT
+    evidence:
+    - reference: https://utex.org/products/macro-component-2-for-j-medium
+      supports: SUPPORT
+      snippet: 0.5 g/L
+      explanation: 'Supports solutions[1].composition[4].concentration for this preparation
+        stage. Retain the stock g/L amount; do not promote printed receiving-medium
+        molarities to independently verified calculations. Separate basis excerpt:
+        ''For 1 L Total''. Locator: Formulation table row 4, Amount column. Calculation:
+        No conversion applied. Also scopes solutions[1].composition[4].notes. Printed
+        concentration cells: [''0.02 mM'']. Separate footnote excerpt: "Note: Final
+        concentration listed is for the stock solution." This conflicts with treating
+        the printed annotations as independently established receiving-medium values.'
+  notes: UTEX adds 10 mL Macro Component 2 for J medium per liter; the stock is adjusted
+    to pH 7.5 before storage.
+- preferred_term: G9 Trace Metals for J medium
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  term:
+    id: kgmicrobe.ingredient:g9_trace_metals_for_j_medium
+    label: G9 Trace Metals for J medium
+  composition:
+  - preferred_term: dH2O
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: UTEX starts G9 Trace Metals for J medium with approximately 900 mL dH2O
+      and brings the stock to 1 L. The stated total is solution volume; the exact
+      final quantity of pure water is not specified.
+    evidence:
+    - reference: https://utex.org/products/g9-trace-metals-for-j-medium
+      supports: SUPPORT
+      snippet: Bring total volume to 1 Liter with dH2O.
+      explanation: 'Supports removal of the unsupported final-volume assertion at
+        solutions[2].composition[0].concentration and the replacement notes. UTEX
+        starts G9 Trace Metals for J medium with approximately 900 mL dH2O and brings
+        the stock to 1 L. The stated total is solution volume; the exact final quantity
+        of pure water is not specified. Separate basis excerpt: ''For 1 L Total''.
+        Locator: Directions / formulation table.'
+  - preferred_term: H3BO3
+    concentration:
+      value: '3.25'
+      unit: G_PER_L
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+    supplier_catalog:
+      supplier_name: Baker
+      catalog_number: 0084
+    notes: The source amount is 3.25 g/L. Printed molarity annotations are retained
+      as source assertions only; no receiving-medium molarity is independently verified
+      from them in this review.
+    nutritional_roles:
+    - TRACE_ELEMENT
+    evidence:
+    - reference: https://utex.org/products/g9-trace-metals-for-j-medium
+      supports: SUPPORT
+      snippet: 3.25 g/L
+      explanation: 'Supports solutions[2].composition[1].concentration for this preparation
+        stage. Retain the stock g/L amount; do not promote printed receiving-medium
+        molarities to independently verified calculations. Separate basis excerpt:
+        ''For 1 L Total''. Locator: Formulation table row 1, Amount column. Calculation:
+        No conversion applied. Also scopes solutions[2].composition[1].notes. Printed
+        concentration cells: [''0.053 mM'']. Separate footnote excerpt: "Note: Final
+        concentration listed is for the stock solution." This conflicts with treating
+        the printed annotations as independently established receiving-medium values.'
+  - preferred_term: MnSO4 x H2O
+    concentration:
+      value: '1.5'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86364
+      label: manganese(II) sulfate monohydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86364
+      label: manganese(II) sulfate monohydrate
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: M8179
+    notes: The source amount is 1.5 g/L. Printed molarity annotations are retained
+      as source assertions only; no receiving-medium molarity is independently verified
+      from them in this review.
+    nutritional_roles:
+    - TRACE_ELEMENT
+    evidence:
+    - reference: https://utex.org/products/g9-trace-metals-for-j-medium
+      supports: SUPPORT
+      snippet: 1.5 g/L
+      explanation: 'Supports solutions[2].composition[2].concentration for this preparation
+        stage. Retain the stock g/L amount; do not promote printed receiving-medium
+        molarities to independently verified calculations. Separate basis excerpt:
+        ''For 1 L Total''. Locator: Formulation table row 2, Amount column. Calculation:
+        No conversion applied. Also scopes solutions[2].composition[2].notes. Printed
+        concentration cells: [''8.6 µM'']. Separate footnote excerpt: "Note: Final
+        concentration listed is for the stock solution." This conflicts with treating
+        the printed annotations as independently established receiving-medium values.'
+  - preferred_term: ZnSO4 x 7 H2O
+    concentration:
+      value: '0.3'
+      unit: G_PER_L
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: Z 0251
+    notes: The source amount is 0.3 g/L. Printed molarity annotations are retained
+      as source assertions only; no receiving-medium molarity is independently verified
+      from them in this review.
+    nutritional_roles:
+    - TRACE_ELEMENT
+    evidence:
+    - reference: https://utex.org/products/g9-trace-metals-for-j-medium
+      supports: SUPPORT
+      snippet: 0.3 g/L
+      explanation: 'Supports solutions[2].composition[3].concentration for this preparation
+        stage. Retain the stock g/L amount; do not promote printed receiving-medium
+        molarities to independently verified calculations. Separate basis excerpt:
+        ''For 1 L Total''. Locator: Formulation table row 3, Amount column. Calculation:
+        No conversion applied. Also scopes solutions[2].composition[3].notes. Printed
+        concentration cells: [''1 µM'']. Separate footnote excerpt: "Note: Final concentration
+        listed is for the stock solution." This conflicts with treating the printed
+        annotations as independently established receiving-medium values.'
+  - preferred_term: (NH4)6Mo7O24 x 4 H2O
+    concentration:
+      value: '0.08'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86244
+      label: hexaammonium heptamolybdate tetrahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86244
+      label: hexaammonium heptamolybdate tetrahydrate
+    supplier_catalog:
+      supplier_name: Mallinckrodt
+      catalog_number: '3420'
+    notes: The source amount is 0.08 g/L. Printed molarity annotations are retained
+      as source assertions only; no receiving-medium molarity is independently verified
+      from them in this review.
+    nutritional_roles:
+    - TRACE_ELEMENT
+    evidence:
+    - reference: https://utex.org/products/g9-trace-metals-for-j-medium
+      supports: SUPPORT
+      snippet: 0.08 g/L
+      explanation: 'Supports solutions[2].composition[4].concentration for this preparation
+        stage. Retain the stock g/L amount; do not promote printed receiving-medium
+        molarities to independently verified calculations. Separate basis excerpt:
+        ''For 1 L Total''. Locator: Formulation table row 4, Amount column. Calculation:
+        No conversion applied. Also scopes solutions[2].composition[4].notes. Printed
+        concentration cells: [''0.065 µM'']. Separate footnote excerpt: "Note: Final
+        concentration listed is for the stock solution." This conflicts with treating
+        the printed annotations as independently established receiving-medium values.'
+  - preferred_term: CuSO4 x 5 H2O
+    concentration:
+      value: '0.05'
+      unit: G_PER_L
+    term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    supplier_catalog:
+      supplier_name: MCIB
+      catalog_number: 3M11
+    notes: The source amount is 0.05 g/L. Printed molarity annotations are retained
+      as source assertions only; no receiving-medium molarity is independently verified
+      from them in this review.
+    nutritional_roles:
+    - TRACE_ELEMENT
+    evidence:
+    - reference: https://utex.org/products/g9-trace-metals-for-j-medium
+      supports: SUPPORT
+      snippet: 0.05 g/L
+      explanation: 'Supports solutions[2].composition[5].concentration for this preparation
+        stage. Retain the stock g/L amount; do not promote printed receiving-medium
+        molarities to independently verified calculations. Separate basis excerpt:
+        ''For 1 L Total''. Locator: Formulation table row 5, Amount column. Calculation:
+        No conversion applied. Also scopes solutions[2].composition[5].notes. Printed
+        concentration cells: [''0.2 µM'']. Separate footnote excerpt: "Note: Final
+        concentration listed is for the stock solution." This conflicts with treating
+        the printed annotations as independently established receiving-medium values.'
+  - preferred_term: Co(NO3)2 x 6 H2O
+    concentration:
+      value: '0.15'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86214
+      label: cobalt(II) nitrate hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86214
+      label: cobalt(II) nitrate hexahydrate
+    supplier_catalog:
+      supplier_name: Mallinckroft
+      catalog_number: '4544'
+    notes: The source amount is 0.15 g/L. Printed molarity annotations are retained
+      as source assertions only; no receiving-medium molarity is independently verified
+      from them in this review.
+    nutritional_roles:
+    - TRACE_ELEMENT
+    evidence:
+    - reference: https://utex.org/products/g9-trace-metals-for-j-medium
+      supports: SUPPORT
+      snippet: 0.15 g/L
+      explanation: 'Supports solutions[2].composition[6].concentration for this preparation
+        stage. Retain the stock g/L amount; do not promote printed receiving-medium
+        molarities to independently verified calculations. Separate basis excerpt:
+        ''For 1 L Total''. Locator: Formulation table row 6, Amount column. Calculation:
+        No conversion applied. Also scopes solutions[2].composition[6].notes. Printed
+        concentration cells: [''0.52 µM'']. Separate footnote excerpt: "Note: Final
+        concentration listed is for the stock solution." This conflicts with treating
+        the printed annotations as independently established receiving-medium values.'
+  - preferred_term: KI
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    term:
+      id: CHEBI:8346
+      label: potassium iodide
+    mediaingredientmech_chebi_term:
+      id: CHEBI:8346
+      label: potassium iodide
+    supplier_catalog:
+      supplier_name: Sigma
+      catalog_number: P 4286
+    notes: The source amount is 0.01 g/L. Printed molarity annotations are retained
+      as source assertions only; no receiving-medium molarity is independently verified
+      from them in this review.
+    nutritional_roles:
+    - TRACE_ELEMENT
+    evidence:
+    - reference: https://utex.org/products/g9-trace-metals-for-j-medium
+      supports: SUPPORT
+      snippet: 0.01 g/L
+      explanation: 'Supports solutions[2].composition[7].concentration for this preparation
+        stage. Retain the stock g/L amount; do not promote printed receiving-medium
+        molarities to independently verified calculations. Separate basis excerpt:
+        ''For 1 L Total''. Locator: Formulation table row 7, Amount column. Calculation:
+        No conversion applied. Also scopes solutions[2].composition[7].notes. Printed
+        concentration cells: [''0.06 µM'']. Separate footnote excerpt: "Note: Final
+        concentration listed is for the stock solution." This conflicts with treating
+        the printed annotations as independently established receiving-medium values.'
+  notes: UTEX adds 1 mL G9 Trace Metals for J medium per liter.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Add all J Medium components to approximately 950 mL dH2O while stirring
+    continuously.
+- step_number: 2
+  action: MIX
+  description: Bring the final volume to 1 L with dH2O.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Cover and autoclave the medium.
+- step_number: 4
+  action: STORE
+  description: Store at refrigerator temperature.
+light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
+light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
+temperature_range: 15-30°C depending on species
+applications:
+- Algae cultivation
+- Phytoplankton culture
+- Microalgae research
+curation_history:
+- curator: utex-import
+  action: Imported from UTEX Culture Collection
+  notes: 'Source ID: j-medium, URL: https://utex.org/products/j-medium'
+  timestamp: '2026-01-28T00:00:00+00:00'
+- timestamp: '2026-03-13T06:18:53.406676Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000172'
+- timestamp: '2026-03-17T19:45:04.343090+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "J Medium" to "j_medium" for consistent matching
+- timestamp: '2026-05-16T09:02:56.015134+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1; references.reference_id->reference=2;
+    category->lowercase=1
+- timestamp: '2026-05-16T09:11:01.218400+00:00'
+  curator: migrate_preparation_steps.py
+  action: MIGRATED_PREPARATION_STEPS
+  notes: instruction->action+description for 9 step(s)
+- timestamp: '2026-08-30T00:58:30.833882+00:00'
+  curator: repair_utex_ingredients.py
+  action: REPAIRED_UTEX_COMPOSITION
+  notes: 'Restored 4 ingredient name(s) and amount(s) from a re-fetched UTEX capture.
+    The original fetcher read fixed column positions, so the row ordinal was stored
+    as the ingredient name, the component name as the amount, and the Amount column
+    was never read; concentration was then filled in as G_PER_L regardless. Source:
+    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
+- timestamp: '2026-09-06T00:00:00-07:00'
+  curator: repair_utex_j_medium_score35.py
+  action: RESOLVED_UTEX_J_MEDIUM_SCORE35
+  changes: Grounded UTEX J Medium components
+  source: https://utex.org/products/j-medium
+  notes: UTEX prepares J Medium as an alkaline freshwater Microcystis recipe at pH
+    8.3-8.5 with two macro-component stocks, a calcium chloride stock, and G9 trace
+    metals.
+- timestamp: '2026-10-10T08:16:36.702755+00:00'
+  curator: codex
+  action: CURATED_UTEX_J_DAS_RECEIVING_MEDIA_EVIDENCE
+  notes: Evidence-backed amount and stock-boundary review; source conflicts remain
+    explicit. No taxa-media association added.
+  source: https://utex.org/products/j-medium
+  changes: '{"claims": [{"action_taken": "Remove unsupported concentration; literal
+    source input retained in notes and evidence.", "basis_snippet": "To approximately
+    950 mL of dH2O", "calculation": "No conversion applied", "decision": "Remove the
+    unsupported 1000 mL/L water assertion. Preserve approximate starting water and
+    makeup instructions; total solution volume is not pure-water volume.", "field":
+    "ingredients[0].concentration", "ingredient": "dH2O", "locator": "Directions /
+    formulation table", "old": {"unit": "ML_PER_L", "value": "1000"}, "old_term":
+    {"id": "CHEBI:15377", "label": "water"}, "proposed": null, "reference": "https://utex.org/products/j-medium",
+    "snippet": "Bring total volume to 1 L with dH2O.", "status": "unsupported"}, {"action_taken":
+    "Attach scoped evidence; numerical concentration unchanged.", "basis_snippet":
+    "Final Concentration", "calculation": "No conversion applied", "decision": "Retain
+    the directly printed rounded final concentration. Keep the separately stated 1
+    mL/L stock delivery and 0.29 g/100 mL dH20 stock description explicit; do not
+    add a second calcium contribution.", "field": "ingredients[1].concentration",
+    "ingredient": "CaCl2 x 2 H2O", "locator": "Formulation table row 3, Final Concentration
+    column", "old": {"unit": "MILLIMOLAR", "value": "0.02"}, "old_term": {"id": "CHEBI:86158",
+    "label": "calcium chloride dihydrate"}, "proposed": {"unit": "MILLIMOLAR", "value":
+    "0.02"}, "reference": "https://utex.org/products/j-medium", "snippet": "0.02 mM",
+    "status": "evidence_only"}, {"action_taken": "Attach scoped evidence; numerical
+    concentration unchanged.", "basis_snippet": "For 1 L Total", "calculation": "No
+    conversion applied", "decision": "Retain the source-explicit stock dose and scope
+    root evidence to this field.", "field": "solutions[0].concentration", "ingredient":
+    "Macro Component 1 for J Medium", "locator": "Formulation table row 1, Amount
+    column", "old": {"unit": "ML_PER_L", "value": "10"}, "old_term": {"id": "kgmicrobe.ingredient:macro_component_1_for_j_medium",
+    "label": "Macro Component 1 for J Medium"}, "proposed": {"unit": "ML_PER_L", "value":
+    "10"}, "reference": "https://utex.org/products/j-medium", "snippet": "10 mL/L",
+    "status": "evidence_only"}, {"action_taken": "Remove unsupported concentration;
+    literal source input retained in notes and evidence.", "basis_snippet": "For 1
+    L Total", "calculation": "No conversion applied", "decision": "Remove the unsupported
+    1000 mL/L water assertion; retain the starting-water and makeup instructions.",
+    "field": "solutions[0].composition[0].concentration", "ingredient": "dH2O", "locator":
+    "Directions / formulation table", "old": {"unit": "ML_PER_L", "value": "1000"},
+    "old_term": {"id": "CHEBI:15377", "label": "water"}, "proposed": null, "reference":
+    "https://utex.org/products/macro-component-1-for-j-medium", "snippet": "Bring
+    the total volume to 1 Liter with dH2O.", "status": "unsupported"}, {"action_taken":
+    "Attach scoped evidence; numerical concentration unchanged.", "basis_snippet":
+    "For 1 L Total", "calculation": "No conversion applied", "decision": "Retain the
+    stock g/L amount; do not promote printed receiving-medium molarities to independently
+    verified calculations.", "field": "solutions[0].composition[1].concentration",
+    "ingredient": "NaNO3", "locator": "Formulation table row 1, Amount column", "old":
+    {"unit": "G_PER_L", "value": "67"}, "old_term": {"id": "CHEBI:63005", "label":
+    "sodium nitrate"}, "proposed": {"unit": "G_PER_L", "value": "67"}, "reference":
+    "https://utex.org/products/macro-component-1-for-j-medium", "snippet": "67 g/L",
+    "status": "evidence_only"}, {"action_taken": "Attach scoped evidence; numerical
+    concentration unchanged.", "basis_snippet": "For 1 L Total", "calculation": "No
+    conversion applied", "decision": "Retain the stock g/L amount; do not promote
+    printed receiving-medium molarities to independently verified calculations.",
+    "field": "solutions[0].composition[2].concentration", "ingredient": "Na2HPO4",
+    "locator": "Formulation table row 2, Amount column", "old": {"unit": "G_PER_L",
+    "value": "0.67"}, "old_term": {"id": "CHEBI:34683", "label": "Na2HPO4"}, "proposed":
+    {"unit": "G_PER_L", "value": "0.67"}, "reference": "https://utex.org/products/macro-component-1-for-j-medium",
+    "snippet": "0.67 g/L", "status": "evidence_only"}, {"action_taken": "Attach scoped
+    evidence; numerical concentration unchanged.", "basis_snippet": "For 1 L Total",
+    "calculation": "No conversion applied", "decision": "Retain the stock g/L amount;
+    do not promote printed receiving-medium molarities to independently verified calculations.",
+    "field": "solutions[0].composition[3].concentration", "ingredient": "K2HPO4",
+    "locator": "Formulation table row 3, Amount column", "old": {"unit": "G_PER_L",
+    "value": "3.8"}, "old_term": {"id": "CHEBI:131527", "label": "dipotassium hydrogen
+    phosphate"}, "proposed": {"unit": "G_PER_L", "value": "3.8"}, "reference": "https://utex.org/products/macro-component-1-for-j-medium",
+    "snippet": "3.8 g/L", "status": "evidence_only"}, {"action_taken": "Attach scoped
+    evidence; numerical concentration unchanged.", "basis_snippet": "For 1 L Total",
+    "calculation": "No conversion applied", "decision": "Retain the stock g/L amount;
+    do not promote printed receiving-medium molarities to independently verified calculations.",
+    "field": "solutions[0].composition[4].concentration", "ingredient": "Tricine",
+    "locator": "Formulation table row 4, Amount column", "old": {"unit": "G_PER_L",
+    "value": "25"}, "old_term": {"id": "CHEBI:46760", "label": "Tricine"}, "proposed":
+    {"unit": "G_PER_L", "value": "25"}, "reference": "https://utex.org/products/macro-component-1-for-j-medium",
+    "snippet": "25 g/L", "status": "evidence_only"}, {"action_taken": "Attach scoped
+    evidence; numerical concentration unchanged.", "basis_snippet": "For 1 L Total",
+    "calculation": "No conversion applied", "decision": "Retain the source-explicit
+    stock dose and scope root evidence to this field.", "field": "solutions[1].concentration",
+    "ingredient": "Macro Component 2 for J medium", "locator": "Formulation table
+    row 2, Amount column", "old": {"unit": "ML_PER_L", "value": "10"}, "old_term":
+    {"id": "kgmicrobe.ingredient:macro_component_2_for_j_medium", "label": "Macro
+    Component 2 for J medium"}, "proposed": {"unit": "ML_PER_L", "value": "10"}, "reference":
+    "https://utex.org/products/j-medium", "snippet": "10 mL/L", "status": "evidence_only"},
+    {"action_taken": "Remove unsupported concentration; literal source input retained
+    in notes and evidence.", "basis_snippet": "For 1 L Total", "calculation": "No
+    conversion applied", "decision": "Remove the unsupported 1000 mL/L water assertion;
+    retain the starting-water and makeup instructions.", "field": "solutions[1].composition[0].concentration",
+    "ingredient": "dH2O", "locator": "Directions / formulation table", "old": {"unit":
+    "ML_PER_L", "value": "1000"}, "old_term": {"id": "CHEBI:15377", "label": "water"},
+    "proposed": null, "reference": "https://utex.org/products/macro-component-2-for-j-medium",
+    "snippet": "Bring the total volume to 1 Liter with dH2O.", "status": "unsupported"},
+    {"action_taken": "Attach scoped evidence; numerical concentration unchanged.",
+    "basis_snippet": "For 1 L Total", "calculation": "No conversion applied", "decision":
+    "Retain the stock g/L amount; do not promote printed receiving-medium molarities
+    to independently verified calculations.", "field": "solutions[1].composition[1].concentration",
+    "ingredient": "Na2EDTA x 2 H2O", "locator": "Formulation table row 1, Amount column",
+    "old": {"unit": "G_PER_L", "value": "4.4"}, "old_term": {"id": "CHEBI:64758",
+    "label": "EDTA disodium salt dihydrate"}, "proposed": {"unit": "G_PER_L", "value":
+    "4.4"}, "reference": "https://utex.org/products/macro-component-2-for-j-medium",
+    "snippet": "4.4 g/L", "status": "evidence_only"}, {"action_taken": "Attach scoped
+    evidence; numerical concentration unchanged.", "basis_snippet": "For 1 L Total",
+    "calculation": "No conversion applied", "decision": "Retain the stock g/L amount;
+    do not promote printed receiving-medium molarities to independently verified calculations.",
+    "field": "solutions[1].composition[2].concentration", "ingredient": "MgSO4 x 7
+    H2O", "locator": "Formulation table row 2, Amount column", "old": {"unit": "G_PER_L",
+    "value": "10"}, "old_term": {"id": "CHEBI:31795", "label": "magnesium sulfate
+    heptahydrate"}, "proposed": {"unit": "G_PER_L", "value": "10"}, "reference": "https://utex.org/products/macro-component-2-for-j-medium",
+    "snippet": "10 g/L", "status": "evidence_only"}, {"action_taken": "Attach scoped
+    evidence; numerical concentration unchanged.", "basis_snippet": "For 1 L Total",
+    "calculation": "No conversion applied", "decision": "Retain the stock g/L amount;
+    do not promote printed receiving-medium molarities to independently verified calculations.",
+    "field": "solutions[1].composition[3].concentration", "ingredient": "MgCl2 x 6
+    H2O", "locator": "Formulation table row 3, Amount column", "old": {"unit": "G_PER_L",
+    "value": "5"}, "old_term": {"id": "CHEBI:86345", "label": "MgCl2 x 6 H2O"}, "proposed":
+    {"unit": "G_PER_L", "value": "5"}, "reference": "https://utex.org/products/macro-component-2-for-j-medium",
+    "snippet": "5 g/L", "status": "evidence_only"}, {"action_taken": "Attach scoped
+    evidence; numerical concentration unchanged.", "basis_snippet": "For 1 L Total",
+    "calculation": "No conversion applied", "decision": "Retain the stock g/L amount;
+    do not promote printed receiving-medium molarities to independently verified calculations.",
+    "field": "solutions[1].composition[4].concentration", "ingredient": "FeCl3 x 6
+    H2O", "locator": "Formulation table row 4, Amount column", "old": {"unit": "G_PER_L",
+    "value": "0.5"}, "old_term": {"id": "CHEBI:86254", "label": "iron trichloride
+    hexahydrate"}, "proposed": {"unit": "G_PER_L", "value": "0.5"}, "reference": "https://utex.org/products/macro-component-2-for-j-medium",
+    "snippet": "0.5 g/L", "status": "evidence_only"}, {"action_taken": "Attach scoped
+    evidence; numerical concentration unchanged.", "basis_snippet": "For 1 L Total",
+    "calculation": "No conversion applied", "decision": "Retain the source-explicit
+    stock dose and scope root evidence to this field.", "field": "solutions[2].concentration",
+    "ingredient": "G9 Trace Metals for J medium", "locator": "Formulation table row
+    4, Amount column", "old": {"unit": "ML_PER_L", "value": "1"}, "old_term": {"id":
+    "kgmicrobe.ingredient:g9_trace_metals_for_j_medium", "label": "G9 Trace Metals
+    for J medium"}, "proposed": {"unit": "ML_PER_L", "value": "1"}, "reference": "https://utex.org/products/j-medium",
+    "snippet": "1 mL/L", "status": "evidence_only"}, {"action_taken": "Remove unsupported
+    concentration; literal source input retained in notes and evidence.", "basis_snippet":
+    "For 1 L Total", "calculation": "No conversion applied", "decision": "Remove the
+    unsupported 1000 mL/L water assertion; retain the starting-water and makeup instructions.",
+    "field": "solutions[2].composition[0].concentration", "ingredient": "dH2O", "locator":
+    "Directions / formulation table", "old": {"unit": "ML_PER_L", "value": "1000"},
+    "old_term": {"id": "CHEBI:15377", "label": "water"}, "proposed": null, "reference":
+    "https://utex.org/products/g9-trace-metals-for-j-medium", "snippet": "Bring total
+    volume to 1 Liter with dH2O.", "status": "unsupported"}, {"action_taken": "Attach
+    scoped evidence; numerical concentration unchanged.", "basis_snippet": "For 1
+    L Total", "calculation": "No conversion applied", "decision": "Retain the stock
+    g/L amount; do not promote printed receiving-medium molarities to independently
+    verified calculations.", "field": "solutions[2].composition[1].concentration",
+    "ingredient": "H3BO3", "locator": "Formulation table row 1, Amount column", "old":
+    {"unit": "G_PER_L", "value": "3.25"}, "old_term": {"id": "CHEBI:33118", "label":
+    "boric acid"}, "proposed": {"unit": "G_PER_L", "value": "3.25"}, "reference":
+    "https://utex.org/products/g9-trace-metals-for-j-medium", "snippet": "3.25 g/L",
+    "status": "evidence_only"}, {"action_taken": "Attach scoped evidence; numerical
+    concentration unchanged.", "basis_snippet": "For 1 L Total", "calculation": "No
+    conversion applied", "decision": "Retain the stock g/L amount; do not promote
+    printed receiving-medium molarities to independently verified calculations.",
+    "field": "solutions[2].composition[2].concentration", "ingredient": "MnSO4 x H2O",
+    "locator": "Formulation table row 2, Amount column", "old": {"unit": "G_PER_L",
+    "value": "1.5"}, "old_term": {"id": "CHEBI:86364", "label": "manganese(II) sulfate
+    monohydrate"}, "proposed": {"unit": "G_PER_L", "value": "1.5"}, "reference": "https://utex.org/products/g9-trace-metals-for-j-medium",
+    "snippet": "1.5 g/L", "status": "evidence_only"}, {"action_taken": "Attach scoped
+    evidence; numerical concentration unchanged.", "basis_snippet": "For 1 L Total",
+    "calculation": "No conversion applied", "decision": "Retain the stock g/L amount;
+    do not promote printed receiving-medium molarities to independently verified calculations.",
+    "field": "solutions[2].composition[3].concentration", "ingredient": "ZnSO4 x 7
+    H2O", "locator": "Formulation table row 3, Amount column", "old": {"unit": "G_PER_L",
+    "value": "0.3"}, "old_term": {"id": "CHEBI:32312", "label": "zinc sulfate heptahydrate"},
+    "proposed": {"unit": "G_PER_L", "value": "0.3"}, "reference": "https://utex.org/products/g9-trace-metals-for-j-medium",
+    "snippet": "0.3 g/L", "status": "evidence_only"}, {"action_taken": "Attach scoped
+    evidence; numerical concentration unchanged.", "basis_snippet": "For 1 L Total",
+    "calculation": "No conversion applied", "decision": "Retain the stock g/L amount;
+    do not promote printed receiving-medium molarities to independently verified calculations.",
+    "field": "solutions[2].composition[4].concentration", "ingredient": "(NH4)6Mo7O24
+    x 4 H2O", "locator": "Formulation table row 4, Amount column", "old": {"unit":
+    "G_PER_L", "value": "0.08"}, "old_term": {"id": "CHEBI:86244", "label": "hexaammonium
+    heptamolybdate tetrahydrate"}, "proposed": {"unit": "G_PER_L", "value": "0.08"},
+    "reference": "https://utex.org/products/g9-trace-metals-for-j-medium", "snippet":
+    "0.08 g/L", "status": "evidence_only"}, {"action_taken": "Attach scoped evidence;
+    numerical concentration unchanged.", "basis_snippet": "For 1 L Total", "calculation":
+    "No conversion applied", "decision": "Retain the stock g/L amount; do not promote
+    printed receiving-medium molarities to independently verified calculations.",
+    "field": "solutions[2].composition[5].concentration", "ingredient": "CuSO4 x 5
+    H2O", "locator": "Formulation table row 5, Amount column", "old": {"unit": "G_PER_L",
+    "value": "0.05"}, "old_term": {"id": "CHEBI:31440", "label": "copper(II) sulfate
+    pentahydrate"}, "proposed": {"unit": "G_PER_L", "value": "0.05"}, "reference":
+    "https://utex.org/products/g9-trace-metals-for-j-medium", "snippet": "0.05 g/L",
+    "status": "evidence_only"}, {"action_taken": "Attach scoped evidence; numerical
+    concentration unchanged.", "basis_snippet": "For 1 L Total", "calculation": "No
+    conversion applied", "decision": "Retain the stock g/L amount; do not promote
+    printed receiving-medium molarities to independently verified calculations.",
+    "field": "solutions[2].composition[6].concentration", "ingredient": "Co(NO3)2
+    x 6 H2O", "locator": "Formulation table row 6, Amount column", "old": {"unit":
+    "G_PER_L", "value": "0.15"}, "old_term": {"id": "CHEBI:86214", "label": "cobalt(II)
+    nitrate hexahydrate"}, "proposed": {"unit": "G_PER_L", "value": "0.15"}, "reference":
+    "https://utex.org/products/g9-trace-metals-for-j-medium", "snippet": "0.15 g/L",
+    "status": "evidence_only"}, {"action_taken": "Attach scoped evidence; numerical
+    concentration unchanged.", "basis_snippet": "For 1 L Total", "calculation": "No
+    conversion applied", "decision": "Retain the stock g/L amount; do not promote
+    printed receiving-medium molarities to independently verified calculations.",
+    "field": "solutions[2].composition[7].concentration", "ingredient": "KI", "locator":
+    "Formulation table row 7, Amount column", "old": {"unit": "G_PER_L", "value":
+    "0.01"}, "old_term": {"id": "CHEBI:8346", "label": "potassium iodide"}, "proposed":
+    {"unit": "G_PER_L", "value": "0.01"}, "reference": "https://utex.org/products/g9-trace-metals-for-j-medium",
+    "snippet": "0.01 g/L", "status": "evidence_only"}], "counts": {"bibliographic_entries_enriched":
+    4, "ingredient_context_notes_corrected": 19, "inline_variant_options_added": 1,
+    "new_curation_history": 1, "new_evidence": 22, "recipe_context_notes_corrected":
+    1, "unsupported_quantity_slots_removed": 4}, "identity_changes": [], "scope":
+    "Every changed amount or removal is linked to an exact source excerpt; identity
+    changes use supplier/ChEBI evidence attached to the corrected ingredients."}'
+references:
+- reference: UTEX:j-medium
+- reference: https://utex.org/products/j-medium
+  title: J Medium | UTEX Culture Collection of Algae
+  notes: 'source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10; Named authors, publication year and DOI not established. '
+- reference: https://utex.org/products/macro-component-1-for-j-medium
+  title: Macro Component 1 for J Medium Recipe | UTEX Culture Collection of Algae
+  notes: 'source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10; Named authors, publication year and DOI not established. '
+- reference: https://utex.org/products/macro-component-2-for-j-medium
+  title: Macro Component 2 for J Medium Recipe | UTEX Culture Collection of Algae
+  notes: 'source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10; Named authors, publication year and DOI not established. '
+- reference: https://utex.org/products/g9-trace-metals-for-j-medium
+  title: G9 Trace Metals for J Medium Recipe | UTEX Culture Collection of Algae
+  notes: 'source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10; Named authors, publication year and DOI not established. '
+original_name: J Medium
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+evidence:
+- reference: https://utex.org/products/j-medium
+  supports: SUPPORT
+  snippet: 10 mL/L
+  explanation: 'Supports solutions[0].concentration for this preparation stage. Retain
+    the source-explicit stock dose and scope root evidence to this field. Separate
+    basis excerpt: ''For 1 L Total''. Locator: Formulation table row 1, Amount column.
+    Calculation: No conversion applied. Separate exact excerpt: ''10 mL/L''. Supports
+    solutions[1].concentration for this preparation stage. Retain the source-explicit
+    stock dose and scope root evidence to this field. Separate basis excerpt: ''For
+    1 L Total''. Locator: Formulation table row 2, Amount column. Calculation: No
+    conversion applied. Separate exact excerpt: ''1 mL/L''. Supports solutions[2].concentration
+    for this preparation stage. Retain the source-explicit stock dose and scope root
+    evidence to this field. Separate basis excerpt: ''For 1 L Total''. Locator: Formulation
+    table row 4, Amount column. Calculation: No conversion applied. Separate exact
+    excerpt: ''Bring total volume to 1 L with dH2O.''. Supports the parent water-basis
+    clarification in notes. The 1 L is final solution volume, not measured pure-water
+    volume.'
+variants:
+- name: J Medium with 1.25% agar
+  relationship: SUPPLEMENTED_VARIANT
+  description: Source-listed agar alternative to the liquid formulation.
+  modifications:
+  - Add 12.5 g agar per 1 L recipe (12.5 g/L; 1.25% w/v) before covering and autoclaving;
+    do not mix at the agar-addition step.
+  purpose: Solid agar formulation
+  evidence:
+  - reference: https://utex.org/products/j-medium
+    supports: SUPPORT
+    snippet: For 1.25% agar medium add 12.5 g of agar into the flask; do not mix.
+    explanation: 'Supports variants[0].modifications only. Separate heading excerpt:
+      "For 1 L Total". Calculation: 12.5 g / 1 L = 12.5 g/L. Do not add agar to the
+      liquid parent. Locator: Directions step 2 bullet, before the cover/autoclave
+      step.'

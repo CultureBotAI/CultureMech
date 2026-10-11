@@ -13,398 +13,31 @@ media_term:
     label: METHANOCOCCOIDES MEDIUM
 notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=986'
 ingredients:
-- preferred_term: KCl
-  term:
-    id: CHEBI:32588
-    label: potassium chloride
+- preferred_term: Trimethylamine hydrochloride
   concentration:
-    value: '0.348039'
+    value: '3'
     unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32588
-    label: potassium chloride
-  notes: Copied from referenced JCM Medium 265
-- preferred_term: MgCl2 x 6 H2O
-  term:
-    id: CHEBI:86345
-    label: magnesium dichloride hexahydrate
-  concentration:
-    value: '3.92157'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86345
-    label: magnesium dichloride hexahydrate
-  notes: Copied from referenced JCM Medium 265
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
-  concentration:
-    value: '6.382350000000001'
-    unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 3.38235, 3.0] | Copied from JCM Medium 265'
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
-- preferred_term: NH4Cl
-  term:
-    id: CHEBI:31206
-    label: ammonium chloride
-  concentration:
-    value: '0.245098'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
-  notes: Copied from referenced JCM Medium 265
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-  concentration:
-    value: '0.237255'
-    unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 0.137255, 0.1] | Copied from JCM Medium 265'
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-- preferred_term: KH2PO4
-  term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
-  concentration:
-    value: '0.137255'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
-  notes: Copied from referenced JCM Medium 265
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  concentration:
-    value: '18.6471'
-    unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 17.6471, 1.0] | Copied from JCM Medium 265'
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
-  concentration:
-    value: '0.00196078'
-    unit: G_PER_L
-  term:
-    id: CHEBI:76181
-    label: ferrous ammonium sulfate hexahydrate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:76181
-    label: ferrous ammonium sulfate hexahydrate
-  notes: Copied from referenced JCM Medium 265
-- preferred_term: NaHCO3
-  term:
-    id: CHEBI:32139
-    label: sodium hydrogencarbonate
-  concentration:
-    value: '4.90196'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32139
-    label: sodium hydrogencarbonate
-  notes: Copied from referenced JCM Medium 265
-- preferred_term: Sodium acetate
-  term:
-    id: CHEBI:32954
-    label: sodium acetate
-  concentration:
-    value: '0.980392'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32954
-    label: sodium acetate
-  notes: Copied from referenced JCM Medium 265
-- preferred_term: Yeast extract
-  concentration:
-    value: '1.96078'
-    unit: G_PER_L
-  notes: Copied from referenced JCM Medium 265
-- preferred_term: Trypticase peptone
-  concentration:
-    value: '1.96078'
-    unit: G_PER_L
-  notes: Copied from referenced JCM Medium 265
-- preferred_term: Resazurin
-  term:
-    id: CHEBI:8806
-    label: Resazurin
-  concentration:
-    value: '0.000980392'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:8806
-    label: Resazurin
-  notes: Copied from referenced JCM Medium 265
-- preferred_term: L-Cysteine HCl x H2O
-  term:
-    id: CHEBI:91248
-    label: L-cysteine hydrochloride hydrate
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:91248
-    label: L-cysteine hydrochloride hydrate
-  notes: Copied from referenced JCM Medium 265
-- preferred_term: Na2S x 9 H2O
-  term:
-    id: CHEBI:76209
-    label: sodium sulfide nonahydrate
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:76209
-    label: sodium sulfide nonahydrate
-  notes: Copied from referenced JCM Medium 265
-- preferred_term: NiCl2 x 6 H2O
-  term:
-    id: CHEBI:34887
-    label: nickel dichloride
-  concentration:
-    value: '0.02'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:34887
-    label: nickel dichloride
-  notes: Copied from referenced JCM Medium 265
-- preferred_term: Na2SeO3
-  term:
-    id: CHEBI:48843
-    label: disodium selenite
-  concentration:
-    value: '0.001'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:48843
-    label: disodium selenite
-  notes: Copied from referenced JCM Medium 265
-- preferred_term: Na2WO4 x 2 H2O
-  term:
-    id: CHEBI:63939
-    label: sodium tungstate dihydrate
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:63939
-    label: sodium tungstate dihydrate
-  notes: Copied from referenced JCM Medium 265
-- preferred_term: Biotin
-  term:
-    id: CHEBI:15956
-    label: biotin
-  concentration:
-    value: '0.002'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15956
-    label: biotin
-  notes: Copied from referenced JCM Medium 265
-- preferred_term: Folic acid
-  term:
-    id: CHEBI:27470
-    label: folic acid
-  concentration:
-    value: '0.002'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:27470
-    label: folic acid
-  notes: Copied from referenced JCM Medium 265
-- preferred_term: Pyridoxine hydrochloride
-  term:
-    id: CHEBI:30961
-    label: pyridoxine hydrochloride
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:30961
-    label: pyridoxine hydrochloride
-  notes: Copied from referenced JCM Medium 265
-- preferred_term: Thiamine HCl
-  term:
-    id: CHEBI:49105
-    label: thiamine hydrochloride
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:49105
-    label: thiamine hydrochloride
-  notes: Copied from referenced JCM Medium 265
-- preferred_term: Riboflavin
-  term:
-    id: CHEBI:17015
-    label: riboflavin
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17015
-    label: riboflavin
-  notes: Copied from referenced JCM Medium 265
-- preferred_term: Nicotinic acid
-  term:
-    id: CHEBI:15940
-    label: nicotinic acid
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15940
-    label: nicotinic acid
-  notes: Copied from referenced JCM Medium 265
-- preferred_term: Calcium pantothenate
-  term:
-    id: CHEBI:31345
-    label: Calcium pantothenate
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31345
-    label: Calcium pantothenate
-  notes: Copied from referenced JCM Medium 265
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:176843
-    label: vitamin B12
-  concentration:
-    value: '0.0001'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:176843
-    label: vitamin B12
-  notes: Copied from referenced JCM Medium 265
-- preferred_term: p-Aminobenzoic acid
-  term:
-    id: CHEBI:30753
-    label: 4-aminobenzoic acid
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:30753
-    label: 4-aminobenzoic acid
-  notes: Copied from referenced JCM Medium 265
-- preferred_term: Lipoic acid
-  term:
-    id: CHEBI:16494
-    label: lipoic acid
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:16494
-    label: lipoic acid
-  notes: Copied from referenced JCM Medium 265
-- preferred_term: Nitrilotriacetic acid
-  term:
-    id: CHEBI:44557
-    label: nitrilotriacetic acid
-  concentration:
-    value: '1.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:44557
-    label: nitrilotriacetic acid
-  notes: Copied from referenced JCM Medium 265
-- preferred_term: MnSO4 x n H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: Copied from referenced JCM Medium 265
-  term:
-    id: CHEBI:86360
-    label: manganese(II) sulfate
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: iron(2+) sulfate heptahydrate
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:75836
-    label: iron(2+) sulfate heptahydrate
-  notes: Copied from referenced JCM Medium 265
-- preferred_term: CoSO4 x 7 H2O
-  term:
-    id: CHEBI:91244
-    label: cobalt(2+) sulfate heptahydrate
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:91244
-    label: cobalt(2+) sulfate heptahydrate
-  notes: Copied from referenced JCM Medium 265
-- preferred_term: ZnSO4 x 7 H2O
-  term:
-    id: CHEBI:32312
-    label: zinc sulfate heptahydrate
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32312
-    label: zinc sulfate heptahydrate
-  notes: Copied from referenced JCM Medium 265
-- preferred_term: CuSO4 x 5 H2O
-  term:
-    id: CHEBI:31440
-    label: copper(II) sulfate pentahydrate
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31440
-    label: copper(II) sulfate pentahydrate
-  notes: Copied from referenced JCM Medium 265
-- preferred_term: AlK(SO4)2
-  term:
-    id: CHEBI:86463
-    label: potassium aluminium sulfate
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86463
-    label: potassium aluminium sulfate
-  notes: Copied from referenced JCM Medium 265
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: boric acid
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:33118
-    label: boric acid
-  notes: Copied from referenced JCM Medium 265
-- preferred_term: Na2MoO4 x 2 H2O
-  term:
-    id: CHEBI:75213
-    label: sodium molybdate dihydrate
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:75213
-    label: sodium molybdate dihydrate
-  notes: Copied from referenced JCM Medium 265
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=986
+    supports: SUPPORT
+    snippet: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    explanation: 'ingredients[0].concentration: The original collection recipe explicitly
+      requires 3.0 g/L trimethylamine hydrochloride. This is the supplement, not a
+      concentration inferred from the base recipe. Recipe-specific source evidence;
+      batch inputs are not final-medium concentrations. No final volume, unspecified
+      percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986
+      recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.'
+  - reference: https://mediadive.dsmz.de/rest/medium/J986
+    supports: SUPPORT
+    snippet: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine x HCl and
+      adjust pH to 7.0 - 7.2. Prepare the medium and cultivate under a N2-CO2 (80:20,
+      v/v) gas mixture.
+    explanation: 'ingredients[0].concentration: The exact MediaDive J986 transcription
+      also specifies the supplement and base reference; it contains no inline recipe
+      to justify the flattened copied quantities. Recipe-specific source evidence;
+      batch inputs are not final-medium concentrations. No final volume, unspecified
+      percentage basis, ontology grounding or growth claim is inferred. Locator=$.data.solutions[0].steps[0].step;
+      accessed=2026-10-08T10:36:45.380176+00:00; capture SHA256=a7011cddd0af6b92dfab2cab6153f2ced351a647a5ccf745135d6c8b4256c4eb.'
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -451,5 +84,260 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-10-08T10:47:19.502771+00:00'
+  curator: codex
+  action: REPAIRED_METHANOGEN_STOCK_DOSES_AND_BASE_REFERENCE_WITH_EVIDENCE
+  notes: Corrected recipe-specific quantities and provenance; preserved stock-strength
+    conflicts and unresolved final-volume/base-composition claims. Existing history,
+    conditions and organism claims unchanged.
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=986
+  changes: 'ingredients[0].concentration -> ingredients[0].concentration -> solutions[0]
+    reference: {''value'': ''0.348039'', ''unit'': ''G_PER_L''} -> None (replace_with_reference);
+    ingredients[1].concentration -> ingredients[1].concentration -> solutions[0] reference:
+    {''value'': ''3.92157'', ''unit'': ''G_PER_L''} -> None (replace_with_reference);
+    ingredients[2].concentration -> ingredients[2].concentration -> solutions[0] reference:
+    {''value'': ''6.382350000000001'', ''unit'': ''G_PER_L''} -> None (replace_with_reference);
+    ingredients[3].concentration -> ingredients[3].concentration -> solutions[0] reference:
+    {''value'': ''0.245098'', ''unit'': ''G_PER_L''} -> None (replace_with_reference);
+    ingredients[4].concentration -> ingredients[4].concentration -> solutions[0] reference:
+    {''value'': ''0.237255'', ''unit'': ''G_PER_L''} -> None (replace_with_reference);
+    ingredients[5].concentration -> ingredients[5].concentration -> solutions[0] reference:
+    {''value'': ''0.137255'', ''unit'': ''G_PER_L''} -> None (replace_with_reference);
+    ingredients[6].concentration -> ingredients[6].concentration -> solutions[0] reference:
+    {''value'': ''18.6471'', ''unit'': ''G_PER_L''} -> None (replace_with_reference);
+    ingredients[7].concentration -> ingredients[7].concentration -> solutions[0] reference:
+    {''value'': ''0.00196078'', ''unit'': ''G_PER_L''} -> None (replace_with_reference);
+    ingredients[8].concentration -> ingredients[8].concentration -> solutions[0] reference:
+    {''value'': ''4.90196'', ''unit'': ''G_PER_L''} -> None (replace_with_reference);
+    ingredients[9].concentration -> ingredients[9].concentration -> solutions[0] reference:
+    {''value'': ''0.980392'', ''unit'': ''G_PER_L''} -> None (replace_with_reference);
+    ingredients[10].concentration -> ingredients[10].concentration -> solutions[0]
+    reference: {''value'': ''1.96078'', ''unit'': ''G_PER_L''} -> None (replace_with_reference);
+    ingredients[11].concentration -> ingredients[11].concentration -> solutions[0]
+    reference: {''value'': ''1.96078'', ''unit'': ''G_PER_L''} -> None (replace_with_reference);
+    ingredients[12].concentration -> ingredients[12].concentration -> solutions[0]
+    reference: {''value'': ''0.000980392'', ''unit'': ''G_PER_L''} -> None (replace_with_reference);
+    ingredients[13].concentration -> ingredients[13].concentration -> solutions[0]
+    reference: {''value'': ''10'', ''unit'': ''G_PER_L''} -> None (replace_with_reference);
+    ingredients[14].concentration -> ingredients[14].concentration -> solutions[0]
+    reference: {''value'': ''10'', ''unit'': ''G_PER_L''} -> None (replace_with_reference);
+    ingredients[15].concentration -> ingredients[15].concentration -> solutions[0]
+    reference: {''value'': ''0.02'', ''unit'': ''G_PER_L''} -> None (replace_with_reference);
+    ingredients[16].concentration -> ingredients[16].concentration -> solutions[0]
+    reference: {''value'': ''0.001'', ''unit'': ''G_PER_L''} -> None (replace_with_reference);
+    ingredients[17].concentration -> ingredients[17].concentration -> solutions[0]
+    reference: {''value'': ''0.01'', ''unit'': ''G_PER_L''} -> None (replace_with_reference);
+    ingredients[18].concentration -> ingredients[18].concentration -> solutions[0]
+    reference: {''value'': ''0.002'', ''unit'': ''G_PER_L''} -> None (replace_with_reference);
+    ingredients[19].concentration -> ingredients[19].concentration -> solutions[0]
+    reference: {''value'': ''0.002'', ''unit'': ''G_PER_L''} -> None (replace_with_reference);
+    ingredients[20].concentration -> ingredients[20].concentration -> solutions[0]
+    reference: {''value'': ''0.01'', ''unit'': ''G_PER_L''} -> None (replace_with_reference);
+    ingredients[21].concentration -> ingredients[21].concentration -> solutions[0]
+    reference: {''value'': ''0.005'', ''unit'': ''G_PER_L''} -> None (replace_with_reference);
+    ingredients[22].concentration -> ingredients[22].concentration -> solutions[0]
+    reference: {''value'': ''0.005'', ''unit'': ''G_PER_L''} -> None (replace_with_reference);
+    ingredients[23].concentration -> ingredients[23].concentration -> solutions[0]
+    reference: {''value'': ''0.005'', ''unit'': ''G_PER_L''} -> None (replace_with_reference);
+    ingredients[24].concentration -> ingredients[24].concentration -> solutions[0]
+    reference: {''value'': ''0.005'', ''unit'': ''G_PER_L''} -> None (replace_with_reference);
+    ingredients[25].concentration -> ingredients[25].concentration -> solutions[0]
+    reference: {''value'': ''0.0001'', ''unit'': ''G_PER_L''} -> None (replace_with_reference);
+    ingredients[26].concentration -> ingredients[26].concentration -> solutions[0]
+    reference: {''value'': ''0.005'', ''unit'': ''G_PER_L''} -> None (replace_with_reference);
+    ingredients[27].concentration -> ingredients[27].concentration -> solutions[0]
+    reference: {''value'': ''0.005'', ''unit'': ''G_PER_L''} -> None (replace_with_reference);
+    ingredients[28].concentration -> ingredients[28].concentration -> solutions[0]
+    reference: {''value'': ''1.5'', ''unit'': ''G_PER_L''} -> None (replace_with_reference);
+    ingredients[29].concentration -> ingredients[29].concentration -> solutions[0]
+    reference: {''value'': ''0.5'', ''unit'': ''G_PER_L''} -> None (replace_with_reference);
+    ingredients[30].concentration -> ingredients[30].concentration -> solutions[0]
+    reference: {''value'': ''0.1'', ''unit'': ''G_PER_L''} -> None (replace_with_reference);
+    ingredients[31].concentration -> ingredients[31].concentration -> solutions[0]
+    reference: {''value'': ''0.1'', ''unit'': ''G_PER_L''} -> None (replace_with_reference);
+    ingredients[32].concentration -> ingredients[32].concentration -> solutions[0]
+    reference: {''value'': ''0.1'', ''unit'': ''G_PER_L''} -> None (replace_with_reference);
+    ingredients[33].concentration -> ingredients[33].concentration -> solutions[0]
+    reference: {''value'': ''0.01'', ''unit'': ''G_PER_L''} -> None (replace_with_reference);
+    ingredients[34].concentration -> ingredients[34].concentration -> solutions[0]
+    reference: {''value'': ''0.01'', ''unit'': ''G_PER_L''} -> None (replace_with_reference);
+    ingredients[35].concentration -> ingredients[35].concentration -> solutions[0]
+    reference: {''value'': ''0.01'', ''unit'': ''G_PER_L''} -> None (replace_with_reference);
+    ingredients[36].concentration -> ingredients[36].concentration -> solutions[0]
+    reference: {''value'': ''0.01'', ''unit'': ''G_PER_L''} -> None (replace_with_reference);
+    None -> solutions[0].concentration: None -> None (not_quantified); None -> solutions[0].culturemech_term:
+    None -> {''id'': ''CultureMech:000295'', ''label'': ''methanogenium_medium''}
+    (add_reference); None -> solutions[0].culturemech_term: None -> {''id'': ''CultureMech:000295'',
+    ''label'': ''methanogenium_medium''} (evidence_only); None -> ingredients[0].concentration:
+    None -> {''value'': ''3'', ''unit'': ''G_PER_L''} (add); None -> ingredients[0].concentration:
+    None -> {''value'': ''3'', ''unit'': ''G_PER_L''} (evidence_only); None -> solutions[0].composition:
+    None -> [] (unsupported)'
 data_quality_flags:
 - resolved_reference
+solutions:
+- preferred_term: METHANOGENIUM MEDIUM (JCM 265)
+  composition: []
+  notes: 'Restore the source''s base-medium reference instead of 37 flattened copied
+    concentrations, which conflate stock stages and include duplicate sums. The base
+    constituents are not excluded from the medium: they remain in the linked base
+    recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric
+    base working dose here; none is inferred from TOGO M1039.'
+  culturemech_term:
+    id: CultureMech:000295
+    label: methanogenium_medium
+evidence:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=986
+  supports: SUPPORT
+  snippet: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+  explanation: |-
+    ingredients[0].concentration -> solutions[0] reference: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    ingredients[1].concentration -> solutions[0] reference: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    ingredients[2].concentration -> solutions[0] reference: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    ingredients[3].concentration -> solutions[0] reference: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    ingredients[4].concentration -> solutions[0] reference: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    ingredients[5].concentration -> solutions[0] reference: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    ingredients[6].concentration -> solutions[0] reference: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    ingredients[7].concentration -> solutions[0] reference: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    ingredients[8].concentration -> solutions[0] reference: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    ingredients[9].concentration -> solutions[0] reference: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    ingredients[10].concentration -> solutions[0] reference: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    ingredients[11].concentration -> solutions[0] reference: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    ingredients[12].concentration -> solutions[0] reference: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    ingredients[13].concentration -> solutions[0] reference: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    ingredients[14].concentration -> solutions[0] reference: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    ingredients[15].concentration -> solutions[0] reference: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    ingredients[16].concentration -> solutions[0] reference: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    ingredients[17].concentration -> solutions[0] reference: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    ingredients[18].concentration -> solutions[0] reference: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    ingredients[19].concentration -> solutions[0] reference: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    ingredients[20].concentration -> solutions[0] reference: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    ingredients[21].concentration -> solutions[0] reference: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    ingredients[22].concentration -> solutions[0] reference: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    ingredients[23].concentration -> solutions[0] reference: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    ingredients[24].concentration -> solutions[0] reference: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    ingredients[25].concentration -> solutions[0] reference: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    ingredients[26].concentration -> solutions[0] reference: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    ingredients[27].concentration -> solutions[0] reference: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    ingredients[28].concentration -> solutions[0] reference: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    ingredients[29].concentration -> solutions[0] reference: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    ingredients[30].concentration -> solutions[0] reference: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    ingredients[31].concentration -> solutions[0] reference: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    ingredients[32].concentration -> solutions[0] reference: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    ingredients[33].concentration -> solutions[0] reference: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    ingredients[34].concentration -> solutions[0] reference: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    ingredients[35].concentration -> solutions[0] reference: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    ingredients[36].concentration -> solutions[0] reference: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    solutions[0].concentration: Restore the source's base-medium reference instead of 37 flattened copied concentrations, which conflate stock stages and include duplicate sums. The base constituents are not excluded from the medium: they remain in the linked base recipe. Its inherited concentrations remain unverified. JCM986 specifies no numeric base working dose here; none is inferred from TOGO M1039. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+
+    Additional exact excerpt: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine·HCl
+    solutions[0].culturemech_term: Reference to JCM265, matched to tracked data/normalized_yaml/archaea/methanogenium_medium.yaml (CultureMech:000295). This establishes base identity, not validation of copied concentrations. Recipe-specific source evidence; batch inputs are not final-medium concentrations. No final volume, unspecified percentage basis, ontology grounding or growth claim is inferred. Locator=JCM986 recipe instruction; accessed=2026-10-08T10:14:04.988010+00:00; capture SHA256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+- reference: https://mediadive.dsmz.de/rest/medium/J265
+  supports: SUPPORT
+  snippet: |-
+    {
+                "id": "J265",
+                "name": "METHANOGENIUM MEDIUM",
+                "complex_medium": "yes",
+                "min_pH": 6.5,
+                "max_pH": 6.5,
+                "source": "JCM",
+                "link": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=265"
+            }
+  explanation: 'solutions[0].culturemech_term: Cross-reference source accession and
+    name verify the linked base recipe identity only. Recipe-specific source evidence;
+    batch inputs are not final-medium concentrations. No final volume, unspecified
+    percentage basis, ontology grounding or growth claim is inferred. Locator=$.data.medium;
+    accessed=2026-10-08T10:36:46.070952+00:00; capture SHA256=78ab9347dfda35bd400a42aafdc47acf8c65fac16abf5000ec7d1eab76129da6.'
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=986
+  title: Medium data
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-08; capture_sha256=1ce8735752e81af2455f3e5d5ff9aee426c9269315859033868024aa800f49e1.
+    Authors and publication year not supplied; page copyright year is not publication
+    metadata.
+- reference: https://mediadive.dsmz.de/rest/medium/J265
+  title: METHANOGENIUM MEDIUM
+  notes: source_type=dataset; discovery_mode=cross_reference; accessed_on=2026-10-08;
+    capture_sha256=78ab9347dfda35bd400a42aafdc47acf8c65fac16abf5000ec7d1eab76129da6.
+    Authors and publication year not supplied; page copyright year is not publication
+    metadata.
+- reference: https://mediadive.dsmz.de/rest/medium/J986
+  title: METHANOCOCCOIDES MEDIUM
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-08;
+    capture_sha256=a7011cddd0af6b92dfab2cab6153f2ced351a647a5ccf745135d6c8b4256c4eb.
+    Authors and publication year not supplied; page copyright year is not publication
+    metadata.

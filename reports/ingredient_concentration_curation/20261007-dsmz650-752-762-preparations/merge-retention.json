@@ -1,0 +1,103 @@
+{
+  "records": 6,
+  "passed": 3,
+  "details": [
+    {
+      "path": "data/normalized_yaml/bacterial/centenum_medium.yaml",
+      "status": "medium_merge_checked",
+      "fingerprint": "7a7a49877038bd37c006d7808e0f4c2d7bcc9c509d01e032edb02c34dd26f5b1",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_650_CENTENUM_medium.yaml",
+        "data/normalized_yaml/bacterial/centenum_medium.yaml",
+        "data/normalized_yaml/bacterial/medium_650_modified_for_dsm_8319.yaml"
+      ],
+      "checks": {
+        "ingredients": false,
+        "solutions": true,
+        "preparation_steps": false,
+        "notes": false,
+        "evidence": false,
+        "references": false,
+        "event": false
+      },
+      "passed": false
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/halomonas_pantelleriense.yaml",
+      "status": "medium_merge_checked",
+      "fingerprint": "be1268e41db03a739a764c3fde1cc6a4d998ab16f9bc176036faa9161ee14903",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_752_HALOMONAS_PANTELLERIENSE.yaml",
+        "data/normalized_yaml/bacterial/halomonas_pantelleriense.yaml"
+      ],
+      "checks": {
+        "ingredients": false,
+        "solutions": false,
+        "preparation_steps": true,
+        "notes": false,
+        "evidence": false,
+        "references": false,
+        "event": false
+      },
+      "passed": false
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/halomonas_desiderata_medium.yaml",
+      "status": "medium_merge_checked",
+      "fingerprint": "c638b1736a3d6b5e916adafa76694c8f1a4ac47bf6838ac5eba94b3329882953",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_762_HALOMONAS_DESIDERATA_MEDIUM.yaml",
+        "data/normalized_yaml/bacterial/halomonas_desiderata_medium.yaml"
+      ],
+      "checks": {
+        "ingredients": false,
+        "solutions": false,
+        "preparation_steps": true,
+        "notes": false,
+        "evidence": false,
+        "references": false,
+        "event": false
+      },
+      "passed": false
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_1378_Main_sol_650.yaml",
+      "status": "standalone_solution_routing_checked",
+      "checks": {
+        "excluded_from_medium_groups": true,
+        "medium_fingerprint_rejected": true
+      },
+      "passed": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_1538_Main_sol_752.yaml",
+      "status": "standalone_solution_routing_checked",
+      "checks": {
+        "excluded_from_medium_groups": true,
+        "medium_fingerprint_rejected": true
+      },
+      "passed": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_1552_Main_sol_762.yaml",
+      "status": "standalone_solution_routing_checked",
+      "checks": {
+        "excluded_from_medium_groups": true,
+        "medium_fingerprint_rejected": true
+      },
+      "passed": true
+    }
+  ],
+  "routing_stats": {
+    "total_processed": 15910,
+    "excluded_solutions": 4785,
+    "skipped_no_fingerprint": 2,
+    "skipped_error": 340,
+    "successfully_fingerprinted": 10783,
+    "reasons": {
+      "other_error": 340,
+      "no_valid_ingredients": 2
+    }
+  },
+  "scope": "Exact medium formulation/provenance retention and correct standalone routing; not proof that members of concentration-independent groups are identical formulations."
+}

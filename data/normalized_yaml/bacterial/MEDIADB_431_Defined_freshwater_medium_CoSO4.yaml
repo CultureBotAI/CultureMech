@@ -101,6 +101,20 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:15361
     label: pyruvate
+  evidence:
+  - reference: doi:10.1007/BF00290916
+    supports: SUPPORT
+    snippet: pyruvate (10)
+    explanation: 'ingredients[9].concentration in MEDIADB:431. Locator: Printed page
+      339, Table 2, Utilized subsection; table heading gives mM. Table 2 directly
+      gives the nominal donor amount 10 mM, equal to the existing 10.0 MILLIMOLAR;
+      no conversion. Table context is poorly crystalline Fe(III) oxide. This amount
+      evidence does not independently certify the pre-existing ionization, supplied
+      salt, stereochemistry or ontology ID. Manual scan transcription; formula subscripts
+      flattened, line wrapping normalized, hydrate dot represented with a middle dot.
+      No automated OCR pass. Inspected 2026-10-09. This does not certify other ingredient
+      quantities, the entire cobalt variant, or organism growth. Earlier database
+      evidence remains historical database support.'
 - preferred_term: Ferric oxide
   concentration:
     value: '100.0'
@@ -117,21 +131,49 @@ ingredients:
     id: CHEBI:31206
     label: ammonium chloride
   concentration:
-    value: '28.04'
-    unit: MILLIMOLAR
+    value: '1.5'
+    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
     label: ammonium chloride
-- preferred_term: Sodium dihydrogen phosphate
+  evidence:
+  - reference: doi:10.1007/BF00290916
+    supports: SUPPORT
+    snippet: NH4Cl 1.5
+    explanation: 'ingredients[12].concentration in MEDIADB:431. Locator: Printed page
+      337, Source of organism and culturing procedures, first complete paragraph.
+      Restore the directly reported 1.5 g/L input under the separate heading ''The
+      medium contained the following (g/l)''. No molecular-weight conversion or new
+      final-volume assumption. The phosphate is explicitly the monohydrate; unchanged
+      salt identities are not broadened. Manual scan transcription; formula subscripts
+      flattened, line wrapping normalized, hydrate dot represented with a middle dot.
+      No automated OCR pass. Inspected 2026-10-09. This does not certify other ingredient
+      quantities, the entire cobalt variant, or organism growth. Earlier database
+      evidence remains historical database support.'
+- preferred_term: Sodium dihydrogen phosphate monohydrate
   concentration:
-    value: '4.348'
-    unit: MILLIMOLAR
+    value: '0.6'
+    unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:37585
-    label: sodium dihydrogenphosphate
+    id: CHEBI:114249
+    label: sodium dihydrogenphosphate monohydrate
   term:
-    id: CHEBI:37585
-    label: sodium dihydrogenphosphate
+    id: CHEBI:114249
+    label: sodium dihydrogenphosphate monohydrate
+  evidence:
+  - reference: doi:10.1007/BF00290916
+    supports: SUPPORT
+    snippet: NaH2PO4 · H2O, 0.6
+    explanation: 'ingredients[13].concentration in MEDIADB:431. Locator: Printed page
+      337, Source of organism and culturing procedures, first complete paragraph.
+      Restore the directly reported 0.6 g/L input under the separate heading ''The
+      medium contained the following (g/l)''. No molecular-weight conversion or new
+      final-volume assumption. The phosphate is explicitly the monohydrate; unchanged
+      salt identities are not broadened. Manual scan transcription; formula subscripts
+      flattened, line wrapping normalized, hydrate dot represented with a middle dot.
+      No automated OCR pass. Inspected 2026-10-09. This does not certify other ingredient
+      quantities, the entire cobalt variant, or organism growth. Earlier database
+      evidence remains historical database support.'
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -201,14 +243,28 @@ ingredients:
     label: Calcium pantothenate
 - preferred_term: Potassium chloride
   concentration:
-    value: '1.341'
-    unit: MILLIMOLAR
+    value: '0.1'
+    unit: G_PER_L
   term:
     id: CHEBI:32588
     label: potassium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
     label: potassium chloride
+  evidence:
+  - reference: doi:10.1007/BF00290916
+    supports: SUPPORT
+    snippet: KCl, 0.1
+    explanation: 'ingredients[21].concentration in MEDIADB:431. Locator: Printed page
+      337, Source of organism and culturing procedures, first complete paragraph.
+      Restore the directly reported 0.1 g/L input under the separate heading ''The
+      medium contained the following (g/l)''. No molecular-weight conversion or new
+      final-volume assumption. The phosphate is explicitly the monohydrate; unchanged
+      salt identities are not broadened. Manual scan transcription; formula subscripts
+      flattened, line wrapping normalized, hydrate dot represented with a middle dot.
+      No automated OCR pass. Inspected 2026-10-09. This does not certify other ingredient
+      quantities, the entire cobalt variant, or organism growth. Earlier database
+      evidence remains historical database support.'
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
@@ -221,14 +277,28 @@ ingredients:
     label: nitrilotriacetic acid
 - preferred_term: Sodium bicarbonate
   concentration:
-    value: '29.76'
-    unit: MILLIMOLAR
+    value: '2.5'
+    unit: G_PER_L
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  evidence:
+  - reference: doi:10.1007/BF00290916
+    supports: SUPPORT
+    snippet: NaHCO3, 2.5
+    explanation: 'ingredients[23].concentration in MEDIADB:431. Locator: Printed page
+      337, Source of organism and culturing procedures, first complete paragraph.
+      Restore the directly reported 2.5 g/L input under the separate heading ''The
+      medium contained the following (g/l)''. No molecular-weight conversion or new
+      final-volume assumption. The phosphate is explicitly the monohydrate; unchanged
+      salt identities are not broadened. Manual scan transcription; formula subscripts
+      flattened, line wrapping normalized, hydrate dot represented with a middle dot.
+      No automated OCR pass. Inspected 2026-10-09. This does not certify other ingredient
+      quantities, the entire cobalt variant, or organism growth. Earlier database
+      evidence remains historical database support.'
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.001627'
@@ -278,8 +348,9 @@ preparation_steps:
   action: ADJUST_PH
   description: Adjust pH if specified in original formulation
 - step_number: 3
-  action: FILTER_STERILIZE
-  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+  action: AUTOCLAVE
+  description: Sterilize the medium by autoclaving; the cited Methods does not specify
+    a temperature or duration.
 curation_history:
 - timestamp: '2026-01-27T07:21:46.574323Z'
   curator: mediadb-import
@@ -334,6 +405,50 @@ curation_history:
   notes: Restored the medium's own name in media_term.term.label, original_name. The
     MediaDB SQL parser truncated every value containing a parenthesis at that parenthesis;
     recovered from media_database.07Oct2015.sql.
+- timestamp: '2026-10-09T22:13:19.143110+00:00'
+  curator: codex
+  action: CURATED_GEOBACTER_PRIMARY_BASAL_INPUTS_AND_DONOR_EVIDENCE
+  notes: Only the stated basal inputs, routine acetate input, acetate salt identity,
+    exact single-valued donor amounts and autoclaving are curated. The full formulations
+    are not certified. The four acetate endpoint quantities remain unsupported. Calcium
+    combines basal and possible trace-stock contributions; acceptor-dependent omissions
+    require stage-specific reconstruction, not wholesale deletion. Trace/vitamin final
+    doses, hydrate mismatches, cobalt-source variants, iron basis, citrate stoichiometry
+    and database-selected range endpoints remain unresolved. No organism-growth assertions,
+    new records, classifications or variant links are changed. Historical database
+    names and evidence are retained as source provenance.
+  source: doi:10.1007/BF00290916
+  changes: '{"ingredient_changes": [{"identity": {"id": "CHEBI:15361", "label": "pyruvate"},
+    "identity_status": "unchanged", "ingredient": "Pyruvate", "old": {"unit": "MILLIMOLAR",
+    "value": "10.0"}, "pointer": ["ingredients", 9, "concentration"], "proposed":
+    {"unit": "MILLIMOLAR", "value": "10.0"}, "proposed_identity": {"id": "CHEBI:15361",
+    "label": "pyruvate"}, "proposed_ingredient": "Pyruvate", "status": "evidence_only"},
+    {"identity": {"id": "CHEBI:31206", "label": "ammonium chloride"}, "identity_status":
+    "unchanged", "ingredient": "Ammonium chloride", "old": {"unit": "MILLIMOLAR",
+    "value": "28.04"}, "pointer": ["ingredients", 12, "concentration"], "proposed":
+    {"unit": "G_PER_L", "value": "1.5"}, "proposed_identity": {"id": "CHEBI:31206",
+    "label": "ammonium chloride"}, "proposed_ingredient": "Ammonium chloride", "status":
+    "correct"}, {"identity": {"id": "CHEBI:37585", "label": "sodium dihydrogenphosphate"},
+    "identity_status": "correct", "ingredient": "Sodium dihydrogen phosphate", "old":
+    {"unit": "MILLIMOLAR", "value": "4.348"}, "pointer": ["ingredients", 13, "concentration"],
+    "proposed": {"unit": "G_PER_L", "value": "0.6"}, "proposed_identity": {"id": "CHEBI:114249",
+    "label": "sodium dihydrogenphosphate monohydrate"}, "proposed_ingredient": "Sodium
+    dihydrogen phosphate monohydrate", "status": "correct"}, {"identity": {"id": "CHEBI:32588",
+    "label": "potassium chloride"}, "identity_status": "unchanged", "ingredient":
+    "Potassium chloride", "old": {"unit": "MILLIMOLAR", "value": "1.341"}, "pointer":
+    ["ingredients", 21, "concentration"], "proposed": {"unit": "G_PER_L", "value":
+    "0.1"}, "proposed_identity": {"id": "CHEBI:32588", "label": "potassium chloride"},
+    "proposed_ingredient": "Potassium chloride", "status": "correct"}, {"identity":
+    {"id": "CHEBI:32139", "label": "sodium hydrogencarbonate"}, "identity_status":
+    "unchanged", "ingredient": "Sodium bicarbonate", "old": {"unit": "MILLIMOLAR",
+    "value": "29.76"}, "pointer": ["ingredients", 23, "concentration"], "proposed":
+    {"unit": "G_PER_L", "value": "2.5"}, "proposed_identity": {"id": "CHEBI:32139",
+    "label": "sodium hydrogencarbonate"}, "proposed_ingredient": "Sodium bicarbonate",
+    "status": "correct"}], "sterilization": {"new": {"action": "AUTOCLAVE", "description":
+    "Sterilize the medium by autoclaving; the cited Methods does not specify a temperature
+    or duration.", "step_number": 3}, "old": {"action": "FILTER_STERILIZE", "description":
+    "Sterilize by filtration (0.22 \u03bcm) to preserve heat-sensitive components",
+    "step_number": 3}}}'
 media_term:
   preferred_term: MediaDB Medium 431
   term:
@@ -345,3 +460,26 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+evidence:
+- reference: doi:10.1007/BF00290916
+  supports: SUPPORT
+  snippet: sterilized by autoclaving.
+  explanation: preparation_steps[2] in MEDIADB:431; Printed page 337, Source of organism
+    and culturing procedures, second complete paragraph. Replace the imported 0.22
+    micrometer filtration instruction by the directly stated autoclaving of the medium.
+    Temperature, duration and pressure are not specified here and are not invented.
+    Manual scan transcription; formula subscripts flattened, line wrapping normalized,
+    hydrate dot represented with a middle dot. No automated OCR pass. This is not
+    a complete preparation or growth review.
+references:
+- reference: doi:10.1007/BF00290916
+  title: Geobacter metallireducens gen. nov. sp. nov., a microorganism capable of
+    coupling the complete oxidation of organic compounds to the reduction of iron
+    and other metals
+  authors: D. R. Lovley; S. J. Giovannoni; D. C. White; J. E. Champine; E. J. P. Phillips;
+    Y. A. Gorby; S. Goodwin
+  year: 1993
+  notes: source_type=journal_article; discovery_mode=cross_reference; accessed_on=2026-10-09;
+    PMID:8387263; inspected scan=https://davidcwhite.org/fulltext/304.pdf; locators=printed
+    pages 337 and 339, Methods and Table 2; pdf_sha256=9f13f636d439e2abe2a247212ad2edabf842e347ebd584be1c2b8f4d35a6223c.
+    Partial ingredient/preparation support, not approval of every database variant.

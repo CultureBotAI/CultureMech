@@ -16,10 +16,193 @@ composition:
     label: sodium carbonate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/447
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "Na2CO3",
+                      "compound_id": 32,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1.5,
+                      "unit": "g",
+                      "g_l": 50,
+                      "mmol_l": 471.752,
+                      "optional": 0
+                  }
+    explanation: |-
+      Concentration evidence for composition[0].concentration (Na2CO3) in MediaDive solution 447; locator=$.data.recipe[0] (compound_id=32). Provider explicitly reports g_l=50. Arithmetic check: 1.5 g * 1 g/g / (30 ml / 1000 ml per L) = 5E+1 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: "volume": 30. Retrieved 2026-10-07T08:23:33.921235+00:00; response SHA256=71abbd8165ac4342ce75f66bb1f96a39aad829e480d23d7d5a57bc1ef6b5b6a8.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "Na2CO3",
+                      "compound_id": 32,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1.5,
+                      "unit": "g",
+                      "g_l": 50,
+                      "mmol_l": 471.752,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 30,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+              ]
+      ingredients: Every exact source row is represented in composition. Remove only the false composition placeholder and its incomplete-composition flag; this is not chemical-identity or measured-volume certification. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe; accessed=2026-10-09T10:04:23.356419+00:00; capture SHA256=71abbd8165ac4342ce75f66bb1f96a39aad829e480d23d7d5a57bc1ef6b5b6a8.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "Na2CO3",
+                      "compound_id": 32,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1.5,
+                      "unit": "g",
+                      "g_l": 50,
+                      "mmol_l": 471.752,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 30,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+              ]
+      data_quality_flags: Every exact source row is represented in composition. Remove only the false composition placeholder and its incomplete-composition flag; this is not chemical-identity or measured-volume certification. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe; accessed=2026-10-09T10:04:23.356419+00:00; capture SHA256=71abbd8165ac4342ce75f66bb1f96a39aad829e480d23d7d5a57bc1ef6b5b6a8.
+
+      Additional exact excerpt: "Solution B"
+      references[0].title: Use the exact source title; preserve accession and retrieval provenance in reference notes. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.name; accessed=2026-10-09T10:04:23.356419+00:00; capture SHA256=71abbd8165ac4342ce75f66bb1f96a39aad829e480d23d7d5a57bc1ef6b5b6a8.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "Na2CO3",
+                      "compound_id": 32,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1.5,
+                      "unit": "g",
+                      "g_l": 50,
+                      "mmol_l": 471.752,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 30,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+              ]
+      notes: Archive the previous formulation nodes in append-only history. The inspected complete source defines this reconstruction, including removal of false LB expansion, placeholders and flattened stock quantities. Prior evidence content is preserved; same-reference explanations may be extended, never replaced. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T10:04:23.356419+00:00; capture SHA256=71abbd8165ac4342ce75f66bb1f96a39aad829e480d23d7d5a57bc1ef6b5b6a8.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "Na2CO3",
+                      "compound_id": 32,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1.5,
+                      "unit": "g",
+                      "g_l": 50,
+                      "mmol_l": 471.752,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 30,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+              ]
+      notes: Archive the previous formulation nodes in append-only history. The inspected complete source defines this reconstruction, including removal of false LB expansion, placeholders and flattened stock quantities. Prior evidence content is preserved; same-reference explanations may be extended, never replaced. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T10:04:23.356419+00:00; capture SHA256=71abbd8165ac4342ce75f66bb1f96a39aad829e480d23d7d5a57bc1ef6b5b6a8.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "Na2CO3",
+                      "compound_id": 32,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1.5,
+                      "unit": "g",
+                      "g_l": 50,
+                      "mmol_l": 471.752,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 30,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+              ]
+      notes: The complete source does not support this old copied ingredient, placeholder or flattened stock amount in the current formulation. Preserve its exact prior value in history. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T10:04:23.356419+00:00; capture SHA256=71abbd8165ac4342ce75f66bb1f96a39aad829e480d23d7d5a57bc1ef6b5b6a8.
 - preferred_term: Distilled water
   concentration:
-    value: '1000.0000000000001'
-    unit: PERCENT_V_V
+    value: '0.03'
+    unit: L
   term:
     id: mediadive.compound:4
     label: Distilled water
@@ -28,6 +211,31 @@ composition:
     label: water
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/447
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 30,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Distilled
+      water) in MediaDive solution 447; locator=$.data.recipe[1] (compound_id=4).
+      Source water addition is 30 ml per prepared batch: 30 / 1000 = 0.03 L. No source
+      preparation step gives a competing make-up instruction. This is a batch dose,
+      not a volume percentage; no final-volume or solvent-density assumption is made.
+      Additional exact excerpt at $.data.volume: "volume": 30. Retrieved 2026-10-07T08:23:33.921235+00:00;
+      response SHA256=71abbd8165ac4342ce75f66bb1f96a39aad829e480d23d7d5a57bc1ef6b5b6a8.'
 preparation_notes: 'Original volume: 30 mL'
 curation_history:
 - timestamp: '2026-03-13T06:20:31.418974Z'
@@ -57,11 +265,172 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 1 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
-ingredients:
-- preferred_term: See source for composition
-  concentration:
-    value: variable
-    unit: VARIABLE
-data_quality_flags:
-- incomplete_composition
+- timestamp: '2026-10-07T08:27:51.574555+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/447
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "50"} -> {"unit":
+    "G_PER_L", "value": "50"} (evidence_only); composition[1].concentration: {"unit":
+    "PERCENT_V_V", "value": "1000.0000000000001"} -> {"unit": "L", "value": "0.03"}
+    (correct)'
+- timestamp: '2026-10-09T11:24:57.076143+00:00'
+  curator: codex
+  action: RESTORED_SYNTHROPHOMONAS_SOURCE_FORMULATIONS_WITH_EVIDENCE
+  notes: Restore source-specific medium212 formulations, stock-stage inputs and literal
+    quantity evidence. Preserve old evidence content and history. Same-reference explanations
+    are append-only; no final-volume, density, percent-basis or growth assertion is
+    inferred.
+  source: https://mediadive.dsmz.de/rest/solution/447
+  changes: '[{"old_field": "composition[0].concentration", "field": "composition[0].concentration",
+    "old": {"value": "50", "unit": "G_PER_L"}, "new": {"value": "50", "unit": "G_PER_L"},
+    "status": "verified", "reference": "https://mediadive.dsmz.de/rest/solution/447",
+    "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\":
+    \"Na2CO3\",\n                \"compound_id\": 32,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1.5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 50,\n                \"mmol_l\": 471.752,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[1].concentration", "field": "composition[1].concentration",
+    "old": {"value": "0.03", "unit": "L"}, "new": {"value": "0.03", "unit": "L"},
+    "status": "verified", "reference": "https://mediadive.dsmz.de/rest/solution/447",
+    "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 30,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": "ingredients", "field": "ingredients", "old":
+    [{"preferred_term": "See source for composition", "concentration": {"value": "variable",
+    "unit": "VARIABLE"}}], "new": null, "status": "remove_unsupported", "reference":
+    "https://mediadive.dsmz.de/rest/solution/447", "snippet": "[\n            {\n                \"recipe_order\":
+    1,\n                \"compound\": \"Na2CO3\",\n                \"compound_id\":
+    32,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1.5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 50,\n                \"mmol_l\": 471.752,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 30,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }\n        ]"}, {"old_field": "data_quality_flags", "field": "data_quality_flags",
+    "old": ["incomplete_composition"], "new": null, "status": "remove_unsupported",
+    "reference": "https://mediadive.dsmz.de/rest/solution/447", "snippet": "[\n            {\n                \"recipe_order\":
+    1,\n                \"compound\": \"Na2CO3\",\n                \"compound_id\":
+    32,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1.5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 50,\n                \"mmol_l\": 471.752,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 30,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }\n        ]"}, {"old_field": "references[0].title", "field": "references[0].title",
+    "old": "MediaDive solution 447: Solution B", "new": "Solution B", "status": "correct",
+    "reference": "https://mediadive.dsmz.de/rest/solution/447", "snippet": "\"Solution
+    B\""}, {"old_field": "ingredients", "field": "notes", "old": [{"preferred_term":
+    "See source for composition", "concentration": {"value": "variable", "unit": "VARIABLE"}}],
+    "new": "Archive the previous formulation nodes in append-only history. The inspected
+    complete source defines this reconstruction, including removal of false LB expansion,
+    placeholders and flattened stock quantities. Prior evidence content is preserved;
+    same-reference explanations may be extended, never replaced.\n\nArchive the previous
+    formulation nodes in append-only history. The inspected complete source defines
+    this reconstruction, including removal of false LB expansion, placeholders and
+    flattened stock quantities. Prior evidence content is preserved; same-reference
+    explanations may be extended, never replaced.", "status": "evidence_only", "reference":
+    "https://mediadive.dsmz.de/rest/solution/447", "snippet": "[\n            {\n                \"recipe_order\":
+    1,\n                \"compound\": \"Na2CO3\",\n                \"compound_id\":
+    32,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1.5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 50,\n                \"mmol_l\": 471.752,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 30,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }\n        ]"}, {"old_field": "composition", "field": "notes",
+    "old": [{"preferred_term": "Na2CO3", "concentration": {"value": "50", "unit":
+    "G_PER_L"}, "term": {"id": "mediadive.compound:32", "label": "Na2CO3"}, "chebi_term":
+    {"id": "CHEBI:29377", "label": "sodium carbonate", "confidence": 1.0, "match_type":
+    "exact_match"}, "evidence": [{"reference": "https://mediadive.dsmz.de/rest/solution/447",
+    "supports": "SUPPORT", "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\":
+    \"Na2CO3\",\n                \"compound_id\": 32,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1.5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 50,\n                \"mmol_l\": 471.752,\n                \"optional\":
+    0\n            }", "explanation": "Concentration evidence for composition[0].concentration
+    (Na2CO3) in MediaDive solution 447; locator=$.data.recipe[0] (compound_id=32).
+    Provider explicitly reports g_l=50. Arithmetic check: 1.5 g * 1 g/g / (30 ml /
+    1000 ml per L) = 5E+1 g/L, consistent with the reported value at its precision.
+    Evidence supports the provider-declared concentration within this solution, not
+    a concentration in a receiving medium or an independently measured final volume.
+    Water addition alone is not used to infer a final volume. Additional exact excerpt
+    at $.data.volume: \"volume\": 30. Retrieved 2026-10-07T08:23:33.921235+00:00;
+    response SHA256=71abbd8165ac4342ce75f66bb1f96a39aad829e480d23d7d5a57bc1ef6b5b6a8."}]},
+    {"preferred_term": "Distilled water", "concentration": {"value": "0.03", "unit":
+    "L"}, "term": {"id": "mediadive.compound:4", "label": "Distilled water"}, "chebi_term":
+    {"id": "CHEBI:15377", "label": "water", "confidence": 0.7, "match_type": "corpus_consensus"},
+    "evidence": [{"reference": "https://mediadive.dsmz.de/rest/solution/447", "supports":
+    "SUPPORT", "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 30,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }", "explanation": "Concentration evidence for composition[1].concentration
+    (Distilled water) in MediaDive solution 447; locator=$.data.recipe[1] (compound_id=4).
+    Source water addition is 30 ml per prepared batch: 30 / 1000 = 0.03 L. No source
+    preparation step gives a competing make-up instruction. This is a batch dose,
+    not a volume percentage; no final-volume or solvent-density assumption is made.
+    Additional exact excerpt at $.data.volume: \"volume\": 30. Retrieved 2026-10-07T08:23:33.921235+00:00;
+    response SHA256=71abbd8165ac4342ce75f66bb1f96a39aad829e480d23d7d5a57bc1ef6b5b6a8."}]}],
+    "new": "Archive the previous formulation nodes in append-only history. The inspected
+    complete source defines this reconstruction, including removal of false LB expansion,
+    placeholders and flattened stock quantities. Prior evidence content is preserved;
+    same-reference explanations may be extended, never replaced.\n\nArchive the previous
+    formulation nodes in append-only history. The inspected complete source defines
+    this reconstruction, including removal of false LB expansion, placeholders and
+    flattened stock quantities. Prior evidence content is preserved; same-reference
+    explanations may be extended, never replaced.", "status": "evidence_only", "reference":
+    "https://mediadive.dsmz.de/rest/solution/447", "snippet": "[\n            {\n                \"recipe_order\":
+    1,\n                \"compound\": \"Na2CO3\",\n                \"compound_id\":
+    32,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1.5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 50,\n                \"mmol_l\": 471.752,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 30,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }\n        ]"}, {"old_field": "ingredients[0].concentration", "field":
+    "notes", "old": {"value": "variable", "unit": "VARIABLE"}, "new": "Archive the
+    previous formulation nodes in append-only history. The inspected complete source
+    defines this reconstruction, including removal of false LB expansion, placeholders
+    and flattened stock quantities. Prior evidence content is preserved; same-reference
+    explanations may be extended, never replaced.\n\nArchive the previous formulation
+    nodes in append-only history. The inspected complete source defines this reconstruction,
+    including removal of false LB expansion, placeholders and flattened stock quantities.
+    Prior evidence content is preserved; same-reference explanations may be extended,
+    never replaced.", "status": "remove_unsupported", "reference": "https://mediadive.dsmz.de/rest/solution/447",
+    "snippet": "[\n            {\n                \"recipe_order\": 1,\n                \"compound\":
+    \"Na2CO3\",\n                \"compound_id\": 32,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1.5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 50,\n                \"mmol_l\": 471.752,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 30,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }\n        ]"}]'
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/447
+  title: Solution B
+  notes: |-
+    source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07; source_organization=DSMZ; locator=$.data; response_sha256=71abbd8165ac4342ce75f66bb1f96a39aad829e480d23d7d5a57bc1ef6b5b6a8; individual authors and publication year not supplied. Provider-declared solution amounts, not receiving-medium concentrations.
+
+    source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-09; capture_sha256=71abbd8165ac4342ce75f66bb1f96a39aad829e480d23d7d5a57bc1ef6b5b6a8. Individual authors and publication year not supplied; copyright/access years are not publication years. Source-scoped formulation evidence, not organism-growth evidence.
+notes: |-
+  Archive the previous formulation nodes in append-only history. The inspected complete source defines this reconstruction, including removal of false LB expansion, placeholders and flattened stock quantities. Prior evidence content is preserved; same-reference explanations may be extended, never replaced.
+
+  Archive the previous formulation nodes in append-only history. The inspected complete source defines this reconstruction, including removal of false LB expansion, placeholders and flattened stock quantities. Prior evidence content is preserved; same-reference explanations may be extended, never replaced.

@@ -1,0 +1,161 @@
+{
+  "created_at": "2026-10-11T02:45:54.462548+00:00",
+  "phase": "apply",
+  "terminal": true,
+  "passed": true,
+  "checks": [],
+  "inventory_before_sha256": "4d4a94316b71e9f878ef000220097820deed8d023f980a3327320cd0fb2244a7",
+  "plan_sha256": "78ad345b1084bd72ad49ae3235a0f8d0aebb2041f52f8f222e0aef8dc2c194ff",
+  "normalized_count": 15910,
+  "publication_ready": false,
+  "all_record_goal_complete": false,
+  "code_sha256": {
+    "scripts/review_utex_volvocacean_bg11.py": "9906dfc785de5f4bdcea433c5fddf385f0f4b686367028d4fb35220bd12f774c",
+    "tests/test_utex_volvocacean_bg11.py": "ba99858747df1592937f10441fd25b730add13d5abe95190da5812541c89bf68"
+  },
+  "source_readback": [
+    {
+      "record": "data/normalized_yaml/algae/Volvocacean_Medium.yaml",
+      "capture_sha256": "6a0e418107e8796a002e43356850232d77df7cde9e005fe73df27511da8f29db",
+      "evidence_entries": 2,
+      "excerpts_checked": [
+        "800 mL",
+        "800 mL",
+        "200 mL",
+        "For 1 L Total",
+        "but do not adjust the pH.",
+        "Cover and autoclave.",
+        "10.0 grams",
+        "10.0 grams",
+        "do not mix.",
+        "Cover and autoclave."
+      ]
+    },
+    {
+      "record": "data/normalized_yaml/algae/bg_11_0_36_nacl_medium.yaml",
+      "capture_sha256": "d61ca5180d12faac0db9e872835da75dc209358ad1ba39e1ef41ea51e8adb825",
+      "evidence_entries": 3,
+      "excerpts_checked": [
+        "through step one.",
+        "through step one.",
+        "3.6 g/L",
+        "15 g",
+        "500 mL",
+        "15 g",
+        "45-50",
+        "Sodium Thiosulfate",
+        "0.062 M",
+        "0.062 M",
+        "3.6 g/L"
+      ]
+    },
+    {
+      "record": "data/normalized_yaml/algae/bg_11_1_nacl_medium.yaml",
+      "capture_sha256": "aad88a80dbabfdfc5ac38395d2aefa37c7a604ce84d5ff3e31329eb2e3a19761",
+      "evidence_entries": 3,
+      "excerpts_checked": [
+        "through step one.",
+        "through step one.",
+        "10 g/L",
+        "15 g",
+        "500 mL",
+        "15 g",
+        "45-50",
+        "Sodium Thiosulfate",
+        "0.17 M",
+        "0.17 M",
+        "10 g/L"
+      ]
+    }
+  ],
+  "application": {
+    "changed": 3,
+    "pending": 0,
+    "already_applied": 0
+  },
+  "readback": {
+    "changed": 0,
+    "pending": 0,
+    "already_applied": 3
+  },
+  "noop": {
+    "changed": 0,
+    "pending": 0,
+    "already_applied": 3
+  },
+  "changed_paths": [
+    "data/normalized_yaml/algae/Volvocacean_Medium.yaml",
+    "data/normalized_yaml/algae/bg_11_0_36_nacl_medium.yaml",
+    "data/normalized_yaml/algae/bg_11_1_nacl_medium.yaml"
+  ],
+  "source_readback_applied": [
+    {
+      "record": "data/normalized_yaml/algae/Volvocacean_Medium.yaml",
+      "capture_sha256": "6a0e418107e8796a002e43356850232d77df7cde9e005fe73df27511da8f29db",
+      "evidence_entries": 2,
+      "excerpts_checked": [
+        "800 mL",
+        "800 mL",
+        "200 mL",
+        "For 1 L Total",
+        "but do not adjust the pH.",
+        "Cover and autoclave.",
+        "10.0 grams",
+        "10.0 grams",
+        "do not mix.",
+        "Cover and autoclave."
+      ]
+    },
+    {
+      "record": "data/normalized_yaml/algae/bg_11_0_36_nacl_medium.yaml",
+      "capture_sha256": "d61ca5180d12faac0db9e872835da75dc209358ad1ba39e1ef41ea51e8adb825",
+      "evidence_entries": 3,
+      "excerpts_checked": [
+        "through step one.",
+        "through step one.",
+        "3.6 g/L",
+        "15 g",
+        "500 mL",
+        "15 g",
+        "45-50",
+        "Sodium Thiosulfate",
+        "0.062 M",
+        "0.062 M",
+        "3.6 g/L"
+      ]
+    },
+    {
+      "record": "data/normalized_yaml/algae/bg_11_1_nacl_medium.yaml",
+      "capture_sha256": "aad88a80dbabfdfc5ac38395d2aefa37c7a604ce84d5ff3e31329eb2e3a19761",
+      "evidence_entries": 3,
+      "excerpts_checked": [
+        "through step one.",
+        "through step one.",
+        "10 g/L",
+        "15 g",
+        "500 mL",
+        "15 g",
+        "45-50",
+        "Sodium Thiosulfate",
+        "0.17 M",
+        "0.17 M",
+        "10 g/L"
+      ]
+    }
+  ],
+  "counts": {
+    "stock_context_notes_corrected": 3,
+    "recipe_context_notes_corrected": 1,
+    "parent_context_notes_corrected": 3,
+    "variant_descriptions_corrected": 3,
+    "preparation_sequences_corrected": 1,
+    "new_evidence": 8,
+    "optional_variants_added": 3,
+    "bibliographic_entries_enriched": 3,
+    "new_curation_history": 3,
+    "ingredient_context_notes_corrected": 2,
+    "unsupported_quantity_slots_removed": 2,
+    "source_conflict_notes_added": 1
+  },
+  "inventory_after_sha256": "57b71b6a9f0cc0bc43a000a7080ee34347368057149d1d732366c997b539c5cc"
+}

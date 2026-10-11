@@ -1,0 +1,178 @@
+{
+  "terminal": true,
+  "media_records_checked": 2,
+  "failed_records": 0,
+  "details": [
+    {
+      "path": "data/normalized_yaml/archaea/TOGO_M1001_Neutral_Oligotrophic_Haloarchaeal_Medium_NO.3.yaml",
+      "fingerprint": "3cbbc541891c617b64cd2436f57d642425d9cf22b0a2d9b04b8a100ff671ea7e",
+      "group_paths": [
+        "data/normalized_yaml/archaea/TOGO_M1001_Neutral_Oligotrophic_Haloarchaeal_Medium_NO.3.yaml"
+      ],
+      "nodes": [
+        {
+          "field": "ingredients",
+          "name": "Distilled water",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "Yeast extract",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "Sodium acetate",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "Sodium pyruvate",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "Sodium lactate",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "Fish peptone (Fluka)",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "Sodium formate",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "solutions",
+          "name": "MDS salt water (see Medium [M578])",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "solutions",
+          "name": "1 M NH4Cl solution*",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "solutions",
+          "name": "Potassium phosphate buffer (see Medium [M578])",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        }
+      ],
+      "root_evidence_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/archaea/TOGO_M1002_Neutral_Oligotrophic_Haloarchaeal_Medium_NO.3.yaml",
+      "fingerprint": "9992e33573d1631c2e3dd4e7f74552c00fcd4d12a8aa1d67a2bda1dcf41d3543",
+      "group_paths": [
+        "data/normalized_yaml/archaea/TOGO_M1002_Neutral_Oligotrophic_Haloarchaeal_Medium_NO.3.yaml"
+      ],
+      "nodes": [
+        {
+          "field": "ingredients",
+          "name": "Distilled water",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "Yeast extract",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "Sodium acetate",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "Sodium pyruvate",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "Sodium lactate",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "Fish peptone (Fluka)",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "agar",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "ingredients",
+          "name": "Sodium formate",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "solutions",
+          "name": "MDS salt water (see Medium [M578])",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "solutions",
+          "name": "1 M NH4Cl solution*",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        },
+        {
+          "field": "solutions",
+          "name": "Potassium phosphate buffer (see Medium [M578])",
+          "exact_entry_retained": true,
+          "quantity_retained": true,
+          "composition_retained": true
+        }
+      ],
+      "root_evidence_retained": true,
+      "references_retained": true,
+      "event_retained": true
+    }
+  ]
+}

@@ -16,6 +16,33 @@ composition:
     label: glucose
     confidence: 0.9
     match_type: manual_curated
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3777
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "Glucose",
+                      "compound_id": 5,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 248,
+                      "unit": "mg",
+                      "g_l": 0.244576,
+                      "mmol_l": 1.35755,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Glucose)
+      in MediaDive solution 3777; locator=$.data.recipe[0] (compound_id=5). Provider
+      explicitly reports g_l=0.244576. Arithmetic check: 248 mg * 0.001 g/mg / (1014
+      ml / 1000 ml per L) = 0.2445759368836291913214990138 g/L, consistent with the
+      reported value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1014. Retrieved 2026-10-07T09:24:55.639081+00:00;
+      response SHA256=0bd8258ecc63345fcaa68d7a34d754bea9f0c344bc9e9a3dc796bedcedec3c44.'
 - preferred_term: Cellobiose
   concentration:
     value: '0.244576'
@@ -28,6 +55,33 @@ composition:
     label: cellobiose
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3777
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Cellobiose",
+                      "compound_id": 214,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 248,
+                      "unit": "mg",
+                      "g_l": 0.244576,
+                      "mmol_l": 0.714508,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Cellobiose)
+      in MediaDive solution 3777; locator=$.data.recipe[1] (compound_id=214). Provider
+      explicitly reports g_l=0.244576. Arithmetic check: 248 mg * 0.001 g/mg / (1014
+      ml / 1000 ml per L) = 0.2445759368836291913214990138 g/L, consistent with the
+      reported value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1014. Retrieved 2026-10-07T09:24:55.639081+00:00;
+      response SHA256=0bd8258ecc63345fcaa68d7a34d754bea9f0c344bc9e9a3dc796bedcedec3c44.'
 - preferred_term: Starch
   concentration:
     value: '0.493097'
@@ -52,6 +106,33 @@ composition:
     label: ammonium sulfate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3777
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "(NH4)2SO4",
+                      "compound_id": 27,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "g",
+                      "g_l": 0.986193,
+                      "mmol_l": 7.46325,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[3].concentration ((NH4)2SO4)
+      in MediaDive solution 3777; locator=$.data.recipe[3] (compound_id=27). Provider
+      explicitly reports g_l=0.986193. Arithmetic check: 1 g * 1 g/g / (1014 ml /
+      1000 ml per L) = 0.9861932938856015779092702170 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1014. Retrieved 2026-10-07T09:24:55.639081+00:00;
+      response SHA256=0bd8258ecc63345fcaa68d7a34d754bea9f0c344bc9e9a3dc796bedcedec3c44.'
 - preferred_term: Resazurin
   concentration:
     value: '3.9447731755424065'
@@ -66,8 +147,8 @@ composition:
     match_type: exact_match
 - preferred_term: Distilled water
   concentration:
-    value: '197.23865877712032'
-    unit: PERCENT_V_V
+    value: '0.2'
+    unit: L
   term:
     id: mediadive.compound:4
     label: Distilled water
@@ -76,6 +157,31 @@ composition:
     label: water
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3777
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 6,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 200,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[5].concentration (Distilled
+      water) in MediaDive solution 3777; locator=$.data.recipe[5] (compound_id=4).
+      Source water addition is 200 ml per prepared batch: 200 / 1000 = 0.2 L. No source
+      preparation step gives a competing make-up instruction. This is a batch dose,
+      not a volume percentage; no final-volume or solvent-density assumption is made.
+      Additional exact excerpt at $.data.volume: "volume": 1014. Retrieved 2026-10-07T09:24:55.639081+00:00;
+      response SHA256=0bd8258ecc63345fcaa68d7a34d754bea9f0c344bc9e9a3dc796bedcedec3c44.'
 - preferred_term: Rumen fluid
   concentration:
     value: '295.85798816568047'
@@ -95,6 +201,33 @@ composition:
     label: L-cysteine hydrochloride hydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3777
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 9,
+                      "compound": "L-Cysteine HCl x H2O",
+                      "compound_id": 770,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.5,
+                      "unit": "g",
+                      "g_l": 0.493097,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[7].concentration (L-Cysteine
+      HCl x H2O) in MediaDive solution 3777; locator=$.data.recipe[8] (compound_id=770).
+      Provider explicitly reports g_l=0.493097. Arithmetic check: 0.5 g * 1 g/g /
+      (1014 ml / 1000 ml per L) = 0.4930966469428007889546351085 g/L, consistent with
+      the reported value at its precision. Evidence supports the provider-declared
+      concentration within this solution, not a concentration in a receiving medium
+      or an independently measured final volume. Water addition alone is not used
+      to infer a final volume. Additional exact excerpt at $.data.volume: "volume":
+      1014. Retrieved 2026-10-07T09:24:55.639081+00:00; response SHA256=0bd8258ecc63345fcaa68d7a34d754bea9f0c344bc9e9a3dc796bedcedec3c44.'
 - preferred_term: Hemin
   concentration:
     value: '9.861932938856016'
@@ -170,6 +303,21 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T09:30:59.704035+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/3777
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "0.244576"}
+    -> {"unit": "G_PER_L", "value": "0.244576"} (evidence_only); composition[1].concentration:
+    {"unit": "G_PER_L", "value": "0.244576"} -> {"unit": "G_PER_L", "value": "0.244576"}
+    (evidence_only); composition[3].concentration: {"unit": "G_PER_L", "value": "0.986193"}
+    -> {"unit": "G_PER_L", "value": "0.986193"} (evidence_only); composition[5].concentration:
+    {"unit": "PERCENT_V_V", "value": "197.23865877712032"} -> {"unit": "L", "value":
+    "0.2"} (correct); composition[7].concentration: {"unit": "G_PER_L", "value": "0.493097"}
+    -> {"unit": "G_PER_L", "value": "0.493097"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -178,3 +326,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/3777
+  title: 'MediaDive solution 3777: Main sol. J134'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=0bd8258ecc63345fcaa68d7a34d754bea9f0c344bc9e9a3dc796bedcedec3c44;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

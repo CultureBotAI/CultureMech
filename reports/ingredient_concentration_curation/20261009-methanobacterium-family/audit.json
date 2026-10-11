@@ -1,0 +1,182 @@
+{
+  "terminal": true,
+  "phase": "audit",
+  "state": "Preview only; no normalized YAML applied",
+  "checks": [],
+  "code_sha256": {
+    "scripts/repair_methanobacterium_family.py": "87a3dec56047f5aeaa394a7c65788ee86c297ab086d142c0597e82983ac1f90f",
+    "tests/test_methanobacterium_family.py": "b402ee4ba9088302faa60da467b2ed06bcab302601174722a33f66436267382e",
+    "reports/ingredient_concentration_curation/20261009-methanobacterium-family/audit.py": "31c3125ed89f27f37c516b13d71636fa3b5ac9ce4ee50820ab0f130e10c0c383"
+  },
+  "plan_sha256": "302bb7c856b8b4b885a35de19edcadc32efc77b115ea3fe23630c288503a775d",
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "27d92206953ca936698bfef2073b2c6ca5564b860007d866d29e6f941c3d1419"
+  },
+  "records": {
+    "K119": {
+      "source_nodes": 32,
+      "old_quantity_slots": 34,
+      "claims": 164,
+      "new_evidence": 50,
+      "new_references": 17,
+      "new_curation_history": 1
+    },
+    "D119b": {
+      "source_nodes": 44,
+      "old_quantity_slots": 34,
+      "claims": 212,
+      "new_evidence": 77,
+      "new_references": 3,
+      "new_curation_history": 1
+    },
+    "K119.1": {
+      "source_nodes": 43,
+      "old_quantity_slots": 34,
+      "claims": 195,
+      "new_evidence": 46,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_11975": {
+      "source_nodes": 32,
+      "old_quantity_slots": 34,
+      "claims": 147,
+      "new_evidence": 35,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_11977": {
+      "source_nodes": 32,
+      "old_quantity_slots": 34,
+      "claims": 148,
+      "new_evidence": 35,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_11978": {
+      "source_nodes": 32,
+      "old_quantity_slots": 34,
+      "claims": 148,
+      "new_evidence": 35,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_11979": {
+      "source_nodes": 32,
+      "old_quantity_slots": 34,
+      "claims": 147,
+      "new_evidence": 35,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_11995": {
+      "source_nodes": 32,
+      "old_quantity_slots": 34,
+      "claims": 148,
+      "new_evidence": 35,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_1224": {
+      "source_nodes": 32,
+      "old_quantity_slots": 34,
+      "claims": 147,
+      "new_evidence": 35,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_15163": {
+      "source_nodes": 32,
+      "old_quantity_slots": 34,
+      "claims": 148,
+      "new_evidence": 35,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_3468": {
+      "source_nodes": 34,
+      "old_quantity_slots": 34,
+      "claims": 154,
+      "new_evidence": 37,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_4855": {
+      "source_nodes": 34,
+      "old_quantity_slots": 34,
+      "claims": 155,
+      "new_evidence": 37,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_6216": {
+      "source_nodes": 32,
+      "old_quantity_slots": 34,
+      "claims": 148,
+      "new_evidence": 35,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_7057": {
+      "source_nodes": 33,
+      "old_quantity_slots": 34,
+      "claims": 152,
+      "new_evidence": 36,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_7256": {
+      "source_nodes": 33,
+      "old_quantity_slots": 34,
+      "claims": 151,
+      "new_evidence": 36,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "K119_9575": {
+      "source_nodes": 32,
+      "old_quantity_slots": 34,
+      "claims": 148,
+      "new_evidence": 35,
+      "new_references": 2,
+      "new_curation_history": 1
+    },
+    "D119": {
+      "source_nodes": 37,
+      "old_quantity_slots": 30,
+      "claims": 239,
+      "new_evidence": 84,
+      "new_references": 4,
+      "new_curation_history": 1
+    },
+    "D119c": {
+      "source_nodes": 37,
+      "old_quantity_slots": 30,
+      "claims": 176,
+      "new_evidence": 67,
+      "new_references": 3,
+      "new_curation_history": 1
+    },
+    "D119a": {
+      "source_nodes": 35,
+      "old_quantity_slots": 29,
+      "claims": 168,
+      "new_evidence": 62,
+      "new_references": 2,
+      "new_curation_history": 1
+    }
+  },
+  "totals": {
+    "source_nodes": 650,
+    "old_quantity_slots": 633,
+    "claims": 3095,
+    "new_evidence": 847,
+    "new_references": 57,
+    "new_curation_history": 19
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "27d92206953ca936698bfef2073b2c6ca5564b860007d866d29e6f941c3d1419"
+  }
+}

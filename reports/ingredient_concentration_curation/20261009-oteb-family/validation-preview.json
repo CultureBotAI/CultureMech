@@ -1,0 +1,144 @@
+{
+  "terminal": true,
+  "state": "Validated six-record preview; no normalized YAML applied",
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "application_pending": true,
+  "records": 6,
+  "normalized_count": 15910,
+  "normalized_sha256": "48c3b9d310293ee12ee7655e555076f7787b0d9f52a88ff0a2f9d27ab98710b9",
+  "normalized_unchanged": true,
+  "proposal_audit": {
+    "source_nodes": 127,
+    "old_quantity_slots": 115,
+    "claims": 449,
+    "new_evidence": 154,
+    "new_references": 9,
+    "new_curation_history": 6
+  },
+  "focused_tests": "495 passed, 2 warnings in 97.62s (0:01:37)",
+  "reference_checks": {
+    "total": 180,
+    "passed": 180
+  },
+  "reference_mode": "Offline hash-checked official captures; not a fresh live refresh",
+  "baseline_schema_commands": 12,
+  "preview_schema_commands": 12,
+  "prior_supported_evidence_entries_preserved": 15,
+  "prior_history_text_spans_preserved": 45,
+  "unchanged_metadata_text_spans_preserved": 48,
+  "source_rows_reviewed": 126,
+  "original_pdf_rows_reviewed": 30,
+  "taxa_media_associations_added": 0,
+  "context_sha256": "8f4e87e29247c1a0dfea3ce78ff0283c3456f1fbf7fd5b3bd3343eff06b0b52c",
+  "plan_sha256": "d5e5b76a6b77434f3c0b79cf2502b3de47ad5eb70305e57430348154c83c4d8e",
+  "receipt_sha256": {
+    "focused": "6e011a616fa569e8c75b2b3455ed839fa415f58d460646d5ecbbeccdb860d32b",
+    "cached": "28e2e1c8cfc7779a763b09c26477f9108270bae4dd576743c5dfb1ed91583842",
+    "audit": "489a26d1f8d063bb1f1d26e67a3428996a5f3ec0aba454cd72cd2b25f7035f43",
+    "presentation": "8de2262adc391be95db4faa442aa387cddbcc0ea03ab1a2e6ae5c70f2cb2ae63",
+    "ledgers": "54a55987e1348a892080a77b360c4f6c25b323448a6e65c759ddfb5c3ea80fc2",
+    "schema-preview": "0b6cdd9100ac8f9be2085aa71d2a4f2cafd6e85c96aab92ca5990eedb6aa2973",
+    "source-review": "ffdafa2dd3e9e1a939259b24fcce9f1335d16504b08ca797dcb3a8636b28a498"
+  },
+  "code_sha256": {
+    "scripts/repair_oteb_family.py": "90aa83324ff1b28708921a00c409f50b4c4bd12eb15f09ae8feb0e1010916795",
+    "tests/test_oteb_family.py": "2a4fbe1915636b839c6614a2dd0ebce789d58bdc4afbad294256e883db6abf6a",
+    "reports/ingredient_concentration_curation/20261009-oteb-family/audit.py": "72d7eabc0cc2905965cd413ef250a97b379e3e487c4aaaeb7277f83458d639f8",
+    "scripts/repair_methanogen_stock_boundaries.py": "8d4d32c7dc3cb2586242a188f958087482df3aff553d1dbc468c422eddb037ba",
+    "scripts/repair_lactalbumin_formulations.py": "3c16a3f4a2e543d280d3ccbb20a63138f2b409602d8b168b7fc742abe63b1769",
+    "scripts/repair_jcm_stock_preparations.py": "7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a",
+    "scripts/review_solution_concentration_evidence.py": "40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a",
+    "scripts/review_medium_concentration_evidence.py": "ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a",
+    "scripts/validate_recipe_references.py": "087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b",
+    "src/culturemech/validation/write_validated.py": "8e1e2185231caecbe3dc99908c783cd83340b1e93fa9115ff1445d4b3820897e",
+    "src/culturemech/validation/recipe_references.py": "1ef57389727347c242f45a85a9ed8908803423bc10307f53a888dac67ce06b67",
+    "src/culturemech/curate/curation_event.py": "e8aa053ba6dd06485b29ca5da640f91ef96513feff18492a72adc12f40130024",
+    "src/culturemech/schema/culturemech.yaml": "461478d900fdee29a52c3d14656bcf369443bfdd0f4a534aa9d385f25df1cf8a",
+    "src/culturemech/merge/formulation.py": "985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab",
+    "src/culturemech/merge/merger.py": "b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6",
+    "src/culturemech/merge/matcher.py": "5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885",
+    "src/culturemech/merge/fingerprint.py": "9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e"
+  },
+  "document_checks": [
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-oteb-family/README.md",
+      "sha256": "edf4c140369298f8072d1d0e7925d9e9bbf608acf3b63b273241406aa85310e7",
+      "whitespace_passed": true
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-oteb-family/adversarial-review.md",
+      "sha256": "7e529be3af89687a6e3be71d483f74a8be0383263c2769f8f3b069e3ac3aee45",
+      "whitespace_passed": true
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-oteb-family/issue-source-conflicts.md",
+      "sha256": "ad2f6342ad88ec7b9c51a3dca4ad8ca7a01210f6106c753fe7aae235c2fdb0ee",
+      "whitespace_passed": true
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-oteb-family/next-work.md",
+      "sha256": "e5cce9062c8637331277ff57474318ff9758f2f4448df969a5791da3e7f634c4",
+      "whitespace_passed": true
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-oteb-family/records/D1245.md",
+      "sha256": "17d91f5cbcfae01e8430255ab703033c28d015c126ad775d3641d29322348cb0",
+      "whitespace_passed": true
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-oteb-family/records/K1245.md",
+      "sha256": "f31b8a7b68c44308487c035b8381a41d2168fc9d2949b9f3ece3bbd691e20f63",
+      "whitespace_passed": true
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-oteb-family/records/K1245_18691.md",
+      "sha256": "d9df2f715700a7fb77610ca3555540a335d10da019313cf4937297621f00cb82",
+      "whitespace_passed": true
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-oteb-family/records/K6000.md",
+      "sha256": "b7446e959ba5849c91dcb65addb7ae0931c885ee7a28676d4d614f57dcf7128b",
+      "whitespace_passed": true
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-oteb-family/records/S2474.md",
+      "sha256": "c46f197ffb7a41561b22497950bae10afc5eb3664b35edb2544c0e6ce99426d3",
+      "whitespace_passed": true
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-oteb-family/records/S5688.md",
+      "sha256": "f2183c6fe6564e0bcbdcdb029537caf5c3ff8c358ef868b163942f2dc757a7f7",
+      "whitespace_passed": true
+    }
+  ],
+  "canonical_reports": {
+    "data/normalized_yaml/bacterial/medium_1245_modified_for_dsm_18691.yaml": {
+      "path": "reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/medium_1245_modified_for_dsm_18691.yaml.md",
+      "sha256": "6734af75ceda40b3d009082685331013e9083836b645fe35a84ef68acf6c6bc3"
+    },
+    "data/normalized_yaml/bacterial/mediadive_5688_Sugar_Stock_Solution.yaml": {
+      "path": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-4000-4500/records/bacterial/mediadive_5688_Sugar_Stock_Solution.yaml.md",
+      "sha256": "bfca739b290e61fab194de914afe9758e2e68f27436ded52ff825ce03af8b25c"
+    },
+    "data/normalized_yaml/bacterial/oteb_medium.yaml": {
+      "path": "reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/oteb_medium.yaml.md",
+      "sha256": "c294172d6aa83fdb3d812c12239311940a95a67804f995d65f9b61c49bf2a3b1"
+    },
+    "data/normalized_yaml/bacterial/sugar_stock_solution_medium_1245.yaml": {
+      "path": "reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/sugar_stock_solution_medium_1245.yaml.md",
+      "sha256": "4e09915568a8354f4d96820e45b144651eb3c20cc3651c6721bdfee2229c5825"
+    },
+    "data/normalized_yaml/bacterial/KOMODO_1245_OTEB-MEDIUM.yaml": {
+      "path": "reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/KOMODO_1245_OTEB-MEDIUM.yaml.md",
+      "sha256": "793c06f827641e4749dac6612f3bf8bcba30923aef8039f33319135f9c115ee1"
+    },
+    "data/normalized_yaml/bacterial/mediadive_2474_Main_sol_1245.yaml": {
+      "path": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-1500-2000/records/bacterial/mediadive_2474_Main_sol_1245.yaml.md",
+      "sha256": "2c7a9faa408bc29761866bfeb19c293ba475097bb016694b7526ddc9f9cb3742"
+    }
+  },
+  "publication": "No commit, push, public issue, PR, merge or branch cleanup",
+  "runtime": "Existing partial locked Python3.13 environment; not clean CI or full-suite certification",
+  "remaining": "Complete the medium-829 pinned checkpoint before guarded application, then actual readback/no-op, record/corpus/merge gates, index regeneration, inverse-audit registration and report reconciliation. Continue the full all-record objective."
+}

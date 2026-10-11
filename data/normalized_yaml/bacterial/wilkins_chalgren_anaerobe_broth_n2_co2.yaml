@@ -34,6 +34,29 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000223
     label: L-Cysteine HCl
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/339a
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 3,
+                              "compound": "L-Cysteine HCl",
+                              "compound_id": 1157,
+                              "amount": 0.3,
+                              "unit": "g",
+                              "g_l": 0.3,
+                              "mmol_l": 1.90331,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[2].concentration (L-Cysteine
+      HCl) in MediaDive medium 339a; locator=$.data.solutions[0].recipe[2]. Provider
+      explicitly reports g_l=0.3; check: 0.3 g * 1 g/g / (1000 ml / 1000 ml per L)
+      = 0.3 g/L. This supports the provider-declared main-recipe concentration, not
+      an independently measured final volume, a stock composition, or a downstream
+      assay dilution. Water alone does not establish final volume. Exact source ingredient
+      labels/forms are matched; secondary ontology mappings are not validated by this
+      evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved
+      2026-10-07T10:45:39.655047+00:00; response SHA256=a2add9a217b1b1ca4021dd81841296928e2de6ce8f029c56e929e08b2d6ded78.'
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
@@ -44,6 +67,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:17634
     label: D-glucose
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/339a
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 4,
+                              "compound": "D-Glucose",
+                              "compound_id": 211,
+                              "amount": 5,
+                              "unit": "g",
+                              "g_l": 5,
+                              "mmol_l": 27.7531,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[3].concentration (D-Glucose)
+      in MediaDive medium 339a; locator=$.data.solutions[0].recipe[3]. Provider explicitly
+      reports g_l=5; check: 5 g * 1 g/g / (1000 ml / 1000 ml per L) = 5 g/L. This
+      supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:45:39.655047+00:00;
+      response SHA256=a2add9a217b1b1ca4021dd81841296928e2de6ce8f029c56e929e08b2d6ded78.'
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -100,3 +146,22 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-10-07T10:55:41.454416+00:00'
+  curator: codex
+  action: CURATED_MEDIUM_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Exact medium/source membership, ingredient inventory/forms, physical-state
+    conditions, literal snippets, and arithmetic checked. Stock boundaries, source-only
+    rows, preparation context, and variants remain explicit follow-up tasks; secondary
+    chemical mappings unchanged.
+  source: https://mediadive.dsmz.de/rest/medium/339a
+  changes: 'ingredients[2].concentration: {"unit": "G_PER_L", "value": "0.3"} -> {"unit":
+    "G_PER_L", "value": "0.3"} (evidence_only); ingredients[3].concentration: {"unit":
+    "G_PER_L", "value": "5"} -> {"unit": "G_PER_L", "value": "5"} (evidence_only)'
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/339a
+  title: 'MediaDive medium 339a: WILKINS-CHALGREN ANAEROBE BROTH (N2/CO2)'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; source_organization=DSMZ;
+    accessed_on=2026-10-07; locator=$.data.solutions[0]; response_sha256=a2add9a217b1b1ca4021dd81841296928e2de6ce8f029c56e929e08b2d6ded78;
+    original_recipe=https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium339a.pdf;
+    individual authors and publication year not supplied. Provider-declared main-recipe
+    amounts only.

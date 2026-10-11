@@ -10,208 +10,27 @@ media_term:
   term:
     id: mediadive.medium:403
     label: BSK-MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf
+notes: |-
+  Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf
 
-
+  Superseded historical provenance (not a current formulation claim):
   Commercial Product: LB Medium (Luria-Bertani, Miller formulation)
-
   Supplier: Multiple suppliers (Difco, Sigma, etc.)
-
   Catalog: Multiple (L3522 Sigma, 244520 BD)
-
   Source: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-
   Accessed: 2026-03-28
 
+  Constituent composition researched from product specification.
 
-  Constituent composition researched from product specification.'
-ingredients:
-- preferred_term: CMRL 1066
-  concentration:
-    value: '100'
-    unit: G_PER_L
-- preferred_term: Proteose peptone no. 2
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: Tryptone peptone
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Proteose yeastolate
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: HEPES buffer
-  term:
-    id: CHEBI:46756
-    label: HEPES
-  concentration:
-    value: '6'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000426
-    label: HEPES buffer
-- preferred_term: Sodium citrate
-  term:
-    id: CHEBI:53258
-    label: sodium citrate
-  concentration:
-    value: '0.7'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:53258
-    label: sodium citrate
-- preferred_term: Glucose
-  term:
-    id: CHEBI:17234
-    label: glucose
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17234
-    label: glucose
-- preferred_term: Na-pyruvate
-  term:
-    id: CHEBI:50144
-    label: sodium pyruvate
-  concentration:
-    value: '0.8'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:50144
-    label: sodium pyruvate
-- preferred_term: N-Acetylglucosamine
-  term:
-    id: CHEBI:59640
-    label: N-acetylglucosamine
-  concentration:
-    value: '0.4'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:59640
-    label: N-acetylglucosamine
-- preferred_term: MgCl2 x 6 H2O
-  term:
-    id: CHEBI:86345
-    label: magnesium dichloride hexahydrate
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86345
-    label: magnesium dichloride hexahydrate
-- preferred_term: L-Glutamine
-  term:
-    id: CHEBI:18050
-    label: L-glutamine
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:18050
-    label: L-glutamine
-- preferred_term: Double distilled water
-  term:
-    id: CHEBI:15377
-    label: water
-  concentration:
-    value: '1243.0'
-    unit: G_PER_L
-  notes: ' [Merged 3 duplicates: 900.0, 200.0, 143.0]'
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: Gelatine
-  term:
-    id: CHEBI:5291
-    label: gelatin
-  concentration:
-    value: '70'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:5291
-    label: gelatin
-- preferred_term: Tryptone
-  term:
-    id: MICRO:0000182
-    label: tryptone
-  concentration:
-    value: '10.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
-    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
-  synonyms:
-  - synonym_text: pancreatic digest of casein
-    synonym_type: EXACT
-  - synonym_text: casein peptone
-    synonym_type: EXACT
-- preferred_term: Yeast extract
-  term:
-    id: FOODON:03315426
-    label: yeast extract
-  concentration:
-    value: '5.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
-    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
-    product
-- preferred_term: Sodium chloride
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  concentration:
-    value: '10.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
-    (Luria-Bertani, Miller formulation) commercial product
-  synonyms:
-  - synonym_text: NaCl
-    synonym_type: EXACT
-  - synonym_text: table salt
-    synonym_type: EXACT
-- preferred_term: Rabbit serum
-  concentration:
-    value: '86'
-    unit: G_PER_L
+  The LB constituent expansion is withdrawn: the exact DSMZ formulation specifies bovine serum albumin instead. Source batch, stock and receiving-medium scopes are separate; chemical groundings and growth claims are not recertified.
+
+  Source alternative, not an extra preparation step: Alternatively, buy supplemented or un-supplemented BSK-H medium (Fa. Bio&SELL or Sigma) and supplement the medium according to manufacturer's advice. Sterilize the mixed and warm (37°C) medium by filtration.
+ingredients: []
 preparation_steps:
 - step_number: 1
-  action: FILTER_STERILIZE
+  action: MIX
   description: Combine the warm (37°C) solutions A, B, C, D, and filter-sterilize
     the warm medium. Solution B can also be added after filtration.
-- step_number: 2
-  action: HEAT
-  description: Alternatively, buy supplemented or un-supplemented BSK-H medium (Fa.
-    Bio&SELL or Sigma) and supplement the medium according to manufacturer's advice.
-    Sterilize the mixed and warm (37°C) medium by filtration.
-- step_number: 3
-  action: FILTER_STERILIZE
-  description: Stir slowly at 4 - 10°C for 3 hours, adjust pH to 7.6 with 5 M NaOH.
-    Filter sterilize.
-- step_number: 4
-  action: AUTOCLAVE
-  description: Dissolve 14.0 g gelatine in 200 ml bidest. water, autoclave 15 minutes
-    at 115°C.
-- step_number: 5
-  action: DISSOLVE
-  description: 'Dissolve 50.05 g bovine serum albumine, fract. V (important: Sigma
-    No A9647) in 143 ml bidest. water, or use BSA-solution Sigma A7409.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -249,3 +68,1117 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-10-08T22:13:10.504331+00:00'
+  curator: codex
+  action: RESTORED_DSMZ_ALBUMIN_PREPARATIONS_AND_CONCENTRATION_SCOPES_WITH_EVIDENCE
+  notes: Restore source-specific albumin, withdraw false LB inputs, separate preparation
+    doses and stock compositions, and attach exact evidence for changed claims. Preserve
+    IDs, unrelated groundings and earlier history. Unknown percentage bases and final-medium
+    volume remain unknown.
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf
+  changes: '[{"old_field": null, "field": "solutions[0].concentration", "old": null,
+    "new": {"value": "1", "unit": "L"}, "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/403",
+    "snippet": "{\n                        \"recipe_order\": 1,\n                        \"solution\":
+    \"Solution A\",\n                        \"solution_id\": 819,\n                        \"amount\":
+    1000,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[1].concentration",
+    "old": null, "new": {"value": "0.2", "unit": "L"}, "status": "add", "reference":
+    "https://mediadive.dsmz.de/rest/medium/403", "snippet": "{\n                        \"recipe_order\":
+    2,\n                        \"solution\": \"Solution B\",\n                        \"solution_id\":
+    820,\n                        \"amount\": 200,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[2].concentration", "old": null, "new": {"value": "0.143",
+    "unit": "L"}, "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/403",
+    "snippet": "{\n                        \"recipe_order\": 3,\n                        \"solution\":
+    \"Solution C\",\n                        \"solution_id\": 821,\n                        \"amount\":
+    143,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[16].concentration", "field":
+    "solutions[3].concentration", "old": {"value": "86", "unit": "G_PER_L"}, "new":
+    {"value": "0.086", "unit": "L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/403",
+    "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"Rabbit serum\",\n                        \"compound_id\": 464,\n                        \"condition\":
+    \"\",\n                        \"attribute\": \"inactivated, GIBCO 037-06120M\",\n                        \"amount\":
+    86,\n                        \"unit\": \"ml\",\n                        \"mmol_l\":
+    526320,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[3].concentration", "old": null, "new": {"value": "0.086",
+    "unit": "L"}, "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+    "snippet": "Rabbit serum, inactivated\n (GIBCO 037-06120M)                                                            86.0        ml"},
+    {"old_field": null, "field": "solutions[0].notes", "old": null, "new": "Source
+    batch dose: 1000 ml / 1000 = 1 L per receiving batch, not g/L or a per-liter dose.",
+    "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+    "snippet": "Combine the warm (37\uf0b0C) solutions A, B, C, D, and filter-sterilize
+    the warm medium.\nSolution B can also be added after filtration."}, {"old_field":
+    null, "field": "solutions[1].notes", "old": null, "new": "Source batch dose: 200
+    ml / 1000 = 0.2 L per receiving batch, not g/L or a per-liter dose.", "status":
+    "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+    "snippet": "Combine the warm (37\uf0b0C) solutions A, B, C, D, and filter-sterilize
+    the warm medium.\nSolution B can also be added after filtration."}, {"old_field":
+    null, "field": "solutions[2].notes", "old": null, "new": "Source batch dose: 143
+    ml / 1000 = 0.143 L per receiving batch, not g/L or a per-liter dose.", "status":
+    "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+    "snippet": "Combine the warm (37\uf0b0C) solutions A, B, C, D, and filter-sterilize
+    the warm medium.\nSolution B can also be added after filtration."}, {"old_field":
+    null, "field": "solutions[3].concentration", "old": null, "new": {"value": "0.086",
+    "unit": "L"}, "status": "evidence_only", "reference": "https://mediadive.dsmz.de/rest/medium/403",
+    "snippet": "{\n                        \"recipe_order\": 4,\n                        \"solution\":
+    \"Solution D\",\n                        \"solution_id\": 822,\n                        \"amount\":
+    86,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[0].concentration", "field":
+    "solutions[0].solutions[0].concentration", "old": {"value": "100", "unit": "G_PER_L"},
+    "new": {"value": "0.1", "unit": "L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/403",
+    "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"CMRL 1066\",\n                        \"compound_id\": 1680,\n                        \"attribute\":
+    \"GIBCO 042-1545, glutamin 10 x\",\n                        \"amount\": 100,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[0].solutions[0].concentration", "old": null, "new":
+    {"value": "0.1", "unit": "L"}, "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+    "snippet": "CMRL 1066/10 x Glutamin (GIBCO 042-1545)                                    100.0         ml"},
+    {"old_field": "ingredients[1].concentration", "field": "solutions[0].composition[0].concentration",
+    "old": {"value": "5", "unit": "G_PER_L"}, "new": {"value": "5", "unit": "G_PER_L"},
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/403",
+    "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Proteose peptone no. 2\",\n                        \"compound_id\": 458,\n                        \"attribute\":
+    \"DIFCO 0121-01-3\",\n                        \"amount\": 5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 5,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[0].composition[0].concentration",
+    "old": null, "new": {"value": "5", "unit": "G_PER_L"}, "status": "evidence_only",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+    "snippet": "Proteose peptone No 2 (DIFCO 0121-01-3)                                        5.0         g"},
+    {"old_field": "ingredients[2].concentration", "field": "solutions[0].composition[1].concentration",
+    "old": {"value": "1", "unit": "G_PER_L"}, "new": {"value": "1", "unit": "G_PER_L"},
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/403",
+    "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"Tryptone peptone\",\n                        \"compound_id\": 164,\n                        \"attribute\":
+    \"DIFCO 0123-01\",\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[0].composition[1].concentration",
+    "old": null, "new": {"value": "1", "unit": "G_PER_L"}, "status": "evidence_only",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+    "snippet": "Proteose tryptone (DIFCO 0123-01)                                              1.0         g"},
+    {"old_field": "ingredients[3].concentration", "field": "solutions[0].composition[2].concentration",
+    "old": {"value": "1", "unit": "G_PER_L"}, "new": {"value": "1", "unit": "G_PER_L"},
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/403",
+    "snippet": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"Proteose yeastolate\",\n                        \"compound_id\": 460,\n                        \"attribute\":
+    \"TC) (DIFCO 5577-15\",\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[0].composition[2].concentration",
+    "old": null, "new": {"value": "1", "unit": "G_PER_L"}, "status": "evidence_only",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+    "snippet": "Proteose yeastolate (TC) (DIFCO 5577-15)                                       1.0         g"},
+    {"old_field": "ingredients[4].concentration", "field": "solutions[0].composition[3].concentration",
+    "old": {"value": "6", "unit": "G_PER_L"}, "new": {"value": "6", "unit": "G_PER_L"},
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/403",
+    "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"HEPES buffer\",\n                        \"compound_id\": 461,\n                        \"attribute\":
+    \"acid) (SIGMA H3375\",\n                        \"amount\": 6,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 6,\n                        \"mmol_l\":
+    25.1783,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[0].composition[3].concentration", "old": null, "new":
+    {"value": "6", "unit": "G_PER_L"}, "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+    "snippet": "HEPES buffer (acid) (SIGMA H3375)                                              6.0         g"},
+    {"old_field": "ingredients[5].concentration", "field": "solutions[0].composition[4].concentration",
+    "old": {"value": "0.7", "unit": "G_PER_L"}, "new": {"value": "0.7", "unit": "G_PER_L"},
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/403",
+    "snippet": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"Sodium citrate\",\n                        \"compound_id\": 792,\n                        \"amount\":
+    0.7,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.7,\n                        \"mmol_l\": 2.71244,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[0].composition[4].concentration",
+    "old": null, "new": {"value": "0.7", "unit": "G_PER_L"}, "status": "evidence_only",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+    "snippet": "Na-citrate                                                                     0.7         g"},
+    {"old_field": "ingredients[6].concentration", "field": "solutions[0].composition[5].concentration",
+    "old": {"value": "3", "unit": "G_PER_L"}, "new": {"value": "3", "unit": "G_PER_L"},
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/403",
+    "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\":
+    \"Glucose\",\n                        \"compound_id\": 5,\n                        \"attribute\":
+    \"alpha-, D+\",\n                        \"amount\": 3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 3,\n                        \"mmol_l\":
+    16.6519,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[0].composition[5].concentration", "old": null, "new":
+    {"value": "3", "unit": "G_PER_L"}, "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+    "snippet": "Glucose (\u03b1-, D+)                                                               3.0         g"},
+    {"old_field": "ingredients[7].concentration", "field": "solutions[0].composition[6].concentration",
+    "old": {"value": "0.8", "unit": "G_PER_L"}, "new": {"value": "0.8", "unit": "G_PER_L"},
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/403",
+    "snippet": "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"Na-pyruvate\",\n                        \"compound_id\": 113,\n                        \"amount\":
+    0.8,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.8,\n                        \"mmol_l\": 7.26982,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[0].composition[6].concentration",
+    "old": null, "new": {"value": "0.8", "unit": "G_PER_L"}, "status": "evidence_only",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+    "snippet": "Na-pyruvate                                                                    0.8         g"},
+    {"old_field": "ingredients[8].concentration", "field": "solutions[0].composition[7].concentration",
+    "old": {"value": "0.4", "unit": "G_PER_L"}, "new": {"value": "0.4", "unit": "G_PER_L"},
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/403",
+    "snippet": "{\n                        \"recipe_order\": 9,\n                        \"compound\":
+    \"N-Acetylglucosamine\",\n                        \"compound_id\": 462,\n                        \"amount\":
+    0.4,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.4,\n                        \"mmol_l\": 1.80824,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[0].composition[7].concentration",
+    "old": null, "new": {"value": "0.4", "unit": "G_PER_L"}, "status": "evidence_only",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+    "snippet": "N-Acetylglucosamine                                                            0.4         g"},
+    {"old_field": "ingredients[9].concentration", "field": "solutions[0].composition[8].concentration",
+    "old": {"value": "0.3", "unit": "G_PER_L"}, "new": {"value": "0.3", "unit": "G_PER_L"},
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/403",
+    "snippet": "{\n                        \"recipe_order\": 10,\n                        \"compound\":
+    \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\":
+    0.3,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.3,\n                        \"mmol_l\": 1.47563,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[0].composition[8].concentration",
+    "old": null, "new": {"value": "0.3", "unit": "G_PER_L"}, "status": "evidence_only",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+    "snippet": "MgCl2 x 6 H2O                                                                  0.3         g"},
+    {"old_field": "ingredients[10].concentration", "field": "solutions[0].composition[9].concentration",
+    "old": {"value": "0.1", "unit": "G_PER_L"}, "new": {"value": "0.1", "unit": "G_PER_L"},
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/403",
+    "snippet": "{\n                        \"recipe_order\": 11,\n                        \"compound\":
+    \"L-Glutamine\",\n                        \"compound_id\": 134,\n                        \"amount\":
+    0.1,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.1,\n                        \"mmol_l\": 0.684275,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[0].composition[9].concentration",
+    "old": null, "new": {"value": "0.1", "unit": "G_PER_L"}, "status": "evidence_only",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+    "snippet": "L-Glutamine                                                                    0.1         g"},
+    {"old_field": "ingredients[11].concentration", "field": "solutions[0].composition[10].concentration",
+    "old": {"value": "1243.0", "unit": "G_PER_L"}, "new": {"value": "0.9", "unit":
+    "L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/403",
+    "snippet": "{\n                        \"recipe_order\": 12,\n                        \"compound\":
+    \"Double distilled water\",\n                        \"compound_id\": 1021,\n                        \"attribute\":
+    \"filter-sterilized\",\n                        \"amount\": 900,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[0].composition[10].concentration", "old": null, "new":
+    {"value": "0.9", "unit": "L"}, "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+    "snippet": "Aqua bidest. filter-sterilized                                              900.0         ml"},
+    {"old_field": null, "field": "solutions[0].preparation_notes", "old": null, "new":
+    "Stir slowly at 4 - 10\u00b0C for 3 hours, adjust pH to 7.6 with 5 M NaOH. Filter
+    sterilize.", "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/403",
+    "snippet": "Stir slowly at 4 - 10\\u00b0C for 3 hours, adjust pH to 7.6 with 5
+    M NaOH. Filter sterilize."}, {"old_field": "ingredients[12].concentration", "field":
+    "solutions[1].composition[0].concentration", "old": {"value": "70", "unit": "G_PER_L"},
+    "new": {"value": "70", "unit": "G_PER_L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/403",
+    "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"Gelatine\",\n                        \"compound_id\": 657,\n                        \"amount\":
+    14,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    70,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[1].composition[0].concentration", "old": null, "new":
+    {"value": "70", "unit": "G_PER_L"}, "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+    "snippet": "Dissolve 14.0 g gelatine in 200 ml bidest. water,"}, {"old_field":
+    null, "field": "solutions[1].composition[1].concentration", "old": null, "new":
+    {"value": "0.2", "unit": "L"}, "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/403",
+    "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Double distilled water\",\n                        \"compound_id\": 1021,\n                        \"amount\":
+    200,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[1].composition[1].concentration",
+    "old": null, "new": {"value": "0.2", "unit": "L"}, "status": "evidence_only",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+    "snippet": "Dissolve 14.0 g gelatine in 200 ml bidest. water,"}, {"old_field":
+    null, "field": "solutions[1].preparation_notes", "old": null, "new": "Dissolve
+    14.0 g gelatine in 200 ml bidest. water, autoclave 15 minutes at 115\u00b0C.",
+    "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/403", "snippet":
+    "Dissolve 14.0 g gelatine in 200 ml bidest. water, autoclave 15 minutes at 115\\u00b0C."},
+    {"old_field": null, "field": "solutions[2].composition[0].concentration", "old":
+    null, "new": {"value": "350", "unit": "G_PER_L"}, "status": "add", "reference":
+    "https://mediadive.dsmz.de/rest/medium/403", "snippet": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Bovine serum albumin\",\n                        \"compound_id\":
+    705,\n                        \"attribute\": \"Sigma No A9647\",\n                        \"amount\":
+    50.05,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    350,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[2].composition[0].concentration", "old": null, "new":
+    {"value": "350", "unit": "G_PER_L"}, "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+    "snippet": "Dissolve 50.05 g bovine serum albumine, fract. V (important: Sigma
+    No A9647) in 143\nml bidest. water,"}, {"old_field": null, "field": "solutions[2].composition[1].concentration",
+    "old": null, "new": {"value": "0.143", "unit": "L"}, "status": "add", "reference":
+    "https://mediadive.dsmz.de/rest/medium/403", "snippet": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Double distilled water\",\n                        \"compound_id\":
+    1021,\n                        \"amount\": 143,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[2].composition[1].concentration", "old": null, "new":
+    {"value": "0.143", "unit": "L"}, "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+    "snippet": "Dissolve 50.05 g bovine serum albumine, fract. V (important: Sigma
+    No A9647) in 143\nml bidest. water,"}, {"old_field": null, "field": "solutions[2].preparation_notes",
+    "old": null, "new": "Dissolve 50.05 g bovine serum albumine, fract. V (important:
+    Sigma No A9647) in 143 ml bidest. water, or use BSA-solution Sigma A7409.", "status":
+    "add", "reference": "https://mediadive.dsmz.de/rest/medium/403", "snippet": "Dissolve
+    50.05 g bovine serum albumine, fract. V (important: Sigma No A9647) in 143 ml
+    bidest. water, or use BSA-solution Sigma A7409."}, {"old_field": null, "field":
+    "solutions[0].solutions[1].composition[0].concentration", "old": null, "new":
+    {"value": "5", "unit": "MOLAR"}, "status": "add", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+    "snippet": "Stir slowly at 4 - 10\uf0b0C for 3 hours, adjust pH to 7.6 with 5
+    M NaOH. Filter sterilize."}, {"old_field": null, "field": "solutions[0].solutions[1].notes",
+    "old": null, "new": "Explicit 5 M NaOH titrant strength for adjusting Solution
+    A to pH 7.6, not a receiving-medium concentration. No fixed titrant dose is specified.",
+    "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+    "snippet": "Stir slowly at 4 - 10\uf0b0C for 3 hours, adjust pH to 7.6 with 5
+    M NaOH. Filter sterilize."}, {"old_field": null, "field": "solutions[0].preparation_notes",
+    "old": null, "new": "Stir slowly at 4 - 10\u00b0C for 3 hours, adjust pH to 7.6
+    with 5 M NaOH. Filter sterilize.", "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+    "snippet": "Stir slowly at 4 - 10\uf0b0C for 3 hours, adjust pH to 7.6 with 5
+    M NaOH. Filter sterilize."}, {"old_field": null, "field": "solutions[1].preparation_notes",
+    "old": null, "new": "Dissolve 14.0 g gelatine in 200 ml bidest. water, autoclave
+    15 minutes at 115\u00b0C.", "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+    "snippet": "Dissolve 14.0 g gelatine in 200 ml bidest. water, autoclave 15 minutes
+    at 115\uf0b0C."}, {"old_field": null, "field": "solutions[2].preparation_notes",
+    "old": null, "new": "Dissolve 50.05 g bovine serum albumine, fract. V (important:
+    Sigma No A9647) in 143 ml bidest. water, or use BSA-solution Sigma A7409.", "status":
+    "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+    "snippet": "Dissolve 50.05 g bovine serum albumine, fract. V (important: Sigma
+    No A9647) in 143\nml bidest. water, or use BSA-solution Sigma A7409."}, {"old_field":
+    null, "field": "preparation_steps", "old": null, "new": [{"step_number": 1, "action":
+    "MIX", "description": "Combine the warm (37\u00b0C) solutions A, B, C, D, and
+    filter-sterilize the warm medium. Solution B can also be added after filtration."}],
+    "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+    "snippet": "Combine the warm (37\uf0b0C) solutions A, B, C, D, and filter-sterilize
+    the warm medium.\nSolution B can also be added after filtration."}, {"old_field":
+    null, "field": "notes", "old": null, "new": "Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf\n\nSuperseded
+    historical provenance (not a current formulation claim):\nCommercial Product:
+    LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThe
+    LB constituent expansion is withdrawn: the exact DSMZ formulation specifies bovine
+    serum albumin instead. Source batch, stock and receiving-medium scopes are separate;
+    chemical groundings and growth claims are not recertified.\n\nSource alternative,
+    not an extra preparation step: Alternatively, buy supplemented or un-supplemented
+    BSK-H medium (Fa. Bio&SELL or Sigma) and supplement the medium according to manufacturer''s
+    advice. Sterilize the mixed and warm (37\u00b0C) medium by filtration.", "status":
+    "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+    "snippet": "Alternatively, buy supplemented or un-supplemented BSK-H medium (Fa.
+    Bio&SELL or\nSigma) and supplement the medium according to manufacturer\u2019s
+    advice. Sterilize the\nmixed and warm (37\uf0b0C) medium by filtration."}, {"old_field":
+    "ingredients[13].concentration", "field": "notes", "old": {"value": "10.0", "unit":
+    "G_PER_L"}, "new": "Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf\n\nSuperseded
+    historical provenance (not a current formulation claim):\nCommercial Product:
+    LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThe
+    LB constituent expansion is withdrawn: the exact DSMZ formulation specifies bovine
+    serum albumin instead. Source batch, stock and receiving-medium scopes are separate;
+    chemical groundings and growth claims are not recertified.\n\nSource alternative,
+    not an extra preparation step: Alternatively, buy supplemented or un-supplemented
+    BSK-H medium (Fa. Bio&SELL or Sigma) and supplement the medium according to manufacturer''s
+    advice. Sterilize the mixed and warm (37\u00b0C) medium by filtration.", "status":
+    "remove_unsupported", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+    "snippet": "Dissolve 50.05 g bovine serum albumine, fract. V (important: Sigma
+    No A9647) in 143\nml bidest. water, or use BSA-solution Sigma A7409."}, {"old_field":
+    "ingredients[14].concentration", "field": "notes", "old": {"value": "5.0", "unit":
+    "G_PER_L"}, "new": "Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf\n\nSuperseded
+    historical provenance (not a current formulation claim):\nCommercial Product:
+    LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThe
+    LB constituent expansion is withdrawn: the exact DSMZ formulation specifies bovine
+    serum albumin instead. Source batch, stock and receiving-medium scopes are separate;
+    chemical groundings and growth claims are not recertified.\n\nSource alternative,
+    not an extra preparation step: Alternatively, buy supplemented or un-supplemented
+    BSK-H medium (Fa. Bio&SELL or Sigma) and supplement the medium according to manufacturer''s
+    advice. Sterilize the mixed and warm (37\u00b0C) medium by filtration.", "status":
+    "remove_unsupported", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+    "snippet": "Dissolve 50.05 g bovine serum albumine, fract. V (important: Sigma
+    No A9647) in 143\nml bidest. water, or use BSA-solution Sigma A7409."}, {"old_field":
+    "ingredients[15].concentration", "field": "notes", "old": {"value": "10.0", "unit":
+    "G_PER_L"}, "new": "Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf\n\nSuperseded
+    historical provenance (not a current formulation claim):\nCommercial Product:
+    LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThe
+    LB constituent expansion is withdrawn: the exact DSMZ formulation specifies bovine
+    serum albumin instead. Source batch, stock and receiving-medium scopes are separate;
+    chemical groundings and growth claims are not recertified.\n\nSource alternative,
+    not an extra preparation step: Alternatively, buy supplemented or un-supplemented
+    BSK-H medium (Fa. Bio&SELL or Sigma) and supplement the medium according to manufacturer''s
+    advice. Sterilize the mixed and warm (37\u00b0C) medium by filtration.", "status":
+    "remove_unsupported", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+    "snippet": "Dissolve 50.05 g bovine serum albumine, fract. V (important: Sigma
+    No A9647) in 143\nml bidest. water, or use BSA-solution Sigma A7409."}]'
+solutions:
+- preferred_term: Solution A
+  composition:
+  - preferred_term: Proteose peptone no. 2
+    concentration:
+      value: '5'
+      unit: G_PER_L
+    notes: 'Source batch input: 5 g. Retain provider-declared stock g_l=5 only within
+      Solution A, not a receiving-medium concentration or independently measured final
+      stock volume. Source qualifier: DIFCO 0121-01-3.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/403
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 2,
+                                "compound": "Proteose peptone no. 2",
+                                "compound_id": 458,
+                                "attribute": "DIFCO 0121-01-3",
+                                "amount": 5,
+                                "unit": "g",
+                                "g_l": 5,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[0].concentration: Source batch input:
+        5 g. Retain provider-declared stock g_l=5 only within Solution A, not a receiving-medium
+        concentration or independently measured final stock volume. Source qualifier:
+        DIFCO 0121-01-3. No final-medium volume, percentage basis, density or chemical
+        grounding is inferred. Locator=data.solutions[1].recipe[1]; accessed=2026-10-08T21:53:35.688242+00:00;
+        capture SHA256=58cfbf042287555b81f70966ca23533b2e45f3c0aae4bda4a59635be5b01cea9.'
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf
+      supports: SUPPORT
+      snippet: Proteose peptone No 2 (DIFCO 0121-01-3)                                        5.0         g
+      explanation: 'solutions[0].composition[0].concentration: Original corroborates
+        this preparation''s batch input, not a measured final volume. PDF page 1;
+        layout extraction and page image inspected. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T21:53:36.588619+00:00; capture SHA256=1caa39771ff3d82823f7ec48cb1af48cff9ef36845d8324226725467d328d143.'
+  - preferred_term: Tryptone peptone
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    notes: 'Source batch input: 1 g. Retain provider-declared stock g_l=1 only within
+      Solution A, not a receiving-medium concentration or independently measured final
+      stock volume. Source qualifier: DIFCO 0123-01.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/403
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 3,
+                                "compound": "Tryptone peptone",
+                                "compound_id": 164,
+                                "attribute": "DIFCO 0123-01",
+                                "amount": 1,
+                                "unit": "g",
+                                "g_l": 1,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[1].concentration: Source batch input:
+        1 g. Retain provider-declared stock g_l=1 only within Solution A, not a receiving-medium
+        concentration or independently measured final stock volume. Source qualifier:
+        DIFCO 0123-01. No final-medium volume, percentage basis, density or chemical
+        grounding is inferred. Locator=data.solutions[1].recipe[2]; accessed=2026-10-08T21:53:35.688242+00:00;
+        capture SHA256=58cfbf042287555b81f70966ca23533b2e45f3c0aae4bda4a59635be5b01cea9.'
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf
+      supports: SUPPORT
+      snippet: Proteose tryptone (DIFCO 0123-01)                                              1.0         g
+      explanation: 'solutions[0].composition[1].concentration: Original corroborates
+        this preparation''s batch input, not a measured final volume. PDF page 1;
+        layout extraction and page image inspected. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T21:53:36.588619+00:00; capture SHA256=1caa39771ff3d82823f7ec48cb1af48cff9ef36845d8324226725467d328d143.'
+  - preferred_term: Proteose yeastolate
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    notes: 'Source batch input: 1 g. Retain provider-declared stock g_l=1 only within
+      Solution A, not a receiving-medium concentration or independently measured final
+      stock volume. Source qualifier: TC) (DIFCO 5577-15.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/403
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 4,
+                                "compound": "Proteose yeastolate",
+                                "compound_id": 460,
+                                "attribute": "TC) (DIFCO 5577-15",
+                                "amount": 1,
+                                "unit": "g",
+                                "g_l": 1,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[2].concentration: Source batch input:
+        1 g. Retain provider-declared stock g_l=1 only within Solution A, not a receiving-medium
+        concentration or independently measured final stock volume. Source qualifier:
+        TC) (DIFCO 5577-15. No final-medium volume, percentage basis, density or chemical
+        grounding is inferred. Locator=data.solutions[1].recipe[3]; accessed=2026-10-08T21:53:35.688242+00:00;
+        capture SHA256=58cfbf042287555b81f70966ca23533b2e45f3c0aae4bda4a59635be5b01cea9.'
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf
+      supports: SUPPORT
+      snippet: Proteose yeastolate (TC) (DIFCO 5577-15)                                       1.0         g
+      explanation: 'solutions[0].composition[2].concentration: Original corroborates
+        this preparation''s batch input, not a measured final volume. PDF page 1;
+        layout extraction and page image inspected. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T21:53:36.588619+00:00; capture SHA256=1caa39771ff3d82823f7ec48cb1af48cff9ef36845d8324226725467d328d143.'
+  - preferred_term: HEPES buffer
+    term:
+      id: CHEBI:46756
+      label: HEPES
+    concentration:
+      value: '6'
+      unit: G_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000426
+      label: HEPES buffer
+    notes: 'Source batch input: 6 g. Retain provider-declared stock g_l=6 only within
+      Solution A, not a receiving-medium concentration or independently measured final
+      stock volume. Source qualifier: acid) (SIGMA H3375.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/403
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 5,
+                                "compound": "HEPES buffer",
+                                "compound_id": 461,
+                                "attribute": "acid) (SIGMA H3375",
+                                "amount": 6,
+                                "unit": "g",
+                                "g_l": 6,
+                                "mmol_l": 25.1783,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[3].concentration: Source batch input:
+        6 g. Retain provider-declared stock g_l=6 only within Solution A, not a receiving-medium
+        concentration or independently measured final stock volume. Source qualifier:
+        acid) (SIGMA H3375. No final-medium volume, percentage basis, density or chemical
+        grounding is inferred. Locator=data.solutions[1].recipe[4]; accessed=2026-10-08T21:53:35.688242+00:00;
+        capture SHA256=58cfbf042287555b81f70966ca23533b2e45f3c0aae4bda4a59635be5b01cea9.'
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf
+      supports: SUPPORT
+      snippet: HEPES buffer (acid) (SIGMA H3375)                                              6.0         g
+      explanation: 'solutions[0].composition[3].concentration: Original corroborates
+        this preparation''s batch input, not a measured final volume. PDF page 1;
+        layout extraction and page image inspected. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T21:53:36.588619+00:00; capture SHA256=1caa39771ff3d82823f7ec48cb1af48cff9ef36845d8324226725467d328d143.'
+  - preferred_term: Sodium citrate
+    term:
+      id: CHEBI:53258
+      label: sodium citrate
+    concentration:
+      value: '0.7'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53258
+      label: sodium citrate
+    notes: 'Source batch input: 0.7 g. Retain provider-declared stock g_l=0.7 only
+      within Solution A, not a receiving-medium concentration or independently measured
+      final stock volume.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/403
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 6,
+                                "compound": "Sodium citrate",
+                                "compound_id": 792,
+                                "amount": 0.7,
+                                "unit": "g",
+                                "g_l": 0.7,
+                                "mmol_l": 2.71244,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[4].concentration: Source batch input:
+        0.7 g. Retain provider-declared stock g_l=0.7 only within Solution A, not
+        a receiving-medium concentration or independently measured final stock volume.
+        No final-medium volume, percentage basis, density or chemical grounding is
+        inferred. Locator=data.solutions[1].recipe[5]; accessed=2026-10-08T21:53:35.688242+00:00;
+        capture SHA256=58cfbf042287555b81f70966ca23533b2e45f3c0aae4bda4a59635be5b01cea9.'
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf
+      supports: SUPPORT
+      snippet: Na-citrate                                                                     0.7         g
+      explanation: 'solutions[0].composition[4].concentration: Original corroborates
+        this preparation''s batch input, not a measured final volume. PDF page 1;
+        layout extraction and page image inspected. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T21:53:36.588619+00:00; capture SHA256=1caa39771ff3d82823f7ec48cb1af48cff9ef36845d8324226725467d328d143.'
+  - preferred_term: Glucose
+    term:
+      id: CHEBI:17234
+      label: glucose
+    concentration:
+      value: '3'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17234
+      label: glucose
+    notes: 'Source batch input: 3 g. Retain provider-declared stock g_l=3 only within
+      Solution A, not a receiving-medium concentration or independently measured final
+      stock volume. Source qualifier: alpha-, D+.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/403
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 7,
+                                "compound": "Glucose",
+                                "compound_id": 5,
+                                "attribute": "alpha-, D+",
+                                "amount": 3,
+                                "unit": "g",
+                                "g_l": 3,
+                                "mmol_l": 16.6519,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[5].concentration: Source batch input:
+        3 g. Retain provider-declared stock g_l=3 only within Solution A, not a receiving-medium
+        concentration or independently measured final stock volume. Source qualifier:
+        alpha-, D+. No final-medium volume, percentage basis, density or chemical
+        grounding is inferred. Locator=data.solutions[1].recipe[6]; accessed=2026-10-08T21:53:35.688242+00:00;
+        capture SHA256=58cfbf042287555b81f70966ca23533b2e45f3c0aae4bda4a59635be5b01cea9.'
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf
+      supports: SUPPORT
+      snippet: Glucose (α-, D+)                                                               3.0         g
+      explanation: 'solutions[0].composition[5].concentration: Original corroborates
+        this preparation''s batch input, not a measured final volume. PDF page 1;
+        layout extraction and page image inspected. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T21:53:36.588619+00:00; capture SHA256=1caa39771ff3d82823f7ec48cb1af48cff9ef36845d8324226725467d328d143.'
+  - preferred_term: Na-pyruvate
+    term:
+      id: CHEBI:50144
+      label: sodium pyruvate
+    concentration:
+      value: '0.8'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:50144
+      label: sodium pyruvate
+    notes: 'Source batch input: 0.8 g. Retain provider-declared stock g_l=0.8 only
+      within Solution A, not a receiving-medium concentration or independently measured
+      final stock volume.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/403
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 8,
+                                "compound": "Na-pyruvate",
+                                "compound_id": 113,
+                                "amount": 0.8,
+                                "unit": "g",
+                                "g_l": 0.8,
+                                "mmol_l": 7.26982,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[6].concentration: Source batch input:
+        0.8 g. Retain provider-declared stock g_l=0.8 only within Solution A, not
+        a receiving-medium concentration or independently measured final stock volume.
+        No final-medium volume, percentage basis, density or chemical grounding is
+        inferred. Locator=data.solutions[1].recipe[7]; accessed=2026-10-08T21:53:35.688242+00:00;
+        capture SHA256=58cfbf042287555b81f70966ca23533b2e45f3c0aae4bda4a59635be5b01cea9.'
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf
+      supports: SUPPORT
+      snippet: Na-pyruvate                                                                    0.8         g
+      explanation: 'solutions[0].composition[6].concentration: Original corroborates
+        this preparation''s batch input, not a measured final volume. PDF page 1;
+        layout extraction and page image inspected. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T21:53:36.588619+00:00; capture SHA256=1caa39771ff3d82823f7ec48cb1af48cff9ef36845d8324226725467d328d143.'
+  - preferred_term: N-Acetylglucosamine
+    term:
+      id: CHEBI:59640
+      label: N-acetylglucosamine
+    concentration:
+      value: '0.4'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:59640
+      label: N-acetylglucosamine
+    notes: 'Source batch input: 0.4 g. Retain provider-declared stock g_l=0.4 only
+      within Solution A, not a receiving-medium concentration or independently measured
+      final stock volume.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/403
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 9,
+                                "compound": "N-Acetylglucosamine",
+                                "compound_id": 462,
+                                "amount": 0.4,
+                                "unit": "g",
+                                "g_l": 0.4,
+                                "mmol_l": 1.80824,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[7].concentration: Source batch input:
+        0.4 g. Retain provider-declared stock g_l=0.4 only within Solution A, not
+        a receiving-medium concentration or independently measured final stock volume.
+        No final-medium volume, percentage basis, density or chemical grounding is
+        inferred. Locator=data.solutions[1].recipe[8]; accessed=2026-10-08T21:53:35.688242+00:00;
+        capture SHA256=58cfbf042287555b81f70966ca23533b2e45f3c0aae4bda4a59635be5b01cea9.'
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf
+      supports: SUPPORT
+      snippet: N-Acetylglucosamine                                                            0.4         g
+      explanation: 'solutions[0].composition[7].concentration: Original corroborates
+        this preparation''s batch input, not a measured final volume. PDF page 1;
+        layout extraction and page image inspected. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T21:53:36.588619+00:00; capture SHA256=1caa39771ff3d82823f7ec48cb1af48cff9ef36845d8324226725467d328d143.'
+  - preferred_term: MgCl2 x 6 H2O
+    term:
+      id: CHEBI:86345
+      label: magnesium dichloride hexahydrate
+    concentration:
+      value: '0.3'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86345
+      label: magnesium dichloride hexahydrate
+    notes: 'Source batch input: 0.3 g. Retain provider-declared stock g_l=0.3 only
+      within Solution A, not a receiving-medium concentration or independently measured
+      final stock volume.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/403
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 10,
+                                "compound": "MgCl2 x 6 H2O",
+                                "compound_id": 79,
+                                "amount": 0.3,
+                                "unit": "g",
+                                "g_l": 0.3,
+                                "mmol_l": 1.47563,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[8].concentration: Source batch input:
+        0.3 g. Retain provider-declared stock g_l=0.3 only within Solution A, not
+        a receiving-medium concentration or independently measured final stock volume.
+        No final-medium volume, percentage basis, density or chemical grounding is
+        inferred. Locator=data.solutions[1].recipe[9]; accessed=2026-10-08T21:53:35.688242+00:00;
+        capture SHA256=58cfbf042287555b81f70966ca23533b2e45f3c0aae4bda4a59635be5b01cea9.'
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf
+      supports: SUPPORT
+      snippet: MgCl2 x 6 H2O                                                                  0.3         g
+      explanation: 'solutions[0].composition[8].concentration: Original corroborates
+        this preparation''s batch input, not a measured final volume. PDF page 1;
+        layout extraction and page image inspected. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T21:53:36.588619+00:00; capture SHA256=1caa39771ff3d82823f7ec48cb1af48cff9ef36845d8324226725467d328d143.'
+  - preferred_term: L-Glutamine
+    term:
+      id: CHEBI:18050
+      label: L-glutamine
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:18050
+      label: L-glutamine
+    notes: 'Source batch input: 0.1 g. Retain provider-declared stock g_l=0.1 only
+      within Solution A, not a receiving-medium concentration or independently measured
+      final stock volume.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/403
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 11,
+                                "compound": "L-Glutamine",
+                                "compound_id": 134,
+                                "amount": 0.1,
+                                "unit": "g",
+                                "g_l": 0.1,
+                                "mmol_l": 0.684275,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[9].concentration: Source batch input:
+        0.1 g. Retain provider-declared stock g_l=0.1 only within Solution A, not
+        a receiving-medium concentration or independently measured final stock volume.
+        No final-medium volume, percentage basis, density or chemical grounding is
+        inferred. Locator=data.solutions[1].recipe[10]; accessed=2026-10-08T21:53:35.688242+00:00;
+        capture SHA256=58cfbf042287555b81f70966ca23533b2e45f3c0aae4bda4a59635be5b01cea9.'
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf
+      supports: SUPPORT
+      snippet: L-Glutamine                                                                    0.1         g
+      explanation: 'solutions[0].composition[9].concentration: Original corroborates
+        this preparation''s batch input, not a measured final volume. PDF page 1;
+        layout extraction and page image inspected. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T21:53:36.588619+00:00; capture SHA256=1caa39771ff3d82823f7ec48cb1af48cff9ef36845d8324226725467d328d143.'
+  - preferred_term: Double distilled water
+    term:
+      id: CHEBI:15377
+      label: water
+    concentration:
+      value: '0.9'
+      unit: L
+    notes: |2-
+       [Merged 3 duplicates: 900.0, 200.0, 143.0]
+
+      Source water batch input: 900 ml / 1000 = 0.9 L in this preparation only, not a measured final volume. Earlier duplicate-collapse notes describe the superseded flattened record; water is now split between preparations A, B and C. Source qualifier: filter-sterilized.
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/403
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 12,
+                                "compound": "Double distilled water",
+                                "compound_id": 1021,
+                                "attribute": "filter-sterilized",
+                                "amount": 900,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[10].concentration: Source water batch
+        input: 900 ml / 1000 = 0.9 L in this preparation only, not a measured final
+        volume. Earlier duplicate-collapse notes describe the superseded flattened
+        record; water is now split between preparations A, B and C. Source qualifier:
+        filter-sterilized. No final-medium volume, percentage basis, density or chemical
+        grounding is inferred. Locator=data.solutions[1].recipe[11]; accessed=2026-10-08T21:53:35.688242+00:00;
+        capture SHA256=58cfbf042287555b81f70966ca23533b2e45f3c0aae4bda4a59635be5b01cea9.'
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf
+      supports: SUPPORT
+      snippet: Aqua bidest. filter-sterilized                                              900.0         ml
+      explanation: 'solutions[0].composition[10].concentration: Original corroborates
+        this preparation''s batch input, not a measured final volume. PDF page 1;
+        layout extraction and page image inspected. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T21:53:36.588619+00:00; capture SHA256=1caa39771ff3d82823f7ec48cb1af48cff9ef36845d8324226725467d328d143.'
+  concentration:
+    value: '1'
+    unit: L
+  notes: 'Source batch dose: 1000 ml / 1000 = 1 L per receiving batch, not g/L or
+    a per-liter dose.'
+  solutions:
+  - preferred_term: CMRL 1066
+    concentration:
+      value: '0.1'
+      unit: L
+    composition: []
+    notes: 'Source batch dose: 100 ml / 1000 = 0.1 L per receiving batch, not g/L
+      or a per-liter dose. Source product/stock qualifier: GIBCO 042-1545, glutamin
+      10 x.'
+  - preferred_term: NaOH solution (5 M)
+    composition:
+    - preferred_term: NaOH
+      concentration:
+        value: '5'
+        unit: MOLAR
+      notes: Explicit 5 M NaOH titrant strength for adjusting Solution A to pH 7.6,
+        not a receiving-medium concentration. No fixed titrant dose is specified.
+      evidence:
+      - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf
+        supports: SUPPORT
+        snippet: Stir slowly at 4 - 10C for 3 hours, adjust pH to 7.6 with 5 M NaOH.
+          Filter sterilize.
+        explanation: 'solutions[0].solutions[1].composition[0].concentration: Explicit
+          5 M NaOH titrant strength for adjusting Solution A to pH 7.6, not a receiving-medium
+          concentration. No fixed titrant dose is specified. No final-medium volume,
+          percentage basis, density or chemical grounding is inferred. Locator=original
+          recipe text; accessed=2026-10-08T21:53:36.588619+00:00; capture SHA256=1caa39771ff3d82823f7ec48cb1af48cff9ef36845d8324226725467d328d143.'
+    notes: Explicit 5 M NaOH titrant strength for adjusting Solution A to pH 7.6,
+      not a receiving-medium concentration. No fixed titrant dose is specified.
+  preparation_notes: Stir slowly at 4 - 10°C for 3 hours, adjust pH to 7.6 with 5
+    M NaOH. Filter sterilize.
+- preferred_term: Solution B
+  composition:
+  - preferred_term: Gelatine
+    term:
+      id: CHEBI:5291
+      label: gelatin
+    concentration:
+      value: '70'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:5291
+      label: gelatin
+    notes: 'Source batch input: 14 g. Retain provider-declared stock g_l=70 only within
+      Solution B, not a receiving-medium concentration or independently measured final
+      stock volume.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/403
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 1,
+                                "compound": "Gelatine",
+                                "compound_id": 657,
+                                "amount": 14,
+                                "unit": "g",
+                                "g_l": 70,
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[0].concentration: Source batch input:
+        14 g. Retain provider-declared stock g_l=70 only within Solution B, not a
+        receiving-medium concentration or independently measured final stock volume.
+        No final-medium volume, percentage basis, density or chemical grounding is
+        inferred. Locator=data.solutions[2].recipe[0]; accessed=2026-10-08T21:53:35.688242+00:00;
+        capture SHA256=58cfbf042287555b81f70966ca23533b2e45f3c0aae4bda4a59635be5b01cea9.'
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf
+      supports: SUPPORT
+      snippet: Dissolve 14.0 g gelatine in 200 ml bidest. water,
+      explanation: 'solutions[1].composition[0].concentration: Original corroborates
+        this preparation''s batch input, not a measured final volume. PDF page 1;
+        layout extraction and page image inspected. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T21:53:36.588619+00:00; capture SHA256=1caa39771ff3d82823f7ec48cb1af48cff9ef36845d8324226725467d328d143.'
+  - preferred_term: Double distilled water
+    concentration:
+      value: '0.2'
+      unit: L
+    notes: 'Source water batch input: 200 ml / 1000 = 0.2 L in this preparation only,
+      not a measured final volume.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/403
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 2,
+                                "compound": "Double distilled water",
+                                "compound_id": 1021,
+                                "amount": 200,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[1].concentration: Source water batch
+        input: 200 ml / 1000 = 0.2 L in this preparation only, not a measured final
+        volume. No final-medium volume, percentage basis, density or chemical grounding
+        is inferred. Locator=data.solutions[2].recipe[1]; accessed=2026-10-08T21:53:35.688242+00:00;
+        capture SHA256=58cfbf042287555b81f70966ca23533b2e45f3c0aae4bda4a59635be5b01cea9.'
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf
+      supports: SUPPORT
+      snippet: Dissolve 14.0 g gelatine in 200 ml bidest. water,
+      explanation: 'solutions[1].composition[1].concentration: Original corroborates
+        this preparation''s batch input, not a measured final volume. PDF page 1;
+        layout extraction and page image inspected. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T21:53:36.588619+00:00; capture SHA256=1caa39771ff3d82823f7ec48cb1af48cff9ef36845d8324226725467d328d143.'
+  concentration:
+    value: '0.2'
+    unit: L
+  notes: 'Source batch dose: 200 ml / 1000 = 0.2 L per receiving batch, not g/L or
+    a per-liter dose.'
+  preparation_notes: Dissolve 14.0 g gelatine in 200 ml bidest. water, autoclave 15
+    minutes at 115°C.
+- preferred_term: Solution C
+  composition:
+  - preferred_term: Bovine serum albumin
+    concentration:
+      value: '350'
+      unit: G_PER_L
+    notes: 'Source batch input: 50.05 g. Retain provider-declared stock g_l=350 only
+      within Solution C, not a receiving-medium concentration or independently measured
+      final stock volume. Source qualifier: Sigma No A9647.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/403
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 1,
+                                "compound": "Bovine serum albumin",
+                                "compound_id": 705,
+                                "attribute": "Sigma No A9647",
+                                "amount": 50.05,
+                                "unit": "g",
+                                "g_l": 350,
+                                "optional": 0
+                            }
+      explanation: 'solutions[2].composition[0].concentration: Source batch input:
+        50.05 g. Retain provider-declared stock g_l=350 only within Solution C, not
+        a receiving-medium concentration or independently measured final stock volume.
+        Source qualifier: Sigma No A9647. No final-medium volume, percentage basis,
+        density or chemical grounding is inferred. Locator=data.solutions[3].recipe[0];
+        accessed=2026-10-08T21:53:35.688242+00:00; capture SHA256=58cfbf042287555b81f70966ca23533b2e45f3c0aae4bda4a59635be5b01cea9.'
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf
+      supports: SUPPORT
+      snippet: |-
+        Dissolve 50.05 g bovine serum albumine, fract. V (important: Sigma No A9647) in 143
+        ml bidest. water,
+      explanation: 'solutions[2].composition[0].concentration: Original corroborates
+        this preparation''s batch input, not a measured final volume. PDF page 1;
+        layout extraction and page image inspected. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T21:53:36.588619+00:00; capture SHA256=1caa39771ff3d82823f7ec48cb1af48cff9ef36845d8324226725467d328d143.'
+  - preferred_term: Double distilled water
+    concentration:
+      value: '0.143'
+      unit: L
+    notes: 'Source water batch input: 143 ml / 1000 = 0.143 L in this preparation
+      only, not a measured final volume.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/403
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 2,
+                                "compound": "Double distilled water",
+                                "compound_id": 1021,
+                                "amount": 143,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+      explanation: 'solutions[2].composition[1].concentration: Source water batch
+        input: 143 ml / 1000 = 0.143 L in this preparation only, not a measured final
+        volume. No final-medium volume, percentage basis, density or chemical grounding
+        is inferred. Locator=data.solutions[3].recipe[1]; accessed=2026-10-08T21:53:35.688242+00:00;
+        capture SHA256=58cfbf042287555b81f70966ca23533b2e45f3c0aae4bda4a59635be5b01cea9.'
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf
+      supports: SUPPORT
+      snippet: |-
+        Dissolve 50.05 g bovine serum albumine, fract. V (important: Sigma No A9647) in 143
+        ml bidest. water,
+      explanation: 'solutions[2].composition[1].concentration: Original corroborates
+        this preparation''s batch input, not a measured final volume. PDF page 1;
+        layout extraction and page image inspected. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T21:53:36.588619+00:00; capture SHA256=1caa39771ff3d82823f7ec48cb1af48cff9ef36845d8324226725467d328d143.'
+  concentration:
+    value: '0.143'
+    unit: L
+  notes: 'Source batch dose: 143 ml / 1000 = 0.143 L per receiving batch, not g/L
+    or a per-liter dose.'
+  preparation_notes: 'Dissolve 50.05 g bovine serum albumine, fract. V (important:
+    Sigma No A9647) in 143 ml bidest. water, or use BSA-solution Sigma A7409.'
+- preferred_term: Rabbit serum
+  concentration:
+    value: '0.086'
+    unit: L
+  composition: []
+  notes: 'Source batch dose: 86 ml / 1000 = 0.086 L per receiving batch, not g/L or
+    a per-liter dose. Source product/stock qualifier: inactivated, GIBCO 037-06120M.'
+evidence:
+- reference: https://mediadive.dsmz.de/rest/medium/403
+  supports: SUPPORT
+  snippet: |-
+    {
+                            "recipe_order": 1,
+                            "solution": "Solution A",
+                            "solution_id": 819,
+                            "amount": 1000,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+  explanation: |-
+    solutions[0].concentration: Source batch dose: 1000 ml / 1000 = 1 L per receiving batch, not g/L or a per-liter dose. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[0]; accessed=2026-10-08T21:53:35.688242+00:00; capture SHA256=58cfbf042287555b81f70966ca23533b2e45f3c0aae4bda4a59635be5b01cea9.
+
+    Additional exact excerpt: {
+                            "recipe_order": 2,
+                            "solution": "Solution B",
+                            "solution_id": 820,
+                            "amount": 200,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+    solutions[1].concentration: Source batch dose: 200 ml / 1000 = 0.2 L per receiving batch, not g/L or a per-liter dose. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[1]; accessed=2026-10-08T21:53:35.688242+00:00; capture SHA256=58cfbf042287555b81f70966ca23533b2e45f3c0aae4bda4a59635be5b01cea9.
+
+    Additional exact excerpt: {
+                            "recipe_order": 3,
+                            "solution": "Solution C",
+                            "solution_id": 821,
+                            "amount": 143,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+    solutions[2].concentration: Source batch dose: 143 ml / 1000 = 0.143 L per receiving batch, not g/L or a per-liter dose. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[2]; accessed=2026-10-08T21:53:35.688242+00:00; capture SHA256=58cfbf042287555b81f70966ca23533b2e45f3c0aae4bda4a59635be5b01cea9.
+
+    Additional exact excerpt: {
+                            "recipe_order": 1,
+                            "compound": "Rabbit serum",
+                            "compound_id": 464,
+                            "condition": "",
+                            "attribute": "inactivated, GIBCO 037-06120M",
+                            "amount": 86,
+                            "unit": "ml",
+                            "mmol_l": 526320,
+                            "optional": 0
+                        }
+    solutions[3].concentration: Source batch dose: 86 ml / 1000 = 0.086 L per receiving batch, not g/L or a per-liter dose. Source product/stock qualifier: inactivated, GIBCO 037-06120M. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[4].recipe[0]; accessed=2026-10-08T21:53:35.688242+00:00; capture SHA256=58cfbf042287555b81f70966ca23533b2e45f3c0aae4bda4a59635be5b01cea9.
+
+    Additional exact excerpt: {
+                            "recipe_order": 4,
+                            "solution": "Solution D",
+                            "solution_id": 822,
+                            "amount": 86,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+    solutions[3].concentration: Solution D is the same 86 ml inactivated rabbit-serum input, not an additional dose. Provider serum mmol_l is not used. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[3]; accessed=2026-10-08T21:53:35.688242+00:00; capture SHA256=58cfbf042287555b81f70966ca23533b2e45f3c0aae4bda4a59635be5b01cea9.
+
+    Additional exact excerpt: {
+                            "recipe_order": 1,
+                            "compound": "CMRL 1066",
+                            "compound_id": 1680,
+                            "attribute": "GIBCO 042-1545, glutamin 10 x",
+                            "amount": 100,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+    solutions[0].solutions[0].concentration: Source batch dose: 100 ml / 1000 = 0.1 L per receiving batch, not g/L or a per-liter dose. Source product/stock qualifier: GIBCO 042-1545, glutamin 10 x. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[1].recipe[0]; accessed=2026-10-08T21:53:35.688242+00:00; capture SHA256=58cfbf042287555b81f70966ca23533b2e45f3c0aae4bda4a59635be5b01cea9.
+
+    Additional exact excerpt: Stir slowly at 4 - 10\u00b0C for 3 hours, adjust pH to 7.6 with 5 M NaOH. Filter sterilize.
+    solutions[0].preparation_notes: Instruction applies only to this preparation; no pore size is specified. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[1].steps[0]; accessed=2026-10-08T21:53:35.688242+00:00; capture SHA256=58cfbf042287555b81f70966ca23533b2e45f3c0aae4bda4a59635be5b01cea9.
+
+    Additional exact excerpt: Dissolve 14.0 g gelatine in 200 ml bidest. water, autoclave 15 minutes at 115\u00b0C.
+    solutions[1].preparation_notes: Instruction applies only to this preparation; no pore size is specified. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[2].steps[0]; accessed=2026-10-08T21:53:35.688242+00:00; capture SHA256=58cfbf042287555b81f70966ca23533b2e45f3c0aae4bda4a59635be5b01cea9.
+
+    Additional exact excerpt: Dissolve 50.05 g bovine serum albumine, fract. V (important: Sigma No A9647) in 143 ml bidest. water, or use BSA-solution Sigma A7409.
+    solutions[2].preparation_notes: Instruction applies only to this preparation; no pore size is specified. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[3].steps[0]; accessed=2026-10-08T21:53:35.688242+00:00; capture SHA256=58cfbf042287555b81f70966ca23533b2e45f3c0aae4bda4a59635be5b01cea9.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf
+  supports: SUPPORT
+  snippet: |-
+    Rabbit serum, inactivated
+     (GIBCO 037-06120M)                                                            86.0        ml
+  explanation: |-
+    solutions[3].concentration: Original corroborates this preparation's batch input, not a measured final volume. PDF page 1; layout extraction and page image inspected. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:36.588619+00:00; capture SHA256=1caa39771ff3d82823f7ec48cb1af48cff9ef36845d8324226725467d328d143.
+
+    Additional exact excerpt: Combine the warm (37C) solutions A, B, C, D, and filter-sterilize the warm medium.
+    Solution B can also be added after filtration.
+    solutions[0].notes: Original names the combined preparations; numeric dosing is separately provider-declared. PDF page 1; layout extraction and page image inspected. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:36.588619+00:00; capture SHA256=1caa39771ff3d82823f7ec48cb1af48cff9ef36845d8324226725467d328d143.
+
+    Additional exact excerpt: Combine the warm (37C) solutions A, B, C, D, and filter-sterilize the warm medium.
+    Solution B can also be added after filtration.
+    solutions[1].notes: Original names the combined preparations; numeric dosing is separately provider-declared. PDF page 1; layout extraction and page image inspected. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:36.588619+00:00; capture SHA256=1caa39771ff3d82823f7ec48cb1af48cff9ef36845d8324226725467d328d143.
+
+    Additional exact excerpt: Combine the warm (37C) solutions A, B, C, D, and filter-sterilize the warm medium.
+    Solution B can also be added after filtration.
+    solutions[2].notes: Original names the combined preparations; numeric dosing is separately provider-declared. PDF page 1; layout extraction and page image inspected. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:36.588619+00:00; capture SHA256=1caa39771ff3d82823f7ec48cb1af48cff9ef36845d8324226725467d328d143.
+
+    Additional exact excerpt: CMRL 1066/10 x Glutamin (GIBCO 042-1545)                                    100.0         ml
+    solutions[0].solutions[0].concentration: Original corroborates this preparation's batch input, not a measured final volume. PDF page 1; layout extraction and page image inspected. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:36.588619+00:00; capture SHA256=1caa39771ff3d82823f7ec48cb1af48cff9ef36845d8324226725467d328d143.
+
+    Additional exact excerpt: Stir slowly at 4 - 10C for 3 hours, adjust pH to 7.6 with 5 M NaOH. Filter sterilize.
+    solutions[0].solutions[1].notes: Explicit 5 M NaOH titrant strength for adjusting Solution A to pH 7.6, not a receiving-medium concentration. No fixed titrant dose is specified. PDF page 1; layout extraction and page image inspected. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:36.588619+00:00; capture SHA256=1caa39771ff3d82823f7ec48cb1af48cff9ef36845d8324226725467d328d143.
+
+    Additional exact excerpt: Stir slowly at 4 - 10C for 3 hours, adjust pH to 7.6 with 5 M NaOH. Filter sterilize.
+    solutions[0].preparation_notes: pH 7.6, 4-10 C and three hours belong to Solution A. PDF page 1; layout extraction and page image inspected. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:36.588619+00:00; capture SHA256=1caa39771ff3d82823f7ec48cb1af48cff9ef36845d8324226725467d328d143.
+
+    Additional exact excerpt: Dissolve 14.0 g gelatine in 200 ml bidest. water, autoclave 15 minutes at 115C.
+    solutions[1].preparation_notes: Solution B is autoclaved for 15 minutes at 115 C, not a default 121 C cycle. PDF page 1; layout extraction and page image inspected. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:36.588619+00:00; capture SHA256=1caa39771ff3d82823f7ec48cb1af48cff9ef36845d8324226725467d328d143.
+
+    Additional exact excerpt: Dissolve 50.05 g bovine serum albumine, fract. V (important: Sigma No A9647) in 143
+    ml bidest. water, or use BSA-solution Sigma A7409.
+    solutions[2].preparation_notes: Fraction V and the Sigma A7409 replacement are source-specific alternatives, not simultaneous components. PDF page 1; layout extraction and page image inspected. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:36.588619+00:00; capture SHA256=1caa39771ff3d82823f7ec48cb1af48cff9ef36845d8324226725467d328d143.
+
+    Additional exact excerpt: Combine the warm (37C) solutions A, B, C, D, and filter-sterilize the warm medium.
+    Solution B can also be added after filtration.
+    preparation_steps: Warm combination at 37 C and filtration, with Solution B optionally added after filtration. No pore size is specified. PDF page 1; layout extraction and page image inspected. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:36.588619+00:00; capture SHA256=1caa39771ff3d82823f7ec48cb1af48cff9ef36845d8324226725467d328d143.
+
+    Additional exact excerpt: Alternatively, buy supplemented or un-supplemented BSK-H medium (Fa. Bio&SELL or
+    Sigma) and supplement the medium according to manufacturer’s advice. Sterilize the
+    mixed and warm (37C) medium by filtration.
+    notes: Keep commercial BSK-H replacement as a distinct source alternative; do not add it to this formulation. PDF page 1; layout extraction and page image inspected. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:36.588619+00:00; capture SHA256=1caa39771ff3d82823f7ec48cb1af48cff9ef36845d8324226725467d328d143.
+
+    Additional exact excerpt: Dissolve 50.05 g bovine serum albumine, fract. V (important: Sigma No A9647) in 143
+    ml bidest. water, or use BSA-solution Sigma A7409.
+    notes: Remove this false LB constituent and its concentration; restore the source-specific albumin preparation without importing LB groundings. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:36.588619+00:00; capture SHA256=1caa39771ff3d82823f7ec48cb1af48cff9ef36845d8324226725467d328d143.
+
+    Additional exact excerpt: Dissolve 50.05 g bovine serum albumine, fract. V (important: Sigma No A9647) in 143
+    ml bidest. water, or use BSA-solution Sigma A7409.
+    notes: Remove this false LB constituent and its concentration; restore the source-specific albumin preparation without importing LB groundings. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:36.588619+00:00; capture SHA256=1caa39771ff3d82823f7ec48cb1af48cff9ef36845d8324226725467d328d143.
+
+    Additional exact excerpt: Dissolve 50.05 g bovine serum albumine, fract. V (important: Sigma No A9647) in 143
+    ml bidest. water, or use BSA-solution Sigma A7409.
+    notes: Remove this false LB constituent and its concentration; restore the source-specific albumin preparation without importing LB groundings. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:36.588619+00:00; capture SHA256=1caa39771ff3d82823f7ec48cb1af48cff9ef36845d8324226725467d328d143.
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/403
+  title: BSK-MEDIUM
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-08;
+    capture_sha256=58cfbf042287555b81f70966ca23533b2e45f3c0aae4bda4a59635be5b01cea9.
+    Authors and publication year are not supplied. The PDF copyright year is not treated
+    as publication year. Provider stock g_l values are attributed at stock scope only,
+    not independent final-volume measurements.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf
+  title: 403. BSK-MEDIUM
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-08; capture_sha256=1caa39771ff3d82823f7ec48cb1af48cff9ef36845d8324226725467d328d143.
+    Authors and publication year are not supplied. The PDF copyright year is not treated
+    as publication year. Provider stock g_l values are attributed at stock scope only,
+    not independent final-volume measurements.

@@ -11,18 +11,59 @@ media_term:
   term:
     id: mediadive.medium:J572
     label: MODIFIED HALOBACTERIA MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=572'
+notes: |-
+  Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=572
+
+  Ingredient amounts use the exact formulation and preparation stage. Separate preparation excerpt: "Add components to distilled water and bring volume to 1.0 L.". Conditional solid option: "For preparation of solid medium, add 20.0 g/L agar.". Agar is included only in M372/M960 in this reviewed variant cohort; no step ordering is invented. The inherited base pH range does not replace the source-explicit post-autoclave pH 7.5 target.
 ingredients:
 - preferred_term: Casamino acids
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: Copied from referenced JCM Medium 168
+  notes: |-
+    Copied from referenced JCM Medium 168
+
+    5.0 g in the source preparation brought to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.".
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+    supports: SUPPORT
+    snippet: Casamino acids (BD-Difco) 5.0 g
+    explanation: |-
+      ingredients[0].concentration: 5.0 g in the source preparation brought to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+      Additional exact excerpt: Casamino acids (BD-Difco) 5.0 g
+      ingredients[0].notes: 5.0 g in the source preparation brought to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=572
+    supports: SUPPORT
+    snippet: Use Medium No. 168 with 2.0 g/L MgSO4·7H2O (final).
+    explanation: 'ingredients[0].concentration: 5.0 g in the source preparation brought
+      to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to
+      distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction;
+      accessed=2026-10-09T13:07:27.820151+00:00; source SHA256=84af33834f842463362cc33d5578a6b69c5125c915352d92169eeb44fdf26527.'
 - preferred_term: Yeast extract
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: Copied from referenced JCM Medium 168
+  notes: |-
+    Copied from referenced JCM Medium 168
+
+    5.0 g in the source preparation brought to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.".
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+    supports: SUPPORT
+    snippet: Yeast extract (BD-Difco) 5.0 g
+    explanation: |-
+      ingredients[1].concentration: 5.0 g in the source preparation brought to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+      Additional exact excerpt: Yeast extract (BD-Difco) 5.0 g
+      ingredients[1].notes: 5.0 g in the source preparation brought to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=572
+    supports: SUPPORT
+    snippet: Use Medium No. 168 with 2.0 g/L MgSO4·7H2O (final).
+    explanation: 'ingredients[1].concentration: 5.0 g in the source preparation brought
+      to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to
+      distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction;
+      accessed=2026-10-09T13:07:27.820151+00:00; source SHA256=84af33834f842463362cc33d5578a6b69c5125c915352d92169eeb44fdf26527.'
 - preferred_term: Na glutamate
   term:
     id: CHEBI:64220
@@ -33,7 +74,26 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:64220
     label: monosodium glutamate
-  notes: Copied from referenced JCM Medium 168
+  notes: |-
+    Copied from referenced JCM Medium 168
+
+    1.0 g in the source preparation brought to 1.0 L gives 1 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.".
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+    supports: SUPPORT
+    snippet: Sodium glutamate 1.0 g
+    explanation: |-
+      ingredients[2].concentration: 1.0 g in the source preparation brought to 1.0 L gives 1 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+      Additional exact excerpt: Sodium glutamate 1.0 g
+      ingredients[2].notes: 1.0 g in the source preparation brought to 1.0 L gives 1 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=572
+    supports: SUPPORT
+    snippet: Use Medium No. 168 with 2.0 g/L MgSO4·7H2O (final).
+    explanation: 'ingredients[2].concentration: 1.0 g in the source preparation brought
+      to 1.0 L gives 1 G_PER_L. Separate exact volume excerpt: "Add components to
+      distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction;
+      accessed=2026-10-09T13:07:27.820151+00:00; source SHA256=84af33834f842463362cc33d5578a6b69c5125c915352d92169eeb44fdf26527.'
 - preferred_term: Trisodium citrate
   term:
     id: CHEBI:53258
@@ -44,18 +104,59 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:53258
     label: sodium citrate
-  notes: Copied from referenced JCM Medium 168
+  notes: |-
+    Copied from referenced JCM Medium 168
+
+    3.0 g in the source preparation brought to 1.0 L gives 3 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.".
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+    supports: SUPPORT
+    snippet: Trisodium citrate 3.0 g
+    explanation: |-
+      ingredients[3].concentration: 3.0 g in the source preparation brought to 1.0 L gives 3 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+      Additional exact excerpt: Trisodium citrate 3.0 g
+      ingredients[3].notes: 3.0 g in the source preparation brought to 1.0 L gives 3 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=572
+    supports: SUPPORT
+    snippet: Use Medium No. 168 with 2.0 g/L MgSO4·7H2O (final).
+    explanation: 'ingredients[3].concentration: 3.0 g in the source preparation brought
+      to 1.0 L gives 3 G_PER_L. Separate exact volume excerpt: "Add components to
+      distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction;
+      accessed=2026-10-09T13:07:27.820151+00:00; source SHA256=84af33834f842463362cc33d5578a6b69c5125c915352d92169eeb44fdf26527.'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
   concentration:
-    value: '20'
+    value: '2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
-  notes: Copied from referenced JCM Medium 168
+  notes: |-
+    Copied from referenced JCM Medium 168
+
+    Use the recipe-specific final formulation, not the copied base amount. The source explicitly gives this final g/L target.
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=572
+    supports: SUPPORT
+    snippet: Use Medium No. 168 with 2.0 g/L MgSO4·7H2O (final).
+    explanation: |-
+      ingredients[4].concentration: Use the recipe-specific final formulation, not the copied base amount. The source explicitly gives this final g/L target. Exact captured recipe row/instruction; accessed=2026-10-09T13:07:27.820151+00:00; source SHA256=84af33834f842463362cc33d5578a6b69c5125c915352d92169eeb44fdf26527.
+
+      Additional exact excerpt: Use Medium No. 168 with 2.0 g/L MgSO4·7H2O (final).
+      ingredients[4].notes: Use the recipe-specific final formulation, not the copied base amount. The source explicitly gives this final g/L target. Exact captured recipe row/instruction; accessed=2026-10-09T13:07:27.820151+00:00; source SHA256=84af33834f842463362cc33d5578a6b69c5125c915352d92169eeb44fdf26527.
+
+      Additional exact excerpt: Use Medium No. 168 with 2.0 g/L MgSO4·7H2O (final).
+      ingredients[4].concentration: Use the recipe-specific final formulation, not the copied base amount. The source explicitly gives this final g/L target. Exact captured recipe row/instruction; accessed=2026-10-09T13:07:27.820151+00:00; source SHA256=84af33834f842463362cc33d5578a6b69c5125c915352d92169eeb44fdf26527.
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+    supports: SUPPORT
+    snippet: Add components to distilled water and bring volume to 1.0 L.
+    explanation: 'ingredients[4].concentration: Use the recipe-specific final formulation,
+      not the copied base amount. The source explicitly gives this final g/L target.
+      Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00;
+      source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -66,7 +167,26 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
     label: potassium chloride
-  notes: Copied from referenced JCM Medium 168
+  notes: |-
+    Copied from referenced JCM Medium 168
+
+    2.0 g in the source preparation brought to 1.0 L gives 2 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.".
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+    supports: SUPPORT
+    snippet: KCl 2.0 g
+    explanation: |-
+      ingredients[5].concentration: 2.0 g in the source preparation brought to 1.0 L gives 2 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+      Additional exact excerpt: KCl 2.0 g
+      ingredients[5].notes: 2.0 g in the source preparation brought to 1.0 L gives 2 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=572
+    supports: SUPPORT
+    snippet: Use Medium No. 168 with 2.0 g/L MgSO4·7H2O (final).
+    explanation: 'ingredients[5].concentration: 2.0 g in the source preparation brought
+      to 1.0 L gives 2 G_PER_L. Separate exact volume excerpt: "Add components to
+      distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction;
+      accessed=2026-10-09T13:07:27.820151+00:00; source SHA256=84af33834f842463362cc33d5578a6b69c5125c915352d92169eeb44fdf26527.'
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -77,7 +197,26 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
-  notes: Copied from referenced JCM Medium 168
+  notes: |-
+    Copied from referenced JCM Medium 168
+
+    200.0 g in the source preparation brought to 1.0 L gives 200 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.".
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+    supports: SUPPORT
+    snippet: NaCl 200.0 g
+    explanation: |-
+      ingredients[6].concentration: 200.0 g in the source preparation brought to 1.0 L gives 200 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+      Additional exact excerpt: NaCl 200.0 g
+      ingredients[6].notes: 200.0 g in the source preparation brought to 1.0 L gives 200 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=572
+    supports: SUPPORT
+    snippet: Use Medium No. 168 with 2.0 g/L MgSO4·7H2O (final).
+    explanation: 'ingredients[6].concentration: 200.0 g in the source preparation
+      brought to 1.0 L gives 200 G_PER_L. Separate exact volume excerpt: "Add components
+      to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction;
+      accessed=2026-10-09T13:07:27.820151+00:00; source SHA256=84af33834f842463362cc33d5578a6b69c5125c915352d92169eeb44fdf26527.'
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
@@ -88,7 +227,26 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:86249
     label: iron dichloride tetrahydrate
-  notes: Copied from referenced JCM Medium 168
+  notes: |-
+    Copied from referenced JCM Medium 168
+
+    36.0 mg in the source preparation brought to 1.0 L gives 36 MG_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.".
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+    supports: SUPPORT
+    snippet: FeCl2·4H2O 36.0 mg
+    explanation: |-
+      ingredients[7].concentration: 36.0 mg in the source preparation brought to 1.0 L gives 36 MG_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+      Additional exact excerpt: FeCl2·4H2O 36.0 mg
+      ingredients[7].notes: 36.0 mg in the source preparation brought to 1.0 L gives 36 MG_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=572
+    supports: SUPPORT
+    snippet: Use Medium No. 168 with 2.0 g/L MgSO4·7H2O (final).
+    explanation: 'ingredients[7].concentration: 36.0 mg in the source preparation
+      brought to 1.0 L gives 36 MG_PER_L. Separate exact volume excerpt: "Add components
+      to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction;
+      accessed=2026-10-09T13:07:27.820151+00:00; source SHA256=84af33834f842463362cc33d5578a6b69c5125c915352d92169eeb44fdf26527.'
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -99,7 +257,48 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:86368
     label: manganese(II) chloride tetrahydrate
-  notes: Copied from referenced JCM Medium 168
+  notes: |-
+    Copied from referenced JCM Medium 168
+
+    0.36 mg in the source preparation brought to 1.0 L gives 0.36 MG_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.".
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+    supports: SUPPORT
+    snippet: MnCl2·4H2O 0.36 mg
+    explanation: |-
+      ingredients[8].concentration: 0.36 mg in the source preparation brought to 1.0 L gives 0.36 MG_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+      Additional exact excerpt: MnCl2·4H2O 0.36 mg
+      ingredients[8].notes: 0.36 mg in the source preparation brought to 1.0 L gives 0.36 MG_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=572
+    supports: SUPPORT
+    snippet: Use Medium No. 168 with 2.0 g/L MgSO4·7H2O (final).
+    explanation: 'ingredients[8].concentration: 0.36 mg in the source preparation
+      brought to 1.0 L gives 0.36 MG_PER_L. Separate exact volume excerpt: "Add components
+      to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction;
+      accessed=2026-10-09T13:07:27.820151+00:00; source SHA256=84af33834f842463362cc33d5578a6b69c5125c915352d92169eeb44fdf26527.'
+- preferred_term: distilled water
+  notes: Water makes the preparation up to 1.0 L. Its separate input volume and mass
+    are unspecified; neither 1 g/L nor a fixed 1 L water dose is supported.
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+    supports: SUPPORT
+    snippet: Add components to distilled water and bring volume to 1.0 L.
+    explanation: |-
+      ingredients[9].concentration: Water makes the preparation up to 1.0 L. Its separate input volume and mass are unspecified; neither 1 g/L nor a fixed 1 L water dose is supported. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+      Additional exact excerpt: Add components to distilled water and bring volume to 1.0 L.
+      ingredients[9].notes: Water makes the preparation up to 1.0 L. Its separate input volume and mass are unspecified; neither 1 g/L nor a fixed 1 L water dose is supported. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+      Additional exact excerpt: Add components to distilled water and bring volume to 1.0 L.
+      ingredients[9].preferred_term: Water makes the preparation up to 1.0 L. Its separate input volume and mass are unspecified; neither 1 g/L nor a fixed 1 L water dose is supported. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=572
+    supports: SUPPORT
+    snippet: Use Medium No. 168 with 2.0 g/L MgSO4·7H2O (final).
+    explanation: 'ingredients[9].concentration: Water makes the preparation up to
+      1.0 L. Its separate input volume and mass are unspecified; neither 1 g/L nor
+      a fixed 1 L water dose is supported. Exact captured recipe row/instruction;
+      accessed=2026-10-09T13:07:27.820151+00:00; source SHA256=84af33834f842463362cc33d5578a6b69c5125c915352d92169eeb44fdf26527.'
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -147,14 +346,109 @@ curation_history:
   notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-10-09T14:23:51.976655+00:00'
+  curator: codex
+  action: CURATED_HALOBACTERIA_VARIANT_CONCENTRATIONS_AND_PREPARATION_STAGES
+  notes: Source-specific ingredient and variant review. Every change has an exact
+    PURL-backed excerpt. Prepared-base quantities, unquantified water/titrant, source
+    limitations, chemical identities and prior history are preserved; no taxa-media
+    assertions are added.
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=572
+  changes: |-
+    ingredients[0].notes: Copied from referenced JCM Medium 168 -> Copied from referenced JCM Medium 168
+
+    5.0 g in the source preparation brought to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.".; ingredients[1].notes: Copied from referenced JCM Medium 168 -> Copied from referenced JCM Medium 168
+
+    5.0 g in the source preparation brought to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.".; ingredients[2].notes: Copied from referenced JCM Medium 168 -> Copied from referenced JCM Medium 168
+
+    1.0 g in the source preparation brought to 1.0 L gives 1 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.".; ingredients[3].notes: Copied from referenced JCM Medium 168 -> Copied from referenced JCM Medium 168
+
+    3.0 g in the source preparation brought to 1.0 L gives 3 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.".; ingredients[4].concentration: {'value': '20', 'unit': 'G_PER_L'} -> {'value': '2', 'unit': 'G_PER_L'}; ingredients[4].notes: Copied from referenced JCM Medium 168 -> Copied from referenced JCM Medium 168
+
+    Use the recipe-specific final formulation, not the copied base amount. The source explicitly gives this final g/L target.; ingredients[4].concentration: {'value': '20', 'unit': 'G_PER_L'} -> {'value': '2', 'unit': 'G_PER_L'}; ingredients[4].concentration: {'value': '20', 'unit': 'G_PER_L'} -> {'value': '2', 'unit': 'G_PER_L'}; ingredients[5].notes: Copied from referenced JCM Medium 168 -> Copied from referenced JCM Medium 168
+
+    2.0 g in the source preparation brought to 1.0 L gives 2 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.".; ingredients[6].notes: Copied from referenced JCM Medium 168 -> Copied from referenced JCM Medium 168
+
+    200.0 g in the source preparation brought to 1.0 L gives 200 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.".; ingredients[7].notes: Copied from referenced JCM Medium 168 -> Copied from referenced JCM Medium 168
+
+    36.0 mg in the source preparation brought to 1.0 L gives 36 MG_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.".; ingredients[8].notes: Copied from referenced JCM Medium 168 -> Copied from referenced JCM Medium 168
+
+    0.36 mg in the source preparation brought to 1.0 L gives 0.36 MG_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.".; ingredients[9].notes: None -> Water makes the preparation up to 1.0 L. Its separate input volume and mass are unspecified; neither 1 g/L nor a fixed 1 L water dose is supported.; ingredients[9].preferred_term: None -> distilled water; solutions[0].name: None -> Na2CO3 solution; solutions[0].preferred_term: None -> Na2CO3 solution; solutions[0].composition: None -> []; solutions[0].notes: None -> Sterile sodium carbonate solution adjusts the medium to pH 7.5 after autoclaving. Dose and stock strength are unspecified; retain any source-explicit variable dose without inventing a numeric concentration.; notes: Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=572 -> Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=572
+
+    Ingredient amounts use the exact formulation and preparation stage. Separate preparation excerpt: "Add components to distilled water and bring volume to 1.0 L.". Conditional solid option: "For preparation of solid medium, add 20.0 g/L agar.". Agar is included only in M372/M960 in this reviewed variant cohort; no step ordering is invented. The inherited base pH range does not replace the source-explicit post-autoclave pH 7.5 target.; notes: Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=572 -> Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=572
+
+    Ingredient amounts use the exact formulation and preparation stage. Separate preparation excerpt: "Add components to distilled water and bring volume to 1.0 L.". Conditional solid option: "For preparation of solid medium, add 20.0 g/L agar.". Agar is included only in M372/M960 in this reviewed variant cohort; no step ordering is invented. The inherited base pH range does not replace the source-explicit post-autoclave pH 7.5 target.; parent_media: {'path': 'data/normalized_yaml/bacterial/JCM_J168_HALOBACTERIA_MEDIUM.yaml', 'relationship': 'SOURCE_DUPLICATE', 'id': 'CultureMech:002527', 'name': 'halobacteria_medium'} -> {'path': 'data/normalized_yaml/archaea/JCM_J168_HALOBACTERIA_MEDIUM.yaml', 'relationship': 'DERIVED_FROM', 'id': 'CultureMech:002527', 'name': 'halobacteria_medium', 'notes': 'The modified recipe uses 2 g/L magnesium sulfate heptahydrate and post-autoclave pH 7.5 with sterile carbonate solution. It is derived from the J168 base, not a duplicate or a concentration-only change.'}; variant_relationship: SOURCE_DUPLICATE -> DERIVED_FROM; variant_modifications: ['Same ingredient and concentration signature; review as possible duplicate source record.'] -> ['The modified recipe uses 2 g/L magnesium sulfate heptahydrate and post-autoclave pH 7.5 with sterile carbonate solution. It is derived from the J168 base, not a duplicate or a concentration-only change.']; parent_media: {'path': 'data/normalized_yaml/bacterial/JCM_J168_HALOBACTERIA_MEDIUM.yaml', 'relationship': 'SOURCE_DUPLICATE', 'id': 'CultureMech:002527', 'name': 'halobacteria_medium'} -> {'path': 'data/normalized_yaml/archaea/JCM_J168_HALOBACTERIA_MEDIUM.yaml', 'relationship': 'DERIVED_FROM', 'id': 'CultureMech:002527', 'name': 'halobacteria_medium', 'notes': 'The modified recipe uses 2 g/L magnesium sulfate heptahydrate and post-autoclave pH 7.5 with sterile carbonate solution. It is derived from the J168 base, not a duplicate or a concentration-only change.'}
 data_quality_flags:
 - resolved_reference
 parent_media:
-  path: data/normalized_yaml/bacterial/JCM_J168_HALOBACTERIA_MEDIUM.yaml
-  relationship: SOURCE_DUPLICATE
+  path: data/normalized_yaml/archaea/JCM_J168_HALOBACTERIA_MEDIUM.yaml
+  relationship: DERIVED_FROM
   id: CultureMech:002527
   name: halobacteria_medium
-variant_relationship: SOURCE_DUPLICATE
+  notes: The modified recipe uses 2 g/L magnesium sulfate heptahydrate and post-autoclave
+    pH 7.5 with sterile carbonate solution. It is derived from the J168 base, not
+    a duplicate or a concentration-only change.
+variant_relationship: DERIVED_FROM
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- The modified recipe uses 2 g/L magnesium sulfate heptahydrate and post-autoclave
+  pH 7.5 with sterile carbonate solution. It is derived from the J168 base, not a
+  duplicate or a concentration-only change.
+evidence:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=572
+  supports: SUPPORT
+  snippet: After autoclaving, adjust pH to 7.5 with sterile Na2CO3 solution.
+  explanation: |-
+    ph_value: Recipe-specific pH 7.5 overrides the base range. Exact captured recipe row/instruction; accessed=2026-10-09T13:07:27.820151+00:00; source SHA256=84af33834f842463362cc33d5578a6b69c5125c915352d92169eeb44fdf26527.
+
+    Additional exact excerpt: After autoclaving, adjust pH to 7.5 with sterile Na2CO3 solution.
+    solutions[0].name: Sterile sodium carbonate solution adjusts the medium to pH 7.5 after autoclaving. Dose and stock strength are unspecified; retain any source-explicit variable dose without inventing a numeric concentration. Exact captured recipe row/instruction; accessed=2026-10-09T13:07:27.820151+00:00; source SHA256=84af33834f842463362cc33d5578a6b69c5125c915352d92169eeb44fdf26527.
+
+    Additional exact excerpt: After autoclaving, adjust pH to 7.5 with sterile Na2CO3 solution.
+    solutions[0].preferred_term: Sterile sodium carbonate solution adjusts the medium to pH 7.5 after autoclaving. Dose and stock strength are unspecified; retain any source-explicit variable dose without inventing a numeric concentration. Exact captured recipe row/instruction; accessed=2026-10-09T13:07:27.820151+00:00; source SHA256=84af33834f842463362cc33d5578a6b69c5125c915352d92169eeb44fdf26527.
+
+    Additional exact excerpt: After autoclaving, adjust pH to 7.5 with sterile Na2CO3 solution.
+    solutions[0].composition: Sterile sodium carbonate solution adjusts the medium to pH 7.5 after autoclaving. Dose and stock strength are unspecified; retain any source-explicit variable dose without inventing a numeric concentration. Exact captured recipe row/instruction; accessed=2026-10-09T13:07:27.820151+00:00; source SHA256=84af33834f842463362cc33d5578a6b69c5125c915352d92169eeb44fdf26527.
+
+    Additional exact excerpt: After autoclaving, adjust pH to 7.5 with sterile Na2CO3 solution.
+    solutions[0].concentration: Sterile sodium carbonate solution adjusts the medium to pH 7.5 after autoclaving. Dose and stock strength are unspecified; retain any source-explicit variable dose without inventing a numeric concentration. Exact captured recipe row/instruction; accessed=2026-10-09T13:07:27.820151+00:00; source SHA256=84af33834f842463362cc33d5578a6b69c5125c915352d92169eeb44fdf26527.
+
+    Additional exact excerpt: After autoclaving, adjust pH to 7.5 with sterile Na2CO3 solution.
+    solutions[0].notes: Sterile sodium carbonate solution adjusts the medium to pH 7.5 after autoclaving. Dose and stock strength are unspecified; retain any source-explicit variable dose without inventing a numeric concentration. Exact captured recipe row/instruction; accessed=2026-10-09T13:07:27.820151+00:00; source SHA256=84af33834f842463362cc33d5578a6b69c5125c915352d92169eeb44fdf26527.
+
+    Additional exact excerpt: Use Medium No. 168 with 2.0 g/L MgSO4·7H2O (final).
+    notes: Ingredient amounts use the exact formulation and preparation stage. Separate preparation excerpt: "Add components to distilled water and bring volume to 1.0 L.". Conditional solid option: "For preparation of solid medium, add 20.0 g/L agar.". Agar is included only in M372/M960 in this reviewed variant cohort; no step ordering is invented. The inherited base pH range does not replace the source-explicit post-autoclave pH 7.5 target. Exact captured recipe row/instruction; accessed=2026-10-09T13:07:27.820151+00:00; source SHA256=84af33834f842463362cc33d5578a6b69c5125c915352d92169eeb44fdf26527.
+
+    Additional exact excerpt: Use Medium No. 168 with 2.0 g/L MgSO4·7H2O (final). After autoclaving, adjust pH to 7.5 with sterile Na2CO3 solution.
+    parent_media: The modified recipe uses 2 g/L magnesium sulfate heptahydrate and post-autoclave pH 7.5 with sterile carbonate solution. It is derived from the J168 base, not a duplicate or a concentration-only change. Exact captured recipe row/instruction; accessed=2026-10-09T13:07:27.820151+00:00; source SHA256=84af33834f842463362cc33d5578a6b69c5125c915352d92169eeb44fdf26527.
+
+    Additional exact excerpt: Use Medium No. 168 with 2.0 g/L MgSO4·7H2O (final). After autoclaving, adjust pH to 7.5 with sterile Na2CO3 solution.
+    variant_relationship: The modified recipe uses 2 g/L magnesium sulfate heptahydrate and post-autoclave pH 7.5 with sterile carbonate solution. It is derived from the J168 base, not a duplicate or a concentration-only change. Exact captured recipe row/instruction; accessed=2026-10-09T13:07:27.820151+00:00; source SHA256=84af33834f842463362cc33d5578a6b69c5125c915352d92169eeb44fdf26527.
+
+    Additional exact excerpt: Use Medium No. 168 with 2.0 g/L MgSO4·7H2O (final). After autoclaving, adjust pH to 7.5 with sterile Na2CO3 solution.
+    variant_modifications: The modified recipe uses 2 g/L magnesium sulfate heptahydrate and post-autoclave pH 7.5 with sterile carbonate solution. It is derived from the J168 base, not a duplicate or a concentration-only change. Exact captured recipe row/instruction; accessed=2026-10-09T13:07:27.820151+00:00; source SHA256=84af33834f842463362cc33d5578a6b69c5125c915352d92169eeb44fdf26527.
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+  supports: SUPPORT
+  snippet: Add components to distilled water and bring volume to 1.0 L.
+  explanation: |-
+    notes: Ingredient amounts use the exact formulation and preparation stage. Separate preparation excerpt: "Add components to distilled water and bring volume to 1.0 L.". Conditional solid option: "For preparation of solid medium, add 20.0 g/L agar.". Agar is included only in M372/M960 in this reviewed variant cohort; no step ordering is invented. The inherited base pH range does not replace the source-explicit post-autoclave pH 7.5 target. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+    Additional exact excerpt: Adjust pH to 7.0-7.2.
+    parent_media: The modified recipe uses 2 g/L magnesium sulfate heptahydrate and post-autoclave pH 7.5 with sterile carbonate solution. It is derived from the J168 base, not a duplicate or a concentration-only change. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+solutions:
+- preferred_term: Na2CO3 solution
+  composition: []
+  name: Na2CO3 solution
+  notes: Sterile sodium carbonate solution adjusts the medium to pH 7.5 after autoclaving.
+    Dose and stock strength are unspecified; retain any source-explicit variable dose
+    without inventing a numeric concentration.
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+  title: Medium data
+  notes: source_type=culture_collection_page; discovery_mode=cross_reference; accessed_on=2026-10-09;
+    accession=J168; response_sha256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+    Authors/year are not supplied; no publication year or DOI is invented.
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=572
+  title: Medium data
+  notes: source_type=culture_collection_page; discovery_mode=cross_reference; accessed_on=2026-10-09;
+    accession=J572; response_sha256=84af33834f842463362cc33d5578a6b69c5125c915352d92169eeb44fdf26527.
+    Authors/year are not supplied; no publication year or DOI is invented.

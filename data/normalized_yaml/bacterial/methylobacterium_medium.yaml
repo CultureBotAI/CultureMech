@@ -11,7 +11,10 @@ media_term:
   term:
     id: mediadive.medium:125
     label: METHYLOBACTERIUM MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf'
+notes: |-
+  Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf
+
+  Common basal table for two source-listed alternative preparations: add 5 ml methanol or incubate under methane-air (4:1). Neither alternative is selected or combined here. The retained g/L entries are provider-declared basal-table rates, not independently verified final concentrations after choosing a carbon preparation. The 1000 ml water entry is a batch input, not a measured final volume. Methanol purity, final volume, methanol final concentration and dissolved methane concentration remain unspecified. Existing chemical mappings and strain-modified source-duplicate links are preserved, not newly validated by this recipe evidence.
 ingredients:
 - preferred_term: KNO3
   term:
@@ -23,6 +26,29 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000170
     label: KNO3
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/125
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 1,
+                              "compound": "KNO3",
+                              "compound_id": 191,
+                              "amount": 1,
+                              "unit": "g",
+                              "g_l": 1,
+                              "mmol_l": 9.8909,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[0].concentration (KNO3) in
+      MediaDive medium 125; locator=$.data.solutions[0].recipe[0]. Provider explicitly
+      reports g_l=1; check: 1 g * 1 g/g / (1000 ml / 1000 ml per L) = 1 g/L. This
+      supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:42:34.501511+00:00;
+      response SHA256=2ccb593505b6c8f5cd63fd63bf1ecee7b33357bca201285eb2e958b70aff5ba1.'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -33,6 +59,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/125
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 2,
+                              "compound": "MgSO4 x 7 H2O",
+                              "compound_id": 8,
+                              "amount": 0.2,
+                              "unit": "g",
+                              "g_l": 0.2,
+                              "mmol_l": 0.811438,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[1].concentration (MgSO4 x
+      7 H2O) in MediaDive medium 125; locator=$.data.solutions[0].recipe[1]. Provider
+      explicitly reports g_l=0.2; check: 0.2 g * 1 g/g / (1000 ml / 1000 ml per L)
+      = 0.2 g/L. This supports the provider-declared main-recipe concentration, not
+      an independently measured final volume, a stock composition, or a downstream
+      assay dilution. Water alone does not establish final volume. Exact source ingredient
+      labels/forms are matched; secondary ontology mappings are not validated by this
+      evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved
+      2026-10-07T10:42:34.501511+00:00; response SHA256=2ccb593505b6c8f5cd63fd63bf1ecee7b33357bca201285eb2e958b70aff5ba1.'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -43,6 +92,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/125
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 3,
+                              "compound": "CaCl2 x 2 H2O",
+                              "compound_id": 7,
+                              "amount": 0.02,
+                              "unit": "g",
+                              "g_l": 0.02,
+                              "mmol_l": 0.136041,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[2].concentration (CaCl2 x
+      2 H2O) in MediaDive medium 125; locator=$.data.solutions[0].recipe[2]. Provider
+      explicitly reports g_l=0.02; check: 0.02 g * 1 g/g / (1000 ml / 1000 ml per
+      L) = 0.02 g/L. This supports the provider-declared main-recipe concentration,
+      not an independently measured final volume, a stock composition, or a downstream
+      assay dilution. Water alone does not establish final volume. Exact source ingredient
+      labels/forms are matched; secondary ontology mappings are not validated by this
+      evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved
+      2026-10-07T10:42:34.501511+00:00; response SHA256=2ccb593505b6c8f5cd63fd63bf1ecee7b33357bca201285eb2e958b70aff5ba1.'
 - preferred_term: Na2HPO4
   term:
     id: CHEBI:34683
@@ -53,6 +125,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/125
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 4,
+                              "compound": "Na2HPO4",
+                              "compound_id": 233,
+                              "amount": 0.23,
+                              "unit": "g",
+                              "g_l": 0.23,
+                              "mmol_l": 1.62019,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[3].concentration (Na2HPO4)
+      in MediaDive medium 125; locator=$.data.solutions[0].recipe[3]. Provider explicitly
+      reports g_l=0.23; check: 0.23 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.23 g/L.
+      This supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:42:34.501511+00:00;
+      response SHA256=2ccb593505b6c8f5cd63fd63bf1ecee7b33357bca201285eb2e958b70aff5ba1.'
 - preferred_term: NaH2PO4
   term:
     id: CHEBI:37585
@@ -63,6 +158,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:37585
     label: sodium dihydrogenphosphate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/125
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 5,
+                              "compound": "NaH2PO4",
+                              "compound_id": 229,
+                              "amount": 0.07,
+                              "unit": "g",
+                              "g_l": 0.07,
+                              "mmol_l": 0.583445,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[4].concentration (NaH2PO4)
+      in MediaDive medium 125; locator=$.data.solutions[0].recipe[4]. Provider explicitly
+      reports g_l=0.07; check: 0.07 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.07 g/L.
+      This supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:42:34.501511+00:00;
+      response SHA256=2ccb593505b6c8f5cd63fd63bf1ecee7b33357bca201285eb2e958b70aff5ba1.'
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -73,6 +191,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
     label: iron(2+) sulfate heptahydrate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/125
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 6,
+                              "compound": "FeSO4 x 7 H2O",
+                              "compound_id": 12,
+                              "amount": 1,
+                              "unit": "mg",
+                              "g_l": 0.001,
+                              "mmol_l": 0.00359693,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[5].concentration (FeSO4 x
+      7 H2O) in MediaDive medium 125; locator=$.data.solutions[0].recipe[5]. Provider
+      explicitly reports g_l=0.001; check: 1 mg * 0.001 g/mg / (1000 ml / 1000 ml
+      per L) = 0.001 g/L. This supports the provider-declared main-recipe concentration,
+      not an independently measured final volume, a stock composition, or a downstream
+      assay dilution. Water alone does not establish final volume. Exact source ingredient
+      labels/forms are matched; secondary ontology mappings are not validated by this
+      evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved
+      2026-10-07T10:42:34.501511+00:00; response SHA256=2ccb593505b6c8f5cd63fd63bf1ecee7b33357bca201285eb2e958b70aff5ba1.'
 - preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440
@@ -83,6 +224,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:31440
     label: copper(II) sulfate pentahydrate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/125
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 7,
+                              "compound": "CuSO4 x 5 H2O",
+                              "compound_id": 121,
+                              "amount": 5,
+                              "unit": "\u00b5g",
+                              "g_l": 5.0e-6,
+                              "mmol_l": 2.00252e-5,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[6].concentration (CuSO4 x
+      5 H2O) in MediaDive medium 125; locator=$.data.solutions[0].recipe[6]. Provider
+      explicitly reports g_l=5e-06; check: 5 µg * 0.000001 g/µg / (1000 ml / 1000
+      ml per L) = 0.000005 g/L. This supports the provider-declared main-recipe concentration,
+      not an independently measured final volume, a stock composition, or a downstream
+      assay dilution. Water alone does not establish final volume. Exact source ingredient
+      labels/forms are matched; secondary ontology mappings are not validated by this
+      evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved
+      2026-10-07T10:42:34.501511+00:00; response SHA256=2ccb593505b6c8f5cd63fd63bf1ecee7b33357bca201285eb2e958b70aff5ba1.'
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -93,6 +257,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
     label: boric acid
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/125
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 8,
+                              "compound": "H3BO3",
+                              "compound_id": 37,
+                              "amount": 10,
+                              "unit": "\u00b5g",
+                              "g_l": 1.0e-5,
+                              "mmol_l": 0.000161708,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[7].concentration (H3BO3)
+      in MediaDive medium 125; locator=$.data.solutions[0].recipe[7]. Provider explicitly
+      reports g_l=1e-05; check: 10 µg * 0.000001 g/µg / (1000 ml / 1000 ml per L)
+      = 0.000010 g/L. This supports the provider-declared main-recipe concentration,
+      not an independently measured final volume, a stock composition, or a downstream
+      assay dilution. Water alone does not establish final volume. Exact source ingredient
+      labels/forms are matched; secondary ontology mappings are not validated by this
+      evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved
+      2026-10-07T10:42:34.501511+00:00; response SHA256=2ccb593505b6c8f5cd63fd63bf1ecee7b33357bca201285eb2e958b70aff5ba1.'
 - preferred_term: MnSO4 x 5 H2O
   term:
     id: CHEBI:131524
@@ -103,6 +290,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:131524
     label: manganese(II) sulfate pentahydrate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/125
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 9,
+                              "compound": "MnSO4 x 5 H2O",
+                              "compound_id": 234,
+                              "amount": 10,
+                              "unit": "\u00b5g",
+                              "g_l": 1.0e-5,
+                              "mmol_l": 4.14804e-5,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[8].concentration (MnSO4 x
+      5 H2O) in MediaDive medium 125; locator=$.data.solutions[0].recipe[8]. Provider
+      explicitly reports g_l=1e-05; check: 10 µg * 0.000001 g/µg / (1000 ml / 1000
+      ml per L) = 0.000010 g/L. This supports the provider-declared main-recipe concentration,
+      not an independently measured final volume, a stock composition, or a downstream
+      assay dilution. Water alone does not establish final volume. Exact source ingredient
+      labels/forms are matched; secondary ontology mappings are not validated by this
+      evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved
+      2026-10-07T10:42:34.501511+00:00; response SHA256=2ccb593505b6c8f5cd63fd63bf1ecee7b33357bca201285eb2e958b70aff5ba1.'
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -113,6 +323,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/125
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 10,
+                              "compound": "ZnSO4 x 7 H2O",
+                              "compound_id": 35,
+                              "amount": 70,
+                              "unit": "\u00b5g",
+                              "g_l": 7.0e-5,
+                              "mmol_l": 0.000243427,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[9].concentration (ZnSO4 x
+      7 H2O) in MediaDive medium 125; locator=$.data.solutions[0].recipe[9]. Provider
+      explicitly reports g_l=7e-05; check: 70 µg * 0.000001 g/µg / (1000 ml / 1000
+      ml per L) = 0.000070 g/L. This supports the provider-declared main-recipe concentration,
+      not an independently measured final volume, a stock composition, or a downstream
+      assay dilution. Water alone does not establish final volume. Exact source ingredient
+      labels/forms are matched; secondary ontology mappings are not validated by this
+      evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved
+      2026-10-07T10:42:34.501511+00:00; response SHA256=2ccb593505b6c8f5cd63fd63bf1ecee7b33357bca201285eb2e958b70aff5ba1.'
 - preferred_term: MoO3
   term:
     id: CHEBI:30627
@@ -123,6 +356,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:30627
     label: molybdenum trioxide
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/125
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 11,
+                              "compound": "MoO3",
+                              "compound_id": 235,
+                              "amount": 10,
+                              "unit": "\u00b5g",
+                              "g_l": 1.0e-5,
+                              "mmol_l": 6.94686e-5,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[10].concentration (MoO3)
+      in MediaDive medium 125; locator=$.data.solutions[0].recipe[10]. Provider explicitly
+      reports g_l=1e-05; check: 10 µg * 0.000001 g/µg / (1000 ml / 1000 ml per L)
+      = 0.000010 g/L. This supports the provider-declared main-recipe concentration,
+      not an independently measured final volume, a stock composition, or a downstream
+      assay dilution. Water alone does not establish final volume. Exact source ingredient
+      labels/forms are matched; secondary ontology mappings are not validated by this
+      evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved
+      2026-10-07T10:42:34.501511+00:00; response SHA256=2ccb593505b6c8f5cd63fd63bf1ecee7b33357bca201285eb2e958b70aff5ba1.'
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -133,11 +389,59 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/125
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 12,
+                              "compound": "Agar",
+                              "compound_id": 3,
+                              "amount": 12,
+                              "unit": "g",
+                              "g_l": 12,
+                              "mmol_l": 35.6792,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[11].concentration (Agar)
+      in MediaDive medium 125; locator=$.data.solutions[0].recipe[11]. Provider explicitly
+      reports g_l=12; check: 12 g * 1 g/g / (1000 ml / 1000 ml per L) = 12 g/L. This
+      supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:42:34.501511+00:00;
+      response SHA256=2ccb593505b6c8f5cd63fd63bf1ecee7b33357bca201285eb2e958b70aff5ba1.'
+- preferred_term: Distilled water
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  concentration:
+    value: '1'
+    unit: L
+  notes: 'Batch distilled-water input: 1000 ml = 1 L; not a percentage or a measured
+    final medium volume.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/125
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 13,
+                              "compound": "Distilled water",
+                              "compound_id": 4,
+                              "amount": 1000,
+                              "unit": "ml",
+                              "optional": 0
+                          }
+    explanation: 'ingredients[12].concentration: Batch distilled-water input: 1000
+      ml = 1 L; not a percentage or a measured final medium volume. Conversion: 1000
+      ml / 1000 ml per L = 1 L. The source supplies no water percentage or measured
+      final volume after methanol addition. Chemical mappings retained without new
+      validation. Retrieved 2026-10-07T10:42:34.501511+00:00; response SHA256=2ccb593505b6c8f5cd63fd63bf1ecee7b33357bca201285eb2e958b70aff5ba1.'
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Add 5 ml methanol or incubate under methane-air (4:1). Adjust pH to
-    6.8.
+  description: Adjust pH to 6.8.
 applications:
 - Microbial cultivation
 curation_history:
@@ -172,6 +476,61 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-10-07T10:55:41.454416+00:00'
+  curator: codex
+  action: CURATED_MEDIUM_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Exact medium/source membership, ingredient inventory/forms, physical-state
+    conditions, literal snippets, and arithmetic checked. Stock boundaries, source-only
+    rows, preparation context, and variants remain explicit follow-up tasks; secondary
+    chemical mappings unchanged.
+  source: https://mediadive.dsmz.de/rest/medium/125
+  changes: 'ingredients[0].concentration: {"unit": "G_PER_L", "value": "1"} -> {"unit":
+    "G_PER_L", "value": "1"} (evidence_only); ingredients[1].concentration: {"unit":
+    "G_PER_L", "value": "0.2"} -> {"unit": "G_PER_L", "value": "0.2"} (evidence_only);
+    ingredients[2].concentration: {"unit": "G_PER_L", "value": "0.02"} -> {"unit":
+    "G_PER_L", "value": "0.02"} (evidence_only); ingredients[3].concentration: {"unit":
+    "G_PER_L", "value": "0.23"} -> {"unit": "G_PER_L", "value": "0.23"} (evidence_only);
+    ingredients[4].concentration: {"unit": "G_PER_L", "value": "0.07"} -> {"unit":
+    "G_PER_L", "value": "0.07"} (evidence_only); ingredients[5].concentration: {"unit":
+    "G_PER_L", "value": "0.001"} -> {"unit": "G_PER_L", "value": "0.001"} (evidence_only);
+    ingredients[6].concentration: {"unit": "G_PER_L", "value": "5e-06"} -> {"unit":
+    "G_PER_L", "value": "5e-06"} (evidence_only); ingredients[7].concentration: {"unit":
+    "G_PER_L", "value": "1e-05"} -> {"unit": "G_PER_L", "value": "1e-05"} (evidence_only);
+    ingredients[8].concentration: {"unit": "G_PER_L", "value": "1e-05"} -> {"unit":
+    "G_PER_L", "value": "1e-05"} (evidence_only); ingredients[9].concentration: {"unit":
+    "G_PER_L", "value": "7e-05"} -> {"unit": "G_PER_L", "value": "7e-05"} (evidence_only);
+    ingredients[10].concentration: {"unit": "G_PER_L", "value": "1e-05"} -> {"unit":
+    "G_PER_L", "value": "1e-05"} (evidence_only); ingredients[11].concentration: {"unit":
+    "G_PER_L", "value": "12"} -> {"unit": "G_PER_L", "value": "12"} (evidence_only)'
+- timestamp: '2026-10-07T22:16:38.387474+00:00'
+  curator: codex
+  action: RESTORED_DSMZ125_ALTERNATIVE_CARBON_PREPARATIONS_AND_WATER_INPUT
+  notes: Preserved basal provider rates and prior evidence. Corrected/restored batch
+    water input and represented alternative carbon preparations without inferring
+    final volume, methane dissolution or methanol concentration. Preserved IDs, chemical
+    mappings, history and source-duplicate links; no growth association added.
+  source: https://mediadive.dsmz.de/rest/medium/125; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf
+  changes: 'ingredients[12].concentration: null -> {"value": "1", "unit": "L"} (add);
+    variants[0]: null -> ["Add 5 ml methanol to the source''s common basal batch;
+    do not combine this option with the methane-air alternative.", "This is a batch
+    addition, not 5 ml/L or 0.5% final-medium methanol; final volume and methanol
+    purity are not specified."] (add); variants[1]: null -> ["Incubate under methane-air
+    (4:1) as the alternative to adding methanol.", "The gas ratio is not a liquid
+    ingredient dose or a dissolved methane concentration; no gas pressure or total
+    volume is specified."] (add); preparation_steps: [{"step_number": 1, "action":
+    "ADJUST_PH", "description": "Add 5 ml methanol or incubate under methane-air (4:1).
+    Adjust pH to 6.8."}] -> [{"step_number": 1, "action": "ADJUST_PH", "description":
+    "Adjust pH to 6.8."}] (correct); notes and preparation evidence: "Source: DSMZ
+    | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf" -> "Source:
+    DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf\n\nCommon
+    basal table for two source-listed alternative preparations: add 5 ml methanol
+    or incubate under methane-air (4:1). Neither alternative is selected or combined
+    here. The retained g/L entries are provider-declared basal-table rates, not independently
+    verified final concentrations after choosing a carbon preparation. The 1000 ml
+    water entry is a batch input, not a measured final volume. Methanol purity, final
+    volume, methanol final concentration and dissolved methane concentration remain
+    unspecified. Existing chemical mappings and strain-modified source-duplicate links
+    are preserved, not newly validated by this recipe evidence." (evidence_only)'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_125_METHYLOBACTERIUM_MEDIUM.yaml
   relationship: SOURCE_DUPLICATE
@@ -179,3 +538,83 @@ variant_children:
   name: methylobacterium_medium
   notes: KOMODO record is an exact source duplicate of DSMZ Medium 125; local ingredient
     and concentration signatures match.
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/125
+  title: 'MediaDive medium 125: METHYLOBACTERIUM MEDIUM'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; source_organization=DSMZ;
+    accessed_on=2026-10-07; locator=$.data.solutions[0]; response_sha256=2ccb593505b6c8f5cd63fd63bf1ecee7b33357bca201285eb2e958b70aff5ba1;
+    original_recipe=https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf;
+    individual authors and publication year not supplied. Provider-declared main-recipe
+    amounts only.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf
+  title: 'DSMZ Medium 125: METHYLOBACTERIUM MEDIUM'
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-07; one-page official recipe manually inspected; basal table
+    and alternative preparation instruction agree with the captured API. No DOI, individual
+    author or publication year supplied; copyright year not used as publication year.
+evidence:
+- reference: https://mediadive.dsmz.de/rest/medium/125
+  supports: SUPPORT
+  snippet: Add 5 ml methanol or incubate under methane-air (4:1). Adjust pH to 6.8.
+  explanation: 'Source-listed alternatives, not simultaneous components. Common basal
+    table for two source-listed alternative preparations: add 5 ml methanol or incubate
+    under methane-air (4:1). Neither alternative is selected or combined here. The
+    retained g/L entries are provider-declared basal-table rates, not independently
+    verified final concentrations after choosing a carbon preparation. The 1000 ml
+    water entry is a batch input, not a measured final volume. Methanol purity, final
+    volume, methanol final concentration and dissolved methane concentration remain
+    unspecified. Existing chemical mappings and strain-modified source-duplicate links
+    are preserved, not newly validated by this recipe evidence. Locator=$.data.solutions[0].steps[0].step.
+    Retrieved 2026-10-07T10:42:34.501511+00:00; response SHA256=2ccb593505b6c8f5cd63fd63bf1ecee7b33357bca201285eb2e958b70aff5ba1.'
+variants:
+- name: Methanol preparation option
+  relationship: SUPPLEMENTED_VARIANT
+  description: Source-listed methanol alternative to methane-air incubation; common
+    basal table unchanged.
+  modifications:
+  - Add 5 ml methanol to the source's common basal batch; do not combine this option
+    with the methane-air alternative.
+  - This is a batch addition, not 5 ml/L or 0.5% final-medium methanol; final volume
+    and methanol purity are not specified.
+  purpose: Represent the source-listed methanol preparation without choosing it for
+    every use.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/125
+    supports: SUPPORT
+    snippet: Add 5 ml methanol or incubate under methane-air (4:1). Adjust pH to 6.8.
+    explanation: 'variants[0] (Methanol preparation option): Source-listed alternatives,
+      not simultaneous components. Common basal table for two source-listed alternative
+      preparations: add 5 ml methanol or incubate under methane-air (4:1). Neither
+      alternative is selected or combined here. The retained g/L entries are provider-declared
+      basal-table rates, not independently verified final concentrations after choosing
+      a carbon preparation. The 1000 ml water entry is a batch input, not a measured
+      final volume. Methanol purity, final volume, methanol final concentration and
+      dissolved methane concentration remain unspecified. Existing chemical mappings
+      and strain-modified source-duplicate links are preserved, not newly validated
+      by this recipe evidence. Locator=$.data.solutions[0].steps[0].step. Retrieved
+      2026-10-07T10:42:34.501511+00:00; response SHA256=2ccb593505b6c8f5cd63fd63bf1ecee7b33357bca201285eb2e958b70aff5ba1.'
+- name: Methane-air incubation option
+  relationship: DERIVED_FROM
+  description: Source-listed incubation alternative to methanol addition; common basal
+    table unchanged.
+  modifications:
+  - Incubate under methane-air (4:1) as the alternative to adding methanol.
+  - The gas ratio is not a liquid ingredient dose or a dissolved methane concentration;
+    no gas pressure or total volume is specified.
+  purpose: Represent the source-listed methane-air alternative without asserting a
+    dissolved carbon concentration.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/125
+    supports: SUPPORT
+    snippet: Add 5 ml methanol or incubate under methane-air (4:1). Adjust pH to 6.8.
+    explanation: 'variants[1] (Methane-air incubation option): Source-listed alternatives,
+      not simultaneous components. Common basal table for two source-listed alternative
+      preparations: add 5 ml methanol or incubate under methane-air (4:1). Neither
+      alternative is selected or combined here. The retained g/L entries are provider-declared
+      basal-table rates, not independently verified final concentrations after choosing
+      a carbon preparation. The 1000 ml water entry is a batch input, not a measured
+      final volume. Methanol purity, final volume, methanol final concentration and
+      dissolved methane concentration remain unspecified. Existing chemical mappings
+      and strain-modified source-duplicate links are preserved, not newly validated
+      by this recipe evidence. Locator=$.data.solutions[0].steps[0].step. Retrieved
+      2026-10-07T10:42:34.501511+00:00; response SHA256=2ccb593505b6c8f5cd63fd63bf1ecee7b33357bca201285eb2e958b70aff5ba1.'

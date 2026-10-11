@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02T05:38:04.357902+00:00",
+  "generated": "2026-10-10T07:59:36.351198+00:00",
   "total_recipes": 15910,
   "by_source": {
     "KOMODO": 3637,
@@ -17,10 +17,10 @@
     "specialized": 455
   },
   "merged_recipes": 0,
-  "with_hierarchy_enrichment": 1477,
+  "with_hierarchy_enrichment": 1461,
   "ingredient_statistics": {
     "min": 0,
     "max": 99,
-    "avg": 12.7
+    "avg": 12.6
   }
 }

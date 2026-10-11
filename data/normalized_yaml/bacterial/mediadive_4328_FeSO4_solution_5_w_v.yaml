@@ -16,6 +16,33 @@ composition:
     label: iron(2+) sulfate monohydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/4328
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "FeSO4 x H2O",
+                      "compound_id": 1735,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 50,
+                      "unit": "g",
+                      "g_l": 50,
+                      "mmol_l": 294.251,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (FeSO4 x
+      H2O) in MediaDive solution 4328; locator=$.data.recipe[0] (compound_id=1735).
+      Provider explicitly reports g_l=50. Arithmetic check: 50 g * 1 g/g / (1000 ml
+      / 1000 ml per L) = 50 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T09:42:44.411398+00:00;
+      response SHA256=99154c7635382b5eb5563dd868b8c2a2ed55597131dc463c5bee4f135e9004df.'
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -58,6 +85,15 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-10-07T09:46:43.027838+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/4328
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "50"} -> {"unit":
+    "G_PER_L", "value": "50"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -66,3 +102,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/4328
+  title: 'MediaDive solution 4328: FeSO4 solution 5%(w/v)'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=99154c7635382b5eb5563dd868b8c2a2ed55597131dc463c5bee4f135e9004df;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

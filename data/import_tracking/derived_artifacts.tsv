@@ -105,7 +105,7 @@ reports/media_variant_link_apply_plan.json	UNKNOWN	writer purity unestablished (
 reports/media_variant_link_apply_plan.tsv	UNKNOWN	writer purity unestablished (apply_media_variant_links.py)	scripts/apply_media_variant_links.py	scripts/apply_media_variant_links.py	
 reports/media_variant_link_proposals.json	UNKNOWN	writer purity unestablished (propose_media_variant_links.py)	scripts/propose_media_variant_links.py	scripts/propose_media_variant_links.py	
 reports/media_variant_link_proposals.tsv	UNKNOWN	writer purity unestablished (apply_media_variant_links.py)		scripts/apply_media_variant_links.py; scripts/propose_media_variant_links.py	
-reports/media_variant_link_validation.tsv	UNKNOWN	writer purity unestablished (validate_media_variant_links.py)	scripts/validate_media_variant_links.py	scripts/validate_media_variant_links.py	
+reports/media_variant_link_validation.tsv	UNKNOWN	writer purity unestablished (validate_media_variant_links.py)		scripts/validate_media_variant_links.py	
 reports/media_variant_parent_group_proposals.json	UNKNOWN	writer purity unestablished (propose_media_variant_links.py)	scripts/propose_media_variant_links.py	scripts/propose_media_variant_links.py	
 reports/media_variant_parent_group_proposals.tsv	UNKNOWN	writer purity unestablished (propose_media_variant_links.py)		scripts/propose_media_variant_links.py	
 reports/pipeline_writers_audit.tsv	UNKNOWN	no writer found			

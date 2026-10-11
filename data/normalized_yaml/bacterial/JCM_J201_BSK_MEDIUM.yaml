@@ -11,146 +11,277 @@ media_term:
   term:
     id: mediadive.medium:J201
     label: BSK MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=201
+notes: |-
+  Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=201
 
-
+  Superseded historical provenance (not a current formulation claim):
   Commercial Product: LB Medium (Luria-Bertani, Miller formulation)
-
   Supplier: Multiple suppliers (Difco, Sigma, etc.)
-
   Catalog: Multiple (L3522 Sigma, 244520 BD)
-
   Source: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-
   Accessed: 2026-03-28
 
+  Constituent composition researched from product specification.
 
-  Constituent composition researched from product specification.'
+  The exact source specifies albumin fraction V, not LB broth. Remove only the reviewed LB supplier nodes and restore the source material at its preparation stage without inventing chemical grounding.
+
+  The linked original JCM201 endpoint returned no recipe in the pinned capture. Formulation assertions here are provider-backed, not original-page corroborated.
 ingredients:
-- preferred_term: CMRL 1066
-  concentration:
-    value: '100'
-    unit: G_PER_L
 - preferred_term: Neopeptone
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: Tryptone
-  term:
-    id: MICRO:0000182
-    label: tryptone
-  concentration:
-    value: '10.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
-    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
-  synonyms:
-  - synonym_text: pancreatic digest of casein
-    synonym_type: EXACT
-  - synonym_text: casein peptone
-    synonym_type: EXACT
-- preferred_term: Yeast extract
-  term:
-    id: FOODON:03315426
-    label: yeast extract
-  concentration:
-    value: '5.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
-    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
-    product
-- preferred_term: Sodium chloride
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  concentration:
-    value: '10.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
-    (Luria-Bertani, Miller formulation) commercial product
-  synonyms:
-  - synonym_text: NaCl
-    synonym_type: EXACT
-  - synonym_text: table salt
-    synonym_type: EXACT
+  notes: 'Source batch input: 5 g. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration. Source qualifier: BD-Difco.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J201
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 2,
+                              "compound": "Neopeptone",
+                              "compound_id": 263,
+                              "attribute": "BD-Difco",
+                              "amount": 5,
+                              "unit": "g",
+                              "g_l": 5,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[0].concentration: Source batch input: 5 g. Final preparation
+      volume is not independently established; the unsupported g/L assertion is withdrawn,
+      not replaced by an assumed one-liter concentration. Source qualifier: BD-Difco.
+      No final-medium volume, percentage basis, density or chemical grounding is inferred.
+      Locator=data.solutions[0].recipe[1]; accessed=2026-10-08T20:53:35.844420+00:00;
+      capture SHA256=811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536.'
+- preferred_term: Bovine albumin
+  notes: |-
+    Source batch input: 50 g. Final preparation volume is not independently established; the source batch amount is retained without asserting a final concentration.
+
+    Source material qualifier: Fraction V.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J201
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 3,
+                              "compound": "Bovine albumin",
+                              "compound_id": 1681,
+                              "condition": " Fraction V",
+                              "amount": 50,
+                              "unit": "g",
+                              "g_l": 50,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[1].notes: Source batch input: 50 g. Final preparation volume is not independently established; the source batch amount is retained without asserting a final concentration. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[2]; accessed=2026-10-08T20:53:35.844420+00:00; capture SHA256=811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536.
+
+      Additional exact excerpt: {
+                              "recipe_order": 3,
+                              "compound": "Bovine albumin",
+                              "compound_id": 1681,
+                              "condition": " Fraction V",
+                              "amount": 50,
+                              "unit": "g",
+                              "g_l": 50,
+                              "optional": 0
+                          }
+      ingredients[1].notes: Source material qualifier: Fraction V. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[2]; accessed=2026-10-08T20:53:35.844420+00:00; capture SHA256=811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536.
 - preferred_term: HEPES
   term:
     id: CHEBI:46756
     label: HEPES
-  concentration:
-    value: '6'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:46756
     label: HEPES
+  notes: 'Source batch input: 6 g. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J201
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 4,
+                              "compound": "HEPES",
+                              "compound_id": 371,
+                              "amount": 6,
+                              "unit": "g",
+                              "g_l": 6,
+                              "mmol_l": 25.1773,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[2].concentration: Source batch input: 6 g. Final preparation
+      volume is not independently established; the unsupported g/L assertion is withdrawn,
+      not replaced by an assumed one-liter concentration. No final-medium volume,
+      percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[3];
+      accessed=2026-10-08T20:53:35.844420+00:00; capture SHA256=811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536.'
 - preferred_term: Trisodium citrate
   term:
     id: CHEBI:53258
     label: sodium citrate
-  concentration:
-    value: '0.7'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:53258
     label: sodium citrate
+  notes: 'Source batch input: 0.7 g. Final preparation volume is not independently
+    established; the unsupported g/L assertion is withdrawn, not replaced by an assumed
+    one-liter concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J201
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 5,
+                              "compound": "Trisodium citrate",
+                              "compound_id": 1047,
+                              "amount": 0.7,
+                              "unit": "g",
+                              "g_l": 0.7,
+                              "mmol_l": 2.71244,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[3].concentration: Source batch input: 0.7 g. Final preparation
+      volume is not independently established; the unsupported g/L assertion is withdrawn,
+      not replaced by an assumed one-liter concentration. No final-medium volume,
+      percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[4];
+      accessed=2026-10-08T20:53:35.844420+00:00; capture SHA256=811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536.'
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
     label: glucose
-  concentration:
-    value: '5'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
+  notes: 'Source batch input: 5 g. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J201
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 6,
+                              "compound": "Glucose",
+                              "compound_id": 5,
+                              "amount": 5,
+                              "unit": "g",
+                              "g_l": 5,
+                              "mmol_l": 27.7531,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[4].concentration: Source batch input: 5 g. Final preparation
+      volume is not independently established; the unsupported g/L assertion is withdrawn,
+      not replaced by an assumed one-liter concentration. No final-medium volume,
+      percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[5];
+      accessed=2026-10-08T20:53:35.844420+00:00; capture SHA256=811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536.'
 - preferred_term: Sodium pyruvate
   term:
     id: CHEBI:50144
     label: sodium pyruvate
-  concentration:
-    value: '0.8'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:50144
     label: sodium pyruvate
+  notes: 'Source batch input: 0.8 g. Final preparation volume is not independently
+    established; the unsupported g/L assertion is withdrawn, not replaced by an assumed
+    one-liter concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J201
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 7,
+                              "compound": "Sodium pyruvate",
+                              "compound_id": 438,
+                              "amount": 0.8,
+                              "unit": "g",
+                              "g_l": 0.8,
+                              "mmol_l": 7.27008,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[5].concentration: Source batch input: 0.8 g. Final preparation
+      volume is not independently established; the unsupported g/L assertion is withdrawn,
+      not replaced by an assumed one-liter concentration. No final-medium volume,
+      percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[6];
+      accessed=2026-10-08T20:53:35.844420+00:00; capture SHA256=811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536.'
 - preferred_term: N-Acetyl-D-glucosamine
   term:
     id: CHEBI:506227
     label: N-acetyl-D-glucosamine
-  concentration:
-    value: '0.4'
-    unit: G_PER_L
   mediaingredientmech_term:
     id: MediaIngredientMech:000994
     label: N-Acetyl-D-glucosamine
+  notes: 'Source batch input: 0.4 g. Final preparation volume is not independently
+    established; the unsupported g/L assertion is withdrawn, not replaced by an assumed
+    one-liter concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J201
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 8,
+                              "compound": "N-Acetyl-D-glucosamine",
+                              "compound_id": 1669,
+                              "amount": 0.4,
+                              "unit": "g",
+                              "g_l": 0.4,
+                              "mmol_l": 1.80824,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[6].concentration: Source batch input: 0.4 g. Final preparation
+      volume is not independently established; the unsupported g/L assertion is withdrawn,
+      not replaced by an assumed one-liter concentration. No final-medium volume,
+      percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[7];
+      accessed=2026-10-08T20:53:35.844420+00:00; capture SHA256=811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536.'
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-  concentration:
-    value: '2.2'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  notes: 'Source batch input: 2.2 g. Final preparation volume is not independently
+    established; the unsupported g/L assertion is withdrawn, not replaced by an assumed
+    one-liter concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J201
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 9,
+                              "compound": "NaHCO3",
+                              "compound_id": 55,
+                              "amount": 2.2,
+                              "unit": "g",
+                              "g_l": 2.2,
+                              "mmol_l": 26.1883,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[7].concentration: Source batch input: 2.2 g. Final preparation
+      volume is not independently established; the unsupported g/L assertion is withdrawn,
+      not replaced by an assumed one-liter concentration. No final-medium volume,
+      percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[8];
+      accessed=2026-10-08T20:53:35.844420+00:00; capture SHA256=811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536.'
+- preferred_term: Distilled water
+  concentration:
+    value: '0.9'
+    unit: L
+  notes: 'Source water batch input: 900 ml = 0.9 L. This is not a measured final volume.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J201
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 10,
+                              "compound": "Distilled water",
+                              "compound_id": 4,
+                              "amount": 900,
+                              "unit": "ml",
+                              "optional": 0
+                          }
+    explanation: 'ingredients[8].concentration: Source water batch input: 900 ml =
+      0.9 L. This is not a measured final volume. No final-medium volume, percentage
+      basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[9];
+      accessed=2026-10-08T20:53:35.844420+00:00; capture SHA256=811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536.'
 preparation_steps:
 - step_number: 1
-  action: FILTER_STERILIZE
+  action: FILTER
   description: Mix all ingredients in a beaker with a stir bar. Adjust pH to 7.6.
     Add 200 ml of 7% gelatin. Filter-sterilize entire medium. Add sterile rabbit serum
     to final concentration of 6%.
@@ -179,3 +310,282 @@ curation_history:
   notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-08T21:15:01.038694+00:00'
+  curator: codex
+  action: RESTORED_JCM_ALBUMIN_IDENTITIES_AND_REAGENT_INPUTS_WITH_EVIDENCE
+  notes: Removed false LB expansions and restored albumin fraction V, source batch
+    inputs, reagent doses and late preparations with exact evidence. Unknown percentage
+    bases, final volumes, stock strengths and chemical groundings remain unresolved.
+    The JCM201 original-source access gap is disclosed, not treated as corroboration.
+  source: https://mediadive.dsmz.de/rest/medium/J201
+  changes: '[{"old_field": "ingredients[2].concentration", "field": "notes", "old":
+    {"value": "10.0", "unit": "G_PER_L"}, "new": "Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=201\n\nSuperseded
+    historical provenance (not a current formulation claim):\nCommercial Product:
+    LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThe
+    exact source specifies albumin fraction V, not LB broth. Remove only the reviewed
+    LB supplier nodes and restore the source material at its preparation stage without
+    inventing chemical grounding.\n\nThe linked original JCM201 endpoint returned
+    no recipe in the pinned capture. Formulation assertions here are provider-backed,
+    not original-page corroborated.", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/J201",
+    "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"Bovine albumin\",\n                        \"compound_id\": 1681,\n                        \"condition\":
+    \" Fraction V\",\n                        \"amount\": 50,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 50,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[3].concentration", "field":
+    "notes", "old": {"value": "5.0", "unit": "G_PER_L"}, "new": "Source: JCM | Link:
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=201\n\nSuperseded historical
+    provenance (not a current formulation claim):\nCommercial Product: LB Medium (Luria-Bertani,
+    Miller formulation)\nSupplier: Multiple suppliers (Difco, Sigma, etc.)\nCatalog:
+    Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThe
+    exact source specifies albumin fraction V, not LB broth. Remove only the reviewed
+    LB supplier nodes and restore the source material at its preparation stage without
+    inventing chemical grounding.\n\nThe linked original JCM201 endpoint returned
+    no recipe in the pinned capture. Formulation assertions here are provider-backed,
+    not original-page corroborated.", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/J201",
+    "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"Bovine albumin\",\n                        \"compound_id\": 1681,\n                        \"condition\":
+    \" Fraction V\",\n                        \"amount\": 50,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 50,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[4].concentration", "field":
+    "notes", "old": {"value": "10.0", "unit": "G_PER_L"}, "new": "Source: JCM | Link:
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=201\n\nSuperseded historical
+    provenance (not a current formulation claim):\nCommercial Product: LB Medium (Luria-Bertani,
+    Miller formulation)\nSupplier: Multiple suppliers (Difco, Sigma, etc.)\nCatalog:
+    Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThe
+    exact source specifies albumin fraction V, not LB broth. Remove only the reviewed
+    LB supplier nodes and restore the source material at its preparation stage without
+    inventing chemical grounding.\n\nThe linked original JCM201 endpoint returned
+    no recipe in the pinned capture. Formulation assertions here are provider-backed,
+    not original-page corroborated.", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/J201",
+    "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"Bovine albumin\",\n                        \"compound_id\": 1681,\n                        \"condition\":
+    \" Fraction V\",\n                        \"amount\": 50,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 50,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[1].concentration", "field":
+    "ingredients[0].concentration", "old": {"value": "5", "unit": "G_PER_L"}, "new":
+    null, "status": "remove_unsupported", "reference": "https://mediadive.dsmz.de/rest/medium/J201",
+    "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Neopeptone\",\n                        \"compound_id\": 263,\n                        \"attribute\":
+    \"BD-Difco\",\n                        \"amount\": 5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 5,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[1].notes",
+    "old": null, "new": "Source batch input: 50 g. Final preparation volume is not
+    independently established; the source batch amount is retained without asserting
+    a final concentration.\n\nSource material qualifier: Fraction V.", "status": "add",
+    "reference": "https://mediadive.dsmz.de/rest/medium/J201", "snippet": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Bovine albumin\",\n                        \"compound_id\":
+    1681,\n                        \"condition\": \" Fraction V\",\n                        \"amount\":
+    50,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    50,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "ingredients[1].notes", "old": null, "new": "Source batch input:
+    50 g. Final preparation volume is not independently established; the source batch
+    amount is retained without asserting a final concentration.\n\nSource material
+    qualifier: Fraction V.", "status": "evidence_only", "reference": "https://mediadive.dsmz.de/rest/medium/J201",
+    "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"Bovine albumin\",\n                        \"compound_id\": 1681,\n                        \"condition\":
+    \" Fraction V\",\n                        \"amount\": 50,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 50,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[5].concentration", "field":
+    "ingredients[2].concentration", "old": {"value": "6", "unit": "G_PER_L"}, "new":
+    null, "status": "remove_unsupported", "reference": "https://mediadive.dsmz.de/rest/medium/J201",
+    "snippet": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"HEPES\",\n                        \"compound_id\": 371,\n                        \"amount\":
+    6,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    6,\n                        \"mmol_l\": 25.1773,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[6].concentration", "field":
+    "ingredients[3].concentration", "old": {"value": "0.7", "unit": "G_PER_L"}, "new":
+    null, "status": "remove_unsupported", "reference": "https://mediadive.dsmz.de/rest/medium/J201",
+    "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"Trisodium citrate\",\n                        \"compound_id\": 1047,\n                        \"amount\":
+    0.7,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.7,\n                        \"mmol_l\": 2.71244,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[7].concentration", "field":
+    "ingredients[4].concentration", "old": {"value": "5", "unit": "G_PER_L"}, "new":
+    null, "status": "remove_unsupported", "reference": "https://mediadive.dsmz.de/rest/medium/J201",
+    "snippet": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"Glucose\",\n                        \"compound_id\": 5,\n                        \"amount\":
+    5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    5,\n                        \"mmol_l\": 27.7531,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[8].concentration", "field":
+    "ingredients[5].concentration", "old": {"value": "0.8", "unit": "G_PER_L"}, "new":
+    null, "status": "remove_unsupported", "reference": "https://mediadive.dsmz.de/rest/medium/J201",
+    "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\":
+    \"Sodium pyruvate\",\n                        \"compound_id\": 438,\n                        \"amount\":
+    0.8,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.8,\n                        \"mmol_l\": 7.27008,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[9].concentration", "field":
+    "ingredients[6].concentration", "old": {"value": "0.4", "unit": "G_PER_L"}, "new":
+    null, "status": "remove_unsupported", "reference": "https://mediadive.dsmz.de/rest/medium/J201",
+    "snippet": "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"N-Acetyl-D-glucosamine\",\n                        \"compound_id\": 1669,\n                        \"amount\":
+    0.4,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.4,\n                        \"mmol_l\": 1.80824,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[10].concentration", "field":
+    "ingredients[7].concentration", "old": {"value": "2.2", "unit": "G_PER_L"}, "new":
+    null, "status": "remove_unsupported", "reference": "https://mediadive.dsmz.de/rest/medium/J201",
+    "snippet": "{\n                        \"recipe_order\": 9,\n                        \"compound\":
+    \"NaHCO3\",\n                        \"compound_id\": 55,\n                        \"amount\":
+    2.2,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    2.2,\n                        \"mmol_l\": 26.1883,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[8].concentration",
+    "old": null, "new": {"value": "0.9", "unit": "L"}, "status": "add", "reference":
+    "https://mediadive.dsmz.de/rest/medium/J201", "snippet": "{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 900,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[0].concentration", "field": "solutions[0].concentration", "old":
+    {"value": "100", "unit": "G_PER_L"}, "new": {"value": "0.1", "unit": "L"}, "status":
+    "correct", "reference": "https://mediadive.dsmz.de/rest/medium/J201", "snippet":
+    "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"CMRL 1066\",\n                        \"compound_id\": 1680,\n                        \"attribute\":
+    \"Gibco 330-1540\",\n                        \"amount\": 100,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[1].concentration", "old": null, "new": {"value": "0.2",
+    "unit": "L"}, "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/J201",
+    "snippet": "Add 200 ml of 7% gelatin."}, {"old_field": null, "field": "solutions[1].composition[0].notes",
+    "old": null, "new": "Source label: 7% gelatin. Percentage basis is unspecified;
+    no numeric stock strength or stock-batch mass is asserted.", "status": "add",
+    "reference": "https://mediadive.dsmz.de/rest/medium/J201", "snippet": "Add 200
+    ml of 7% gelatin."}, {"old_field": null, "field": "solutions[2].notes", "old":
+    null, "new": "Source specifies sterile rabbit serum at final 6%, but the percentage
+    basis and corresponding fixed addition volume are unspecified. Retain the literal
+    label without asserting a numeric percentage, stock strength or dose. Serum is
+    added after filtration of the medium.", "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/J201",
+    "snippet": "Add sterile rabbit serum to final concentration of 6%."}, {"old_field":
+    null, "field": "solutions[2].preparation_notes", "old": null, "new": "Add sterile
+    rabbit serum to final concentration of 6%.", "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/J201",
+    "snippet": "Add sterile rabbit serum to final concentration of 6%."}, {"old_field":
+    "preparation_steps", "field": "preparation_steps", "old": [{"step_number": 1,
+    "action": "FILTER_STERILIZE", "description": "Mix all ingredients in a beaker
+    with a stir bar. Adjust pH to 7.6. Add 200 ml of 7% gelatin. Filter-sterilize
+    entire medium. Add sterile rabbit serum to final concentration of 6%."}], "new":
+    [{"step_number": 1, "action": "FILTER", "description": "Mix all ingredients in
+    a beaker with a stir bar. Adjust pH to 7.6. Add 200 ml of 7% gelatin. Filter-sterilize
+    entire medium. Add sterile rabbit serum to final concentration of 6%."}], "status":
+    "correct", "reference": "https://mediadive.dsmz.de/rest/medium/J201", "snippet":
+    "[\n                    {\n                        \"step\": \"Mix all ingredients
+    in a beaker with a stir bar. Adjust pH to 7.6. Add 200 ml of 7% gelatin. Filter-sterilize
+    entire medium. Add sterile rabbit serum to final concentration of 6%.\"\n                    }\n                ]"},
+    {"old_field": "ph_value", "field": "ph_value", "old": 7.6, "new": 7.6, "status":
+    "evidence_only", "reference": "https://mediadive.dsmz.de/rest/medium/J201", "snippet":
+    "Adjust pH to 7.6."}]'
+solutions:
+- preferred_term: CMRL 1066
+  concentration:
+    value: '0.1'
+    unit: L
+  composition: []
+  notes: 'Source preparation input: 100 ml = 0.1 L per receiving batch, not grams
+    per liter or a dose per final liter. Source product qualifier: Gibco 330-1540.
+    The source does not provide this product''s composition or numeric stock strength.'
+- preferred_term: 7% gelatin solution
+  composition:
+  - preferred_term: Gelatin
+    notes: 'Source label: 7% gelatin. Percentage basis is unspecified; no numeric
+      stock strength or stock-batch mass is asserted.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J201
+      supports: SUPPORT
+      snippet: Add 200 ml of 7% gelatin.
+      explanation: 'solutions[1].composition[0].notes: Source label: 7% gelatin. Percentage
+        basis is unspecified; no numeric stock strength or stock-batch mass is asserted.
+        No final-medium volume, percentage basis, density or chemical grounding is
+        inferred. Locator=data.solutions[0].steps[0].step; accessed=2026-10-08T20:53:35.844420+00:00;
+        capture SHA256=811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536.'
+  concentration:
+    value: '0.2'
+    unit: L
+  notes: 'Source late preparation input: 200 ml = 0.2 L of 7% gelatin per receiving
+    batch, added before filtration of the entire medium. Percentage basis and stock
+    mass/solvent recipe are unspecified.'
+- preferred_term: Sterile rabbit serum
+  composition: []
+  notes: Source specifies sterile rabbit serum at final 6%, but the percentage basis
+    and corresponding fixed addition volume are unspecified. Retain the literal label
+    without asserting a numeric percentage, stock strength or dose. Serum is added
+    after filtration of the medium.
+  preparation_notes: Add sterile rabbit serum to final concentration of 6%.
+evidence:
+- reference: https://mediadive.dsmz.de/rest/medium/J201
+  supports: SUPPORT
+  snippet: |-
+    {
+                            "recipe_order": 3,
+                            "compound": "Bovine albumin",
+                            "compound_id": 1681,
+                            "condition": " Fraction V",
+                            "amount": 50,
+                            "unit": "g",
+                            "g_l": 50,
+                            "optional": 0
+                        }
+  explanation: |-
+    notes: The exact source specifies albumin fraction V, not LB broth. Remove only the reviewed LB supplier nodes and restore the source material at its preparation stage without inventing chemical grounding. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[2]; accessed=2026-10-08T20:53:35.844420+00:00; capture SHA256=811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536.
+
+    Additional exact excerpt: {
+                            "recipe_order": 3,
+                            "compound": "Bovine albumin",
+                            "compound_id": 1681,
+                            "condition": " Fraction V",
+                            "amount": 50,
+                            "unit": "g",
+                            "g_l": 50,
+                            "optional": 0
+                        }
+    notes: The exact source specifies albumin fraction V, not LB broth. Remove only the reviewed LB supplier nodes and restore the source material at its preparation stage without inventing chemical grounding. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[2]; accessed=2026-10-08T20:53:35.844420+00:00; capture SHA256=811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536.
+
+    Additional exact excerpt: {
+                            "recipe_order": 3,
+                            "compound": "Bovine albumin",
+                            "compound_id": 1681,
+                            "condition": " Fraction V",
+                            "amount": 50,
+                            "unit": "g",
+                            "g_l": 50,
+                            "optional": 0
+                        }
+    notes: The exact source specifies albumin fraction V, not LB broth. Remove only the reviewed LB supplier nodes and restore the source material at its preparation stage without inventing chemical grounding. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[2]; accessed=2026-10-08T20:53:35.844420+00:00; capture SHA256=811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536.
+
+    Additional exact excerpt: {
+                            "recipe_order": 1,
+                            "compound": "CMRL 1066",
+                            "compound_id": 1680,
+                            "attribute": "Gibco 330-1540",
+                            "amount": 100,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+    solutions[0].concentration: Source preparation input: 100 ml = 0.1 L per receiving batch, not grams per liter or a dose per final liter. Source product qualifier: Gibco 330-1540. The source does not provide this product's composition or numeric stock strength. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[0]; accessed=2026-10-08T20:53:35.844420+00:00; capture SHA256=811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536.
+
+    Additional exact excerpt: Add 200 ml of 7% gelatin.
+    solutions[1].concentration: Source late preparation input: 200 ml = 0.2 L of 7% gelatin per receiving batch, added before filtration of the entire medium. Percentage basis and stock mass/solvent recipe are unspecified. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step; accessed=2026-10-08T20:53:35.844420+00:00; capture SHA256=811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536.
+
+    Additional exact excerpt: Add sterile rabbit serum to final concentration of 6%.
+    solutions[2].notes: Source specifies sterile rabbit serum at final 6%, but the percentage basis and corresponding fixed addition volume are unspecified. Retain the literal label without asserting a numeric percentage, stock strength or dose. Serum is added after filtration of the medium. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step; accessed=2026-10-08T20:53:35.844420+00:00; capture SHA256=811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536.
+
+    Additional exact excerpt: Add sterile rabbit serum to final concentration of 6%.
+    solutions[2].preparation_notes: Source specifies sterile rabbit serum at final 6%, but the percentage basis and corresponding fixed addition volume are unspecified. Retain the literal label without asserting a numeric percentage, stock strength or dose. Serum is added after filtration of the medium. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step; accessed=2026-10-08T20:53:35.844420+00:00; capture SHA256=811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536.
+
+    Additional exact excerpt: [
+                        {
+                            "step": "Mix all ingredients in a beaker with a stir bar. Adjust pH to 7.6. Add 200 ml of 7% gelatin. Filter-sterilize entire medium. Add sterile rabbit serum to final concentration of 6%."
+                        }
+                    ]
+    preparation_steps: Retain the source procedure and order. FILTER represents explicit filtration without asserting the 0.22 micrometer pore size encoded by FILTER_STERILIZE. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps; accessed=2026-10-08T20:53:35.844420+00:00; capture SHA256=811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536.
+
+    Additional exact excerpt: Adjust pH to 7.6.
+    ph_value: Receiving-medium pH is explicitly given by the preparation. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step; accessed=2026-10-08T20:53:35.844420+00:00; capture SHA256=811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536.
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/J201
+  title: BSK MEDIUM
+  notes: 'source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-08;
+    capture_sha256=811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536.
+    Authors and publication year not supplied. Batch inputs are not independently
+    verified final concentrations. Existing chemical groundings and organism-growth
+    claims are not recertified. Original-source availability: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=201
+    returned ''Nothing found.''; accessed=2026-10-08T20:55:14.823536+00:00; capture_sha256=eec7768c3a12a00e699e649042b66d9ac12aa5304413b4825674c442d4d574a9.
+    This is an access-status observation, not original formulation evidence.'

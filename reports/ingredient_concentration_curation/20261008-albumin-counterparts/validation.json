@@ -1,0 +1,199 @@
+{
+  "terminal": true,
+  "publication_ready": false,
+  "all_record_goal_complete": false,
+  "applied_records": 4,
+  "source_responses_refreshed": 9,
+  "normalized_count": 15910,
+  "normalized_sha256": "0e1b0d61826c6c729ca46bd7adb32945695a509d8578fe651f380b9eef3778c7",
+  "records": {
+    "data/normalized_yaml/bacterial/TOGO_M194_BSK_Medium.yaml": "7c69961a498dfc2ca583b739bc26731a76e7a46096110762eb23c28e27216bc6",
+    "data/normalized_yaml/bacterial/TOGO_M213_SC_Medium.yaml": "785b1c476d7a576af8d7252c617920ada8a7e5a0a2a5d57bfdd4ab31c8c209f8",
+    "data/normalized_yaml/archaea/TOGO_M244_Sulfophobococcus_Medium.yaml": "87e95050e0399d89177c9c0b57bfe2223f51d8c39af7ba76c0fc719607870f43",
+    "data/normalized_yaml/archaea/sulfophobococcus_medium.yaml": "6bd5de5da4809757379db30150454904665e913be3d6432c518eb46379e772ea"
+  },
+  "reference_checks": {
+    "M194": {
+      "checks": 12,
+      "all_valid": true,
+      "issues": []
+    },
+    "M213": {
+      "checks": 26,
+      "all_valid": true,
+      "issues": []
+    },
+    "M244": {
+      "checks": 36,
+      "all_valid": true,
+      "issues": []
+    },
+    "J252": {
+      "checks": 34,
+      "all_valid": true,
+      "issues": []
+    }
+  },
+  "tests_passed": {
+    "fast": "9173 passed, 16 skipped, 1945 deselected, 2 warnings in 652.19s (0:10:52)",
+    "final": "498 passed, 2 warnings in 83.80s (0:01:23)"
+  },
+  "failed_global_gates": [
+    {
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/albumin-counterparts-post-12.log"
+    },
+    {
+      "command": [
+        "just",
+        "audit-merge-freshness",
+        "--json"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/albumin-counterparts-post-13.log"
+    }
+  ],
+  "merge_verification": {
+    "name_conflicts": 1247,
+    "fingerprint_issues": 3287
+  },
+  "freshness": {
+    "tracked_total": 6320,
+    "fresh_total": 10777,
+    "only_in_tracked": 4275,
+    "only_in_fresh": 8732,
+    "changed": 2045,
+    "unchanged": 0
+  },
+  "cumulative_audit": {
+    "stock_nodes_relocated": 760,
+    "new_quantity_slots": 326,
+    "unsupported_quantity_slots_removed": 810,
+    "new_evidence": 32834,
+    "new_curation_history": 5367,
+    "new_references": 5616,
+    "stock_stage_concentrations_rebased": 166,
+    "stock_descriptors_added": 210,
+    "quantity_corrections": 1431,
+    "stock_dose_basis_corrections": 124,
+    "copied_ingredient_nodes_replaced_by_reference": 37,
+    "ingredient_context_notes_added": 268,
+    "water_input_nodes_added": 27,
+    "recipe_context_notes_corrected": 26,
+    "parent_links_corrected": 5,
+    "source_amount_conflicts_repaired": 3,
+    "unquantified_carrier_nodes_added": 84,
+    "evidence_scopes_corrected": 172,
+    "ingredient_context_notes_corrected": 9,
+    "preparation_actions_corrected": 8,
+    "preparation_descriptions_corrected": 4,
+    "preparation_steps_added": 34,
+    "batch_mass_notes_unverified_concentrations": 48,
+    "duplicate_stock_nodes_removed": 1,
+    "variant_links_added": 8,
+    "explicit_medium_rates_verified": 3,
+    "unsupported_flags_removed": 1,
+    "child_links_corrected": 5,
+    "preparation_steps_relocated": 9,
+    "water_input_notes_added": 9,
+    "inline_variant_options_added": 8,
+    "extraction_preparations_added": 1,
+    "base_preparations_added": 9,
+    "preparation_records_restored": 3,
+    "supplement_nodes_moved_to_variants": 4,
+    "corrected_evidence_snippets": 2,
+    "stock_context_notes_corrected": 8,
+    "extraction_preparations_restructured": 2,
+    "source_version_alternatives_added": 4,
+    "copied_ingredient_nodes_removed": 3,
+    "composition_classifications_corrected": 2,
+    "final_quantity_slots_added": 1,
+    "explicitly_omitted_ingredient_nodes": 1,
+    "ingredient_source_attributions_corrected": 1,
+    "bibliographic_entries_enriched": 1,
+    "excluded_alternative_nodes_removed": 1,
+    "ingredient_labels_corrected": 1,
+    "preparation_text_encodings_corrected": 1,
+    "unquantified_solvent_nodes_added": 1,
+    "ingredient_doses_relocated_to_stock": 1,
+    "identity_conflicts_retained_unquantified": 2,
+    "unquantified_makeup_nodes_added": 1,
+    "stock_preparation_notes_added": 1,
+    "edited_records": 5163
+  },
+  "followup_unique_records": 11784,
+  "outside_this_followup": 4126,
+  "remaining_M142_queue": 71,
+  "reports": {
+    "application.json": "b436e9772d1399e8e694dcc5c289ee65dc8b51016525a4fef1aefca6581a23ba",
+    "applied-audit.json": "9c9e3da8d4624a82594730804434ac7c032bc13f032602159e5c68fe81e29146",
+    "baseline.json": "d9fd7a3ef4252d9f7474b41c3deba42ad79ff1056c88fe7fedf0a00fa0bff2fe",
+    "corpus.json": "1f9c9a215a7f8533fe727d3974a6494421246dce1efbb4faa78f310e8a88de7a",
+    "cumulative-audit.json": "f79db919764a0100ab2cf26618ab28e8c967f52fa5663b1bb6536f80d7f522d2",
+    "fast.json": "1bde1893e3be0dcded7a74237c329cc07cc2646878fcf988918ba098a83c868b",
+    "final.json": "3fa6720f0c97a9a0c75e2dbf425ab3d0ca13fa5c9a46b84575c31dec41742b27",
+    "followup-coverage.json": "4cbaf7c4404a6938adbd9c49f778a51e8cceeee511abdb4287a60455b7b0c6a7",
+    "id-recheck.json": "0beb21d4ed3b9b885f30d3d6441598a5bfa312ec044589952172b064a5377603",
+    "index-refresh-application.json": "5bf81964e932db11b9321501ad9b7bf751d384040ecd8d35795087909d38c95c",
+    "index-refresh-plan.json": "b2c9ce3d13b56cb2cad6f3c48d434cc99adb967d5cd63185c5150b4dcc65ed4d",
+    "live.json": "5ff227f813b1e7d823e81fcfe6525dd7a599c81e7444b8e5b62faa638a9ecebf",
+    "merge-retention.json": "f9adf6bc4cb49f43a9c3a3f2269c09fff2e33768ee6dc852f6f04808552be0a9",
+    "next-dsmz-albumin-context.json": "5767d9b9bed74466a4f490abe98b1d9735d7b864cfaec8af0d83b29520ee7cdb",
+    "next-lb-identity-context.json": "4d3b297916a66cfacb223656150877ec420d38010b0662fe383c6f46dd7303ed",
+    "plan.json": "62d6838778c9f90f7c779945541726e15646e90801cce3cbfb71b0bbcff6fa11",
+    "post.json": "b88c864689e3f9da069ad143b5de0936cbb8718d7a07b29cec1b89acd945168c",
+    "preview-audit.json": "9c9e3da8d4624a82594730804434ac7c032bc13f032602159e5c68fe81e29146",
+    "reconciliation.json": "1d0fed3eb728ecb406f3605e5535b36f597742bc6081d5e5de2dc7ff096e564d",
+    "remaining-queue.json": "61431e8899ac84370534834b6b396eb29ae89aa24cfab6ce095a338db11696e8"
+  },
+  "context": {
+    "path": "reports/ingredient_concentration_curation/20261008-albumin-counterparts/context.json",
+    "sha256": "a4853a8d073e506bf37fb1952d47551a3b84a94f5429b687c33b13f1340cd7f8"
+  },
+  "code_sha256": {
+    "scripts/repair_albumin_counterparts.py": "26fd67dc1773e34b183cfa447b24cf948f52b3e5d229d6532d6d0fee10216a7a",
+    "tests/test_albumin_counterparts.py": "f1d8ea14332bdf4a4e6fcaf5779cb225597a1a4a11ef648907df1137b89cb0e2",
+    "reports/ingredient_concentration_curation/20261008-albumin-counterparts/audit.py": "685fb7d7e8fb199b471d457a542ca1b1ec2db0b0e614e816b8ccbc540cbd7b7e",
+    "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "766b2e407a9bd6b896b5b600ea5853c6337de0e7be6528b2b1f957d70b82c09f",
+    "tests/test_resolve_media_file.py": "6284327a2fb33ebd5416f27cb3da700545a1657f4dafbc8279541b292d32bd0d"
+  },
+  "commit_push_PR_merge_branch_cleanup": "Not performed; requested publication workflow remains incomplete.",
+  "runtime": "Existing partial locked Python 3.13 environment; not clean CI. Full test suite not rerun for this localized data repair.",
+  "corpus_checks": {
+    "strict_explicit_root_scanned": 15910,
+    "ids_scanned": 15910,
+    "product_warnings": 91,
+    "product_skipped_no_adapter": 96077,
+    "ingredient_groundings_recertified": false
+  },
+  "initial_id_failure_and_resolution": {
+    "initial_exit_code": 2,
+    "reason": "Existing resolver tests temporarily created/deleted YAML in the live corpus while the ID scanner ran. Both mutation tests now use a monkeypatched tmp_path corpus. The failed receipt is retained unchanged.",
+    "serial_retry_exit_code": 0,
+    "isolated_resolver_tests": "6 passed, 1 skipped, 11127 deselected, 2 warnings in 32.60s",
+    "full_fast_tier_before_test_only_isolation_fix": "9173 passed, 16 skipped, 1945 deselected, 2 warnings in 652.19s (0:10:52)"
+  },
+  "priority_identity_candidates": {
+    "unchanged_records": 111,
+    "acid_name_substitutions": 76,
+    "albumin_name_substitutions": 35,
+    "state": "Source review pending; not a coverage increment."
+  },
+  "original_source_issues": {
+    "JCM201": "source_unavailable: JCM returned no recipe"
+  },
+  "next_prepared_records": {
+    "keys": [
+      "D403",
+      "D751",
+      "K403",
+      "K751"
+    ],
+    "source_responses": 4,
+    "state": "Captured and inspected, not applied or counted as completed reviews."
+  }
+}

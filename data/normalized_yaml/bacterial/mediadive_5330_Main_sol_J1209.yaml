@@ -16,6 +16,33 @@ composition:
     label: sodium chloride
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5330
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "NaCl",
+                      "compound_id": 43,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 70,
+                      "unit": "g",
+                      "g_l": 67.9612,
+                      "mmol_l": 1162.92,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (NaCl) in
+      MediaDive solution 5330; locator=$.data.recipe[0] (compound_id=43). Provider
+      explicitly reports g_l=67.9612. Arithmetic check: 70 g * 1 g/g / (1030 ml /
+      1000 ml per L) = 67.96116504854368932038834951 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1030. Retrieved 2026-10-07T09:53:41.840106+00:00;
+      response SHA256=efa4dc47418e3e8932aa49e36bb90f4152ac68bdb240f1c95e492e8f38fac6a2.'
 - preferred_term: Na2CO3
   concentration:
     value: '38.835'
@@ -28,6 +55,33 @@ composition:
     label: sodium carbonate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5330
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Na2CO3",
+                      "compound_id": 32,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 40,
+                      "unit": "g",
+                      "g_l": 38.835,
+                      "mmol_l": 366.409,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Na2CO3)
+      in MediaDive solution 5330; locator=$.data.recipe[1] (compound_id=32). Provider
+      explicitly reports g_l=38.835. Arithmetic check: 40 g * 1 g/g / (1030 ml / 1000
+      ml per L) = 38.83495145631067961165048544 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1030. Retrieved 2026-10-07T09:53:41.840106+00:00;
+      response SHA256=efa4dc47418e3e8932aa49e36bb90f4152ac68bdb240f1c95e492e8f38fac6a2.'
 - preferred_term: Distilled water
   concentration:
     value: '485.4368932038835'
@@ -52,6 +106,33 @@ composition:
     label: dipotassium hydrogen phosphate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5330
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "K2HPO4",
+                      "compound_id": 10,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 6.3,
+                      "unit": "g",
+                      "g_l": 6.1165,
+                      "mmol_l": 35.1168,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[3].concentration (K2HPO4)
+      in MediaDive solution 5330; locator=$.data.recipe[3] (compound_id=10). Provider
+      explicitly reports g_l=6.1165. Arithmetic check: 6.3 g * 1 g/g / (1030 ml /
+      1000 ml per L) = 6.116504854368932038834951456 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1030. Retrieved 2026-10-07T09:53:41.840106+00:00;
+      response SHA256=efa4dc47418e3e8932aa49e36bb90f4152ac68bdb240f1c95e492e8f38fac6a2.'
 - preferred_term: Basal salts solution
   concentration:
     value: '9.70873786407767'
@@ -141,6 +222,18 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '2 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T09:59:54.456952+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/5330
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "67.9612"}
+    -> {"unit": "G_PER_L", "value": "67.9612"} (evidence_only); composition[1].concentration:
+    {"unit": "G_PER_L", "value": "38.835"} -> {"unit": "G_PER_L", "value": "38.835"}
+    (evidence_only); composition[3].concentration: {"unit": "G_PER_L", "value": "6.1165"}
+    -> {"unit": "G_PER_L", "value": "6.1165"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -149,3 +242,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/5330
+  title: 'MediaDive solution 5330: Main sol. J1209'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=efa4dc47418e3e8932aa49e36bb90f4152ac68bdb240f1c95e492e8f38fac6a2;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

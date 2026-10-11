@@ -1,0 +1,125 @@
+{
+  "terminal": true,
+  "state": "Available-source preparation, every-old-field inventory and representation decisions recorded; guarded proposal and application incomplete, JCM1029 original-source access unresolved",
+  "all_record_goal_complete": false,
+  "records_edited": 0,
+  "new_evidence": 0,
+  "normalized_count": 15910,
+  "normalized_sha256": "2be09e9249a816360bba52b76c1f3d889e12aae7bfd90d12771f117acb01a0d1",
+  "identified_records": 13,
+  "successful_source_captures": 16,
+  "source_access_errors": [
+    {
+      "key": "JCM1029",
+      "url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1029",
+      "error": "RecipeReferenceError: source_unavailable: JCM returned no recipe",
+      "http_status": null
+    }
+  ],
+  "source_rows_inventoried": 238,
+  "additional_togo_linked_vfa_rows": 7,
+  "original_pdf_rows": 32,
+  "old_quantity_fields_inventoried": 187,
+  "mapped_source_candidate_fields": 170,
+  "LB_placeholder_stock_solvent_fields": 17,
+  "baseline_commands_passed": 26,
+  "pdf_pages_visually_inspected": 2,
+  "prior_supported_evidence_to_preserve": 13,
+  "source_claim_review_complete": false,
+  "guarded_proposal_complete": false,
+  "canonical_report_inventory": {
+    "data/normalized_yaml/bacterial/JCM_J1029_RUMEN_BACTERIA_MEDIUM.yaml": [
+      {
+        "path": "reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/records/bacterial/JCM_J1029_RUMEN_BACTERIA_MEDIUM.yaml.md",
+        "sha256": "54d100ec231c980df84b1b0bec37b1adb56518f92f5b48d381093fda919c38fc"
+      }
+    ],
+    "data/normalized_yaml/bacterial/KOMODO_330_RUMEN_BACTERIA_medium.yaml": [
+      {
+        "path": "reports/ingredient_concentration_curation/20261007-komodo-media-1000-1500/records/bacterial/KOMODO_330_RUMEN_BACTERIA_medium.yaml.md",
+        "sha256": "486784f4f58b922c7ab0398bcb58dc556fc448c55b762930b7fa48957bfa9742"
+      }
+    ],
+    "data/normalized_yaml/bacterial/TOGO_M1093_Rumen_Bacteria_Medium.yaml": [],
+    "data/normalized_yaml/bacterial/mediadive_124_Haemin_solution.yaml": [
+      {
+        "path": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0000-0500/records/bacterial/mediadive_124_Haemin_solution.yaml.md",
+        "sha256": "6043a1e1295fa40c5f535dd092af6cc38c8a910d7fe296ede520c047da7dc22a"
+      }
+    ],
+    "data/normalized_yaml/bacterial/mediadive_3774_VFA_solution.yaml": [
+      {
+        "path": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-2500-3000/records/bacterial/mediadive_3774_VFA_solution.yaml.md",
+        "sha256": "9f4a9eb2863bbd5698d77c00378f81077217fa0b4e0c3296cd77afd372703884"
+      }
+    ],
+    "data/normalized_yaml/bacterial/mediadive_5080_Main_sol_J1029.yaml": [
+      {
+        "path": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-3500-4000/records/bacterial/mediadive_5080_Main_sol_J1029.yaml.md",
+        "sha256": "2fcfe31ba2e6f961a335703afae2351bed26ace9cd8f113ef20d5908944d684d"
+      }
+    ],
+    "data/normalized_yaml/bacterial/mediadive_606_Main_sol_330.yaml": [
+      {
+        "path": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0000-0500/records/bacterial/mediadive_606_Main_sol_330.yaml.md",
+        "sha256": "9a3e389701fc272e45cfe936c4c1007d9396de5488a9b2758572b5f772be3ea5"
+      }
+    ],
+    "data/normalized_yaml/bacterial/mediadive_607_Mineral_solution.yaml": [
+      {
+        "path": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0000-0500/records/bacterial/mediadive_607_Mineral_solution.yaml.md",
+        "sha256": "c3a7b5302e2c09d548f9e91f6ff400c6362bfd5e07b85e90b68784336d6e87ef"
+      }
+    ],
+    "data/normalized_yaml/bacterial/mediadive_608_Volatile_fatty_acid_mixture.yaml": [
+      {
+        "path": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0000-0500/records/bacterial/mediadive_608_Volatile_fatty_acid_mixture.yaml.md",
+        "sha256": "87458a280e38131e3d163b46e7bed6265751fe2a4e43405992a835abcdd0ecb7"
+      }
+    ],
+    "data/normalized_yaml/bacterial/medium_330_modified_for_dsm_17630.yaml": [
+      {
+        "path": "reports/ingredient_concentration_curation/20261007-komodo-media-1000-1500/records/bacterial/medium_330_modified_for_dsm_17630.yaml.md",
+        "sha256": "6554f927bedd6b94c52696887af9732d0975325ff9198dca8ad4c912cd2f99f3"
+      }
+    ],
+    "data/normalized_yaml/bacterial/mineral_solution_medium_330.yaml": [
+      {
+        "path": "reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/mineral_solution_medium_330.yaml.md",
+        "sha256": "cf261d2eb9dfdf9ca1e21b1f07e39a00b66b18793e2034648082729fdc483368"
+      }
+    ],
+    "data/normalized_yaml/bacterial/rumen_bacteria_medium.yaml": [
+      {
+        "path": "reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/bacterial/rumen_bacteria_medium.yaml.md",
+        "sha256": "eae341941b1aedfd411c74d12a47db6738b35e7b357d65258f92739e6a002f68"
+      }
+    ],
+    "data/normalized_yaml/bacterial/volatile_fatty_acid_mixture_medium_330.yaml": [
+      {
+        "path": "reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/volatile_fatty_acid_mixture_medium_330.yaml.md",
+        "sha256": "4cd42261282df552df721fcc1da923e0e421db6ced0fcb6e9e78af62a0c853a6"
+      }
+    ]
+  },
+  "already_covered_records": 12,
+  "records_without_existing_canonical_report": [
+    "data/normalized_yaml/bacterial/TOGO_M1093_Rumen_Bacteria_Medium.yaml"
+  ],
+  "inventory_includes_ignored_files": true,
+  "receipt_sha256": {
+    "next-330-context-initial": "35e9dd719227adcd1767b60a2125560654bb2fd71e390448077ce39a69676678",
+    "next-330-context-approved": "97e6cfa229556a5251518fafb27c7506242afb62cb7be79ff7ff985dfb4e6c49",
+    "next-330-inspection": "8b67b3a74c49417ce7aae6d3fd5e30cf0df770124227cb2669f6f63fa094302c",
+    "next-330-baseline": "51a5735d56a3b1343b8cbfbddf3e4a0e93d72b62a14449712478841c12acfc69",
+    "next-330-old-slot-mapping": "a26f6da83723b190536506e96bf02adcf2e3ea003a7da12ba84bcf4191305b58",
+    "next-330-row-decisions": "7ebf698e7b7fe36be8e1d3dbd3e7dfbd20cfe724a243563ac478071135fcfd42",
+    "next-330-M124": "5c2f6f2409a8ae6231cd6d85da4ad3899977e216dd5b9084ea8b9d65a02aaeda",
+    "next-330-linked-stock-review": "6319b3c23637b920966bbd821617578e34a92437c7c2e3372144e5528c47ad3b"
+  },
+  "limits": [
+    "Rows and mapping are preparation, not completed review or added YAML evidence",
+    "TOGO M1093 -> M124 -> JCM133 chain verifies only VFA stock, not live JCM1029 methods",
+    "32 original PDF quantity rows exclude the explicit final-volume header; the first development assertion detected this header as an extra row before any report or YAML write"
+  ]
+}

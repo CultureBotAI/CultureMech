@@ -1,0 +1,40 @@
+{
+  "J261": {
+    "stock_dose_basis_corrections": 0,
+    "stock_nodes_relocated": 24,
+    "stock_stage_concentrations_rebased": 7,
+    "unsupported_quantity_slots_removed": 3,
+    "quantity_corrections": 2,
+    "final_quantity_slots_added": 1,
+    "explicitly_omitted_ingredient_nodes": 1,
+    "old_quantity_slots": 26,
+    "new_evidence": 98,
+    "new_references": 3,
+    "new_curation_history": 1,
+    "claims": 114
+  },
+  "M253": {
+    "stock_dose_basis_corrections": 2,
+    "stock_nodes_relocated": 1,
+    "unsupported_quantity_slots_removed": 4,
+    "quantity_corrections": 0,
+    "final_quantity_slots_added": 0,
+    "old_quantity_slots": 10,
+    "new_evidence": 91,
+    "new_references": 3,
+    "new_curation_history": 1,
+    "claims": 106
+  },
+  "J151": {
+    "new_evidence": 2,
+    "new_references": 2,
+    "new_curation_history": 1,
+    "claims": 2
+  },
+  "M142": {
+    "new_evidence": 2,
+    "new_references": 2,
+    "new_curation_history": 1,
+    "claims": 2
+  }
+}

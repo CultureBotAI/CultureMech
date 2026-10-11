@@ -182,13 +182,17 @@ def count_links(index: RecipeIndex) -> tuple[int, int]:
     return parent_links, child_links
 
 
-def write_reports(findings: list[Finding], index: RecipeIndex, reports_dir: Path) -> None:
+def write_reports(
+    findings: list[Finding], index: RecipeIndex, reports_dir: Path
+) -> tuple[Path, Path]:
     reports_dir.mkdir(parents=True, exist_ok=True)
+    out_tsv = reports_dir / OUT_TSV.name
+    out_md = reports_dir / OUT_MD.name
     parent_links, child_links = count_links(index)
     errors = sum(1 for finding in findings if finding.severity == "ERROR")
     warnings = sum(1 for finding in findings if finding.severity == "WARNING")
 
-    with OUT_TSV.open("w", newline="") as handle:
+    with out_tsv.open("w", newline="") as handle:
         writer = csv.writer(handle, delimiter="\t", lineterminator="\n")
         writer.writerow(["severity", "yaml_path", "field", "reference", "message"])
         for finding in findings:
@@ -224,7 +228,8 @@ def write_reports(findings: list[Finding], index: RecipeIndex, reports_dir: Path
             lines.append(f"\nOnly first 100 of {len(findings):,} findings are shown.")
     else:
         lines.append("No parent/child media-variant link problems found.")
-    OUT_MD.write_text("\n".join(lines) + "\n")
+    out_md.write_text("\n".join(lines) + "\n")
+    return out_tsv, out_md
 
 
 def main() -> int:
@@ -235,7 +240,7 @@ def main() -> int:
 
     index = load_recipes(args.yaml_root)
     findings = validate_links(index)
-    write_reports(findings, index, args.reports_dir)
+    report_paths = write_reports(findings, index, args.reports_dir)
     errors = sum(1 for finding in findings if finding.severity == "ERROR")
     warnings = sum(1 for finding in findings if finding.severity == "WARNING")
     parent_links, child_links = count_links(index)
@@ -244,8 +249,9 @@ def main() -> int:
     print(f"Child-to-parent links: {child_links}")
     print(f"Errors: {errors}")
     print(f"Warnings: {warnings}")
-    print(f"Wrote {OUT_TSV.relative_to(REPO_ROOT)}")
-    print(f"Wrote {OUT_MD.relative_to(REPO_ROOT)}")
+    for path in report_paths:
+        display = path.relative_to(REPO_ROOT) if path.is_relative_to(REPO_ROOT) else path
+        print(f"Wrote {display}")
     return 2 if errors else 0
 
 

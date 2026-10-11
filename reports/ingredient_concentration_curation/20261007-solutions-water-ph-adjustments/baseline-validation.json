@@ -1,0 +1,598 @@
+{
+  "terminal": true,
+  "runtime": "/tmp/culturemech-goal-py313-20261007/bin/python",
+  "phase": "baseline",
+  "environment": "Partial locked Python 3.13 dev environment; llvmlite, numba, umap-learn, pynndescent and pacmap omitted after llvmlite build failure; not full maintained-project CI.",
+  "checks": [
+    {
+      "name": "inversion",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-solutions-water-ph-adjustments/audit.py",
+        "--out",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-solutions-water-ph-adjustments/baseline-inversion.json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/water-ph-adjustments-baseline-inversion.log"
+    },
+    {
+      "name": "tests",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_solution_water_ph_adjustments.py",
+        "tests/test_solution_water_ph7.py",
+        "tests/test_solution_concentration_review.py",
+        "tests/test_solution_concentration_batch.py",
+        "tests/test_record_io.py",
+        "tests/test_concentration_review_reports.py",
+        "tests/test_concentration_plausibility.py",
+        "--junitxml",
+        "/tmp/ingredient-media-20261007/water-ph-adjustments-baseline-tests.xml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/water-ph-adjustments-baseline-tests.log"
+    },
+    {
+      "name": "historical-water-ph7",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/repair_solution_water_ph7.py",
+        "--cache",
+        "/tmp/ingredient-solutions-20261007/sources",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/water-ph-adjustments-baseline-historical-water-ph7.log"
+    }
+  ],
+  "schema": [
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_107_Main_sol_67.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_1202_Main_sol_544.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_120_Main_sol_75.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_1242_Main_sol_577.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_1337_Main_sol_624.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_1338_Main_sol_625.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_1387_Main_sol_656.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_1389_Main_sol_658.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_145_Main_sol_83.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_1542_Main_sol_755.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_163_Main_sol_93.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_172_Main_sol_102.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_2066_Main_sol_1015.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_21_Main_sol_21.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_228_Main_sol_130.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_2409_Main_sol_1209.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_2430_Trace_element_solution_SL-8.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_2670_Trace_element_solution_SL-8.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_2842_Trace_elements_solution.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_319_Main_sol_192.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3235_Main_sol_1563.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3268_Main_sol_1581.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3364_Main_sol_1617.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_33_Trace_element_solution_SL-12_B.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3539_Main_sol_1709.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3628_Main_sol_J2.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3648_Main_sol_J25.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3649_Main_sol_J26.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3660_Main_sol_J38.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3664_Main_sol_J42.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3666_Main_sol_J44.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3667_Main_sol_J45.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3671_Main_sol_J49.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3680_Main_sol_J56.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3681_Main_sol_J57.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3688_Main_sol_J61.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3695_Main_sol_J68.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3736_Main_sol_J103.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3737_Main_sol_J104.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3742_Main_sol_J107.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3743_Main_sol_J108.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3749_Main_sol_J112.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3751_Main_sol_J114.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3770_Main_sol_J129.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3781_Main_sol_J137.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3782_Main_sol_J138.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3785_Main_sol_J141.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3822_SL-6_trace_element_solution.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3835_Main_sol_J177.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3867_Main_sol_J202.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3893_Main_sol_J222.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3912_Main_sol_J235.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3920_Main_sol_J240.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3934_Main_sol_J250.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3945_Main_sol_J259.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3960_Main_sol_J271.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3989_Main_sol_J291.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3993_Main_sol_J293.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_4047_Main_sol_J329.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_4049_Main_sol_J331.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_4095_Main_sol_J372.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_4135_Main_sol_J404.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_4139_Main_sol_J408.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_4148_Trace_metal_solution.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_4165_Main_sol_J427.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_4183_Main_sol_J437.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_4212_Main_sol_J464.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_4244_Main_sol_J486.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_4246_Main_sol_J488.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_4258_Main_sol_J498.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_4333_Main_sol_J535.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_4445_Main_sol_J597.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_4446_Main_sol_J598.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_4464_Main_sol_J606.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_4474_Main_sol_J614.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_4555_Main_sol_J666.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_4747_Main_sol_J798.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_4752_Main_sol_J803.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_482_Main_sol_222.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_484_Main_sol_224.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_4850_Main_sol_J864.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_4903_Trace_metal_solution.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_490_Main_sol_230.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_4942_Main_sol_J931.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_5034_Main_sol_J999.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_5071_Main_sol_J1022.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_5146_Trace_element_solution.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_5162_Main_sol_J1091.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_5191_Trace_element_solution_SL-11.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_522_Main_sol_256.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_5289_Main_sol_J1178.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_530_Main_sol_264.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_5356_Main_sol_J1226.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_5388_Main_sol_J1251.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_5554_Synthetic_sea_water.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_573_Main_sol_308.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_5982_Main_sol_1794.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_6269_Main_sol_310a.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_661_Main_sol_344.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_692_Main_sol_352.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_701_Main_sol_361.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_704_Main_sol_364.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_813_Main_sol_401.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_856_Main_sol_426.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_880_Main_sol_434.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_8_Main_sol_8.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_960_Main_sol_468.yaml",
+      "open_errors": [],
+      "closed_errors": []
+    }
+  ],
+  "maintained_matcher": {
+    "total_processed": 107,
+    "excluded_solutions": 107,
+    "skipped_no_fingerprint": 0,
+    "skipped_error": 0,
+    "successfully_fingerprinted": 0,
+    "reasons": {}
+  }
+}

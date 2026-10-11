@@ -1,0 +1,150 @@
+{
+  "version": 1,
+  "commit": "f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f",
+  "context_sha256": "69856244cbba01ade9dbbd724063cd5c7b02cb9dac0d60353d67e5bcfbf34689",
+  "created_at": "2026-10-08T12:33:49.789371+00:00",
+  "records": [
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3846_FeCl2_solution.yaml",
+      "id": "CultureMech:012919",
+      "target_class": "SolutionRecipe",
+      "before_text": "id: CultureMech:012919\npreferred_term: FeCl2 solution\nterm:\n  id: mediadive.solution:3846\n  label: FeCl2 solution\ncomposition:\n- preferred_term: HCl\n  concentration:\n    value: '2.5'\n    unit: G_PER_L\n  term:\n    id: mediadive.compound:68\n    label: HCl\n  chebi_term:\n    id: CHEBI:17883\n    label: hydrogen chloride\n    confidence: 1.0\n    match_type: exact_match\n- preferred_term: FeCl2 x 4 H2O\n  concentration:\n    value: '1.5'\n    unit: G_PER_L\n  term:\n    id: mediadive.compound:260\n    label: FeCl2 x 4 H2O\n  chebi_term:\n    id: CHEBI:86249\n    label: iron dichloride tetrahydrate\n    confidence: 0.7\n    match_type: corpus_consensus\n  evidence:\n  - reference: https://mediadive.dsmz.de/rest/solution/3846\n    supports: SUPPORT\n    snippet: |-\n      {\n                      \"recipe_order\": 2,\n                      \"compound\": \"FeCl2 x 4 H2O\",\n                      \"compound_id\": 260,\n                      \"solution\": null,\n                      \"solution_id\": null,\n                      \"condition\": null,\n                      \"attribute\": null,\n                      \"amount\": 1.5,\n                      \"unit\": \"g\",\n                      \"g_l\": 1.5,\n                      \"mmol_l\": 7.54482,\n                      \"optional\": 0\n                  }\n    explanation: 'Concentration evidence for composition[1].concentration (FeCl2 x\n      4 H2O) in MediaDive solution 3846; locator=$.data.recipe[1] (compound_id=260).\n      Provider explicitly reports g_l=1.5. Arithmetic check: 1.5 g * 1 g/g / (1000\n      ml / 1000 ml per L) = 1.5 g/L, consistent with the reported value at its precision.\n      Evidence supports the provider-declared concentration within this solution,\n      not a concentration in a receiving medium or an independently measured final\n      volume. Water addition alone is not used to infer a final volume. Additional\n      exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:25:43.288435+00:00;\n      response SHA256=3b17c2e79a0ef85051dc8c41ff95bb0361a83b12179a510184b61ef9edbb96f0.'\n- preferred_term: Distilled water\n  concentration:\n    value: '0.99'\n    unit: L\n  term:\n    id: mediadive.compound:4\n    label: Distilled water\n  chebi_term:\n    id: CHEBI:15377\n    label: water\n    confidence: 0.7\n    match_type: corpus_consensus\n  evidence:\n  - reference: https://mediadive.dsmz.de/rest/solution/3846\n    supports: SUPPORT\n    snippet: |-\n      {\n                      \"recipe_order\": 3,\n                      \"compound\": \"Distilled water\",\n                      \"compound_id\": 4,\n                      \"solution\": null,\n                      \"solution_id\": null,\n                      \"condition\": null,\n                      \"attribute\": null,\n                      \"amount\": 990,\n                      \"unit\": \"ml\",\n                      \"g_l\": null,\n                      \"mmol_l\": null,\n                      \"optional\": 0\n                  }\n    explanation: 'Concentration evidence for composition[2].concentration (Distilled\n      water) in MediaDive solution 3846; locator=$.data.recipe[2] (compound_id=4).\n      Source water addition is 990 ml per prepared batch: 990 / 1000 = 0.99 L. No\n      source preparation step gives a competing make-up instruction. This is a batch\n      dose, not a volume percentage; no final-volume or solvent-density assumption\n      is made. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved\n      2026-10-07T09:25:43.288435+00:00; response SHA256=3b17c2e79a0ef85051dc8c41ff95bb0361a83b12179a510184b61ef9edbb96f0.'\ncuration_history:\n- timestamp: '2026-03-13T06:20:28.316790Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:012919'\n- curator: schema-defaulter-v1.0\n  action: Applied schema defaults and normalizations\n  notes: Added placeholder ingredients for missing composition\n  timestamp: '2026-03-14T00:00:00+00:00'\n- timestamp: '2026-03-14T21:09:32.830007'\n  curator: quality-tagger-v1.0\n  action: Added data quality flag\n  notes: Marked as incomplete_composition due to placeholder ingredients\n- timestamp: '2026-04-04T17:50:00.631393'\n  curator: categorize_unknown_media\n  action: CATEGORIZED\n  changes: 'Set category to ''bacterial'' (was: MISSING)'\n  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting\n    to bacterial'\n- timestamp: '2026-05-16T09:03:55.802536+00:00'\n  curator: migrate_legacy_fields.py\n  action: MIGRATED_LEGACY_FIELDS\n  notes: curation_history.date->timestamp=1\n- timestamp: '2026-06-10T06:38:28.925649+00:00'\n  curator: kg-fallback-consensus-v1.0\n  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus\n  notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient\n    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).\n- timestamp: '2026-10-07T09:30:59.704035+00:00'\n  curator: codex\n  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE\n  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,\n    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium\n    concentration inferred.\n  source: https://mediadive.dsmz.de/rest/solution/3846\n  changes: 'composition[1].concentration: {\"unit\": \"G_PER_L\", \"value\": \"1.5\"} -> {\"unit\":\n    \"G_PER_L\", \"value\": \"1.5\"} (evidence_only); composition[2].concentration: {\"unit\":\n    \"PERCENT_V_V\", \"value\": \"990\"} -> {\"unit\": \"L\", \"value\": \"0.99\"} (correct)'\ningredients:\n- preferred_term: See source for composition\n  concentration:\n    value: variable\n    unit: VARIABLE\ndata_quality_flags:\n- incomplete_composition\ncategory: bacterial\nreferences:\n- reference: https://mediadive.dsmz.de/rest/solution/3846\n  title: 'MediaDive solution 3846: FeCl2 solution'\n  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;\n    source_organization=DSMZ; locator=$.data; response_sha256=3b17c2e79a0ef85051dc8c41ff95bb0361a83b12179a510184b61ef9edbb96f0;\n    individual authors and publication year not supplied. Provider-declared solution\n    amounts, not receiving-medium concentrations.\n",
+      "before_sha256": "79ad5df8a66ee42ca19a7150dfdb0a4539fec3b7cc71b7b767ba3889d20d762c",
+      "action": "SEPARATED_FECL2_STOCK_ACID_STRENGTH_AND_BATCH_DOSE_WITH_EVIDENCE",
+      "after_text": "id: CultureMech:012919\npreferred_term: FeCl2 solution\nterm:\n  id: mediadive.solution:3846\n  label: FeCl2 solution\ncomposition:\n- preferred_term: FeCl2 x 4 H2O\n  concentration:\n    value: '1.5'\n    unit: G_PER_L\n  term:\n    id: mediadive.compound:260\n    label: FeCl2 x 4 H2O\n  chebi_term:\n    id: CHEBI:86249\n    label: iron dichloride tetrahydrate\n    confidence: 0.7\n    match_type: corpus_consensus\n  evidence:\n  - reference: https://mediadive.dsmz.de/rest/solution/3846\n    supports: SUPPORT\n    snippet: |-\n      {\n                      \"recipe_order\": 2,\n                      \"compound\": \"FeCl2 x 4 H2O\",\n                      \"compound_id\": 260,\n                      \"solution\": null,\n                      \"solution_id\": null,\n                      \"condition\": null,\n                      \"attribute\": null,\n                      \"amount\": 1.5,\n                      \"unit\": \"g\",\n                      \"g_l\": 1.5,\n                      \"mmol_l\": 7.54482,\n                      \"optional\": 0\n                  }\n    explanation: 'Concentration evidence for composition[1].concentration (FeCl2 x\n      4 H2O) in MediaDive solution 3846; locator=$.data.recipe[1] (compound_id=260).\n      Provider explicitly reports g_l=1.5. Arithmetic check: 1.5 g * 1 g/g / (1000\n      ml / 1000 ml per L) = 1.5 g/L, consistent with the reported value at its precision.\n      Evidence supports the provider-declared concentration within this solution,\n      not a concentration in a receiving medium or an independently measured final\n      volume. Water addition alone is not used to infer a final volume. Additional\n      exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:25:43.288435+00:00;\n      response SHA256=3b17c2e79a0ef85051dc8c41ff95bb0361a83b12179a510184b61ef9edbb96f0.\n      Current locator after HCl stock separation: composition[0].concentration (FeCl2\n      x 4 H2O); the earlier composition[1] locator in this preserved evidence describes\n      the pre-separation layout. Quantity, source snippet and qualification are unchanged.'\n- preferred_term: Distilled water\n  concentration:\n    value: '0.99'\n    unit: L\n  term:\n    id: mediadive.compound:4\n    label: Distilled water\n  chebi_term:\n    id: CHEBI:15377\n    label: water\n    confidence: 0.7\n    match_type: corpus_consensus\n  evidence:\n  - reference: https://mediadive.dsmz.de/rest/solution/3846\n    supports: SUPPORT\n    snippet: |-\n      {\n                      \"recipe_order\": 3,\n                      \"compound\": \"Distilled water\",\n                      \"compound_id\": 4,\n                      \"solution\": null,\n                      \"solution_id\": null,\n                      \"condition\": null,\n                      \"attribute\": null,\n                      \"amount\": 990,\n                      \"unit\": \"ml\",\n                      \"g_l\": null,\n                      \"mmol_l\": null,\n                      \"optional\": 0\n                  }\n    explanation: 'Concentration evidence for composition[2].concentration (Distilled\n      water) in MediaDive solution 3846; locator=$.data.recipe[2] (compound_id=4).\n      Source water addition is 990 ml per prepared batch: 990 / 1000 = 0.99 L. No\n      source preparation step gives a competing make-up instruction. This is a batch\n      dose, not a volume percentage; no final-volume or solvent-density assumption\n      is made. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved\n      2026-10-07T09:25:43.288435+00:00; response SHA256=3b17c2e79a0ef85051dc8c41ff95bb0361a83b12179a510184b61ef9edbb96f0.\n      Current locator after HCl stock separation: composition[1].concentration (Distilled\n      water); the earlier composition[2] locator in this preserved evidence describes\n      the pre-separation layout. Quantity, source snippet and qualification are unchanged.'\ncuration_history:\n- timestamp: '2026-03-13T06:20:28.316790Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:012919'\n- curator: schema-defaulter-v1.0\n  action: Applied schema defaults and normalizations\n  notes: Added placeholder ingredients for missing composition\n  timestamp: '2026-03-14T00:00:00+00:00'\n- timestamp: '2026-03-14T21:09:32.830007'\n  curator: quality-tagger-v1.0\n  action: Added data quality flag\n  notes: Marked as incomplete_composition due to placeholder ingredients\n- timestamp: '2026-04-04T17:50:00.631393'\n  curator: categorize_unknown_media\n  action: CATEGORIZED\n  changes: 'Set category to ''bacterial'' (was: MISSING)'\n  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting\n    to bacterial'\n- timestamp: '2026-05-16T09:03:55.802536+00:00'\n  curator: migrate_legacy_fields.py\n  action: MIGRATED_LEGACY_FIELDS\n  notes: curation_history.date->timestamp=1\n- timestamp: '2026-06-10T06:38:28.925649+00:00'\n  curator: kg-fallback-consensus-v1.0\n  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus\n  notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient\n    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).\n- timestamp: '2026-10-07T09:30:59.704035+00:00'\n  curator: codex\n  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE\n  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,\n    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium\n    concentration inferred.\n  source: https://mediadive.dsmz.de/rest/solution/3846\n  changes: 'composition[1].concentration: {\"unit\": \"G_PER_L\", \"value\": \"1.5\"} -> {\"unit\":\n    \"G_PER_L\", \"value\": \"1.5\"} (evidence_only); composition[2].concentration: {\"unit\":\n    \"PERCENT_V_V\", \"value\": \"990\"} -> {\"unit\": \"L\", \"value\": \"0.99\"} (correct)'\n- timestamp: '2026-10-08T12:33:49.789371+00:00'\n  curator: codex\n  action: SEPARATED_FECL2_STOCK_ACID_STRENGTH_AND_BATCH_DOSE_WITH_EVIDENCE\n  notes: Source-linked stock strength and batch dose separated. Prior chemical annotations,\n    evidence snippets and history preserved; relocated evidence receives current field\n    locators. FeCl2 g/L remains provider-qualified. No final-volume, density, percent-basis\n    or organism growth claim inferred.\n  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187\n  changes: 'composition[0].concentration -> solutions[0].composition[0].concentration:\n    {''value'': ''2.5'', ''unit'': ''G_PER_L''} -> {''value'': ''7.7'', ''unit'':\n    ''MOLAR''} (correct); new -> solutions[0].concentration: None -> {''value'': ''0.01'',\n    ''unit'': ''L''} (add); composition[1].concentration -> composition[0].concentration:\n    {''value'': ''1.5'', ''unit'': ''G_PER_L''} -> {''value'': ''1.5'', ''unit'':\n    ''G_PER_L''} (verified); composition[2].concentration -> composition[1].concentration:\n    {''value'': ''0.99'', ''unit'': ''L''} -> {''value'': ''0.99'', ''unit'': ''L''}\n    (verified); ingredients[0].concentration -> ingredients[0].concentration: {''value'':\n    ''variable'', ''unit'': ''VARIABLE''} -> {''value'': ''variable'', ''unit'': ''VARIABLE''}\n    (unsupported)'\ningredients:\n- preferred_term: See source for composition\n  concentration:\n    value: variable\n    unit: VARIABLE\ndata_quality_flags:\n- incomplete_composition\ncategory: bacterial\nreferences:\n- reference: https://mediadive.dsmz.de/rest/solution/3846\n  title: 'MediaDive solution 3846: FeCl2 solution'\n  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;\n    source_organization=DSMZ; locator=$.data; response_sha256=3b17c2e79a0ef85051dc8c41ff95bb0361a83b12179a510184b61ef9edbb96f0;\n    individual authors and publication year not supplied. Provider-declared solution\n    amounts, not receiving-medium concentrations.\n- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187\n  title: Medium data\n  notes: source_type=culture_collection_page; discovery_mode=cross_reference; accessed_on=2026-10-08;\n    source_organization=JCM; recipe=187 DESULFUROCOCCUS AMYLOLYTICUS MEDIUM; locator=FeCl2\n    solution table; capture_sha256=e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804.\n    MediaDive medium J187 links this original recipe and solution 3846. Individual\n    authors and publication year are not supplied; copyright year is not publication\n    year.\nsolutions:\n- preferred_term: HCl stock (7.7 M)\n  composition:\n  - preferred_term: HCl\n    concentration:\n      value: '7.7'\n      unit: MOLAR\n    term:\n      id: mediadive.compound:68\n      label: HCl\n    chebi_term:\n      id: CHEBI:17883\n      label: hydrogen chloride\n      confidence: 1.0\n      match_type: exact_match\n    notes: Strength of the HCl stock reagent, not of the prepared FeCl2 solution.\n      The source also labels this stock 25%, without stating the percentage basis.\n      The former 2.5 g/L provider-derived value is not retained as an asserted prepared-stock\n      concentration; neither density nor measured final volume is supplied.\n    evidence:\n    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187\n      supports: SUPPORT\n      snippet: 25% HCl (7.7 M) 10.0 ml\n      explanation: 'solutions[0].composition[0].concentration: Rebase the HCl assertion\n        from provider-derived 2.5 g/L in the prepared FeCl2 stock to the explicitly\n        stated 7.7 M reagent strength. No dilution, percent-basis or density inference.\n        Locator=FeCl2 solution table, HCl row; accessed=2026-10-08T12:29:30.898694+00:00;\n        capture SHA256=e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804.'\n    - reference: https://mediadive.dsmz.de/rest/solution/3846\n      supports: SUPPORT\n      snippet: |-\n        {\n                        \"recipe_order\": 1,\n                        \"compound\": \"HCl\",\n                        \"compound_id\": 68,\n                        \"solution\": null,\n                        \"solution_id\": null,\n                        \"condition\": null,\n                        \"attribute\": \"7.7 M, 25%\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"g_l\": 2.5,\n                        \"mmol_l\": 68.5683,\n                        \"optional\": 0\n                    }\n      explanation: 'solutions[0].composition[0].concentration: the attribute explicitly\n        states 7.7 M for the added HCl reagent. The same row''s g_l=2.5 remains visible\n        in this quote as a provider-derived output, not the reagent strength or a\n        newly validated final concentration. Locator=$.data.recipe[0]; compound_id=68;\n        accessed=2026-10-08T12:29:29.302855+00:00; capture SHA256=3b17c2e79a0ef85051dc8c41ff95bb0361a83b12179a510184b61ef9edbb96f0.\n        The separately cited original JCM187 table corroborates the stock strength.'\n  concentration:\n    value: '0.01'\n    unit: L\n  source: https://mediadive.dsmz.de/rest/solution/3846\n  notes: 10 ml of the 7.7 M HCl reagent per FeCl2 preparation batch, not 10 ml per\n    liter of receiving medium. The 25% label has unspecified basis; no percentage\n    conversion is asserted.\nsource_data:\n  origin: MediaDive\n  notes: Provenance for the existing mediadive.solution:3846 import, recovered from\n    its recipe API. Evidence is attached during curation; no new import date or original\n    curation date is inferred.\n  evidence:\n  - reference: https://mediadive.dsmz.de/rest/solution/3846\n    supports: SUPPORT\n    snippet: |-\n      {\n                      \"recipe_order\": 1,\n                      \"compound\": \"HCl\",\n                      \"compound_id\": 68,\n                      \"solution\": null,\n                      \"solution_id\": null,\n                      \"condition\": null,\n                      \"attribute\": \"7.7 M, 25%\",\n                      \"amount\": 10,\n                      \"unit\": \"ml\",\n                      \"g_l\": 2.5,\n                      \"mmol_l\": 68.5683,\n                      \"optional\": 0\n                  }\n    explanation: 'solutions[0].concentration: Stock batch dose: 10 ml / 1000 ml per\n      L = 0.01 L. This is an absolute preparation input, not a final-volume concentration.\n      The original JCM187 FeCl2 table independently states the same reagent strength\n      and dose; its URL and snippet are attached to the nested HCl component. Locator=$.data.recipe[0];\n      accessed=2026-10-08T12:29:29.302855+00:00; capture SHA256=3b17c2e79a0ef85051dc8c41ff95bb0361a83b12179a510184b61ef9edbb96f0.'\n",
+      "after_sha256": "b2e4c8ae5f0ec6756471724d2280bce9385e9928b686cc8e74f4ee7f946961b6",
+      "claims": [
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            0,
+            "concentration"
+          ],
+          "old_pointer": [
+            "composition",
+            0,
+            "concentration"
+          ],
+          "field": "solutions[0].composition[0].concentration",
+          "ingredient": "HCl",
+          "old": {
+            "value": "2.5",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "7.7",
+            "unit": "MOLAR"
+          },
+          "status": "correct",
+          "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187",
+          "snippet": "25% HCl (7.7 M) 10.0 ml",
+          "locator": "FeCl2 solution table, HCl row",
+          "explanation": "solutions[0].composition[0].concentration: Rebase the HCl assertion from provider-derived 2.5 g/L in the prepared FeCl2 stock to the explicitly stated 7.7 M reagent strength. No dilution, percent-basis or density inference. Locator=FeCl2 solution table, HCl row; accessed=2026-10-08T12:29:30.898694+00:00; capture SHA256=e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804."
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "concentration"
+          ],
+          "old_pointer": null,
+          "field": "solutions[0].concentration",
+          "ingredient": "HCl stock (7.7 M)",
+          "old": null,
+          "new": {
+            "value": "0.01",
+            "unit": "L"
+          },
+          "status": "add",
+          "reference": "https://mediadive.dsmz.de/rest/solution/3846",
+          "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\": \"HCl\",\n                \"compound_id\": 68,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": \"7.7 M, 25%\",\n                \"amount\": 10,\n                \"unit\": \"ml\",\n                \"g_l\": 2.5,\n                \"mmol_l\": 68.5683,\n                \"optional\": 0\n            }",
+          "locator": "$.data.recipe[0]",
+          "explanation": "solutions[0].concentration: Stock batch dose: 10 ml / 1000 ml per L = 0.01 L. This is an absolute preparation input, not a final-volume concentration. The original JCM187 FeCl2 table independently states the same reagent strength and dose; its URL and snippet are attached to the nested HCl component. Locator=$.data.recipe[0]; accessed=2026-10-08T12:29:29.302855+00:00; capture SHA256=3b17c2e79a0ef85051dc8c41ff95bb0361a83b12179a510184b61ef9edbb96f0."
+        },
+        {
+          "pointer": [
+            "composition",
+            0,
+            "concentration"
+          ],
+          "old_pointer": [
+            "composition",
+            1,
+            "concentration"
+          ],
+          "field": "composition[0].concentration",
+          "ingredient": "FeCl2 x 4 H2O",
+          "old": {
+            "value": "1.5",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "1.5",
+            "unit": "G_PER_L"
+          },
+          "status": "verified",
+          "reference": "https://mediadive.dsmz.de/rest/solution/3846",
+          "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\": \"FeCl2 x 4 H2O\",\n                \"compound_id\": 260,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1.5,\n                \"unit\": \"g\",\n                \"g_l\": 1.5,\n                \"mmol_l\": 7.54482,\n                \"optional\": 0\n            }",
+          "locator": "$.data.recipe[1]",
+          "explanation": "composition[0].concentration: Current locator after HCl stock separation: composition[0].concentration (FeCl2 x 4 H2O); the earlier composition[1] locator in this preserved evidence describes the pre-separation layout. Quantity, source snippet and qualification are unchanged. Provider-declared 1.5 g/L only, not an independently measured final volume. Locator=$.data.recipe[1]; accessed=2026-10-08T12:29:29.302855+00:00; capture SHA256=3b17c2e79a0ef85051dc8c41ff95bb0361a83b12179a510184b61ef9edbb96f0."
+        },
+        {
+          "pointer": [
+            "composition",
+            1,
+            "concentration"
+          ],
+          "old_pointer": [
+            "composition",
+            2,
+            "concentration"
+          ],
+          "field": "composition[1].concentration",
+          "ingredient": "Distilled water",
+          "old": {
+            "value": "0.99",
+            "unit": "L"
+          },
+          "new": {
+            "value": "0.99",
+            "unit": "L"
+          },
+          "status": "verified",
+          "reference": "https://mediadive.dsmz.de/rest/solution/3846",
+          "snippet": "{\n                \"recipe_order\": 3,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 990,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "locator": "$.data.recipe[2]",
+          "explanation": "composition[1].concentration: Current locator after HCl stock separation: composition[1].concentration (Distilled water); the earlier composition[2] locator in this preserved evidence describes the pre-separation layout. Quantity, source snippet and qualification are unchanged. Batch water input 990 ml / 1000 = 0.99 L, not final volume. Locator=$.data.recipe[2]; accessed=2026-10-08T12:29:29.302855+00:00; capture SHA256=3b17c2e79a0ef85051dc8c41ff95bb0361a83b12179a510184b61ef9edbb96f0."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            0,
+            "concentration"
+          ],
+          "old_pointer": [
+            "ingredients",
+            0,
+            "concentration"
+          ],
+          "field": "ingredients[0].concentration",
+          "ingredient": "See source for composition",
+          "old": {
+            "value": "variable",
+            "unit": "VARIABLE"
+          },
+          "new": {
+            "value": "variable",
+            "unit": "VARIABLE"
+          },
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Legacy import placeholder, not a reagent or verified VARIABLE amount. Preserved outside authoritative composition; not counted as concentration evidence."
+        }
+      ]
+    }
+  ]
+}
