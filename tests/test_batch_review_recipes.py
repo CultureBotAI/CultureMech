@@ -20,18 +20,52 @@ from __future__ import annotations
 
 from pathlib import Path
 
+import batch_review_recipes
 import pytest
 import yaml
 from batch_review_recipes import (
     LEGACY_MIM_LINK_FIELD,
     MIM_LINK_FIELD,
     RecipeValidator,
+    generate_markdown_report,
     mim_link_id,
     permissible_values,
 )
 
 SCRIPT = Path(__file__).resolve().parents[1] / "scripts" / "batch_review_recipes.py"
 SCHEMA = Path(__file__).resolve().parents[1] / "src" / "culturemech" / "schema" / "culturemech.yaml"
+
+
+def test_clean_scan_does_not_claim_scientific_review_or_export_approval(tmp_path):
+    report = tmp_path / "diagnostics.md"
+    generate_markdown_report(
+        [{"path": "fixture.yaml", "id": "CultureMech:000001", "valid": True, "issues": []}],
+        report,
+    )
+    text = report.read_text()
+    assert "scientific_review: false" in text
+    assert "not a completed scientific review" in text
+    assert "scripts/record_review.py" in text
+    assert "ready for KG export" not in text
+
+
+def test_empty_scan_fails_without_a_coverage_claim(tmp_path, monkeypatch):
+    monkeypatch.setattr(batch_review_recipes, "__file__", str(tmp_path / "scripts/scan.py"))
+    monkeypatch.setattr(batch_review_recipes.sys, "argv", ["scan.py"])
+    assert batch_review_recipes.main() == 1
+
+
+def test_priority_filter_cannot_turn_invalid_recipe_into_success(tmp_path, monkeypatch):
+    source = tmp_path / "data/normalized_yaml/fixture.yaml"
+    source.parent.mkdir(parents=True)
+    source.write_text("name: Missing required ID\n")
+    monkeypatch.setattr(batch_review_recipes, "__file__", str(tmp_path / "scripts/scan.py"))
+    monkeypatch.setattr(
+        batch_review_recipes.sys,
+        "argv",
+        ["scan.py", "--priority", "P4", "--output", str(tmp_path / "diagnostic")],
+    )
+    assert batch_review_recipes.main() == 1
 
 
 # --- the enums come from the schema -------------------------------------

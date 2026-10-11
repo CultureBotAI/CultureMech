@@ -405,6 +405,43 @@
             "title": "ConcentrationValue",
             "type": "object"
         },
+        "CrossCorpusLink": {
+            "additionalProperties": false,
+            "description": "A directed link from the containing record or sub-object to a record in another Mech corpus. The five field names preserve NaturalProductMech's existing link shape. Consumers define allowed relations and evidence requirements; this class alone does not verify a target, its version, organism scope, or the scientific basis of the relation.",
+            "properties": {
+                "basis": {
+                    "description": "How the relation was established, for example SAME_INCHIKEY for an exact chemical-structure join. A match on a protein or reaction must not be presented as sufficient evidence for a stronger relation.",
+                    "type": "string"
+                },
+                "corpus": {
+                    "description": "Canonical target corpus name, for example PathwayMech or AntibioticMech.",
+                    "type": "string"
+                },
+                "identifier": {
+                    "description": "Target record identifier, verbatim, in the named corpus.",
+                    "type": "string"
+                },
+                "relation": {
+                    "description": "Directed relation from the containing record or sub-object to the target. Consumers may constrain this string with a local enum through slot_usage on a subclass, without changing the shared module.",
+                    "type": "string"
+                },
+                "source_version": {
+                    "description": "Pinned commit or release of the target corpus that was checked. Optional for compatibility with existing NaturalProductMech links; consumers should require a full immutable version for newly added links.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "corpus",
+                "identifier",
+                "relation",
+                "basis"
+            ],
+            "title": "CrossCorpusLink",
+            "type": "object"
+        },
         "CultureMechTerm": {
             "additionalProperties": false,
             "description": "A CultureMech identifier for a media recipe used as component",

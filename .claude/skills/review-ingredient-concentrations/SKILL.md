@@ -10,6 +10,38 @@ metadata:
 
 # Review and add ingredient concentrations
 
+## Structured Review Output
+
+For every new review or audit, follow
+[docs/record-reviews.md](../../../docs/record-reviews.md) and
+[the local profile](../../../docs/record-review-profile.md).
+Capture exact targets and input hashes before judging, preserve this skill's
+native rubric, rule IDs, scores and evidence requirements, then author the
+structured assessment and run:
+
+```bash
+uv run python scripts/record_review.py inspect --targets /tmp/review-targets.yaml
+uv run python scripts/record_review.py validate /tmp/completed-review.yaml
+uv run python scripts/record_review.py save --content /tmp/completed-review.yaml
+```
+
+Choose session-unique temporary paths. Save authoritative YAML and derived
+Markdown under `reviews/structured/<timestamp>-<slug>/`; link both in the
+final response. This output contract supersedes prose-only report examples.
+A single record uses `kind: record`; batches declare exact selection,
+population, reviewed targets and limits. Categories also state boundary decisions.
+Every reviewed target must have an assessment. Keep P1-P4 and other native
+severity/rule information with a justified common severity, and metric definitions,
+scales and denominators. Do not infer scientific approval from a native score.
+
+Raw provider drafts and deterministic validator/scan reports are diagnostic
+inputs, not completed scientific reviews. Use `scientific_review: false`
+for deterministic-only or provenance-only assessments; mark required unavailable
+checks and incomplete coverage explicitly. A valid bundle does not change native
+status, clear release holds, authorize edits, or append curation history.
+For audit-only requests, stop after assessment and persistence; any application
+steps below require curation intent.
+
 Every added or corrected concentration must have a verified DOI or persistent
 source URL **and an exact supporting text snippet**. A bibliography entry alone
 is insufficient. Existing amounts without this evidence remain unverified, even
@@ -167,15 +199,15 @@ an unsupported automated pass. Re-read every changed claim, checking identifier,
 quote, source/formulation scope, units, basis, and calculations. Schema validity
 alone is not scientific verification.
 
-Produce one result per exact record path, including unchanged records. Each
-per-record result must contain exactly one `- Record: <exact tracked path>` line,
-the ID and reviewed commit, and a row for every concentration claim in scope.
+Produce one structured target and assessment per exact record path, including
+unchanged records. Preserve the ID, reviewed commit and every concentration
+claim in scope in assessments, evidence and findings.
 Include field path/ingredient, old and proposed amount/unit/basis, status,
 DOI/PURL, snippet, locator, calculation, action taken, and validation. Unknown
 report cells stay explicitly unknown, not filled with estimates.
 
 For batches, report unique reviewed paths, changed/unchanged/blocked/failed
 records, remaining scope, and unresolved issues. An interrupted or partially
-failed run is not complete. Save reports at the requested location or an
-established repository report destination; do not stage ignored research
+failed run is not complete. Save YAML and derived Markdown with the shared
+saver under `reviews/structured/<timestamp>-<slug>/`; do not stage ignored research
 captures/caches as curation output.

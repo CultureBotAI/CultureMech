@@ -47,6 +47,8 @@ def test_changed_paths_disables_rename_detection(monkeypatch) -> None:
 # is a weaker contract than deriving the set from claw's manifest (#437), but it
 # is one that fails when only one side is edited.
 EXPECTED_VENDORED_PYTHON = {
+    "scripts/record_review.py",
+    "tests/test_record_review_contract.py",
     "scripts/_edison_capture.py",
     "scripts/auto_merge_ready_prs.py",
     "scripts/verify_merge_integrity.py",

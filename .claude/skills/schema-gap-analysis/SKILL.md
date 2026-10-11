@@ -9,6 +9,30 @@ version: 2.1.0
 
 # Schema gap analysis (CultureMech)
 
+## Assessed Output
+
+Follow [docs/record-reviews.md](../../../docs/record-reviews.md) and
+[the local profile](../../../docs/record-review-profile.md). This registered
+route saves new assessed findings as YAML plus derived Markdown under
+`reviews/structured/<timestamp>-<slug>/`, not as a prose-only gap report.
+Use the inspect, validate and save commands documented in
+[audit-schema-gaps](../audit-schema-gaps/SKILL.md).
+
+Validator logs and histograms are diagnostic inputs, not completed scientific
+review. Preserve schema / instances / process in `audit_axis` dimensions;
+include exact targets, error classes, current counts and denominators, scope,
+sampling and unavailable checks. Schema/process-only assessments use
+`scientific_review: false`. Hash the schema, diagnostics and owning inputs.
+Interpret evidence before making a finding or positive supported assessment.
+
+The merged set is generated: trace its findings to `data/normalized_yaml/`
+and the owning merge code; never treat a merged output as the curation owner.
+Use the strict harness for closed-schema validation and record-kind routing;
+a generic MediaRecipe CLI scan can misclassify SolutionRecipe records.
+Audit-only work applies no fixes and changes no scientific status or history.
+Fix steps below require separate curation intent. Historical reports and
+counts are context, not current findings, and are not rewritten.
+
 The conceptual framework — why three axes, error-class heuristics, common anti-patterns — lives once at the cross-Mech version in claw:
 https://github.com/CultureBotAI/culturebotai-claw/blob/main/.claude/skills/schema-gap-analysis/SKILL.md
 
@@ -17,7 +41,7 @@ This file is the CultureMech-specific operational version. Every command below r
 ## When to use this skill vs. `audit-schema-gaps`
 
 - **`schema-gap-analysis`** (this skill): quick `linkml-validate` pass + error histogram + three-axis classification. ~5–10 min start to finish. Good for "did my recent commit break something?" or onboarding.
-- **`audit-schema-gaps`** (CultureMech's deeper skill): also scans `src/`/`scripts/` for writer/pipeline drift, produces five reports under `reports/`, emits a re-runnable `scripts/validate_strict.py` harness. ~30 min. Run when you suspect systemic drift or before a major release.
+- **`audit-schema-gaps`** (CultureMech's deeper skill): also scans `src/`/`scripts/` for writer/pipeline drift, uses the existing strict harness, and saves assessed findings through the same structured contract. Run when you suspect systemic drift or before a major release.
 
 Same three-axis framework underneath; the deep version just covers more surface.
 
@@ -29,13 +53,13 @@ CultureMech uses `uv`-managed `.venv/`:
 # linkml-validate ships in .venv; smoke test:
 .venv/bin/linkml-validate --help
 
-# If you get `AttributeError: Format has no attribute 'JSON'` — pin runtime:
-.venv/bin/python -m pip install "linkml-runtime>=1.9,<1.10"
+# Install the repository's locked compatible versions:
+uv sync --frozen --extra dev
 ```
 
 ## Procedure
 
-### 1. Validate the canonical merged set
+### 1. Scan the generated merged set
 
 ```bash
 find data/merge_yaml/merged -name "*.yaml" -print0 \
@@ -46,7 +70,7 @@ find data/merge_yaml/merged -name "*.yaml" -print0 \
 grep -c "^\[ERROR\]" /tmp/cm_validate.out
 ```
 
-### 2. (Optional) Validate the raw normalized layer
+### 2. (Optional) Scan the maintained normalized layer
 
 ```bash
 find data/normalized_yaml -name "*.yaml" -print0 \
@@ -102,7 +126,7 @@ find data/merge_yaml/merged -name "*.yaml" -print0 \
 # target: 0
 ```
 
-## CultureMech-specific gap classes (current state, 2026-05-17 pass)
+## CultureMech-specific gap classes (historical 2026-05-17 pass)
 
 | Count | Error | Axis | Fix |
 |---:|---|---|---|

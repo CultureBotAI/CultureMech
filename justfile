@@ -9,6 +9,13 @@ set dotenv-load := true
 # uses $1/$@, so enabling this changes nothing else.
 set positional-arguments := true
 
+# Validate immutable structured review bundles and their adoption contract.
+check-record-reviews:
+    uv run python scripts/record_review.py check
+
+test-record-reviews:
+    uv run --with pytest --with pytest-cov python -m pytest tests/test_record_review_contract.py --no-cov -q
+
 # Shared tooling lives in the culturebotai-claw checkout. Override CLAW_SRC when
 # claw is not the default sibling directory — CI checks it out elsewhere.
 claw_src := env_var_or_default("CLAW_SRC", "../culturebotai-claw/src")

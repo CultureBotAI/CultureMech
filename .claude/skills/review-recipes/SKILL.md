@@ -9,6 +9,38 @@ created: 2026-03-16
 
 # Review Recipes Skill
 
+## Structured Review Output
+
+For every new review or audit, follow
+[docs/record-reviews.md](../../../docs/record-reviews.md) and
+[the local profile](../../../docs/record-review-profile.md).
+Capture exact targets and input hashes before judging, preserve this skill's
+native rubric, rule IDs, scores and evidence requirements, then author the
+structured assessment and run:
+
+```bash
+uv run python scripts/record_review.py inspect --targets /tmp/review-targets.yaml
+uv run python scripts/record_review.py validate /tmp/completed-review.yaml
+uv run python scripts/record_review.py save --content /tmp/completed-review.yaml
+```
+
+Choose session-unique temporary paths. Save authoritative YAML and derived
+Markdown under `reviews/structured/<timestamp>-<slug>/`; link both in the
+final response. This output contract supersedes prose-only report examples.
+A single record uses `kind: record`; batches declare exact selection,
+population, reviewed targets and limits. Categories also state boundary decisions.
+Every reviewed target must have an assessment. Keep P1-P4 and other native
+severity/rule information with a justified common severity, and metric definitions,
+scales and denominators. Do not infer scientific approval from a native score.
+
+Raw provider drafts and deterministic validator/scan reports are diagnostic
+inputs, not completed scientific reviews. Use `scientific_review: false`
+for deterministic-only or provenance-only assessments; mark required unavailable
+checks and incomplete coverage explicitly. A valid bundle does not change native
+status, clear release holds, authorize edits, or append curation history.
+For audit-only requests, stop after assessment and persistence; any application
+steps below require curation intent.
+
 ## Overview
 
 The **Review Recipes** skill provides quality assurance for growth-media and solution
@@ -78,8 +110,9 @@ PYTHONPATH=src python scripts/batch_review_recipes.py --output reports/validatio
 PYTHONPATH=src python scripts/batch_review_recipes.py --limit 100
 ```
 
-Output: `validation_report.md`, `validation_data.json`, `dashboard.html`, plus category-level
-statistics.
+The actual script emits TSV, Markdown and JSON at the output prefix. These
+are deterministic scan diagnostics, not final scientific reviews. Assess exact
+targets, then validate/save the final bundle with `scripts/record_review.py`.
 
 ### 3. Data quality fixes
 
@@ -102,7 +135,7 @@ change categorization.
 /review-recipes "DAS_Vitamin_Cocktail" # a solution
 ```
 
-Claude loads the YAML, runs validation via `RecipeReviewer`, explains issues, checks MIM
+Claude loads the YAML, uses the available `RecipeValidator` diagnostics, explains issues, checks MIM
 linkages and solution references, proposes corrections with rationale, applies on approval,
 and updates `curation_history`.
 

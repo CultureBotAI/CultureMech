@@ -1,0 +1,19 @@
+version: 1
+repository: CultureBotAI/CultureMech
+skills:
+  - .claude/skills/review-yaml-record/SKILL.md
+  - .claude/skills/review-yaml-category/SKILL.md
+  - .claude/skills/review-recipes/SKILL.md
+  - .claude/skills/review-ingredient-concentrations/SKILL.md
+  - .claude/skills/curate-yaml-record/SKILL.md
+  - .claude/skills/audit-schema-gaps/SKILL.md
+  - .claude/skills/schema-gap-analysis/SKILL.md
+rubrics:
+  - CLAUDE.md
+  - docs/DATA_LAYERS.md
+  - .claude/skills/review-recipes/reference/validation-rules.md
+  - .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+  - .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+  - .claude/skills/curate-yaml-record/references/review-checklist.md
+  - .claude/skills/audit-schema-gaps/SKILL.md
+  - .claude/skills/schema-gap-analysis/SKILL.md

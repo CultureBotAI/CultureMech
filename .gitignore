@@ -228,3 +228,7 @@ data/import_tracking/reports/cocktail_research_targets.json
 
 # Cocktail stock identification report: regenerable diagnostic (#150).
 data/import_tracking/reports/cocktail_stock_identification.tsv
+# New structured review bundles are tracked; legacy report rules stay scoped.
+!/reviews/
+!/reviews/structured/
+!/reviews/structured/**
