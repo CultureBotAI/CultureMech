@@ -97,3 +97,19 @@ tests pass without the workstation YAML-loader shim. The three optimized-Python
 guard subprocess tests pass with no ambient `PYTHONPATH`. All changed Python
 passes Ruff and Black. The required full CI suite remains the merge gate;
 budgets, coverage thresholds, tier markers and exception lists are unchanged.
+
+### PDF Extraction Follow-up
+
+The clean full run at `998b09ec7f` was deliberately interrupted after 1,632
+passes to investigate a measured remaining cost. It is not a full-suite pass.
+Profiling the Desulfurobacterium source loader attributed 20.6 of 22.7 seconds
+to decoding the same five PDFs, chiefly their font maps. Reusing KOMODO parses
+did not improve a separate benchmark, so that proposed cache was not added.
+
+PDF extraction now reuses at most eight immutable `(text, page_count)` results
+for inputs up to 256 KiB. Keys include exact PDF bytes, reader identity and all
+extraction limits. Larger files bypass the cache. Source readers still reopen
+their captures and check provenance, digest and expected text. Changed bytes,
+stricter limits, reader changes, cache bounds and the large-input bypass have
+explicit tests. A two-load benchmark returned identical output in 8.8 seconds
+cold and 0.7 seconds warm. A new complete run is required at the successor head.

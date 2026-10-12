@@ -99474,8 +99474,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261011-publication-review/README.md",
-      "bytes": 6223,
-      "sha256": "2d050ab773cfd6a1a01e55ac62b430aad3679debc5fb31fe127d024ce893085a"
+      "bytes": 7195,
+      "sha256": "dcbfd7a46d8ff1c78aabf40fda1b4e6c9f6cd2ed72b943c829ccd3a7fcac95cd"
     },
     {
       "path": "reports/ingredient_concentration_curation/README.md",
@@ -100024,8 +100024,8 @@
     },
     {
       "path": "src/culturemech/validation/recipe_references.py",
-      "bytes": 35311,
-      "sha256": "7ab74336ad5a1b2cb6ca2aea0c842c7b96158bfa7fccaf77f39b37fb83ac27ac"
+      "bytes": 35911,
+      "sha256": "2639d6b15af37854d5969e5ece8f5f7b376e2aec02dad839de13559fd42fd6ff"
     },
     {
       "path": "tests/conftest.py",
@@ -100639,8 +100639,8 @@
     },
     {
       "path": "tests/test_recipe_pdf_references.py",
-      "bytes": 14978,
-      "sha256": "bd301e4d081a0ce7bd6d67e0a5fcc43406156eb27cc00ea7855c8d68a84d3166"
+      "bytes": 16945,
+      "sha256": "1866813b57865ebfd936832043a13a3eca5ee034d78454b468105621fc9f6576"
     },
     {
       "path": "tests/test_recipe_references.py",
@@ -101925,5 +101925,5 @@
     "reports/ingredient_concentration_curation/20261011-publication-review/publication-manifest.json"
   ],
   "dependency_closure_parent_commit": "0c73c10a86577581ffa858b3e21c89fde50dd009",
-  "followup_parent_commit": "30f17ae793ddeed307c2a690019d1b3446e3b733"
+  "followup_parent_commit": "998b09ec7f0ab41c5d02a27e47e4fc0bbd80a9ab"
 }

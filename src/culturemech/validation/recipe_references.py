@@ -438,20 +438,32 @@ def mediadb_recipe_text(source: RecipeSource, raw: str) -> tuple[str, str]:
 
 def extract_recipe_pdf(payload: bytes) -> tuple[str, int]:
     """Preserve layout text; unreadable pages require manual review, not OCR guesses."""
-    if len(payload) > MAX_RESPONSE_BYTES or not payload.startswith(b"%PDF-"):
+    limits = (MAX_RESPONSE_BYTES, MAX_PDF_PAGES, MAX_PDF_CONTENT_BYTES)
+    extractor = _small_recipe_pdf if len(payload) <= 256 * 1024 else _extract_recipe_pdf
+    return extractor(payload, pypdf.PdfReader, *limits)
+
+
+@lru_cache(maxsize=8)
+def _small_recipe_pdf(payload, reader_factory, response_limit, page_limit, content_limit):
+    # Only immutable extraction output is reused; callers still check provenance and digests.
+    return _extract_recipe_pdf(payload, reader_factory, response_limit, page_limit, content_limit)
+
+
+def _extract_recipe_pdf(payload, reader_factory, response_limit, page_limit, content_limit):
+    if len(payload) > response_limit or not payload.startswith(b"%PDF-"):
         raise RecipeReferenceError("source_format: invalid or oversized recipe PDF")
     try:
-        reader = pypdf.PdfReader(io.BytesIO(payload))
+        reader = reader_factory(io.BytesIO(payload))
         if reader.is_encrypted:
             raise RecipeReferenceError("source_format: encrypted recipe PDF")
         count = len(reader.pages)
-        if not 0 < count <= MAX_PDF_PAGES:
+        if not 0 < count <= page_limit:
             raise RecipeReferenceError("source_format: recipe PDF page count exceeds limits")
         texts, content_bytes, text_bytes = [], 0, 0
         for page in reader.pages:
             stream = page.get_contents()
             content_bytes += len(stream.get_data()) if stream is not None else 0
-            if content_bytes > MAX_PDF_CONTENT_BYTES:
+            if content_bytes > content_limit:
                 raise RecipeReferenceError("source_format: recipe PDF content exceeds size limit")
             text = page.extract_text(extraction_mode="layout") if stream is not None else ""
             if not text or not text.strip():
@@ -459,7 +471,7 @@ def extract_recipe_pdf(payload: bytes) -> tuple[str, int]:
                     "source_unavailable: recipe PDF contains a page without extractable text"
                 )
             text_bytes += len(text.encode("utf-8")) + 2
-            if text_bytes > MAX_RESPONSE_BYTES:
+            if text_bytes > response_limit:
                 raise RecipeReferenceError("source_format: recipe PDF text exceeds size limit")
             texts.append(text)
         return "\n\n".join(texts), count

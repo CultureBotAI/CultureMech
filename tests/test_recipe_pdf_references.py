@@ -329,6 +329,48 @@ def test_pdf_resource_limits_and_encryption(monkeypatch):
             rr.extract_recipe_pdf(synthetic_pdf())
 
 
+def test_pdf_extraction_cache_is_bound_to_bytes_reader_and_limits(monkeypatch):
+    payload = synthetic_pdf(("751. SC MEDIUM\nNaCl 0.1 g",) * 2)
+    original_reader = rr.pypdf.PdfReader
+    reader = Mock(wraps=original_reader)
+    rr._small_recipe_pdf.cache_clear()
+    monkeypatch.setattr(rr.pypdf, "PdfReader", reader)
+    try:
+        original = rr.extract_recipe_pdf(payload)
+        assert rr.extract_recipe_pdf(payload) == original
+        assert reader.call_count == 1
+        altered = synthetic_pdf(("751. SC MEDIUM\nNaCl 0.1 mg",) * 2)
+        assert rr.extract_recipe_pdf(altered) != original
+        assert reader.call_count == 2
+        for setting, limit, error in (
+            ("MAX_PDF_PAGES", 1, "page count"),
+            ("MAX_PDF_CONTENT_BYTES", 1, "content exceeds"),
+            ("MAX_RESPONSE_BYTES", 1, "oversized"),
+        ):
+            with monkeypatch.context() as patch:
+                patch.setattr(rr, setting, limit)
+                with pytest.raises(rr.RecipeReferenceError, match=error):
+                    rr.extract_recipe_pdf(payload)
+        with monkeypatch.context() as patch:
+            patch.setattr(rr.pypdf, "PdfReader", Mock(side_effect=ValueError("reader failed")))
+            with pytest.raises(rr.RecipeReferenceError, match="could not extract"):
+                rr.extract_recipe_pdf(payload)
+        assert rr.extract_recipe_pdf(payload) == original
+        for value in range(12):
+            rr.extract_recipe_pdf(synthetic_pdf((f"751. Medium {value}",)))
+        assert rr._small_recipe_pdf.cache_info().currsize == 8
+    finally:
+        rr._small_recipe_pdf.cache_clear()
+
+
+def test_large_pdf_extraction_bypasses_cache(monkeypatch):
+    reader = Mock(wraps=rr.pypdf.PdfReader)
+    monkeypatch.setattr(rr.pypdf, "PdfReader", reader)
+    payload = synthetic_pdf() + b"\n%" + b"x" * (256 * 1024)
+    assert rr.extract_recipe_pdf(payload) == rr.extract_recipe_pdf(payload)
+    assert reader.call_count == 2
+
+
 @pytest.mark.parametrize("heading", ["752. SC MEDIUM", "751", "SC MEDIUM", "Error page"])
 def test_wrong_or_missing_heading_is_not_a_title_fallback(config, heading):
     session = session_for(synthetic_pdf((heading + "\n\nNaCl 0.1 g",)))
