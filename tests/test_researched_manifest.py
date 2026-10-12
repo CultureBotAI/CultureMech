@@ -6,6 +6,7 @@ function of TRACKED inputs (the corpus + the manifest), never of the gitignored
 reordered the entire top-10 and the diff was indistinguishable from a real data
 change.
 """
+
 from __future__ import annotations
 
 import importlib.util
@@ -33,8 +34,9 @@ def rmf():
     return _load("researched_manifest")
 
 
-def _write_meta(research_dir: Path, stem: str, *, status: str, task_id: str,
-                slug: str | None = None) -> Path:
+def _write_meta(
+    research_dir: Path, stem: str, *, status: str, task_id: str, slug: str | None = None
+) -> Path:
     research_dir.mkdir(parents=True, exist_ok=True)
     path = research_dir / f"{stem}-meta.yaml"
     body = f"status: {status}\n"
@@ -66,8 +68,12 @@ def test_scan_ignores_dry_runs_and_missing_task_ids(rmf, tmp_path):
 
 def test_scan_tags_phase2_organism_runs(rmf, tmp_path):
     """A per-organism follow-up is not the same as researching the medium."""
-    _write_meta(tmp_path, "arch_medium-organism-archaeoglobus-fulgidus-edison-literature",
-                status="success", task_id="t2")
+    _write_meta(
+        tmp_path,
+        "arch_medium-organism-archaeoglobus-fulgidus-edison-literature",
+        status="success",
+        task_id="t2",
+    )
     [entry] = rmf.scan_research_dir(tmp_path)
     assert entry["kind"] == "organism"
     assert entry["media_slug"] == "arch_medium"
@@ -89,11 +95,19 @@ def test_scan_survives_corrupt_meta(rmf, tmp_path):
 def test_researched_slugs_excludes_organism_entries(rmf, tmp_path):
     """The medium-level filter must not be tripped by a phase-2 run."""
     manifest = tmp_path / "m.json"
-    rmf.write_manifest([
-        {"slug": "lb_broth", "job": "literature", "task_id": "t1", "kind": "medium"},
-        {"slug": "arch-organism-foo", "job": "literature", "task_id": "t2",
-         "kind": "organism", "media_slug": "arch"},
-    ], manifest)
+    rmf.write_manifest(
+        [
+            {"slug": "lb_broth", "job": "literature", "task_id": "t1", "kind": "medium"},
+            {
+                "slug": "arch-organism-foo",
+                "job": "literature",
+                "task_id": "t2",
+                "kind": "organism",
+                "media_slug": "arch",
+            },
+        ],
+        manifest,
+    )
     assert rmf.researched_slugs(manifest) == {"lb_broth"}
 
 
@@ -120,7 +134,9 @@ def test_corrupt_manifest_excludes_nothing(rmf, tmp_path):
 
 def test_merge_is_a_union_and_never_drops_entries(rmf):
     """Each machine sees only its own research/; replace would delete others' work."""
-    existing = [{"slug": "from_other_machine", "job": "literature", "task_id": "x", "kind": "medium"}]
+    existing = [
+        {"slug": "from_other_machine", "job": "literature", "task_id": "x", "kind": "medium"}
+    ]
     discovered = [{"slug": "local", "job": "literature", "task_id": "y", "kind": "medium"}]
     merged, added = rmf.merge_entries(existing, discovered)
     assert {e["slug"] for e in merged} == {"from_other_machine", "local"}
@@ -144,10 +160,13 @@ def test_merge_distinguishes_jobs_for_the_same_slug(rmf):
 
 def test_written_manifest_is_sorted_for_stable_diffs(rmf, tmp_path):
     manifest = tmp_path / "m.json"
-    rmf.write_manifest([
-        {"slug": "zebra", "job": "literature", "task_id": "t2", "kind": "medium"},
-        {"slug": "alpha", "job": "literature", "task_id": "t1", "kind": "medium"},
-    ], manifest)
+    rmf.write_manifest(
+        [
+            {"slug": "zebra", "job": "literature", "task_id": "t2", "kind": "medium"},
+            {"slug": "alpha", "job": "literature", "task_id": "t1", "kind": "medium"},
+        ],
+        manifest,
+    )
     doc = json.loads(manifest.read_text())
     assert [e["slug"] for e in doc["entries"]] == ["alpha", "zebra"]
     assert manifest.read_text().endswith("\n")
@@ -156,7 +175,9 @@ def test_written_manifest_is_sorted_for_stable_diffs(rmf, tmp_path):
 # --- the actual reproducibility property ----------------------------------
 
 
-def test_prioritizer_output_does_not_depend_on_local_research_dir(tmp_path, monkeypatch):
+def test_prioritizer_output_does_not_depend_on_local_research_dir(
+    tmp_path, monkeypatch, corpus_yaml_loader
+):
     """The whole point of #121.
 
     `collect_records` must produce the same ranking whether or not a local
@@ -164,11 +185,18 @@ def test_prioritizer_output_does_not_depend_on_local_research_dir(tmp_path, monk
     the committed reports encoded one machine's state.
     """
     pdrc = _load("prioritize_deep_research_candidates")
+    monkeypatch.setattr(pdrc, "load_yaml", corpus_yaml_loader)
 
     manifest = tmp_path / "m.json"
-    manifest.write_text(json.dumps({"entries": [
-        {"slug": "tyl_medium", "job": "literature", "task_id": "t1", "kind": "medium"},
-    ]}))
+    manifest.write_text(
+        json.dumps(
+            {
+                "entries": [
+                    {"slug": "tyl_medium", "job": "literature", "task_id": "t1", "kind": "medium"},
+                ]
+            }
+        )
+    )
     researched = _load("researched_manifest").researched_slugs(manifest)
 
     first = pdrc.collect_records(researched)
@@ -197,7 +225,8 @@ def _meta(tmp_path, slug, template, task_id="t1"):
     d = tmp_path
     d.mkdir(parents=True, exist_ok=True)
     (d / f"{slug}-edison-literature-meta.yaml").write_text(
-        f"slug: {slug}\nstatus: success\ntask_id: {task_id}\ntemplate_path: {template}\n")
+        f"slug: {slug}\nstatus: success\ntask_id: {task_id}\ntemplate_path: {template}\n"
+    )
     return d
 
 
@@ -222,17 +251,20 @@ def test_axis_run_does_not_mark_a_medium_researched(tmp_path):
     d = _meta(tmp_path / "media_axis", "lb_broth", "templates/media_axis_classification.md")
     manifest = tmp_path / "m.json"
     rmf.write_manifest(rmf.scan_research_dir(d), manifest)
-    assert rmf.researched_slugs(manifest) == set(), \
-        "an axis run must not count as the medium having been researched"
+    assert (
+        rmf.researched_slugs(manifest) == set()
+    ), "an axis run must not count as the medium having been researched"
 
 
 def test_axis_and_growth_runs_for_one_slug_coexist(tmp_path):
     """Keyed on (slug, job) alone these collide and the union drops one."""
     rmf = _load("researched_manifest")
     axis = rmf.scan_research_dir(
-        _meta(tmp_path / "media_axis", "lb_broth", "templates/media_axis_classification.md", "a1"))
+        _meta(tmp_path / "media_axis", "lb_broth", "templates/media_axis_classification.md", "a1")
+    )
     growth = rmf.scan_research_dir(
-        _meta(tmp_path / "media", "lb_broth", "templates/media_growth_research.md", "g1"))
+        _meta(tmp_path / "media", "lb_broth", "templates/media_growth_research.md", "g1")
+    )
     merged, added = rmf.merge_entries(axis, growth)
     assert len(merged) == 2, f"growth run masked by the axis run: {merged}"
     assert {e["kind"] for e in merged} == {"axis", "medium"}

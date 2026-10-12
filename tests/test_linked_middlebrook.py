@@ -184,6 +184,14 @@ def fixture_repo(tmp_path, monkeypatch):
 
 def test_preview_apply_readback_and_noop(tmp_path, monkeypatch):
     targets = fixture_repo(tmp_path, monkeypatch)
+    original_sources = repair.sources
+    source_checks = []
+
+    def checked_sources(context):
+        source_checks.append(context)
+        return original_sources(context)
+
+    monkeypatch.setattr(repair, "sources", checked_sources)
     plan = tmp_path / "plan.json"
     original = [p.read_bytes() for p in targets]
     repair.process(tmp_path, plan, "preview")
@@ -193,6 +201,22 @@ def test_preview_apply_readback_and_noop(tmp_path, monkeypatch):
     assert repair.process(tmp_path, plan, "verify")[1]["already_applied"] == 11
     assert repair.process(tmp_path, plan, "apply")[1]["changed"] == 0
     assert [p.read_bytes() for p in targets] == current
+    assert len(source_checks) == 4
+    assert len({id(context) for context in source_checks}) == 4
+
+
+def test_source_drift_between_operations_prevents_writes(tmp_path, monkeypatch):
+    targets = fixture_repo(tmp_path, monkeypatch)
+    plan = tmp_path / "plan.json"
+    repair.process(tmp_path, plan, "preview")
+    original = [p.read_bytes() for p in targets]
+    context_dir = tmp_path / "frozen"
+    context_dir.mkdir()
+    (context_dir / "context.json").write_bytes((repair.HERE / "context.json").read_bytes() + b"\n")
+    monkeypatch.setattr(repair, "HERE", context_dir)
+    with pytest.raises(ValueError, match="Inspected context drift"):
+        repair.process(tmp_path, plan, "apply")
+    assert [p.read_bytes() for p in targets] == original
 
 
 def test_concurrent_edit_prevents_all_writes(tmp_path, monkeypatch):

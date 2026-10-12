@@ -69,3 +69,31 @@ The PR must remain draft while substantive findings or required validation are
 unresolved. The all-record scientific curation objective is still incomplete.
 This review does not authorize calling that objective finished or treating
 report presence as verification of every quantity.
+
+## CI Remediation Follow-up
+
+At `30f17ae793`, all nine required checks ran: seven passed, the fast tier
+failed three subprocess import tests, and the full suite timed out after its
+derived-artifact manifest comparison failed. These are actual CI results from
+run `38127779552`, not inferred passes from local artifact presence.
+
+[Issue 581](https://github.com/CultureBotAI/CultureMech/issues/581) records the
+new reproducibility findings. The guard subprocesses now run from the scripts
+directory with `PYTHONPATH` explicitly absent. Dated curation packets are
+classified as historical snapshots, without attributing generic receipt names
+to unrelated live writers. Undated outputs remain visible. The inventory reads
+candidate scripts once per scan, including ignored/hidden Python files; it does
+not cache across invocations. Its manifest is regenerated, not hand-edited.
+
+The runtime fix for issue 576 reuses the existing session-scoped corpus fixture
+in ranking tests. Middlebrook source validation and parsing now run once per
+operation, with fresh context and PDF integrity checks on each operation and
+unchanged record/schema/concurrent-edit guards. Exact small HTML cell parsing
+has a bounded pure-text cache; altered source bytes have different keys, large
+documents bypass it, and validation decisions are never cached by this helper.
+
+Verification before publication: 78 artifact/ranking tests and 96 reference
+tests pass without the workstation YAML-loader shim. The three optimized-Python
+guard subprocess tests pass with no ambient `PYTHONPATH`. All changed Python
+passes Ruff and Black. The required full CI suite remains the merge gate;
+budgets, coverage thresholds, tier markers and exception lists are unchanged.

@@ -93,6 +93,13 @@ def corpus() -> list[tuple[Path, dict[str, Any]]]:
 
 
 @pytest.fixture(scope="session")
+def corpus_yaml_loader(corpus):
+    """Read-only lookup for scripts whose corpus-level tests inject a YAML reader."""
+    by_path = dict(corpus)
+    return by_path.get
+
+
+@pytest.fixture(scope="session")
 def media_records(corpus) -> list[tuple[Path, dict[str, Any]]]:
     """Media only — stock-solution records excluded, as every guard wants (#124)."""
     from record_kinds import is_solution_record

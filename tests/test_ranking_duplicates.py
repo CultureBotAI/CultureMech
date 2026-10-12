@@ -10,6 +10,7 @@ So the fix collapses only EXACT repeats and makes the rest identifiable, rather
 than deduplicating on the ingredient fingerprint — which would merge media that
 differ in the ingredient that defines them.
 """
+
 from __future__ import annotations
 
 import importlib.util
@@ -83,8 +84,11 @@ def test_identity_survives_malformed_ingredients(pdrc):
 
 
 def test_identity_falls_back_to_preferred_term(pdrc):
-    doc = {"ingredients": [{"preferred_term": "Yeast extract",
-                            "concentration": {"value": "5", "unit": "G_PER_L"}}]}
+    doc = {
+        "ingredients": [
+            {"preferred_term": "Yeast extract", "concentration": {"value": "5", "unit": "G_PER_L"}}
+        ]
+    }
     assert pdrc.strict_identity_key(doc) == (("Yeast extract", "5", "G_PER_L"),)
 
 
@@ -99,7 +103,7 @@ def test_fingerprint_would_have_merged_what_we_keep_apart(pdrc):
     fp = RecipeFingerprinter()
     a = {"name": "x", "ingredients": [_ing("CHEBI:26710", "10")]}
     b = {"name": "x", "ingredients": [_ing("CHEBI:26710", "30")]}
-    assert fp.fingerprint(a) == fp.fingerprint(b)          # concentration-blind
+    assert fp.fingerprint(a) == fp.fingerprint(b)  # concentration-blind
     assert pdrc.strict_identity_key(a) != pdrc.strict_identity_key(b)  # we are not
 
 
@@ -134,8 +138,10 @@ def test_same_name_different_composition_are_all_kept(pdrc):
 
 def test_distinct_names_are_not_flagged(pdrc):
     doc = {"ingredients": [_ing("CHEBI:1", "1")]}
-    entries = [_entry(pdrc, "a", doc, path="bacterial/a.yaml"),
-               _entry(pdrc, "b", doc, path="bacterial/b.yaml")]
+    entries = [
+        _entry(pdrc, "a", doc, path="bacterial/a.yaml"),
+        _entry(pdrc, "b", doc, path="bacterial/b.yaml"),
+    ]
     kept = pdrc.collapse_identical_records(entries)
     assert len(kept) == 2  # same composition, different name -> both kept
     assert not any("name_collision_count" in e for e in kept)
@@ -162,8 +168,9 @@ def test_identity_key_is_removed_from_output(pdrc):
 # --- corpus-level ---------------------------------------------------------
 
 
-def test_ranking_has_no_exact_duplicate_records(pdrc):
+def test_ranking_has_no_exact_duplicate_records(pdrc, monkeypatch, corpus_yaml_loader):
     """End-to-end: no two ranked entries share a name AND a composition."""
+    monkeypatch.setattr(pdrc, "load_yaml", corpus_yaml_loader)
     entries = pdrc.collect_records(set())
     seen: set[tuple] = set()
     normalized = REPO_ROOT / "data" / "normalized_yaml"
@@ -176,8 +183,9 @@ def test_ranking_has_no_exact_duplicate_records(pdrc):
         seen.add(key)
 
 
-def test_every_ranked_entry_carries_an_id(pdrc):
+def test_every_ranked_entry_carries_an_id(pdrc, monkeypatch, corpus_yaml_loader):
     """recipe_name is not an identity key; the id is what disambiguates."""
+    monkeypatch.setattr(pdrc, "load_yaml", corpus_yaml_loader)
     entries = pdrc.collect_records(set())
     missing = [e["file_path"] for e in entries if not e.get("id")][:5]
     assert not missing, f"entries without an id: {missing}"

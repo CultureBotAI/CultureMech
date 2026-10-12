@@ -14,8 +14,8 @@
     },
     {
       "path": "data/import_tracking/derived_artifacts.tsv",
-      "bytes": 16770,
-      "sha256": "dd64675d8d0f7895601d8d03ed834034110e893f0e6905147b91873eb4bf19cf"
+      "bytes": 208139,
+      "sha256": "e2a02a5fc73d7f1f242fd8d0e5485d7a644fcce1e331d41d978b05202549047c"
     },
     {
       "path": "data/normalized_yaml/algae/1_2_CHEV_Diatom_Medium.yaml",
@@ -99474,8 +99474,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261011-publication-review/README.md",
-      "bytes": 4491,
-      "sha256": "33a47beecb4521aa17c23bab1708ef400b82dec5aedc98e5144feec4fca704db"
+      "bytes": 6223,
+      "sha256": "2d050ab773cfd6a1a01e55ac62b430aad3679debc5fb31fe127d024ce893085a"
     },
     {
       "path": "reports/ingredient_concentration_curation/README.md",
@@ -99491,6 +99491,11 @@
       "path": "reports/media_variant_link_validation.md",
       "bytes": 204,
       "sha256": "0966b1f13493e29807676b5c0226da7bba2ca6ab55238eb53ce2cd666af30cf5"
+    },
+    {
+      "path": "scripts/audit_derived_artifacts.py",
+      "sha256": "56e52081a846ee994784ec224018061f6d88571f6e55c75ea376d6358477468b",
+      "bytes": 15687
     },
     {
       "path": "scripts/curation_source_fixtures.py",
@@ -99684,8 +99689,8 @@
     },
     {
       "path": "scripts/repair_linked_middlebrook.py",
-      "bytes": 30099,
-      "sha256": "726b4f41c1eff577315278023d919500ccd1fdd546406b154a27170209bda6ca"
+      "bytes": 30522,
+      "sha256": "17088928381a4bb5c988a1d5c2d36291c5a88ef90eb90f95aa2231a616cb59ae"
     },
     {
       "path": "scripts/repair_m142_nested_traces.py",
@@ -100019,8 +100024,13 @@
     },
     {
       "path": "src/culturemech/validation/recipe_references.py",
-      "bytes": 34899,
-      "sha256": "79923b9ef4c9662b67d907fccb9fa24aeab1a9e805face7d3e1e86132a9860a0"
+      "bytes": 35311,
+      "sha256": "7ab74336ad5a1b2cb6ca2aea0c842c7b96158bfa7fccaf77f39b37fb83ac27ac"
+    },
+    {
+      "path": "tests/conftest.py",
+      "sha256": "0f202e00f2f831a9fc225aee844c7bcf66a98ee075e3f1cf2d393f68fc6d67bf",
+      "bytes": 7266
     },
     {
       "path": "tests/fixtures/curation_pdfs/0bb0c238a57443296206937fbb30f79af88f1602c90b24e65e5275a6d9a20722.json",
@@ -100263,6 +100273,11 @@
       "sha256": "7ada0eaa4c8814e70e487fd62af677a9553be497c5ca480af2093d426fb37841"
     },
     {
+      "path": "tests/test_derived_artifacts.py",
+      "sha256": "d6210555a19e61f569b54692b6fa15496c711b305a82253a7af08252310466f2",
+      "bytes": 13277
+    },
+    {
       "path": "tests/test_desulfurobacterium_family.py",
       "bytes": 11695,
       "sha256": "358fbcf8308047c1c628ff651587c393c21dc242e5cdf1a189caa8749b38f900"
@@ -100379,8 +100394,8 @@
     },
     {
       "path": "tests/test_hajjaj_ingredients.py",
-      "bytes": 9436,
-      "sha256": "6f5912d6722dbc2353d7b1af907470d81971e991de28d6551b50c9184fa4adfc"
+      "bytes": 9536,
+      "sha256": "4a5887ba80dbcfbc31491a2919983dbdef2c94a00192e0cbd7a659cb22f73765"
     },
     {
       "path": "tests/test_halobacteria_ingredient_family.py",
@@ -100484,8 +100499,8 @@
     },
     {
       "path": "tests/test_linked_middlebrook.py",
-      "bytes": 8110,
-      "sha256": "e95182859d2d576c3266645dd2abbbfa34314c4ed9d20de0f4c3ea019a2f6034"
+      "bytes": 9096,
+      "sha256": "0555c1fba63ebf3825cb6618ac87cdb71bc016e90223374dac6ad2af705dcaf9"
     },
     {
       "path": "tests/test_m142_nested_traces.py",
@@ -100598,6 +100613,11 @@
       "sha256": "cf8cd50c4301379adfcb99d81e2db09aaf63d72b2bee373766036311adf6c4d7"
     },
     {
+      "path": "tests/test_ranking_duplicates.py",
+      "sha256": "10d32ca60db7dbb9dba88696c6c67247a0b5ffd442fe50794e7c4a6df90acc0b",
+      "bytes": 7459
+    },
+    {
       "path": "tests/test_recipe_excerpt_repair.py",
       "bytes": 3136,
       "sha256": "39f8b3e0522f8ffb3a6d588da134497d32662922be03cfdf00e148a21d6de882"
@@ -100624,8 +100644,13 @@
     },
     {
       "path": "tests/test_recipe_references.py",
-      "bytes": 15430,
-      "sha256": "59d055b9239b03b3794ec5297f23c4b1ecb09e7984b252b4337755b86cf0f7ab"
+      "bytes": 16511,
+      "sha256": "a1256a2eb22d2c910a5a4ff9eea020339e61a12ff39464df8913868733456f61"
+    },
+    {
+      "path": "tests/test_record_kinds.py",
+      "sha256": "bc1cbc0b92c04c32b3916a9bef9c218a6b2077c2e2c868832e2f50835ea5a18b",
+      "bytes": 5115
     },
     {
       "path": "tests/test_reducing_stages.py",
@@ -100651,6 +100676,11 @@
       "path": "tests/test_resazurin_stock_identity.py",
       "bytes": 4939,
       "sha256": "9dd67e689e3b365be7d6b8fafde1ed357e47323f74a665e1615a69d51ca53fa3"
+    },
+    {
+      "path": "tests/test_researched_manifest.py",
+      "sha256": "6eb92518af7e57431bb07335c4c16b4ff347b147dbfb81cb8cd078087b7f332d",
+      "bytes": 10619
     },
     {
       "path": "tests/test_resolve_media_file.py",
@@ -100729,8 +100759,8 @@
     },
     {
       "path": "tests/test_utex_bristol_bbm.py",
-      "bytes": 10602,
-      "sha256": "eeee4384586b397431394d0cf15aefdba9709ebffa28ac46b5087a22932d8d27"
+      "bytes": 10702,
+      "sha256": "ab1a3245a334f71f96f72b804a3c7a142ff598c23e3068f3de0a80b7fa06b66c"
     },
     {
       "path": "tests/test_utex_chev_concentrations.py",
@@ -100749,8 +100779,8 @@
     },
     {
       "path": "tests/test_utex_f2_followup.py",
-      "bytes": 7522,
-      "sha256": "a68b820821a7f236168c7eb874a81e44c8550cd5746e0ca8e8630f0caf32af58"
+      "bytes": 7622,
+      "sha256": "d8a52b60fe118e96f1b15f55cc506381306631095314bdfce79ed48001a918e2"
     },
     {
       "path": "tests/test_utex_j_das.py",
@@ -101894,5 +101924,6 @@
     "reports/ingredient_concentration_curation/20261011-publication-review/prepare_pdf_fixtures.py",
     "reports/ingredient_concentration_curation/20261011-publication-review/publication-manifest.json"
   ],
-  "dependency_closure_parent_commit": "0c73c10a86577581ffa858b3e21c89fde50dd009"
+  "dependency_closure_parent_commit": "0c73c10a86577581ffa858b3e21c89fde50dd009",
+  "followup_parent_commit": "30f17ae793ddeed307c2a690019d1b3446e3b733"
 }

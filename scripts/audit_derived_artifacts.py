@@ -71,6 +71,7 @@ ARTIFACT_SUFFIX = re.compile(r"\.(tsv|json|csv)$")
 GENERATOR = re.compile(r"(audit_|score_|triage_|report_|prioritize_|sample_|refresh_|generate_)")
 DATED = re.compile(r"\d{4}-\d{2}-\d{2}|_\d{8}")
 CONCENTRATION_SNAPSHOT = re.compile(r"^reports/ingredient_concentration_review/\d{8}T\d{6}Z/")
+CURATION_SNAPSHOT = re.compile(r"^reports/ingredient_concentration_curation/\d{8}-[^/]+(?:/|$)")
 
 # Artifacts whose writer takes `--out` and does not mutate the corpus, so a
 # freshness check can regenerate them to a temp path safely. Explicit, because
@@ -149,7 +150,17 @@ def tracked_artifacts() -> list[str]:
 SELF = "scripts/audit_derived_artifacts.py"
 
 
-def find_writers(artifact: str) -> list[str]:
+def script_sources() -> dict[str, str]:
+    """Read candidate scripts once, including hidden and ignored Python files."""
+    return {
+        path.relative_to(REPO).as_posix(): path.read_text(errors="replace")
+        for directory in ("scripts", "src")
+        for path in sorted((REPO / directory).rglob("*.py"))
+        if path.is_file() and path.relative_to(REPO).as_posix() != SELF
+    }
+
+
+def find_writers(artifact: str, sources: dict[str, str] | None = None) -> list[str]:
     """Every script mentioning this artifact's basename.
 
     Returns ALL candidates, not the first. Nine artifacts have more than one, and
@@ -165,13 +176,8 @@ def find_writers(artifact: str) -> list[str]:
     artifacts to itself.
     """
     base = os.path.basename(artifact)
-    res = subprocess.run(
-        ["grep", "-rl", "--include=*.py", "--", base, "scripts", "src"],
-        capture_output=True,
-        text=True,
-        cwd=REPO,
-    )
-    return sorted(f for f in res.stdout.split() if f and f != SELF)
+    sources = script_sources() if sources is None else sources
+    return sorted(path for path, text in sources.items() if base in text and path != SELF)
 
 
 def classify(artifact: str, writer: str | None) -> tuple[str, str]:
@@ -181,6 +187,8 @@ def classify(artifact: str, writer: str | None) -> tuple[str, str]:
         return "SNAPSHOT", "archived"
     if CONCENTRATION_SNAPSHOT.match(artifact):
         return "SNAPSHOT", "timestamped concentration review"
+    if CURATION_SNAPSHOT.match(artifact):
+        return "SNAPSHOT", "dated concentration curation"
     if DATED.search(os.path.basename(artifact)):
         return "SNAPSHOT", "dated filename"
     if writer is None:
@@ -197,17 +205,26 @@ def classify(artifact: str, writer: str | None) -> tuple[str, str]:
 
 def inventory() -> list[dict[str, str]]:
     rows = []
+    # Scope memoization to this scan: a subsequent invocation must see edits.
+    mentions_by_basename: dict[str, list[str]] = {}
+    source_texts = script_sources()
     for art in tracked_artifacts():
         # Generic names in a historical run do not identify an unrelated live writer.
-        mentions = [] if CONCENTRATION_SNAPSHOT.match(art) else find_writers(art)
         base = os.path.basename(art)
+        if CONCENTRATION_SNAPSHOT.match(art) or CURATION_SNAPSHOT.match(art):
+            mentions = []
+        else:
+            if base not in mentions_by_basename:
+                mentions_by_basename[base] = find_writers(art, source_texts)
+            mentions = mentions_by_basename[base].copy()
         declared_by_pattern = pattern_writer(art)
         if declared_by_pattern and declared_by_pattern not in mentions:
             mentions = [declared_by_pattern] + mentions
         # Grep cannot tell a reader from a writer: research_media.py READS the id
         # registry to build an index and appeared among its "writers" (#209). This
         # traces the binding through the module instead.
-        writers = [m for m in mentions if classify_file(REPO / m, base) == "yes"] or mentions
+        confirmed = [m for m in mentions if classify_file(REPO / m, base) == "yes"]
+        writers = confirmed.copy() or mentions.copy()
         if declared_by_pattern and declared_by_pattern not in writers:
             writers = [declared_by_pattern] + writers
         # A declared checkable artifact's writer is known exactly; re-deriving it
@@ -225,7 +242,6 @@ def inventory() -> list[dict[str, str]]:
             writers[0] if writers else None,
         )
         kind, why = classify(art, primary)
-        confirmed = [m for m in mentions if classify_file(REPO / m, base) == "yes"]
         if declared_by_pattern and declared_by_pattern not in confirmed:
             confirmed = [declared_by_pattern] + confirmed
         rows.append(

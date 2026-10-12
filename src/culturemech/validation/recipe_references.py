@@ -12,6 +12,7 @@ import re
 import tempfile
 import time
 from dataclasses import dataclass
+from functools import lru_cache
 from pathlib import Path
 from urllib.parse import parse_qs, urlsplit
 
@@ -126,6 +127,18 @@ def whitespace(text: str) -> str:
 
 
 def html_recipe_text(raw: str) -> tuple[str, str]:
+    # Cache small immutable cells, not whole source documents or validation decisions.
+    if len(raw) <= 8192:
+        return _small_html_recipe_text(raw)
+    return _parse_html_recipe_text(raw)
+
+
+@lru_cache(maxsize=256)
+def _small_html_recipe_text(raw: str) -> tuple[str, str]:
+    return _parse_html_recipe_text(raw)
+
+
+def _parse_html_recipe_text(raw: str) -> tuple[str, str]:
     soup = BeautifulSoup(raw, "html.parser")
     title = whitespace(soup.title.get_text()) if soup.title else ""
     for tag in soup(["script", "style", "noscript", "template"]):

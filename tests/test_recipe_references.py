@@ -114,6 +114,33 @@ def test_html_rendering_is_not_chemical_normalization():
     assert "Next line" in text
 
 
+def test_html_cell_cache_is_exact_bounded_and_does_not_cache_documents(monkeypatch):
+    parser = rr._parse_html_recipe_text
+    calls = []
+
+    def parse(raw):
+        calls.append(raw)
+        return parser(raw)
+
+    rr._small_html_recipe_text.cache_clear()
+    monkeypatch.setattr(rr, "_parse_html_recipe_text", parse)
+    try:
+        original = "<td>FeSO<sub>4</sub> 0.1 g</td>"
+        altered = "<td>FeSO<sub>4</sub> 0.1 mg</td>"
+        assert rr.html_recipe_text(original) == ("FeSO4 0.1 g", "")
+        assert rr.html_recipe_text(original) == ("FeSO4 0.1 g", "")
+        assert rr.html_recipe_text(altered) == ("FeSO4 0.1 mg", "")
+        assert calls == [original, altered]
+        document = "<p>" + "a" * 8192 + "</p>"
+        assert rr.html_recipe_text(document) == rr.html_recipe_text(document)
+        assert calls[-2:] == [document, document]
+        for value in range(300):
+            rr.html_recipe_text(f"<td>{value}</td>")
+        assert rr._small_html_recipe_text.cache_info().currsize == 256
+    finally:
+        rr._small_html_recipe_text.cache_clear()
+
+
 @pytest.mark.parametrize(
     "url",
     [

@@ -237,9 +237,11 @@ def test_failed_preflight_changes_nothing(plan, tmp_path, monkeypatch, kind):
     assert all((root / p).read_bytes() == raw for p, raw in original.items())
 
 
-def test_optimized_python_cannot_disable_guards():
+def test_optimized_python_cannot_disable_guards(monkeypatch):
+    monkeypatch.delenv("PYTHONPATH", raising=False)
     result = subprocess.run(
         [sys.executable, "-O", "-c", "import review_utex_bristol_bbm as r; r.sources()"],
+        cwd=repair.ROOT / "scripts",
         capture_output=True,
         text=True,
     )

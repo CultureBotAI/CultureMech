@@ -104,8 +104,8 @@ class Review(shared.Review):
     append = stocks.Review.append
     claim = prior.Review.claim
 
-    def __init__(self, before, key):
-        self.context = frozen()
+    def __init__(self, before, key, *, context=None, parsed=None):
+        self.context = frozen() if context is None else context
         self.specs = {r["key"]: r for r in self.context["records"]}
         self.spec = self.specs[key]
         runner.require(
@@ -118,7 +118,7 @@ class Review(shared.Review):
             not any(before.get(k) for k in ("evidence", "references", "variants", "solutions")),
             "Existing provenance requires reconciliation",
         )
-        self.data, self.texts, self.titles = sources(self.context)
+        self.data, self.texts, self.titles = sources(self.context) if parsed is None else parsed
         self.key, self.before, self.after = key, before, copy.deepcopy(before)
         self.claims, self.lineage, self.used = [], [], []
         self.old, self.lb, self.accounted = {}, [], set()
@@ -653,20 +653,27 @@ class Review(shared.Review):
         return self.after, self.claims, self.lineage
 
 
-def build(before, key, timestamp):
-    review = Review(before, key)
+def build(before, key, timestamp, *, context=None, parsed=None):
+    review = Review(before, key, context=context, parsed=parsed)
     review.formulate()
     return review.finish(timestamp)
 
 
 def process(root, plan_path, mode):
+    # Every operation checks the frozen bytes anew; its records share that immutable snapshot.
+    context = frozen()
+    parsed = sources(context)
+
+    def builder(before, key, timestamp):
+        return build(before, key, timestamp, context=context, parsed=parsed)
+
     return shared.process(
         root,
         plan_path,
         mode,
-        context=frozen(),
+        context=context,
         context_sha=CONTEXT_SHA,
-        builder=build,
+        builder=builder,
         action=ACTION,
     )
 
