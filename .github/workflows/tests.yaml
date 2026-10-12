@@ -129,4 +129,5 @@ jobs:
         run: just check-id-catalog
 
       - name: Run full suite with coverage floor
-        run: just test
+        # Public ubuntu-latest runners provide four CPUs and 16 GB RAM.
+        run: just test 4

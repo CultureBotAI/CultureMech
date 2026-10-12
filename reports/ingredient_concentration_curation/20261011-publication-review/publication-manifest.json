@@ -13,6 +13,11 @@
       "sha256": "1d9705d5a0c3ccf118bba98b3528a3d8096cc5d26cfdcfa6c559e0627647ee3d"
     },
     {
+      "path": ".github/workflows/tests.yaml",
+      "sha256": "538c79729521d478aeefb2c1451063908749ed4a5610db87389abd11cd87fee8",
+      "bytes": 5064
+    },
+    {
       "path": "data/import_tracking/derived_artifacts.tsv",
       "bytes": 208436,
       "sha256": "5878ae0a2869959f810e23d3502e91cad60ad43d4d7a3e7fb1f14322fa741a7d"
@@ -27289,8 +27294,8 @@
     },
     {
       "path": "project.justfile",
-      "bytes": 112494,
-      "sha256": "fa3a91997c85afc46e67e2f27b8fe9d9f7d87ba5f12f159aaad81521e267c36e"
+      "bytes": 112518,
+      "sha256": "5c092dfe48e539bcb6ed699f03c22bf29d65951e7b96518d1a76bbaa6bc2ba68"
     },
     {
       "path": "pyproject.toml",
@@ -99489,8 +99494,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261011-publication-review/README.md",
-      "bytes": 18601,
-      "sha256": "c7416a50ae3bb0cfdfa155b2f61bc98063e7b997a39c5b5ab078a080d233bd25"
+      "bytes": 19890,
+      "sha256": "8e71be7b31eb98d915475d069d833f0a6048f7c43a9ee0be3895df33773e8cc1"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261011-publication-review/prepare_pdf_fixtures.py",
@@ -100731,6 +100736,11 @@
       "path": "tests/test_medium_concentration_review.py",
       "bytes": 30602,
       "sha256": "abc0e2e1f280602d426265b09715d62afeb86d7023734ae019b4fa9624b96833"
+    },
+    {
+      "path": "tests/test_merge_queue_workflows.py",
+      "sha256": "504a68d0102ffae4a59a771b83dc1f14b659d69b98b32c4e682cd4592e49f9fb",
+      "bytes": 4826
     },
     {
       "path": "tests/test_merger.py",
@@ -102115,5 +102125,5 @@
     "reports/ingredient_concentration_curation/20261011-publication-review/publication-manifest.json"
   ],
   "dependency_closure_parent_commit": "0c73c10a86577581ffa858b3e21c89fde50dd009",
-  "followup_parent_commit": "581ccd3084366eabf7ddd9687f815d94ebb5107e"
+  "followup_parent_commit": "f449360d65e47cf3639c2ef2d374293e864547fe"
 }

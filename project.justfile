@@ -1867,10 +1867,10 @@ gen-page file:
 # ================================================================
 
 [group('Test')]
-test:
+test workers="2":
     #!/usr/bin/env bash
     echo "Running test suite..."
-    uv run --extra dev pytest tests/ -v -n 2 --dist=loadfile --max-worker-restart=0
+    uv run --extra dev pytest tests/ -v -n "{{workers}}" --dist=loadfile --max-worker-restart=0
 
 [group('Test')]
 test-fast:

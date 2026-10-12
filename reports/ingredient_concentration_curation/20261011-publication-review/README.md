@@ -295,3 +295,23 @@ unchanged. Actual Koza export tests run with unraisable warnings treated as
 errors before publication.
 Both new controls fail against the previous reader lifecycle and pass after
 the fix. All 26 Koza TSV tests pass with unraisable warnings promoted to errors.
+
+### CI Worker Capacity
+
+The two-worker full job `114717792811` at `f449360d65` finalized cancelled after
+45 minutes with an explicit 40-minute timeout annotation. The other eight
+required checks passed. Issue 588's
+follow-up uses four workers in CI, matching the documented four CPUs and 16 GB
+RAM of this public repository's `ubuntu-latest` runner. See the
+[GitHub runner specification](https://docs.github.com/en/actions/reference/runners/github-hosted-runners#standard-github-hosted-runners-for-public-repositories).
+The local `just test` default remains two workers; CI explicitly calls
+`just test 4`. File scheduling, zero worker restarts, receipt reconciliation,
+all tests, combined coverage, the 17% floor, the 120-second call budget and the
+40-minute job limit are unchanged. No full-suite pass is claimed here.
+
+New contract tests check both recipe invocations, the CI worker count and the
+unchanged timeout. The four-worker cohort passes all 1,295 tests in 148.91s,
+with all 1,295 call receipts reconciled across four workers. This includes the
+negative timing-receipt and combined-coverage subprocess controls, both large
+concentration cohorts, artifact checks and workflow contracts. Full required
+CI remains the merge prerequisite; local cohort timing is not a CI guarantee.
