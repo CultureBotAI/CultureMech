@@ -220,3 +220,36 @@ Query failures, unexpected rows, empty selection and wholly absent formula
 coverage fail closed; individual missing formulas retain their previous handling.
 The full module passes 12 tests in 51.92 seconds, with fixture setup at 36.89
 seconds. This changes no production code, recipe, ontology pin or evidence.
+
+### Statement Coverage Collector
+
+Full CI at `f52f224a40` again exceeded the unchanged 40-minute limit, with
+job `114671962052` cancelled after 45m1s. All eight other required checks passed;
+the fast tier passed 15,789 tests with 23 skips. The full job log endpoint
+returns HTTP 404, and the workflow log command reports that job log missing.
+This is not a full-suite pass; issue 576 remains open.
+
+Issue 587 records a measured collector cost. The pinned coverage.py 7.13.1
+supports `sysmon` statement coverage on the maintained Python 3.13 runtime.
+The project does not enable branch coverage, coverage plugins or dynamic
+contexts, which would require a different compatibility assessment. See the
+[versioned collector documentation](https://coverage.readthedocs.io/en/7.13.1/config.html#run-core).
+The configured collector now uses `sysmon`; source/omit scope, the 17% coverage
+floor, every test, the 120-second call budget and 40-minute job timeout are
+unchanged. No scientific data or production behavior changes.
+
+Sequential runs of the same 804-test Geobacter module pass under both
+collectors: 371.14s with `ctrace`, 151.95s with `sysmon`. Direct CoverageData
+comparison finds identical sets of 101 measured files and 333 executed lines.
+These diagnostic subset runs override the coverage floor only to permit
+collector comparison; they do not replace the required full-suite gate.
+New subprocess controls assert exact executed-line sets and demonstrate both
+a passing fully executed probe and rejection of an unexecuted body below the
+unchanged configured coverage floor.
+
+The broader fingerprint, reference-validation, renderer and KGX comparison
+passes 197 tests with one optional-dependency skip under each collector. Its
+coverage databases also agree exactly: 101 measured files, 1,834 executed
+lines, no differing line sets. These runs overlapped, so their elapsed times
+are not treated as an isolated performance comparison. The three new coverage
+controls and fourteen existing merge-queue contract tests all pass.

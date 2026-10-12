@@ -27293,6 +27293,11 @@
       "sha256": "4cef62965ed7dec05b11f6bf769c486aa0e91bfa43ead057fc297229834a121e"
     },
     {
+      "path": "pyproject.toml",
+      "sha256": "ab90f17310b12ef7749ee1fe5bdf5f2beb973d50421248dd1f586ce6e38c5484",
+      "bytes": 6606
+    },
+    {
       "path": "reports/ingredient_concentration_curation/20261007-diff-audit-after-dsmz111.json",
       "bytes": 1386,
       "sha256": "1a75bed8183b6b4d02cb95026007670196db42fb1a0c8c8d11fdeee5c046126d"
@@ -99484,8 +99489,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261011-publication-review/README.md",
-      "bytes": 13944,
-      "sha256": "7d4d4383df034f04e6c814ff5784602711128bd1117590fecb0323278c67687f"
+      "bytes": 15975,
+      "sha256": "d70213443296de7e5bfe619a2bfb58cc07c4ff4440b0ce77fda1d71b614cd509"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261011-publication-review/prepare_pdf_fixtures.py",
@@ -100401,6 +100406,11 @@
       "path": "tests/test_concentration_volume_basis.py",
       "bytes": 6423,
       "sha256": "c8e29afce138d3079b5891a6f2e53937fd42279f65115a5f181d6eda10e2dad6"
+    },
+    {
+      "path": "tests/test_coverage_contract.py",
+      "sha256": "12bad6c2a3588d2c9b16c95a296a20a675f4ffe75305e6f4860223b768981e7b",
+      "bytes": 2368
     },
     {
       "path": "tests/test_curation_identity_fixtures.py",
@@ -102085,5 +102095,5 @@
     "reports/ingredient_concentration_curation/20261011-publication-review/publication-manifest.json"
   ],
   "dependency_closure_parent_commit": "0c73c10a86577581ffa858b3e21c89fde50dd009",
-  "followup_parent_commit": "eea8b9fb875d171520b9a99a4f40ec16802dac86"
+  "followup_parent_commit": "f52f224a40e5f216bf2b4273e5e247cc61ef81f5"
 }

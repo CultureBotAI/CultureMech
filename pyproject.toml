@@ -140,6 +140,8 @@ filterwarnings = [
 ]
 
 [tool.coverage.run]
+# Python 3.13 supports lower-overhead statement coverage through sys.monitoring.
+core = "sysmon"
 omit = ["src/culturemech/schema/culturemech_dataclasses.py"]
 
 [tool.coverage.report]
