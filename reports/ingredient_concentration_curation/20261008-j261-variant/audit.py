@@ -42,7 +42,7 @@ def check(before, after, item):
     context = json.loads(raw)
     specs = {r["key"]: r for r in context["records"]}
     key = item["key"]
-    assert before == yaml.safe_load(specs[key]["before_text"])
+    assert before == yaml.load(specs[key]["before_text"], Loader=yaml.CSafeLoader)
     texts, sources = {}, {}
     for k, s in context["sources"].items():
         assert (
@@ -61,7 +61,7 @@ def check(before, after, item):
     child = {"J151": "J261", "M142": "M253"}.get(key, key)
     parent = {"J261": "J151", "M253": "M142"}[child]
     other_key = parent if key == child else child
-    other = yaml.safe_load(specs[other_key]["before_text"])
+    other = yaml.load(specs[other_key]["before_text"], Loader=yaml.CSafeLoader)
     link = (
         after["parent_media"]
         if key == child
@@ -375,7 +375,11 @@ def main():
     for r in plan["records"]:
         raw = (ROOT / r["path"]).read_bytes() if args.applied else r["after_text"].encode()
         assert hashlib.sha256(raw).hexdigest() == r["after_sha256"]
-        result[r["key"]] = check(yaml.safe_load(r["before_text"]), yaml.safe_load(raw), r)
+        result[r["key"]] = check(
+            yaml.load(r["before_text"], Loader=yaml.CSafeLoader),
+            yaml.load(raw, Loader=yaml.CSafeLoader),
+            r,
+        )
     (HERE / ("applied-audit.json" if args.applied else "preview-audit.json")).write_text(
         json.dumps(result, indent=2) + "\n"
     )

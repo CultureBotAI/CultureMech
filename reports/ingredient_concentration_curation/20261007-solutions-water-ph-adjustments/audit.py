@@ -111,7 +111,12 @@ def main():
         assert hashlib.sha256(before).hexdigest() == item["before_sha256"]
         assert hashlib.sha256(after).hexdigest() == item["after_sha256"]
         counts.update(
-            check(yaml.safe_load(before), yaml.safe_load(after), item, cases[item["path"]])
+            check(
+                yaml.load(before, Loader=yaml.CSafeLoader),
+                yaml.load(after, Loader=yaml.CSafeLoader),
+                item,
+                cases[item["path"]],
+            )
         )
     deferred = [c for c in ctx["records"] if c["withheld_reasons"]]
     for case in deferred:

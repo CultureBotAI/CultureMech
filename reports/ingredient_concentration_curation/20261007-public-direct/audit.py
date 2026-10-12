@@ -29,7 +29,9 @@ def audit():
         raw = (ROOT / item["path"]).read_bytes()
         assert hashlib.sha256(raw).hexdigest() == item["after_sha256"]
         assert hashlib.sha256(item["before_text"].encode()).hexdigest() == item["before_sha256"]
-        before, after = yaml.safe_load(item["before_text"]), yaml.safe_load(raw)
+        before, after = yaml.load(item["before_text"], Loader=yaml.CSafeLoader), yaml.load(
+            raw, Loader=yaml.CSafeLoader
+        )
         restored = copy.deepcopy(after)
         is_p6 = item["id"] == "CultureMech:010436"
         assert item["id"] in {"CultureMech:010433", "CultureMech:010436"}
@@ -110,7 +112,7 @@ def retention():
         assert len(matches) == 1
         fp, paths = matches[0]
         merged = RecipeMerger().merge_group(paths, fingerprint=fp)
-        fields = shared.retention(merged, yaml.safe_load(target.read_bytes()))
+        fields = shared.retention(merged, yaml.load(target.read_bytes(), Loader=yaml.CSafeLoader))
         results.append(
             {
                 "path": item["path"],

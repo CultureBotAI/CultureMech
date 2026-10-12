@@ -211,7 +211,12 @@ def main():
         raw = (ROOT / item["path"]).read_bytes() if args.applied else item["after_text"].encode()
         assert hashlib.sha256(raw).hexdigest() == item["after_sha256"]
         counts.update(
-            check(yaml.safe_load(item["before_text"]), yaml.safe_load(raw), item, plan["sources"])
+            check(
+                yaml.load(item["before_text"], Loader=yaml.CSafeLoader),
+                yaml.load(raw, Loader=yaml.CSafeLoader),
+                item,
+                plan["sources"],
+            )
         )
     result = {
         "full_record_inversion": True,

@@ -45,7 +45,7 @@ def check(before, after, item):
     context = json.loads(raw)
     specs = {r["key"]: r for r in context["records"]}
     key, spec = item["key"], specs[item["key"]]
-    assert before == yaml.safe_load(spec["before_text"])
+    assert before == yaml.load(spec["before_text"], Loader=yaml.CSafeLoader)
     assert before["id"] == after["id"] == spec["id"]
     assert item["path"] == spec["path"] and item["action"] == ACTION
     texts, titles, data = {}, {}, {}
@@ -311,7 +311,7 @@ def check(before, after, item):
         assert {k: link[k] for k in ("path", "id", "name", "relationship")} == {
             "path": specs[target]["path"],
             "id": specs[target]["id"],
-            "name": yaml.safe_load(specs[target]["before_text"])["name"],
+            "name": yaml.load(specs[target]["before_text"], Loader=yaml.CSafeLoader)["name"],
             "relationship": relation,
         }
         source = "DSMZ645a" if child == "K645a" else child
@@ -451,7 +451,9 @@ if __name__ == "__main__":
         json.dumps(
             {
                 r["key"]: check(
-                    yaml.safe_load(r["before_text"]), yaml.safe_load(r["after_text"]), r
+                    yaml.load(r["before_text"], Loader=yaml.CSafeLoader),
+                    yaml.load(r["after_text"], Loader=yaml.CSafeLoader),
+                    r,
                 )
                 for r in plan["records"]
             },

@@ -43,7 +43,7 @@ def check(before, after, item):
     context = json.loads(raw)
     key = item["key"]
     spec = next(r for r in context["records"] if r["key"] == key)
-    assert before == yaml.safe_load(spec["before_text"])
+    assert before == yaml.load(spec["before_text"], Loader=yaml.CSafeLoader)
     assert item["action"] == ACTION and item["path"] == spec["path"]
     sources, texts = {}, {}
     for source, capture in context["sources"].items():
@@ -364,7 +364,11 @@ def main():
     for item in plan["records"]:
         raw = (ROOT / item["path"]).read_bytes() if args.applied else item["after_text"].encode()
         assert hashlib.sha256(raw).hexdigest() == item["after_sha256"]
-        results[item["key"]] = check(yaml.safe_load(item["before_text"]), yaml.safe_load(raw), item)
+        results[item["key"]] = check(
+            yaml.load(item["before_text"], Loader=yaml.CSafeLoader),
+            yaml.load(raw, Loader=yaml.CSafeLoader),
+            item,
+        )
     (HERE / ("applied-audit.json" if args.applied else "preview-audit.json")).write_text(
         json.dumps(results, indent=2) + "\n"
     )

@@ -41,7 +41,7 @@ def check(before, after, item):
     context = json.loads(raw)
     specs = {r["key"]: r for r in context["records"]}
     key, spec = item["key"], specs[item["key"]]
-    assert before == yaml.safe_load(spec["before_text"])
+    assert before == yaml.load(spec["before_text"], Loader=yaml.CSafeLoader)
     assert before["id"] == after["id"] == spec["id"]
     assert item["path"] == spec["path"] and item["action"] == ACTION
     texts, titles = {}, {}
@@ -241,7 +241,7 @@ def check(before, after, item):
     assert {k: ref[k] for k in ("path", "id", "name", "relationship")} == {
         "path": specs[other]["path"],
         "id": specs[other]["id"],
-        "name": yaml.safe_load(specs[other]["before_text"])["name"],
+        "name": yaml.load(specs[other]["before_text"], Loader=yaml.CSafeLoader)["name"],
         "relationship": "DERIVED_FROM",
     }
     assert "does not prove an exact duplicate" in ref["notes"]
@@ -353,7 +353,9 @@ if __name__ == "__main__":
         json.dumps(
             {
                 r["key"]: check(
-                    yaml.safe_load(r["before_text"]), yaml.safe_load(r["after_text"]), r
+                    yaml.load(r["before_text"], Loader=yaml.CSafeLoader),
+                    yaml.load(r["after_text"], Loader=yaml.CSafeLoader),
+                    r,
                 )
                 for r in plan["records"]
             },

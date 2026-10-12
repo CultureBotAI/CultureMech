@@ -77,7 +77,7 @@ def check(before, after, item):
     context, texts, titles, data = snapshot((HERE / "context.json").read_bytes())
     specs = {r["key"]: r for r in context["records"]}
     key, spec = item["key"], specs[item["key"]]
-    assert before == yaml.safe_load(spec["before_text"])
+    assert before == yaml.load(spec["before_text"], Loader=yaml.CSafeLoader)
     assert before["id"] == after["id"] == spec["id"]
     assert item["path"] == spec["path"] and item["action"] == ACTION
     old, lb = {}, set()
@@ -295,7 +295,7 @@ def check(before, after, item):
         assert {k: ref[k] for k in ("path", "id", "name", "relationship")} == {
             "path": target["path"],
             "id": target["id"],
-            "name": yaml.safe_load(target["before_text"])["name"],
+            "name": yaml.load(target["before_text"], Loader=yaml.CSafeLoader)["name"],
             "relationship": relation,
         }
         assert ref["evidence"] and ref["notes"]
@@ -418,7 +418,11 @@ def check(before, after, item):
 if __name__ == "__main__":
     plan = json.loads((HERE / "plan.json").read_text())
     result = {
-        r["key"]: check(yaml.safe_load(r["before_text"]), yaml.safe_load(r["after_text"]), r)
+        r["key"]: check(
+            yaml.load(r["before_text"], Loader=yaml.CSafeLoader),
+            yaml.load(r["after_text"], Loader=yaml.CSafeLoader),
+            r,
+        )
         for r in plan["records"]
     }
     print(json.dumps(result, indent=2))

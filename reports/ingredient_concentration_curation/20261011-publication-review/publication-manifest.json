@@ -14,8 +14,8 @@
     },
     {
       "path": "data/import_tracking/derived_artifacts.tsv",
-      "bytes": 208139,
-      "sha256": "e2a02a5fc73d7f1f242fd8d0e5485d7a644fcce1e331d41d978b05202549047c"
+      "bytes": 208289,
+      "sha256": "2bce81fb4166e7c4b2a1f71ca8efc709a302dd2cc77b68773e851df42ee8d781"
     },
     {
       "path": "data/normalized_yaml/algae/1_2_CHEV_Diatom_Medium.yaml",
@@ -27504,8 +27504,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261007-dsmz125-alternatives/audit.py",
-      "bytes": 9847,
-      "sha256": "196944ebcb021bf9e207867f3e773874a8f35b184322a399b92a7ca1c4f60260"
+      "bytes": 9887,
+      "sha256": "f3c6f214a8b29d548016ab5430d7116a9f7e88eed53e11ae5ee47a35b8ba9f69"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261007-dsmz125-alternatives/baseline.json",
@@ -27749,8 +27749,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261007-dsmz467-469-inputs/audit.py",
-      "bytes": 11826,
-      "sha256": "0c09660ba012f24f4c7019a3c11c97fce8962ce76c79ff8544a13f1a48d02083"
+      "bytes": 11866,
+      "sha256": "67eac8b58513ecc31b1435708880e0b860fb8033a399574b8aacc3e7fe6bcad8"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261007-dsmz467-469-inputs/baseline.json",
@@ -27799,8 +27799,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261007-dsmz489-stocks/audit.py",
-      "bytes": 9756,
-      "sha256": "a9159c4e5ae418949ee265fe58bdbdfb35b2593ef7ad71e9c1a137d18c5ee02c"
+      "bytes": 9875,
+      "sha256": "e039f20c145a017e4760b88db42ddd2c5fccf236b00f796c88f4b4e4be2179c4"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261007-dsmz489-stocks/baseline.json",
@@ -27904,8 +27904,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261007-dsmz546-659-670-stocks/audit.py",
-      "bytes": 14087,
-      "sha256": "484b8be3d76cf87b911cf451ed6802b239f0ad22fd722bbdd060c9566da89900"
+      "bytes": 14206,
+      "sha256": "a04676d4f01b0d3d235d2252dbe7cb1a57173dbebf31a0cc2a03b68559866efc"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261007-dsmz546-659-670-stocks/baseline.json",
@@ -27994,8 +27994,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261007-dsmz650-752-762-preparations/audit.py",
-      "bytes": 13547,
-      "sha256": "4556ef6f69c503e2c185a60ae9193b69619c1a37877707ddf4403ca584d19520"
+      "bytes": 13587,
+      "sha256": "103cb390f25700fe1cac14fe8389f6e0757db7d7f9d60b0d42e408c287925e06"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261007-dsmz650-752-762-preparations/baseline.json",
@@ -43854,8 +43854,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261007-komodo650-752-762-preparations/audit.py",
-      "bytes": 10437,
-      "sha256": "47b743224466b052feba7cfa8fb622408612aa13240042e7082f3389598f75df"
+      "bytes": 10479,
+      "sha256": "7807d6e95a9a7f91d95e6a08802a583a2fb05f775ff7fca7283a5ed53085c903"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261007-komodo650-752-762-preparations/baseline.json",
@@ -85114,8 +85114,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261007-public-direct/audit.py",
-      "bytes": 5888,
-      "sha256": "09dc9382ad58fbf6c770f0467709928700efcbbede98b1dbf007341ffee59027"
+      "bytes": 5970,
+      "sha256": "5a2de0e92e8a3f2aacb1c168f3ac305cdbd2d32a059b428100aac554017175e1"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261007-public-direct/diff-audit.json",
@@ -85159,8 +85159,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261007-public-input-basis/audit.py",
-      "bytes": 8994,
-      "sha256": "91bf23d75adc7c6b3ff81694d0d15d44d8b496826531bd95c1b8375e16f56f17"
+      "bytes": 9139,
+      "sha256": "00e318e0c602ce4b68f8c03e76f16f2de07c3b6d977d486aa1a7e12050646225"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261007-public-input-basis/diff-audit.json",
@@ -85214,8 +85214,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261007-public-stocks/audit.py",
-      "bytes": 9179,
-      "sha256": "aa1be157e52147e2ea394892f95f52d49c514bafb6ddc339625f20291ead237b"
+      "bytes": 9324,
+      "sha256": "121078ab406c14d485ee569e2514ea534e519f50bb7010e2c57719e46f0cbf6b"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261007-public-stocks/diff-audit.json",
@@ -85259,8 +85259,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261007-rs-stock-boundaries/audit.py",
-      "bytes": 17555,
-      "sha256": "77ff51fe33d3428b2ca8955834d278f65dd0aa5e8c8eacc71c074e9cc5025745"
+      "bytes": 17720,
+      "sha256": "64a60cd4b2fa59d08ebe0d5e373552db4e57ccceab85378578fe6d16ed229f81"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261007-rs-stock-boundaries/diff-audit.json",
@@ -85884,8 +85884,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261007-solutions-water-ph-adjustments/audit.py",
-      "bytes": 5612,
-      "sha256": "47585c94b2a06ec8de2c852f5ca7455721ab8e5854f5c686c31584660f0294ab"
+      "bytes": 5731,
+      "sha256": "154362a9bcd0d3a213163d531fe4f370b99f2aa1d88d7d2c48de3ae32f0ac435"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261007-solutions-water-ph-adjustments/baseline-inversion.json",
@@ -86194,8 +86194,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261007-solutions-water-ph7/audit.py",
-      "bytes": 4989,
-      "sha256": "59bd899356a52cb639d65fa84cf9bf738e9daf142bebc17e947f008c4cdb8165"
+      "bytes": 5029,
+      "sha256": "6f306411e68abff1b776173a70954127034ca597211760c29c648531d5c395d2"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261007-solutions-water-ph7/baseline-inversion.json",
@@ -86259,8 +86259,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261008-albumin-counterparts/audit.py",
-      "bytes": 20007,
-      "sha256": "685fb7d7e8fb199b471d457a542ca1b1ec2db0b0e614e816b8ccbc540cbd7b7e"
+      "bytes": 20114,
+      "sha256": "66303f0c2a121db1679e45522f465c26633dd88607b7a6f282a10b7f1ee37e5c"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261008-albumin-counterparts/baseline.json",
@@ -86414,8 +86414,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261008-basal-makeup/audit.py",
-      "bytes": 16563,
-      "sha256": "ca3bb3868074d0cca8332edcbce62be8d871ebc553d7828dd3d2ee0f26f0bda6"
+      "bytes": 16690,
+      "sha256": "5fd5ed56b6a891f2aac0bf5f1502cf8e0dbb9e1ba30a25265b5c443e890301ca"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261008-basal-makeup/baseline.json",
@@ -86539,8 +86539,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261008-bsk-formulations/audit.py",
-      "bytes": 18601,
-      "sha256": "8b97e7ff8b3a5acd9766ed02d2aa70a62308fd5a7e9f1ba48c6afdfa50e425af"
+      "bytes": 18708,
+      "sha256": "9bd11833e1b145002516ee6a1fca7591793ba74be78dcd6f61d329bc51ee36de"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261008-bsk-formulations/baseline.json",
@@ -86729,8 +86729,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261008-dsmz-albumin-preparations/audit.py",
-      "bytes": 18375,
-      "sha256": "d71d4f122c805b74570a331201a0e74428ba23e22fd24ec5892c0be769f3237b"
+      "bytes": 18482,
+      "sha256": "cefa181d1f2baf7ba23e5cf86068a6f61e4191fd55b464ef15766ddd528d72e5"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261008-dsmz-albumin-preparations/baseline.json",
@@ -87109,8 +87109,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261008-fecl2-stock/audit.py",
-      "bytes": 6083,
-      "sha256": "40a63ea8bbfc07e03b64dea17ce588babfe81bf446a7cf33ddb6604836b8b669"
+      "bytes": 6137,
+      "sha256": "cb2c34b4af2030d8efa2128d769746f552f8af43c359aacd03a6f08ae63ff07f"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261008-fecl2-stock/baseline.json",
@@ -87169,8 +87169,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261008-filtered-sulfide-media/audit.py",
-      "bytes": 16632,
-      "sha256": "cc77220c6b6e3b838f5b35b29070f32864fee338fc24c05f2d9423510240363b"
+      "bytes": 16739,
+      "sha256": "c3f4fe4cd472211949bc25a87743ff685893f6f75a57cddcdbe6b08c215b4bc1"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261008-filtered-sulfide-media/baseline.json",
@@ -87354,8 +87354,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261008-j261-variant/audit.py",
-      "bytes": 16339,
-      "sha256": "89c3d743a270303e030d203ecf8d9270def758e2b20744460d0a186018b7310f"
+      "bytes": 16466,
+      "sha256": "23a2f0b94787e9920c5642f203fb4d8aacafcb926f6e95ae548c207a8bd82ae7"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261008-j261-variant/baseline.json",
@@ -87434,8 +87434,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261008-jcm-albumin-inputs/audit.py",
-      "bytes": 15904,
-      "sha256": "afe52abd80a96106cd048736829845c7025b238f2631318b43affee337b0674c"
+      "bytes": 16011,
+      "sha256": "6dff3c610be7fa1633b45697b399600c45166fc2f455f0a8fbcdb62e65b72830"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261008-jcm-albumin-inputs/baseline.json",
@@ -87574,8 +87574,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261008-jcm-lb-acids/audit.py",
-      "bytes": 19425,
-      "sha256": "f80a5e630d1d2967459489fa33545ae673736ad73ed9538b73ee4bb6b9c7db31"
+      "bytes": 19532,
+      "sha256": "1f924bda9e072dfe701c31120684c9094d88e37ccc58d90025ebab8bb759c992"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261008-jcm-lb-acids/baseline.json",
@@ -87709,8 +87709,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261008-jcm-stock-preparations/audit.py",
-      "bytes": 16634,
-      "sha256": "99774926e8687cd68014645306928b830edb5865e1ce4e9ba644509834e4232c"
+      "bytes": 16741,
+      "sha256": "2a4f651a012c69d62f68e736629620c3acefe5527d25df558546ff8cc1a90cc0"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261008-jcm-stock-preparations/baseline.json",
@@ -91194,8 +91194,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261008-lactalbumin-formulations/audit.py",
-      "bytes": 19741,
-      "sha256": "0baeb6dd32f17d485ced736f448745cfcb5285904b8205286f90bcbd4e8aff32"
+      "bytes": 19848,
+      "sha256": "b6d4f8087b1b14f235824e232cf43d69bc4931092874d80316834aa4f2e51e1a"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261008-lactalbumin-formulations/baseline.json",
@@ -91349,8 +91349,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261008-m142-nested-traces/audit.py",
-      "bytes": 15887,
-      "sha256": "d1ea905662ae652fc29577c298837706569a0b92c90c8674ed8aec6441bee1d1"
+      "bytes": 16003,
+      "sha256": "d5792f39d423dc88a351f1eb5dd0f015c15180b464ac6580b62ad1130b0fecb9"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261008-m142-nested-traces/baseline.json",
@@ -91459,8 +91459,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261008-m258-m260-stocks/audit.py",
-      "bytes": 18690,
-      "sha256": "4c479813a11d0a5d0c8128cab7ad1f1efaba5b1fe501df3869cdbc57e9bb7197"
+      "bytes": 18797,
+      "sha256": "4baaac7f0198442cef7560d02a8fa716ddcd50d470159e1b267deaea07c0e5e3"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261008-m258-m260-stocks/baseline.json",
@@ -91599,8 +91599,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261008-m689-stocks/audit.py",
-      "bytes": 12345,
-      "sha256": "84b143be1ea830be464f5640cb604ac6aeaadd36063b1534846b67e547c14033"
+      "bytes": 12452,
+      "sha256": "17a7ed992ec057403e26977ff325eb72671a13fee1ce6c3c28956460da4974ba"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261008-m689-stocks/baseline.json",
@@ -91694,8 +91694,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261008-marine-stock-pair/audit.py",
-      "bytes": 16628,
-      "sha256": "d3f4c6903b9be0df0186435818fbeedca2891fb83086c69adbea150b021d7092"
+      "bytes": 16735,
+      "sha256": "514764d99f64fc488734f428de73794626e2ce03b09728607d070274362e3cfc"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261008-marine-stock-pair/baseline.json",
@@ -91814,8 +91814,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261008-methanogen-boundaries/audit.py",
-      "bytes": 18065,
-      "sha256": "5710f6abb4590eaa6fcab6027c1847a94a6e783f62a188bb3917326e0f8cb225"
+      "bytes": 18150,
+      "sha256": "e860500148b0eef0d65b8e757e5a9839c5c0583858826a3dd953194ce4277608"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261008-methanogen-boundaries/baseline.json",
@@ -91894,8 +91894,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261008-pyrodictium-variants/audit.py",
-      "bytes": 17748,
-      "sha256": "4927e855dd032ac3bd307d9e49b7a9751d32a3c05b00a1db7cd0d20feeba2f2d"
+      "bytes": 17875,
+      "sha256": "a909ead0889a666cd3027882a5997977c423fcb395c025f826219424b42bce2b"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261008-pyrodictium-variants/baseline.json",
@@ -92164,8 +92164,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261008-reducing-stages/audit.py",
-      "bytes": 18837,
-      "sha256": "3b75267f95f1da74e13e43bddbc33be1c7d96c8ba8206e07e39ddb233b2abbe7"
+      "bytes": 18944,
+      "sha256": "56fdbdb418e476f92319c4de3f206ebe56d4ba18144e088668f3fd75b3a61006"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261008-reducing-stages/baseline.json",
@@ -92494,8 +92494,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261009-allisonella-acids/audit.py",
-      "bytes": 14899,
-      "sha256": "3d9dd9ae97cf62179e59e1f08506889747b22ce24c30d8336f5cf74596557f80"
+      "bytes": 15020,
+      "sha256": "7dbc6e8f35f8099c8d38936fd0622c39e4d4c651ef2e8ea932dfd0165a1bcc2a"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261009-allisonella-acids/baseline.json",
@@ -92744,8 +92744,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/audit.py",
-      "bytes": 23477,
-      "sha256": "f4abf7280174baaf9a1e967a99f1dd1fdbdb11aec4f35da2e750dfd856b73eb8"
+      "bytes": 23582,
+      "sha256": "fc2edfae885b5e0032482354b88fe706ff0c9dc5ac253d8398b5d60eef7b587e"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/cached-v2.json",
@@ -93484,8 +93484,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261009-halobacteria-family/audit.py",
-      "bytes": 9456,
-      "sha256": "bb74b1837dcc33da99ce9bac4cda1ac829b019f893f6233ba58f97d866e31085"
+      "bytes": 9510,
+      "sha256": "0df3d2a7bb8d755123cc339042ee8e46cce62ed351cbe2693380fc2f61b3ad63"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261009-halobacteria-family/captures-approved.json",
@@ -93769,8 +93769,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261009-halobacteria-variants/audit.py",
-      "bytes": 14479,
-      "sha256": "1f8b370cb71f827406b5e044e7070204dd3934a0177e9f61918eac762f20cc55"
+      "bytes": 14553,
+      "sha256": "ee2de2740e1bea732c9a8577a9dc2de020288c5864e15eb1e35c11eb8960d671"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261009-halobacteria-variants/canonical-inventory-before.json",
@@ -94649,8 +94649,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/audit.py",
-      "bytes": 17517,
-      "sha256": "31c3125ed89f27f37c516b13d71636fa3b5ac9ce4ee50820ab0f130e10c0c383"
+      "bytes": 17644,
+      "sha256": "0fb38cd9f21504f0e81badaaa34624f569fb8909413738f63c542e57fad6b338"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/baseline-final.json",
@@ -95024,8 +95024,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261009-methanofollis-family/audit.py",
-      "bytes": 18624,
-      "sha256": "8d75f631a9d4d12b7cf8f932e70834817c6bb7efc7e077f092b78d3a460fa82e"
+      "bytes": 18797,
+      "sha256": "21bdbf32c47bccb3d18d95d5f8e83ab9c59f55f086d318cbf226e857bf9c546b"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261009-methanofollis-family/corpus.json",
@@ -95279,8 +95279,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261009-middlebrook-linked/audit.py",
-      "bytes": 18378,
-      "sha256": "807c71a2ea7076245bb0ee989868f81ce24a673e53f6c7462daaf2f47396a73b"
+      "bytes": 18499,
+      "sha256": "dc58b6e5659ccf88a65bd931ab370b4adb3575101be8789f74654a9d477a336f"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261009-middlebrook-linked/baseline.json",
@@ -95499,8 +95499,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261009-middlebrook-stages/audit.py",
-      "bytes": 14259,
-      "sha256": "e50c1f643faf65c1d7f95a6c5eb50b1b65da02d9bccafbdf2ebed083dc14fd2b"
+      "bytes": 14344,
+      "sha256": "bab49206cf957e6e3ef89c33f65aa8fd66785a9921d3b25c343633ee787f287c"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261009-middlebrook-stages/baseline.json",
@@ -95754,8 +95754,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261009-oteb-family/audit.py",
-      "bytes": 19008,
-      "sha256": "72d7eabc0cc2905965cd413ef250a97b379e3e487c4aaaeb7277f83458d639f8"
+      "bytes": 19113,
+      "sha256": "9a69dddd0e4743e4ed38c92ff96046e0454f49a67865dbee06d0148d1aa66ee8"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261009-oteb-family/cached.json",
@@ -96139,8 +96139,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/audit.py",
-      "bytes": 22377,
-      "sha256": "8d886bcd4799b6c216b8aaab16f130f126ab253bbc963fdedc4e37f0b22d1890"
+      "bytes": 22550,
+      "sha256": "7a0eb98e845adaa9d61ff24fa82c6f854780364f698c791c6a39385881ac8da7"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/corpus.json",
@@ -96454,8 +96454,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/audit.py",
-      "bytes": 17029,
-      "sha256": "54318bf5e16502264775acba6805631a6cd8ed58b9db0f6ebb9b66c84679068b"
+      "bytes": 17202,
+      "sha256": "b5d14b24414fd1738ef30ba116a994dcf93837227dd8745fb852beff74b1f7af"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/corpus.json",
@@ -96984,8 +96984,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/audit.py",
-      "bytes": 20885,
-      "sha256": "e21d75bf5b782c9eba2df6e30ced68989d9bfcc2000bf1b9066cdf04e2a47458"
+      "bytes": 21012,
+      "sha256": "f40fcd298232309330cc12a487c93fd34c007a49cd72c1c183d2bef976e9ceca"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/baseline.json",
@@ -97031,6 +97031,11 @@
       "path": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/followup-coverage.json",
       "bytes": 1726695,
       "sha256": "e0e6136d41d7e06860c83abc5a6c11ebdb728de4c70f5252a43e0a148dfb87b4"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/identity-index-compatibility.json",
+      "sha256": "0eb9392564e995e49b2c79a78e9db8b36ab93b7a6172abd22352cef0aa7231fa",
+      "bytes": 1712
     },
     {
       "path": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/identity-review.json",
@@ -99474,8 +99479,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261011-publication-review/README.md",
-      "bytes": 8152,
-      "sha256": "877045f0eabfb822762126324afa545893f8a1b5b7c58018b57e4ffaf3db8b03"
+      "bytes": 9659,
+      "sha256": "667a339d0597adae587d804eb915940f0358ef8b32d569783df8df5cd2bb2419"
     },
     {
       "path": "reports/ingredient_concentration_curation/README.md",
@@ -99724,8 +99729,8 @@
     },
     {
       "path": "scripts/repair_mediadive_stock_concentration_evidence.py",
-      "bytes": 20480,
-      "sha256": "1badfa99205690cf6082d95db7dafbd6d4927b617027bc61fbaaf9dbd597c974"
+      "bytes": 20609,
+      "sha256": "54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158"
     },
     {
       "path": "scripts/repair_medium323_ingredients.py",
@@ -99809,8 +99814,8 @@
     },
     {
       "path": "scripts/repair_synthrophomonas_family.py",
-      "bytes": 32655,
-      "sha256": "06eb1987d6754605a0338e72f2e8ae6c5690c0588186c178b13915dd6eacf4f7"
+      "bytes": 33672,
+      "sha256": "44fc86e0f6e9961aeec59c661ae894e586640d20130860dc49cfde1cddeb38b7"
     },
     {
       "path": "scripts/repair_togo_first_pair_concentrations.py",
@@ -100378,6 +100383,11 @@
       "sha256": "94300717f9d4b2a72ecbddb5ea852b522b6a78ddf9c169490b9badedcc2bd07c"
     },
     {
+      "path": "tests/test_curation_yaml_parsing.py",
+      "sha256": "e2614c0e272381a556139b088441745d274d54c4ff641ec6d998874ae8afd7bc",
+      "bytes": 2417
+    },
+    {
       "path": "tests/test_dataclasses_current.py",
       "bytes": 4964,
       "sha256": "7ada0eaa4c8814e70e487fd62af677a9553be497c5ca480af2093d426fb37841"
@@ -100854,8 +100864,8 @@
     },
     {
       "path": "tests/test_synthrophomonas_family.py",
-      "bytes": 14981,
-      "sha256": "fc68e870d8cb3a56e73d29e2d6797f7fac8a241f33bdfb117ecf5bbe5f591a2e"
+      "bytes": 16266,
+      "sha256": "95349e10cba0662149acfbd8ae4dd26fccb359e30374ccbbe876a4c38bdaf64f"
     },
     {
       "path": "tests/test_togo_first_pair_concentrations.py",
@@ -102035,5 +102045,5 @@
     "reports/ingredient_concentration_curation/20261011-publication-review/publication-manifest.json"
   ],
   "dependency_closure_parent_commit": "0c73c10a86577581ffa858b3e21c89fde50dd009",
-  "followup_parent_commit": "27baf7d8995d54c226b30a273bff2a403a99db96"
+  "followup_parent_commit": "79f977f64c7049a50648734ece185a1dfd400a04"
 }

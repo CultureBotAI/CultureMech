@@ -44,7 +44,7 @@ def check(before, after, item):
     context = json.loads(raw)
     key = item["key"]
     spec = next(r for r in context["records"] if r["key"] == key)
-    assert before == yaml.safe_load(spec["before_text"])
+    assert before == yaml.load(spec["before_text"], Loader=yaml.CSafeLoader)
     assert item["path"] == spec["path"] and item["action"] == ACTION
     assert before["id"] == after["id"] == spec["id"]
     texts, data = {}, {}
@@ -342,6 +342,8 @@ if __name__ == "__main__":
     result = {}
     for item in plan["records"]:
         result[item["key"]] = check(
-            yaml.safe_load(item["before_text"]), yaml.safe_load(item["after_text"]), item
+            yaml.load(item["before_text"], Loader=yaml.CSafeLoader),
+            yaml.load(item["after_text"], Loader=yaml.CSafeLoader),
+            item,
         )
     print(json.dumps(result, indent=2))

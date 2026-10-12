@@ -101,7 +101,7 @@ def check(before, after, item):
     specs = {r["key"]: r for r in context["records"]}
     key, spec = item["key"], specs[item["key"]]
     assert key not in {"DJ675", "S4674", "K3037"}
-    assert before == yaml.safe_load(spec["before_text"])
+    assert before == yaml.load(spec["before_text"], Loader=yaml.CSafeLoader)
     assert before["id"] == after["id"] == spec["id"] and item["path"] == spec["path"]
     assert item["action"] == ACTION
     expected = {}
@@ -333,7 +333,9 @@ def check(before, after, item):
         assert ref["id"] == specs[target]["id"] and ref["path"] == specs[target]["path"]
         assert ref["relationship"] == after["variant_relationship"] == relation
         assert after["variant_modifications"] == [ref["notes"]] and ref["evidence"]
-        assert ref["name"] == yaml.safe_load(specs[target]["before_text"])["name"]
+        assert (
+            ref["name"] == yaml.load(specs[target]["before_text"], Loader=yaml.CSafeLoader)["name"]
+        )
     else:
         for field in ("parent_media", "variant_relationship", "variant_modifications"):
             assert after.get(field) == before.get(field)
@@ -342,7 +344,9 @@ def check(before, after, item):
         (ref,) = after["variant_children"]
         assert ref["id"] == specs[child]["id"] and ref["path"] == specs[child]["path"]
         assert ref["relationship"] == relations[child][1] and ref["evidence"]
-        assert ref["name"] == yaml.safe_load(specs[child]["before_text"])["name"]
+        assert (
+            ref["name"] == yaml.load(specs[child]["before_text"], Loader=yaml.CSafeLoader)["name"]
+        )
     else:
         assert after.get("variant_children") == before.get("variant_children")
     allowed = {
@@ -393,7 +397,9 @@ if __name__ == "__main__":
     totals = []
     for item in json.loads(args.plan.read_text())["records"]:
         result = check(
-            yaml.safe_load(item["before_text"]), yaml.safe_load(item["after_text"]), item
+            yaml.load(item["before_text"], Loader=yaml.CSafeLoader),
+            yaml.load(item["after_text"], Loader=yaml.CSafeLoader),
+            item,
         )
         totals.append(result)
         print(json.dumps({"key": item["key"], **result}), flush=True)

@@ -201,8 +201,8 @@ def main():
         raw = (ROOT / item["path"]).read_bytes()
         expected = item["after_sha256"] if args.applied else item["before_sha256"]
         assert hashlib.sha256(raw).hexdigest() == expected
-        before = yaml.safe_load(item["before_text"])
-        after = yaml.safe_load(raw if args.applied else item["after_text"])
+        before = yaml.load(item["before_text"], Loader=yaml.CSafeLoader)
+        after = yaml.load(raw if args.applied else item["after_text"], Loader=yaml.CSafeLoader)
         counts.update(check(before, after, item, plan["sources"]))
     result = {
         "stage": "applied" if args.applied else "preview",

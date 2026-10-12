@@ -315,7 +315,13 @@ def audit():
         raw = (ROOT / item["path"]).read_bytes()
         assert hashlib.sha256(raw).hexdigest() == item["after_sha256"]
         assert hashlib.sha256(item["before_text"].encode()).hexdigest() == item["before_sha256"]
-        counts.update(check(yaml.safe_load(item["before_text"]), yaml.safe_load(raw), item))
+        counts.update(
+            check(
+                yaml.load(item["before_text"], Loader=yaml.CSafeLoader),
+                yaml.load(raw, Loader=yaml.CSafeLoader),
+                item,
+            )
+        )
     counts["edited_records"] = len(plan["records"])
     assert counts["edited_records"] == 2 and counts["new_evidence"] == 155
     return dict(counts)
@@ -340,7 +346,7 @@ def retention():
         assert len(matches) == 1
         fingerprint, paths = matches[0]
         merged = RecipeMerger().merge_group(paths, fingerprint=fingerprint)
-        source = yaml.safe_load(target.read_bytes())
+        source = yaml.load(target.read_bytes(), Loader=yaml.CSafeLoader)
         fields = shared.retention(merged, source)
         fields.update(
             {key: merged.get(key) == source.get(key) for key in ("notes", "curation_history")}
@@ -350,7 +356,7 @@ def retention():
                 "path": item["path"],
                 "fingerprint": fingerprint,
                 "fingerprint_change": fingerprint_delta(
-                    yaml.safe_load(item["before_text"]), source
+                    yaml.load(item["before_text"], Loader=yaml.CSafeLoader), source
                 ),
                 "group_paths": [str(p.relative_to(ROOT)) for p in paths],
                 "merged_id": merged["id"],

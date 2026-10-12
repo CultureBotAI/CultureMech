@@ -198,7 +198,9 @@ def main():
     plan = json.loads((HERE / "plan.json").read_text())
     counts = collections.Counter()
     for item in plan["records"]:
-        before, after = [yaml.safe_load(item[k]) for k in ("before_text", "after_text")]
+        before, after = [
+            yaml.load(item[k], Loader=yaml.CSafeLoader) for k in ("before_text", "after_text")
+        ]
         current = (ROOT / item["path"]).read_bytes()
         assert (
             hashlib.sha256(current).hexdigest()

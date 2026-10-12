@@ -14,7 +14,7 @@ HERE = Path(__file__).resolve().parent
 
 def check(before, after, item):
     context = json.loads((HERE / "inspected-context.json").read_text())
-    assert before == yaml.safe_load(context["record"]["before_text"])
+    assert before == yaml.load(context["record"]["before_text"], Loader=yaml.CSafeLoader)
     assert after["id"] == before["id"] == "CultureMech:012919"
     assert len(after["solutions"]) == 1 and len(after["composition"]) == 2
     stock = after["solutions"][0]
@@ -124,7 +124,9 @@ def main():
     assert not args.out.exists()
     plan = json.loads((HERE / "plan.json").read_text())
     item = plan["records"][0]
-    before, after = [yaml.safe_load(item[k + "_text"]) for k in ("before", "after")]
+    before, after = [
+        yaml.load(item[k + "_text"], Loader=yaml.CSafeLoader) for k in ("before", "after")
+    ]
     for key in ("before", "after"):
         assert hashlib.sha256(item[key + "_text"].encode()).hexdigest() == item[key + "_sha256"]
     if args.applied:

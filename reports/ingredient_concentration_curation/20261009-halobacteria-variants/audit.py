@@ -111,7 +111,9 @@ def check(row, *, applied=False, current_text=None):
     assert hashlib.sha256(row["after_text"].encode()).hexdigest() == row["after_sha256"]
     current = Path(row["path"]).read_text() if current_text is None else current_text
     assert current == row["after_text" if applied else "before_text"]
-    before, after = yaml.safe_load(row["before_text"]), yaml.safe_load(row["after_text"])
+    before, after = yaml.load(row["before_text"], Loader=yaml.CSafeLoader), yaml.load(
+        row["after_text"], Loader=yaml.CSafeLoader
+    )
     assert before["id"] == after["id"] == row["id"]
     texts, tables = {}, {}
     for name, src in context["sources"].items():
@@ -244,7 +246,7 @@ def check(row, *, applied=False, current_text=None):
             continue
         assert link["id"] == target["id"] and link["path"] == target["path"]
         assert link["relationship"] == relation
-        assert link["name"] == yaml.safe_load(target["before_text"])["name"]
+        assert link["name"] == yaml.load(target["before_text"], Loader=yaml.CSafeLoader)["name"]
     if key in PARENTS:
         affected = {specs[c]["id"] for c, (parent, _) in LINKS.items() if parent == key}
         assert [r for r in after["variant_children"] if r["id"] not in affected] == [

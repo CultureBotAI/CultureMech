@@ -129,3 +129,26 @@ projection, tamper rejection, concurrent edits and guarded no-op application.
 The full CI gate is still pending. The latest fast tier separately exposed
 issue 584: main refreshed the MIM index in PR 537 while this PR was under review.
 That compatibility finding is not repaired by portable receipt fixtures.
+
+### Refreshed Index And Native Safe Parsing
+
+Main's PR 537 changes the MIM pin from `9f09e4fb` to `6643131b`. Issue 584 is
+addressed by a separate, hash-pinned compatibility assessment: the exact
+nickel-hexahydrate candidate and REJECTED status are unchanged; ambiguity changes
+from resolved:owned to unique. The runtime checks current bytes, metadata and
+the exact resolution against that assessment. Unknown bytes or changed resolver
+semantics still fail. Historical review bytes, hashes and chemical assertions
+are unchanged. Four dedicated drift/preservation tests pass.
+
+The local full run at `27baf7d899` was interrupted after 1,898 passes to integrate
+current main and the receipt repairs. It is not a full pass. Profiling a
+remaining slow guarded application attributes 64.7 of 100.3 call seconds to
+pure-Python YAML span parsing. The curation span-preserver and 42 active audit
+modules now use PyYAML's existing CSafeLoader, without changing the dumper.
+AST comparison confirms that those audit changes alter only safe-loader
+selection, not assertions or control flow. Archived preview code is unchanged.
+The guarded application passes in 17.7 unprofiled call seconds. Regression tests
+compare parsed data and output source spans against the Python safe parser for
+large frozen records, multiline text, Unicode, aliases and scalar types, and
+verify rejection of Python object tags. No loader is globally monkeypatched in
+the application or full-suite environment. Runtime limits remain unchanged.

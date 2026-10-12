@@ -4,6 +4,7 @@ import copy
 import importlib.util
 import json
 import subprocess
+from dataclasses import replace
 
 import pytest
 import repair_synthrophomonas_family as repair
@@ -215,6 +216,39 @@ def test_nickel_form_is_preserved_without_rejected_replacement_mapping():
                 if c["kind"] == "chemical_form" and c["pointer"][:-1] == list(path)
             ]
         ) == (2 if key == "S595" else 3)
+
+
+def test_successor_index_preserves_the_historical_review():
+    assert repair.identity_review() == json.loads(
+        (repair.HERE / "identity-review.json").read_text()
+    )
+
+
+def test_unreviewed_index_bytes_are_rejected(tmp_path, monkeypatch):
+    relative = "src/culturemech/data/mediaingredientmech/label_index.csv"
+    target = tmp_path / relative
+    target.parent.mkdir(parents=True)
+    target.write_bytes((repair.ROOT / relative).read_bytes() + b"\n")
+    monkeypatch.setattr(repair, "ROOT", tmp_path)
+    with pytest.raises(ValueError, match="Identity index drift"):
+        repair.identity_review()
+
+
+def test_successor_assessment_hash_is_mandatory(monkeypatch):
+    monkeypatch.setattr(repair, "INDEX_COMPATIBILITY_SHA", "0" * 64)
+    with pytest.raises(ValueError, match="Index compatibility drift"):
+        repair.identity_review()
+
+
+def test_same_index_with_changed_resolution_is_rejected(monkeypatch):
+    original = repair.MIMLabelIndex.resolve_label
+
+    def changed(index, label):
+        return replace(original(index, label), mapping_status="MAPPED")
+
+    monkeypatch.setattr(repair.MIMLabelIndex, "resolve_label", changed)
+    with pytest.raises(ValueError, match="Identity resolution drift"):
+        repair.identity_review()
 
 
 def test_unchanged_amounts_are_evidence_only_not_numerical_corrections():

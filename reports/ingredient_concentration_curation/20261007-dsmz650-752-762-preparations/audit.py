@@ -279,8 +279,8 @@ def main():
         assert hashlib.sha256(item["after_text"].encode()).hexdigest() == item["after_sha256"]
         counts.update(
             check(
-                yaml.safe_load(item["before_text"]),
-                yaml.safe_load(item["after_text"]),
+                yaml.load(item["before_text"], Loader=yaml.CSafeLoader),
+                yaml.load(item["after_text"], Loader=yaml.CSafeLoader),
                 item,
                 plan["sources"],
             )

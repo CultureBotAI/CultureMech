@@ -232,8 +232,8 @@ def check(before, after, item):
     raw_identity = (HERE / "identity-review.json").read_bytes()
     assert sha(raw_identity) == IDENTITY_SHA
     identity = {i["key"]: i for i in json.loads(raw_identity)["issues"]}
-    assert before == yaml.safe_load(spec["before_text"])
-    assert after == yaml.safe_load(item["after_text"])
+    assert before == yaml.load(spec["before_text"], Loader=yaml.CSafeLoader)
+    assert after == yaml.load(item["after_text"], Loader=yaml.CSafeLoader)
     assert sha(item["after_text"].encode()) == item["after_sha256"]
     assert before["id"] == after["id"] == spec["id"] and item["path"] == spec["path"]
     assert item["action"] == ACTION
@@ -484,7 +484,11 @@ def main():
     context, _, _, _ = snapshot((HERE / "context.json").read_bytes())
     assert {r["key"] for r in plan["records"]} == {r["key"] for r in context["records"]}
     results = [
-        check(yaml.safe_load(r["before_text"]), yaml.safe_load(r["after_text"]), r)
+        check(
+            yaml.load(r["before_text"], Loader=yaml.CSafeLoader),
+            yaml.load(r["after_text"], Loader=yaml.CSafeLoader),
+            r,
+        )
         for r in plan["records"]
     ]
     for r in context["records"]:

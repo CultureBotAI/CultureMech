@@ -298,7 +298,12 @@ def main():
         text = (ROOT / item["path"]).read_text() if args.applied else item["after_text"]
         assert hashlib.sha256(text.encode()).hexdigest() == item["after_sha256"]
         total.update(
-            check(yaml.safe_load(item["before_text"]), yaml.safe_load(text), item, plan["sources"])
+            check(
+                yaml.load(item["before_text"], Loader=yaml.CSafeLoader),
+                yaml.load(text, Loader=yaml.CSafeLoader),
+                item,
+                plan["sources"],
+            )
         )
     result = {
         "mode": "applied" if args.applied else "preview",

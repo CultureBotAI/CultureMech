@@ -317,7 +317,12 @@ def preserve_unchanged(before, after):
             for index in range(min(len(old_node.value), len(new_node.value))):
                 visit(old_node.value[index], new_node.value[index], old[index], new[index])
 
-    visit(yaml.compose(before), yaml.compose(after), yaml.safe_load(before), yaml.safe_load(after))
+    visit(
+        yaml.compose(before, Loader=yaml.CSafeLoader),
+        yaml.compose(after, Loader=yaml.CSafeLoader),
+        yaml.load(before, Loader=yaml.CSafeLoader),
+        yaml.load(after, Loader=yaml.CSafeLoader),
+    )
     for start, end, value in sorted(replacements, reverse=True):
         after = after[:start] + value + after[end:]
     return after

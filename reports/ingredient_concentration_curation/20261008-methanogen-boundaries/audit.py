@@ -41,7 +41,7 @@ def check(before, after, item):
     context = json.loads(raw)
     key = item["key"]
     spec = next(r for r in context["records"] if r["key"] == key)
-    assert before == yaml.safe_load(spec["before_text"])
+    assert before == yaml.load(spec["before_text"], Loader=yaml.CSafeLoader)
     assert after["id"] == before["id"] == spec["id"]
     parsed = {}
     for name, source in context["sources"].items():
@@ -406,7 +406,9 @@ def main():
         if args.applied:
             assert Path(item["path"]).read_bytes() == item["after_text"].encode()
         counts = check(
-            yaml.safe_load(item["before_text"]), yaml.safe_load(item["after_text"]), item
+            yaml.load(item["before_text"], Loader=yaml.CSafeLoader),
+            yaml.load(item["after_text"], Loader=yaml.CSafeLoader),
+            item,
         )
         totals.update(counts)
         rows.append({"path": item["path"], "counts": counts})

@@ -7,6 +7,7 @@ import argparse
 import copy
 import datetime
 import json
+from dataclasses import asdict
 from decimal import Decimal
 from pathlib import Path
 
@@ -16,6 +17,7 @@ from curation_source_fixtures import read_pdf_capture
 from review_medium_concentration_evidence import json_excerpt
 
 from culturemech.curate.curation_event import record_curation_event
+from culturemech.ingredients.mim_label_index import MIMLabelIndex
 from culturemech.validation.recipe_references import html_recipe_text, parse_recipe, recipe_source
 from culturemech.validation.write_validated import infer_target_class
 
@@ -24,6 +26,7 @@ HERE = ROOT / "reports/ingredient_concentration_curation/20261009-synthrophomona
 CONTEXT_SHA = "1d9b09a2915e57c4f212f1de08bb1a5ada6b2a4b8a47b6b6c5d528d00250e84a"
 DECISIONS_SHA = "46a114cb7ba3eadc3881beb1d8d21fed76f457e8c1ed3d366893184f59df74ba"
 IDENTITY_SHA = "2f6d107a2c1042092e4402085f5941f969e5aa2a601f4a77b79747c93d5cc6b2"
+INDEX_COMPATIBILITY_SHA = "0eb9392564e995e49b2c79a78e9db8b36ab93b7a6172abd22352cef0aa7231fa"
 REVIEW_SHA = "e0f27faf288e9d48aa44560169c45b46beae1856782c9a5aca7f3af77ee36eb8"
 PLAN_PATH = HERE / "plan-v2.json"
 ACTION = "RESTORED_SYNTHROPHOMONAS_SOURCE_FORMULATIONS_WITH_EVIDENCE"
@@ -86,11 +89,25 @@ def identity_review():
     runner.require(runner.sha(raw) == IDENTITY_SHA, "Identity disposition drift")
     reviewed = json.loads(raw)
     runner.require(reviewed["context_sha256"] == CONTEXT_SHA, "Identity context drift")
-    runner.require(
-        runner.sha((ROOT / "src/culturemech/data/mediaingredientmech/label_index.csv").read_bytes())
-        == reviewed["mim_metadata"]["sha256"],
-        "Identity index drift",
-    )
+    index_raw = (ROOT / "src/culturemech/data/mediaingredientmech/label_index.csv").read_bytes()
+    if runner.sha(index_raw) != reviewed["mim_metadata"]["sha256"]:
+        raw = (HERE / "identity-index-compatibility.json").read_bytes()
+        runner.require(runner.sha(raw) == INDEX_COMPATIBILITY_SHA, "Index compatibility drift")
+        successor = json.loads(raw)
+        runner.require(
+            successor["historical_identity_review_sha256"] == IDENTITY_SHA
+            and successor["historical_index_sha256"] == reviewed["mim_metadata"]["sha256"]
+            and runner.sha(index_raw) == successor["current_metadata"]["sha256"],
+            "Identity index drift",
+        )
+        index = MIMLabelIndex.from_csv_bytes(
+            index_raw, metadata=successor["current_metadata"], verify_metadata=True
+        )
+        runner.require(
+            asdict(index.resolve_label(reviewed["mim_resolution"]["query_label"]))
+            == successor["current_resolution"],
+            "Identity resolution drift",
+        )
     return reviewed
 
 

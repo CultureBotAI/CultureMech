@@ -91,7 +91,7 @@ def check(before, after, item):
     )
     specs = {r["key"]: r for r in context["records"]}
     key, spec = item["key"], specs[item["key"]]
-    assert before == yaml.safe_load(spec["before_text"])
+    assert before == yaml.load(spec["before_text"], Loader=yaml.CSafeLoader)
     assert before["id"] == after["id"] == spec["id"] and item["path"] == spec["path"]
     assert item["action"] == ACTION
     expected = {}
@@ -434,7 +434,7 @@ def check_links(key, before, after, specs):
         assert {f: ref[f] for f in ("id", "path", "name", "relationship")} == {
             "id": spec["id"],
             "path": spec["path"],
-            "name": yaml.safe_load(spec["before_text"])["name"],
+            "name": yaml.load(spec["before_text"], Loader=yaml.CSafeLoader)["name"],
             "relationship": relation,
         }
         assert ref["evidence"] and ref["notes"]
@@ -463,7 +463,9 @@ if __name__ == "__main__":
     results = {}
     for item in plan["records"]:
         results[item["key"]] = check(
-            yaml.safe_load(item["before_text"]), yaml.safe_load(item["after_text"]), item
+            yaml.load(item["before_text"], Loader=yaml.CSafeLoader),
+            yaml.load(item["after_text"], Loader=yaml.CSafeLoader),
+            item,
         )
         print(json.dumps({"key": item["key"], **results[item["key"]]}), flush=True)
     print(

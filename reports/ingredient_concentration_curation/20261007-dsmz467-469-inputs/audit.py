@@ -250,10 +250,10 @@ def main():
     plan = json.loads((HERE / "plan.json").read_text())
     totals = collections.Counter()
     for item in plan["records"]:
-        before = yaml.safe_load(item["before_text"])
+        before = yaml.load(item["before_text"], Loader=yaml.CSafeLoader)
         raw = (ROOT / item["path"]).read_bytes() if args.applied else item["after_text"].encode()
         assert hashlib.sha256(raw).hexdigest() == item["after_sha256"]
-        totals.update(check(before, yaml.safe_load(raw), item, plan["sources"]))
+        totals.update(check(before, yaml.load(raw, Loader=yaml.CSafeLoader), item, plan["sources"]))
     result = {
         "full_record_inversion": True,
         "records": len(plan["records"]),

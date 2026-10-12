@@ -79,7 +79,9 @@ def check(item, *, applied=False, current_text=None):
     assert hashlib.sha256(item["after_text"].encode()).hexdigest() == item["after_sha256"]
     actual = Path(item["path"]).read_text() if current_text is None else current_text
     assert actual == item["after_text" if applied else "before_text"]
-    before, after = yaml.safe_load(item["before_text"]), yaml.safe_load(item["after_text"])
+    before, after = yaml.load(item["before_text"], Loader=yaml.CSafeLoader), yaml.load(
+        item["after_text"], Loader=yaml.CSafeLoader
+    )
     key, modified = item["key"], item["key"] in {"J1007", "M1064"}
     texts = {}
     for source, capture in context["sources"].items():
