@@ -49,22 +49,28 @@ KNOWN_NO_SALT_TERM = {
 # than emptied -- which is what its own test asked for.
 
 
+FORMULA_PREDICATE = "chemrof:generalized_empirical_formula"
+
+
+def formula_map(adapter, curies):
+    """Query only formulas once; unavailable metadata must not disable this gate."""
+    requested = set(curies)
+    assert requested, "No element-bearing ChEBI terms were selected"
+    formulas = {}
+    for curie, predicate, value, _, _ in adapter.entities_metadata_statements(
+        sorted(requested), predicates=[FORMULA_PREDICATE]
+    ):
+        assert curie in requested and predicate == FORMULA_PREDICATE
+        formulas.setdefault(curie, value)
+    assert any(formulas.values()), "No ChEBI formula metadata was returned"
+    return formulas
+
+
 @pytest.fixture(scope="module")
 def mismatches():
     from oaklib import get_adapter
 
     adapter = get_adapter("sqlite:obo:chebi")
-    formulas: dict[str, str] = {}
-
-    def formula_of(tid: str) -> str:
-        if tid not in formulas:
-            try:
-                meta = adapter.entity_metadata_map(tid) or {}
-                vals = meta.get("chemrof:generalized_empirical_formula") or [""]
-                formulas[tid] = vals[0] if vals else ""
-            except Exception:  # noqa: BLE001
-                formulas[tid] = ""
-        return formulas[tid]
 
     # Line-based, not yaml.safe_load: parsing both corpora costs ~4 minutes, past this
     # suite's budget. Only preferred_term and the CHEBI id under it are needed, and
@@ -91,6 +97,14 @@ def mismatches():
                 if mi and name:
                     pairs.add((name, mi.group(1)))
                     name = ""
+    formulas = formula_map(
+        adapter,
+        {
+            tid
+            for name, tid in pairs
+            if (name.casefold(), tid) not in KNOWN_NO_SALT_TERM and name_elements(name)
+        },
+    )
     bad = []
     for name, tid in pairs:
         if (name.casefold(), tid) in KNOWN_NO_SALT_TERM:
@@ -98,13 +112,68 @@ def mismatches():
         want = name_elements(name)
         if not want:
             continue
-        formula = formula_of(tid)
+        formula = formulas.get(tid, "")
         if not formula:
             continue
         missing = want - formula_elements(formula)
         if missing:
             bad.append((name, tid, "".join(sorted(missing))))
     return sorted(set(bad))
+
+
+def test_formula_lookup_is_batched_and_preserves_first_values():
+    class Adapter:
+        def entities_metadata_statements(self, curies, *, predicates):
+            assert curies == ["CHEBI:1", "CHEBI:2", "CHEBI:3"]
+            assert predicates == [FORMULA_PREDICATE]
+            yield "CHEBI:1", FORMULA_PREDICATE, "H2O", None, {}
+            yield "CHEBI:1", FORMULA_PREDICATE, "second value", None, {}
+            yield "CHEBI:2", FORMULA_PREDICATE, "NaCl", None, {}
+
+    assert formula_map(Adapter(), ["CHEBI:3", "CHEBI:2", "CHEBI:1", "CHEBI:1"]) == {
+        "CHEBI:1": "H2O",
+        "CHEBI:2": "NaCl",
+    }
+
+
+@pytest.mark.parametrize("failure_after_row", [False, True])
+def test_formula_lookup_failure_cannot_disable_the_gate(failure_after_row):
+    class Adapter:
+        def entities_metadata_statements(self, curies, *, predicates):
+            if failure_after_row:
+                yield "CHEBI:1", FORMULA_PREDICATE, "H2O", None, {}
+            raise OSError("metadata unavailable")
+
+    with pytest.raises(OSError, match="metadata unavailable"):
+        formula_map(Adapter(), ["CHEBI:1"])
+
+
+@pytest.mark.parametrize("value", [None, ""])
+def test_empty_formula_coverage_cannot_pass(value):
+    class Adapter:
+        def entities_metadata_statements(self, curies, *, predicates):
+            if value is not None:
+                yield "CHEBI:1", FORMULA_PREDICATE, value, None, {}
+
+    with pytest.raises(AssertionError, match="No ChEBI formula metadata"):
+        formula_map(Adapter(), ["CHEBI:1"])
+
+
+def test_empty_formula_selection_cannot_pass():
+    with pytest.raises(AssertionError, match="No element-bearing ChEBI terms"):
+        formula_map(object(), [])
+
+
+@pytest.mark.parametrize(
+    "curie,predicate", [("CHEBI:2", FORMULA_PREDICATE), ("CHEBI:1", "rdfs:label")]
+)
+def test_unrequested_formula_rows_are_rejected(curie, predicate):
+    class Adapter:
+        def entities_metadata_statements(self, curies, *, predicates):
+            yield curie, predicate, "H2O", None, {}
+
+    with pytest.raises(AssertionError):
+        formula_map(Adapter(), ["CHEBI:1"])
 
 
 def test_no_grounding_lacks_an_element_its_name_demands(mismatches):

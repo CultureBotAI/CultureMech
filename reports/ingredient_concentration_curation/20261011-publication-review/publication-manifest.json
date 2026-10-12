@@ -99484,8 +99484,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261011-publication-review/README.md",
-      "bytes": 12762,
-      "sha256": "1690e5ab1a06b98b49e2dd3790df91bcc6971ad92649e7ebc419e79460e11254"
+      "bytes": 13944,
+      "sha256": "7d4d4383df034f04e6c814ff5784602711128bd1117590fecb0323278c67687f"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261011-publication-review/prepare_pdf_fixtures.py",
@@ -100741,6 +100741,11 @@
       "path": "tests/test_middlebrook_stages.py",
       "bytes": 6025,
       "sha256": "921f96ffafce8f58bca6c6665ef068bb36caa93583c97617bd3ac5efd7af7d10"
+    },
+    {
+      "path": "tests/test_name_term_elements.py",
+      "sha256": "f5ad399a1232edb5a706f3c380191adfb3ac89ee834bd2e35b2474ab7835facc",
+      "bytes": 10457
     },
     {
       "path": "tests/test_oteb_family.py",
@@ -102080,5 +102085,5 @@
     "reports/ingredient_concentration_curation/20261011-publication-review/publication-manifest.json"
   ],
   "dependency_closure_parent_commit": "0c73c10a86577581ffa858b3e21c89fde50dd009",
-  "followup_parent_commit": "1e02daa498645948c38dce2ba59f4ed735faa72c"
+  "followup_parent_commit": "eea8b9fb875d171520b9a99a4f40ec16802dac86"
 }

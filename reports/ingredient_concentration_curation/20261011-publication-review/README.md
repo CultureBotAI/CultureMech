@@ -201,3 +201,22 @@ application/readback/no-op cases; the artifact inventory has 31 passing tests.
 The two Halobacteria modules pass all 534 tests after the mock-builder change;
 their guarded apply/readback/no-op calls take 3.05 and 9.03 seconds locally.
 The full CI, coverage, call-budget and merge-queue requirements remain unchanged.
+
+### Batched Elemental Metadata
+
+The clean diagnostic also exposed repeated SQLite metadata queries in the
+elemental-grounding fixture. A live process sample was dominated by SQLite
+reads. A comparison using the installed, lockfile-matching OAK 0.7.4 adapter
+covered all 234 requested ChEBI IDs: 229 formulas, five absent formulas, no
+multiple-valued formulas, no metadata errors and no differences between the
+individual and bulk answers. The original fixture took 333.44 seconds including
+its corpus scan; the bulk formula query took 1.39 seconds.
+
+Issue 586 additionally records that the old per-term exception handler silently
+treated query failures as missing formulas. The fixture now uses OAK's supported
+bulk metadata API with the same formula predicate and first-value semantics.
+Its corpus scan, salt allowlist and scientific mismatch assertions are unchanged.
+Query failures, unexpected rows, empty selection and wholly absent formula
+coverage fail closed; individual missing formulas retain their previous handling.
+The full module passes 12 tests in 51.92 seconds, with fixture setup at 36.89
+seconds. This changes no production code, recipe, ontology pin or evidence.
