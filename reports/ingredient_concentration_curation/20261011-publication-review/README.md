@@ -253,3 +253,45 @@ coverage databases also agree exactly: 101 measured files, 1,834 executed
 lines, no differing line sets. These runs overlapped, so their elapsed times
 are not treated as an isolated performance comparison. The three new coverage
 controls and fourteen existing merge-queue contract tests all pass.
+
+### Bounded Parallel Execution
+
+Full CI at `581ccd3084` again exceeded its 40-minute limit; eight other checks
+passed, including 15,792 fast tests with 23 skips. The complete clean-checkout
+serial diagnostic collected 19,434 tests and finished in 2,897.30s: 19,408
+passed, 25 skipped, and one failure from a local `gen-linkml` pyenv shim. That
+case passes when the fresh environment's bin directory is placed on PATH.
+Coverage reached 33.63%; the largest call was 43.21s, below the unchanged
+120-second budget. This is not described as a green full run. The diagnostic
+omitted the unsupported macOS UMAP/LLVM dependency stack, but included Koza.
+An earlier local attempt was invalidated by disappearing temporary-environment
+files and was interrupted; its failures are not repository regressions.
+
+Module timings show distributed cost: the largest module took 165.52s, not a
+single call exceeding the budget. Issue 588 follows the explicit aggregation
+requirement from issue 213. `just test` now uses exactly two pytest-xdist workers,
+per-file scheduling and no worker restarts. Each worker publishes call durations;
+the controller requires complete, finite, nonnegative receipts and reconciles
+them against independently forwarded reports. Missing, duplicate, unexpected,
+crashed or inconsistent workers fail closed. The 120-second call budget, empty
+allowlist, 17% combined coverage floor and 40-minute job timeout are unchanged.
+No test is excluded or moved to another tier.
+
+The initial 47 focused tests pass, including actual multi-worker positive,
+slow-call, missing-receipt, forged-receipt and crash cases. A two-worker coverage
+probe requires complete coverage of both workers' executed functions. The
+expanded cohort run passes 1,292 tests and explicitly reconciles all 1,292 call
+receipts across two workers. These are focused checks, not a full-suite pass.
+The lockfile adds only pytest-xdist 3.8.0 and execnet 2.1.2; existing pins remain.
+
+### TSV Reader Lifecycle
+
+The serial diagnostic also exposed repeated unraisable ResourceWarnings from
+the KGX export verifier. Issue 589 tracks the row counter's unclosed TSV reader.
+Two regression controls retain the opened handles and reproduce the leak on
+both successful verification and empty-output rejection. The row counter now
+uses a context manager; row counts, output bytes and rejection behavior are
+unchanged. Actual Koza export tests run with unraisable warnings treated as
+errors before publication.
+Both new controls fail against the previous reader lifecycle and pass after
+the fix. All 26 Koza TSV tests pass with unraisable warnings promoted to errors.

@@ -1870,7 +1870,7 @@ gen-page file:
 test:
     #!/usr/bin/env bash
     echo "Running test suite..."
-    uv run --extra dev pytest tests/ -v
+    uv run --extra dev pytest tests/ -v -n 2 --dist=loadfile --max-worker-restart=0
 
 [group('Test')]
 test-fast:

@@ -27289,13 +27289,13 @@
     },
     {
       "path": "project.justfile",
-      "bytes": 112450,
-      "sha256": "4cef62965ed7dec05b11f6bf769c486aa0e91bfa43ead057fc297229834a121e"
+      "bytes": 112494,
+      "sha256": "fa3a91997c85afc46e67e2f27b8fe9d9f7d87ba5f12f159aaad81521e267c36e"
     },
     {
       "path": "pyproject.toml",
-      "sha256": "ab90f17310b12ef7749ee1fe5bdf5f2beb973d50421248dd1f586ce6e38c5484",
-      "bytes": 6606
+      "sha256": "b79f4f49058ed840aa1060e278575e5100102817cbc091d4ae205d1b72b4e246",
+      "bytes": 6636
     },
     {
       "path": "reports/ingredient_concentration_curation/20261007-diff-audit-after-dsmz111.json",
@@ -99489,8 +99489,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261011-publication-review/README.md",
-      "bytes": 15975,
-      "sha256": "d70213443296de7e5bfe619a2bfb58cc07c4ff4440b0ce77fda1d71b614cd509"
+      "bytes": 18601,
+      "sha256": "c7416a50ae3bb0cfdfa155b2f61bc98063e7b997a39c5b5ab078a080d233bd25"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261011-publication-review/prepare_pdf_fixtures.py",
@@ -99531,6 +99531,11 @@
       "path": "scripts/curation_source_fixtures.py",
       "bytes": 1212,
       "sha256": "393e6bf62e56b92a577187b3bbddddf1d1a61d376d53da3e416f6d7bf220a8f8"
+    },
+    {
+      "path": "scripts/export_kgx.py",
+      "sha256": "09b491532954f89e635e7ec3627a45e467dd4fda6d28a51263b432aa8aa7c49a",
+      "bytes": 6359
     },
     {
       "path": "scripts/fetch_medium_concentration_sources.py",
@@ -100059,8 +100064,8 @@
     },
     {
       "path": "tests/conftest.py",
-      "sha256": "14f69fcee3e85f1c47e66d958104440553b58f96add1bc2094e175a85ebeca40",
-      "bytes": 8787
+      "sha256": "8ed75c396f430b6a5c00b2989ebd0d3971dc8df71463c3aed54fc85bc0a531f6",
+      "bytes": 10773
     },
     {
       "path": "tests/fixtures/curation_mim/README.md",
@@ -100628,6 +100633,11 @@
       "sha256": "f5f02d923202fffe7420e93711b74415bb5dce34231ed20b5e21441526892cda"
     },
     {
+      "path": "tests/test_kgx_tsv_export.py",
+      "sha256": "0a7c60f2be8e5af51268d2ab13c76c118ad25abbb580627a98bfb4a102bc3114",
+      "bytes": 22126
+    },
+    {
       "path": "tests/test_komodo12_extraction_evidence.py",
       "bytes": 8621,
       "sha256": "d9ce1282f3c5b01864e02e3909531813b5607ac817215bd731e79d7fb2db9de1"
@@ -100883,6 +100893,11 @@
       "sha256": "c506aff9029bd2dda3b4f6ae5c9c5732993a247e60a132ee46d43be1f970c0f6"
     },
     {
+      "path": "tests/test_slow_test_budget.py",
+      "sha256": "73b53e81d53894129c088ed1a06773297ff7901d1b1ac40274ccb018a3d8555e",
+      "bytes": 8375
+    },
+    {
       "path": "tests/test_solution_concentration_batch.py",
       "bytes": 6015,
       "sha256": "ec74f49c57ed2b303c33803a5f2a177091fa8593be2fdb0654da19aca8be0334"
@@ -100996,6 +101011,11 @@
       "path": "tests/test_yeast_mineral_ingredients.py",
       "bytes": 10770,
       "sha256": "03097d7e9f9f9aee1cf0986c18febef441c39f6dac1d0a39b92b848883d0b978"
+    },
+    {
+      "path": "uv.lock",
+      "sha256": "9848d8c59d7162ee7a1e3a29b6318768ed613a8920e196b2e976a89ba9a11f55",
+      "bytes": 1186601
     }
   ],
   "excluded_local_artifacts": [
@@ -102095,5 +102115,5 @@
     "reports/ingredient_concentration_curation/20261011-publication-review/publication-manifest.json"
   ],
   "dependency_closure_parent_commit": "0c73c10a86577581ffa858b3e21c89fde50dd009",
-  "followup_parent_commit": "f52f224a40e5f216bf2b4273e5e247cc61ef81f5"
+  "followup_parent_commit": "581ccd3084366eabf7ddd9687f815d94ebb5107e"
 }

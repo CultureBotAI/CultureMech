@@ -16,6 +16,7 @@ them as read-only** — mutating one would leak into every later test.
 from __future__ import annotations
 
 import json
+import math
 import sys
 from pathlib import Path
 from typing import Any
@@ -177,6 +178,60 @@ SLOW_TEST_BUDGET_S = 120.0
 SLOW_TEST_ALLOWLIST: dict[str, str] = {}
 
 _call_durations: dict[str, float] = {}
+_expected_workers: set[str] = set()
+_worker_durations: dict[str, dict[str, float]] = {}
+_worker_errors: list[str] = []
+
+
+@pytest.hookimpl(tryfirst=True)
+def pytest_sessionstart(session) -> None:  # noqa: ARG001
+    _call_durations.clear()
+    _expected_workers.clear()
+    _worker_durations.clear()
+    _worker_errors.clear()
+
+
+@pytest.hookimpl(optionalhook=True)
+def pytest_configure_node(node) -> None:
+    _expected_workers.add(node.gateway.id)
+
+
+@pytest.hookimpl(optionalhook=True)
+def pytest_testnodedown(node, error) -> None:
+    worker = node.gateway.id
+    output = getattr(node, "workeroutput", {})
+    receipt = output.get("culturemech_call_durations") if isinstance(output, dict) else None
+    if error is not None or worker not in _expected_workers or worker in _worker_durations:
+        _worker_errors.append(f"{worker}: failed, unexpected or duplicate worker")
+        return
+    if not isinstance(receipt, dict) or any(
+        not isinstance(nodeid, str)
+        or not nodeid
+        or type(seconds) is not float
+        or not math.isfinite(seconds)
+        or seconds < 0
+        for nodeid, seconds in receipt.items()
+    ):
+        _worker_errors.append(f"{worker}: missing or malformed call-duration receipt")
+        return
+    _worker_durations[worker] = dict(receipt)
+
+
+def _parallel_durations() -> dict[str, float]:
+    """Reconcile final worker receipts with independently forwarded call reports."""
+    errors = list(_worker_errors)
+    if not _expected_workers or set(_worker_durations) != _expected_workers:
+        errors.append("missing worker receipts")
+    combined: dict[str, float] = {}
+    for receipt in _worker_durations.values():
+        if combined.keys() & receipt.keys():
+            errors.append("duplicate test call across workers")
+        combined.update(receipt)
+    if combined != _call_durations:
+        errors.append("worker receipts disagree with controller call reports")
+    if errors:
+        raise ValueError("; ".join(errors))
+    return combined
 
 
 def pytest_runtest_logreport(report) -> None:
@@ -185,25 +240,28 @@ def pytest_runtest_logreport(report) -> None:
 
 
 def pytest_sessionfinish(session, exitstatus) -> None:  # noqa: ARG001
-    # Under pytest-xdist each worker holds its own `_call_durations`, and the
-    # CONTROLLER's copy is empty — so this check would pass unconditionally while
-    # appearing to run. xdist is not installed today, but `-n auto` is the obvious
-    # response to a slow suite, and silently losing the guard is the exact failure
-    # class it exists to prevent. Fail loudly instead (#213).
+    # Workers publish explicit receipts. The controller must reconcile them
+    # against forwarded reports before it can enforce the same serial budget.
     if hasattr(session.config, "workerinput"):
-        return  # a worker; the controller does the reporting
+        session.config.workeroutput["culturemech_call_durations"] = dict(_call_durations)
+        return
+    durations = _call_durations
     if session.config.pluginmanager.hasplugin("xdist") and getattr(
         session.config.option, "numprocesses", None
     ):
+        try:
+            durations = _parallel_durations()
+        except ValueError as exc:
+            print(f"\nSLOW-TEST BUDGET INCOMPLETE: {exc}")
+            session.exitstatus = 1
+            return
         print(
-            "\nSLOW-TEST BUDGET DISABLED: running under pytest-xdist, where "
-            "per-worker durations never reach the controller. See #213."
+            f"\nValidated call timings for {len(durations)} tests across "
+            f"{len(_worker_durations)} workers."
         )
-        session.exitstatus = 1
-        return
     over = {
         nodeid: seconds
-        for nodeid, seconds in _call_durations.items()
+        for nodeid, seconds in durations.items()
         if seconds > SLOW_TEST_BUDGET_S and nodeid not in SLOW_TEST_ALLOWLIST
     }
     if not over:
