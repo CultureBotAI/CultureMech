@@ -54,10 +54,10 @@ def _row(
 
 def test_packaged_artifact_is_verified_and_pinned():
     index = get_default_mim_label_index()
-    assert len(index.rows) == 9876
-    assert index.metadata["source_commit"] == "9f09e4fb97fb0e6cbbd6f25baca40b36512adb88"
+    assert len(index.rows) == 9077
+    assert index.metadata["source_commit"] == "6643131b0f12ab40b66f98135245fca04027e0e9"
     assert index.metadata["sha256"] == (
-        "a36cd4683feb89e2fc2a1721dc15008d1e10c12044e89a36c27b6621a8aaf262"
+        "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5"
     )
 
 
